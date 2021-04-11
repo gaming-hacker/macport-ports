@@ -1,10 +1,17 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
 PortSystem		1.0
 PortGroup		ruby 1.0
 
 ruby.setup		{zip rubyzip} 0.5.7 basic_install.rb \
 				{README ChangeLog TODO NEWS samples} \
 				sourceforge
-maintainers		nomaintainer
+revision        1
+
+replaced_by     rb${ruby.suffix}-rubyzip
+distfiles
+
+maintainers		outlook.de:judaew openmaintainer
 description		rubyzip is a ruby module for reading and writing zip files
 long_description	rubyzip is a ruby library for reading and writing \
 					zip (pkzip format) files, with the restriction that \
@@ -14,14 +21,11 @@ long_description	rubyzip is a ruby library for reading and writing \
 					compression/decompression is handled by zlib.
 categories-append	archivers
 license			{Ruby GPL-2}
-extract.suffix	.tgz
-checksums		md5 59566b93ae84a4674247a46159424d47
 platforms		darwin
 
-post-patch {
-	reinplace {s|File.dirname($0)|&, "lib"|} ${worksrcpath}/install.rb
+pre-configure {
+    ui_error "Please do not install this port since it has been moved to "
+    ui_error "'rb-rubyzip'. Use 'sudo port uninstall rb-zip' followed by"
+    ui_error "'sudo port install rb-rubyzip' to install the newest version."
+    return -code error
 }
-
-test.run		yes
-test.dir		${worksrcpath}/test
-test.cmd		${ruby.bin} alltests.rb
