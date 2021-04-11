@@ -12,14 +12,14 @@
 
 global os.major os.arch
 
-#if { $${os.major} >= 10 } {
+if { $${os.major} >= 10 } {
     # TODO: evaluate compatibility of clang-{10,11} as defaults instead of 9.0
-    #lappend compilers macports-clang-11
-#}
+    lappend compilers macports-clang-11
+}
 
 if { ${os.arch} ne "arm" && ${os.major} >= 10 } {
     # TODO: evaluate compatibility of clang-{10,11} as defaults instead of 9.0
-    #lappend compilers macports-clang-10
+    lappend compilers macports-clang-10
     lappend compilers macports-clang-9.0
     if { ${os.major} < 20 } {
         lappend compilers macports-clang-8.0
@@ -34,7 +34,7 @@ if { ${os.arch} ne "arm" && ${os.major} >= 9 && ${os.major} < 20 } {
 
 # Add 10 and 11 as defaults *after* 9.0 - 5.0
 if { ${os.major} >= 10} {
-    lappend compilers macports-clang-11 
+    lappend compilers macports-clang-11
     if { ${os.arch} ne "arm" } {
         lappend compilers macports-clang-10
     }
