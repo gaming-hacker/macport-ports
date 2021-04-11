@@ -160,6 +160,18 @@ platform darwin {
     if {${os.major} <= 12} {
         # requires cups 1.7
         configure.args-append --disable-cups
+        # OS X 10.11 and earlier does not have NSEventTypeTabletProximity and the version check macro is broken
+        # see https://gitlab.gnome.org/GNOME/gtk/-/issues/3592
+        if {[variant_isset quartz]} {
+            patchfiles-append   patch-gdk_quartz-10.11_compat.diff
+        }
+    }
+    if {${os.major} <= 15} {
+        # OS X 10.11 and earlier does not have NSEventTypeTabletProximity and the version check macro is broken
+        # see https://gitlab.gnome.org/GNOME/gtk/-/issues/3592
+        if {[variant_isset quartz]} {
+            patchfiles-append   patch-gdk_quartz-10.11_compat.diff
+        }
     }
 }
 
