@@ -53,7 +53,7 @@ variant python36 conflicts python37 python38 description {Use Python 3.6} {
 }
 
 variant python37 conflicts python36 python38 description {Use Python 3.7} {
-    python.default_version  37
+    python.default_version  39
     depends_lib-append  port:py37-bsddb3 \
                         port:py37-gobject3 \
                         port:py37-Pillow \
@@ -61,7 +61,7 @@ variant python37 conflicts python36 python38 description {Use Python 3.7} {
 }
 
 variant python38 conflicts python36 python37 description {Use Python 3.8} {
-    python.default_version  38
+    python.default_version  39
     depends_lib-append  port:py38-bsddb3 \
                         port:py38-gobject3 \
                         port:py38-Pillow \

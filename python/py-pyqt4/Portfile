@@ -24,7 +24,7 @@ set patch       [lindex [split ${version} .] 2]
 
 # pre-declare provided subports
 
-python.version 37
+python.version 39
 python.default_version 37
 
 foreach py_ver ${python.versions} {

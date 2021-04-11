@@ -24,7 +24,7 @@ master_sites        https://github.com/myselfhimself/gmic-py/archive/:py-gmic \
 distfiles           v${version}${extract.suffix}:py-gmic \
                     gmic_${gmic_version}${extract.suffix}:gmic
 
-python.version 37
+python.version 39
 
 checksums           v${version}${extract.suffix} \
 rmd160  11db37d67af0d451661562a3cae66b4b18a9b0fb \

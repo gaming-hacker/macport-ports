@@ -26,7 +26,7 @@ sha256  57143088b0638264bea7e9bf17b3f4cf221e35ed3bcf2d24db96cbc6da4bd9dd \
 size    1457398
 
 deprecated.upstream_support no
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     post-destroot	{

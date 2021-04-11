@@ -21,7 +21,7 @@ long_description    ${description}
 homepage            https://github.com/tmux-python/tmuxp/
 master_sites        pypi:t/${python.rootname}/
 distname            ${python.rootname}-${version}
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

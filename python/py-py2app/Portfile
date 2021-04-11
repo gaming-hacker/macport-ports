@@ -22,7 +22,7 @@ checksums           md5 cf9a2a27d150856f9845cb5ef9249e81 \
 rmd160 597e745425c76d765067b8f0ec25de83a411144d \
 sha256 753915b2efaa72b23de1553e00f2cd9d3b4fdc05269ccae4b65c710e38121d67
 
-python.version 37
+python.version 39
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-macholib

@@ -34,7 +34,7 @@ sha256  344fa75fbf9f76af72f6a346d5309613defc4d244bac13c218e509a51d68bf6a \
 size    1961206 \
 sha1    32f986f7f0f7cce5c773d2909d34705eab39df16
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

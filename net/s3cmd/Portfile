@@ -28,7 +28,7 @@ size    450117
 platforms           darwin
 supported_archs     noarch
 
-python.default_version  38
+python.default_version  39
 
 depends_build-append    port:py${python.default_version}-setuptools
 depends_run-append      path:share/curl/curl-ca-bundle.crt:curl-ca-bundle

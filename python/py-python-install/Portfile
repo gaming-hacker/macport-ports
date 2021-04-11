@@ -23,7 +23,7 @@ sha256 926f9e0cb959203629ba6ffdc889f96e1a075c36ca6e7528ba7be96ade189a7d
 
 patchfiles          patch-install-__init__.py.diff
 
-python.version 37
+python.version 39
 
 if {$subport ne $name} {
     depends_build-append \

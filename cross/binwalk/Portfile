@@ -19,7 +19,7 @@ checksums           rmd160  68677d4d97ba5dbcd765c17cd37689c270161112 \
 sha256  a88a2f81563278e9f341a9adc2adaa4b620d1d1a7c7e00e00f8da8ba5674e425 \
 size    39595170
 
-python.default_version  37
+python.default_version  39
 
 depends_lib-append  port:py${python.default_version}-setuptools \
     port:py${python.default_version}-pylzma

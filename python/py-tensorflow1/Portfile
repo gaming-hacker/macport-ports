@@ -56,7 +56,7 @@ if {${os.major} < 16} {
 patchfiles-append patch-numpy-1.19-fix.diff
 
 # Supported python versions
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
 

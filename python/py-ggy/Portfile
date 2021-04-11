@@ -23,7 +23,7 @@ master_sites        ${homepage} http://distfiles.macports.org/python/
 distname            pyggy-${version}
 checksums           md5 b134d0cfbc35ff392930550c7aa112d4
 
-python.version 37
+python.version 39
 livecheck.type      none
 
 if {${name} ne ${subport}} {

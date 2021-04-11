@@ -41,7 +41,7 @@ depends_build       port:autoconf \
 subport py37-simstring {
     PortGroup           python 1.0
     name                py-simstring
-python.version 37
+python.version 39
     categories-append   textproc math
     description         SimString Python module
     long_description    ${description}

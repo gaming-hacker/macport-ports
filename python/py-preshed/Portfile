@@ -28,7 +28,7 @@ long_description    ${description}
 github.livecheck.regex {([0-9.]+)}
 
 # Support python versions
-python.version 37
+python.version 39
 python.default_version 39
 
 if {${name} ne ${subport}} {

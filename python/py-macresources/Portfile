@@ -18,7 +18,7 @@ long_description    A Python library and command line tools to work with Classic
 
 homepage            https://github.com/elliotnunn/macresources
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

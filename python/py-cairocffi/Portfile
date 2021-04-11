@@ -21,7 +21,7 @@ checksums           rmd160  edbfcfc08658abe6106fdd4290980ce5eac6610f \
 sha256  9a979b500c64c8179fec286f337e8fe644eca2f2cd05860ce0b62d25f22ea140 \
 size    70393
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \

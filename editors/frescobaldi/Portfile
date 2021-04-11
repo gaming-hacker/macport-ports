@@ -48,7 +48,7 @@ size    4478977
 depends_run-append  port:portmidi
 
 if {"${name}2" eq ${subport}} {
-    python.default_version  37
+    python.default_version  39
 } else {
     python.default_version  39
 }

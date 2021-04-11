@@ -20,7 +20,7 @@ checksums           rmd160  7f37ae5b2065738501103ed7d39c2bbc4cd0de2e \
 sha256  be63957a49772895ddebeac02c697e1675e0bdf1515824f60fcc261914f23624 \
 size    125046
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build   port:git

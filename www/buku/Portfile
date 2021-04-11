@@ -31,7 +31,7 @@ supported_archs     noarch
 maintainers         {isi.edu:calvin @cardi} openmaintainer
 license             GPL-3
 
-python.default_version  38
+python.default_version  39
 
 depends_lib-append  port:py${python.version}-beautifulsoup4 \
                     port:py${python.version}-certifi \

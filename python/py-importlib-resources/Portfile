@@ -24,7 +24,7 @@ sha256  642586fc4740bd1cad7690f836b3321309402b20b332529f25617ff18e8e1370 \
 size    32177
 
 # keep version for PY27/PY34/PY35, these are (indirect) dependencies of py-virtualenv
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

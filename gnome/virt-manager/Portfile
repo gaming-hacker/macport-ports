@@ -36,7 +36,7 @@ platforms           darwin
 patchfiles          no-kvm-warning.diff \
                     not-in-usr.diff
 
-python.default_version  37
+python.default_version  39
 
 post-patch {
     reinplace -W ${worksrcpath} "s|/usr/bin/env python3|${python.bin}|" \

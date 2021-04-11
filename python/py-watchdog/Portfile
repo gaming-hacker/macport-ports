@@ -21,7 +21,7 @@ checksums           sha256  376cbc2a35c0392b0fe7ff16fbc1b303fd99d4dd9911ab5581ee
 rmd160  72dbfbb51f8b9a1d5ea277e1815ec53fadada066 \
 size    98483
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     if {${python.version} < 36} {

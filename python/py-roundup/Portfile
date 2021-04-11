@@ -30,7 +30,7 @@ sha256  493d4725b9798a0e4c0d827e0d54f13ddd7c3fbdad07acea0be0302de3a7ad52 \
 size    3128618
 
 # no Python 3 support
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     livecheck.type  none

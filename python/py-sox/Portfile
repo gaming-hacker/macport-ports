@@ -21,7 +21,7 @@ size    62423
 
 supported_archs     noarch
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

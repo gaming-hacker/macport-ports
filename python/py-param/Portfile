@@ -20,7 +20,7 @@ checksums           rmd160  5a1b9bcd22af661c18fdb3e60ce30b3e66a37775 \
 sha256  1f0f1133fbadcd2c5138e579b9934e29fd00f803af01d9bf6f9e6b80ecf1999b \
 size    74216
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_lib     port:py${python.version}-numpy \

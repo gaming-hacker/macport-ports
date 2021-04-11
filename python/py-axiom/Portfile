@@ -40,7 +40,7 @@ worksrcdir          ${python.rootname}-${version}
 # as of version 0.8.0 only python37 is supported
 # see https://github.com/twisted/axiom/issues/106 for status of python3 support
 python.default_version  27
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools_scm

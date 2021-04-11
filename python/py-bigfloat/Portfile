@@ -24,7 +24,7 @@ size    258208
 # patchfile to force cythonize
 patchfiles-append   patch-setup.py.diff
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

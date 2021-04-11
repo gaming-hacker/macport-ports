@@ -26,7 +26,7 @@ size    2625968
 # To avoid breaking any code that uses our Python package, keep the Python
 # version at 2.7 until we add variants for Python versions.  The upstream
 # code itself works with 2.6, 2.7, and 3.3+.
-python.version 37
+python.version 39
 
 # Note that the upstream --python option may not work correctly, so waf
 # must be run with the target Python version.  The waf PortGroup doesn't

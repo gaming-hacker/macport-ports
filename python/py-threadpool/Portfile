@@ -32,7 +32,7 @@ sha256  cce4ef898b7eda686a6086facf33c9ac006d1809281db0030673d1647bfeefa4 \
 size    33088
 
 deprecated.upstream_support no
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

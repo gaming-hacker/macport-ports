@@ -23,7 +23,7 @@ size    98846
 
 mpi.setup           require
 
-python.version 37
+python.version 39
 
 build.env-append    PETSC_DIR=${prefix}/lib/petsc SLEPC_DIR=${prefix}/lib/slepc
 destroot.env-append PETSC_DIR=${prefix}/lib/petsc SLEPC_DIR=${prefix}/lib/slepc

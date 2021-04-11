@@ -27,7 +27,7 @@ long_description        ${name} is a GTK+ GUI for waking machines on your \
 homepage                http://www.muflone.com/gwakeonlan
 github.tarball_from     releases
 
-python.default_version  38
+python.default_version  39
 
 depends_lib-append      port:gtk3 \
                         port:py${python.version}-gobject3 \

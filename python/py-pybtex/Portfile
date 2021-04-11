@@ -26,7 +26,7 @@ checksums           rmd160  b4ae9fa536ae35dc6813f5706a01276a10306f5c \
 sha256  00816e5f8570609d8ce3360cd23916bd3e50428a3508127578fdb4dc2b731c1c \
 size    363094
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-latexcodec \

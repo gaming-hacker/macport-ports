@@ -30,7 +30,7 @@ checksums           rmd160  36e0ec5ca461b6805dad081c690580e9c969bf66 \
 sha256  44335bf9a5e7f63fc833012a24ad2a299e5d42b9a45a1b580bca29209be63fab \
 size    17420721
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     if {${os.platform} eq "darwin" && ${os.major} <= 13} {

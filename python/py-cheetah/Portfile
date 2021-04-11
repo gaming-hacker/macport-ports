@@ -30,7 +30,7 @@ homepage            https://www.cheetahtemplate.org/
 master_sites        pypi:C/Cheetah3/
 distname            Cheetah3-${version}
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

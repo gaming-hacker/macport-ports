@@ -26,7 +26,7 @@ size    1274955
 
 distname            ${python.rootname}-${version}
 
-python.version 37
+python.version 39
 
 if {$subport ne $name} {
     depends_build-append \

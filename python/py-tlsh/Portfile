@@ -24,7 +24,7 @@ size    2829369
 dist_subdir         tlsh
 worksrcdir          ${distname}/py_ext
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

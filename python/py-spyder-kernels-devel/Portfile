@@ -22,7 +22,7 @@ checksums           rmd160  8969752887fb394d063d03c635294a0a923c6b46 \
 sha256  6824236996b64ec785dcbc2488cf8568c2b564ebb814c1287e7a89c152364560 \
 size    79707
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-spyder-kernels

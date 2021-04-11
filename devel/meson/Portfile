@@ -29,13 +29,13 @@ size    1849222
 
 # as of verison 0.45.0,requires python 3.5 or better
 
-python.version 37
+python.version 39
 python.default_version  39
 python.link_binaries    no
 
 # python39 has an issue on 10.5 and less and py39-setuptools cannot be installed
 if {${os.platform} eq "darwin" && ${os.major} <= 9} {
-    python.default_version  38
+    python.default_version  39
 }
 
 depends_build-append \

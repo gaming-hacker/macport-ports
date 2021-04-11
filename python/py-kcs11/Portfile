@@ -23,7 +23,7 @@ size    74223
 
 patchfiles          patch-setup.py-no-usr-local.diff
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -25,7 +25,7 @@ homepage            http://github.com/sprymix/csscompressor
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

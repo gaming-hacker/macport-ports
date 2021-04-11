@@ -21,7 +21,7 @@ sha256  0bdc778358e5bd06901639797adb27bf4e85602d621062b62d6be9fee70e645e \
 size    625810
 
 # Python 3.9 is not currently supported by dependency py-pysam
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

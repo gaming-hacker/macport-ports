@@ -25,7 +25,7 @@ checksums           rmd160  f494d0850098fc81ca26d623ed9f01cbe0d44b3c \
 sha256  7c76fff1b0dc70a27b07fb3f0f7007518afa07f6804019037957a922a2ac98ec \
 size    45192
 
-python.version 37
+python.version 39
 
 variant python37 conflicts python35 python36 description {Use Python 3.7} {
     python.default_version 37

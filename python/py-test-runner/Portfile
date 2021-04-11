@@ -20,7 +20,7 @@ size    12297
 homepage            https://github.com/pytesting/${python.rootname}
 
 # requires python36 or better
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

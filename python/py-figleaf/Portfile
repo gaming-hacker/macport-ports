@@ -29,7 +29,7 @@ sha256  04d22485db08f9f60c7de92407753423fa0f574c00211e409e8b0f9482f2f062 \
 size    59051
 
 deprecated.upstream_support no
-python.version 37
+python.version 39
 
 if {${name} ne ${subport}} {
     depends_lib-append \
