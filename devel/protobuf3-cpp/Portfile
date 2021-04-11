@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -12,8 +12,8 @@ github.setup    protocolbuffers protobuf 3.14.0 v
 revision        0
 
 checksums       rmd160  fe51ace0b3af284d0539be82199acd9d14ff5244 \
-                sha256  50ec5a07c0c55d4ec536dd49021f2e194a26bfdbc531d03d1e9d4d3e27175659 \
-                size    4655133
+sha256  50ec5a07c0c55d4ec536dd49021f2e194a26bfdbc531d03d1e9d4d3e27175659 \
+size    4655133
 
 name            protobuf3-cpp
 categories      devel

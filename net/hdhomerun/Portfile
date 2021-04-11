@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ if {${name} eq ${subport}} {
     extract.only        ${distname}${extract.suffix}
     worksrcdir          lib${name}
 checksums           rmd160  32e323f12b734901e5cbc644aa539cbcbf1dd9ef \
-                    sha256  a61038f0a78c5dcab3508927ba47ac6ec47840f3d42a2df2b02034cfd7400668 \
-                    size    51014
+sha256  a61038f0a78c5dcab3508927ba47ac6ec47840f3d42a2df2b02034cfd7400668 \
+size    51014
 
     patchfiles          patch-01-Makefile-libpath.diff
     patch.args          -p1

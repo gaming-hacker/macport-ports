@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        andy-shev LogJam 4.6.2 v
 revision            0
 checksums           rmd160  050d8913ee08380410679eee245557fc1fae738d \
-                    sha256  6735e98daaa0711f4723865866e89847c9ae2bd20853beebccd8d5056df5ee84 \
-                    size    789333
+sha256  6735e98daaa0711f4723865866e89847c9ae2bd20853beebccd8d5056df5ee84 \
+size    789333
 
 name                logjam
 categories          net

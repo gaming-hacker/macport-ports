@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           github 1.0
 
 github.setup        macports macports-base 2.6.4 v
@@ -26,7 +28,7 @@ github.tarball_from releases
 use_bzip2           yes
 
 checksums           rmd160 7dd671d2fd6a5aa5a22e3c47d16160ffa2efad8f \
-                    sha256 04e0dc4f44cbc6b59edb2873b3c73adf429e5053f20d2418387eeff776ec65d4
+sha256 04e0dc4f44cbc6b59edb2873b3c73adf429e5053f20d2418387eeff776ec65d4
 
 variant keep_prefix description "Use configured prefix instead of enforcing /opt/local" {}
 if {![variant_isset keep_prefix]} {

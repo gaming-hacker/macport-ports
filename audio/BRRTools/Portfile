@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           github 1.0
 PortGroup           makefile 1.0
 
@@ -13,8 +15,8 @@ long_description    BRRTools are currently the most evolved tools to \
 platforms           darwin
 
 checksums           rmd160  149ba55f45b996fb0b3548faeafa4b29ec02471c \
-                    sha256  7d09bcfc5b58491ea68700130349cc9583296847325680ece41d295d0860431f \
-                    size    14731
+sha256  7d09bcfc5b58491ea68700130349cc9583296847325680ece41d295d0860431f \
+size    14731
 
 patchfiles          patch-BRRTools-makefile.diff
 

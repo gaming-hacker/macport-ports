@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -15,8 +15,8 @@ homepage        https://linux.thai.net/projects/libthai
 master_sites    https://linux.thai.net/pub/thailinux/software/libthai
 
 checksums       rmd160  8cccdf14c3a49ecdd549516d7e62a200dc2ebe7b \
-                sha256  c26073c9862aac566e58f95964df5a33c55596ddde6f181437013855e36456c6 \
-                size    537508
+sha256  c26073c9862aac566e58f95964df5a33c55596ddde6f181437013855e36456c6 \
+size    537508
 
 depends_build   port:pkgconfig
 depends_lib     port:libdatrie

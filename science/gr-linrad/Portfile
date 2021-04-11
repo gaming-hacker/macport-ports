@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -15,8 +15,8 @@ long_description    ${description}
 github.setup        daniestevez gr-linrad 5576e4cc287f440690450ae06012101fd2278ac5
 version             20200425-[string range ${github.version} 0 7]
 checksums           rmd160  0c2051f8a3a408a988633de8e433a8ce8253e96f \
-                    sha256  74ecbb5263e427e0443e9d8e856e9e8fdb832dc514a36baedbbd743a66f0b697 \
-                    size    125883
+sha256  74ecbb5263e427e0443e9d8e856e9e8fdb832dc514a36baedbbd743a66f0b697 \
+size    125883
 revision            1
 
 set python_versions { 3.6 3.7 3.8 }

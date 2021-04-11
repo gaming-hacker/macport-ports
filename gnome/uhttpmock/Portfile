@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -20,8 +20,8 @@ master_sites        http://tecnocode.co.uk/downloads/${name}/
 use_xz              yes
 
 checksums           rmd160  310f93b4115e95617e5e4d86715c67da25e104a2 \
-                    sha256  90843223c3a30bdb7f1eb3442373a03fee425af85a9df289cd687698ccff112f \
-                    size    318708
+sha256  90843223c3a30bdb7f1eb3442373a03fee425af85a9df289cd687698ccff112f \
+size    318708
 
 depends_build       port:pkgconfig
 

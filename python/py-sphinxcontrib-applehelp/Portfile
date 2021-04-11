@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ master_sites        pypi:s/sphinxcontrib-applehelp
 distname            sphinxcontrib-applehelp-${version}
 
 checksums           rmd160  b0118252ece8c2c37bf7f0effc6af4bededa1477 \
-                    sha256  a072735ec80e7675e3f432fcae8610ecf509c5f1869d17e2eecff44389cdbc58 \
-                    size    24548
+sha256  a072735ec80e7675e3f432fcae8610ecf509c5f1869d17e2eecff44389cdbc58 \
+size    24548
 
-python.versions     35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

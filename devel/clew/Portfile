@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -43,13 +43,13 @@ distfiles           ${clew_20170324.distfile}:clew_20170324 \
                     ${clew_20160912.distfile}:clew_20160912
 
 checksums           ${clew_20170324.distfile} \
-                    rmd160  65bd3235592df7975ebc161449d9fffd7b25770d \
-                    sha256  6e442642503d53f9d59240a35c2338d2b2a9ddc7e345b386dfed16af3e908362 \
-                    size    23772 \
+rmd160  65bd3235592df7975ebc161449d9fffd7b25770d \
+sha256  6e442642503d53f9d59240a35c2338d2b2a9ddc7e345b386dfed16af3e908362 \
+size    23772 \
                     ${clew_20160912.distfile} \
-                    rmd160  727600bf740976003a8947c873453ae597f6f1bc \
-                    sha256  c3bf2d15eacec229b5752a1158a9212cda64f85dfb39c8971aeb8677eba0d964 \
-                    size    27303
+rmd160  727600bf740976003a8947c873453ae597f6f1bc \
+sha256  c3bf2d15eacec229b5752a1158a9212cda64f85dfb39c8971aeb8677eba0d964 \
+size    27303
 
 worksrcdir [lindex $commit_authors 0]-${name}-[string range [lindex $commit_hashes 0] 0 6]
 

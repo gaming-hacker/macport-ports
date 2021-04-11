@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ master_sites        sourceforge:project/littleutils/littleutils-source/${version
 use_xz              yes
 
 checksums           rmd160  a9e89e2ffc03af1746eda76c3178619c11c0e6c1 \
-                    sha256  16d01eb51d47d0d89fd5b39190b73d879dbeb215211aea9480a5751538139276 \
-                    size    207348
+sha256  16d01eb51d47d0d89fd5b39190b73d879dbeb215211aea9480a5751538139276 \
+size    207348
 
 depends_lib         port:bash \
                     port:bzip2 \

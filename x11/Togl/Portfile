@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,8 +24,8 @@ homepage            http://togl.sourceforge.net/
 dist_subdir         netgen
 
 checksums           rmd160  93f0fe02505d76ad77cc3b9be2624a329f2078c8 \
-                    sha256  0b15e66e57551e25e8eecaf02751d78cb8182bc3c7d59ae2d01711b05c59e8a9 \
-                    size    3245293
+sha256  0b15e66e57551e25e8eecaf02751d78cb8182bc3c7d59ae2d01711b05c59e8a9 \
+size    3245293
 
 worksrcdir          ${worksrcdir}/ng/Togl${version}
 

@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               app 1.0
 
 name                    ltris
@@ -25,8 +27,8 @@ homepage                http://lgames.sourceforge.net/index.php?project=LTris
 master_sites            sourceforge:project/lgames/ltris
 
 checksums               rmd160  fe451e7950c8f360ac37fc2772ec96f7bb98f273 \
-                        sha256  f868f79da7d4fc2029b38d16f393e9f09925daa5c7c4b3dbfdddf602fbdea924 \
-                        size    1804119
+sha256  f868f79da7d4fc2029b38d16f393e9f09925daa5c7c4b3dbfdddf602fbdea924 \
+size    1804119
 
 depends_lib             port:libsdl \
                         port:libsdl_mixer \

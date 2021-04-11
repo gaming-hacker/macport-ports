@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            tth
 version         4.15
@@ -22,8 +24,8 @@ extract.suffix  .tgz
 dist_subdir     ${name}/${version}
 
 checksums       rmd160  119bd88a565f8d311c43f3716daedddd4acf2201 \
-                sha256  83c1f39fbf3377fb43e3d01d042302fa91f8758aa9acc10e22fe8af140f0126c \
-                size    337841
+sha256  83c1f39fbf3377fb43e3d01d042302fa91f8758aa9acc10e22fe8af140f0126c \
+size    337841
 
 use_configure   no
 

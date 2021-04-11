@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,16 +24,16 @@ master_sites        https://github.com/myselfhimself/gmic-py/archive/:py-gmic \
 distfiles           v${version}${extract.suffix}:py-gmic \
                     gmic_${gmic_version}${extract.suffix}:gmic
 
-python.versions     37 38 39
+python.version 37
 
 checksums           v${version}${extract.suffix} \
-                    rmd160  11db37d67af0d451661562a3cae66b4b18a9b0fb \
-                    sha256  da38a9afecbc20dfc5dade26c5be94d13514dbc8498aba5f7277107cee26712e \
-                    size    13255511 \
+rmd160  11db37d67af0d451661562a3cae66b4b18a9b0fb \
+sha256  da38a9afecbc20dfc5dade26c5be94d13514dbc8498aba5f7277107cee26712e \
+size    13255511 \
                     gmic_${gmic_version}${extract.suffix} \
-                    rmd160  f2b8179bd16d7a04b8c47355bb5582c268edb075 \
-                    sha256  790bee48f496765f6b59067dfb10dc34e1eb576caf9a95f30af0d567026eacc7 \
-                    size    7279628
+rmd160  f2b8179bd16d7a04b8c47355bb5582c268edb075 \
+sha256  790bee48f496765f6b59067dfb10dc34e1eb576caf9a95f30af0d567026eacc7 \
+size    7279628
 
 if {${name} ne ${subport}} {
     build.dir       ${workpath}/gmic-py-${version}

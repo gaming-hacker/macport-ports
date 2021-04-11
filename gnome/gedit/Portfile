@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -25,8 +25,8 @@ use_xz              yes
 compiler.c_standard 2011
 
 checksums           rmd160  8f8da4df2f7975c17631e385a54541bbcd38b11e \
-                    sha256  6887554643c5b1b3862ac364d97b7b50224bff95e6758aeaa08f4a482b554197 \
-                    size    14770004
+sha256  6887554643c5b1b3862ac364d97b7b50224bff95e6758aeaa08f4a482b554197 \
+size    14770004
 
 depends_build-append \
                     port:pkgconfig \

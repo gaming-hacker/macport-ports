@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,7 @@ version             20200118
 revision            1
 name                py-pdfminer
 
-python.versions     36 37 38
+python.version 37
 
 platforms           darwin
 supported_archs     noarch
@@ -29,9 +29,9 @@ long_description    \
                     text analysis. (Currently tracking pdfminer.six fork.)
 
 checksums \
-    rmd160  99639a565fad7440a3e7b80a462ab7220149f9b0 \
-    sha256  190472d44e58b044fa636f07526e4257623d0475c06f79c5b152babcc0b9456b \
-    size    4199382
+rmd160  99639a565fad7440a3e7b80a462ab7220149f9b0 \
+sha256  190472d44e58b044fa636f07526e4257623d0475c06f79c5b152babcc0b9456b \
+size    4199382
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

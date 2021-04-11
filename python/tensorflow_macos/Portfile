@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,13 +30,13 @@ master_sites        ${github.homepage}/tarball/${git.branch}:tarball \
                     github.master_sites ${github.homepage}/releases/download/${git.branch}:releases
 
 checksums           [lindex [split [lindex ${distfiles} 0] :] 0] \
-                    rmd160  975a2ee2508df2fe801b841d3f6f8a0172854292 \
-                    sha256  623237c06941d26f52280535c0139c9d58fc214e0378b4513803a65bfda48ff6 \
-                    size    8095 \
+rmd160  975a2ee2508df2fe801b841d3f6f8a0172854292 \
+sha256  623237c06941d26f52280535c0139c9d58fc214e0378b4513803a65bfda48ff6 \
+size    8095 \
                     [lindex [split [lindex ${distfiles} 1] :] 0] \
-                    rmd160  812afc151dd87abb657df6d8e66ad8681c91a3bd \
-                    sha256  80807f8b0fc4a98ffa0b7395304fa61239f246a84f1eedbca70a5a1847d4dead \
-                    size    376699291
+rmd160  812afc151dd87abb657df6d8e66ad8681c91a3bd \
+sha256  80807f8b0fc4a98ffa0b7395304fa61239f246a84f1eedbca70a5a1847d4dead \
+size    376699291
 
 extract.cmd         ${portutil::autoconf::tar_command}
 extract.pre_args    -xzf
@@ -50,7 +50,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 20} {
     }
 }
 
-python.versions 38
+python.version 37
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-tensorflow \

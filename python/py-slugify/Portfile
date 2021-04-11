@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ long_description    ${description}
 homepage            https://github.com/un33k/python-slugify
 
 checksums           rmd160  02cde0a17e327c0df75d37a339c354de50eb04fb \
-                    sha256  69a517766e00c1268e5bbfc0d010a0a8508de0b18d30ad5a1ff357f8ae724270 \
-                    size    11079
+sha256  69a517766e00c1268e5bbfc0d010a0a8508de0b18d30ad5a1ff357f8ae724270 \
+size    11079
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

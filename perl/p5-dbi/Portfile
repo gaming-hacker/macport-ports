@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         DBI 1.643 ../../authors/id/T/TI/TIMB/
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -19,5 +19,5 @@ homepage            http://dbi.perl.org/
 platforms           darwin
 
 checksums           rmd160  c944a9568c4aa0c8f5e936bba47d9ee55d16b6cb \
-                    sha256  8a2b993db560a2c373c174ee976a51027dd780ec766ae17620c20393d2e836fa \
-                    size    612372
+sha256  8a2b993db560a2c373c174ee976a51027dd780ec766ae17620c20393d2e836fa \
+size    612372

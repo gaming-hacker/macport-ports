@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    ${name} provides unified interfaces for components like \
 homepage            https://www.freac.org/
 
 checksums           rmd160  1b5d4a94c5c4d9524da04c0d475acd58622606b5 \
-                    sha256  af01549c006ca5beeb3175178136a1598a25a1c856317ddc0c07355b0e713b6b \
-                    size    2616780
+sha256  af01549c006ca5beeb3175178136a1598a25a1c856317ddc0c07355b0e713b6b \
+size    2616780
 
 depends_lib         port:expat \
                     port:libcdio \

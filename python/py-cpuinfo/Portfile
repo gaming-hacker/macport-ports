@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,12 +22,12 @@ homepage            https://github.com/workhorsy/py-cpuinfo
 python.rootname     ${name}
 
 checksums           rmd160  a7a8a67965ee76402aa6dda66dadafc4e358373d \
-                    sha256  9aa2e49675114959697d25cf57fec41c29b55887bff3bc4809b44ac6f5730097 \
-                    size    95887
+sha256  9aa2e49675114959697d25cf57fec41c29b55887bff3bc4809b44ac6f5730097 \
+size    95887
 
 supported_archs     noarch
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append \

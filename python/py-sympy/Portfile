@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -28,8 +28,8 @@ long_description \
 homepage            https://sympy.org/
 
 checksums           rmd160  a6983e32b75fbfddf828957e1161bdcb6a23b544 \
-                    sha256  a3de9261e97535b83bb8607b0da2c7d03126650fafea2b2789657b229c246b2e \
-                    size    6473875
+sha256  a3de9261e97535b83bb8607b0da2c7d03126650fafea2b2789657b229c246b2e \
+size    6473875
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -40,8 +40,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  ea2680ccf760b469d393c72b5e1f585545231fbf \
-                            sha256  d77901d748287d15281f5ffe5b0fef62dd38f357c2b827c44ff07f35695f4e7e \
-                            size    6294719
+sha256  d77901d748287d15281f5ffe5b0fef62dd38f357c2b827c44ff07f35695f4e7e \
+size    6294719
     }
 
     depends_run         port:py-sympy_select

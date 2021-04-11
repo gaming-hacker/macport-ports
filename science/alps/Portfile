@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -8,8 +8,8 @@ name                    alps
 version                 2.3.0
 revision                10
 checksums               rmd160  40a04447f7c6d26aff0124a3b0f879aedc981ed9 \
-                        sha256  a40963811a05ad874e9f02747c532a4873095b94e183ecd31869199f58be1f65 \
-                        size    127625225
+sha256  a40963811a05ad874e9f02747c532a4873095b94e183ecd31869199f58be1f65 \
+size    127625225
 
 categories              science
 platforms               darwin
@@ -119,7 +119,7 @@ foreach s ${pythons_suffixes} {
     "
 }
 
-set selected_version python27
+set selected_version python37
 foreach s ${pythons_suffixes} {
     if {[variant_isset python${s}]} {
         set selected_version python${s}

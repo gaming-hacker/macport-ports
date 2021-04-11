@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ long_description    ${name} is an object oriented C++ class library for Windows,
 homepage            http://www.smooth-project.org/
 
 checksums           rmd160  bb26cf10840d080b3e9a04302b26c3c7bcb06ce1 \
-                    sha256  bc00a5e5650895eef629d9e4aa0c32e7438552798f1d40624498a9a116d2411d \
-                    size    8084875
+sha256  bc00a5e5650895eef629d9e4aa0c32e7438552798f1d40624498a9a116d2411d \
+size    8084875
 
 depends_lib         port:bzip2 \
                     port:curl \

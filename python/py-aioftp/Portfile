@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,11 +14,11 @@ long_description    {*}${description}
 platforms           darwin
 homepage            https://github.com/aio-libs/aioftp
 
-python.versions     37 38 39
+python.version 37
 
 checksums           rmd160  72e901bf0b15f9853da384673d3af6c186b559d2 \
-                    sha256  b5a412c748722dd679c4c2e30dd40d70a7c8879636f6eb4489fdbca72965b125 \
-                    size    49396
+sha256  b5a412c748722dd679c4c2e30dd40d70a7c8879636f6eb4489fdbca72965b125 \
+size    49396
 
 if {${name} ne ${subport}} {
     depends_build-append \

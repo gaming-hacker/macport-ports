@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    ${description}
 homepage            https://www.libimobiledevice.org/
 
 checksums           rmd160  82134afbb26665e7dc92aedceb4c1e48b7b29d98 \
-                    sha256  69f1ebc564d86a859d00734fbd0ff20c1ad9c57d7bbf7af0cba2f658c6fed0f6 \
-                    size    182675
+sha256  69f1ebc564d86a859d00734fbd0ff20c1ad9c57d7bbf7af0cba2f658c6fed0f6 \
+size    182675
 
 depends_build-append \
                     port:autoconf \
@@ -37,8 +37,8 @@ subport libplist-devel {
     revision        0
 
     checksums       rmd160  0d53051211501af8338b655b0af3500f0ad16b64 \
-                    sha256  ccf39f22c40947870711b57b43b8d811b4acc36a1dc25bb0078447f17d24b49b \
-                    size    182649
+sha256  ccf39f22c40947870711b57b43b8d811b4acc36a1dc25bb0078447f17d24b49b \
+size    182649
 
     conflicts       libplist
 

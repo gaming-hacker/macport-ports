@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -12,9 +12,9 @@ name                    py-h5py
 revision                0
 
 checksums \
-    rmd160  57cfc9f6690745d4f1864b59ef183fe6f5f79326 \
-    sha256  e87268f6dc04d5d2b5cf8d6d8765d0e6db9335935d41b60198f49658e649517d \
-    size    395914
+rmd160  57cfc9f6690745d4f1864b59ef183fe6f5f79326 \
+sha256  e87268f6dc04d5d2b5cf8d6d8765d0e6db9335935d41b60198f49658e649517d \
+size    395914
 
 platforms               darwin
 license                 BSD
@@ -34,7 +34,7 @@ long_description  \
 
 homepage                https://www.h5py.org
 
-python.versions         37 38 39
+python.version 37
 
 # Only check against releases.
 github.livecheck.regex      {([0-9.]+)}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -19,8 +19,8 @@ license             Apache-2
 platforms           darwin
 
 checksums           rmd160  92bbf3e27ddc5c211e7701540284ad4c9c0474e8 \
-                    sha256  e7c691a004d45352d303b7b797117da19c61218a18de264632d3b7d728cf9cbe \
-                    size    30519
+sha256  e7c691a004d45352d303b7b797117da19c61218a18de264632d3b7d728cf9cbe \
+size    30519
 
 depends_build-append \
                     port:dep

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ description         Installs Ruby, JRuby, Rubinius, TruffleRuby or mruby.
 long_description    ${description}
 
 checksums           rmd160  6495dc139c37f5426fa3dd15532faf2906647389 \
-                    sha256  e4fc28d7dd92795a3825e7102c3eb48bec20552adb56ffb031d809c57b974f44 \
-                    size    30953
+sha256  e4fc28d7dd92795a3825e7102c3eb48bec20552adb56ffb031d809c57b974f44 \
+size    30953
 
 use_configure       no
 

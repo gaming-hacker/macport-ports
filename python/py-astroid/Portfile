@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ platforms           darwin
 license             LGPL-2.1+
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -27,8 +27,8 @@ long_description    The aim of this module is to provide a common \
 homepage            https://github.com/pycqa/astroid
 
 checksums           rmd160  9b742e8614c9abf652182318880b5f06106add33 \
-                    sha256  6b0ed1af831570e500e2437625979eaa3b36011f66ddfc4ce930128610258ca9 \
-                    size    312789
+sha256  6b0ed1af831570e500e2437625979eaa3b36011f66ddfc4ce930128610258ca9 \
+size    312789
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -47,8 +47,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  bba1d1e3582e557ecbe6a56ca83adef5b1d80506 \
-                            sha256  fc9b582dba0366e63540982c3944a9230cbc6f303641c51483fa547dcc22393a \
-                            size    255688
+sha256  fc9b582dba0366e63540982c3944a9230cbc6f303641c51483fa547dcc22393a \
+size    255688
 
         depends_lib-append  port:py${python.version}-six \
                             port:py${python.version}-enum34 \
@@ -64,8 +64,8 @@ if {${name} ne ${subport}} {
         revision            1
         distname            ${python.rootname}-${version}
         checksums           rmd160  0ea44ae5243e5e8abad79672d53b71c1521613f7 \
-                            sha256  2f4078c2a41bf377eea06d71c9d2ba4eb8f6b1af2135bec27bbbb7d8f12bb703 \
-                            size    310972
+sha256  2f4078c2a41bf377eea06d71c9d2ba4eb8f6b1af2135bec27bbbb7d8f12bb703 \
+size    310972
 
         # fix for py-lazy_object_proxy version 1.5
         post-patch {

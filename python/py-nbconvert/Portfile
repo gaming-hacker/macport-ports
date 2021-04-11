@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://jupyter.org/
 
 checksums           rmd160  4765c18f4048c2a4d1c65e7971a7612fd35d1893 \
-                    sha256  cbbc13a86dfbd4d1b5dee106539de0795b4db156c894c2c5dc382062bbc29002 \
-                    size    896833
+sha256  cbbc13a86dfbd4d1b5dee106539de0795b4db156c894c2c5dc382062bbc29002 \
+size    896833
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -45,8 +45,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  9bbc61ecc4d33c03ebaa0c5b552af9b8d86afeec \
-                            sha256  138381baa41d83584459b5cfecfc38c800ccf1f37d9ddd0bd440783346a4c39c \
-                            size    583216
+sha256  138381baa41d83584459b5cfecfc38c800ccf1f37d9ddd0bd440783346a4c39c \
+size    583216
         depends_lib-delete  port:py${python.version}-jupyterlab_pygments \
                             port:py${python.version}-nbclient
     } elseif {${python.version} <= 36} {
@@ -54,8 +54,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  47b6634e6660409d8fc9dda92757eaad6252e9c8 \
-                            sha256  21fb48e700b43e82ba0e3142421a659d7739b65568cc832a13976a77be16b523 \
-                            size    703233
+sha256  21fb48e700b43e82ba0e3142421a659d7739b65568cc832a13976a77be16b523 \
+size    703233
         depends_lib-delete  port:py${python.version}-jupyterlab_pygments \
                             port:py${python.version}-nbclient
     }

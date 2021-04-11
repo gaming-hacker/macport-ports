@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -12,7 +12,7 @@ platforms               darwin
 maintainers             {ryandesign @ryandesign} openmaintainer
 license                 PHP-3.01
 
-php.branches            5.3 5.4 5.5 5.6 7.0 7.1 7.2 7.3 7.4
+php.branches 7.3
 php.pecl                yes
 
 description             PHP extension to create and modify images with \
@@ -22,8 +22,8 @@ long_description        Imagick is a native PHP extension for creating and \
                         modifying images using the ImageMagick API
 
 checksums               rmd160  c0dc62d13b63281ef973a948b71ddc8dff2ffe3e \
-                        sha256  8dd5aa16465c218651fc8993e1faecd982e6a597870fd4b937e9ece02d567077 \
-                        size    253434
+sha256  8dd5aa16465c218651fc8993e1faecd982e6a597870fd4b937e9ece02d567077 \
+size    253434
 
 if {${name} ne ${subport}} {
     depends_build-append \

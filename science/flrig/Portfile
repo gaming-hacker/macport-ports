@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ homepage            http://www.w1hkj.com
 master_sites        http://www.w1hkj.com/files/${name}/
 
 checksums           rmd160  6249599aac6b583073a67f79d8723cf1fd6fa7d8 \
-                    sha256  cf0d318b80159e6f158bfa16921d770bd06369b38a52d65a5662cdfbecca1ae8 \
-                    size    891644
+sha256  cf0d318b80159e6f158bfa16921d770bd06369b38a52d65a5662cdfbecca1ae8 \
+size    891644
 
 depends_build-append \
     port:pkgconfig

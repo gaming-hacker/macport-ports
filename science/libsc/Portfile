@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github         1.0
@@ -18,8 +18,8 @@ description             provides support for parallel scientific applications
 long_description        The SC Library provides support for parallel scientific applications.
 
 checksums               rmd160  4fa8e9617e6dbecd012addb81efcdcfff4151863 \
-                        sha256  f9390675a5260c8d70bdca1c62ffc6e118a6d8c9b24e499bce4273934c8f25fa \
-                        size    325667
+sha256  f9390675a5260c8d70bdca1c62ffc6e118a6d8c9b24e499bce4273934c8f25fa \
+size    325667
 
 mpi.setup               default require_fortran
 

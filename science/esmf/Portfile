@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -26,8 +26,8 @@ homepage            https://earthsystemmodeling.org
 github.tarball_from archive
 
 checksums           rmd160  59ded8c9e5db842fe7812c58ae19df98cb4bd9dd \
-                    sha256  9172fb73f3fe95c8188d889ee72fdadb4f978b1d969e1d8e401e8d106def1d84 \
-                    size    11571322
+sha256  9172fb73f3fe95c8188d889ee72fdadb4f978b1d969e1d8e401e8d106def1d84 \
+size    11571322
 
 depends_build       bin:ranlib:cctools \
                     bin:install_name_tool:cctools

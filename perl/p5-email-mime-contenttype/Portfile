@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Email-MIME-ContentType 1.024
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -12,8 +12,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  366d5d23aec18ab9cfc398073cb302ec4d64a7e3 \
-                    sha256  42d164ac7ff4dc2ea848e710fe21fa85509a3bcbb91ed2d356e4aba951ed8835 \
-                    size    22946
+sha256  42d164ac7ff4dc2ea848e710fe21fa85509a3bcbb91ed2d356e4aba951ed8835 \
+size    22946
 
 
 if {${perl5.major} != ""} {

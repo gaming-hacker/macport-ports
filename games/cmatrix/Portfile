@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,8 +14,8 @@ long_description    Console Matrix simulates the display from "The Matrix"
 homepage            https://www.asty.org/cmatrix/
 
 checksums           rmd160  73e38f7f1e903a738e98724bcc326b4c71034b44 \
-                    sha256  456d8097cb4724a69337e9803dd9b7079fa10684d22e35fc2bdd88655c03925a \
-                    size    205672
+sha256  456d8097cb4724a69337e9803dd9b7079fa10684d22e35fc2bdd88655c03925a \
+size    205672
 
 depends_build       port:autoconf port:automake
 depends_lib         port:ncurses

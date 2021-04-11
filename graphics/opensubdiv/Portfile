@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    OpenSubdiv is a set of libraries developed by \
                     interactive framerates.
 
 checksums           rmd160  1ce640b559ffac0e0bbfd817e77b9f7991bd326d \
-                    sha256  6b09b774b15cb57ac9b1f3c8378a8dbd077eb0ee349d0e8d2cb12ffd52777084 \
-                    size    39232618
+sha256  6b09b774b15cb57ac9b1f3c8378a8dbd077eb0ee349d0e8d2cb12ffd52777084 \
+size    39232618
 
 depends_build-append \
                     port:doxygen \

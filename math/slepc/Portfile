@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -28,8 +28,8 @@ homepage            https://slepc.upv.es
 master_sites        https://slepc.upv.es/download/distrib/
 
 checksums           rmd160  9091ad2c006bd5595fb100ce8b85110cbabf6362 \
-                    sha256  3e54578dda1f4c54d35ac27d02f70a43f6837906cb7604dbcec0e033cfb264c8 \
-                    size    4865497
+sha256  3e54578dda1f4c54d35ac27d02f70a43f6837906cb7604dbcec0e033cfb264c8 \
+size    4865497
 
 mpi.setup           default
 mpi.enforce_variant petsc

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -20,9 +20,9 @@ homepage            https://www.silicondust.com/
 master_sites        https://download.silicondust.com/hdhomerun
 distfiles           hdhomerun_config_gui_${version}
 checksums           hdhomerun_config_gui_20200521 \
-                    rmd160  cf83e5fb245553f5435773f86087696403ad1cfa \
-                    sha256  4a865fa3e2c5ae0d0fd10a633ccfa3c2927ae797d8a2e7e9e29684139fe339e4 \
-                    size    253374
+rmd160  cf83e5fb245553f5435773f86087696403ad1cfa \
+sha256  4a865fa3e2c5ae0d0fd10a633ccfa3c2927ae797d8a2e7e9e29684139fe339e4 \
+size    253374
 
 patchfiles          patch-libhdhomerun.diff
 patch.args          -p1

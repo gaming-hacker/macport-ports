@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       conflicts_build 1.0
@@ -24,8 +24,8 @@ master_sites    gnupg
 use_bzip2       yes
 
 checksums       rmd160  65cc1bf594ed23dcad6ac58e04cd3e70fbf161f5 \
-                sha256  fc07e70f6c615f8c4f590a8e37a9b8dd2e2ca1e9408f8e60459c67452b925e23 \
-                size    973996
+sha256  fc07e70f6c615f8c4f590a8e37a9b8dd2e2ca1e9408f8e60459c67452b925e23 \
+size    973996
 
 depends_lib     port:libiconv \
                 port:gettext

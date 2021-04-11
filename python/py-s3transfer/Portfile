@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,8 +7,8 @@ name                py-s3transfer
 version             0.3.4
 revision            0
 checksums           rmd160  781550aa1cc502991e99d3f2422aa2a5c505b193 \
-                    sha256  7fdddb4f22275cf1d32129e21f056337fd2a80b6ccef1664528145b72c49e6d2 \
-                    size    118954
+sha256  7fdddb4f22275cf1d32129e21f056337fd2a80b6ccef1664528145b72c49e6d2 \
+size    118954
 
 platforms           darwin
 license             Apache-2
@@ -19,7 +19,7 @@ long_description    ${description}
 
 homepage            https://github.com/boto/${python.rootname}
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

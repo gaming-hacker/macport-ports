@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ compiler.cxx_standard \
 if {${subport} eq ${name}} {
     revision            1
     checksums           rmd160  9e7d43ee4500a2e248d5ffa5b20591af63c0156d \
-                        sha256  7f36d57eba9dc959e1deae89e6908585a08db7f2d9399915a46a9eff33080c9c \
-                        size    5077795
+sha256  7f36d57eba9dc959e1deae89e6908585a08db7f2d9399915a46a9eff33080c9c \
+size    5077795
 
     description         vector-based 2-D animation package
 
@@ -80,8 +80,8 @@ if {${subport} eq ${name}} {
 subport ETL {
     revision            0
     checksums           rmd160  dc935e50faa4d707bc6e34efd1a21e4048ea1544 \
-                        sha256  d43396c0ac356114713469216a9257247c2588d5475590a46db63cf201d1a011 \
-                        size    271199
+sha256  d43396c0ac356114713469216a9257247c2588d5475590a46db63cf201d1a011 \
+size    271199
 
     supported_archs     noarch
 
@@ -111,8 +111,8 @@ subport ETL {
 subport synfigstudio {
     revision            0
     checksums           rmd160  cf0341a3fe0e03e93cea2d9b0aefafe330b460f1 \
-                        sha256  ca1eb1a3e2264c57974a576d1995e005079d96cee19d3dffaacded72c93fbd56 \
-                        size    6423859
+sha256  ca1eb1a3e2264c57974a576d1995e005079d96cee19d3dffaacded72c93fbd56 \
+size    6423859
 
     description         synfig animation studio
 

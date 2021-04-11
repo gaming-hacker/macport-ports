@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -17,8 +17,8 @@ version             ${branch}.4
 distname            cmake-${version}
 
 checksums           rmd160  bb9c30f2726413f0d7d7b92e0294b61438151d62 \
-                    sha256  b5d86f12ae0072db520fdbdad67405f799eb728b610ed66043c20a92b4906ca1 \
-                    size    7705052
+sha256  b5d86f12ae0072db520fdbdad67405f799eb728b610ed66043c20a92b4906ca1 \
+size    7705052
 
 master_sites        https://cmake.org/files/v${branch}/
 description         Cross-platform make pegged at version ${version}. No dependencies.

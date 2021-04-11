@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ homepage            http://jinja.pocoo.org/
 python.rootname     Jinja2
 
 checksums           md5 231dc00d34afb2672c497713fa9cdaaa \
-                    rmd160 7e7b17e8c0338dc01f36ce5593bb8cba7c963c45 \
-                    sha256 a6d58433de0ae800347cab1fa3043cebbabe8baa9d29e668f1c768cb87a333c6
+rmd160 7e7b17e8c0338dc01f36ce5593bb8cba7c963c45 \
+sha256 a6d58433de0ae800347cab1fa3043cebbabe8baa9d29e668f1c768cb87a333c6
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-setuptools \

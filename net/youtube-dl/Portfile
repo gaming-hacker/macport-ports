@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           python 1.0
 github.setup        ytdl-org youtube-dl 2021.04.07
 revision            0
 checksums           rmd160  d3f6bfb55b25b5c8847cda9365e08cd65d823950 \
-                    sha256  f5080aa885672628d63f4a3e0ff0976437b4ff2caef91321fc23cbf60c0da509 \
-                    size    3324661
+sha256  f5080aa885672628d63f4a3e0ff0976437b4ff2caef91321fc23cbf60c0da509 \
+size    3324661
 
 categories          net
 platforms           darwin
@@ -44,8 +44,8 @@ post-destroot {
     foreach f {
         etc/bash_completion.d/youtube-dl.bash-completion
         etc/fish/completions/youtube-dl.fish
-        share/man/man1/youtube-dl.1
-        share/zsh/site-functions/_youtube-dl
+share/man/man1/youtube-dl.1
+share/zsh/site-functions/_youtube-dl
     } {
         xinstall -d ${destroot}${prefix}/[file dirname ${f}]
         ln -s ${python.prefix}/${f} ${destroot}${prefix}/${f}
@@ -63,18 +63,18 @@ variant ffmpeg description {Add ffmpeg dependency, used to extract audio} {
 
 default_variants    +ffmpeg
 
-variant python27 conflicts python35 python36 python37 python38 python39 description {Use Python 2.7} {}
-variant python35 conflicts python27 python36 python37 python38 python39 description {Use Python 3.5} {}
-variant python36 conflicts python27 python35 python37 python38 python39 description {Use Python 3.6} {}
-variant python37 conflicts python27 python35 python36 python38 python39 description {Use Python 3.7} {}
-variant python38 conflicts python27 python35 python36 python37 python39 description {Use Python 3.8} {}
-variant python39 conflicts python27 python35 python36 python37 python38 description {Use Python 3.9} {}
+variant python37 conflicts python35 python36 python37 python38 python39 description {Use Python 3.7} {}
+variant python35 conflicts python37 python36 python37 python38 python39 description {Use Python 3.5} {}
+variant python36 conflicts python37 python35 python37 python38 python39 description {Use Python 3.6} {}
+variant python37 conflicts python37 python35 python36 python38 python39 description {Use Python 3.7} {}
+variant python38 conflicts python37 python35 python36 python37 python39 description {Use Python 3.8} {}
+variant python39 conflicts python37 python35 python36 python37 python38 description {Use Python 3.9} {}
 
-if {![variant_isset python27] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37] && ![variant_isset python38] && ![variant_isset python39]} {
+if {![variant_isset python37] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37] && ![variant_isset python38] && ![variant_isset python39]} {
     default_variants +python39
 }
 
-if {[variant_isset python27]} {
+if {[variant_isset python37]} {
     python.default_version  27
 } elseif {[variant_isset python35]} {
     python.default_version  35

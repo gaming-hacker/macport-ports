@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ long_description    ANTLR (ANother Tool for Language Recognition) is a \
                     to respond to the recognition of phrases of interest.
 
 checksums           rmd160  7e1ab6a6c8a0ad058c93d90d3b28da5219b2916f \
-                    sha256  fdf9de56e2b03b542276f498eb99cb166aa530226d15da9241bfc43c94178fcc \
-                    size    4495073
+sha256  fdf9de56e2b03b542276f498eb99cb166aa530226d15da9241bfc43c94178fcc \
+size    4495073
 
 compiler.cxx_standard 2011
 compiler.thread_local_storage yes

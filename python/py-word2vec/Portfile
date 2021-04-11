@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ master_sites        pypi:w/${python.rootname}/
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  22444e3e19eca84b7079527c71f71650c9f29253 \
-                    sha256  40f6f30a5f113ffbfc24c5ad5de23bfac897f4c1210fb93685b7fca5c4dee7db \
-                    size    60523
+sha256  40f6f30a5f113ffbfc24c5ad5de23bfac897f4c1210fb93685b7fca5c4dee7db \
+size    60523
 
-python.versions     27 35 36 37 38
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -41,8 +41,8 @@ if {${name} ne ${subport}} {
         revision    0
         distname    ${python.rootname}-${version}
         checksums   rmd160  aad598bb3bdecc4fe886e2d7424d929b9df3948a \
-                    sha256  4606e8537c89505824c6fd16471492764af6ae2436dc533efdfb63ae17374514 \
-                    size    54434
+sha256  4606e8537c89505824c6fd16471492764af6ae2436dc533efdfb63ae17374514 \
+size    54434
 
         depends_lib-delete \
                     port:py${python.version}-scipy \

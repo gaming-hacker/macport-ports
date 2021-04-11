@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem        1.0
 PortGroup         python 1.0
@@ -22,14 +22,14 @@ long_description  PyQtGraph is a pure-python graphics and GUI library \
 
 version           0.12.0
 checksums         rmd160  5e8d2f7d20313cb63488967b163fff8723366848 \
-                  sha256  35477023a1572c59d22a764af8584651b05e8ca76cdaef5feebdc532c1ee1135 \
-                  size    812978
+sha256  35477023a1572c59d22a764af8584651b05e8ca76cdaef5feebdc532c1ee1135 \
+size    812978
 revision          0
 
 homepage          http://pyqtgraph.org/
 distname          ${python.rootname}-${version}
 
-python.versions   27 35 36 37 38 39
+python.version 37
 
 if {$subport ne $name} {
 

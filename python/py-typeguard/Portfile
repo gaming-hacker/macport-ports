@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,10 +15,10 @@ long_description    {*}${description}
 homepage            https://github.com/agronholm/typeguard
 
 checksums           rmd160  e084c33a5c4e8ba2ad47cfac68ccb3bfeee830de \
-                    sha256  33243c1cbfcb9736a06c6db22dd08876b5f297e6344aa272a2862c0f8e669f64 \
-                    size    38781
+sha256  33243c1cbfcb9736a06c6db22dd08876b5f297e6344aa272a2862c0f8e669f64 \
+size    38781
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

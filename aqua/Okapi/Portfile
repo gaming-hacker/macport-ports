@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -20,8 +20,8 @@ distname            okapi-apps_cocoa-macosx-x86_64_${version}
 master_sites        https://dl.bintray.com/okapi/Distribution/
 
 checksums           rmd160  c2cc8de2504359bc2256b6ed9ff13c208b3ecb63 \
-                    sha256  7c223f2a24fa15dfaa6c68f35f6de8ef70f495dc2ac362bcedff00670159e318 \
-                    size    39811861
+sha256  7c223f2a24fa15dfaa6c68f35f6de8ef70f495dc2ac362bcedff00670159e318 \
+size    39811861
 
 use_dmg             yes
 use_configure       no

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -37,9 +37,9 @@ master_sites        ${github.master_sites}:${github.project}
 distfiles           [lindex ${distfiles} 0]:${github.project}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  7da33a993fe663c1dc418393cb19bd9947047233 \
-                    sha256  38074910863fdcdf38b4c7205ea926ae0776d2faa52e101b7ca8ee7b4052101e \
-                    size    88249775
+rmd160  7da33a993fe663c1dc418393cb19bd9947047233 \
+sha256  38074910863fdcdf38b4c7205ea926ae0776d2faa52e101b7ca8ee7b4052101e \
+size    88249775
 #------------------------------------------------------------------------------
 # Subport name used for staging files, etc.
 #
@@ -400,9 +400,9 @@ if {${name} eq ${subport}} {
                     ${github.project}_contrib-${version}${extract.suffix}:${github.project}_contrib
         checksums-append \
                     ${github.project}_contrib-${version}${extract.suffix} \
-                    rmd160  93552a948ff67151b7d1b00f60333d870d4c2e8f \
-                    sha256  2cb2f0529611b863ea87202252b47f7c11cdddb5b9d8ff9cbb1efbf19732abe6 \
-                    size    60605129
+rmd160  93552a948ff67151b7d1b00f60333d870d4c2e8f \
+sha256  2cb2f0529611b863ea87202252b47f7c11cdddb5b9d8ff9cbb1efbf19732abe6 \
+size    60605129
 
         depends_lib-append \
                     port:protobuf3-cpp \

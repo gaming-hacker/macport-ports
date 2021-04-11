@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -8,8 +8,8 @@ categories-append       finance
 version                 1.14
 revision                0
 checksums               rmd160  3584157fff58977d2586b58214065a37f145935e \
-                        sha256  1eb7638252ba110840a94fca5a88fbd3c35057efb0146dce1258a97305be3ea0 \
-                        size    1367651
+sha256  1eb7638252ba110840a94fca5a88fbd3c35057efb0146dce1258a97305be3ea0 \
+size    1367651
 
 license                 MIT
 platforms               darwin
@@ -23,7 +23,7 @@ homepage                https://beancount.github.io/fava/
 master_sites            pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname                ${python.rootname}-${version}
 
-python.versions         37 38
+python.version 37
 python.default_version  38
 
 depends_build-append    port:py${python.version}-setuptools_scm

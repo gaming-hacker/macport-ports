@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ master_sites        sourceforge
 use_bzip2           yes
 
 checksums           rmd160  707f0bac8377dfb1df0fd22727c3cb3b7df1f489 \
-                    sha256  331bf09d1fb2ca01739e5f97cc46c6ef134661535f2ce541f90b5b9548be431b \
-                    size    1114069
+sha256  331bf09d1fb2ca01739e5f97cc46c6ef134661535f2ce541f90b5b9548be431b \
+size    1114069
 
 patchfiles          patch-bdiff.diff patch-delta.diff patch-diff.diff \
                     patch-help.diff patch-sccs.diff

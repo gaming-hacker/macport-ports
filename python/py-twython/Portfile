@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,11 +14,11 @@ long_description    ${description} Supports both normal and streaming Twitter AP
 platforms           darwin
 homepage            https://github.com/ryanmcgrath/twython
 
-python.versions     27 36 37 38 39
+python.version 37
 
 checksums           rmd160  7208e3d189b278d181a13188ad30b56e77e11b2d \
-                    sha256  c6ca64309260e0ab47267f76217c80812f591991437f376fc61498816384f9e7 \
-                    size    373927
+sha256  c6ca64309260e0ab47267f76217c80812f591991437f376fc61498816384f9e7 \
+size    373927
 
 if {${name} ne ${subport}} {
     # https://github.com/ryanmcgrath/twython/pull/534

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           conflicts_build 1.0
@@ -27,8 +27,8 @@ master_sites        https://gstreamer.freedesktop.org/src/${my_name}/
 use_xz              yes
 
 checksums           rmd160  9964bdddc98008a967b165e84011267bfce0252d \
-                    sha256  e3f044246783fd685439647373fa13ba14f7ab0b346eadd06437092f8419e94e \
-                    size    3328600
+sha256  e3f044246783fd685439647373fa13ba14f7ab0b346eadd06437092f8419e94e \
+size    3328600
 
 depends_build       port:gtk-doc \
                     port:gzip \

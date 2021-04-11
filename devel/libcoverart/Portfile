@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -18,8 +18,8 @@ long_description    ${name} is a {*}${description}.
 homepage            https://musicbrainz.org/doc/libcoverart
 
 checksums           rmd160  2c3d15b3399b16b842cde85fa02401caf72e4cdb \
-                    sha256  5d9d4a4c46f35754e016affab83957961a364d7a4c7d64447f73bff22a300f44 \
-                    size    57933
+sha256  5d9d4a4c46f35754e016affab83957961a364d7a4c7d64447f73bff22a300f44 \
+size    57933
 
 # this software is unusual, and the cmake scripts are such that
 # out_of_source builds don't presently work

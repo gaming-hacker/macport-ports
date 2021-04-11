@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               java 1.0
@@ -20,8 +20,8 @@ long_description        JD-GUI is a standalone graphical utility that displays J
 homepage                http://java-decompiler.github.io/
 
 checksums               rmd160  dd396d140545793cb1c166f7206252b7085499d3 \
-                        sha256  606fd8e2c339faaa0cec72c855a550fd2131445c9a884fc9f2fed96071b5aa97 \
-                        size    365626
+sha256  606fd8e2c339faaa0cec72c855a550fd2131445c9a884fc9f2fed96071b5aa97 \
+size    365626
                         
 java.version            1.8+
 java.fallback           openjdk11

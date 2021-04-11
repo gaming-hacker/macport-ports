@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -7,8 +7,8 @@ name                    buildbot-slave-0.8
 version                 0.8.14
 revision                0
 checksums               rmd160  f4171b45935737ba37d8c9ee9c9cb4978618a224 \
-                        sha256  7db02738c02d34c4d32508ac200e5f089ba73549315b127a9d8c0808d1a6d7a9 \
-                        size    117325
+sha256  7db02738c02d34c4d32508ac200e5f089ba73549315b127a9d8c0808d1a6d7a9 \
+size    117325
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              devel python

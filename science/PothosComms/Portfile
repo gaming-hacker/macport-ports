@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    This communications toolkits provides DSP and higher \
 
 github.setup        pothosware PothosComms 0.3.5 pothos-comms-
 checksums           rmd160  5d96996d7eb3bc7b8b0c41087e98a114f7822637 \
-                    sha256  a3fa641e52d370e8881e9bf2081b26325e3201dfe392d427b08ab2d690fb1d1a \
-                    size    96634
+sha256  a3fa641e52d370e8881e9bf2081b26325e3201dfe392d427b08ab2d690fb1d1a \
+size    96634
 revision            1
 
 compiler.cxx_standard 2011

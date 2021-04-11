@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    This Python package and extensions are a number of tools for
 homepage            https://www.gdal.org
 
 checksums           rmd160  5b7a2df1517cba4b4bd1a22164271fba6ccd8e25 \
-                    sha256  41e928fbe6880a7b38124b8dff9efe82f3d4e1bc17f771fda46bf222289ab9a4 \
-                    size    604248
+sha256  41e928fbe6880a7b38124b8dff9efe82f3d4e1bc17f771fda46bf222289ab9a4 \
+size    604248
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     compiler.cxx_standard   2011

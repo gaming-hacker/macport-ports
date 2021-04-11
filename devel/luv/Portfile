@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    libuv bindings for luajit and lua. This library makes \
 github.tarball_from releases
 
 checksums           rmd160  4558aa18d2c17f82685d7600294a94a5eef6cbea \
-                    sha256  25a34b2aecf02d1fd32352c855577dcecd20c756dee9eb7ebecd206bf1de26d3 \
-                    size    1372517
+sha256  25a34b2aecf02d1fd32352c855577dcecd20c756dee9eb7ebecd206bf1de26d3 \
+size    1372517
 
 depends_lib         port:libuv \
                     port:lua

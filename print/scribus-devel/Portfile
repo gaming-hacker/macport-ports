@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -30,8 +30,8 @@ long_description    Scribus is an open source desktop publishing program. It \
 homepage            https://www.scribus.net/
 
 checksums           rmd160  ad37f7b805c1df1e9f91625660c1f23310efee8d \
-                    sha256  cd40b8b0917cb27df0f13b1ba98d21442ab878690fc82cf5a503ac83f6b09e0b \
-                    size    88261640
+sha256  cd40b8b0917cb27df0f13b1ba98d21442ab878690fc82cf5a503ac83f6b09e0b \
+size    88261640
 
 depends_build-append \
                     path:bin/perl:perl5

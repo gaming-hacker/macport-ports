@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -28,8 +28,8 @@ if {${subport} eq ${name}} {
 
     github.setup   libusb libusb 1.0.24 v
     checksums      rmd160 b07846d6434872ac9f083c3e159edc419510d120 \
-                   sha256 82a06eead29d0eb63cca6ef453e0546e7c7fcd21d390072d0e30a4af2ce6e08b \
-                   size   361098
+sha256 82a06eead29d0eb63cca6ef453e0546e7c7fcd21d390072d0e30a4af2ce6e08b \
+size   361098
     revision       0
 
     conflicts      libusb-devel
@@ -50,8 +50,8 @@ if {${subport} eq ${name}} {
     github.setup    libusb libusb d97e85ef4ad3a9747823421e54c31dde874c0c04
     version         20210217-[string range ${github.version} 0 7]
     checksums       rmd160  8eeb8f6bbf2c1e0e6c1c8c24d70e7eaf4cd86b77 \
-                    sha256  88978a0fb4b3b9ed810e05909793cce8c14fde63b7cc1426600c0f8c98178f03 \
-                    size    362805
+sha256  88978a0fb4b3b9ed810e05909793cce8c14fde63b7cc1426600c0f8c98178f03 \
+size    362805
     revision        0
 
     conflicts       libusb

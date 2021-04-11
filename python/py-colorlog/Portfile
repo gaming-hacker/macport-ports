@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    ${description}
 homepage            https://github.com/borntyping/python-colorlog
 
 checksums           rmd160  69d25d5f3b0d0748b461c19e2913e5eace0bc429 \
-                    sha256  59b53160c60902c405cdec28d38356e09d40686659048893e026ecbd589516b1 \
-                    size    28770
+sha256  59b53160c60902c405cdec28d38356e09d40686659048893e026ecbd589516b1 \
+size    28770
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

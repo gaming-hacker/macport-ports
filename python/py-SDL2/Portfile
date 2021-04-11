@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 
 name                py-SDL2
@@ -18,10 +20,10 @@ python.rootname     PySDL2
 homepage            https://pypi.org/project/${python.rootname}
 
 checksums           md5 e77e9c15589e15b6c877555f34a429ab \
-                    rmd160 e42e56957064a05ccfbbc133dc6615aae05e97bd \
-                    sha256 e4fcc8aa1108e4917cb56794575ee08c2a3d9c2c52620474e3ecc8538dadf209
+rmd160 e42e56957064a05ccfbbc133dc6615aae05e97bd \
+sha256 e4fcc8aa1108e4917cb56794575ee08c2a3d9c2c52620474e3ecc8538dadf209
 
-python.versions     27 34 35 36 37 38 39
+python.version 37
 
 if {$subport ne $name} {
     # setuptools dep added after 0.9.7 tagged; possible mistake?

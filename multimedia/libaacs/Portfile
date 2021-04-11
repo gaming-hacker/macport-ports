@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ depends_lib         port:libgcrypt \
                     port:libiconv
                     
 checksums           rmd160  937e27ed120f87fd960bd9095b06ccd96684c306 \
-                    sha256  6d884381fbb659e2a565eba91e72499778635975e4b3d6fd94ab364a25965387 \
-                    size    324061
+sha256  6d884381fbb659e2a565eba91e72499778635975e4b3d6fd94ab364a25965387 \
+size    324061
 
 #Shameless copy from libsdl2
 platform macosx {

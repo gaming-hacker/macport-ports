@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/bboe/update_checker
 
 checksums           rmd160  d476865d2c8ab690b40a0fbc1a092daddb7eaec4 \
-                    sha256  6a2d45bb4ac585884a6b03f9eade9161cedd9e8111545141e9aa9058932acb13 \
-                    size    6699
+sha256  6a2d45bb4ac585884a6b03f9eade9161cedd9e8111545141e9aa9058932acb13 \
+size    6699
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -34,8 +34,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  401b1c7c6b5486e6967c2cad24265efbff010d17 \
-                            sha256  2def8db7f63bd45c7d19df5df570f3f3dfeb1a1f050869d7036529295db10e62 \
-                            size    6744
+sha256  2def8db7f63bd45c7d19df5df570f3f3dfeb1a1f050869d7036529295db10e62 \
+size    6744
     }
 
     livecheck.type      none

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://jupyter.org/
 
 checksums           rmd160  70e8c9e7955421d16e123c8a862f7239fdad9ffc \
-                    sha256  cfcda0873626150932f438eccf0f8bf22bfa92345b814890ab360d666b254146 \
-                    size    4181
+sha256  cfcda0873626150932f438eccf0f8bf22bfa92345b814890ab360d666b254146 \
+size    4181
 
 if {${name} ne ${subport}} {
     depends_build-append \

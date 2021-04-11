@@ -1,4 +1,6 @@
-PortSystem        1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name              eiffelstudio
 set major_version 20.11
@@ -33,13 +35,13 @@ extract.only      ${porterpackage}
 worksrcdir        PorterPackage
 
 checksums         ${porterpackage} \
-                  rmd160  4ae4f1f096ca099c8cf590db279f3eb4bd77b6b6 \
-                  sha256  0e23faf4db05513f6398829819e75034af95186d0c19969e3e14a5b2a4e3f9bd \
-                  size    82647040 \
+rmd160  4ae4f1f096ca099c8cf590db279f3eb4bd77b6b6 \
+sha256  0e23faf4db05513f6398829819e75034af95186d0c19969e3e14a5b2a4e3f9bd \
+size    82647040 \
                   ${eiffel_launch} \
-                  rmd160  e0e0dfb909a4f6bc681fc302a2a43cac2e135903 \
-                  sha256  0aa3072008d25d1ad73582e6598e50e79341129f2c28c6199751c6ca2f1a8514 \
-                  size    22206
+rmd160  e0e0dfb909a4f6bc681fc302a2a43cac2e135903 \
+sha256  0aa3072008d25d1ad73582e6598e50e79341129f2c28c6199751c6ca2f1a8514 \
+size    22206
 
 use_configure     no
 

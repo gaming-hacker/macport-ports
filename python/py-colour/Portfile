@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ installs_libs       no
 homepage            https://www.colour-science.org
 
 checksums           rmd160  f3d9eff2ceb88bf68088770bd5062c036bdf4ace \
-                    sha256  48d6fdca2f833e5bd262a530a2475dc8fda6c2e71ddfc2a7d1a35e4a6ed5b6ad \
-                    size    1404998
+sha256  48d6fdca2f833e5bd262a530a2475dc8fda6c2e71ddfc2a7d1a35e4a6ed5b6ad \
+size    1404998
 
-python.versions     27 36 37 38
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

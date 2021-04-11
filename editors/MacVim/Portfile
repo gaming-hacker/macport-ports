@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description \
 homepage            https://macvim-dev.github.io/macvim/
 
 checksums           rmd160  884dc22e50e9ecf5acd8754d046674849b478e97 \
-                    sha256  51ee54b7c3b2dd5ec6d9856117ca12e90dd7694f06c8d40ca2830f375a6f8f76 \
-                    size    22966978
+sha256  51ee54b7c3b2dd5ec6d9856117ca12e90dd7694f06c8d40ca2830f375a6f8f76 \
+size    22966978
 
 depends_lib         port:ncurses \
                     port:gettext \
@@ -117,10 +117,10 @@ variant perl description {Enable Perl scripting} {
     depends_lib-append      path:bin/perl:perl5
 }
 
-variant python27 description {Enable Python scripting} {
+variant python37 description {Enable Python scripting} {
     configure.args-append   --enable-pythoninterp --with-python-command=${prefix}/bin/python2.7
     patchfiles-append       patch-python.diff
-    depends_lib-append      port:python27
+    depends_lib-append      port:python37
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again

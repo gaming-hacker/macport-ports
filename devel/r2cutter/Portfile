@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    Cutter is a free and open-source reverse engineering framewo
 homepage            https://www.radare.org/n/cutter.html
 
 checksums           rmd160  a94b86d9503a83318a771a6cd578658409ae0ed4 \
-                    sha256  3d3f388a33966018a6d75d300044ebc5f6b30d90fb8235b6342dd07c88d7994b \
-                    size    2408994
+sha256  3d3f388a33966018a6d75d300044ebc5f6b30d90fb8235b6342dd07c88d7994b \
+size    2408994
 
 depends_lib-append  port:radare2
 qt5.depends_component \

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             gunits
 version          2.19
@@ -15,8 +17,8 @@ master_sites     gnu:units
 distname         units-${version}
 
 checksums           rmd160  09a4e2fbc344ce01a8516f49386bb3cc2de8becd \
-                    sha256  4262136bdfc152b63ff5a9b93a7d80ce18b5e8bebdcffddc932dda769e306556 \
-                    size    1271288
+sha256  4262136bdfc152b63ff5a9b93a7d80ce18b5e8bebdcffddc932dda769e306556 \
+size    1271288
 
 depends_lib      port:readline
 

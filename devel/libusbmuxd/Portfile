@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    A client library to multiplex connections from and to iOS de
 license             LGPL-2.1
 
 checksums           rmd160  704c2d8918740afd81dcd79b6fab4d63dd488417 \
-                    sha256  61c75a0e271ef5c0a49f25f481ca51ae9a9c4d7b0f84735368f727702b78eea7 \
-                    size    48943
+sha256  61c75a0e271ef5c0a49f25f481ca51ae9a9c4d7b0f84735368f727702b78eea7 \
+size    48943
 
 depends_build-append \
                     port:autoconf \
@@ -39,8 +39,8 @@ subport libusbmuxd-devel {
     epoch           1
 
     checksums       rmd160  f16ea53953c3c14140eb5d3c978521ce28d8b83f \
-                    sha256  1bccb0e79a0f1bf455102e2c08298fe474252a4181479d5e64c0deba911ccaaf \
-                    size    48941
+sha256  1bccb0e79a0f1bf455102e2c08298fe474252a4181479d5e64c0deba911ccaaf \
+size    48941
     
     depends_lib-replace port:libplist port:libplist-devel
 

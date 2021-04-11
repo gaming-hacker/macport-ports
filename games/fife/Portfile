@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -19,11 +19,11 @@ master_sites            sourceforge:project/fife/active/src
 distname                ${name}_${version}
 
 checksums               rmd160  ccd94e7dd8c0487b81ee2e7076341ddb5e355018 \
-                        sha256  1d3c7a19d05ae426af6ccd50a8ba79a71eb6e6f18f0226d1abdaeae7fcf9d3a8
+sha256  1d3c7a19d05ae426af6ccd50a8ba79a71eb6e6f18f0226d1abdaeae7fcf9d3a8
 
 depends_build           port:scons
 
-depends_lib             port:python27 \
+depends_lib             port:python37 \
                         port:libsdl \
                         port:libsdl_image \
                         port:libsdl_ttf \
@@ -48,7 +48,7 @@ variant universal {}
 build.cmd               ${prefix}/bin/scons
 build.target            fife
 build.args              --prefix=${prefix} \
-                        --python-prefix=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/
+                        --python-prefix=${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages/
 build.env               "CXX=${configure.cxx} [get_canonical_archflags cxx]" \
                         SWIG=${prefix}/bin/swig
 

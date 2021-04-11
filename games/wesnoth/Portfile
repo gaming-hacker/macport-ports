@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -7,8 +7,8 @@ PortGroup               xcode 1.0
 github.setup            wesnoth wesnoth 1.14.13
 revision                1
 checksums               rmd160  a05b42037b35681c82a0fe2d982fc43a0cadd46e \
-                        sha256  3824a6c2828a866ede7caab81287382d5e95969e240d9e22364500a83291b8de \
-                        size    461864566
+sha256  3824a6c2828a866ede7caab81287382d5e95969e240d9e22364500a83291b8de \
+size    461864566
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              games

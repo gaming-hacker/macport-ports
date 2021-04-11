@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -38,8 +38,8 @@ long_description    \
     to backwards compatibility.
 
 checksums           rmd160  a9d538fee06f5998833c4715897cdad6c9c98861 \
-                    sha256  9d33f7bdbbd1288f69915d84b5d836e501fa349aaaa4c7e9ea70a357213afb30 \
-                    size    525776
+sha256  9d33f7bdbbd1288f69915d84b5d836e501fa349aaaa4c7e9ea70a357213afb30 \
+size    525776
 
 compiler.blacklist-append {clang < 900}
 depends_build-append port:doxygen

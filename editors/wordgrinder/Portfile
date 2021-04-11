@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           makefile 1.0
 github.setup        davidgiven wordgrinder 0.8
 revision            0
 checksums           rmd160  2624730aa538162f134f80ece6804e2435c7fa8c \
-                    sha256  856cbed2b4ccd5127f61c4997a30e642d414247970f69932f25b4b5a81b18d3f \
-                    size    2015849
+sha256  856cbed2b4ccd5127f61c4997a30e642d414247970f69932f25b4b5a81b18d3f \
+size    2015849
 
 categories          editors
 license             MIT

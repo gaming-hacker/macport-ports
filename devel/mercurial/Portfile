@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -33,8 +33,8 @@ homepage            https://www.mercurial-scm.org
 master_sites        ${homepage}/release/
 
 checksums           rmd160  6de828c1b8dc08e68fd9c08b9b108ffcfed3e601 \
-                    sha256  84930ad47a25d1f5db47acf48662bd199e45b7c331d8af6f4a8c46449ad8f372 \
-                    size    7761053
+sha256  84930ad47a25d1f5db47acf48662bd199e45b7c331d8af6f4a8c46449ad8f372 \
+size    7761053
 
 python.default_version 38
 

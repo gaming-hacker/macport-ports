@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,10 +23,10 @@ long_description    PyGraphviz is a Python interface to the Graphviz graph layou
                     interface.
 
 checksums           rmd160  fa1b0994db093de94b049f88cb0b2c70984c0893 \
-                    sha256  9dba480cf9b13cf90e7ef43070b1c8445fb52cd7f27a305ab2b6fe0c100fd768 \
-                    size    105725
+sha256  9dba480cf9b13cf90e7ef43070b1c8445fb52cd7f27a305ab2b6fe0c100fd768 \
+size    105725
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -46,15 +46,15 @@ if {${name} ne ${subport}} {
         github.tarball_from archive
         revision        0
         checksums       rmd160  22cf7a2a8aeef0bdb34a56a0570b38ae4b7f561b \
-                        sha256  9b0a7d9df881c9bb1d597ac72e96227d38b432e948d753dd9df021883668fb0e \
-                        size    101131
+sha256  9b0a7d9df881c9bb1d597ac72e96227d38b432e948d753dd9df021883668fb0e \
+size    101131
     } elseif {${python.version} in "27 35"} {
         github.setup    pygraphviz pygraphviz 1.5 pygraphviz-
         github.tarball_from archive
         revision        0
         checksums       rmd160  865d61939646f1a813fbda71e4bcf812af515aee \
-                        sha256  58c3122c7efb9a62275a915953818acd5b3e113b943075501d316ab2291dc21d \
-                        size    102796
+sha256  58c3122c7efb9a62275a915953818acd5b3e113b943075501d316ab2291dc21d \
+size    102796
     } else {
         depends_test    port:py${python.version}-pytest
 

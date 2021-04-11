@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -23,8 +23,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  174717b7098fa545a60e05252c0568023dfdbab8 \
-                    sha256  8aeafd59653ea88f6b78cb03780ee9fd61a2f993070c5f0d0976bed93ac2bd77 \
-                    size    372104
+sha256  8aeafd59653ea88f6b78cb03780ee9fd61a2f993070c5f0d0976bed93ac2bd77 \
+size    372104
 
 depends_build-append \
                     port:pkgconfig \
@@ -37,11 +37,11 @@ depends_lib         port:exiv2 \
 
 # one each of python2 python3 allowed
 
-variant python27 description {Build Python2 bindings using Python 2.7} {
-    depends_lib-append      port:py27-gobject3
+variant python37 description {Build Python2 bindings using Python 3.7} {
+    depends_lib-append      port:py37-gobject3
 }
 
-default_variants +python27
+default_variants +python37
 
 variant python36 conflicts python37 python38 python39 description {Build Python3 bindings using Python 3.6} {
     depends_lib-append      port:py36-gobject3
@@ -69,7 +69,7 @@ if {![variant_isset python36] && \
 patchfiles          patch-python-bins.diff
 
 post-patch {
-    if {[variant_isset python27]} {
+    if {[variant_isset python37]} {
         reinplace "s|@@PYTHON2_BIN@@|${prefix}/bin/python2.7|" ${worksrcpath}/meson.build
     } else {
         configure.args-append -Dpython2_girdir=no

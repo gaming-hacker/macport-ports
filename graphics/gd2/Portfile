@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -12,8 +12,8 @@ legacysupport.newest_darwin_requires_legacy 10
 github.setup                libgd libgd 2.3.2 gd-
 revision                    0
 checksums                   rmd160  6d88b4cdee53d8ff4a1559cfbf1cd7a1da1fee0d \
-                            sha256  478a047084e0d89b83616e4c2cf3c9438175fb0cc55d8c8967f06e0427f7d7fb \
-                            size    2821096
+sha256  478a047084e0d89b83616e4c2cf3c9438175fb0cc55d8c8967f06e0427f7d7fb \
+size    2821096
 
 name                        gd2
 categories                  graphics

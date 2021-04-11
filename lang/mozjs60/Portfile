@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -23,12 +23,12 @@ distname            mozjs-${version}
 use_bzip2           yes
 
 checksums           rmd160  babfc85cd14308a1494d719a5c281b3d392a046c \
-                    sha256  697331336c3d65b80ded9ca87b4a8ceb804e5342b476eaa133ac638102a9dc5d \
-                    size    32802956
+sha256  697331336c3d65b80ded9ca87b4a8ceb804e5342b476eaa133ac638102a9dc5d \
+size    32802956
 
 depends_build       port:autoconf213 \
                     port:pkgconfig \
-                    port:python27 \
+                    port:python37 \
                     port:yasm
 
 depends_lib         port:nspr \

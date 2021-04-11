@@ -1,4 +1,4 @@
-# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -20,8 +20,8 @@ long_description \
 master_sites    gnu
 
 checksums       rmd160  f35e54581ac47cb4569edb72fabbe6387c9e1104 \
-                sha256  0e0fb0903839117cb6e3b56e68222771bebf22ad7fc2295a0ed7d576e8d4329d \
-                size    1812442
+sha256  0e0fb0903839117cb6e3b56e68222771bebf22ad7fc2295a0ed7d576e8d4329d \
+size    1812442
 
 # Fix for 4.9 build failure.
 # See https://lists.gnu.org/archive/html/help-libtasn1/2016-07/msg00001.html

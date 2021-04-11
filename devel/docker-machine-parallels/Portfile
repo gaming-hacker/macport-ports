@@ -1,5 +1,7 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+PortSystem	1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +19,8 @@ long_description    A plugin for Docker Machine allowing to \
 depends_lib         port:docker-machine
 
 checksums           rmd160  f73c598447ed4266a28ee2d4ed738b4ec75ea509 \
-                    sha256  d815f1229f76a5b636eddf8806163c34482c992946ff8590094f4fab05d61628 \
-                    size    17425
+sha256  d815f1229f76a5b636eddf8806163c34482c992946ff8590094f4fab05d61628 \
+size    17425
 
 build.target        build
 build.env           GOPATH=${workpath}/go

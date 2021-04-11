@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,8 +15,8 @@ description         Execute binaries from Python packages in isolated environmen
 long_description    ${description}
 
 checksums           rmd160  c786be7c7375055d69d89cbdb7e36672917bf00c \
-                    sha256  8163804cbcd4f09b400e8c6f0d4ba85d368573bc8eb65535d90b9988959842a2 \
-                    size    357524
+sha256  8163804cbcd4f09b400e8c6f0d4ba85d368573bc8eb65535d90b9988959842a2 \
+size    357524
 
 github.livecheck.regex  {([\d.]+)}
 

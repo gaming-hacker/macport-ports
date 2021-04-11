@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github          1.0
@@ -27,8 +27,8 @@ long_description    wxWidgets ${branch} is an open-source cross-platform C++ \
 homepage            http://www.wxwidgets.org/
 
 checksums           rmd160  ae7895b1a706247400caa840c13c1d1102a03581 \
-                    sha256  2e4e12d44b111b72899f60bb0f9d1534f5253fef13a77e6cd8f857284971f084 \
-                    size    20702399
+sha256  2e4e12d44b111b72899f60bb0f9d1534f5253fef13a77e6cd8f857284971f084 \
+size    20702399
 
 dist_subdir         wxWidgets/${version}
 worksrcdir          ${distname}/build

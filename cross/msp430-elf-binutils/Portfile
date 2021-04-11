@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           crossbinutils 1.0
@@ -16,9 +16,9 @@ master_sites-append http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430
 
 distfiles-append    ${file_patch}:patch
 checksums-append    ${file_patch} \
-                    rmd160  fa0c6ddd1d9e7a44ad470671c5c5be9a61a0051a \
-                    sha256  2732abaf76e1da9e224b25d442c2f764c487087603ae1d954d6e980e48f37af7 \
-                    size    143805
+rmd160  fa0c6ddd1d9e7a44ad470671c5c5be9a61a0051a \
+sha256  2732abaf76e1da9e224b25d442c2f764c487087603ae1d954d6e980e48f37af7 \
+size    143805
 
 depends_extract-append \
                     bin:bzip2:bzip2

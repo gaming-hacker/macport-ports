@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -9,8 +9,8 @@ name                airspy
 github.setup        airspy airspyone_host 70520c999eb6612a53def319fc1b044ed1c041d8
 version             20210129-[string range ${github.version} 0 7]
 checksums           rmd160  430c5444164149d9461dab644175e36f7f426e75 \
-                    sha256  8929f9adc7374138c314c6738f61cd7a3449d1f304e9bc6a7283cb2bebba8696 \
-                    size    238891
+sha256  8929f9adc7374138c314c6738f61cd7a3449d1f304e9bc6a7283cb2bebba8696 \
+size    238891
 revision            0
 
 homepage            http://www.airspy.com/

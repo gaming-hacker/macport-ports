@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -17,8 +17,8 @@ homepage                http://www.math.sci.hiroshima-u.ac.jp/~m-mat@math.sci.hi
 master_sites            ${homepage}
 
 checksums               rmd160  98a8b83caf2d3d1d295377d838603b4fdd6abd0c \
-                        sha256  82344874522f363bf93c960044b0a6b87b651c9565b6312cf8719bb8e4c26a0e \
-                        size    291773
+sha256  82344874522f363bf93c960044b0a6b87b651c9565b6312cf8719bb8e4c26a0e \
+size    291773
 
 distname                dSFMT-src-${version}
 

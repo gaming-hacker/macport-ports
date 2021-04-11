@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    \
     geared towards motion picture production with an emphasis on visual effects and computer animation.
 
 checksums           rmd160  c05a97f24a4637597e88af7afc1698250e5ff469 \
-                    sha256  e1e6f9fd81af8d6714cea9deb6e3684bdefa285aadbab306b7117e5dedcf00f9 \
-                    size    13829193
+sha256  e1e6f9fd81af8d6714cea9deb6e3684bdefa285aadbab306b7117e5dedcf00f9 \
+size    13829193
 
 # see https://github.com/imageworks/OpenColorIO/commit/c43cc918c3e79e324f11ca47e95bfe36e9e0dd15
 patchfiles-append   patch-upstream.diff
@@ -62,20 +62,20 @@ configure.args-append \
 # OpenColorIO intentially installs Python module in lib
 # see https://github.com/imageworks/OpenColorIO/blob/15e96c1f579d3640947a5fcb5ec831383cc3956e/src/pyglue/CMakeLists.txt#L85
 
-variant python27 description {Build the Python 2.7 bindings} conflicts python36 python37 {
-    depends_lib-append port:python27
+variant python37 description {Build the Python 3.7 bindings} conflicts python36 python37 {
+    depends_lib-append port:python37
     configure.args-append \
         -DPYTHON=${prefix}/bin/python2.7
     post-destroot {
         xinstall -d -m 0755 \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages
         ln -s \
             ${prefix}/lib/python2.7/site-packages/PyOpenColorIO.so \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages/
     }
 }
 
-variant python36 description {Build the Python 3.6 bindings} conflicts python27 python37 {
+variant python36 description {Build the Python 3.6 bindings} conflicts python37 python37 {
     depends_lib-append port:python36
     configure.args-append \
         -DPYTHON=${prefix}/bin/python3.6
@@ -88,7 +88,7 @@ variant python36 description {Build the Python 3.6 bindings} conflicts python27 
     }
 }
 
-variant python37 description {Build the Python 3.7 bindings} conflicts python27 python36 {
+variant python37 description {Build the Python 3.7 bindings} conflicts python37 python36 {
     depends_lib-append port:python37
     configure.args-append \
         -DPYTHON=${prefix}/bin/python3.7
@@ -101,13 +101,13 @@ variant python37 description {Build the Python 3.7 bindings} conflicts python27 
     }
 }
 
-if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python37] && ![variant_isset python36] && ![variant_isset python37]} {
     configure.args-append \
         -DOCIO_BUILD_PYGLUE=OFF
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+    default_variants +python37
 }
 
 # make neither x11 nor quartz default since openimageio depends on opencolorio

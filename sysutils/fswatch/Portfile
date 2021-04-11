@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ long_description    A cross-platform file change monitor with multiple \
 homepage            https://emcrisostomo.github.io/fswatch/
 
 checksums           rmd160  eb0d1e47f8ad02e43621a52fe3b7ded82629443e \
-                    sha256  26b4a002dc9c5f0a5a7605e2d9c60588ea338c077fccfa4473d2b9b8b8bb6f06 \
-                    size    835220
+sha256  26b4a002dc9c5f0a5a7605e2d9c60588ea338c077fccfa4473d2b9b8b8bb6f06 \
+size    835220
 
 compiler.cxx_standard   2011
 configure.args      ac_cv_prog_AWK=/usr/bin/awk

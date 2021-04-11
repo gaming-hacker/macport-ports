@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ description         a remote shell that automatically reconnects without interru
 long_description    Eternal Terminal (ET) is ${description}.
 
 checksums           rmd160  f6682752f350f3d92b8425a27d6b29365533729b \
-                    sha256  4b79bcc1885b1deb3d5eeac4855279dfde875b7bae0a056dcd12e8239c8ef9e7 \
-                    size    2197633
+sha256  4b79bcc1885b1deb3d5eeac4855279dfde875b7bae0a056dcd12e8239c8ef9e7 \
+size    2197633
 
 depends_lib         port:gflags \
                     port:libsodium \

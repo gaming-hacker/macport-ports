@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -25,8 +25,8 @@ homepage            https://lib.filezilla-project.org/
 master_sites        https://download.filezilla-project.org/libfilezilla/
 
 checksums           rmd160  880b3fd782670669a88038cc919eb4337f0c8fbb \
-                    sha256  3bf6feb5246ed3d11b72d74b485d1989724be0884568cd456195e7624f9c7b2a \
-                    size    562726
+sha256  3bf6feb5246ed3d11b72d74b485d1989724be0884568cd456195e7624f9c7b2a \
+size    562726
 
 configure.env-append \
                     DX_PERL=/usr/bin/perl

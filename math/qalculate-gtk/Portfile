@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description    Qalculate! is a multi-purpose desktop calculator. \
 github.tarball_from releases
 
 checksums           rmd160  3972a7344395804c9c898ea98871c7abdb43840c \
-                    sha256  3e727087877c7c367c223948d8ed807fd0bbc19386dd9f6f4741c213cd6d3311 \
-                    size    2418606
+sha256  3e727087877c7c367c223948d8ed807fd0bbc19386dd9f6f4741c213cd6d3311 \
+size    2418606
 
 # This patch will no longer be relevant after the completion of the next
 # pull request: https://github.com/macports/macports-ports/pull/7399

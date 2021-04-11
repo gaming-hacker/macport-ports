@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,10 +22,10 @@ long_description    GraphQL-core 3 is a Python 3.6+ port of \
                     APIs created by Facebook.
 
 checksums           rmd160  6ce1b7d6fb3906c95a395e0b203298f9abe971ca \
-                    sha256  8659163237bbf732f6daf7d39ebbe0134725264406a7c6c53e66745258491c01 \
-                    size    496252
+sha256  8659163237bbf732f6daf7d39ebbe0134725264406a7c6c53e66745258491c01 \
+size    496252
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append \

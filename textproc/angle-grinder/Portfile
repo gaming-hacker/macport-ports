@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,9 +21,9 @@ long_description    Angle-grinder allows you to parse, aggregate, sum, \
                     but still want to be able to do sophisticated analytics.
 
 checksums-append    ${distfiles} \
-                    rmd160  66f22434d73f07f8321f2a2880746d3ed93a004d \
-                    sha256  c661d162f2246da1104f8a8cc0c6c9c536eda1e4c4c91e82ec270746ff8a7dd9 \
-                    size    938903
+rmd160  66f22434d73f07f8321f2a2880746d3ed93a004d \
+sha256  c661d162f2246da1104f8a8cc0c6c9c536eda1e4c4c91e82ec270746ff8a7dd9 \
+size    938903
 
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
@@ -231,7 +231,7 @@ cargo.crates \
     serde_derive                   1.0.118  c84d3526699cd55261af4b941e4e725444df67aa4f9e6a3564f18030d12672df \
     serde_json                      1.0.61  4fceb2595057b6891a4ee808f70054bd2d12f0e97f1cbb78689b59f676df325a \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sized-chunks                     0.3.1  f01db57d7ee89c8e053245deb77040a6cc8508311f381c88749c33d4b9b78785 \
+sized-chunks                     0.3.1  f01db57d7ee89c8e053245deb77040a6cc8508311f381c88749c33d4b9b78785 \
     slab                             0.4.2  c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8 \
     socket2                         0.3.19  122e570113d28d773067fab24266b66753f6ea915758651696b6e35e49f88d6e \
     spin                             0.5.2  6e63cff320ae2c57904679ba7cb63280a3dc4613885beafb148ee7bf9aa9042d \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -10,8 +10,8 @@ github.setup        explosion catalogue 2.0.1 v
 revision            0
 
 checksums           rmd160  ccd56e7f6c290562783787c67d2efe9cd3e325a7 \
-                    sha256  8ea3c49075982858a35cbe42d3c5bfdc386a8dc2d7265aa95b8acefc9603bfb6 \
-                    size    9024
+sha256  8ea3c49075982858a35cbe42d3c5bfdc386a8dc2d7265aa95b8acefc9603bfb6 \
+size    9024
 
 name                py-${github.project}
 categories-append   devel
@@ -34,7 +34,7 @@ long_description    catalogue is a tiny, zero-dependencies library\
                     instead saved the function, you'd have to use\
                     Pickle for serialization, which has many drawbacks.
 
-python.versions     35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -7,8 +7,8 @@ name                    capnproto
 version                 0.8.0
 revision                0
 checksums               rmd160  4de4d4ef8745b793665485e35e2e24c5239fa725 \
-                        sha256  d1f40e47574c65700f0ec98bf66729378efabe3c72bc0cda795037498541c10d \
-                        size    1579090
+sha256  d1f40e47574c65700f0ec98bf66729378efabe3c72bc0cda795037498541c10d \
+size    1579090
 
 maintainers             {cal @neverpanic} openmaintainer
 platforms               darwin

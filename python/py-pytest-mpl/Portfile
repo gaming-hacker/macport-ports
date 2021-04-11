@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -27,10 +27,10 @@ homepage            https://github.com/matplotlib/pytest-mpl
 master_sites        https://files.pythonhosted.org/packages/bb/40/04a235e54e82f0796a2115ee19454ddd8d6e85109f40da297ad76e0d43f2/
 
 checksums           rmd160  0897078fef2de206532aed9c7fc721ed1f440018 \
-                    sha256  4a223909e5148c99bd18891848c7871457729322c752c9c470bd8dd6bdf9f940 \
-                    size    174343
+sha256  4a223909e5148c99bd18891848c7871457729322c752c9c470bd8dd6bdf9f940 \
+size    174343
 
-python.versions     27 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Astro-SIMBAD-Client 0.042
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  3354b00d483ede906ad3bab676b8d08a2b244eea \
-                    sha256  16da4182bbd2c332af612500b8528348f77dd3449fcdd45c61c467d3776b8cdd \
-                    size    68869
+sha256  16da4182bbd2c332af612500b8528348f77dd3449fcdd45c61c467d3776b8cdd \
+size    68869
 
 if {${perl5.major} != ""} {
     depends_build-append \

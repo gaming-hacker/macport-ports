@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ master_sites        pypi:w/${python.rootname}
 distname            websocket_client-${version}
 
 checksums           rmd160  cfed086c0f91d9bbe0aa0c32ceb1af887bab9cea \
-                    sha256  63509b41d158ae5b7f67eb4ad20fecbb4eee99434e73e140354dc3ff8e09716f \
-                    size    48216
+sha256  63509b41d158ae5b7f67eb4ad20fecbb4eee99434e73e140354dc3ff8e09716f \
+size    48216
 
-python.versions     27 37 38 39
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

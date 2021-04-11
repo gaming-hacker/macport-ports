@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       gobject_introspection 1.0
@@ -26,7 +26,7 @@ use_xz          yes
 distname        ${gname}-${version}
 
 checksums       rmd160  8f3396d4e98023b74898e938331917b181964158 \
-                sha256  86cf0b81aa023fa93ed415653d51c96767f20b2d7334c893caba71e42654b0ae
+sha256  86cf0b81aa023fa93ed415653d51c96767f20b2d7334c893caba71e42654b0ae
 
 depends_build   port:pkgconfig \
                 port:intltool \
@@ -53,18 +53,18 @@ configure.args  --with-gtk=2.0 \
 
 configure.cflags-append -fstrict-aliasing
 
-variant python27 description {Build Python bindings using Python 2.7} {
+variant python37 description {Build Python bindings using Python 3.7} {
     configure.args-delete --disable-python
-    set python_prefix ${frameworks_dir}/Python.framework/Versions/2.7
-    depends_lib-append port:py27-pygtk
+    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.7
+    depends_lib-append port:py37-pygtk
     configure.python ${prefix}/bin/python2.7
     configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
     configure.env               PATH=${python_prefix}/bin:$env(PATH)
 }
 
-# default to optional python27 bindings
+# default to optional python37 bindings
 
-default_variants +python27
+default_variants +python37
 
 # rename gnome-pty-helper to avoid a conflict with port vte
 

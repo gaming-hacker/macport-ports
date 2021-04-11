@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,12 +16,12 @@ long_description    Beautiful Soup is a Python HTML/XML parser designed for \
                     quick turnaround projects like screen-scraping.
 
 checksums           rmd160  825e3830c785519220eab2998eb83f396cae13fd \
-                    sha256  84729e322ad1d5b4d25f805bfa05b902dd96450f43842c4e99067d5e1369eb25 \
-                    size    376031
+sha256  84729e322ad1d5b4d25f805bfa05b902dd96450f43842c4e99067d5e1369eb25 \
+size    376031
 
 homepage            https://www.crummy.com/software/BeautifulSoup/
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     if {${python.version} < 36} {
@@ -30,8 +30,8 @@ if {${name} ne ${subport}} {
         epoch       1
 
         checksums   rmd160  fc039d0cd41ef5612cdd57fcdfff4b1758a85a1a \
-                    sha256  90f8e61121d6ae58362ce3bed8cd997efb00c914eae0ff3d363c32f9a9822d10 \
-                    size    167469
+sha256  90f8e61121d6ae58362ce3bed8cd997efb00c914eae0ff3d363c32f9a9822d10 \
+size    167469
     }
 
     set branch      [join [lrange [split ${version} .] 0 1] .]

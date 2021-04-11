@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   science
 platforms           darwin
 license             {MPL-1.1 LGPL-2.1+}
 
-python.versions     27 35 36 37 38
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -24,8 +24,8 @@ long_description    rpy2 is a redesign and rewrite of rpy. It is providing a \
 homepage            http://rpy.sourceforge.net/rpy2.html
 
 checksums           rmd160  b9af4796f7dfebede41abef1b2387f2a1c5a4169 \
-                    sha256  d2b1fb0e22924b08ba11acf07b93cec1842296c005e142834008bba25b3643af \
-                    size    174054
+sha256  d2b1fb0e22924b08ba11acf07b93cec1842296c005e142834008bba25b3643af \
+size    174054
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-cffi \
@@ -42,8 +42,8 @@ if {${name} ne ${subport}} {
         distname            ${python.rootname}-${version}
 
         checksums           rmd160  0ff07cd76a5b9d0b109651b785de9f5f276121d4 \
-                            sha256  004d13734a7b9a85cbc1e7a93ec87df741e28db1273ab5b0d9efaac04a9c5f98 \
-                            size    191192
+sha256  004d13734a7b9a85cbc1e7a93ec87df741e28db1273ab5b0d9efaac04a9c5f98 \
+size    191192
 
         depends_lib-append  port:py${python.version}-singledispatch \
                             port:py${python.version}-six

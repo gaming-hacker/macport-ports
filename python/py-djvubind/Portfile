@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       python 1.0
@@ -7,7 +7,7 @@ PortGroup                       deprecated 1.0
 name                            py-djvubind
 version                         1.2.1
 revision                        2
-python.versions                 35 36
+python.version 37
 platforms                       darwin
 supported_archs                 noarch
 maintainers                     {raphael @raphael-st} openmaintainer
@@ -27,8 +27,8 @@ use_bzip2                       yes
 master_sites                    googlecode:djvubind
 
 checksums                       rmd160  9b76d78433742daace8f5c945f96a94141866454 \
-                                sha256  440a22ca948fb0cf5f2b6e44b1a59a4754859239aadddfc3a0f974526afc3a9e \
-                                size    1146105
+sha256  440a22ca948fb0cf5f2b6e44b1a59a4754859239aadddfc3a0f974526afc3a9e \
+size    1146105
 
 deprecated.upstream_support     no
 

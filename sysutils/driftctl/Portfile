@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ supported_archs     x86_64
 installs_libs       no
 
 checksums           rmd160  038c4ecc0bb2bcc91ac3b40272b933c7a1234deb \
-                    sha256  d6b6af7f92f6b23e0c59f6e8acb4dc3e266c23311f3cda9145c22e7e73b31d83 \
-                    size    18446142
+sha256  d6b6af7f92f6b23e0c59f6e8acb4dc3e266c23311f3cda9145c22e7e73b31d83 \
+size    18446142
 
 depends_build-append port:gox
 

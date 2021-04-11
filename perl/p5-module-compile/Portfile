@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Module-Compile 0.38
 platforms           darwin
 maintainers         nomaintainer
@@ -15,8 +15,8 @@ description         Perl module to compile other modules
 long_description    ${description}
 
 checksums           rmd160  449c1195fce39988b8fe42359f11840caa973470 \
-                    sha256  8090cfbb61123437eefec3e3bed86005d1f7c5a529fb6fda2ebebc6564b9aa10 \
-                    size    35482
+sha256  8090cfbb61123437eefec3e3bed86005d1f7c5a529fb6fda2ebebc6564b9aa10 \
+size    35482
 
 if {${perl5.major} != ""} {
     depends_lib-append \

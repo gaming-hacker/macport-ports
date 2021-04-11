@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,8 +12,8 @@ long_description    ${description}
 
 github.setup        nanovna NanoVNA-QT 20200507
 checksums           rmd160  e21f916570b5faad23a14601655ef09af7f72175 \
-                    sha256  e9eac940d24a3be337de8ccb7506c2aee1f154cd1cd85a5912578a07629bdc7e \
-                    size    876497
+sha256  e9eac940d24a3be337de8ccb7506c2aee1f154cd1cd85a5912578a07629bdc7e \
+size    876497
 revision            0
 
 compiler.c_standard 2011

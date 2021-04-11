@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -30,13 +30,13 @@ distfiles           ${distname}-src.tar.gz:togl \
                     tcl${tclv}-src.tar.gz:tcl
 
 checksums           ${distname}-src.tar.gz \
-                    rmd160  a0124141b824922306af3a1b4ba6ddcf857f6218 \
-                    sha256  b7d4a90bbad3aca618d505ee99e7fd8fb04c829f63231dda2360f557ba3f7610 \
-                    size    244968 \
+rmd160  a0124141b824922306af3a1b4ba6ddcf857f6218 \
+sha256  b7d4a90bbad3aca618d505ee99e7fd8fb04c829f63231dda2360f557ba3f7610 \
+size    244968 \
                     tcl${tclv}-src.tar.gz \
-                    rmd160  e44c76e48b77c825dc6fb7a78ef8f7297106784a \
-                    sha256  5196dbf6638e3df8d5c87b5815c8c2b758496eb6f0e41446596c9a4e638d87ed \
-                    size    10144235
+rmd160  e44c76e48b77c825dc6fb7a78ef8f7297106784a \
+sha256  5196dbf6638e3df8d5c87b5815c8c2b758496eb6f0e41446596c9a4e638d87ed \
+size    10144235
 
 depends_lib         port:tcl port:tk port:xorg-libXmu port:mesa
 

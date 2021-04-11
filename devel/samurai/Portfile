@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github   1.0
@@ -29,8 +29,8 @@ installs_libs       no
 supported_archs     x86_64 arm64 i386
 
 checksums           rmd160  77ec117bd14e2dbbf57aa016ed1973990eb2c368 \
-                    sha256  ddb3725e58bb4f8f645bf8a4f6a8d01c650999a13fc88c9c5f5037e327842c22 \
-                    size    32540
+sha256  ddb3725e58bb4f8f645bf8a4f6a8d01c650999a13fc88c9c5f5037e327842c22 \
+size    32540
 
 patch {
     reinplace "s|/usr/local|${prefix}|g" ${worksrcpath}/Makefile

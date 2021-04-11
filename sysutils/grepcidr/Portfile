@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -23,8 +23,8 @@ homepage            http://www.pc-tools.net/unix/grepcidr/
 master_sites        http://www.pc-tools.net/files/unix/
 
 checksums           rmd160  e4d7e90ab82506b2e46ba203f2c2d11d13c10f0f \
-                    sha256  61886a377dabf98797145c31f6ba95e6837b6786e70c932324b7d6176d50f7fb \
-                    size    16557
+sha256  61886a377dabf98797145c31f6ba95e6837b6786e70c932324b7d6176d50f7fb \
+size    16557
 
 post-extract {
     # Fix permissions

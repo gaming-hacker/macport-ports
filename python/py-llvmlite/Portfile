@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel science
 platforms           darwin
 license             BSD
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            http://llvmlite.pydata.org/
 
 checksums           rmd160  536800f1a3eb17976c75f12aa36c5e81e6c6a93b \
-                    sha256  4456512490b24d2f614058d1e14fa947eba1c3ca2c30776f99cc22b34ae7feee \
-                    size    232080
+sha256  4456512490b24d2f614058d1e14fa947eba1c3ca2c30776f99cc22b34ae7feee \
+size    232080
 
 if {${name} ne ${subport}} {
     patchfiles-append   patch-ffi_Makefile.osx.diff
@@ -58,8 +58,8 @@ if {${name} ne ${subport}} {
         github.setup        numba llvmlite 0.31.0 v
         revision            0
         checksums           rmd160  72cbabced6a93db7232a6a6d652e56993887f5d3 \
-                            sha256  fe4b36661f050565e73e07d0c31ee47bd2b44602e0bf17d4a19d3d7d0d2c60f4 \
-                            size    199646
+sha256  fe4b36661f050565e73e07d0c31ee47bd2b44602e0bf17d4a19d3d7d0d2c60f4 \
+size    199646
 
         if {${python.version} < 34} {
             depends_lib-append  port:py${python.version}-enum34

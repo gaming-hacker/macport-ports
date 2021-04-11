@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,9 +27,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  2d397499c77361c22f060b0376343e9c44ac039e \
-                    sha256  760c55867f46a078cf9ba88326c3b13fb41fc56e56c8e387314713ee99b9f3f4 \
-                    size    346694
+rmd160  2d397499c77361c22f060b0376343e9c44ac039e \
+sha256  760c55867f46a078cf9ba88326c3b13fb41fc56e56c8e387314713ee99b9f3f4 \
+size    346694
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} ${destroot}${prefix}/bin/

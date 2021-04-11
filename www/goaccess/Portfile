@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,8 +16,8 @@ homepage            https://goaccess.io/
 master_sites        http://tar.goaccess.io/
 
 checksums           rmd160  a73dde93a6d4edf89b4fa6ed7dafb99edbe174e8 \
-                    sha256  1d0f27c3382b3fb834b6cc419389a87e100d874a71e343403cd19eb5491c72d0 \
-                    size    635609
+sha256  1d0f27c3382b3fb834b6cc419389a87e100d874a71e343403cd19eb5491c72d0 \
+size    635609
 
 configure.args      --enable-tcb \
                     --enable-utf8 \

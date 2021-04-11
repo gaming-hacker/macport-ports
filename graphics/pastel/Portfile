@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,9 +21,9 @@ platforms           darwin
 license             MIT
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  b27d868fff2a6f14298f10706b2e57a321849ae9 \
-                    sha256  524357f9d05f02249c02d916aed635dfaa0ee6786877eb0ed9c1773b3363b865 \
-                    size    3226850
+rmd160  b27d868fff2a6f14298f10706b2e57a321849ae9 \
+sha256  524357f9d05f02249c02d916aed635dfaa0ee6786877eb0ed9c1773b3363b865 \
+size    3226850
 
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer

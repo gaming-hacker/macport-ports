@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ use_zip             yes
 distname            source-archive
 
 checksums           rmd160  daa5fd8f21976c235837d6c1e8ce5ea093af8907 \
-                    sha256  12d7a1c5f29bd1b447bc2e649972e4ede1ac1807df882a53594f38bbe0079c9d \
-                    size    555611
+sha256  12d7a1c5f29bd1b447bc2e649972e4ede1ac1807df882a53594f38bbe0079c9d \
+size    555611
 
 depends_build       port:pkgconfig \
                     port:autoconf \

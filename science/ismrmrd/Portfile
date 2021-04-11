@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,9 +17,9 @@ description             ISMRM Raw Data Format
 long_description        ISMRM Raw Data format tools and libraries.
 
 checksums \
-    rmd160  9f1505df2e5ae8307fb8d89a753326b5200aac79 \
-    sha256  8233243100c4ea0a8ae5b3ef6d7503ac2c8736a67dbb16c81301c251943ae2c4 \
-    size    199826
+rmd160  9f1505df2e5ae8307fb8d89a753326b5200aac79 \
+sha256  8233243100c4ea0a8ae5b3ef6d7503ac2c8736a67dbb16c81301c251943ae2c4 \
+size    199826
 
 depends_lib-append      port:hdf5 \
                         port:fftw-3-single \

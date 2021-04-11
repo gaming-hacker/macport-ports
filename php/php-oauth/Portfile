@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       php 1.1
@@ -9,21 +9,21 @@ categories      php devel
 platforms       darwin
 maintainers     {ryandesign @ryandesign} openmaintainer
 
-php.branches    5.3 5.4 5.5 5.6 7.0 7.1 7.2 7.3 7.4 8.0
+php.branches 7.3
 php.pecl        yes
 
 if {[vercmp ${php.branch} 7] >= 0} {
     version     2.0.7
     revision    0
     checksums   rmd160  c8f17903a0c19512df5e4ae05ddd7b0c262a392f \
-                sha256  d46f59072f1ade65cf4c4353b7ecf5546d1c56cad602152cb4ba72abb1aa5eec \
-                size    78926
+sha256  d46f59072f1ade65cf4c4353b7ecf5546d1c56cad602152cb4ba72abb1aa5eec \
+size    78926
 } else {
     version     1.2.3
     revision    0
     checksums   rmd160  506f0644b22323a4d1ad6794433768d83357b5ba \
-                sha256  86bb5ee37afe672d4532ad784c7f711855c79f0dabf0acacafd5344ab6cf0195 \
-                size    45531
+sha256  86bb5ee37afe672d4532ad784c7f711855c79f0dabf0acacafd5344ab6cf0195 \
+size    45531
 }
 
 description     oauth consumer extension

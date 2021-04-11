@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -8,8 +8,8 @@ github.setup                xiph rav1e 0.4.1 v
 revision                    0
 
 checksums                   rmd160  e6c17b0c1016c10da0b1aec74fd9ae09c42dbdf7 \
-                            sha256  c550938f56ff6dac83702251a143f87cb3a6c71a50d8723955290832d9960913 \
-                            size    1680855
+sha256  c550938f56ff6dac83702251a143f87cb3a6c71a50d8723955290832d9960913 \
+size    1680855
 
 categories                  multimedia
 license                     BSD
@@ -19,9 +19,9 @@ long_description            The fastest and safest AV1 encoder.
 platforms                   darwin
 
 checksums                   ${name}-${version}${extract.suffix} \
-                            rmd160  4f4c7c7e208c71d2d7ce382662678abd41b53705 \
-                            sha256  163c86e2c51e53728696451b4f2fbb497f85ca0c1b0b61d22c994dee994fd9d8 \
-                            size    4536425
+rmd160  4f4c7c7e208c71d2d7ce382662678abd41b53705 \
+sha256  163c86e2c51e53728696451b4f2fbb497f85ca0c1b0b61d22c994dee994fd9d8 \
+size    4536425
 
 depends_build-append        port:cargo-c
 if {${configure.build_arch} in {i386 x86_64}} {

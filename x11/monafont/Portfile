@@ -1,11 +1,13 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            monafont
 version         2.90
 revision        2
 checksums       rmd160  1b5dbd521581f05bd26e8339b316e0207be3c7a1 \
-                sha256  26e608598edb2c9f1a662acd8bf4e06dc75910a69fc76698e4e062113a401978 \
-                size    808897
+sha256  26e608598edb2c9f1a662acd8bf4e06dc75910a69fc76698e4e062113a401978 \
+size    808897
 
 categories      x11 fonts
 platforms       darwin

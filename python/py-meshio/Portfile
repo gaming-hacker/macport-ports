@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ homepage            https://github.com/nschloe/meshio
 platforms           darwin
 
 checksums           rmd160  86314d8c4d9aad8dc6787030967cbdbe3c9b44e2 \
-                    sha256  159883fdb7bd4cbda20955eb7bc26e565221a07a9a5c66fad500a2ad663d8149 \
-                    size    471930
+sha256  159883fdb7bd4cbda20955eb7bc26e565221a07a9a5c66fad500a2ad663d8149 \
+size    471930
 
-python.versions     37 38 39
+python.version 37
 
 
 if {${name} ne ${subport}} {

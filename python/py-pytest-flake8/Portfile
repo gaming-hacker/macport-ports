@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,10 +16,10 @@ long_description    {*}${description}
 homepage            https://github.com/vikingco/flake8-pytest
 
 checksums           rmd160  57ad385983b60ce58a1b801842cba0e65a5c1bfc \
-                    sha256  f0259761a903563f33d6f099914afef339c085085e643bee8343eb323b32dd6b \
-                    size    9560
+sha256  f0259761a903563f33d6f099914afef339c085085e643bee8343eb323b32dd6b \
+size    9560
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append \

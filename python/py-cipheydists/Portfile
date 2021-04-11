@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    This is a collection of sample distributions \
 homepage            https://github.com/Ciphey/CipheyDists
 
 checksums           rmd160 58086f41efe2d0deca3493e9bdead87ff6c88b0e \
-                    sha256 cc78ad67cd2742ed59cd8cc3b95a92658772f1b6a2a4475dba997cc675d2241d \
-                    size   10049783
+sha256 cc78ad67cd2742ed59cd8cc3b95a92658772f1b6a2a4475dba997cc675d2241d \
+size   10049783
 
-python.versions     38 39
+python.version 37
 
 if {${name} ne ${subport}} {
 

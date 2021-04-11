@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ long_description \
 github.tarball_from releases
 
 checksums           rmd160  325d629b31cb4ed9aa028aa03c074dd0483ec9a6 \
-                    sha256  ed7263f48d12a1dd94fe105156a6563125e9b3fe6361e9a9deb5b0ea5cbf03cf \
-                    size    1788899
+sha256  ed7263f48d12a1dd94fe105156a6563125e9b3fe6361e9a9deb5b0ea5cbf03cf \
+size    1788899
 
 # autoreconf to reconfigure for intltool; use package's autogen script to avoid
 # conflict with gettext

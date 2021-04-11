@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -7,8 +7,8 @@ name                signing-party
 version             2.11
 revision            0
 checksums           rmd160  58289ade13f85ec20d65d75569cdda5e774f6bee \
-                    sha256  52264331726025f413db8747795d33ef36fef318b3191a1baedfb5f59a6b534f \
-                    size    224706
+sha256  52264331726025f413db8747795d33ef36fef318b3191a1baedfb5f59a6b534f \
+size    224706
 
 categories          mail security
 maintainers         {cal @neverpanic} openmaintainer

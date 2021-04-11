@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  05758ce066371c6d9734fcfeec248f8c252585ff \
-                    sha256  a4d8dc0b50308734a7f370cb48d8baa6eb577de33e74bdbaa5aa191d066fc4c2 \
-                    size    485455
+sha256  a4d8dc0b50308734a7f370cb48d8baa6eb577de33e74bdbaa5aa191d066fc4c2 \
+size    485455
 
 depends_lib-append  port:hdf5 \
                     port:lz4

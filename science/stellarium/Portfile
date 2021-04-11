@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -37,8 +37,8 @@ if {${name} eq ${subport}} {
     conflicts    stellarium-qt4
     github.setup Stellarium stellarium 0.21.0 v
     checksums    rmd160 eb6a1fdabd8c475a6beebbec004c31c385e73d99 \
-                 sha256 deaa859489c1430838b71f4a233215c5709730647130a4ea10d9722cefb3b531 \
-                 size   353987449
+sha256 deaa859489c1430838b71f4a233215c5709730647130a4ea10d9722cefb3b531 \
+size   353987449
     revision     0
 
     # builds as 64-bit only, according to its top-level CMakeLists.txt file
@@ -51,7 +51,7 @@ if {${name} eq ${subport}} {
         path:lib/libgps.dylib:gpsd \
         port:gettext \
         port:doxygen \
-        port:python27
+        port:python37
 
     # for libqcocoa.dylib (if not above)
 

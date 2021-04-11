@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -7,8 +7,8 @@ PortGroup               qmake 1.0
 github.setup            psemiletov tea-qt 50.1.0
 revision                0
 checksums               rmd160  9adf32977598a7b8c72d5c65476a29d779f7084e \
-                        sha256  2197fb4fbd45ef7059b3933b020989326483512658eab5d6b4d8e27a5e861ebc \
-                        size    507199
+sha256  2197fb4fbd45ef7059b3933b020989326483512658eab5d6b4d8e27a5e861ebc \
+size    507199
 
 name                    tea
 description             TEA is the powerful text editor for GNU/Linux and *BSD.

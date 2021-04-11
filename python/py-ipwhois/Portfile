@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-off set: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-off set: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ description         ${name} is a simple package for retrieving and parsing \
 long_description    ${description}
 
 checksums           rmd160  497860e51b06ba0fc78a88b6d07b0ca296172f5c \
-                    sha256  3283517c5df7747d6908146d2532cd87e2f1205c349370cb8faea6999328f2c4 \
-                    size    130741
+sha256  3283517c5df7747d6908146d2532cd87e2f1205c349370cb8faea6999328f2c4 \
+size    130741
 
-python.versions     37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

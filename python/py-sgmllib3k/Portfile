@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 PortGroup          python 1.0
@@ -18,11 +18,11 @@ long_description \
 
 homepage            https://pypi.python.org/pypi/${python.rootname}/
 
-python.versions     36 37 38 39
+python.version 37
 
 checksums           rmd160  a5076132fc42434d5615606a9f325774eb53cba3 \
-                    sha256  7868fb1c8bfa764c1ac563d3cf369c381d1325d36124933a726f29fcdaa812e9 \
-                    size    5750
+sha256  7868fb1c8bfa764c1ac563d3cf369c381d1325d36124933a726f29fcdaa812e9 \
+size    5750
 
 if {${name} ne ${subport}} {
     depends_build-append port:py${python.version}-setuptools

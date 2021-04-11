@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -23,18 +23,18 @@ if {[vercmp ${qt5.version} 5.11] < 0} {
     version             5.14.2
     revision            0
     checksums           rmd160  9f4672ff0a2165a7557216ac3a14fadbb9db9375 \
-                        sha256  bd230c6fd699eabf1ceb51e13a8b79b74c00a80272c622427b80141a22269eb0 \
-                        size    3246557
+sha256  bd230c6fd699eabf1ceb51e13a8b79b74c00a80272c622427b80141a22269eb0 \
+size    3246557
 } else {
     # we the next bump check --allow-sip-warnings if needed
     version             5.15.4
     revision            0
     checksums           rmd160  c0f93412d4010e5e0d8e14e61af9579b66065bb4 \
-                        sha256  2a69597e0dd11caabe75fae133feca66387819fc9bc050f547e5551bce97e5be \
-                        size    3258085
+sha256  2a69597e0dd11caabe75fae133feca66387819fc9bc050f547e5551bce97e5be \
+size    3258085
 }
 
-python.versions 27 35 36 37 38 39
+python.version 37
 subport "${name}-common" {}
 
 foreach py_ver ${python.versions} {
@@ -87,8 +87,8 @@ if {${subport} eq "${name}-common"} {
         description         PyQt5 Webengine bindings
         long_description    ${description}
         checksums           rmd160  2e073104865646c9c5e2afaa9c839e23ce392385 \
-                            sha256  cedc28f54165f4b8067652145aec7f732a17eadf6736835852868cf76119cc19 \
-                            size    49022
+sha256  cedc28f54165f4b8067652145aec7f732a17eadf6736835852868cf76119cc19 \
+size    49022
 
         qt5.depends_component \
                             qtwebengine
@@ -99,8 +99,8 @@ if {${subport} eq "${name}-common"} {
         description         PyQt5 Charts bindings
         long_description    ${description}
         checksums           rmd160  d6177d643f23faeb557d17e0d6b77941d8d67a40 \
-                            sha256  e47750632851e105eabc27fdfa8180989d120b822181e512f6643b3c5c4d8074 \
-                            size    69252
+sha256  e47750632851e105eabc27fdfa8180989d120b822181e512f6643b3c5c4d8074 \
+size    69252
 
         qt5.depends_component \
                             qtcharts
@@ -119,7 +119,7 @@ if {${subport} eq "${name}-common"} {
                         port:dbus-python${python.version}
 
     if {${python.version} == 27} {
-        depends_lib-append port:py27-enum34
+        depends_lib-append port:py37-enum34
     }
 
     use_configure       yes

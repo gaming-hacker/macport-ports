@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             BSD
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {petr @petrrr} openmaintainer
 
@@ -28,8 +28,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  59cdb459fe7c4f0b7e90fa4e133d6f88f55d226b \
-                    sha256  c81cb40bff373ab7a7446d6bbca0190bccc5be3448b47b51d729e37799bb5692 \
-                    size    4532114
+sha256  c81cb40bff373ab7a7446d6bbca0190bccc5be3448b47b51d729e37799bb5692 \
+size    4532114
 
 # https://trac.macports.org/ticket/56666
 patchfiles-append   patch-setupinfo-remove-xcrun-call.diff

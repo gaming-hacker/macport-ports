@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -36,9 +36,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  8811fe65dc8fd7e28a2693096b4963d423687327 \
-                    sha256  ef9dd4d736dd8bdfd4e4ba8a715b321a91adb6d346ae747a97609b27067d74bf \
-                    size    35585
+rmd160  8811fe65dc8fd7e28a2693096b4963d423687327 \
+sha256  ef9dd4d736dd8bdfd4e4ba8a715b321a91adb6d346ae747a97609b27067d74bf \
+size    35585
 
 post-extract {
     file copy ${filespath}/Cargo.lock ${worksrcpath}/

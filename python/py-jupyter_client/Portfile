@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://jupyter.org
 
 checksums           rmd160  1e2bf8a6a8ec37e0744a7d5cb85895224636b43e \
-                    sha256  c4bca1d0846186ca8be97f4d2fa6d2bae889cce4892a167ffa1ba6bd1f73e782 \
-                    size    301499
+sha256  c4bca1d0846186ca8be97f4d2fa6d2bae889cce4892a167ffa1ba6bd1f73e782 \
+size    301499
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -36,8 +36,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  8dc84b386f1d095f79da23e6953b7f793e71e7b3 \
-                            sha256  60e6faec1031d63df57f1cc671ed673dced0ed420f4377ea33db37b1c188b910 \
-                            size    275850
+sha256  60e6faec1031d63df57f1cc671ed673dced0ed420f4377ea33db37b1c188b910 \
+size    275850
     }
 
     livecheck.type      none

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -50,8 +50,8 @@ depends_build-append    port:pkgconfig port:p5.28-text-diff port:coreutils
 depends_test-append port:p5.28-text-diff port:coreutils
 
 checksums           rmd160  08cc6269f375cc6335a36cbdbb13bfe9189dd065 \
-                    sha256  0087431224344550bdf61d59c6ffe6ca4e1a3b39d7b554a54dadbd2d03e569f3 \
-                    size    8644873
+sha256  0087431224344550bdf61d59c6ffe6ca4e1a3b39d7b554a54dadbd2d03e569f3 \
+size    8644873
 
 post-extract {
     if {[variant_isset gui]} {

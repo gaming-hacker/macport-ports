@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -23,10 +23,10 @@ distname                Scrapy-${version}
 master_sites            pypi:[string index ${python.rootname} 0]/${python.rootname}/
 
 checksums               rmd160  63a31248b7a5b769a6cca544f47e180ce3a5ed07 \
-                        sha256  0a68ed41f7173679f160c4cef2db05288548c21e7164170552adae8b13cefaab \
-                        size    1071824
+sha256  0a68ed41f7173679f160c4cef2db05288548c21e7164170552adae8b13cefaab \
+size    1071824
 
-python.versions 27 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
@@ -82,8 +82,8 @@ if {${name} ne ${subport}} {
         master_sites        https://files.pythonhosted.org/packages/source/S/Scrapy/
 
         checksums           rmd160  8cc9d59d8428fb948ed1463274bb895d09a86e38 \
-                            sha256  fe06576f9a4971de9dc0175c60fd92561e8275f2bad585c1cb5d65c5181b2db0 \
-                            size    977658
+sha256  fe06576f9a4971de9dc0175c60fd92561e8275f2bad585c1cb5d65c5181b2db0 \
+size    977658
 
         depends_lib-append  port:py${python.version}-functools32
         depends_lib-delete  port:py${python.version}-itemadapter \

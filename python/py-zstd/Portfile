@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,10 +18,10 @@ long_description    This extension allows Zstandard compression from Python
 homepage            https://github.com/indygreg/python-zstandard
 
 checksums           rmd160  397c7a0aafe6faa9d7941c191045793c7d81f26b \
-                    sha256  5f947c9b0a2e5b3831bff2e7132cfbd7cc22ea8a400da2304e0c089d5c22a876 \
-                    size    1059677
+sha256  5f947c9b0a2e5b3831bff2e7132cfbd7cc22ea8a400da2304e0c089d5c22a876 \
+size    1059677
 
-python.versions     36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append port:py${python.version}-setuptools

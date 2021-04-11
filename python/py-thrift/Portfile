@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -8,8 +8,8 @@ name            py-thrift
 # NOTE: This port must be kept at the same version as port:thrift and port:p5-thrift
 version         0.13.0
 checksums       rmd160 04cd735494a9d8558c2d22d1b99315ca859749c8 \
-                sha256 7ad348b88033af46ce49148097afe354d513c1fca7c607b59c33ebb6064b5179 \
-                size   4154357
+sha256 7ad348b88033af46ce49148097afe354d513c1fca7c607b59c33ebb6064b5179 \
+size   4154357
 revision        0
 
 categories      python
@@ -32,7 +32,7 @@ dist_subdir     thrift
 master_sites    apache:${dist_subdir}/${version}
 distname        thrift-${version}
 
-python.versions 27 35 36 37 38
+python.version 37
 python.default_version 37
 
 if {${name} ne ${subport}} {

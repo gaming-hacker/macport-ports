@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -26,10 +26,10 @@ master_sites    sourceforge
 distname        launch4j-${version}-macosx-x86
 extract.suffix  .tgz
 checksums       md5     f6f4b09892fe89641afd8d0832b61341 \
-                sha1    07be1b37c4fc68abc0430878a2e563dc3a52913b \
-                rmd160  0e8f52cf0dab2f5c29ea3f4e46b89a6dc794fde6 \
-                sha256  caed147c560551bcf46d1a894083808e58de62941b268ef58ca803ed09736675 \
-                size    7968945
+sha1    07be1b37c4fc68abc0430878a2e563dc3a52913b \
+rmd160  0e8f52cf0dab2f5c29ea3f4e46b89a6dc794fde6 \
+sha256  caed147c560551bcf46d1a894083808e58de62941b268ef58ca803ed09736675 \
+size    7968945
 
 # A binary copy of windres (from GNU bintools) is included; it links to
 # /opt/local/lib/libgcc/libggc_s.1.dylib for some reason. Upstream only has the

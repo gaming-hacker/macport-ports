@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.1
@@ -15,7 +15,7 @@ description         QGIS is a user-friendly GIS based on Qt 4
 long_description    QGIS is an alternative to commercial GIS such as ESRI products.\
                     It can read, write and process almost every sort of geodata. It can\
                     also serve as a front-end to other open source GIS such as Grass or Saga\
-                    and has an extensive repository of plug-ins written in Python 2.7.
+                    and has an extensive repository of plug-ins written in Python 3.7.
 
 platforms           darwin
 license             GPL-2+
@@ -23,8 +23,8 @@ license             GPL-2+
 homepage            http://www.qgis.org/
 
 checksums           rmd160  1b17a258c053e4114e2569e9465312c55dd0a566 \
-                    sha256  608f82ea128dabaeeba494da465edf4f69aad873d45b6fdbab8f6761de318cb2 \
-                    size    99355862
+sha256  608f82ea128dabaeeba494da465edf4f69aad873d45b6fdbab8f6761de318cb2 \
+size    99355862
 
 depends_lib-append  port:libiconv \
                     port:expat \
@@ -55,7 +55,7 @@ post-patch {
 
 compiler.cxx_standard   2011
 
-set Py_FRM              ${frameworks_dir}/Python.framework/Versions/2.7
+set Py_FRM              ${frameworks_dir}/Python.framework/Versions/3.7
 
 cmake.install_prefix    ${applications_dir}
 #configure.args-append  "--trace"
@@ -94,25 +94,25 @@ configure.args-append   "-DPROJ_LIBRARY=${prefix}/lib/proj49/lib/libproj.dylib"
 configure.args-append  \
         "-DSPATIALINDEX_LIBRARY=${prefix}/lib/libspatialindex.dylib"
 
-depends_lib-append      port:python27 \
-                        port:py27-pyqt4 \
-                        port:py27-gdal \
-                        port:py27-qscintilla-qt4 \
+depends_lib-append      port:python37 \
+                        port:py37-pyqt4 \
+                        port:py37-gdal \
+                        port:py37-qscintilla-qt4 \
                         port:qt4-mac-sqlite3-plugin \
                         port:qca \
                         port:qca-ossl \
                         port:qwt61 \
                         port:qjson
 
-depends_build-append    port:py27-sip
+depends_build-append    port:py37-sip
 
-depends_run-append      port:py27-psycopg2 \
-                        port:py27-spatialite \
-                        port:py27-requests
+depends_run-append      port:py37-psycopg2 \
+                        port:py37-spatialite \
+                        port:py37-requests
 
 
 pre-configure {
-                        reinplace -E "s|Versions/Current|Versions/2.7|" \
+                        reinplace -E "s|Versions/Current|Versions/3.7|" \
                         ${worksrcpath}/cmake/FindPythonLibrary.cmake
 }
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -12,8 +12,8 @@ long_description \
   routines for reading and writing frame files.
 
 checksums     rmd160  1d41648600f49255a9774c0411cb78b685393aad \
-              sha256  39604c2e012babf0a67322e71b91119206c41dd35eff8aaa0644aac932abe73d \
-              size    7341480
+sha256  39604c2e012babf0a67322e71b91119206c41dd35eff8aaa0644aac932abe73d \
+size    7341480
 
 depends_lib   port:lal \
               port:libframe \
@@ -110,8 +110,8 @@ foreach v {27 36 37 38} {
       # (duplicate of SWIG headers in ${prefix}/include)
       file delete -force ${destroot}${pythonhome}/include
 
-      # Create symbolic links in ${prefix}/bin to Python 2.7 scripts
-      if {${subport} eq "py27-${name}"} {
+      # Create symbolic links in ${prefix}/bin to Python 3.7 scripts
+      if {${subport} eq "py37-${name}"} {
         foreach script [glob -tails -nocomplain -directory ${destroot}${pythonhome}/bin *] {
           file link -symbolic ${destroot}${prefix}/bin/${script} ../Library/Frameworks/Python.framework/Versions/${pythonversion}/bin/${script}
         }

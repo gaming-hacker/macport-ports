@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   science
 license             BSD
 platforms           darwin
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://pandas.pydata.org
 
 checksums           rmd160  a1e2c680736061b4ad26e0d3cdd9ee0ab0f00be9 \
-                    sha256  df6f10b85aef7a5bb25259ad651ad1cc1d6bb09000595cab47e718cbac250b1d \
-                    size    5466356
+sha256  df6f10b85aef7a5bb25259ad651ad1cc1d6bb09000595cab47e718cbac250b1d \
+size    5466356
 
 if {${name} ne ${subport}} {
     if {${python.version} eq 27} {
@@ -30,8 +30,8 @@ if {${name} ne ${subport}} {
         revision            1
         distname            ${python.rootname}-${version}
         checksums           rmd160  a4b18e58b6be7bf13893dbccaf73542918dda1c8 \
-                            sha256  4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2 \
-                            size    11837693
+sha256  4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2 \
+size    11837693
 
         # fix implicit declaration of tolower_ascii()
         patchfiles-append   patch-a3c158dad2.diff
@@ -46,15 +46,15 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  cb526595c8b38bd4973a49ebebb61c165421628b \
-                            sha256  52da74df8a9c9a103af0a72c9d5fdc8e0183a90884278db7f386b5692a2220a4 \
-                            size    12632585
+sha256  52da74df8a9c9a103af0a72c9d5fdc8e0183a90884278db7f386b5692a2220a4 \
+size    12632585
     } elseif {${python.version} eq 36} {
         version             1.1.5
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  593ee2c082df6b4edc85670cd0221dfec5b51b30 \
-                            sha256  f10fc41ee3c75a474d3bdf68d396f10782d013d7f67db99c0efbfd0acb99701b \
-                            size    5229894
+sha256  f10fc41ee3c75a474d3bdf68d396f10782d013d7f67db99c0efbfd0acb99701b \
+size    5229894
     }
 
     use_parallel_build  no

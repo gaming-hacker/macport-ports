@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                ocaml-doc
 version             4.08
@@ -14,8 +16,8 @@ master_sites        http://caml.inria.fr/pub/distrib/ocaml-${version} \
                     ftp://ftp.inria.fr/INRIA/Projects/cristal/ocaml/ocaml-${version}
 distname            ocaml-${version}-refman-html
 checksums           rmd160  249d58ef866e9bae7ada66bbca53684f8015a392 \
-                    sha256  7e27bfb9e45b1618ab7c8461cb6c6244b006125593475c87ba49dd09746b5e77 \
-                    size    1704609
+sha256  7e27bfb9e45b1618ab7c8461cb6c6244b006125593475c87ba49dd09746b5e77 \
+size    1704609
 
 set docdir          ${prefix}/share/doc/${name}-${version}
 

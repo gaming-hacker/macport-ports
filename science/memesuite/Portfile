@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ master_sites        http://meme-suite.org/meme-software/macports \
                     http://alternate.meme-suite.org/meme-software/macports
 
 checksums           rmd160  4a0b181454d136782e2fe2a5d0bce2f8363be478 \
-                    sha256  5bae8c2fa649bcafd6bd49dfe024d2e1d577cc802f9de2ba9dba3af05191093e \
-                    size    46161174
+sha256  5bae8c2fa649bcafd6bd49dfe024d2e1d577cc802f9de2ba9dba3af05191093e \
+size    46161174
 
 depends_lib         port:expat \
                     port:gawk \

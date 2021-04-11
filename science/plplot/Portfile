@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       cmake     1.1
@@ -14,8 +14,8 @@ categories      science
 license         LGPL
 description     Scientific plotting package, double precision version
 checksums           rmd160  ebfca2cb1221e2cafa9e8d002cea421b8123b224 \
-                    sha256  b92de4d8f626a9b20c84fc94f4f6a9976edd76e33fb1eae44f6804bdcc628c7b \
-                    size    15380293
+sha256  b92de4d8f626a9b20c84fc94f4f6a9976edd76e33fb1eae44f6804bdcc628c7b \
+size    15380293
 master_sites    sourceforge:project/${name}/${name}/${version}%20Source/
 homepage        http://plplot.sourceforge.net/
 set description_base "PLplot is a cross-platform software package for \
@@ -51,8 +51,8 @@ cmake.out_of_source yes
 post-patch {
     reinplace "s|-ObjC|-ObjC -framework AquaTerm|" ${worksrcpath}/cmake/modules/aqt.cmake
     reinplace "s|-framework AquaTerm|-F${frameworks_dir} -framework AquaTerm|" ${worksrcpath}/cmake/modules/aqt.cmake
-    if {[variant_isset python27]} {
-        reinplace "s|\${CMAKE_INSTALL_EXEC_PREFIX}|${frameworks_dir}/Python.framework/Versions/2.7|" \
+    if {[variant_isset python37]} {
+        reinplace "s|\${CMAKE_INSTALL_EXEC_PREFIX}|${frameworks_dir}/Python.framework/Versions/3.7|" \
                             ${worksrcpath}/cmake/modules/python.cmake
     }
 }
@@ -161,7 +161,7 @@ subport ${name}-single {
     configure.args-append   -DPL_DOUBLE=OFF
 }
 
-if {[variant_isset py27_pyqt4]} {
+if {[variant_isset py37_pyqt4]} {
     default_variants +qt4
 }
 
@@ -214,18 +214,18 @@ variant ocaml description {Add support for OCaml} {
                             -DOCAML_HAS_GTK=OFF
 }
 
-variant python27 description {Add support for python27} {
-    depends_lib-append      port:python27 \
-                            port:py27-numpy \
+variant python37 description {Add support for python37} {
+    depends_lib-append      port:python37 \
+                            port:py37-numpy \
                             port:swig-python
     configure.args-delete   -DENABLE_python=OFF
     configure.args-append   -DENABLE_python=ON \
                             -DHAVE_NUMPY:BOOL=ON \
-                            -DPYTHON_INCLUDE_PATH=${frameworks_dir}/Python.framework/Versions/2.7/Headers
+                            -DPYTHON_INCLUDE_PATH=${frameworks_dir}/Python.framework/Versions/3.7/Headers
 }
 
-variant py27_pyqt4 requires python27 description {Add support for pyQT4 using python27} {
-    depends_lib-append      port:py27-pyqt4
+variant py37_pyqt4 requires python37 description {Add support for pyQT4 using python37} {
+    depends_lib-append      port:py37-pyqt4
     configure.args-delete   -DENABLE_pyqt4=OFF
     configure.args-append   -DENABLE_pyqt4=ON
 }

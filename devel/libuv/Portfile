@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 PortGroup        github 1.0
@@ -28,8 +28,8 @@ platform darwin {
         # peg at version 1.30.0 with patches for 10.4 Tiger, updated occasionally
         github.setup libuv libuv 1.30.0 v
         checksums rmd160 cb73c5f0681bb47606abf8e58f8fad3b75640862 \
-                  sha256 97cf47b87f20532e58f4912cfa2f68de1e2fd7c31b35b836e80e1942f2fd76e3 \
-                  size   1228472
+sha256 97cf47b87f20532e58f4912cfa2f68de1e2fd7c31b35b836e80e1942f2fd76e3 \
+size   1228472
         revision  0
 
         long_description {*}${long_description} This version is pegged for OSX 10.4 Tiger and is updated occasionally. \
@@ -54,8 +54,8 @@ platform darwin {
         # see https://trac.macports.org/ticket/57926
         github.setup libuv libuv 1.30.0 v
         checksums rmd160 cb73c5f0681bb47606abf8e58f8fad3b75640862 \
-                  sha256 97cf47b87f20532e58f4912cfa2f68de1e2fd7c31b35b836e80e1942f2fd76e3 \
-                  size   1228472
+sha256 97cf47b87f20532e58f4912cfa2f68de1e2fd7c31b35b836e80e1942f2fd76e3 \
+size   1228472
         revision  0
 
         long_description {*}${long_description} This version is pegged for OSX 10.5 Leopard and 10.6 Snow Leopard and is updated occasionally. \
@@ -71,8 +71,8 @@ platform darwin {
         # 10.7 Lion and newer use the current release
         github.setup libuv libuv 1.41.0 v
         checksums rmd160 30b02fe6dfe9910ac23b53e33d8a004a60746ef6 \
-                  sha256 2b7010d927ee5d5aec53cd4cd7241b6e4cb98d59ce1c0451799f39efb03b9572 \
-                  size   1281366
+sha256 2b7010d927ee5d5aec53cd4cd7241b6e4cb98d59ce1c0451799f39efb03b9572 \
+size   1281366
         revision  0
 
         patchfiles-append patch-libuv-unix-core-close-nocancel.diff

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ long_description    ${description} By Chih-Chung Chang and Chih-Jen Lin of      
 homepage            https://www.csie.ntu.edu.tw/~cjlin/libsvm/
 master_sites        ${homepage}
 checksums           rmd160  857fc1fed153e72c894e3579e3b6cb92309e82fb \
-                    sha256  0f122480bef44dec4df6dae056f468c208e4e08c00771ec1b6dae2707fd945be \
-                    size    609951
+sha256  0f122480bef44dec4df6dae056f468c208e4e08c00771ec1b6dae2707fd945be \
+size    609951
 
 patchfiles          patch-Makefile.diff
 
@@ -71,8 +71,8 @@ variant java description {Install Java JAR files} {
     }
 }
 
-variant python27 description {Install Python 2.7 interface} {
-    depends_lib-append  port:python27
+variant python37 description {Install Python 3.7 interface} {
+    depends_lib-append  port:python37
     post-destroot { install_py 2.7 }
 }
 
@@ -109,7 +109,7 @@ variant tools description {Install useful tools} {
     }
 }
 
-default_variants    +java +python27 +tools
+default_variants    +java +python37 +tools
 
 livecheck.type      regex
 livecheck.regex     {Version ([0-9.]+) }

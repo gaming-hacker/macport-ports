@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            http://bitbucket.org/zzzeek/alembic
 
 checksums           rmd160  8665acc47598eaa6fde017b3140cec758270741f \
-                    sha256  e27fd67732c97a1c370c33169ef4578cf96436fa0e7dcfaeeef4a917d0737d56 \
-                    size    1154284
+sha256  e27fd67732c97a1c370c33169ef4578cf96436fa0e7dcfaeeef4a917d0737d56 \
+size    1154284
 
 if {${name} ne ${subport}} {
 
@@ -31,8 +31,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  e42a3a976700ea2d457599b06f039ed5429d7402 \
-                            sha256  d412982920653db6e5a44bfd13b1d0db5685cbaaccaf226195749c706e1e862a \
-                            size    1072775
+sha256  d412982920653db6e5a44bfd13b1d0db5685cbaaccaf226195749c706e1e862a \
+size    1072775
     }
 
     depends_lib-append  port:py${python.version}-setuptools \

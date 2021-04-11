@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -13,7 +13,7 @@ platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -26,8 +26,8 @@ long_description    The pytest framework makes it easy to write small tests, \
 homepage            https://pytest.org
 
 checksums           rmd160  751b91cd0cb44bbd83ee7f83ef78472762e1701a \
-                    sha256  671238a46e4df0f3498d1c3270e5deb9b32d25134c99b7d75370a68cfbe9b634 \
-                    size    1117995
+sha256  671238a46e4df0f3498d1c3270e5deb9b32d25134c99b7d75370a68cfbe9b634 \
+size    1117995
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -52,8 +52,8 @@ if {${name} ne ${subport}} {
         revision            2
         distname            ${python.rootname}-${version}
         checksums           rmd160  5d88707bd2fc29ee675087b24461a9ca8cbe1ffb \
-                            sha256  4a784f1d4f2ef198fe9b7aef793e9fa1a3b2f84e822d9b3a64a181293a572d45 \
-                            size    949947
+sha256  4a784f1d4f2ef198fe9b7aef793e9fa1a3b2f84e822d9b3a64a181293a572d45 \
+size    949947
 
         depends_lib-append  port:py${python.version}-atomicwrites \
                             port:py${python.version}-six \
@@ -64,8 +64,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  c846ffd08e49fe6742a97b6606aebcf4a2761f01 \
-                            sha256  7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8 \
-                            size    1022353
+sha256  7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8 \
+size    1022353
         depends_lib-append  port:py${python.version}-more-itertools
     }
 

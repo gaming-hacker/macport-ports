@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Perl-LanguageServer 2.1.0
 
 platforms           darwin
@@ -20,8 +20,8 @@ long_description    Perl::LanguageServer is a Language Server and Debug Protocol
                     It also implements the Debug Adapter Protocol, which allows debugging with various editors.                    
 
 checksums           rmd160  43a792461e8d8d9e5302b633b287e018d083b0fc \
-                    sha256  5de309dc4e16fe91e971af523f6d209aa254045e26bbf1694dbdd19f80ce517f \
-                    size    36040
+sha256  5de309dc4e16fe91e971af523f6d209aa254045e26bbf1694dbdd19f80ce517f \
+size    36040
 
 if {${perl5.major} ne ""} {
     depends_lib-append \

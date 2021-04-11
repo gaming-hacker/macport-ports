@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -51,52 +51,52 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  e01d37ef2731992c84069fb276cfb38a5f49ad6d \
-                        sha256  16af2c59bda579dbaa74e228a7eed1c5bbbc2639b6a01fa8bc11c4a4f6ae101e \
-                        size    474595
+rmd160  e01d37ef2731992c84069fb276cfb38a5f49ad6d \
+sha256  16af2c59bda579dbaa74e228a7eed1c5bbbc2639b6a01fa8bc11c4a4f6ae101e \
+size    474595
 
 go.vendors          golang.org/x/xerrors \
                         lock    5ec99f83aff1 \
-                        rmd160  6e8267f353e153297f205e4be219236d6ae43880 \
-                        sha256  9a500a49d83a09e7de6c71b215d1c14b81e315d26884530ef327c95ddf1f2d28 \
-                        size    13667 \
+rmd160  6e8267f353e153297f205e4be219236d6ae43880 \
+sha256  9a500a49d83a09e7de6c71b215d1c14b81e315d26884530ef327c95ddf1f2d28 \
+size    13667 \
                     golang.org/x/tools \
                         lock    v0.1.0 \
-                        rmd160  ed8549ff61216e862597412cca9a2f3cd3448147 \
-                        sha256  7ee4ceea7cc41925aa41c185d17886694bcd611cb9896be15e578a491c8594c0 \
-                        size    2683296 \
+rmd160  ed8549ff61216e862597412cca9a2f3cd3448147 \
+sha256  7ee4ceea7cc41925aa41c185d17886694bcd611cb9896be15e578a491c8594c0 \
+size    2683296 \
                     golang.org/x/text \
                         lock    v0.3.0 \
-                        rmd160  81061ce2006da3d6f7a8ef8dae237d65305513d3 \
-                        sha256  6243d5bbd9d8550bc44cb58a0d70180f7a3f6767299b490015107b4d27c604ae \
-                        size    6102563 \
+rmd160  81061ce2006da3d6f7a8ef8dae237d65305513d3 \
+sha256  6243d5bbd9d8550bc44cb58a0d70180f7a3f6767299b490015107b4d27c604ae \
+size    6102563 \
                     golang.org/x/sys \
                         lock    b64e53b001e4 \
-                        rmd160  eb9c17a2964f138171e208deb3c3ebc8a9f8ff02 \
-                        sha256  5bc19a2c586a4703fcd4bca3fe19d093dd9bd614527cfb96c3845dcd1b49a6f9 \
-                        size    1103887 \
+rmd160  eb9c17a2964f138171e208deb3c3ebc8a9f8ff02 \
+sha256  5bc19a2c586a4703fcd4bca3fe19d093dd9bd614527cfb96c3845dcd1b49a6f9 \
+size    1103887 \
                     golang.org/x/sync \
                         lock    112230192c58 \
-                        rmd160  37a8b11def31e2ad355002a8671245962be359f6 \
-                        sha256  951a6df1dadb061510f1c646197dd8f8a7c7842729d02c6a68a86bce66349f79 \
-                        size    16832 \
+rmd160  37a8b11def31e2ad355002a8671245962be359f6 \
+sha256  951a6df1dadb061510f1c646197dd8f8a7c7842729d02c6a68a86bce66349f79 \
+size    16832 \
                     golang.org/x/net \
                         lock    eb5bcb51f2a3 \
-                        rmd160  cb943e35e512e30b1a1ee9a9af23e200de7fc2fd \
-                        sha256  50ba342bcc50da4b4590ee91a6586f9d0aab43907596c2a0995e6f0868353e7a \
-                        size    976956 \
+rmd160  cb943e35e512e30b1a1ee9a9af23e200de7fc2fd \
+sha256  50ba342bcc50da4b4590ee91a6586f9d0aab43907596c2a0995e6f0868353e7a \
+size    976956 \
                     golang.org/x/mod \
                         lock    v0.3.0 \
-                        rmd160  0f19d3d89a7745c9877e5095399e24bdb2a79908 \
-                        sha256  d4e740958a7d07574b73c6b6a5ab717cd0bc219416e47c5950fe3cefab414f92 \
-                        size    93933 \
+rmd160  0f19d3d89a7745c9877e5095399e24bdb2a79908 \
+sha256  d4e740958a7d07574b73c6b6a5ab717cd0bc219416e47c5950fe3cefab414f92 \
+size    93933 \
                     github.com/kisielk/gotool \
                         lock    v1.0.0 \
-                        rmd160  1be58c6702fce46d7c8c83a280517e1888d5d786 \
-                        sha256  78e9d0b64c827b2d688e409ad000852b97ec95dece0bf309c6f04bf837ff48df \
-                        size    9428 \
+rmd160  1be58c6702fce46d7c8c83a280517e1888d5d786 \
+sha256  78e9d0b64c827b2d688e409ad000852b97ec95dece0bf309c6f04bf837ff48df \
+size    9428 \
                     github.com/BurntSushi/toml \
                         lock    v0.3.1 \
-                        rmd160  fb9650e2d16525153645e5547626f242f3800149 \
-                        sha256  8cc9e5dc68e247554227973d0b4e023b27bbd9ba5a26e4fb40f44743afcb35f1 \
-                        size    42087
+rmd160  fb9650e2d16525153645e5547626f242f3800149 \
+sha256  8cc9e5dc68e247554227973d0b4e023b27bbd9ba5a26e4fb40f44743afcb35f1 \
+size    42087

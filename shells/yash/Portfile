@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ depends_lib         port:gettext port:ncurses
 master_sites        osdn:${name}/71638
 use_xz              yes
 checksums           rmd160  fb8eef3f84775e43f99b34d1085d0ace93e157a9 \
-                    sha256  66eaf11d6c749165a7503801691759ae151e4eae00785875e121db2e9c219c72 \
-                    size    740780
+sha256  66eaf11d6c749165a7503801691759ae151e4eae00785875e121db2e9c219c72 \
+size    740780
 
 patchfiles          respect-destdir.patch
 

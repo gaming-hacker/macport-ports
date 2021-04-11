@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -27,8 +27,8 @@ homepage            https://ocaml.org
 master_sites        http://caml.inria.fr/pub/distrib/ocaml-${major_vers}/
 
 checksums           rmd160  f32ff3e729c2af15a398a27c27c2815e32306175 \
-                    sha256  39ee9db8dc1e3eb65473dd81a71fabab7cc253dbd7b85e9f9b5b28271319bec3 \
-                    size    3564140
+sha256  39ee9db8dc1e3eb65473dd81a71fabab7cc253dbd7b85e9f9b5b28271319bec3 \
+size    3564140
 
 description         Compiler and libraries for the OCaml programming language
 long_description    OCaml is an industrial strength programming language \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,11 +26,11 @@ long_description    A collection of Python deprecation patterns and \
                     applications) about future deprecations.
 homepage            https://docs.openstack.org/debtcollector/latest/
 checksums           md5     9a1014f18abbc565b8e149fd70048c22 \
-                    rmd160  0525388be16b904a74450901facf99539b307201 \
-                    sha256  a25fc6215560d81cb9f2a0b58d6c834f2a24010987027bde169599e138a205af \
-                    size    28706
+rmd160  0525388be16b904a74450901facf99539b307201 \
+sha256  a25fc6215560d81cb9f2a0b58d6c834f2a24010987027bde169599e138a205af \
+size    28706
 
-python.versions     36 37 38
+python.version 37
 
 if {${subport} ne ${name}} {
     livecheck.type  none

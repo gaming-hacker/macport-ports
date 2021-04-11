@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 homepage            https://github.com/wolever/parameterized
 
 checksums           sha256  41bbff37d6186430f77f900d777e5bb6a24928a1c46fb1de692f8b52b8833b5c \
-                    rmd160  a9038d08e8c26a89085c4b308bafe884e647982c \
-                    size    23936
+rmd160  a9038d08e8c26a89085c4b308bafe884e647982c \
+size    23936
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

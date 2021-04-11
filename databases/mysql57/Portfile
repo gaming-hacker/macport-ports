@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           conflicts_build 1.0
@@ -45,13 +45,13 @@ if {$subport eq $name} {
                         ${boost_distname}${extract.suffix}:boost
 
     checksums           ${distname}${extract.suffix} \
-                        rmd160  b041f96c892083f03228eb2e4a24f05cce452f3f \
-                        sha256  ad3b8d80d7b6e307cdf9eb061cbecccfe78bb5ecef24f2b17818d8e3ea2063ad \
-                        size    56179381 \
+rmd160  b041f96c892083f03228eb2e4a24f05cce452f3f \
+sha256  ad3b8d80d7b6e307cdf9eb061cbecccfe78bb5ecef24f2b17818d8e3ea2063ad \
+size    56179381 \
                         ${boost_distname}${extract.suffix} \
-                        rmd160  a7974be69a426e8a56b880a412d6c418e4cd751c \
-                        sha256  47f11c8844e579d02691a607fbd32540104a9ac7a2534a8ddaef50daf502baac \
-                        size    83709983
+rmd160  a7974be69a426e8a56b880a412d6c418e4cd751c \
+sha256  47f11c8844e579d02691a607fbd32540104a9ac7a2534a8ddaef50daf502baac \
+size    83709983
 
     depends_lib-append  port:ncurses \
                         port:libedit \

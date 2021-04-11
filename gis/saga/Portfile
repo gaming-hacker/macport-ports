@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           wxWidgets 1.0
@@ -25,8 +25,8 @@ homepage            http://www.saga-gis.org/en/index.html
 master_sites        sourceforge:project/saga-gis/SAGA%20-%207/SAGA%20-%20${version}
 
 checksums           rmd160  9dac3784a44588af64f9dc95eeb38d8f24f6c348 \
-                    sha256  a1bdb725b42707134ed5003ccd484b8e0a3960147dd29c26f094fad9bb0f05d8 \
-                    size    5529296
+sha256  a1bdb725b42707134ed5003ccd484b8e0a3960147dd29c26f094fad9bb0f05d8 \
+size    5529296
 
 patchfiles          patch-configure.diff
 

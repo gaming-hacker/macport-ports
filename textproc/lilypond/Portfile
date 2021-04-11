@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -45,8 +45,8 @@ if {${subport} eq ${name}} {
     version         2.22.0
     conflicts       lilypond-devel
     checksums       rmd160  5acae84e89af061b5462b891308b7cd9e41737f7 \
-                    sha256  64ddd03171d247adc243e01a3be3ec2610d97c62b893c253ad02ac50694b0f4e \
-                    size    18023031
+sha256  64ddd03171d247adc243e01a3be3ec2610d97c62b893c253ad02ac50694b0f4e \
+size    18023031
 
     set livecheck_url "source.html"
 
@@ -59,8 +59,8 @@ if {${subport} eq ${name}} {
     revision        0
     conflicts       lilypond
     checksums       rmd160  bf968fdfd99ca910261f5068a99aa51add850e31 \
-                    sha256  911a8af1f8dc862ff6fee81292a1d63c6fc592f8d4a9c8080978b6698eddfb07 \
-                    size    17073884
+sha256  911a8af1f8dc862ff6fee81292a1d63c6fc592f8d4a9c8080978b6698eddfb07 \
+size    17073884
 
 
     set livecheck_url "development.html"

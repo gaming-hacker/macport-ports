@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel graphics
 platforms           darwin
 license             BSD
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -22,8 +22,8 @@ homepage            http://pyglet.readthedocs.org/
 use_zip             yes
 
 checksums           rmd160  50b20956eabca7a3f8b0f1a0b84231ff6e0f0644 \
-                    sha256  da9d8337388cedabf1f1c5dc21a45bb2b0e5327fba47f996c8573818c3dfa478 \
-                    size    3242009
+sha256  da9d8337388cedabf1f1c5dc21a45bb2b0e5327fba47f996c8573818c3dfa478 \
+size    3242009
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -34,8 +34,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  7bb3f66eafcfafe00d83a2c556c699b0eb1d81e9 \
-                            sha256  c57e3e18246f45e4d6bb3d29e39d128d6e72b05f4212b10353adc3ba260ceb65 \
-                            size    5121084
+sha256  c57e3e18246f45e4d6bb3d29e39d128d6e72b05f4212b10353adc3ba260ceb65 \
+size    5121084
     }
 
     livecheck.type      none

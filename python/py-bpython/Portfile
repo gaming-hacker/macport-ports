@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -19,10 +19,10 @@ long_description        a fancy interface to the Python interpreter for \
 
 homepage                https://www.bpython-interpreter.org
 checksums               rmd160  acf93ffbe983cb522fac59eb23861c81bf0acb6e \
-                        sha256  eae3fd5c722cecfa002edfa27374a96004a1b6efa8015c991da995c0a3595da2 \
-                        size    204788
+sha256  eae3fd5c722cecfa002edfa27374a96004a1b6efa8015c991da995c0a3595da2 \
+size    204788
 
-python.versions         27 35 36 37
+python.version 37
 
 if {${name} ne ${subport}} {
     livecheck.type          none

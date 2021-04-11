@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,8 +12,8 @@ legacysupport.newest_darwin_requires_legacy 9
 github.setup        LMDB lmdb 0.9.28 LMDB_
 revision            1
 checksums           rmd160  1b1488bfb3ea6fe7bd5c28d3f08db48d61ef132e \
-                    sha256  47457d3d3ae2c489b52078a07e9f55ec6e094b48c2204029c7754e2972fe1882 \
-                    size    144624
+sha256  47457d3d3ae2c489b52078a07e9f55ec6e094b48c2204029c7754e2972fe1882 \
+size    144624
 
 categories          databases
 maintainers         nomaintainer
@@ -27,8 +27,8 @@ long_description    LMDB is an ultra-fast, ultra-compact key-value embedded data
                     memory-mapped files, so it has the read performance of a \
                     pure in-memory database while still offering the persistence \
                     of standard disk-based databases, and is only limited to the \
-                    size of the virtual address space, (it is not limited to the \
-                    size of physical RAM). Note: LMDB was originally called MDB, \
+size of the virtual address space, (it is not limited to the \
+size of physical RAM). Note: LMDB was originally called MDB, \
                     but was renamed to avoid confusion with other software \
                     associated with the name MDB.
 

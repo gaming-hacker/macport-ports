@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -21,8 +21,8 @@ homepage            https://www.nongnu.org/lzip/lzip.html
 master_sites        https://download.savannah.gnu.org/releases/lzip/
 
 checksums           rmd160  3af3688b207666d6af640a7bec195c067cb28745 \
-                    sha256  c3342d42e67139c165b8b128d033b5c96893a13ac5f25933190315214e87a948 \
-                    size    120769
+sha256  c3342d42e67139c165b8b128d033b5c96893a13ac5f25933190315214e87a948 \
+size    120769
 
 variant universal {}
 

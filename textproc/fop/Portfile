@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -34,8 +34,8 @@ homepage            https://xmlgraphics.apache.org/fop/
 
 if {${name} eq ${subport}} {
     checksums       rmd160  fdeee43b73f0b005738661bb9b86d9f9a4434f63 \
-                    sha256  0697a90c2f0b0602bf707070267caecc59638a8bf7a719d5950acff764f57b8e \
-                    size    22490250
+sha256  0697a90c2f0b0602bf707070267caecc59638a8bf7a719d5950acff764f57b8e \
+size    22490250
 
     patchfiles      patch-fop-java_home.diff
 
@@ -46,8 +46,8 @@ subport ${name}2 {
     version         2.1
 
     checksums       rmd160  0b261f214c2d841147f84a76ce14c78d473d1b59 \
-                    sha256  a93b59aa4d0b6d573c9090d8f21dee6c7d0c449a4bd2d48a1723e233dfb423ea \
-                    size    18424515
+sha256  a93b59aa4d0b6d573c9090d8f21dee6c7d0c449a4bd2d48a1723e233dfb423ea \
+size    18424515
 
     livecheck.type  regex
     livecheck.url   https://www.apache.org/dist/xmlgraphics/fop/binaries/

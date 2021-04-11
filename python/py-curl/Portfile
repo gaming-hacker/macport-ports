@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,18 +21,18 @@ long_description    Python module interface to the cURL library which \
 homepage            http://pycurl.io/
 
 checksums           rmd160  4846e373c848930b2a0c17e6aa7d5e3ee2323a95 \
-                    sha256  1c37a37f1ea5b422bb8b1b524f565ac927d23b7afad65ae13a7ebf7f65d7ab6c \
-                    size    217856
+sha256  1c37a37f1ea5b422bb8b1b524f565ac927d23b7afad65ae13a7ebf7f65d7ab6c \
+size    217856
 
-python.versions     27 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     if {${python.version} == 27} {
         version     7.43.0.3
         revision    1
         checksums   rmd160  6891ba8ee4d79fd5a10e824db47b9083309306b3 \
-                    sha256  553047902a738cc2e6b1cd42783a9d0992e47086773be30027a71e1293493c39 \
-                    size    208879
+sha256  553047902a738cc2e6b1cd42783a9d0992e47086773be30027a71e1293493c39 \
+size    208879
     }
 
     github.setup    pycurl pycurl [string map {. _} ${version}] REL_

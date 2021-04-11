@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           cmake 1.1
@@ -28,8 +28,8 @@ long_description    \
 homepage            https://www.qhull.org
 
 checksums           rmd160  5cb0fa2126f6ce7b278ef52d1be820da72a45db4 \
-                    sha256  59356b229b768e6e2b09a701448bfa222c37b797a84f87f864f97462d8dbc7c5 \
-                    size    1307213
+sha256  59356b229b768e6e2b09a701448bfa222c37b797a84f87f864f97462d8dbc7c5 \
+size    1307213
 
 # remove after June 17, 2021
 variant perf requires native description {Legacy compatibility variant} {}

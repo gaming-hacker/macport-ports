@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,16 +19,16 @@ description         This is a collection of proof-of-concept Mercurial \
 long_description    ${description}
 
 checksums           rmd160  b9214c19753f59e336239b1cfb255902fb5fc7b7 \
-                    sha256  ecb2095113b966074c3a2e1e0bdf36c9aba5afeafebe1dbc8308668a4fc1bad4 \
-                    size    935261
+sha256  ecb2095113b966074c3a2e1e0bdf36c9aba5afeafebe1dbc8308668a4fc1bad4 \
+size    935261
 
-python.versions     27
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \
                         bin:cargo:cargo
     depends_lib-append  port:mercurial \
-                        port:py27-cython \
+                        port:py37-cython \
                         port:lz4
 
     # fix error: 'register' storage class specifier is deprecated and incompatible with C++17
@@ -36,7 +36,7 @@ if {${name} ne ${subport}} {
     patchfiles-append   patch-setup.py.diff
 
     post-destroot {
-        set sp ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+        set sp ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages
 
         # conflicts with hg and is not needed
         delete {*}[glob ${sp}/hgext3rd/__init__.py*]

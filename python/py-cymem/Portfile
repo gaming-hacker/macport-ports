@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                           1.0
 PortGroup           python           1.0
@@ -11,8 +11,8 @@ revision            0
 github.setup        explosion cymem ${version} v
 
 checksums           rmd160  ca8da70981f9b4a342e7c538150c537308b86288 \
-                    sha256  90d2cc3e5f1514032863d0a74e2ac34ffd95b5cfa0a6e45f352a2c86eeff4171 \
-                    size    9726
+sha256  90d2cc3e5f1514032863d0a74e2ac34ffd95b5cfa0a6e45f352a2c86eeff4171 \
+size    9726
 
 platforms           darwin
 supported_archs     x86_64
@@ -25,7 +25,7 @@ description         Cython memory pool for RAII-style memory management
 long_description    ${description}
 
 # Support python versions
-python.versions     27 35 36 37 38 39
+python.version 37
 python.default_version 38
 
 if {${name} ne ${subport}} {

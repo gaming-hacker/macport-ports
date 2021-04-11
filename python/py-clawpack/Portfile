@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python    1.0
@@ -17,10 +17,10 @@ long_description        Clawpack ("Conservation Laws Package") is ${description}
 homepage                https://www.clawpack.org
 
 checksums               rmd160  0bd2984c92c00a188b563844438f0d3847d50e43 \
-                        sha256  cd984508d83ac033fcfe973be71430eeb3dd0ec1a5fbbcd036b197d2e56bfeba \
-                        size    5786247
+sha256  cd984508d83ac033fcfe973be71430eeb3dd0ec1a5fbbcd036b197d2e56bfeba \
+size    5786247
 
-python.versions         37 38
+python.version 37
 compilers.setup         require_fortran
 
 pre-build {

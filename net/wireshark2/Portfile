@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -28,9 +28,9 @@ distfiles           wireshark-${version}${extract.suffix}
 worksrcdir          wireshark-${version}
 
 checksums           sha256  a1e4a673d2333462b9c5b6b8ce259424abb7c02563a32065aa2cdc88dd99f33e \
-                    rmd160  f76ee5a279f7bbd1cd129ee2ba1b3a16b6048172 \
-                    sha1    49d78e8dc82756ab08d227c0ae8f87a807723f57 \
-                    size    28555092
+rmd160  f76ee5a279f7bbd1cd129ee2ba1b3a16b6048172 \
+sha1    49d78e8dc82756ab08d227c0ae8f87a807723f57 \
+size    28555092
 
 conflicts           wireshark-devel wireshark wireshark22 wireshark24 wireshark30 wireshark3
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -24,8 +24,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 18} {
     github.setup    qbittorrent qBittorrent 4.3.4.1 release-
     revision        0
     checksums       rmd160  668cda8b1c31bafcc657fbd5ee6d2432c580968a \
-                    sha256  51b4e12a2278cbf4d74959feb3f794307dab386c109623b3554b5b4ef05183af \
-                    size    8056582
+sha256  51b4e12a2278cbf4d74959feb3f794307dab386c109623b3554b5b4ef05183af \
+size    8056582
 
     qt5.min_version 5.12
     configure.args-append \
@@ -45,8 +45,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 18} {
     github.setup    qbittorrent qBittorrent 4.3.3 release-
     revision        0
     checksums       rmd160  03bdeeb93206be117130ddb407883f138a91e94e \
-                    sha256  df00c59a6b037a2ca2d4a5798f053fbe855fc96167bbc674651da2cb591748a5 \
-                    size    8044657
+sha256  df00c59a6b037a2ca2d4a5798f053fbe855fc96167bbc674651da2cb591748a5 \
+size    8044657
 
     qt5.min_version 5.9
     configure.args-append \
@@ -59,8 +59,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 18} {
     github.setup    qbittorrent qBittorrent 4.3.2 release-
     revision        0
     checksums       rmd160  543c1a5b59c15912cde31d98bed55810709aef75 \
-                    sha256  187b8625e8787384a68a30eff3702b0e5c246512cb20013a38a25553cb18c5e7 \
-                    size    7867939
+sha256  187b8625e8787384a68a30eff3702b0e5c246512cb20013a38a25553cb18c5e7 \
+size    7867939
 
     qt5.min_version 5.9
     configure.args-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -36,8 +36,8 @@ distname            ParaView-v${version}
 use_xz              yes
 
 checksums           sha256  1f3710b77c58a46891808dbe23dc59a1259d9c6b7bb123aaaeaa6ddf2be882ea \
-                    rmd160  7608b8dc8f2c1daf8772564b9fbac6634a0b76f2 \
-                    size    38739692
+rmd160  7608b8dc8f2c1daf8772564b9fbac6634a0b76f2 \
+size    38739692
 
 # Fix the icon size of the render area. This should be already included
 # version > 5.6.0. So when you bump the version, you should be able to remove

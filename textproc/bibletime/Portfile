@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -29,8 +29,8 @@ homepage                http://bibletime.info
 use_xz                  yes
 
 checksums               rmd160  9d838bd20fbcb7ca850fba4837cc66096b6f073e \
-                        sha256  d6beef62ad44b255e3dc4c5e89214bf01a0e85c9136073b0be12fca3d2b22622 \
-                        size    1568732
+sha256  d6beef62ad44b255e3dc4c5e89214bf01a0e85c9136073b0be12fca3d2b22622 \
+size    1568732
 
 compiler.cxx_standard   2011
 cmake.build_type        Release

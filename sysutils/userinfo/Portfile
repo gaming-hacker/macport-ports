@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    userinfo
 version                 2.5
@@ -14,8 +16,8 @@ long_description        Userinfo displays as much information about local \
                         information with some other options.
 homepage                https://gitlab.com/bjk/userinfo/wikis/home
 checksums               md5 b66284665f7853f3117a6d5b4a09630a \
-                        sha1 0f561de8fd1a0361da856e861ca77f1ed1a373f7 \
-                        rmd160 6baaed6ac4a3376fe7e007897668bdee7b91e4d1
+sha1 0f561de8fd1a0361da856e861ca77f1ed1a373f7 \
+rmd160 6baaed6ac4a3376fe7e007897668bdee7b91e4d1
 master_sites           	sourceforge:project/${name}/${version}
 use_bzip2               yes
 

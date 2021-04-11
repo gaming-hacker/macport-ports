@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -56,13 +56,13 @@ set tlpkgdistname   tlpkg-TeXLive-${version}
 distfiles-append    ${tlpkgdistname}${extract.suffix}
 
 checksums           texlive-source-2020.54632-stripped.tar.xz \
-                    rmd160  f9c6dac943ccb7fc4e53a7ade39540b419731612 \
-                    sha256  de5e59a075bfefe978cdd92e4a094b7b98921797eddabe071a426e2f33cdd3f5 \
-                    size    21592296 \
+rmd160  f9c6dac943ccb7fc4e53a7ade39540b419731612 \
+sha256  de5e59a075bfefe978cdd92e4a094b7b98921797eddabe071a426e2f33cdd3f5 \
+size    21592296 \
                     tlpkg-TeXLive-2020.54632.tar.xz \
-                    rmd160  7641dd67484846a35485ce38cb6be3a59ac0061e \
-                    sha256  377babffdb8f92dc3e934f198edc71057110d66823709418c0fe71dade17ac64 \
-                    size    111368
+rmd160  7641dd67484846a35485ce38cb6be3a59ac0061e \
+sha256  377babffdb8f92dc3e934f198edc71057110d66823709418c0fe71dade17ac64 \
+size    111368
 
 depends_lib     port:fontconfig \
                 port:freetype \

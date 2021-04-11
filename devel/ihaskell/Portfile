@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ long_description    IHaskell is a kernel for the Jupyter project, \
                     IHaskell features.
 
 checksums           rmd160  c0301fb9a4caafc57ac8c81246418b570b4b6fb1 \
-                    sha256  0a00e452a9b9ce0dc18c8ef899b849069633d1498cfcdf78c89666f0006a2c96 \
-                    size    760166
+sha256  0a00e452a9b9ce0dc18c8ef899b849069633d1498cfcdf78c89666f0006a2c96 \
+size    760166
 
 # use these to specify python versions, python3 required 
 set python3_version 3.8
@@ -59,10 +59,10 @@ haskell_stack.system_ghc \
 
 # relative paths to ${prefix}
 set ihaskell_datadir \
-                    share/${name}
+share/${name}
 set jupyter_dir     share/jupyter
 set hlint_datadir \
-                    share/hlint
+share/hlint
 
 post-extract {
     xinstall -m 0755 -d \

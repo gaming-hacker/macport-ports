@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -16,8 +16,8 @@ long_description \
 homepage            https://doku.lrz.de/display/PUBLIC/FGSL+-+A+Fortran+interface+to+the+GNU+Scientific+Library 
 platforms           darwin
 checksums           rmd160  f174337b05b8729155e37197887b4da1378230f5 \
-                    sha256  c185aa7081e7549ca7df64d82772b7376c9b9098d232a7d66a9a5e44c19d440f \
-                    size    1343400
+sha256  c185aa7081e7549ca7df64d82772b7376c9b9098d232a7d66a9a5e44c19d440f \
+size    1343400
 
 depends_build       port:pkgconfig
 depends_lib         port:gsl
@@ -25,7 +25,7 @@ use_parallel_build  no
 universal_variant   no
 
 compilers.choose    fc f77 f90
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran 
 
 use_autoreconf      yes
 

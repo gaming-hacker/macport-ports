@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Pod-Elemental 0.103005
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  dc7b47c2d7484d07d9da01c938ec943a639a0115 \
-                    sha256  824336ec18326e3b970e7815922b3921b0a821d2ee0e50b0c5b2bc327f99615e \
-                    size    37245
+sha256  824336ec18326e3b970e7815922b3921b0a821d2ee0e50b0c5b2bc327f99615e \
+size    37245
 
 if {${perl5.major} != ""} {
     depends_build-append \

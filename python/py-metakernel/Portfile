@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ platforms           darwin
 homepage            https://github.com/Calysto/metakernel
 
 checksums           rmd160  8401df4b562ad3c90bdaf9a6358830211c71285f \
-                    sha256  fe1b603ac906f610ebc7086aa5d9c6876c6ab24500883d9eeef34043e34f182b \
-                    size    186405
+sha256  fe1b603ac906f610ebc7086aa5d9c6876c6ab24500883d9eeef34043e34f182b \
+size    186405
 
-python.versions     27 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

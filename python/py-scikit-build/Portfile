@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    {*}${description}
 homepage            https://github.com/scikit-build/scikit-build
 
 checksums           rmd160  23bce589a14cc3a6a60919c4de87ca71c1ea1872 \
-                    sha256  da40dfd69b2456fad1349a894b90180b43712152b8a85d2a00f4ae2ce8ac9a5c \
-                    size    132025
+sha256  da40dfd69b2456fad1349a894b90180b43712152b8a85d2a00f4ae2ce8ac9a5c \
+size    132025
 
-python.versions     27 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-wheel \

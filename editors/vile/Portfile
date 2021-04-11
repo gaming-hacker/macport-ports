@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ master_sites        ftp://ftp.invisible-island.net/pub/${name}/current/ \
 extract.suffix      .tgz
 
 checksums           rmd160  f4eb3b934fab92cc75fe1dc83ec03b358d827d7d \
-                    sha256  a0ba7631bc510b0106c8e46f05f4364934af90418133a93044303ed434b9b251 \
-                    size    2381865
+sha256  a0ba7631bc510b0106c8e46f05f4364934af90418133a93044303ed434b9b251 \
+size    2381865
 
 depends_build       port:reflex
 

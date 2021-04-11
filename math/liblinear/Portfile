@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ license             BSD
 
 master_sites        ${homepage}
 checksums           rmd160  17526c24e9164e3714c0ef743e9c9baefe28cec9 \
-                    sha256  881c7039c6cf93119c781fb56263de91617b3eca8c3951f2c19a3797de95c6ac \
-                    size    526468
+sha256  881c7039c6cf93119c781fb56263de91617b3eca8c3951f2c19a3797de95c6ac \
+size    526468
 
 patchfiles          patch-Makefile.diff
 
@@ -59,8 +59,8 @@ destroot {
         ${dest_py}
 }
 
-variant python27 description {Install Python 2.7 interface} {
-    depends_lib-append  port:python27
+variant python37 description {Install Python 3.7 interface} {
+    depends_lib-append  port:python37
     post-destroot { install_py 2.7 }
 }
 
@@ -77,8 +77,8 @@ proc install_py {branch} {
     xinstall -m 644 -W ${worksrcpath}/python liblinear.py liblinearutil.py ${dir}
 }
 
-if {![variant_isset python27] && ![variant_isset python37]} {
-    default_variants +python27
+if {![variant_isset python37] && ![variant_isset python37]} {
+    default_variants +python37
 }
 
 livecheck.type          regex

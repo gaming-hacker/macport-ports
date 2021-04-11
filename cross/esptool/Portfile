@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,11 +15,11 @@ homepage            https://github.com/espressif/esptool
 
 version             3.0
 checksums           rmd160  41932646dda30ffbd4d07d1c82c1f2f0a4860b8c \
-                    sha256  87953d235fed2c9adb1292b3769df0149686c9afdb1896dd963f730453cbc934 \
-                    size    149773
+sha256  87953d235fed2c9adb1292b3769df0149686c9afdb1896dd963f730453cbc934 \
+size    149773
 revision            0
 
-python.versions     37
+python.version 37
 
 depends_build-append \
     port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       deprecated 1.0
@@ -29,10 +29,10 @@ use_bzip2       yes
 distname        ${my_name}-${version}
 
 checksums       rmd160  55aa1c3ac0739d398d8e9bbda93ef36f7c659360 \
-                sha256  8754669b8220aa1f151b920360029d5ea28c42bec55769059676725fe28397b8 \
-                size    293054
+sha256  8754669b8220aa1f151b920360029d5ea28c42bec55769059676725fe28397b8 \
+size    293054
 
-subport py27-orbit {
+subport py37-orbit {
     set pyversion 2.7
 }
 
@@ -62,7 +62,7 @@ if {${subport} ne ${name}} {
     }
     livecheck.type  none
 } else {
-    depends_lib     port:py27-orbit
+    depends_lib     port:py37-orbit
     supported_archs noarch
     distfiles
     use_configure   no

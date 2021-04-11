@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -31,5 +31,5 @@ configure.args      -DBOOST_USE_CXX11=ON \
                     -DBUILD_TEST=OFF
 
 checksums           rmd160  f977aabe9acacec0e71f4c3bc49fdaf1159cef20 \
-                    sha256  4417a8c2a5e27c18283da1f5b13781b8d05add844ba2ea6ab899e65f5e405174 \
-                    size    2859572
+sha256  4417a8c2a5e27c18283da1f5b13781b8d05add844ba2ea6ab899e65f5e405174 \
+size    2859572

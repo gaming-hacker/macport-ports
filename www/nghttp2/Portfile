@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160  180e966e128d9ca097f9c469508168bc0ac5beee \
-                    sha256  f7d54fa6f8aed29f695ca44612136fa2359013547394d5dffeffca9e01a26b0f \
-                    size    3973500
+sha256  f7d54fa6f8aed29f695ca44612136fa2359013547394d5dffeffca9e01a26b0f \
+size    3973500
 
 depends_build       port:pkgconfig
 
@@ -99,8 +99,8 @@ foreach pyversion ${pyversions} {
             github.setup        nghttp2 nghttp2 1.42.0 v
 
             checksums   rmd160  621df8daf88dcf017c5b426be09d99ab5dd1857d \
-                        sha256  c5a7f09020f31247d0d1609078a75efadeccb7e5b86fc2e4389189b1b431fe63 \
-                        size    3973284
+sha256  c5a7f09020f31247d0d1609078a75efadeccb7e5b86fc2e4389189b1b431fe63 \
+size    3973284
 
             if {${python.version} eq 27} {
                 configure.env-append   "PYTHON_EXTRA_LDFLAGS=-u _PyMac_Error ${frameworks_dir}/Python.framework/Versions/${python.version}/Python"

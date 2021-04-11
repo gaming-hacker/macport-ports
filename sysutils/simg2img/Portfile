@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         Tool to convert Android sparse images to raw images
 long_description    ${description}
 
 checksums           rmd160  39da89cefc9040c07288cba3cab62874cc74473d \
-                    sha256  2a441cdf8d7f1e378098d2da548d472bd31a312ecc17310f50a9ca2e01b8018f \
-                    size    23263
+sha256  2a441cdf8d7f1e378098d2da548d472bd31a312ecc17310f50a9ca2e01b8018f \
+size    23263
 
 use_configure       no
 
@@ -32,8 +32,8 @@ subport ${name}-devel {
     version         20191105
 
     checksums       rmd160  f7410710330f468ecef1e563298c4af2274a5bef \
-                    sha256  adb34203a4872296de953e1d6e32d07c8357af967923cc702fabca5ff933d50c \
-                    size    23938
+sha256  adb34203a4872296de953e1d6e32d07c8357af967923cc702fabca5ff933d50c \
+size    23938
 
     conflicts       simg2img
 

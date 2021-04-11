@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -38,22 +38,22 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  10a37fc487515eccc4844cd7e1ccd21fbb97a17c \
-                        sha256  b283719783aebee710ca0cd40cdf1348bfb2a3566d498c794321b7aff18e0bc4 \
-                        size    47017
+rmd160  10a37fc487515eccc4844cd7e1ccd21fbb97a17c \
+sha256  b283719783aebee710ca0cd40cdf1348bfb2a3566d498c794321b7aff18e0bc4 \
+size    47017
 
 go.vendors          golang.org/x/term \
                         lock    f5c789dd3221 \
-                        rmd160  167e02f1ed07c2fb7e550045b730e0141e8b2836 \
-                        sha256  63e2f343444034fc0242858597be71dfa96666230eba5c7b19458944f261f069 \
-                        size    15249 \
+rmd160  167e02f1ed07c2fb7e550045b730e0141e8b2836 \
+sha256  63e2f343444034fc0242858597be71dfa96666230eba5c7b19458944f261f069 \
+size    15249 \
                     golang.org/x/sys \
                         lock    33540a1f6037 \
-                        rmd160  c0f935b516176c256e198073c3e99e43b8703bb8 \
-                        sha256  12203e31fcb839217947a1d61f385747f6f7776a2b0340b0d5b6a355e77594a8 \
-                        size    1497790 \
+rmd160  c0f935b516176c256e198073c3e99e43b8703bb8 \
+sha256  12203e31fcb839217947a1d61f385747f6f7776a2b0340b0d5b6a355e77594a8 \
+size    1497790 \
                     golang.org/x/crypto \
                         lock    eec23a3978ad \
-                        rmd160  098b29e5fb0c1a0fa7a118e433eb5d952053391b \
-                        sha256  da658dad4a60a368edea1cbb28651cf44b46b06fdd726462c5696aa5283f12c2 \
-                        size    1725759
+rmd160  098b29e5fb0c1a0fa7a118e433eb5d952053391b \
+sha256  da658dad4a60a368edea1cbb28651cf44b46b06fdd726462c5696aa5283f12c2 \
+size    1725759

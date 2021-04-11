@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         DBD-MariaDB 1.21
 
 categories-append   sysutils www
@@ -21,8 +21,8 @@ long_description    DBD::MariaDB is the Perl5 Database Interface driver for Mari
                     missing, mainly because no-one ever requested them.
 
 checksums           rmd160  19ea4294350baab350492b72197b1882c793798d \
-                    sha256  f5972b337a0d1d4726b2471eb79f23ee0cdd034bf43f4e13f2b5162597271419 \
-                    size    179911
+sha256  f5972b337a0d1d4726b2471eb79f23ee0cdd034bf43f4e13f2b5162597271419 \
+size    179911
 
 if {${perl5.major} != ""} {
     # use Time::HiRes 1.9739+ for Sierra compatibility

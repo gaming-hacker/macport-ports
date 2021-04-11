@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -23,8 +23,8 @@ platforms     darwin
 master_sites  http://pwhois.org/get/
 
 checksums     rmd160 a62b93e141f7236de66165e0eb0a4f84f10bcbca \
-              sha256 aad13e671adcfc471ab99417161964882d147893a54664f3f465ec5c8398e6af \
-              size   377135
+sha256 aad13e671adcfc471ab99417161964882d147893a54664f3f465ec5c8398e6af \
+size   377135
 
 depends_lib   port:libpcap
 

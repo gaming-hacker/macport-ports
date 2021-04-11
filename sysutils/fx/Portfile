@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ description         Command-line tool and terminal JSON viewer
 long_description    ${description}
 
 checksums           rmd160  daebd75243af12348f480770503c1dca825e663c \
-                    sha256  edc7548edb1af0adca18ac9dbdf45e6455eb0778c07405c2a835dd5593fb099c \
-                    size    28004146
+sha256  edc7548edb1af0adca18ac9dbdf45e6455eb0778c07405c2a835dd5593fb099c \
+size    28004146
 
 github.tarball_from releases
 distname            ${name}-macos

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # TODO:
 #  * Update clang and lldb subports to build against installed libLLVM/libclang
@@ -125,33 +125,33 @@ if {${distfiles} ne ""} {
 }
 
 checksums           llvm-9.0.1.src.tar.xz \
-                    rmd160  151c137ac3a514b6d32aaee5bb77dd32eb7d1f19 \
-                    sha256  00a1ee1f389f81e9979f3a640a01c431b3021de0d42278f6508391a2f0b81c9a \
-                    size    33035112 \
+rmd160  151c137ac3a514b6d32aaee5bb77dd32eb7d1f19 \
+sha256  00a1ee1f389f81e9979f3a640a01c431b3021de0d42278f6508391a2f0b81c9a \
+size    33035112 \
                     clang-9.0.1.src.tar.xz \
-                    rmd160  424b98b3b6252f119fc06c8dfbc8fb1344531e88 \
-                    sha256  5778512b2e065c204010f88777d44b95250671103e434f9dc7363ab2e3804253 \
-                    size    13452780 \
+rmd160  424b98b3b6252f119fc06c8dfbc8fb1344531e88 \
+sha256  5778512b2e065c204010f88777d44b95250671103e434f9dc7363ab2e3804253 \
+size    13452780 \
                     compiler-rt-9.0.1.src.tar.xz \
-                    rmd160  0a2bcf2ae22362a3c6743e3a63d3943a3f284946 \
-                    sha256  c2bfab95c9986318318363d7f371a85a95e333bc0b34fbfa52edbd3f5e3a9077 \
-                    size    1983828 \
+rmd160  0a2bcf2ae22362a3c6743e3a63d3943a3f284946 \
+sha256  c2bfab95c9986318318363d7f371a85a95e333bc0b34fbfa52edbd3f5e3a9077 \
+size    1983828 \
                     libcxx-9.0.1.src.tar.xz \
-                    rmd160  b85b557e1fa372f2f3eb854c13ca103abb671d66 \
-                    sha256  0981ff11b862f4f179a13576ab0a2f5530f46bd3b6b4a90f568ccc6a62914b34 \
-                    size    1813356 \
+rmd160  b85b557e1fa372f2f3eb854c13ca103abb671d66 \
+sha256  0981ff11b862f4f179a13576ab0a2f5530f46bd3b6b4a90f568ccc6a62914b34 \
+size    1813356 \
                     clang-tools-extra-9.0.1.src.tar.xz \
-                    rmd160  f05643036eb0b394fe0cabb1e88fc8bc0c759837 \
-                    sha256  b26fd72a78bd7db998a26270ec9ec6a01346651d88fa87b4b323e13049fb6f07 \
-                    size    2175728 \
+rmd160  f05643036eb0b394fe0cabb1e88fc8bc0c759837 \
+sha256  b26fd72a78bd7db998a26270ec9ec6a01346651d88fa87b4b323e13049fb6f07 \
+size    2175728 \
                     lldb-9.0.1.src.tar.xz \
-                    rmd160  f0507a476d6ac832478dbcd72385ab4be9c8e9ce \
-                    sha256  8a7b9fd795c31a3e3cba6ce1377a2ae5c67376d92888702ce27e26f0971beb09 \
-                    size    9837400 \
+rmd160  f0507a476d6ac832478dbcd72385ab4be9c8e9ce \
+sha256  8a7b9fd795c31a3e3cba6ce1377a2ae5c67376d92888702ce27e26f0971beb09 \
+size    9837400 \
                     polly-9.0.1.src.tar.xz \
-                    rmd160  c5415f90f51ab3e3e6fbcab672bfcd52a9cc788c \
-                    sha256  9a4ac69df923230d13eb6cd0d03f605499f6a854b1dc96a9b72c4eb075040fcf \
-                    size    8768196
+rmd160  c5415f90f51ab3e3e6fbcab672bfcd52a9cc788c \
+sha256  9a4ac69df923230d13eb6cd0d03f605499f6a854b1dc96a9b72c4eb075040fcf \
+size    8768196
 
 patch.pre_args  -p1
 patchfiles \
@@ -379,12 +379,12 @@ if {[lsearch -exact $PortInfo(depends_build) port:cctools] != -1} {
 }
 
 
-# use the system python27 if present
+# use the system python37 if present
 if {${os.platform} eq "darwin" && ${os.major} >= 11} {
 	set pythonfullpath   /usr/bin/python2.7
 } else {
 	set pythonfullpath   ${prefix}/bin/python2.7
-	depends_lib-append   port:python27
+	depends_lib-append   port:python37
 }
 configure.args-append   -DPYTHON_EXECUTABLE=${pythonfullpath}
 

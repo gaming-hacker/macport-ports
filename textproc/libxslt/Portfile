@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -26,8 +26,8 @@ master_sites    http://xmlsoft.org/sources/ \
 #                gnome:sources/${name}/[strsed ${version} {/\.[0-9]*$//}]/
 
 checksums       rmd160  46a5d1ac1524ad685447cec71c0f8313d727f0af \
-                sha256  98b1bd46d6792925ad2dfe9a87452ea2adebf69dcb9919ffd55bf926a7f93f7f \
-                size    3552258
+sha256  98b1bd46d6792925ad2dfe9a87452ea2adebf69dcb9919ffd55bf926a7f93f7f \
+size    3552258
 
 configure.args  --without-python \
                 --without-crypto \

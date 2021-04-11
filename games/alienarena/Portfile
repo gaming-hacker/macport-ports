@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -49,8 +49,8 @@ if {${name} eq ${subport}} {
     version                     7.71.1-20200830-r5669
     revision                    1
     checksums                   rmd160  ee169cfcbce868535b2d381c0c573a17d160ebcb \
-                                sha256  c9083aeddfa7e70850db9f8ac7aa408e7387d2ccc66970226106b27d719c0c93 \
-                                size    3183432
+sha256  c9083aeddfa7e70850db9f8ac7aa408e7387d2ccc66970226106b27d719c0c93 \
+size    3183432
 
     PortGroup                   muniversal 1.0
     
@@ -127,8 +127,8 @@ subport alienarena-data {
     version                     7.71.1-20191015-r5663
     revision                    0
     checksums                   rmd160  b7f817ca8a2fe61387d7c4092155708f65a65d2f \
-                                sha256  d7dee24f8c89db48b7b2ac0daae8a9e8497503debed716ba4732fa4e48433e70 \
-                                size    779223968
+sha256  d7dee24f8c89db48b7b2ac0daae8a9e8497503debed716ba4732fa4e48433e70 \
+size    779223968
 
     license                     Restrictive
     supported_archs             noarch

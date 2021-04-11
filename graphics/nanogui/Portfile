@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ github.setup        mitsuba-renderer nanogui 21e5cbc880b2e26b28b2a35085a9e6706da
 version             20200404-[string range ${github.version} 0 7]
 
 checksums           rmd160  192baaa0a7f0ac862b2d09021daa98733e342932 \
-                    sha256  f105aa23476f99c2db1b28bccf4751498584e366a30e5e5078d6963a8bab6c93 \
-                    size    2911997
+sha256  f105aa23476f99c2db1b28bccf4751498584e366a30e5e5078d6963a8bab6c93 \
+size    2911997
 
 description         minimalistic C++/Python GUI library for OpenGL, \
                     GLES2/3, Metal, and WebAssembly/WebGL
@@ -51,8 +51,8 @@ github.setup        wjakob nanogui e9ec8a1a9861cf578d9c6e85a6420080aa715c03
 version             20190922-[string range ${github.version} 0 7]
 
 checksums           rmd160  ab08f55be3e6e78d353d05a4a9d7d6d4c5855c9f \
-                    sha256  1d8201643ae809e0d861f5c33110f622902c0c50a700136ecfc49156c5ad2f23 \
-                    size    2769126
+sha256  1d8201643ae809e0d861f5c33110f622902c0c50a700136ecfc49156c5ad2f23 \
+size    2769126
 
 description         minimalistic C++/Python GUI library for OpenGL 3+
 long_description    NanoGUI is a minimalistic cross-platform widget \

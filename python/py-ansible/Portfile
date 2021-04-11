@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ description         SSH-based configuration management and deployment system
 
 distname            ansible-${version}
 checksums           rmd160  807892f5f884f4a3ecde82b736d3a10d7eaf1fb2 \
-                    sha256  843aa807813318b0c8a6684a2895c74a4ccfb3c01d2bb41a53856b2434ebaaec \
-                    size    30760609
+sha256  843aa807813318b0c8a6684a2895c74a4ccfb3c01d2bb41a53856b2434ebaaec \
+size    30760609
 
 conflicts           ansible
 
@@ -33,7 +33,7 @@ long_description \
     be written in any language and are transferred to managed machines \
     automatically.
 
-python.versions 27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     patch {

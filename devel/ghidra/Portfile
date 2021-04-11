@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -10,8 +10,8 @@ version             9.2.2
 use_zip             yes
 distname            ${name}_${version}_PUBLIC_20201229
 checksums           rmd160  2b7a239329ba515010ff52725da08eb656f168f7 \
-                    sha256  8cf8806dd5b8b7c7826f04fad8b86fc7e07ea380eae497f3035f8c974de72cf8 \
-                    size    317805407
+sha256  8cf8806dd5b8b7c7826f04fad8b86fc7e07ea380eae497f3035f8c974de72cf8 \
+size    317805407
 revision            0
 
 categories          devel

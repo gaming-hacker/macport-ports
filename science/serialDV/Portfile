@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             cmake 1.1
@@ -14,8 +14,8 @@ long_description      ${description}
 
 github.setup          f4exb serialDV 1.1.4 v
 checksums             rmd160  30fcb2b18a28565772435b5e4c048dd13cee4a88 \
-                      sha256  b13851a1ef743cf683f80ecb788cc3050fdc01307e52b0656a2d788d92bf5ee1 \
-                      size    297844
+sha256  b13851a1ef743cf683f80ecb788cc3050fdc01307e52b0656a2d788d92bf5ee1 \
+size    297844
 revision              0
 
 compiler.cxx_standard 2011

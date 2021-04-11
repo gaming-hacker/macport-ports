@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       cmake 1.0
@@ -23,8 +23,8 @@ distname        framel-${version}
 use_xz          yes
 
 checksums       rmd160  fd36b12a26d1a008bc2c581aba7f41f1efe87810 \
-                sha256  ea4afcdf839f8eb49edc2d3190b5aebb08871146e426b644887f7efbae30a6b9 \
-                size    1436728
+sha256  ea4afcdf839f8eb49edc2d3190b5aebb08871146e426b644887f7efbae30a6b9 \
+size    1436728
 
 livecheck.type  regex
 livecheck.url   ${master_sites}

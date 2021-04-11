@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -15,8 +15,8 @@ description         a programmer's API and an end-user's toolkit for handling BA
 long_description    BamTools provides both {*}${description}.
 
 checksums           rmd160  a537678aaad8ea323f7d8f86d92983353220d0fc \
-                    sha256  a933067515bd36ee6edea2379bc156a38d54c67e4c11243eea6cb56a1ebb1ae3 \
-                    size    549902
+sha256  a933067515bd36ee6edea2379bc156a38d54c67e4c11243eea6cb56a1ebb1ae3 \
+size    549902
 
 depends_lib-append          path:lib/libjsoncpp.dylib:jsoncpp
 

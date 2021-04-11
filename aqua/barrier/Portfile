@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ app.retina          yes
 github.tarball_from archive
 
 checksums           rmd160  b8dc9fa0936010f64405efdf73880f4949df5666 \
-                    sha256  259e75c150ca16d9db51870b026dc7aad56c410fa3d2f5fdccc19d4b6024bdc5 \
-                    size    5465909
+sha256  259e75c150ca16d9db51870b026dc7aad56c410fa3d2f5fdccc19d4b6024bdc5 \
+size    5465909
 
 patchfiles          patch-do-not-run-tests.diff
 

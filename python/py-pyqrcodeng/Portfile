@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,12 +21,12 @@ long_description    {*}${description}. The module automates most of the building
 homepage            https://github.com/pyqrcode/pyqrcodeNG
 
 checksums           rmd160 033bbed810a438ccc7be3c6c732024d3827636eb \
-                    sha256 b84cd27cbf973593686d38b5a002464fbeb6e8dbd16aea293e6092eea0dc462b \
-                    size   46400
+sha256 b84cd27cbf973593686d38b5a002464fbeb6e8dbd16aea293e6092eea0dc462b \
+size   46400
 
 python.rootname     PyQRCodeNG
 
-python.versions     38 39
+python.version 37
 
 if {${name} ne ${subport}} {
 

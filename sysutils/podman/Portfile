@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,9 +20,9 @@ long_description    Podman is a tool for running Linux containers. \
 maintainers         {outlook.de:judaew @judaew} openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  3962be335de932f704b6099b71da94c3b1968cb1 \
-                    sha256  5d391ab0b6311dd428ede82619ef4ed4bc38ff038ea4cd5a1b2d642427f0a0c3 \
-                    size    10429377
+rmd160  3962be335de932f704b6099b71da94c3b1968cb1 \
+sha256  5d391ab0b6311dd428ede82619ef4ed4bc38ff038ea4cd5a1b2d642427f0a0c3 \
+size    10429377
 
 post-extract {
     reinplace "s|-mod=vendor||g" ${worksrcpath}/Makefile

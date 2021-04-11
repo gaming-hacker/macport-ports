@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           debug 1.0
@@ -24,8 +24,8 @@ master_sites        http://www.gaia-gis.it/gaia-sins
 distname            libspatialite-${version}
 
 checksums           rmd160  b308c62df01a47286d7e2ff56c6992d537c5c8cd \
-                    sha256  eecbc94311c78012d059ebc0fae86ea5ef6eecb13303e6e82b3753c1b3409e98 \
-                    size    6372753
+sha256  eecbc94311c78012d059ebc0fae86ea5ef6eecb13303e6e82b3753c1b3409e98 \
+size    6372753
 
 depends_build       port:pkgconfig
 depends_lib         port:geos \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ long_description    sqlmap is an open source penetration testing tool that autom
 homepage            http://sqlmap.org/
 
 checksums           rmd160  57b33a48e985a32d97033e5d2b9a469dcf664c04 \
-                    sha256  af789cc2d9b7cab2f71087967867b3587db9636b38bef1ffb39165a0675a6d87 \
-                    size    6780324
+sha256  af789cc2d9b7cab2f71087967867b3587db9636b38bef1ffb39165a0675a6d87 \
+size    6780324
 
 worksrcdir          ${name}
 
@@ -40,24 +40,24 @@ post-patch {
     }
 }
 
-variant python27 conflicts python37 python38 description {Build for Python 2.7} {
-    python.default_version 27
-    depends_build-append \
-                    port:py${python.version}-setuptools
-}
-
-variant python37 conflicts python27 python38 description {Build for Python 3.7} {
+variant python37 conflicts python37 python38 description {Build for Python 3.7} {
     python.default_version 37
     depends_build-append \
                     port:py${python.version}-setuptools
 }
 
-variant python38 conflicts python27 python37 description {Build for Python 3.8} {
+variant python37 conflicts python37 python38 description {Build for Python 3.7} {
+    python.default_version 37
+    depends_build-append \
+                    port:py${python.version}-setuptools
+}
+
+variant python38 conflicts python37 python37 description {Build for Python 3.8} {
     python.default_version 38
     depends_build-append \
                     port:py${python.version}-setuptools
 }
 
-if {![variant_isset python27] && ![variant_isset python37] && ![variant_isset python38]} {
+if {![variant_isset python37] && ![variant_isset python37] && ![variant_isset python38]} {
     default_variants +python38
 }

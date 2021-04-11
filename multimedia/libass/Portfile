@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -29,8 +29,8 @@ configure.args  --enable-fontconfig \
                 --disable-silent-rules
 
 checksums       rmd160  720cdd8659177cf7f301dc6956139d3284c03237 \
-                sha256  9cc813aece4e18d58c10074b103cfefe7bbf497a12e10eefcba803c160bfdbd9 \
-                size    243197
+sha256  9cc813aece4e18d58c10074b103cfefe7bbf497a12e10eefcba803c160bfdbd9 \
+size    243197
 
 # ass.h:421: error: wrong number of arguments specified for 'deprecated' attribute
 compiler.blacklist-append *gcc-3.* *gcc-4.*

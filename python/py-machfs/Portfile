@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=Portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=Portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,15 +18,15 @@ long_description    This is {*}${description}. Mac-specific concepts like resour
 
 homepage            https://github.com/elliotnunn/machfs
 
-python.versions     38
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
     depends_lib-append      port:py${python.version}-macresources
 
     checksums           rmd160  8ac028110e5f4a23efe55dd896ac6e3246b26f9f \
-                        sha256  c5b39773ad4ec73e18c1768b427e45a96b2b0162ee85939e435d48741a38c473 \
-                        size    16380
+sha256  c5b39773ad4ec73e18c1768b427e45a96b2b0162ee85939e435d48741a38c473 \
+size    16380
 
     livecheck.type      none
 } else {

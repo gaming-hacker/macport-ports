@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -30,7 +30,7 @@ distname            OTB-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  90ee3e47a79e2bee9525c1a9cbfa050a78e1c360 \
-                    sha256  9875484139b785163c0f0e19e76d458f598fd076b80d0d0aa0e3b59cafcad98e
+sha256  9875484139b785163c0f0e19e76d458f598fd076b80d0d0aa0e3b59cafcad98e
 
 depends_lib-append  port:tiff \
                     path:include/turbojpeg.h:libjpeg-turbo \
@@ -93,8 +93,8 @@ variant qt4 description {Wrap QT4} {
     configure.args-append   -DOTB_WRAP_QT=ON
 }
 
-variant python27 description {Wrap Python 2.7} {
-    depends_lib-append      port:python27 \
+variant python37 description {Wrap Python 3.7} {
+    depends_lib-append      port:python37 \
                             port:swig \
                             port:swig-python
 
@@ -103,7 +103,7 @@ variant python27 description {Wrap Python 2.7} {
 
     configure.args-append   -DOTB_WRAP_PYTHON=ON \
                             -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
-                            -DOTB_INSTALL_PYTHON_DIR=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+                            -DOTB_INSTALL_PYTHON_DIR=${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages
 }
 
 livecheck.type      regex

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -8,8 +8,8 @@ PortGroup           waf 1.0
 github.setup        geodynamics relax 1.0.7
 revision            0
 checksums           rmd160  168414b2c8ebf9a55ad071daa7b6a9979476a7ea \
-                    sha256  72606dee72f4284b94348e8d12fbf1ccf55122e1eeecd3e4305f623519829ae9 \
-                    size    32378197
+sha256  72606dee72f4284b94348e8d12fbf1ccf55122e1eeecd3e4305f623519829ae9 \
+size    32378197
 
 name                relax3d
 categories          science gis
@@ -31,13 +31,13 @@ distfiles           Relax-[string map {. _} ${version}].tgz
 depends_lib-append  port:fftw-3-single \
                     port:gmt4 \
                     port:proj7 \
-                    port:python27
+                    port:python37
 
 # gmt4 is not universal
 universal_variant   no
 
 compilers.choose    fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran 
 compilers.enforce_fortran fftw-3-single
 # note: openmp is always used; hence g95 cannot be
 

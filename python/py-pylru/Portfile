@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ master_sites        pypi:p/pylru
 distname            pylru-${version}
 
 checksums           rmd160  b066998bdc27e6588723b7f674ea8c10b44a5a58 \
-                    sha256  492f934bb98dc6c8b2370c02c95c65516ddc08c8f64d27f70087eb038621d297 \
-                    size    18533
+sha256  492f934bb98dc6c8b2370c02c95c65516ddc08c8f64d27f70087eb038621d297 \
+size    18533
 
-python.versions     27 35 36 37
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

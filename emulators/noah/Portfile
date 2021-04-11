@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -7,8 +7,8 @@ PortGroup               github 1.0
 github.setup            linux-noah noah 0.5.1
 revision                0
 checksums               rmd160  85823bb389f84a17a573584cb8d1b82beee98267 \
-                        sha256  452c00b1baeafca73e6566b552c9d63dc304504be95296f6568274cd74073660 \
-                        size    49644147
+sha256  452c00b1baeafca73e6566b552c9d63dc304504be95296f6568274cd74073660 \
+size    49644147
 
 categories              emulators
 maintainers             nomaintainer

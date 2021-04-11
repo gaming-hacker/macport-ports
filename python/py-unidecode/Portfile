@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -27,10 +27,10 @@ long_description    Unidecode takes Unicode data and tries to \
 homepage            https://github.com/avian2/unidecode
 
 checksums           rmd160  26193ceec061fe94a79d4dcaf8aeb55ce90b53b0 \
-                    sha256  2b6aab710c2a1647e928e36d69c21e76b453cd455f4e2621000e54b2a9b8cce8 \
-                    size    212151
+sha256  2b6aab710c2a1647e928e36d69c21e76b453cd455f4e2621000e54b2a9b8cce8 \
+size    212151
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_lib-append \

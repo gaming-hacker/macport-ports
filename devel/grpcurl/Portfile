@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,8 +26,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  6d50cdb49edb8d4757af41a7cc598ee773d430b6 \
-                    sha256  75d8916de92e90074d123e3cc8a75be932ca5a9f8bc53e56114854a41e5a5b3d \
-                    size    134892
+sha256  75d8916de92e90074d123e3cc8a75be932ca5a9f8bc53e56114854a41e5a5b3d \
+size    134892
 
 build.pre_args      -ldflags \"-X 'main.version=${version}'\"
 build.args          ./cmd/grpcurl

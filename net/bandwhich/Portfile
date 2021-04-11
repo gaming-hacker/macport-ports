@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,9 +24,9 @@ long_description    bandwhich sniffs a given network interface and records IP \
 github.tarball_from archive
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  39756f5fd890f072b84ae6c7732844c2fb54f0e1 \
-                    sha256  4bbf05be32439049edd50bd1e4d5a2a95b0be8d36782e4100732f0cc9f19ba12 \
-                    size    3005075
+rmd160  39756f5fd890f072b84ae6c7732844c2fb54f0e1 \
+sha256  4bbf05be32439049edd50bd1e4d5a2a95b0be8d36782e4100732f0cc9f19ba12 \
+size    3005075
 
 # Remove the specific reference to download the resolv-conf package via Git.
 # The cargo_fetch portgroup will get the package for us since we reference it
@@ -233,7 +233,7 @@ cargo.crates \
     serde_derive                   1.0.102  ca13fc1a832f793322228923fbb3aba9f3f44444898f835d31ad1b74fa0a2bf8 \
     serde_json                      1.0.41  2f72eb2a68a7dc3f9a691bfda9305a1c017a6215e5a4545c258500d2099a37c2 \
     serde_yaml                      0.8.11  691b17f19fc1ec9d94ec0b5864859290dff279dbd7b03f017afda54eb36c3c35 \
-    sha-1                            0.8.1  23962131a91661d643c98940b20fcaffe62d776a823247be80a48fcb8b6fce68 \
+sha-1                            0.8.1  23962131a91661d643c98940b20fcaffe62d776a823247be80a48fcb8b6fce68 \
     signal-hook                     0.1.16  604508c1418b99dfe1925ca9224829bb2a8a9a04dda655cc01fcad46f4ab05ed \
     signal-hook-registry             1.2.1  a3e12110bc539e657a646068aaf5eb5b63af9d0c1f7b29c97113fad80e15f035 \
     slab                             0.4.2  c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8 \

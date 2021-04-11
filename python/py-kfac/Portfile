@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,10 +23,10 @@ homepage            http://github.com/tensorflow/kfac
 distname            ${github.project}-${version}
 
 checksums           rmd160  dd72ba0076f11a418b15f20faa49ad943d671851 \
-                    sha256  691951f6c97bc9e729d84f37e1ac5f3fe596564312d07f734e0e69ae74d16102 \
-                    size    1359727
+sha256  691951f6c97bc9e729d84f37e1ac5f3fe596564312d07f734e0e69ae74d16102 \
+size    1359727
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

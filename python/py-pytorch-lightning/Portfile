@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    Lightning disentangles PyTorch code to decouple the \
 homepage            https://github.com/PyTorchLightning/pytorch-lightning
 
 checksums           rmd160  1edf686a57dc5ecc4827d97f4c4926d98df4fe74 \
-                    sha256  856698e1652020b1030155e643a9e03e621e1e6b123f4406ae77fd36f7bea439 \
-                    size    1964565
+sha256  856698e1652020b1030155e643a9e03e621e1e6b123f4406ae77fd36f7bea439 \
+size    1964565
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

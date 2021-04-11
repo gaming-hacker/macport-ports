@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -25,14 +25,14 @@ master_sites        sourceforge
 extract.suffix      .tgz
 
 checksums           rmd160  1313f381e302da64cb6f9a9b1ec86bd842412129 \
-                    sha256  7f8e9103d3fe58eb6e6f1476474589f7e5ca501703a82ae5299bd7a708342bc5 \
-                    size    454841
+sha256  7f8e9103d3fe58eb6e6f1476474589f7e5ca501703a82ae5299bd7a708342bc5 \
+size    454841
 
 livecheck.regex     {(\d+\.\d+\.\d+-r.*)</a></h3>}
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches          5.26 5.28 5.30
+perl5.branches 5.28
 perl5.default_branch    5.28
 perl5.create_variants   ${perl5.branches}
 
@@ -47,8 +47,8 @@ subport ${name}-devel {
     revision        0
     conflicts       sqlninja
     checksums       rmd160  68a5ccbf3e301ca12b970c485b0ee2a309336caa \
-                    sha256  cd1e51434fdbe8900fbfb117b753e390415a1821b0b917812f1f6040ab55f9d6 \
-                    size    613341
+sha256  cd1e51434fdbe8900fbfb117b753e390415a1821b0b917812f1f6040ab55f9d6 \
+size    613341
 
     depends_lib-append \
                     port:p${perl5.major}-dbd-sqlite \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -27,8 +27,8 @@ homepage            https://www.videolan.org/projects/dav1d.html
 master_sites        https://code.videolan.org/videolan/dav1d/-/archive/${version}/
 distname            ${name}_${version}
 checksums           rmd160  b2a401437c452c375232faae4cc58b144a7a962e \
-                    sha256  33bab2b03d7aff570bb8bf809753681681a4cedd9a17b1f741ae909783a198b2 \
-                    size    695842
+sha256  33bab2b03d7aff570bb8bf809753681681a4cedd9a17b1f741ae909783a198b2 \
+size    695842
 use_bzip2           yes
 
 # see https://trac.macports.org/ticket/62618

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,9 +15,9 @@ homepage            https://jblindsay.github.io/ghrg/WhiteboxTools/index.html
 license             MIT
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  af2546a2f34f317211970874b319b0cabf20ba32 \
-                    sha256  15abf0c972a5eb6cac90265b9357864da722281ee8508b8875099fd57d91f236 \
-                    size    15797799
+rmd160  af2546a2f34f317211970874b319b0cabf20ba32 \
+sha256  15abf0c972a5eb6cac90265b9357864da722281ee8508b8875099fd57d91f236 \
+size    15797799
 
 # When updating Portfile version, see instructions in cargo_fetch
 # PortGroup file for updating crate versions and checksums:

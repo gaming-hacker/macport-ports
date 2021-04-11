@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -22,7 +22,7 @@ distname            ${version}
 worksrcdir          ${github.project}-${version}
 
 checksums           rmd160  73184de1c85cafd2343e7ce94649f3572708c4a5 \
-                    sha256  8246738ca19810192f005b6e350605aae5132a6a55848795ee1fa002addf1b06 \
-                    size    30218
+sha256  8246738ca19810192f005b6e350605aae5132a6a55848795ee1fa002addf1b06 \
+size    30218
 
 ocaml.build_type    dune

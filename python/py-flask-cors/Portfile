@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,10 +30,10 @@ long_description    A Flask extension for handling Cross Origin Resource \
 homepage            https://flask-cors.corydolphin.com/
 
 checksums           rmd160  b2bdad9a93050c23bf63742cf3df512866a7d350 \
-                    sha256  adf86ec2566ddae75819c5a69d0ca8f8b4e6b589899e7df6cab9726ed1b7897d \
-                    size    31016
+sha256  adf86ec2566ddae75819c5a69d0ca8f8b4e6b589899e7df6cab9726ed1b7897d \
+size    31016
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

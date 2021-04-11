@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,7 +20,7 @@ homepage            http://robotframework.org/
 use_zip             yes
 
 platforms           darwin
-python.versions         27 36 37 38 39
+python.version 37
 python.default_version  39
 
 universal_variant   yes
@@ -29,8 +29,8 @@ master_sites        pypi:r/${internal_name}
 distname            ${internal_name}-${version}
 
 checksums           rmd160  d3291def009a47c5dd8cefbc028557e7522e90bd \
-                    sha256  9fa609ceb78f67b1476edce8a7011b16bf3ab41c0fb8c211de6c99955eaf9fde \
-                    size    690832
+sha256  9fa609ceb78f67b1476edce8a7011b16bf3ab41c0fb8c211de6c99955eaf9fde \
+size    690832
 
 if {${name} ne ${subport}} {
     depends_build-append \

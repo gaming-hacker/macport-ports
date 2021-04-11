@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   gis
 platforms           darwin
 license             BSD
 
-python.versions     35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -24,8 +24,8 @@ long_description    Fiona provides uncomplicated Python interfaces \
 homepage            https://github.com/Toblerity/Fiona
 
 checksums           rmd160  35d07359d33b730aba555eb3439c9bd2dcbda164 \
-                    sha256  b9059e0b29c2e9e6b817e53f941e77e1aca7075f986005d38db307067b60458f \
-                    size    1286561
+sha256  b9059e0b29c2e9e6b817e53f941e77e1aca7075f986005d38db307067b60458f \
+size    1286561
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -41,7 +41,7 @@ if {${name} ne ${subport}} {
     livecheck.type      none
 }
 
-# Note: py27 subport requires missing py27-orderdict port and py34 subport is no longer supported
+# Note: py37 subport requires missing py37-orderdict port and py34 subport is no longer supported
 foreach {old new} {27 35} {
     subport py${old}-fiona "
         replaced_by py${new}-fiona

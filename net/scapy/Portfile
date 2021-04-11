@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             python 1.0
@@ -6,8 +6,8 @@ PortGroup             github 1.0
 
 name                  scapy
 
-python.versions        27
-python.default_version 27
+python.version 37
+python.default_version 37
 
 categories            net security python
 license               GPL-2
@@ -35,8 +35,8 @@ if {${subport} eq ${name}} {
 
     github.setup secdev ${name} 2.4.4 v
     checksums rmd160 da0f85abc2ccce85c881eaf78ce2555f7440a7c5 \
-              sha256 55e70f6c5b677286f70c9a5846b65f4fb24859ef89d780d0535ecbc49b942f03 \
-              size   3241270
+sha256 55e70f6c5b677286f70c9a5846b65f4fb24859ef89d780d0535ecbc49b942f03 \
+size   3241270
     revision  1
 
     # stealth update; remove at next release
@@ -54,8 +54,8 @@ if {${subport} eq ${name}} {
     github.setup    secdev scapy c38a4782928aaa0e657c41638ce1f469aac2edb1
     version         20210117-[string range ${github.version} 0 7]
     checksums       rmd160  f25a940d8a93d2336becbfa718313cac2f765388 \
-                    sha256  dac85d0c84212ff75633fb8d291ad3b37229a980ba956a1eae7ca8a389ef2a7d \
-                    size    3316831
+sha256  dac85d0c84212ff75633fb8d291ad3b37229a980ba956a1eae7ca8a389ef2a7d \
+size    3316831
     revision        0
 
     long_description    ${long_description} \

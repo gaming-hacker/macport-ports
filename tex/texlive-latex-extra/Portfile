@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: LaTeX additional packages
 long_description    A very large collection of add-on packages for LaTeX.
 
 checksums           texlive-latex-extra-54584-run.tar.xz \
-                    rmd160  d9b189c45621a58b742f3a5481990c505fa57a01 \
-                    sha256  6748e18c08a0838d75a4a3858c3b9d940a87a0be68cf70f1983a8b7decba1b0d \
-                    size    515254492 \
+rmd160  d9b189c45621a58b742f3a5481990c505fa57a01 \
+sha256  6748e18c08a0838d75a4a3858c3b9d940a87a0be68cf70f1983a8b7decba1b0d \
+size    515254492 \
                     texlive-latex-extra-54584-doc.tar.xz \
-                    rmd160  cea40766c0805c592b0ec333410bbebb267cb23e \
-                    sha256  1980709a7db7d5095ea271c3817c0861ca5979cbb90443c118b4269520a378ca \
-                    size    488809080 \
+rmd160  cea40766c0805c592b0ec333410bbebb267cb23e \
+sha256  1980709a7db7d5095ea271c3817c0861ca5979cbb90443c118b4269520a378ca \
+size    488809080 \
                     texlive-latex-extra-54584-src.tar.xz \
-                    rmd160  f91ab49d9911916c7b70ed4de4fa7ef7dd501ced \
-                    sha256  eb7d6f7b1a28e37c236438a10f9e758260dd1edd99e4708e9b4cfe0f2a135d64 \
-                    size    13439468
+rmd160  f91ab49d9911916c7b70ed4de4fa7ef7dd501ced \
+sha256  eb7d6f7b1a28e37c236438a10f9e758260dd1edd99e4708e9b4cfe0f2a135d64 \
+size    13439468
 
 depends_lib         port:texlive-latex-recommended port:texlive-pictures
 

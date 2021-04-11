@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ master_sites        https://files.pythonhosted.org/packages/64/21/eebd23060763fe
 distname            tensorboard-${version}-py3-none-any
 
 checksums           rmd160  0e9abde4901d779a720afbc9803300ab62c85046 \
-                    sha256  7b8c53c396069b618f6f276ec94fc45d17e3282d668979216e5d30be472115e4 \
-                    size    10636001
+sha256  7b8c53c396069b618f6f276ec94fc45d17e3282d668979216e5d30be472115e4 \
+size    10636001
 
 livecheck.url       https://pypi.org/project/tensorboard/
 livecheck.type      regex
@@ -32,7 +32,7 @@ livecheck.regex     /project/tensorboard/(\\d+(\\.\\d+)+)/
 extract.suffix      .whl
 extract.only
 
-python.versions        37 38 39
+python.version 37
 python.default_version 38
 
 if {${name} ne ${subport}} {

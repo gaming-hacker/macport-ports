@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ license             GPL-2+
 master_sites        https://www.floodgap.com/retrotech/xa/dists/
 
 checksums           rmd160  7d6d54be9a31d39220a9bdc0cfcaeb25ad880867 \
-                    sha256  867b5b26b6524be8bcfbad8820ab3efe422b3e0cc9775dcb743284778868ba78 \
-                    size    152433
+sha256  867b5b26b6524be8bcfbad8820ab3efe422b3e0cc9775dcb743284778868ba78 \
+size    152433
 
 use_configure       no
 variant universal {}

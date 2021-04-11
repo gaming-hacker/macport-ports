@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,11 +14,11 @@ description         A Python implementation of RFC 3986 including validation and
 long_description    ${description}
 homepage            http://rfc3986.readthedocs.io/
 checksums           md5     1b03ad2853e33d47eea698571255247c \
-                    rmd160  439c303cbd0edd800b00e235627058c9cb11bd5b \
-                    sha256  112398da31a3344dc25dbf477d8df6cb34f9278a94fee2625d89e4514be8bb9d \
-                    size    44912
+rmd160  439c303cbd0edd800b00e235627058c9cb11bd5b \
+sha256  112398da31a3344dc25dbf477d8df6cb34f9278a94fee2625d89e4514be8bb9d \
+size    44912
 
-python.versions     36 37 38 39
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

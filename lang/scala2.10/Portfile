@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup select 1.0
 
 name            scala2.10
@@ -36,10 +38,10 @@ if {$subport == $name} {
     distname        scala-${version}
     extract.suffix  .tgz
     checksums       md5     b280e2f87b14c0acdc5209067973426d \
-                    sha1    6fd694f9e3cc2d059c08dc86caaa8629e5c64673 \
-                    sha256  9283119916f6bb7714e076a2840ccf22d58819b355228ed1591ae6f76929f111 \
-                    rmd160  47969fa601f1b89f6601c65b6bfba9dd6cc29c2a \
-                    size    29993772
+sha1    6fd694f9e3cc2d059c08dc86caaa8629e5c64673 \
+sha256  9283119916f6bb7714e076a2840ccf22d58819b355228ed1591ae6f76929f111 \
+rmd160  47969fa601f1b89f6601c65b6bfba9dd6cc29c2a \
+size    29993772
 
     destroot {
         set man1dir ${sharedir}/man/man1
@@ -87,10 +89,10 @@ subport ${name}-docs {
     use_xz          yes
     extract.suffix  .txz
     checksums       md5     eb716abee9c16831b9c499e63437db0e \
-                    sha1    835418d6ca54adc75e3c88db493609f34b9b45d0 \
-                    sha256  866a1fc287b4ac3e585b1b47ce59176ac3afff90c4543e106bc11ed8ff006d56 \
-                    rmd160  f0ca721ac3d9fb808b602a94c22806acfc576c19 \
-                    size    3412612
+sha1    835418d6ca54adc75e3c88db493609f34b9b45d0 \
+sha256  866a1fc287b4ac3e585b1b47ce59176ac3afff90c4543e106bc11ed8ff006d56 \
+rmd160  f0ca721ac3d9fb808b602a94c22806acfc576c19 \
+size    3412612
 
     destroot {
         xinstall -d -m 755 ${docscaladir}

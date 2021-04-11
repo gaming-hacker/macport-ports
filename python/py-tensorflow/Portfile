@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                         1.0
 PortGroup           python                         1.0
@@ -25,8 +25,8 @@ homepage            https://www.tensorflow.org/
 github.livecheck.regex  {([0-9.]+)}
 
 checksums           rmd160  f322fcdc8ba71e48a33bec80a84f47e6f8b6c314 \
-                    sha256  69ab8a0ab585dd7d8d489227f0c0dd9dacf96f3e8eb844aa27f1198884773ebe \
-                    size    53266547
+sha256  69ab8a0ab585dd7d8d489227f0c0dd9dacf96f3e8eb844aa27f1198884773ebe \
+size    53266547
 
 set min_darwin 16
 if { ${os.major} < ${min_darwin} } {
@@ -47,7 +47,7 @@ xcode_workaround.os_versions           18 19
 xcode_workaround.fixed_xcode_version   11.4
 
 # Supported python versions
-python.versions  37 38 39
+python.version 37
 
 # https://trac.macports.org/ticket/61279
 patchfiles-append fix-missing-static-symbols.patch

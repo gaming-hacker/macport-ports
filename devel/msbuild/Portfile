@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -24,13 +24,13 @@ master_sites-append     https://github.com/mono/msbuild/releases/download/0.08/:
 distfiles-append        ${bootstrap_msbuild}.zip:bootstrap
 
 checksums               ${distname}${extract.suffix} \
-                        rmd160  8d155d37f6ba4ce0c564feec9a876a4970573223 \
-                        sha256  092a83ffdfcac9378cede26d559af6abb8c2c776e392f3bbf24e9fc5794d8075 \
-                        size    9283724 \
+rmd160  8d155d37f6ba4ce0c564feec9a876a4970573223 \
+sha256  092a83ffdfcac9378cede26d559af6abb8c2c776e392f3bbf24e9fc5794d8075 \
+size    9283724 \
                         ${bootstrap_msbuild}.zip \
-                        rmd160  4d6d10b0d31c47cd2e7f38946cb1f19cdb664546 \
-                        sha256  6f2489c2ff955d2c2ff68d5b198ca841f893960ce86e63a57f2d6f076dc56716 \
-                        size    21277041
+rmd160  4d6d10b0d31c47cd2e7f38946cb1f19cdb664546 \
+sha256  6f2489c2ff955d2c2ff68d5b198ca841f893960ce86e63a57f2d6f076dc56716 \
+size    21277041
 
 extract.only            ${distname}${extract.suffix}
 

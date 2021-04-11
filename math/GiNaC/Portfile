@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -25,8 +25,8 @@ homepage        http://www.ginac.de/
 master_sites    ${homepage}
 
 checksums       rmd160  b86c62f9aa60004d93ab55afca769eed606aa4db \
-                sha256  44b4404a897dd7719233c44f3c73bc15695e12b58d3676cb57c90ddcddf72b51 \
-                size    1124136
+sha256  44b4404a897dd7719233c44f3c73bc15695e12b58d3676cb57c90ddcddf72b51 \
+size    1124136
 
 compiler.cxx_standard  2011
 

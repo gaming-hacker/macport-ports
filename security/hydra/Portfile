@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 PortGroup               github 1.0
 
@@ -20,8 +22,8 @@ long_description \
     support.
 
 checksums               rmd160  9f23778c9bedb1d1c0cdbd7bed059189c86627f8 \
-                        sha256  b0e281c30ce31de339da3383ebc0b7c912bbf45b541db56cbaf6afcf56c38b5b \
-                        size    614307
+sha256  b0e281c30ce31de339da3383ebc0b7c912bbf45b541db56cbaf6afcf56c38b5b \
+size    614307
 
 depends_lib-append      port:libssh \
                         port:libidn \

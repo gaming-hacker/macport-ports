@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ platforms           darwin
 supported_archs     noarch
 license             MIT
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {khindenburg @kurthindenburg} openmaintainer
 
@@ -23,8 +23,8 @@ long_description    attrs is a Python package with class decorators that \
 homepage            https://github.com/hynek/attrs
 
 checksums           rmd160  27ab026df9a073e2373ead76db7561d2bb437e7a \
-                    sha256  832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700 \
-                    size    164523
+sha256  832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700 \
+size    164523
 
 if {${name} ne ${subport}} {
     depends_build-append  port:py${python.version}-setuptools

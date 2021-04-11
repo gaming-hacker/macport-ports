@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Text-Aligner 0.16
 
 platforms           darwin
@@ -14,8 +14,8 @@ description         A module to align text
 long_description    Exports a single function, align(), which is used to justify strings to various alignment styles
 
 checksums           rmd160  7d1fa36d6a0a83573406868c786c0d3d647f2827 \
-                    sha256  5c857dbce586f57fa3d7c4ebd320023ab3b2963b2049428ae01bd3bc4f215725 \
-                    size    15911
+sha256  5c857dbce586f57fa3d7c4ebd320023ab3b2963b2049428ae01bd3bc4f215725 \
+size    15911
 
 if {${perl5.major} != ""} {
     depends_lib-append \

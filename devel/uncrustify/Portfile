@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,17 +20,17 @@ homepage            http://uncrustify.sourceforge.net/
 master_sites        sourceforge:project/uncrustify/uncrustify-${version}
 
 checksums           rmd160  c97e95cb493e3a30f6252a193cef329b9fca3845 \
-                    sha256  f419f2748db77bc91c9f5f153b11affbdf6da5199d385b60e2a88e0cbe6da2bf \
-                    size    1643965
+sha256  f419f2748db77bc91c9f5f153b11affbdf6da5199d385b60e2a88e0cbe6da2bf \
+size    1643965
 
 depends_build-append \
-                    port:python27
+                    port:python37
 
 extract.mkdir       yes
 
 compiler.cxx_standard   2011
 
-configure.python    ${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
+configure.python    ${frameworks_dir}/Python.framework/Versions/3.7/bin/python2.7
 
 configure.args      -DPYTHON_EXECUTABLE=${configure.python}
 

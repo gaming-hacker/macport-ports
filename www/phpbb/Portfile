@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -33,8 +33,8 @@ distname            phpBB-${version}
 use_bzip2           yes
 
 checksums           rmd160  61e8e7d606ebdddb20798f581b507bda63fda883 \
-                    sha256  a70d19174f74c91c18010f2bd8e89390c935143bb985c54056aaa4c3b0a54409 \
-                    size    4703855
+sha256  a70d19174f74c91c18010f2bd8e89390c935143bb985c54056aaa4c3b0a54409 \
+size    4703855
 
 variant mysql description {add convenient runtime dependency on PHP's mysql extension} {
     depends_run-append  port:php73-mysql

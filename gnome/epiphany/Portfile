@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -26,8 +26,8 @@ use_xz              yes
 # Dependency gio-2.0 found: NO found '2.58.3' but need: '>= 2.61.2'
 
 checksums           rmd160  5e01941d4e4490a8dc2460f09e63850cc4f81794 \
-                    sha256  8832d3c1cf30b974d4638c185a42daccde7ebb21ebf805ee77dc4c2ca4aad7f9 \
-                    size    5469624
+sha256  8832d3c1cf30b974d4638c185a42daccde7ebb21ebf805ee77dc4c2ca4aad7f9 \
+size    5469624
 
 depends_build-append \
                     port:pkgconfig \

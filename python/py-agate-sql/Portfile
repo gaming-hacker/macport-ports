@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 homepage            https://agate-sql.readthedocs.org/
 
 checksums           rmd160  6f484916ab40531d651f43f6113b1ce2ea686676 \
-                    sha256  9277490ba8b8e7c747a9ae3671f52fe486784b48d4a14e78ca197fb0e36f281b \
-                    size    6340
+sha256  9277490ba8b8e7c747a9ae3671f52fe486784b48d4a14e78ca197fb0e36f281b \
+size    6340
 
-python.versions     27 35 36 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

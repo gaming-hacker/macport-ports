@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    Link Identity Editor lets you manipulate the signature block
 homepage            https://cydia.saurik.com/info/ldid/
 
 checksums           rmd160  57dca39b6c5748ab2fd5a33516e94ac12fff8328 \
-                    sha256  562ef2f4c750d04dcc4e3c68b2a5b2a7934f003c60634a87841756a4e84f4b6a \
-                    size    41546
+sha256  562ef2f4c750d04dcc4e3c68b2a5b2a7934f003c60634a87841756a4e84f4b6a \
+size    41546
 
 depends_lib-append  path:lib/libplist-2.0.dylib:libplist \
                     path:lib/libssl.dylib:openssl

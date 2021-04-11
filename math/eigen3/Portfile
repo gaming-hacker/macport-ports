@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -23,9 +23,9 @@ if {${subport} eq ${name}} {
     conflicts           eigen3-devel
 
     checksums \
-        rmd160  f100af009a9b72532653d0e90eb81f12379f97a1 \
-        sha256  0fa5cafe78f66d2b501b43016858070d52ba47bd9b1016b0165a7b8e04675677 \
-        size    1667231
+rmd160  f100af009a9b72532653d0e90eb81f12379f97a1 \
+sha256  0fa5cafe78f66d2b501b43016858070d52ba47bd9b1016b0165a7b8e04675677 \
+size    1667231
 }
 
 subport eigen3-devel {
@@ -45,9 +45,9 @@ subport eigen3-devel {
     # development branch. New epoch to catch as update.
     epoch               3
     checksums \
-        rmd160  45033125525ae95ce13acda545536eba651d5404 \
-        sha256  ff853fd3b4f440d22883302cbfcede03c69334cd77faba7a5b0640236a626ee4 \
-        size    1667846
+rmd160  45033125525ae95ce13acda545536eba651d5404 \
+sha256  ff853fd3b4f440d22883302cbfcede03c69334cd77faba7a5b0640236a626ee4 \
+size    1667846
 }
 
 # Exclude pre-release versions

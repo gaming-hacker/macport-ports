@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -27,8 +27,8 @@ if {${subport} eq ${name}} {
     # release
     github.setup analogdevicesinc libiio 0.21 v
     checksums    rmd160 030c58252fec87416de3fcc54e2adb55f0b999ca \
-                 sha256 96fef27ec8cfbef3ed4530701b9993f8e822c6045d5e63df14ea12b95a454734 \
-                 size   447012
+sha256 96fef27ec8cfbef3ed4530701b9993f8e822c6045d5e63df14ea12b95a454734 \
+size   447012
     revision     0
 
     long_description ${long_description} Provides the release, which is typically updated every few months to yearly.

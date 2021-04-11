@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ master_sites        https://ftp.osuosl.org/pub/deluge/source/2.0/
 use_xz              yes
 
 checksums           rmd160  ed887d87b711513be63fb800d64f44dbea834bb8 \
-                    sha256  7e7ae8e6ca2a2bf0d487227cecf81e27332f0b92b567cc2bda38e47d859da891 \
-                    size    1777624
+sha256  7e7ae8e6ca2a2bf0d487227cecf81e27332f0b92b567cc2bda38e47d859da891 \
+size    1777624
 
 depends_lib-append  port:libtorrent-rasterbar \
                     port:gettext \
@@ -50,29 +50,7 @@ build.env           "PYTHON_CFLAGS=-I${prefix}/include -I${prefix}/include/boost
                     "CFLAGS=-I${prefix}/include -I${prefix}/include/boost" \
                     CC=${configure.cc} CXX=${configure.cxx} CPP=${configure.cpp}
 
-variant python27 conflicts python37 python38 description {Build for Python 2.7} {
-        require_active_variants libtorrent-rasterbar python27
-        python.default_version 27
-        depends_build-append \
-                    port:py27-setuptools \
-                    port:py27-wheel
-        depends_lib-append \
-                    port:py27-gobject3 \
-                    port:py27-service_identity \
-                    port:py27-twisted \
-                    port:py27-asn1 \
-                    port:py27-rencode \
-                    port:py27-xdg \
-                    port:py27-openssl \
-                    port:py27-Pillow \
-                    port:py27-mako \
-                    port:py27-chardet \
-                    port:py27-six \
-                    port:py27-setproctitle \
-                    port:py27-zopeinterface
-}
-
-variant python37 conflicts python27 python38 description {Build for Python 3.7} {
+variant python37 conflicts python37 python38 description {Build for Python 3.7} {
         require_active_variants libtorrent-rasterbar python37
         python.default_version 37
         depends_build-append \
@@ -94,7 +72,29 @@ variant python37 conflicts python27 python38 description {Build for Python 3.7} 
                     port:py37-zopeinterface
 }
 
-variant python38 conflicts python27 python37 description {Build for Python 3.8} {
+variant python37 conflicts python37 python38 description {Build for Python 3.7} {
+        require_active_variants libtorrent-rasterbar python37
+        python.default_version 37
+        depends_build-append \
+                    port:py37-setuptools \
+                    port:py37-wheel
+        depends_lib-append \
+                    port:py37-gobject3 \
+                    port:py37-service_identity \
+                    port:py37-twisted \
+                    port:py37-asn1 \
+                    port:py37-rencode \
+                    port:py37-xdg \
+                    port:py37-openssl \
+                    port:py37-Pillow \
+                    port:py37-mako \
+                    port:py37-chardet \
+                    port:py37-six \
+                    port:py37-setproctitle \
+                    port:py37-zopeinterface
+}
+
+variant python38 conflicts python37 python37 description {Build for Python 3.8} {
         require_active_variants libtorrent-rasterbar python38
         python.default_version 38
         depends_build-append \
@@ -116,7 +116,7 @@ variant python38 conflicts python27 python37 description {Build for Python 3.8} 
                     port:py38-zopeinterface
 }
 
-if {![variant_isset python27] && ![variant_isset python37] && ![variant_isset python38]} {
+if {![variant_isset python37] && ![variant_isset python37] && ![variant_isset python38]} {
     default_variants    +python38
 }
 

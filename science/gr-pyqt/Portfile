@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,7 +21,7 @@ if {${subport} eq ${name}} {
     replaced_by     gr37-pyqt
     PortGroup       obsolete 1.0
     set python_versions { 2.7 }
-    set default_python_variant +python27
+    set default_python_variant +python37
 }
 
 subport gr37-pyqt {
@@ -32,13 +32,13 @@ subport gr37-pyqt {
     version         20160712
     revision        0
     checksums       rmd160 2b1f472ef0e196958e165d156c21b4348b59631a \
-                    sha256 1bfbccccfdf69583722728437ab6f12d9644147bcab99fd0a0e2e026442f01f9
+sha256 1bfbccccfdf69583722728437ab6f12d9644147bcab99fd0a0e2e026442f01f9
 
     conflicts \
          gr-pyqt
 
     set python_versions { 2.7 }
-    set default_python_variant +python27
+    set default_python_variant +python37
 
     depends_lib-append \
         port:gnuradio37

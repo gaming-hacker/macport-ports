@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ platforms           darwin
 supported_archs     noarch
 license             {Apache-2 MIT}
 
-python.versions     36 37 38 39
+python.version 37
 
 maintainers         {@jandemter demter.de:jan} openmaintainer
 
@@ -28,8 +28,8 @@ master_sites        pypi:t/trio
 distname            trio-${version}
 
 checksums           rmd160  96713c61a7200c147359d6acd2127fb45719f66d \
-                    sha256  e85cf9858e445465dfbb0e3fdf36efe92082d2df87bfe9d62585eedd6e8e9d7d \
-                    size    439265
+sha256  e85cf9858e445465dfbb0e3fdf36efe92082d2df87bfe9d62585eedd6e8e9d7d \
+size    439265
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

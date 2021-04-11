@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 PortGroup           cargo 1.0
 PortGroup           github 1.0
@@ -24,9 +24,9 @@ long_description    McFly replaces your default Ctrl-R shell history search \
                     in real time with a small neural network.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  2aaa01d335cf446b2450a8d1995a6438d953968a \
-                    sha256  32a24cc205cd9da5b7eba33a97a9b5113a8a2ba1aaba24f3d95d3892c40bf632 \
-                    size    202677
+rmd160  2aaa01d335cf446b2450a8d1995a6438d953968a \
+sha256  32a24cc205cd9da5b7eba33a97a9b5113a8a2ba1aaba24f3d95d3892c40bf632 \
+size    202677
 
 set mf_share_dir    ${prefix}/share/${name}
 

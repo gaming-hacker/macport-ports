@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 platforms           darwin
 license             BSD
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,8 +23,8 @@ long_description    Bokeh (pronounced boh-Kay) is an implementation of \
 homepage            https://github.com/bokeh/bokeh
 
 checksums           rmd160  70d97ff959e209ecf4681b7138bc8cdb62818656 \
-                    sha256  dd417708f90702190222b1068a645acae99e66d4b58d7a336d545aeaa04e9b40 \
-                    size    10617724
+sha256  dd417708f90702190222b1068a645acae99e66d4b58d7a336d545aeaa04e9b40 \
+size    10617724
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -42,8 +42,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  71223b21950b2e1fdf3ad3daf671a69978558bd3 \
-                            sha256  e2d97bed5b199a10686486001fed5c854e4c04ebe28859923f27c52b93904754 \
-                            size    17847575
+sha256  e2d97bed5b199a10686486001fed5c854e4c04ebe28859923f27c52b93904754 \
+size    17847575
 
         if {${python.version} == 27} {
             depends_lib-append  port:py${python.version}-futures

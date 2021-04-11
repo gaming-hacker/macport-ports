@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup compilers 1.0
@@ -20,8 +20,8 @@ license             GPL-2+
 worksrcdir          ${name}
 
 checksums           rmd160  86e3585d601d5a65e2b0b81a14a3f212414eb12f \
-                    sha256  212bbe16c56d1a009acbd263689ef6a30052d5bb4878aad345d97927fbdd1996 \
-                    size    2186770
+sha256  212bbe16c56d1a009acbd263689ef6a30052d5bb4878aad345d97927fbdd1996 \
+size    2186770
 
 if {![variant_isset pgplot]} {
     default_variants    +giza
@@ -29,7 +29,7 @@ if {![variant_isset pgplot]} {
 
 use_configure       no
 
-compilers.setup     require_fortran -g95 -gcc44 -clang
+compilers.setup     require_fortran  -gcc44 -clang
 
 build.cmd           make
 build.args          SYSTEM=gfortran CC=${configure.cc} FC=${configure.fc} PREFIX=${prefix}

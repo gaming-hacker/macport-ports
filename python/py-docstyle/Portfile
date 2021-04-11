@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,10 +20,10 @@ long_description    pydocstyle is a static analysis tool for checking compliance
                     with Python docstring conventions.
 
 checksums           rmd160  cc683d69ff3889e9226356e34d8fe92f5cac1050 \
-                    sha256  347ef8d04e28df90a1b44df145bb8529d9fad16aa2cf39241c8d188e0fff9075 \
-                    size    72175
+sha256  347ef8d04e28df90a1b44df145bb8529d9fad16aa2cf39241c8d188e0fff9075 \
+size    72175
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_lib-append \
@@ -34,8 +34,8 @@ if {${subport} ne ${name}} {
         github.setup    PyCQA pydocstyle 3.0.0
         revision    0
         checksums   rmd160  cbc9be19d3e685a336a064e0ffa8ce509d0f4e69 \
-                    sha256  3ace9a84cdd915382e1f16d4342d0c4593a67b06dff1f4b274e1e81cd4a02312 \
-                    size    57762
+sha256  3ace9a84cdd915382e1f16d4342d0c4593a67b06dff1f4b274e1e81cd4a02312 \
+size    57762
 
         depends_lib-append \
                     port:py${python.version}-configparser \
@@ -46,8 +46,8 @@ if {${subport} ne ${name}} {
         github.setup    PyCQA pydocstyle 5.1.1
         revision    0
         checksums   rmd160  b3d18e3b3582ab6bba82e75bd5425d85742a7303 \
-                    sha256  c8fcdc7fad6199a5ea2a3f054b0ae8418474d8d849f1ec00d5c71da76eaeb813 \
-                    size    70806
+sha256  c8fcdc7fad6199a5ea2a3f054b0ae8418474d8d849f1ec00d5c71da76eaeb813 \
+size    70806
     }
 
     depends_run     port:pydocstyle_select

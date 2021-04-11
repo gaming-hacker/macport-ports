@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ description         Time-handling functionality from netcdf4-python
 long_description    ${description}
 
 checksums           rmd160  f6d074a425e326174489a06e92de15373962975f \
-                    sha256  e129c3b72ccc337cc0f0c4e3438cab1a5206572a8f3aefba220ab6c6c06476c1 \
-                    size    573856
+sha256  e129c3b72ccc337cc0f0c4e3438cab1a5206572a8f3aefba220ab6c6c06476c1 \
+size    573856
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

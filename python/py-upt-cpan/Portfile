@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 homepage            https://framagit.org/upt/upt-cpan
 
 checksums           sha256  624b58e05edb9539e4972222d72d8ca991def512cd2bed833e2900c167ad8deb \
-                    rmd160  500051bcef096b4498d808f0bf3efb8c5be4fd72 \
-                    size    5439
+rmd160  500051bcef096b4498d808f0bf3efb8c5be4fd72 \
+size    5439
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

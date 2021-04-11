@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,14 +18,14 @@ homepage            http://formbuild.org
 master_sites        https://cheeseshop.python.org/packages/source/F/FormBuild/
 distname            FormBuild-${version}
 checksums           sha1    d5ecac453d0083ea89f394cc373af1440ea844a9 \
-                    rmd160  11b31de3ee40db87a120ddc0e39a0cf6b65f2589 \
-                    sha256  57ff4533f0fddb67cc1b795f0f4305cd5c71ae4fe4986ac66cdb8285cfec6daa \
-                    size    27836
+rmd160  11b31de3ee40db87a120ddc0e39a0cf6b65f2589 \
+sha256  57ff4533f0fddb67cc1b795f0f4305cd5c71ae4fe4986ac66cdb8285cfec6daa \
+size    27836
 
 deprecated.upstream_support no
 livecheck.type      none
 
-python.versions     27
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

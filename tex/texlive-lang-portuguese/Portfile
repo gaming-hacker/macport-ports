@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Portuguese
 long_description    Support for Portuguese.
 
 checksums           texlive-lang-portuguese-54568-run.tar.xz \
-                    rmd160  06ed21eeef581c76fe08a056d7d2b68d98e8d251 \
-                    sha256  80de071e3a58bf3927f7dfeb73d0844c533e485926befb90a4d08b7bb14273ed \
-                    size    11820088 \
+rmd160  06ed21eeef581c76fe08a056d7d2b68d98e8d251 \
+sha256  80de071e3a58bf3927f7dfeb73d0844c533e485926befb90a4d08b7bb14273ed \
+size    11820088 \
                     texlive-lang-portuguese-54568-doc.tar.xz \
-                    rmd160  784e72569432eb73ddc7dfbe9aa2cc2598cc0ec7 \
-                    sha256  b34736ca1f1fbad1f6824ac553834ec16f1fb8f64c190dd47a9014678fceb040 \
-                    size    11801576 \
+rmd160  784e72569432eb73ddc7dfbe9aa2cc2598cc0ec7 \
+sha256  b34736ca1f1fbad1f6824ac553834ec16f1fb8f64c190dd47a9014678fceb040 \
+size    11801576 \
                     texlive-lang-portuguese-54568-src.tar.xz \
-                    rmd160  0e8c173fd6d1fe4bab59b6046f6556d29f8cb4a1 \
-                    sha256  7b426f4ee476a7b27fad2c12c86e14abf50a39a912bfc5ff83adf27ee1efe2e0 \
-                    size    13268
+rmd160  0e8c173fd6d1fe4bab59b6046f6556d29f8cb4a1 \
+sha256  7b426f4ee476a7b27fad2c12c86e14abf50a39a912bfc5ff83adf27ee1efe2e0 \
+size    13268
 
 depends_lib         port:texlive-basic
 

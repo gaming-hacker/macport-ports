@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -38,8 +38,8 @@ distfiles       protobuf-python-${version}.tar.gz
 worksrcdir      protobuf-${version}
 
 checksums       sha256  969019c5fd9c1345f0b34afa06ab2664c1441d159d5ae87ded5fa01d79f028c1 \
-                rmd160  498920f161944574781c011ae5687753f34e36ef \
-                size    4982470
+rmd160  498920f161944574781c011ae5687753f34e36ef \
+size    4982470
 
 platforms       darwin
 
@@ -48,7 +48,7 @@ compiler.cxx_standard  \
 # error: constexpr constructor never produces a constant expression [-Winvalid-constexpr]
 compiler.blacklist {clang < 900}
 
-python.versions 27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-protobuf

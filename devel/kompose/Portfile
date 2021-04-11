@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               golang 1.0
@@ -21,8 +21,8 @@ homepage                http://kompose.io/
 license                 Apache-2
 
 checksums               rmd160  b8ce4658af81d28bfaa1d2a6dbb4b0a7cc831f1e \
-                        sha256  036fea8e43128c91fd1742afc6d165a83d529e537b95155e7f5a637e58f82f56 \
-                        size    321446
+sha256  036fea8e43128c91fd1742afc6d165a83d529e537b95155e7f5a637e58f82f56 \
+size    321446
 
 # Allow deps to fetched at build time
 build.env-delete        GO111MODULE=off GOPROXY=off

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,7 +21,7 @@ if {${subport} eq ${name}} {
     replaced_by     gr37-mac
     PortGroup       obsolete 1.0
     set python_versions { 2.7 }
-    set default_python_variant +python27
+    set default_python_variant +python37
 }
 
 subport gr37-mac {
@@ -32,7 +32,7 @@ subport gr37-mac {
     version         20140919
     revision        0
     checksums       rmd160 9aab2a5b9e0a54019cc08980fe482fc126602970 \
-                    sha256 5eacd2f208034dcc8d34cfdc5dbc2715aeb2c7d35855983221f371e21215e9a3
+sha256 5eacd2f208034dcc8d34cfdc5dbc2715aeb2c7d35855983221f371e21215e9a3
 
     # patch to fix radio GRC hier blocks
     patchfiles-append   patch-examples_radios.diff
@@ -41,7 +41,7 @@ subport gr37-mac {
         gr-mac
 
     set python_versions { 2.7 }
-    set default_python_variant +python27
+    set default_python_variant +python37
 
     depends_lib-append \
         port:gnuradio37

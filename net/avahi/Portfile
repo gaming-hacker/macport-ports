@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -22,8 +22,8 @@ homepage            http://avahi.org/
 github.tarball_from releases
 
 checksums           rmd160  f060e7afbc20accc6befbbe6776d3ca7956b4962 \
-                    sha256  060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda \
-                    size    1591458
+sha256  060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda \
+size    1591458
 
 patchfiles          patch-avahi-daemon-Makefile.in.diff \
                     patch-avahi-dnsconfd-Makefile.in.diff \
@@ -178,15 +178,15 @@ variant qt5 description {Build with Qt5} {
     configure.args-delete   --disable-qt5
 }
 
-variant python27 conflicts python38 python39 description {Build with Python 2.7} {
+variant python37 conflicts python38 python39 description {Build with Python 3.7} {
     configure.python        ${prefix}/bin/python2.7
-    depends_lib-append      port:dbus-python27 \
-                            port:py27-gdbm
-    depends_lib-append      port:py27-gobject3
-    configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig
+    depends_lib-append      port:dbus-python37 \
+                            port:py37-gdbm
+    depends_lib-append      port:py37-gobject3
+    configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig
 }
 
-variant python38 conflicts python27 python39 description {Build with Python 3.8} {
+variant python38 conflicts python37 python39 description {Build with Python 3.8} {
     configure.python        ${prefix}/bin/python3.8
     depends_lib-append      port:dbus-python38 \
                             port:py38-gdbm
@@ -194,7 +194,7 @@ variant python38 conflicts python27 python39 description {Build with Python 3.8}
     configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.8/lib/pkgconfig
 }
 
-variant python39 conflicts python27 python38 description {Build with Python 3.9} {
+variant python39 conflicts python37 python38 description {Build with Python 3.9} {
     configure.python        ${prefix}/bin/python3.9
     depends_lib-append      port:dbus-python39 \
                             port:py39-gdbm
@@ -218,12 +218,12 @@ if {![variant_isset quartz]} {
 if {![variant_isset gtk]} {
     default_variants-append +gtk3
 }
-if {![variant_isset python27] && ![variant_isset python38]} {
+if {![variant_isset python37] && ![variant_isset python38]} {
     default_variants-append +python39
 }
 
 pre-configure {
-    if {![variant_isset python39] && ![variant_isset python38] && ![variant_isset python27]} {
+    if {![variant_isset python39] && ![variant_isset python38] && ![variant_isset python37]} {
         ui_error "avahi requires Python, please use a Python variant."
         return -code error
     }

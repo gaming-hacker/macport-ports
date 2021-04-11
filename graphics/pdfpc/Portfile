@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -36,8 +36,8 @@ depends_lib-append      port:gtk3 \
 cmake.out_of_source     yes
 
 checksums               rmd160  b1346ebfa595587ecc762696f1f060a43ac55c5c \
-                        sha256  c13e82599d2455583bd0bd8ac2744b343c25e8dd217b9eadedd529d0de2753ab \
-                        size    7734039
+sha256  c13e82599d2455583bd0bd8ac2744b343c25e8dd217b9eadedd529d0de2753ab \
+size    7734039
 
 configure.args          -DCMAKE_INSTALL_SYSCONFDIR=${prefix}/etc \
                         -DMOVIES=off

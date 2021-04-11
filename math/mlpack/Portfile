@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -23,8 +23,8 @@ homepage            https://mlpack.org
 master_sites        ${homepage}/files/
 
 checksums           rmd160  f90070573ad59a61e522cb55d3ae8ddbf90cb9a8 \
-                    sha256  9e5c4af5c276c86a0dcc553289f6fe7b1b340d61c1e59844b53da0debedbb171 \
-                    size    5782921
+sha256  9e5c4af5c276c86a0dcc553289f6fe7b1b340d61c1e59844b53da0debedbb171 \
+size    5782921
 
 depends_lib         port:armadillo \
                     port:ensmallen \

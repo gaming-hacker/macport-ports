@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            ddd
 version         3.3.12
@@ -14,8 +16,8 @@ homepage        https://www.gnu.org/software/ddd/
 master_sites    gnu
 
 checksums       rmd160  fcc71b2b57f4d7a2c17ac817739674c89e1dd7a0 \
-                sha256  3ad6cd67d7f4b1d6b2d38537261564a0d26aaed077bf25c51efc1474d0e8b65c \
-                size    5687115
+sha256  3ad6cd67d7f4b1d6b2d38537261564a0d26aaed077bf25c51efc1474d0e8b65c \
+size    5687115
 
 depends_lib \
 	port:ncurses \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -17,8 +17,8 @@ master_sites     ${homepage}dist/
 distname        libxcb-${version}
 
 checksums       rmd160  13ca4d944e3b1e202bbc501fef0035a7db44201b \
-                sha256  a55ed6db98d43469801262d81dc2572ed124edc3db31059d4e9916eb9f844c34 \
-                size    439404
+sha256  a55ed6db98d43469801262d81dc2572ed124edc3db31059d4e9916eb9f844c34 \
+size    439404
 
 use_xz          yes
 use_parallel_build yes

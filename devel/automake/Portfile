@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -33,8 +33,8 @@ installs_libs       no
 
 master_sites        gnu
 checksums           rmd160  4fab83db67aeef05f020354a697ed3e2aaa1ce93 \
-                    sha256  ce010788b51f64511a1e9bb2a1ec626037c6d0e7ede32c1c103611b9d3cba65f \
-                    size    2359513
+sha256  ce010788b51f64511a1e9bb2a1ec626037c6d0e7ede32c1c103611b9d3cba65f \
+size    2359513
 
 patchfiles          test-glibtool.patch \
                     patch-issue57329.diff

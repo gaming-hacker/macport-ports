@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Test-Fatal 0.016
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -16,8 +16,8 @@ long_description    Test::Fatal is an alternative to the popular \
 platforms           darwin
 
 checksums           rmd160  2ca80b3a50810a05abf73168726c69333c139a71 \
-                    sha256  7283d430f2ba2030b8cd979ae3039d3f1b2ec3dde1a11ca6ae09f992a66f788f \
-                    size    21246
+sha256  7283d430f2ba2030b8cd979ae3039d3f1b2ec3dde1a11ca6ae09f992a66f788f \
+size    21246
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        jgaeddert liquid-dsp 00e92db1db13e4c894e3c6ea108b23195d58f20d
 version             20200321-[string range ${github.version} 0 7]
 checksums           rmd160  917cdd961db9adcc42ef6498e4af0d74650a690c \
-                    sha256  2eb6ee1e9999a8226917051a599f58d3a5209ed72bb88bf8717d67b7ccc16040 \
-                    size    1132893
+sha256  2eb6ee1e9999a8226917051a599f58d3a5209ed72bb88bf8717d67b7ccc16040 \
+size    1132893
 revision            0
 
 # Disable livecheck as using github commit

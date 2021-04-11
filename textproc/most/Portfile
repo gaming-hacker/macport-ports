@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            most
 version         5.1.0
@@ -19,8 +21,8 @@ homepage        http://www.jedsoft.org/${name}/
 master_sites    https://www.jedsoft.org/releases/${name}/
 
 checksums       rmd160  46017a27d9104707c86c6c8b0e89c2f5cc30dfa8 \
-                sha256  db805d1ffad3e85890802061ac8c90e3c89e25afb184a794e03715a3ed190501 \
-                size    162172
+sha256  db805d1ffad3e85890802061ac8c90e3c89e25afb184a794e03715a3ed190501 \
+size    162172
 
 depends_lib     port:slang2
 

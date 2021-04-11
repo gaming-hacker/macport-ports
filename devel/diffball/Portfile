@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             diffball
 version          1.0.1
@@ -17,7 +19,7 @@ platforms        darwin
 master_sites     googlecode
 use_bzip2        yes
 checksums        rmd160 fce112e8925262220b6b1ccc793e4cebc7e4900b \
-                 sha256 f4d0c90ee42a415b5830ba52a9e57764a16535333b3093c0243575a4ffec461c
+sha256 f4d0c90ee42a415b5830ba52a9e57764a16535333b3093c0243575a4ffec461c
 
 depends_build    port:pkgconfig
 depends_lib      port:bzip2 \

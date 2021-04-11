@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,11 +19,11 @@ homepage            https://docs.openstack.org/python-novaclient/latest/
 master_sites        pypi:p/python-novaclient/
 distname            python-novaclient-${version}
 checksums           md5     d4326085ebb9f999c45c37c99b315009 \
-                    rmd160  8d56940807effd3f96d552de86948cde21b2e1e6 \
-                    sha256  cda999e2254787b962e14859f6ca71de640963f3b35c1685fb51ce3a7a0a8958 \
-                    size    323260
+rmd160  8d56940807effd3f96d552de86948cde21b2e1e6 \
+sha256  cda999e2254787b962e14859f6ca71de640963f3b35c1685fb51ce3a7a0a8958 \
+size    323260
 
-python.versions     36 37 38
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

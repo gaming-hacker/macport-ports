@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:et:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:et:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -24,8 +24,8 @@ homepage            https://www.open-mpi.org/projects/hwloc/
 master_sites        https://www.open-mpi.org/software/hwloc/v${branch}/downloads/
 
 checksums           rmd160  863d1f1f78b20f8d3d370be8b85aa1c636be9233 \
-                    sha256  30404065dc1d6872b0181269d0bb2424fbbc6e3b0a80491aa373109554006544 \
-                    size    6965149
+sha256  30404065dc1d6872b0181269d0bb2424fbbc6e3b0a80491aa373109554006544 \
+size    6965149
 
 depends_build       port:pkgconfig
 depends_lib-append  port:libxml2

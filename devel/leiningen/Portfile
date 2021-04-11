@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -30,13 +30,13 @@ distfiles           \
 
 checksums           \
     ${version}.tar.gz \
-                    rmd160  a944bd0f10a167089f3b1bf974072d8e729e8eae \
-                    sha256  98cc1e58ebe0d71fede73ae6c7699f1b9b944650d57a220e576bc95a3185b846 \
-                    size    754027 \
+rmd160  a944bd0f10a167089f3b1bf974072d8e729e8eae \
+sha256  98cc1e58ebe0d71fede73ae6c7699f1b9b944650d57a220e576bc95a3185b846 \
+size    754027 \
     leiningen-${version}-standalone.zip \
-                    rmd160  e76a97cf17e6e94e89b0b242042bb4fef7916112 \
-                    sha256  23e1df18bc97226d570f47335a8d543e1b759ea303544ea57d5309be3dedcbbb \
-                    size    14670316
+rmd160  e76a97cf17e6e94e89b0b242042bb4fef7916112 \
+sha256  23e1df18bc97226d570f47335a8d543e1b759ea303544ea57d5309be3dedcbbb \
+size    14670316
 
 java.version    1.8+
 

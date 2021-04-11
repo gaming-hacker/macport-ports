@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -36,10 +36,10 @@ destroot {
 }
 
 variant glue description {Include dependencies for glue development} {
-  depends_run-append port:py27-cjson \
-                     port:py27-numpy \
-                     port:py27-openssl \
-                     port:py27-pyrxp
+  depends_run-append port:py37-cjson \
+                     port:py37-numpy \
+                     port:py37-openssl \
+                     port:py37-pyrxp
 }
 
 variant lalsuite requires glue description {Include dependencies for LALSuite development} {
@@ -53,19 +53,19 @@ variant lalsuite requires glue description {Include dependencies for LALSuite de
                      port:libframe \
                      port:libxml2 \
                      port:metaio \
-                     port:py27-astropy \
-                     port:py27-freezegun \
-                     port:py27-h5py \
-                     port:py27-healpy \
-                     port:py27-lscsoft-glue \
-                     port:py27-ligo-segments \
-                     port:py27-ligo-lw \
-                     port:py27-mock \
-                     port:py27-numpy \
-                     port:py27-pytest \
-                     port:py27-pytest-mpl \
-                     port:py27-scipy \
-                     port:py27-shapely \
+                     port:py37-astropy \
+                     port:py37-freezegun \
+                     port:py37-h5py \
+                     port:py37-healpy \
+                     port:py37-lscsoft-glue \
+                     port:py37-ligo-segments \
+                     port:py37-ligo-lw \
+                     port:py37-mock \
+                     port:py37-numpy \
+                     port:py37-pytest \
+                     port:py37-pytest-mpl \
+                     port:py37-scipy \
+                     port:py37-shapely \
                      port:swig \
                      port:swig-python
 }
@@ -83,8 +83,8 @@ variant nds2_swig requires nds2 description {Include dependencies for nds2 SWIG 
         port:doxygen \
         path:bin/dot:graphviz \
         port:gnu-classpath \
-        port:python27 \
-        port:py27-numpy \
+        port:python37 \
+        port:py37-numpy \
         port:python35 \
         port:py35-numpy \
         port:python36 \
@@ -106,8 +106,8 @@ variant gds description {Include dependencies for GDS development} {
 #                     port:gstreamer010-gst-plugins-base \
 #                     port:gstreamer010-gst-plugins-good \
 #                     port:orc \
-#                     port:py27-gobject \
-#                     port:py27-gst-python
+#                     port:py37-gobject \
+#                     port:py37-gst-python
 #}
 
 default_variants +glue +lalsuite +nds2 +nds2_swig +gds
@@ -115,7 +115,7 @@ default_variants +glue +lalsuite +nds2 +nds2_swig +gds
 notes \
 "To complete the installation and prepare your system for use, please run:
 \n\tgit lfs install
-\tsudo port select --set python python27"
+\tsudo port select --set python python37"
 
 use_configure   no
 

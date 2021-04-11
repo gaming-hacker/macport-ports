@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem                                      1.0
 PortGroup           cmake                       1.1
@@ -28,8 +28,8 @@ long_description    {*}${description} It follows the regular \
 homepage            https://www.hyperscan.io/
 
 checksums           rmd160  6125895aa0b4f3a54b4ece0130b7a200357d862d \
-                    sha256  864a42d6fb1a816de623379ccfdb3beafc4e400178e5a5bc1fa0d455c1a540c9 \
-                    size    1845250
+sha256  864a42d6fb1a816de623379ccfdb3beafc4e400178e5a5bc1fa0d455c1a540c9 \
+size    1845250
 
 # Use ${python.default_version}
 # name consistency with ${prefix}/var/macports/sources/rsync.macports.org/macports/release/tarballs/ports/_resources/port1.0/group/python-1.0.tcl

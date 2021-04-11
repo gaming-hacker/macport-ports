@@ -1,8 +1,8 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
-name            py27-osmgpsmap
+name            py37-osmgpsmap
 version         0.7.3
 revision        4
 categories      python graphics
@@ -17,19 +17,19 @@ master_sites    http://www.johnstowers.co.nz/files/osm-gps-map/
 distname        python-osmgpsmap-${version}
 
 checksums       rmd160  a6e6908977cdb0e340f98c5bda6c41bb16f55f09 \
-                sha256  fcd0339a5922bdbbb9c934aa3c2fb9a2b8d04487d037e36cbf308dc83a02a9cf
+sha256  fcd0339a5922bdbbb9c934aa3c2fb9a2b8d04487d037e36cbf308dc83a02a9cf
 
 depends_build   port:pkgconfig
 
 depends_lib     port:osm-gps-map-gtk2 \
-                port:py27-pygtk
+                port:py37-pygtk
 
 patchfiles      patch-osmgpsmapmodule.c.diff
 
 use_autoreconf  yes
 
 configure.python            ${prefix}/bin/python2.7
-set python_framework        ${frameworks_dir}/Python.framework/Versions/2.7
+set python_framework        ${frameworks_dir}/Python.framework/Versions/3.7
 configure.pkg_config_path   ${python_framework}/lib/pkgconfig
 
 prefix          ${python_framework}

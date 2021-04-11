@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -34,52 +34,52 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  27752448c61443195bf8a3738cde8ed31095e431 \
-                        sha256  024b2c527443be50a99ce9645dc52a9e7ad8a13c9b7e55917d4b357c5b6434f7 \
-                        size    20362
+rmd160  27752448c61443195bf8a3738cde8ed31095e431 \
+sha256  024b2c527443be50a99ce9645dc52a9e7ad8a13c9b7e55917d4b357c5b6434f7 \
+size    20362
 
 go.vendors          golang.org/x/text \
                         lock    v0.3.5 \
-                        rmd160  2bc41a433ef7cbbf321afed39256a65d43ef3c8b \
-                        sha256  148ec80befd0392454a5d7756abcebeb74f863e6e4b1e1ff63bbe06c2b49e120 \
-                        size    8349629 \
+rmd160  2bc41a433ef7cbbf321afed39256a65d43ef3c8b \
+sha256  148ec80befd0392454a5d7756abcebeb74f863e6e4b1e1ff63bbe06c2b49e120 \
+size    8349629 \
                     golang.org/x/sys \
                         lock    4bcb84eeeb78 \
-                        rmd160  ddd98ce5afef6d9a72a9afe1d00662ca0914b18d \
-                        sha256  60343bf080c7967ef9c9b451cb2f6519bfba2b80bad42ec2e6edf4d4871300df \
-                        size    1101928 \
+rmd160  ddd98ce5afef6d9a72a9afe1d00662ca0914b18d \
+sha256  60343bf080c7967ef9c9b451cb2f6519bfba2b80bad42ec2e6edf4d4871300df \
+size    1101928 \
                     github.com/rivo/uniseg \
                         lock    v0.2.0 \
-                        rmd160  33577def583aa2db50b69ca601e5d29ab201ebc4 \
-                        sha256  2832965221246272462a03ffc8e159c94d8f534827f660f1ac4fc77e5ccd644c \
-                        size    44037 \
+rmd160  33577def583aa2db50b69ca601e5d29ab201ebc4 \
+sha256  2832965221246272462a03ffc8e159c94d8f534827f660f1ac4fc77e5ccd644c \
+size    44037 \
                     github.com/rivo/tview \
                         lock    745e4ceeb711 \
-                        rmd160  23eb115ea2e8ad61afd67c5b50e4b12cb29a86b1 \
-                        sha256  5c0001bdccd9702321d702c437b5e33b765b208e3b0a8024233b1e788f58fc75 \
-                        size    2871149 \
+rmd160  23eb115ea2e8ad61afd67c5b50e4b12cb29a86b1 \
+sha256  5c0001bdccd9702321d702c437b5e33b765b208e3b0a8024233b1e788f58fc75 \
+size    2871149 \
                     github.com/mattn/go-runewidth \
                         lock    v0.0.10 \
-                        rmd160  96c878eca004d6cf8f49ecf3cde98335e7f21499 \
-                        sha256  b78084ce55bc5aaa31d337dcb59624d748fe39006a3df29143fae203065e2a22 \
-                        size    16787 \
+rmd160  96c878eca004d6cf8f49ecf3cde98335e7f21499 \
+sha256  b78084ce55bc5aaa31d337dcb59624d748fe39006a3df29143fae203065e2a22 \
+size    16787 \
                     github.com/lucasb-eyer/go-colorful \
                         lock    v1.0.3 \
-                        rmd160  0d0a283ba00c871d123c951efea0605a869951aa \
-                        sha256  ecd902ddda5d05cc8a857873bf8b984a5cd2d7b75f1185edcfc2c472707958b3 \
-                        size    430208 \
+rmd160  0d0a283ba00c871d123c951efea0605a869951aa \
+sha256  ecd902ddda5d05cc8a857873bf8b984a5cd2d7b75f1185edcfc2c472707958b3 \
+size    430208 \
                     github.com/kyoh86/xdg \
                         lock    v1.2.0 \
-                        rmd160  33f759b4239c137c9899aef42df505dcf20d8961 \
-                        sha256  f69aab39a50b9644f4e3912b67459159a6d414b4e445ef282702a1a3973308a8 \
-                        size    5094 \
+rmd160  33f759b4239c137c9899aef42df505dcf20d8961 \
+sha256  f69aab39a50b9644f4e3912b67459159a6d414b4e445ef282702a1a3973308a8 \
+size    5094 \
                     github.com/gdamore/tcell \
                         lock    v2.1.0 \
-                        rmd160  33e0c62bb584fe9083efcbb9f9287ab2e039b53c \
-                        sha256  a4e74d0a8d3cf0f3ceadcd5ad48ede8faa1d9829716bc5928ec73710c7f4bcc6 \
-                        size    150767 \
+rmd160  33e0c62bb584fe9083efcbb9f9287ab2e039b53c \
+sha256  a4e74d0a8d3cf0f3ceadcd5ad48ede8faa1d9829716bc5928ec73710c7f4bcc6 \
+size    150767 \
                     github.com/gdamore/encoding \
                         lock    v1.0.0 \
-                        rmd160  3ed8916f763a5b51db1bcc8bd3ad06cf3d12ec07 \
-                        sha256  4f470c7308790bea8a526ea26cecbaa22345aad8dc566821cda6175b3d241ee1 \
-                        size    10900
+rmd160  3ed8916f763a5b51db1bcc8bd3ad06cf3d12ec07 \
+sha256  4f470c7308790bea8a526ea26cecbaa22345aad8dc566821cda6175b3d241ee1 \
+size    10900

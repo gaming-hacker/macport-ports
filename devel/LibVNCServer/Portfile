@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   cmake 1.1
@@ -7,8 +7,8 @@ PortGroup                   github 1.0
 github.setup                LibVNC libvncserver 0.9.13 LibVNCServer-
 revision                    1
 checksums                   rmd160  3fb7d82b4cbf77ee2eb5e1c55d7aeb535d17506b \
-                            sha256  0ae5bb9175dc0a602fe85c1cf591ac47ee5247b87f2bf164c16b05f87cbfa81a \
-                            size    567491
+sha256  0ae5bb9175dc0a602fe85c1cf591ac47ee5247b87f2bf164c16b05f87cbfa81a \
+size    567491
 
 name                        LibVNCServer
 categories                  devel

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ if {${name} eq ${subport}} {
     distname        upx-${version}-src
     use_xz          yes
     checksums       rmd160  ca7267db80cff02d50ecbf259906b64f119dfb56 \
-                    sha256  47774df5c958f2868ef550fb258b97c73272cb1f44fe776b798e393465993714 \
-                    size    792524
+sha256  47774df5c958f2868ef550fb258b97c73272cb1f44fe776b798e393465993714 \
+size    792524
 
     conflicts       upx-devel
 }

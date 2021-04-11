@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -40,12 +40,12 @@ distfiles           ${distname}-src${extract.suffix}
 
 if {${subport} eq "gmt5"} {
     checksums           rmd160  900befd66ec4a9aea75c53d99ed83f7e25163e35\
-                        sha256  078d4997507cb15344c74a874568985e45bdbd6d3a72d330c74c47f4c0359bb1 \
-                        size    59175704
+sha256  078d4997507cb15344c74a874568985e45bdbd6d3a72d330c74c47f4c0359bb1 \
+size    59175704
 } else {
     checksums           rmd160  cbedfd353f7d6b38c9e6625f02129da4f655e365 \
-                        sha256  d476cba999340648146ef53ab4a3f64858cbd2f5511cdec9f7f06f3fb7896625 \
-                        size    54252072
+sha256  d476cba999340648146ef53ab4a3f64858cbd2f5511cdec9f7f06f3fb7896625 \
+size    54252072
 }
 
 depends_lib         port:curl \

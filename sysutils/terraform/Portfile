@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               select 1.0
@@ -20,30 +20,30 @@ set latestVersion       terraform-0.14
 subport terraform-0.14 {
     set patchNumber     10
     checksums           rmd160  9b7633c27884e4acc546f9265bf6ee1826d59745 \
-                        sha256  4b2acb55c6350cba92769c852d4502dff3e185726fc5293e3ab0bb64393846c4 \
-                        size    34594037
+sha256  4b2acb55c6350cba92769c852d4502dff3e185726fc5293e3ab0bb64393846c4 \
+size    34594037
 }
 
 subport terraform-0.13 {
     set patchNumber     6
     checksums           rmd160  176420032b96c10dbfe51f71f399a77bf196d359 \
-                        sha256  cbb76aed9c01a8c0fbee4e3a10112ab7836440fa63d93414a1dc45ef59bc0ea2 \
-                        size    35671246
+sha256  cbb76aed9c01a8c0fbee4e3a10112ab7836440fa63d93414a1dc45ef59bc0ea2 \
+size    35671246
 }
 
 subport terraform-0.12 {
     set patchNumber     30
     checksums           rmd160  b737e35e82ff6de8da919c841010f7be1fe86587 \
-                        sha256  f107ed316be1b86a63df4e47a1fb8ab8c9ffdbbc606dcdf90043f91bdb21826d \
-                        size    29172646
+sha256  f107ed316be1b86a63df4e47a1fb8ab8c9ffdbbc606dcdf90043f91bdb21826d \
+size    29172646
 
 }
 
 subport terraform-0.11 {
     set patchNumber     14
     checksums           rmd160  830e133976923d63ffe2ef6292eb37569e88a801 \
-                        sha256  829bdba148afbd61eab4aafbc6087838f0333d8876624fe2ebc023920cfc2ad5 \
-                        size    13141311
+sha256  829bdba148afbd61eab4aafbc6087838f0333d8876624fe2ebc023920cfc2ad5 \
+size    13141311
 }
 
 subport terraform_select {}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,10 +16,10 @@ long_description    {*}${description}
 homepage            https://lmdb.readthedocs.io/en/release
 
 checksums           rmd160  5db11eddbb004a9b7c5ce460b9ec4ec58726531d \
-                    sha256  165cd1669b29b16c2d5cc8902b90fede15a7ee475c54d466f1444877a3f511ac \
-                    size    880359
+sha256  165cd1669b29b16c2d5cc8902b90fede15a7ee475c54d466f1444877a3f511ac \
+size    880359
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

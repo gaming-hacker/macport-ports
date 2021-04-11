@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Math-Matrix 0.92
 categories-append   math
 license             {Artistic-1 GPL}
@@ -16,5 +16,5 @@ description         Perl extension for Matrix operations (Multiply and Invert ma
 long_description    ${description}
 
 checksums           rmd160  21037407c5237a4d9fc87e163dd010d2f336962f \
-                    sha256  5010c25615bfd0e82ce2428ddd3c8cf7a66f726d72a5719eb28946e4c045d17f \
-                    size    112195
+sha256  5010c25615bfd0e82ce2428ddd3c8cf7a66f726d72a5719eb28946e4c045d17f \
+size    112195

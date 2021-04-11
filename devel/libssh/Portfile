@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -12,8 +12,8 @@ master_sites        https://www.libssh.org/files/${major}
 use_xz              yes
 
 checksums           rmd160  a9192aef56b6b4113bdcc1ec657f9cce83f96e38 \
-                    sha256  8559e19da0c40b6f93482b6160219ad77a4d9f1dc190bf174757455c6ae26825 \
-                    size    432084
+sha256  8559e19da0c40b6f93482b6160219ad77a4d9f1dc190bf174757455c6ae26825 \
+size    432084
 
 categories          devel security net
 platforms           darwin

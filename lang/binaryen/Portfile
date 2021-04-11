@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -15,8 +15,8 @@ long_description            Binaryen is a compiler and toolchain infrastructure 
 platforms                   darwin
 
 checksums                   rmd160  6453dc1efb7c7b90ddf0a016325e4f447986a182 \
-                            sha256  0d69c67b4eb3a61e7595fca3b8ef6f166eac8b25281017bb84c9dd24c343302f \
-                            size    3692553
+sha256  0d69c67b4eb3a61e7595fca3b8ef6f166eac8b25281017bb84c9dd24c343302f \
+size    3692553
 
 depends_build-append        port:python39
 configure.args-append       -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9

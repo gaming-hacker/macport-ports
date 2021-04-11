@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
@@ -21,10 +21,10 @@ long_description    \
     machines (over the network for instance) and de-serialize it there.
 
 checksums           rmd160  adc6ecae3cb6725e30001995bc3218d042a86b2c \
-                    sha256  29841f731606dda512b0be5b7ad4d65813099e9eb360495d73e15faf1f5a4563 \
-                    size    84530
+sha256  29841f731606dda512b0be5b7ad4d65813099e9eb360495d73e15faf1f5a4563 \
+size    84530
 
-python.versions     27 35 36 37 38
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append port:py${python.version}-setuptools

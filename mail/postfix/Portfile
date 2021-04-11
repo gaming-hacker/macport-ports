@@ -1,4 +1,6 @@
-PortSystem  1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            postfix
 version         3.5.9
@@ -14,7 +16,7 @@ long_description    Postfix attempts to be fast, easy to administer, and \
 homepage        http://www.postfix.org/
 platforms       darwin
 checksums       rmd160 7df8bcf324ab6604ab1a6ba2f47eadeeebd1c65e \
-                sha256 51ced5a3165a415beba812b6c9ead0496b7172ac6c3beb654d2ccd9a1b00762b
+sha256 51ced5a3165a415beba812b6c9ead0496b7172ac6c3beb654d2ccd9a1b00762b
 
 master_sites    https://archive.mgm51.com/mirrors/postfix-source/official/ \
                 http://de.postfix.org/ftpmirror/official/ \
@@ -91,7 +93,7 @@ destroot {
         newaliases_path=${prefix}/bin/newaliases \
         mailq_path=${prefix}/bin/mailq \
         etc_directory=${prefix}/etc/postfix \
-        share_directory=${prefix}/share/postfix \
+share_directory=${prefix}/share/postfix \
         manpage_directory=${prefix}/share/man \
         sample_directory=${prefix}/share/postfix/sample \
         readme_directory=${prefix}/share/postfix/readme \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -30,8 +30,8 @@ long_description ${description}. \
 homepage                https://www.calendarserver.org
 
 checksums               rmd160  fd77e68c4cf6dceb543ce8cff47c5f6c23429ed6 \
-                        sha256  c97384bb26cec6a764eba3c8cd590c63e912c93f85e8fd5ce3945e6e11065dae \
-                        size    3714315
+sha256  c97384bb26cec6a764eba3c8cd590c63e912c93f85e8fd5ce3945e6e11065dae \
+size    3714315
 
 # use these to specify python versions, python2 required
 set python2_version 2.7
@@ -541,9 +541,9 @@ Known issues:
       sudo port unload calendar-contacts-server ; sleep 5 ; \\
       sudo port load calendar-contacts-server
 
-    * The package ccs-calendarserver is written in Python 2.7, which will\
+    * The package ccs-calendarserver is written in Python 3.7, which will\
       reach the end of its life on January 1st, 2020. A future version of\
-      pip will drop support for Python 2.7."
+      pip will drop support for Python 3.7."
 
 if { [variant_isset "initialize_always"] } {
     if {[exists notes]} {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem              1.0
 PortGroup select        1.0
 PortGroup compiler_blacklist_versions 1.0
@@ -27,8 +27,8 @@ set lldb_executable_version 13
 github.setup            llvm llvm-project ${llvm-commit}
 
 checksums               rmd160  816af0c825b8af6da990dec07d0d7135549234cf \
-                        sha256  d6be47a4fac26dde97a65394c9ae8cd08b6f65962386a0ed6dd373170570135f \
-                        size    136291756
+sha256  d6be47a4fac26dde97a65394c9ae8cd08b6f65962386a0ed6dd373170570135f \
+size    136291756
 
 # for release, use      ${llvm_version}
 # version                 ${llvm_version}

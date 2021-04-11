@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://jupyter.org
 
 checksums           rmd160  7a631a0251bc0ed9b68c4bf627b0f929bf8e7ebc \
-                    sha256  cbc9398d6c81473e9cdb891d2cae9c0d3718fca289dda6d26df5cb660fcadc7d \
-                    size    13922153
+sha256  cbc9398d6c81473e9cdb891d2cae9c0d3718fca289dda6d26df5cb660fcadc7d \
+size    13922153
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -46,8 +46,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  4e6a19afed2729b93308f7eadfe971e22d4afeb0 \
-                            sha256  573e0ae650c5d76b18b6e564ba6d21bf321d00847de1d215b418acb64f056eb8 \
-                            size    13371684
+sha256  573e0ae650c5d76b18b6e564ba6d21bf321d00847de1d215b418acb64f056eb8 \
+size    13371684
 
         depends_lib-append  port:py${python.version}-ipaddress
         depends_lib-delete  port:py${python.version}-argon2-cffi
@@ -56,8 +56,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  ac4da314f85681366d39065a7f2e2246fd9927ac \
-                            sha256  0464b28e18e7a06cec37e6177546c2322739be07962dd13bf712bcb88361f013 \
-                            size    13927515
+sha256  0464b28e18e7a06cec37e6177546c2322739be07962dd13bf712bcb88361f013 \
+size    13927515
     }
 
     livecheck.type      none

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    cx_Freeze is a set of scripts and modules for freezing Pytho
 homepage            https://marcelotduarte.github.io/cx_Freeze/
 
 checksums           rmd160  ce3be5e9c8b5bd2cec4019c7808654aa06c057f9 \
-                    sha256  e0d03cabcdf9b9c21354807ed9f06fa9481a8fd5a0838968a830f01a70820ff1 \
-                    size    112334
+sha256  e0d03cabcdf9b9c21354807ed9f06fa9481a8fd5a0838968a830f01a70820ff1 \
+size    112334
 
-python.versions     27 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -35,8 +35,8 @@ if {${name} ne ${subport}} {
         version     5.1.1
         revision    0
         checksums   rmd160  554ca12a2fad62e36aee78456c326403812226f7 \
-                    sha256  2eadddde670f5c5f6cf88638a0ac4e5d5fe181292a31063275fa56c7bf22426b \
-                    size    61381
+sha256  2eadddde670f5c5f6cf88638a0ac4e5d5fe181292a31063275fa56c7bf22426b \
+size    61381
         depends_run-append \
                     port:py${python.version}-setuptools
     } else {

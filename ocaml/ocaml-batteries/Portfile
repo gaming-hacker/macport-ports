@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ platforms           darwin
 github.tarball_from     archive
 
 checksums           rmd160  093ec63f5e41c11da5df80ce121aa4145d330611 \
-                    sha256  9cb4bd3bf3872509af43a9c61f741884503551f25b22cb9e2c73c55cee6c9861 \
-                    size    785599
+sha256  9cb4bd3bf3872509af43a9c61f741884503551f25b22cb9e2c73c55cee6c9861 \
+size    785599
 
 
 depends_lib         port:ocaml-num

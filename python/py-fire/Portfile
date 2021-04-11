@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    ${description}
 homepage            https://github.com/google/python-fire
 
 checksums           rmd160  21de86e1ac7c2108c1b1b88c8b5c7f24879f4af4 \
-                    sha256  c5e2b8763699d1142393a46d0e3e790c5eb2f0706082df8f647878842c216a62 \
-                    size    87684
+sha256  c5e2b8763699d1142393a46d0e3e790c5eb2f0706082df8f647878842c216a62 \
+size    87684
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

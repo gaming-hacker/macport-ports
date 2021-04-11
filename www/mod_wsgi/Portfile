@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,11 +21,11 @@ long_description    The mod_wsgi module is written in C code directly \
 homepage            http://www.modwsgi.org/
 
 depends_lib         port:apache2 \
-                    port:python27
+                    port:python37
 
 checksums           rmd160  974d86578c5b6bd7b07c14f507392d4a558792f9 \
-                    sha256  53bddadb462b083527e6ec8a2b7daa84236e2e46353a57780c5e70ea5e374ae0 \
-                    size    696167
+sha256  53bddadb462b083527e6ec8a2b7daa84236e2e46353a57780c5e70ea5e374ae0 \
+size    696167
 
 set apxs            ${prefix}/bin/apxs
 set httpd_conf      ${prefix}/etc/apache2/httpd.conf

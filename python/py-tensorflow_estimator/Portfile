@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ master_sites        https://files.pythonhosted.org/packages/74/7e/622d9849abf3af
 distname            tensorflow_estimator-${version}-py2.py3-none-any
 
 checksums           rmd160  2bb7ba8fa1bbfd7802c97d9535c00703e1d27a57 \
-                    sha256  5b7b7bf2debe19a8794adacc43e8ba6459daa4efaf54d3302623994a359b17f0 \
-                    size    462041
+sha256  5b7b7bf2debe19a8794adacc43e8ba6459daa4efaf54d3302623994a359b17f0 \
+size    462041
 
 livecheck.url       https://pypi.org/project/tensorflow-estimator/
 livecheck.type      regex
@@ -34,7 +34,7 @@ livecheck.regex     /project/tensorflow-estimator/(\\d+(\\.\\d+)+)/
 extract.suffix     .whl
 extract.only
 
-python.versions        37 38 39
+python.version 37
 python.default_version 38
 
 if {${name} ne ${subport}} {

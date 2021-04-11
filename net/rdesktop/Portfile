@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -51,8 +51,8 @@ configure.args      --mandir=${prefix}/share/man \
 build.target        rdesktop
 
 checksums           rmd160  a403d660585dc4f8433ea885359e4452148a2c98 \
-                    sha256  473c2f312391379960efe41caad37852c59312bc8f100f9b5f26609ab5704288 \
-                    size    368980
+sha256  473c2f312391379960efe41caad37852c59312bc8f100f9b5f26609ab5704288 \
+size    368980
 
 variant w2k_license_hack description {will announce the client as Windows 2000 machine} {
     patchfiles patch-licence.c

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,11 +17,11 @@ long_description    Scripts to gather information for including in \
   simpler for non-technical projects.
 
 checksums           rmd160  08dd10567f91cb163e04b11e75bd78aa2839cfa3 \
-                    sha256  e3e672be4de10fb33c7983625e56e025a3a18354a11d4957c11a9396e321ef49 \
-                    size    44105
+sha256  e3e672be4de10fb33c7983625e56e025a3a18354a11d4957c11a9396e321ef49 \
+size    44105
 
 # Python 3+ doesn't work
-python.default_version 27
+python.default_version 37
 
 depends_build       port:py${python.version}-setuptools
 depends_lib-append  port:py${python.version}-enum34 \

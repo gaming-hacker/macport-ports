@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 epoch               1
 github.setup        uzbl uzbl 0.9.1 v
 checksums           rmd160  6d2bbbf966112921af8d7fa4e79f57fa5f0bf70e \
-                    sha256  471f171c6534c9984b714707ccd0df983278e1884d603537a5f24e79cd4b7d5a \
-                    size    257551
+sha256  471f171c6534c9984b714707ccd0df983278e1884d603537a5f24e79cd4b7d5a \
+size    257551
 
 categories          www
 license             GPL-3
@@ -24,12 +24,12 @@ depends_build       port:pkgconfig
 
 depends_lib         port:gtk2 \
                     port:libsoup \
-                    port:python27 \
+                    port:python37 \
                     path:lib/pkgconfig/webkit-1.0.pc:webkit-gtk
 
-depends_run         port:py27-configparser \
-                    port:py27-pygtk \
-                    port:py27-six
+depends_run         port:py37-configparser \
+                    port:py37-pygtk \
+                    port:py37-six
 
 configure.python    ${prefix}/bin/python2.7
 
@@ -53,8 +53,8 @@ build.args          CC="${configure.cc} [get_canonical_archflags cc]" \
 destroot.args       {*}${build.args}
 
 post-destroot {
-    xinstall -d ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7
-    move ${destroot}${prefix}/lib/python2.7/site-packages ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/
+    xinstall -d ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7
+    move ${destroot}${prefix}/lib/python2.7/site-packages ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/
 }
 
 platform darwin {

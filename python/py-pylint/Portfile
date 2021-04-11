@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ platforms           darwin
 license             GPL-2+
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -29,8 +29,8 @@ long_description    Pylint is a tool that checks for errors in python code, \
 homepage            https://pylint.org
 
 checksums           rmd160  4693521135ca4f13dbc88c3c609a56f0648d7455 \
-                    sha256  0e21d3b80b96740909d77206d741aa3ce0b06b41be375d92e1f3244a274c1f8a \
-                    size    709177
+sha256  0e21d3b80b96740909d77206d741aa3ce0b06b41be375d92e1f3244a274c1f8a \
+size    709177
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -47,8 +47,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  763a56b52da567df22a09caa965da3e15dccbd9a \
-                            sha256  ee1e85575587c5b58ddafa25e1c1b01691ef172e139fc25585e5d3f02451da93 \
-                            size    519076
+sha256  ee1e85575587c5b58ddafa25e1c1b01691ef172e139fc25585e5d3f02451da93 \
+size    519076
 
         depends_lib-append  port:py${python.version}-configparser \
                             port:py${python.version}-backports-functools_lru_cache \
@@ -62,8 +62,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  0244d65adb569dc35ccf3215576d5579162690bb \
-                            sha256  718b74786ea7ed07aa0c58bf572154d4679f960d26e9641cc1de204a30b87fc9 \
-                            size    680364
+sha256  718b74786ea7ed07aa0c58bf572154d4679f960d26e9641cc1de204a30b87fc9 \
+size    680364
     }
 
     depends_run-append  port:pylint_select

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                             1.0
 PortGroup select                       1.0
@@ -34,8 +34,8 @@ distname            gcc-${version}
 use_xz              yes
 
 checksums           rmd160  91d46ec088badec75f41a2ad2a0ba228a6715107 \
-                    sha256  b81946e7f01f90528a1f7352ab08cc602b9ccc05d4e44da4bd501c5a189ee661 \
-                    size    62783088
+sha256  b81946e7f01f90528a1f7352ab08cc602b9ccc05d4e44da4bd501c5a189ee661 \
+size    62783088
 
 # Check if this is the last supported gcc version for this system.
 # If it is, libgcc7 installs a full runtime, otherwise it only installs

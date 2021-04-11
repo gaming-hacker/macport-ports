@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -42,13 +42,13 @@ distfiles           ${main_distfile}:main \
                     ${connector_distfile}:connector
 
 checksums           ${main_distfile} \
-                    rmd160  b25103c19e167417ab9e307b1d921fd33953585e \
-                    sha256  850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 \
-                    size    514044 \
+rmd160  b25103c19e167417ab9e307b1d921fd33953585e \
+sha256  850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 \
+size    514044 \
                     ${connector_distfile} \
-                    rmd160  7e3bf070d0f5759c6c5dc5a2a4cc31c0b02c0b78 \
-                    sha256  7277c0caba6f50b1d07e1d682baf0b962a63e2e6af9e00e09b8dcf36a7858641 \
-                    size    668142
+rmd160  7e3bf070d0f5759c6c5dc5a2a4cc31c0b02c0b78 \
+sha256  7277c0caba6f50b1d07e1d682baf0b962a63e2e6af9e00e09b8dcf36a7858641 \
+size    668142
 
 depends_build-append \
                     port:boehmgc \

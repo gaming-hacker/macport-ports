@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
@@ -13,8 +13,8 @@ set my_name                 cairo
 version                     1.17.4
 revision                    2
 checksums                   rmd160  7a440359be60f8cb971e9d538973ac29613e143e \
-                            sha256  74b24c1ed436bbe87499179a3b27c43f4143b8676d8ad237a6fa787401959705 \
-                            size    41834076
+sha256  74b24c1ed436bbe87499179a3b27c43f4143b8676d8ad237a6fa787401959705 \
+size    41834076
 
 categories                  graphics
 maintainers                 {ryandesign @ryandesign}

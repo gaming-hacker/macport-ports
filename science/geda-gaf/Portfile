@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -29,8 +29,8 @@ homepage            http://www.geda-project.org/
 master_sites        http://ftp.geda-project.org/geda-gaf/stable/v${branch}/${version}
 
 checksums           rmd160  6cb6a55a1cf59efda5a287f1ca7a12a734b8dff7 \
-                    sha256  5eb7a619f9d9cbcfa895468d6eae888d7e1d519dfff717b9f8f22fbeb37a3b1a \
-                    size    14306967
+sha256  5eb7a619f9d9cbcfa895468d6eae888d7e1d519dfff717b9f8f22fbeb37a3b1a \
+size    14306967
 
 compiler.c_standard 1999
 
@@ -41,7 +41,7 @@ depends_lib \
     port:gtk2 \
     port:guile \
     port:libffi \
-    port:python27
+    port:python37
 
 patchfiles-append \
     fix-st_mtim.patch \

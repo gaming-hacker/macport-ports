@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -31,13 +31,13 @@ distfiles           ${distfiles}:${name} \
                     ${cmake_mods_dist}${extract.suffix}:cmake
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  b3cfeac16639d38d0929146808786c6eb08ac300 \
-                    sha256  8e4e531a2c2092fca136fa7c4d865afad517a51f1ed65324d2e1344d17a0bcbb \
-                    size    1868747 \
+rmd160  b3cfeac16639d38d0929146808786c6eb08ac300 \
+sha256  8e4e531a2c2092fca136fa7c4d865afad517a51f1ed65324d2e1344d17a0bcbb \
+size    1868747 \
                     ${cmake_mods_dist}${extract.suffix} \
-                    rmd160  b8e5b806c73e2a8af83ef64ca2665de521a2b06d \
-                    sha256  21400fa3846bf1fdab81a084e1a7be072b7b0cec32a9aa8ae93bd3590360dc42 \
-                    size    3964
+rmd160  b8e5b806c73e2a8af83ef64ca2665de521a2b06d \
+sha256  21400fa3846bf1fdab81a084e1a7be072b7b0cec32a9aa8ae93bd3590360dc42 \
+size    3964
 
 worksrcdir          ${worksrcdir}/${name}
 

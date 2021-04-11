@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           clang_dependency 1.0
 github.setup        facebook zstd 1.4.9 v
 
 checksums           rmd160  7094ac7e00bf5d8551ced0cfcfd6ed66bc327836 \
-                    sha256  29ac74e19ea28659017361976240c4b5c5c24db3b89338731a6feb97c038d293 \
-                    size    1821109
+sha256  29ac74e19ea28659017361976240c4b5c5c24db3b89338731a6feb97c038d293 \
+size    1821109
 
 categories          archivers devel
 platforms           darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ master_sites        sourceforge:project/gtkpod/libgpod/libgpod-${branch}
 use_bzip2           yes
 
 checksums           rmd160  96a2b0e48c0af6ecc62fc4aba4e38e8d0579c6cd \
-                    sha256  638a7959d04e95f1e62abad02bd33702e4e8dfef98485ac7d9d50395c37e955d \
-                    size    801903
+sha256  638a7959d04e95f1e62abad02bd33702e4e8dfef98485ac7d9d50395c37e955d \
+size    801903
 
 depends_build       port:pkgconfig \
                     port:intltool \
@@ -55,12 +55,12 @@ configure.cmd       ./autogen.sh
 configure.ldflags-delete "-L${prefix}/lib"
 configure.cppflags-delete "-I${prefix}/include"
 
-variant python27 description {Build Bindings for Python 2.7} {}
-default_variants +python27
+variant python37 description {Build Bindings for Python 3.7} {}
+default_variants +python37
 
 set python.branch ""
-if {[variant_isset python27]} {
-    set python.branch 2.7
+if {[variant_isset python37]} {
+    set python.branch 3.7
 }
 
 if {${python.branch} != ""} {

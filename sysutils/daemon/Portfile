@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               makefile 1.0
@@ -22,8 +22,8 @@ homepage                http://libslack.org/daemon/
 master_sites            ${homepage}download/
 
 checksums               rmd160  9b3cb7c36eb38fcfaea94feab8457c255815fb95 \
-                        sha256  74f12e6d4b3c85632489bd08431d3d997bc17264bf57b7202384f2e809cff596 \
-                        size    441748
+sha256  74f12e6d4b3c85632489bd08431d3d997bc17264bf57b7202384f2e809cff596 \
+size    441748
 
 patchfiles              disable-test-pseudo.patch
 

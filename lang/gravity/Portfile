@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    Gravity is a powerful, dynamically typed, lightweight, \
 homepage            https://marcobambini.github.io/gravity/
 
 checksums           rmd160  c35e52aa8686f0f4391807a6839e1ccdf89826df \
-                    sha256  9515a5e2f1bcd777d79afb18b9a9991372bc512d80a258d1e1c49c44fa62630d \
-                    size    874080
+sha256  9515a5e2f1bcd777d79afb18b9a9991372bc512d80a258d1e1c49c44fa62630d \
+size    874080
 
 use_configure       no
 build.args-append   CC=${configure.cc}

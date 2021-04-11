@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -31,10 +31,10 @@ long_description    Open Neural Network Exchange (ONNX) is an open\
 homepage            https://onnx.ai/
 
 checksums           rmd160  a319bd2f15fbbd3964e0751bd6e90596efdc6c0f \
-                    sha256  08e5f1b0a3a0a7d3bc608c6d95f3cabcd22b23148a791418e64d8dcfe3e7a0a4 \
-                    size    4934008
+sha256  08e5f1b0a3a0a7d3bc608c6d95f3cabcd22b23148a791418e64d8dcfe3e7a0a4 \
+size    4934008
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
 

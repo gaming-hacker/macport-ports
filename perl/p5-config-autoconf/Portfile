@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Config-AutoConf 0.319
 platforms           darwin
 maintainers         nomaintainer
@@ -14,8 +14,8 @@ description         A module to implement some AutoConf macros in pure perl.
 long_description    ${description}
 
 checksums           rmd160  edf1d6050a219e18a78e0afdf636190ae323ae55 \
-                    sha256  304f66cc2653264c0fe127d21669e86d3d18cd72f2574d8f5131beec31a0a33e \
-                    size    52118
+sha256  304f66cc2653264c0fe127d21669e86d3d18cd72f2574d8f5131beec31a0a33e \
+size    52118
 
 if {${perl5.major} != ""} {
     depends_lib-append \

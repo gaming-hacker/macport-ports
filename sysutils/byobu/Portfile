@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ distname            ${name}_${version}.orig
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  e61c9be7b85da1c6328efdae225a0a71130053b7 \
-                    sha256  4d8ea48f8c059e56f7174df89b04a08c32286bae5a21562c5c6f61be6dab7563 \
-                    size    761655
+sha256  4d8ea48f8c059e56f7174df89b04a08c32286bae5a21562c5c6f61be6dab7563 \
+size    761655
 
 depends_run         port:coreutils \
                     port:tmux

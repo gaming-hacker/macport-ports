@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    ${description} Proxy for using W3C \
                     Gecko-based browsers.
 
 checksums           ${name}-${version}${extract.suffix} \
-                    rmd160  35ea0fdabc3dc5aa2ce334c5c557103a6d91762d \
-                    sha256  9c6b0e2912344244a3e543af57fbfade861cbc1e14febfa019fad9e85dd7bec5 \
-                    size    76106 \
+rmd160  35ea0fdabc3dc5aa2ce334c5c557103a6d91762d \
+sha256  9c6b0e2912344244a3e543af57fbfade861cbc1e14febfa019fad9e85dd7bec5 \
+size    76106 \
 
 depends_build       port:rust port:cargo
 
@@ -140,7 +140,7 @@ cargo.crates \
     serde_repr 0.1.6 2dc6b7951b17b051f3210b063f12cc17320e2fe30ae05b0fe2a3abb068551c76 \
     serde_urlencoded 0.6.1 9ec5d77e2d4c73717816afac02670d5c4f534ea95ed430442cad02e7a6e32c97 \
     serde_yaml 0.8.13 ae3e2dd40a7cdc18ca80db804b7f461a39bb721160a85c9a1fa30134bf3c02a5 \
-    sha-1 0.8.2 f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1 0.8.2 f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
     slab 0.4.2 c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8 \
     socket2 0.3.15 b1fa70dc5c8104ec096f4fe7ede7a221d35ae13dcd19ba1ad9a81d2cab9a1c44 \
     strsim 0.8.0 8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \

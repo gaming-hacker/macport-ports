@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description    The Open Lighting Architecture (OLA) provides a plugin \
 homepage            http://www.openlighting.org/ola/
 
 checksums           rmd160  f7435b1386e5ad0962cf7d62138ba95d0cda0058 \
-                    sha256  102aa3114562a2a71dbf7f77d2a0fb9fc47acc35d6248a70b6e831365ca71b13 \
-                    size    2552023
+sha256  102aa3114562a2a71dbf7f77d2a0fb9fc47acc35d6248a70b6e831365ca71b13 \
+size    2552023
 
 github.tarball_from releases
 
@@ -48,14 +48,14 @@ configure.args      --disable-fatal-warnings \
                     --disable-libusb \
                     --disable-osc
 
-variant python27 description {Enable the Python 2.7 API} {
-    depends_lib-append      port:python27 port:py27-protobuf3
+variant python37 description {Enable the Python 3.7 API} {
+    depends_lib-append      port:python37 port:py37-protobuf3
     configure.args-append   --enable-python-libs
     configure.python        ${prefix}/bin/python2.7
 }
 
-variant rdm_tests requires python27 description {Enable the RDM Tests} {
-    depends_lib-append      port:py27-numpy
+variant rdm_tests requires python37 description {Enable the RDM Tests} {
+    depends_lib-append      port:py37-numpy
     configure.args-append   --enable-rdm-tests
 }
 
@@ -84,7 +84,7 @@ variant osc description {Build with OSC support} {
     configure.args-delete   --disable-osc
 }
 
-default_variants    +http +libusb +osc +python27
+default_variants    +http +libusb +osc +python37
 if {![variant_isset libftdi1]} {
     default_variants-append +libftdi0
 }

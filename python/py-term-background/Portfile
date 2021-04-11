@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ description         Determine if shell has a light or dark background
 long_description    ${description}
 
 checksums           rmd160  f00d0961d4c9040ac6a557c2d3b4bfbc8fd78c4f \
-                    sha256  c59081defac311e078657b0e7e933970a57fc89a4ba152d159436ccc3b6477a8 \
-                    size    20302
+sha256  c59081defac311e078657b0e7e933970a57fc89a4ba152d159436ccc3b6477a8 \
+size    20302
 
-python.versions     37 38 39
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_lib-append \

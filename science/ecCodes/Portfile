@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup cmake     1.1
@@ -16,8 +16,8 @@ homepage            https://confluence.ecmwf.int/display/ECC
 master_sites        https://confluence.ecmwf.int/download/attachments/45757960
 distname            eccodes-${version}-Source
 checksums           rmd160  dee15aeb0f749462053f0e7e3f4cda70871b18fc \
-                    sha256  9964bed5058e873d514bd4920951122a95963128b12f55aa199d9afbafdd5d4b \
-                    size    11532697
+sha256  9964bed5058e873d514bd4920951122a95963128b12f55aa199d9afbafdd5d4b \
+size    11532697
 long_description \
     ecCodes is a package developed by ECMWF which provides an application programming interface and \
     a set of tools for decoding and encoding messages in the following formats: \
@@ -78,7 +78,7 @@ if {[fortran_variant_isset]} {
                             -DENABLE_FORTRAN=ON
 }
 
-variant python27 description {deprecated variant} {
+variant python37 description {deprecated variant} {
 }
 
 variant openmp description {Add support for OpenMP} {

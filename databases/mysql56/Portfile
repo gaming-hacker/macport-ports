@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           deprecated 1.0
@@ -58,8 +58,8 @@ if {$subport eq $name} {
     patchfiles-append   patch-mysql56-version-change.diff
 
     checksums           rmd160  e95ba4b422b57d19c4d7f322da5e160049a5f28a \
-                        sha256  efc48d8160a66b50fc498bb42ea730c3b6f30f036b709a7070d356edd645923e \
-                        size    32409084
+sha256  efc48d8160a66b50fc498bb42ea730c3b6f30f036b709a7070d356edd645923e \
+size    32409084
 
     depends_lib-append  path:lib/libssl.dylib:openssl \
                         port:ncurses \

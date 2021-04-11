@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -8,8 +8,8 @@ PortGroup           github 1.0
 github.setup        alanxz rabbitmq-c 0.10.0 v
 revision            0
 checksums           rmd160  74cbe99ff7849d23dfdf749c194681ffc8897fd0 \
-                    sha256  40a337d975b510e45d5c24998dcc1af3e7b6f5b9dd4cb7d1023e4003138c35ba \
-                    size    145406
+sha256  40a337d975b510e45d5c24998dcc1af3e7b6f5b9dd4cb7d1023e4003138c35ba \
+size    145406
 
 categories          net devel
 platforms           darwin

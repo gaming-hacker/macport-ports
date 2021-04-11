@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       github 1.0
 
 github.setup    davmac314 libxdg-basedir 1.2.2 v
@@ -15,8 +17,8 @@ long_description \
     with the specification.
 
 checksums       rmd160  b81656222bed2090ca04a8e0788ef1e6ae6d5f7a \
-                sha256  fb95e36927dc34a04659935235d513baddd1a77c7898fe850475e32881b0b579 \
-                size    30882
+sha256  fb95e36927dc34a04659935235d513baddd1a77c7898fe850475e32881b0b579 \
+size    30882
 
 use_autoreconf  yes
 autoreconf.cmd  ./autogen.sh

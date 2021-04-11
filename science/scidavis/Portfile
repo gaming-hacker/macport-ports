@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake 1.0
@@ -35,8 +35,8 @@ depends_lib-append  port:qwt52 \
                     port:libGLU
 
 checksums           rmd160  557af96e0bdc10657c4bde213a9863c7ae9b08d7 \
-                    sha256  99bfe79d55e6e0bd4e93acef2b1a29680cfda7b7f4aafaf47f8eb6f75083f7c4 \
-                    size    9821119
+sha256  99bfe79d55e6e0bd4e93acef2b1a29680cfda7b7f4aafaf47f8eb6f75083f7c4 \
+size    9821119
 
 universal_variant   no
 
@@ -59,7 +59,7 @@ pre-configure {
         reinplace "s|/opt/local|${prefix}|g" ${worksrcpath}/mkMacDist.sh
     }
 
-    if {![variant_isset python27]} {
+    if {![variant_isset python37]} {
         reinplace "s|CONFIG+=python| |g" \
             ${worksrcpath}/config.pri
     }
@@ -76,10 +76,10 @@ post-destroot {
 
 }
 
-variant python27 description "add support for python scripting" {
-    depends_lib-append port:python27 \
-                       port:py27-sip \
-                       port:py27-pyqt4
+variant python37 description "add support for python scripting" {
+    depends_lib-append port:python37 \
+                       port:py37-sip \
+                       port:py37-pyqt4
 }
 
 livecheck.type      sourceforge

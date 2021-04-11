@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -29,8 +29,8 @@ set stable_series   [join [lrange [split ${version} .] 0 1] .]-series
 master_sites        https://launchpad.net/duplicity/${stable_series}/${version}/+download
 
 checksums           rmd160  aa1fc9880f31fe22144988f0b42b6f6e06b6f92c \
-                    sha256  2643fea0f52920a0fb114069c78389f9621f1c24db7f26bda77bbc239b01ae53 \
-                    size    1352646
+sha256  2643fea0f52920a0fb114069c78389f9621f1c24db7f26bda77bbc239b01ae53 \
+size    1352646
 
 python.default_version 39
 

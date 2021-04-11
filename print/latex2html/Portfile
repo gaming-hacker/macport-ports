@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               texlive 1.0
@@ -21,8 +21,8 @@ long_description        LATEX2HTML is a convertor written in Perl that \
 homepage                https://www.ctan.org/pkg/${name}
 
 checksums               rmd160  7eacda067f7804497b62b26e3915df3b005e4c28 \
-                        sha256  414194e7c5164b447b72e1f70b9cfe3e2aeb0c60d81a84def6a8a08bf47c3771 \
-                        size    1120645
+sha256  414194e7c5164b447b72e1f70b9cfe3e2aeb0c60d81a84def6a8a08bf47c3771 \
+size    1120645
 
 depends_lib             bin:latex:texlive-latex \
                         port:dvipng \
@@ -38,7 +38,7 @@ patchfiles-append       patch-destdir.diff
 # latex2html can not depend on perl5 since it puts the full perl name in the scripts
 #    (#! ${prefix}/bin/perl5.x)
 perl5.conflict_variants yes
-perl5.branches          5.26 5.28 5.30
+perl5.branches 5.28
 perl5.default_branch    5.28
 perl5.create_variants   ${perl5.branches}
 

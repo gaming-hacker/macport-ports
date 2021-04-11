@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ homepage            https://diffoscope.org/
 master_sites        pypi:d/diffoscope
 
 checksums           rmd160  f69e86b7c6334bb0a69ef7a8d241a2faed1a9794 \
-                    sha256  e1fc59dbbae133da65c827ba990243119f30731b1489002c396d49c66300b9da \
-                    size    1557283
+sha256  e1fc59dbbae133da65c827ba990243119f30731b1489002c396d49c66300b9da \
+size    1557283
 
 python.default_version 38
 

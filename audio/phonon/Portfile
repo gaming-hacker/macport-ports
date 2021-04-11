@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -7,15 +7,15 @@ name                phonon
 if {${subport} eq ${name}} {
     version             4.10.3
     checksums           rmd160 7a1934b45a6d54d0803edf0a3cd6d7b5b4ecc1e7 \
-                        sha256 2e8b145669afa0e93833e4064b657677abc9413e4007fa5ddc91397c9bddc295 \
-                        size   336724
+sha256 2e8b145669afa0e93833e4064b657677abc9413e4007fa5ddc91397c9bddc295 \
+size   336724
     revision            0
 } else {
     # Qt4 support was dropped in 4.11
     version             4.11.1
     checksums           rmd160  035bb6e70e678593cf83673691fb69c8eb0c2248 \
-                        sha256  b4431ea2600df8137a717741ad9ebc7f7ec1649fa3e138541d8f42597144de2d \
-                        size    314732
+sha256  b4431ea2600df8137a717741ad9ebc7f7ec1649fa3e138541d8f42597144de2d \
+size    314732
 }
 
 license             {LGPL-2.1 LGPL-3}

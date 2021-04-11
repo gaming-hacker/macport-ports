@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -18,7 +18,7 @@ homepage            https://www.pypy.org/
 master_sites        https://downloads.python.org/${name}
 
 depends_build       port:pkgconfig \
-                    port:py27-docutils
+                    port:py37-docutils
 depends_lib         port:libffi \
                     port:sqlite3 \
                     port:bzip2 \
@@ -103,7 +103,7 @@ subport pypy37-tkinter {
 }
 
 if {$subport == ${name}} {
-    set python.branch 2.7
+    set python.branch 3.7
 
     depends_run-append port:python2_select
     select.entries-append [list python2 python2-$subport $subport]
@@ -117,20 +117,20 @@ if {${python.branch} == 2.7} {
     patchfiles-append   pypy2-darwin.py.diff
 
     checksums           rmd160  d96834cd5b4db84ce9ecf79543478934ad25481d \
-                        sha256  f63488051ba877fd65840bf8d53822a9c6423d947839023b8720139f4b6e2336 \
-                        size    20881821
+sha256  f63488051ba877fd65840bf8d53822a9c6423d947839023b8720139f4b6e2336 \
+size    20881821
 } elseif {${python.branch} == 3.6} {
     patchfiles-append   pypy3-darwin.py.diff
 
     checksums           rmd160  02e9c76e0b381d1bb7ea2f828f221a4d7cdd403a \
-                        sha256  a23d21ca0de0f613732af4b4abb0b0db1cc56134b5bf0e33614eca87ab8805af \
-                        size    22484684
+sha256  a23d21ca0de0f613732af4b4abb0b0db1cc56134b5bf0e33614eca87ab8805af \
+size    22484684
 } elseif {${python.branch} == 3.7} {
     patchfiles-append   pypy3-darwin.py.diff
 
     checksums           rmd160  2bdde7c11bee2ce9736effbc327abea22c410f46 \
-                        sha256  f6c96401f76331e474cca2d14437eb3b2f68a0f27220a6dcbc537445fe9d5b78 \
-                        size    24633503
+sha256  f6c96401f76331e474cca2d14437eb3b2f68a0f27220a6dcbc537445fe9d5b78 \
+size    24633503
 }
 
 description         A fast interpreter for Python ${python.branch}
@@ -203,14 +203,14 @@ if {$subport ne $name} {
         build.cmd       ${prefix}/lib/pypy-bootstrap/bin/pypy
     } else {
         # fall back to good old CPython...
-        depends_build-append port:python27 port:py27-pycparser port:py27-cffi
+        depends_build-append port:python37 port:py37-pycparser port:py37-cffi
         build.cmd       ${prefix}/bin/python2.7
     }
 }
 
 if {${os.platform} eq "darwin" && ${os.major} >= 20} {
     if {${python.branch} == 2.7} {
-        patchfiles-append patch-big-sur-pypy27.diff
+        patchfiles-append patch-big-sur-pypy37.diff
     } elseif {${python.branch} == 3.6} {
         patchfiles-append patch-big-sur-pypy36.diff
     } else {

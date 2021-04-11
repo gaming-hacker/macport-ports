@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ master_sites        https://www.spice-space.org/download/usbredir/
 use_bzip2           yes
 
 checksums           rmd160  ff51d678e7e3b5d0bb3d7d16335349143e063c3b \
-                    sha256  87bc9c5a81c982517a1bec70dc8d22e15ae197847643d58f20c0ced3c38c5e00 \
-                    size    331349
+sha256  87bc9c5a81c982517a1bec70dc8d22e15ae197847643d58f20c0ced3c38c5e00 \
+size    331349
 
 patch.pre_args      -p1
 patchfiles          sol_tcp.diff

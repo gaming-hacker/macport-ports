@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,8 +12,8 @@ PortGroup           muniversal 1.0
 
 github.setup        xkbcommon libxkbcommon 1.1.0 xkbcommon-
 checksums           rmd160  5d51fe9f17f254ba4497af37226eab8886389ad7 \
-                    sha256  412cfcca596f92914ea1a66ad244804d73a5ff20b6d86459951e7ad20576c246 \
-                    size    439488
+sha256  412cfcca596f92914ea1a66ad244804d73a5ff20b6d86459951e7ad20576c246 \
+size    439488
 
 categories          devel
 platforms           darwin

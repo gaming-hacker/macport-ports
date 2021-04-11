@@ -1,11 +1,13 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            lookat
 version         1.4.4
 revision        0
 checksums       rmd160  1e63e45bec5ae51c170f743c6340747045e84e31 \
-                sha256  86513ec90ad13c4bc4a1510fb9e177fd5cf581b3d41415964cb0736571cad9c2 \
-                size    279634
+sha256  86513ec90ad13c4bc4a1510fb9e177fd5cf581b3d41415964cb0736571cad9c2 \
+size    279634
 
 description     A program to view textfiles and man-pages.
 long_description \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ long_description    Caddy 2 is a powerful, enterprise-ready, open source web \
 homepage            https://caddyserver.com/
 
 checksums           rmd160  d638e0981e9d9b4ac6f8cadd4d3d3fd7f23fc582 \
-                    sha256  fd4a6f2b25a3bda51cbccb3676374b05c3a855c7783d8173b1631cd4259cc5df \
-                    size    18430
+sha256  fd4a6f2b25a3bda51cbccb3676374b05c3a855c7783d8173b1631cd4259cc5df \
+size    18430
 
 build.env-delete    GO111MODULE=off GOPROXY=off
 build.cmd           go run cmd/xcaddy/main.go

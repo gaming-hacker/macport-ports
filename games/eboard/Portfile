@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    \
     engines like GNU Chess, Sjeng and Crafty.
 
 checksums           rmd160  9157280313a11fa839a46bed68db2ad22311079a \
-                    sha256  b1a7a3c7873ea086aa2c89f3e4fb40e4c1e3f9f7350f05f33669eca43efb72bd \
-                    size    1579046
+sha256  b1a7a3c7873ea086aa2c89f3e4fb40e4c1e3f9f7350f05f33669eca43efb72bd \
+size    1579046
 
 depends_build-append    port:pkgconfig
 depends_lib-append      port:gtk2 \

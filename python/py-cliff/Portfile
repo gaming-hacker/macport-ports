@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,11 +17,11 @@ long_description    cliff is a framework for building command line \
                     extensions.
 homepage            https://docs.openstack.org/cliff/latest/
 checksums           md5     0e935a090e19358973fdbcc4dfbcdaab \
-                    rmd160  131952d0886ea27d1b4225c3065c2ee5467cc63d \
-                    sha256  611595ad7b4bdf57aa252027796dac3273ab0f4bc1511e839cce230a351cb710 \
-                    size    79680
+rmd160  131952d0886ea27d1b4225c3065c2ee5467cc63d \
+sha256  611595ad7b4bdf57aa252027796dac3273ab0f4bc1511e839cce230a351cb710 \
+size    79680
 
-python.versions     36 37 38
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Test-Output 1.033
 platforms           darwin
 maintainers         nomaintainer
@@ -18,8 +18,8 @@ long_description    Test::Output provides a simple interface for testing \
                     possible to the tester.
 
 checksums           rmd160  68e1148ad5ce4f02009a46f588506e39e84dcc83 \
-                    sha256  f6a8482740b075fad22aaf4d987d38ef927c6d2b452d4ae0d0bd8f779830556e \
-                    size    17196
+sha256  f6a8482740b075fad22aaf4d987d38ef927c6d2b452d4ae0d0bd8f779830556e \
+size    17196
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -32,10 +32,10 @@ long_description    The aim of torchaudio is to apply PyTorch to the \
                     extension.
 
 checksums           rmd160  fe693d72d64b1a651351619aae0a58106bbd9ce3 \
-                    sha256  c0ae4b1573526d8b04e581393dec74bd31b999a34f377595aecdeef766d79f48 \
-                    size    3503436
+sha256  c0ae4b1573526d8b04e581393dec74bd31b999a34f377595aecdeef766d79f48 \
+size    3503436
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

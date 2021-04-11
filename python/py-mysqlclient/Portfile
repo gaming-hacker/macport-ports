@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           python 1.0
 
 github.setup        PyMySQL mysqlclient-python 2.0.1 v
 checksums           rmd160  15ba99fe4e44ea848dc5277e7bb6a3a1010a11c8 \
-                    sha256  1196ff1db0fbd37fe38d4b8e8648bbfb859e441a9d683e87084d489646593d20 \
-                    size    90154
+sha256  1196ff1db0fbd37fe38d4b8e8648bbfb859e441a9d683e87084d489646593d20 \
+size    90154
 
 name                py-mysqlclient
 
@@ -19,7 +19,7 @@ maintainers         {ctreleaven @ctreleaven} openmaintainer
 description         Python3 interface to MySQL/MariaDB, fork of MySQL-python
 long_description    ${description}
 
-python.versions     38
+python.version 37
 
 if {${name} ne ${subport}} {
     set mysql_config {}

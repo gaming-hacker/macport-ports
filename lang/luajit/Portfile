@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -22,8 +22,8 @@ master_sites        ${homepage}/download
 distname            LuaJIT-${version}
 
 checksums           rmd160  5f41b0b6e3bfe1f1e033f7464171d474ca497235 \
-                    sha256  1ad2e34b111c802f9d0cdf019e986909123237a28c746b21295b63c9e785d9c3 \
-                    size    1025180
+sha256  1ad2e34b111c802f9d0cdf019e986909123237a28c746b21295b63c9e785d9c3 \
+size    1025180
 
 post-patch {
     reinplace "s|/usr/local|${prefix}|" ${worksrcpath}/etc/luajit.pc

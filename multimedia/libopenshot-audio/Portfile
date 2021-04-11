@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -9,8 +9,8 @@ github.setup        OpenShot libopenshot-audio 0.2.0 v
 revision            1
 github.tarball_from archive
 checksums           rmd160  ffba3afbd01340b7ee6ce6eb7aa0cf27901f664a \
-                    sha256  937ff4f1c2dfb8ab5d56ad85beacaa29dfd5a79af0d9cf647386034fe9882309 \
-                    size    1711504
+sha256  937ff4f1c2dfb8ab5d56ad85beacaa29dfd5a79af0d9cf647386034fe9882309 \
+size    1711504
 homepage            https://www.openshot.org/
 categories          multimedia devel
 license             GPL-3+

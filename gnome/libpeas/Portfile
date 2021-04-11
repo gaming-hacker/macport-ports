@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -19,8 +19,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  1a94f67e9e05d4c61ba127b213778165bdd48832 \
-                    sha256  42d91993b46ed50f16add6d9577ecc22beb8e2dffa7101e2232c2b63733b8b15 \
-                    size    191896
+sha256  42d91993b46ed50f16add6d9577ecc22beb8e2dffa7101e2232c2b63733b8b15 \
+size    191896
 
 depends_build-append \
                     port:pkgconfig \

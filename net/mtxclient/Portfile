@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         Client API for Matrix
 long_description    Client API library for the Matrix protocol, built on top of Boost.Asio.
 
 checksums           rmd160  31722fa1af22f239c68527b4d677b79c06c748ea \
-                    sha256  4742e95097a5ec1be31685398173d9bf248ecc2fef96932bad8fe528de7255a2 \
-                    size    512153
+sha256  4742e95097a5ec1be31685398173d9bf248ecc2fef96932bad8fe528de7255a2 \
+size    512153
 
 compiler.cxx_standard \
                     2017

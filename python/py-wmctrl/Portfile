@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,10 +16,10 @@ long_description    ${description}
 homepage            https://bitbucket.org/antocuni/wmctrl/src/default/
 
 checksums           rmd160  3bb58717433e5062c44b95349af4dabf21afca37 \
-                    sha256  d806f65ac1554366b6e31d29d7be2e8893996c0acbb2824bbf2b1f49cf628a13 \
-                    size    2505
+sha256  d806f65ac1554366b6e31d29d7be2e8893996c0acbb2824bbf2b1f49cf628a13 \
+size    2505
 
-python.versions     37 38
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

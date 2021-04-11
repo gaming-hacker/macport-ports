@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,8 +26,8 @@ build.target        build
 installs_libs       no
 
 checksums           rmd160  5a69f04b09d41625adee8d5a13dc10e1394dae69 \
-                    sha256  5212b21157b6244829c211c54e306b32ce2f3b0370606ecafca892c722f516f7 \
-                    size    1850177
+sha256  5212b21157b6244829c211c54e306b32ce2f3b0370606ecafca892c722f516f7 \
+size    1850177
 
 # Allowing go to fetch dependencies during build time for now.
 # See: https://trac.macports.org/ticket/61192

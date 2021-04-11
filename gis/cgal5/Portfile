@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github  1.0
@@ -32,8 +32,8 @@ use_xz                  yes
 homepage                http://www.cgal.org/
 
 checksums           rmd160  eeb889813254f542172a610863bfefae07b72a94 \
-                    sha256  744c86edb6e020ab0238f95ffeb9cf8363d98cde17ebb897d3ea93dac4145923 \
-                    size    23250240
+sha256  744c86edb6e020ab0238f95ffeb9cf8363d98cde17ebb897d3ea93dac4145923 \
+size    23250240
 
 
 worksrcdir              CGAL-${version}

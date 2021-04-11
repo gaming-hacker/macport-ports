@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Gedcom 1.22
 license             {Artistic-1 GPL}
 description         A module to manipulate Gedcom genealogy files
@@ -15,8 +15,8 @@ maintainers         nomaintainer
 platforms           darwin
 
 checksums           rmd160  c3cdc861ba895472179feba374685d94eca18f54 \
-                    sha256  cf90c53edcdeab21c253f7de341f85fb66bacfa55ccff5157d27814a7d07bec3 \
-                    size    120867
+sha256  cf90c53edcdeab21c253f7de341f85fb66bacfa55ccff5157d27814a7d07bec3 \
+size    120867
 
 if {${perl5.major} != ""} {
     depends_build-append \

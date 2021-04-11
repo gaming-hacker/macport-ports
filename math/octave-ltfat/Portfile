@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -8,8 +8,8 @@ PortGroup           octave 1.0
 octave.setup        ltfat 2.4.0
 revision            1
 checksums           rmd160  dfeec21ea3c1afb5480365b06d3a5c16f066b8c6 \
-                    sha256  fe37b31bc2dae97d1b5e1389d856cc354f21dcd77f5df67c2a025fdae8c8d5fe \
-                    size    3290078
+sha256  fe37b31bc2dae97d1b5e1389d856cc354f21dcd77f5df67c2a025fdae8c8d5fe \
+size    3290078
 
 github.setup        ltfat ltfat ${version}
 platforms           darwin

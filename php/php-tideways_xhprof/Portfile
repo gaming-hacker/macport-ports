@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,7 +14,7 @@ platforms           darwin
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             Apache-2
 
-php.branches        7.0 7.1 7.2 7.3 7.4 8.0
+php.branches 7.3
 
 description         A PHP 7 rewrite of the original XHProf (Hierarchical Profiler) for PHP
 
@@ -25,8 +25,8 @@ if {[vercmp ${php.branch} 7.0] >= 0} {
     github.setup    tideways php-xhprof-extension 5.0.4 v
     revision        0
     checksums       rmd160  558bc8665501dafd4a44b218e5d176831bafec69 \
-                    sha256  a414e5d30cba360fbbc54ce929a6db4ae8a9b93a2e58d447e6a5dd7af6fecf72 \
-                    size    25591
+sha256  a414e5d30cba360fbbc54ce929a6db4ae8a9b93a2e58d447e6a5dd7af6fecf72 \
+size    25591
 
 }
 

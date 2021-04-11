@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -29,8 +29,8 @@ long_description    Routes is a Python re-implementation of the \
 homepage            https://routes.readthedocs.io/
 
 checksums           rmd160  f389578231f3c2e4c4695f005484248fec1bdb41 \
-                    sha256  b6346459a15f0cbab01a45a90c3d25caf980d4733d628b4cc1952b865125d053 \
-                    size    190905
+sha256  b6346459a15f0cbab01a45a90c3d25caf980d4733d628b4cc1952b865125d053 \
+size    190905
 
 if {${name} ne ${subport}} {
     depends_build-append \

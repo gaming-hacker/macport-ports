@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -12,8 +12,8 @@ long_description \
   routines for reading/writing LIGO_LW XML files.
 
 checksums     rmd160  2823123d56c6f536d39645a1b76df03d59b21433 \
-              sha256  8b33a98343a40841f5da12b0b0d3df941654800e7e84f11be1db3a6f0e404412 \
-              size    352760
+sha256  8b33a98343a40841f5da12b0b0d3df941654800e7e84f11be1db3a6f0e404412 \
+size    352760
 
 depends_lib   port:lal \
               port:metaio
@@ -109,8 +109,8 @@ foreach v {27 36 37 38} {
       # (duplicate of SWIG headers in ${prefix}/include)
       file delete -force ${destroot}${pythonhome}/include
 
-      # Create symbolic links in ${prefix}/bin to Python 2.7 scripts
-      if {${subport} eq "py27-${name}"} {
+      # Create symbolic links in ${prefix}/bin to Python 3.7 scripts
+      if {${subport} eq "py37-${name}"} {
         foreach script [glob -tails -nocomplain -directory ${destroot}${pythonhome}/bin *] {
           file link -symbolic ${destroot}${prefix}/bin/${script} ../Library/Frameworks/Python.framework/Versions/${pythonversion}/bin/${script}
         }

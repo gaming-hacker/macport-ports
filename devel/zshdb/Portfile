@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ supported_archs     noarch
 depends_lib         port:zsh
 
 checksums           rmd160  1d30265e89b2e5b740240f6477030fad63f15a2d \
-                    sha256  e774af35fdad380c4d5f6d1868ea30cd5e9b78a6e5c8eb82d9cb689a7b50edd9 \
-                    size    212511
+sha256  e774af35fdad380c4d5f6d1868ea30cd5e9b78a6e5c8eb82d9cb689a7b50edd9 \
+size    212511
 
 use_autoreconf      yes
 

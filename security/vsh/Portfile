@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -18,8 +18,8 @@ platforms           darwin
 installs_libs       no
 
 checksums           rmd160  ed180dd49f59123c1cb13aa758f2e33b3a1fb43a \
-                    sha256  e55cea6acaf01095cefd7813dba1b7bcb1e115a76b3bf6f741b9334ddfa47f18 \
-                    size    2591876
+sha256  e55cea6acaf01095cefd7813dba1b7bcb1e115a76b3bf6f741b9334ddfa47f18 \
+size    2591876
 
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer

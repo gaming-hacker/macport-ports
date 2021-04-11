@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ use_xz              yes
 use_parallel_build  yes
 
 checksums           sha256  b1f1fe5ade7d667d005078f25c1b8b1523d18307ac451176ccd7c6b7bffe0050 \
-                    rmd160  1a4b007b3e25f638b43b0a00e0bf780805f0145b \
-                    size    4607560
+rmd160  1a4b007b3e25f638b43b0a00e0bf780805f0145b \
+size    4607560
 
 depends_build       port:pkgconfig
 
@@ -47,10 +47,10 @@ variant quartz description { Build gwyddion with quartz gl support } {
 
 variant pygwy description { Build gwyddion with python support } {
     ui_msg "For console python support you have to set DYLD_FALLBACK_LIBRARY_PATH to ${prefix}/lib"
-    set python.prefix     ${frameworks_dir}/Python.framework/Versions/2.7
+    set python.prefix     ${frameworks_dir}/Python.framework/Versions/3.7
     configure.pkg_config_path ${python.prefix}/lib/pkgconfig
     depends_lib-append    port:py-pygtk \
-                          port:python27
+                          port:python37
     configure.cflags-append -I${python.prefix}/include
 }
 
@@ -68,7 +68,7 @@ post-destroot {
         reinplace "s|@PREFIX@|${prefix}|" ${destroot}${applications_dir}/gwyddion.app/Contents/MacOS/gwyddion
     }
     if {[variant_isset pygwy]} {
-    	set python.prefix   ${frameworks_dir}/Python.framework/Versions/2.7
+    	set python.prefix   ${frameworks_dir}/Python.framework/Versions/3.7
     	set python.site_packages    ${python.prefix}/lib/python2.7/site-packages/
         xinstall -m 755 -d ${destroot}${python.site_packages}
         move ${destroot}${prefix}/lib/python2.7/site-packages/gwy.so ${destroot}${python.site_packages}

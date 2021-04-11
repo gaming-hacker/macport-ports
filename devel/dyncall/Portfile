@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -24,8 +24,8 @@ homepage            http://dyncall.org/
 master_sites        ${homepage}r${version}
 
 checksums           rmd160  773806fdd410ace4b997650cde2ade25f687e317 \
-                    sha256  e88154c0243421560704f5c7294afbdec9e991afa0601d5adff5042ea81808d7 \
-                    size    523701
+sha256  e88154c0243421560704f5c7294afbdec9e991afa0601d5adff5042ea81808d7 \
+size    523701
 
 cmake.out_of_source yes
 

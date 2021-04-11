@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -13,8 +13,8 @@ description         Unconstrained Non-linear Optimization toolkit.
 long_description    {*}${description}
 
 checksums           rmd160  52a04f2a67c61981d6fddcc953516cee22a91c45 \
-                    sha256  7150cdfac7e9da31ec7ac1cfe8619d9c0e9c8b3f787f54bf89e0fb1c275be584 \
-                    size    424554
+sha256  7150cdfac7e9da31ec7ac1cfe8619d9c0e9c8b3f787f54bf89e0fb1c275be584 \
+size    424554
 
 depends_lib-append  port:octave-miscellaneous \
                     port:octave-struct

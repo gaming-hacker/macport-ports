@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -23,8 +23,8 @@ long_description        Gramps is a genealogy program to store, edit, \
 homepage                https://www.gramps-project.org/
 
 checksums               rmd160  5a83168139c52782cf739f05bc5dd7e4f641f85e \
-                        sha256  91d755b7e407af40ce5ebe24b29baab860bc6e2871ebcbee3f5e109c438df1e8 \
-                        size    17352457
+sha256  91d755b7e407af40ce5ebe24b29baab860bc6e2871ebcbee3f5e109c438df1e8 \
+size    17352457
 
 depends_build-append    port:intltool
 

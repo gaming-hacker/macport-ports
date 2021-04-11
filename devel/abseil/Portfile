@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,8 +21,8 @@ long_description    Abseil is an open-source collection of C++ library \
 platforms           darwin
 
 checksums           rmd160  ae1f87248aa8f307c0ca5d794515ae57f17fdc4f \
-                    sha256  63af9d38b387c053741e9260c401de00b4099d24a0d1a42ca7c86c5d5d0d162e \
-                    size    1783966
+sha256  63af9d38b387c053741e9260c401de00b4099d24a0d1a42ca7c86c5d5d0d162e \
+size    1783966
 
 # ignore pre releases
 github.livecheck.regex  {([0-9.]+)}

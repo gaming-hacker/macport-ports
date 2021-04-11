@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,10 +26,10 @@ long_description \
 homepage            https://github.com/rocky/python-xdis
 
 checksums           rmd160  020ebda09367fcc13a8843e54722fbe85baa1373 \
-                    sha256  532780af6841bee79e74cb4719e72077192eaf63946cfb4a570c124863a94001 \
-                    size    235039
+sha256  532780af6841bee79e74cb4719e72077192eaf63946cfb4a570c124863a94001 \
+size    235039
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-click \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                            1.0
 PortGroup             github                          1.0
@@ -37,8 +37,8 @@ if { ${name} eq ${subport} } {
     revision          0
 
     checksums         rmd160  38aeaae4a1f6a5970fe72e892928f5842b9ba29a \
-                      sha256  d350f80e70654932db252db380d2ec0144a00e86f8d9f2b4c799ffdb48e9cdd1 \
-                      size    274505338
+sha256  d350f80e70654932db252db380d2ec0144a00e86f8d9f2b4c799ffdb48e9cdd1 \
+size    274505338
 
     set bazel_min_xcode 12.0
     compiler.blacklist-append {clang < 1200}
@@ -54,8 +54,8 @@ if { ${name} eq ${subport} } {
     livecheck.type    none
 
     checksums         rmd160  abf23b277194854bbd4e4390ab6b3f971d26826c \
-                      sha256  de255bb42163a915312df9f4b86e5b874b46d9e8d4b72604b5123c3a845ed9b1 \
-                      size    313677756
+sha256  de255bb42163a915312df9f4b86e5b874b46d9e8d4b72604b5123c3a845ed9b1 \
+size    313677756
 
     compiler.blacklist-append {clang < 710}
     compiler.blacklist-append {macports-clang-[7-9].0}
@@ -70,8 +70,8 @@ if { ${name} eq ${subport} } {
     livecheck.type    none
 
     checksums         rmd160  8c52fab5214d862b83459f807c39ae392db49a75 \
-                      sha256  67eae714578b22d24192b0eb3a2d35b07578bbd57a33c50f1e74f8acd6378b3c \
-                      size    307982168
+sha256  67eae714578b22d24192b0eb3a2d35b07578bbd57a33c50f1e74f8acd6378b3c \
+size    307982168
 
     compiler.blacklist-append {clang < 710}
     compiler.blacklist-append {macports-clang-[7-9].0}
@@ -86,8 +86,8 @@ if { ${name} eq ${subport} } {
     livecheck.type    none
 
     checksums         rmd160  b3238d0539e757a2a7b07f2e4475f1cefdc6307c \
-                      sha256  d7f40d0cac95a06cea6cb5b7f7769085257caebc3ee84269dd9298da760d5615 \
-                      size    269384742
+sha256  d7f40d0cac95a06cea6cb5b7f7769085257caebc3ee84269dd9298da760d5615 \
+size    269384742
 
     compiler.blacklist-append {clang < 710}
     compiler.blacklist-append {macports-clang-[7-9].0}
@@ -105,8 +105,8 @@ if { ${name} eq ${subport} } {
     livecheck.type    none
     
     checksums         rmd160  acf9b886d2ec69f2c7019037e3aeba6de48cb011 \
-                      sha256  724da3c656f68e787a86ebb9844773aa1c2e3a873cc39462a8f1b336153d6cbb \
-                      size    259625808
+sha256  724da3c656f68e787a86ebb9844773aa1c2e3a873cc39462a8f1b336153d6cbb \
+size    259625808
 
     compiler.blacklist-append {clang < 710}
     compiler.blacklist-append {macports-clang-[7-9].0}
@@ -121,8 +121,8 @@ if { ${name} eq ${subport} } {
     livecheck.type    none
 
     checksums         rmd160  cfff49a4be85f7693ae615c293b13d0a447b80d7 \
-                      sha256  7456032199852c043e6c5b3e4c71dd8089c1158f72ec554e6ec1c77007f0ab51 \
-                      size    275804130
+sha256  7456032199852c043e6c5b3e4c71dd8089c1158f72ec554e6ec1c77007f0ab51 \
+size    275804130
 
     # min OS
     set min_darwin 14

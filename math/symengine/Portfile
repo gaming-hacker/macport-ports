@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github                        1.0
@@ -15,8 +15,8 @@ description             a fast symbolic manipulation library
 long_description        ${name} is ${description}, written in C++.
 
 checksums               rmd160  b8160ebe47401358918ac6abde39edbc9094bd83 \
-                        sha256  a9f74db2cfabc7dcf4c10b55cfd2d090358f32a16e9cf41e016b6d37f968a359 \
-                        size    802349
+sha256  a9f74db2cfabc7dcf4c10b55cfd2d090358f32a16e9cf41e016b6d37f968a359 \
+size    802349
 
 set llvm_version        11
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            http://midori-browser.org
 
 checksums           rmd160  9a5b551fe69a0ed0c1788c173a8c0e834e75728b \
-                    sha256  ff612447133fa5ad6090a1773f745770a9cd7a373950ac346d7b2ee4a3802fee \
-                    size    1938258
+sha256  ff612447133fa5ad6090a1773f745770a9cd7a373950ac346d7b2ee4a3802fee \
+size    1938258
 
 # put WebKit Availability.h into the proper mood...
 configure.cppflags-append -DBUILDING_GTK__

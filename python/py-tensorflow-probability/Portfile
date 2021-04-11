@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,10 +27,10 @@ long_description    TensorFlow Probability is a library for probabilistic \
 homepage            http://github.com/tensorflow/probability
 
 checksums           rmd160  c7d5eab256a322d0869b5d921e1ee743a9e16d71 \
-                    sha256  4e1b1925e809adff3184e1596d84880537b90074bc0f9d6fdc242e6f55cd1f22 \
-                    size    35499157
+sha256  4e1b1925e809adff3184e1596d84880537b90074bc0f9d6fdc242e6f55cd1f22 \
+size    35499157
 
-python.versions     37 38 39
+python.version 37
 
 if {${name} ne ${subport}} {
     PortGroup       bazel 1.0

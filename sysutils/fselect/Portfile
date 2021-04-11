@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,9 +25,9 @@ license             Apache-2
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  014634f3c3216dd8475168fa6bb29d1d7bcfb5cf \
-                    sha256  83ba411b23f83c57ab56d5b5f264bd310aa2bc3e8a88cd436dbcb9e5f81133b5 \
-                    size    64764
+rmd160  014634f3c3216dd8475168fa6bb29d1d7bcfb5cf \
+sha256  83ba411b23f83c57ab56d5b5f264bd310aa2bc3e8a88cd436dbcb9e5f81133b5 \
+size    64764
 
 destroot {
     xinstall -m 755 \
@@ -145,9 +145,9 @@ cargo.crates \
     serde                          1.0.125  558dc50e1a5a5fa7112ca2ce4effcb321b0300c0d4ccf0776a9f60cd89031171 \
     serde_derive                   1.0.125  b093b7a2bb58203b5da3056c05b4ec1fed827dcfdb37347a8841695263b3d06d \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
-    sha-1                            0.9.4  dfebf75d25bd900fd1e7d11501efab59bc846dbc76196839663e6637bba9f25f \
-    sha2                             0.9.3  fa827a14b29ab7f44778d14a88d3cb76e949c45083f7dbfa507d0cb699dc12de \
-    sha3                             0.9.1  f81199417d4e5de3f04b1e871023acea7389672c4135918f05aa9cbf2f2fa809 \
+sha-1                            0.9.4  dfebf75d25bd900fd1e7d11501efab59bc846dbc76196839663e6637bba9f25f \
+sha2                             0.9.3  fa827a14b29ab7f44778d14a88d3cb76e949c45083f7dbfa507d0cb699dc12de \
+sha3                             0.9.1  f81199417d4e5de3f04b1e871023acea7389672c4135918f05aa9cbf2f2fa809 \
     shell32-sys                      0.1.2  9ee04b46101f57121c9da2b151988283b6beb79b34f5bb29a58ee48cb695122c \
     siphasher                        0.3.5  cbce6d4507c7e4a3962091436e56e95290cb71fa302d0d270e32130b75fbff27 \
     smallvec                         1.6.1  fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e \

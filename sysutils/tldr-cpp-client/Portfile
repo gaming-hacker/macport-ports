@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ homepage            https://tldr.sh
 dist_subdir         ${name}/${version}_2
 
 checksums           rmd160  c42a48082e2cd297c4cf1b7f1197bf387cd7a20a \
-                    sha256  2ee36a8ac3b3bc6947ca2f226e5789b6c280e8307924cf1f60527629235a7a8b \
-                    size    13066
+sha256  2ee36a8ac3b3bc6947ca2f226e5789b6c280e8307924cf1f60527629235a7a8b \
+size    13066
 
 patchfiles          patch-Makefile.diff
 

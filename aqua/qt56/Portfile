@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -216,7 +216,7 @@ array set modules {
             f63fc053d0d16b8a9ca9308f8ead77874b470ae31b66057e2bd336bf648191fc
             18887200
         }
-        "port:python27"
+        "port:python37"
         ""
         "qtbase qtsvg qtxmlpatterns"
         {"Qt QML" "Qt Quick" "Qt Quick Widgets"}
@@ -471,7 +471,7 @@ array set modules {
             009d69fb39f6c0e2b0cd89a7e9302cd0ae1872d02c787d3a37f2cacca5ddb7a7
             163731304
         }
-        "port:python27 port:py27-ply"
+        "port:python37 port:py37-ply"
         ""
         "qtquickcontrols qtwebchannel qtlocation"
         {"Qt WebEngine"}
@@ -486,7 +486,7 @@ array set modules {
             098c6bb25798fbf1b619b540621287787064efc9b586d76ac0ce7e39b87a3896
             35300296
         }
-        "port:python27"
+        "port:python37"
         "port:fontconfig port:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3"
         "qtbase qtdeclarative qtlocation qtmultimedia qtsensors qtwebchannel qtxmlpatterns"
         {"Qt WebKit" "Qt WebKit Widgets"}
@@ -673,9 +673,9 @@ foreach {module module_info} [array get modules] {
         build.target
 
         checksums                                        \
-            rmd160  [lindex [lindex ${module_info} 0] 0] \
-            sha256  [lindex [lindex ${module_info} 0] 1] \
-            size    [lindex [lindex ${module_info} 0] 2]
+rmd160  [lindex [lindex ${module_info} 0] 0] \
+sha256  [lindex [lindex ${module_info} 0] 1] \
+size    [lindex [lindex ${module_info} 0] 2]
 
         set license_string [lindex ${module_info} 8]
         set license_string [string range ${license_string} 1+[string first ":" ${license_string}] end]
@@ -1494,9 +1494,9 @@ foreach {module module_info} [array get modules] {
             destroot.target install_docs
 
             checksums                                        \
-                rmd160  [lindex [lindex ${module_info} 0] 0] \
-                sha256  [lindex [lindex ${module_info} 0] 1] \
-                size    [lindex [lindex ${module_info} 0] 2]
+rmd160  [lindex [lindex ${module_info} 0] 0] \
+sha256  [lindex [lindex ${module_info} 0] 1] \
+size    [lindex [lindex ${module_info} 0] 2]
 
             depends_build-append            \
                 port:${name}-qttools        \
@@ -1554,9 +1554,9 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         revision ${revision_string}
 
         checksums                                          \
-            rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
-            sha256  [lindex [lindex $modules(qtbase) 0] 1] \
-            size    [lindex [lindex $modules(qtbase) 0] 2]
+rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
+sha256  [lindex [lindex $modules(qtbase) 0] 1] \
+size    [lindex [lindex $modules(qtbase) 0] 2]
 
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}
@@ -1703,8 +1703,8 @@ if { [info exists depends_lib] } {
 }
 
 foreach deps ${depends_check} {
-    if { [string first ":python27" ${deps}] >= 0 } {
-        # If Qt components use Python, ensure that MacPorts python27 is used
+    if { [string first ":python37" ${deps}] >= 0 } {
+        # If Qt components use Python, ensure that MacPorts python37 is used
         #
         # a better solution would be to force components to use a specific python program
         # how to accomplish such a thing is not entirely clear
@@ -1715,7 +1715,7 @@ foreach deps ${depends_check} {
         #    (see tools/qmake/mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.7
     }
 }
 if { ${python_framework} ne "" } {

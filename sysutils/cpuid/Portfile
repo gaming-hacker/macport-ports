@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ supported_archs     i386 x86_64
 installs_libs       no
 
 checksums           rmd160  20d5ec55975ba4e83b9af3ac1be6aa11d0110ec8 \
-                    sha256  72fba728152ab904a7d4c7d442bdd1f0178e84aaec84d484823d69e7fe770925 \
-                    size    56670
+sha256  72fba728152ab904a7d4c7d442bdd1f0178e84aaec84d484823d69e7fe770925 \
+size    56670
 
 patchfiles-append   patch-makefile.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 
 github.setup        AlDanial cloc 1.84
 revision            0
-perl5.branches      5.28
+perl5.branches 5.28
 categories          textproc devel
 license             GPL-2 Artistic-1
 platforms           darwin
@@ -19,8 +19,8 @@ long_description    cloc counts blank lines, comment lines, and physical \
                     differences in blank, comment, and source lines.
 
 checksums           rmd160  5538b760db2c1bc0aa06e6fb2094820c1a35a143 \
-                    sha256  66246ca354414f78528e8e412828f04915517546587253312e68dcb660e5a29f \
-                    size    514902
+sha256  66246ca354414f78528e8e412828f04915517546587253312e68dcb660e5a29f \
+size    514902
 
 depends_run-append  port:perl${perl5.major} \
                     port:p${perl5.major}-algorithm-diff \

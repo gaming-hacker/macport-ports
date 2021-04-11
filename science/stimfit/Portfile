@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           wxWidgets 1.0
@@ -16,7 +16,7 @@ homepage            http://www.stimfit.org
 master_sites        ${homepage}
 
 checksums           rmd160  960efd2fa4f88aba153af560cc49adc40090995b \
-                    sha256  0fc6b0f52057d9c45107557e615f314179ac92e180123ed9d1da98e7f812df8b
+sha256  0fc6b0f52057d9c45107557e615f314179ac92e180123ed9d1da98e7f812df8b
 
 wxWidgets.use       wxPython-3.0
 
@@ -30,17 +30,17 @@ configure.args      --with-wx-config=${wxWidgets.wxconfig} \
                     --disable-python \
                     --without-biosig
 
-# Only Python 2.7 is supported until wxpython gets available for Python 3.x
-variant python27 description {Build with Python shell.} {
+# Only Python 3.7 is supported until wxpython gets available for Python 3.x
+variant python37 description {Build with Python shell.} {
     depends_build-append \
         port:swig-python
 
     depends_lib-append \
-        port:python27 \
-        port:py27-wxpython-3.0 \
-        port:py27-numpy \
-        port:py27-matplotlib \
-        port:py27-cvxopt
+        port:python37 \
+        port:py37-wxpython-3.0 \
+        port:py37-numpy \
+        port:py37-matplotlib \
+        port:py37-cvxopt
 
     configure.python \
         ${prefix}/bin/python2.7
@@ -77,8 +77,8 @@ configure.ldflags-append \
                     -headerpad_max_install_names
 
 # Commented out for now; will be required when wxpython gets available for Python 3.x
-# if {![variant_isset python27]} {
-default_variants    +python27
+# if {![variant_isset python37]} {
+default_variants    +python37
 # }
 if {![variant_isset biosig]} {
     default_variants-append \

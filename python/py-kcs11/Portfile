@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,12 +18,12 @@ long_description    PyKCS11 let you access to almost all PKCS#11 functions and d
                     smartcard vendors.
 
 checksums           rmd160  04ab479229c74ea871aade0b60bfe335c47bc8ac \
-                    sha256  a669af699a444e171b77e3ef09538fc129c2cbcf7a83bd803d01f0cc97eceb2a \
-                    size    74223
+sha256  a669af699a444e171b77e3ef09538fc129c2cbcf7a83bd803d01f0cc97eceb2a \
+size    74223
 
 patchfiles          patch-setup.py-no-usr-local.diff
 
-python.versions     27 37 38
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

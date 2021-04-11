@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             gvpe
 version          3.1
@@ -15,7 +17,7 @@ homepage         http://software.schmorp.de/pkg/gvpe.html
 platforms        darwin
 master_sites     gnu
 checksums        rmd160 3939fb8f12da944aa41ef57510563f5ae413d5fe \
-                 sha256 f1ebd572d725bb940e080771a1c10867c3509dcd8316f6114814503dcbb1e8b3
+sha256 f1ebd572d725bb940e080771a1c10867c3509dcd8316f6114814503dcbb1e8b3
 
 patchfiles       lib_Makefile.in.patch
 

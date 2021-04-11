@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -22,8 +22,8 @@ if {${subport} eq ${name}} {
     # release
     github.setup    mossmann hackrf 2021.03.1 v
     checksums       rmd160  e37aacc7333f5e2ef23c36c86b70c6bbb04283eb \
-                    sha256  26baf06e4cf86e623c37f1d76e47c71ddefc57c24c113d27ab617b812d680432 \
-                    size    13066731
+sha256  26baf06e4cf86e623c37f1d76e47c71ddefc57c24c113d27ab617b812d680432 \
+size    13066731
     revision        0
 
     # bump the epoch because I moved the version from 20170219 to 2017.02.1
@@ -37,8 +37,8 @@ if {${subport} eq ${name}} {
     github.setup    mossmann hackrf e6eb4ba29bbe5dc2fcd092e394188bc10a8bad54
     version         20210318-[string range ${github.version} 0 7]
     checksums       rmd160  1cad1d66846af19b966f70d40028e5295b66d9bf \
-                    sha256  4f8c3f8b6fe19d2b8d53d9a0fa91cbc2c30376d03cd25f69d82d1c4419a7b2ac \
-                    size    13066739
+sha256  4f8c3f8b6fe19d2b8d53d9a0fa91cbc2c30376d03cd25f69d82d1c4419a7b2ac \
+size    13066739
     revision        0
 
     conflicts       hackrf

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ description         An anti-bikeshedding Kotlin linter with built-in formatter
 long_description    {*}${description}
 
 checksums           rmd160  e786e90b498d9de989584e5bef654d415c78a58e \
-                    sha256  438bd098e5e8acc966940480b025af7020bdaa66698c7d76042416314100e183 \
-                    size    53719970
+sha256  438bd098e5e8acc966940480b025af7020bdaa66698c7d76042416314100e183 \
+size    53719970
 
 extract.only
 use_configure       no

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -33,13 +33,13 @@ homepage            https://www.abinit.org
 master_sites        ${homepage}/sites/default/files/packages
 
 checksums           rmd160  675cf2df645175b0b054bde9ab030b038d526f9c \
-                    sha256  4999d48ed20655af7ee4015dc79fe5363db494eb330e71aeacb11870135fa95d \
-                    size    96751216
+sha256  4999d48ed20655af7ee4015dc79fe5363db494eb330e71aeacb11870135fa95d \
+size    96751216
 
 compilers.choose    cc cxx fc
 compilers.allow_arguments_mismatch yes
 # g95 is no longer supported by abinit
-mpi.setup           default require_fortran -g95
+mpi.setup           default require_fortran 
 
 configure.args-append  --enable-gw-dpc
 configure.fcflags-append  -ffree-line-length-none
@@ -90,7 +90,7 @@ test.cmd            tests/runtests.py -j ${build.jobs}
 # args -t0 for no timeout since it cannot be found anyway; or: set depends_test-append port:timeout
 test.target         libxc built-in fast tutorespfn tutorial unitary
 #test.target         built-in fast tutorespfn tutorial unitary v1 v2 v3 v4 v5 v6 v67mbpt v7
-depends_test-append port:py27-pandas
+depends_test-append port:py37-pandas
 
 pre-test {
     if {[mpi_variant_isset]} {

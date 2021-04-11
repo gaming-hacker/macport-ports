@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 platforms           darwin
 license             MIT
 
-python.versions     27 35 36 37 38 39
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -22,8 +22,8 @@ long_description    Pyrex wrapper to provide python interfaces to PROJ.4 \
 homepage            https://pyproj4.github.io/pyproj
 
 checksums           rmd160  a27bf9af9b34d0e97a0b14962d42309dd31fb013 \
-                    sha256  bfbac35490dd17f706700673506eeb8170f8a2a63fb5878171d4e6eef242d141 \
-                    size    168962
+sha256  bfbac35490dd17f706700673506eeb8170f8a2a63fb5878171d4e6eef242d141 \
+size    168962
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -36,8 +36,8 @@ if {${name} ne ${subport}} {
             revision            1
             distname            ${python.rootname}-${version}
             checksums           rmd160  39ea00d64f1b85f55c254fc4ee75ef37d879fc2d \
-                                sha256  6f129a00afdd817dbb331af5709221f35012bcc11a23b8c83fa09197c1190786 \
-                                size    7220807
+sha256  6f129a00afdd817dbb331af5709221f35012bcc11a23b8c83fa09197c1190786 \
+size    7220807
 
             depends_lib-append  port:py${python.version}-aenum
         } elseif {${python.version} < 36} {
@@ -45,8 +45,8 @@ if {${name} ne ${subport}} {
             revision            1
             distname            ${python.rootname}-${version}
             checksums           rmd160  f7ab40847df75a601a72794ab2be52de1e839b68 \
-                                sha256  4f5b02b4abbd41610397c635b275a8ee4a2b5bc72a75572b98ac6ae7befa471e \
-                                size    545482
+sha256  4f5b02b4abbd41610397c635b275a8ee4a2b5bc72a75572b98ac6ae7befa471e \
+size    545482
         }
 
         variant proj6 conflicts proj7 {

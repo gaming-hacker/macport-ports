@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup               java 1.0
@@ -21,10 +21,10 @@ master_sites            sourceforge:project/jsch/jsch/${version}/
 use_zip                 yes
 
 checksums               md5     6409f5c38840b053d946fb17cc3f2400 \
-                        sha1    5e7b17414533005c4f163bec8be41d023b1f0810 \
-                        rmd160  d1ce73ff32e2e644a5fa02fc5d6b0fdd55d54416 \
-                        sha256  063bf66e163f43b7d7897ac14efe1e80ed094d4016afe1181fe2285e3797bed3 \
-                        size    369664
+sha1    5e7b17414533005c4f163bec8be41d023b1f0810 \
+rmd160  d1ce73ff32e2e644a5fa02fc5d6b0fdd55d54416 \
+sha256  063bf66e163f43b7d7897ac14efe1e80ed094d4016afe1181fe2285e3797bed3 \
+size    369664
 
 java.version            1.7+
 java.fallback           openjdk8

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -34,8 +34,8 @@ destroot.violate_mtree yes
 compiler.blacklist-append {clang < 600}
 
 checksums           rmd160  92f8273c0c97db54a3288e40d1a566dca5714467 \
-                    sha256  69b2b50bfe0d6155dcf6e6ad918f869d3259ce5a552834b671ef8d02bcd41d83 \
-                    size    5638785
+sha256  69b2b50bfe0d6155dcf6e6ad918f869d3259ce5a552834b671ef8d02bcd41d83 \
+size    5638785
 
 notes "\
 To fully uninstall BlackHole, you will need to run the following command after\

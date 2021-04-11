@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,13 +23,13 @@ set src             ${name}build-${version}.tar.gz
 set pp              x86_64-macosx-10.9-ppcx64.tar.bz2
 distfiles           ${src}:main ${pp}:bootstrap
 checksums           ${src} \
-                    rmd160  c8d56acb409a6d5c186b0aaed38dc02dfa3bcb69 \
-                    sha256  f9b914eace989a023fb953da203dc0d973b44487568b4138c7d5b9613d7d6838 \
-                    size    80698915 \
+rmd160  c8d56acb409a6d5c186b0aaed38dc02dfa3bcb69 \
+sha256  f9b914eace989a023fb953da203dc0d973b44487568b4138c7d5b9613d7d6838 \
+size    80698915 \
                     ${pp} \
-                    rmd160  7c5327aa6f4fd8616d78bc4f708463b9fb3e8844 \
-                    sha256  0515ad4251c51fa7e5c0ff9b1d90ea50f41530b56276cc72b73798fae437b3b4 \
-                    size    1556308
+rmd160  7c5327aa6f4fd8616d78bc4f708463b9fb3e8844 \
+sha256  0515ad4251c51fa7e5c0ff9b1d90ea50f41530b56276cc72b73798fae437b3b4 \
+size    1556308
 supported_archs     x86_64 arm64
 
 # doesn't install shared libraries

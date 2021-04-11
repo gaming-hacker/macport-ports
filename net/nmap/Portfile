@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		nmap
 version		7.91
@@ -24,10 +26,10 @@ long_description Nmap is a utility for port scanning large networks, although \
 master_sites	https://nmap.org/dist/
 
 checksums	md5	239cef725863ab454590a1bb8793b72b \
-		sha1	e72198f463ee9d557e4c5c9444cc5a0e5c36b00c \
-		rmd160	3e011fdd6fb3b391a3cbfc6e4c7ec35ccfe1819b \
-		sha256	18cc4b5070511c51eb243cdd2b0b30ff9b2c4dc4544c6312f75ce3a67a593300 \
-		size	10503500
+sha1	e72198f463ee9d557e4c5c9444cc5a0e5c36b00c \
+rmd160	3e011fdd6fb3b391a3cbfc6e4c7ec35ccfe1819b \
+sha256	18cc4b5070511c51eb243cdd2b0b30ff9b2c4dc4544c6312f75ce3a67a593300 \
+size	10503500
 
 depends_lib	port:libpcap \
 		port:zlib \
@@ -76,5 +78,5 @@ variant subversion description {build with subversion (nmap-update) support} {
 variant zenmap description {build zenmap in addition to nmap} {
 			configure.args-delete --without-zenmap
 			configure.python ${prefix}/bin/python2.7
-			depends_lib-append port:py27-pygtk
+			depends_lib-append port:py37-pygtk
 		}

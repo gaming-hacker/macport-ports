@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -35,8 +35,8 @@ if {${name} eq ${subport}} {
 
     go.setup  github.com/direnv/direnv 2.26.0 v
     checksums rmd160 75709a28fb8aee1bb936c1c944ab06d2364a40dc \
-              sha256 2c31ec65f340b66654b1fa029db0a0ed7a52d40c1b7ab710256348b26158724f \
-              size   1378813
+sha256 2c31ec65f340b66654b1fa029db0a0ed7a52d40c1b7ab710256348b26158724f \
+size   1378813
     revision  0
 
     depends_build-append port:shfmt

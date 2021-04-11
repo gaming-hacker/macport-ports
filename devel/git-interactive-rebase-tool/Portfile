@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ long_description    ${description}
 homepage            https://gitrebasetool.mitmaro.ca
 
 checksums           git-interactive-rebase-tool-${version}.tar.gz \
-                    rmd160  41d1b06011c4e802a7f54bbb836e271a830b7c46 \
-                    sha256  65cd1200d336c42e8120cbd88f41c4e0cd65f0eacc150cbf986afa46cd5b1ce8 \
-                    size    4856147
+rmd160  41d1b06011c4e802a7f54bbb836e271a830b7c46 \
+sha256  65cd1200d336c42e8120cbd88f41c4e0cd65f0eacc150cbf986afa46cd5b1ce8 \
+size    4856147
 
 depends_lib-append  port:git \
                     port:ncurses

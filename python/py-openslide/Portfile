@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ platforms           darwin
 license             LGPL-2.1 MIT BSD
 maintainers         {bgilbert @bgilbert}
 
-python.versions     27 35 36 37 38 39
+python.version 37
 python.default_version  38
 
 description         Python binding for the OpenSlide library.
@@ -35,8 +35,8 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160  31fc77b7afcd9ebade4b773046298a62f11e6bee \
-                    sha256  0b8bfd13116144a9b048d414f73a08ce4adc839b1ae19070588ee78dde6ec1be \
-                    size    263688
+sha256  0b8bfd13116144a9b048d414f73a08ce4adc839b1ae19070588ee78dde6ec1be \
+size    263688
 
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-sphinx

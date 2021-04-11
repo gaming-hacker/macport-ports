@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -28,13 +28,13 @@ master_sites            ${github.master_sites}:main \
                         ${game_mastersite}:game
 
 checksums               ${main_distfile} \
-                        rmd160  28f37c3ebc14eb88b31f0ad7e27d663b575398bc \
-                        sha256  29cb953141f3c9ea23b29ea2e7826ea879f865ee1d0be213d2958418e86391a2 \
-                        size    11209889 \
+rmd160  28f37c3ebc14eb88b31f0ad7e27d663b575398bc \
+sha256  29cb953141f3c9ea23b29ea2e7826ea879f865ee1d0be213d2958418e86391a2 \
+size    11209889 \
                         ${game_distfile} \
-                        rmd160  8c4da408f34ad7a08eb9b4e00491ed4e3faf4990 \
-                        sha256  b4bfa0755b88230cf4bdb6af6a0951dd1248f6cdf87fecc340e43ac12c80b0b2 \
-                        size    2474325
+rmd160  8c4da408f34ad7a08eb9b4e00491ed4e3faf4990 \
+sha256  b4bfa0755b88230cf4bdb6af6a0951dd1248f6cdf87fecc340e43ac12c80b0b2 \
+size    2474325
 
 # rename directory - from github portgroup
 post-extract {

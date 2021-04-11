@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ PortGroup           golang 1.0
 go.setup            github.com/mongodb/mongo-tools 100.2.1
 revision            0
 checksums           rmd160  f657e9de3a72d8f2c39c19a7bfe86c248f8cec13 \
-                    sha256  b97a8731c422d5cfbc3d50c41129416b1cfa96a267621b07c8f71d2a13f6600c \
-                    size    27442485
+sha256  b97a8731c422d5cfbc3d50c41129416b1cfa96a267621b07c8f71d2a13f6600c \
+size    27442485
 
 categories          devel
 platforms           darwin

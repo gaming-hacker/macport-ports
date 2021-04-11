@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -28,7 +28,7 @@ if {${os.platform} eq "darwin" && ${os.major} == 10} {
     github.setup    glfw glfw a94a84b507b0d6d11e8a3f257cb21f4bd6553516
     version         3.1.2-20151024
     checksums       rmd160 1c07a75a88f272653ca246aa1212a208a83ecb30 \
-                    sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
+sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
     revision        0
 
     # bump the epoch because I moved the version from 20151012 to 3.1.2
@@ -67,8 +67,8 @@ if {${os.platform} eq "darwin" && ${os.major} == 10} {
 
         github.setup glfw glfw 3.3.3
         checksums   rmd160  ec78971a3c0cc7929a4e0a57a53d6e01f0c1d48b \
-                    sha256  405f85880a709c3c1746ccfecd691097b6b64706dc25c40bd999f48acee2ab83 \
-                    size    763832
+sha256  405f85880a709c3c1746ccfecd691097b6b64706dc25c40bd999f48acee2ab83 \
+size    763832
         revision    0
 
         # bump the epoch because I moved the version from 20151012 to 3.1.2
@@ -90,8 +90,8 @@ if {${os.platform} eq "darwin" && ${os.major} == 10} {
         github.setup glfw glfw 33cd8b865d9289cfbcf3d95e6e68e4050b94fcd3
         version     20210319-[string range ${github.version} 0 7]
         checksums   rmd160  536a4eb8eb1aa642e037b1a2476796fc1db5294d \
-                    sha256  90930f20f4b855313e7449124dc77298c6cd5f481575b71a5a7c6ef09b53113a \
-                    size    781268
+sha256  90930f20f4b855313e7449124dc77298c6cd5f481575b71a5a7c6ef09b53113a \
+size    781268
         revision    0
 
         conflicts   glfw

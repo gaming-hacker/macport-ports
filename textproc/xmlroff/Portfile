@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    Creates formatted output -- pages containing text in a \
 homepage            http://xmlroff.org/
 
 checksums           rmd160  3279015248ea4c10c4a247db6cfe5b75d6cd501e \
-                    sha256  5ca16a450a55e17b8bb7e5701020c0b2c4b04830830adf073fc2e073669627e4 \
-                    size    2183303
+sha256  5ca16a450a55e17b8bb7e5701020c0b2c4b04830830adf073fc2e073669627e4 \
+size    2183303
 
 depends_build-append \
                     port:pkgconfig \

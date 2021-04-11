@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ platforms           darwin
 license             ISC
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  f64d76004f0b3b11fd60734a3d467696812a5e6d \
-                    sha256  bf21b47d8a2400d97657eb844b7ec8b9a2645f5272f798f760d3ace23632c55d \
-                    size    5642904
+rmd160  f64d76004f0b3b11fd60734a3d467696812a5e6d \
+sha256  bf21b47d8a2400d97657eb844b7ec8b9a2645f5272f798f760d3ace23632c55d \
+size    5642904
 
 # crate:openssl-sys requires pkgconfig & libssl.dylib
 depends_build-append    port:pkgconfig
@@ -202,8 +202,8 @@ cargo.crates \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_repr                       0.1.6  2dc6b7951b17b051f3210b063f12cc17320e2fe30ae05b0fe2a3abb068551c76 \
     serde_urlencoded                 0.6.1  9ec5d77e2d4c73717816afac02670d5c4f534ea95ed430442cad02e7a6e32c97 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    shadow-rs                       0.5.24  c2d24431d84176415baccf1a5f4996365fbe619ed0797131d84627f00f568de2 \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+shadow-rs                       0.5.24  c2d24431d84176415baccf1a5f4996365fbe619ed0797131d84627f00f568de2 \
     shell-words                      1.0.0  b6fa3938c99da4914afedd13bf3d79bcb6c277d1b2c398d23257a304d9e1b074 \
     slab                             0.4.2  c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8 \
     socket2                          0.4.0  9e3dfc207c526015c632472a77be09cf1b6e46866581aecae5cc38fb4235dea2 \

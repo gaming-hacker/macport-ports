@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,7 @@ PortGroup           deprecated 1.0
 deprecated.eol_version yes
 livecheck.type      none
 
-name                py27-pyobjc-cocoa
+name                py37-pyobjc-cocoa
 python.rootname     pyobjc-framework-Cocoa
 categories-append   devel
 platforms           darwin
@@ -24,13 +24,13 @@ version             5.3
 revision            1
 distname            ${python.rootname}-${version}
 checksums           rmd160 5790e8357f6e7e5668b8750dd4809522ae44f812 \
-                    sha256 0b2d2f4a95d2634d1545c2d5cc949cb1b1bbfd73393d3c3b483be2a18906e568 \
-                    size   3808584
+sha256 0b2d2f4a95d2634d1545c2d5cc949cb1b1bbfd73393d3c3b483be2a18906e568 \
+size   3808584
 
 master_sites        pypi:p/${python.rootname}/
 patchfiles          pyobjc_setup.py.patch
 
-python.versions     27
+python.version 37
 
 depends_build-append \
                     port:py${python.version}-setuptools

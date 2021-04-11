@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,8 +27,8 @@ master_sites        https://dist.eugridpma.info/distribution/igtf/${version}
 distname            igtf-policy-installation-bundle-${version}
 
 checksums           rmd160  1d6657d2e65b8845071b2759f9cd346b92c4fcf5 \
-                    sha256  b92bef32d9963f0dfe397780bbf9c48307a2102b7770a3dafeb0149ee71cc26a \
-                    size    173857
+sha256  b92bef32d9963f0dfe397780bbf9c48307a2102b7770a3dafeb0149ee71cc26a \
+size    173857
 
 depends_run         port:fetch-crl
 

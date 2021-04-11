@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    ${description}
 homepage            https://opendev.org/jjb/python-jenkins
 
 checksums           rmd160  ea6783913bd173fc6c1f7ea030969ddcb02d7aac \
-                    sha256  c1bc6eca5bb211d35d9efab0a536a068581743919f998f25eab34852c6a46494 \
-                    size    6788
+sha256  c1bc6eca5bb211d35d9efab0a536a068581743919f998f25eab34852c6a46494 \
+size    6788
 
-python.versions     27
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

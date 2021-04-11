@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,8 +22,8 @@ distname            cryptopp[strsed ${version} {g/\.//}]
 use_zip             yes
 
 checksums           rmd160  31176d67d431ded5678efd8278a4ed550b09681e \
-                    sha256  95fc50d59488ebf61a735cce2b2ec2c2561fc682077c7b496273d65a1ed93d9e \
-                    size    9125575
+sha256  95fc50d59488ebf61a735cce2b2ec2c2561fc682077c7b496273d65a1ed93d9e \
+size    9125575
 
 extract.mkdir       yes
 

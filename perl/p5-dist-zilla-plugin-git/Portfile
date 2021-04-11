@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         Dist-Zilla-Plugin-Git 2.047
 revision            0
 platforms           darwin
@@ -17,8 +17,8 @@ description         Update your git repository after release
 long_description    ${description}
 
 checksums           rmd160  83d4b86d39ff93a40a66cc2b02c63871c86a4f54 \
-                    sha256  bf97e05f16e7e7ce1350c6db3759986784aa7f2ad83e76b1cd84bdb462597a50 \
-                    size    75517
+sha256  bf97e05f16e7e7ce1350c6db3759986784aa7f2ad83e76b1cd84bdb462597a50 \
+size    75517
 
 if {${perl5.major} != ""} {
     depends_build-append \

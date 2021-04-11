@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name             epic5
 version          2.1.4
 categories       irc
@@ -21,8 +23,8 @@ master_sites     http://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION/ \
 use_xz           yes
 
 checksums        rmd160 cb7835f99d73586f32e80059c816ba8c957f2e23 \
-                 sha256 ddea079c9362fc446701c9fdeeae9ed8f6523fbc15ee75fbadb1d6ee292e11bf \
-                 size   859964
+sha256 ddea079c9362fc446701c9fdeeae9ed8f6523fbc15ee75fbadb1d6ee292e11bf \
+size   859964
 
 patchfiles       patch-configure
 

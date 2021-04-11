@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ homepage            https://mmonit.com/monit/
 master_sites        ${homepage}dist/
 
 checksums           rmd160  13e8e4fe217f3b28dc33d8bdef4acfd2ecd0a160 \
-                    sha256  d8c0deef624f193a952502fe9baabfa66e3d8d057df5738da43f9a37792afca4 \
-                    size    1455341
+sha256  d8c0deef624f193a952502fe9baabfa66e3d8d057df5738da43f9a37792afca4 \
+size    1455341
 
 depends_build       bin:flex:flex bin:bison:bison
 depends_lib         path:lib/libssl.dylib:openssl

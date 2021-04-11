@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -21,17 +21,17 @@ long_description        The following tools for the Ipe extensible drawing \
 homepage                http://ipe.otfried.org/
 
 checksums               sha1    a650856f7123fe68499f20bbe66695cb040306f7 \
-                        rmd160  9ee6d4eb84455d55a36d24e2233de9f6a25a21f7
+rmd160  9ee6d4eb84455d55a36d24e2233de9f6a25a21f7
 
 patchfiles              patch-svgtoipe-svgtoipe.py.diff
 post-patch {
     reinplace "s|__MP_PYTHON_BIN__|${prefix}/bin/python2.7|" ${worksrcpath}/svgtoipe/svgtoipe.py
 }
 
-set python.pkgd ${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+set python.pkgd ${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages
 depends_build           port:pkgconfig
 depends_lib             port:poppler \
-                        path:${python.pkgd}/PIL:py27-Pillow
+                        path:${python.pkgd}/PIL:py37-Pillow
 
 use_configure           no
 use_parallel_build      no

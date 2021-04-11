@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         BerkeleyDB 0.64
 revision            0
 
@@ -23,8 +23,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  cbd685f4bde587c625ce47949222922f9c68c8ba \
-                    sha256  535c85e8549c1ac43a20160fdc02f0a400614156fd76157fff28aa33fda3744b \
-                    size    259656
+sha256  535c85e8549c1ac43a20160fdc02f0a400614156fd76157fff28aa33fda3744b \
+size    259656
 
 variant db48 conflicts db53 db60 db62 description {Build with Berkeley DB 4.8} {}
 variant db53 conflicts db48 db60 db62 description {Build with Berkeley DB 5.3} {}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    Cjdns implements an encrypted IPv6 network using public-key 
                     prevents many of the security and scalability issues that plague existing networks.
 
 checksums           rmd160  c95ba7cde03d91826b9433ad26c8df563e527718 \
-                    sha256  c34c6715c9e9a0ef590149e80f5860283b8403e85a89ef2809ddd00dc4a735ef \
-                    size    4136902
+sha256  c34c6715c9e9a0ef590149e80f5860283b8403e85a89ef2809ddd00dc4a735ef \
+size    4136902
 
 depends_build       bin:node:nodejs14
 

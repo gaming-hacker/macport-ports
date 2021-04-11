@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cargo 1.0
@@ -23,9 +23,9 @@ maintainers         @fabius openmaintainer
 github.tarball_from archive
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  ba4408ed64ece0ef21574ba00d1d8467f6964eef \
-                        sha256  e394ec2e2e732faa5d2049d5fe77773b3b7f531e5f691947809e2507981080f2 \
-                        size    1764880
+rmd160  ba4408ed64ece0ef21574ba00d1d8467f6964eef \
+sha256  e394ec2e2e732faa5d2049d5fe77773b3b7f531e5f691947809e2507981080f2 \
+size    1764880
 
 post-extract {
     file delete ${worksrcpath}/lib/README.md
@@ -160,7 +160,7 @@ cargo.crates \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_path_to_error              0.1.4  42f6109f0506e20f7e0f910e51a0079acf41da8e0694e6442527c4ddf5a2b158 \
     serde_repr                       0.1.6  2dc6b7951b17b051f3210b063f12cc17320e2fe30ae05b0fe2a3abb068551c76 \
-    sharded-slab                     0.1.1  79c719719ee05df97490f80a45acfc99e5a30ce98a1e4fb67aee422745ae14e3 \
+sharded-slab                     0.1.1  79c719719ee05df97490f80a45acfc99e5a30ce98a1e4fb67aee422745ae14e3 \
     smallvec                         1.6.1  fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e \
     smol_str                        0.1.17  6ca0f7ce3a29234210f0f4f0b56f8be2e722488b95cb522077943212da3b32eb \
     snap                             1.0.4  dc725476a1398f0480d56cd0ad381f6f32acf2642704456f8f59a35df464b59a \

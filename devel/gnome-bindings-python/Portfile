@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -20,11 +20,11 @@ long_description \
 
 homepage        https://www.gnome.org/
 
-depends_lib     port:py27-atspi \
-                port:py27-gnome \
-                port:py27-gobject \
-                port:py27-pygtk \
-                port:py27-orbit
+depends_lib     port:py37-atspi \
+                port:py37-gnome \
+                port:py37-gobject \
+                port:py37-pygtk \
+                port:py37-orbit
 
 distfiles
 

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.28
 perl5.setup         String-Random 0.31
 
 platforms           darwin
@@ -14,8 +14,8 @@ description         Perl module to generate random strings based
 long_description    ${description}
 
 checksums           rmd160  8eece5dde6d88371f0ebe6c5a0fb2090570c716b \
-                    sha256  4b4ad1ee63a2c7dc70912ac1b9047235a99d8f09a47447199201303387ab975c \
-                    size    23558
+sha256  4b4ad1ee63a2c7dc70912ac1b9047235a99d8f09a47447199201303387ab975c \
+size    23558
 
 if {${perl5.major} != ""} {
     perl5.use_module_build

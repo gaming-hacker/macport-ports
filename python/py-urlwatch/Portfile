@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,10 +25,10 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            urlwatch-${version}
 
 checksums           rmd160  10fb8516a09b1f00299558aa743ce2ad18210403 \
-                    sha256  08f51c7ffe7489c0be7a6c54855e074da65131714e4b6c622e4cfb107ef7ea78 \
-                    size    44178
+sha256  08f51c7ffe7489c0be7a6c54855e074da65131714e4b6c622e4cfb107ef7ea78 \
+size    44178
 
-python.versions     27 35 36 37 38
+python.version 37
 
 if {${name} ne ${subport}} {
     if {${python.version} eq 27} {
@@ -36,8 +36,8 @@ if {${name} ne ${subport}} {
         revision    0
         distname    urlwatch-${version}
         checksums   rmd160  825cfef05c8721844687b46cbd812ccfa648d0fe \
-                    sha256  6b17411b6658f3aeb5839d1b32458f020ce40ee1e62a3d40387a2622fa731824 \
-                    size    14987
+sha256  6b17411b6658f3aeb5839d1b32458f020ce40ee1e62a3d40387a2622fa731824 \
+size    14987
 
         depends_lib-append \
                     port:py${python.version}-futures \

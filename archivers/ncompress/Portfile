@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        vapier ncompress 5.0 v
 revision            0
 checksums           rmd160  19f846873b8be9151cae062ca1ade9e10dbbd41b \
-                    sha256  96ec931d06ab827fccad377839bfb91955274568392ddecf809e443443aead46 \
-                    size    34185
+sha256  96ec931d06ab827fccad377839bfb91955274568392ddecf809e443443aead46 \
+size    34185
 
 categories          archivers
 platforms           darwin

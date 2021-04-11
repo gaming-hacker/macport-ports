@@ -21,7 +21,7 @@ categories      python
 
 use_configure   no
 # we want the default universal variant added despite not using configure
-universal_variant yes
+universal_variant no
 
 post-extract {
     # Prevent setuptools' easy_install from downloading dependencies
@@ -297,7 +297,7 @@ proc python_set_pep517 {option action args} {
         } else {
             depends_build-delete    port:py${python.version}-pep517 \
                                     port:py${python.version}-python-install
-        }  
+        }
     }
 }
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # TODO: Improve atomics by using libkern/OSAtomics.h
 #       https://bugs.freedesktop.org/show_bug.cgi?id=67795
@@ -28,8 +28,8 @@ master_sites        https://www.freedesktop.org/software/${name}/releases/
 use_xz              yes
 
 checksums           rmd160  5e52b8549a0ece2b52df854b5edaa2998c438ccd \
-                    sha256  75d3f7742c1ae449049a4c88900e454b8b350ecaa8c544f3488a2562a9ff66f1 \
-                    size    1951300
+sha256  75d3f7742c1ae449049a4c88900e454b8b350ecaa8c544f3488a2562a9ff66f1 \
+size    1951300
 
 set perl_branch     5.28
 

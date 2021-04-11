@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    SuiteSparse is a single archive that contains all packages \
 homepage            http://faculty.cse.tamu.edu/davis/suitesparse.html
 
 checksums           rmd160  720c078699ad5ff11604ee077278098b53513b91 \
-                    sha256  26f6e3825d11f6a2b737ebce7e3627f9983f208ff191ea9bf2bf50dbb653052a \
-                    size    57029410
+sha256  26f6e3825d11f6a2b737ebce7e3627f9983f208ff191ea9bf2bf50dbb653052a \
+size    57029410
 
 use_parallel_build  no
 

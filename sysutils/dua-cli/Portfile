@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,9 +27,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  5e9bfa20e939bd78318372b97e898bfef587c9a0 \
-                    sha256  29bdce3cac07d3c69a05d9304896abf24506796bbb6408b824997f346e9efdb9 \
-                    size    62365
+rmd160  5e9bfa20e939bd78318372b97e898bfef587c9a0 \
+sha256  29bdce3cac07d3c69a05d9304896abf24506796bbb6408b824997f346e9efdb9 \
+size    62365
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/dua \

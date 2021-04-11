@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,12 +18,12 @@ long_description    ${description}
 maintainers         {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
 
 checksums           rmd160  f972c74447f5862dac4a83096e00d2d2984ac59e \
-                    sha256  97f8f30e86d268333a4bd45b144a81c90abc69d9e38254b376b2c10138aa0916 \
-                    size    98846
+sha256  97f8f30e86d268333a4bd45b144a81c90abc69d9e38254b376b2c10138aa0916 \
+size    98846
 
 mpi.setup           require
 
-python.versions     27 35 36 37 38
+python.version 37
 
 build.env-append    PETSC_DIR=${prefix}/lib/petsc SLEPC_DIR=${prefix}/lib/slepc
 destroot.env-append PETSC_DIR=${prefix}/lib/petsc SLEPC_DIR=${prefix}/lib/slepc

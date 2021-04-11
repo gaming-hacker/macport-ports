@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,9 +23,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  e0953958b733bb12b9f936d5b87a17f2b8676854 \
-                    sha256  023baa8ebda888036d5ee202d85ed7b33a83aa82a6bb2a33d7143e17b222d501 \
-                    size    1411882
+rmd160  e0953958b733bb12b9f936d5b87a17f2b8676854 \
+sha256  023baa8ebda888036d5ee202d85ed7b33a83aa82a6bb2a33d7143e17b222d501 \
+size    1411882
 
 set al_app_name     Alacritty.app
 set al_app_dir      ${applications_dir}/${al_app_name}
@@ -188,7 +188,7 @@ cargo.crates \
     serde_yaml                      0.8.17  15654ed4ab61726bf918a39cb8d98a2e2995b002387807fa6ba58fdf7f59bb23 \
     servo-fontconfig                 0.5.1  c7e3e22fe5fd73d04ebf0daa049d3efe3eae55369ce38ab16d07ddd9ac5c217c \
     servo-fontconfig-sys             5.1.0  e36b879db9892dfa40f95da1c38a835d41634b825fbd8c4c418093d53c24b388 \
-    shared_library                   0.1.9  5a9e7e0f2bfae24d8a5b5a66c5b257a83c7412304311512a0c054cd5e619da11 \
+shared_library                   0.1.9  5a9e7e0f2bfae24d8a5b5a66c5b257a83c7412304311512a0c054cd5e619da11 \
     signal-hook                     0.1.17  7e31d442c16f047a671b5a71e2161d6e68814012b7f5379d269ebd915fac2729 \
     signal-hook-registry             1.3.0  16f1d0fef1604ba8f7a073c7e701f213e056707210e9020af4528e0101ce11a6 \
     slab                             0.4.2  c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8 \

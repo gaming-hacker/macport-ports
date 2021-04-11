@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -19,9 +19,9 @@ long_description    A simple terminal UI for both docker and docker-compose, wri
 homepage            https://github.com/jesseduffield/lazydocker
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  ea447a3e62f02a4322f526aed8799cf7df2850d5 \
-                    sha256  c5fe5b9774fdc527c959164b686b3d7c0f3ecf9a3db49d89e216ba64568a404f \
-                    size    12046769
+rmd160  ea447a3e62f02a4322f526aed8799cf7df2850d5 \
+sha256  c5fe5b9774fdc527c959164b686b3d7c0f3ecf9a3db49d89e216ba64568a404f \
+size    12046769
 
 set time [clock format [clock seconds] -format %Y%m%dT%H%M%S]
 build.args-append   -ldflags=\"-X 'main.Version=v${version}' -X 'main.BuildDate=${time}'\" -o ./lazydocker ./
