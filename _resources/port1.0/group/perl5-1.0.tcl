@@ -10,11 +10,11 @@ default perl5.default_branch {[perl5_get_default_branch]}
 
 proc perl5_get_default_branch {} {
     global prefix perl5.branches
-    # use whatever ${prefix}/bin/perl5 was chosen, and if none, fall back to 5.28
+    # use whatever ${prefix}/bin/perl5 was chosen, and if none, fall back to 5.30
     if {![catch {set val [lindex [split [exec ${prefix}/bin/perl5 -V:version] {'}] 1]}]} {
         set ret [join [lrange [split $val .] 0 1] .]
     } else {
-        set ret 5.28
+        set ret 5.30
     }
     # if the above default is not supported by this module, use the latest it does support
     if {[info exists perl5.branches] && $ret ni ${perl5.branches}} {
@@ -154,9 +154,9 @@ proc perl5.setup {module vers {cpandir ""}} {
     }
     version             [perl5_convert_version ${perl5.moduleversion}]
     categories          perl
-    
+
     homepage            https://metacpan.org/pod/[string map {"-" "::"} ${perl5.module}]
-    
+
     master_sites        perl_cpan:${perl5.cpandir}
     distname            ${perl5.module}-${perl5.moduleversion}
     dist_subdir         perl5
@@ -233,10 +233,10 @@ proc perl5.setup {module vers {cpandir ""}} {
     }
 
     livecheck.type      regexm
-    
+
     livecheck.url       https://fastapi.metacpan.org/v1/release/${perl5.module}/
     livecheck.regex     \"name\" : \"[quotemeta ${perl5.module}]-(\[^"\]+?)\"
-    
+
     default livecheck.version {${perl5.moduleversion}}
 }
 
