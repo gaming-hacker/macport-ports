@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -24,9 +24,9 @@ master_sites        ftp://ftp.invisible-island.net/pub/dialog/ \
 extract.suffix      .tgz
 
 checksums           ${distfiles} \
-                        rmd160  ae168047cc8c5a8c18cc81ac535bb3baff839e96 \
-                        sha256  1f62df6a48dac087b98452119e4cdfcaa3447b3eb5746b241e5632e1d57bfc4b \
-                        size    562950
+rmd160  ae168047cc8c5a8c18cc81ac535bb3baff839e96 \
+sha256  1f62df6a48dac087b98452119e4cdfcaa3447b3eb5746b241e5632e1d57bfc4b \
+size    562950
 
 gpg_verify.use_gpg_verification \
                     yes
@@ -39,7 +39,7 @@ if {[option gpg_verify.use_gpg_verification]} {
 
     checksums-append \
                     ${name}-${version}${extract.suffix}.asc \
-                    size 265
+size 265
 
     post-checksum {
         # Thomas Dickey <dickey@invisible-island.net>
