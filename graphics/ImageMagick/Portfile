@@ -13,9 +13,9 @@ name                        ImageMagick
 # require increasing the revision of all ports that link with it.
 version                     7.0.11-14
 revision                    1
-checksums                   rmd160  1c293ba06fd43833be35efb4476e559bf137ccef \
-sha256  ba0fa683b0721d1f22b0ccb364e4092e9a7a34ffd3bd6348c82b50fd93b1d7ba \
-size    9167220
+checksums           rmd160  9cc2977b52b083a725eabbd250e304fa8a3ecfa4 \
+sha256  a1010a27b93f07374400988d026449c8b21e10178910cd473b4170b4d2c6c030 \
+size    10309752
 
 categories                  graphics devel
 maintainers                 {ryandesign @ryandesign}
@@ -109,7 +109,7 @@ configure.args              --enable-shared \
                             --without-pango \
                             --without-x \
                             --with-zstd \
-                            --with-gs-font-dir=${prefix}/share/ghostscript/9.54.4/Resource/Font \
+                            --with-gs-font-dir=${prefix}/share/ghostscript/9.54.0/Resource/Font \
                             --with-apple-font-dir=/Library/Fonts \
                             --with-urw-base35-font-dir=${prefix}/share/fonts/urw-core35-fonts \
                             --with-dejavu-font-dir=${prefix}/share/fonts/dejavu-fonts \
