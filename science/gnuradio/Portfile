@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,7 +19,7 @@ license             GPL-3
 platforms           darwin macosx
 
 compiler.c_standard   2011
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 boost.version       1.71
 
@@ -27,9 +27,9 @@ if {${subport} eq ${name}} {
 
     github.setup    gnuradio gnuradio 3.8.3.0 v
     checksums       rmd160  27036f8efd2d35ce17a2eb871355b6056ca029df \
-sha256  babd0114be950229c6002518f689b2df719fc69584114f18785284ad82d886bd \
-size    3390350
-    revision        1
+                    sha256  babd0114be950229c6002518f689b2df719fc69584114f18785284ad82d886bd \
+                    size    3390350
+    revision        2
 
     long_description    ${description}: \
         This port is kept up with the GNU Radio release, \
@@ -38,7 +38,7 @@ size    3390350
     conflicts           gnuradio37 gnuradio-next
 
     set python_versions { 3.6 3.7 3.8 3.9 }
-    set default_python_variant +python39
+    set default_python_variant +python37
 
     # temporary patch to fix and allow external setting for
     # CMAKE_C/CXX_STANDARD
@@ -63,8 +63,8 @@ subport gnuradio37 {
     name            gnuradio37
     github.setup    gnuradio gnuradio 3.7.14.0 v
     checksums       rmd160  0165a52a4770a02b4843544e4ba6bc59d84fa7d1 \
-sha256  3d895e29417efd4ef8ab4053bed2ea9117b4476c0ae729f065088242f0f61f9f \
-size    4460817
+                    sha256  3d895e29417efd4ef8ab4053bed2ea9117b4476c0ae729f065088242f0f61f9f \
+                    size    4460817
     revision        4
 
     long_description    ${description}: \
@@ -113,8 +113,8 @@ subport gnuradio-next {
     github.setup    gnuradio gnuradio 03d92ac19a11356175533aae4ad5804a354be075
     version         20200419-[string range ${github.version} 0 7]
     checksums       rmd160  0a9e1294036e786116c96d68f9116e3f2798d325 \
-sha256  bb2dab14e159a4b58ccf317ece3b4132959739f4b5b217d8e0add3c5ce581f5f \
-size    3950832
+                    sha256  bb2dab14e159a4b58ccf317ece3b4132959739f4b5b217d8e0add3c5ce581f5f \
+                    size    3950832
     revision        6
 
     long_description    ${description}: \
