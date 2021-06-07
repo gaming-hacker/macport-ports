@@ -24,30 +24,20 @@ revision            0
 compiler.cxx_standard 2017
 
 # set Python version and variants
-set PythonVersionNoDot ""
+set PythonVersionNoDot "39"
 
-# select Python to use; default to 3.6
-variant python35 conflicts python36 python37 description {Build using Python 3.5} {}
-variant python36 conflicts python35 python37 description {Build using Python 3.6} {}
-variant python37 conflicts python35 python36 description {Build using Python 3.7} {}
+# select Python to use; default to 3.0
+variant python39 conflicts python37 description {Build using Python 3.9} {}
+variant python37 conflicts python39 description {Build using Python 3.7} {}
 
-if {![variant_isset python35] &&
-    ![variant_isset python36] &&
+if {![variant_isset python39] &&
     ![variant_isset python37]} {
     default_variants +python39
 }
 
-if {![variant_isset python35] &&
-    ![variant_isset python36] &&
-    ![variant_isset python37]} {
-    ui_error "\n\nYou must select one of the variants +python35, +python36, or +python37.\n"
-    return -code error "Invalid variant selection"
-}
 
-if {[variant_isset python35]} {
-    set PythonVersionNoDot "35"
-} elseif {[variant_isset python36]} {
-    set PythonVersionNoDot "36"
+if {[variant_isset python39]} {
+    set PythonVersionNoDot "39"
 } else {
     set PythonVersionNoDot "37"
 }
