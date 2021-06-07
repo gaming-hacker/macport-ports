@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -25,10 +25,10 @@ homepage        http://www.ginac.de/
 master_sites    ${homepage}
 
 checksums       rmd160  b86c62f9aa60004d93ab55afca769eed606aa4db \
-                sha256  44b4404a897dd7719233c44f3c73bc15695e12b58d3676cb57c90ddcddf72b51 \
-                size    1124136
+sha256  44b4404a897dd7719233c44f3c73bc15695e12b58d3676cb57c90ddcddf72b51 \
+size    1124136
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 depends_build   port:pkgconfig
 depends_lib     port:readline \
@@ -39,20 +39,20 @@ test.target     check
 
 variant python37 conflicts python38 description {Build using Python 3.7} {
     depends_build-append \
-                port:python37
+                port:python39
     configure.env   \
-                PYTHON3=${prefix}/bin/python3.7
+                PYTHON3=${prefix}/bin/python3.9
 }
 
 variant python38 conflicts python37 description {Build using Python 3.8} {
     depends_build-append \
-                port:python38
+                port:python39
     configure.env   \
-                PYTHON3=${prefix}/bin/python3.8
+                PYTHON3=${prefix}/bin/python3.9
 }
 
 if {![variant_isset python37] && ![variant_isset python38]} {
-    default_variants +python38
+    default_variants +python39
 }
 
 livecheck.type      regex

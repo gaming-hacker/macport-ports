@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,8 +9,8 @@ version             1.0.3
 revision            0
 
 checksums           rmd160  c0c6b06548de0a933409a9e737ef175a02824e05 \
-                    sha256  2315c928249fc3207801a81868b64c66273077b26c8d8da465dccf8f488c90c5 \
-                    size    345626
+sha256  2315c928249fc3207801a81868b64c66273077b26c8d8da465dccf8f488c90c5 \
+size    345626
 
 categories-append   devel
 platforms           darwin
@@ -25,7 +25,7 @@ long_description    ${description} This project is intended to be a light \
                     compatible build frontends to build Poetry managed projects.
 
 # keep older Python versions here, do add the EOL version to the list below
-python.versions     36 37 38 39
+python.versions 37 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

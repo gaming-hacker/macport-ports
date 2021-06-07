@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -23,8 +23,8 @@ homepage            https://luajit.org
 conflicts           luajit-openresty
 
 checksums           rmd160  e37bad7db4e1222445212088fccb4ca559a24e37 \
-                    sha256  a7939a9bd69aea8c699b1ebaec07d59fdf3108f01e76ef7f93b76619f4438fee \
-                    size    1055602
+sha256  a7939a9bd69aea8c699b1ebaec07d59fdf3108f01e76ef7f93b76619f4438fee \
+size    1055602
 
 post-patch {
     reinplace "s|/usr/local|${prefix}|" ${worksrcpath}/etc/luajit.pc

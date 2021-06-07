@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -17,8 +17,8 @@ master_sites     ${homepage}dist/
 distname        libxcb-${version}
 
 checksums       rmd160  13ca4d944e3b1e202bbc501fef0035a7db44201b \
-                sha256  a55ed6db98d43469801262d81dc2572ed124edc3db31059d4e9916eb9f844c34 \
-                size    439404
+sha256  a55ed6db98d43469801262d81dc2572ed124edc3db31059d4e9916eb9f844c34 \
+size    439404
 
 use_xz          yes
 use_parallel_build yes
@@ -66,15 +66,15 @@ variant python36 conflicts python37 python38 python39 description {Use python 3.
 }
 
 variant python37 conflicts python36 python38 python39 description {Use python 3.7} {
-    depends_build-append    port:python37
+    depends_build-append    port:python39
     license_noconflict      python37
-    configure.python        ${prefix}/bin/python3.7
+    configure.python        ${prefix}/bin/python3.9
 }
 
 variant python38 conflicts python36 python37 python39 description {Use python 3.8} {
-    depends_build-append    port:python38
+    depends_build-append    port:python39
     license_noconflict      python38
-    configure.python        ${prefix}/bin/python3.8
+    configure.python        ${prefix}/bin/python3.9
 }
 
 variant python39 conflicts python36 python37 python38 description {Use python 3.9} {

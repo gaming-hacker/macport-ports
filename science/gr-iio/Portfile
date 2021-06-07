@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -13,15 +13,15 @@ license             GPL-3
 platforms           darwin
 
 # use C++11
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {${subport} eq ${name}} {
 
     github.setup    analogdevicesinc gr-iio 456589948229cc7bbed4c5724811ca24116711fe
     version         20200403-[string range ${github.version} 0 7]
     checksums       rmd160  8c7309e30b378afc99fe3d3b8d03c6ee3fba2dd4 \
-                    sha256  4a6c307f194655ec4fe8d1247fc9b4a6a0203f2a4686c9c948ff1877c50fa8d5 \
-                    size    56107
+sha256  4a6c307f194655ec4fe8d1247fc9b4a6a0203f2a4686c9c948ff1877c50fa8d5 \
+size    56107
     revision        3
 
     github.livecheck.branch \
@@ -44,8 +44,8 @@ subport gr37-iio {
     github.setup    analogdevicesinc gr-iio 9088ac791955c522ce1143fe10b85ded56ead0ee
     version         20190725-[string range ${github.version} 0 7]
     checksums       rmd160 15848e397eff6bd8782cf3927795cd51cf730794 \
-                    sha256 0bcb973ba406bbf5149765b974e36137ffc515457f2e86e8cade389a334fc5d7 \
-                    size   68707
+sha256 0bcb973ba406bbf5149765b974e36137ffc515457f2e86e8cade389a334fc5d7 \
+size   68707
     revision        2
 
     # patch CMake modules dir

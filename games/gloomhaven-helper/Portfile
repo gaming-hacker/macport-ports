@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       java 1.0
@@ -28,9 +28,9 @@ distname        GloomhavenHelper-${version}
 use_zip         yes
 
 checksums \
-    rmd160  a76045ab2a0059258db9d7ce6e6ff15588d6eed3 \
-    sha256  b35bf9d5ac7acea2437bb1cafb6516ce9d4988fc8f06077cd0323bd3e666ab21 \
-    size    32660698
+rmd160  a76045ab2a0059258db9d7ce6e6ff15588d6eed3 \
+sha256  b35bf9d5ac7acea2437bb1cafb6516ce9d4988fc8f06077cd0323bd3e666ab21 \
+size    32660698
 
 use_configure   no
 

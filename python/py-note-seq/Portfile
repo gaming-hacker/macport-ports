@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,8 +28,8 @@ homepage            https://magenta.tensorflow.org/
 distname            ${github.project}-${version}
 
 checksums           rmd160  1487efc7f871a6cfe6e96980fe1d4e613ab84f17 \
-                    sha256  9f6401d94c030f8a10dad682a3729de934c7ad68b148bfd855ed47ba70458d6b \
-                    size    955437
+sha256  9f6401d94c030f8a10dad682a3729de934c7ad68b148bfd855ed47ba70458d6b \
+size    955437
 
 python.versions     37 38 39
 

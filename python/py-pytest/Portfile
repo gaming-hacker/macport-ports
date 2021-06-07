@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,8 +26,8 @@ long_description    The pytest framework makes it easy to write small tests, \
 homepage            https://pytest.org
 
 checksums           rmd160  b58361c8baee1121370514bbdd2ea421a2498b21 \
-                    sha256  50bcad0a0b9c5a72c8e4e7c9855a3ad496ca6a881a3641b4260605450772c54b \
-                    size    1118084
+sha256  50bcad0a0b9c5a72c8e4e7c9855a3ad496ca6a881a3641b4260605450772c54b \
+size    1118084
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -52,8 +52,8 @@ if {${name} ne ${subport}} {
         revision            2
         distname            ${python.rootname}-${version}
         checksums           rmd160  5d88707bd2fc29ee675087b24461a9ca8cbe1ffb \
-                            sha256  4a784f1d4f2ef198fe9b7aef793e9fa1a3b2f84e822d9b3a64a181293a572d45 \
-                            size    949947
+sha256  4a784f1d4f2ef198fe9b7aef793e9fa1a3b2f84e822d9b3a64a181293a572d45 \
+size    949947
 
         depends_lib-append  port:py${python.version}-atomicwrites \
                             port:py${python.version}-six \
@@ -64,8 +64,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  c846ffd08e49fe6742a97b6606aebcf4a2761f01 \
-                            sha256  7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8 \
-                            size    1022353
+sha256  7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8 \
+size    1022353
         depends_lib-append  port:py${python.version}-more-itertools
     }
 

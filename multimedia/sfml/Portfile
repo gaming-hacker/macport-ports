@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -24,8 +24,8 @@ distname            SFML-${version}-sources
 use_zip             yes
 
 checksums           rmd160  3b137887696a223f0c3576b16bae9f0e3535f16f \
-                    sha256  bf1e0643acb92369b24572b703473af60bac82caf5af61e77c063b779471bb7f \
-                    size    23283095
+sha256  bf1e0643acb92369b24572b703473af60bac82caf5af61e77c063b779471bb7f \
+size    23283095
 
 worksrcdir          SFML-${version}
 

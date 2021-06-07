@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compilers 1.0
@@ -22,8 +22,8 @@ The FLOW program takes the binary summary file produced by FLOPPY, and can \
 produce various reports on the structure of the original FORTRAN program.
 
 checksums   rmd160 7c496a8e3a6f14be360f85e97e025ebad1a8df28 \
-            sha256 45dd03359464b6a85754c88c30ab2b5578a9862f4eddc80e4a4f220bebfa1372 \
-            size   49364
+sha256 45dd03359464b6a85754c88c30ab2b5578a9862f4eddc80e4a4f220bebfa1372 \
+size   49364
 
 post-patch {
     # set compiler and additional options

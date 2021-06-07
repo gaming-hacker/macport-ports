@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/cloudpipe/cloudpickle
 
 checksums           rmd160  962ee3c44c37ad05f87c9604443f9d25bf675ff2 \
-                    sha256  9bc994f9e9447593bd0a45371f0e7ac7333710fcf64a4eb9834bf149f4ef2f32 \
-                    size    52743
+sha256  9bc994f9e9447593bd0a45371f0e7ac7333710fcf64a4eb9834bf149f4ef2f32 \
+size    52743
 
 if {${name} ne ${subport}} {
 
@@ -31,8 +31,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  8439c31716d8ddbff12ec2388737dec3c6c456bb \
-                            sha256  38af54d0e7705d87a287bdefe1df00f936aadb1f629dca383e825cca927fa753 \
-                            size    46220
+sha256  38af54d0e7705d87a287bdefe1df00f936aadb1f629dca383e825cca927fa753 \
+size    46220
     }
 
     livecheck.type      none

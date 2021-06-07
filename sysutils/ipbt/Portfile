@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -21,8 +21,8 @@ homepage            https://www.chiark.greenend.org.uk/~sgtatham/ipbt/
 master_sites        ${homepage}
 
 checksums           rmd160  994a4c6504d5ce0e4ff3216f3b80ce2a0661429e \
-                    sha256  0aeafaacbccb89d2aaf044d6c6582c71cb66f607847854f2df514a21f6a5cb70 \
-                    size    344713
+sha256  0aeafaacbccb89d2aaf044d6c6582c71cb66f607847854f2df514a21f6a5cb70 \
+size    344713
 
 depends_build       port:perl5
 

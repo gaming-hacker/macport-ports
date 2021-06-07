@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -28,8 +28,8 @@ license             Apache-2
 installs_libs       no
 
 checksums           rmd160  8107067909dc52a29686cb27bde8d459206268d6 \
-                    sha256  9ed419006e8c9b8b82b12f0c07ff0ae8c75b8f2d9956536775aa00f1d25558f0 \
-                    size    6194467
+sha256  9ed419006e8c9b8b82b12f0c07ff0ae8c75b8f2d9956536775aa00f1d25558f0 \
+size    6194467
 
 set build_date      [exec date +%FT%T%z]
 # Reproduce the "build" target from the upstream Makefile

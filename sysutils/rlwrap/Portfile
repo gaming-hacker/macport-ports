@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,8 +17,8 @@ long_description        rlwrap is a wrapper that enables any other command to \
                         readline library.
 
 checksums               rmd160  0b2530a2696b7f2da3e1b3f5317693b31b82bad4 \
-                        sha256  fb6ac7c8534ad52c709bdd88ec17c2de71c32d530c064f0c594fa1ecf377af1e \
-                        size    181271
+sha256  fb6ac7c8534ad52c709bdd88ec17c2de71c32d530c064f0c594fa1ecf377af1e \
+size    181271
 
 depends_build-append    port:autoconf \
                         port:automake \

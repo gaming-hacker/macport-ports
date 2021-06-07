@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -35,13 +35,13 @@ if {${subport} eq ${name}} {
 
     github.setup    csete gqrx 2.14.4 v
     checksums       rmd160  1027413f69e683ff943fe2166d3318b4ce83a66a \
-                    sha256  abe9a22d6c7de95397bd6c3bba7978cb44de91bb2405e30079298e750950f579 \
-                    size    1345810
+sha256  abe9a22d6c7de95397bd6c3bba7978cb44de91bb2405e30079298e750950f579 \
+size    1345810
     revision        2
     epoch           1
 
     compiler.c_standard   2011
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
 
     qt5.depends_component qtsvg
 

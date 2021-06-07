@@ -20,9 +20,9 @@ long_description    Shiboken is a plugin (front-end) for generatorrunner that \
 platforms           darwin
 
 checksums           md5     fd37c9054c76c28f731fe01f33d6bc71 \
-                    rmd160  efcfb5820bb85360e1c8c045ae2cfdea8d6e81f3 \
-                    sha1    62f2d231b42a061cf0a19a1caeb70dde39e68e55 \
-                    sha256  cf634ad51e9b0538c4283dbbf5e86268db793552364a03735c51299bc36ee4e4
+rmd160  efcfb5820bb85360e1c8c045ae2cfdea8d6e81f3 \
+sha1    62f2d231b42a061cf0a19a1caeb70dde39e68e55 \
+sha256  cf634ad51e9b0538c4283dbbf5e86268db793552364a03735c51299bc36ee4e4
 
 if {${name} ne ${subport}} {
     pre-patch {
@@ -38,8 +38,8 @@ if {${name} ne ${subport}} {
                         port:libxslt \
                         port:sparsehash
     use_configure   yes
-    compiler.cxx_standard 2011
-    configure.cxxflags-append -std=c++11
+    compiler.cxx_standard 2017
+    configure.cxxflags-append -std=c++17
     # build.cmd must be set before configure.args is changed
     #    (see https://github.com/macports/macports-ports/commit/63c9c8e6e312c8e36603cb118d94f995aa8a6e67)
     build.cmd       make

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                rsyncrypto
 version             1.14
 revision            0
 checksums           rmd160  84e8f680e419a2c4b935ba6f51dc7216fc51df04 \
-                    sha256  4f1e2605449c7d35b69d77bce95cb652a8ba1a0996b3babd776fcc98a5a7deff \
-                    size    405166
+sha256  4f1e2605449c7d35b69d77bce95cb652a8ba1a0996b3babd776fcc98a5a7deff \
+size    405166
 
 platforms           darwin
 categories          security
@@ -35,5 +35,5 @@ patchfiles          configure.patch
 
 # crypto.cpp:176:12: error: calling a private constructor of class 'std::__1::unique_ptr<key, std::__1::default_delete<key> >'
 # https://sourceforge.net/p/rsyncrypto/bugs/20/
-compiler.cxx_standard 2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17

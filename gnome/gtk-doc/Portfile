@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -24,8 +24,8 @@ master_sites        gnome:sources/${name}/${version}/
 use_xz              yes
 
 checksums           rmd160  1e4d3d5c850743460629d50a729f29ff2efc9a00 \
-                    sha256  de0ef034fb17cb21ab0c635ec730d19746bce52984a6706e7bbec6fb5e0b907c \
-                    size    762000
+sha256  de0ef034fb17cb21ab0c635ec730d19746bce52984a6706e7bbec6fb5e0b907c \
+size    762000
 
 depends_build       port:pkgconfig \
                     path:lib/pkgconfig/glib-2.0.pc:glib2
@@ -68,26 +68,26 @@ variant python36 conflicts python37 python38 python39 description {Build using P
 
 variant python37 conflicts python36 python38 python39 description {Build using Python 3.7} {
     depends_lib-append \
-        port:python37 \
-        port:py37-anytree \
-        port:py37-lxml \
-        port:py37-pygments
+        port:python39 \
+        port:py39-anytree \
+        port:py39-lxml \
+        port:py39-pygments
 
-    depends_test        port:py37-mock
+    depends_test        port:py39-mock
 
-    configure.python    ${prefix}/bin/python3.7
+    configure.python    ${prefix}/bin/python3.9
 }
 
 variant python38 conflicts python36 python37 python39 description {Build using Python 3.8} {
     depends_lib-append \
-        port:python38 \
-        port:py38-anytree \
-        port:py38-lxml \
-        port:py38-pygments
+        port:python39 \
+        port:py39-anytree \
+        port:py39-lxml \
+        port:py39-pygments
 
-    depends_test        port:py38-mock
+    depends_test        port:py39-mock
 
-    configure.python    ${prefix}/bin/python3.8
+    configure.python    ${prefix}/bin/python3.9
 }
 
 variant python39 conflicts python36 python37 python38 description {Build using Python 3.9} {
@@ -106,7 +106,7 @@ if {![variant_isset python36] &&
     ![variant_isset python37] &&
     ![variant_isset python38] &&
     ![variant_isset python39] } {
-    default_variants +python38
+    default_variants +python39
 }
 
 post-configure {

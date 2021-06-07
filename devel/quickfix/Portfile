@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,10 +20,10 @@ master_sites        sourceforge:project/quickfix/quickfix/${version}
 worksrcdir          ${name}
 
 checksums           rmd160  369d5bf7044fa4c90d2d74e4470e50c0ad82951b \
-                    sha256  f6e8bdb004eaf45e50f63005b8c2611cb0afd42cf70f110f600c852aa572342d \
-                    size    21803784
+sha256  f6e8bdb004eaf45e50f63005b8c2611cb0afd42cf70f110f600c852aa572342d \
+size    21803784
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_lib         port:libxml2
 
@@ -69,7 +69,7 @@ variant python35 conflicts python27 python37 description {Include Python 3.5 sup
 }
 
 variant python37 conflicts python27 python35 description {Include Python 3.7 support} {
-    depends_lib-append      port:python37
-    configure.python        ${prefix}/bin/python3.7
+    depends_lib-append      port:python39
+    configure.python        ${prefix}/bin/python3.9
     configure.args-replace  --without-python --with-python
 }

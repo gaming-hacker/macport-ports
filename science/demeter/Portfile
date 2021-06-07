@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 PortGroup           github 1.0
 
 set perl-version    5.28
-perl5.branches      ${perl-version}
+perl5.branches 5.30
 
 github.setup        bruceravel demeter 0.9.26
 revision            0
 checksums           rmd160  ffabee287fe397551f3b6fa2d57900c43d9dd07a \
-                    sha256  001e6a18a9150b8edffa1c00c81701003d13a300121e498207ab370d48542b28 \
-                    size    82922089
+sha256  001e6a18a9150b8edffa1c00c81701003d13a300121e498207ab370d48542b28 \
+size    82922089
 
 conflicts           demeter-devel
 
@@ -105,8 +105,8 @@ subport demeter-devel {
     github.setup        bruceravel demeter 0.9.26
     revision            0
     checksums           rmd160  ffabee287fe397551f3b6fa2d57900c43d9dd07a \
-                        sha256  001e6a18a9150b8edffa1c00c81701003d13a300121e498207ab370d48542b28 \
-                        size    82922089
+sha256  001e6a18a9150b8edffa1c00c81701003d13a300121e498207ab370d48542b28 \
+size    82922089
 
     conflicts           demeter
 

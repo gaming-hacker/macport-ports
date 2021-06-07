@@ -1,5 +1,5 @@
 
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,7 +16,7 @@ long_description    ${description}
 homepage            http://www.lri.fr/~filliatr/ftp/ocaml/cgi/
 
 checksums           md5     bcf49d761c983628ffea09b0de6d2c67 \
-                    sha1    d103e704f17ea4492fa876b15e54981645b7ee78 \
-                    rmd160  f2249bd719ecc43d813926fa3cb608e840db04a7
+sha1    d103e704f17ea4492fa876b15e54981645b7ee78 \
+rmd160  f2249bd719ecc43d813926fa3cb608e840db04a7
 
 ocaml.use_findlib   yes

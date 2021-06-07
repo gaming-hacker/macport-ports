@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    {*}${description}. Loguru is a library \
 homepage            https://loguru.readthedocs.io/en/stable/index.html
 
 checksums           rmd160 a0450cb82e158fcb657dcc3ce6cde30e04fdc316 \
-                    sha256 b28e72ac7a98be3d28ad28570299a393dfcd32e5e3f6a353dec94675767b6319 \
-                    size   122800
+sha256 b28e72ac7a98be3d28ad28570299a393dfcd32e5e3f6a353dec94675767b6319 \
+size   122800
 
 python.versions     38 39
 

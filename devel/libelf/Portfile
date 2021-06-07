@@ -4,8 +4,8 @@ name		libelf
 version		0.8.13
 revision	2
 checksums       rmd160  06962fbbcd91da25f02b964ad9513b9536f67baa \
-                sha256  591a9b4ec81c1f2042a97aa60564e0cb79d041c52faa7416acb38bc95bd2c76d \
-                size    148529
+sha256  591a9b4ec81c1f2042a97aa60564e0cb79d041c52faa7416acb38bc95bd2c76d \
+size    148529
 
 categories	devel
 license		LGPL-2+
@@ -16,7 +16,7 @@ platforms	darwin
 
 long_description  'Libelf' lets you read, modify or create ELF files in an \
 		   architecture-independent way. The library takes care of \
-		   size and endian issues, e.g. you can process a file for \
+size and endian issues, e.g. you can process a file for \
 		   SPARC processors on an Intel-based system.
 
 master_sites	https://web.archive.org/web/20160505220855/http://www.mr511.de/software/

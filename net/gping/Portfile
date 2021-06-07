@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,9 +16,9 @@ description         ping, but with a graph
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  a33f46cb0617e64d9ddc82350a4cdf20d7272c79 \
-                        sha256  f472aa9fb2e81a5485366b4efa6c2c0bb984248e2cac46cade6a6f7979b23ae8 \
-                        size    853467
+rmd160  a33f46cb0617e64d9ddc82350a4cdf20d7272c79 \
+sha256  f472aa9fb2e81a5485366b4efa6c2c0bb984248e2cac46cade6a6f7979b23ae8 \
+size    853467
 
 cargo.crates \
     aho-corasick                    0.7.15  7404febffaa47dac81aa44dba71523c9d069b1bdc50a77db41195149e17f68e5 \

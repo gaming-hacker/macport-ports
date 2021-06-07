@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -32,8 +32,8 @@ homepage            https://launchpad.net/mmdb
 master_sites        http://launchpad.net/mmdb/${branch}/${version}/+download/
 
 checksums           sha256  a1972320186d27cc069efc702eb64f62899a3bfbe58f34665f7b455a08f184ae \
-                    rmd160  596ebc4b241cffda5d5efd0b87408625c5573301 \
-                    size    992256
+rmd160  596ebc4b241cffda5d5efd0b87408625c5573301 \
+size    992256
 
 depends_build-append \
                     port:gawk \

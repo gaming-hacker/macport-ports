@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        taglib taglib 1.12 v
 revision            0
 checksums           rmd160  2d748aa75c810e9062a18790f1fc560e3cecc0b7 \
-                    sha256  7fccd07669a523b07a15bd24c8da1bbb92206cb19e9366c3692af3d79253b703 \
-                    size    1364231
+sha256  7fccd07669a523b07a15bd24c8da1bbb92206cb19e9366c3692af3d79253b703 \
+size    1364231
 
 categories          audio
 platforms           darwin
@@ -57,9 +57,9 @@ variant tests description "Enable running tests" {
     depends_build-append    port:cppunit
 
     # cppunit requires C++11
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2017
     configure.cxxflags-append \
-                            -std=c++11
+                            -std=c++17
 
     configure.args-replace  -DBUILD_SHARED_LIBS=On -DBUILD_SHARED_LIBS=Off
     configure.args-append   -DBUILD_TESTS=On

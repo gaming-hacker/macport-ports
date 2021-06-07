@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -20,10 +20,10 @@ homepage            https://www.shrubbery.net/${name}
 master_sites        ftp://ftp.shrubbery.net/pub/rancid/
 
 checksums           rmd160  21d3990c283a425cbbbbe13f7b21be537ff3d893 \
-                    sha256  b1c1415d16ac291e29ff356a3c4f688160f07f1a091869290a95cd1793d4d3fb \
-                    size    522382
+sha256  b1c1415d16ac291e29ff356a3c4f688160f07f1a091869290a95cd1793d4d3fb \
+size    522382
 
-perl5.branches      5.28
+perl5.branches 5.30
 depends_lib-append  port:perl${perl5.major} \
                     port:p${perl5.major}-lockfile-simple \
                     path:lib/libssl.dylib:openssl

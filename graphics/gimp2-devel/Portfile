@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -31,11 +31,11 @@ distname            ${git_name}-${git_commit}
 use_bzip2           yes
 
 checksums           rmd160  71619cc43335b2adf10b2679a0c3c3f022951c15 \
-                    sha256  4c825d2975c97c9066774681d6a31df34f505163ff7b86156f41f93d4b90df44 \
-                    size    84071676
+sha256  4c825d2975c97c9066774681d6a31df34f505163ff7b86156f41f93d4b90df44 \
+size    84071676
 
 # force default perl to match intltool
-perl5.branches      5.28
+perl5.branches 5.30
 
 depends_build       port:pkgconfig \
                     port:appstream-glib \
@@ -95,7 +95,7 @@ use_parallel_build  no
 # redefinition of typedef is invalid in C [-Wtypedef-redefinition] (#50329)
 # as of version 2.10.0 requires a C++14 compatible compiler to configure
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 700}
 
 patchfiles          patch-etc-gimprc.in.diff \
@@ -197,7 +197,7 @@ variant quartz {
 # set default variants
 #
 
-default_variants    +python27
+default_variants +python39
 
 post-activate {
     system "${prefix}/bin/gtk-update-icon-cache -f -t ${prefix}/share/icons/hicolor"

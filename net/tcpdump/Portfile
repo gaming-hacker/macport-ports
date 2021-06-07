@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ platforms           darwin
 master_sites        ${homepage}release/
 
 checksums           rmd160  ee0aeea16a3e3429f224dd3be1818051c273bb5f \
-                    sha256  8cf2f17a9528774a7b41060323be8b73f76024f7778f59c34efa65d49d80b842 \
-                    size    2008080
+sha256  8cf2f17a9528774a7b41060323be8b73f76024f7778f59c34efa65d49d80b842 \
+size    2008080
 
 depends_lib         port:libpcap \
                     port:libsmi \

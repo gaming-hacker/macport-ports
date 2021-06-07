@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -16,9 +16,9 @@ description                 cargo applet to build and install C-ABI compatibile 
 long_description            ${description}
 
 checksums                   ${name}-${version}${extract.suffix} \
-                            rmd160  f9e9eac75ae0b8d306b425ba6a207389ea5e12bc \
-                            sha256  8a3a8d59c671b4b5d4746ad1ea99ce43f20a66d8a1678336b3a8b350c321b6e0 \
-                            size    22063
+rmd160  f9e9eac75ae0b8d306b425ba6a207389ea5e12bc \
+sha256  8a3a8d59c671b4b5d4746ad1ea99ce43f20a66d8a1678336b3a8b350c321b6e0 \
+size    22063
 
 depends_lib-append          port:libiconv \
                             path:lib/libssl.dylib:openssl \
@@ -343,7 +343,7 @@ cargo.crates \
     shell-escape \
     0.1.5 \
     45bb67a18fa91266cc7807181f62f9178a6873bfad7dc788c42e6430db40184f \
-    sized-chunks \
+sized-chunks \
     0.6.4 \
     65e65d6a9f13cd78f361ea5a2cf53a45d67cdda421ba0316b9be101560f3d207 \
     socket2 \

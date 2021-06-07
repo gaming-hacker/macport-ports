@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  60eabb83b2979e5502914cfb60fc79f29c3255ca \
-                    sha256  706b55667de221b651b0d938dfbb468112b322ed41a634d3ca5c8bd861b19e8a \
-                    size    1067767
+rmd160  60eabb83b2979e5502914cfb60fc79f29c3255ca \
+sha256  706b55667de221b651b0d938dfbb468112b322ed41a634d3ca5c8bd861b19e8a \
+size    1067767
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/delta \

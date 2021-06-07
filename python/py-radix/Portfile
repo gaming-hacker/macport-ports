@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,7 +21,7 @@ homepage            http://www.mindrot.org/projects/py-radix/
 python.rootname     py-radix
 master_sites        googlecode
 checksums           rmd160 1cd4425de62d0c4cc567ea5f319cbd4e608d6d16 \
-                    sha256 3c9ffe6742009cca121c2c8f76e658af7fab25eb14cf671b5e40b7ccf91e1550
+sha256 3c9ffe6742009cca121c2c8f76e658af7fab25eb14cf671b5e40b7ccf91e1550
 
 deprecated.upstream_support no
 livecheck.type      none

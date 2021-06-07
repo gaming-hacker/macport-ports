@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ long_description    gevent is a coroutine-based Python networking \
 homepage            http://gevent.org
 
 checksums           rmd160  15e84fb520b32dd95929e8bdbd7a02fc424c7c8e \
-                    sha256  520cc2a029a9eef436e4e56b007af7859315cafa21937d43c1d5269f12f2c981 \
-                    size    5943652
+sha256  520cc2a029a9eef436e4e56b007af7859315cafa21937d43c1d5269f12f2c981 \
+size    5943652
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -47,8 +47,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  37d748a02b6b9c4f59efc4f86b7d56ae8a9f35ec \
-                            sha256  1eb7fa3b9bd9174dfe9c3b59b7a09b768ecd496debfc4976a9530a3e15c990d1 \
-                            size    5169595
+sha256  1eb7fa3b9bd9174dfe9c3b59b7a09b768ecd496debfc4976a9530a3e15c990d1 \
+size    5169595
 
         depends_lib-delete  port:libuv
 

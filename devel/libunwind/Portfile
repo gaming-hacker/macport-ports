@@ -22,7 +22,7 @@ use_xz                  yes
 distname                ${name}-${version}.src
 
 checksums               rmd160  26d3dac149e2fd355e1b8b367a9bf61e01c38fbf \
-                        sha256  6bbfbf6679435b858bd74bdf080386d084a76dfbf233fb6e47b2c28e0872d0fe
+sha256  6bbfbf6679435b858bd74bdf080386d084a76dfbf233fb6e47b2c28e0872d0fe
 
 use_configure           no
 
@@ -112,7 +112,7 @@ if {${subport} eq "${name}-headers"} {
         configure.ldflags-append -lmacho
     }
 
-    configure.cflags-append -std=gnu99
+    configure.cflags-append -std=c11
 
     build.args \
         PREFIX="${prefix}" \

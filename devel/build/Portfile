@@ -12,7 +12,7 @@ platforms           darwin
 master_sites        http://www.codesynthesis.com/download/build/${branch}
 
 checksums           rmd160  8f563a8435a9fb4c418e3c671e50886808c7b75c \
-                    sha256  e6fcd1d225d7d1e7b2895a44e3c192f7d45ca83e45817bff20372e5dedcda5d3
+sha256  e6fcd1d225d7d1e7b2895a44e3c192f7d45ca83e45817bff20372e5dedcda5d3
 
 license             GPL-2
 
@@ -43,4 +43,4 @@ livecheck.type      regex
 livecheck.url       [lindex ${master_sites} 0]
 livecheck.regex     ${name}-(\[0-9.\]+)${extract.suffix}
 
-# vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2

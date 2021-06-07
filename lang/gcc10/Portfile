@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                       1.0
 PortGroup           select                       1.0
@@ -44,15 +44,15 @@ if { ${os.arch} eq "arm" } {
     master_sites    https://github.com/fxcoudert/gcc/archive
     distname        gcc-10-arm-20210220
     checksums       rmd160  7ad0ba740d46554b5a5ccdfdc75f4401a76108b4 \
-                    sha256  53beed690e4e0355d972ad58917a11e01af1cfe67b2e7602ca1ef89c98417a67 \
-                    size    118840250
+sha256  53beed690e4e0355d972ad58917a11e01af1cfe67b2e7602ca1ef89c98417a67 \
+size    118840250
     subport         libgcc10 { revision [ expr ${revision} + 2 ] }
 } else {
     distname        gcc-${version}
     use_xz          yes
     checksums       rmd160  8edb715cf1159fd8de773d0d5208d2e83ca36402 \
-                    sha256  64f404c1a650f27fc33da242e1f2df54952e3963a49e06e73f6940f3223ac344 \
-                    size    76692288
+sha256  64f404c1a650f27fc33da242e1f2df54952e3963a49e06e73f6940f3223ac344 \
+size    76692288
     subport         libgcc10 { revision [ expr ${revision} + 1 ] }
 }
 

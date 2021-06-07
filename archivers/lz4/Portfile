@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description    LZ4 is a very fast lossless compression algorithm, \
 homepage            http://www.lz4.org/
 
 checksums           rmd160  eb4044b51231dbcbc00b804f524a909a38cefc36 \
-                    sha256  fbc4711bbad8b61eaa716acba0cde14afa1301fe06dd8f2abb268f3763370c98 \
-                    size    321018
+sha256  fbc4711bbad8b61eaa716acba0cde14afa1301fe06dd8f2abb268f3763370c98 \
+size    321018
 
 patchfiles          gen_manual.patch \
                     CVE-2021-3520.patch

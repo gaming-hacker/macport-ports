@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -22,8 +22,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  02b748371658fe569ed463e175e0bdd7ed26a689 \
-                    sha256  53bf207ebca82c563b9e67bce977459a17e7fd94e35c27c196986736da248df1 \
-                    size    9030852
+sha256  53bf207ebca82c563b9e67bce977459a17e7fd94e35c27c196986736da248df1 \
+size    9030852
 
 depends_build       port:pkgconfig \
                     port:autoconf \
@@ -35,7 +35,7 @@ depends_build       port:pkgconfig \
                     port:mm-common \
                     path:bin/dot:graphviz \
                     port:doxygen \
-                    port:py38-sphinx \
+                    port:py39-sphinx \
                     port:perl${perl5.major}
 
 depends_lib         port:desktop-file-utils \
@@ -52,7 +52,7 @@ depends_lib         port:desktop-file-utils \
                     port:goocanvasmm2\
                     port:gtksourceviewmm3 \
                     port:postgresql11 \
-                    port:py38-gobject3 \
+                    port:py39-gobject3 \
                     port:libepc \
                     port:evince \
                     port:shared-mime-info
@@ -80,7 +80,7 @@ configure.perl      ${perl5.bin}
 
 configure.env       SPHINX_BUILD=${prefix}/bin/sphinx-build-${python.branch}
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 700}
 
 configure.args      --with-boost-python=mt \

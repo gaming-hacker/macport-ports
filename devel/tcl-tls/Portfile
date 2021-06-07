@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -20,9 +20,9 @@ master_sites        ${homepage}uv/
 distname            tcltls-${version}
 
 checksums           rmd160  0c3d483dd70b1cca4dc230fee03423ed985d1b04 \
-                    sha256  806ae405250810f8d57a8ca6fce01d8ae40e72443728d1569069126bb5cbc175 \
-                    sha1    55d24a0c11d001bea23eb1c02bfcb20bf8f47d1b \
-                    size    165139
+sha256  806ae405250810f8d57a8ca6fce01d8ae40e72443728d1569069126bb5cbc175 \
+sha1    55d24a0c11d001bea23eb1c02bfcb20bf8f47d1b \
+size    165139
 
 depends_lib         path:lib/libssl.dylib:openssl port:tcl
 

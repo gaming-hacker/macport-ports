@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,10 +19,10 @@ homepage            http://ceres-solver.org
 master_sites        ${homepage}
 
 checksums           rmd160  cb7b5899222124a173a77897f424f79fc66adccc \
-                    sha256  10298a1d75ca884aa0507d1abb0e0f04800a92871cd400d4c361b56a777a7603 \
-                    size    11225245
+sha256  10298a1d75ca884aa0507d1abb0e0f04800a92871cd400d4c361b56a777a7603 \
+size    11225245
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 depends_lib         port:eigen3 \
                     port:gflags \

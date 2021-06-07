@@ -17,8 +17,8 @@ master_sites            http://releases.0x539.de/${name}/ \
                         http://gentoo.osuosl.org/distfiles/
 
 checksums               rmd160  84b89573357d0db580461b28b9c040de80b1f3b8 \
-                        sha256  a711762c0722e9e7e01934c115dbffc7a233c033d66dbc5d58025af438516f48 \
-                        size    134766
+sha256  a711762c0722e9e7e01934c115dbffc7a233c033d66dbc5d58025af438516f48 \
+size    134766
 
 depends_build           port:pkgconfig
 
@@ -29,9 +29,9 @@ depends_lib             path:lib/pkgconfig/glib-2.0.pc:glib2 \
                         port:obby
 
 # glibmm requires C++11
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 configure.cxxflags-append \
-                        -std=c++11
+                        -std=c++17
 
 # a variety of sobby programming errors
 compiler.blacklist      *clang*

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/mozilla/bleach
 
 checksums           rmd160  eb40942d8a37ea5f874dddf7ecee06dde39063a5 \
-                    sha256  98b3170739e5e83dd9dc19633f074727ad848cbedb6026708c8ac2d3b697a433 \
-                    size    181274
+sha256  98b3170739e5e83dd9dc19633f074727ad848cbedb6026708c8ac2d3b697a433 \
+size    181274
 
 if {${name} ne ${subport}} {
     depends_build-append \

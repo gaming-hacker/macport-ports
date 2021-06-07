@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -20,8 +20,8 @@ distname            ${version}
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  8ef44fd2295f2280f5f88331f6e2d521a156416c \
-                    sha256  1f30c48f4667f17ea4ab5048b9fd10d090a7fbbf4f1997eb018b656b851340a4 \
-                    size    208158
+sha256  1f30c48f4667f17ea4ab5048b9fd10d090a7fbbf4f1997eb018b656b851340a4 \
+size    208158
 
 depends_build       port:pkgconfig
 depends_lib         port:libffi \

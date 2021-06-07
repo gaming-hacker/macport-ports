@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 PortGroup           cargo 1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    {*}${description} If you pronounce \"tldr\" in English, \
                     and it should show the output as fast as possible.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  6299f2391dd959ff21801121464ec31c7e15b4f8 \
-                    sha256  3e1917b91eb9aaa460db8616c02c21a5ddf1928e82e6d40cd9efb8543bbeb969 \
-                    size    407089
+rmd160  6299f2391dd959ff21801121464ec31c7e15b4f8 \
+sha256  3e1917b91eb9aaa460db8616c02c21a5ddf1928e82e6d40cd9efb8543bbeb969 \
+size    407089
 
 categories          sysutils
 license             MIT

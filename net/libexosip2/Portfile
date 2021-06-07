@@ -19,8 +19,8 @@ maintainers     {toby @tobypeterson}
 
 master_sites    nongnu:exosip
 checksums       rmd160 1b7b50266bde653800be859176b7cfa9aa4c6557 \
-                sha256 87256b45a406f3c038e1e75e31372d526820366527c2af3bb89329bafd87ec42 \
-                size   644361
+sha256 87256b45a406f3c038e1e75e31372d526820366527c2af3bb89329bafd87ec42 \
+size   644361
 
 configure.args  --mandir=${prefix}/share/man --disable-openssl
 

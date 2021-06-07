@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,17 +27,17 @@ distfiles           ${name}-${git.branch}.tar.gz:QLColorCode \
                     highlight-${highlight_version}.tar.gz:highlight
 
 checksums           QLColorCode-release-4.1.0.tar.gz \
-                    rmd160  b45817626018c2cd7d5df4b4430c760e6a18e0d3 \
-                    sha256  d6d878ddbcb5b1f7d9f1656e96e1ab0d5cce2f4208e1e7a6f5a190ff2a6f878a \
-                    size    44683 \
+rmd160  b45817626018c2cd7d5df4b4430c760e6a18e0d3 \
+sha256  d6d878ddbcb5b1f7d9f1656e96e1ab0d5cce2f4208e1e7a6f5a190ff2a6f878a \
+size    44683 \
                     e2ea3b31c94bb3e1da27c233661cb2a16699c685.tar.gz \
-                    rmd160  972fcc46049cf60a780a4dc7bef6a273167dab78 \
-                    sha256  a2e01036021d319fd41e16dfe12cc5fabc7db1337df8605a884ac0b424932d9b \
-                    size    444643 \
+rmd160  972fcc46049cf60a780a4dc7bef6a273167dab78 \
+sha256  a2e01036021d319fd41e16dfe12cc5fabc7db1337df8605a884ac0b424932d9b \
+size    444643 \
                     highlight-ecf5d4aa1341908a6b191a47d67e735197dc430d.tar.gz \
-                    rmd160  5fe1ca6acbd700138c3f20fbd6bedfcd8faa0e0d \
-                    sha256  770ce8dd4b269963711038748e2505945bee29ed1807ef9c473846717e4500a3 \
-                    size    1589913
+rmd160  5fe1ca6acbd700138c3f20fbd6bedfcd8faa0e0d \
+sha256  770ce8dd4b269963711038748e2505945bee29ed1807ef9c473846717e4500a3 \
+size    1589913
 
 depends_build       port:boost
 

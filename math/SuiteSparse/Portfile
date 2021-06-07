@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -20,8 +20,8 @@ long_description            SuiteSparse is a single archive that contains all pa
 homepage                    https://people.engr.tamu.edu/davis/suitesparse.html
 
 checksums                   rmd160  bedf435c5ee9a5d15a923b361ef033a89e01c9a7 \
-                            sha256  f62709c67d6f545b709099ff5afaa54fef4743c1ae3bb3e955a4e71c35303550 \
-                            size    59609016
+sha256  f62709c67d6f545b709099ff5afaa54fef4743c1ae3bb3e955a4e71c35303550 \
+size    59609016
 
 use_parallel_build          no
 
@@ -57,7 +57,7 @@ subport SuiteSparse_Mongoose {
     depends_lib-append      port:SuiteSparse_config
     license                 GPL-3
     long_description-append ${subport}: graph partitioning.
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2017
 }
 
 subport SuiteSparse_AMD {

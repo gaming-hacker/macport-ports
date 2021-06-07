@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         LWP-Protocol-https 6.10 ../../authors/id/O/OA/OALDERS/
 platforms           darwin
 maintainers         nomaintainer
@@ -18,8 +18,8 @@ long_description    The LWP::Protocol::https module used to be bundled with p5-l
                     underlying modules to install.
 
 checksums           rmd160  fda9984c710b6e805af772d02f4f494c9b8fe22b \
-                    sha256  cecfc31fe2d4fc854cac47fce13d3a502e8fdfe60c5bc1c09535743185f2a86c \
-                    size    33691
+sha256  cecfc31fe2d4fc854cac47fce13d3a502e8fdfe60c5bc1c09535743185f2a86c \
+size    33691
 
 if {${perl5.major} != ""} {
     depends_build-append \

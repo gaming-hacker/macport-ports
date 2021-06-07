@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 distname            timew-${version}
 
 checksums           rmd160  41f9e8ea662002acbd7ecbd0a1e972531a32d6af\
-                    sha256  c4df7e306c9a267c432522c37958530b8fd6e5a410c058f575e25af4d8c7ca53\
-                    size    3188726
+sha256  c4df7e306c9a267c432522c37958530b8fd6e5a410c058f575e25af4d8c7ca53\
+size    3188726
 
 github.tarball_from releases
 

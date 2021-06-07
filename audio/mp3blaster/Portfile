@@ -19,8 +19,8 @@ homepage            http://www.mp3blaster.org/
 platforms           darwin
 master_sites        sourceforge:project/${name}/${name}/${name}-${version}
 checksums           md5 e3172472365c13bca0df521817891d67 \
-                    sha1 bf07498a64c0ebf904d56ab6ed1ab28275f59f61 \
-                    rmd160 ceebc80640bacfb2cb7e9b08ea1732c95a2fcd0f
+sha1 bf07498a64c0ebf904d56ab6ed1ab28275f59f61 \
+rmd160 ceebc80640bacfb2cb7e9b08ea1732c95a2fcd0f
 depends_lib         port:libsdl\
                     port:libvorbis\
                     port:ncurses

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -8,7 +8,7 @@ PortGroup           legacysupport 1.0
 # Only enable legacy support on OSX10.6 or older
 legacysupport.newest_darwin_requires_legacy 10
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 github.setup        Nuand bladeRF ded573bc9ab4201e69d8e785c3fd1d4f46f045eb
 version             20210505-[string range ${github.version} 0 7]
@@ -41,13 +41,13 @@ master_sites        ${github.homepage}/tarball/${git.branch}:tagone \
                     https://github.com/${no_OS_github_author}/${no_OS_github_project}/tarball/${no_OS_commit}:tagtwo
 
 checksums           ${bladeRF_distfile} \
-                    rmd160  5330fd1c0e66d3de144fc10ccaaa5c234ffd7cdb \
-                    sha256  c8159542cca0c656b5de5df4b655d9314c6a95d868d7e3ebbdec72ca12a58ed3 \
-                    size    2261743 \
+rmd160  5330fd1c0e66d3de144fc10ccaaa5c234ffd7cdb \
+sha256  c8159542cca0c656b5de5df4b655d9314c6a95d868d7e3ebbdec72ca12a58ed3 \
+size    2261743 \
                     ${no_OS_distfile} \
-                    rmd160  dbe43395fc0b22919ac7e6a5e2f355987e4dd2b7 \
-                    sha256  53670c8f0a9feaa774d8c3067ba201b31c0197294bdd00a1795c72a0368aac40 \
-                    size    44184797
+rmd160  dbe43395fc0b22919ac7e6a5e2f355987e4dd2b7 \
+sha256  53670c8f0a9feaa774d8c3067ba201b31c0197294bdd00a1795c72a0368aac40 \
+size    44184797
 
 post-extract {
 

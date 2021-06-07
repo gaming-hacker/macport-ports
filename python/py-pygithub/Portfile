@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         Python module for Github API v3
 long_description    ${description}
 
 checksums           rmd160  2bda7c70a65e453053236f5e7fd29e8f0a036f11 \
-                    sha256  196cab6dd6421b194245dc8943dce5be3ecc4536af1e2f0b5573939e03f65585 \
-                    size    3117724
+sha256  196cab6dd6421b194245dc8943dce5be3ecc4536af1e2f0b5573939e03f65585 \
+size    3117724
 
 python.versions     35 36 37 38 39
 

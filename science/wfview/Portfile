@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -16,12 +16,12 @@ homepage            https://wfview.org
 
 gitlab.setup        eliggett wfview 1.0 v
 checksums           rmd160  7366472f7c9bc42f0b2a2f8511168cf1423c6d8c \
-                    sha256  ffd17e5c0e30949e852522d44693675a05fa43ff00a491d2357a5f48da4daa54 \
-                    size    1193970
+sha256  ffd17e5c0e30949e852522d44693675a05fa43ff00a491d2357a5f48da4daa54 \
+size    1193970
 revision            0
 
 compiler.c_standard 2011
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 patchfiles-append \
     wfview.pro.patch

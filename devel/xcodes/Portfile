@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -11,14 +11,14 @@ maintainers         nomaintainer
 supported_archs     x86_64 arm64
 
 checksums           rmd160  edcc789e1e632b736f67e4e76a2c79994af36dcb \
-                    sha256  5ef007970951eab89e7792fd6dfd2f09272fafe54db45e6650022b36802bcd17 \
-                    size    251505
+sha256  5ef007970951eab89e7792fd6dfd2f09272fafe54db45e6650022b36802bcd17 \
+size    251505
 
 description         The best command-line tool to install and switch between multiple versions of Xcode
 long_description    {*}${description}
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build.type          xcode
 build.cmd           swift

@@ -24,8 +24,8 @@ master_sites		http://ftp3.de.postgresql.org/pub/Mirrors/ftp.postgresql.org/sourc
 			postgresql:source/v${version}
 
 checksums           md5     b511c1c6d5de2417096dba48912e6f18 \
-                    sha1    418b8c2e5a076e2e3c3e28455ee16b6550210352 \
-                    rmd160  cb2c9572ecefe49303e49f458116d51d3f1e6c36
+sha1    418b8c2e5a076e2e3c3e28455ee16b6550210352 \
+rmd160  cb2c9572ecefe49303e49f458116d51d3f1e6c36
 
 use_bzip2		yes
 distname		postgresql-${version}

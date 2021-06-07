@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                      1.0
 PortGroup           cmake                       1.1
@@ -13,8 +13,8 @@ github.tarball_from releases
 distname            ${github.project}-${version}
 
 checksums           rmd160  c7bf13134a0e049c651e7e0864151a37ec1daf77 \
-                    sha256  a2e7fdff29f7ba247a3bcdb08ab1db6d6ed745de2d3971b46526986caf360673 \
-                    size    4338692
+sha256  a2e7fdff29f7ba247a3bcdb08ab1db6d6ed745de2d3971b46526986caf360673 \
+size    4338692
 
 categories          net
 maintainers         {jonesc @cjones051073} openmaintainer
@@ -39,7 +39,7 @@ depends_build-append port:pkgconfig \
 depends_lib-append   port:libxml2 \
                      path:lib/libssl.dylib:openssl
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 # Non-standard support for variabe length arrays is required, which seems to
 # break with Xcode clang on OSX 10.10 and 10.11
 compiler.blacklist-append  {clang < 900}

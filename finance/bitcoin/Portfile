@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -20,14 +20,14 @@ homepage                https://bitcoin.org/
 master_sites            ${homepage}bin/bitcoin-core-${version}/
 
 checksums               rmd160  9dd3d6455b6c70e2c9b60802c07a40d3d69097c8 \
-                        sha256  4bbd62fd6acfa5e9864ebf37a24a04bc2dcfe3e3222f056056288d854c53b978 \
-                        size    6981793
+sha256  4bbd62fd6acfa5e9864ebf37a24a04bc2dcfe3e3222f056056288d854c53b978 \
+size    6981793
 
 depends_build           port:autoconf \
                         port:automake \
                         port:libtool \
                         port:pkgconfig \
-                        port:python38
+                        port:python39
 
 depends_lib             port:boost \
                         port:libevent \
@@ -52,13 +52,13 @@ configure.args          --disable-ccache \
                         --with-utils \
                         --with-libs
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args-append   --with-daemon=no
 configure.args-append   --with-gui=no
 configure.args-append   --enable-wallet=no
 
-# Bitcoin's configure adds -std=c++11 to the compiler name and then uses the
+# Bitcoin's configure adds -std=c++17 to the compiler name and then uses the
 # aforementioned name for both C++ and Objective-C++, the latter only if OBJCXX
 # is undefined. Macports defines OBJCXX, so undefining it solves the issue.
 configure.objcxx

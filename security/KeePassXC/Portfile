@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               qt5 1.0
@@ -29,13 +29,13 @@ distfiles-append        ${distname}${extract.suffix}.sig
 
 # See keepassxc-${version}-src.tar.xz.DIGEST on upstream GitHub releases page for SHA256 sums
 checksums               ${distname}${extract.suffix} \
-                        rmd160  cfc515bfcda0c54c132ea44f6a2374aa2b1e0b37 \
-                        sha256  e536e2a71c90fcf264eb831fb1a8b518ee1b03829828f862eeea748d3310f82b \
-                        size    7575164 \
+rmd160  cfc515bfcda0c54c132ea44f6a2374aa2b1e0b37 \
+sha256  e536e2a71c90fcf264eb831fb1a8b518ee1b03829828f862eeea748d3310f82b \
+size    7575164 \
                         ${distname}${extract.suffix}.sig \
-                        rmd160  127e840b31666ecfd44dce4124f21cc48231cf13 \
-                        sha256  849367d10f6ca0936f130c4d091e10f422c863ee5088439a2b13bcc58dff8937 \
-                        size    499
+rmd160  127e840b31666ecfd44dce4124f21cc48231cf13 \
+sha256  849367d10f6ca0936f130c4d091e10f422c863ee5088439a2b13bcc58dff8937 \
+size    499
 
 gpg_verify.use_gpg_verification \
                         yes
@@ -67,7 +67,7 @@ depends_lib-append      port:argon2 \
                         port:ykpers \
                         port:zlib
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 patchfiles              patch-no-deployqt.diff \
                         patch-old-mac.diff

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ homepage            https://libvips.github.io/libvips/
 github.tarball_from releases
 
 checksums           rmd160  7607b66c59b328811f62da1fd184475b8d7170d0 \
-                    sha256  a4eef2f5334ab6dbf133cd3c6d6394d5bdb3e76d5ea4d578b02e1bc3d9e1cfd8 \
-                    size    19519397
+sha256  a4eef2f5334ab6dbf133cd3c6d6394d5bdb3e76d5ea4d578b02e1bc3d9e1cfd8 \
+size    19519397
 
 # minor tweak to allow build with older compilers
 # StandaloneFuzzTargetMain.c:31: error: 'for' loop initial declaration used outside C99 mode

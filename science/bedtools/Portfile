@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,12 +19,12 @@ long_description    The BEDTools utilities allow one to address common genomics 
                     BED, GFF/GTF, VCF, and SAM/BAM.
 
 checksums           rmd160  3e570d891072aaea45b896a3e1581e6b69cc9761 \
-                    sha256  985ecf5905af1b59443db5cdfdec3578b0510dea34ceb68ecb5b1ca48083be29 \
-                    size    20640283
+sha256  985ecf5905af1b59443db5cdfdec3578b0510dea34ceb68ecb5b1ca48083be29 \
+size    20640283
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
-depends_build       port:py38-sphinx
+depends_build       port:py39-sphinx
 
 depends_lib-append  port:zlib port:xz port:bzip2
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                             1.0
 PortGroup                github                        1.0
@@ -27,8 +27,8 @@ if { ${subport} eq ${name} } {
     revision             1
 
     checksums            rmd160  b3e07e252a37c28261209d2159d34c0505de22e9 \
-                         sha256  3b634aaa10c9bf0e82505d1af69cb307a3a00182d57eae019680ccfa62338af9 \
-                         size    19497873
+sha256  3b634aaa10c9bf0e82505d1af69cb307a3a00182d57eae019680ccfa62338af9 \
+size    19497873
 
     license              BSD
  
@@ -64,10 +64,10 @@ if { ${subport} eq ${name} } {
     }
 
     # Need to use a recent MacPorts build.
-    compiler.cxx_standard  2014
+    compiler.cxx_standard 2017
     compiler.blacklist     *gcc* clang {macports-clang-[5-8].0} macports-clang-3.*
 
-    use_xcode              yes
+    use_xcode  no
     cmake.out_of_source    yes
 
     cmake.build_type       Release
@@ -96,8 +96,8 @@ subport ispc-clang {
     github.setup           llvm llvm-project 11.0.0 llvmorg-
 
     checksums              rmd160  43f9b90bfee998e51629993ecef378b981c7bada \
-                           sha256  d76bf03273a5a1c1168413e93071693be4509880a695665d97a8a70762e8a88b \
-                           size    122764036
+sha256  d76bf03273a5a1c1168413e93071693be4509880a695665d97a8a70762e8a88b \
+size    122764036
 
     license                NCSA
 
@@ -132,7 +132,7 @@ subport ispc-clang {
                            port:cctools \
                            port:python${py_ver_nodot}
 
-    compiler.cxx_standard  2014
+    compiler.cxx_standard 2017
     compiler.blacklist     *gcc* {clang < 801} macports-clang-3.* {macports-clang-[4-8].0}
 
     cmake.install_prefix   ${prefix}/libexec/${subport}

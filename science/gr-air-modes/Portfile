@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -13,15 +13,15 @@ license             GPL-3
 platforms           darwin
 
 # use C++11
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {${subport} eq ${name}} {
 
     github.setup    bistromath gr-air-modes a2f2627c5421368b8af1b57ca9818e1c79d4f4f0
     version         20191015-[string range ${github.version} 0 7]
     checksums       rmd160  c217e9a5da47bf639f94fed4d2490d88717ca40a \
-                    sha256  ec716122fd2c7e6e3f66a1d5c887b4433990c1036d2bdd4d7424808cca5a5a4e \
-                    size    186306
+sha256  ec716122fd2c7e6e3f66a1d5c887b4433990c1036d2bdd4d7424808cca5a5a4e \
+size    186306
     revision        2
 
     # NOTE: py3*-pyqwt is not available
@@ -43,7 +43,7 @@ subport gr37-air-modes {
     github.setup    bistromath gr-air-modes 0b6c3835062fc371d79fcb3cf3a6076d4a5ee36d
     version         20170928
     checksums       rmd160 1ebd3db9ceb68d6d12a0f84c944ad4c9ace14d31 \
-                    sha256 83faacb86e42033773f333d1c488efb9d0cd0e4a26217c93b2f45a828363fc7f
+sha256 83faacb86e42033773f333d1c488efb9d0cd0e4a26217c93b2f45a828363fc7f
     revision        1
 
     # temporary patch to fix CMake stuff on OSX

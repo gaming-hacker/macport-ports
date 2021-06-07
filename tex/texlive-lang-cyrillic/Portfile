@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Cyrillic
 long_description    Support for Cyrillic scripts (Bulgarian, Russian, Serbian, Ukrainian), even if Latin alphabets may also be used.
 
 checksums           texlive-lang-cyrillic-54594-run.tar.xz \
-                    rmd160  54c26cf72d63e45df6f3b72f4f6ffdad8a140a95 \
-                    sha256  b71b173a812bfde06402eecef67dd13ae6ad8e9374774e906ba83c86dc8303c8 \
-                    size    20555428 \
+rmd160  54c26cf72d63e45df6f3b72f4f6ffdad8a140a95 \
+sha256  b71b173a812bfde06402eecef67dd13ae6ad8e9374774e906ba83c86dc8303c8 \
+size    20555428 \
                     texlive-lang-cyrillic-54594-doc.tar.xz \
-                    rmd160  2feaab96f3d7d47b9f8f44893773e7ba158fb7d1 \
-                    sha256  df4c2d7150a1b9cc0502af1893f2563b7e7203902dcaa4eb20c8018393641764 \
-                    size    17324124 \
+rmd160  2feaab96f3d7d47b9f8f44893773e7ba158fb7d1 \
+sha256  df4c2d7150a1b9cc0502af1893f2563b7e7203902dcaa4eb20c8018393641764 \
+size    17324124 \
                     texlive-lang-cyrillic-54594-src.tar.xz \
-                    rmd160  1c2b0342f236f0a8fa93a3668d87a9dc96307b1f \
-                    sha256  75f7ac0f1f6e3ae384571e9d38ec0ec04f6fb31dc6b03992fe5b13beb6ab914e \
-                    size    193632
+rmd160  1c2b0342f236f0a8fa93a3668d87a9dc96307b1f \
+sha256  75f7ac0f1f6e3ae384571e9d38ec0ec04f6fb31dc6b03992fe5b13beb6ab914e \
+size    193632
 
 depends_lib         port:texlive-basic port:texlive-latex
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ long_description    libimobiledevice is a cross-platform software \
 homepage            https://www.libimobiledevice.org/
 
 checksums           rmd160  4780154bea572854ae35e0d1d8f12972a7409123 \
-                    sha256  a2c1145a7177377026f2ee55bd6b4c77b050e89740416e43b4adb5e8325929c8 \
-                    size    260987
+sha256  a2c1145a7177377026f2ee55bd6b4c77b050e89740416e43b4adb5e8325929c8 \
+size    260987
 
 depends_build-append \
                     port:autoconf \
@@ -53,8 +53,8 @@ subport libimobiledevice-devel {
     revision        0
 
     checksums       rmd160  27591925392cbc0ee4076ab02491b1d8e832f7bc \
-                    sha256  127cb57199e4538eee7e8e01f711cb1cb53d73b70181b0ba6c37c8371ab4faca \
-                    size    261030
+sha256  127cb57199e4538eee7e8e01f711cb1cb53d73b70181b0ba6c37c8371ab4faca \
+size    261030
 
     depends_lib-replace port:libusbmuxd port:libusbmuxd-devel   
     depends_lib-replace port:libplist port:libplist-devel

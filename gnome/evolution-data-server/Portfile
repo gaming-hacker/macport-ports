@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  37f0434b0d89dbbae40343718b347d3788753373 \
-                    sha256  c555528c546d457be0dc0eaca5d766d4dfef7c408276cb05f9724c463bfe7fd9 \
-                    size    4636800
+sha256  c555528c546d457be0dc0eaca5d766d4dfef7c408276cb05f9724c463bfe7fd9 \
+size    4636800
 
 depends_build-append \
                     port:pkgconfig \
@@ -30,7 +30,7 @@ depends_build-append \
 
 # use our choice of python when building
 depends_build-append \
-                    port:python38
+                    port:python39
                     
 depends_lib         port:gtk3 \
                     port:gcr \
@@ -52,15 +52,15 @@ depends_lib         port:gtk3 \
                     port:db53
 
 # our choice of perl for installed scripts
-depends_lib-append  port:perl5.28
+depends_lib-append  port:perl5.30
 
 patchfiles          patch-cmake-find-our-build-tools.diff \
                     patch-remove-linker-flag-no-undefined.diff
 
-# libphonenumber-cpp uses C++11 extensions but evolution-data-server doesn't assert -std=c++11
+# libphonenumber-cpp uses C++11 extensions but evolution-data-server doesn't assert -std=c++17
 # this causes configuration failures when testing for libphonenumber on at least Mojave/Xcode 10
-compiler.cxx_standard 2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 configure.args-append \
                     -DENABLE_SCHEMAS_COMPILE=OFF \

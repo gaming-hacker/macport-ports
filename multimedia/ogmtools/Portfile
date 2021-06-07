@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,9 +20,9 @@ use_bzip2           yes
 master_sites        ${homepage}
 
 checksums           md5     02d356e3d21d53b1d9715bab223d8996 \
-                    rmd160  58b917795fcc08904d6dfdcfb6be82d1cd8cb4ca \
-                    sha256  c8d61d1dbceb981dc7399c1a85e43b509fd3d071fb8d3ca89ea9385e6e40fdea \
-                    size    214934
+rmd160  58b917795fcc08904d6dfdcfb6be82d1cd8cb4ca \
+sha256  c8d61d1dbceb981dc7399c1a85e43b509fd3d071fb8d3ca89ea9385e6e40fdea \
+size    214934
 
 depends_lib         port:libogg \
                     port:libvorbis \

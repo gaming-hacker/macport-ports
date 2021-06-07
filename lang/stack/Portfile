@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -43,15 +43,15 @@ distfiles           ${distname}-bin:release \
 extract.only        ${github.tag_prefix}${github.version}${extract.suffix}
 
 checksums           ${distname}-bin \
-                    rmd160  01fb6c671882d667611b247b1d0ec147f09f1405 \
-                    sha256  dd31f7827172f07e3f6bd0145bd6f1e67fb9ce88da0bf6103ce0f13b25a8b6e3 \
-                    size    36107528 \
+rmd160  01fb6c671882d667611b247b1d0ec147f09f1405 \
+sha256  dd31f7827172f07e3f6bd0145bd6f1e67fb9ce88da0bf6103ce0f13b25a8b6e3 \
+size    36107528 \
                     ${github.tag_prefix}${github.version}${extract.suffix} \
-                    rmd160  bc30354c95c82d29ff124bfd23b2270086a95f3c \
-                    sha256  eb849d5625084a6de57e8520ddf8172aca64ddadd9fee37cdafeefad80895b62 \
-                    size    686145 \
+rmd160  bc30354c95c82d29ff124bfd23b2270086a95f3c \
+sha256  eb849d5625084a6de57e8520ddf8172aca64ddadd9fee37cdafeefad80895b62 \
+size    686145 \
                     ${distname}-bin.asc \
-                    size    488
+size    488
 
 gpg_verify.use_gpg_verification \
                     yes

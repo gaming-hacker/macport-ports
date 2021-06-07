@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -21,8 +21,8 @@ homepage            https://${gitlab.author}.gitlab.io/${gitlab.project}/
 installs_libs       no
 
 checksums           rmd160  3536565ea1662b0a7a43998c27968a87fdc98c0d \
-                    sha256  1da9c8f34c1dce2d8fa083e37a322421a543a7b36a5d0707193799e7b77bd38a \
-                    size    304992
+sha256  1da9c8f34c1dce2d8fa083e37a322421a543a7b36a5d0707193799e7b77bd38a \
+size    304992
 
 worksrcdir          ${worksrcdir}/${name}
 

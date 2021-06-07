@@ -25,7 +25,7 @@ github.tarball_from releases
 use_bzip2           yes
 
 checksums           rmd160 098797a4f720fd418e17ad41680b462cde961ef4 \
-                    sha256 fad5a11874e65dfe3fb3688f98e8ae2c90a154b89ce04888a4f5a633509648b3
+sha256 fad5a11874e65dfe3fb3688f98e8ae2c90a154b89ce04888a4f5a633509648b3
 
 variant keep_prefix description "Use configured prefix instead of enforcing /opt/local" {}
 if {![variant_isset keep_prefix]} {

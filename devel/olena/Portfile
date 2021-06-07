@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:s
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:s
 
 PortSystem              1.0
 PortGroup               qt4   1.0
@@ -19,8 +19,8 @@ homepage                https://www.lrde.epita.fr/wiki/Olena
 master_sites            https://www.lrde.epita.fr/dload/olena/${version}
 
 checksums               rmd160  19f737476f6c0ec5681277409b5c70f8eba3eda2 \
-                        sha256  c5b0512c989269e82223d9617da64659c243dd3cfbd9bce548d6e39a28b3df73 \
-                        size    51720766
+sha256  c5b0512c989269e82223d9617da64659c243dd3cfbd9bce548d6e39a28b3df73 \
+size    51720766
 
 patchfiles-append       patch-gdcm_libs.diff
 
@@ -52,8 +52,8 @@ configure.args-append   --with-imagemagickxx=no
 configure.env-append    PYTHON=${prefix}/bin/python2.7
 
 # required by tesseract
-compiler.cxx_standard   2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 livecheck.url           https://www.lrde.epita.fr/dload/olena
 livecheck.regex         (\[0-9.\]+)/

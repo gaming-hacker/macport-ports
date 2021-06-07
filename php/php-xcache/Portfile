@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -21,8 +21,8 @@ description             fast, stable PHP opcode cacher
 long_description        ${name} is a ${description}.
 
 checksums               rmd160  1f5edb382b52d9e12bf1c6a9cb34870dcb8cb155 \
-                        sha256  7d12a3cbd5f729b70f9226ac19406d11219f1c5f5e82b3bbb43ea9460cbf6cbd \
-                        size    148392
+sha256  7d12a3cbd5f729b70f9226ac19406d11219f1c5f5e82b3bbb43ea9460cbf6cbd \
+size    148392
 
 if {${name} ne ${subport}} {
     conflicts           ${php}-APC ${php}-APCu ${php}-eaccelerator

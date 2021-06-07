@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qt5 1.0
@@ -8,8 +8,8 @@ PortGroup           github 1.0
 github.setup        OpenShot libopenshot 0.2.5 v
 github.tarball_from archive
 checksums           rmd160  28ecdba847b137b45a4dcf5e81098561acb44f5a \
-                    sha256  8ae7d226fbd2efbc84da4f7d9d8c7f3cc9616e4de46e1233e3b0a84ac0a429bc \
-                    size    10295768
+sha256  8ae7d226fbd2efbc84da4f7d9d8c7f3cc9616e4de46e1233e3b0a84ac0a429bc \
+size    10295768
 homepage            https://www.openshot.org/
 categories          multimedia devel
 license             GPL-3+
@@ -31,7 +31,7 @@ depends_lib         port:cppzmq \
                     port:ffmpeg \
                     port:ImageMagick \
                     port:jsoncpp \
-                    port:py38-zmq \
+                    port:py39-zmq \
                     port:swig-python \
                     port:libopenshot-audio
 #depends_test        port:unittest-cpp
@@ -41,7 +41,7 @@ patchfiles          patch_py_mod_path.diff
 
 post-patch {
         reinplace -locale C \
-            "s|@@PyModPath@@|${frameworks_dir}/Python.framework/Versions/3.8/lib/python3.8/site-packages|"  \
+            "s|@@PyModPath@@|${frameworks_dir}/Python.framework/Versions/3.8/lib/python3.9/site-packages|"  \
             src/bindings/python/CMakeLists.txt
 }
 
@@ -55,9 +55,9 @@ if {[info exists compiler.log_verbose_output]} {
 
 configure.args-append \
                     -DDISABLE_TESTS=ON \
-                    -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.8 \
-                    -DPYTHON_INCLUDE_DIR:PATH=${frameworks_dir}/Python.framework/Versions/3.8/include/python3.8 \
-                    -DPYTHON_LIBRARY:FILEPATH=${frameworks_dir}/Python.framework/Versions/3.8/lib/libpython3.8.dylib
+                    -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.9 \
+                    -DPYTHON_INCLUDE_DIR:PATH=${frameworks_dir}/Python.framework/Versions/3.8/include/python3.9 \
+                    -DPYTHON_LIBRARY:FILEPATH=${frameworks_dir}/Python.framework/Versions/3.8/lib/libpython3.9.dylib
 
 # swig ruby bindings fail to build
 configure.args-append \

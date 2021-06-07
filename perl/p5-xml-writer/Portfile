@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         XML-Writer 0.900
 revision            0
 license             MIT
@@ -18,7 +18,7 @@ long_description    A helper module for Perl programs that write an XML \
 platforms           darwin
 
 checksums           rmd160  4cdb941c828b1f833e86cb8dae3bfbd7ef1b5b33 \
-                    sha256  73c8f5bd3ecf2b350f4adae6d6676d52e08ecc2d7df4a9f089fa68360d400d1f \
-                    size    29817
+sha256  73c8f5bd3ecf2b350f4adae6d6676d52e08ecc2d7df4a9f089fa68360d400d1f \
+size    29817
 
 supported_archs     noarch

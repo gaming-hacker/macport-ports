@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -25,10 +25,10 @@ homepage            http://www.ctan.org/pkg/latexdiff
 master_sites        https://github.com/ftilmann/${name}/releases/download/${version}/
 
 checksums           rmd160  04dbd34eb1f83c6d26f482b8ff0f520909819f5f \
-                    sha256  5e55ee205750ccbea8d69cf98791707e7a42ab88e92d3a1101f9de53643aa1d3 \
-                    size    533542
+sha256  5e55ee205750ccbea8d69cf98791707e7a42ab88e92d3a1101f9de53643aa1d3 \
+size    533542
 
-perl5.branches      5.30
+perl5.branches 5.30
 
 depends_run         port:perl${perl5.major} \
                     port:p${perl5.major}-algorithm-diff

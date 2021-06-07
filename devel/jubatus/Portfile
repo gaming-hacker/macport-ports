@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ platforms           darwin
 license             {LGPL-2.1 BSD}
 
 checksums           rmd160  16eb7df068bfee1c263d5d343fe699760223532c \
-                    sha256  40b929705744e6313b3674bc0e504cdd0424865bb0a258ddd9db5957773a7395 \
-                    size    552510
+sha256  40b929705744e6313b3674bc0e504cdd0424865bb0a258ddd9db5957773a7395 \
+size    552510
 
 depends_build-append port:pkgconfig
 
@@ -44,7 +44,7 @@ platform darwin {
             error "unsupported platform"
         }
     } elseif {${os.major} >= 13} {
-        configure.cxxflags-append  "-std=c++11 -DMP_FUNCTIONAL_STANDARD -DMP_MEMORY_STANDARD -DMP_UNORDERED_MAP_STANDARD"
+        configure.cxxflags-append  "-std=c++17 -DMP_FUNCTIONAL_STANDARD -DMP_MEMORY_STANDARD -DMP_UNORDERED_MAP_STANDARD"
     }
 }
 

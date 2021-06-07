@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,8 +17,8 @@ long_description    ${description}
 homepage            https://github.com/htseq/htseq
 
 checksums           rmd160  6f0c0b89e03cbcfea2bc8a45bc01bddf0d3ea49f \
-                    sha256  0bdc778358e5bd06901639797adb27bf4e85602d621062b62d6be9fee70e645e \
-                    size    625810
+sha256  0bdc778358e5bd06901639797adb27bf4e85602d621062b62d6be9fee70e645e \
+size    625810
 
 # Python 3.9 is not currently supported by dependency py-pysam
 python.versions     27 36 37 38

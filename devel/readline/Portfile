@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem      1.0
 PortGroup       muniversal 1.0
 PortGroup       clang_dependency 1.0
@@ -42,8 +42,8 @@ while {$i <= $lastpatch} {
 }
 
 checksums           rmd160  80c4a2bce13f1a9b5b9940aae67934770f087f71 \
-                    sha256  f8ceb4ee131e3232226a17f51b164afc46cd0b9e6cef344be87c65962cb82b02 \
-                    size    2993288
+sha256  f8ceb4ee131e3232226a17f51b164afc46cd0b9e6cef344be87c65962cb82b02 \
+size    2993288
 
 if {${os.platform} eq "darwin" && ${os.major} < 11 && ${cxx_stdlib} eq "libc++"} {
     # This port is in the dependency chain for clang 3.7 and later

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -16,12 +16,12 @@ homepage            https://wiki.spench.net/wiki/Gr-baz
 github.setup        balint256 gr-baz 937834ce3520b730277328d8e0cdebb3f2b1aafc
 version             20200409-[string range ${github.version} 0 7]
 checksums           rmd160  62c7e8c1c62000b3bf8f7dee8b4ee0bbde7bc1b8 \
-                    sha256  6cfb84fc38046f2429e679a9429bec8b404deb955f4cceecb33f17dc4d73110a \
-                    size    516543
+sha256  6cfb84fc38046f2429e679a9429bec8b404deb955f4cceecb33f17dc4d73110a \
+size    516543
 revision            2
 
 # use C++11
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {${subport} eq ${name}} {
     # fix gnuradio version

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -16,8 +16,8 @@ long_description    {*}${description}
 platforms           darwin
 
 checksums           rmd160  f992d112d45bffaaf1293469345c97d1437c5aa2 \
-                    sha256  a2d111a60c5c609e7771ab57a89f7c9927f4e783e9c26cec0b296b2f0831bcb5 \
-                    size    99792
+sha256  a2d111a60c5c609e7771ab57a89f7c9927f4e783e9c26cec0b296b2f0831bcb5 \
+size    99792
 
 depends_build-append \
                     port:cpp-utilities

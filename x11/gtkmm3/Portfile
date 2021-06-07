@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
 
 # gtkmm3 > 3.16.0 requires C++11 or better
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 name                gtkmm3
 set gname           gtkmm
@@ -26,8 +26,8 @@ dist_subdir         ${gname}
 distname            ${gname}-${version}
 
 checksums           rmd160  48482c74a81f80d8b7b6168c0e38dedc73f39bcd \
-                    sha256  6d71091bcd1863133460d4188d04102810e9123de19706fb656b7bb915b4adc3 \
-                    size    13336236
+sha256  6d71091bcd1863133460d4188d04102810e9123de19706fb656b7bb915b4adc3 \
+size    13336236
 
 depends_build       port:pkgconfig \
                     port:mm-common \

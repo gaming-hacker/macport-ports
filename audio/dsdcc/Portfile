@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,11 +14,11 @@ long_description    ${description}
 
 github.setup        f4exb dsdcc 1.9.3 v
 checksums           rmd160  bf583b0e047384c197c80139fa32c086f9725a6a \
-                    sha256  001d8f560291c7e9e5e686b827f30365faa368629d07dca7f68e9fa71be184a0 \
-                    size    12751231
+sha256  001d8f560291c7e9e5e686b827f30365faa368629d07dca7f68e9fa71be184a0 \
+size    12751231
 revision            0
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args-append \
     -DBUILD_TYPE=RELEASE \

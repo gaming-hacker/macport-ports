@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup compiler_blacklist_versions 1.0
@@ -26,8 +26,8 @@ master_sites            https://download.qemu.org/
 use_xz                  yes
 
 checksums               rmd160  2c33e773f012e333f99237e3d4ff1653ea0bc88f \
-                        sha256  cb18d889b628fbe637672b0326789d9b0e3b8027e0445b936537c78549df17bc \
-                        size    106902800
+sha256  cb18d889b628fbe637672b0326789d9b0e3b8027e0445b936537c78549df17bc \
+size    106902800
 
 patchfiles              patch-configure.diff
 patch.pre_args          -p1
@@ -38,7 +38,7 @@ depends_build           port:texinfo \
                         port:pkgconfig
 
 # python/perl5 is only used for build scripts, no linking
-depends_build-append    port:python38 \
+depends_build-append    port:python39 \
                         port:perl5
 
 license_noconflict      python38 \
@@ -62,7 +62,7 @@ configure.args          --cpu=${configure.build_arch} \
                         --cc=${configure.cc} \
                         --objcc=${configure.objc} \
                         --host-cc=${configure.cc} \
-                        --python=${prefix}/bin/python3.8
+                        --python=${prefix}/bin/python3.9
 
 # Use internal meson
 configure.args-append   --meson=internal

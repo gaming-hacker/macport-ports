@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -31,8 +31,8 @@ long_description    SIMDe (SIMD everywhere) is a header-only library \
                     resort to using an emulator.
 
 checksums           rmd160  7b814ba0603038012d6ea663deb673afa31430f4 \
-                    sha256  7df5285772f28ced8e3dff824a84f5fadb45654974e1e17d0f6a5c984f9b24ad \
-                    size    3822187
+sha256  7df5285772f28ced8e3dff824a84f5fadb45654974e1e17d0f6a5c984f9b24ad \
+size    3822187
 
 compiler.blacklist-append   {clang < 1001}
 

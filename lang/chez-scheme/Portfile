@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ long_description    Chez Scheme is both a programming language and an \
 homepage            https://cisco.github.io/ChezScheme/
 
 checksums           rmd160  dbf1b94d361d99355b080514193892f3724957d7 \
-                    sha256  1dd8dccfb47e9017dfb2a950b74a49a8bd6bd456acc7d645948b779e4dcfe88d \
-                    size    30671465
+sha256  1dd8dccfb47e9017dfb2a950b74a49a8bd6bd456acc7d645948b779e4dcfe88d \
+size    30671465
 
 depends_build       port:nanopass-scheme
 depends_lib         port:zlib \

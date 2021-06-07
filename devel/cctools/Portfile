@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cltversion 1.0
@@ -27,13 +27,13 @@ master_sites            https://opensource.apple.com/tarballs/${name}:main \
 distfiles               ld64-${ld64_version}.tar.gz:ld64 ${name}-${version}.tar.gz:main
 
 checksums               ld64-530.tar.gz \
-                        rmd160  793d012a611de5a044db3f97c6a9ec149072aff6 \
-                        sha256  ee37f0487601c08c7d133bc91cad2e9084d00d02aa4709d228a9a065960aa187 \
-                        size    744871 \
+rmd160  793d012a611de5a044db3f97c6a9ec149072aff6 \
+sha256  ee37f0487601c08c7d133bc91cad2e9084d00d02aa4709d228a9a065960aa187 \
+size    744871 \
                         cctools-949.0.1.tar.gz \
-                        rmd160  6412d9c5aea6aadd88cd9abdde6c1383f103b582 \
-                        sha256  830485ac7c563cd55331f643952caab2f0690dfbd01e92eb432c45098b28a5d0 \
-                        size    1968671
+rmd160  6412d9c5aea6aadd88cd9abdde6c1383f103b582 \
+sha256  830485ac7c563cd55331f643952caab2f0690dfbd01e92eb432c45098b28a5d0 \
+size    1968671
 
 patchfiles              cctools-829-lto.patch \
                         PR-37520.patch \
@@ -241,7 +241,7 @@ use_configure           no
 use_parallel_build      yes
 
 # https://trac.macports.org/ticket/43745
-configure.cflags-append -std=gnu99
+configure.cflags-append -std=c11
 
 build.target            all
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -38,7 +38,7 @@ installs_libs       no
 master_sites        gnu
 use_xz              yes
 checksums           rmd160 baa56c2b1e9b2c3d6bffaeb936fa8fbf55318caa \
-                    sha256 f14c83cfebcc9427f2c3cea7258bd90df972d92eb26752da4ddad81c87a0faa4
+sha256 f14c83cfebcc9427f2c3cea7258bd90df972d92eb26752da4ddad81c87a0faa4
 
 patchfiles          use-macports-tools.patch
 post-patch {

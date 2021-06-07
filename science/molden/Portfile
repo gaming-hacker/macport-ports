@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # Previous maintainer Jochen Küpper got explicit permission to distribute molden
 # as a MacPorts port, given that the source code is always downloaded from the
@@ -17,8 +17,8 @@ epoch               1
 version             6.8-20210407175900
 revision            0
 checksums           rmd160  cb95f8d129d895783b6058e616cf8cc125794023 \
-                    sha256  4dfbf6524b60112afb5720cba3c200a07a0f57b5d190e05ec14cceae1edf5782 \
-                    size    13850111
+sha256  4dfbf6524b60112afb5720cba3c200a07a0f57b5d190e05ec14cceae1edf5782 \
+size    13850111
 
 set version_number  [lindex [split ${version} -] 0]
 set branch          [join [lrange [split ${version_number} .] 0 1] .]

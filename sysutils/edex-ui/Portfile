@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  2f251e9d34721d7bfe8dfefd95679acfe42c8972 \
-                    sha256  df391029da8c7d0cf958ec42d2d0cd6b6c9d432f24d6f2b04cf4d74b76a31b1c \
-                    size    8044601
+sha256  df391029da8c7d0cf958ec42d2d0cd6b6c9d432f24d6f2b04cf4d74b76a31b1c \
+size    8044601
 
 depends_build       port:npm6 \
                     port:yarn
@@ -36,7 +36,7 @@ depends_build       port:npm6 \
 build.env-append    CSC_IDENTITY_AUTO_DISCOVERY=false
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build {
     # Set up all JS dependencies

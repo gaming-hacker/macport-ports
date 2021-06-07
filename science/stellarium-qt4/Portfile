@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,8 +25,8 @@ long_description    ${description} It has been updated with some fixes and featu
 homepage            http://stellarium.org/
 
 checksums           rmd160  5f63a134009b478fb1ba1b8f2de8179a43a8c553 \
-                    sha256  f7adb816d76d49c219c43d2da5968dcbbc3d7c16685b190c38079f83cd04b5a1 \
-                    size    111785689
+sha256  f7adb816d76d49c219c43d2da5968dcbbc3d7c16685b190c38079f83cd04b5a1 \
+size    111785689
 
 depends_lib-append  port:freetype \
                     port:zlib \

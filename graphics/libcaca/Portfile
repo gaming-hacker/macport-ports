@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ if {${name} eq ${subport}} {
     github.setup    cacalabs libcaca 0.99.beta19 v
     revision        7
     checksums       \
-        rmd160 8623dbfe2584d6e5c633aa140f30139a13a59128 \
-        sha256 128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4 \
-        size   1203495
+rmd160 8623dbfe2584d6e5c633aa140f30139a13a59128 \
+sha256 128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4 \
+size   1203495
 
     long_description ${long_description} ${subport} \
 provides the release version.
@@ -38,8 +38,8 @@ subport libcaca-devel {
     github.setup    cacalabs libcaca e4968ba6e93e9fd35429eb16895c785c51072015
     version         20210226
     checksums       rmd160 e4d0dc4145d9eb2333393999f5a3db2e6e4997e6 \
-                    sha256  1f6da838679f477927cbbc201f463283e3419600bc08969c4e26071ff90d30a3 \
-                    size    729702
+sha256  1f6da838679f477927cbbc201f463283e3419600bc08969c4e26071ff90d30a3 \
+size    729702
     revision        0
 
     conflicts       libcaca
@@ -59,8 +59,8 @@ depends_build-append port:libtool port:autoconf port:automake
 autoconf.cmd         ./bootstrap
 
 # require C++11 for CppUnit API
-compiler.cxx_standard   2011
-configure.cxxflags-append -std=gnu++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 configure.args      \
     --disable-kernel \

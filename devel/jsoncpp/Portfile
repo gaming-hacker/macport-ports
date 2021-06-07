@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cmake 1.1
 
 # require C++11
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 name                jsoncpp
 categories          devel
@@ -34,8 +34,8 @@ if {${subport} eq ${name}} {
     # release
     github.setup open-source-parsers jsoncpp 1.9.4
     checksums rmd160 324f29d052535a6009d2b11aae7bca28408e6aec \
-              sha256 1cfef74423173fb651aa175e3bdfe0ddf52fd70abdce5edfd7fb9f1e25514768 \
-              size   214128
+sha256 1cfef74423173fb651aa175e3bdfe0ddf52fd70abdce5edfd7fb9f1e25514768 \
+size   214128
     revision  0
 
     # temporary patch to fix build errors

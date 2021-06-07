@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    Link Identity Editor lets you manipulate the signature block
 homepage            https://cydia.saurik.com/info/ldid/
 
 checksums           rmd160  98fb7547e1a9a1318a64c27444516c536c6fde59 \
-                    sha256  48521f1ae89ad8d9a5b1819bcf385f77d0763d5631bcb3555dda5409e1ce4b11 \
-                    size    43178
+sha256  48521f1ae89ad8d9a5b1819bcf385f77d0763d5631bcb3555dda5409e1ce4b11 \
+size    43178
 
 compiler.cxx_standard \
                     2011
@@ -31,7 +31,7 @@ depends_lib-append  path:lib/libplist-2.0.dylib:libplist \
 
 use_configure       no
 universal_variant   no
-use_xcode           yes
+use_xcode  no
 build.env-append    CC=${configure.cc} CXX=${configure.cxx}
 destroot.env-append PREFIX=${prefix}
 patchfiles          patch-Makefile.diff

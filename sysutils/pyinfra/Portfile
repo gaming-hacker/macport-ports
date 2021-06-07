@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,8 +30,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 supported_archs     noarch
 
 checksums           rmd160  3c428307414bc86d06126ddb7aeb5fbbba007cdd \
-                    sha256  3cad5ca81b4d842091f39a6e24ea8117e9c2fcb1a4abfcfb254bf1617d87dca0 \
-                    size    166876
+sha256  3cad5ca81b4d842091f39a6e24ea8117e9c2fcb1a4abfcfb254bf1617d87dca0 \
+size    166876
 
 python.default_version      39
 

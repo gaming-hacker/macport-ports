@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           php 1.1
@@ -16,26 +16,26 @@ if {[vercmp ${php.branch} 7.0] >= 0} {
     version         1.9.1
     revision        0
     checksums       rmd160  8b6c9f5310a2e15da5eb30d6143835dd71ab3f8e \
-                    sha256  e9d1ce23168385aae24d9b516cab3d67504c85e800569e0fcf2f2125bcd6fed7 \
-                    size    1285984
+sha256  e9d1ce23168385aae24d9b516cab3d67504c85e800569e0fcf2f2125bcd6fed7 \
+size    1285984
 } elseif {[vercmp ${php.branch} 5.6] >= 0} {
     version         1.7.5
     revision        1
     checksums       rmd160  203855f0fb97d1aaaacced740440de656a1c6be0 \
-                    sha256  e48a07618c0ae8be628299991b5f481861c891a22544a2365a63361cc181c379 \
-                    size    1223892
+sha256  e48a07618c0ae8be628299991b5f481861c891a22544a2365a63361cc181c379 \
+size    1223892
 } elseif {[vercmp ${php.branch} 5.5] >= 0} {
     version         1.5.5
     revision        1
     checksums       rmd160  43fff1f5ea24b52767aba7627ff4dfd1915171dd \
-                    sha256  a6da3985dd772e3b6c8dde38aa18f3480fba973aaaa41bd4ceb2c6c9c7e4fe3e \
-                    size    1060017
+sha256  a6da3985dd772e3b6c8dde38aa18f3480fba973aaaa41bd4ceb2c6c9c7e4fe3e \
+size    1060017
 } elseif {[vercmp ${php.branch} 5.4] >= 0} {
     version         1.2.11
     revision        2
     checksums       rmd160  dc35e448324877d8c56be9c6bb1a3f8fa8b9ccc7 \
-                    sha256  bac347be2277dd64b1b6f414234a6057eccf2d208409ce60973107a41267df49 \
-                    size    786669
+sha256  bac347be2277dd64b1b6f414234a6057eccf2d208409ce60973107a41267df49 \
+size    786669
 }
 
 description         MongoDB Database Driver

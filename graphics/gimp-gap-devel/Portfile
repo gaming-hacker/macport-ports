@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       active_variants 1.1
@@ -35,8 +35,8 @@ distname        ${git_name}-${git_commit}
 use_bzip2       yes
 
 checksums       rmd160  7bdb695be132aac92e5bed91c37a87d66109f90f \
-                sha256  e1d8bcfee00645ea52d314138605f9110ff645c293211df71cd94f0503c7d671 \
-                size    11711665
+sha256  e1d8bcfee00645ea52d314138605f9110ff645c293211df71cd94f0503c7d671 \
+size    11711665
 
 post-extract    {
                     system "cd ${worksrcpath}/extern_libs && gzip -dc ffmpeg.tar.gz | tar -xf -"

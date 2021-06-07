@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  fc6407cb098d20623a56706c79f13de26ebf47e7 \
-                    sha256  9f4aea01f19e7703fc2261feff32b2c037bfb4eaad43804b860676b5acf75c03 \
-                    size    22924438
+sha256  9f4aea01f19e7703fc2261feff32b2c037bfb4eaad43804b860676b5acf75c03 \
+size    22924438
 
 build.cmd           make
 build.args          VERSION=${version}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.0
@@ -32,14 +32,14 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
     if { ${subport} eq "libomp-devel" } {
         version         12.0.0
         checksums       rmd160  1b263c4e77e91764cb9036da32a09a67887ff276 \
-                        sha256  eb1b7022a247332114985ed155a8fb632c28ce7c35a476e2c0caf865150f167d \
-                        size    1081412
+sha256  eb1b7022a247332114985ed155a8fb632c28ce7c35a476e2c0caf865150f167d \
+size    1081412
         livecheck.regex {"llvmorg-([0-9.rc-]+)".*}
     } else {
         version         12.0.0
         checksums       rmd160  1b263c4e77e91764cb9036da32a09a67887ff276 \
-                        sha256  eb1b7022a247332114985ed155a8fb632c28ce7c35a476e2c0caf865150f167d \
-                        size    1081412
+sha256  eb1b7022a247332114985ed155a8fb632c28ce7c35a476e2c0caf865150f167d \
+size    1081412
         livecheck.regex {"llvmorg-([0-9.]+)".*}
     }
 
@@ -50,8 +50,8 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
     }
 
     # Build requires std::atomic
-    configure.cxxflags-append -std=c++11
-    compiler.cxx_standard   2011
+    configure.cxxflags-append -std=c++17
+    compiler.cxx_standard 2017
 
     master_sites        https://github.com/llvm/llvm-project/releases/download/llvmorg-${version} \
                         https://releases.llvm.org/${version}
@@ -77,7 +77,7 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
         worksrcdir      openmp-${version}/final/runtime
         version         3.8.1
         checksums       rmd160  a41054068a127ef84610afef8090109078cb6c46 \
-                        sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
+sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
         set rtpath      "./"
     }
     livecheck.type      none

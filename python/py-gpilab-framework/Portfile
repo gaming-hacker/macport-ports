@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -28,9 +28,9 @@ homepage                http://gpilab.com
 supported_archs         noarch
 
 checksums \
-    rmd160  2948565372091864aa7696194474840a5b759f11 \
-    sha256  8d1df7db71f0550d83c004789c8749a90f2d29f09812a6ef468a77b8e40d786c \
-    size    3991809
+rmd160  2948565372091864aa7696194474840a5b759f11 \
+sha256  8d1df7db71f0550d83c004789c8749a90f2d29f09812a6ef468a77b8e40d786c \
+size    3991809
 
 patchfiles                  mainWindow.py.diff \
                             canvasGraph.py.diff \

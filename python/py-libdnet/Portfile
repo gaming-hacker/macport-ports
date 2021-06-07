@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ distname            libdnet-${version}
 dist_subdir         libdnet
 
 checksums           rmd160  4b849f07c3513522fda65af067928b7e6d504aab \
-                    sha256  83b33039787cf99990e977cef7f18a5d5e7aaffc4505548a83d31bd3515eb026 \
-                    size    970125
+sha256  83b33039787cf99990e977cef7f18a5d5e7aaffc4505548a83d31bd3515eb026 \
+size    970125
 
 subport py27-libdnet {
     set python.bin	${prefix}/bin/python2.7

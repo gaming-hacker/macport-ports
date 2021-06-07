@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -23,11 +23,11 @@ master_sites        https://secure.nic.cz/files/knot-dns/ \
 use_xz              yes
 
 checksums           rmd160  ec6bdd127ff7b47f6020da50ce881c5ecb7046d3 \
-                    sha256  63756ac5a00c3e4a066ed231a287faef5963a9183d77326e30bf0644cdf74f86 \
-                    size    1333296
+sha256  63756ac5a00c3e4a066ed231a287faef5963a9183d77326e30bf0644cdf74f86 \
+size    1333296
 
 depends_build       port:pkgconfig \
-                    port:py38-sphinx
+                    port:py39-sphinx
 
 depends_lib         port:fstrm \
                     port:gnutls \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ long_description    ${description}
 homepage            https://github.com/toastdriven/pylev
 
 checksums           rmd160  1d5d5afc09e506faa6c7495b4d55841669a080dd \
-                    sha256  063910098161199b81e453025653ec53556c1be7165a9b7c50be2f4d57eae1c3 \
-                    size    3193
+sha256  063910098161199b81e453025653ec53556c1be7165a9b7c50be2f4d57eae1c3 \
+size    3193
 
 if {${name} ne ${subport}} {
     depends_build-append \

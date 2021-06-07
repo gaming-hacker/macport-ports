@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,7 +29,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://wiki.qt.io/New_Features_in_Qt_5.7
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 master_sites        \
     https://download.qt.io/official_releases/qt/${branch}/${version}/submodules
@@ -797,9 +797,9 @@ foreach {module module_info} [array get modules] {
         build.target
 
         checksums                                        \
-            rmd160  [lindex [lindex ${module_info} 0] 0] \
-            sha256  [lindex [lindex ${module_info} 0] 1] \
-            size    [lindex [lindex ${module_info} 0] 2]
+rmd160  [lindex [lindex ${module_info} 0] 0] \
+sha256  [lindex [lindex ${module_info} 0] 1] \
+size    [lindex [lindex ${module_info} 0] 2]
 
         set license_string [lindex ${module_info} 8]
         set license_string [string range ${license_string} 1+[string first ":" ${license_string}] end]
@@ -885,7 +885,7 @@ foreach {module module_info} [array get modules] {
             # avoid
             #     Failed to resolve SDK path for 'macosx'
             if {${os.major} <= 14} {
-                use_xcode yes
+                use_xcode  no
             }
 
             #-----------------------------------------------------------------------------
@@ -1368,7 +1368,7 @@ foreach {module module_info} [array get modules] {
 
                 # avoid:
                 #    Project ERROR: Could not resolve SDK --show-sdk-path for 'macosx'
-                use_xcode yes
+                use_xcode  no
             }
 
             # special case
@@ -1444,7 +1444,7 @@ foreach {module module_info} [array get modules] {
                 configure.args-append QMAKE_LINK=${configure.cxx}
 
                 # see https://trac.macports.org/ticket/59294
-                use_xcode yes
+                use_xcode  no
 
                 # the following libraries, even when available, do not seem to affect the build
                 # so turn them off
@@ -1565,9 +1565,9 @@ foreach {module module_info} [array get modules] {
             destroot.target install_docs
 
             checksums                                        \
-                rmd160  [lindex [lindex ${module_info} 0] 0] \
-                sha256  [lindex [lindex ${module_info} 0] 1] \
-                size    [lindex [lindex ${module_info} 0] 2]
+rmd160  [lindex [lindex ${module_info} 0] 0] \
+sha256  [lindex [lindex ${module_info} 0] 1] \
+size    [lindex [lindex ${module_info} 0] 2]
 
             depends_build-append            \
                 port:${name}-qttools        \
@@ -1599,7 +1599,7 @@ foreach {module module_info} [array get modules] {
                 build.env-append      CC=${configure.cc}
                 configure.args-append QMAKE_LINK=${configure.cxx}
                 # see https://trac.macports.org/ticket/59294
-                use_xcode yes
+                use_xcode  no
             } elseif { ${module} eq "qtwebkit" } {
                 post-extract {
                     # without this file, the makefile ${worksrcpath}/qtwebkit/Source/WebCore/Makefile.WebCore.Target
@@ -1629,9 +1629,9 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         revision ${revision_string}
 
         checksums                              \
-            rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
-            sha256  [lindex [lindex $modules(qtbase) 0] 1] \
-            size    [lindex [lindex $modules(qtbase) 0] 2]
+rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
+sha256  [lindex [lindex $modules(qtbase) 0] 1] \
+size    [lindex [lindex $modules(qtbase) 0] 2]
 
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}

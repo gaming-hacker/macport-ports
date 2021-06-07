@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ homepage            http://montage.ipac.caltech.edu/
 master_sites        http://montage.ipac.caltech.edu/download/
 distname            Montage_v${version}
 checksums           rmd160  b057f43ed6286c95d9d5f911ae2a4baf1bfe80a2 \
-                    sha256  1f540a7389d30fcf9f8cd9897617cc68b19350fbcde97c4d1cdc5634de1992c6 \
-                    size    20681949
+sha256  1f540a7389d30fcf9f8cd9897617cc68b19350fbcde97c4d1cdc5634de1992c6 \
+size    20681949
 
 depends_lib-append  port:bzip2 \
                     port:cfitsio \

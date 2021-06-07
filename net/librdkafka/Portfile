@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -13,8 +13,8 @@ description         The Apache Kafka C/C++ library
 long_description    Full Apache Kafka protocol support, including producer and consumer
 
 checksums           sha256 d6e553b1216b76de9e3a3c4b9c53fbecd87a5220aa5db2f3a8333d36e29e464c \
-                    rmd160 99496ebe9eefa3d197bdd893baca273ad142b758 \
-                    size 2733040 
+rmd160 99496ebe9eefa3d197bdd893baca273ad142b758 \
+size 2733040 
 
 patchfiles          CXX.patch
 

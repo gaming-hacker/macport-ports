@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,8 +30,8 @@ installs_libs       no
 build.pre_args      --release -v -j${build.jobs}
 
 checksums           rmd160  1ed4be0726beeadcf3433da406c0650f2c2c8ed1 \
-                    sha256  26c1457a444e8a876c24ae13ac93505892c8131a1ae05a8bb27bc1e5f7a5d6b3 \
-                    size    41222
+sha256  26c1457a444e8a876c24ae13ac93505892c8131a1ae05a8bb27bc1e5f7a5d6b3 \
+size    41222
 
 set vimfiles_path   ${prefix}/share/vim/vimfiles
 

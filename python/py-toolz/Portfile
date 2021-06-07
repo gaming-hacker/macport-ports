@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/pytoolz/toolz/
 
 checksums           rmd160  5eb6f41803a305d2d88739b5125f2fc599c67659 \
-                    sha256  c7a47921f07822fe534fb1c01c9931ab335a4390c782bd28c6bcc7c2f71f3fbf \
-                    size    64428
+sha256  c7a47921f07822fe534fb1c01c9931ab335a4390c782bd28c6bcc7c2f71f3fbf \
+size    64428
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -33,8 +33,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  b89b240b53ed5ad93cbcbdd43e1331fef7ea0639 \
-                            sha256  08fdd5ef7c96480ad11c12d472de21acd32359996f69a5259299b540feba4560 \
-                            size    49579
+sha256  08fdd5ef7c96480ad11c12d472de21acd32359996f69a5259299b540feba4560 \
+size    49579
     }
 
     livecheck.type      none

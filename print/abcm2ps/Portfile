@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        leesavide abcm2ps 8.14.11 v
 revision            0
 checksums           rmd160  ceb5027a63f0421794b39b9c990bbe4a58ec0095 \
-                    sha256  e3b538d62face623619be46b9f7b7520c113fbb1b634073e1162d526adbf3f3b \
-                    size    259453
+sha256  e3b538d62face623619be46b9f7b7520c113fbb1b634073e1162d526adbf3f3b \
+size    259453
 
 categories          print audio
 platforms           darwin

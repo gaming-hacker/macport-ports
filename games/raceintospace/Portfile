@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           cmake 1.1
@@ -8,8 +8,8 @@ github.setup        raceintospace raceintospace d004825458d9892fb168a9fbe026a9a3
 version             1.1-20200802
 revision            0
 checksums           rmd160  74767ef94b588f672c6c7eb4c0e78f4d46a2ea65 \
-                    sha256  826fd4ec937aceb42f2942f6645661657fadd68f791d6f99de0d47789bd1b763 \
-                    size    63707066
+sha256  826fd4ec937aceb42f2942f6645661657fadd68f791d6f99de0d47789bd1b763 \
+size    63707066
 
 categories          games
 platforms           darwin
@@ -36,8 +36,8 @@ depends_lib-append  port:jsoncpp \
                     port:zlib
 
 # jsoncpp requires C++11
-compiler.cxx_standard 2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 patchfiles          no-build-dependencies.patch \
                     no-homebrew.patch \

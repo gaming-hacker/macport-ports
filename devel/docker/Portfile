@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -16,8 +16,8 @@ long_description    Docker is an open source project to pack, ship \
                     and run any application as a lightweight container.
 
 checksums           rmd160  d9fda95830009830fd23bb6d1e9ee680604d74b9 \
-                    sha256  499cf8570d9d4b2473660b6cfd09a3ed811a5ec3032a9c77a13bda9f3b8e728e \
-                    size    7524649
+sha256  499cf8570d9d4b2473660b6cfd09a3ed811a5ec3032a9c77a13bda9f3b8e728e \
+size    7524649
 
 build.target        github.com/docker/cli/cmd/docker
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ distname            aspnetcore-runtime-${version}-osx-x64
 master_sites        https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/${version}/
 
 checksums           rmd160  4cd778df4b26dd8678c218b88114ee97721dc160 \
-                    sha256  59815509a93be8ac60032968e602f15254fb951c0e5f9c929e49ed4007c019e2 \
-                    size    38791819
+sha256  59815509a93be8ac60032968e602f15254fb951c0e5f9c929e49ed4007c019e2 \
+size    38791819
 
 worksrcdir          ${name}-${version}
 extract.mkdir       yes

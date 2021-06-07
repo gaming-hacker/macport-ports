@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -55,8 +55,8 @@ master_sites        gnu
 use_xz              yes
 
 checksums           rmd160  97ad0da72284a606651523151ce8222d1418e1fa \
-                    sha256  67d68ce1e22192050525643fc0a7a22297576682bef6a5c51446903f5aeef3cf \
-                    size    2627180
+sha256  67d68ce1e22192050525643fc0a7a22297576682bef6a5c51446903f5aeef3cf \
+size    2627180
 
 configure.args      --disable-silent-rules \
                     ac_cv_prog_HAVE_GCJ_IN_PATH= \

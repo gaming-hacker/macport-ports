@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,8 +28,8 @@ long_description    A typical use would be generating a customized PowerPoint \
 
 
 checksums           rmd160  8ab2984314ac30bf60d7cca5ca51c145862adf2a \
-                    sha256  450932c21e3955850e2b4daaf5d0e0e9237b5078ce9e456e1e027250d1af4497 \
-                    size    49387184
+sha256  450932c21e3955850e2b4daaf5d0e0e9237b5078ce9e456e1e027250d1af4497 \
+size    49387184
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

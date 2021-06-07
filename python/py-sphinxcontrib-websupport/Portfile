@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    sphinxcontrib-webuspport provides a Python API to easily \
 homepage            https://pypi.python.org/pypi/sphinxcontrib-websupport/
 
 checksums           rmd160  8efaeebb663709e6e8eb231884eaf10080d1c8ce \
-                    sha256  33c0db6c0635b9dc3e72629b7278ca3b9fa24c156eeeaf1674be8f268831d951 \
-                    size    602287
+sha256  33c0db6c0635b9dc3e72629b7278ca3b9fa24c156eeeaf1674be8f268831d951 \
+size    602287
 
 python.versions     27 35 36 37 38 39
 
@@ -30,8 +30,8 @@ if {${subport} ne ${name}} {
         version     1.1.2
         revision    0
         checksums   rmd160  4d7d6c831fae6234ce6a6700ccf0ecbbe42e6d59 \
-                    sha256  1501befb0fdf1d1c29a800fdbf4ef5dc5369377300ddbdd16d2cd40e54c6eefc \
-                    size    599000
+sha256  1501befb0fdf1d1c29a800fdbf4ef5dc5369377300ddbdd16d2cd40e54c6eefc \
+size    599000
     }
 
     depends_build-append \

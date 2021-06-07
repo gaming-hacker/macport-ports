@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,11 +15,11 @@ long_description    ${description}
 
 github.setup        pothosware PothosFlow 0.7.0 pothos-flow-
 checksums           rmd160  9b01ed2c662fedf27719543ba2cf6364412020a2 \
-                    sha256  afa75d1dde576e18494066b7173987dba3da1ea778e7969ca7fef229d0019924 \
-                    size    660802
+sha256  afa75d1dde576e18494066b7173987dba3da1ea778e7969ca7fef229d0019924 \
+size    660802
 revision            1
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 compiler.thread_local_storage yes
 

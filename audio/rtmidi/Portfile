@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -16,8 +16,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  16e9e619d00cb6b43485ddcce73a8984f53f515e \
-                    sha256  fdc19f6e9bc6a381b27cc4907012198147138b06aa696b7631003d9a2f0b319d \
-                    size    92951
+sha256  fdc19f6e9bc6a381b27cc4907012198147138b06aa696b7631003d9a2f0b319d \
+size    92951
 
 depends_build-append \
                     port:pkgconfig

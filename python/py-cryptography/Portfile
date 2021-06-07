@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,9 +21,9 @@ description         cryptography is a package designed to expose \
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  f579f749a23d076f7204bd6cf66d8dceb2ab3866 \
-                    sha256  9eb1a420f9f50e131f451b9dc8950c4f3b2a1298ee9d6e25ba873d3f66354a80 \
-                    size    35737283
+rmd160  f579f749a23d076f7204bd6cf66d8dceb2ab3866 \
+sha256  9eb1a420f9f50e131f451b9dc8950c4f3b2a1298ee9d6e25ba873d3f66354a80 \
+size    35737283
 
 # See:
 # * https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst
@@ -50,8 +50,8 @@ if {${name} ne ${subport}
         long_description    {*}${description}
 
         checksums       rmd160  61fb86fd231710d5875428a3a1cefcd5c1d0c99e \
-                        sha256  a0c30272fb4ddda5f5ffc1089d7405b7a71b0b0f51993cb4e5dbb4590b2fc229 \
-                        size    517571
+sha256  a0c30272fb4ddda5f5ffc1089d7405b7a71b0b0f51993cb4e5dbb4590b2fc229 \
+size    517571
 
         if {${os.platform} eq "darwin" && ${os.major} < 11} {
             # https://trac.macports.org/ticket/54519

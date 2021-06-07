@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ platforms           darwin
 license             GPL-2
 
 checksums           rmd160  0334fb924b5507980819460a20fc85ef1d3d933c \
-                    sha256  767ab368903c573ad9e680ae5f8cfaba054cccf809e93d257dfee015635eeffc \
-                    size    10204497
+sha256  767ab368903c573ad9e680ae5f8cfaba054cccf809e93d257dfee015635eeffc \
+size    10204497
 
 post-extract {
     # dummy files required by the build system

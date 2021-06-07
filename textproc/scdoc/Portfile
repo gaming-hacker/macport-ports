@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -18,8 +18,8 @@ platforms           darwin
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  7f873c566eb16b94159e54eb36e4a608b5c69f99 \
-                    sha256  1098a1ed2e087596fc0b3f657c1c8a5e00412267aa4baf3619e36824306645b1 \
-                    size    12510
+sha256  1098a1ed2e087596fc0b3f657c1c8a5e00412267aa4baf3619e36824306645b1 \
+size    12510
 
 patchfiles-append   patch-0001-adjust-makefile-flags.diff
 

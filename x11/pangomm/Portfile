@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       active_variants 1.1
@@ -20,8 +20,8 @@ master_sites    gnome:sources/${name}/${branch}/
 use_xz          yes
 
 checksums       rmd160  f6a26cc1bbdfc388e9df5dad12f75e9c4ec5f24d \
-                sha256  14bf04939930870d5cfa96860ed953ad2ce07c3fd8713add4a1bfe585589f40f \
-                size    882508
+sha256  14bf04939930870d5cfa96860ed953ad2ce07c3fd8713add4a1bfe585589f40f \
+size    882508
 
 depends_build   port:pkgconfig \
                 port:mm-common
@@ -35,7 +35,7 @@ use_autoreconf  yes
 autoreconf.args -fvi
 
 # pangomm > 2.36.0 requires C++11 or better
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args  --disable-silent-rules
 

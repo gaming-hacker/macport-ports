@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -16,12 +16,12 @@ homepage            http://ompl.kavrakilab.org
 platforms           darwin
 license             BSD
 checksums           rmd160  538d9625dcf49942b750b744d747f1e67cb14f93 \
-                    sha256  276e54ce68390dc2c00749fb4b32621cae823e17a4826f0e56d5a30bf6266db4 \
-                    size    23082270
+sha256  276e54ce68390dc2c00749fb4b32621cae823e17a4826f0e56d5a30bf6266db4 \
+size    23082270
 depends_build-append port:pkgconfig
 depends_lib-append  port:boost port:ode port:flann port:triangle port:eigen3
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 configure.args-append   -DOMPL_BUILD_DEMOS=OFF \
                         -DOMPL_BUILD_TESTS=OFF \
                         -DCMAKE_DISABLE_FIND_PACKAGE_spot=ON
@@ -63,8 +63,8 @@ http://ompl.kavrakilab.org/license.html#ricelicense"
     distname            omplapp-${version}-Source
     patchfiles          patch-findeigen.diff
     checksums           rmd160  ba38ffc0999a3d7751d1b322b86b9a72e1c0c6b1 \
-                        sha256  1e2944e06a4eb1aa0d5e902e20dd0c145513e803e1663b7d41ef5d79527dcfdd \
-                        size    38170372
+sha256  1e2944e06a4eb1aa0d5e902e20dd0c145513e803e1663b7d41ef5d79527dcfdd \
+size    38170372
     notes "
     If you intend to use ompl_webapp, you need to first launch the redis server and set the following environment variables:
 
@@ -161,7 +161,7 @@ foreach s ${pythons_suffixes} {
 }
 if {${selected_python} eq "" && ![variant_isset debug]} {
     # should be the same default Python as boost-numpy
-    default_variants +python38
+    default_variants +python39
 }
 
 livecheck.type  regex

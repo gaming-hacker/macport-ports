@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -15,8 +15,8 @@ description         Transparent bidirectional bridge between Git and Mercurial f
 long_description    {*}${description}.
 
 checksums           rmd160  433a2de35530aa3374f9001650c11e382530643f \
-                    sha256  30fd7c3bbea5e0a98503378ca040fa6faa89fae8e22a06c0ac172388fb6ca92d \
-                    size    65780
+sha256  30fd7c3bbea5e0a98503378ca040fa6faa89fae8e22a06c0ac172388fb6ca92d \
+size    65780
 
 python.default_version 39
 

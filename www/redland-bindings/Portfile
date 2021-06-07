@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ homepage            http://librdf.org/bindings/
 master_sites        http://download.librdf.org/source/
 
 checksums           sha256  ff72b587ab55f09daf81799cb3f9d263708fad5df7a5458f0c28566a2563b7f5 \
-                    rmd160  e2604f0c10ab6922b06e26fa1f1d62a8e53f4b6b \
-                    size    933290
+rmd160  e2604f0c10ab6922b06e26fa1f1d62a8e53f4b6b \
+size    933290
 
 depends_lib         port:redland
 
@@ -35,7 +35,7 @@ pre-configure {
 
 if {![variant_isset perl5] && ![variant_isset php5] && ![variant_isset python27] && ![variant_isset python36] &&
     ![variant_isset ruby] && ![variant_isset tcl] && ![variant_isset lua]} {
-        default_variants +python37
+        default_variants +python39
 }
 
 variant perl5 description {Include Perl 5 binding} {
@@ -60,8 +60,8 @@ variant python36 conflicts python27 python37 description {Include Python 3.6 bin
 }
 
 variant python37 conflicts python27 python36 description {Include Python 3.7 binding} {
-    configure.args-append --with-python=${prefix}/bin/python3.7 --with-python-ldflags="-Wl,-F. -Wl,-F. -bundle ${frameworks_dir}/Python.framework/Versions/3.7/Python"
-    depends_lib-append port:python37
+    configure.args-append --with-python=${prefix}/bin/python3.9 --with-python-ldflags="-Wl,-F. -Wl,-F. -bundle ${frameworks_dir}/Python.framework/Versions/3.7/Python"
+    depends_lib-append port:python39
 }
 
 variant ruby description {Include Ruby binding} {

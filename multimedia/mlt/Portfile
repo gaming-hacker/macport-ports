@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -28,8 +28,8 @@ homepage            https://www.mltframework.org/
 platforms           darwin
 
 checksums           rmd160  44be9a15f7516a25dedc79162e8403a1cccac643 \
-                    sha256  3b977c5632329fca7634d0034162df6d5b79cde3256bac43e7ba8353acced61e \
-                    size    1351427
+sha256  3b977c5632329fca7634d0034162df6d5b79cde3256bac43e7ba8353acced61e \
+size    1351427
 
 patchfiles          patch-filter_rbpitch.cpp.diff \
                     patch-RtAudio.cpp.diff
@@ -61,8 +61,8 @@ if {![variant_isset qt4] && ![variant_isset qt5]} {
     }
 }
 
-compiler.cxx_standard      2011
-configure.cxxflags-append  -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append  -std=c++17
 # fatal error: 'stdatomic.h' file not found
 compiler.blacklist-append  {clang < 700}
 

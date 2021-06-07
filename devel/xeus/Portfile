@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -18,10 +18,10 @@ long_description        {*}${description} It takes the burden of implementing th
 platforms               darwin
 
 checksums               rmd160  65ee09561660f5a983842ed9a1f60156cea61d13 \
-                        sha256  f4313a3b4654509dbdfea60fc2bdfbd1f6ecf1037b3f3fb4d54eb79f00601ed9 \
-                        size    5430370
+sha256  f4313a3b4654509dbdfea60fc2bdfbd1f6ecf1037b3f3fb4d54eb79f00601ed9 \
+size    5430370
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 compiler.blacklist-append {clang < 900}
 
 depends_build-append    port:pkgconfig \

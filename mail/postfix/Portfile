@@ -14,7 +14,7 @@ long_description    Postfix attempts to be fast, easy to administer, and \
 homepage        http://www.postfix.org/
 platforms       darwin
 checksums       rmd160 59dbfb03b8d4efd53e4bfa1ff591ffbf67a4c67e \
-                sha256 77462894d7671d63cbe5fc2733f941088515a6d67108b9f1808b7dae37e83c2e
+sha256 77462894d7671d63cbe5fc2733f941088515a6d67108b9f1808b7dae37e83c2e
 
 master_sites    https://archive.mgm51.com/mirrors/postfix-source/official/ \
                 http://de.postfix.org/ftpmirror/official/ \
@@ -91,7 +91,7 @@ destroot {
         newaliases_path=${prefix}/bin/newaliases \
         mailq_path=${prefix}/bin/mailq \
         etc_directory=${prefix}/etc/postfix \
-        share_directory=${prefix}/share/postfix \
+share_directory=${prefix}/share/postfix \
         manpage_directory=${prefix}/share/man \
         sample_directory=${prefix}/share/postfix/sample \
         readme_directory=${prefix}/share/postfix/readme \

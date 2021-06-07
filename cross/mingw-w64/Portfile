@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    Mingw-w64 is an advancement of the original mingw.org projec
 homepage            http://mingw-w64.sourceforge.net/
 
 checksums           rmd160  22df5cfea7d3c0c5f99e6203ff76878f508c88b8 \
-                    sha256  de80994f3a719b1ae843c76c5d14e64a26dc01f99f42b4f09c18ebbf71a339a9 \
-                    size    12798138
+sha256  de80994f3a719b1ae843c76c5d14e64a26dc01f99f42b4f09c18ebbf71a339a9 \
+size    12798138
 
 # needs an out-of-source build
 configure.dir       ${workpath}/build

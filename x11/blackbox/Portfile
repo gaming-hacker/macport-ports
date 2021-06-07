@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -8,8 +8,8 @@ PortGroup               compiler_blacklist_versions 1.0
 github.setup            bbidulock blackboxwm 0.76
 revision                0
 checksums               rmd160  158989098ecda323ed1ac896e8dd747a822168c9 \
-                        sha256  57af0e14487cdcf9dda50b54e5dda5849b30153f2784fd4dba8cebc394fc625e \
-                        size    558554
+sha256  57af0e14487cdcf9dda50b54e5dda5849b30153f2784fd4dba8cebc394fc625e \
+size    558554
 
 name                    blackbox
 categories              x11 x11-wm

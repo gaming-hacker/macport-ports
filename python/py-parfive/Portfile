@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ homepage            https://parfive.readthedocs.io/en/stable/
 python.versions     37 38 39
 
 checksums           rmd160  1b4dbc0a24519c85d8eb2172208faec350f79e5b \
-                    sha256  c3067e6ca9d6fb88a10958338360bd9c47edfd8ab11098d4c601f7f2887edadd \
-                    size    26171
+sha256  c3067e6ca9d6fb88a10958338360bd9c47edfd8ab11098d4c601f7f2887edadd \
+size    26171
 
 if {${name} ne ${subport}} {
     depends_build-append \

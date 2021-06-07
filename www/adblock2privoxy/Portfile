@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell_stack 1.0
@@ -36,8 +36,8 @@ long_description    {*}${description}. \
 master_sites        https://hackage.haskell.org/package/${name}-${version}
 
 checksums           rmd160  cd58a6b4603dcdce6b5e4014c4fcdd3d6c32753d \
-                    sha256  c3f90360945df6e2e1fd86b491f980b4621b114020ecfc2220e295db57069c4e \
-                    size    42133
+sha256  c3f90360945df6e2e1fd86b491f980b4621b114020ecfc2220e295db57069c4e \
+size    42133
 
 depends_run-append \
                     port:nginx \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,7 +21,7 @@ description         Efficient similarity search library from \
 long_description    Library for efficient similarity search and \
                     clustering of dense vectors. It contains \
                     algorithms that search in sets of vectors of any \
-                    size, up to ones that possibly do not fit in \
+size, up to ones that possibly do not fit in \
                     RAM. It also contains supporting code for \
                     evaluation and parameter tuning. Faiss is written \
                     in C++ with complete wrappers for \
@@ -29,10 +29,10 @@ long_description    Library for efficient similarity search and \
                     are implemented on the GPU.
 
 checksums           rmd160  17b46c3c21f6c9fbd6291d5ed077962aaaefc562 \
-                    sha256  b6598d7f34d2b83d67164e537f48f30abad648d8cd92141d1480cadd69f67ed6 \
-                    size    653666
+sha256  b6598d7f34d2b83d67164e537f48f30abad648d8cd92141d1480cadd69f67ed6 \
+size    653666
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 compiler.openmp_version 2.5
 

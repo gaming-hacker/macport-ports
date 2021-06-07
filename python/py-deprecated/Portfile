@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ description         Python @deprecated decorator to deprecate old python classes
 long_description    ${description}
 
 checksums           rmd160  f7c741fd03df28396d8c8f8c4231a080d41a4239 \
-                    sha256  8e63b1f54a200a4f3100f8d64a3708d80976f17312cfe01745382d827f2869db \
-                    size    2969947
+sha256  8e63b1f54a200a4f3100f8d64a3708d80976f17312cfe01745382d827f2869db \
+size    2969947
 
-python.versions     36 37 38 39
+python.versions 37 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -21,8 +21,8 @@ distname            PRICE-${version}
 master_sites        sourceforge:price
 
 checksums           rmd160  624d551c9b188244fd35b11aaf6c2f57076a9467 \
-                    sha256  464bca113731023b43949992456cfa054f2d0fa3e1c5e7b5ca399f3f6f0af49b \
-                    size    275904
+sha256  464bca113731023b43949992456cfa054f2d0fa3e1c5e7b5ca399f3f6f0af49b \
+size    275904
 
 xcode.project       PRICE.xcodeproj
 

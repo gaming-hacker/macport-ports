@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ depends_lib         port:boost \
                     port:zlib
 
 checksums           rmd160  b0be3dbe0f6bf4565c1668a236850601616f625f \
-                    sha256  27051a30cb057fdb5d5de65a1f165c7153dc76e27fe62251cbb86639eb2caf22 \
-                    size    320952
+sha256  27051a30cb057fdb5d5de65a1f165c7153dc76e27fe62251cbb86639eb2caf22 \
+size    320952
 
 configure.args      --without-docs \
                     --disable-werror \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -20,8 +20,8 @@ if {[vercmp ${php.branch} 5.3] >= 0} {
     version             1.0.5
     revision            0
     checksums           rmd160  c9e5fdfe7ccb56c19d4309cadac4eeaa26f8b463 \
-                        sha256  f762c53cfdc408f015384188c174b503a734b59d7be82738b89ec3ffd3e6b8f4 \
-                        size    14946
+sha256  f762c53cfdc408f015384188c174b503a734b59d7be82738b89ec3ffd3e6b8f4 \
+size    14946
 
 }
 

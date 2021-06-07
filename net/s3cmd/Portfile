@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,13 +22,13 @@ github.setup        s3tools s3cmd 2.1.0 v
 revision            0
 
 checksums           rmd160  4baa9f6ab2b469d94fd40eee3ea82f7d495a300f \
-                    sha256  71d05b14cd834014f6b79650f89072a818746b2583c886d570637c8331780e31 \
-                    size    450117
+sha256  71d05b14cd834014f6b79650f89072a818746b2583c886d570637c8331780e31 \
+size    450117
 
 platforms           darwin
 supported_archs     noarch
 
-python.default_version  38
+python.default_version 39
 
 depends_build-append    port:py${python.default_version}-setuptools
 depends_run-append      path:share/curl/curl-ca-bundle.crt:curl-ca-bundle \

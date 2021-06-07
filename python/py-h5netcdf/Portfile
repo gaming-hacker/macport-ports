@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ homepage            https://github.com/h5netcdf/h5netcdf
 python.versions     37 38 39
 
 checksums           rmd160  5432eec4dadce8cda4bbee7d40979259e1f97dae \
-                    sha256  a3175a02d9cea4a66f22e94a30d1d4eea9a915d8a3a9024d5f968ec42b6ebc2f \
-                    size    26278
+sha256  a3175a02d9cea4a66f22e94a30d1d4eea9a915d8a3a9024d5f968ec42b6ebc2f \
+size    26278
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

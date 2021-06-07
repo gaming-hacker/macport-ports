@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compilers 1.0
@@ -29,8 +29,8 @@ HTML browser. FLOPPY can also be used to write a binary summary file \
 which is then used as input to the FLOW program.
 
 checksums   rmd160 c7a84b018df98a7a53edb12481e3e29b7f50ea4e \
-            sha256 f76735b24f76ab3c3d2ca6a276416890676694721bdb57f9c74cde36c548c68e \
-            size   175655
+sha256 f76735b24f76ab3c3d2ca6a276416890676694721bdb57f9c74cde36c548c68e \
+size   175655
 
 post-patch {
     # newer fortrans have a function range. Rename it.

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -9,8 +9,8 @@ PortGroup           active_variants 1.1
 github.setup        OpenShot openshot-qt 2.5.1 v
 github.tarball_from archive
 checksums           rmd160  8272edfc72cc9af436cbc1b781ca1b2ab132bab7 \
-                    sha256  4c25eb9a5de42e749de4c6ca2f7a313c60e1283fe52d70c121629dbb8bb2df7b \
-                    size    60217543
+sha256  4c25eb9a5de42e749de4c6ca2f7a313c60e1283fe52d70c121629dbb8bb2df7b \
+size    60217543
 homepage            https://www.openshot.org/
 categories          multimedia
 license             GPL-3+
@@ -23,7 +23,7 @@ long_description    Award-winning free and open-source video editor dedicated to
                     to the world.
 
 python.versions         38
-python.default_version  38
+python.default_version 39
 python.link_binaries    no
 
 installs_libs           no

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.1
@@ -25,10 +25,10 @@ license             GPL-2+
 homepage            http://www.qgis.org/
 
 checksums           rmd160  d22d1944b661626555a0a5cbc93836c85873bdf6 \
-                    sha256  adda0cf3f7f83236511ac83a8eb2970138866f64855f1fdda3289d123f6bf7c3 \
-                    size    143020443
+sha256  adda0cf3f7f83236511ac83a8eb2970138866f64855f1fdda3289d123f6bf7c3 \
+size    143020443
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 depends_lib-append  port:libiconv \
                     port:expat \

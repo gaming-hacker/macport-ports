@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -17,9 +17,9 @@ license             MPL-2
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  468e74f3f53ff484f15ddf8f7286796bfc9d1854 \
-                        sha256  90467a5f0dbc7ab4d5276051a3f22f4b1d2b93e17eefdd3d205774bfeb07cba3 \
-                        size    192582
+rmd160  468e74f3f53ff484f15ddf8f7286796bfc9d1854 \
+sha256  90467a5f0dbc7ab4d5276051a3f22f4b1d2b93e17eefdd3d205774bfeb07cba3 \
+size    192582
 
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,16 +26,16 @@ distname            ${name}${my_version}
 extract.suffix      .tgz
 
 checksums           rmd160  ad1700ea79ec17b1d842b621c17b4e0489586c4d \
-                    sha256  cd7c2b102670dae74aa37053657b4f068396988ef7da58fd3c318c84dc37913e \
-                    size    22050105
+sha256  cd7c2b102670dae74aa37053657b4f068396988ef7da58fd3c318c84dc37913e \
+size    22050105
 
 universal_variant   no
 
 depends_lib         port:zlib \
                     port:boost
 
-compiler.cxx_standard   2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 configure.args      --arch=DARWIN --enable-shared \
                     --cxx=${configure.cxx} \

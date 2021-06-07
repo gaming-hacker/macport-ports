@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           wxWidgets 1.0
@@ -43,17 +43,17 @@ distfiles           otp_src_${version}${extract.suffix}                    \
                     otp_doc_html_${version}${extract.suffix}
 
 checksums           otp_src_23.1.tar.gz \
-                    rmd160  9eefc2a9ab080fe32631a4bd3abc322cdf609c0d \
-                    sha256  cb5b7246eeaac9298c51c9915386df2f784e82a3f7ff93b68453591f0b370400 \
-                    size    89063191 \
+rmd160  9eefc2a9ab080fe32631a4bd3abc322cdf609c0d \
+sha256  cb5b7246eeaac9298c51c9915386df2f784e82a3f7ff93b68453591f0b370400 \
+size    89063191 \
                     otp_doc_man_23.1.tar.gz \
-                    rmd160  6d34113ccda6de7b1ca68149bba40420f8726e3b \
-                    sha256  f49ecbb05b0895ec54fc66ea65b4e7cf593a4877748acc4d549f7613c92b94a9 \
-                    size    1384042 \
+rmd160  6d34113ccda6de7b1ca68149bba40420f8726e3b \
+sha256  f49ecbb05b0895ec54fc66ea65b4e7cf593a4877748acc4d549f7613c92b94a9 \
+size    1384042 \
                     otp_doc_html_23.1.tar.gz \
-                    rmd160  2a51abbe2a1da25750738628da66a11e16e95afa \
-                    sha256  0e0075f174db2f9b5a0f861263062942e5a721c40ec747356e482e3be2fb8931 \
-                    size    36285075
+rmd160  2a51abbe2a1da25750738628da66a11e16e95afa \
+sha256  0e0075f174db2f9b5a0f861263062942e5a721c40ec747356e482e3be2fb8931 \
+size    36285075
 
 worksrcdir          otp_src_${version}
 

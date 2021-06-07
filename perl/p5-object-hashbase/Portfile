@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         Object-HashBase 0.009
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -13,7 +13,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  5b23cd20b52adc787f423664021f998be420a808 \
-                    sha256  9532addbd00e596e75e2b8d7fc23e7f61f0129221279f6a4b43714dce3e4a93c \
-                    size    20134
+sha256  9532addbd00e596e75e2b8d7fc23e7f61f0129221279f6a4b43714dce3e4a93c \
+size    20134
 
 supported_archs     noarch

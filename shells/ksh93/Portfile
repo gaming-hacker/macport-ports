@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           deprecated 1.0
@@ -23,13 +23,13 @@ master_sites        macports_distfiles
 distfiles           ast-ksh.$version.tgz \
                     INIT.$version.tgz
 checksums           ast-ksh.$version.tgz \
-                    rmd160  74bf4735182a6b527e3eb5c5ae6d7854ea72d78b \
-                    sha256  e6192cfa52a6a9fd20618cbaf3fa81f0cc9fd83525500757e83017275e962851 \
-                    size    2053532 \
+rmd160  74bf4735182a6b527e3eb5c5ae6d7854ea72d78b \
+sha256  e6192cfa52a6a9fd20618cbaf3fa81f0cc9fd83525500757e83017275e962851 \
+size    2053532 \
                     INIT.$version.tgz \
-                    rmd160  48f1830bc85a26125dd986256d38be435668d445 \
-                    sha256  c40cf57e9b2186271a9c362a560aa4a6e25ba911a8258ab931d2bbdbce44cfe5 \
-                    size    377769
+rmd160  48f1830bc85a26125dd986256d38be435668d445 \
+sha256  c40cf57e9b2186271a9c362a560aa4a6e25ba911a8258ab931d2bbdbce44cfe5 \
+size    377769
 
 extract.mkdir       yes
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,10 +16,10 @@ long_description    ${description}
 homepage            https://github.com/PyO3/setuptools-rust
 
 checksums           rmd160  1464936bc354acd0c3b4b7853b0959b19fb83c77 \
-                    sha256  647009e924f0ae439c7f3e0141a184a69ad247ecb9044c511dabde232d3d570e \
-                    size    282568
+sha256  647009e924f0ae439c7f3e0141a184a69ad247ecb9044c511dabde232d3d570e \
+size    282568
 
-python.versions     36 37 38 39
+python.versions 37 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

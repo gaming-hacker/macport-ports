@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,10 +20,10 @@ long_description         openSMILE (open-source Speech and Music Interpretation 
 description         Open-source audio processing toolkit.
 
 checksums           rmd160  a6e8dff58b6da247d5a3503d911a8e1ec1a96c0f \
-                    sha256  00c8382cc7ab7b4a00aabc1ddd09926deb37c7d47c41977c82dd5790e0fb3a75 \
-                    size    4813287
+sha256  00c8382cc7ab7b4a00aabc1ddd09926deb37c7d47c41977c82dd5790e0fb3a75 \
+size    4813287
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 variant portaudio description {Build with PortAudio support} {
     depends_lib-append port:portaudio

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  143bf2cd7c1f6bee9a9f2e4e1b5ffad4e0e296f5 \
-                    sha256  3e885603ed9c3ffdece7240099d2e6f94b5f00916e4bc29cafdacaadbf69ac55 \
-                    size    100639
+rmd160  143bf2cd7c1f6bee9a9f2e4e1b5ffad4e0e296f5 \
+sha256  3e885603ed9c3ffdece7240099d2e6f94b5f00916e4bc29cafdacaadbf69ac55 \
+size    100639
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} ${destroot}${prefix}/bin/
@@ -146,7 +146,7 @@ cargo.crates \
     serde_derive                   1.0.118  c84d3526699cd55261af4b941e4e725444df67aa4f9e6a3564f18030d12672df \
     serde_json                      1.0.61  4fceb2595057b6891a4ee808f70054bd2d12f0e97f1cbb78689b59f676df325a \
     serde_yaml                      0.8.15  971be8f6e4d4a47163b405a3df70d14359186f9ab0f3a3ec37df144ca1ce089f \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
     slug                             0.1.4  b3bc762e6a4b6c6fcaade73e77f9ebc6991b676f88bb2358bddb56560f073373 \
     smallvec                         1.4.0  c7cb5678e1615754284ec264d9bb5b4c27d2018577fd90ac0ceb578591ed5ee4 \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; c-basic-offset: 4; indent-tabs-mode: nil; tab-width: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 PortGroup           fuse 1.0
 
@@ -19,13 +19,13 @@ master_sites        sourceforge
 distname            ${name}-src-${version}
 
 checksums           rmd160  7ba8c6f88550d1dcf4de235ab39dd13249e36eea \
-                    sha256  431035797b2783216ec74b6aad5c721b4bffb75d2174967266ee49f0a3466cd9 \
-                    size    323336
+sha256  431035797b2783216ec74b6aad5c721b4bffb75d2174967266ee49f0a3466cd9 \
+size    323336
 
 depends_lib \
     port:e2fsprogs
 
-configure.cflags-append -std=gnu89
+configure.cflags-append -std=c11
 configure.cflags-append -D__FreeBSD__=10
 configure.cflags-append -I${prefix}/include/osxfuse/fuse
 configure.cflags-append -DENABLE_SWAPFS

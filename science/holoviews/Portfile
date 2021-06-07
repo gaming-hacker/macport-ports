@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    {*}${description} With HoloViews, you can usually express wh
 platforms           darwin
 
 checksums           rmd160  e553d5e1f3d4d65f842ecbe4b8fa8f6e5ea8f374 \
-                    sha256  1f8799dd4d1274fcfadeaca3c1962bae9bc05284b47035ac836a626f2723818c \
-                    size    4789759
+sha256  1f8799dd4d1274fcfadeaca3c1962bae9bc05284b47035ac836a626f2723818c \
+size    4789759
 
 variant python36 conflicts python37 python38 python39 description {Use Python 3.6} {}
 variant python37 conflicts python36 python38 python39 description {Use Python 3.7} {}

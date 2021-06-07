@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           java 1.0
@@ -27,8 +27,8 @@ distname            ${name_lower}-${version}-bin
 master_sites        apache:${name_lower}/${name_lower}/${version}
 
 checksums           rmd160  bc00f2b481e91305dd3d5f2aa2d3f1226505b565 \
-                    sha256  d8b5dcfec4009978f27afcd04c71c660d90fce880b71d4d1664ac5471f00d41d \
-                    size    428321926
+sha256  d8b5dcfec4009978f27afcd04c71c660d90fce880b71d4d1664ac5471f00d41d \
+size    428321926
 
 worksrcdir          ${name_lower}
 

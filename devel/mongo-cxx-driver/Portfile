@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -9,8 +9,8 @@ epoch               1
 github.setup        mongodb mongo-cxx-driver 3.6.3 r
 revision            0
 checksums           rmd160  3854ebe7bd5fc56eb08b1debc0fbeed7d1185625 \
-                    sha256  8a3624f91fe85328864a09508d7678aa8c9bc0504bd236aaea6c250ff230c6a3 \
-                    size    1395647
+sha256  8a3624f91fe85328864a09508d7678aa8c9bc0504bd236aaea6c250ff230c6a3 \
+size    1395647
 
 license             Apache-2
 categories          devel databases
@@ -30,7 +30,7 @@ distname            ${name}-${github.tag_prefix}${version}
 depends_lib-append  port:mnmlstc-core \
                     port:mongo-c-driver
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # Segmentation fault observed during build for Xcode 6.2
 compiler.blacklist-append {clang == 600.0.57}

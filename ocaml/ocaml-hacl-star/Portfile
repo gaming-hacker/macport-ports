@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -35,13 +35,13 @@ patchfiles          patch-Makefile.diff \
                     patch-dist-gcc-compatible-use-install_name
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  8a1303b055b040b8aeb33e2d5de61516282a215b \
-                    sha256  cc7539b6efeb310dbab96328b2fb9751f9ff681774167f12f22fd446533957d1 \
-                    size    8811328 \
+rmd160  8a1303b055b040b8aeb33e2d5de61516282a215b \
+sha256  cc7539b6efeb310dbab96328b2fb9751f9ff681774167f12f22fd446533957d1 \
+size    8811328 \
                     ${vale.distfile} \
-                    rmd160  32eeb48eb90ce19703175904f600bc4d94973cbc \
-                    sha256  1bb1af63258c1e8dad7431b259d09480d07d345b386d52262f63f9e119faf4cd \
-                    size    3072558
+rmd160  32eeb48eb90ce19703175904f600bc4d94973cbc \
+sha256  1bb1af63258c1e8dad7431b259d09480d07d345b386d52262f63f9e119faf4cd \
+size    3072558
 
 extract.only        ${distname}${extract.suffix}
 

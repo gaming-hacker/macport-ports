@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -12,8 +12,8 @@ description         Additional statistics functions for Octave.
 long_description    ${description}
 
 checksums           rmd160  014ad1b752a246d4bead7afe1558d95a04233aae \
-                    sha256  7976814f837508e70367548bfb0a6d30aa9e447d4e3a66914d069efb07876247 \
-                    size    304294
+sha256  7976814f837508e70367548bfb0a6d30aa9e447d4e3a66914d069efb07876247 \
+size    304294
 
 depends_lib-append  port:octave-io
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -18,8 +18,8 @@ master_sites     xorg:individual/proto
 distname        xcb-proto-${version}
 
 checksums       rmd160  b62360ed1de93297984d0a80ac598eef59512614 \
-                sha256  f04add9a972ac334ea11d9d7eb4fc7f8883835da3e4859c9afa971efdf57fcc3 \
-                size    143588
+sha256  f04add9a972ac334ea11d9d7eb4fc7f8883835da3e4859c9afa971efdf57fcc3 \
+size    143588
 
 use_xz          yes
 
@@ -42,14 +42,14 @@ variant python36 conflicts python37 python38 python39 description {Use python 3.
 }
 
 variant python37 conflicts python36 python38 python39 description {Use python 3.7} {
-    depends_build-append    port:python37
-    configure.python        ${prefix}/bin/python3.7
+    depends_build-append    port:python39
+    configure.python        ${prefix}/bin/python3.9
     license_noconflict      python37
 }
 
 variant python38 conflicts python36 python37 python39 description {Use python 3.8} {
-    depends_build-append    port:python38
-    configure.python        ${prefix}/bin/python3.8
+    depends_build-append    port:python39
+    configure.python        ${prefix}/bin/python3.9
     license_noconflict      python38
 }
 

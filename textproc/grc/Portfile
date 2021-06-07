@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    Generic Colouriser makes text files or outputs of different 
                     text output and colourising it.
 
 checksums           rmd160  f494d0850098fc81ca26d623ed9f01cbe0d44b3c \
-                    sha256  7c76fff1b0dc70a27b07fb3f0f7007518afa07f6804019037957a922a2ac98ec \
-                    size    45192
+sha256  7c76fff1b0dc70a27b07fb3f0f7007518afa07f6804019037957a922a2ac98ec \
+size    45192
 
 python.versions     27 35 36
 
@@ -37,7 +37,7 @@ variant python36 conflicts python27 python35 description {Use Python 3.6} {
     python.default_version 36
 }
 if {![variant_isset python35] && ![variant_isset python36]} {
-    default_variants +python27
+    default_variants +python39
 }
 
 build {}

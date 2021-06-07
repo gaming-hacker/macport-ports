@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    Neofetch is a CLI system information tool written in \
                     your choice.
 
 checksums           rmd160  c9db23b6959aa7d0b8b6de68c05994f80d1e846a \
-                    sha256  c99d704d2f321d24a4655ce3fc052fd79539493dc75c025237ad78e93f9749bf \
-                    size    95403
+sha256  c99d704d2f321d24a4655ce3fc052fd79539493dc75c025237ad78e93f9749bf \
+size    95403
 
 use_configure       no
 destroot.post_args  ${destroot.destdir} PREFIX=${prefix}

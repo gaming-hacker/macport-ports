@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -38,5 +38,5 @@ destroot {
 notes "To install shell completion for ${name}, run: ${name} complete"
 
 checksums           rmd160  43dceec0e686f2e6727781f9bfaafadb9a658af7 \
-                    sha256  6d93296e88bed5cb087e79721a1c6463eea8bcd1ae16938546d550d6bc5cc857 \
-                    size    163566
+sha256  6d93296e88bed5cb087e79721a1c6463eea8bcd1ae16938546d550d6bc5cc857 \
+size    163566

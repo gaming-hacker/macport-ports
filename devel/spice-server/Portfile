@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -19,8 +19,8 @@ master_sites        https://www.spice-space.org/download/releases/
 use_bzip2           yes
 
 checksums           rmd160  fe99d8d0db4b275b1d19dc9a7231144133c5bfa0 \
-                    sha256  551d4be4a07667cf0543f3c895beb6da8a93ef5a9829f2ae47817be5e616a114 \
-                    size    1504304
+sha256  551d4be4a07667cf0543f3c895beb6da8a93ef5a9829f2ae47817be5e616a114 \
+size    1504304
 
 patchfiles          meson-build.diff \
                     no-werror.diff \
@@ -35,7 +35,7 @@ configure.args-append \
 
 depends_build-append \
     port:pkgconfig \
-    port:python38 port:py38-six port:py38-parsing
+    port:python39 port:py39-six port:py39-parsing
 
 depends_lib-append \
     port:lz4 \

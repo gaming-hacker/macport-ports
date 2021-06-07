@@ -1,7 +1,7 @@
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         HTML-Tree 5.07
 revision            1
 epoch               1
@@ -12,8 +12,8 @@ license             {Artistic-1 GPL}
 long_description    $description
 
 checksums           rmd160  097dea7937299d727929010833c22fe4a2749b48 \
-                    sha256  f0374db84731c204b86c1d5b90975fef0d30a86bd9def919343e554e31a9dbbf \
-                    size    150477
+sha256  f0374db84731c204b86c1d5b90975fef0d30a86bd9def919343e554e31a9dbbf \
+size    150477
 
 platforms           darwin
 

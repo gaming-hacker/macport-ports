@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -20,17 +20,17 @@ homepage                http://opensource.apple.com/source/tapi/
 master_sites            http://opensource.apple.com/tarballs/tapi:tapi
 distfiles               tapi-${version}.tar.gz:tapi
 checksums               tapi-${version}.tar.gz \
-                        rmd160  f5aad7f6ed579ce83d1206910ea8885043b4ebdb \
-                        sha256  827e996529974305ef7933f3fa790f7ed068caa29db8f8c30b8a83c6826503f7 \
-                        size    205606
+rmd160  f5aad7f6ed579ce83d1206910ea8885043b4ebdb \
+sha256  827e996529974305ef7933f3fa790f7ed068caa29db8f8c30b8a83c6826503f7 \
+size    205606
 
 set llvm_version        7.1.0
 master_sites-append     https://github.com/llvm/llvm-project/archive/:llvm
 distfiles-append        llvmorg-${llvm_version}.tar.gz:llvm
 checksums-append        llvmorg-${llvm_version}.tar.gz \
-                        rmd160  abdbeaa08cb1c5e9ce4008e47263eb10597f5aed \
-                        sha256  71c93979f20e01f1a1cc839a247945f556fa5e63abf2084e8468b238080fd839 \
-                        size    105306132
+rmd160  abdbeaa08cb1c5e9ce4008e47263eb10597f5aed \
+sha256  71c93979f20e01f1a1cc839a247945f556fa5e63abf2084e8468b238080fd839 \
+size    105306132
 
 worksrcdir              tapi_build
 
@@ -49,8 +49,8 @@ platform darwin {
         depends_skip_archcheck-append python27-bootstrap
     } elseif {${os.major} > 19} {
         # no idea about python on this system yet so use python38
-        depends_build-append    port:python38
-        configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.8
+        depends_build-append    port:python39
+        configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
         depends_skip_archcheck-append python38
     } else {
         # use the system python, which is known to be fine for darwin 11 to 19
@@ -61,7 +61,7 @@ platform darwin {
 # remove need for port:libxml2 dependency
 configure.args-append -DLIBXML2_LIBRARIES=IGNORE
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 configure.pre_args-replace -DCMAKE_BUILD_TYPE=MacPorts -DCMAKE_BUILD_TYPE=Release
 
 # needs support for llvm::Expect, which requires c++17 inline variables (clang 3.9+)

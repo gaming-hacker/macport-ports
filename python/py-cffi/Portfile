@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ long_description    Foreign Function Interface for Python calling C code. \
 homepage            https://cffi.readthedocs.org/
 
 checksums           rmd160  38225f668aa57d7ec7e3756843ba1dfdf27494d3 \
-                    sha256  fd78e5fee591709f32ef6edb9a015b4aa1a5022598e36227500c8f4e02328d9c \
-                    size    475055
+sha256  fd78e5fee591709f32ef6edb9a015b4aa1a5022598e36227500c8f4e02328d9c \
+size    475055
 
 if {${name} ne ${subport}} {
     patchfiles-append   patch-setup.py.diff

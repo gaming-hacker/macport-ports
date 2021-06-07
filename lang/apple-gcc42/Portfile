@@ -40,11 +40,11 @@ distfiles               ${dcore}:apple
 # ${dfort}:gnu ${djava}:gnu
 
 checksums           gcc-4.2.1-4.2.4-v2.patch \
-                    rmd160  f33804c6f04e853a6248bf4941f4a0ace1e3f30f \
-                    sha256  0f22916b8b1c96bafaccbb17b4350530d4ae903475ae934efe76a26b9c35e03f \
+rmd160  f33804c6f04e853a6248bf4941f4a0ace1e3f30f \
+sha256  0f22916b8b1c96bafaccbb17b4350530d4ae903475ae934efe76a26b9c35e03f \
                     gcc-5666.3.tar.gz \
-                    rmd160  a01d000f89c0e89dd0079dcd202bba7629ba78dc \
-                    sha256  6c46f4376d11ada5be0cfc3894b9296edf574af3c616ab71803ea78edfd7015b
+rmd160  a01d000f89c0e89dd0079dcd202bba7629ba78dc \
+sha256  6c46f4376d11ada5be0cfc3894b9296edf574af3c616ab71803ea78edfd7015b
 
 #                    gcc-fortran-4.2.1.tar.bz2 \
 #                    md5     2a91d467b50a404ca0cd3b10b413f9b2 \
@@ -227,13 +227,13 @@ if {![variant_isset bootstrap]} {
 }
 
 build.args-append \
-    CC="${configure.cc} -pipe -std=gnu89" \
+    CC="${configure.cc} -pipe -std=c11" \
     PREFIX="${prefix}" \
     SRCROOT="${srcroot}" \
     OBJROOT="${objroot}" \
     SYMROOT="${symroot}" \
     DSTROOT="${destroot}" \
-    RC_NONARCH_CFLAGS="-pipe -std=gnu89" \
+    RC_NONARCH_CFLAGS="-pipe -std=c11" \
     RC_OS="macos" \
     RC_ARCHS="[get_canonical_archs]" \
     RC_ProjectSourceVersion="[lindex [split ${version} .] 0]" \

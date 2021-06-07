@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -10,8 +10,8 @@ github.setup        stamatak standard-RAxML 8.2.12 v
 github.tarball_from archive
 revision            0
 checksums           sha256  338f81b52b54e16090e193daf36c1d4baa9b902705cfdc7f4497e3e09718533b \
-                    rmd160  eaaa1dc2bc9a55ad070d14f2a4ceab55afa05aac \
-                    size    10138831
+rmd160  eaaa1dc2bc9a55ad070d14f2a4ceab55afa05aac \
+size    10138831
 name                raxml
 description         Estimation of phylogenetic trees
 long_description    RAxML is a program for sequential and parallel \

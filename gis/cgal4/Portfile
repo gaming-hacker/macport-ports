@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.1
@@ -20,8 +20,8 @@ platforms           darwin
 github.setup        CGAL cgal 4.14.3 releases/CGAL-
 revision            0
 checksums           rmd160  c297a51c63a8161000d91128628d8c20ffdbf487 \
-                    sha256  5bafe7abe8435beca17a1082062d363368ec1e3f0d6581bb0da8b010fb389fe4 \
-                    size    15618196
+sha256  5bafe7abe8435beca17a1082062d363368ec1e3f0d6581bb0da8b010fb389fe4 \
+size    15618196
 
 conflicts           cgal5
 github.tarball_from releases

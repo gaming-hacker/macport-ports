@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -28,10 +28,10 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  1180ee1a34636abe87cbac3ccaa4e39789c08d08 \
-                    sha256  57cce33a41d34db81292e9eebae8b5046f30e5d919d848256fbb75bfc132a590 \
-                    size    18329300
+sha256  57cce33a41d34db81292e9eebae8b5046f30e5d919d848256fbb75bfc132a590 \
+size    18329300
 
-perl5.branches      5.28
+perl5.branches 5.30
 
 depends_build       port:pkgconfig \
                     port:intltool \
@@ -93,24 +93,24 @@ variant database description {builds with support for GDA database} {
 }
 
 variant python37 conflicts python38 description {Build Python plugin loader using python 3.7} {
-    configure.python          ${prefix}/bin/python3.7
+    configure.python          ${prefix}/bin/python3.9
     configure.args-replace    --without-python --with-python
-    depends_lib-append        port:py37-gobject3
+    depends_lib-append        port:py39-gobject3
     set python_framework      ${frameworks_dir}/Python.framework/Versions/3.7
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 
 variant python38 conflicts python37 description {Build Python plugin loader using python 3.8} {
-    configure.python          ${prefix}/bin/python3.8
+    configure.python          ${prefix}/bin/python3.9
     configure.args-replace    --without-python --with-python
-    depends_lib-append        port:py38-gobject3
+    depends_lib-append        port:py39-gobject3
     set python_framework      ${frameworks_dir}/Python.framework/Versions/3.8
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 
 if {![variant_isset python37] && \
     ![variant_isset python38] } {
-    default_variants +python38
+    default_variants +python39
 }
 
 post-activate {

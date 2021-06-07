@@ -22,8 +22,8 @@ homepage        https://www.gnu.org/software/gcal/
 master_sites    gnu
 use_xz          yes
 checksums       rmd160  8283119af8e6c6c45ff36500e59a30e141c977a5 \
-                sha256  91b56c40b93eee9bda27ec63e95a6316d848e3ee047b5880ed71e5e8e60f61ab \
-                size    1658948
+sha256  91b56c40b93eee9bda27ec63e95a6316d848e3ee047b5880ed71e5e8e60f61ab \
+size    1658948
 
 patchfiles      patch-ioctl-implicit-declaration-fix.diff \
                 patch-fix-segfault.diff

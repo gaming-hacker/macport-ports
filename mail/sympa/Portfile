@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -20,13 +20,13 @@ long_description    An advanced perl-based mail list manager with a web interfac
                     list subscribers and owners.
 
 checksums           rmd160  fcca5faa2870b0da589171cb9e43164d9ff07caa \
-                    sha256  7a4d97ebded72c1aa7d157c5441975f509b0445e0b81324b5b4094d00c1ca178 \
-                    size    12863222
+sha256  7a4d97ebded72c1aa7d157c5441975f509b0445e0b81324b5b4094d00c1ca178 \
+size    12863222
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches          5.26 5.28 5.30
-perl5.default_branch    5.28
+perl5.branches 5.30
+perl5.default_branch 5.30
 perl5.create_variants   ${perl5.branches}
 
 depends_lib         port:apache2 \

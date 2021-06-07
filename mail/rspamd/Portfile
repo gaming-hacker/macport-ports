@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -26,8 +26,8 @@ long_description    ${description} Rspamd core is written in C \
                     asynchronous and do not block anywhere in code.
 
 checksums           rmd160  2c38377656a7e67cdac666a92d1a58349cc4bf5a \
-                    sha256  85d4c3382a7569fbee743bfd843160c7ee8cd3798887a0b9fa55dab4e84b1ca8 \
-                    size    5126749
+sha256  85d4c3382a7569fbee743bfd843160c7ee8cd3798887a0b9fa55dab4e84b1ca8 \
+size    5126749
 
 depends_build-append \
                     port:pkgconfig

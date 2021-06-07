@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -34,8 +34,8 @@ livecheck.url       ${github.homepage}/tags
 livecheck.regex     {v(6[-.]\d[02468][-.]\d{2}).tar.gz}
 
 checksums           rmd160  59f1d61aad1c0368eeaedf65e4025008813836ff \
-                    sha256  4b3ed60d4d421a766b2d867ff78d0c7140a66e69cec13234484c4e3d28c90abd \
-                    size    185196747
+sha256  4b3ed60d4d421a766b2d867ff78d0c7140a66e69cec13234484c4e3d28c90abd \
+size    185196747
 
 name                root${version_major}
 categories          science
@@ -182,7 +182,7 @@ if {${os.platform} ne "darwin" || ${os.major} >= 18} {
     compiler.cxx_standard 2017
     configure.args-replace  -Dcxx17=OFF -Dcxx17=ON
 } else {
-    compiler.cxx_standard 2014
+    compiler.cxx_standard 2017
     configure.args-replace  -Dcxx14=OFF -Dcxx14=ON
 }
 

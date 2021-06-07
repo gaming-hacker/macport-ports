@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       cmake 1.1
@@ -7,8 +7,8 @@ PortGroup       qt5 1.0
 
 github.setup    symless synergy-core 1.11.1 v -stable
 checksums       rmd160  84f0a1ade8bb9337229295bb9fcf9f3898f73493 \
-                sha256  338e5fda0323f8c24259d8fc26e513bdc4f0f249bf66e9722953bb8e6311f88b \
-                size    7556850
+sha256  338e5fda0323f8c24259d8fc26e513bdc4f0f249bf66e9722953bb8e6311f88b \
+size    7556850
 
 name            synergy
 categories      sysutils
@@ -35,7 +35,7 @@ depends_lib-append \
 
 patchfiles patch-openssl.diff
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 if {${subport} eq ${name}} {
     revision                0

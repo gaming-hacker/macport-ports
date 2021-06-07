@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -31,8 +31,8 @@ worksrcdir          ${distname}
 distname            ${name}-${version}-darwin-x86_64
 
 checksums           rmd160  bb2f9929161355f98413ce52e703b08d4f6019d1 \
-                    sha256  5ca13cb82484828c58b0cf2ded314b18a2ef47b005beb70dab2a28ee5b2c7706 \
-                    size    304887524
+sha256  5ca13cb82484828c58b0cf2ded314b18a2ef47b005beb70dab2a28ee5b2c7706 \
+size    304887524
 
 use_configure       no
 build {}

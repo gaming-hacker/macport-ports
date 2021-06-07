@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ homepage            https://source.android.com/source/developing.html
 master_sites        https://storage.googleapis.com/git-repo-downloads/
 
 checksums           sha256  b449697154231b531b2233272b6404316b48468b438318aa2a1943d24eba5df3 \
-                    rmd160  bd66b05256b6906b9035cfbf38b81f4e11a2c3cf \
-                    size    44704
+rmd160  bd66b05256b6906b9035cfbf38b81f4e11a2c3cf \
+size    44704
 
 depends_run         port:git
 extract.suffix

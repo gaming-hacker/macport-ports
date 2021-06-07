@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,8 +14,8 @@ mpi.setup
 github.setup        OSGeo gdal 3.3.0 v
 revision            0
 checksums           rmd160  9d8da2bf3977a2a7bed1f748146dfee6904b76db \
-                    sha256  190c8f4b56afc767f43836b2a5cd53cc52ee7fdc25eb78c6079c5a244e28efa7 \
-                    size    12923948
+sha256  190c8f4b56afc767f43836b2a5cd53cc52ee7fdc25eb78c6079c5a244e28efa7 \
+size    12923948
 
 
 categories          gis
@@ -41,7 +41,7 @@ use_xz              yes
 # error: call to 'abs' is ambiguous
 compiler.blacklist-append {clang < 900}
 
-compiler.cxx_standard     2014
+compiler.cxx_standard 2017
 # See https://trac.macports.org/ticket/56908
 compiler.thread_local_storage yes
 

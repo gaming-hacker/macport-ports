@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -19,8 +19,8 @@ long_description        an XAudio reimplementation that focuses solely on develo
 depends_lib-append      port:libsdl2
 
 checksums               rmd160  a735305895754d503a71c03a71225513c0d55ddc \
-                        sha256  5599d4351b716e1dc8716b3ddd5855fddbf7a48f47558e04648a8a731cb39637 \
-                        size    1134780
+sha256  5599d4351b716e1dc8716b3ddd5855fddbf7a48f47558e04648a8a731cb39637 \
+size    1134780
 
 # remove set deployment target and hard-coded RPATH setting
 patchfiles              patch-faudio-remove-deployment-target.diff

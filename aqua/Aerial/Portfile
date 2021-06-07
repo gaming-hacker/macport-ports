@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -24,13 +24,13 @@ master_sites-append \
                         https://github.com/OAuthSwift/OAuthSwift/archive/2.0.0:OAuthSwift
 
 checksums           [lindex ${distfiles} 0] \
-                    rmd160  2666f1a0f5277c110595e1d61da038a594d92fcc \
-                    sha256  9cc4cf64e04bf70e2e4797650bdad118d94d065ef10075d60aa6952ea432ffb7 \
-                    size    1252550 \
+rmd160  2666f1a0f5277c110595e1d61da038a594d92fcc \
+sha256  9cc4cf64e04bf70e2e4797650bdad118d94d065ef10075d60aa6952ea432ffb7 \
+size    1252550 \
                     OAuthSwift-2.0.0.tar.gz \
-                    rmd160  62f8add3f3f305e26a9cd4b423a3375dd27fb2ab \
-                    sha256  1f4c4bfd9057d1b305d70fd7c4fe36520bb62a4bbe1842dffc513dd4a7f3d46b \
-                    size    1221906
+rmd160  62f8add3f3f305e26a9cd4b423a3375dd27fb2ab \
+sha256  1f4c4bfd9057d1b305d70fd7c4fe36520bb62a4bbe1842dffc513dd4a7f3d46b \
+size    1221906
 
 # although the binary works on 10.9 and later, it doesn't build on
 # anything earlier than 10.15

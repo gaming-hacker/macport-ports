@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ supported_archs     x86_64
 
 version             3.07.1
 checksums           rmd160  4b222c5d32954b0168a1fe1b423ff5b3591b257f \
-                    sha256  350fc841d672e9fa26911fba6c7c4684c5fcc8ef3e37173d8460126b9f23e581 \
-                    size    3184640
+sha256  350fc841d672e9fa26911fba6c7c4684c5fcc8ef3e37173d8460126b9f23e581 \
+size    3184640
 
 master_sites        ${homepage}/software/
 distname            SDRplay_RSP_API-MacOSX-${version}

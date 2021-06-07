@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ distname            [strsed [string tolower ${name}${version}] {g/[.]//}]
 use_zip             yes
 
 checksums           rmd160  2798a738bef31d56456da8308fcdb1f3bad1b80b \
-                    sha256  cfab760bd693713d7f38aaac20809fe0327b41de799c94614595d88c05d6393c \
-                    size    9585874
+sha256  cfab760bd693713d7f38aaac20809fe0327b41de799c94614595d88c05d6393c \
+size    9585874
 
 use_configure       no
 

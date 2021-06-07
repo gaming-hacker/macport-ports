@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -20,9 +20,9 @@ homepage            http://www.shumatech.com/web/products/bossa
 platforms           darwin
 
 checksums           sha1    ec911282fe3872769a73195c9e0d6e57b2a6e5b2 \
-                    rmd160  729652752baa57dde02ce30608b208ddc753d8c0 \
-                    sha256  811b9c6833cb43072fa3f3e76131fb46cbc36d8f7181b8a25085f0f4ba5ae77d \
-                    size    544207
+rmd160  729652752baa57dde02ce30608b208ddc753d8c0 \
+sha256  811b9c6833cb43072fa3f3e76131fb46cbc36d8f7181b8a25085f0f4ba5ae77d \
+size    544207
 
 default_variants    +wxwidgets
 depends_lib-append  port:readline

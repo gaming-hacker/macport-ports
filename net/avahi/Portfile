@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -22,8 +22,8 @@ homepage            http://avahi.org/
 github.tarball_from releases
 
 checksums           rmd160  f060e7afbc20accc6befbbe6776d3ca7956b4962 \
-                    sha256  060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda \
-                    size    1591458
+sha256  060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda \
+size    1591458
 
 patchfiles          patch-avahi-daemon-Makefile.in.diff \
                     patch-avahi-dnsconfd-Makefile.in.diff \
@@ -92,7 +92,7 @@ configure.args      --disable-autoipd \
 configure.cppflags-append   -L${prefix}/lib -D__APPLE_USE_RFC_2292
 
 # libevent-watch.c:285: error: 'for' loop initial declaration used outside C99 mode
-configure.cflags-append     -std=c99
+configure.cflags-append     -std=c11
 
 set daemon_uniquename   org.freedesktop.avahi-daemon
 set dnsconfd_uniquename org.freedesktop.avahi-dnsconfd
@@ -173,8 +173,8 @@ variant qt4 description {Build with Qt4} {
 variant qt5 description {Build with Qt5} {
     PortGroup   qt5 1.0
     # This configure script does not use CXXFLAGS variable for Qt5 compile test so I have to do this
-    configure.env-append    QT5_CFLAGS=-std=c++11\ -DQT_CORE_LIB\ -F${qt_dir}/lib\ -I${qt_dir}/lib/QtCore.framework/Headers\ -I${qt_dir}/include
-    compiler.cxx_standard   2011
+    configure.env-append    QT5_CFLAGS=-std=c++17\ -DQT_CORE_LIB\ -F${qt_dir}/lib\ -I${qt_dir}/lib/QtCore.framework/Headers\ -I${qt_dir}/include
+    compiler.cxx_standard 2017
     configure.args-delete   --disable-qt5
 }
 
@@ -187,10 +187,10 @@ variant python27 conflicts python38 python39 description {Build with Python 2.7}
 }
 
 variant python38 conflicts python27 python39 description {Build with Python 3.8} {
-    configure.python        ${prefix}/bin/python3.8
+    configure.python        ${prefix}/bin/python3.9
     depends_lib-append      port:dbus-python38 \
-                            port:py38-gdbm
-    depends_lib-append      port:py38-gobject3
+                            port:py39-gdbm
+    depends_lib-append      port:py39-gobject3
     configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.8/lib/pkgconfig
 }
 

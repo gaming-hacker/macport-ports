@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description \
 homepage            https://macvim-dev.github.io/macvim/
 
 checksums           rmd160  884dc22e50e9ecf5acd8754d046674849b478e97 \
-                    sha256  51ee54b7c3b2dd5ec6d9856117ca12e90dd7694f06c8d40ca2830f375a6f8f76 \
-                    size    22966978
+sha256  51ee54b7c3b2dd5ec6d9856117ca12e90dd7694f06c8d40ca2830f375a6f8f76 \
+size    22966978
 
 depends_lib         port:ncurses \
                     port:gettext \
@@ -51,7 +51,7 @@ post-extract {
     file mkdir ${workpath}/caches
 }
 
-use_xcode yes
+use_xcode  no
 
 autoconf.cmd make autoconf
 autoconf.pre_args
@@ -136,18 +136,18 @@ variant python36 conflicts python37 python38 python39 description {Enable Python
     depends_build-append port:autoconf
 }
 variant python37 conflicts python36 python38 python39 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.7
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python37
+    depends_lib-append      port:python39
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
     depends_build-append port:autoconf
 }
 variant python38 conflicts python36 python37 python39 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.8
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python38
+    depends_lib-append      port:python39
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ long_description    sqlmap is an open source penetration testing tool that autom
 homepage            http://sqlmap.org/
 
 checksums           rmd160  c73789b111aea6037ded16d36c734cbd30f32ed8 \
-                    sha256  bc3f8952e05d9c66b76dd65a3c5e68131b34328fa6905f532c88ac6857985336 \
-                    size    6755234
+sha256  bc3f8952e05d9c66b76dd65a3c5e68131b34328fa6905f532c88ac6857985336 \
+size    6755234
 
 worksrcdir          ${name}
 
@@ -49,13 +49,13 @@ variant python27 conflicts python37 python38 description {Build for Python 2.7} 
 }
 
 variant python37 conflicts python27 python38 description {Build for Python 3.7} {
-    python.default_version 37
+    python.default_version 39
     depends_build-append \
                     port:py${python.version}-setuptools
 }
 
 variant python38 conflicts python27 python37 description {Build for Python 3.8} {
-    python.default_version 38
+    python.default_version 39
     depends_build-append \
                     port:py${python.version}-setuptools
 }

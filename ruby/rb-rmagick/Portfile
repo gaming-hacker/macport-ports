@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               ruby 1.0
@@ -20,7 +20,7 @@ long_description        RMagick is an interface between the Ruby programming \
 homepage                https://rmagick.github.io
 
 checksums               rmd160  fb993857d9f7f8b064cfab41d4e9c064613a0b7f \
-                        sha256  dca3355a3536ade4c2c4f64116b1dd743a9d73481fb0b34ce7b571c75fd95011 \
-                        size    232960
+sha256  dca3355a3536ade4c2c4f64116b1dd743a9d73481fb0b34ce7b571c75fd95011 \
+size    232960
 
 depends_lib-append      port:ImageMagick

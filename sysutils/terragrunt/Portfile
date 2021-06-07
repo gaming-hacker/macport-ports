@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -22,8 +22,8 @@ subport terragrunt-0.29 {
     set patchNumber     4
 
     checksums           rmd160  26ac8c2618aa7ca869ee45dc8eb55027e2f75159 \
-                        sha256  4ee3db5390f93bfe43b49f45a2904d9ebe91179a1d154beb8b43a0a24ba650c3 \
-                        size    2232674
+sha256  4ee3db5390f93bfe43b49f45a2904d9ebe91179a1d154beb8b43a0a24ba650c3 \
+size    2232674
 }
 
 subport terragrunt-0.27 {
@@ -31,8 +31,8 @@ subport terragrunt-0.27 {
     set patchNumber     0
 
     checksums           rmd160  22cc7f81c24718c39cf1aaa57266590775bf6dea \
-                        sha256  051eeb79c326bc6ccc734418a15366d9cef9880a1c5fdee0304d818e0ccb8a25 \
-                        size    2184321
+sha256  051eeb79c326bc6ccc734418a15366d9cef9880a1c5fdee0304d818e0ccb8a25 \
+size    2184321
 }
 
 subport terragrunt-0.26 {
@@ -40,8 +40,8 @@ subport terragrunt-0.26 {
     set patchNumber     7
 
     checksums           rmd160  d17297226396d511ba7e14cf44cb18a33d76fe51 \
-                        sha256  291246e6ccfd0f1c18712de4f85fc63bcae49bc20fd54330af109daf5d186330 \
-                        size    2178214
+sha256  291246e6ccfd0f1c18712de4f85fc63bcae49bc20fd54330af109daf5d186330 \
+size    2178214
 }
 
 subport terragrunt-0.24 {
@@ -49,8 +49,8 @@ subport terragrunt-0.24 {
     set patchNumber     4
 
     checksums           rmd160  5c23e704d7192b4de32c824663598a3466729b7f \
-                        sha256  cc9c56fcbd299f59055b92f1f6258c9ea1610609c1d29a3ca5d32ac93577e335 \
-                        size    2029411
+sha256  cc9c56fcbd299f59055b92f1f6258c9ea1610609c1d29a3ca5d32ac93577e335 \
+size    2029411
 }
 
 subport terragrunt_select {}

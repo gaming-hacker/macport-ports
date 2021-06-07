@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem  1.0
 PortGroup   cmake 1.1
@@ -15,7 +15,7 @@ license     GPL-3+
 platforms   darwin
 
 compiler.c_standard   2011
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 boost.version 1.71
 
@@ -26,8 +26,8 @@ Provides the release version, which is typically updated every month or so.
 
     github.setup EttusResearch uhd 3.15.0.0 v
     checksums rmd160 ac9ef6473cd5b034650e3979236d2535f398dec2 \
-              sha256 fe385e826b8fbf4e869b4b919b7b7b8f01fba283bc0b8ffb954947f819b9c07b \
-              size   12896898
+sha256 fe385e826b8fbf4e869b4b919b7b7b8f01fba283bc0b8ffb954947f819b9c07b \
+size   12896898
     revision  6
 
     conflicts uhd-devel uhd-39lts
@@ -68,8 +68,8 @@ Provides UHD 3.9 Long-Term Service \(LTS\) branch. This branch is not updated ex
     github.setup EttusResearch uhd UHD-3.9.LTS
     version      3.9-LTS
     checksums    rmd160 0765543ffdc36df568012640422fda8c70809f62 \
-                 sha256 a6b4055c5d2d007c978c6577d87151ce9d505d6f5c116f0d20f176497424147e \
-                 size   2463897
+sha256 a6b4055c5d2d007c978c6577d87151ce9d505d6f5c116f0d20f176497424147e \
+size   2463897
     revision     5
 
     # set the version override string
@@ -119,8 +119,8 @@ Provides the UHD GIT maint or master branch, depending on which is more advanced
     github.setup    EttusResearch uhd b54fb54b72269ca842ef5b42af30d3d7a22ee236
     version         20210514-[string range ${github.version} 0 7]
     checksums       rmd160  1ce87663c8a0f10a37de9bd479c487b79f777228 \
-                    sha256  d5b4f484674886d822f1f87583f2641508f389b2a07920149ce6c287197ebb12 \
-                    size    34073628
+sha256  d5b4f484674886d822f1f87583f2641508f389b2a07920149ce6c287197ebb12 \
+size    34073628
     revision        1
 
     conflicts       uhd uhd-39lts
@@ -216,7 +216,7 @@ if {${configure.cxx_stdlib} eq "macports-libstdc++" ||
     # being c++11 capable, even though some are. set this and hope for
     # the best.
 
-    configure.cxxflags-append -std=gnu++11
+    configure.cxxflags-append -std=c++17
 
     # when using GCC on older OSX, certain math functions will not be
     # part of std:: without this macro defined. This macro required

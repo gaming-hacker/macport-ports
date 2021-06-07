@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         Cache-FastMmap 1.56
 platforms           darwin
 license             {Artistic-1 GPL}
@@ -12,8 +12,8 @@ description         Uses an mmap'ed file to act as a shared memory interprocess 
 long_description    ${description}
 
 checksums           rmd160  d054135d5d1181c1982218e44518a049ef9df26b \
-                    sha256  8becaf0dacc876e9f60f4737104b79fd4e343d6fd984cef7d7a6dd14516b2159 \
-                    size    56713
+sha256  8becaf0dacc876e9f60f4737104b79fd4e343d6fd984cef7d7a6dd14516b2159 \
+size    56713
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -15,8 +15,8 @@ master_sites        https://libopenraw.freedesktop.org/download/
 use_bzip2           yes
 
 checksums           rmd160  17219342d5b71aed30bda82d81401539383e8d6d \
-                    sha256  52f54314aefd45945d47a6ecf4bd21f362e6467fa5d0538b0d45a06bc6eaaed5 \
-                    size    3658606
+sha256  52f54314aefd45945d47a6ecf4bd21f362e6467fa5d0538b0d45a06bc6eaaed5 \
+size    3658606
 
 description         Exempi is an implementation of XMP.
 
@@ -34,7 +34,7 @@ if {[vercmp $xcodeversion 4.3] < 0 && [string match "*macports*" ${configure.com
 patchfiles          limits.patch \
                     stdlib.patch
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args      --enable-unittest=no \
                     --disable-silent-rules

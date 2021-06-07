@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -27,8 +27,8 @@ distname            SPARSKIT2
 dist_subdir         ${name}/${version}
 
 checksums           rmd160  77a75cd20678b190814084c28e4b72533210e9cd \
-                    sha256  ecdd0a9968d6b45153a328710a42fe87600f0bba0e3c53896090b8ae1c113b7a \
-                    size    1287441
+sha256  ecdd0a9968d6b45153a328710a42fe87600f0bba0e3c53896090b8ae1c113b7a \
+size    1287441
 
 use_configure       no
 

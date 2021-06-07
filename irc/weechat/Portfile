@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -13,8 +13,8 @@ name                weechat
 version             3.1
 revision            0
 checksums           rmd160  de2cd7e33bda4d6c4092e9ac12afcaa28de02568 \
-                    sha256  a55a2975aa119f76983412507e3ddb3fe68d0744e08739681ddc17744e77a4f7 \
-                    size    2230316
+sha256  a55a2975aa119f76983412507e3ddb3fe68d0744e08739681ddc17744e77a4f7 \
+size    2230316
 
 master_sites        https://weechat.org/files/src/
 use_xz              yes
@@ -86,12 +86,12 @@ variant python36 description "Bindings for python 3.6 plugins" conflicts python2
 
 variant python37 description "Bindings for python 3.7 plugins" conflicts python27 python36 python38 python39 {
     configure.args-replace  -DENABLE_PYTHON=OFF -DENABLE_PYTHON=ON
-    depends_lib-append      port:python37
+    depends_lib-append      port:python39
 }
 
 variant python38 description "Bindings for python 3.8 plugins" conflicts python27 python36 python37 python39 {
     configure.args-replace  -DENABLE_PYTHON=OFF -DENABLE_PYTHON=ON
-    depends_lib-append      port:python38
+    depends_lib-append      port:python39
 }
 
 variant python39 description "Bindings for python 3.9 plugins" conflicts python27 python36 python37 python38 {

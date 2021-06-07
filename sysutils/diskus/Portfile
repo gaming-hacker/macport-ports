@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,14 +14,14 @@ license             {MIT Apache-2}
 description         A minimal, fast alternative to 'du -sh'
 
 long_description    diskus is a very simple program that computes the apparent \
-    size of the current directory. It is a parallelized version of du -sh. On \
+size of the current directory. It is a parallelized version of du -sh. On \
     the developer's 8-core laptop, it is about 10x faster than du with a cold \
     disk cache and more than 3x faster with a warm disk cache.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  b4d4e67914108ea541ef9951a97fb3eba5c1798b \
-                    sha256  b33c39bc5078c262933a6beb2defe3679e386da3a6e5427c7063088e4bc6344a \
-                    size    16281
+rmd160  b4d4e67914108ea541ef9951a97fb3eba5c1798b \
+sha256  b33c39bc5078c262933a6beb2defe3679e386da3a6e5427c7063088e4bc6344a \
+size    16281
 
 cargo.crates \
     ansi_term                       0.11.0  ee49baf6cb617b853aa8d93bf420db2383fab46d314482ca2803b40d5fde979b \

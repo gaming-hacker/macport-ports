@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       github 1.0
@@ -7,8 +7,8 @@ PortGroup                       cmake 1.1
 github.setup                    Tencent rapidjson 1.1.0 v
 
 checksums                       rmd160  34724d9db66afadc3273f26d77efae8cb0322980 \
-                                sha256  f3987b47054748cf099a22001d0cbd6963aaccbdce789e800558822c1b2d8356 \
-                                size    1019591
+sha256  f3987b47054748cf099a22001d0cbd6963aaccbdce789e800558822c1b2d8356 \
+size    1019591
 
 license                         MIT
 categories                      devel
@@ -29,7 +29,7 @@ patchfiles-append               patch-flags.diff \
 
 installs_libs                   no
 
-compiler.cxx_standard           2011
+compiler.cxx_standard 2017
 
 configure.args-append           -DRAPIDJSON_BUILD_DOC=OFF \
                                 -DRAPIDJSON_BUILD_EXAMPLES=OFF \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    The Save for Web plug-in allows you to export your images\
                     automatically updated preview and file size statistics.\n
 
 checksums           rmd160  fa071b851c52ced37dbdd2d4fe08d9cb8e373b01 \
-                    sha256  3933f62bf31229a0f170d7145ee74cf2dadb7062dda9630ef6f3544b1de3fafc \
-                    size    67035
+sha256  3933f62bf31229a0f170d7145ee74cf2dadb7062dda9630ef6f3544b1de3fafc \
+size    67035
 
 patchfiles          patch-autogen.sh.diff
 

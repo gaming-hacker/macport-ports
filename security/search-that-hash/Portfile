@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ long_description    {*}${description}. Search-That-Hash automates this process \
 homepage            https://github.com/HashPals/${name}
 
 checksums           rmd160  a25ce484f648f300f70384fc0d5eef8208151ee7 \
-                    sha256  384498abbb9a611aa173b20d06b135e013674670fecc01b34d456bfe536e0bca \
-                    size    24513
+sha256  384498abbb9a611aa173b20d06b135e013674670fecc01b34d456bfe536e0bca \
+size    24513
 
 depends_lib-append  port:py${python.version}-setuptools
 

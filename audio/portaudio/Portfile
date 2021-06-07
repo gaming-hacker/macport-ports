@@ -1,4 +1,4 @@
-# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ homepage            http://www.portaudio.com/
 github.setup        Portaudio portaudio 147dd722548358763a8b649b3e4b41dfffbcfbb6
 version             20210401-[string range ${github.version} 0 7]
 checksums           rmd160  2449e768b762c5c1777dd3c2a291e3cdbe9dc30c \
-                    sha256  d29bbe2b5a6f9447571e738a65c09239da61e73eae7d3b6ffd7cb7a32b2a8709 \
-                    size    1463021
+sha256  d29bbe2b5a6f9447571e738a65c09239da61e73eae7d3b6ffd7cb7a32b2a8709 \
+size    1463021
 revision            0
 
 # By default, PortAudio is built as a universal binary.

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    ${description}
 homepage            https://github.com/nucleic/cppy
 
 checksums           rmd160  4ff906130cd679a2f5e0781b6f2e3e1fc16b2093 \
-                    sha256  4eda6f1952054a270f32dc11df7c5e24b259a09fddf7bfaa5f33df9fb4a29642 \
-                    size    11777
+sha256  4eda6f1952054a270f32dc11df7c5e24b259a09fddf7bfaa5f33df9fb4a29642 \
+size    11777
 
 python.versions     27 35 36 37 38 39
 

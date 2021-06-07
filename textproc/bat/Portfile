@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ maintainers         {l2dy @l2dy} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  e0f4c465a306c942bc061ff46986c60ec532b984 \
-                    sha256  ab5246c3bec8745c14ca9a0473971f00fbce2fdc1ce7842e0a96676ee5eac2af \
-                    size    1367858
+rmd160  e0f4c465a306c942bc061ff46986c60ec532b984 \
+sha256  ab5246c3bec8745c14ca9a0473971f00fbce2fdc1ce7842e0a96676ee5eac2af \
+size    1367858
 
 # For crate:onig_sys
 depends_build       path:bin/cmake:cmake

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           deprecated 1.0
@@ -23,8 +23,8 @@ master_sites        https://launchpad.net/${name}/trunk/${branch}/+download/
 distname            ${name}_${version}.orig
 
 checksums           rmd160  7c2ba48fba76ab07a9ee1e4e3c788844bcef4b2c \
-                    sha256  2f9ec46d1537cb5677b717dcaf5668cdc61a84456bc52178b40595759ba35655 \
-                    size    1259520
+sha256  2f9ec46d1537cb5677b717dcaf5668cdc61a84456bc52178b40595759ba35655 \
+size    1259520
 
 depends_lib         port:python27
 

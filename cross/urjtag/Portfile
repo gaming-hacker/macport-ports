@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ platforms           darwin
 master_sites        sourceforge
 use_xz              yes
 checksums           rmd160  5a064ba37ffedcd6f8e57506947ac5d6c4ea5af1 \
-                    sha256  b0a2eaa245513af096dc4d770109832335c694c6c12aa5e92fefae8685416f1c \
-                    size    1208440
+sha256  b0a2eaa245513af096dc4d770109832335c694c6c12aa5e92fefae8685416f1c \
+size    1208440
 
 depends_lib         port:pkgconfig \
                     port:libftdi0

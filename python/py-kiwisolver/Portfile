@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ long_description    Kiwi is an implementation of the algorithm based on the\
                     consistently > 5x.
 
 checksums           rmd160  7a15351ee5623f716af09ce836da65ad29a67875 \
-                    sha256  3e99002c45abf1217b212bbd1f6ae9427b97a4f9e693a2e69cce348c5217fe9a \
-                    size    86974
+sha256  3e99002c45abf1217b212bbd1f6ae9427b97a4f9e693a2e69cce348c5217fe9a \
+size    86974
 
 python.versions     27 35 36 37 38 39
 
@@ -33,10 +33,10 @@ if {${name} ne ${subport}} {
         github.setup    nucleic kiwi 1.1.0
         revision        0
         checksums       rmd160  96f6c040491c7f4d279cf0b26b3704661a6621bb \
-                        sha256  40c64d1d47ff5e3bdde95b41021f4d90f6e77fbe949c66daf390e1a0a71cc7cb \
-                        size    55105
+sha256  40c64d1d47ff5e3bdde95b41021f4d90f6e77fbe949c66daf390e1a0a71cc7cb \
+size    55105
     } else {
-        compiler.cxx_standard   2011
+        compiler.cxx_standard 2017
 
         depends_build-append \
                     port:py${python.version}-cppy

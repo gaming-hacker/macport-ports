@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,8 +28,8 @@ long_description \
 homepage            https://sympy.org/
 
 checksums           rmd160  d78dc98a825d2faa7d4a1019a28812c0c7c1aba9 \
-                    sha256  1ca588a9f6ce6a323c5592f9635159c2093572826668a1022c75c75bdf0297cb \
-                    size    6629633
+sha256  1ca588a9f6ce6a323c5592f9635159c2093572826668a1022c75c75bdf0297cb \
+size    6629633
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -40,8 +40,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  ea2680ccf760b469d393c72b5e1f585545231fbf \
-                            sha256  d77901d748287d15281f5ffe5b0fef62dd38f357c2b827c44ff07f35695f4e7e \
-                            size    6294719
+sha256  d77901d748287d15281f5ffe5b0fef62dd38f357c2b827c44ff07f35695f4e7e \
+size    6294719
     }
 
     depends_run         port:py-sympy_select

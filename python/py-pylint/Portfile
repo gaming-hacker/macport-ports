@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,8 +30,8 @@ long_description    Pylint is a tool that checks for errors in python code, \
 homepage            https://pylint.org
 
 checksums           rmd160  9a7be8abac1db0d12d5f0cc2252cceef6962f05b \
-                    sha256  586d8fa9b1891f4b725f587ef267abe2a1bad89d6b184520c7f07a253dd6e217 \
-                    size    745627
+sha256  586d8fa9b1891f4b725f587ef267abe2a1bad89d6b184520c7f07a253dd6e217 \
+size    745627
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -48,8 +48,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  763a56b52da567df22a09caa965da3e15dccbd9a \
-                            sha256  ee1e85575587c5b58ddafa25e1c1b01691ef172e139fc25585e5d3f02451da93 \
-                            size    519076
+sha256  ee1e85575587c5b58ddafa25e1c1b01691ef172e139fc25585e5d3f02451da93 \
+size    519076
 
         depends_build-append \
                             port:py${python.version}-pytest-runner
@@ -70,8 +70,8 @@ if {${name} ne ${subport}} {
                             port:py${python.version}-pytest-runner
 
         checksums           rmd160  0244d65adb569dc35ccf3215576d5579162690bb \
-                            sha256  718b74786ea7ed07aa0c58bf572154d4679f960d26e9641cc1de204a30b87fc9 \
-                            size    680364
+sha256  718b74786ea7ed07aa0c58bf572154d4679f960d26e9641cc1de204a30b87fc9 \
+size    680364
     }
 
     depends_run-append  port:pylint_select

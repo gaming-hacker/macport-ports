@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                           1.0
 PortGroup           python           1.0
@@ -11,8 +11,8 @@ github.setup        explosion srsly 2.4.1 v
 revision            0
 
 checksums           rmd160  fb2be1a18c888a2c03fc910d6bf7c42afb4c1995 \
-                    sha256  0525a450c141bc96f231061b0b004a6010d2d5960127ff7a715b0d3f25be516a \
-                    size    359734
+sha256  0525a450c141bc96f231061b0b004a6010d2d5960127ff7a715b0d3f25be516a \
+size    359734
 
 platforms           darwin
 supported_archs     x86_64
@@ -25,7 +25,7 @@ description         Modern high-performance serialization utilities for Python
 long_description    {*}${description}
 
 # Supported python versions
-python.versions     36 37 38 39
+python.versions 37 39
 
 if {${name} ne ${subport}} {
 

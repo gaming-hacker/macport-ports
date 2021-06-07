@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -26,10 +26,10 @@ maintainers             {gmail.com:herby.gillot @herbygillot} \
                         openmaintainer
 
 checksums               rmd160  baa878957826da61239b8ec11eaa267e80b91806 \
-                        sha256  2c4e8b3d3cd2298fe2e94aa2cc35d8e0ca1b2d3232ed2531b11226504c08a531 \
-                        size    1538340
+sha256  2c4e8b3d3cd2298fe2e94aa2cc35d8e0ca1b2d3232ed2531b11226504c08a531 \
+size    1538340
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 # Needed for - error: unknown attribute 'no_sanitize' ignored [-Werror,-Wattributes]
 compiler.blacklist-append {clang < 800}
 

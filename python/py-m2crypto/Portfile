@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 PortGroup          python 1.0
@@ -19,8 +19,8 @@ homepage           https://pypi.python.org/pypi/${python.rootname}
 master_sites       pypi:m/${python.rootname}/
 distname           M2Crypto-${version}
 checksums          size    1127584 \
-                   rmd160  e813fd1da12a8b8a5550931129d29977a25cef5d \
-                   sha256  1542c18e3ee5c01db5031d0b594677536963e3f54ecdf5315aeecb3a595b4dc1
+rmd160  e813fd1da12a8b8a5550931129d29977a25cef5d \
+sha256  1542c18e3ee5c01db5031d0b594677536963e3f54ecdf5315aeecb3a595b4dc1
 
 python.versions    27 35 36 37 38 39
 

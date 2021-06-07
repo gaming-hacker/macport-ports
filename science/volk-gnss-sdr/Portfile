@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,7 +15,7 @@ platforms           darwin
 
 dist_subdir         gnss-sdr
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 
 if {${subport} eq "volk-gnss-sdr"} {
 
@@ -25,8 +25,8 @@ if {${subport} eq "volk-gnss-sdr"} {
     github.setup        gnss-sdr gnss-sdr 0.0.14 v
     revision            1
     checksums           rmd160 71e9bbb7e125396be06d97b26f333e9e2bb4a9be \
-                        sha256 48ba64073a995aa6f835c7a0cb775a741db9475359b036ca4245a65a6c1135fd \
-                        size   4269976
+sha256 48ba64073a995aa6f835c7a0cb775a741db9475359b036ca4245a65a6c1135fd \
+size   4269976
 
     conflicts           volk-gnss-sdr-devel
 
@@ -40,8 +40,8 @@ subport volk-gnss-sdr-devel {
     github.setup gnss-sdr gnss-sdr 3c74930c7d253c70b9ab52e6a76ab8f6a155810e
     version   20210531-[string range ${github.version} 0 7]
     checksums rmd160 8449855911e5fd114a8b4141fd8a9741d0f5dc0f \
-              sha256 9d81599ed7cbcc5b5658040408353133b5791bf15b310031524a5e8b4fa81571 \
-              size   4349096
+sha256 9d81599ed7cbcc5b5658040408353133b5791bf15b310031524a5e8b4fa81571 \
+size   4349096
     revision  0
 
     conflicts volk-gnss-sdr

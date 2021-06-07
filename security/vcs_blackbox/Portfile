@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    Storing secrets such as passwords, certificates and private 
                     decrypted for editing or use in production.
 
 checksums           rmd160  5ebc221f93376403dcc2d557cf1a335de224e453 \
-                    sha256  9eed47f8ec5156f52c8db32d6d9def0d61e646140ee4b91aedda529443989c21 \
-                    size    98555
+sha256  9eed47f8ec5156f52c8db32d6d9def0d61e646140ee4b91aedda529443989c21 \
+size    98555
 
 use_configure       no
 

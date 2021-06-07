@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/pyca/bcrypt/
 
 checksums           rmd160  9951fe8a02e31a4df63e6e225ef6d847e705fdc9 \
-                    sha256  5b93c1726e50a93a033c36e5ca7fdcd29a5c7395af50a6892f5d9e7c6cfbfb29 \
-                    size    42416
+sha256  5b93c1726e50a93a033c36e5ca7fdcd29a5c7395af50a6892f5d9e7c6cfbfb29 \
+size    42416
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -34,8 +34,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  af0842db4fab9714b313a29310be5a56e6e1356d \
-                            sha256  0b0069c752ec14172c5f78208f1863d7ad6755a6fae6fe76ec2c80d13be41e42 \
-                            size    42512
+sha256  0b0069c752ec14172c5f78208f1863d7ad6755a6fae6fe76ec2c80d13be41e42 \
+size    42512
         depends_lib-append  port:py${python.version}-six
     }
 

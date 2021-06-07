@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         DBD-SQLite 1.66
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  8ae5918e9ea523219b63432104b1e8549ef30046 \
-                    sha256  89e75dff9f66c273e0e459d51f151f88960eb7d82e2821e6902f18688ba592fe \
-                    size    2483436
+sha256  89e75dff9f66c273e0e459d51f151f88960eb7d82e2821e6902f18688ba592fe \
+size    2483436
 
 # uses embedded sqlite currently version 3.32.3
 if {${perl5.major} != ""} {

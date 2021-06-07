@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem        1.0
 
@@ -25,8 +25,8 @@ use_xz            yes
 patchfiles          0001-Fix-macros-for-accept4-2.patch
 
 checksums           rmd160  f8ca8158424b0befd272a136cd3f97416dff76dd \
-                    sha256  b9f1b981d6b3fd4e1820de1eee325f8a7038c84765d5a6cd9af12571d5cc3622 \
-                    size    313072
+sha256  b9f1b981d6b3fd4e1820de1eee325f8a7038c84765d5a6cd9af12571d5cc3622 \
+size    313072
 
 depends_build       port:coreutils
 

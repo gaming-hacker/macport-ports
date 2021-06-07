@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -48,13 +48,13 @@ if {$subport eq $name} {
                         ${boost_distname}${extract.suffix}:boost
 
     checksums           ${distname}${extract.suffix} \
-                        rmd160  02db9b49f9d668bf01ba5ea44a5d9ddeb05d8d70 \
-                        sha256  c16aa9cf621bc028efba2bb11f3c36a323b125fa0d108ff92fab60e46309206e \
-                        size    283594762 \
+rmd160  02db9b49f9d668bf01ba5ea44a5d9ddeb05d8d70 \
+sha256  c16aa9cf621bc028efba2bb11f3c36a323b125fa0d108ff92fab60e46309206e \
+size    283594762 \
                         ${boost_distname}${extract.suffix} \
-                        rmd160  47f3dad1ddb5e1e9f367f05a4019d5fac48a2e3b \
-                        sha256  9995e192e68528793755692917f9eb6422f3052a53c5e13ba278a228af6c7acf \
-                        size    128699082
+rmd160  47f3dad1ddb5e1e9f367f05a4019d5fac48a2e3b \
+sha256  9995e192e68528793755692917f9eb6422f3052a53c5e13ba278a228af6c7acf \
+size    128699082
 
     depends_lib-append  path:lib/libssl.dylib:openssl \
                         port:cyrus-sasl2 \
@@ -69,7 +69,7 @@ if {$subport eq $name} {
 
     use_parallel_build  yes
 
-    compiler.cxx_standard 2014
+    compiler.cxx_standard 2017
 
     # TODO: explain why these compilers are blacklisted
     compiler.blacklist-append *gcc-5 {clang < 900}

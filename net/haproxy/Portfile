@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -31,8 +31,8 @@ master_sites        ${homepage}download/${branch}/src/ \
                     https://sources.openwrt.org/
 
 checksums           rmd160  3395bfd3d1b5e112759670da9e8c9245e8d2f8b1 \
-                    sha256  0a6962adaf5a1291db87e3eb4ddf906a72fed535dbd2255b164b7d8394a53640 \
-                    size    3570069
+sha256  0a6962adaf5a1291db87e3eb4ddf906a72fed535dbd2255b164b7d8394a53640 \
+size    3570069
 
 depends_lib         path:lib/libssl.dylib:openssl \
                     port:pcre \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -22,8 +22,8 @@ homepage            http://www.octopus-code.org
 master_sites        ${homepage}/download/${version}
 
 checksums           rmd160  be549d6f8ecd94790aa18b78ec1e1bf8d01e96a9 \
-                    sha256  4633490e21593b51b60a8391b8aa0ed17fa52a3a0030630de123b67a41f88b33 \
-                    size    50078155
+sha256  4633490e21593b51b60a8391b8aa0ed17fa52a3a0030630de123b67a41f88b33 \
+size    50078155
 
 compilers.choose    fc cc cxx
 mpi.setup           require_fortran -g95 -clang -gfortran
@@ -64,7 +64,7 @@ pre-configure {
 
     if {![gcc_variant_isset]} {
         # needed for clang; clang_variant_isset would miss case of default clang compiler.
-        configure.cxxflags-append "-std=c++11"
+        configure.cxxflags-append "-std=c++17"
     }
 
     if {[variant_isset gcc10]} {

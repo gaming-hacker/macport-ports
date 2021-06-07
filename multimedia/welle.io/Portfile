@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               qt5 1.0
@@ -102,8 +102,8 @@ if {${subport} eq ${name}} {
     conflicts               welle.io-devel
 
     checksums               rmd160  f7d8290701e86e3859cf165910c0228ad63e965b \
-                            sha256  e7aa936bf46499ce0abbbf617dd7984ccdaade955a5afb0c86886a0873f015c0 \
-                            size    6771774
+sha256  e7aa936bf46499ce0abbbf617dd7984ccdaade955a5afb0c86886a0873f015c0 \
+size    6771774
 
     configure.pre_args-append \
         -DGIT_COMMIT_HASH=${version}
@@ -116,8 +116,8 @@ if {${subport} eq ${name}} {
     conflicts               welle.io
 
     checksums               rmd160  b59b2c23af4405b0220980b21fa7c5da0f9640cb \
-                            sha256  84bcd5835e462bc2cb829df594ecc0accaa6e2c232c8ba1bc75dbf0cd30fdb3c \
-                            size    6772022
+sha256  84bcd5835e462bc2cb829df594ecc0accaa6e2c232c8ba1bc75dbf0cd30fdb3c \
+size    6772022
 
     configure.pre_args-append \
         -DGIT_COMMIT_HASH=${githash}

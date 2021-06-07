@@ -14,8 +14,8 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  c646ee5d658eb51c11de44190532340be3cedf85 \
-                    sha256  ef886926dd97d5b4ff37c80f8ba27a780d951629465303bd53d47a941972599b \
-                    size    68096
+sha256  ef886926dd97d5b4ff37c80f8ba27a780d951629465303bd53d47a941972599b \
+size    68096
 
 if {${name} ne ${subport}} {
     post-destroot {

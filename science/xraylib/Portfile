@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -23,8 +23,8 @@ long_description    ${name} provides an API with over 50 functions designed \
                     Lua, Ruby, PHP and .NET.
 
 checksums           rmd160  f690e335bcb41df7a5a32a8c717059886d2bfe34 \
-                    sha256  a22a73b8d90eb752b034bab1a4cf6abdd81b8c7dc5020bcb22132d2ee7aacd42 \
-                    size    7662773
+sha256  a22a73b8d90eb752b034bab1a4cf6abdd81b8c7dc5020bcb22132d2ee7aacd42 \
+size    7662773
 
 compilers.choose    fc
 compilers.setup
@@ -45,8 +45,8 @@ configure.ccache    no
 
 perl5.require_variant yes
 perl5.conflict_variants yes
-perl5.branches 5.28 5.30
-perl5.default_branch 5.28
+perl5.branches 5.30
+perl5.default_branch 5.30
 perl5.create_variants ${perl5.branches}
 
 if {[variant_isset perl5_28] || [variant_isset perl5_30]} {
@@ -67,22 +67,22 @@ variant python27 description {Python 2.7 bindings} conflicts python37 python38 {
 }
 
 variant python37 description {Python 3.7 bindings} conflicts python27 python38 {
-    configure.args-append --enable-python --enable-python-integration --enable-python-numpy PYTHON=${prefix}/bin/python3.7
+    configure.args-append --enable-python --enable-python-integration --enable-python-numpy PYTHON=${prefix}/bin/python3.9
     configure.args-delete --disable-python --disable-python-numpy
-    depends_build-append port:swig-python port:py37-cython
-    depends_lib-append port:python37 port:py37-numpy
+    depends_build-append port:swig-python port:py39-cython
+    depends_lib-append port:python39 port:py39-numpy
     post-extract {
-        reinplace "s|/usr/bin/env python|${prefix}/bin/python3.7|g" ${worksrcpath}/python/xraylib
+        reinplace "s|/usr/bin/env python|${prefix}/bin/python3.9|g" ${worksrcpath}/python/xraylib
     }
 }
 
 variant python38 description {Python 3.8 bindings} conflicts python27 python37 {
-    configure.args-append --enable-python --enable-python-integration --enable-python-numpy PYTHON=${prefix}/bin/python3.8
+    configure.args-append --enable-python --enable-python-integration --enable-python-numpy PYTHON=${prefix}/bin/python3.9
     configure.args-delete --disable-python --disable-python-numpy
-    depends_build-append port:swig-python port:py38-cython
-    depends_lib-append port:python38 port:py38-numpy
+    depends_build-append port:swig-python port:py39-cython
+    depends_lib-append port:python39 port:py39-numpy
     post-extract {
-        reinplace "s|/usr/bin/env python|${prefix}/bin/python3.8|g" ${worksrcpath}/python/xraylib
+        reinplace "s|/usr/bin/env python|${prefix}/bin/python3.9|g" ${worksrcpath}/python/xraylib
     }
 }
 
@@ -123,7 +123,7 @@ if {[fortran_variant_isset]} {
 }
 
 if {![variant_isset python27] && ![variant_isset python37] && ![variant_isset python38]} {
-    default_variants    +python38
+    default_variants +python39
 }
 
 test.run  yes

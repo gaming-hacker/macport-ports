@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ long_description    The purpose of libfixposix is to offer replacements \
 
 github.setup        sionescu libfixposix 0.4.3 v
 checksums           rmd160  be4e4c741f4a8a3e969af67417222506179d0cf5 \
-                    sha256  6537a6ed4c263e774cef3cf686422a288766cb88fa93299528ca3b19292b8988 \
-                    size    40398
+sha256  6537a6ed4c263e774cef3cf686422a288766cb88fa93299528ca3b19292b8988 \
+size    40398
 
 # avoid collision with c++17 header <version>
 patchfiles          patch-version-txt.diff

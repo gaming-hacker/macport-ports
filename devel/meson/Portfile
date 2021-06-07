@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,18 +24,18 @@ long_description    Meson is a build system designed to optimize programmer prod
                     as user friendly as possible.
 
 checksums           rmd160  741aff38cfab30963efc044f47216fe688514760 \
-                    sha256  72e1c782ba9bda204f4a1ed57f98d027d7b6eb9414c723eebbd6ec7f1955c8a6 \
-                    size    1849222
+sha256  72e1c782ba9bda204f4a1ed57f98d027d7b6eb9414c723eebbd6ec7f1955c8a6 \
+size    1849222
 
 # as of verison 0.45.0,requires python 3.5 or better
 
-python.versions         36 37 38 39
+python.versions 37 39
 python.default_version  39
 python.link_binaries    no
 
 # python39 has an issue on 10.5 and less and py39-setuptools cannot be installed
 if {${os.platform} eq "darwin" && ${os.major} <= 9} {
-    python.default_version  38
+    python.default_version 39
 }
 
 depends_build-append \
@@ -74,8 +74,8 @@ platform darwin 8 {
     github.setup        mesonbuild meson 0.55.3
     revision            1
     checksums           rmd160  b1e7f12184a7a61ae8bfa7ed210af8020d531009 \
-                        sha256  6bed2a25a128bbabe97cf40f63165ebe800e4fcb46db8ab7ef5c2b5789f092a5 \
-                        size    1740465
+sha256  6bed2a25a128bbabe97cf40f63165ebe800e4fcb46db8ab7ef5c2b5789f092a5 \
+size    1740465
 
     # https://github.com/mesonbuild/meson/pull/7871
     patchfiles-append   patch-meson-powermacintosh.diff

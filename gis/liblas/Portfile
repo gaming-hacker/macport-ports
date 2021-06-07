@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.1
@@ -9,8 +9,8 @@ github.setup        libLAS libLAS 70a170b086cbd8b639f500d8d40d90b05fcccb04
 version             1.8.1-20210507
 revision            2
 checksums           rmd160  c9a134f8dbfc76035d1a902a0ba1f194bbf3f0dd \
-                    sha256  5a72982cf00d2562284fd394055e7c2bdc38f391a38ce2eab99d913a662b812d \
-                    size    10743378
+sha256  5a72982cf00d2562284fd394055e7c2bdc38f391a38ce2eab99d913a662b812d \
+size    10743378
 
 name                liblas
 license             BSD
@@ -28,7 +28,7 @@ long_description \
 homepage            https://liblas.org/
 github.tarball_from archive
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 patchfiles          patch-gt_wkt_srs_cpp.diff
 

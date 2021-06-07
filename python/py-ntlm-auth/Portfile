@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ long_description    The goal of this library is to offer full NTLM support \
 homepage            https://github.com/jborean93/ntlm-auth
 
 checksums           rmd160  898989eefc29be237d1fc5dda4bbd3f4f574f355 \
-                    sha256  c9667d361dc09f6b3750283d503c689070ff7d89f2f6ff0d38088d5436ff8543 \
-                    size    28872
+sha256  c9667d361dc09f6b3750283d503c689070ff7d89f2f6ff0d38088d5436ff8543 \
+size    28872
 
 if {${name} ne ${subport}} {
     depends_build-append  \

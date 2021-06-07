@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -34,13 +34,13 @@ master_sites        ${github.master_sites}:main \
                     https://github.com/publicsuffix/list/archive/${psl_data_commit}:list
 
 checksums           ${main_distfile} \
-                    rmd160  1abd98152f3e4b2a7f2b647beea335867ec63cf3 \
-                    sha256  ac6ce1e1fbd4d0254c4ddb9d37f1fa99dec83619c1253328155206b896210d4c \
-                    size    9199351 \
+rmd160  1abd98152f3e4b2a7f2b647beea335867ec63cf3 \
+sha256  ac6ce1e1fbd4d0254c4ddb9d37f1fa99dec83619c1253328155206b896210d4c \
+size    9199351 \
                     ${psl_data_distfile} \
-                    rmd160  b1c374a5948decc2ac1e9ab29944d1f24c73843d \
-                    sha256  34ba40127865ff69a80dbc73e00a0cb3f4794e3af7605348f6b95cc80feab8ed \
-                    size    95990
+rmd160  b1c374a5948decc2ac1e9ab29944d1f24c73843d \
+sha256  34ba40127865ff69a80dbc73e00a0cb3f4794e3af7605348f6b95cc80feab8ed \
+size    95990
 
 # Please note this port is (indirectly, via cmake) a dependency of the
 # various clang-X ports. When updating the port versions (e.g. python)

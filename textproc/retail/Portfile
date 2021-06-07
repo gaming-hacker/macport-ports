@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ homepage            http://xjack.org/retail/
 master_sites        ${homepage}download/
 
 checksums           rmd160  68e8e46904eda68466beadb24a566d4314299d5d \
-                    sha256  e5795a3ef1464e1dfe1930d29abcf142f724d428cf3c4081b8fe048b262723e6 \
-                    size    63180
+sha256  e5795a3ef1464e1dfe1930d29abcf142f724d428cf3c4081b8fe048b262723e6 \
+size    63180
 
 patchfiles          patch-src-Makefile.in.diff
 

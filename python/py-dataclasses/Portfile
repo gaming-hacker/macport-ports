@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    ${description}
 homepage            https://github.com/ericvsmith/dataclasses
 
 checksums           rmd160  84c33b203979c37df503d9a6393fcd1d1a279daf \
-                    sha256  8479067f342acf957dc82ec415d355ab5edb7e7646b90dc6e2fd1d96ad084c97 \
-                    size    36581
+sha256  8479067f342acf957dc82ec415d355ab5edb7e7646b90dc6e2fd1d96ad084c97 \
+size    36581
 
 # dataclasses are included in Python 3.7 and above, do not add any other versions here
 python.versions     36

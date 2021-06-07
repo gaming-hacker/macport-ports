@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -39,8 +39,8 @@ depends_lib-append      port:libuv \
                         lib:libuuid:libuuid
 
 checksums               rmd160  f029a3324d088ce7829e2363785c63beeab8fc82 \
-                        sha256  eeba8b18519a9123a3cc8b450dcd042e23a3b145a78a7017a14c47ed36d923df \
-                        size    6737320
+sha256  eeba8b18519a9123a3cc8b450dcd042e23a3b145a78a7017a14c47ed36d923df \
+size    6737320
 
 configure.args          --disable-dependency-tracking \
                         --disable-silent-rules \
@@ -115,8 +115,8 @@ subport ${name}-dashboard {
     distname            dashboard
 
     checksums           rmd160  1c0c4b221bb64a651f5f3a2bec7f80ab1535959d \
-                        sha256  5b791a3a5a5beee411877e687b0f1a852b6ed87178952402714d44c4659abdae \
-                        size    6315714
+sha256  5b791a3a5a5beee411877e687b0f1a852b6ed87178952402714d44c4659abdae \
+size    6315714
 
     extract.only
 

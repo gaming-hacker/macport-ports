@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    U-Boot is a boot loader for Embedded boards based on \
                     deploy u-boot on embedded devices.
 
 checksums           rmd160  25357e70695de9aac1cee2a752cb4fd82def66ed \
-                    sha256  0c022ca6796aa8c0689faae8b515eb62ac84519c31de3153257a9ee0f446618f \
-                    size    20176030
+sha256  0c022ca6796aa8c0689faae8b515eb62ac84519c31de3153257a9ee0f446618f \
+size    20176030
 
 depends_build       port:gmake
 

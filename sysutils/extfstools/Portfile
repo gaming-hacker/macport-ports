@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         Some tools for reading ext2/ext3/ext4 filesystem images
 long_description    ${description}
 
 checksums           rmd160  ca8eb7a48413c34902489347493a255a059603fe \
-                    sha256  f3350afc26a88fa81b5bb0c606900bea8701bf9f372e0794fc4b5e0a9837dd9c \
-                    size    44676
+sha256  f3350afc26a88fa81b5bb0c606900bea8701bf9f372e0794fc4b5e0a9837dd9c \
+size    44676
 
 use_configure       no
 

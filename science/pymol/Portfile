@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ long_description    PyMOL is a molecular graphics system with an embedded Python
 homepage            https://www.pymol.org/
 
 checksums           rmd160  6432d47616aee1e5d9d40cc2a74425b33159d7a0 \
-                    sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
-                    size    10471287
+sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
+size    10471287
 
 subport pymol-devel {
     github.setup    schrodinger pymol-open-source 4a3c72ace1f8e39e80db4026d45222f8b7a44169
@@ -32,8 +32,8 @@ subport pymol-devel {
     revision        0
     maintainers     {reneeotten @reneeotten} openmaintainer
     checksums       rmd160  b8f596935a043a3ecde7b8f0e1c914b74277d1d0 \
-                    sha256  92f39021487fa1c3da1840721c7ad4c3992dfcb54d73fef27fb30842828425a8 \
-                    size    10469954
+sha256  92f39021487fa1c3da1840721c7ad4c3992dfcb54d73fef27fb30842828425a8 \
+size    10469954
 }
 
 variant python36 conflicts python37 python38 python39 description {Use Python 3.6} {}
@@ -44,16 +44,16 @@ variant python39 conflicts python36 python37 python38 description {Use Python 3.
 if {[variant_isset python36]} {
     python.default_version 36
 } elseif {[variant_isset python37]} {
-    python.default_version 37
+    python.default_version 39
 } elseif {[variant_isset python38]} {
-    python.default_version 38
+    python.default_version 39
 } else {
     default_variants +python39
     python.default_version 39
 }
 python.link_binaries no
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_lib-append  port:freetype \
                     port:glew \

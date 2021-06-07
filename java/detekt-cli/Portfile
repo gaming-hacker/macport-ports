@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java    1.0
@@ -22,8 +22,8 @@ github.tarball_from archive
 
 distname            v${version}
 checksums           sha256  61d6c0fe68a5510b77b3212e73bd612ddb3be8842e6ecf97c8eaf5316d2d0ede \
-                    rmd160  4ffe331edb7c65be252dd2966304343833207c25 \
-                    size    2600608
+rmd160  4ffe331edb7c65be252dd2966304343833207c25 \
+size    2600608
 
 java.fallback       openjdk11
 java.version        1.8+

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem              1.0
 PortGroup               github 1.0
 PortGroup               makefile 1.0
@@ -15,8 +15,8 @@ description             A tiling window manager for macOS based on binary space 
 long_description        yabai is a window management utility that is designed to work as an extension to the built-in window manager of macOS.
 
 checksums               rmd160  cdc578bf4ce270c42336538d08d2c8156f16b86d \
-                        sha256  469c91f4264d722c835c8f2e978e55affe3064d7ad5da32756fd3ea2188945f6 \
-                        size    1515098
+sha256  469c91f4264d722c835c8f2e978e55affe3064d7ad5da32756fd3ea2188945f6 \
+size    1515098
 
 use_parallel_build      no
 

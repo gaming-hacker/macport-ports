@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -18,8 +18,8 @@ master_sites        http://doxygen.nl/files/
 distfiles           Doxygen-${version}.dmg
 
 checksums           rmd160  6d0e30e2f09062e67fb993229d3e4633165d8d6c \
-                    sha256  df9c647f2d9cad1cd271f00a7662400b3f73e4569abfa231e350b5daaa97fe67 \
-                    size    90840684
+sha256  df9c647f2d9cad1cd271f00a7662400b3f73e4569abfa231e350b5daaa97fe67 \
+size    90840684
 
 use_configure       no
 supported_archs     noarch

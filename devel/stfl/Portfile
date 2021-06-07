@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -24,8 +24,8 @@ homepage            http://www.clifford.at/stfl/
 master_sites        ${homepage}
 
 checksums           rmd160  374ef95e6de3e77991a469ce75c1c972d8c8a3be \
-                    sha256  d4a7aa181a475aaf8a8914a8ccb2a7ff28919d4c8c0f8a061e17a0c36869c090 \
-                    size    45585
+sha256  d4a7aa181a475aaf8a8914a8ccb2a7ff28919d4c8c0f8a061e17a0c36869c090 \
+size    45585
 
 depends_lib         port:ncurses \
                     port:libiconv

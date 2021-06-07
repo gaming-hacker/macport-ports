@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,23 +24,23 @@ homepage            http://mgarland.org/software/scape.html
 master_sites        http://mgarland.org/dist/
 
 checksums           rmd160  885639282ffe5244f5289ef3f453390c8acdb30f \
-                    sha256  22470e13e1f0659d23dbf7e0ecbfd8f6490bcd1d0a953537c1dfec18f4df3bd7 \
-                    size    206256
+sha256  22470e13e1f0659d23dbf7e0ecbfd8f6490bcd1d0a953537c1dfec18f4df3bd7 \
+size    206256
 
 depends_lib         port:freeglut
 
 worksrcdir          ${name}
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # add proper stdlib and set std=c++11 if building with clang
 if {[string match *clang* ${configure.compiler}]} {
-    configure.cxx   ${configure.cxx} -stdlib=${configure.cxx_stdlib} -std=c++11
+    configure.cxx   ${configure.cxx} -stdlib=${configure.cxx_stdlib} -std=c++17
 }
 
 # gcc requires std=gnu++11 to enable build
 if {[string match *gcc* ${configure.compiler}]} {
-    configure.cxx   ${configure.cxx} -std=gnu++11
+    configure.cxx   ${configure.cxx} -std=c++17
 }
 
 patchfiles          patch-compiler.diff patch-opengl.diff

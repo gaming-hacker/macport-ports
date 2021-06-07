@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -66,8 +66,8 @@ subport ${name}-sieve {
     distname        dovecot-${core_version}-pigeonhole-${version}
 
     checksums       rmd160  c79f957fd472d2185fee22b94bcc4563bc7da8ce \
-                    sha256  a431654689e1cf88ee81fd17b050de24fc76d7cdf29b7301da91301e80fc932b \
-                    size    1048867
+sha256  a431654689e1cf88ee81fd17b050de24fc76d7cdf29b7301da91301e80fc932b \
+size    1048867
 
     depends_lib-append \
                     port:${name} \
@@ -93,9 +93,9 @@ set perl5_major_version \
 
 if {${name} eq ${subport}} {
     checksums       ${distname}${extract.suffix} \
-                    rmd160  d7efe49fb37000101af230f6202a3eabc1d375b2 \
-                    sha256  332ad02149a463283c15b0903e9dbc8db7d8ac69a9762cfa938c5228f2a4686c \
-                    size    3844219
+rmd160  d7efe49fb37000101af230f6202a3eabc1d375b2 \
+sha256  332ad02149a463283c15b0903e9dbc8db7d8ac69a9762cfa938c5228f2a4686c \
+size    3844219
 
     extract.only    ${distfiles}
 
@@ -106,9 +106,9 @@ if {${name} eq ${subport}} {
     extract.only-append ${wiki_filename}
     checksums-append \
                     ${wiki_filename} \
-                    rmd160  ac21595985ab077820e21533266e23c2baaadf1d \
-                    sha256  9be2a458ad94b915dbb23afc943e8b90fce99d8158f1099144f701beadad9f5f \
-                    size    446263
+rmd160  ac21595985ab077820e21533266e23c2baaadf1d \
+sha256  9be2a458ad94b915dbb23afc943e8b90fce99d8158f1099144f701beadad9f5f \
+size    446263
 
     # See wget command in ${worksrcpath}/src/lib/Makefile
     set unicode_filename    UnicodeData.txt
@@ -116,9 +116,9 @@ if {${name} eq ${subport}} {
     distfiles-append    ${unicode_filename}:dovecot_res
     checksums-append \
                     ${unicode_filename} \
-                    rmd160  c9c12d76576decdf2588ce543b99b8ddbbcf523e \
-                    sha256  68dfc414d28257b9b5d6ddbb8b466c768c00ebdf6cbf7784364a9b6cad55ee8f \
-                    size    1686443
+rmd160  c9c12d76576decdf2588ce543b99b8ddbbcf523e \
+sha256  68dfc414d28257b9b5d6ddbb8b466c768c00ebdf6cbf7784364a9b6cad55ee8f \
+size    1686443
 
     # See wget command in ${worksrcpath}/src/lib-fts/Makefile
     set wordbreak_filename  WordBreakProperty.txt
@@ -128,13 +128,13 @@ if {${name} eq ${subport}} {
                     ${proplist_filename}:dovecot_res
     checksums-append \
                     ${wordbreak_filename} \
-                    rmd160  a2bdcc9a6c068ca267d8f253fdf0f78873159e31 \
-                    sha256  cb2db065c77287e0f1d35b8c9b473d848b7566a1670439f67c357ca393084043 \
-                    size    93799 \
+rmd160  a2bdcc9a6c068ca267d8f253fdf0f78873159e31 \
+sha256  cb2db065c77287e0f1d35b8c9b473d848b7566a1670439f67c357ca393084043 \
+size    93799 \
                     ${proplist_filename} \
-                    rmd160  2e9ba01e7374dafd81d8923ac4b33a13e5894173 \
-                    sha256  f413ea8dbd3858de72f3148b47dd0586019761357d1481e3b65f3a025bc27f82 \
-                    size    116060
+rmd160  2e9ba01e7374dafd81d8923ac4b33a13e5894173 \
+sha256  f413ea8dbd3858de72f3148b47dd0586019761357d1481e3b65f3a025bc27f82 \
+size    116060
 
     depends_build-append \
                     port:bison \

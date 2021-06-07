@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -9,8 +9,8 @@ PortGroup           muniversal 1.0
 github.setup        thestk stk 4.6.1
 revision            0
 checksums           rmd160  27623960139c126ab0c34feab6bf4e0e12ddc2f1 \
-                    sha256  e77ba3c80cdd93ca02c34098b9b7f918df3d648c87f1ed5d94fe854debd6d101 \
-                    size    2593348
+sha256  e77ba3c80cdd93ca02c34098b9b7f918df3d648c87f1ed5d94fe854debd6d101 \
+size    2593348
 
 categories          audio
 platforms           darwin

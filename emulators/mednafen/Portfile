@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -14,8 +14,8 @@ epoch               1
 version             1.24.3
 revision            0
 checksums           rmd160  4e4d9daa1609de831c0d89c01f30b2979e41ac97 \
-                    sha256  3dea853f784364557fa59e9ba11a17eb2674fc0fb93205f33bdbdaba1da3f70f \
-                    size    3296980
+sha256  3dea853f784364557fa59e9ba11a17eb2674fc0fb93205f33bdbdaba1da3f70f \
+size    3296980
 
 platforms           darwin
 categories          emulators games
@@ -78,7 +78,7 @@ worksrcdir          ${name}
 patchfiles          clang-version.patch
 
 compiler.c_standard 1999
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 # clang: error: unable to execute command: Segmentation fault: 11
 compiler.blacklist-append {clang < 700}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ homepage            https://storm.canonical.com/
 use_bzip2           yes
 
 checksums           rmd160  f499ac9b4702e1da2aaa406ae18d81337652a312 \
-                    sha256  73aceb4c3ab9fb4967b109af7a3f5fe3cde5be379776475a96113b0ee6187de6 \
-                    size    213386
+sha256  73aceb4c3ab9fb4967b109af7a3f5fe3cde5be379776475a96113b0ee6187de6 \
+size    213386
 
 python.versions     27 37 38
 

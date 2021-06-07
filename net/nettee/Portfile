@@ -16,7 +16,7 @@ checksums		md5 59e02802cf5ef495eee2645e91113cbf
 use_configure	no
 
 build {
-	system -W ${worksrcpath} "${configure.cc} ${configure.cflags} ${configure.cc_archflags} -std=c99 -DNOUSLEEP nettee.c -o nettee"
+	system -W ${worksrcpath} "${configure.cc} ${configure.cflags} ${configure.cc_archflags} -std=c11 -DNOUSLEEP nettee.c -o nettee"
 }
 
 destroot {

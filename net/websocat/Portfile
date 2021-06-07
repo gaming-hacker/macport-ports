@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  92b643cd0e3fadbd3791279161a047736be36514 \
-                    sha256  ed4ac1aa2605c5985482002d201114f30b4998b8ba247aee86103f59386a4aed \
-                    size    119176
+rmd160  92b643cd0e3fadbd3791279161a047736be36514 \
+sha256  ed4ac1aa2605c5985482002d201114f30b4998b8ba247aee86103f59386a4aed \
+size    119176
 
 depends_lib-append  path:lib/libssl.dylib:openssl
 build.args          --features=ssl
@@ -148,7 +148,7 @@ cargo.crates \
     security-framework-sys           0.3.3  e31493fc37615debb8c5090a7aeb4a9730bc61e77ab10b9af59f1a202284f895 \
     semver                           0.9.0  1d7eb9ef2c18661902cc47e535f9bc51b78acd254da71d375c2f6720d9a40403 \
     semver-parser                    0.7.0  388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
     signal-hook                     0.1.11  cb543aecec4ba8b867f41284729ddfdb7e8fcd70ec3d7d37fca3007a4b53675f \
     signal-hook-registry             1.1.1  1797d48f38f91643908bb14e35e79928f9f4b3cefb2420a564dde0991b4358dc \
     slab                             0.4.2  c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8 \

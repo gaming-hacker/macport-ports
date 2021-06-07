@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -26,8 +26,8 @@ long_description    The GNU Scientific Library (GSL) is a numerical library \
 master_sites        gnu
 
 checksums           rmd160  ac5a8879e03ae93d60342df4a0d6082fab02170c \
-                    sha256  b782339fc7a38fe17689cb39966c4d821236c28018b6593ddb6fd59ee40786a8 \
-                    size    7398548
+sha256  b782339fc7a38fe17689cb39966c4d821236c28018b6593ddb6fd59ee40786a8 \
+size    7398548
 
 patchfiles-append   dynamic_lookup-11.patch
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ description         Qt stylesheet generation utility for PyQt/PySide
 long_description    ${description}
 
 checksums           rmd160  130fdd07b0ad31ce8fc61232aec1563610273cf4 \
-                    sha256  344fef12a7ac2546853ffdf1ef7055aea3b50e41cf469caf71eb4d2acabf42d7 \
-                    size    20710
+sha256  344fef12a7ac2546853ffdf1ef7055aea3b50e41cf469caf71eb4d2acabf42d7 \
+size    20710
 
-python.versions     36 37 38 39
+python.versions 37 39
 
 if {${name} ne ${subport}} {
     # workaround for missing version information in metadata

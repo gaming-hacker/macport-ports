@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,8 +24,8 @@ long_description    Janet is a functional and imperative programming \
 homepage            https://janet-lang.org/
 
 checksums           rmd160  1d77318cc48b524ee50a398c9e0a36bedac03cda \
-                    sha256  b65a83f27ec80b1db8e046aed6ac3eb5ed92d843bdbdc5f4d279f10664862de6 \
-                    size    601152
+sha256  b65a83f27ec80b1db8e046aed6ac3eb5ed92d843bdbdc5f4d279f10664862de6 \
+size    601152
 
 # Fixes passing correct link flags to boot_strap janet
 # and incorrect use of environ on MacOS

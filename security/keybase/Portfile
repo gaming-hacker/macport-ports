@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -14,8 +14,8 @@ long_description    ${description}
 depends_run         path:bin/gpg:gnupg2
 
 checksums           rmd160  ad6748101148851ef6ea2fe3b71f9a1565785703 \
-                    sha256  639f285e1d207846689e2bb8ca01420eb7754435d39d7d282e817cdf093d0b3d \
-                    size    79472059
+sha256  639f285e1d207846689e2bb8ca01420eb7754435d39d7d282e817cdf093d0b3d \
+size    79472059
 
 build.args          -tags production ${go.package}/go/keybase
 

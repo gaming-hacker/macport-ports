@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,9 +27,9 @@ distname            grafx2-${version}.${commit_count}-src
 master_sites        https://gitlab.com/GrafX2/grafX2/-/jobs/${jobid}/artifacts/raw/
 distfiles           ${distname}.tgz
 checksums           ${distname}.tgz \
-                    sha256  b176fd051ec9256d4b3d06a4c93d7470f01ad78838983a2def7dddcd5340d4f4 \
-                    rmd160  e93cb37ac32ff8a1f49373176523e44a1ee055ff \
-                    size    1101545
+sha256  b176fd051ec9256d4b3d06a4c93d7470f01ad78838983a2def7dddcd5340d4f4 \
+rmd160  e93cb37ac32ff8a1f49373176523e44a1ee055ff \
+size    1101545
 fetch.ignore_sslcert    yes
 
 worksrcdir          grafx2/src

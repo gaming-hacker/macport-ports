@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    Embree is a ${description}, developed at Intel. It \
                     algorithms.
 
 checksums           rmd160  12100fd736c0eb0eb6b1593621b44e1daabd4a89 \
-                    sha256  9d50510a3618c114fc3abf429298654b22053079d11f426ba4ec226cdf63cdff \
-                    size    13624334
+sha256  9d50510a3618c114fc3abf429298654b22053079d11f426ba4ec226cdf63cdff \
+size    13624334
 
 depends_build-append \
                     port:ispc
@@ -33,7 +33,7 @@ depends_lib-append  port:tbb \
                     port:libpng \
                     port:openimageio
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 post-patch {
     # Put tutorials in ${prefix}/share/embree instead of ${prefix}/bin

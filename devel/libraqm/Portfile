@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -14,8 +14,8 @@ github.tarball_from     releases
 distname                raqm-${version}
 
 checksums               rmd160  57061f3659ca0b3bd38c71da6c7c9f78a336371c \
-                        sha256  e28575ecdd4e8a1d277d9be8268bb663ce1e476aaf55eb0456787821ddf0f941 \
-                        size    683634
+sha256  e28575ecdd4e8a1d277d9be8268bb663ce1e476aaf55eb0456787821ddf0f941 \
+size    683634
 
 description             a small library that encapsulates logic for complex text layout
 long_description        Raqm is a small library that encapsulates the logic for complex\

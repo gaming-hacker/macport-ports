@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake          1.1
@@ -26,10 +26,10 @@ distname                gmsh-${version}-source
 extract.suffix          .tgz
 
 checksums               rmd160  0474d3ea536588111d1c4a95c5c452ccc7893d4f \
-                        sha256  46eaeb0cdee5822fdaa4b15f92d8d160a8cc90c4565593cfa705de90df2a463f \
-                        size    13528509
+sha256  46eaeb0cdee5822fdaa4b15f92d8d160a8cc90c4565593cfa705de90df2a463f \
+size    13528509
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 patchfiles              patch-CMakeLists.txt.diff
 # see https://gitlab.onelab.info/gmsh/gmsh/-/issues/849

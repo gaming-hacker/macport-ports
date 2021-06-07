@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    ${description}
 homepage            https://github.com/mdickinson/bigfloat
 
 checksums           rmd160  cf8fda5b51bea79861d4635b30f32080493c7b7c \
-                    sha256  58b96bde872aca5989d13d82eba3acf2aa1b94e22117dd72a16ba5911b0c0cb8 \
-                    size    258208
+sha256  58b96bde872aca5989d13d82eba3acf2aa1b94e22117dd72a16ba5911b0c0cb8 \
+size    258208
 
 # patchfile to force cythonize
 patchfiles-append   patch-setup.py.diff

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/micheles/decorator
 
 checksums           rmd160  a3d128c927b0c228b0c183fc10e908fd0832e638 \
-                    sha256  72ecfba4320a893c53f9706bebb2d55c270c1e51a28789361aa93e4a21319ed5 \
-                    size    34544
+sha256  72ecfba4320a893c53f9706bebb2d55c270c1e51a28789361aa93e4a21319ed5 \
+size    34544
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -32,8 +32,8 @@ if {${name} ne ${subport}} {
         version             4.4.2
         revision            0
         checksums           rmd160  eb60b82eca66a5105b4f8474690ee5148c16ca24 \
-                            sha256  e3a62f0520172440ca0dcc823749319382e377f37f140a0b99ef45fecb84bfe7 \
-                            size    33629
+sha256  e3a62f0520172440ca0dcc823749319382e377f37f140a0b99ef45fecb84bfe7 \
+size    33629
     }
 
     livecheck.type      none

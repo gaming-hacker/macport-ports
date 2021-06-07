@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ homepage            https://www.pidgin.im/
 master_sites        sourceforge:project/pidgin/Pidgin/${version}
 
 checksums           rmd160  818f33917a5e0cd2a78f20f2cf7fb6263841ba4b \
-                    sha256  f132e18d551117d9e46acce29ba4f40892a86746c366999166a3862b51060780 \
-                    size    8849275
+sha256  f132e18d551117d9e46acce29ba4f40892a86746c366999166a3862b51060780 \
+size    8849275
 
 use_bzip2           yes
 
@@ -33,7 +33,7 @@ use_bzip2           yes
 # set 'pbranch' to desired perl version for perl plugin support
 # currently 5.26 (#55208)
 
-set pbranch         5.28
+set pbranch 5.30
 
 depends_build       port:pkgconfig \
                     port:intltool \

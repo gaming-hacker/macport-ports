@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -21,7 +21,7 @@ long_description    High-level functional interface to the Format module of the 
 platforms           darwin
 
 checksums           rmd160  78713bb11e51e761f2a8c9def3b8e6f1885f817a \
-                    sha256  1e53b8656633e2194b40b48546b241810e6557765cab3a5e1576ba6fb9cbc660 \
-                    size    16586
+sha256  1e53b8656633e2194b40b48546b241810e6557765cab3a5e1576ba6fb9cbc660 \
+size    16586
 
 ocaml.build_type    dune

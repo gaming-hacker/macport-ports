@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://importlib-resources.readthedocs.io
 
 checksums           rmd160  f448c9509eadbb36cdecf5bc31696a7bd5088de3 \
-                    sha256  642586fc4740bd1cad7690f836b3321309402b20b332529f25617ff18e8e1370 \
-                    size    32177
+sha256  642586fc4740bd1cad7690f836b3321309402b20b332529f25617ff18e8e1370 \
+size    32177
 
 # keep version for PY27/PY34/PY35, these are (indirect) dependencies of py-virtualenv
 python.versions     27 34 35 36 37 38
@@ -36,8 +36,8 @@ if {${name} ne ${subport}} {
         version     3.3.1
         revision    0
         checksums   rmd160  6b0e6b482a5cb45430243e78317731efcf7eb84b \
-                    sha256  0ed250dbd291947d1a298e89f39afcc477d5a6624770503034b72588601bcc05 \
-                    size    29012
+sha256  0ed250dbd291947d1a298e89f39afcc477d5a6624770503034b72588601bcc05 \
+size    29012
 
         depends_lib-append \
                     port:py${python.version}-contextlib2 \
@@ -49,8 +49,8 @@ if {${name} ne ${subport}} {
         epoch       1
         revision    0
         checksums   rmd160  ccbed771125ab62eda228842bc87339dd9aa21a8 \
-                    sha256  d3279fd0f6f847cced9f7acc19bd3e5df54d34f93a2e7bb5f238f81545787078 \
-                    size    23602
+sha256  d3279fd0f6f847cced9f7acc19bd3e5df54d34f93a2e7bb5f238f81545787078 \
+size    23602
         depends_build-append \
                     port:py${python.version}-wheel
         depends_lib-append \
@@ -60,8 +60,8 @@ if {${name} ne ${subport}} {
         version     3.2.1
         revision    0
         checksums   rmd160  5abb9e9bbae805089609dca64868d2ea7a8629fd \
-                    sha256  a9fe213ab6452708ec1b3f4ec6f2881b8ab3645cb4e5efb7fea2bbf05a91db3b \
-                    size    28884
+sha256  a9fe213ab6452708ec1b3f4ec6f2881b8ab3645cb4e5efb7fea2bbf05a91db3b \
+size    28884
     }
 
     if {${python.version} < 38} {

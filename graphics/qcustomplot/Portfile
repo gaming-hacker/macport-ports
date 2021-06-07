@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake5 1.0
@@ -13,13 +13,13 @@ homepage            https://www.qcustomplot.com
 
 version             2.1.0
 checksums           rmd160  60b833693034a08a95cf69a00f0f25b5ff3de99e \
-                    sha256  7d6a886993708c07d986065d517ac7e9f3ab067b25acd3d0442eec203d9e448c \
-                    size    3762848
+sha256  7d6a886993708c07d986065d517ac7e9f3ab067b25acd3d0442eec203d9e448c \
+size    3762848
 revision            0
 master_sites        ${homepage}/release/${version}fixed/
 distname            QCustomPlot
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 patchfiles-append \
     qcustomplot.pro.patch

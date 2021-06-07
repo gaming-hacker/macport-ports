@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    libid3tag is a library for reading and writing ID3 \
 homepage            http://www.underbit.com/products/mad/
 
 checksums           rmd160  e273ddf0a7e7dfea0428663995d56e4c72d5d407 \
-                    sha256  7c151ee7f97a277316c327934babf54cc4b851cdc33eef56e870f0c0aff9a03c \
-                    size    390078
+sha256  7c151ee7f97a277316c327934babf54cc4b851cdc33eef56e870f0c0aff9a03c \
+size    390078
 
 depends_lib         port:zlib
 

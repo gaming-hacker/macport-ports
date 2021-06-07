@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -16,14 +16,14 @@ if {[vercmp ${php.branch} 7.0] >= 0} {
     version             2.5.1
     revision            0
     checksums           rmd160  fab2fd7f7681dac3cdff3e6249f951e58b1806b8 \
-                        sha256  2b41601e74fe371e6525579637a8ddff270e58a0ff636e7f56df8919d6e7777d \
-                        size    619983
+sha256  2b41601e74fe371e6525579637a8ddff270e58a0ff636e7f56df8919d6e7777d \
+size    619983
 } elseif {[vercmp ${php.branch} 5.3] >= 0} {
     version             2.4.0
     revision            1
     checksums           rmd160  e4f025a3833b53dae8e066c4604c37026310d6c1 \
-                        sha256  22865dafb76fc5839e84a5bd423bb37d5062883e5dfc4d064b43129ac9f2752c \
-                        size    256316
+sha256  22865dafb76fc5839e84a5bd423bb37d5062883e5dfc4d064b43129ac9f2752c \
+size    256316
 
     patchfiles-append   php72.patch
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,8 +25,8 @@ long_description    Open Babel is a free, open-source version \
 homepage            http://openbabel.org
 master_sites        sourceforge:project/openbabel/openbabel/${version}
 checksums           rmd160  317c15ebbe7f2f86c5ec7d54230487853545cfc4 \
-                    sha256  204136582cdfe51d792000b20202de8950218d617fd9c6e18cee36706a376dfc \
-                    size    11618304
+sha256  204136582cdfe51d792000b20202de8950218d617fd9c6e18cee36706a376dfc \
+size    11618304
 
 depends_build-append \
                     port:eigen3 \

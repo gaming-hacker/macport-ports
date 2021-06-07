@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ distname            tensorflow_gan-2.0.0-py2.py3-none-any
 extract.suffix      .whl
 
 checksums           rmd160  cd47590553983b04e89762702591b61aba5f0eaa \
-                    sha256  65a7cc3952cbf2e05e73e2ba391a6a745d9f1a014e00c571feb3268569d48bd2 \
-                    size    365168
+sha256  65a7cc3952cbf2e05e73e2ba391a6a745d9f1a014e00c571feb3268569d48bd2 \
+size    365168
 
 python.versions     37 38 39
 

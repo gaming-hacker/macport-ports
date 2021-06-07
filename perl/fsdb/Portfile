@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -6,16 +6,16 @@ PortGroup           select 1.0
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches          5.26 5.28 5.30
-perl5.default_branch    5.28
+perl5.branches 5.30
+perl5.default_branch 5.30
 perl5.create_variants   ${perl5.branches}
 
 name                fsdb
 perl5.setup         Fsdb 2.71 ../../authors/id/J/JO/JOHNH
 revision            0
 checksums           rmd160  a0ffb2c177788fb86fa0f7f080c91d211ad9be42 \
-                    sha256  135d22cc65efa395d4ddbfbc7e087e04dd011a73353970ea61cfe8cee3a69098 \
-                    size    498482
+sha256  135d22cc65efa395d4ddbfbc7e087e04dd011a73353970ea61cfe8cee3a69098 \
+size    498482
 
 categories-append   textproc
 

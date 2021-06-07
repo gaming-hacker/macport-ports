@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ long_description    Gleam is a type safe functional programming language for \
                     such as Erlang, Elixir and LFE.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  f03deae6346786cbfa175895cf8cceb7b71fed44 \
-                    sha256  a28b573a2ccc3131e2f096b59738ee0fa4809e47ee9eb13da2a8a49d964f836e \
-                    size    268879
+rmd160  f03deae6346786cbfa175895cf8cceb7b71fed44 \
+sha256  a28b573a2ccc3131e2f096b59738ee0fa4809e47ee9eb13da2a8a49d964f836e \
+size    268879
 
 depends_lib-append  port:libiconv
 depends_run-append  port:erlang \
@@ -175,8 +175,8 @@ cargo.crates \
     serde_derive                   1.0.125  b093b7a2bb58203b5da3056c05b4ec1fed827dcfdb37347a8841695263b3d06d \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sharded-slab                     0.1.1  79c719719ee05df97490f80a45acfc99e5a30ce98a1e4fb67aee422745ae14e3 \
-    sized-chunks                     0.6.4  65e65d6a9f13cd78f361ea5a2cf53a45d67cdda421ba0316b9be101560f3d207 \
+sharded-slab                     0.1.1  79c719719ee05df97490f80a45acfc99e5a30ce98a1e4fb67aee422745ae14e3 \
+sized-chunks                     0.6.4  65e65d6a9f13cd78f361ea5a2cf53a45d67cdda421ba0316b9be101560f3d207 \
     slab                             0.4.2  c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8 \
     smallvec                         1.6.1  fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e \
     socket2                          0.4.0  9e3dfc207c526015c632472a77be09cf1b6e46866581aecae5cc38fb4235dea2 \

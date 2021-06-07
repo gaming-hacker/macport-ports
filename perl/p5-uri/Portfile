@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         URI 5.09
 revision            0
 platforms           darwin
@@ -18,8 +18,8 @@ long_description    This package contains the URI.pm module with friends. The mo
                     Identifier references as specified in RFC 2396 and updated by RFC 2732.
 
 checksums           rmd160  6c354775323c6bde2661009659ca73330d1fc11a \
-                    sha256  03e63ada499d2645c435a57551f041f3943970492baa3b3338246dab6f1fae0a \
-                    size    108897
+sha256  03e63ada499d2645c435a57551f041f3943970492baa3b3338246dab6f1fae0a \
+size    108897
 
 if {${perl5.major} != ""} {
     depends_build-append \

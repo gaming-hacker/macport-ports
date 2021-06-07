@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ long_description    Features statistical analysis across multiple runs, \
                     CSV/JSON/Markdown/AsciiDoc export and more.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  ac582386f499208a5f9d9775734877cbc54a73cd \
-                    sha256  087fbfdcf7de84d4dfb3466567d290f793a15ce323a8e7ab06208a4354582529 \
-                    size    48242
+rmd160  ac582386f499208a5f9d9775734877cbc54a73cd \
+sha256  087fbfdcf7de84d4dfb3466567d290f793a15ce323a8e7ab06208a4354582529 \
+size    48242
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} ${destroot}${prefix}/bin/

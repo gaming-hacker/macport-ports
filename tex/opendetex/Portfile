@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -6,8 +6,8 @@ PortGroup               github 1.0
 github.setup            pkubowicz opendetex 2.8.9 v
 revision                0
 checksums               rmd160  a5c6d6aa47e354fcbb2f3e15dd4dc7cfa24f4d2e \
-                        sha256  0d6b8cb1f3394b790dd757b0171ad8b398c48e306fa6339e86ed8303c51df084 \
-                        size    44224
+sha256  0d6b8cb1f3394b790dd757b0171ad8b398c48e306fa6339e86ed8303c51df084 \
+size    44224
 
 categories              tex textproc
 platforms               darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,8 +15,8 @@ long_description    {*}${description} Typedapi is a component of TensorFlow Addo
 homepage            https://github.com/tensorflow/addons
 
 checksums           rmd160  55a3fcec104173815b51b6e56f3fd95c3cfb8043 \
-                    sha256  1b464dc672b18fd31b872b8ecda8c35c7d0afaedf131ee78a6bc19b83dd05e6c \
-                    size    3395
+sha256  1b464dc672b18fd31b872b8ecda8c35c7d0afaedf131ee78a6bc19b83dd05e6c \
+size    3395
 
 python.versions     37 38 39
 

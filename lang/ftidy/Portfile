@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -27,8 +27,8 @@ long_description \
     tasks on FORTRAN-77 source programs.
 
 checksums           rmd160  c53acf52f7cb0ee26d9332d398492bf5258c4ef6 \
-                    sha256  f41ba4ed96df654f1b53c6958b2a7cd5563224a4e1485fb094c5a78186098bf0 \
-                    size    56464
+sha256  f41ba4ed96df654f1b53c6958b2a7cd5563224a4e1485fb094c5a78186098bf0 \
+size    56464
 
 patchfiles          tidy.for.patch
 

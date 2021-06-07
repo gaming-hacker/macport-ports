@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,8 +26,8 @@ long_description    Typing is a backport of the standard library \
 homepage            https://pypi.python.org/pypi/${python.rootname}/
 
 checksums           rmd160  a32ba2ef1a88c3885c42410be77a50f45cb3f67d \
-                    sha256  1187fb9c82fd670d10aa07bbb6cfcfe4bdda42d6fab8d5134f04e8c4d0b71cc9 \
-                    size    78592
+sha256  1187fb9c82fd670d10aa07bbb6cfcfe4bdda42d6fab8d5134f04e8c4d0b71cc9 \
+size    78592
 
 # keep version for PY27 and PY34, these are (indirect) dependencies of py-virtualenv
 # do not add subports for python 3.5 and later; module is in stdlib.

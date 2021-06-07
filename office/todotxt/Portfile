@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ platforms           darwin
 
 dist_subdir         ${name}/${version}_1
 checksums           rmd160  18d0e7546ae1797c7c1c2584e7c797e83832eda5 \
-                    sha256  1044902df08b7b11bae950377e14283a2a2b74fa18427b44f6074f2767faa803 \
-                    size    716514
+sha256  1044902df08b7b11bae950377e14283a2a2b74fa18427b44f6074f2767faa803 \
+size    716514
 
 use_configure       no
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -32,7 +32,7 @@ git.branch          ${git_commit}
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python38
+                    port:python39
 
 depends_lib         port:babl-devel \
                     path:lib/pkgconfig/cairo.pc:cairo \
@@ -53,7 +53,7 @@ depends_lib         port:babl-devel \
                     port:libspiro \
                     port:openexr \
                     port:poly2tri-c \
-                    port:py38-gobject3 \
+                    port:py39-gobject3 \
                     port:poppler \
                     port:SuiteSparse_UMFPACK \
                     port:webp
@@ -70,7 +70,7 @@ post-patch {
 }
 
 # needs C++14 C11
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.c_standard   2011
 
 # version 0.4.14+ requires apple clang 700.0.72 (Xcode 7.0.0) to build new parallelization code

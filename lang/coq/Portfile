@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ depends_lib         port:ocaml \
 depends_build       port:ocaml-findlib
 
 checksums           rmd160  72217233c8861e0d4a0219e1108c6c94c38d9ebb \
-                    sha256  3ab7414ea22f31845371a5c92225ac09f74fc931b88e15106d9de3094eff535c \
-                    size    6952237
+sha256  3ab7414ea22f31845371a5c92225ac09f74fc931b88e15106d9de3094eff535c \
+size    6952237
 
 configure.pre_args  -prefix ${prefix}
 configure.args      -mandir ${prefix}/share/man \
@@ -51,7 +51,7 @@ use it.
 "
 
 variant doc description {Build documentation} {
-    set pyversion           3.8
+    set pyversion 3.9
     set _pyversion          [string map {. ""} $pyversion]
     depends_build-append    port:hevea \
                             port:netpbm \

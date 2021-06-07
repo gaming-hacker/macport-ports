@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         Tk-TableMatrix 1.26
 revision            0
 
@@ -35,8 +35,8 @@ long_description    \
      * cell validation support
 
 checksums           rmd160  b48ba0199975036f5a343f49d710a81eef56dccf \
-                    sha256  cf1e4dbe3399c375ab5f3861823d3a578c735db126416b2afd8e0632ed92abc7 \
-                    size    410559
+sha256  cf1e4dbe3399c375ab5f3861823d3a578c735db126416b2afd8e0632ed92abc7 \
+size    410559
 
 if {${perl5.major} ne ""} {
     depends_lib-append \

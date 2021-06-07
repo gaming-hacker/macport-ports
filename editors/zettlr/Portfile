@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -33,16 +33,16 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  47c82d05949be8941545e54a26828379be7eb73c \
-                    sha256  351b579c2c42f2f1836e9882a27e0497c862857a826231b5067c1204d9b846b4 \
-                    size    25088304
+rmd160  47c82d05949be8941545e54a26828379be7eb73c \
+sha256  351b579c2c42f2f1836e9882a27e0497c862857a826231b5067c1204d9b846b4 \
+size    25088304
 
 depends_build       port:yarn
 
 build.env-append    CSC_IDENTITY_AUTO_DISCOVERY=false
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build {
     switch $build_arch {

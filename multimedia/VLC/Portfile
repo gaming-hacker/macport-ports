@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -35,13 +35,13 @@ distfiles           vlc-${version}.tar.xz:source \
                     vlc-${version}.dmg:installer
 
 checksums           vlc-${version}.tar.xz \
-                    rmd160  a19eb43a0ea6307f0923efe28acae1b803df6a69 \
-                    sha256  189311d28aa814f106a7b3645211ac52c0b3e2b9f4b348de2f63bab3218086b8 \
-                    size    25886644 \
+rmd160  a19eb43a0ea6307f0923efe28acae1b803df6a69 \
+sha256  189311d28aa814f106a7b3645211ac52c0b3e2b9f4b348de2f63bab3218086b8 \
+size    25886644 \
                     vlc-${version}.dmg \
-                    rmd160  69f9f1b4134ce37805f495f8e78eb1c791306793 \
-                    sha256  021212d2f6e6701ec3b254d56dfa5c5f848c9c02813c5750c6944a8458de8fb5 \
-                    size    51971868
+rmd160  69f9f1b4134ce37805f495f8e78eb1c791306793 \
+sha256  021212d2f6e6701ec3b254d56dfa5c5f848c9c02813c5750c6944a8458de8fb5 \
+size    51971868
 
 subport lib${name} {}
 if {${subport} eq "lib${name}"} {

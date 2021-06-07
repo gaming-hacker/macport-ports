@@ -17,7 +17,7 @@ platforms        darwin
 master_sites     googlecode
 use_bzip2        yes
 checksums        rmd160 fce112e8925262220b6b1ccc793e4cebc7e4900b \
-                 sha256 f4d0c90ee42a415b5830ba52a9e57764a16535333b3093c0243575a4ffec461c
+sha256 f4d0c90ee42a415b5830ba52a9e57764a16535333b3093c0243575a4ffec461c
 
 depends_build    port:pkgconfig
 depends_lib      port:bzip2 \
@@ -25,4 +25,4 @@ depends_lib      port:bzip2 \
                  port:zlib
 
 # not compatible with C99 inline semantics
-configure.cflags-append -std=gnu89
+configure.cflags-append -std=c11

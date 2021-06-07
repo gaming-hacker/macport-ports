@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -91,8 +91,8 @@ subport openjdk7-zulu {
 
     distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
     checksums    rmd160  d4f87b0e4ee901c24fca82eb7f74904ad8ee8eb5 \
-                 sha256  d452c081b7c55f3b26878ef0522911976302c6f47f4bd4b92057cef9161c556c \
-                 size    68486614
+sha256  d452c081b7c55f3b26878ef0522911976302c6f47f4bd4b92057cef9161c556c \
+size    68486614
 
     worksrcdir   ${distname}/zulu-7.jdk
 
@@ -115,8 +115,8 @@ subport openjdk8 {
     configure.cxx_stdlib libstdc++
 
     checksums    rmd160  680c91c140f50774e20efabe58c9780a9a62b94a \
-                 sha256  5646fbe9e4138c902c910bb7014d41463976598097ad03919e4848634c7e8007 \
-                 size    103785976
+sha256  5646fbe9e4138c902c910bb7014d41463976598097ad03919e4848634c7e8007 \
+size    103785976
 }
 
 subport openjdk8-graalvm {
@@ -131,8 +131,8 @@ subport openjdk8-graalvm {
     worksrcdir   graalvm-ce-java8-${version}
     
     checksums    rmd160  2fc5f23a1558b5e125ef91ad137270fe4f2b4d0c \
-                 sha256  25a653a44b3ad63479d7ae35d921c8d39282ff1849243f1afc0ffddd443e9079 \
-                 size    349277690
+sha256  25a653a44b3ad63479d7ae35d921c8d39282ff1849243f1afc0ffddd443e9079 \
+size    349277690
 }
 
 subport openjdk8-openj9 {
@@ -150,8 +150,8 @@ subport openjdk8-openj9 {
     worksrcdir   jdk${version}-b${build}
 
     checksums    rmd160  15c82bb986080025de06ddaab2e08a4a493fb389 \
-                 sha256  d262bc226895e80b7e80d61905e65fe043ca0a3e3b930f7b88ddfacb8835e939 \
-                 size    118492789
+sha256  d262bc226895e80b7e80d61905e65fe043ca0a3e3b930f7b88ddfacb8835e939 \
+size    118492789
 }
 
 subport openjdk8-zulu {
@@ -168,13 +168,13 @@ subport openjdk8-zulu {
     if {${configure.build_arch} eq "x86_64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
         checksums    rmd160  886fe3a9b2161d63ce14bd10be8f571984e4f82d \
-                     sha256  369e0d0d76d73cb161978ff07d7020820bb3cd2465f6f91219bb6492e302f4dd \
-                     size    108162260
+sha256  369e0d0d76d73cb161978ff07d7020820bb3cd2465f6f91219bb6492e302f4dd \
+size    108162260
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_aarch64
         checksums    rmd160  cafab852e7263d3b1077b7b37f8d9019f4d3797a \
-                     sha256  2cf0af3118dd4b6244724308b190587804a76ad7919b6da5c377392a1d4f8817 \
-                     size    105926746
+sha256  2cf0af3118dd4b6244724308b190587804a76ad7919b6da5c377392a1d4f8817 \
+size    105926746
     }
 
     worksrcdir   ${distname}/zulu-8.jdk
@@ -210,8 +210,8 @@ subport openjdk11 {
     worksrcdir   jdk-${version}+${build}
 
     checksums    rmd160  5cd7c7ac1fa84fcaeab677076d80b4970cbf9334 \
-                 sha256  d851a220e77473a4b483d8bd6b6570e04fd83fdd48d6584b58b041f5997186c2 \
-                 size    186275966
+sha256  d851a220e77473a4b483d8bd6b6570e04fd83fdd48d6584b58b041f5997186c2 \
+size    186275966
 }
 
 subport openjdk11-graalvm {
@@ -226,8 +226,8 @@ subport openjdk11-graalvm {
     worksrcdir   graalvm-ce-java11-${version}
     
     checksums    rmd160  61d5ec36d1671168fbcc236e4653a3be24198a69 \
-                 sha256  b53cd5a085fea39cb27fc0e3974f00140c8bb774fb2854d72db99e1be405ae2b \
-                 size    396142137
+sha256  b53cd5a085fea39cb27fc0e3974f00140c8bb774fb2854d72db99e1be405ae2b \
+size    396142137
 }
 
 subport openjdk11-openj9 {
@@ -245,8 +245,8 @@ subport openjdk11-openj9 {
     worksrcdir   jdk-${version}+${build}
 
     checksums    rmd160  32a90e5a4a660b5e62a12c998a4ac4282334b2a3 \
-                 sha256  797cee6b9f6e18bcc026ee9dcebbce81d62ca897038402d247630b25d41efe15 \
-                 size    202089267
+sha256  797cee6b9f6e18bcc026ee9dcebbce81d62ca897038402d247630b25d41efe15 \
+size    202089267
 }
 
 # Remove after 2022-04-30
@@ -270,13 +270,13 @@ subport openjdk11-zulu {
     if {${configure.build_arch} eq "x86_64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
         checksums    rmd160  49e6888a1ec6749b09ac5daf725e46d9cb02e8f2 \
-                     sha256  866b25c47aa3bedddc57fbe38fd7d2e0f888d314b85d1e88b2fb12100f3c166c \
-                     size    195386841
+sha256  866b25c47aa3bedddc57fbe38fd7d2e0f888d314b85d1e88b2fb12100f3c166c \
+size    195386841
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_aarch64
         checksums    rmd160  62a60cf4ffaa67a4d0cc2627fae9dfa438f98a29 \
-                     sha256  0c52621329b0d148c816b4c21e91386240bf57eb53ecfc4a6201f59ee983dc18 \
-                     size    179158961
+sha256  0c52621329b0d148c816b4c21e91386240bf57eb53ecfc4a6201f59ee983dc18 \
+size    179158961
     }
 
     worksrcdir   ${distname}/zulu-11.jdk
@@ -338,13 +338,13 @@ subport openjdk13-zulu {
     if {${configure.build_arch} eq "x86_64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
         checksums    rmd160  f84e38dc8b92928b6aed9e35b6da3eb5f63e4b23 \
-                     sha256  a53b31c4eb6db57feceefd16ebadd07525514bdec8dbab6f9644e81ac1b97543 \
-                     size    200105932
+sha256  a53b31c4eb6db57feceefd16ebadd07525514bdec8dbab6f9644e81ac1b97543 \
+size    200105932
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_aarch64
         checksums    rmd160  2422909438bbe13ce0810b4f57d111f514d1a842 \
-                     sha256  0dcca3161a2490792a9853c7d7bb511199f79cc58d3dab1b11af1c2fe22f06d8 \
-                     size    179462701
+sha256  0dcca3161a2490792a9853c7d7bb511199f79cc58d3dab1b11af1c2fe22f06d8 \
+size    179462701
     }
 
     worksrcdir   ${distname}/zulu-13.jdk
@@ -406,13 +406,13 @@ subport openjdk15-zulu {
     if {${configure.build_arch} eq "x86_64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
         checksums    rmd160  9b67ab3d55b7b358417dbd22e5d8c10d67ed4370 \
-                     sha256  87df2e9adc1e27c2ffe9a1f8b88d0ba3eeb4cc81c77fc6a3a02788e22484d07b \
-                     size    201723476
+sha256  87df2e9adc1e27c2ffe9a1f8b88d0ba3eeb4cc81c77fc6a3a02788e22484d07b \
+size    201723476
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_aarch64
         checksums    rmd160  1960d11a0302cefaad80d1895184b6a4fb9f8374 \
-                     sha256  200c210f2754b718b24a52dfe8801255ee69b44dc1de9ef6795e343909ea087a \
-                     size    176323405
+sha256  200c210f2754b718b24a52dfe8801255ee69b44dc1de9ef6795e343909ea087a \
+size    176323405
     }
 
     worksrcdir   ${distname}/zulu-15.jdk
@@ -432,8 +432,8 @@ subport openjdk16 {
     worksrcdir   jdk-${version}+${build}
 
     checksums    rmd160  267a6b47ffc2edccb827acf01bca5fde6e029861 \
-                 sha256  3be78eb2b0bf0a6edef2a8f543958d6e249a70c71e4d7347f9edb831135a16b8 \
-                 size    199997543
+sha256  3be78eb2b0bf0a6edef2a8f543958d6e249a70c71e4d7347f9edb831135a16b8 \
+size    199997543
 }
 
 subport openjdk16-graalvm {
@@ -448,8 +448,8 @@ subport openjdk16-graalvm {
     worksrcdir   graalvm-ce-java16-${version}
 
     checksums    rmd160  4bec36c128b42d324f6e7a513501e7c7c7b2fd4c \
-                 sha256  dafece9d03251304a6d9fc242862cfc08b85e2b8921d3b019a8a19b95af78e2c \
-                 size    404268013
+sha256  dafece9d03251304a6d9fc242862cfc08b85e2b8921d3b019a8a19b95af78e2c \
+size    404268013
 }
 
 subport openjdk16-openj9 {
@@ -467,8 +467,8 @@ subport openjdk16-openj9 {
     worksrcdir   jdk-${version}+${build}
 
     checksums    rmd160  a6b458d6652512f9df22f997ecb10b02ee7c7b92 \
-                 sha256  6d4241c6ede2167fb71bd57f7a770a74564ee007c06bcae98e1abc3c1de4756f \
-                 size    205958282
+sha256  6d4241c6ede2167fb71bd57f7a770a74564ee007c06bcae98e1abc3c1de4756f \
+size    205958282
 }
 
 subport openjdk16-zulu {
@@ -489,13 +489,13 @@ subport openjdk16-zulu {
     if {${configure.build_arch} eq "x86_64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
         checksums    rmd160  8cadf828e853a739b3860dc4e2066c6713e3baac \
-                     sha256  1f403942ce9f0ba7bfd3f5e0b2f9cae68fcafd4f08cb048b4fb9d75644b030ca \
-                     size    206494507
+sha256  1f403942ce9f0ba7bfd3f5e0b2f9cae68fcafd4f08cb048b4fb9d75644b030ca \
+size    206494507
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     zulu${version}-ca-jdk${openjdk_version}-macosx_aarch64
         checksums    rmd160  c8302a50ead48af69b715f5b74ba242c9012b05e \
-                     sha256  9c50ea8a1bbe5045164cbc6f244efab99a66595b8a1947356c653135ba640bc4 \
-                     size    195103125
+sha256  9c50ea8a1bbe5045164cbc6f244efab99a66595b8a1947356c653135ba640bc4 \
+size    195103125
     }
 
     worksrcdir   ${distname}/zulu-16.jdk

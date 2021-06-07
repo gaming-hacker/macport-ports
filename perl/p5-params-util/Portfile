@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         Params-Util 1.102
 revision            0
 license             {Artistic-1 GPL}
@@ -15,8 +15,8 @@ long_description    Provides a basic set of importable functions that \
 platforms           darwin
 
 checksums           rmd160  7c9419c3fe2c544c103a0eba743a946380d70260 \
-                    sha256  499bb1b482db24fda277a51525596ad092c2bd51dd508fa8fec2e9f849097402 \
-                    size    194986
+sha256  499bb1b482db24fda277a51525596ad092c2bd51dd508fa8fec2e9f849097402 \
+size    194986
 
 if {${perl5.major} != ""} {
     depends_build-append \

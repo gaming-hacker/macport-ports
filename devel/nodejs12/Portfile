@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -8,7 +8,7 @@ PortGroup               legacysupport 1.1
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 
 name                    nodejs12
 version                 12.22.1
@@ -32,18 +32,18 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  840b4f5835a00136164d9950709957d476cf14bf \
-                        sha256  dd650df7773a6ed3e390320ba51ef33cba6499f0e9397709ea3d1debdcbcb989 \
-                        size    23650180
+sha256  dd650df7773a6ed3e390320ba51ef33cba6499f0e9397709ea3d1debdcbcb989 \
+size    23650180
 
 distname                node-v${version}
 
 depends_build-append    port:pkgconfig
 
 depends_lib-append      port:icu \
-                        port:python38 \
+                        port:python39 \
                         path:lib/libssl.dylib:openssl
 
-use_xcode               yes
+use_xcode  no
 
 proc rec_glob {basedir pattern} {
     set files [glob -directory $basedir -nocomplain -type f $pattern]
@@ -53,7 +53,7 @@ proc rec_glob {basedir pattern} {
     return $files
 }
 
-configure.python ${prefix}/bin/python3.8
+configure.python ${prefix}/bin/python3.9
 
 patchfiles              patch-common.gypi.diff
 

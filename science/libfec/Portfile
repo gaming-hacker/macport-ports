@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    implements several popular forward error correction \
 github.setup        fblomqvi libfec c5d935f42a79221871ff50e75d3971cf3e87be7c
 version             20210201-[string range ${github.version} 0 7]
 checksums           rmd160  b781d1422b08858d89a1317756f4e3a94e762173 \
-                    sha256  f75985bb4a8638742b2f4638ea7a0d7d57a1c738f491e595d1f448f1675366e5 \
-                    size    130524
+sha256  f75985bb4a8638742b2f4638ea7a0d7d57a1c738f491e595d1f448f1675366e5 \
+size    130524
 revision            0
 
 use_autoreconf  yes

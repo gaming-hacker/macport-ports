@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -11,8 +11,8 @@ github.setup        aqbanking gwenhywfar 5.6.0
 name                gwenhywfar5
 
 checksums           rmd160  d9bdd2d424b8e204a06e81b3f534f9461cfc4ee4 \
-                    sha256  5307d16e3fbfb873b8a87eb7e1e220862da9e948cc07a7a1a0fa01e86f9748d3 \
-                    size    1663488
+sha256  5307d16e3fbfb873b8a87eb7e1e220862da9e948cc07a7a1a0fa01e86f9748d3 \
+size    1663488
 
 categories          devel net finance
 maintainers         {dports @drkp} openmaintainer

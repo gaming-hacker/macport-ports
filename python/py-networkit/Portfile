@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://networkit.iti.kit.edu/
 
 checksums           rmd160  432de3a8ff849835059ea2972cb6b7c5071845e0 \
-                    sha256  eea4b5e565d6990b674e1c7f4d598be9377d57b61d0d82883ecc39edabaf3631 \
-                    size    1905444
+sha256  eea4b5e565d6990b674e1c7f4d598be9377d57b61d0d82883ecc39edabaf3631 \
+size    1905444
 
 if {${name} ne ${subport}} {
     compiler.cxx_standard 2017

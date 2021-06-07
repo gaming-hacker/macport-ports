@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ master_sites        ${homepage}rar/
 distname            ${my_name}-${version}
 
 checksums           rmd160  a6900295011cffb19c491d8d38b12e36b3c615a9 \
-                    sha256  7e34064c9e97464462c81aed80c25619149f71d4900995021780787f51dd63f0 \
-                    size    232702
+sha256  7e34064c9e97464462c81aed80c25619149f71d4900995021780787f51dd63f0 \
+size    232702
 
 patchfiles          patch-makefile.unix.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ homepage            ${master_sites}
 use_xz              yes
 
 checksums           rmd160  efb33c4f161e237b8da445fc9d6baff17be251dc \
-                    sha256  8fc45bac9722aefa6f022999cbb76242d143c31b314e2dbb38f034f4069d14e2 \
-                    size    165216
+sha256  8fc45bac9722aefa6f022999cbb76242d143c31b314e2dbb38f034f4069d14e2 \
+size    165216
 
 depends_build-append port:pkgconfig \
                      port:intltool

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ distname            2017-11-28-Jgraph
 dist_subdir         ${name}/${version}
 master_sites        https://web.eecs.utk.edu/~jplank/plank/jgraph/
 checksums           rmd160  dbdd95cd53eeeb6797967efddb5fc2b925f083d9 \
-                    sha256  fd6a71d917b57a3b4fe25b6c8f9d00569124f5eaa76caa41565c09f553b6ccda \
-                    size    788480
+sha256  fd6a71d917b57a3b4fe25b6c8f9d00569124f5eaa76caa41565c09f553b6ccda \
+size    788480
 use_tar             yes
 use_configure       no
 use_test            no

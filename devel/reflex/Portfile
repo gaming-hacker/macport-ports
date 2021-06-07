@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                reflex
 version             2.5.4-20210510
 revision            0
 checksums           rmd160  9140703669f9397c57675eaf178137b474b3302f \
-                    sha256  96f1b1740489d52dcbbd51a78dbe68360bdcdafc380ed302ec503bcc5eb6b36b \
-                    size    471218
+sha256  96f1b1740489d52dcbbd51a78dbe68360bdcdafc380ed302ec503bcc5eb6b36b \
+size    471218
 
 set version_date    [lindex [split ${version} -] 1]
 categories          devel

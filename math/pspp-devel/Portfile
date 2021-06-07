@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -37,7 +37,7 @@ depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
                     port:libxml2 \
                     port:librsvg \
                     port:ncurses \
-                    port:perl5.28 \
+                    port:perl5.30 \
                     path:lib/pkgconfig/pango.pc:pango \
                     port:python39 \
                     port:readline \
@@ -50,8 +50,8 @@ depends_build-append    port:pkgconfig port:p5.28-text-diff port:coreutils
 depends_test-append port:p5.28-text-diff port:coreutils
 
 checksums           rmd160  c3beebb355f468ef00530b6ff65979e07404eb07 \
-                    sha256  7c36f7239c6178021691fff7f98860bc9f90f022f8c04a93152371f27a431c1c \
-                    size    8663244
+sha256  7c36f7239c6178021691fff7f98860bc9f90f022f8c04a93152371f27a431c1c \
+size    8663244
 
 post-extract {
     if {[variant_isset gui]} {
@@ -71,7 +71,7 @@ compiler.c_standard  2011
 
 #configure.cflags-append -g
 configure.python    ${prefix}/bin/python3.9
-configure.perl      ${prefix}/bin/perl5.28
+configure.perl      ${prefix}/bin/perl5.30
 configure.args-append   --disable-rpath \
                         --without-libpq \
                         --without-gui \

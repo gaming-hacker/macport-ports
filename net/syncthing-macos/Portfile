@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -7,8 +7,8 @@ github.setup            syncthing syncthing-macos 1.16.1-2 v
 revision                0
 
 checksums               rmd160  7f91206e09a23cf04d5cedab630aa3a197eaa79b \
-                        sha256  0c736f25552445c14baef98ee3d0e45b858e4999346f0bacd416787566b21a2b \
-                        size    12236628
+sha256  0c736f25552445c14baef98ee3d0e45b858e4999346f0bacd416787566b21a2b \
+size    12236628
 
 categories              net aqua
 maintainers             {@lbschenkel lbschenkel} openmaintainer
@@ -29,7 +29,7 @@ post-patch {
 }
 
 use_configure           no
-use_xcode               yes
+use_xcode  no
 
 build {
     system -W ${build.dir} "make release"

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.0
@@ -9,8 +9,8 @@ name                    doxygen
 
 version                 1.9.1
 checksums               rmd160  95847ce45dea03e16198f096d8ddb3589e90d78b \
-                        sha256  67aeae1be4e1565519898f46f1f7092f1973cce8a767e93101ee0111717091d1 \
-                        size    5117435
+sha256  67aeae1be4e1565519898f46f1f7092f1973cce8a767e93101ee0111717091d1 \
+size    5117435
 revision                0
 
 categories              textproc devel
@@ -70,7 +70,7 @@ patchfiles              patch-src-portable_c.c.diff \
                         patch-longtabu.diff
 
 # see #59372
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 compiler.thread_local_storage yes
 

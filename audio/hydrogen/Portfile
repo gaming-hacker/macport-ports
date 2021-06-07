@@ -1,4 +1,4 @@
-# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -9,8 +9,8 @@ epoch               1
 github.setup        hydrogen-music hydrogen 1.0.2
 revision            0
 checksums           rmd160  f591543d48046ee404a48458a77a13e95edae5f0 \
-                    sha256  44791090096bb909cc704df054756ba140674944af867b85097f740f2ba13597 \
-                    size    15075455
+sha256  44791090096bb909cc704df054756ba140674944af867b85097f740f2ba13597 \
+size    15075455
 
 categories          audio
 platforms           macosx

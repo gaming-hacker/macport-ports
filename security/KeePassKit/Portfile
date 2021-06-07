@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -25,13 +25,13 @@ distfiles               ${keepasskit_hash}.tar.gz:keepasskit \
                         ${argon2_hash}.tar.gz:argon2
 
 checksums               ${keepasskit_hash}.tar.gz \
-                        rmd160  cef3f62e699904c006030347ca96d9ff5b384f79 \
-                        sha256  08629693dca633dcf883799271581fe445a0fcb1f9b7416e23e50271082adb5d \
-                        size    24485497 \
+rmd160  cef3f62e699904c006030347ca96d9ff5b384f79 \
+sha256  08629693dca633dcf883799271581fe445a0fcb1f9b7416e23e50271082adb5d \
+size    24485497 \
                         ${argon2_hash}.tar.gz \
-                        rmd160  fe3ad7f6fdff4a91e7a1acf392d3d4ec5693e506 \
-                        sha256  c31776881e09f55d537a8f2854f532961392b3d8ecf58d529729ff6d31150e8d \
-                        size    1503597
+rmd160  fe3ad7f6fdff4a91e7a1acf392d3d4ec5693e506 \
+sha256  c31776881e09f55d537a8f2854f532961392b3d8ecf58d529729ff6d31150e8d \
+size    1503597
 
 post-extract {
     file delete -force ${worksrcpath}/Argon2

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -74,10 +74,10 @@ Refer to the Firewall section in System Preferences.
 "
 
 checksums   ${distname}${extract.suffix} \
-                rmd160  89ca7d61a2bf65efa380cf69583d8b37e18d6974 \
-                sha256  bda61190a235d875a0690563cae493fe9f5415dd31ec9927cb5cc7ac880231bf \
-                size    711404 \
+rmd160  89ca7d61a2bf65efa380cf69583d8b37e18d6974 \
+sha256  bda61190a235d875a0690563cae493fe9f5415dd31ec9927cb5cc7ac880231bf \
+size    711404 \
             ${name}-${version}-an.fx.xpi \
-                rmd160  06c4738cbdc9ec3005768ed81b88d19d2e163398 \
-                sha256  b410527a69dba88a30d8a6d341a20eb5cb1f84b684e9bc8bb6bc88a2930e0eea \
-                size    622464
+rmd160  06c4738cbdc9ec3005768ed81b88d19d2e163398 \
+sha256  b410527a69dba88a30d8a6d341a20eb5cb1f84b684e9bc8bb6bc88a2930e0eea \
+size    622464

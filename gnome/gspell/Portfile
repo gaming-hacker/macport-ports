@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -22,8 +22,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  3105f9c09b3c221fa7a9ed650c26d63cf63e1b2d \
-                    sha256  cf4d16a716e813449bd631405dc1001ea89537b8cdae2b8abfb3999212bd43b4 \
-                    size    424356
+sha256  cf4d16a716e813449bd631405dc1001ea89537b8cdae2b8abfb3999212bd43b4 \
+size    424356
 
 depends_build       port:pkgconfig \
                     port:gtk-doc

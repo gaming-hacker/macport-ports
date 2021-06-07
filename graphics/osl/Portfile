@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -28,10 +28,10 @@ long_description        Open Shading Language is a language developed \
                         lights, displacement, and pattern generation.
 
 checksums               rmd160  87b4fc115da9574735671fb56d3ae34a17171084 \
-                        sha256  7ec1e9a460bd22211b14d926287c946d5ffba753d3ee48d08cf6149db2f23e12 \
-                        size    14141564
+sha256  7ec1e9a460bd22211b14d926287c946d5ffba753d3ee48d08cf6149db2f23e12 \
+size    14141564
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 
 # Keep this value synchronized with the
 # newest LLVM that is compatible with OSL

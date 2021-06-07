@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,10 +20,10 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  ce791cc108ee0afb8153fb070d1dd57c3a8034f0 \
-                    sha256  3dfd986eeeaeeeec5d39851ef89829ce3a2619c012dad831d05488d7403ae765 \
-                    size    403754
+sha256  3dfd986eeeaeeeec5d39851ef89829ce3a2619c012dad831d05488d7403ae765 \
+size    403754
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args-append \
                     -DBUILD_SHARED_LIBS:BOOL=ON

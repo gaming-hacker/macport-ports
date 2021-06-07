@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -21,8 +21,8 @@ homepage            http://lgames.sourceforge.net/index.php?project=LPairs
 master_sites        sourceforge:lgames
 
 checksums           rmd160  4e16a349e9ce680551e4b7ac849e2fc5b5a31d09 \
-                    sha256  df92980e73d63a334fbbdc33f405af481028d6d7550e8ec8d93371b711394518 \
-                    size    11913120
+sha256  df92980e73d63a334fbbdc33f405af481028d6d7550e8ec8d93371b711394518 \
+size    11913120
 
 pre-build {
     system -W ${worksrcpath} "chmod 755 install-sh"

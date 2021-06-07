@@ -20,8 +20,8 @@ master_sites    macports \
 distfiles       a2ps.pl-${version}
 patchfiles      patch-a2ps-j.diff
 checksums       md5 3eae209b3c69ec692ee7d61ddd663f6c \
-                sha1 1a938099322767bced3eae525426b80164584d8c \
-                rmd160 2599f86d4433afd3d0ed3490539d87995ce51dab
+sha1 1a938099322767bced3eae525426b80164584d8c \
+rmd160 2599f86d4433afd3d0ed3490539d87995ce51dab
 
 depends_run     bin:perl:perl5 \
                 port:nkf

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -27,9 +27,9 @@ distname            ruby-${version}
 dist_subdir         ruby27
 
 checksums           md5 604acb258b1d8228f55799e846cfe6d3 \
-                    rmd160 cb355a8aa449beb0a3b9d0397c6e0d20a23094fb \
-                    sha1 4f4a47465b48a91d43fb557b70e47d79f6727a29 \
-                    sha256 3e90e5a41d4df90e19c307ab0fb41789992c0b0128e6bbaa669b89ed44a0b68b
+rmd160 cb355a8aa449beb0a3b9d0397c6e0d20a23094fb \
+sha1 4f4a47465b48a91d43fb557b70e47d79f6727a29 \
+sha256 3e90e5a41d4df90e19c307ab0fb41789992c0b0128e6bbaa669b89ed44a0b68b
 
 use_parallel_build  no
 
@@ -142,7 +142,7 @@ platform darwin {
         depends_build-append    port:gmake
         build.cmd               ${prefix}/bin/gmake
         configure.args-append   --disable-dtrace
-        configure.cflags-append -std=c99
+        configure.cflags-append -std=c11
     }
 
     if {${os.major} == 8} {

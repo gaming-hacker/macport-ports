@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ distname            ${my_name}-${version}
 use_xz              yes
 
 checksums           rmd160  fb8bdd29adba833ea8f2c9e618828ffdf19b82c8 \
-                    sha256  c724f612700c15a933c7356fbeabb0bb9571fb5538f8b1b54d4d2d94188deef2 \
-                    size    9466288
+sha256  c724f612700c15a933c7356fbeabb0bb9571fb5538f8b1b54d4d2d94188deef2 \
+size    9466288
 
 depends_build       port:gtk-doc \
                     port:nasm \

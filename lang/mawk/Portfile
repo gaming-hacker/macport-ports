@@ -20,8 +20,8 @@ master_sites    ftp://ftp.invisible-island.net/pub/${name}/ \
                 https://invisible-mirror.net/archives/${name}/
 extract.suffix  .tgz
 checksums       rmd160 4b845606dae6ae259f507f9ad3f08d02c4f48586 \
-                sha256 7fd4cd1e1fae9290fe089171181bbc6291dfd9bca939ca804f0ddb851c8b8237 \
-                size 468855
+sha256 7fd4cd1e1fae9290fe089171181bbc6291dfd9bca939ca804f0ddb851c8b8237 \
+size 468855
 
 patchfiles      patch-configure.in.diff
 

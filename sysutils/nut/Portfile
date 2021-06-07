@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -25,8 +25,8 @@ homepage            http://www.networkupstools.org/
 master_sites        ${homepage}source/[join [lrange [split ${version} .] 0 1] .]/
 
 checksums           rmd160  f39a49128a3ba20b1bf122ce569c5a867815c3a1 \
-                    sha256  980e82918c52d364605c0703a5dcf01f74ad2ef06e3d365949e43b7d406d25a7 \
-                    size    2509831
+sha256  980e82918c52d364605c0703a5dcf01f74ad2ef06e3d365949e43b7d406d25a7 \
+size    2509831
 
 depends_build       port:pkgconfig
 

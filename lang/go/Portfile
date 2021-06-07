@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -40,9 +40,9 @@ maintainers         {ciserlohn @ci42} \
 set go_src_dist     ${name}${version}.src${extract.suffix}
 
 checksums           ${go_src_dist} \
-                    rmd160  dfbe9538c56f60215d699b611aac1db182751e5c \
-                    sha256  7bfa7e5908c7cc9e75da5ddf3066d7cbcf3fd9fa51945851325eebc17f50ba80 \
-                    size    20921372
+rmd160  dfbe9538c56f60215d699b611aac1db182751e5c \
+sha256  7bfa7e5908c7cc9e75da5ddf3066d7cbcf3fd9fa51945851325eebc17f50ba80 \
+size    20921372
 
 extract.only        ${go_src_dist}
 
@@ -141,9 +141,9 @@ if {${configure.build_arch} eq "arm64"} {
     distfiles-append        ${go_bin_dist}
 
     checksums-append        ${go_bin_dist} \
-                            rmd160  8d71eb0ad4554df11079df3f5878800688fc7097 \
-                            sha256  7b1bed9b63d69f1caa14a8d6911fbd743e8c37e21ed4e5b5afdbbaa80d070059 \
-                            size    125731583
+rmd160  8d71eb0ad4554df11079df3f5878800688fc7097 \
+sha256  7b1bed9b63d69f1caa14a8d6911fbd743e8c37e21ed4e5b5afdbbaa80d070059 \
+size    125731583
 
     post-extract {
         xinstall -d ${go_bin_path}

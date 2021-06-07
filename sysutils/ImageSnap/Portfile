@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           xcode 1.0
 github.setup        rharder imagesnap 0.2.12
 revision            0
 checksums           rmd160  925c467c0e6972967a7d662a8fd50c6fa8f4f196 \
-                    sha256  34ba713a79b7e0598bd598441dc2ba4045cf503e13f14e71575ead5bc5257c7d \
-                    size    10701
+sha256  34ba713a79b7e0598bd598441dc2ba4045cf503e13f14e71575ead5bc5257c7d \
+size    10701
 
 name                ImageSnap
 categories          sysutils graphics
@@ -34,8 +34,8 @@ if {${os.major} < 9} {
     version         0.2.5
     revision        0
     checksums       rmd160  8455b057ce5f27130547524c3a7fb812f54d766e \
-                    sha256  2516edd6e8fe35c075f0a6517b9fb8ba9af296f8f29b9e349566b9ba6f729615 \
-                    size    45002
+sha256  2516edd6e8fe35c075f0a6517b9fb8ba9af296f8f29b9e349566b9ba6f729615 \
+size    45002
 
     master_sites    sourceforge:project/iharder/imagesnap
     distname        ${name}-v${version}

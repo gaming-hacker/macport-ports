@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,8 +29,8 @@ use_bzip2           yes
 worksrcdir          ${name}-${version}
                 
 checksums           rmd160  d15a3d961372218a45e7a32643a2299d5290a0e6 \
-                    sha256  7c39a6bf61608045c87c3823bd82250cf72a32c6738d8604d8d9186fc7eb391c \
-                    size    10422732
+sha256  7c39a6bf61608045c87c3823bd82250cf72a32c6738d8604d8d9186fc7eb391c \
+size    10422732
 
 configure.dir       ${workpath}/fricas-build
 configure.cmd       ${worksrcpath}/configure

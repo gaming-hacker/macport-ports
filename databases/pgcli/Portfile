@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    {*}${description}
 homepage            https://pgcli.com
 
 checksums           rmd160  86effcb9d2e320d978629a8e07713596cb0dc2b3 \
-                    sha256  64a4f15e0c6061bc11df93d1c352d910f7be69d1f783152c73d756a753f0eb52 \
-                    size    441963
+sha256  64a4f15e0c6061bc11df93d1c352d910f7be69d1f783152c73d756a753f0eb52 \
+size    441963
 
 variant python27 conflicts python36 python37 python38 python39 description "Use Python 2.7" {}
 variant python36 conflicts python27 python37 python38 python39 description "Use Python 3.6" {}
@@ -32,9 +32,9 @@ if {[variant_isset python27]} {
 } elseif {[variant_isset python36]} {
     python.default_version 36
 } elseif {[variant_isset python37]} {
-    python.default_version 37
+    python.default_version 39
 } elseif {[variant_isset python38]} {
-    python.default_version 38
+    python.default_version 39
 } else {
     default_variants +python39
     python.default_version 39
@@ -44,8 +44,8 @@ if {[variant_isset python27]} {
     github.setup    dbcli pgcli 1.11.0 v
     revision        0
     checksums       rmd160  d7631dd973be421e664db9b6089106297ebce6c6 \
-                    sha256  2c30dd068afdc8a0b15460d49b27962c55642154bb4cb4279e86b36d607c9590 \
-                    size    430226
+sha256  2c30dd068afdc8a0b15460d49b27962c55642154bb4cb4279e86b36d607c9590 \
+size    430226
 
     patchfiles      postgresql12_support.diff \
                     setup-1.11.0.py.diff

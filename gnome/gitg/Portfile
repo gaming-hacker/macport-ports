@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -29,8 +29,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  adf58770ac00c43a4bfc9df2d0ea69fd8a7b95cd \
-                    sha256  24a4aabf8a42aa2e783e1fb5996ebb3c2a82a01b9689269f1329517ef124ef5a \
-                    size    10613836
+sha256  24a4aabf8a42aa2e783e1fb5996ebb3c2a82a01b9689269f1329517ef124ef5a \
+size    10613836
 
 depends_build-append \
                     port:pkgconfig
@@ -75,20 +75,20 @@ variant python36 conflicts python37 python38 description {Enable Python support 
 
 variant python37 conflicts python36 python38 description {Enable Python support using python37} {
     configure.args-delete -Dpython=false
-    depends_lib-append port:py37-gobject3
-    configure.python ${prefix}/bin/python3.7
+    depends_lib-append port:py39-gobject3
+    configure.python ${prefix}/bin/python3.9
     configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig/
 }
 
 variant python38 conflicts python36 python37 description {Enable Python support using python38} {
     configure.args-delete -Dpython=false
-    depends_lib-append port:py38-gobject3
-    configure.python ${prefix}/bin/python3.8
+    depends_lib-append port:py39-gobject3
+    configure.python ${prefix}/bin/python3.9
     configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.8/lib/pkgconfig/
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python38
+    default_variants +python39
 }
 
 variant quartz {}

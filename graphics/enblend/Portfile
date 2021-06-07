@@ -18,8 +18,8 @@ platforms       darwin
 distname        enblend-enfuse-${version}
 
 checksums       rmd160  997a849a39da3f367b666c6d0d344059d97738d7 \
-                sha256  8703e324939ebd70d76afd350e56800f5ea2c053a040a5f5218b2a1a4300bd48 \
-                size    777747
+sha256  8703e324939ebd70d76afd350e56800f5ea2c053a040a5f5218b2a1a4300bd48 \
+size    777747
 
 depends_build   port:pkgconfig \
                 port:texlive-latex \
@@ -40,8 +40,8 @@ depends_lib     port:boost \
 configure.args  --with-openexr
 
 # vigra header file requires C++11
-compiler.cxx_standard   2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 post-patch {
     # avoid c++17 header collision

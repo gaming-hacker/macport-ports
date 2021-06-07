@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                       1.0
 PortGroup           select                       1.0
@@ -37,8 +37,8 @@ if { ${build_arch} eq "arm64" } {
     subport         libgcc-devel { revision 0 }
 
     checksums       rmd160  30782c24fc617b65a58c092fe7a77ce5a985c112 \
-                    sha256  dec4ee8e56c154c76bd6725547666569c1ec21ca2e9b6b3e40760fc236e6f450 \
-                    size    125451045
+sha256  dec4ee8e56c154c76bd6725547666569c1ec21ca2e9b6b3e40760fc236e6f450 \
+size    125451045
 
 } else {
     # Use regular GCC releases and snapshsots
@@ -48,8 +48,8 @@ if { ${build_arch} eq "arm64" } {
     subport         libgcc-devel { revision 0 }
 
     checksums       rmd160  0faa75b51b3e75d84f6f53c25d8dc7d7aceab35f \
-                    sha256  04f0e2ffc3245d6ff596d6beeefb865b8a9e09aa36f79d98a2eaecd645854409 \
-                    size    75523416
+sha256  04f0e2ffc3245d6ff596d6beeefb865b8a9e09aa36f79d98a2eaecd645854409 \
+size    75523416
 
     # Primary releases
     master_sites    https://ftpmirror.gnu.org/gcc/gcc-${version}/ \

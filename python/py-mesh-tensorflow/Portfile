@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,8 +30,8 @@ long_description    Mesh TensorFlow (mtf) is a language for distributed \
 distname            ${github.project}-${github.author}-${version}
 
 checksums           rmd160  47fc56ab18d7cf0d397dc7a194a94663cae81851 \
-                    sha256  57bbc4caa0958e879ed24a2dac679f257e28355a1f11f0f370708bb9b982c1d4 \
-                    size    361646
+sha256  57bbc4caa0958e879ed24a2dac679f257e28355a1f11f0f370708bb9b982c1d4 \
+size    361646
 
 python.versions     37 38 39
 

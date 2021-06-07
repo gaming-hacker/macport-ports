@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ homepage            https://dev.yorhel.nl/ncdc
 master_sites        https://dev.yorhel.nl/download/
 
 checksums           rmd160  e69d253f5adf4d13a941cc3008603dbfff70c48b \
-                    sha256  d15fd378aa345f423e59a38691c668f69b516cd4b8afbbcdc446007740c3afad \
-                    size  371572
+sha256  d15fd378aa345f423e59a38691c668f69b516cd4b8afbbcdc446007740c3afad \
+size  371572
 
 depends_build       port:pkgconfig
 

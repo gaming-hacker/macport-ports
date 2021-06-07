@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        Martchus cpp-utilities 5.4.0 v
 revision            0
 checksums           rmd160  95afd96a35ba60484658696ca8f45cc2a208f1c3 \
-                    sha256  12330ad7b3f745f91bf37193dc872462fd1e14cc13018094a200d424bf346be6 \
-                    size    161114
+sha256  12330ad7b3f745f91bf37193dc872462fd1e14cc13018094a200d424bf346be6 \
+size    161114
 
 categories          devel
 maintainers         nomaintainer

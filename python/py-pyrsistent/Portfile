@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            http://github.com/tobgu/pyrsistent/
 
 checksums           rmd160  e61fb596d16ed687f631286ea273e12648eaeb2f \
-                    sha256  2e636185d9eb976a18a8a8e96efce62f2905fea90041958d8cc2a189756ebf3e \
-                    size    106911
+sha256  2e636185d9eb976a18a8a8e96efce62f2905fea90041958d8cc2a189756ebf3e \
+size    106911
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -33,8 +33,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  916e00904323216dce16999b23669ffd62981a61 \
-                            sha256  cdc7b5e3ed77bed61270a47d35434a30617b9becdf2478af76ad2c6ade307280 \
-                            size    107714
+sha256  cdc7b5e3ed77bed61270a47d35434a30617b9becdf2478af76ad2c6ade307280 \
+size    107714
     }
 
     depends_test-append \

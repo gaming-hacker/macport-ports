@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    libdnet provides a simplified, portable interface to \
 platforms           darwin
 
 checksums           rmd160  5d5ef5393c06a9cbc1ec39882574e747ae3522b4 \
-                    sha256  7cdc059866d79a0daa795d65afb12c62e7a591b01265e4b8e31c96846b1e640f \
-                    size    520885
+sha256  7cdc059866d79a0daa795d65afb12c62e7a591b01265e4b8e31c96846b1e640f \
+size    520885
 
 patchfiles          patch-automake-1.13.diff
 

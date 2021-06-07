@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ homepage            https://git.ligo.org/kipp.cannon/python-ligo-lw
 master_sites        pypi:p/python-ligo-lw
 distname            python-ligo-lw-${version}
 checksums           rmd160  67afbcce210d31443cef2984685c180ec41013a5 \
-                    sha256  5afb242628f9c77b9df40f59e4fd9ba0e09322ab42347d5b84b1e4fd9dd32c9a \
-                    size    2314116
+sha256  5afb242628f9c77b9df40f59e4fd9ba0e09322ab42347d5b84b1e4fd9dd32c9a \
+size    2314116
 
 python.versions     27 36 37 38
 python.default_version 27

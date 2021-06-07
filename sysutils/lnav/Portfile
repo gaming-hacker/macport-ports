@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ depends_lib         port:curl \
                     path:lib/libssl.dylib:openssl
 
 checksums           rmd160  88827fcfd89b726f36d1abd20f343f1bd22b3526 \
-                    sha256  03e15449a87fa511cd19c6bb5e95de4fffe17612520ff7683f2528d3b2a7238f \
-                    size    1094734
+sha256  03e15449a87fa511cd19c6bb5e95de4fffe17612520ff7683f2528d3b2a7238f \
+size    1094734
 
 configure.args      --disable-silent-rules \
                     --disable-static \

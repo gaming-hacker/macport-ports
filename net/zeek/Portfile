@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ master_sites        https://download.zeek.org/
 
 
 checksums           rmd160  21e23dcfd6214fb405e73f1565ff1d5c7a7bc864 \
-                    sha256  550713a9d3fd348783f39c959af7e569164c95b96cc3be28d7d5557bdeebfd95 \
-                    size    29428156
+sha256  550713a9d3fd348783f39c959af7e569164c95b96cc3be28d7d5557bdeebfd95 \
+size    29428156
 
 depends_build-append \
                     port:libgeoip \
@@ -63,18 +63,18 @@ configure.args      -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
 
 variant python37 conflicts python38 description {Build using Python 3.7} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
-                    -DPYTHON_CONFIG=${prefix}/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/config-3.7m-darwin/python-config
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 \
+                    -DPYTHON_CONFIG=${prefix}/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.9/config-3.7m-darwin/python-config
     depends_lib-append  \
-                    port:python37
+                    port:python39
 }
 
 variant python38 conflicts python37 description {Build using Python 3.8} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.8 \
-                    -DPYTHON_CONFIG=${prefix}/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/config-3.8-darwin/python-config
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 \
+                    -DPYTHON_CONFIG=${prefix}/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.9/config-3.8-darwin/python-config
     depends_lib-append  \
-                    port:python38
+                    port:python39
 }
 
 if {![variant_isset python37] && ![variant_isset python38]} {

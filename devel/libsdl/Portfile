@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup xcodeversion 1.0
@@ -27,7 +27,7 @@ distname        ${my_name}-${version}_1
 use_bzip2       yes
 
 checksums       rmd160 5c976d04b4a96e9fcb6c2b245ad09d6c18c52a8c \
-                sha256 dbc9d471ad5e7cc4bbbd26a79b29972807029ce093e4aa5c6c1b20cbb11168b4
+sha256 dbc9d471ad5e7cc4bbbd26a79b29972807029ce093e4aa5c6c1b20cbb11168b4
 
 minimum_xcodeversions {8 2.4.1}
 

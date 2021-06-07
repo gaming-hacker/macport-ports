@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,8 +22,8 @@ master_sites    ftp://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools/old/${version}
 distname        ncbi
 
 checksums       sha256 603c9a4ade2a6f2f8e412558b732924d78fae403d225706e2ac38d553b08073c \
-                rmd160 b37a6eda9f370d02632c1497cd66a3ca64aa0a36 \
-                size 68428744
+rmd160 b37a6eda9f370d02632c1497cd66a3ca64aa0a36 \
+size 68428744
 
 dist_subdir     ${name}/${version}
 extract.mkdir   yes

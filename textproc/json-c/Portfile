@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -20,8 +20,8 @@ long_description    JSON-C implements a reference counting object model that all
                     the C representation of JSON objects.
 
 checksums           rmd160  0169232e09c4a115620619749955957ff421dbff \
-                    sha256  79482d12af65afaa6c9807975059d7b2634f3bdf77abae77660e69e1f20c78f2 \
-                    size    348237
+sha256  79482d12af65afaa6c9807975059d7b2634f3bdf77abae77660e69e1f20c78f2 \
+size    348237
 
 # disable warnings as errors, fixes:
 # cc1: warnings being treated as errors

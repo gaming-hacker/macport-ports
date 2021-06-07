@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,11 +14,11 @@ long_description    ${description}
 
 github.setup        pothosware SoapyAirspyHF 0.2.0 soapy-airspyhf-
 checksums           rmd160  e74a354c9f03eb831038fbdd77e56bb3be317034 \
-                    sha256  78664b30f21557c4f75761e59610fe8a32e5400119ec03175a1225238ad05375 \
-                    size    11469
+sha256  78664b30f21557c4f75761e59610fe8a32e5400119ec03175a1225238ad05375 \
+size    11469
 revision            0
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_build-append \
     port:pkgconfig

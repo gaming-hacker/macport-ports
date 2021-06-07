@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,8 +16,8 @@ long_description    {*}${description}
 homepage            http://gammapy.org/
 
 checksums           rmd160  a87b7b9b0af6223b6ae9f33cc7ebb502ca7132a2 \
-                    sha256  ae496b792e18611184626c728cf2e7fd713b6b53d7294c384ab39f40bac944e1 \
-                    size    2077004
+sha256  ae496b792e18611184626c728cf2e7fd713b6b53d7294c384ab39f40bac944e1 \
+size    2077004
 
 python.versions     37 38 39
 

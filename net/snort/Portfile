@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       legacysupport 1.1
@@ -25,8 +25,8 @@ platforms       darwin freebsd
 master_sites    ${homepage}downloads/snort/
 
 checksums       rmd160  9715174e41a7768f3b6e0b52ec30bf781aea947b \
-                sha256  303d3d5dc5affecfeaad3a331d3163f901d48d960fdd6598cb55c6d1591eed82 \
-                size    6980147
+sha256  303d3d5dc5affecfeaad3a331d3163f901d48d960fdd6598cb55c6d1591eed82 \
+size    6980147
 
 depends_build   port:pkgconfig
 

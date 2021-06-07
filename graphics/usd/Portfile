@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,12 +26,12 @@ long_description    Universal Scene Description (USD) is a software \
                     namespaces of primitives and their properties. \
                     This provides a set of schemas upon which common \
                     3-D computer graphics concepts such as geometry, \
-                    shading, models, and assets can be organized and \
+shading, models, and assets can be organized and \
                     manipulated.
 
 checksums           rmd160  8ec6dda307f9804ce4b3a562c3df2dbd14a64390 \
-                    sha256  ad167b438401848fdd4133f4470a6288ccf37949b4ccc9abf52b50438380ec59 \
-                    size    24800580
+sha256  ad167b438401848fdd4133f4470a6288ccf37949b4ccc9abf52b50438380ec59 \
+size    24800580
 
 set py_ver          3.8
 set py_ver_nodot    [string map {. {}} ${py_ver}]
@@ -41,7 +41,7 @@ set py_ver_minor    [lindex [split $py_ver .] 1]
 depends_lib-append  port:boost \
                     port:tbb
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 # USD fails to compile for Clang older than 8.1.0
 # (Note: Clang 8.1.0 == clang-802 in Xcode)
 compiler.blacklist-append {clang < 802}

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         CBOR-XS 1.83 ../../authors/id/M/ML/MLEHMANN
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  8c4c89853363c15e5a34d5491d8cc7d0c1b1ebe8 \
-                    sha256  732f4099073574b9f785dcece99649128223520d93aa5d8aadb672db108b82b7 \
-                    size    77046
+sha256  732f4099073574b9f785dcece99649128223520d93aa5d8aadb672db108b82b7 \
+size    77046
 
 if {${perl5.major} != ""} {
     depends_build-append \

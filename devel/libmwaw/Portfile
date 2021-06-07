@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ description         Library parsing many pre-OS X MAC text formats.
 long_description    ${description}
 
 checksums           rmd160  17c5881ccde1c69d0ac2ea40b931c38492431663 \
-                    sha256  b272e234eefc828c4bb8344af0f047a62e070f530e9e2fba11b04c8db8eda5af \
-                    size    1401720
+sha256  b272e234eefc828c4bb8344af0f047a62e070f530e9e2fba11b04c8db8eda5af \
+size    1401720
 
 depends_build       port:pkgconfig \
                     port:libtool

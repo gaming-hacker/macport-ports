@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ master_sites        pypi:p/pluggy
 distname            pluggy-${version}
 
 checksums           rmd160  98db928a51f7eacceb43aa7fe08bfeafb137abc6 \
-                    sha256  15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0 \
-                    size    57962
+sha256  15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0 \
+size    57962
 
 python.versions     27 35 36 37 38 39
 

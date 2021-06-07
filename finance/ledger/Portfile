@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -22,12 +22,12 @@ maintainers         nomaintainer
 platforms           darwin
 
 checksums           rmd160  6286315fcad52f51c59f9b41261713aa141e9fae \
-                    sha256  92bf09bc385b171987f456fe3ee9fa998ed5e40b97b3acdd562b663aa364384a \
-                    size    790959
+sha256  92bf09bc385b171987f456fe3ee9fa998ed5e40b97b3acdd562b663aa364384a \
+size    790959
 
 depends_lib-append  port:boost \
                     port:boost-jam \
-                    port:python38 \
+                    port:python39 \
                     port:libedit \
                     port:gmp \
                     port:mpfr \
@@ -35,7 +35,7 @@ depends_lib-append  port:boost \
 
 require_active_variants boost python38
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args-append \
                     -DBOOST_ROOT=${prefix} \
@@ -46,7 +46,7 @@ configure.args-append \
                     -DGMP_PATH=${prefix}/include \
                     -DMPFR_LIB=${prefix}/lib/libmpfr.dylib \
                     -DMPFR_PATH=${prefix}/include \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.8 \
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 \
                     -DUSE_PYTHON38_COMPONENT=ON \
                     -DUSE_DOXYGEN=OFF \
                     -DUSE_PYTHON=ON

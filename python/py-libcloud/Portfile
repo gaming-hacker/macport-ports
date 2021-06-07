@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ long_description    \
 homepage            https://libcloud.apache.org/
 
 checksums           rmd160  abddb1a23c662434ef7cdb7351b12583ae4a6eef \
-                    sha256  b9eef1a61383fd401a537cf0796a1067a265288b7ab89be93f5571961a8a2902 \
-                    size    2136758
+sha256  b9eef1a61383fd401a537cf0796a1067a265288b7ab89be93f5571961a8a2902 \
+size    2136758
 
 python.versions     27 36 37 38
 
@@ -33,8 +33,8 @@ if {${name} ne ${subport}} {
         version     2.8.2
         revision    0
         checksums   rmd160  c4446b8be3783817d9b7d25c485fb8d7fa0e1977 \
-                    sha256  cfd1f525c9646820cdcbcac596459f87188e1872aa9b59b69b5731d8e34675f3 \
-                    size    2079694
+sha256  cfd1f525c9646820cdcbcac596459f87188e1872aa9b59b69b5731d8e34675f3 \
+size    2079694
 
         depends_lib-append \
                     port:py${python.version}-backports-ssl_match_hostname \

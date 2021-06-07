@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ocaml 1.1
@@ -26,7 +26,7 @@ use_bzip2           yes
 extract.suffix      .tbz
 
 checksums           rmd160  f895ffaf90a4e47b738ec90c69dcd36a7c20533e \
-                    sha256  1675f0c39d39130e7778aeadb162ef7badee71832bf9ab5ec5ea2738cbeb2de7
+sha256  1675f0c39d39130e7778aeadb162ef7badee71832bf9ab5ec5ea2738cbeb2de7
 
 ocaml.build_type    topkg
 

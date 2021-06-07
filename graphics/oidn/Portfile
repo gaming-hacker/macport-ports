@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,15 +22,15 @@ long_description    Open Image Denoise is a library of ${description}, \
                     significantly reduce rendering times.
 
 checksums           rmd160  cd7c309a8629e3574b01584f1831e281b9825282 \
-                    sha256  88367b2bbea82d1df45d65141c36b6d86491bc6b397dc70beb3a05dda566f31c \
-                    size    36763571
+sha256  88367b2bbea82d1df45d65141c36b6d86491bc6b397dc70beb3a05dda566f31c \
+size    36763571
 
 depends_build-append \
                     port:ispc
 depends_lib-append  port:tbb \
                     port:openimageio
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 # OIDN requires a compiler that has OpenMP support (specifically,
 # support for '-fopenmp-simd'). None of the compilers provided by Xcode
 # have any support for OpenMP, so we need to blacklist all Xcode clangs.

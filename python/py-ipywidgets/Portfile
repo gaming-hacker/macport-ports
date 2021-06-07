@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://ipython.org
 
 checksums           rmd160  56524fc7c87ccf74e81ed1d412562e14357bf229 \
-                    sha256  9f1a43e620530f9e570e4a493677d25f08310118d315b00e25a18f12913c41f0 \
-                    size    4072376
+sha256  9f1a43e620530f9e570e4a493677d25f08310118d315b00e25a18f12913c41f0 \
+size    4072376
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-ipython \
@@ -35,8 +35,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  dd95fbc4280d32f34fb5a586ead9e3bb5a86fc6e \
-                            sha256  cb263c6974aca902d00a435711823bb4aaf6614a5f997f517e15fa84151e8fa2 \
-                            size    5657273
+sha256  cb263c6974aca902d00a435711823bb4aaf6614a5f997f517e15fa84151e8fa2 \
+size    5657273
     }
 
     livecheck.type      none

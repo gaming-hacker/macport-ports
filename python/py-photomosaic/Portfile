@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ description         Creating fun photomosaics, GIFs, and murals from \
 long_description    {*}${description}
 
 checksums           rmd160  3c4ba6aa62d34befeac9a29349d9f70292cb284b \
-                    sha256  a535bd251ba7a0a58ffbc54267dd3d216039444c27fe699a3780962c3b74854d \
-                    size    206597225
+sha256  a535bd251ba7a0a58ffbc54267dd3d216039444c27fe699a3780962c3b74854d \
+size    206597225
 
 python.versions     37 38 39
 

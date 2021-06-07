@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    RigCtldGUI is ${description}
 github.setup        dl1ycf RigCtldGUI 7ceec61c2c6f1e9acdc436c4e30d48aa85953361
 version             20210603-[string range ${github.version} 0 7]
 checksums           rmd160  9f410a5b4b0b8390a195317230dfbe37146a3a76 \
-                    sha256  399297ebd82b97bfbd1e7a052d71f4c474bf953c0cbc997a9c36fa0f51aa11b9 \
-                    size    2496631
+sha256  399297ebd82b97bfbd1e7a052d71f4c474bf953c0cbc997a9c36fa0f51aa11b9 \
+size    2496631
 revision            0
 
 # is using clang++ to link but isn't using MacPorts CXXFLAGS

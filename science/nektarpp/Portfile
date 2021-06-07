@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -33,17 +33,17 @@ distfiles               ${main_distfile}:main \
                         triangle-1.6.zip:thirdparty
 
 checksums               nektar-5.0.1.tar.bz2 \
-                        rmd160  95a2af5c1a7d96f64f1ecf387abc1b0ffb943d8e \
-                        sha256  b95d6c54c162633b768b8e797e7f9ef1e2222a28f0ffb0cbd8c9049cfcc27907 \
-                        size    51521684 \
+rmd160  95a2af5c1a7d96f64f1ecf387abc1b0ffb943d8e \
+sha256  b95d6c54c162633b768b8e797e7f9ef1e2222a28f0ffb0cbd8c9049cfcc27907 \
+size    51521684 \
                         tetgen-1.5.zip \
-                        rmd160  d8785f4ca6b26608ec9423f7574a0e736380370a \
-                        sha256  52207793198746de14abcb30a0aeed617d7348ff37544e7d7e65aaaa76d7fa70 \
-                        size    264128 \
+rmd160  d8785f4ca6b26608ec9423f7574a0e736380370a \
+sha256  52207793198746de14abcb30a0aeed617d7348ff37544e7d7e65aaaa76d7fa70 \
+size    264128 \
                         triangle-1.6.zip \
-                        rmd160  c92c011c442157cae5abcf246935d61bdfeede26 \
-                        sha256  7d74d7efbe35dc5a497bd179bdc87b4670740e466f67043d41e0b0546ce76cb5 \
-                        size    130331
+rmd160  c92c011c442157cae5abcf246935d61bdfeede26 \
+sha256  7d74d7efbe35dc5a497bd179bdc87b4670740e466f67043d41e0b0546ce76cb5 \
+size    130331
 
 # Only the full Nektar++ source should be extracted - CMake will extract any
 # third-party dependencies.
@@ -51,7 +51,7 @@ extract.only            ${main_distfile}
 
 patchfiles              no-homebrew.patch
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 cmake.build_type        Release
 
 mpi.setup
@@ -89,9 +89,9 @@ variant petsc description {
 if {[mpi_variant_isset]} {
     distfiles-append    gsmpi-1.2.1_1.tar.bz2:thirdparty
     checksums-append    gsmpi-1.2.1_1.tar.bz2 \
-                        rmd160 3a1ad71c552ea9d62bebabd4ed528531f9c0eec6 \
-                        sha256 c9bc966c92f45e81f4e9d1887dd7c59808e7a4ef9ec41e1e5f1e6c5c01745211 \
-                        size 39737
+rmd160 3a1ad71c552ea9d62bebabd4ed528531f9c0eec6 \
+sha256 c9bc966c92f45e81f4e9d1887dd7c59808e7a4ef9ec41e1e5f1e6c5c01745211 \
+size 39737
 
     depends_lib-append port:hdf5
 

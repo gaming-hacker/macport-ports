@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   linear_algebra 1.0
@@ -25,8 +25,8 @@ master_sites                http://ftp.mcs.anl.gov/pub/petsc/release-snapshots \
                             https://www.mcs.anl.gov/petsc/mirror/release-snapshots
 
 checksums                   rmd160  d7f181f25a76ca82601469c20a0c1d7ace50b62a \
-                            sha256  ac46db6bfcaaec8cd28335231076815bd5438f401a4a05e33736b4f9ff12e59a \
-                            size    15976488
+sha256  ac46db6bfcaaec8cd28335231076815bd5438f401a4a05e33736b4f9ff12e59a \
+size    15976488
 
 mpi.setup                   default
 

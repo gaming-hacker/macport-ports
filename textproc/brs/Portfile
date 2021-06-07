@@ -45,7 +45,7 @@ use_configure	no
 build.target
 build.env		PREFIX=${prefix} \
 			CC=${configure.cc} \
-			"CFLAGS=${configure.cflags} ${configure.cc_archflags} -std=gnu89 -Wno-error=return-type" \
+			"CFLAGS=${configure.cflags} ${configure.cc_archflags} -std=c11 -Wno-error=return-type" \
 			"LDFLAGS=${configure.ldflags} ${configure.ld_archflags}"
 
 destroot.destdir	DEST=${destroot}${prefix}

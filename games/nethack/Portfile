@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 
@@ -24,8 +24,8 @@ master_sites       sourceforge \
 distname           ${name}-[string map {{.} {}} ${version}]-src
 extract.suffix     .tgz
 checksums          sha256 cfde0c3ab6dd7c22ae82e1e5a59ab80152304eb23fb06e3129439271e5643ed2 \
-                   rmd160 de937e31c2046900ef8c6f2eb0da0da09f8e136f \
-                   size 5577633
+rmd160 de937e31c2046900ef8c6f2eb0da0da09f8e136f \
+size 5577633
 
 depends_lib        port:ncurses
 worksrcdir         ${name}-${version}
@@ -110,8 +110,8 @@ subport nethack343 {
     master_sites        sourceforge:nethack
     distname            nethack-343-src
     checksums           sha256 bb39c3d2a9ee2df4a0c8fdde708fbc63740853a7608d2f4c560b488124866fe4 \
-                        rmd160 42f600d24715a0b7e631b357c135761410b3ca95 \
-                        size 3497458
+rmd160 42f600d24715a0b7e631b357c135761410b3ca95 \
+size 3497458
 
     worksrcdir          nethack-${version}
 

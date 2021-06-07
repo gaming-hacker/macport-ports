@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               java 1.0
@@ -32,8 +32,8 @@ long_description        ${description} with the following features: \
 homepage                https://keystore-explorer.org/
 
 checksums               rmd160  17cc046dbdf5646dfd280ab02decd3953398a2b8 \
-                        sha256  c539067c94c47280e666fac6255e3f15d0b00a110920ebd3e77e631b41b608fe \
-                        size    8231142
+sha256  c539067c94c47280e666fac6255e3f15d0b00a110920ebd3e77e631b41b608fe \
+size    8231142
 
 java.version            1.8+
 java.fallback           openjdk8

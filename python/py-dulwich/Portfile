@@ -1,5 +1,5 @@
 
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    Simple Pure-Python implementation of the Git file \
 homepage            https://www.dulwich.io
 
 checksums           rmd160  4b3ca794207910e2f5205bc8666256de1cd626f8 \
-                    sha256  d7f3f1184355bff5eb8441af4e2548010371331726a0adf8c165f7dc64c850b6 \
-                    size    391776
+sha256  d7f3f1184355bff5eb8441af4e2548010371331726a0adf8c165f7dc64c850b6 \
+size    391776
 
 python.versions     27 38 39
 
@@ -32,8 +32,8 @@ if {${name} ne ${subport}} {
         livecheck.type          none
 
         checksums               rmd160  1029473c8fd18718ef7f4a3dea082a053ee92ca4 \
-                                sha256  6d225b7d5f5a293beb1d0855f41feef74230605ffde7929a5719eed4019cb6d1 \
-                                size    369717
+sha256  6d225b7d5f5a293beb1d0855f41feef74230605ffde7929a5719eed4019cb6d1 \
+size    369717
     } else {
         livecheck.type          none
     }

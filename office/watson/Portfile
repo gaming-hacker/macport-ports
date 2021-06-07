@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  cae4d7d3d9f4e1a839fc49d318b9c5183597b3e7 \
-                    sha256  a665775a76fb3ac464153e10991577a38ca938adae2142a24c9d1b1234db95f0 \
-                    size    8895378
+sha256  a665775a76fb3ac464153e10991577a38ca938adae2142a24c9d1b1234db95f0 \
+size    8895378
 
 test.run            yes
 test.env            PYTHONPATH=${worksrcpath}/build/lib

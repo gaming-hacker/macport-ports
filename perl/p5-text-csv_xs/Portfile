@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         Text-CSV_XS 1.45
 maintainers         oaf.dk:mni openmaintainer
 
@@ -17,8 +17,8 @@ platforms           darwin
 license             {Artistic-1 GPL}
 
 checksums           rmd160  ed3dd2f885d4d090e2a12178f5a9e6f82be610b1 \
-                    sha256  128a66c946a0d9d439cbb74212b3dced8dcdb5bd0e1b78d98cfb87059f4a416f \
-                    size    255592
+sha256  128a66c946a0d9d439cbb74212b3dced8dcdb5bd0e1b78d98cfb87059f4a416f \
+size    255592
 
 extract.suffix      .tgz
 

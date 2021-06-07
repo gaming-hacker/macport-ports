@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -20,8 +20,8 @@ long_description    sedlex is a lexer generator for OCaml, similar to ocamllex. 
 platforms           darwin
 
 checksums           rmd160  b5a577e6b6677cff92c63f7989f28e14ae34ebf9 \
-                    sha256  f9b090eb5e583b40b0ce89f15b94e87bdc933b5652c7afc0b652a6ae227a0f58 \
-                    size    114507
+sha256  f9b090eb5e583b40b0ce89f15b94e87bdc933b5652c7afc0b652a6ae227a0f58 \
+size    114507
 
 patchfiles          patch-no-uchar
 

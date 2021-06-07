@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,9 +21,9 @@ license             BSD MIT
 platforms           darwin
 
 checksums \
-    rmd160  be682c4b9c028655ac4bfd5d22253400a659de11 \
-    sha256  bd23413a59a686301d580ad6f98c5ec079bf61c7431485ddcd112b7a4ba363db \
-    size    389955
+rmd160  be682c4b9c028655ac4bfd5d22253400a659de11 \
+sha256  bd23413a59a686301d580ad6f98c5ec079bf61c7431485ddcd112b7a4ba363db \
+size    389955
 
 variant docs description {Install man pages} {
     depends_build-append    port:py39-sphinx \
@@ -47,7 +47,7 @@ if {${os.major} <= 10} {
     depends_build-append    port:git
 }
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args-append   -DUSE_OPENJPEG=ON \
                         -DBATCH_VERSION=ON \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,12 +23,12 @@ homepage            https://qpid.apache.org
 
 
 checksums           rmd160  51a80f8858885f76b506b50ea6a12cfab84dca5e \
-                    sha256  c1bf2618b9e48c3033a3d5713c7fd6018f3b3b15d3bad90bf00d647c8c21b40f \
-                    size    1316310
+sha256  c1bf2618b9e48c3033a3d5713c7fd6018f3b3b15d3bad90bf00d647c8c21b40f \
+size    1316310
 
 cmake.build_type    RelWithDebInfo
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 configure.args-append \
                     -DSASL_IMPL=none \

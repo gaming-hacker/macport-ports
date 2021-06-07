@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 license             MIT
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  53225e1ed932c3665ed7edf32c35e6624ab34468 \
-                    sha256  0e1cd2104c6fa4cd2d6f30ae9771ed3f22f78a4e0e7b5243e42abb753b792c38 \
-                    size    428837
+rmd160  53225e1ed932c3665ed7edf32c35e6624ab34468 \
+sha256  0e1cd2104c6fa4cd2d6f30ae9771ed3f22f78a4e0e7b5243e42abb753b792c38 \
+size    428837
 
 github.tarball_from archive
 
@@ -157,7 +157,7 @@ cargo.crates \
     log                             0.4.14  51b9bbe6c47d51fc3e1a9b945965946b4c44142ab8792c50835a980d362c2710 \
     maplit                           1.0.2  3e2e65a1a2e43cfcb47a895c4c8b10d1f4a61097f9f254f183aee60cad9c651d \
     matches                          0.1.8  7ffc5c5338469d4d3ea17d269fa8ea3512ad247247c30bd2df69e68309ed0a08 \
-    md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
+md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
     memchr                           2.3.4  0ee1c47aaa256ecabcaea351eae4a9b01ef39ed810004e298d2511ed284b1525 \
     mime                            0.3.16  2a60c7ce501c71e03a9c9c0d35b861413ae925bd979cc7a4e30d060069aaac8d \
     mime_guess                       2.0.3  2684d4c2e97d99848d30b324b00c8fcc7e5c897b7cbb5819b09e7c90e8baf212 \
@@ -239,8 +239,8 @@ cargo.crates \
     serde_derive                   1.0.125  b093b7a2bb58203b5da3056c05b4ec1fed827dcfdb37347a8841695263b3d06d \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha-1                            0.9.4  dfebf75d25bd900fd1e7d11501efab59bc846dbc76196839663e6637bba9f25f \
-    sha2                             0.9.3  fa827a14b29ab7f44778d14a88d3cb76e949c45083f7dbfa507d0cb699dc12de \
+sha-1                            0.9.4  dfebf75d25bd900fd1e7d11501efab59bc846dbc76196839663e6637bba9f25f \
+sha2                             0.9.3  fa827a14b29ab7f44778d14a88d3cb76e949c45083f7dbfa507d0cb699dc12de \
     shellexpand                      2.1.0  83bdb7831b2d85ddf4a7b148aa19d0587eddbe8671a436b7bd1182eaad0f2829 \
     signal-hook-registry             1.3.0  16f1d0fef1604ba8f7a073c7e701f213e056707210e9020af4528e0101ce11a6 \
     slab                             0.4.3  f173ac3d1a7e3b28003f40de0b5ce7fe2710f9b9dc3fc38664cebee46b3b6527 \

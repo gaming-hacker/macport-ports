@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -29,9 +29,9 @@ distname            Python-${version}
 use_xz              yes
 
 checksums           md5     fd6cc8ec0a78c44036f825e739f36e5a \
-                    rmd160  40a514bb05c9e631454ea8466e28f5bb229428ad \
-                    sha256  b62c0e7937551d0cc02b8fd5cb0f544f9405bafc9a54d3808ed4594812edef43 \
-                    size    12854736
+rmd160  40a514bb05c9e631454ea8466e28f5bb229428ad \
+sha256  b62c0e7937551d0cc02b8fd5cb0f544f9405bafc9a54d3808ed4594812edef43 \
+size    12854736
 
 patchfiles          patch-Makefile.pre.in.diff \
                     patch-setup.py.diff \

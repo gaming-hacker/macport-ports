@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -6,8 +6,8 @@ PortGroup           gitlab 1.0
 gitlab.setup        DavidGriffith minipro 0.5
 revision            0
 checksums           rmd160  99b73fa0e04c71cce43b01a050fc6db656dbdfcb \
-                    sha256  34285cd786d645b2ed8fe6dfebaa04fbb904165d7060e15231aaa3d106c7f19a \
-                    size    246205
+sha256  34285cd786d645b2ed8fe6dfebaa04fbb904165d7060e15231aaa3d106c7f19a \
+size    246205
 
 categories          devel
 maintainers         openmaintainer {krischik @krischik}

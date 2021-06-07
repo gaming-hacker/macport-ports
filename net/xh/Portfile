@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,9 +18,9 @@ long_description    ${description} It reimplements as much as possible of \
 homepage            https://github.com/ducaale/xh
 
 checksums           ${distfiles} \
-                    rmd160  6217c7968fce9e68453e36f560bbcaa7371ebd98 \
-                    sha256  1dc9e5c25dc96eff9d83db86cd4b56bbb14e9380d75505aaf47273f6850c6e72 \
-                    size    219471
+rmd160  6217c7968fce9e68453e36f560bbcaa7371ebd98 \
+sha256  1dc9e5c25dc96eff9d83db86cd4b56bbb14e9380d75505aaf47273f6850c6e72 \
+size    219471
 
 build.args-append   --target [cargo.rust_platform]
 

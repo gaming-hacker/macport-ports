@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -8,7 +8,7 @@ PortGroup               legacysupport 1.1
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 
 name                    nodejs10
 version                 10.24.1
@@ -32,8 +32,8 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  1e59704c06219ced68b1f47abd2e1e176a144f41 \
-                        sha256  d72fc2c244603b4668da94081dc4d6067d467fdfa026e06a274012f16600480c \
-                        size    21647996
+sha256  d72fc2c244603b4668da94081dc4d6067d467fdfa026e06a274012f16600480c \
+size    21647996
 
 distname                node-v${version}
 
@@ -43,7 +43,7 @@ depends_lib-append      port:icu \
                         port:python27 \
                         path:lib/libssl.dylib:openssl
 
-use_xcode               yes
+use_xcode  no
 
 proc rec_glob {basedir pattern} {
     set files [glob -directory $basedir -nocomplain -type f $pattern]

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -27,8 +27,8 @@ master_sites        http://ftp3.de.postgresql.org/pub/Mirrors/ftp.postgresql.org
 distname            postgresql-${version}
 
 checksums           rmd160  d112a187f96bb75e39131e48ca7973286e2da89d \
-                    sha256  a35c718b1b6690e01c69626d467edb933784f8d1d6741e21fe6cce0738467bb3 \
-                    size    19140221
+sha256  a35c718b1b6690e01c69626d467edb933784f8d1d6741e21fe6cce0738467bb3 \
+size    19140221
 
 use_bzip2           yes
 
@@ -130,9 +130,9 @@ variant python27 conflicts python3 description {add support for python 2.7} {
 }
 
 variant python3 conflicts python27 description {add support for python 3.x} {
-    depends_lib-append      port:python38
+    depends_lib-append      port:python39
     configure.args-append   --with-python
-    configure.python        ${prefix}/bin/python3.8
+    configure.python        ${prefix}/bin/python3.9
 }
 
 variant perl description {add Perl support} {

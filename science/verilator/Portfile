@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -19,15 +19,15 @@ master_sites            https://www.veripool.org/ftp
 extract.suffix          .tgz
 
 checksums               rmd160  709fa1b70af80f23d6ada18098df8e7ab846d4ab \
-                        sha256  d8daff2461493439889f85e4a9ccb2d865e9c4ca1a06f611fe36d64bc020b679 \
-                        size    3149226
+sha256  d8daff2461493439889f85e4a9ccb2d865e9c4ca1a06f611fe36d64bc020b679 \
+size    3149226
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 
 installs_libs           no
 
-depends_build-append    port:perl5.28
-configure.perl          ${prefix}/bin/perl5.28
+depends_build-append    port:perl5.30
+configure.perl          ${prefix}/bin/perl5.30
 
 depends_build-append    port:flex
 configure.env-append    LEX=${prefix}/bin/flex

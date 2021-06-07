@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ homepage            https://huggingface.co/transformers/
 python.versions     38 39
 
 checksums           rmd160  fe5a474428606c85ed9c47ee973e113503582b0a \
-                    sha256  644fb5ff5660d5769ec0b2f15f841b945f2bb1e68e35792c69c10dd1cd02c459 \
-                    size    8152361
+sha256  644fb5ff5660d5769ec0b2f15f841b945f2bb1e68e35792c69c10dd1cd02c459 \
+size    8152361
 
 if {${name} ne ${subport}} {
     # see https://github.com/huggingface/transformers/blob/master/setup.py

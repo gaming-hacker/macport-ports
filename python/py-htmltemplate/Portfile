@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ master_sites        macports_distfiles
 distname            HTMLTemplate-${version}
 
 checksums           md5     c6f3f9d00373319df1ddb4b94327d0a7 \
-                    sha1    e538e19074df19a171ff873e115e01d69ed32464 \
-                    rmd160  27647bdf7e2d3511169d83afc3ee31d950536ccb \
-                    sha256  070e6a5ef039e516eacb1f337da4a83342123a9f6e7a8ffbe3a209022568be3f \
-                    size    56432
+sha1    e538e19074df19a171ff873e115e01d69ed32464 \
+rmd160  27647bdf7e2d3511169d83afc3ee31d950536ccb \
+sha256  070e6a5ef039e516eacb1f337da4a83342123a9f6e7a8ffbe3a209022568be3f \
+size    56432
 
 deprecated.upstream_support no
 livecheck.type      none

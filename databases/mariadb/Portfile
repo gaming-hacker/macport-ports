@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -48,8 +48,8 @@ if {$subport eq $name} {
                         patch-CMakeLists.txt.diff
 
     checksums           rmd160 c1df56d5c9ae118693e721aefb18fb19277bf5c0 \
-                        sha256 23ff96db2215d3d2eb8697488719153c83ac4d131f504ae397f43c14c6d91ba3 \
-                        size   45969389
+sha256 23ff96db2215d3d2eb8697488719153c83ac4d131f504ae397f43c14c6d91ba3 \
+size   45969389
     revision            ${revision_client}
 
     depends_lib-append  port:zlib port:tcp_wrappers port:ncurses

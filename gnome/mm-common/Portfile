@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -28,8 +28,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           sha256  28a2d775afbf05c5c957b24b220ed6e9b2023179b98ecde471d89e9754ea5ac9 \
-                    rmd160  12e745e01cf665123ca320ae30ab4105fe94e08d \
-                    size    271144
+rmd160  12e745e01cf665123ca320ae30ab4105fe94e08d \
+size    271144
 
 supported_archs     noarch
 
@@ -38,12 +38,12 @@ depends_build-append \
                     port:curl \
                     port:wget
 
-depends_lib-append  port:python38
+depends_lib-append  port:python39
 
 patchfiles          patch-use-our-python3.diff
 
 post-patch {
-    reinplace "s|@@PYTHON3_BIN@@|${prefix}/bin/python3.8|" \
+    reinplace "s|@@PYTHON3_BIN@@|${prefix}/bin/python3.9|" \
                     ${worksrcpath}/meson.build \
                     ${worksrcpath}/util/mm-common-get.in \
                     ${worksrcpath}/util/build_scripts/check-dllexport-usage.py\

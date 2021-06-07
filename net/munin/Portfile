@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -29,15 +29,15 @@ homepage            http://munin-monitoring.org/
 master_sites        sourceforge:project/munin/stable/${version}
 
 checksums           rmd160  4b5a9ede74ace4823417538c1b97c8b36745105f \
-                    sha256  0118256a28579665c9770051feae8aff4ca1f27bcfc2d92d576776a2262dea2b \
-                    size    2247668
+sha256  0118256a28579665c9770051feae8aff4ca1f27bcfc2d92d576776a2262dea2b \
+size    2247668
 
 # add perl variants
 # set default_branch to 5.28
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches          5.26 5.28 5.30
-perl5.default_branch    5.28
+perl5.branches 5.30
+perl5.default_branch 5.30
 perl5.create_variants   ${perl5.branches}
 
 java.version        1.7+
@@ -54,7 +54,7 @@ depends_lib-append \
                     port:p${perl5.major}-net-snmp \
                     port:p${perl5.major}-net-ssleay \
                     port:p${perl5.major}-time-hires \
-                    port:python38 \
+                    port:python39 \
                     port:ruby26
 
 # munindoc needs at least groff version 1.20.1 for good Unicode support.
@@ -88,7 +88,7 @@ post-patch {
         plugins/node.d.debug/sincos \
         plugins/node.d.debug/testplugin
 
-    reinplace -W ${worksrcpath} "s|/usr/bin/env python.*|${prefix}/bin/python3.8|" \
+    reinplace -W ${worksrcpath} "s|/usr/bin/env python.*|${prefix}/bin/python3.9|" \
         Makefile.config \
         doc/conf.py
 
@@ -110,7 +110,7 @@ build.args          PREFIX=${prefix} \
                     HTMLDIR=${prefix}/www/munin \
                     CGIDIR=${prefix}/www/cgi-bin \
                     PERL=${perl5.bin} \
-                    PYTHON=${prefix}/bin/python3.8 \
+                    PYTHON=${prefix}/bin/python3.9 \
                     RUBY=${prefix}/bin/ruby2.6
 destroot.args       PREFIX=${destroot}${prefix} \
                     CONFDIR=${destroot}${prefix}/etc/munin \
@@ -123,7 +123,7 @@ destroot.args       PREFIX=${destroot}${prefix} \
                     HTMLDIR=${destroot}${prefix}/www/munin \
                     CGIDIR=${destroot}${prefix}/www/cgi-bin \
                     PERL=${perl5.bin} \
-                    PYTHON=${prefix}/bin/python3.8 \
+                    PYTHON=${prefix}/bin/python3.9 \
                     RUBY=${prefix}/bin/ruby2.6
 destroot.keepdirs   ${destroot}${prefix}/var/log/munin \
                     ${destroot}${prefix}/var/run/munin \

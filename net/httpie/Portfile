@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,12 +28,12 @@ variant python39 conflicts python36 python37 python38 description "Use Python 3.
 if {[variant_isset python36]} {
     python.default_version 36
 } elseif {[variant_isset python37]} {
-    python.default_version 37
+    python.default_version 39
 } elseif {[variant_isset python39]} {
     python.default_version 39
 } else {
-    default_variants +python38
-    python.default_version 38
+    default_variants +python39
+    python.default_version 39
 }
 
 depends_lib-append  port:py${python.version}-requests \
@@ -42,7 +42,7 @@ depends_lib-append  port:py${python.version}-requests \
                     port:py${python.version}-socks
 
 checksums           rmd160  4c791ff11b153e3f6037cb42280b1dc20a05de77 \
-                    sha256  767290c062f944117fd42c41fcc751c82adff170f149622bf0cc3ab2587c41ca \
-                    size    1772552
+sha256  767290c062f944117fd42c41fcc751c82adff170f149622bf0cc3ab2587c41ca \
+size    1772552
 
 python.link_binaries_suffix

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -17,8 +17,8 @@ platforms           macosx darwin
 master_sites        sourceforge:project/freeglut/freeglut/${version}
 
 checksums           rmd160  c9b9d76f61ff56b153367817cfbc1fb5c0816c54 \
-                    sha256  d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68 \
-                    size    440228
+sha256  d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68 \
+size    440228
 
 depends_lib         port:mesa \
                     port:libGLU \

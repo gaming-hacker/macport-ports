@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    The torchvision package consists of popular \
                     transformations for computer vision.
 
 checksums           rmd160  946000baedbc1cd14b7d8e59587d703449f2aa2c \
-                    sha256  e836d7d7f256972f254b3a65099e25c2bdc76ccd39348fa0c46a083b51561b53 \
-                    size    7219847
+sha256  e836d7d7f256972f254b3a65099e25c2bdc76ccd39348fa0c46a083b51561b53 \
+size    7219847
 
 python.versions     37 38 39
 
@@ -43,7 +43,7 @@ if {${name} ne ${subport}} {
                     port:py${python.version}-Pillow \
                     port:py${python.version}-pytorch
 
-    compiler.cxx_standard 2014
+    compiler.cxx_standard 2017
 
     # https://github.com/pytorch/vision/blob/master/packaging/build_wheel.sh
     build.cmd       ${python.bin} setup.py

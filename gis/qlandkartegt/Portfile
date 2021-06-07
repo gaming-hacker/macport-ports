@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 PortGroup        cmake 1.0
@@ -22,8 +22,8 @@ long_description QLandkarte GT is the ultimate outdoor aficionado's tool. It \
 homepage         http://www.qlandkarte.org/
 
 checksums        rmd160  2c03d6540ae657e12c74732dfcf64f5fd8121378 \
-                 sha256  6a102e714d1f1d7976296061901ecdce434b3896b757f7b93d1842d04388ea35 \
-                 size    6678540
+sha256  6a102e714d1f1d7976296061901ecdce434b3896b757f7b93d1842d04388ea35 \
+size    6678540
 
 depends_lib      port:gdal \
                  port:gpsd \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ extract.suffix      .tbz
 
 distname            hex-${git.branch}
 checksums           rmd160  9ad9d12ae46e3f97ee6c55a185724a3091171407 \
-                    sha256  57e3492fa085eb332d7cd84f2ca1701a5940e4a4b19b9a27d59a3a5b29f0691d \
-                    size    6546
+sha256  57e3492fa085eb332d7cd84f2ca1701a5940e4a4b19b9a27d59a3a5b29f0691d \
+size    6546
 
 depends_lib         port:ocaml-cstruct \
                     port:ocaml-bigarray-compat

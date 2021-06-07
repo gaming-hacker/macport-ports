@@ -15,8 +15,8 @@ master_sites		http://opensource.apple.com/tarballs/gcc_40
 distname		gcc_40-${version}
 
 checksums           sha1    07574623e23103cb4024410ca48481fbb5da322e \
-                    rmd160  d7a5d15d312b9d7295564cf3862ec63296e769a3 \
-                    sha256  86b9c1d48c30042ba23d181a58ceeb3afb850b595206d976f78c985baea4b5ad
+rmd160  d7a5d15d312b9d7295564cf3862ec63296e769a3 \
+sha256  86b9c1d48c30042ba23d181a58ceeb3afb850b595206d976f78c985baea4b5ad
 
 platform darwin {
     if {${os.major} >= 13} {
@@ -60,15 +60,15 @@ destroot.dir		${build.dir}
 
 # STAGE1_CFLAGS="-O2 -fkeep-inline-functions" : from configure.ac
 # BOOT_CFLAGS="-O2 -g" : from Makefile.tpl
-# -std=gnu89 : for building with compilers that default to c99 (clang)
+# -std=c11 : for building with compilers that default to c99 (clang)
 # -D_FORTIFY_SOURCE=0 : The built compiler might not understand newer builtins
 #                       exposed in libc headers for fortified string functions.
 #                       Yes, we need to set both BOOT_CFLAGS and STAGE1_CFLAGS
 #                       because STAGE1_CFLAGS is used with xgcc for libgcc
-build.args-append BOOT_CFLAGS="-O2 -g -D_FORTIFY_SOURCE=0 -std=gnu89" STAGE1_CFLAGS="-O2 -fkeep-inline-functions -D_FORTIFY_SOURCE=0 -std=gnu89"
+build.args-append BOOT_CFLAGS="-O2 -g -D_FORTIFY_SOURCE=0 -std=c11" STAGE1_CFLAGS="-O2 -fkeep-inline-functions -D_FORTIFY_SOURCE=0 -std=c11"
 
 post-patch {
-	reinplace "s/-DIN_GCC/-DIN_GCC -std=gnu89/" ${worksrcpath}/gcc/Makefile.in
+	reinplace "s/-DIN_GCC/-DIN_GCC -std=c11/" ${worksrcpath}/gcc/Makefile.in
 }
 
 post-destroot {

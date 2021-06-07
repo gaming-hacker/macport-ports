@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -19,8 +19,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  30ef938cf9963b79a6090f8b3dd5d5e0e1e8b78e \
-                    sha256  1151b955393f75b5ee59b51154fda4f1928f498fe986a5584d3cd440876a6af6 \
-                    size    980648
+sha256  1151b955393f75b5ee59b51154fda4f1928f498fe986a5584d3cd440876a6af6 \
+size    980648
 
 depends_build-append \
                     port:pkgconfig \
@@ -108,21 +108,21 @@ variant python36 conflicts python37 python38 description {Plugins use Python 3.6
 }
 
 variant python37 conflicts python36 python38 description {Plugins use Python 3.7} {
-    depends_lib-append  port:py37-gobject3 \
+    depends_lib-append  port:py39-gobject3 \
                         port:dbus-python37
 
-    configure.python    ${prefix}/bin/python3.7
+    configure.python    ${prefix}/bin/python3.9
 }
 
 variant python38 conflicts python36 python37 description {Plugins use Python 3.8} {
-    depends_lib-append  port:py38-gobject3 \
+    depends_lib-append  port:py39-gobject3 \
                         port:dbus-python38
 
-    configure.python    ${prefix}/bin/python3.8
+    configure.python    ${prefix}/bin/python3.9
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python38
+    default_variants +python39
 }
 
 # libpeas expects plugin modules with .so extensions

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ github.setup        beancount beancount-mode 3c04745fa539c25dc007683ad257239067c
 version             20210303
 revision            0
 checksums           rmd160  38ef2dbf7c048fe05c278c9043599521372cd18e \
-                    sha256  128873506d8a8548166fa12b61fefda93b2e1a2a3b1d8f220794f10869db9621 \
-                    size    26602
+sha256  128873506d8a8548166fa12b61fefda93b2e1a2a3b1d8f220794f10869db9621 \
+size    26602
 
 name                beancount.el
 categories          lang editors

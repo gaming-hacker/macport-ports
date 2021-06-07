@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,9 +23,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  c63b8e7ff4a8985b94d62d4acf8d810118e47340 \
-                    sha256  1f26056eff2852512badec707fa02ae1a397422b81545c7bb20538a69deef11e \
-                    size    6429551
+rmd160  c63b8e7ff4a8985b94d62d4acf8d810118e47340 \
+sha256  1f26056eff2852512badec707fa02ae1a397422b81545c7bb20538a69deef11e \
+size    6429551
 
 depends_run-append  port:ripgrep
 
@@ -159,7 +159,7 @@ cargo.crates \
     serde                          1.0.110  99e7b308464d16b56eba9964e4972a3eee817760ab60d88c3f86e1fecb08204c \
     serde_derive                   1.0.110  818fbf6bfa9a42d3bfcaca148547aa00c7b915bec71d1757aa2d44ca68771984 \
     serde_json                      1.0.53  993948e75b189211a9b31a7528f950c6adc21f9720b6438ff80a7fa2f864cea2 \
-    size_format                      1.0.2  6ed5f6ab2122c6dec69dca18c72fa4590a27e581ad20d44960fe74c032a0b23b \
+size_format                      1.0.2  6ed5f6ab2122c6dec69dca18c72fa4590a27e581ad20d44960fe74c032a0b23b \
     smallvec                        0.6.13  f7b0758c52e15a8b5e3691eae6cc559f08eee9406e548a4477ba4e67770a82b6 \
     smallvec                         1.4.0  c7cb5678e1615754284ec264d9bb5b4c27d2018577fd90ac0ceb578591ed5ee4 \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \

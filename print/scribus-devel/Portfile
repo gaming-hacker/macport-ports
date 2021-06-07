@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -30,8 +30,8 @@ long_description    Scribus is an open source desktop publishing program. It \
 homepage            https://www.scribus.net/
 
 checksums           rmd160  ad37f7b805c1df1e9f91625660c1f23310efee8d \
-                    sha256  cd40b8b0917cb27df0f13b1ba98d21442ab878690fc82cf5a503ac83f6b09e0b \
-                    size    88261640
+sha256  cd40b8b0917cb27df0f13b1ba98d21442ab878690fc82cf5a503ac83f6b09e0b \
+size    88261640
 
 depends_build-append \
                     path:bin/perl:perl5
@@ -58,13 +58,13 @@ depends_lib-append \
                     port:libxml2 \
                     port:podofo \
                     port:poppler \
-                    port:python38 \
+                    port:python39 \
                     port:tiff \
                     port:zlib
 
 use_parallel_build  no
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 set PyFRM           ${frameworks_dir}/Python.framework/Versions
 
@@ -75,9 +75,9 @@ configure.args-append \
                     -DWITH_BOOST=YES \
                     -DWANT_GRAPHICSMAGICK=NO \
                     -DWANT_NOOSG=YES \
-                    -DPython3_EXECUTABLE=${prefix}/bin/python3.8 \
+                    -DPython3_EXECUTABLE=${prefix}/bin/python3.9 \
                     -DPython3_LIBRARIES=${PyFRM}/3.8/Python \
-                    -DPython3_INCLUDE_DIR=${PyFRM}/3.8/include/python3.8
+                    -DPython3_INCLUDE_DIR=${PyFRM}/3.8/include/python3.9
 
 variant bitmap description {Input filters for most GraphicsMagick bitmap formats} {
     configure.args-delete   -DWANT_GRAPHICSMAGICK=NO

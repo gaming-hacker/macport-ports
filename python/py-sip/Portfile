@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -71,8 +71,8 @@ if {${name} ne ${subport}} {
     }
 
     checksums           rmd160 9709eda79d7e0a73eca82e25cbbfd0af6da074c8 \
-                        sha256 b39d93e937647807bac23579edbff25fe46d16213f708370072574ab1f1b4211 \
-                        size   1056384
+sha256 b39d93e937647807bac23579edbff25fe46d16213f708370072574ab1f1b4211 \
+size   1056384
     revision            0
 
     patchfiles          patch-siputils.py.diff \

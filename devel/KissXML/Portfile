@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -39,5 +39,5 @@ build {}
 destroot.pre_args-append -derivedDataPath ./DerivedData
 
 checksums               rmd160  075228a1d608cfe8927e8f19cd6de974a474be7b \
-                        sha256  fff3062f325609dcf941793f34d46df2181cc418457d33bd7116a83515ad29df \
-                        size    66590
+sha256  fff3062f325609dcf941793f34d46df2181cc418457d33bd7116a83515ad29df \
+size    66590

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell_stack 1.0
@@ -21,8 +21,8 @@ long_description    Happy is a parser generator for Haskell. Given a\
 master_sites        https://hackage.haskell.org/package/${name}-${version}
 
 checksums           rmd160  6132dd3496fc22363d09dc7e307d93f779bfdc3e \
-                    sha256  3b1d3a8f93a2723b554d9f07b2cd136be1a7b2fcab1855b12b7aab5cbac8868c \
-                    size    184515
+sha256  3b1d3a8f93a2723b554d9f07b2cd136be1a7b2fcab1855b12b7aab5cbac8868c \
+size    184515
 
 # relative paths to ${prefix}
 set happy_datadir   share/${name}

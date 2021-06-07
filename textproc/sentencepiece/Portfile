@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -28,10 +28,10 @@ long_description    SentencePiece is an unsupervised text tokenizer \
                     language-specific pre/postprocessing.
 
 checksums           rmd160  b1b58122cd8f6b08524b1c71e4a41c5a21b7f873 \
-                    sha256  579109701a40af8d88fed13f89cf3a7af7548e97be6987732dc603158a6cea6d \
-                    size    11752121
+sha256  579109701a40af8d88fed13f89cf3a7af7548e97be6987732dc603158a6cea6d \
+size    11752121
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 compiler.thread_local_storage yes
 
 depends_lib-append  port:gperftools

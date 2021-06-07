@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -22,8 +22,8 @@ if {${subport} eq ${name}} {
     # release
     github.setup    mossmann hackrf 2021.03.1 v
     checksums       rmd160  e37aacc7333f5e2ef23c36c86b70c6bbb04283eb \
-                    sha256  26baf06e4cf86e623c37f1d76e47c71ddefc57c24c113d27ab617b812d680432 \
-                    size    13066731
+sha256  26baf06e4cf86e623c37f1d76e47c71ddefc57c24c113d27ab617b812d680432 \
+size    13066731
     revision        0
 
     # bump the epoch because I moved the version from 20170219 to 2017.02.1
@@ -37,8 +37,8 @@ if {${subport} eq ${name}} {
     github.setup    mossmann hackrf 5f1536cc3631f79e6beafbd8d7bb6cf86dcf555f
     version         20210330-[string range ${github.version} 0 7]
     checksums       rmd160  0491b8fb47cd2d5f7db03fe564ed19674e4d950b \
-                    sha256  2ae669edd37509c1741de404f251f2fecb4d949ec2fd45aa6744661fe1303dde \
-                    size    13066837
+sha256  2ae669edd37509c1741de404f251f2fecb4d949ec2fd45aa6744661fe1303dde \
+size    13066837
     revision        0
 
     conflicts       hackrf
@@ -49,7 +49,7 @@ depends_build-append port:pkgconfig
 depends_lib-append   path:lib/libusb-1.0.dylib:libusb \
                      port:fftw-3-single
 
-# Many compilers do not recognize "-std=gnu90", so remove it.
+# Many compilers do not recognize "-std=c11", so remove it.
 # Temporary patch.
 
 patchfiles-append   patch-no-gnu90.diff

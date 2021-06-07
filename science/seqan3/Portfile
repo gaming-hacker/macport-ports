@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             cmake 1.1
@@ -7,8 +7,8 @@ PortGroup             github 1.0
 
 github.setup          seqan seqan3 3.0.3
 checksums             rmd160  d86597f147d8c02095fb955dddea635b43eb976a \
-                      sha256  42fca82e7e03ba2ed2026be739cd5e0be785152f872fdd0bac13b6f836035fc0 \
-                      size    2668652
+sha256  42fca82e7e03ba2ed2026be739cd5e0be785152f872fdd0bac13b6f836035fc0 \
+size    2668652
 
 categories            science
 supported_archs       noarch

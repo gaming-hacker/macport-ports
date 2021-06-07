@@ -1,4 +1,4 @@
-# -*- mode: tcl; coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- # vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- mode: _tcl; coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- # vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -27,10 +27,10 @@ homepage        https://www.clisp.org
 master_sites    https://alpha.gnu.org/gnu/clisp/
 
 checksums       md5     edb0e61a66693bfb246d157b75df195a \
-                sha1    7782db3789b12ac3a2f518b47bfbc13088c3ebb8 \
-                rmd160  7dea9e01b52b95b765fd0ea32cf613ecc5ca5b7a \
-                sha256  bd443a94aa9b02da4c4abbcecfc04ffff1919c0a8b0e7e35649b86198cd6bb89 \
-                size    8919616
+sha1    7782db3789b12ac3a2f518b47bfbc13088c3ebb8 \
+rmd160  7dea9e01b52b95b765fd0ea32cf613ecc5ca5b7a \
+sha256  bd443a94aa9b02da4c4abbcecfc04ffff1919c0a8b0e7e35649b86198cd6bb89 \
+size    8919616
 
 depends_lib     port:readline   \
                 port:gettext    \

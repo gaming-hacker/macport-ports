@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    {*}${description}
 homepage            http://github.com/jamesturk/jellyfish
 
 checksums           rmd160  7d368c6ca64f9542599b977e8f44495228b3a985 \
-                    sha256  a499741401512d05bbd3556e448e960bc908eba3879fb73d450e8e91566a030b \
-                    size    134200
+sha256  a499741401512d05bbd3556e448e960bc908eba3879fb73d450e8e91566a030b \
+size    134200
 
 python.versions     37 38 39
 

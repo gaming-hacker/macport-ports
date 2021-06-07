@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -11,8 +11,8 @@ python.default_version 27
 
 github.setup        blink1073 oct2py 5.1.0 v
 checksums           rmd160 1df2c9020955ee699a0b844240bd5700ed093381 \
-                    sha256 879b39e54b284ec74a84f88dafb9cec4acbbf15f135470c674fb29f8fc4ee980 \
-                    size   439908
+sha256 879b39e54b284ec74a84f88dafb9cec4acbbf15f135470c674fb29f8fc4ee980 \
+size   439908
 revision            1
 
 license             MIT

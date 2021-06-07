@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
 
 github.setup                PromyLOPh pianobar 2020.11.28
 checksums                   rmd160  d91ff48018647bdd59d0c953b79d2f4879a9f155 \
-                            sha256  f8cdd564e2a12ee0740c54e8bc4028b328e9afb041d9ea40bcb762e08034b9e9 \
-                            size    59165
+sha256  f8cdd564e2a12ee0740c54e8bc4028b328e9afb041d9ea40bcb762e08034b9e9 \
+size    59165
 
 categories                  audio
 platforms                   darwin
@@ -34,7 +34,7 @@ depends_lib                 port:curl \
                             port:json-c
 
 compiler.c_standard         1999
-configure.cflags-append     -std=c99
+configure.cflags-append     -std=c11
 
 # Prevent upgrade failure.
 configure.cppflags-replace  -I${prefix}/include -isystem${prefix}/include

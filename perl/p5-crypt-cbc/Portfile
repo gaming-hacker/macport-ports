@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         Crypt-CBC 3.04
 revision            0
 license             {Artistic-1 GPL}
@@ -18,8 +18,8 @@ long_description    This is Crypt::CBC, a Perl-only implementation of the \
                     SSLeay.
 
 checksums           rmd160  79a7ada687c38b38a93bddb1e80a920bdad1f8e6 \
-                    sha256  4026c57d0dbf6496c0d561a26f161b763d3b8edf351139c073492e21b5fbce07 \
-                    size    40237
+sha256  4026c57d0dbf6496c0d561a26f161b763d3b8edf351139c073492e21b5fbce07 \
+size    40237
 
 platforms           darwin
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -19,8 +19,8 @@ long_description    Tool to graphically visualize differences between \
                     and latexdiff.
 
 checksums           rmd160  af2a746971aaafb2b7b0cfaa603a654d5500de16 \
-                    sha256  4267f18a8605557de82af072f77e57efdeebb31a00d057f9e50bbd99013d0830 \
-                    size    11906
+sha256  4267f18a8605557de82af072f77e57efdeebb31a00d057f9e50bbd99013d0830 \
+size    11906
 
 depends_build-append \
                     port:asciidoc

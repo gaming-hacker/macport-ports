@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,8 +27,8 @@ distname            cspice
 extract.suffix      .tar.Z
 
 checksums           rmd160  567ea2e00477ed4d00bc127188b07ff668f3f08a \
-                    sha256  f5d48c4b0d558c5d71e8bf6fcdf135b0943210c1ff91f8191dfc447419a6b12e \
-                    size 38611927
+sha256  f5d48c4b0d558c5d71e8bf6fcdf135b0943210c1ff91f8191dfc447419a6b12e \
+size 38611927
 
 post-extract {
         xinstall -m 0644 -W "${filespath}" example.c naif0011.tls "${worksrcpath}/doc/"

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -30,8 +30,8 @@ set padded_ver      [string range [subst [regsub -all {\.([0-9]+)} "${version}.0
 distname            sqlite-autoconf-${padded_ver}
 
 checksums           rmd160  2296997b18ab1b16a9371f039bd9f55e5e74fe82 \
-                    sha256  f52b72a5c319c3e516ed7a92e123139a6e87af08a2dc43d7757724f6132e6db0 \
-                    size    2956627
+sha256  f52b72a5c319c3e516ed7a92e123139a6e87af08a2dc43d7757724f6132e6db0 \
+size    2956627
 
 depends_lib         port:libedit \
                     port:ncurses \
@@ -106,8 +106,8 @@ subport ${name}-tools {
                             sqlite3_analyzer program.
 
     checksums       rmd160  880d8578a7e55d6e1d05a48b9094dc1aff33c7b9 \
-                    sha256  f4beeca5595c33ab5031a920d9c9fd65fe693bad2b16320c3a6a6950e66d3b11 \
-                    size    12819198
+sha256  f4beeca5595c33ab5031a920d9c9fd65fe693bad2b16320c3a6a6950e66d3b11 \
+size    12819198
 
 
     use_zip                 yes

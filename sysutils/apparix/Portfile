@@ -15,8 +15,8 @@ homepage        https://micans.org/apparix/
 master_sites    ${homepage}src/
 
 checksums       rmd160  adfd2c17eafccee7025fed73d0e4d98871dd59d8 \
-                sha256  211bb5f67b32ba7c3e044a13e4e79eb998ca017538e9f4b06bc92d5953615235 \
-                size    260823
+sha256  211bb5f67b32ba7c3e044a13e4e79eb998ca017538e9f4b06bc92d5953615235 \
+size    260823
 
 configure.args  --mandir=${prefix}/share/man
 

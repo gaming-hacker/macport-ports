@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         POE 1.368
 maintainers         nomaintainer
 license             {Artistic-1 GPL}
@@ -12,8 +12,8 @@ description         Portable multitasking and networking framework for any event
 long_description    ${description}
 
 checksums           rmd160  1fcd8cf554a9a300416426e061dcb5b7fb7dcd05 \
-                    sha256  b7b1dc761e36d48b39068349b576dafc0eccbc3b9db51c677de0e1aafadfe121 \
-                    size    377702
+sha256  b7b1dc761e36d48b39068349b576dafc0eccbc3b9db51c677de0e1aafadfe121 \
+size    377702
 
 platforms           darwin
 

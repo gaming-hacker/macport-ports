@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,8 +16,8 @@ long_description    ${description}
 
 github.setup        veeresht CommPy 0.6.0 v
 checksums           rmd160  d901c66990cd1184db0928a3fe954629629b3395 \
-                    sha256  6b976d13ca9dcf56c67f8f90e0a606670f1b5928ea69d26e6be08a0d4a5b3fbc \
-                    size    405950
+sha256  6b976d13ca9dcf56c67f8f90e0a606670f1b5928ea69d26e6be08a0d4a5b3fbc \
+size    405950
 revision            0
 
 python.rootname     scikit-commpy
@@ -27,8 +27,8 @@ if {${name} ne ${subport}} {
     if {${python.version} == 27} {
         github.setup veeresht CommPy 0.4.0 v
         checksums rmd160 588ac60dc9984009307648fe82173ae1d27bf3a2 \
-                  sha256 7d467c9156e99154cddb9631d3111830af7e9330a35013a846acbb740f7d6e55 \
-                  size   65632
+sha256 7d467c9156e99154cddb9631d3111830af7e9330a35013a846acbb740f7d6e55 \
+size   65632
         revision  0
     }
 

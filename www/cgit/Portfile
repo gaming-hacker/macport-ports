@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -32,13 +32,13 @@ set git_distfile    ${git_distname}${extract.suffix}
 distfiles           ${cgit_distfile}:cgit ${git_distfile}:git
 
 checksums           ${cgit_distfile} \
-                    rmd160  4884b999302eb89afa67c73f07e8853f9402e681 \
-                    sha256  5a5f12d2f66bd3629c8bc103ec8ec2301b292e97155d30a9a61884ea414a6da4 \
-                    size    90632 \
+rmd160  4884b999302eb89afa67c73f07e8853f9402e681 \
+sha256  5a5f12d2f66bd3629c8bc103ec8ec2301b292e97155d30a9a61884ea414a6da4 \
+size    90632 \
                     ${git_distfile} \
-                    rmd160  a8ab476982440c2cc94c7d21f619320d74f117d2 \
-                    sha256  222796cc6e3bf2f9fd765f8f097daa3c3999bb7865ac88a8c974d98182e29f26 \
-                    size    5875548
+rmd160  a8ab476982440c2cc94c7d21f619320d74f117d2 \
+sha256  222796cc6e3bf2f9fd765f8f097daa3c3999bb7865ac88a8c974d98182e29f26 \
+size    5875548
 
 # Patch for memrch: https://trac.macports.org/ticket/60967
 patchfiles          patch-add-memrchr.diff \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -10,7 +10,7 @@ license             MIT
 maintainers         {tsabirgaliev @tsabirgaliev} openmaintainer
 
 description         Core functionality needed to create .NET Core projects, that is \
-                    shared between Visual Studio and CLI
+shared between Visual Studio and CLI
 
 long_description    .NET is a free, cross-platform, open source developer platform \
                     for building many different types of applications. \
@@ -25,8 +25,8 @@ distname            dotnet-sdk-${version}-osx-x64
 master_sites        https://dotnetcli.azureedge.net/dotnet/Sdk/${version}/
 
 checksums           rmd160  b349a84ad554abc131df3af9ad63296d494c7d2a \
-                    sha256  de629b4a3a74ef43701e543d00803b0963047bd8b0234d83c9229d53dab00ba0 \
-                    size    120552569
+sha256  de629b4a3a74ef43701e543d00803b0963047bd8b0234d83c9229d53dab00ba0 \
+size    120552569
 
 worksrcdir          ${name}-${version}
 extract.mkdir       yes

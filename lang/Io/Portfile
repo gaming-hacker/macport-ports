@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -25,8 +25,8 @@ long_description        ${description}. The ideas in Io are mostly inspired \
 homepage                http://www.iolanguage.com/
 
 checksums               rmd160  ebf5d206b115329456df169aaaad33f431a92bfc \
-                        sha256  febf9b6f4174e3d9fee179b5d41a81dba8b9660ece7a1cecee7452f5e9e460ea \
-                        size    9154022
+sha256  febf9b6f4174e3d9fee179b5d41a81dba8b9660ece7a1cecee7452f5e9e460ea \
+size    9154022
 
 depends_lib             path:lib/pkgconfig/cairo.pc:cairo \
                         port:freetype \
@@ -52,14 +52,14 @@ depends_lib             path:lib/pkgconfig/cairo.pc:cairo \
                         port:ossp-uuid \
                         path:lib/pkgconfig/pango.pc:pango \
                         port:pcre \
-                        port:python37 \
+                        port:python39 \
                         port:readline \
                         port:sqlite3 \
                         port:tiff \
                         port:yajl \
                         port:zlib
 
-configure.python        ${prefix}/bin/python3.7
+configure.python        ${prefix}/bin/python3.9
 
 # ../../_build/binaries/io_static: No such file or directory
 use_parallel_build      no

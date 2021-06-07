@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -21,8 +21,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  59d3444975f22c3e628d07ec531d2977935dd1c6 \
-                    sha256  b087b0a5857952d0edd24dae458616eb166a3257bc647d5279a9e71495544779 \
-                    size    6382736
+sha256  b087b0a5857952d0edd24dae458616eb166a3257bc647d5279a9e71495544779 \
+size    6382736
 
 depends_build       port:pkgconfig \
                     port:intltool \
@@ -66,7 +66,7 @@ compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 300}
 configure.cmd       ./autogen.sh
 
 configure.cflags-append \
-                    -std=gnu89
+                    -std=c11
 
 configure.args      --enable-static \
                     --enable-compile-warnings=minimum \
@@ -119,13 +119,13 @@ variant python36 conflicts python27 python37 python38 description {Use Python 3.
 }
 
 variant python37 conflicts python27 python36 python38 description {Use Python 3.7} {
-    configure.python        ${prefix}/bin/python3.7
-    depends_lib-append      port:py37-gobject3
+    configure.python        ${prefix}/bin/python3.9
+    depends_lib-append      port:py39-gobject3
 }
 
 variant python38 conflicts python27 python36 python37 description {Use Python 3.8} {
-    configure.python        ${prefix}/bin/python3.8
-    depends_lib-append      port:py38-gobject3
+    configure.python        ${prefix}/bin/python3.9
+    depends_lib-append      port:py39-gobject3
 }
 
 if {![variant_isset python27] \

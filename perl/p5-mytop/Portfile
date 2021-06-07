@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 PortGroup           github 1.0
 
-perl5.branches      5.26 5.28 5.30
+perl5.branches 5.30
 perl5.setup         mytop 1.7
 github.setup        jzawodn mytop 437f2ef8d3fce02eafe935ddbf860d1dfbc43f7d
 version             [perl5_convert_version ${perl5.moduleversion}]
@@ -18,7 +18,7 @@ long_description    ${description}
 
 master_sites        {*}${github.master_sites}
 checksums           rmd160 6059921ee7c230c7de0b2c5e1924d90ff4ff9329 \
-                    sha256 8471c35926b07a7a6de653b1825321bba7c36c3c7992075c908ef6bb3a844fbb
+sha256 8471c35926b07a7a6de653b1825321bba7c36c3c7992075c908ef6bb3a844fbb
 
 platforms           darwin
 supported_archs     noarch

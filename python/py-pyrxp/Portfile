@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,14 +26,14 @@ extract.only        pyRXP-${version}${extract.suffix}
 python.versions     27 35 36 37 38 39
 
 checksums           pyRXP-${version}${extract.suffix} \
-                    rmd160  22530f1bd477966d0083efc73547e48edb25f907 \
-                    sha256  e70cdc9d45237e1e7996bfe21cedec2eec8f910c2d34dc46d77dbacb9cb329b6 \
-                    size    256677
+rmd160  22530f1bd477966d0083efc73547e48edb25f907 \
+sha256  e70cdc9d45237e1e7996bfe21cedec2eec8f910c2d34dc46d77dbacb9cb329b6 \
+size    256677
 
 checksums-append    LICENSE.txt \
-                    rmd160  a49c84f435cf6e53b51fef7eda7a15d8ad06a2e4 \
-                    sha256  a02a6aeb5dde4c4194494bc0b10d5ed62a32628ccd2882c363fdb9a7874ab2b8 \
-                    size    1707
+rmd160  a49c84f435cf6e53b51fef7eda7a15d8ad06a2e4 \
+sha256  a02a6aeb5dde4c4194494bc0b10d5ed62a32628ccd2882c363fdb9a7874ab2b8 \
+size    1707
 
 post-extract {
     # avoid

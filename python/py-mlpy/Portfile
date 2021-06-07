@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,9 +30,9 @@ master_sites.mirror_subdir \
 distname            mlpy-${version}
 
 checksums           rmd160  9dfb6387214859993d66db9108d07340aacb35c6 \
-                    sha256  344fa75fbf9f76af72f6a346d5309613defc4d244bac13c218e509a51d68bf6a \
-                    size    1961206 \
-                    sha1    32f986f7f0f7cce5c773d2909d34705eab39df16
+sha256  344fa75fbf9f76af72f6a346d5309613defc4d244bac13c218e509a51d68bf6a \
+size    1961206 \
+sha1    32f986f7f0f7cce5c773d2909d34705eab39df16
 
 python.versions     27 35 36
 

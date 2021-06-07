@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,8 +17,8 @@ long_description    ${description}
 maintainers         {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
 
 checksums           rmd160  5df4a372bca0ba11e0aac3b3aec27ef087c4537f \
-                    sha256  2f5f5cc25ab4dd3782046c65e97265b39be0cf9cc74c5c0100c3c580c3c32395 \
-                    size    921550
+sha256  2f5f5cc25ab4dd3782046c65e97265b39be0cf9cc74c5c0100c3c580c3c32395 \
+size    921550
 
 homepage            https://pypi.org/project/slepc4py
 master_sites        pypi:s/slepc4py

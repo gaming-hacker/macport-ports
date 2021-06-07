@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 
 # TODO:
@@ -135,33 +135,33 @@ if {${distfiles} ne ""} {
 }
 
 checksums           llvm-7.1.0.src.tar.xz \
-                    rmd160  0d972e6d46e8741ae06abbf4125375c1a762f79b \
-                    sha256  1bcc9b285074ded87b88faaedddb88e6b5d6c331dfcfb57d7f3393dd622b3764 \
-                    size    28313784 \
+rmd160  0d972e6d46e8741ae06abbf4125375c1a762f79b \
+sha256  1bcc9b285074ded87b88faaedddb88e6b5d6c331dfcfb57d7f3393dd622b3764 \
+size    28313784 \
                     cfe-7.1.0.src.tar.xz \
-                    rmd160  7ce1610cf1915775603f7190781a1080958d7f59 \
-                    sha256  e97dc472aae52197a4d5e0185eb8f9e04d7575d2dc2b12194ddc768e0f8a846d \
-                    size    12487872 \
+rmd160  7ce1610cf1915775603f7190781a1080958d7f59 \
+sha256  e97dc472aae52197a4d5e0185eb8f9e04d7575d2dc2b12194ddc768e0f8a846d \
+size    12487872 \
                     compiler-rt-7.1.0.src.tar.xz \
-                    rmd160  78fb2825ffecd83c8efc7d1d42ca67600b914fd2 \
-                    sha256  057bdac0581215b5ceb39edfd5bbef9eb79578f16a8908349f3066251fba88d8 \
-                    size    1864248 \
+rmd160  78fb2825ffecd83c8efc7d1d42ca67600b914fd2 \
+sha256  057bdac0581215b5ceb39edfd5bbef9eb79578f16a8908349f3066251fba88d8 \
+size    1864248 \
                     libcxx-7.1.0.src.tar.xz \
-                    rmd160  0ccb07c007c7f5998dea02aefa0c1c4a3f4bbb8a \
-                    sha256  4442b408eaea3c1e4aa2cf21da38aba9f0856b4b522b1c3d555c3251af62b04e \
-                    size    1638448 \
+rmd160  0ccb07c007c7f5998dea02aefa0c1c4a3f4bbb8a \
+sha256  4442b408eaea3c1e4aa2cf21da38aba9f0856b4b522b1c3d555c3251af62b04e \
+size    1638448 \
                     clang-tools-extra-7.1.0.src.tar.xz \
-                    rmd160  2f53c1f44475be2017812b472a876aa4ea9defae \
-                    sha256  1ce0042c48ecea839ce67b87e9739cf18e7a5c2b3b9a36d177d00979609b6451 \
-                    size    901328 \
+rmd160  2f53c1f44475be2017812b472a876aa4ea9defae \
+sha256  1ce0042c48ecea839ce67b87e9739cf18e7a5c2b3b9a36d177d00979609b6451 \
+size    901328 \
                     lldb-7.1.0.src.tar.xz \
-                    rmd160  a8618ddac7e23549afe05cc9d9794e180d1d7311 \
-                    sha256  9b68127a7964af715d96528b675930632693e27b7d142ab825ec331d1ed39a4e \
-                    size    19384976 \
+rmd160  a8618ddac7e23549afe05cc9d9794e180d1d7311 \
+sha256  9b68127a7964af715d96528b675930632693e27b7d142ab825ec331d1ed39a4e \
+size    19384976 \
                     polly-7.1.0.src.tar.xz \
-                    rmd160  51286b17b99a921bcb395a1e3bbc6e735bc0580a \
-                    sha256  305454f72db5e30def3f48e2dc56ce62f9c52c3b9278b8f357a093a588b6139b \
-                    size    8755032
+rmd160  51286b17b99a921bcb395a1e3bbc6e735bc0580a \
+sha256  305454f72db5e30def3f48e2dc56ce62f9c52c3b9278b8f357a093a588b6139b \
+size    8755032
 
 patch.pre_args  -p1
 patchfiles \
@@ -432,7 +432,7 @@ platform darwin {
     }
 
     # https://llvm.org/bugs/show_bug.cgi?id=25674
-    configure.cxxflags-append -std=c++11
+    configure.cxxflags-append -std=c++17
 }
 
 if {${subport} eq "lldb-${llvm_version}"} {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           cmake 1.1
@@ -28,8 +28,8 @@ long_description    \
 homepage            https://www.qhull.org
 
 checksums           rmd160  5cb0fa2126f6ce7b278ef52d1be820da72a45db4 \
-                    sha256  59356b229b768e6e2b09a701448bfa222c37b797a84f87f864f97462d8dbc7c5 \
-                    size    1307213
+sha256  59356b229b768e6e2b09a701448bfa222c37b797a84f87f864f97462d8dbc7c5 \
+size    1307213
 
 # remove after June 17, 2021
 variant perf requires native description {Legacy compatibility variant} {}
@@ -38,7 +38,7 @@ variant native description {Build with best native support for local CPU capabil
     configure.optflags  -O3 -pipe -march=native
 }
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args-append   -DBIN_INSTALL_DIR=${prefix}/bin \
                         -DLIB_INSTALL_DIR=${prefix}/lib \
@@ -47,7 +47,7 @@ configure.args-append   -DBIN_INSTALL_DIR=${prefix}/bin \
                         -DMAN_INSTALL_DIR=${prefix}/share/man/man1
 
 configure.cxxflags-append \
-                        -std=c++11
+                        -std=c++17
 
 post-destroot {
     ln -s ${prefix}/include/libqhull ${destroot}${prefix}/include/qhull

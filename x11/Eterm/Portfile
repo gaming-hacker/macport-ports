@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -32,13 +32,13 @@ set bg_distfile     ${name}-bg-0.9.6${extract.suffix}
 distfiles-append    ${bg_distfile}:bg
 
 checksums           ${main_distfile} \
-                    rmd160  5b5e4426f6d252350f7fb5a5f8e5ba6a1b9ecbf8 \
-                    sha256  a8b15854ee6f11e3e5fab8b17a7eacd969752794b196f1dedcc5451546f4345f \
-                    size    492621 \
+rmd160  5b5e4426f6d252350f7fb5a5f8e5ba6a1b9ecbf8 \
+sha256  a8b15854ee6f11e3e5fab8b17a7eacd969752794b196f1dedcc5451546f4345f \
+size    492621 \
                     ${bg_distfile} \
-                    rmd160  acbab70cf5a22f1c45a16f5a8a92ed1e057a59a0 \
-                    sha256  8be436c38337557b77bb73d31a65c4dfe21966e84b7d3306e1e28c5c1e809c55 \
-                    size    1883627
+rmd160  acbab70cf5a22f1c45a16f5a8a92ed1e057a59a0 \
+sha256  8be436c38337557b77bb73d31a65c4dfe21966e84b7d3306e1e28c5c1e809c55 \
+size    1883627
 
 post-extract {
     foreach dir {bg/tile bg/scale} {
@@ -66,9 +66,9 @@ depends_lib-append  port:xorg-libXres \
                     port:xorg-libXmu \
                     port:libast
 
-compiler.c_standard 1989
+compiler.c_standard 2011
 configure.cflags-append \
-                    -std=gnu89
+                    -std=c11
 configure.args      --disable-utmp \
                     --enable-auto-encoding \
                     --enable-escreen \

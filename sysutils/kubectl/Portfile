@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               select 1.0
@@ -24,85 +24,85 @@ set latestVersion       kubectl-1.21
 subport kubectl-1.21 {
     set patchNumber     1
     checksums           rmd160  51aaa6a9e7ec50708eebce539ee87e10b3aa65b0 \
-                        sha256  4a81a072bbb55dc5ef1e90609f7d38a67ede5946593653dee0be94f3850296a9 \
-                        size    55831200
+sha256  4a81a072bbb55dc5ef1e90609f7d38a67ede5946593653dee0be94f3850296a9 \
+size    55831200
 }
 
 subport kubectl-1.20 {
     set patchNumber     4
     checksums           rmd160  6a96b5e7fcc550198ddf4056ee3b0a644bd4b78c \
-                        sha256  37f593731b8c9913bf2a3bfa36dacb3058dc176c7aeae2930c783822ea03a573 \
-                        size    46263664
+sha256  37f593731b8c9913bf2a3bfa36dacb3058dc176c7aeae2930c783822ea03a573 \
+size    46263664
 }
 
 subport kubectl-1.19 {
     set patchNumber     8
     checksums           rmd160  598965501bd55a2c84db22ebca1d131b6beff61a \
-                        sha256  51e937f4d863a41299952428616aece20c7289548c08239db50dcb9f826c46ff \
-                        size    49442736
+sha256  51e937f4d863a41299952428616aece20c7289548c08239db50dcb9f826c46ff \
+size    49442736
 }
 
 subport kubectl-1.18 {
     set patchNumber     16
     checksums           rmd160  bd898f840b462f87752be1c06ac10ffe0a690de8 \
-                        sha256  5c9657eb86bb02b0fb1c4eb3f7ee10093184b6a3d7df74bef9d9aa02a386b117 \
-                        size    50125040
+sha256  5c9657eb86bb02b0fb1c4eb3f7ee10093184b6a3d7df74bef9d9aa02a386b117 \
+size    50125040
 }
 
 subport kubectl-1.17 {
     set patchNumber     17
     checksums           rmd160  4710ba1c832cd9ac6917600bcd54c70eb2b46666 \
-                        sha256  e76b57bbed823a8572f7ccbf9caae56855048434d818dc13559e89ead5f91578 \
-                        size    49542736
+sha256  e76b57bbed823a8572f7ccbf9caae56855048434d818dc13559e89ead5f91578 \
+size    49542736
 }
 
 subport kubectl-1.16 {
     set patchNumber     15
     checksums           rmd160  7450d9abe9aa07c1929b39e96b9e1995257b42ae \
-                        sha256  aff54bfaaed905813f61a2d0ca039176d6d309e59f92ebdb297c7da1df105485 \
-                        size    48907792
+sha256  aff54bfaaed905813f61a2d0ca039176d6d309e59f92ebdb297c7da1df105485 \
+size    48907792
 }
 
 subport kubectl-1.15 {
     set patchNumber     10
     checksums           rmd160  22bfa8f33cc5edfcff86bccd6a45a051979799cc \
-                        sha256  ac14a937e3b8d70f86f635b08272813f2e00282d05c61c3087bbbd9333738d02 \
-                        size    48600048
+sha256  ac14a937e3b8d70f86f635b08272813f2e00282d05c61c3087bbbd9333738d02 \
+size    48600048
 }
 
 subport kubectl-1.14 {
     set patchNumber     10
     checksums           rmd160  10bdebc38c14482972e0c344d349a6d450c8d182 \
-                        sha256  43d2c24eafb2ef09a6ac77c2b99070668e83edaa325a16a362e304ba578fdc48 \
-                        size    48716328
+sha256  43d2c24eafb2ef09a6ac77c2b99070668e83edaa325a16a362e304ba578fdc48 \
+size    48716328
 }
 
 subport kubectl-1.13 {
     set patchNumber     12
     checksums           rmd160  fdbdf38601ed7767793a4e8540e8454d43c8e91c \
-                        sha256  ddbdc7591569f321b8b0a01dcbd679f6b0a7756f1427a51a39eadfce8d34bea7 \
-                        size    44353656
+sha256  ddbdc7591569f321b8b0a01dcbd679f6b0a7756f1427a51a39eadfce8d34bea7 \
+size    44353656
 }
 
 subport kubectl-1.12 {
     set patchNumber     10
     checksums           rmd160  4212a9f7709ef6a7d36f3ebd477140a7d0ef8e50 \
-                        sha256  67acf17bf77b0a9729d17ad5c058a358c0cbd12dbf46478c37111cdd97a0828c \
-                        size    56860112
+sha256  67acf17bf77b0a9729d17ad5c058a358c0cbd12dbf46478c37111cdd97a0828c \
+size    56860112
 }
 
 subport kubectl-1.11 {
     set patchNumber     10
     checksums           rmd160  8c3f3121088f745bb9eb279f5531b8b61ff84bc7 \
-                        sha256  cf27dd3e8d5a13439de2214b7a07e2371cdbeaf151ee4c7d63e7e7c34ebbf117 \
-                        size    54985744
+sha256  cf27dd3e8d5a13439de2214b7a07e2371cdbeaf151ee4c7d63e7e7c34ebbf117 \
+size    54985744
 }
 
 subport kubectl-1.10 {
     set patchNumber     13
     checksums           rmd160  fe455ab0eb7c862c8dbce970632a9e66c8987cb1 \
-                        sha256  94ec5409ac6715dfec11309795da9b30254b9d818f8b1d38d1ca2e914945868d \
-                        size    54670032
+sha256  94ec5409ac6715dfec11309795da9b30254b9d818f8b1d38d1ca2e914945868d \
+size    54670032
 }
 
 if {${subport} == ${name}} {

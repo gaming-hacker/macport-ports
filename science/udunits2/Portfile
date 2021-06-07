@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -32,8 +32,8 @@ homepage            https://www.unidata.ucar.edu/software/udunits/
 master_sites        https://artifacts.unidata.ucar.edu/repository/downloads-udunits/
 
 checksums           rmd160  c9f8305134fb8243bd0dc637ea857df5b945ed47 \
-                    sha256  590baec83161a3fd62c00efa66f6113cec8a7c461e3f61a5182167e0cc5d579e \
-                    size    1224503
+sha256  590baec83161a3fd62c00efa66f6113cec8a7c461e3f61a5182167e0cc5d579e \
+size    1224503
 
 depends_lib         port:expat \
                     port:cunit

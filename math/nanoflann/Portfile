@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -15,10 +15,10 @@ description             A C++11 header-only library for Nearest Neighbor (NN) se
 long_description        ${description}
 
 checksums               rmd160  237390af2ed66847ded4f8b5c7e43cdf17719d1b \
-                        sha256  6c1545a2ede9ccad46e9cb006e97dd0921bc23ac0cd9f0d6e5578ebf1c6ea07e \
-                        size    685215
+sha256  6c1545a2ede9ccad46e9cb006e97dd0921bc23ac0cd9f0d6e5578ebf1c6ea07e \
+size    685215
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 installs_libs           no
 supported_archs         noarch

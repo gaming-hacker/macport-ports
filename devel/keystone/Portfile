@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -27,7 +27,7 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  bef285e41a23a26aa2763adea26bbb5ea36d55c3 \
-                    sha256  2725d30768931c8f54cbadd51cba41da8b0fa722a029449e3f34acc35d922973 \
-                    size    4433601
+sha256  2725d30768931c8f54cbadd51cba41da8b0fa722a029449e3f34acc35d922973 \
+size    4433601
 
 cmake.build_type    RELEASE

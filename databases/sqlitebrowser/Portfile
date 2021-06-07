@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -34,8 +34,8 @@ long_description    SQLite Database Browser is a visual tool used to create, des
 homepage            http://sqlitebrowser.org
 
 checksums           rmd160  9c7aa0ef33b114e7db7f52e8d9c011dc63e1009a \
-                    sha256  7e1b2971c4954b60ff64d69325264edba52a1973d7ac81eb6058340a18f172ee \
-                    size    3990737
+sha256  7e1b2971c4954b60ff64d69325264edba52a1973d7ac81eb6058340a18f172ee \
+size    3990737
 
 # Exclude pre-release candidates
 github.livecheck.regex \
@@ -47,7 +47,7 @@ depends_lib-append  port:qscintilla-qt5
 
 patchfiles-append   0001-Changes-for-MacPorts.patch
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 platform darwin {
     PortGroup           qmake5 1.0

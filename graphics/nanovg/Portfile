@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ long_description    NanoVG is a small antialiased vector graphics \
                     scalable user interfaces and visualizations.
 
 checksums           rmd160  d86f86dee2d1d00e8b012c765f4ab2057c0e8871 \
-                    sha256  b170cf73e56b76827c3d3d745d3a75904be845ad0333334c892ab4b96fcf35bc \
-                    size    2023722
+sha256  b170cf73e56b76827c3d3d745d3a75904be845ad0333334c892ab4b96fcf35bc \
+size    2023722
 
 }
 
@@ -45,8 +45,8 @@ long_description    MetalNanoVG is the native Metal port of NanoVG \
                     API.
 
 checksums           rmd160  38c518b04026e3ef11a2efe6768509196be8e167 \
-                    sha256  99dbf03e16faeaa60506438a46dba8126219cc78c1b00f4a0ad570554c73b769 \
-                    size    159280
+sha256  99dbf03e16faeaa60506438a46dba8126219cc78c1b00f4a0ad570554c73b769 \
+size    159280
 
 depends_lib-append  port:nanovg
 

@@ -14,8 +14,8 @@ license             BSD
 configure.args-append -DCCD_DOUBLE=true
 
 checksums           rmd160  6e36c4276ac47b3e79dadc0b0e2ecf42f36e5b20 \
-                    sha256  aa00bcff8781528144557c0c92fc4f70f6505903d6ef07fd56998f352402aeff \
-                    size    73979
+sha256  aa00bcff8781528144557c0c92fc4f70f6505903d6ef07fd56998f352402aeff \
+size    73979
 
 variant single_precision {
     configure.args-delete -DCCD_DOUBLE=true

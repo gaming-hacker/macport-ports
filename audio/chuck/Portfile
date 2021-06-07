@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ master_sites        ${homepage}release/files/
 extract.suffix      .tgz
 
 checksums           rmd160  f4e7f374b7f85c1c3d5cb9ff196da3d82e243614 \
-                    sha256  11a20c34b385e132bf43d5ae6a562c652f631828cc6b1562a4c029bc9a850ed4 \
-                    size    14689073
+sha256  11a20c34b385e132bf43d5ae6a562c652f631828cc6b1562a4c029bc9a850ed4 \
+size    14689073
 
 depends_build       port:bison \
                     port:flex

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -14,7 +14,7 @@ description         MMTF in C++
 long_description    The macromolecular transmission format (MMTF) is a binary encoding of biological structures.
 
 checksums           rmd160  ddee6c5f449254bd58f1a919bfe7e8818e77a026 \
-                    sha256  276e19f1019b080969d40b85094ff604dc2f1762707be0fa4c59bf67b8cff2e5 \
-                    size    59370
+sha256  276e19f1019b080969d40b85094ff604dc2f1762707be0fa4c59bf67b8cff2e5 \
+size    59370
 
 depends_lib-append port:msgpack

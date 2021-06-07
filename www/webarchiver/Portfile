@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -17,8 +17,8 @@ long_description \
     webarchiver is compatible with Mac OS X 10.4 (Safari 2.0).
 
 checksums           rmd160  d1651236d5e7d7c6865ab77a4770cb3a791d88b6 \
-                    sha256  36be3cb61df9bbb117766113e4676bb90eb159e436499945147a9d4511f4978d \
-                    size    14399
+sha256  36be3cb61df9bbb117766113e4676bb90eb159e436499945147a9d4511f4978d \
+size    14399
 
 destroot {
     xinstall ${worksrcpath}/build/Release/webarchiver ${destroot}${prefix}/bin

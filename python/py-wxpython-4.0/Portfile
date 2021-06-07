@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python      1.0
@@ -27,8 +27,8 @@ homepage            http://www.wxpython.org/
 master_sites        pypi:w/wxPython
 
 checksums           rmd160  e0d66dfb24bd7738306e70588ed0a5f6f7116de1 \
-                    sha256  00e5e3180ac7f2852f342ad341d57c44e7e4326de0b550b9a5c4a8361b6c3528 \
-                    size    66043287
+sha256  00e5e3180ac7f2852f342ad341d57c44e7e4326de0b550b9a5c4a8361b6c3528 \
+size    66043287
 
 patchfiles-append   fix_cc_cxx.patch
 patch.pre_args      -p1

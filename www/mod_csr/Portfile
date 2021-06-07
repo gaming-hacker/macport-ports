@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ master_sites        https://redwax.eu/dist/rs \
                     freebsd
 
 checksums           sha256  fdf0d4c97bbdebe725c9c3ff1fe7ed92ac03800dd93eccf7e5a31040306092dc \
-                    rmd160  89cd2940a25be3b1e2577ff42079741471b4a46f \
-                    size    99657
+rmd160  89cd2940a25be3b1e2577ff42079741471b4a46f \
+size    99657
 
 depends_lib         port:apache2 port:mod_ca path:lib/libssl.dylib:openssl

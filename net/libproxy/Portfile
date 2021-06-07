@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    Libproxy exists to answer the question: Given a \
                     the details, enabling you to get back to programming.
 
 checksums           rmd160  4440c0024eaf3b958eba049d0b180a872bb84045 \
-                    sha256  1a40d344d61eee9d962cbdcf9b382255a63ed5a15c487384cf94174503dfffdb \
-                    size    95576
+sha256  1a40d344d61eee9d962cbdcf9b382255a63ed5a15c487384cf94174503dfffdb \
+size    95576
 
 patchfiles          patch-libproxy-cmake.diff \
                     patch-libproxy-test-CMakeLists.txt.diff \
@@ -90,24 +90,24 @@ variant python36 conflicts python27 python38 python37 python39 description {Buil
 
 variant python37 conflicts python27 python38 python36 python39 description {Build Bindings for Python 3.7} {
     set python_prefix ${frameworks_dir}/Python.framework/Versions/3.7
-    depends_lib-append port:python37
+    depends_lib-append port:python39
     configure.args-delete \
                     -DWITH_PYTHON3=NO
     configure.args-append \
                     -DWITH_PYTHON3=YES \
-                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.7 \
-                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.7/site-packages
+                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.9 \
+                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.9/site-packages
 }
 
 variant python38 conflicts python27 python36 python37 python39 description {Build Bindings for Python 3.8} {
     set python_prefix ${frameworks_dir}/Python.framework/Versions/3.8
-    depends_lib-append port:python38
+    depends_lib-append port:python39
     configure.args-delete \
                     -DWITH_PYTHON3=NO
     configure.args-append \
                     -DWITH_PYTHON3=YES \
-                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.8 \
-                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.8/site-packages
+                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.9 \
+                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.9/site-packages
 }
 
 variant python39 conflicts python27 python36 python37 python38 description {Build Bindings for Python 3.9} {
@@ -125,7 +125,7 @@ variant python39 conflicts python27 python36 python37 python38 description {Buil
 
 if {![variant_isset python39] && ![variant_isset python38] &&
     ![variant_isset python37] && ![variant_isset python36]} {
-    default_variants    +python27
+    default_variants +python39
 }
 
 post-patch {

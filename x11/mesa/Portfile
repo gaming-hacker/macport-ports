@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -24,9 +24,9 @@ platforms           macosx darwin
 use_xz              yes
 
 checksums           sha1    5fd340a6304f7501014e1bd7291e4cfa7a6efcdb \
-                    rmd160  c658d9e93d19bf2de694001c8c9886b8bb89ee2e \
-                    sha256  d017eb53a810c32dabeedf6ca2238ae1e897ce9090e470e9ce1d6c9e3f1b0862 \
-                    size    11967592
+rmd160  c658d9e93d19bf2de694001c8c9886b8bb89ee2e \
+sha256  d017eb53a810c32dabeedf6ca2238ae1e897ce9090e470e9ce1d6c9e3f1b0862 \
+size    11967592
 
 depends_build       port:pkgconfig \
                     port:flex \
@@ -62,7 +62,7 @@ configure.args \
     --disable-llvm-shared-libs \
     --with-gallium-drivers=
 
-# mesa builds with -std=c99 but uses timespec_get() which was added in c11, so this works around that bug
+# mesa builds with -std=c11 but uses timespec_get() which was added in c11, so this works around that bug
 configure.env-append \
     export ac_cv_func_timespec_get=no
 
@@ -84,9 +84,9 @@ platform darwin {
         version             17.1.6
         revision            2
         checksums           sha1    2acc201e24ea67c5231074d6746a42a747228ed6 \
-                            rmd160  43a9b758462316ad344ccdccf72d6d0ce295620e \
-                            sha256  0686deadde1f126b20aa67e47e8c50502043eee4ecdf60d5009ffda3cebfee50 \
-                            size    9868932
+rmd160  43a9b758462316ad344ccdccf72d6d0ce295620e \
+sha256  0686deadde1f126b20aa67e47e8c50502043eee4ecdf60d5009ffda3cebfee50 \
+size    9868932
 
         # this option does nothing in mesa 17.x and generates warnings
         configure.args-delete --enable-autotools

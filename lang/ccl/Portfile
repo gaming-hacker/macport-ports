@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -24,9 +24,9 @@ long_description \
 homepage         https://github.com/Clozure/ccl
 
 checksums ${name}-${version}${extract.suffix} \
-    rmd160  d4548d9b53784541271730b20fb81e33ef04a403 \
-    sha256  655389f1f57f80f377e491469913e385cd9ecf87b19c1513e024b2386720d0f8 \
-    size    5017237
+rmd160  d4548d9b53784541271730b20fb81e33ef04a403 \
+sha256  655389f1f57f80f377e491469913e385cd9ecf87b19c1513e024b2386720d0f8 \
+size    5017237
 
 worksrcdir      ccl-${version}
 use_configure   no
@@ -41,9 +41,9 @@ platform darwin  {
         master_sites-append  https://github.com/Clozure/ccl/releases/download/v${version}/:ccl_x86_64
         distfiles-append     darwinx86${extract.suffix}:ccl_x86_64
         checksums-append     darwinx86${extract.suffix} \
-            rmd160  5dc96b8b8cf9a104f20238f0e5c7daabf50be7ff \
-            sha256  9434fb5ebc01fc923625ad56726fdd217009e2d3c107cfa3c5435cb7692ba7ca \
-            size    18909744
+rmd160  5dc96b8b8cf9a104f20238f0e5c7daabf50be7ff \
+sha256  9434fb5ebc01fc923625ad56726fdd217009e2d3c107cfa3c5435cb7692ba7ca \
+size    18909744
         # This tar has no top-level directory, so we have to extract it manually
         extract.only-delete  darwinx86${extract.suffix}
         set bootimg          dx86cl64

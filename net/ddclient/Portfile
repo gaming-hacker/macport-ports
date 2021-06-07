@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -21,8 +21,8 @@ long_description    ddclient is a Perl client used to update dynamic \
 homepage            https://ddclient.net/
 
 checksums           rmd160  4b879422b6462241725d62e4a7d247dcd79e4942 \
-                    sha256  e4969e15cc491fc52bdcd649d4c2b0e4b1bf0c9f9dba23471c634871acc52470 \
-                    size    63469
+sha256  e4969e15cc491fc52bdcd649d4c2b0e4b1bf0c9f9dba23471c634871acc52470 \
+size    63469
 
 depends_lib         port:p${perl5.major}-io-socket-ssl
 depends_run         port:perl${perl5.major} \

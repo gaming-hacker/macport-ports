@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -24,8 +24,8 @@ homepage                https://gpsd.io
 
 master_sites            savannah
 checksums               rmd160  916829bad167ef8313ea348cfaac71201ab77cc1 \
-                        sha256  783fdf2a5f78a593230c7bfa8b409956545765563224c6c56ad69cc6c2a637a3 \
-                        size    4758761
+sha256  783fdf2a5f78a593230c7bfa8b409956545765563224c6c56ad69cc6c2a637a3 \
+size    4758761
 
 livecheck.type          regex
 livecheck.url           https://download.savannah.gnu.org/releases/gpsd/
@@ -94,7 +94,7 @@ depends_lib-append      port:ncurses
 depends_build-append    port:scons port:pkgconfig port:docbook-xml-4.1.2
 
 use_configure           no
-use_xcode               yes
+use_xcode  no
 
 set cxx_stdlibflags {}
 if {[string match *clang* ${configure.cxx}]} {

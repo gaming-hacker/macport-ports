@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ long_description    FoundationDB is a scalable, fault-tolerant, ordered \
 homepage            https://www.foundationdb.org/
 
 checksums           rmd160  2bf9a258d5db140d232fb6355fc810010824c014 \
-                    sha256  034f69d4ddf7faccd7cae2a6438d64643ac98a3a9c7b3e6ed2a03105c480df95 \
-                    size    9694306
+sha256  034f69d4ddf7faccd7cae2a6438d64643ac98a3a9c7b3e6ed2a03105c480df95 \
+size    9694306
 
 # Required python version
 set py_ver          3.9

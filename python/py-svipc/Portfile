@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ patchfiles          patch-version.diff
 patch.pre_args      -p1
 
 checksums           rmd160  f0d94da1014bab729db6658d22f7ee0d38b27a44 \
-                    sha256  52f0dd4c5611b18e048c4d83e86a1d12e7362c265089574d78b2e18749b0629c \
-                    size    26912
+sha256  52f0dd4c5611b18e048c4d83e86a1d12e7362c265089574d78b2e18749b0629c \
+size    26912
 
 python.versions     27 35 36 37
 

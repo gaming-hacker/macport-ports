@@ -24,8 +24,8 @@ worksrcdir      kdl-${version}
 cmake.source_dir ${worksrcpath}/orocos_kdl
 platforms       darwin
 checksums       rmd160  104ec8b519c658470be3b2f5da16ee96e0c52721 \
-                sha256  05607ae0d9a39c8898b4cc7c89bfa183efbea134d96aff5dca7554eb6c010f5c \
-                size    215028
+sha256  05607ae0d9a39c8898b4cc7c89bfa183efbea134d96aff5dca7554eb6c010f5c \
+size    215028
 
 depends_build-append \
     port:pkgconfig

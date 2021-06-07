@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://github.com/minrk/appnope
 
 checksums           rmd160  8653a709ff95927a7a29dfefaa46f9fcaa0ad632 \
-                    sha256  dd83cd4b5b460958838f6eb3000c660b1f9caf2a5b1de4264e941512f603258a \
-                    size    4292
+sha256  dd83cd4b5b460958838f6eb3000c660b1f9caf2a5b1de4264e941512f603258a \
+size    4292
 
 if {${name} ne ${subport}} {
     livecheck.type      none

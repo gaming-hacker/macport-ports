@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ master_sites        https://files.pythonhosted.org/packages/fc/30/41da7ccf08389e
 distname            dload-${version}-py3-none-any
 
 checksums           rmd160  6e88cc6e66da709b49de6de8c2ea2aacd793ede9 \
-                    sha256  40113d7a77ad782b40ea2713f8fe17cbdfe49dbd63db6061eb80ca91c1000e9e \
-                    size    8141
+sha256  40113d7a77ad782b40ea2713f8fe17cbdfe49dbd63db6061eb80ca91c1000e9e \
+size    8141
 
 extract.suffix      .whl
 extract.only

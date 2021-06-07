@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -25,7 +25,7 @@ if {$subport eq $name} {
     PortGroup           github 1.0
     PortGroup           compiler_blacklist_versions 1.0
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
 
     # https://trac.macports.org/ticket/60805
     compiler.blacklist-append {clang < 900}
@@ -102,29 +102,29 @@ if {$subport eq $name} {
                  https://github.com/${libmarias3_github_author}/${libmarias3_github_project}/archive/${libmarias3_github_branch}:tagsix
 
     checksums       ${main_distfile} \
-                    rmd160  f315f05339d8f946ddb2c737dd3a34635d3a17cb \
-                    sha256  036cf53ea4079858919b66c4e60d9bfe4f907b0251a000ed56e75a33bb6509c8 \
-                    size    48597419 \
+rmd160  f315f05339d8f946ddb2c737dd3a34635d3a17cb \
+sha256  036cf53ea4079858919b66c4e60d9bfe4f907b0251a000ed56e75a33bb6509c8 \
+size    48597419 \
                     ${libmariadb_distfile} \
-                    rmd160  19948e1f47bd69cbf34be421efd4aabbac94aa01 \
-                    sha256  c1cc8d03fd9ee5f4c18fd43f070b192ddf1a282f26e8f3fd01fa7e4c4e4de138 \
-                    size    972684 \
+rmd160  19948e1f47bd69cbf34be421efd4aabbac94aa01 \
+sha256  c1cc8d03fd9ee5f4c18fd43f070b192ddf1a282f26e8f3fd01fa7e4c4e4de138 \
+size    972684 \
                     ${wsrep_distfile} \
-                    rmd160  37c55c98f88647d6e638c4703e4f23f632a69ec6 \
-                    sha256  5e552083e41607c79dec4ca07a53118f044109daa3cd76b051da327d3d1fa09a \
-                    size    158850 \
+rmd160  37c55c98f88647d6e638c4703e4f23f632a69ec6 \
+sha256  5e552083e41607c79dec4ca07a53118f044109daa3cd76b051da327d3d1fa09a \
+size    158850 \
                     ${wsrep_api_distfile} \
-                    rmd160  847e8d58c8806437088d77d444ecfe2dcd8a76d1 \
-                    sha256  214fb8701ae51bcdf8171475a93f2c28ddd56e642feb172ec5148b4d3c73d4a6 \
-                    size    90155 \
+rmd160  847e8d58c8806437088d77d444ecfe2dcd8a76d1 \
+sha256  214fb8701ae51bcdf8171475a93f2c28ddd56e642feb172ec5148b4d3c73d4a6 \
+size    90155 \
                     ${columnstore_distfile} \
-                    rmd160  f0ffb00217c4b8acc608f3bd0185c76ead0678c5 \
-                    sha256  cd192678c2e82df79eb4b368bf6c836244802af3e30d41fd45074002a212288d \
-                    size    14525542 \
+rmd160  f0ffb00217c4b8acc608f3bd0185c76ead0678c5 \
+sha256  cd192678c2e82df79eb4b368bf6c836244802af3e30d41fd45074002a212288d \
+size    14525542 \
                     ${libmarias3_distfile} \
-                    rmd160  e613f2416a33d5760dd189513bbdca580367111c \
-                    sha256  3cf237b25d8dd32a9eec2f770313e5b1805dff4e0f4c0b5ea400abbf3be61279 \
-                    size    364133
+rmd160  e613f2416a33d5760dd189513bbdca580367111c \
+sha256  3cf237b25d8dd32a9eec2f770313e5b1805dff4e0f4c0b5ea400abbf3be61279 \
+size    364133
 
     worksrcdir   ${github.project}-${git.branch}
 

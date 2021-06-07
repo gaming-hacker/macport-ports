@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ extract.suffix      .tgz
 worksrcdir          ${name}
 
 checksums           rmd160  fd4160e431aaf471aa56029b557b0c446f3aa33b \
-                    sha256  77ae1665a337f1c48c61d6b961db3e52119b38e58884d1c89684af31f87bc506 \
-                    size    442736
+sha256  77ae1665a337f1c48c61d6b961db3e52119b38e58884d1c89684af31f87bc506 \
+size    442736
 
 post-extract {
     file attributes ${worksrcpath}/Build.sh -permissions a+x

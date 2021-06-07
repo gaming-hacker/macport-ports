@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,8 +8,8 @@ github.setup        scikit-rf scikit-rf 0.15.3 v
 name                py-scikit-rf
 
 checksums           rmd160  33172e881c9b13d464a3e4bf0a5329c60ac1b188 \
-                    sha256  c0f84010eec1ac07755c9fb8e51295a0116037f2de0a2117f507f7f1848106da \
-                    size    17777889
+sha256  c0f84010eec1ac07755c9fb8e51295a0116037f2de0a2117f507f7f1848106da \
+size    17777889
 
 platforms           darwin
 supported_archs     noarch

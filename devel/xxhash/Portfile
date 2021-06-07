@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,8 +14,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  b4677ce900c5ef75827fb98f5b0c2832f54a62d6 \
-                    sha256  e6300c1846c817940982e06e1e8912c26e848fa0f1e856f5e5ccacdee0f9d981 \
-                    size    145921
+sha256  e6300c1846c817940982e06e1e8912c26e848fa0f1e856f5e5ccacdee0f9d981 \
+size    145921
 
 if {${os.major} < 10} {
     # See https://trac.macports.org/ticket/60710#no1 for why this is needed.

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; c-basic-offset: 4; indent-tabs-mode: nil; tab-width: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           fuse 1.0
@@ -17,8 +17,8 @@ platforms           macosx
 master_sites        ${homepage}downloads/
 
 checksums           rmd160  ff0502d220d4eb3aaa0c37ebf6989be66518d2b8 \
-                    sha256  ec0485b028a3f53d49165f717e641dc02d8e581fd4dce3cd0065d2089d8e6c8e \
-                    size    27419
+sha256  ec0485b028a3f53d49165f717e641dc02d8e581fd4dce3cd0065d2089d8e6c8e \
+size    27419
 
 depends_lib \
     port:libiconv

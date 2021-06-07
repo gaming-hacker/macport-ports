@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -23,8 +23,8 @@ master_sites        sourceforge:project/mcj
 use_xz              yes
 
 checksums           rmd160  08edcc03b6308ffee076044c2038f2db9dc5a68b \
-                    sha256  ba43c0ea85b230d3efa5a951a3239e206d0b033d044c590a56208f875f888578 \
-                    size    5380896
+sha256  ba43c0ea85b230d3efa5a951a3239e206d0b033d044c590a56208f875f888578 \
+size    5380896
 
 depends_lib         port:libpng \
                     path:include/turbojpeg.h:libjpeg-turbo \

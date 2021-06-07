@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   math science
 platforms           darwin
 license             GPL-2+
 
-python.versions     36 37 38 39
+python.versions 37 39
 
 maintainers         {snc @nerdling} {gmail.com:szhorvat @szhorvat} openmaintainer
 
@@ -24,14 +24,14 @@ long_description    Python interface to the igraph library for network analysis 
 homepage            https://igraph.org/python/
 
 checksums           rmd160  f15a1da7e4163285b15de7a413a0f0727925926c \
-                    sha256  b1e4e3b8ea438f85e17874d0b0836107b437ebe68ae0b3be13d2ad399f45405d \
-                    size    3611998
+sha256  b1e4e3b8ea438f85e17874d0b0836107b437ebe68ae0b3be13d2ad399f45405d \
+size    3611998
 
 variant external_igraph description {Use external igraph library} { }
 
 if {${name} ne ${subport}} {
     compiler.c_standard     1999
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2017
 
     depends_lib-append      port:py${python.version}-texttable
 

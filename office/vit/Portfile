@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches          5.26 5.28 5.30
-perl5.default_branch    5.28
+perl5.branches 5.30
+perl5.default_branch 5.30
 perl5.create_variants   ${perl5.branches}
 
 name                vit
@@ -27,8 +27,8 @@ homepage            https://taskwarrior.org/news/news.20140406.html
 master_sites        https://taskwarrior.org/download/
 
 checksums           rmd160  492f50e2f8b3cefb766dd78750a00e69083550ef \
-                    sha256  a78dee573130c8d6bc92cf60fafac0abc78dd2109acfba587cb0ae202ea5bbd0 \
-                    size    48729
+sha256  a78dee573130c8d6bc92cf60fafac0abc78dd2109acfba587cb0ae202ea5bbd0 \
+size    48729
 
 depends_lib         port:p${perl5.major}-curses \
                     port:task

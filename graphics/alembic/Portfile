@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ long_description    Alembic is a computer graphics interchange \
                     ready for hand-off to lighting and rendering.
 
 checksums           rmd160  edce9346991722242ac0060fccefaa5c7e25d788 \
-                    sha256  558559d3f5bb44976f4fb69a75caf87b8fa7cc8271db1b82d0e391495fd83971 \
-                    size    828000
+sha256  558559d3f5bb44976f4fb69a75caf87b8fa7cc8271db1b82d0e391495fd83971 \
+size    828000
 
 # lib/Alembic/AbcCoreOgawa/StreamManager.cpp uses ffsll but fails to include <strings.h>
 patchfiles-append   patch-strings-include.diff

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -35,5 +35,5 @@ depends_lib         port:pulseaudio port:libsndfile
 configure.args-append --without-alsa
 
 checksums           rmd160  b6dbb9ad265b1e39e8846af74c8eac0c2c98f984 \
-                    sha256  c1c0f51c7dde2349f0e3ca2118980644509106d4e670700013682e76f0756aa3 \
-                    size    58672
+sha256  c1c0f51c7dde2349f0e3ca2118980644509106d4e670700013682e76f0756aa3 \
+size    58672

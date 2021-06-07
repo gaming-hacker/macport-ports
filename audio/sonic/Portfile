@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    Sonic is a simple algorithm for speeding up or slowing down 
                     to easily be integrated into streaming voice applications, like TTS back ends.
 
 checksums           rmd160  4fb75a94018d16f052828cbd6b292a93e2ca0f41 \
-                    sha256  c7827ce576838467590ffa1f935fbe1049e896dfed6c515cf569ad3779c24085 \
-                    size    5340269
+sha256  c7827ce576838467590ffa1f935fbe1049e896dfed6c515cf569ad3779c24085 \
+size    5340269
 
 patchfiles          patch-sonic-mac.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell_stack 1.0
@@ -23,8 +23,8 @@ long_description    Alex is a tool for generating lexical analysers in\
 master_sites        https://hackage.haskell.org/package/${name}-${version}
 
 checksums           rmd160  ee6959ee67aa39beca1c8b82cc5cbb70fdfc2f6d \
-                    sha256  91aa08c1d3312125fbf4284815189299bbb0be34421ab963b1f2ae06eccc5410 \
-                    size    108832
+sha256  91aa08c1d3312125fbf4284815189299bbb0be34421ab963b1f2ae06eccc5410 \
+size    108832
 
 # relative paths to ${prefix}
 set alex_datadir    share/${name}

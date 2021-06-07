@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -28,8 +28,8 @@ long_description    Blender is a ${description}. It contains a set of \
 master_sites        https://download.blender.org/source/
 use_xz              yes
 checksums           rmd160  f49173e5478d16c8a2b70df5fdb41bd0fed4ef01 \
-                    sha256  185cbc4cd7f2f614a7594221d8237170ade7f389d16858cee22ad778c26fcc70 \
-                    size    42057100
+sha256  185cbc4cd7f2f614a7594221d8237170ade7f389d16858cee22ad778c26fcc70 \
+size    42057100
 
 minimum_xcodeversions-append {15 8.2 16 8.2}
 if {${os.platform} eq "darwin" && ${os.major} < 15} {
@@ -52,7 +52,7 @@ compiler.blacklist-append clang {macports-clang-[5-8].0}
 # use_xcode to yes, then the build will fail, because Blender's CMake
 # scripts still need to use other parts of Xcode (e.g., the xcodebuild
 # command) besides just Xcode Clang.
-use_xcode yes
+use_xcode  no
 cmake.install_prefix ${applications_dir}
 
 set py_ver          3.8

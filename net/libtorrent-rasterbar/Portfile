@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -26,8 +26,8 @@ long_description    A C++ bittorrent library designed to run on anything from em
                     seed servers. It comes with python bindings and detailed documentation.
 
 checksums           rmd160  b47ce089cb9f7452ac7e9a8265c58cf18cc298b5 \
-                    sha256  59bfc7654bccaa2735353fb21e503ed6f66f1964150b70799150ed3f2403bcc5 \
-                    size    4294340
+sha256  59bfc7654bccaa2735353fb21e503ed6f66f1964150b70799150ed3f2403bcc5 \
+size    4294340
 
 depends_lib-append  path:lib/libssl.dylib:openssl
 
@@ -35,11 +35,11 @@ patchfiles          patch-python-use-the-right-compiler.diff
 
 # Apple clang less than 900.0.39.2 fails to build
 # build using C++14 for binary compatibility with C++14 dependents
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
 
 # ensure that compiler is using C++14 mode
-configure.cxxflags-append -std=c++14
+configure.cxxflags-append -std=c++17
 
 configure.args-append \
                     -DBoost_LIBRARY_DIR_RELEASE=[boost::lib_dir] \
@@ -56,17 +56,17 @@ conflicts_build     ${name}
 
 variant python37 conflicts python38 python39 description {Build bindings for Python 3.7} {
         require_active_variants boost[boost::version_nodot] python37
-        depends_lib-append port:python37
+        depends_lib-append port:python39
         configure.args-append \
-                -DPython3_EXECUTABLE=${prefix}/bin/python3.7 \
+                -DPython3_EXECUTABLE=${prefix}/bin/python3.9 \
                 -DBoost_PYTHON37_LIBRARY_RELEASE=[boost::lib_dir]/libboost_python37-mt.dylib
 }
 
 variant python38 conflicts python37 python39 description {Build bindings for Python 3.8} {
         require_active_variants boost[boost::version_nodot] python38
-        depends_lib-append port:python38
+        depends_lib-append port:python39
         configure.args-append \
-                -DPython3_EXECUTABLE=${prefix}/bin/python3.8 \
+                -DPython3_EXECUTABLE=${prefix}/bin/python3.9 \
                 -DBoost_PYTHON38_LIBRARY_RELEASE=[boost::lib_dir]/libboost_python38-mt.dylib
 }
 

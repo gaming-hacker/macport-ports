@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github    1.0
@@ -23,8 +23,8 @@ homepage            https://shtools.github.io/SHTOOLS/
 github.setup        SHTOOLS SHTOOLS 4.8 v
 github.tarball_from   releases
 checksums           sha256  c36fc86810017e544abbfb12f8ddf6f101a1ac8b89856a76d7d9801ffc8dac44 \
-                    rmd160  226bc9852f55eac632d0e43b657c285a10e37e51 \
-                    size    40408932
+rmd160  226bc9852f55eac632d0e43b657c285a10e37e51 \
+size    40408932
 
 use_configure       no
 

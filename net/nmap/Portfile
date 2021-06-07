@@ -24,10 +24,10 @@ long_description Nmap is a utility for port scanning large networks, although \
 master_sites	https://nmap.org/dist/
 
 checksums	md5	239cef725863ab454590a1bb8793b72b \
-		sha1	e72198f463ee9d557e4c5c9444cc5a0e5c36b00c \
-		rmd160	3e011fdd6fb3b391a3cbfc6e4c7ec35ccfe1819b \
-		sha256	18cc4b5070511c51eb243cdd2b0b30ff9b2c4dc4544c6312f75ce3a67a593300 \
-		size	10503500
+sha1	e72198f463ee9d557e4c5c9444cc5a0e5c36b00c \
+rmd160	3e011fdd6fb3b391a3cbfc6e4c7ec35ccfe1819b \
+sha256	18cc4b5070511c51eb243cdd2b0b30ff9b2c4dc4544c6312f75ce3a67a593300 \
+size	10503500
 
 depends_lib	port:libpcap \
 		port:zlib \
