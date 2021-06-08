@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -23,13 +23,13 @@ long_description \
                 firmwares by mcmatrix.
 
 checksums       ${gfxutil_distfile} \
-                rmd160  ec0a99ca6c6305ffe35271f0d1c6b9231e26ef89 \
-                sha256  c8fe09ab4a3efdb4a343da652e6fb7b1c13004857a676f18ea944d3f8ae939f7 \
-                size    32675 \
+rmd160  ec0a99ca6c6305ffe35271f0d1c6b9231e26ef89 \
+sha256  c8fe09ab4a3efdb4a343da652e6fb7b1c13004857a676f18ea944d3f8ae939f7 \
+size    32675 \
                 ${edk_distfile} \
-                rmd160  1f3d7691ad0ea3f863e46224e1ce24771456d519 \
-                sha256  5fb4a625dafc23ec2512e96159de98ca75649ed016ee52916a1bae29722a0787 \
-                size    13617279
+rmd160  1f3d7691ad0ea3f863e46224e1ce24771456d519 \
+sha256  5fb4a625dafc23ec2512e96159de98ca75649ed016ee52916a1bae29722a0787 \
+size    13617279
 
 post-configure {
     ln -s audk-${edk_commit} ${workpath}/edk2

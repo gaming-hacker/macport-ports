@@ -35,11 +35,11 @@ patchfiles          patch-python-use-the-right-compiler.diff
 
 # Apple clang less than 900.0.39.2 fails to build
 # build using C++14 for binary compatibility with C++14 dependents
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
 
 # ensure that compiler is using C++14 mode
-configure.cxxflags-append -std=c++14
+configure.cxxflags-append -std=c++17
 
 configure.args-append \
                     -DBoost_LIBRARY_DIR_RELEASE=[boost::lib_dir] \
@@ -56,17 +56,17 @@ conflicts_build     ${name}
 
 variant python37 conflicts python38 python39 description {Build bindings for Python 3.7} {
         require_active_variants boost[boost::version_nodot] python37
-        depends_lib-append port:python37
+        depends_lib-append port:python39
         configure.args-append \
-                -DPython3_EXECUTABLE=${prefix}/bin/python3.7 \
+                -DPython3_EXECUTABLE=${prefix}/bin/python3.9 \
                 -DBoost_PYTHON37_LIBRARY_RELEASE=[boost::lib_dir]/libboost_python37-mt.dylib
 }
 
 variant python38 conflicts python37 python39 description {Build bindings for Python 3.8} {
         require_active_variants boost[boost::version_nodot] python38
-        depends_lib-append port:python38
+        depends_lib-append port:python39
         configure.args-append \
-                -DPython3_EXECUTABLE=${prefix}/bin/python3.8 \
+                -DPython3_EXECUTABLE=${prefix}/bin/python3.9 \
                 -DBoost_PYTHON38_LIBRARY_RELEASE=[boost::lib_dir]/libboost_python38-mt.dylib
 }
 
