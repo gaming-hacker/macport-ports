@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       mpi 1.0
@@ -14,8 +14,8 @@ name            boost
 # Revision is set below in the `if {$subport eq $name} { ... }` statement
 # The boost-numpy subport has its own revision number
 checksums       rmd160  b1da5df10d7e0fd07d864973f106d4376b7e375b \
-                sha256  f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41 \
-                size    110073117
+sha256  f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41 \
+size    110073117
 
 license         Boost-1
 categories      devel
@@ -116,8 +116,8 @@ mpi.setup          -gcc
 # Further: Building Boost using C++11 compliance does not seem to then
 # require ports depending on Boost to also require C++11 compliance,
 # and requiring it does make such building easier for those ports.
-configure.cxxflags-append -std=gnu++11
-compiler.cxx_standard     2011
+configure.cxxflags-append -std=c++17
+compiler.cxx_standard 2017
 
 # It turns out that ccache and distcc can produce boost libraries that, although they
 # compile without warning, have all sorts of runtime errors especially with pointer corruption.

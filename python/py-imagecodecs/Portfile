@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    {*}${description}
 homepage            https://www.lfd.uci.edu/~gohlke/
 
 checksums           rmd160  503747db032d6f9881d11697c0d7e2f586f46b34 \
-                    sha256  4b2799ee39a3bc465d2068b70dc6eb643aa4817435d3ef38cc087f5e863dc9da \
-                    size    10181378
+sha256  4b2799ee39a3bc465d2068b70dc6eb643aa4817435d3ef38cc087f5e863dc9da \
+size    10181378
 
 python.versions     37 38 39
 
