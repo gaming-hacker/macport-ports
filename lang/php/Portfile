@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -67,14 +67,14 @@ switch ${subport_branch} {
         set suhosin_patch_version   5.2.16-0.9.7
         set suhosin_patch           suhosin-patch-${suhosin_patch_version}.patch.gz
         checksums       ${distname}${extract.suffix} \
-                        md5     b27947f3045220faf16e4d9158cbfe13 \
-                        rmd160  567fa8d718b93fb83a89494c83a8bec224ac99e9 \
-                        sha256  e81beb13ec242ab700e56f366e9da52fd6cf18961d155b23304ca870e53f116c \
-                        size    9092312 \
+md5     b27947f3045220faf16e4d9158cbfe13 \
+rmd160  567fa8d718b93fb83a89494c83a8bec224ac99e9 \
+sha256  e81beb13ec242ab700e56f366e9da52fd6cf18961d155b23304ca870e53f116c \
+size    9092312 \
                         ${suhosin_patch} \
-                        rmd160  b28b70faf136b3e04c5b483da0f4c2279378f43a \
-                        sha256  aae115a318d80b3f32cedf876e7a8e4b932febb1b0c743c0b398003ebe122f91 \
-                        size    23069
+rmd160  b28b70faf136b3e04c5b483da0f4c2279378f43a \
+sha256  aae115a318d80b3f32cedf876e7a8e4b932febb1b0c743c0b398003ebe122f91 \
+size    23069
     }
     5.3 {
         version         5.3.29
@@ -83,86 +83,86 @@ switch ${subport_branch} {
         set suhosin_patch_version   5.3.9-0.9.10
         set suhosin_patch           suhosin-patch-${suhosin_patch_version}.patch.gz
         checksums       ${distname}${extract.suffix} \
-                        md5     9469e240cbe6ac865aeaec89b253dd30 \
-                        rmd160  e57beb4fdda41bca81b5856161bc97f3c5e3e9da \
-                        sha256  c4e1cf6972b2a9c7f2777a18497d83bf713cdbecabb65d3ff62ba441aebb0091 \
-                        size    11396771 \
+md5     9469e240cbe6ac865aeaec89b253dd30 \
+rmd160  e57beb4fdda41bca81b5856161bc97f3c5e3e9da \
+sha256  c4e1cf6972b2a9c7f2777a18497d83bf713cdbecabb65d3ff62ba441aebb0091 \
+size    11396771 \
                         ${suhosin_patch} \
-                        rmd160  ce43921fd9b183b154713ecda98294f6c68d5f22 \
-                        sha256  4438caeab0a10c6c94aee9f7eaa703f5799f97d4e0579f43a947bb7314e38317 \
-                        size    40967
+rmd160  ce43921fd9b183b154713ecda98294f6c68d5f22 \
+sha256  4438caeab0a10c6c94aee9f7eaa703f5799f97d4e0579f43a947bb7314e38317 \
+size    40967
     }
     5.4 {
         epoch           1
         version         5.4.45
         use_bzip2       yes
         checksums       rmd160  352a0ea8fb75a447301c1434609ac0e4b96acc0c \
-                        sha256  4e0d28b1554c95cfaea6fa2b64aac85433f158ce72bb571bcd5574f98f4c6582 \
-                        size    12703324
+sha256  4e0d28b1554c95cfaea6fa2b64aac85433f158ce72bb571bcd5574f98f4c6582 \
+size    12703324
     }
     5.5 {
         epoch           2
         version         5.5.38
         use_xz          yes
         checksums       rmd160  08d200f9458f37ffd69a2daf30436c5f25fc948f \
-                        sha256  cb527c44b48343c8557fe2446464ff1d4695155a95601083e5d1f175df95580f \
-                        size    11077780
+sha256  cb527c44b48343c8557fe2446464ff1d4695155a95601083e5d1f175df95580f \
+size    11077780
     }
     5.6 {
         epoch           2
         version         5.6.40
         use_xz          yes
         checksums       rmd160  43b648cf24cdea59765a1d12c247f83f60af283f \
-                        sha256  1369a51eee3995d7fbd1c5342e5cc917760e276d561595b6052b21ace2656d1c \
-                        size    12472236
+sha256  1369a51eee3995d7fbd1c5342e5cc917760e276d561595b6052b21ace2656d1c \
+size    12472236
     }
     7.0 {
         epoch           2
         version         7.0.33
         use_xz          yes
         checksums       rmd160  621c2459c182de0a071f591eec45e4a3c32d8bdd \
-                        sha256  ab8c5be6e32b1f8d032909dedaaaa4bbb1a209e519abb01a52ce3914f9a13d96 \
-                        size    12033040
+sha256  ab8c5be6e32b1f8d032909dedaaaa4bbb1a209e519abb01a52ce3914f9a13d96 \
+size    12033040
     }
     7.1 {
         epoch           2
         version         7.1.33
         use_xz          yes
         checksums       rmd160  378d66957d3488ce92c74745c4bc799b7b04105a \
-                        sha256  bd7c0a9bd5433289ee01fd440af3715309faf583f75832b64fe169c100d52968 \
-                        size    12370228
+sha256  bd7c0a9bd5433289ee01fd440af3715309faf583f75832b64fe169c100d52968 \
+size    12370228
     }
     7.2 {
         epoch           2
         version         7.2.34
         use_xz          yes
         checksums       rmd160  52a993c201241e2dce521bad225f07330505b2cc \
-                        sha256  409e11bc6a2c18707dfc44bc61c820ddfd81e17481470f3405ee7822d8379903 \
-                        size    12309432
+sha256  409e11bc6a2c18707dfc44bc61c820ddfd81e17481470f3405ee7822d8379903 \
+size    12309432
     }
     7.3 {
         epoch           2
         version         7.3.28
         use_xz          yes
         checksums       rmd160  01ff4fd1443f12f7afa0f02ad28f36306b7aaa41 \
-                        sha256  a2a84dbec8c1eee3f46c5f249eaaa2ecb3f9e7a6f5d0604d2df44ff8d4904dbe \
-                        size    12139380
+sha256  a2a84dbec8c1eee3f46c5f249eaaa2ecb3f9e7a6f5d0604d2df44ff8d4904dbe \
+size    12139380
     }
     7.4 {
         epoch           2
         version         7.4.20
         use_xz          yes
         checksums       rmd160  c58038b61d4b2b071c5c86cc660856740ad22707 \
-                        sha256  1fa46ca6790d780bf2cb48961df65f0ca3640c4533f0bca743cd61b71cb66335 \
-                        size    10345912
+sha256  1fa46ca6790d780bf2cb48961df65f0ca3640c4533f0bca743cd61b71cb66335 \
+size    10345912
     }
     8.0 {
         epoch           2
         version         8.0.7
         use_xz          yes
         checksums       rmd160  577fe1acbfacf21cec91d42474d2b581dff356b8 \
-                        sha256  d5fc2e4fc780a32404d88c360e3e0009bc725d936459668e9c2ac992f2d83654 \
-                        size    10769208
+sha256  d5fc2e4fc780a32404d88c360e3e0009bc725d936459668e9c2ac992f2d83654 \
+size    10769208
     }
     8.1 {
         # When this becomes a stable version, remove the overrides for homepage,
@@ -174,8 +174,8 @@ switch ${subport_branch} {
         master_sites    https://downloads.php.net/~carusogabriel/
         use_xz          yes
         checksums       rmd160  0 \
-                        sha256  0 \
-                        size    0
+sha256  0 \
+size    0
         livecheck.url   ${homepage}
         livecheck.regex php-([strsed ${subport_branch} {g/\\./\\./}](?:\\.\[0-9.\]+)*(?:(?:alpha|beta|RC)\\d+|-latest))\\.tar
     }
@@ -1144,7 +1144,7 @@ subport ${php}-intl {
     }
 
     # required for ICU
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2017
 
     platform darwin {
         if {(${os.major} == 10 || ${os.major} == 11) && [vercmp ${branch} 7.1] >= 0 && [vercmp ${branch} 7.4] < 0} {

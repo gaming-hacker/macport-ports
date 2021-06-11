@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    {*}${description}
 homepage            https://github.com/fatiando/pooch
 
 checksums           rmd160  f8fdc6398df380de3ab70fc72ac3ca086103c09b \
-                    sha256  f827e79ab51b21a8964a4b1ea8972aa4a1079cb9c1ff8e9ec61893eb7dab50cb \
-                    size    57097
+sha256  f827e79ab51b21a8964a4b1ea8972aa4a1079cb9c1ff8e9ec61893eb7dab50cb \
+size    57097
 
 python.versions     37 38 39
 

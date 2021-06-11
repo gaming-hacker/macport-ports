@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -19,8 +19,8 @@ long_description    Logisim is an educational tool for designing and \
                     simulating digital logic circuits.
 
 checksums           rmd160  87b24defcabd6ab81333bc1c52c76928a64bdab1 \
-                    sha256  8b52f1ce57205f68c396d12637ccb1d6955f631987c2e6b4247acce31116cbe4 \
-                    size    40050282
+sha256  8b52f1ce57205f68c396d12637ccb1d6955f631987c2e6b4247acce31116cbe4 \
+size    40050282
 
 java.version        9+
 java.fallback       openjdk11

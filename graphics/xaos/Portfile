@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -35,8 +35,8 @@ long_description        XaoS is a fast portable real-time interactive \
                         palette changing, GIF saving, and fractal inversion.
 
 checksums               rmd160  8ddff5c13e22db46acba0ff04a0b0a8a7cb7edca \
-                        sha256  bf21d3f50d7c1626c5c96da475f84ea24d24a164ec6cc2bbc4ee229bc4a65967 \
-                        size    10916985
+sha256  bf21d3f50d7c1626c5c96da475f84ea24d24a164ec6cc2bbc4ee229bc4a65967 \
+size    10916985
 
 # XaoS does not link to Qt Network, which is the only component of Qt that uses OpenSSL.
 license_noconflict      openssl
@@ -48,7 +48,7 @@ qt5.min_version         5.7
 
 compiler.thread_local_storage yes
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 destroot {
     # See tools/deploy-mac for the origin of the following four steps:

@@ -14,8 +14,8 @@ subport ${name}-0.15 {
     github.setup    ${github.author} ${github.project} 0.15.3
     revision        0
     checksums       rmd160  a8867ba92ad3a9712a814b15a0cc7b6d0b51e995 \
-                    sha256  f9d2a96c60a8c60d9c6c70e10590cbceaf0776d3115e7b3b35c7d7240cc1613b \
-                    size    4881197
+sha256  f9d2a96c60a8c60d9c6c70e10590cbceaf0776d3115e7b3b35c7d7240cc1613b \
+size    4881197
 
     configure.args-append \
                     --program-suffix=-0.15

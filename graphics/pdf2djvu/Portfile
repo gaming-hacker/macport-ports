@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160  4625b8c420c0e269d3b34501e823ef91fd0f2204 \
-                    sha256  42a855585f9152fad5f1848cc1b0c71a6a102170c452530ba30efef3c602aa6f \
-                    size    300412
+sha256  42a855585f9152fad5f1848cc1b0c71a6a102170c452530ba30efef3c602aa6f \
+size    300412
 
 depends_build       port:pkgconfig \
                     port:gsed
@@ -36,7 +36,7 @@ depends_lib         port:djvulibre \
 patchfiles          patch-i18n.hh.diff \
                     patch-sys-uuid.diff
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 # explicitly configure to build with system libuuid, overriding pkg-config
 # this prevents linking with ossp-uuid if it is installed
