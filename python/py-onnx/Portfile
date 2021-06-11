@@ -3,6 +3,7 @@
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           python 1.0
+PortGroup           compiler_blacklist_versions 1.0
 
 github.setup        onnx onnx 1.8.1 v
 revision            2
@@ -36,6 +37,10 @@ size    4934008
 
 python.versions     37 38 39
 
+# Needed to fix: constexpr constructor never produces a constant expression
+compiler.blacklist-append \
+                    {clang < 900}
+
 if {${name} ne ${subport}} {
 
     PortGroup cmake 1.1
@@ -53,17 +58,8 @@ if {${name} ne ${subport}} {
         port:py${python.version}-protobuf3 \
         port:py${python.version}-setuptools \
         port:py${python.version}-six \
+        port:py${python.version}-typing_extensions \
         port:pybind11
-
-    if { ${python.version} < 35 } {
-        depends_lib-append \
-            port:py${python.version}-typing \
-    }
-
-    if { ${python.version} >= 37 } {
-        depends_lib-append \
-            port:py${python.version}-typing_extensions
-    }
 
     depends_test-append \
         port:py${python.version}-nbval \

@@ -1,14 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           python 1.0
 
-github.setup        ytdl-org youtube-dl 2021.04.26
+github.setup        ytdl-org youtube-dl 2021.06.06
 revision            0
-checksums           rmd160  6df5914fa0dc9a6c40ff832f8e6deb90c73012dc \
-sha256  4ccf21f4a0daee0d58bef569c71dd459bd1f629248995b4e4856b6926531ea4a \
-size    3333530
+checksums           rmd160  24478101dbb1a9f5b634ed872e407c4e8d088041 \
+                    sha256  3ccb0e4db9fd172338ed1c32bae0be2f716458dca4143e55732ff55260b20ac3 \
+                    size    3336227
 
 categories          net
 platforms           darwin
@@ -44,8 +44,8 @@ post-destroot {
     foreach f {
         etc/bash_completion.d/youtube-dl.bash-completion
         etc/fish/completions/youtube-dl.fish
-share/man/man1/youtube-dl.1
-share/zsh/site-functions/_youtube-dl
+        share/man/man1/youtube-dl.1
+        share/zsh/site-functions/_youtube-dl
     } {
         xinstall -d ${destroot}${prefix}/[file dirname ${f}]
         ln -s ${python.prefix}/${f} ${destroot}${prefix}/${f}
@@ -81,9 +81,9 @@ if {[variant_isset python27]} {
 } elseif {[variant_isset python36]} {
     python.default_version  36
 } elseif {[variant_isset python37]} {
-    python.default_version 39
+    python.default_version  37
 } elseif {[variant_isset python38]} {
-    python.default_version 39
+    python.default_version  38
 } elseif {[variant_isset python39]} {
     python.default_version  39
 }

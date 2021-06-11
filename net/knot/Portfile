@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -8,7 +8,7 @@ legacysupport.newest_darwin_requires_legacy 15
 
 name                knot
 version             3.0.6
-revision            1
+revision            2
 categories          net
 license             GPL-3+
 maintainers         {mps @Schamschula} openmaintainer
@@ -23,11 +23,10 @@ master_sites        https://secure.nic.cz/files/knot-dns/ \
 use_xz              yes
 
 checksums           rmd160  ec6bdd127ff7b47f6020da50ce881c5ecb7046d3 \
-sha256  63756ac5a00c3e4a066ed231a287faef5963a9183d77326e30bf0644cdf74f86 \
-size    1333296
+                    sha256  63756ac5a00c3e4a066ed231a287faef5963a9183d77326e30bf0644cdf74f86 \
+                    size    1333296
 
-depends_build       port:pkgconfig \
-                    port:py39-sphinx
+depends_build       port:pkgconfig
 
 depends_lib         port:fstrm \
                     port:gnutls \
@@ -46,6 +45,17 @@ if {${os.platform} eq "darwin" && ${os.major} < 15} {
 }
 
 configure.args      --disable-silent-rules
+
+post-patch {
+    reinplace "s|task_t|k_task_t|g" \
+        ${worksrcpath}/src/knot/events/events.c \
+        ${worksrcpath}/src/knot/events/events.h \
+        ${worksrcpath}/src/knot/worker/pool.c \
+        ${worksrcpath}/src/knot/worker/queue.c \
+        ${worksrcpath}/src/knot/worker/queue.h \
+        ${worksrcpath}/tests/knot/test_worker_pool.c \
+        ${worksrcpath}/tests/knot/test_worker_queue.c
+}
 
 startupitem.create      yes
 startupitem.netchange   yes

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,18 +22,18 @@ supported_archs     i386 x86_64 arm64
 if { ${configure.build_arch} eq "i386" } {
     distname        ${name}-${version}-darwin-x86
     checksums       rmd160  78b796be339cc613de4e6d083571a77dba28152b \
-sha256  2f4f2ce0f435c93a23043c0731efcfe3bd0aeacd57ddce0937231a5c7512dda6 \
-size    90077859
+                    sha256  2f4f2ce0f435c93a23043c0731efcfe3bd0aeacd57ddce0937231a5c7512dda6 \
+                    size    90077859
 } elseif { ${configure.build_arch} eq "x86_64" } {
     distname        ${name}-${version}-darwin-x86_64
     checksums       rmd160  979efa7eb38df221756e7b0131c3d365afa8494f \
-sha256  0fee32f7d1e3a4f4af83552762dce0414c639cb745746b25b325470294161e76 \
-size    86324153
+                    sha256  0fee32f7d1e3a4f4af83552762dce0414c639cb745746b25b325470294161e76 \
+                    size    86324153
 } elseif { ${configure.build_arch} eq "arm64" } {
     distname        ${name}-${version}-darwin-arm
     checksums       rmd160  0084a3e561c22866c80b42142b03620dff15fe00 \
-sha256  24e7f69c4512f9f30c39ec59e60a5ba9bf13eba4e1d892d9d88dc87a33fe9e32 \
-size    86249850
+                    sha256  24e7f69c4512f9f30c39ec59e60a5ba9bf13eba4e1d892d9d88dc87a33fe9e32 \
+                    size    86249850
 }
 
 homepage            https://cloud.google.com/sdk/
