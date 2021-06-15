@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,8 +29,8 @@ long_description \
 homepage            https://vslavik.github.io/diff-pdf
 
 checksums           rmd160  ee2e4302130a6db08cf032d80155dfd757dbea72 \
-                    sha256  e7b8414ed68c838ddf6269d11abccdb1085d73aa08299c287a374d93041f172e \
-                    size    135755
+sha256  e7b8414ed68c838ddf6269d11abccdb1085d73aa08299c287a374d93041f172e \
+size    135755
 
 depends_lib         path:lib/libcairo.dylib:cairo \
                     path:lib/pkgconfig/glib-2.0.pc:glib2 \

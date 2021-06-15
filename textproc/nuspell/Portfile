@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -27,8 +27,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 depends_lib-append  port:icu
 
 checksums           rmd160  80e83d21d377cc6401694e5290247987834c1c08 \
-                    sha256  29375a8a84d20c260a7e03cf28d93f67cbcd7f38950138761d49948f29e7a000 \
-                    size    372938
+sha256  29375a8a84d20c260a7e03cf28d93f67cbcd7f38950138761d49948f29e7a000 \
+size    372938
 
 compiler.cxx_standard 2017
 

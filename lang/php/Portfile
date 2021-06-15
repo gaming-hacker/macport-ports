@@ -174,8 +174,8 @@ size    10769208
         master_sites    https://downloads.php.net/~patrickallaert/
         use_xz          yes
         checksums       rmd160  5475f5bd2665578c73cca4f811f57bfa31a3ff7b \
-                        sha256  131a81ef9e0d62ba3b5ed81d530a4ff38d256ff12acec243d6afb5b39a85cb79 \
-                        size    11237796
+sha256  131a81ef9e0d62ba3b5ed81d530a4ff38d256ff12acec243d6afb5b39a85cb79 \
+size    11237796
         livecheck.url   ${homepage}
         livecheck.regex php-([strsed ${subport_branch} {g/\\./\\./}](?:\\.\[0-9.\]+)*(?:(?:alpha|beta|RC)\\d+|-latest))\\.tar
     }

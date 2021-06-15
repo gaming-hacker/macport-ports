@@ -29,7 +29,7 @@ size 1405042
 depends_lib         port:hdf5  \
                     path:include/eigen3/Eigen/Eigen:eigen3
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 compilers.choose    cc cxx
 mpi.setup           -gcc

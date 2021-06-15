@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,9 +21,9 @@ platforms           darwin
 license             permissive
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160 97567a869c7ca8c6266f7ba1f26e16c6ed38753f \
-                    sha256 f332ebb6c890e4e7b2bdb80a6324ecb4720890a2e53b4c178777e9537bbd4f54 \
-                    size   194564
+rmd160 97567a869c7ca8c6266f7ba1f26e16c6ed38753f \
+sha256 f332ebb6c890e4e7b2bdb80a6324ecb4720890a2e53b4c178777e9537bbd4f54 \
+size   194564
 
 github.tarball_from archive
 

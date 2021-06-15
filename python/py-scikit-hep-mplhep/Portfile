@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                           1.0
 PortGroup           python           1.0
@@ -10,8 +10,8 @@ github.setup        scikit-hep mplhep 0.3.9 v
 revision            0
 
 checksums           rmd160  55bf584a2a4aabdc2b3e4d47b9176a9bf928fd8e \
-                    sha256  d5f1289351a03d91020928265503f74a0e258e5a555800edf30bf35c699315d3 \
-                    size    1251365
+sha256  d5f1289351a03d91020928265503f74a0e258e5a555800edf30bf35c699315d3 \
+size    1251365
 
 platforms           darwin
 
@@ -23,7 +23,7 @@ description         A set of helpers for matplotlib to more easily produce plots
 long_description    {*}${description}
 
 # Supported python versions
-python.versions     36 37 38 39
+python.versions 37 39
 
 if {${name} ne ${subport}} {
 

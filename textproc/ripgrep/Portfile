@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -76,9 +76,9 @@ cargo.crates \
     winapi-x86_64-pc-windows-gnu     0.4.0  712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  841ccf8bc96143260e6c750d147ff78d8784903e \
-                    sha256  0fb17aaf285b3eee8ddab17b833af1e190d73de317ff9648751ab0660d763ed2 \
-                    size    505536
+rmd160  841ccf8bc96143260e6c750d147ff78d8784903e \
+sha256  0fb17aaf285b3eee8ddab17b833af1e190d73de317ff9648751ab0660d763ed2 \
+size    505536
 
 depends_build-append \
                     port:asciidoc \

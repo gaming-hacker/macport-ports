@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ subport ${name} {
     github.setup        macports macports-legacy-support ${release_ver} v
     revision            0
     checksums           rmd160  a4fefd28e84d91fa72af5c2392d225e747e37f6f \
-                        sha256  4fb0ccc5d88b303a5f7f16ce4094ffb2e39addac4d7b4f26e9430fc2c21f17f3 \
-                        size    46129
+sha256  4fb0ccc5d88b303a5f7f16ce4094ffb2e39addac4d7b4f26e9430fc2c21f17f3 \
+size    46129
 }
 
 subport ${name}-devel {
@@ -37,8 +37,8 @@ subport ${name}-devel {
     revision            0
     livecheck.type      none
     checksums           rmd160  a4fefd28e84d91fa72af5c2392d225e747e37f6f \
-                        sha256  4fb0ccc5d88b303a5f7f16ce4094ffb2e39addac4d7b4f26e9430fc2c21f17f3 \
-                        size    46129
+sha256  4fb0ccc5d88b303a5f7f16ce4094ffb2e39addac4d7b4f26e9430fc2c21f17f3 \
+size    46129
     set v_split         [split ${release_ver} .]
     set release_ver     [lindex ${v_split} 0].[lindex ${v_split} 1].99
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -12,7 +12,7 @@ license                 PHP-3.01
 
 homepage                https://dev.mysql.com/doc/x-devapi-userguide/en/
 
-php.branches            7.1 7.2 7.3 7.4
+php.branches 8.0 7.2 7.3 7.4
 php.pecl                yes
 
 if {[vercmp ${php.branch} 7.1] >= 0} {
@@ -20,14 +20,14 @@ if {[vercmp ${php.branch} 7.1] >= 0} {
         version         8.0.25
         revision        0
         checksums       rmd160  0727bdb23ae6009158f1facd083684a1462ce15e \
-                        sha256  f4e87dfca669d8cbaab25cbca8e36566814d45f14c0d715e2f90c2c536ddf1fb \
-                        size    586516
+sha256  f4e87dfca669d8cbaab25cbca8e36566814d45f14c0d715e2f90c2c536ddf1fb \
+size    586516
     } else {
         version         8.0.21
         revision        2
         checksums       rmd160  800b5659227a3cf5d2148d549a1c3de30fefa270 \
-                        sha256  5415e11b20821a837807cdbeb7da198d714b229b5374f891821349788cc13e8d \
-                        size    587301
+sha256  5415e11b20821a837807cdbeb7da198d714b229b5374f891821349788cc13e8d \
+size    587301
     }
 }
 

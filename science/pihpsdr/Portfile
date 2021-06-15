@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -19,8 +19,8 @@ long_description    ${description}
 github.setup        dl1ycf pihpsdr 5eef8dc91921e89cf20e0b738d9f23199de755f1
 version             20210610-[string range ${github.version} 0 7]
 checksums           rmd160  4f3ad6eb5663cb5aa119623198bdeb8140d65031 \
-                    sha256  aa36ab20aba793aa2ec5a55a00eb9eac6382c2b685a2b28fd68f4b551bd1e0ef \
-                    size    114592625
+sha256  aa36ab20aba793aa2ec5a55a00eb9eac6382c2b685a2b28fd68f4b551bd1e0ef \
+size    114592625
 revision            0
 
 patchfiles-append \

@@ -29,7 +29,7 @@ size 343805
 python.versions     27 35 36 37
 
 if {${name} ne ${subport}} {
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
 
     depends_build-append \
                         port:py${python.version}-setuptools \

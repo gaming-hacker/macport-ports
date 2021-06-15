@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -25,8 +25,8 @@ distname            ${name}-commandline-${version}
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  fab084ccc9866174228d94906c6b33b162e0e2bb \
-                    sha256  317114f3183f5bbcaeabe64c6c12d5cc777a2e7f6c7cf3c895a3dfa5da8d9333 \
-                    size    83158166
+sha256  317114f3183f5bbcaeabe64c6c12d5cc777a2e7f6c7cf3c895a3dfa5da8d9333 \
+size    83158166
 
 java.version        1.8+
 java.fallback       openjdk11

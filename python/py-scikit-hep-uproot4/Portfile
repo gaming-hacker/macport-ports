@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                           1.0
 PortGroup           python           1.0
@@ -10,8 +10,8 @@ github.setup        scikit-hep uproot4 4.0.9
 revision            0
 
 checksums           rmd160  c3a3d19b18c995ba7faaf3169d5f25308dcfdf59 \
-                    sha256  03b81474b7d8db08a94f5688702e9ab7ed36d5ce18afb60ceae119e8f2fa982f \
-                    size    748185
+sha256  03b81474b7d8db08a94f5688702e9ab7ed36d5ce18afb60ceae119e8f2fa982f \
+size    748185
 
 platforms           darwin
 supported_archs     x86_64
@@ -24,7 +24,7 @@ description         Uproot is a reader and a writer of the ROOT file format usin
 long_description    {*}${description}
 
 # Supported python versions
-python.versions     36 37 38 39
+python.versions 37 39
 
 if {${name} ne ${subport}} {
 

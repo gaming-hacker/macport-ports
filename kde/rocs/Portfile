@@ -31,7 +31,7 @@ if {![variant_isset docs]} {
     patchfiles-append  patch-CMakeLists.txt.diff
 }
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 #Forcing depth to avoid error in Clang Xcode 5:
 #recursive template instantiation exceeded maximum depth of 128

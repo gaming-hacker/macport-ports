@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -14,7 +14,7 @@ license             GPL-3
 platforms           darwin
 
 # use C++11
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {${subport} eq ${name}} {
     version         20181023-2ea1eb68
@@ -32,8 +32,8 @@ subport gr37-mapper {
     github.setup    gr-vt gr-mapper 2ea1eb68c5fe17f37cab870f93bb9f97d1066b72
     version         20181023-[string range ${github.version} 0 7]
     checksums       rmd160 5a6bbc193162809c115be427b6fab9023af637b8 \
-                    sha256 044d511ade8688d9cd3dd3d6411529add52b9f582f7a20c57355da03de5f99b7 \
-                    size   139256
+sha256 044d511ade8688d9cd3dd3d6411529add52b9f582f7a20c57355da03de5f99b7 \
+size   139256
     revision        1
 
     conflicts \
