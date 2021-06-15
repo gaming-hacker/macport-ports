@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -24,11 +24,11 @@ use_xz              yes
 
 livecheck.type      none
 if {${os.platform} ne "darwin" || ${os.major} >= 19} {
-    version         57.0.0
-    revision        1
-    checksums       rmd160  d70a1f2daa1b085c4591dbf60e4280473731f1ee \
-sha256  961d0487bd273ec45fb142284a5710c09da5625bbc6981e8838899d13d74fcc7 \
-size    7635780
+    version         58.0.0
+    revision        0
+    checksums       rmd160  3c513bf1851cfa9f439e2739a8027692ad2de6ea \
+                    sha256  1af727fa203e2bd8c54a005f28b635c96a4b80aa4ee8d23b4def0b6800ca6e38 \
+                    size    7651964
 
     boost.depends_type \
                     build
@@ -44,8 +44,8 @@ size    7635780
     version         53.0.0
     revision        1
     checksums       rmd160  5fb3ea63712cbdaf9e61b8fd573ef7e1d9a06540 \
-sha256  8dfd66278c81e6f1df0fd84aad30ce2b4cf7a2ad4336924f01f1879f9d1e4cd6 \
-size    7567276
+                    sha256  8dfd66278c81e6f1df0fd84aad30ce2b4cf7a2ad4336924f01f1879f9d1e4cd6 \
+                    size    7567276
 
     if {${os.platform} eq "darwin" && ${os.major} == 17} {
         # libc++ on 10.13 supports std::optional but the compilers that
@@ -62,8 +62,8 @@ size    7567276
     version         41.0.0
     revision        1
     checksums       rmd160  17b2f3b7d6eb87e9d9d4aac536b66705c18d497f \
-sha256  7cdd6ad9144324162604172b7e96cb13cdbb7913e07c4ad7633344aac20e4103 \
-size    7401548
+                    sha256  7cdd6ad9144324162604172b7e96cb13cdbb7913e07c4ad7633344aac20e4103 \
+                    size    7401548
 }
 
 set version_ruby    2.7
@@ -125,6 +125,7 @@ configure.args      --mandir=${prefix}/share/man \
                     --disable-update-check
 
 configure.ldflags-append ${cxx_stdlibflags}
+configure.cxxflags-append -std=c++17
 
 test.run            yes
 test.cmd            rake

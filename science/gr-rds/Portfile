@@ -1,8 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           github 1.0
+PortGroup           boost 1.0
 
 name                gr-rds
 categories          science comms
@@ -13,7 +14,7 @@ license             GPL-2+
 platforms           darwin
 
 # use C++11
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 if {${subport} eq ${name}} {
 
@@ -21,9 +22,9 @@ if {${subport} eq ${name}} {
     git.branch      maint-3.8
     version         20201015-[string range ${github.version} 0 7]
     checksums       rmd160  4aeb0969bc2e620308e3f1378b0aaaa5744d2152 \
-sha256  c3524f4eddd311c6ae98b97ba3ea33a5ba2c93a27bea6bc2d339840d7094ccad \
-size    210653
-    revision        1
+                    sha256  c3524f4eddd311c6ae98b97ba3ea33a5ba2c93a27bea6bc2d339840d7094ccad \
+                    size    210653
+    revision        2
 
     conflicts       gr37-rds
 
@@ -31,7 +32,7 @@ size    210653
         path:lib/libgnuradio-runtime.dylib:gnuradio \
         port:gr-osmosdr
 
-    set python_versions { 3.6 3.7 3.8 }
+    set python_versions { 3.6 3.7 3.8 3.9 }
     set default_python_variant +python37
 
     post-destroot {
@@ -51,9 +52,9 @@ subport gr37-rds {
     git.branch      maint-3.7
     version         20200222-[string range ${github.version} 0 7]
     checksums       rmd160  fe39ffee1601202acab26651df776cf52a90468b \
-sha256  773025cc5edda9b8b0ea4ef6ccba2ad1971d796e1ca183b8099ca2dbd75a0a91 \
-size    601192
-    revision        0
+                    sha256  773025cc5edda9b8b0ea4ef6ccba2ad1971d796e1ca183b8099ca2dbd75a0a91 \
+                    size    601192
+    revision        1
 
     conflicts       gr-rds
 
@@ -114,9 +115,10 @@ depends_build-append \
     port:cppunit
 
 depends_lib-append \
-    port:boost \
     port:libxml2 \
     port:python${active_python_version_no_dot}
+
+boost.version 1.71
 
 # specify the Python version to use
 set python_framework_dir ${frameworks_dir}/Python.framework/Versions/${active_python_version}

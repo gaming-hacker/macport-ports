@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           compiler_blacklist_versions 1.0
 PortGroup           haskell_stack 1.0
 
-github.setup        jgm pandoc 2.13
+github.setup        jgm pandoc 2.14.0.1
 revision            0
 categories          textproc haskell
 platforms           darwin
@@ -28,9 +28,9 @@ long_description    Pandoc is a Haskell library for converting from \
 
 homepage            https://pandoc.org
 
-checksums           rmd160  204eb8641f6d769fa8a7208ba22db53826d56e00 \
-sha256  b76a0fe1cc83a56141dbe5e7cef2a218c3e54341b5c9aaba36c668291dc89b43 \
-size    13028046
+checksums           rmd160  4e62694cac53f65d00bdab5832a10644b465d97a \
+                    sha256  44e9c3e63f51aa1e9f4c8eef91da4285ad5d1a3f4419402141b373cf34e6d4a4 \
+                    size    5023746
 
 test.run            yes
 test.args           --test-arguments='-p markdown'

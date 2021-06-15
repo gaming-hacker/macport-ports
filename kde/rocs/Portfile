@@ -2,19 +2,20 @@
 
 PortSystem          1.0
 PortGroup           kde4   1.1
+PortGroup           boost  1.0
 
 name                rocs
 version             4.14.3
-revision            5
+revision            6
 categories          kde kde4
 maintainers         {nicos @NicosPavlov}
 license             GPL-2+ LGPL-2.1 GFDL-1.2
 description         Graph Theory IDE
-long_description    KDE ${description}
+long_description    KDE {*}${description}
 homepage            https://www.kde.org
 
 platforms           darwin
-depends_lib-append  port:boost port:libkdeedu \
+depends_lib-append  port:libkdeedu \
                     port:grantlee
 
 master_sites        kde:stable/${version}/src/
@@ -27,8 +28,10 @@ sha256  c1dc2ea6b7e1ab0128a28df1f4e09d9bf83c2a1d0d22ff022a86e7f5fb98d4fc
 license_noconflict  openssl
 
 if {![variant_isset docs]} {
-    patchfiles-append   patch-CMakeLists.txt.diff
+    patchfiles-append  patch-CMakeLists.txt.diff
 }
+
+compiler.cxx_standard 2011
 
 #Forcing depth to avoid error in Clang Xcode 5:
 #recursive template instantiation exceeded maximum depth of 128

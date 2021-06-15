@@ -1,10 +1,11 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+PortGroup           boost 1.0
 
 name                ncmpcpp
 version             0.8.2
-revision            3
+revision            4
 categories          audio
 maintainers         {lbschenkel @lbschenkel} openmaintainer
 description         an ncurses mpd client inspired by ncmpc
@@ -23,8 +24,7 @@ size    465713
 
 depends_build       port:pkgconfig
 
-depends_lib         port:boost \
-                    port:curl \
+depends_lib         port:curl \
                     port:icu \
                     port:libmpdclient \
                     port:ncurses \
@@ -34,7 +34,7 @@ depends_lib         port:boost \
 # Requires C++14.
 compiler.cxx_standard 2017
 
-configure.args      --with-boost=${prefix} \
+configure.args      --with-boost=[boost::install_area] \
                     --with-taglib=${prefix} \
                     --without-fftw
 

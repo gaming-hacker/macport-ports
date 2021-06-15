@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
 
 name                mpg123
-version             1.27.2
+version             1.28.0
 revision            0
 categories          audio
 maintainers         nomaintainer
@@ -27,9 +27,9 @@ master_sites        sourceforge:project/mpg123/mpg123/${version} \
                     ${homepage}download/
 use_bzip2           yes
 
-checksums           rmd160  ac103d7f9642283cd71239524fbdc5492eeead9c \
-sha256  52f6ceb962c05db0c043bb27acf5a721381f5f356ac4610e5221f50293891b04 \
-size    1067102
+checksums           rmd160  d1df0d0c60559b3af23732219ff1dd0566de72e1 \
+                    sha256  e49466853685026da5d113dc7ff026b1b2ad0b57d78df693a446add9db88a7d5 \
+                    size    1063321
 
 depends_lib         port:libtool
 

@@ -2,7 +2,6 @@
 
 PortSystem          1.0
 PortGroup           cmake   1.1
-PortGroup           compiler_blacklist_versions 1.0
 PortGroup           github  1.0
 PortGroup           qt5     1.0
 PortGroup           active_variants 1.1
@@ -71,8 +70,6 @@ post-patch {
     reinplace -E "s|#ifdef Q_OS_MAC$|#if 0|" \
         ${worksrcpath}/src/app/layout/qgslayoutdesignerdialog.cpp
 }
-
-compiler.blacklist      {clang < 500}
 
 cmake.install_prefix    ${applications_dir}
 
@@ -179,7 +176,7 @@ foreach pyver ${python_suffixes} {
 
 foreach pyver ${python_suffixes} {
     set vrt python${pyver}
-    set pyversion [string index ${pyver} 0].[string index ${pyver} 1]
+    set pyversion [string index ${pyver} 0].[string range ${pyver} 1 end]
     set index [lsearch -exact ${python_variants} ${vrt}]
     set conf [lreplace ${python_variants} ${index} ${index}]
 

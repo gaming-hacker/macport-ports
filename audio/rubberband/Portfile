@@ -1,14 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           meson 1.0
 
 name                rubberband
-version             1.9.1
-revision            1
-checksums           rmd160  ee2e37b8b7b442b6601f5c5cd93728456566ad07 \
-sha256  fc474878f6823c27ef5df1f9616a8c8b6a4c01346132ea7d1498fe5245e549e3 \
-size    164644
+version             1.9.2
+revision            0
+checksums           rmd160  22c0989df070d4c52151cae64b9afef3c6911d56 \
+                    sha256  b3cff5968517141fcf9e1ef6b5a1fdb06a5511f148000609216cf182ff4ab612 \
+                    size    164178
 
 categories          audio
 platforms           darwin
@@ -25,8 +25,8 @@ homepage            https://breakfastquay.com/rubberband/
 master_sites        https://breakfastquay.com/files/releases/
 use_bzip2           yes
 
-# meson.build:103:0: ERROR: C++ Compiler does not support -std=c++17
-compiler.cxx_standard 2017
+# meson.build:103:0: ERROR: C++ Compiler does not support -std=c++14
+compiler.cxx_standard 2014
 
 depends_build-append \
                     port:cctools \

@@ -6,10 +6,11 @@ PortGroup               perl5 1.0
 PortGroup               wxWidgets 1.0
 PortGroup               active_variants 1.1
 PortGroup               linear_algebra 1.0
+PortGroup               boost 1.0
 
 name                    hugin-app
 version                 2019.2.0
-revision                3
+revision                4
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              graphics
 maintainers             {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
@@ -32,6 +33,7 @@ compiler.cxx_standard 2017
 
 perl5.branches 5.30
 wxWidgets.use           wxWidgets-3.0-cxx11
+boost.version           1.71
 
 checksums               rmd160  d16c364779a48451b3b222a0dd0efa46535e6ddc \
 sha256  8ba6bdfea246313f142f17f42e066c6888f51b72e4f8814b5e1c84ff56a95a3e \
@@ -83,7 +85,6 @@ depends_build-append    port:pkgconfig
 # see http://wiki.panotools.org/Development_of_Open_Source_tools#Dependencies
 depends_lib-append          \
     port:${wxWidgets.port}  \
-    port:boost              \
     port:zlib               \
     port:tiff               \
     port:libpano13          \

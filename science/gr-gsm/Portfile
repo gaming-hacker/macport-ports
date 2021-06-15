@@ -1,8 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           github 1.0
+PortGroup           boost 1.0
 
 name                gr-gsm
 categories          science comms
@@ -13,16 +14,16 @@ license             GPL-3
 platforms           darwin
 
 # use C++11
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 if {${subport} eq ${name}} {
 
     github.setup    ptrkrysik gr-gsm fd4454d6ec6e2e65db60519892e77dece299a6c7
     version         20200214-[string range ${github.version} 0 7]
     checksums       rmd160  b0c22e3f4e1d16b364e63696bc5fa774b085b8cf \
-sha256  8ecffa8a6f7733ac7e4e3744592534478425ce89811e4483cf687cb7ad31ad4a \
-size    417371
-    revision        2
+                    sha256  8ecffa8a6f7733ac7e4e3744592534478425ce89811e4483cf687cb7ad31ad4a \
+                    size    417371
+    revision        3
 
     github.livecheck.branch porting_to_gr38
 
@@ -37,7 +38,7 @@ size    417371
         path:lib/libgnuradio-runtime.dylib:gnuradio \
         port:fftw-3-single
 
-    set python_versions { 3.6 3.7 3.8 }
+    set python_versions { 3.6 3.7 3.8 3.9 }
     set default_python_variant +python37
 
 }
@@ -49,9 +50,9 @@ subport gr37-gsm {
     github.setup    ptrkrysik gr-gsm 592ec9b7859f544b297e9352323b45ceb450a68a
     version         20180812
     checksums       rmd160 76289afc52c484bdb1a4a60a18b6cb85f2a4ba3d \
-sha256 d628af9a27130a89458efd9f91056457e97f01a66ee5809455f0c95607033d41 \
-size   413183
-    revision        1
+                    sha256 d628af9a27130a89458efd9f91056457e97f01a66ee5809455f0c95607033d41 \
+                    size   413183
+    revision        2
 
     # fix name of rst2man
     patchfiles-append patch-docs_CMakeLists.txt.diff
@@ -122,10 +123,11 @@ depends_build-append \
     port:py${active_python_version_no_dot}-docutils
 
 depends_lib-append \
-    port:boost \
     path:lib/libvolk.dylib:volk \
     path:lib/libosmocore.dylib:osmocore \
     port:python${active_python_version_no_dot}
+
+boost.version 1.71
 
 # specify the Python version to use
 set python_framework_dir ${frameworks_dir}/Python.framework/Versions/${active_python_version}

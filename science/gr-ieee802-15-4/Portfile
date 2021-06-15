@@ -1,8 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           github 1.0
+PortGroup           boost 1.0
 
 name                gr-ieee802-15-4
 categories          science comms
@@ -13,7 +14,7 @@ license             GPL-3
 platforms           darwin
 
 # use C++11
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 if {${subport} eq ${name}} {
 
@@ -21,16 +22,16 @@ if {${subport} eq ${name}} {
     git.branch      maint-3.8
     version         20191006-[string range ${github.version} 0 7]
     checksums       rmd160  b1a1946bdd7621c2cfbc0837329fb7f4a120c1e2 \
-sha256  0b635c7af840f3bfeaef20d8adac1682cb42a5bca2da073da888859c7a9ae867 \
-size    94433
-    revision        2
+                    sha256  0b635c7af840f3bfeaef20d8adac1682cb42a5bca2da073da888859c7a9ae867 \
+                    size    94433
+    revision        3
 
     depends_lib-append \
         path:lib/libgnuradio-runtime.dylib:gnuradio
 
     conflicts gr37-ieee802-15-4
 
-    set python_versions { 3.6 3.7 3.8 }
+    set python_versions { 3.6 3.7 3.8 3.9 }
     set default_python_variant +python37
 
 }
@@ -43,9 +44,9 @@ subport gr37-ieee802-15-4 {
     git.branch      maint-3.7
     version         20190606-[string range ${github.version} 0 7]
     checksums       rmd160  5fa59c234659a472b6dc6c6d7f6f02c7d0d8ac68 \
-sha256  a084be25a836ffca66628b56a009581bc413a8e70c6548e40d77cbeb52fbbed0 \
-size    195350
-    revision        1
+                    sha256  a084be25a836ffca66628b56a009581bc413a8e70c6548e40d77cbeb52fbbed0 \
+                    size    195350
+    revision        2
 
     conflicts gr-ieee802-15-4
 
@@ -98,10 +99,11 @@ depends_build-append \
     port:cppunit
 
 depends_lib-append \
-    port:boost \
     path:lib/libvolk.dylib:volk \
     port:python${active_python_version_no_dot} \
     port:py${active_python_version_no_dot}-matplotlib
+
+boost.version 1.71
 
 # specify the Python version to use
 set python_framework_dir ${frameworks_dir}/Python.framework/Versions/${active_python_version}

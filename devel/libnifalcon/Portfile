@@ -2,10 +2,11 @@
 
 PortSystem  1.0
 PortGroup   cmake 1.0
+PortGroup   boost 1.0
 
 name        libnifalcon
 version     1.0.2
-revision    2
+revision    3
 categories  devel
 platforms   darwin
 
@@ -22,7 +23,8 @@ sha1    7ab7e2781a9224201da0e461e3fa34d21a8430e0 \
 rmd160  eef75bf1834df6c1a812d0ef19399109e78cdd13
 
 # libnifalcon uses the boost static libraries.
-depends_build-append port:boost
+boost.depends_type  build
+boost.version       1.71
 
 depends_lib         port:libusb
 

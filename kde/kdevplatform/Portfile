@@ -4,10 +4,11 @@ PortSystem          1.0
 PortGroup           kde4 1.1
 PortGroup           muniversal 1.0
 PortGroup           compiler_blacklist_versions 1.0
+PortGroup           boost 1.0
 
 name                kdevplatform
 version             1.7.4
-revision            4
+revision            5
 categories          kde kde4
 platforms           darwin
 license             GPL-2+
@@ -34,7 +35,6 @@ sha256  21ea4a6c4e241e3b9d6f991ac98b2df8b9c45e17bdb416e836cefbde2d524574
 use_xz              yes
 
 depends_lib-append  port:kdelibs4 \
-                    port:boost \
                     port:grantlee \
                     port:sparsehash
 

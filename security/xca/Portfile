@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -20,8 +20,8 @@ long_description            XCA is a CA & PKI management tool that supports crea
 homepage                    https://www.hohnstaedt.de/xca/
 
 checksums                   rmd160  c2c6d08aec25c6c0a109dc54a6575112907ef4fa \
-sha256  66da8954fe9709ace965c6fcb1cfbb7b08ce75b7222988acb9e2b8b5fac7cf10 \
-size    1778572
+                            sha256  66da8954fe9709ace965c6fcb1cfbb7b08ce75b7222988acb9e2b8b5fac7cf10 \
+                            size    1778572
 
 qt5.depends_component       qtdeclarative \
                             qtmacextras \

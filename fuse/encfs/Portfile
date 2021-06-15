@@ -31,7 +31,6 @@ size    2798888
 depends_lib-append \
     port:rlog \
     path:lib/libssl.dylib:openssl \
-    port:gettext \
-    port:boost
+    port:gettext
 
 compiler.cxx_standard 2017

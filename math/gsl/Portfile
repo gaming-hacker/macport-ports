@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compilers 1.0
 
 name                gsl
-version             2.6
+version             2.7
 revision            0
 categories          math science
 platforms           darwin
@@ -25,9 +25,9 @@ long_description    The GNU Scientific Library (GSL) is a numerical library \
 
 master_sites        gnu
 
-checksums           rmd160  ac5a8879e03ae93d60342df4a0d6082fab02170c \
-sha256  b782339fc7a38fe17689cb39966c4d821236c28018b6593ddb6fd59ee40786a8 \
-size    7398548
+checksums           rmd160  06ef50b9f39ed205070d48936d7db40975156b9e \
+                    sha256  efbbf3785da0e53038be7907500628b466152dbc3c173a87de1b5eba2e23602b \
+                    size    7508761
 
 patchfiles-append   dynamic_lookup-11.patch
 
@@ -76,7 +76,7 @@ if {[variant_isset doc_python27] || [variant_isset doc_python35] || [variant_iss
 
     patchfiles-append patch-python_version.diff
     post-patch {
-        set PythonBranch [string range ${PythonVersion} 0 end-1].[string index ${PythonVersion} end]
+        set PythonBranch [string index ${PythonVersion} 0].[string range ${PythonVersion} 1 end]
         reinplace "s|__MACPORTS_SPHINX_BUILD__|sphinx-build-${PythonBranch}|g" ${worksrcpath}/doc/Makefile.in
     }
 

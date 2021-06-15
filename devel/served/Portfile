@@ -3,8 +3,10 @@
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cmake 1.1
+PortGroup           boost 1.0
 
 github.setup        meltwater served 1.6.0 v
+revision            1
 categories          devel
 platforms           darwin
 maintainers         nomaintainer
@@ -21,8 +23,6 @@ sha256  6d2bf9283533be8009d55a44a2bd17d32193540a58deff05d12557140be8073b \
 size    146271
 
 compiler.cxx_standard 2017
-
-depends_lib-append  port:boost
 
 variant ragel description {Build with Ragel support} {
     depends_lib-append port:ragel

@@ -3,12 +3,13 @@
 PortSystem          1.0
 PortGroup           kde4    1.1
 PortGroup           github  1.0
+PortGroup           boost 1.0
 
 github.setup        KDE ktorrent 4.3.1
 name                ktorrent4
 
 # ktorrent4 and libktorrent usually need to be updated together
-revision            5
+revision            6
 categories          kde kde4
 license             GPL-3+
 maintainers         {nicos @NicosPavlov} openmaintainer
@@ -25,10 +26,10 @@ sha256  b88a9cd5f0bad5a53fc50396e5e6a5c2f0ca9f02ccf3ffb93ff42484abccee91
 distfiles           v${version}${extract.suffix}
 
 #Deactivating ipfilter plugin, which has linking problems (QHostAddress)
-configure.args-append   -DENABLE_IPFILTER_PLUGIN=false 
+configure.args-append  -DENABLE_IPFILTER_PLUGIN=false 
 
 depends_lib-append  port:kde4-runtime port:kdepimlibs4 \
-                    port:libktorrent port:boost port:taglib
+                    port:libktorrent port:taglib
 
 depends_build-append bin:perl:perl5
 
