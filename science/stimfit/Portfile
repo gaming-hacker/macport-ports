@@ -2,10 +2,11 @@
 
 PortSystem          1.0
 PortGroup           wxWidgets 1.0
+PortGroup           boost 1.0
 
 name                stimfit
 version             0.15.8
-revision            4
+revision            5
 categories          science
 platforms           darwin
 license             GPL-2
@@ -20,8 +21,7 @@ sha256  0fc6b0f52057d9c45107557e615f314179ac92e180123ed9d1da98e7f812df8b
 
 wxWidgets.use       wxPython-3.0
 
-depends_lib         port:boost \
-                    port:fftw-3 \
+depends_lib         port:fftw-3 \
                     port:hdf5 \
                     port:${wxWidgets.port}
 
