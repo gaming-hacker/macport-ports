@@ -84,7 +84,7 @@ compilers.choose        fc
 compilers.setup         require_fortran -g95
 
 # error: a space is required between consecutive right angle brackets (use '> >'
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 
 cmake.install_prefix    ${prefix}/libexec/${name}
 cmake.install_rpath     ${cmake.install_prefix}/lib

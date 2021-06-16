@@ -35,7 +35,7 @@ if { ${name} ne ${subport} } {
                     --enable-module \
                     --without-biosig
 
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2017
 
     configure.python \
                     ${python.bin}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         pspg is a Unix pager optimized for table browsing
 long_description    {*}${description}
 
 checksums           rmd160  ef87e74d64cae575d1ed75efa0ea0b601b31f97b \
-                    sha256  77c1108366a63cf348d050f7201c2411a5db8b374a7e39ea9eaba16f5708221c \
-                    size    1828595
+sha256  77c1108366a63cf348d050f7201c2411a5db8b374a7e39ea9eaba16f5708221c \
+size    1828595
 
 depends_lib         port:ncurses port:readline
 configure.args      PANEL_LIBS=-lpanel \
