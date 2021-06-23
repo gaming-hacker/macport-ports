@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ if {[string first "-devel" $subport] > 0} {
     github.setup    Hamlib Hamlib beede15b7bfb759cdf7cb01b66d7aa6c151f33f1
     version         20210616-[string range ${github.version} 0 7]
     checksums       rmd160  51120b6f541b349d40fa19cc1713100808d864ed \
-                    sha256  11cff31b5b04dc065416babcd13a6c10bdfb48f51520f3a60a178410c7ae5850 \
-                    size    1685817
+sha256  11cff31b5b04dc065416babcd13a6c10bdfb48f51520f3a60a178410c7ae5850 \
+size    1685817
     revision        0
 
     name            hamlib-devel
@@ -50,8 +50,8 @@ if {[string first "-devel" $subport] > 0} {
     github.setup    Hamlib Hamlib 4.2
     github.tarball_from releases
     checksums       rmd160  46091e5027f753356c3519d992c72d568f05a95e \
-                    sha256  e200b22f307e9a0c826187c2b08fe81c7d0283cf07056e6db3463d1481580fd5 \
-                    size    2311775
+sha256  e200b22f307e9a0c826187c2b08fe81c7d0283cf07056e6db3463d1481580fd5 \
+size    2311775
     revision        0
 
     conflicts       hamlib-devel

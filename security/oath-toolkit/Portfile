@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ homepage            http://oath-toolkit.nongnu.org/
 master_sites        savannah
 
 checksums           rmd160  3e7715b6e90c2ac274de6c3bcbca132c9c6e93c9 \
-                    sha256  36eddfce8f2f36347fb257dbf878ba0303a2eaafe24eaa071d5cd302261046a9 \
-                    size    5625279
+sha256  36eddfce8f2f36347fb257dbf878ba0303a2eaafe24eaa071d5cd302261046a9 \
+size    5625279
 
 # Provide fallback implementation of pam_modutil_getpwnam
 # See https://gitlab.com/oath-toolkit/oath-toolkit/-/issues/26

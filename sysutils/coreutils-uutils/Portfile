@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -91,7 +91,7 @@ cargo.crates \
     log                                                0.4.14  51b9bbe6c47d51fc3e1a9b945965946b4c44142ab8792c50835a980d362c2710 \
     match_cfg                                           0.1.0  ffbee8634e0d45d258acb448e7eaab3fce7a0a467395d4d9f228e3c1f01fb2e4 \
     maybe-uninit                                        2.0.0  60302e4db3a61da70c0cb7991976248362f30319e88850c487b9b95bbf059e00 \
-    md5                                                 0.3.8  79c56d6a0b07f9e19282511c83fc5b086364cbae4ba8c7d5f190c3d9b0425a48 \
+md5                                                 0.3.8  79c56d6a0b07f9e19282511c83fc5b086364cbae4ba8c7d5f190c3d9b0425a48 \
     memchr                                              1.0.2  148fab2e51b4f1cfc66da2a7c32981d1d3c083a803978268bb11fe4b86925e7a \
     memchr                                              2.3.4  0ee1c47aaa256ecabcaea351eae4a9b01ef39ed810004e298d2511ed284b1525 \
     memoffset                                           0.6.3  f83fb6581e8ed1f85fd45c116db8405483899489e38406156c25eb743554361d \
@@ -151,9 +151,9 @@ cargo.crates \
     serde_cbor                                         0.11.1  1e18acfa2f90e8b735b2836ab8d538de304cbb6729a7360729ea5a895d15a622 \
     serde_derive                                      1.0.125  b093b7a2bb58203b5da3056c05b4ec1fed827dcfdb37347a8841695263b3d06d \
     serde_json                                         1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
-    sha1                                                0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
-    sha2                                                0.6.0  7d963c78ce367df26d7ea8b8cc655c651b42e8a1e584e869c1e17dae3ccb116a \
-    sha3                                                0.6.0  26405905b6a56a94c60109cfda62610507ac14a65be531f5767dec5c5a8dd6a0 \
+sha1                                                0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
+sha2                                                0.6.0  7d963c78ce367df26d7ea8b8cc655c651b42e8a1e584e869c1e17dae3ccb116a \
+sha3                                                0.6.0  26405905b6a56a94c60109cfda62610507ac14a65be531f5767dec5c5a8dd6a0 \
     smallvec                                           0.6.14  b97fcaeba89edba30f044a10c6a3cc39df9c3f17d7cd829dd1446cab35f890e0 \
     static_assertions                                   1.1.0  a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f \
     strsim                                              0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \
@@ -197,9 +197,9 @@ cargo.crates \
     xattr                                               0.2.2  244c3741f4240ef46274860397c7c74e50eb23624996930e484c16679633a54c
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  f1e67e3bded104a7986b14fb44a49c5b7c85d4c1 \
-                    sha256  9caa4ef91d7604417a7b4c69976293d81234b0d805be1020bdd46d65f63898db \
-                    size    532392
+rmd160  f1e67e3bded104a7986b14fb44a49c5b7c85d4c1 \
+sha256  9caa4ef91d7604417a7b4c69976293d81234b0d805be1020bdd46d65f63898db \
+size    532392
 
 build.pre_args-append --features macos
 
@@ -211,10 +211,10 @@ destroot {
         arch base32 base64 basename cat chgrp chmod chown chroot cksum comm cp csplit
         cut date df dircolors dirname du echo env expand expr factor false fmt fold
         groups hashsum head hostid hostname id install join kill link ln logname ls
-        md5sum mkdir mkfifo mknod mktemp more mv nice nl nohup nproc numfmt od paste
+md5sum mkdir mkfifo mknod mktemp more mv nice nl nohup nproc numfmt od paste
         pathchk pinky printenv printf ptx pwd readlink realpath relpath rm rmdir seq
-        sha1sum sha224sum sha256sum sha3-224sum sha3-256sum sha3-384sum sha3-512sum
-        sha384sum sha3sum sha512sum shake128sum shake256sum shred shuf sleep sort split
+sha1sum sha224sum sha256sum sha3-224sum sha3-256sum sha3-384sum sha3-512sum
+sha384sum sha3sum sha512sum shake128sum shake256sum shred shuf sleep sort split
         stat stdbuf sum sync tac tail tee test timeout touch tr true truncate tsort
         tty uname unexpand uniq unlink uptime users wc who whoami yes} {
             ln -s ${prefix}/bin/coreutils ${destroot}${prefix}/libexec/uutils/${binary}
