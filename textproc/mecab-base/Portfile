@@ -11,7 +11,7 @@ maintainers         nomaintainer
 description         yet another part-of-speech and morphological analyzer
 long_description    The base analyzer of MeCab, ${description}.
 
-homepage            http://taku910.github.io/mecab/
+homepage            https://taku910.github.io/mecab/
 platforms           darwin
 license             {GPL LGPL BSD}
 
@@ -24,7 +24,8 @@ sha256  e073325783135b72e666145c781bb48fada583d5224fb2490fb6c1403ba69c59
 
 depends_lib         port:libiconv
 
-patchfiles          patch-configure.diff
+patchfiles-append   patch-configure.diff \
+                    patch-ltmain.sh.diff
 
 configure.args      --mandir=${prefix}/share/man \
                     --with-libiconv-prefix=${prefix}

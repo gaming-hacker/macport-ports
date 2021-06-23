@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -7,7 +7,7 @@ PortGroup muniversal 1.0
 
 #remember to update the -doc and -server as well
 name                postgresql96
-version             9.6.21
+version             9.6.22
 revision            0
 
 categories          databases
@@ -26,9 +26,9 @@ master_sites        http://ftp3.de.postgresql.org/pub/Mirrors/ftp.postgresql.org
             postgresql:source/v${version}/
 distname            postgresql-${version}
 
-checksums           rmd160  a8352cb850f0168ae3c42a33dc0191b71d74a966 \
-sha256  930feaef28885c97ec40c26ab6221903751eeb625de92b22602706d7d47d1634 \
-size    18990266
+checksums           rmd160  061b411626270ecdb68c2459bd837433bbe9c850 \
+                    sha256  3d32cd101025a0556813397c69feff3df3d63736adb8adeaf365c522f39f2930 \
+                    size    19003741
 
 use_bzip2           yes
 
@@ -130,9 +130,9 @@ variant python27 conflicts python3 description {add support for python 2.7} {
 }
 
 variant python3 conflicts python27 description {add support for python 3.x} {
-    depends_lib-append      port:python39
+    depends_lib-append      port:python38
     configure.args-append   --with-python
-    configure.python        ${prefix}/bin/python3.9
+    configure.python        ${prefix}/bin/python3.8
 }
 
 variant perl description {add Perl support} {

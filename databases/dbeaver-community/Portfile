@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        dbeaver dbeaver 21.1.0
+github.setup        dbeaver dbeaver 21.1.1
 github.tarball_from releases
 revision            0
 name                dbeaver-community
@@ -30,9 +30,9 @@ homepage            https://dbeaver.io/
 
 distname            dbeaver-ce-${version}-macosx.cocoa.x86_64
 
-checksums           rmd160  e72da3fdce7bd5dc639b965060248bd006851666 \
-sha256  3af922fa0bfaaac7cb5e6a63ddc6e26c98d76bc2cef438cd108d6e6943d13e60 \
-size    96558699
+checksums           rmd160  fad2bd61b50b7846a1b7b10ac33509bd81c88cab \
+                    sha256  b408a643857372ab66ce2571b9aefb56ba78aea011554f820bbad387430cd40a \
+                    size    93080581
 
 extract.mkdir       yes
 

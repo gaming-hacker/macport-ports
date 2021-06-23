@@ -1,13 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               github 1.0
-PortGroup               cmake 1.0
+PortGroup               cmake 1.1
+PortGroup               boost 1.0
 PortGroup               active_variants 1.1
 
 github.setup            htcondor htcondor 8_8_1 V
 version                 [strsed ${github.version} g/_/\./]
-revision                1
+revision                2
 maintainers             {aronnax @lpsinger}
 
 categories              science parallel net
@@ -38,9 +39,9 @@ variant personal \
     startupitem.stop    "${prefix}/sbin/condor_off -all -master"
 }
 
-set pythons_suffixes {27 35 36}
+set pythons_suffixes {27 35 36 37 38 39}
 
-if {!([variant_isset python35] || [variant_isset python36])} {
+if { !([variant_isset python27] || [variant_isset python35] || [variant_isset python36] || [variant_isset python37] || [variant_isset python38] || [variant_isset python39]) } {
     default_variants +python39
 }
 
@@ -49,9 +50,12 @@ foreach s ${pythons_suffixes} {
     lappend pythons_ports python${s}
 }
 
+compiler.cxx_standard 2011
+
 cmake.out_of_source yes
 configure.args-append   -DWITH_PYTHON_BINDINGS:BOOL="0" -DWITH_KRB5:BOOL="0"
 
+set sel_py ""
 foreach s ${pythons_suffixes} {
     set p python${s}
     set v [string index ${s} 0].[string range ${s} 1 end]
@@ -66,8 +70,8 @@ foreach s ${pythons_suffixes} {
     variant ${p} description "Enable Python interface for Python ${v}" conflicts {*}${c} "
 
         depends_lib-append      port:${p}
-        require_active_variants boost ${p}
-        configure.args-append   -DPython_ADDITIONAL_VERSIONS:STRING=\"${v}\" -DPYTHON_EXECUTABLE:FILEPATH=\"${f}/bin/python${v}\" -DBoost_PYTHON_LIBRARY:FILEPATH=\"${prefix}/lib/libboost_python${m}-mt.dylib\"
+        require_active_variants [boost::depends_portname] ${p}
+        configure.args-append   -DPython_ADDITIONAL_VERSIONS:STRING=\"${v}\" -DPYTHON_EXECUTABLE:FILEPATH=\"${f}/bin/python${v}\" -DBoost_PYTHON_LIBRARY:FILEPATH=\"[boost::lib_dir]/libboost_python${m}-mt.dylib\"
         configure.args-replace  -DWITH_PYTHON_BINDINGS:BOOL=\"0\" -DWITH_PYTHON_BINDINGS:BOOL=\"1\"
 
         post-patch {
@@ -75,6 +79,9 @@ foreach s ${pythons_suffixes} {
             reinplace \"s|@c_pythonarchlib@|Library/Frameworks/Python.framework/Versions/${v}/lib/python${v}/site-packages|g\" ${worksrcpath}/build/cmake/CondorPackageConfig.cmake
         }
     "
+    if {[variant_isset ${p}]} {
+        set sel_py ${v}
+    }
 }
 
 variant kerberos description {enable Kerberos5 support} {
@@ -84,14 +91,13 @@ variant kerberos description {enable Kerberos5 support} {
 
 
 checksums               rmd160  53f076464a125c3574b25a3df1cb36d1bdd9bc34 \
-sha256  abab3e8fe39bcebe68ea6efb60438f88f51bf9e2d345d8a1f061b6584440cc1d \
-size    13135083
+                        sha256  abab3e8fe39bcebe68ea6efb60438f88f51bf9e2d345d8a1f061b6584440cc1d \
+                        size    13135083
 
 depends_build-append    port:fig2dev \
                         port:latex2html
 
-depends_lib-append      port:boost \
-                        port:expat \
+depends_lib-append      port:expat \
                         path:lib/libssl.dylib:openssl \
                         port:pcre
 
@@ -169,6 +175,15 @@ post-destroot {
         xinstall -d -o condor -g condor ${destroot}${prefix}/var/lib/condor/spool
         xinstall -d ${destroot}${prefix}/var/log
         xinstall -d -o condor -g condor ${destroot}${prefix}/var/log/condor
+    }
+
+    # Fix linkage. Appears to be a bug in the configuration as it
+    # Should use the configured install area for boost.
+    set sel_py_nodot [string map {. {}} ${sel_py}]
+    set oLib ${prefix}/lib/libboost_python${sel_py_nodot}-mt.dylib
+    set nLib [boost::lib_dir]/libboost_python${sel_py_nodot}-mt.dylib
+    foreach lib [ exec find ${destroot}${prefix}/ -name "*.dylib" -or -name "*.so" ] {
+        system "install_name_tool -change ${oLib} ${nLib} ${lib}"
     }
 }
 
