@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ master_sites        https://gitlab.com/gitlab-org/gitlab-runner/-/archive/v${ver
 distname            gitlab-runner-v${version}
 
 checksums           rmd160  df34acefddb28f1ccce7f55fd1cfa31050684d6d \
-                    sha256  1db6477bbce113164519059ae15627476d3adab95d829ef622dc3f1c36253aab \
-                    size    8847902
+sha256  1db6477bbce113164519059ae15627476d3adab95d829ef622dc3f1c36253aab \
+size    8847902
 
 set build_date      [exec date +%FT%T%z]
 # Reproduce the "build_simple" target from the upstream Makefile

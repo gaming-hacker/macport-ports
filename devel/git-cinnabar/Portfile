@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -21,13 +21,13 @@ master_sites-append https://www.kernel.org/pub/software/scm/git/:git-core \
 distfiles-append    git-${git_version}${extract.suffix}:git-core
 
 checksums           ${name}-${version}${extract.suffix} \
-                    rmd160  92cb87f4509d14e094fccf0db399a3fcf4cc3cec \
-                    sha256  1f30b79b89b421ba33e47f00a8301da5b7533e10cc6314c4febd23ad6ed4b17b \
-                    size    176569 \
+rmd160  92cb87f4509d14e094fccf0db399a3fcf4cc3cec \
+sha256  1f30b79b89b421ba33e47f00a8301da5b7533e10cc6314c4febd23ad6ed4b17b \
+size    176569 \
                     git-${git_version}${extract.suffix} \
-                    rmd160  869ba3aa521d59e5b2d74f1c0ad5d1e05d99635c \
-                    sha256  46d37c229e9d786510e0c53b60065704ce92d5aedc16f2c5111e3ed35093bfa7 \
-                    size    10128216
+rmd160  869ba3aa521d59e5b2d74f1c0ad5d1e05d99635c \
+sha256  46d37c229e9d786510e0c53b60065704ce92d5aedc16f2c5111e3ed35093bfa7 \
+size    10128216
 
 conflicts           git-remote-hg
 

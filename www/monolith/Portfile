@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -35,9 +35,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  c0d17eac8762a4938878f7c1f59ce4c671e5a395 \
-                    sha256  6cc8c9e9f9a3e2ab9e5c8f5eddcccbfcff92c728e7e9331a4f88231320aded75 \
-                    size    3323719
+rmd160  c0d17eac8762a4938878f7c1f59ce4c671e5a395 \
+sha256  6cc8c9e9f9a3e2ab9e5c8f5eddcccbfcff92c728e7e9331a4f88231320aded75 \
+size    3323719
 
 github.tarball_from archive
 
@@ -187,7 +187,7 @@ cargo.crates \
     serde_derive                   1.0.126  963a7dbc9895aeac7ac90e74f34a5d5261828f79df35cbed41e10189d3804d43 \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
+sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
     siphasher                        0.2.3  0b8de496cf83d4ed58b6be86c3a275b8602f6ffe98d3024a869e124147a9a3ac \
     siphasher                        0.3.5  cbce6d4507c7e4a3962091436e56e95290cb71fa302d0d270e32130b75fbff27 \
     slab                             0.4.3  f173ac3d1a7e3b28003f40de0b5ce7fe2710f9b9dc3fc38664cebee46b3b6527 \

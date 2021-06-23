@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -27,8 +27,8 @@ long_description    Rancher Kubernetes Engine (RKE) is a CNCF-certified \
                     Docker, you can deploy and run Kubernetes with RKE.
 
 checksums           rmd160  92ad414d89e15a6a8f340a367611ac686e8629c7 \
-                    sha256  032af32e5e2ac20c13db0a9c60ba9701029049b9f530b913d21e834b576388c9 \
-                    size    7376767
+sha256  032af32e5e2ac20c13db0a9c60ba9701029049b9f530b913d21e834b576388c9 \
+size    7376767
 
 build.target        github.com/rancher/rke
 

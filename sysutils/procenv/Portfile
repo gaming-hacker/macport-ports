@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    ${name} is a simple command-line utility, written in C and \
 platforms           darwin
 
 checksums           rmd160  4f77dc782caa175243e50dd566d2067342b74cdf \
-                    sha256  52eb5f629046a10d10f3941da609200f152e660c6e1d24f0d0fb03e164d1256f \
-                    size    249909
+sha256  52eb5f629046a10d10f3941da609200f152e660c6e1d24f0d0fb03e164d1256f \
+size    249909
 
 compiler.c_standard 1999
 

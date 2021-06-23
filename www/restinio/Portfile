@@ -22,7 +22,7 @@ checksums                   rmd160  15b3c324ca28abd62bb4877dd2ce315461d062aa \
 sha256  454352bde5f01de5f903322ed55bb39c67616312bffeb1cf7c8f1c85bee502b3 \
 size    459870
 
-compiler.cxx_standard       2011
+compiler.cxx_standard 2017
 
 depends_build-append        path:lib/libssl.dylib:openssl \
                             port:pcre \

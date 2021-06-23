@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               gitlab 1.0
@@ -30,8 +30,8 @@ homepage                https://pdfposter.readthedocs.io/
 use_bzip2               yes
 
 checksums               rmd160  7e32922e0b161f5f6f761470529701986fedbc72 \
-                        sha256  7c688614d24832c24d10e28ad36ee0a5bb8dc3db0778790692bdbccb989d5d57 \
-                        size    215059
+sha256  7c688614d24832c24d10e28ad36ee0a5bb8dc3db0778790692bdbccb989d5d57 \
+size    215059
 
 python.default_version  39
 
