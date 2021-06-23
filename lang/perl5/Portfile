@@ -147,6 +147,12 @@ foreach {perl5.v perl5.subversion perl5.revision perl5.rmd160 perl5.sha256 perl5
             patchfiles-append \
                             ${perl5.major}/patch-hints-darwin_sh.diff \
         }
+        if {${perl5.major} >= 5.34} {
+            # Do not suppress errors for implicit function declarations
+            # https://trac.macports.org/ticket/63022
+            patchfiles-append \
+                            ${perl5.major}/patch-want-implicit-errors.diff
+        }
 
         post-patch {
             reinplace -W ${worksrcpath} "s|__PREFIX__|${prefix}|g" \
