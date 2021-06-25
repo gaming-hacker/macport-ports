@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        golang tools 89232532d2d57ce53cc88eccb5d060e92f86729b
-version             20200630-[string range ${github.version} 0 7]
+github.setup        golang tools cd1d0887dc8cfcfb844340a5fce628c61da00a20
+version             20210511-[string range ${github.version} 0 7]
 epoch               6
 name                go-tools
 categories          devel
@@ -14,11 +14,11 @@ maintainers         {ciserlohn @ci42}
 description         Various packages and tools that support the Go programming language.
 long_description    $description
 
-checksums           rmd160  97410382ccbe3efce08e96756c63db33eb8b1703 \
-                    sha256  c451b5af8a10b06624d5ae92c33aa1b30beaf380e195d1373b333fde1553c15a \
-                    size    2484284
-		    
-depends_build	    port:go
+checksums           rmd160  861f7f72627b4449752dded9ab7c1a376435e841 \
+                    sha256  b26d3b51fbcbabc7ff8fd2cfdb152421753dfeb8f7e38be9041c0bddfa1b8acd \
+                    size    2785629
+
+depends_build       port:go
 
 universal_variant   no
 
@@ -47,20 +47,20 @@ set deps {
     golang.org/x/net/websocket
     golang.org/x/crypto/acme/autocert
     golang.org/x/mod/semver
-    golang.org/x/xerrors
+    golang.org/x/sys/execabs
     golang.org/x/xerrors
     github.com/yuin/goldmark
 }
 
 build {
     foreach dep $deps {
-        system -W ${workpath} "GOPATH=${gopath} go get -d ${dep}"
+        system -W ${workpath} "GO111MODULE=off GOPATH=${gopath} go get -d ${dep}"
     }
     foreach auth $auth_cmds {
-        system -W ${workpath} "GOPATH=${gopath} go build ${package_dir}/cmd/auth/${auth}"
+        system -W ${workpath} "GO111MODULE=off GOPATH=${gopath} go build ${package_dir}/cmd/auth/${auth}"
     }
     foreach cmd $cmds {
-        system -W ${workpath} "GOPATH=${gopath} go build ${package_dir}/cmd/${cmd}"
+        system -W ${workpath} "GO111MODULE=off GOPATH=${gopath} go build ${package_dir}/cmd/${cmd}"
     }
 }
 
