@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,9 +14,9 @@ description         ${name} is like grep and ripgrep, but with powerful \
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  93790e4d370929af4e341b8b6181b0fd98d10555 \
-                    sha256  8f65d2443f527964f29cb492f1c2af5c31d602f586b491dedfa8a1a31cd0a35c \
-                    size    199083
+rmd160  93790e4d370929af4e341b8b6181b0fd98d10555 \
+sha256  8f65d2443f527964f29cb492f1c2af5c31d602f586b491dedfa8a1a31cd0a35c \
+size    199083
 
 categories          textproc
 platforms           darwin
@@ -68,7 +68,7 @@ cargo.crates \
     serde                          1.0.125  558dc50e1a5a5fa7112ca2ce4effcb321b0300c0d4ccf0776a9f60cd89031171 \
     serde_derive                   1.0.125  b093b7a2bb58203b5da3056c05b4ec1fed827dcfdb37347a8841695263b3d06d \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
-    sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
+sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
     standback                       0.2.17  e113fb6f3de07a243d434a56ec6f186dfd51cb08448239fe7bcae73f87ff28ff \
     stdweb                          0.4.20  d022496b16281348b52d0e30ae99e01a73d737b2f45d38fed4edf79f9325a1d5 \
     stdweb-derive                    0.5.3  c87a60a40fccc84bef0652345bbbbbe20a605bf5d0ce81719fc476f5c03b50ef \

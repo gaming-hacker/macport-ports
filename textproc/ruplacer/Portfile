@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,9 +12,9 @@ description         Find and replace text in source files.
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  aba1349af5170f04cdd31be7734da3c2594487bc \
-                    sha256  8f95845040fd98aea47961c6bcd5d515e1d6bb86bfd8affc1e1832def4099d69 \
-                    size    18697
+rmd160  aba1349af5170f04cdd31be7734da3c2594487bc \
+sha256  8f95845040fd98aea47961c6bcd5d515e1d6bb86bfd8affc1e1832def4099d69 \
+size    18697
 
 categories          textproc
 platforms           darwin

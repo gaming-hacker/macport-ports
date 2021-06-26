@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github     1.0
@@ -22,8 +22,8 @@ long_description    \
     that arise in the numerical solution of partial differential equations using iterative methods.
 
 checksums           rmd160  63399bc5bbe645b86b6867932baf54dfa0702b74 \
-                    sha256  fefe1ba48aa5867cde3c07ea4009fb333baa863b535a1f29bbdf99de42f49f67 \
-                    size    3999895
+sha256  fefe1ba48aa5867cde3c07ea4009fb333baa863b535a1f29bbdf99de42f49f67 \
+size    3999895
 
 mpi.setup           require_fortran -g95
 compilers.allow_arguments_mismatch \
