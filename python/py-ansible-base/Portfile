@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ description         SSH-based configuration management and deployment system
 
 distname            ansible-base-${version}
 checksums           rmd160  cb50d06cdadcfee2b5ea2b34ca3a53f9fb703e68 \
-                    sha256  bcf114d82a6a62659b43d498169a65cba948ca75bb4ef10e982956157167234b \
-                    size    5987563
+sha256  bcf114d82a6a62659b43d498169a65cba948ca75bb4ef10e982956157167234b \
+size    5987563
 
 conflicts           ansible
 

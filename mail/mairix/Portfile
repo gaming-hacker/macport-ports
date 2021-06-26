@@ -23,8 +23,8 @@ long_description    mairix is a program for indexing and searching email \
 homepage            http://www.rc0.org.uk/mairix/
 master_sites        sourceforge
 checksums           rmd160  585fde437aa0e1fabee24ab11f884781d38c0251 \
-                    sha256  a0702e079c768b6fbe25687ebcbabe7965eb493d269a105998c7c1c2caef4a57 \
-                    size    206903
+sha256  a0702e079c768b6fbe25687ebcbabe7965eb493d269a105998c7c1c2caef4a57 \
+size    206903
 depends_lib         port:zlib port:bzip2
 
 configure.args      --mandir=${prefix}/share/man \
