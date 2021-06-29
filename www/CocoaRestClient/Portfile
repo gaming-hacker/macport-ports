@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -34,8 +34,8 @@ distname            ${name}-${version}
 use_dmg             yes
 
 checksums           rmd160  e2e2b3cd43a38b072107e59ad1f558c0a45d8338 \
-                    sha256  1bca8c7980fe656b95907569519538905da2141974e2bb9df2600a242f00b4e6 \
-                    size    6776490
+sha256  1bca8c7980fe656b95907569519538905da2141974e2bb9df2600a242f00b4e6 \
+size    6776490
 
 if {${os.major} < 16} {
     known_fail      yes

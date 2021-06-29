@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ long_description    {*}${description}. Feed it a .pcap file or some text and it'
 homepage            https://github.com/bee-san/pyWhat
 
 checksums           rmd160 533e39ba38313f5de6d96470185a4073d5de7e9e \
-                    sha256 48d15667949976e1f385dc1d96ce71e34c55997d51d45189f7770811f7ac11d1 \
-                    size   45473
+sha256 48d15667949976e1f385dc1d96ce71e34c55997d51d45189f7770811f7ac11d1 \
+size   45473
 
 depends_lib-append  port:py${python.version}-setuptools
 

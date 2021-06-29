@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -30,8 +30,8 @@ extract.suffix      .tar_0.gz
 # probably a packaging error of this version.
 
 checksums           rmd160  0d2af677911d58488917dd53718e9a62f9115567 \
-                    sha256  aafe6e0128723599cdaebb636a798db11b1b6da686fcef7d381068837ad74cb1 \
-                    size    1884366
+sha256  aafe6e0128723599cdaebb636a798db11b1b6da686fcef7d381068837ad74cb1 \
+size    1884366
 
 depends_build       port:bison
 depends_skip_archcheck-append \

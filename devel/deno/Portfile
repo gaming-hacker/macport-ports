@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,13 +30,13 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${name}-x86_64-apple-darwin.zip \
-                    rmd160  576588e6221cfa8e076df69f2837095fad49515c \
-                    sha256  46a4960ead517f7e906bcb60000675a64a50ed5a7493844a441114ce7af1e550 \
-                    size    28946327 \
+rmd160  576588e6221cfa8e076df69f2837095fad49515c \
+sha256  46a4960ead517f7e906bcb60000675a64a50ed5a7493844a441114ce7af1e550 \
+size    28946327 \
                     ${name}-aarch64-apple-darwin.zip \
-                    rmd160  0b858d836f4fbe430fe22db0d0436c532b28ee31 \
-                    sha256  a56bde492ac691fba15fda0bf3c2d7770e330b5960755dd1fa5694db56c9cacb \
-                    size    28173537
+rmd160  0b858d836f4fbe430fe22db0d0436c532b28ee31 \
+sha256  a56bde492ac691fba15fda0bf3c2d7770e330b5960755dd1fa5694db56c9cacb \
+size    28173537
 
 if {${build_arch} eq "arm64"} {
     set release_arch aarch64
