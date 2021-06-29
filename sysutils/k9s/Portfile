@@ -1,18 +1,12 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/derailed/k9s 0.24.10 v
+go.setup            github.com/derailed/k9s 0.24.12 v
 revision            0
 
 homepage            https://k9scli.io
-
-categories          sysutils devel
-
-maintainers         {breun.nl:nils @breun} \
-                    {gmail.com:herby.gillot @herbygillot} \
-                    openmaintainer
 
 description         K9s - Kubernetes CLI To Manage Your Clusters In Style
 
@@ -23,13 +17,18 @@ long_description    K9s provides a curses based terminal UI to interact with \
                     Kubernetes for changes and offers subsequent commands to \
                     interact with observed Kubernetes resources.
 
+categories          sysutils devel
 platforms           darwin
 license             Apache-2
 installs_libs       no
 
-checksums           rmd160  8107067909dc52a29686cb27bde8d459206268d6 \
-sha256  9ed419006e8c9b8b82b12f0c07ff0ae8c75b8f2d9956536775aa00f1d25558f0 \
-size    6194467
+maintainers         {breun.nl:nils @breun} \
+                    {gmail.com:herby.gillot @herbygillot} \
+                    openmaintainer
+
+checksums           rmd160  e4fe410463dec221ae9451dfeae297f497d69503 \
+                    sha256  d2e5cd9d1d5ec23b9f146d392a69c8b009e34c27ee10208f7d680ec99e10fee9 \
+                    size    6207147
 
 set build_date      [exec date +%FT%T%z]
 # Reproduce the "build" target from the upstream Makefile
