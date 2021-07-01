@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -43,8 +43,8 @@ installs_libs       no
 use_parallel_build  no
 
 checksums           rmd160  d044c5e86b0c7ecf99c4962eac7d93b1602f46f0 \
-                    sha256  9ea2c8952f69aea356d9e02918ab8a24d3e13cac5c7276925c188526daedccd4 \
-                    size    7893104
+sha256  9ea2c8952f69aea356d9e02918ab8a24d3e13cac5c7276925c188526daedccd4 \
+size    7893104
 
 github.tarball_from archive
 

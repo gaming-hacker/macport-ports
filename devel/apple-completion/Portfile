@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description \
   Bash for some of the Apple command line tools.
 
 checksums           rmd160  1c9403837bb91529ea608a78bbfe6ce6567b1d5c \
-                    sha256  3671eb24cfc66f3c8987ed26e331fe8ba73a0f4115a421e11cea5a582d0c227f \
-                    size    9879
+sha256  3671eb24cfc66f3c8987ed26e331fe8ba73a0f4115a421e11cea5a582d0c227f \
+size    9879
 
 depends_run         port:bash
 

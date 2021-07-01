@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ long_description    ${description} by filling a drive up with random data \
 notes               "${danger}"
 
 checksums           rmd160  abab2499c1fe405b8df447b2a9b8aa3b7e5775f3 \
-                    sha256  ecb51c26fa299464bf7627242ef4047a56061d706b8552fbc30b2ab3fa44ee55 \
-                    size    7298
+sha256  ecb51c26fa299464bf7627242ef4047a56061d706b8552fbc30b2ab3fa44ee55 \
+size    7298
 
 depends_lib         port:openssl
 
