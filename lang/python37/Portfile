@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -25,8 +25,8 @@ master_sites        ${homepage}ftp/python/${version}/
 distname            Python-${version}
 use_xz              yes
 checksums           md5 b3671d35b61f5422605cedad32f3457a \
-                    rmd160 ceead7d7eae26ad67e88e8841d454cbd5b839590 \
-                    sha256 ddb4196ab5c4f69e895920a422cb60d42b46e2de2b173ce7fd57f1435459a734
+rmd160 ceead7d7eae26ad67e88e8841d454cbd5b839590 \
+sha256 ddb4196ab5c4f69e895920a422cb60d42b46e2de2b173ce7fd57f1435459a734
 
 patchfiles          patch-setup.py.diff \
                     patch-Lib-cgi.py.diff \

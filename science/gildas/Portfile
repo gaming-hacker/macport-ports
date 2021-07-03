@@ -43,8 +43,8 @@ patchfiles          patch-admin-Makefile.def.diff \
 
 depends_lib         port:gtk2 \
                     port:libpng \
-                    port:python38 \
-                    port:py38-numpy
+                    port:python39 \
+                    port:py39-numpy
 
 # coreutils needed to use GNU gsort instead of native BSD sort as older version
 # of sort do not support sort -V:
@@ -63,7 +63,7 @@ compilers.enforce_some_fortran cfitsio
 
 compilers.choose    fc
 compilers.setup     -gcc46 require_fortran
-configure.python    ${prefix}/bin/python3.8
+configure.python    ${prefix}/bin/python3.9
 
 configure {
     set cxxstdlib {}

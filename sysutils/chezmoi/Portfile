@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -50,5 +50,5 @@ destroot {
 github.tarball_from archive
 
 checksums           rmd160  8759a9c24ca24ac3a2766cc681f9d23b610cd313 \
-                    sha256  8385e08fdcc37e88f4153c7ac750c6c55d09207b61129cce40b1f5ce1608e465 \
-                    size    2300942
+sha256  8385e08fdcc37e88f4153c7ac750c6c55d09207b61129cce40b1f5ce1608e465 \
+size    2300942
