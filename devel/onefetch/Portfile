@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ license             MIT
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  5141f7e5f981e0eb6e7792a5a6901f60837d9011 \
-                    sha256  6e4d4effcd4fd94ce21625a5e32da5da6446c8874200e40dd791e623b7aff7bb \
-                    size    1370024
+rmd160  5141f7e5f981e0eb6e7792a5a6901f60837d9011 \
+sha256  6e4d4effcd4fd94ce21625a5e32da5da6446c8874200e40dd791e623b7aff7bb \
+size    1370024
 
 github.tarball_from archive
 
@@ -167,7 +167,7 @@ cargo.crates \
     serde_derive                   1.0.126  963a7dbc9895aeac7ac90e74f34a5d5261828f79df35cbed41e10189d3804d43 \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_yaml                      0.8.17  15654ed4ab61726bf918a39cb8d98a2e2995b002387807fa6ba58fdf7f59bb23 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
     slug                             0.1.4  b3bc762e6a4b6c6fcaade73e77f9ebc6991b676f88bb2358bddb56560f073373 \
     smallvec                         1.6.1  fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \
