@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -13,8 +13,8 @@ homepage        http://hpux.connect.org.uk/hppd/hpux/Misc/${name}-${version}
 master_sites    http://www.ibiblio.org/pub/Linux/devel/lang/fortran/
 extract.suffix  .tgz
 checksums       rmd160  2bdd6d8b2f7625a2005b9bbd5eff103fe7b47ac6 \
-                sha256  1513f326ebc95c7116f7d34ddb535eeec6e39ec27a089ba19f4ca6f00afc6541 \
-                size    38088
+sha256  1513f326ebc95c7116f7d34ddb535eeec6e39ec27a089ba19f4ca6f00afc6541 \
+size    38088
 
 description     Makefile generator for fortran 77/90 code
 
