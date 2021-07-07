@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -13,8 +13,8 @@ github.setup    ipmitool ipmitool 11c7605c0d5423f90f399f5e830d1095089f38a1
 version         1.8.18.20210622
 revision        0
 checksums       rmd160  273ded688a39ca722d5de4a7a11497b37e9833b9 \
-sha256  f5e7c03254e3714fd14f5780833c028a03f97fa9a9832ff95644a80969e1411a \
-size    638260
+                sha256  f5e7c03254e3714fd14f5780833c028a03f97fa9a9832ff95644a80969e1411a \
+                size    638260
 
 categories      sysutils
 license         BSD

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-param
-version             1.11.0
+version             1.11.1
 revision            0
 license             BSD
 maintainers         {mps @Schamschula} openmaintainer
@@ -16,11 +16,11 @@ long_description    {*}${description} Python attributes extended to have feature
 platforms           darwin
 homepage            https://github.com/holoviz/param
 
-checksums           rmd160  33232e1fdf4217601ae848604d9ae0b94b3e74a6 \
-sha256  1ac684fc3060852c8d831885728a7b50423671d012e12f0a071bff11c57d743b \
-size    77991
+checksums           rmd160  65fb88dba26b915b3344c08b5af628513f27350a \
+                    sha256  b9857df01495bd55ddafb214fd1ed017d20699ce42ec2a0fd190d99caa03099f \
+                    size    78004
 
-python.versions 37 39
+python.versions     36 37 38 39
 
 if {${name} ne ${subport}} {
     depends_lib     port:py${python.version}-numpy \
