@@ -94,10 +94,10 @@ if { ${os.arch} eq "arm" } {
 } else {
     set gcc_versions {}
     if { ${os.major} < 20 } {
-        lappend gcc_versions 5 6 7
+        lappend gcc_versions 5 6 7 8 9
     }
     if { ${os.major} >= 10 } {
-        lappend gcc_versions 8 9 10 11 devel
+        lappend gcc_versions 10 11
     }
 }
 # GCC version providing the primary runtime
