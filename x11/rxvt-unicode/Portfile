@@ -36,13 +36,13 @@ depends_lib \
         port:startup-notification \
         port:xorg-libXmu \
         port:ncurses \
-        port:perl5.30
+        port:perl5.34
 
 # clang++ 3.0 produces unstable urxvt binary which sometimes causes errors like:
 #        "terminate called throwing an exceptionAbort trap: 6"
 compiler.blacklist {clang < 318}
 
-configure.perl  ${prefix}/bin/perl5.30
+configure.perl  ${prefix}/bin/perl5.34
 
 patchfiles      patch-Makefile.in.diff \
                 patch-no-clock_gettime.diff \
@@ -69,7 +69,7 @@ variant pixbuf description {gdk-pixbuf support} {
 variant lite description {lightweight build options} {
     depends_lib-delete      port:Xft2 \
                             port:startup-notification \
-                            port:perl5.30
+                            port:perl5.34
     depends_lib-append      port:xorg-libX11
     configure.args-delete   --enable-everything
     configure.args-append   --disable-everything \

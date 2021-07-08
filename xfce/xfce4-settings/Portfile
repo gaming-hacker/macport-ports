@@ -21,9 +21,9 @@ rmd160  34ef7b65073f05d6077759405b50ceb98704be0b \
 size    1036773
 
 # Needed for intltool
-configure.perl  ${prefix}/bin/perl5.30
+configure.perl  ${prefix}/bin/perl5.34
 
-depends_build   port:intltool port:xfce4-dev-tools port:pkgconfig port:perl5.30
+depends_build   port:intltool port:xfce4-dev-tools port:pkgconfig port:perl5.34
 depends_lib     port:libxfce4ui port:exo port:libwnck port:xorg-libXrandr port:garcon
 
 configure.args  INTLTOOL_PERL=${configure.perl}

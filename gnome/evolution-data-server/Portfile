@@ -52,7 +52,7 @@ depends_lib         port:gtk3 \
                     port:db53
 
 # our choice of perl for installed scripts
-depends_lib-append  port:perl5.30
+depends_lib-append  port:perl5.34
 
 patchfiles          patch-cmake-find-our-build-tools.diff \
                     patch-remove-linker-flag-no-undefined.diff

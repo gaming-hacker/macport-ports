@@ -47,7 +47,7 @@ configure.optflags
 depends_build-append    port:intltool \
                         port:pkgconfig \
                         port:po4a \
-                        port:perl5.30
+                        port:perl5.34
 
 depends_lib-append      port:atk \
                         path:lib/pkgconfig/cairo.pc:cairo \
@@ -96,7 +96,7 @@ configure.args-append   -DBUILD_CMSTEST=OFF \
                         -DUSE_KWALLET=OFF \
                         -DUSE_OPENMP=OFF \
                         -DUSE_UNITY=OFF \
-                        -Dperl_BIN=${prefix}/bin/perl5.30
+                        -Dperl_BIN=${prefix}/bin/perl5.34
 
 post-build {
     set wrap [open "${workpath}/darktable-app" w 0755]

@@ -65,29 +65,17 @@ proc python-depends {python_branch} {
     configure.env-append PATH=${frameworks_dir}/Python.framework/Versions/${python_branch}/bin:$env(PATH)
 }
 
-variant python39 conflicts python37 python38 description {Use Python 3.9 during build} {
+variant python39 description {Use Python 3.9 during build} {
     post-patch {
-        reinplace {s|PythonInterp 3\.8|PythonInterp 3.9|g} ${worksrcpath}/CMakeLists.txt
-        reinplace {s|PythonLibs 3\.8|PythonLibs 3.9|g} ${worksrcpath}/CMakeLists.txt
+        reinplace {s|PythonInterp 3\.9|PythonInterp 3.9|g} ${worksrcpath}/CMakeLists.txt
+        reinplace {s|PythonLibs 3\.9|PythonLibs 3.9|g} ${worksrcpath}/CMakeLists.txt
     }
     set python_branch 3.9
     python-depends ${python_branch}
 }
 
-variant python38 conflicts python37 python39 description {Use Python 3.8 during build} {
-    set python_branch 3.8
-    python-depends ${python_branch}
-}
 
-variant python37 conflicts python38 python39 description {Use Python 3.7 during build} {
-    post-patch {
-        reinplace {s|PythonInterp 3\.8|PythonInterp 3.7|g} ${worksrcpath}/CMakeLists.txt
-        reinplace {s|PythonLibs 3\.8|PythonLibs 3.7|g} ${worksrcpath}/CMakeLists.txt
-    }
-    set python_branch 3.7
-    python-depends ${python_branch}
-}
 
-if {![variant_isset python37] && ![variant_isset python38]} {
+if { ![variant_isset python39]} {
     default_variants +python39
 }

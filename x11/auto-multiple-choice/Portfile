@@ -30,7 +30,7 @@ if {${subport} eq ${name}} {
 sha256  6d447bc5053fd2a57f854ead33ac50bb5c3a09e99e6f662c85febc5eb85a9fad \
 size    8513750
 
-perl5.branches 5.30
+perl5.branches 5.34
 
     depends_lib-append      port:opencv3
 
@@ -54,7 +54,7 @@ perl5.branches 5.30
 sha256  a02734bf0177bae3fb72d34f80863c3dc0f74f2080244d22e50bc629cfa0c788 \
 size    11125547
 
-perl5.branches 5.30
+perl5.branches 5.34
 
     set opencv_ver          4
     depends_lib-append      port:opencv${opencv_ver}

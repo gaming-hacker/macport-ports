@@ -71,7 +71,7 @@ subport pypy36 {
 }
 
 subport pypy37 {
-    set python.branch 3.7
+    set python.branch 3.9
 
     set module_scripts(venv) venv
     set module_scripts(idle) idlelib

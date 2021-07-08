@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ homepage            http://www.rowetel.com/codec2.html
 github.setup        drowe67 codec2 58fbd330a49188c438fa1b86ba7eb74f2423e831
 version             20210708-[string range ${github.version} 0 7]
 checksums           rmd160  1f8c66f80b3ed5be8986e607b0279e72187f0189 \
-                    sha256  0a1b5db0ce2fdabe5e0f73b3ebcd075e2c42d205787676674899451ba79d6ae5 \
-                    size    15020771
+sha256  0a1b5db0ce2fdabe5e0f73b3ebcd075e2c42d205787676674899451ba79d6ae5 \
+size    15020771
 revision            0
 
 epoch               1

@@ -20,11 +20,11 @@ sha1 ef687867bd087b5fc2befee0e8ca1a281f6bf165 \
 sha256 3d619811bfbe7478bb984c16543d980cadd08586365a7bc25e59e3ca6384ff43
 
 # Needed for intltool
-configure.perl  ${prefix}/bin/perl5.30
+configure.perl  ${prefix}/bin/perl5.34
 
 depends_build   port:intltool \
                 port:pkgconfig \
-                port:perl5.30
+                port:perl5.34
 
 depends_lib     port:gtk2 \
                 port:gtk3 \

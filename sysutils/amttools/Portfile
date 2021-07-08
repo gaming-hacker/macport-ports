@@ -38,7 +38,7 @@ checksums           rmd160  9fb55ade1f5ca3015be0794236ea3031fc137367 \
 sha256  1242cea467827aa1e2e91b41846229ca0a5b3f3e09260b0df9d78dc875075590 \
 size    40804
 
-set perl_branch 5.30
+set perl_branch 5.34
 depends_build       port:pkgconfig
 depends_run         port:p${perl_branch}-soap-lite
 
