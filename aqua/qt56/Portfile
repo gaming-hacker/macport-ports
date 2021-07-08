@@ -216,7 +216,7 @@ array set modules {
             f63fc053d0d16b8a9ca9308f8ead77874b470ae31b66057e2bd336bf648191fc
             18887200
         }
-        "port:python27"
+        "port:python39"
         ""
         "qtbase qtsvg qtxmlpatterns"
         {"Qt QML" "Qt Quick" "Qt Quick Widgets"}
@@ -471,7 +471,7 @@ array set modules {
             009d69fb39f6c0e2b0cd89a7e9302cd0ae1872d02c787d3a37f2cacca5ddb7a7
             163731304
         }
-        "port:python27 port:py27-ply"
+        "port:python39 port:py39-ply"
         ""
         "qtquickcontrols qtwebchannel qtlocation"
         {"Qt WebEngine"}
@@ -486,7 +486,7 @@ array set modules {
             098c6bb25798fbf1b619b540621287787064efc9b586d76ac0ce7e39b87a3896
             35300296
         }
-        "port:python27"
+        "port:python39"
         "port:fontconfig port:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3"
         "qtbase qtdeclarative qtlocation qtmultimedia qtsensors qtwebchannel qtxmlpatterns"
         {"Qt WebKit" "Qt WebKit Widgets"}
@@ -1715,7 +1715,7 @@ foreach deps ${depends_check} {
         #    (see tools/qmake/mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.9
     }
 }
 if { ${python_framework} ne "" } {

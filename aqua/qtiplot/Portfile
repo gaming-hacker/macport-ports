@@ -73,7 +73,7 @@ pre-configure {
     }
 
    if {[variant_isset python27]} {
-       puts $confFD "PYTHON = ${prefix}/bin/python2.7"
+       puts $confFD "PYTHON = ${prefix}/bin/python3.9"
    }
 
     # target specific configuration
@@ -152,12 +152,12 @@ size    146118
 variant python27 description "add support for python27 scripting" {
 
     post-destroot {
-        system "${prefix}/bin/python2.7 -m compileall ${destroot}${applications_dir}/QtiPlot.app/Contents/MacOS"
+        system "${prefix}/bin/python3.9 -m compileall ${destroot}${applications_dir}/QtiPlot.app/Contents/MacOS"
     }
 
-    depends_lib-append port:python27 \
-                       port:py27-sip \
-                       port:py27-pyqt4
+    depends_lib-append port:python39 \
+                       port:py39-sip \
+                       port:py39-pyqt4
 }
 
 livecheck.type  none

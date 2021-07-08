@@ -76,11 +76,11 @@ variant python27 description {Enable python 2.7 interface} {
     depends_build-append port:swig-python
 
     depends_lib-append  \
-        port:python27   \
-        port:py27-numpy
+        port:python39   \
+        port:py39-numpy
 
     configure.args-replace -Denable-python=OFF -Denable-python=ON
-    configure.args-append  -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+    configure.args-append  -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
 }
 
 #currently broken

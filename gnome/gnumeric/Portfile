@@ -96,7 +96,7 @@ variant python37 conflicts python38 description {Build Python plugin loader usin
     configure.python          ${prefix}/bin/python3.9
     configure.args-replace    --without-python --with-python
     depends_lib-append        port:py39-gobject3
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.7
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 
@@ -104,7 +104,7 @@ variant python38 conflicts python37 description {Build Python plugin loader usin
     configure.python          ${prefix}/bin/python3.9
     configure.args-replace    --without-python --with-python
     depends_lib-append        port:py39-gobject3
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.8
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 

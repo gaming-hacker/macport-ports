@@ -30,7 +30,7 @@ patchfiles              patch-cherrytree-libcprctl-warning.diff \
 
 depends_build-append    port:desktop-file-utils
 
-python.default_version  27
+python.default_version 39
 depends_lib-append      port:py${python.version}-pygtk \
                         port:py${python.version}-pygtksourceview \
                         port:py${python.version}-chardet \
@@ -56,5 +56,5 @@ if {![variant_isset quartz]} {
 }
 
 post-patch {
-    reinplace "s|/usr/bin/env python|${prefix}/bin/python2.7|" setup.py
+    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.9|" setup.py
 }

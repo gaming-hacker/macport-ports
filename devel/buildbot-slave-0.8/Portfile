@@ -30,7 +30,7 @@ homepage                https://buildbot.net
 python.rootname         buildbot-slave
 dist_subdir             buildbot-slave
 
-python.default_version  27
+python.default_version 39
 
 depends_lib-append      port:py${python.version}-twisted
 

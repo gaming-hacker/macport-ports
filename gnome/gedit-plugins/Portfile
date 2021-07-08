@@ -101,10 +101,10 @@ variant terminal description {Embed a GNOME terminal in the bottom panel of the 
 }
 
 variant python36 conflicts python37 python38 description {Plugins use Python 3.6} {
-    depends_lib-append  port:py36-gobject3 \
+    depends_lib-append  port:py39-gobject3 \
                         port:dbus-python36
 
-    configure.python    ${prefix}/bin/python3.6
+    configure.python    ${prefix}/bin/python3.9
 }
 
 variant python37 conflicts python36 python38 description {Plugins use Python 3.7} {

@@ -90,14 +90,14 @@ if {${name} ne ${subport}} {
     # https://trac.macports.org/ticket/61583#comment:8
     macosx_deployment_target
 
-    # With python2.7 PYTHON_EXTRA_LIBS is determined to be
-    # '-u _PyMac_Error Python.framework/Versions/2.7/Python'. Not clear whether
-    # python2.7 or py-graph-tool's configure script is to blame, but we can easily
+    # With python3.9 PYTHON_EXTRA_LIBS is determined to be
+    # '-u _PyMac_Error Python.framework/Versions/3.9/Python'. Not clear whether
+    # python3.9 or py-graph-tool's configure script is to blame, but we can easily
     # work around this:
     if {${python.version} eq "27"} {
         configure.env-append "PYTHON_EXTRA_LIBS=-u _PyMac_Error"
     }
-    # Something similar is happening with python3.6
+    # Something similar is happening with python3.9
     if {${python.version} eq "36"} {
         configure.env-append "PYTHON_EXTRA_LIBS=-Wl,-stack_size,1000000 -framework CoreFoundation ${python.lib}"
     }

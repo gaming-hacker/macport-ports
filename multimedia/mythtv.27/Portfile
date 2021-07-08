@@ -36,7 +36,7 @@ livecheck.regex         "archive/v(0.27\[\\.\\d\]?)${extract.suffix}"
 set perlver         perl5.28
 set perlbin         ${prefix}/bin/${perlver}
 set perlmodver      p5.28
-set pythonver       python2.7
+set pythonver       python3.9
 set pythonbin       ${prefix}/bin/${pythonver}
 set pymodver        py27
 
@@ -165,8 +165,8 @@ subport mythtv-core${majorversion} {
 		reinplace -locale C "s#\${BRANCH}#${mythbranch}#g" ${sedPath}version.sh
 
 		ui_info "Make Myth scripts use MacPorts Python  <<<<"
-		# Hack to install Python bindings in ${frameworks_dir}/Python.framework/Versions/2.7
-		reinplace -locale C "s|\$(ROOT_FLAGS) \$(PREFIX_FLAGS)|\$(ROOT_FLAGS) \--prefix=\"${frameworks_dir}/Python.framework/Versions/2.7\"|" \
+		# Hack to install Python bindings in ${frameworks_dir}/Python.framework/Versions/3.9
+		reinplace -locale C "s|\$(ROOT_FLAGS) \$(PREFIX_FLAGS)|\$(ROOT_FLAGS) \--prefix=\"${frameworks_dir}/Python.framework/Versions/3.9\"|" \
 			${sedPath}/bindings/python/Makefile
 		reinplace -locale C "s|/usr/local|${prefix}|" ${worksrcpath}/mythtv/bindings/python/MythTV/static.py
 		fs-traverse f ${sedPath}/bindings/python/ {

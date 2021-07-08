@@ -76,12 +76,12 @@ variant python requires python27 description {Compatibility variant, requires +p
 variant python27 description "Bindings for python 2.7 plugins" conflicts python36 python37 python38 python39 {
     configure.args-replace  -DENABLE_PYTHON=OFF -DENABLE_PYTHON=ON
     configure.args-replace  -DENABLE_PYTHON2=OFF -DENABLE_PYTHON2=ON
-    depends_lib-append      port:python27
+    depends_lib-append      port:python39
 }
 
 variant python36 description "Bindings for python 3.6 plugins" conflicts python27 python37 python38 python39 {
     configure.args-replace  -DENABLE_PYTHON=OFF -DENABLE_PYTHON=ON
-    depends_lib-append      port:python36
+    depends_lib-append      port:python39
 }
 
 variant python37 description "Bindings for python 3.7 plugins" conflicts python27 python36 python38 python39 {

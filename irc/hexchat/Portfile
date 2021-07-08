@@ -82,7 +82,7 @@ variant python description "Enable Python scripting" requires python37 {}
 variant python37 description "Enable Python scripting, using python37" {
     depends_lib-append          port:python39
     configure.args-replace      -Dwith-python=false -Dwith-python=python-3.7
-    configure.pkg_config_path   ${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig/
+    configure.pkg_config_path   ${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig/
 }
 
 post-activate {

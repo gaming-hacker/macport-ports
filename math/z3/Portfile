@@ -59,7 +59,7 @@ variant debug description {Enable the debug build configuration} {
 
 # Options not shared with our language-binding subports
 if {${subport} eq ${name} || ${subport} eq "${name}-fstar"} {
-    depends_build-append    port:python27 \
+    depends_build-append    port:python39 \
                             port:bash
 
     patchfiles-append       build-z3-qprofdiff.diff
@@ -68,7 +68,7 @@ if {${subport} eq ${name} || ${subport} eq "${name}-fstar"} {
 
     compiler.cxx_standard 2017
 
-    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
 
     if {[vercmp ${version} "4.8.7"] >= 0} {
         configure.args-append   -DZ3_ENABLE_EXAMPLE_TARGETS=ON

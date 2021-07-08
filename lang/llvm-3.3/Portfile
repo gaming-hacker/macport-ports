@@ -128,18 +128,18 @@ configure.args          --enable-bindings=none --enable-libffi --enable-shared -
 # need arm target or compiler-rt build fails
 configure.args-append   --enable-targets=x86,powerpc,arm
 
-set pythonfullpath   /usr/bin/python2.7
+set pythonfullpath   /usr/bin/python3.9
 
 #  older systems need a newer python
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     if {${cxx_stdlib} eq "libc++"} {
         # force to libstdc++ so we can use default bootstrap compilers
         configure.cxx_stdlib    libstdc++
-        depends_build-append    port:python27-bootstrap
-        set pythonfullpath      ${bootstrap_prefix}/bin/python2.7
+        depends_build-append    port:python39-bootstrap
+        set pythonfullpath      ${bootstrap_prefix}/bin/python3.9
     } else {
-        depends_build-append    port:python27
-        set pythonfullpath      ${prefix}/bin/python2.7
+        depends_build-append    port:python39
+        set pythonfullpath      ${prefix}/bin/python3.9
     }
 }
 configure.args-append   --with-python=${pythonfullpath}

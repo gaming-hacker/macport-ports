@@ -27,7 +27,7 @@ homepage          https://saltstack.com/
     }
 
     variant python35 conflicts python36 python37 python38 description {python-3.5 support} {
-        python.default_version 35
+        python.default_version 39
         depends_build       port:py${python.version}-setuptools
 
         depends_lib-append  port:py${python.version}-asn1 \
@@ -54,7 +54,7 @@ homepage          https://saltstack.com/
     }
 
     variant python36 conflicts python35 python37 python38 description {python-3.6 support} {
-        python.default_version 36
+        python.default_version 39
         depends_build       port:py${python.version}-setuptools
 
         depends_lib-append  port:py${python.version}-asn1 \

@@ -30,7 +30,7 @@ depends_run             path:bin/inkscape:inkscape \
                         port:pdf2svg \
                         bin:pdflatex:texlive-latex
 
-set python.version 27
+set python.version 39
 
 variant tkinter description {use py-tkinter backend} {
     depends_run-append  port:py${python.version}-tkinter

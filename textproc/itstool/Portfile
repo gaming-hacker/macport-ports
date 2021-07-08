@@ -34,10 +34,10 @@ patchfiles          patch-configure.diff
 
 variant python27 conflicts python37 python38 python39 description {Use Python 2.7} {
     configure.python \
-                    ${prefix}/bin/python2.7
+                    ${prefix}/bin/python3.9
 
     depends_lib-append \
-                    port:py27-libxml2
+                    port:py39-libxml2
 }
 
 variant python37 conflicts python27 python38 python39 description {Use Python 3.7} {

@@ -57,22 +57,22 @@ variant glade description {Enable glade catalog support} {
 }
 
 variant python36 conflicts python37 python38 description {Enable Python 3.6 plugin support} {
-    depends_lib-append          port:py36-gobject3
-    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.6
+    depends_lib-append          port:py39-gobject3
+    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path-append   ${python_prefix}/lib/pkgconfig
     configure.args-replace      -Dpython3=false -Dpython3=true
 }
 
 variant python37 conflicts python36 python38 description {Enable Python 3.7 plugin support} {
     depends_lib-append          port:py39-gobject3
-    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.7
+    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path-append   ${python_prefix}/lib/pkgconfig
     configure.args-replace      -Dpython3=false -Dpython3=true
 }
 
 variant python38 conflicts python36 python37 description {Enable Python 3.8 plugin support} {
     depends_lib-append          port:py39-gobject3
-    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.8
+    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path-append   ${python_prefix}/lib/pkgconfig
     configure.args-replace      -Dpython3=false -Dpython3=true
 }

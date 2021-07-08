@@ -37,11 +37,11 @@ patchfiles          patch-configure.diff
 configure.args-append   --disable-allbindings --enable-gtkspell
 
 subport py27-gtkspell {
-    depends_lib-append port:py27-pygtk
+    depends_lib-append port:py39-pygtk
 }
 
 if {$subport == "py27-gtkspell"} {
-    set python.branch   2.7
+    set python.branch 3.9
 } else {
     set python.branch dummy
 }

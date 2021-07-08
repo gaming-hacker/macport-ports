@@ -16,7 +16,7 @@ long_description    pyfa is the Python Fitting Assistant, a standalone \
                     application to create ship fittings for the \
                     EVE-Online SciFi MMORPG.
 
-python.default_version  27
+python.default_version 39
 
 depends_run-append  port:py${python.version}-dateutil \
                     port:py${python.version}-logbook \

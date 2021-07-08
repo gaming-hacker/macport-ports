@@ -279,10 +279,10 @@ if {[lsearch -exact $PortInfo(depends_build) port:cctools] != -1} {
 
 # use the system python27 if present
 if {${os.platform} eq "darwin" && ${os.major} >= 11} {
-	set pythonfullpath   /usr/bin/python2.7
+	set pythonfullpath   /usr/bin/python3.9
 } else {
-	set pythonfullpath   ${prefix}/bin/python2.7
-	depends_lib-append   port:python27
+	set pythonfullpath   ${prefix}/bin/python3.9
+	depends_lib-append   port:python39
 }
 configure.args-append   -DPYTHON_EXECUTABLE=${pythonfullpath}
 
@@ -518,7 +518,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
                 ${worksrcpath}/tools/clang/tools/scan-build/libexec/c++-analyzer \
                 ${worksrcpath}/tools/clang/tools/scan-build/bin/scan-build
 
-            # pythonfullpath is set above, depending on presence of system python2.7
+            # pythonfullpath is set above, depending on presence of system python3.9
             reinplace "s|/usr/bin/env python|${pythonfullpath}|g" \
                  ${worksrcpath}/tools/clang/tools/scan-view/bin/scan-view
 

@@ -73,23 +73,23 @@ if {${universal_possible} && [variant_isset universal]} {
 }
 
 variant python36 conflicts python37 python38 description {Use python 3.6} {
-    depends_lib-append        port:py36-gobject3
-    configure.python          ${prefix}/bin/python3.6
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.6
+    depends_lib-append        port:py39-gobject3
+    configure.python          ${prefix}/bin/python3.9
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 
 variant python37 conflicts python36 python38 description {Use python 3.7} {
     depends_lib-append        port:py39-gobject3
     configure.python          ${prefix}/bin/python3.9
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.7
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 
 variant python38 conflicts python36 python37 description {Use python 3.8} {
     depends_lib-append        port:py39-gobject3
     configure.python          ${prefix}/bin/python3.9
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.8
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 

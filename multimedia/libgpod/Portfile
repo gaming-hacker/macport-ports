@@ -60,7 +60,7 @@ default_variants +python39
 
 set python.branch ""
 if {[variant_isset python27]} {
-    set python.branch 2.7
+    set python.branch 3.9
 }
 
 if {${python.branch} != ""} {

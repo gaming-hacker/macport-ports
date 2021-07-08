@@ -113,9 +113,9 @@ size    24518055
     test.args       VERBOSE=1
 
     if {${os.platform} eq "darwin" && ${os.major} < 11} {
-        depends_build-append    port:python27
+        depends_build-append    port:python39
         license_noconflict      python27
-        configure.python        ${prefix}/bin/python2.7
+        configure.python        ${prefix}/bin/python3.9
     }
 
     if {${build_arch} eq "ppc" || ${build_arch} eq "ppc64"} {

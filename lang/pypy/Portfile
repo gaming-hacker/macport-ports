@@ -18,7 +18,7 @@ homepage            https://www.pypy.org/
 master_sites        https://downloads.python.org/${name}
 
 depends_build       port:pkgconfig \
-                    port:py27-docutils
+                    port:py39-docutils
 depends_lib         port:libffi \
                     port:sqlite3 \
                     port:bzip2 \
@@ -55,11 +55,11 @@ subport pypy3 {
     # remove after 20210925
     replaced_by    pypy36
 
-    set python.branch 3.6
+    set python.branch 3.9
 }
 
 subport pypy36 {
-    set python.branch 3.6
+    set python.branch 3.9
 
     set module_scripts(venv) venv
     set module_scripts(idle) idlelib
@@ -84,18 +84,18 @@ subport pypy37 {
 
 
 subport pypy-tkinter {
-    set python.branch   2.7
+    set python.branch 3.9
 }
 
 subport pypy3-tkinter {
     # remove after 20210925
     replaced_by         pypy36-tkinter
 
-    set python.branch 3.6
+    set python.branch 3.9
 }
 
 subport pypy36-tkinter {
-    set python.branch   3.6
+    set python.branch 3.9
 }
 
 subport pypy37-tkinter {
@@ -103,7 +103,7 @@ subport pypy37-tkinter {
 }
 
 if {$subport == ${name}} {
-    set python.branch 2.7
+    set python.branch 3.9
 
     depends_run-append port:python2_select
     select.entries-append [list python2 python2-$subport $subport]
@@ -203,8 +203,8 @@ if {$subport ne $name} {
         build.cmd       ${prefix}/lib/pypy-bootstrap/bin/pypy
     } else {
         # fall back to good old CPython...
-        depends_build-append port:python27 port:py27-pycparser port:py27-cffi
-        build.cmd       ${prefix}/bin/python2.7
+        depends_build-append port:python39 port:py39-pycparser port:py39-cffi
+        build.cmd       ${prefix}/bin/python3.9
     }
 }
 

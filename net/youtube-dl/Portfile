@@ -75,11 +75,11 @@ if {![variant_isset python27] && ![variant_isset python35] && ![variant_isset py
 }
 
 if {[variant_isset python27]} {
-    python.default_version  27
+    python.default_version 39
 } elseif {[variant_isset python35]} {
-    python.default_version  35
+    python.default_version 39
 } elseif {[variant_isset python36]} {
-    python.default_version  36
+    python.default_version 39
 } elseif {[variant_isset python37]} {
     python.default_version 39
 } elseif {[variant_isset python38]} {

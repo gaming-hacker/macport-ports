@@ -44,15 +44,15 @@ build.args-append   V=1
 variant python35 description "Enable Python modules, using python35" conflicts python36 {
     configure.args-replace --disable-python --enable-python
     depends_build-append port:pkgconfig
-    depends_lib-append port:python35
-    configure.pkg_config_path ${frameworks_dir}/Python.framework/Versions/3.5/lib/pkgconfig/
+    depends_lib-append port:python39
+    configure.pkg_config_path ${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig/
 }
 
 variant python36 description "Enable Python modules, using python36" conflicts python35 {
     configure.args-replace --disable-python --enable-python
     depends_build-append port:pkgconfig
-    depends_lib-append port:python36
-    configure.pkg_config_path ${frameworks_dir}/Python.framework/Versions/3.6/lib/pkgconfig/
+    depends_lib-append port:python39
+    configure.pkg_config_path ${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig/
 }
 
 # Will fail in trace mode due to this downloads gtest

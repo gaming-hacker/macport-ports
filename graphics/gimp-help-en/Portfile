@@ -41,7 +41,7 @@ depends_build   port:pkgconfig \
                 port:libxml2 \
                 port:gettext \
                 port:pngcrush \
-                port:py27-libxml2
+                port:py39-libxml2
 
 post-patch {
     reinplace "s|#!/usr/bin/env python|#!${configure.python}|" \
@@ -51,7 +51,7 @@ post-patch {
 configure.args  --without-gimp
 
 configure.env   ALL_LINGUAS=${lingua}
-configure.python ${prefix}/bin/python2.7
+configure.python ${prefix}/bin/python3.9
 
 livecheck.type  regex
 livecheck.url   http://download.gimp.org/pub/gimp/help/

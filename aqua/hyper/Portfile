@@ -31,7 +31,7 @@ size    1665558
 
 patchfiles          patch-package-json.diff
 
-depends_build       port:python27 \
+depends_build       port:python39 \
                     port:yarn
 
 build.env-append    CSC_IDENTITY_AUTO_DISCOVERY=false

@@ -27,7 +27,7 @@ variant python38 conflicts python36 python37 python39 description "Use Python 3.
 variant python39 conflicts python36 python37 python38 description "Use Python 3.9" {}
 
 if {[variant_isset python36]} {
-    python.default_version 36
+    python.default_version 39
 } elseif {[variant_isset python37]} {
     python.default_version 39
 } elseif {[variant_isset python38]} {

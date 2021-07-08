@@ -28,7 +28,7 @@ depends_build       port:intltool
 depends_lib         port:desktop-file-utils \
                     port:gtk2 \
                     port:pcb \
-                    port:py27-pygtk \
+                    port:py39-pygtk \
                     port:dbus-python27
 depends_run         port:geda-gaf
 
@@ -45,7 +45,7 @@ pre-configure {
 use_autoreconf  yes
 autoreconf.args -fvi
 
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.9
 configure.args      --disable-update-desktop-database
 
 post-activate {

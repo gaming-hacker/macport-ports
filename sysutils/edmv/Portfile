@@ -19,14 +19,14 @@ long_description        edmv allows you to interactively rename files with the \
 checksums               rmd160  ceefdd6db98ecb69a612d368de3f8d6577e1e066 \
 sha256  8fbe7efc519f291f936aa001f3960dec56b6149c8fed06402a504ae993d1ce31
 
-python.default_version  35
+python.default_version 39
 homepage                https://github.com/casey/edmv
 supported_archs         noarch
 use_configure           no
 build                   {}
 
 post-patch {
-    reinplace "s|#!/usr/bin/env python|#!${prefix}/bin/python3.5|" ${worksrcpath}/edmv
+    reinplace "s|#!/usr/bin/env python|#!${prefix}/bin/python3.9|" ${worksrcpath}/edmv
 }
 
 destroot {

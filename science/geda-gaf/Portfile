@@ -41,7 +41,7 @@ depends_lib \
     port:gtk2 \
     port:guile \
     port:libffi \
-    port:python27
+    port:python39
 
 patchfiles-append \
     fix-st_mtim.patch \

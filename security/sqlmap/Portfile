@@ -43,7 +43,7 @@ post-patch {
 }
 
 variant python27 conflicts python37 python38 description {Build for Python 2.7} {
-    python.default_version 27
+    python.default_version 39
     depends_build-append \
                     port:py${python.version}-setuptools
 }

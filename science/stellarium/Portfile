@@ -51,7 +51,7 @@ size   362256651
         path:lib/libgps.dylib:gpsd \
         port:gettext \
         port:doxygen \
-        port:python27
+        port:python39
 
     # for libqcocoa.dylib (if not above)
 
@@ -79,7 +79,7 @@ size   362256651
 
     configure.args-append \
         -DMP_APPLICATIONS_DIR=${applications_dir} \
-        -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+        -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
 
     # This post-destroot phase is similar to the 'make macosx_bundle' target,
     # but it does not copy libraries into the bundle and does not require perl as

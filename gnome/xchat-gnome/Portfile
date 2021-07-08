@@ -42,7 +42,7 @@ depends_lib         port:libgnomeui \
                     port:libsexy \
                     port:libcanberra  \
                     path:lib/libssl.dylib:openssl \
-                    port:python27 \
+                    port:python39 \
                     port:perl${perl5.major} \
                     port:desktop-file-utils \
                     port:rarian
@@ -65,7 +65,7 @@ configure.cmd       ./autogen.sh
 configure.pkg_config_path \
                     ${prefix}/lib/openssl-1.0/pkgconfig
 
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.9
 configure.perl      ${perl5.bin}
 
 configure.args      --disable-mmx \

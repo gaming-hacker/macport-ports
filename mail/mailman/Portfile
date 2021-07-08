@@ -20,8 +20,8 @@ long_description    Mailman is free software for managing electronic \
                     filtering, digest delivery, spam filters, and more.
 homepage            http://www.list.org/
 
-depends_lib         port:python27 \
-                    port:py27-dnspython
+depends_lib         port:python39 \
+                    port:py39-dnspython
 
 master_sites        gnu
 extract.suffix      .tgz
@@ -59,7 +59,7 @@ configure.args      --with-cgi-ext=.cgi \
                     --with-cgi-gid=${cgigroup} \
                     --with-groupname=${mmgroup} \
                     --with-mail-gid=${mmgroup} \
-                    --with-python=${prefix}/bin/python2.7 \
+                    --with-python=${prefix}/bin/python3.9 \
                     --with-username=${mmuser} \
                     --without-permcheck
 

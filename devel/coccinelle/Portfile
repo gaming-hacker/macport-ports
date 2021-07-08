@@ -46,13 +46,13 @@ configure.args-append \
 # build.target        opt-only
 
 variant python27 conflicts python34 description {Build with python 2.7 support} {
-    set mypydir ${frameworks_dir}/Python.framework/Versions/2.7
+    set mypydir ${frameworks_dir}/Python.framework/Versions/3.9
     configure.args-delete   --disable-python
     configure.args-append   --enable-python \
                             -with-python=${mypydir}/bin/python
     configure.env-append \
                         PKG_CONFIG_PATH=${mypydir}/lib/pkgconfig
-    depends_lib-append      port:python27
+    depends_lib-append      port:python39
 }
 
 variant python34 conflicts python27 description {Build with python 3.4 support} {

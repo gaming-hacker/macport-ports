@@ -21,7 +21,7 @@ sha256  e3e672be4de10fb33c7983625e56e025a3a18354a11d4957c11a9396e321ef49 \
 size    44105
 
 # Python 3+ doesn't work
-python.default_version 27
+python.default_version 39
 
 depends_build       port:py${python.version}-setuptools
 depends_lib-append  port:py${python.version}-enum34 \

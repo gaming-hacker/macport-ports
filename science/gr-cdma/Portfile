@@ -48,7 +48,7 @@ sha256 18ba151aa085aeb9cdc8fc5329f51d1d4af012c1bc58a1a303fe0911809752a9
     patch.pre_args -p1
     # 2nd part of patch
     post-patch {
-        reinplace "s|@PYTHON_HOME@|${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/cdma|g" ${worksrcpath}/python/cdma_parameters.py
+        reinplace "s|@PYTHON_HOME@|${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages/cdma|g" ${worksrcpath}/python/cdma_parameters.py
     }
 
 }

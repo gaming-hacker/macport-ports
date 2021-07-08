@@ -40,9 +40,9 @@ configure.args      --disable-python \
                     --disable-silent-rules
 
 variant python36 conflicts python37 python38 description {Python plugins use python 3.6} {
-    depends_build-append      port:python36
-    configure.python          ${prefix}/bin/python3.6
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.6
+    depends_build-append      port:python39
+    configure.python          ${prefix}/bin/python3.9
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
     configure.args-replace    --disable-python --enable-python
 }
@@ -50,7 +50,7 @@ variant python36 conflicts python37 python38 description {Python plugins use pyt
 variant python37 conflicts python36 python38 description {Python plugins use python 3.7} {
     depends_build-append      port:python39
     configure.python          ${prefix}/bin/python3.9
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.7
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
     configure.args-replace    --disable-python --enable-python
 }
@@ -58,7 +58,7 @@ variant python37 conflicts python36 python38 description {Python plugins use pyt
 variant python38 conflicts python36 python37 description {Python plugins use python 3.8} {
     depends_build-append      port:python39
     configure.python          ${prefix}/bin/python3.9
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.8
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
     configure.args-replace    --disable-python --enable-python
 }

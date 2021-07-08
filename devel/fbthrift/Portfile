@@ -22,7 +22,7 @@ size    5640883
 
 # doesn't build with libressl as of 2016-09-05
 depends_lib-append  port:bison \
-                    port:python27 \
+                    port:python39 \
                     port:flex \
                     port:gflags \
                     port:google-glog \

@@ -28,13 +28,13 @@ size    45192
 python.versions     27 35 36
 
 variant python27 conflicts python35 python36 description {Use Python 2.7} {
-    python.default_version 27
+    python.default_version 39
 }
 variant python35 conflicts python27 python36 description {Use Python 3.5} {
-    python.default_version 35
+    python.default_version 39
 }
 variant python36 conflicts python27 python35 description {Use Python 3.6} {
-    python.default_version 36
+    python.default_version 39
 }
 if {![variant_isset python35] && ![variant_isset python36]} {
     default_variants +python39

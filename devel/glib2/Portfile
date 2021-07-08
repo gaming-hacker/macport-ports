@@ -120,8 +120,8 @@ platform darwin {
 if {${os.platform} eq "darwin" && ${os.major} <= 10} {
     # Requires python 2.7 as of 2.53.4
     # See https://bugzilla.gnome.org/show_bug.cgi?id=785193
-    depends_lib-append      port:python27
-    configure.python        ${prefix}/bin/python2.7
+    depends_lib-append      port:python39
+    configure.python        ${prefix}/bin/python3.9
 }
 
 variant quartz conflicts x11 {

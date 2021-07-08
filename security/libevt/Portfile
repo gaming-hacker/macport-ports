@@ -41,15 +41,15 @@ variant debug description {Enable verbose and debug output} {
 
 variant python27 description {Python Bindings using Python 2.7} {
     ## Enforce the right python config
-    configure.env       PYTHON_CONFIG=${prefix}/bin/python2.7-config PYTHON_VERSION=2.7
+    configure.env       PYTHON_CONFIG=${prefix}/bin/python3.9-config PYTHON_VERSION=2.7
 
-    depends_lib-append port:python27
+    depends_lib-append port:python39
     configure.args-append --enable-python \
-        --with-pyprefix=`${prefix}/bin/python2.7-config --prefix`
+        --with-pyprefix=`${prefix}/bin/python3.9-config --prefix`
     post-destroot {
-        xinstall -d ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/
+        xinstall -d ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages/
         foreach file [glob -nocomplain -directory ${destroot}/Library/Python/2.7/site-packages *] {
-            move ${file} ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/
+            move ${file} ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages/
         }
     }
 }

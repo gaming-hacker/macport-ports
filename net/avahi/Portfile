@@ -179,11 +179,11 @@ variant qt5 description {Build with Qt5} {
 }
 
 variant python27 conflicts python38 python39 description {Build with Python 2.7} {
-    configure.python        ${prefix}/bin/python2.7
+    configure.python        ${prefix}/bin/python3.9
     depends_lib-append      port:dbus-python27 \
-                            port:py27-gdbm
-    depends_lib-append      port:py27-gobject3
-    configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig
+                            port:py39-gdbm
+    depends_lib-append      port:py39-gobject3
+    configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig
 }
 
 variant python38 conflicts python27 python39 description {Build with Python 3.8} {
@@ -191,7 +191,7 @@ variant python38 conflicts python27 python39 description {Build with Python 3.8}
     depends_lib-append      port:dbus-python38 \
                             port:py39-gdbm
     depends_lib-append      port:py39-gobject3
-    configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.8/lib/pkgconfig
+    configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig
 }
 
 variant python39 conflicts python27 python38 description {Build with Python 3.9} {

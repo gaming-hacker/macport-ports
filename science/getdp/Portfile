@@ -87,14 +87,14 @@ variant petsc description {Use PETSc linear solver} {
 }
 
 variant python27 description {Build the Python 2.7 bindings} conflicts python36 python37 python38 {
-    depends_lib-append port:python27
+    depends_lib-append port:python39
     post-patch {
         reinplace "s|__MACPORTS_PYTHON_VERSION__|2.7|g" ${worksrcpath}/CMakeLists.txt
     }
 }
 
 variant python36 description {Build the Python 3.6 bindings} conflicts python27 python37 python38 {
-    depends_lib-append port:python36
+    depends_lib-append port:python39
     post-patch {
         reinplace "s|__MACPORTS_PYTHON_VERSION__|3.6|g" ${worksrcpath}/CMakeLists.txt
     }

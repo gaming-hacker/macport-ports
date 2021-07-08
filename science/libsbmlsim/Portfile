@@ -39,14 +39,14 @@ variant java description {Generate Java language bindings.} {
 
 variant python27 conflicts python36 python37 python38 python39 description {Generate Python version 2.7 language bindings.} {
     depends_build-append  port:swig port:swig-python
-    depends_lib-append      port:python27
-    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+    depends_lib-append      port:python39
+    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
 }
 
 variant python36 conflicts python27 python37 python38 python39 description {Generate Python version 3.6 language bindings.} {
     depends_build-append  port:swig port:swig-python
-    depends_lib-append      port:python36
-    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.6
+    depends_lib-append      port:python39
+    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
 }
 
 variant python37 conflicts python27 python36 python38 python39 description {Generate Python version 3.7 language bindings.} {

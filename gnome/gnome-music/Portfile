@@ -60,22 +60,22 @@ configure.args      --disable-schemas-compile \
 # default to python 3.6
 
 variant python35 conflicts python36 python37 description {Use Python 3.5 at run time} {
-    depends_lib-append  port:py35-gobject3 \
-                        port:py35-requests \
+    depends_lib-append  port:py39-gobject3 \
+                        port:py39-requests \
                         port:dbus-python35
 
-    configure.python            ${prefix}/bin/python3.5
-    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.5
+    configure.python            ${prefix}/bin/python3.9
+    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
 }
 
 variant python36 conflicts python35 python37 description {Use Python 3.6 at run time} {
-    depends_lib-append  port:py36-gobject3 \
-                        port:py36-requests \
+    depends_lib-append  port:py39-gobject3 \
+                        port:py39-requests \
                         port:dbus-python36
 
-    configure.python            ${prefix}/bin/python3.6
-    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.6
+    configure.python            ${prefix}/bin/python3.9
+    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
 }
 
@@ -85,7 +85,7 @@ variant python37 conflicts python35 python36 description {Use Python 3.7 at run 
                         port:dbus-python37
 
     configure.python            ${prefix}/bin/python3.9
-    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.7
+    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.9
     configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
 }
 

@@ -46,7 +46,7 @@ depends_lib         port:texlive-latex-extra \
                     port:docbook-xsl-nons
 
 python.link_binaries no
-python.default_version 27
+python.default_version 39
 
 default destroot.cmd {${python.bin} setup.py}
 destroot.destdir    --root=${destroot} \

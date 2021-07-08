@@ -34,7 +34,7 @@ patchfiles          patch-cflags.diff \
 
 post-patch {
     reinplace -W ${worksrcpath}/src \
-        "s|^#!/usr/bin/env python|#!${prefix}/bin/python2.7|" \
+        "s|^#!/usr/bin/env python|#!${prefix}/bin/python3.9|" \
         bed_to_juncs \
         contig_to_chr_coords \
         generate_chromosome.py \
@@ -61,14 +61,14 @@ depends_build-append    port:autoconf \
                         port:automake \
                         port:libtool
 
-depends_lib-append      port:python27 \
+depends_lib-append      port:python39 \
                         port:zlib \
                         port:samtools-0.1 \
                         port:seqan-1
 
 # TopHat attempts to install its own versions
-depends_run-append       port:py27-intervaltree2 \
-                         port:py27-sortedcontainers
+depends_run-append       port:py39-intervaltree2 \
+                         port:py39-sortedcontainers
 post-destroot {
     delete \
         ${destroot}${prefix}/bin/intervaltree \

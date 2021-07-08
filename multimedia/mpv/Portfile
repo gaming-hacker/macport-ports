@@ -551,8 +551,8 @@ variant debug description {Compile with debugging symbols} {
 variant printable_doc description {Generate printable documents (PDF help)} {
     # py27-pdfrw and py27-Pillow are needed by rst2pdf.
     depends_build-append    port:rst2pdf \
-                            port:py27-pdfrw \
-                            port:py27-Pillow
+                            port:py39-pdfrw \
+                            port:py39-Pillow
     configure.args-replace  --disable-pdf-build \
                             --enable-pdf-build
 }

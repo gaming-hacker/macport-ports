@@ -24,13 +24,13 @@ sha256  f419f2748db77bc91c9f5f153b11affbdf6da5199d385b60e2a88e0cbe6da2bf \
 size    1643965
 
 depends_build-append \
-                    port:python27
+                    port:python39
 
 extract.mkdir       yes
 
 compiler.cxx_standard 2017
 
-configure.python    ${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
+configure.python    ${frameworks_dir}/Python.framework/Versions/3.9/bin/python3.9
 
 configure.args      -DPYTHON_EXECUTABLE=${configure.python}
 

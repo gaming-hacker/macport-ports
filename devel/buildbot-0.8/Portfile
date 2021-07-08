@@ -30,7 +30,7 @@ homepage                https://buildbot.net
 python.rootname         buildbot
 dist_subdir             buildbot
 
-python.default_version  27
+python.default_version 39
 
 depends_lib-append      port:py${python.version}-dateutil \
                         port:py${python.version}-jinja2 \

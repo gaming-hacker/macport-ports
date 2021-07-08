@@ -14,13 +14,13 @@ homepage                   http://openknights.sourceforge.net/
 master_sites               sourceforge
 master_sites.mirror_subdir openknights
 depends_build              port:bison
-depends_lib                port:python27
-configure.python           ${prefix}/bin/python2.7
+depends_lib                port:python39
+configure.python           ${prefix}/bin/python3.9
 checksums                  sha1 cab2c8af5b0b2834444a018d87663614f8c057cf
 use_parallel_build         no
 
 use_autoreconf             yes
 
 patchfiles                 remove-fno-default-inline.patch \
-                           python2.7.patch \
+                           python3.9.patch \
                            bison.patch

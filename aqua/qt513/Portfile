@@ -218,7 +218,7 @@ array set modules {
             d9a524f45fe9e136cda2252f9d7013ec17046d907e3f39606db920987c22d1fd
             20940748
         }
-        "port:python27"
+        "port:python39"
         ""
         "qtbase qtsvg"
         {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
@@ -593,7 +593,7 @@ array set modules {
             adcf56b5de6f34744bba2307b696fc75611884f4270e87dfa760d6e99dd711bb
             255593964
         }
-        "port:python27 port:py27-ply path:bin/ninja:ninja port:gperf port:bison port:flex"
+        "port:python39 port:py39-ply path:bin/ninja:ninja port:gperf port:bison port:flex"
         "port:fontconfig port:dbus port:harfbuzz path:lib/pkgconfig/glib-2.0.pc:glib2 port:zlib port:minizip port:libevent port:libxml2 port:jsoncpp port:protobuf3-cpp port:poppler port:pulseaudio port:icu path:lib/libavcodec.dylib:ffmpeg port:libopus port:webp port:libpng port:lcms2 port:freetype port:re2 port:snappy"
         "qtdeclarative qtquickcontrols qtquickcontrols2 qtlocation qtwebchannel qttools"
         {"Qt WebEngine"}
@@ -623,7 +623,7 @@ array set modules {
             28a560becd800a4229bfac317c2e5407cd3cc95308bc4c3ca90dba2577b052cf
             35300628
         }
-        "port:python27"
+        "port:python39"
         "port:fontconfig port:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3"
         "qtbase qtdeclarative qtlocation qtmultimedia qtsensors qtwebchannel qtxmlpatterns"
         {"Qt WebKit" "Qt WebKit Widgets"}
@@ -1825,7 +1825,7 @@ foreach deps ${depends_check} {
         #    (see mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.9
     }
 }
 if { ${python_framework} ne "" } {

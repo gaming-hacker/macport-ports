@@ -128,11 +128,11 @@ variant chmodbpf description {Enable Wireshark to acces macOS capture devices} {
 }
 
 variant python35 description {Use python35 during build} {
-    depends_build-append    port:python35
+    depends_build-append    port:python39
 }
 
 variant python36 description {Use python36 during build} {
-    depends_build-append    port:python36
+    depends_build-append    port:python39
 }
 
 variant python37 description {Use python37 during build} {

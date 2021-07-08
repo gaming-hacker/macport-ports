@@ -29,7 +29,7 @@ depends_build   port:pkgconfig \
                 port:autoconf \
                 port:automake \
                 port:libtool \
-                port:python27
+                port:python39
 
 depends_lib     port:telepathy-glib \
                 port:libxml2 \
@@ -42,7 +42,7 @@ gobject_introspection yes
 configure.cmd   ./autogen.sh
 
 configure.python \
-                ${prefix}/bin/python2.7
+                ${prefix}/bin/python3.9
 
 configure.args  --disable-silent-rules \
                 --disable-coding-style-checks \

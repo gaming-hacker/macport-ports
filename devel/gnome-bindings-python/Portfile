@@ -20,11 +20,11 @@ long_description \
 
 homepage        https://www.gnome.org/
 
-depends_lib     port:py27-atspi \
-                port:py27-gnome \
-                port:py27-gobject \
-                port:py27-pygtk \
-                port:py27-orbit
+depends_lib     port:py39-atspi \
+                port:py39-gnome \
+                port:py39-gobject \
+                port:py39-pygtk \
+                port:py39-orbit
 
 distfiles
 

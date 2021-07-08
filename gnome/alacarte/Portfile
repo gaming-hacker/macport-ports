@@ -39,7 +39,7 @@ depends_build   port:pkgconfig \
 depends_lib     port:desktop-file-utils \
                 port:gtk3 \
                 port:gnome-menus \
-                port:py27-gobject3
+                port:py39-gobject3
 
 depends_run     port:adwaita-icon-theme
 
@@ -61,8 +61,8 @@ configure.cmd   ./autogen.sh
 
 # python3 is not supported
 
-configure.python            ${prefix}/bin/python2.7
-set python_prefix           ${frameworks_dir}/Python.framework/Versions/2.7
+configure.python            ${prefix}/bin/python3.9
+set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.9
 configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
 
 configure.args  --disable-silent-rules

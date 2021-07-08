@@ -25,8 +25,8 @@ mpi.setup           require
 
 boost.version       1.71
 
-depends_build       port:py27-docutils \
-                    port:py27-pygments
+depends_build       port:py39-docutils \
+                    port:py39-pygments
 
 configure.env-append \
     MPI_CXX_COMPILER=${mpi.cxx}

@@ -57,7 +57,7 @@ subport             libftdi1 {
     depends_lib-append  port:gettext \
                         port:libconfuse \
                         port:libusb \
-                        port:python27 \
+                        port:python39 \
                         port:swig-python
 
     boost.depends_type  build
@@ -68,12 +68,12 @@ size    116297
 
 
     cmake.out_of_source yes
-    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
-                            -DPYTHON_LIBRARY=${frameworks_dir}/Python.framework/Versions/2.7/lib/libpython2.7.dylib \
+    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 \
+                            -DPYTHON_LIBRARY=${frameworks_dir}/Python.framework/Versions/3.9/lib/libpython3.9.dylib \
                             -DDOCUMENTATION=off \
                             -DCMAKE_CXX_FLAGS=${configure.cxxflags} \
                             -DCMAKE_C_FLAGS=${configure.cflags} \
-                            -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/2.7/Headers
+                            -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/3.9/Headers
 
     livecheck.regex     ${subport}-(1(\\.\\d+)+)
 }

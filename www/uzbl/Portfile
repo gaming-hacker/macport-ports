@@ -24,14 +24,14 @@ depends_build       port:pkgconfig
 
 depends_lib         port:gtk2 \
                     port:libsoup \
-                    port:python27 \
+                    port:python39 \
                     path:lib/pkgconfig/webkit-1.0.pc:webkit-gtk
 
-depends_run         port:py27-configparser \
-                    port:py27-pygtk \
-                    port:py27-six
+depends_run         port:py39-configparser \
+                    port:py39-pygtk \
+                    port:py39-six
 
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.9
 
 post-patch {
     foreach f [concat [glob ${worksrcpath}/bin/*] [glob ${worksrcpath}/examples/data/scripts/*]] {
@@ -53,8 +53,8 @@ build.args          CC="${configure.cc} [get_canonical_archflags cc]" \
 destroot.args       {*}${build.args}
 
 post-destroot {
-    xinstall -d ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7
-    move ${destroot}${prefix}/lib/python2.7/site-packages ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/
+    xinstall -d ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9
+    move ${destroot}${prefix}/lib/python3.9/site-packages ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/
 }
 
 platform darwin {

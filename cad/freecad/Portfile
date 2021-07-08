@@ -41,12 +41,12 @@ depends_lib-append      port:Coin-framework \
                         port:eigen3 \
                         port:freetype \
                         port:opencascade \
-                        port:py27-backports-functools_lru_cache \
-                        port:py27-matplotlib \
-                        port:py27-pivy \
-                        port:py27-pyside \
-                        port:py27-pyside-tools \
-                        port:py27-shiboken \
+                        port:py39-backports-functools_lru_cache \
+                        port:py39-matplotlib \
+                        port:py39-pivy \
+                        port:py39-pyside \
+                        port:py39-pyside-tools \
+                        port:py39-shiboken \
                         port:SoQt \
                         port:swig \
                         port:swig-python \
@@ -107,11 +107,11 @@ pre-configure {
     set libgfortran [exec ${configure.fc} --print-file-name libgfortran.a]
     configure.ldflags-append "-L[file dirname ${libgfortran}]"
 
-    set python_prefix [exec ${prefix}/bin/python2.7-config --prefix]
+    set python_prefix [exec ${prefix}/bin/python3.9-config --prefix]
     configure.args-append -DBUILD_ROBOT=NO \
         -DPYTHON_LIBRARY=${python_prefix}/Python \
         -DPYTHON_INCLUDE_DIR=${python_prefix}/Headers \
-        -DPYTHON_EXECUTABLE=${python_prefix}/bin/python2.7 \
+        -DPYTHON_EXECUTABLE=${python_prefix}/bin/python3.9 \
         -DShiboken_DIR=${python_prefix}/lib/cmake/Shiboken-1.2.4 \
         -DPySide_DIR=${python_prefix}/lib/cmake/PySide-1.2.4 \
         -DOCE_DIR=${frameworks_dir}/OCE.framework/Versions/0.17/Resources

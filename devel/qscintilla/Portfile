@@ -107,7 +107,7 @@ foreach qt_major {4 5} {
         distfiles
         patchfiles
         supported_archs noarch
-        depends_lib port:py27-qscintilla-qt${qt_major}
+        depends_lib port:py39-qscintilla-qt${qt_major}
         build {}
         destroot {
             xinstall -d -m 755 ${destroot}${prefix}/share/doc/${subport}

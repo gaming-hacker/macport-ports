@@ -26,7 +26,7 @@ checksums               rmd160  c7804f08f519d0cece2cfc8c998517b7ae60cd8c \
 sha256  5b82583d15323e9cbf072c259c824bfd245cb4c82433a13d83e301feb0fbca9e \
 size    648059
 
-set python_branch       3.8
+set python.branch 3.9
 set python_version      [string map {. ""} ${python_branch}]
 
 configure.args-append   -DPYBIND11_PYTHON_VERSION=${python_branch} \

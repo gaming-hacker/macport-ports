@@ -80,25 +80,25 @@ configure.args-append   -DCGAL_INCLUDE_DIR=${prefix}/include \
 variant python27 description {Build with Python 2.7 bindings} \
                  conflicts python35 python36 python37 {
 
-    depends_build-append    port:py27-numpy
-    configure.args-append   -DPYTHON_EXE=${prefix}/bin/python2.7
-    configure.args-append   -DPYTHON_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/2.7/
+    depends_build-append    port:py39-numpy
+    configure.args-append   -DPYTHON_EXE=${prefix}/bin/python3.9
+    configure.args-append   -DPYTHON_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/3.9/
 }
 
 variant python35 description {Build with Python 3.5 bindings} \
                  conflicts python27 python36 python37 {
 
-    depends_build-append    port:py35-numpy
-    configure.args-append   -DPYTHON_EXE=${prefix}/bin/python3.5
-    configure.args-append   -DPYTHON_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/3.5/
+    depends_build-append    port:py39-numpy
+    configure.args-append   -DPYTHON_EXE=${prefix}/bin/python3.9
+    configure.args-append   -DPYTHON_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/3.9/
 }
 
 variant python36 description {Build with Python 3.6 bindings} \
                  conflicts python27 python35 python37 {
 
-    depends_build-append    port:py36-numpy
-    configure.args-append   -DPYTHON_EXE=${prefix}/bin/python3.6
-    configure.args-append   -DPYTHON_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/3.6/
+    depends_build-append    port:py39-numpy
+    configure.args-append   -DPYTHON_EXE=${prefix}/bin/python3.9
+    configure.args-append   -DPYTHON_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/3.9/
 }
 
 variant python37 description {Build with Python 2.7 bindings} \
@@ -106,5 +106,5 @@ variant python37 description {Build with Python 2.7 bindings} \
 
     depends_build-append    port:py39-numpy
     configure.args-append   -DPYTHON_EXE=${prefix}/bin/python3.9
-    configure.args-append   -DPYTHON_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/3.7/
+    configure.args-append   -DPYTHON_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/3.9/
 }

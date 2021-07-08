@@ -56,14 +56,14 @@ configure.args      --with-xml-catalog=${prefix}/etc/xml/catalog \
 
 variant python36 conflicts python37 python38 python39 description {Build using Python 3.6} {
     depends_lib-append \
-        port:python36 \
-        port:py36-anytree \
-        port:py36-lxml \
-        port:py36-pygments
+        port:python39 \
+        port:py39-anytree \
+        port:py39-lxml \
+        port:py39-pygments
 
-    depends_test        port:py36-mock
+    depends_test        port:py39-mock
 
-    configure.python    ${prefix}/bin/python3.6
+    configure.python    ${prefix}/bin/python3.9
 }
 
 variant python37 conflicts python36 python38 python39 description {Build using Python 3.7} {
