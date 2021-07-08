@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Sub-Exporter 0.988
 revision            0
 
@@ -17,8 +17,8 @@ description         a sophisticated exporter for custom-built routines
 long_description    {*}${description}
 
 checksums           rmd160  529697ab84edabb574201528d90cba1503f7937f \
-sha256  23324887d6c590f145702f077d8ca42f1b2f26a3b76f08d66c2c1e21e606040c \
-size    56906
+                    sha256  23324887d6c590f145702f077d8ca42f1b2f26a3b76f08d66c2c1e21e606040c \
+                    size    56906
 
 if {${perl5.major} != ""} {
 depends_lib-append  port:p${perl5.major}-data-optlist \
