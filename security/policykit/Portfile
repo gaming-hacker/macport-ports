@@ -35,7 +35,7 @@ depends_build-append \
                     port:autoconf \
                     port:automake \
                     port:libtool \
-                    port:perl5.34
+                    port:perl5.30
 
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:mozjs60
@@ -65,7 +65,7 @@ compiler.cxx_standard 2017
 compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 700}
 
 configure.env-append \
-                    INTLTOOL_PERL=${prefix}/bin/perl5.34
+                    INTLTOOL_PERL=${prefix}/bin/perl5.30
 
 configure.cmd       ./autogen.sh
 

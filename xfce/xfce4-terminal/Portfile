@@ -23,9 +23,9 @@ rmd160  049b4cd7d6e14ff2be46426f11718c8bddc9f6e4 \
 size    854899
 
 # Needed for intltool
-configure.perl  ${prefix}/bin/perl5.34
+configure.perl  ${prefix}/bin/perl5.30
 
-depends_build   port:intltool port:pkgconfig port:perl5.34
+depends_build   port:intltool port:pkgconfig port:perl5.30
 depends_lib     port:exo port:vte-gtk2-xfce port:dbus port:gtk2 \
                 path:lib/pkgconfig/glib-2.0.pc:glib2 port:hicolor-icon-theme \
                 port:desktop-file-utils port:vte port:libxfce4ui

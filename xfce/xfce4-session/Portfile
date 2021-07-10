@@ -27,7 +27,7 @@ use_autoconf    yes
 pre-configure   { system -W ${worksrcpath} "autoheader" }
 
 # Needed for intltool
-configure.perl  ${prefix}/bin/perl5.34
+configure.perl  ${prefix}/bin/perl5.30
 
 configure.args  --with-xsession-prefix=${prefix} INTLTOOL_PERL=${configure.perl}
 

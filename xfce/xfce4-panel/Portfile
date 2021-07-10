@@ -21,11 +21,11 @@ rmd160  a336fe70ee27a36880e8004d94cf31a3315b62fd \
 size    1167175
 
 # Needed for intltool
-configure.perl  ${prefix}/bin/perl5.34
+configure.perl  ${prefix}/bin/perl5.30
 
 depends_build   port:intltool \
                 port:pkgconfig \
-                port:perl5.34
+                port:perl5.30
 
 depends_lib     port:libxfce4ui \
                 port:exo \

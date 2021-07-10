@@ -35,7 +35,7 @@ post-patch {
     reinplace "s:@PYTHON3@:${prefix}/bin/python3.9:" \
         ${worksrcpath}/plugins/perl/generate_header.py \
         ${worksrcpath}/src/common/make-te.py
-    reinplace "s:@PERL@:${prefix}/bin/perl5.34:" \
+    reinplace "s:@PERL@:${prefix}/bin/perl5.30:" \
         ${worksrcpath}/plugins/perl/generate_header
 }
 
@@ -74,8 +74,8 @@ variant lua description "Enable Lua scripting, using luajit" {
 }
 
 variant perl description "Enable Perl scripting, using perl5.28" {
-    depends_lib-append          port:perl5.34
-    configure.args-replace      -Dwith-perl=false -Dwith-perl=${prefix}/bin/perl5.34
+    depends_lib-append          port:perl5.30
+    configure.args-replace      -Dwith-perl=false -Dwith-perl=${prefix}/bin/perl5.30
 }
 
 variant python description "Enable Python scripting" requires python37 {}

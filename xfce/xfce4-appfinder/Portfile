@@ -23,6 +23,6 @@ depends_build   port:intltool port:xfce4-dev-tools port:pkgconfig
 depends_lib     port:libxfce4ui port:garcon port:Thunar
 
 # Needed for intltool
-configure.perl  ${prefix}/bin/perl5.34
+configure.perl  ${prefix}/bin/perl5.30
 
 configure.args  INTLTOOL_PERL=${configure.perl}
