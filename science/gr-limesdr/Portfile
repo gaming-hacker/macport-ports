@@ -29,7 +29,7 @@ size    2992951
 
     conflicts gr37-limesdr
 
-    set python_versions { 3.6 3.7 3.8 3.9 }
+    set python.versions {39}
     set default_python_variant +python37
 
     github.livecheck.regex  {([0-9.]+)}
@@ -47,7 +47,7 @@ size    3083984
 
     conflicts       gr-limesdr
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     depends_lib-append \
@@ -60,7 +60,7 @@ subport gr-limesdr-devel {
     replaced_by     gr-limesdr
     version         3.0.1
     PortGroup       obsolete 1.0
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 }
 

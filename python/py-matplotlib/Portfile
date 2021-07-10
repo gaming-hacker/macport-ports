@@ -31,7 +31,7 @@ size    37308683
 
 use_parallel_build  no
 
-python.versions     27 35 36 37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

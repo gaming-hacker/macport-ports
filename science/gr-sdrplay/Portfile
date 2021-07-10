@@ -20,7 +20,7 @@ if {${subport} eq ${name}} {
     revision        1
     replaced_by     gr37-sdrplay
     PortGroup       obsolete 1.0
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 }
 
@@ -42,7 +42,7 @@ subport gr37-sdrplay {
 
     conflicts gr37-sdrplay
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     depends_lib-append \

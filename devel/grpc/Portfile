@@ -135,7 +135,7 @@ if {${name} eq ${subport}} {
 }
 
 # create Python subports
-set python_versions {37 38 39}
+set python.versions {39}
 
 # Python modules grpcio and grpcio-tools
 foreach v ${python_versions} {

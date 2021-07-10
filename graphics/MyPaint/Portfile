@@ -31,7 +31,7 @@ github.tarball_from         releases
 use_xz                      yes
 
 # Remember to update the python version in libmypaint too.
-python.versions             38
+python.versions 39
 
 depends_build-append        port:pkgconfig \
                             port:py${python.version}-setuptools \

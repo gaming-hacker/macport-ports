@@ -33,7 +33,7 @@ size    66043287
 patchfiles-append   fix_cc_cxx.patch
 patch.pre_args      -p1
 
-python.versions     27 35 36 37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     if {${python.version} == 27} {

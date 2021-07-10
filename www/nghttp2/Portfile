@@ -80,7 +80,7 @@ subport nghttp2-tools {
     }
 }
 
-set pyversions {27 36 37 38 39}
+set pyversions {39}
 
 foreach pyversion ${pyversions} {
     subport py${pyversion}-${name} {

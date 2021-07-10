@@ -32,7 +32,7 @@ size    186306
 
     conflicts gr37-air-modes
 
-    set python_versions { 3.6 3.7 3.8 3.9 }
+    set python.versions {39}
     set default_python_variant +python37
 
 }
@@ -61,7 +61,7 @@ sha256 83faacb86e42033773f333d1c488efb9d0cd0e4a26217c93b2f45a828363fc7f
 
     conflicts gr-air-modes
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     depends_lib-append \

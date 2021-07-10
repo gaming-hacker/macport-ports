@@ -27,7 +27,7 @@ checksums           md5 025cf3c9c173872924f7c4d96a878b65 \
 rmd160 77cde2333b76f123a2c80680a0d6d943d35a115e \
 sha256 b5c2ae4120bf00c799ba9b3699bc895816d272d120080fbc967292f29b52b48c
 
-python.versions     27 35 36 37 38 39
+python.versions 39
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-docutils \

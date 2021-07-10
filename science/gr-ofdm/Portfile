@@ -21,7 +21,7 @@ if {${subport} eq ${name}} {
     revision        16
     replaced_by     gr37-ofdm
     PortGroup       obsolete 1.0
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 }
 
@@ -40,7 +40,7 @@ size   3257234
     conflicts \
         gr-ofdm
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     depends_lib-append \

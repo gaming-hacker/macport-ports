@@ -19,10 +19,10 @@ extract.suffix	.tgz
 checksums		md5 8ecc65067d32ac961476f924fa3e8b5b
 
 # Use Python 2.6 from MacPorts explicitly
-set python		${prefix}/bin/python2.6
+set python		${prefix}/bin/python3.9
 
 # Depends on Python
-depends_build	port:python26
+depends_build	port:python39
 
 platform freebsd {
 	extract.post_args	| gtar -xf -

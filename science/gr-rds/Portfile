@@ -32,7 +32,7 @@ size    210653
         path:lib/libgnuradio-runtime.dylib:gnuradio \
         port:gr-osmosdr
 
-    set python_versions { 3.6 3.7 3.8 3.9 }
+    set python.versions {39}
     set default_python_variant +python37
 
     post-destroot {
@@ -62,7 +62,7 @@ size    601192
         port:gnuradio37 \
         port:gr37-osmosdr
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     post-destroot {

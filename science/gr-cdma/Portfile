@@ -21,7 +21,7 @@ if {${subport} eq ${name}} {
     revision        5
     replaced_by     gr37-cdma
     PortGroup       obsolete 1.0
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 }
 
@@ -38,7 +38,7 @@ sha256 18ba151aa085aeb9cdc8fc5329f51d1d4af012c1bc58a1a303fe0911809752a9
     conflicts \
         gr-cdma
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     depends_lib-append \

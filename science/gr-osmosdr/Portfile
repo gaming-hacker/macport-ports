@@ -35,7 +35,7 @@ size    252770
 
     conflicts gr37-osmosdr
 
-    set python_versions { 3.6 3.7 3.8 3.9 }
+    set python.versions {39}
     set default_python_variant +python37
 
     # add out-of-tree backend
@@ -60,7 +60,7 @@ size    278344
 
     conflicts gr-osmosdr
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     depends_lib-append \

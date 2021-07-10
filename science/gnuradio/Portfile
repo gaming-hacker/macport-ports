@@ -37,7 +37,7 @@ size    3394045
 
     conflicts           gnuradio37 gnuradio-next
 
-    set python_versions { 3.6 3.7 3.8 3.9 }
+    set python.versions {39}
     set default_python_variant +python37
 
     # temporary patch to fix and allow external setting for
@@ -76,7 +76,7 @@ size    4460817
         will not see much maintenance\; place consider updating \
         to the \'gnuradio\' port.
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     # force expansion of CMake-based template files
@@ -134,7 +134,7 @@ size    3950832
 
     conflicts           gnuradio gnuradio37
 
-    set python_versions { 3.6 3.7 3.8 }
+    set python.versions {39}
     set default_python_variant +python37
 
     # fix Quartz behaviour
@@ -154,7 +154,7 @@ subport gnuradio-devel {
     version         20180824
     revision        9
     PortGroup       obsolete 1.0
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
     set GR_VERSION_INFO ""
 }

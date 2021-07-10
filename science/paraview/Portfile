@@ -176,7 +176,7 @@ destroot {
 #Warning: A file belonging to the `paraview' port is missing or unreadable. Consider reinstalling it.
 
 # Supported pythons
-set python_versions {27 35 36 37}
+set python.versions {39}
 
 foreach pyver ${python_versions} {
     # Conflicting python versions

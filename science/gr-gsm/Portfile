@@ -38,7 +38,7 @@ size    417371
         path:lib/libgnuradio-runtime.dylib:gnuradio \
         port:fftw-3-single
 
-    set python_versions { 3.6 3.7 3.8 3.9 }
+    set python.versions {39}
     set default_python_variant +python37
 
 }
@@ -76,7 +76,7 @@ size   413183
     depends_lib-append \
         port:gnuradio37
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
 }

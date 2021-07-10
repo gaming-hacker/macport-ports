@@ -36,7 +36,7 @@ size    49706
         path:lib/libgnuradio-runtime.dylib:gnuradio \
         port:hidapi
 
-    set python_versions { 3.6 3.7 3.8 3.9 }
+    set python.versions {39}
     set default_python_variant +python37
 
 }
@@ -58,7 +58,7 @@ size   132229
         port:gnuradio37 \
         path:lib/libusb-1.0.dylib:libusb
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     pre-patch {

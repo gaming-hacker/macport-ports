@@ -29,7 +29,7 @@ size    3823010
 
     conflicts gr37-satellites
 
-    set python_versions { 3.6 3.7 3.8 3.9 }
+    set python.versions {39}
     set default_python_variant +python37
 
     github.livecheck.regex  {(3\.[0-9.]+)}
@@ -48,7 +48,7 @@ size    760268
 
     conflicts gr-satellites
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     depends_lib-append \

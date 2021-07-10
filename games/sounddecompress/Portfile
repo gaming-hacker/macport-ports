@@ -39,9 +39,9 @@ rmd160  4adab63b65699aae5fc0e7941da94cc23718f728
 
 depends_lib                 port:libhsplasma \
                             port:sox
-#                            port:py26-wxpython-2.8
+#                            port:py39-wxpython-2.8
 
-depends_run                 port:python26
+depends_run                 port:python39
 
 extract.mkdir               yes
 
@@ -49,7 +49,7 @@ patchfiles                  patch-sounddecompress.py.diff \
                             patch-wxSoundDecompress.py.diff
 
 post-patch {
-    reinplace "s|^#!/usr/bin/env python$|#!${prefix}/bin/python2.6|g" \
+    reinplace "s|^#!/usr/bin/env python$|#!${prefix}/bin/python3.9|g" \
         ${worksrcpath}/sounddecompress.py \
         ${worksrcpath}/wxSoundDecompress.py
     reinplace "s|@PREFIX@|${prefix}|g" \

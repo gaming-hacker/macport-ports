@@ -21,7 +21,7 @@ if {${subport} eq ${name}} {
     revision        6
     replaced_by     gr37-pcap
     PortGroup       obsolete 1.0
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 }
 
@@ -38,7 +38,7 @@ sha256 e7cacc7343531865c357288d73248764f9f5273d3eadbb8d57eccff9a22395d5
     conflicts \
         gr-pcap
 
-    set python_versions { 2.7 }
+    set python.versions {39}
     set default_python_variant +python27
 
     depends_lib-append \

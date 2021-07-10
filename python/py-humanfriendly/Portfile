@@ -19,7 +19,7 @@ description         Human friendly output for text interfaces using Python
 long_description    {*}${description}
 homepage            https://humanfriendly.readthedocs.io/
 
-python.versions 37 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

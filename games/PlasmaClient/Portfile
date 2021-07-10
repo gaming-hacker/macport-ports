@@ -26,7 +26,7 @@ hg.url                      http://uru.zrax.net/hg/plasmaclient
 hg.tag                      18eaf1280f8f
 
 depends_lib                 port:bullet \
-                            port:python26 \
+                            port:python39 \
                             port:boost \
                             path:include/turbojpeg.h:libjpeg-turbo \
                             port:zlib \
@@ -58,8 +58,8 @@ patchfiles                  patch-README.diff
 
 configure.args              -DBULLET_INCLUDE_DIR:PATH=${prefix}/include/bullet \
                             -DCMAKE_VERBOSE_MAKEFILE:BOOL=TRUE \
-                            -DPYTHON_INCLUDE_DIR:PATH=${frameworks_dir}/Python.framework/Versions/2.6/Headers \
-                            -DPYTHON_LIBRARY:FILEPATH=${frameworks_dir}/Python.framework/Versions/2.6/lib/python2.6/config/libpython2.6.dylib \
+                            -DPYTHON_INCLUDE_DIR:PATH=${frameworks_dir}/Python.framework/Versions/3.9/Headers \
+                            -DPYTHON_LIBRARY:FILEPATH=${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/config/libpython3.9.dylib \
                             -DSDL_INCLUDE_DIR=${prefix}/include/SDL \
                             -DSDL_LIBRARY="${prefix}/lib/libSDLmain.a\;${prefix}/lib/libSDL.dylib\;-framework Cocoa"
 
