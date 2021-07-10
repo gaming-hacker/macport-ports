@@ -15,7 +15,7 @@ long_description    ${description}
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    daniestevez gr-satellites 3.9.0 v
@@ -29,8 +29,8 @@ size    3823010
 
     conflicts gr37-satellites
 
-    set python.versions {39}
-    set default_python_variant +python37
+    set python_versions {39}
+    set default_python_variant +python39
 
     github.livecheck.regex  {(3\.[0-9.]+)}
 
@@ -48,8 +48,8 @@ size    760268
 
     conflicts gr-satellites
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
     depends_lib-append \
         port:gnuradio37 \

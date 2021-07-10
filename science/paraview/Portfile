@@ -176,7 +176,7 @@ destroot {
 #Warning: A file belonging to the `paraview' port is missing or unreadable. Consider reinstalling it.
 
 # Supported pythons
-set python.versions {39}
+set python_versions {39}
 
 foreach pyver ${python_versions} {
     # Conflicting python versions
@@ -206,7 +206,7 @@ foreach pyver ${python_versions} {
                     -DVTK_USE_SYSTEM_MPI4PY:BOOL=ON
             }
     "
-    
+
 }
 
 foreach pyver ${python_versions} {

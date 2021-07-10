@@ -24,7 +24,7 @@ if {${subport} eq ${name}} {
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 subport gr37-lora-BastilleResearch {
 
     name            gr37-lora-BastilleResearch
@@ -39,8 +39,8 @@ sha256 e1958cfe15e5ff3542e4df3dc7e626751321957cd2ff0122723d6a86d845cf6c
         gr37-lora-rpp0 \
         gr-lora-rpp0
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
     depends_lib-append \
         port:gnuradio37

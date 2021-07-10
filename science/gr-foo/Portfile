@@ -16,13 +16,13 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
     github.setup    bastibl gr-foo 13fac53de827ece4f2a5a367ed8cb3900238b3f6
     version         20191217-[string range ${github.version} 0 7]
     checksums       rmd160  ce32f45356ede334adefc4105748cc0d8b682ada \
 sha256  a9bc126ef7b1fad42de4e8384140bc2fc65ece1ed7f4c76c1bc98a289e98a58a \
-size    24126    
+size    24126
     revision        4
 
     conflicts       gr37-foo
@@ -31,7 +31,7 @@ size    24126
         path:lib/libgnuradio-runtime.dylib:gnuradio
 
     set python.versions {39}
-    set default_python_variant +python37
+    set default_python_variant +python39
 }
 
 
@@ -51,8 +51,8 @@ size    107447
     depends_lib-append \
         port:gnuradio37
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
 }
 

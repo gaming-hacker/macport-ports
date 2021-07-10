@@ -15,14 +15,14 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
     version         20140919
     revision        9
     replaced_by     gr37-mac
     PortGroup       obsolete 1.0
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 }
 
 subport gr37-mac {
@@ -41,8 +41,8 @@ sha256 5eacd2f208034dcc8d34cfdc5dbc2715aeb2c7d35855983221f371e21215e9a3
     conflicts \
         gr-mac
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
     depends_lib-append \
         port:gnuradio37

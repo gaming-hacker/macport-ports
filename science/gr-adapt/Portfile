@@ -32,8 +32,8 @@ size    463936
     depends_lib-append \
         path:lib/libgnuradio-runtime.dylib:gnuradio
 
-    set python.versions {39}
-    set default_python_variant +python37
+    set python_versions {39}
+    set default_python_variant +python39
 
 }
 
@@ -56,8 +56,8 @@ size   477236
     depends_lib-append \
         port:gnuradio37
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
 }
 

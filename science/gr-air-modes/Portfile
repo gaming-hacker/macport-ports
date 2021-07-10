@@ -15,7 +15,7 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    bistromath gr-air-modes a2f2627c5421368b8af1b57ca9818e1c79d4f4f0
@@ -62,7 +62,7 @@ sha256 83faacb86e42033773f333d1c488efb9d0cd0e4a26217c93b2f45a828363fc7f
     conflicts gr-air-modes
 
     set python.versions {39}
-    set default_python_variant +python27
+    set default_python_variant +python39
 
     depends_lib-append \
         port:gnuradio37

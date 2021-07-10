@@ -16,7 +16,7 @@ homepage            https://wiki.myriadrf.org/Gr-limesdr_Plugin_for_GNURadio
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
     github.setup    myriadrf gr-limesdr 3.0.1 v
     checksums       rmd160  aea48429e6d95da8309368074c61c55af7d70a88 \
@@ -29,8 +29,8 @@ size    2992951
 
     conflicts gr37-limesdr
 
-    set python.versions {39}
-    set default_python_variant +python37
+    set python_versions {39}
+    set default_python_variant +python39
 
     github.livecheck.regex  {([0-9.]+)}
 }
@@ -47,8 +47,8 @@ size    3083984
 
     conflicts       gr-limesdr
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
     depends_lib-append \
         port:gnuradio37
@@ -60,8 +60,8 @@ subport gr-limesdr-devel {
     replaced_by     gr-limesdr
     version         3.0.1
     PortGroup       obsolete 1.0
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 }
 
 # Define the available variants

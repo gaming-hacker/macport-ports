@@ -15,7 +15,7 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    jdemel gr-gfdm df94a58da883e796c18a0a5679d4992e94158c8c
@@ -30,8 +30,8 @@ if {${subport} eq ${name}} {
     depends_lib-append \
         path:lib/libgnuradio-runtime.dylib:gnuradio
 
-    set python.versions {39}
-    set default_python_variant +python37
+    set python_versions {39}
+    set default_python_variant +python39
 
 }
 
@@ -52,8 +52,8 @@ subport gr37-gfdm {
     depends_lib-append \
         port:gnuradio37
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
 }
 

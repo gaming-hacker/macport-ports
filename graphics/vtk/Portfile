@@ -62,7 +62,7 @@ depends_lib-append \
 
 mpi.enforce_variant hdf5
 
-# FT_CALLBACK_DEF: https://gitlab.kitware.com/vtk/vtk/-/issues/18033 
+# FT_CALLBACK_DEF: https://gitlab.kitware.com/vtk/vtk/-/issues/18033
 patchfiles          patch-pugixml.diff \
                     patch-IOMovie-module.cmake.diff \
                     patch-FT_CALLBACK_DEF.diff \
@@ -99,7 +99,7 @@ variant ffmpeg description {Add support for ffmpeg} {
 # As proposed at #46853
 variant qt4 description {Add Qt4 support.} {
     PortGroup           qt4 1.0
-    
+
     configure.args-append \
                         -DQT_QMAKE_EXECUTABLE:PATH=${qt_qmake_cmd} \
                         -DVTK_Group_Qt:BOOL=ON
@@ -107,7 +107,7 @@ variant qt4 description {Add Qt4 support.} {
 
 variant qt5 description {Add Qt5 support.} {
     PortGroup           qt5 1.0
-    
+
     configure.args-append \
                         -DQT_QMAKE_EXECUTABLE:PATH=${qt_qmake_cmd} \
                         -DVTK_Group_Qt:BOOL=ON \
@@ -115,7 +115,7 @@ variant qt5 description {Add Qt5 support.} {
 }
 
 # Supported pythons
-set python.versions {39}
+set python_versions {39}
 
 foreach pyver ${python_versions} {
     # Conflicting python versions

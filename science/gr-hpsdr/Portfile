@@ -20,8 +20,8 @@ sha256  fd7fb76105315e9d1964816ac2407893ba407c5b7cea5c3dbd59951343120542 \
 size    125887
 revision            2
 
-set python.versions {39}
-set default_python_variant +python37
+set python_versions {39}
+set default_python_variant +python39
 
 # use C++11
 compiler.cxx_standard 2017

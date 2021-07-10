@@ -15,14 +15,14 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
     version         20190521-13ae75ea
     revision        1
     replaced_by     gr37-tdd
     PortGroup       obsolete 1.0
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 }
 
 subport gr37-tdd {
@@ -39,8 +39,8 @@ size   1171149
     conflicts \
         gr-tdd
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
     depends_lib-append \
         port:gnuradio37

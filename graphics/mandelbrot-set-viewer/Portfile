@@ -4,7 +4,7 @@ PortSystem          1.0
 
 name                mandelbrot-set-viewer
 version             5.01
-set python.version 39
+set python_version 39
 categories          graphics
 platforms           darwin
 maintainers         nomaintainer
@@ -47,7 +47,7 @@ post-activate {
     }
 }
 
-notes "To run this program, type 'python3.9 ${prefix}/share/${name}/main.py'. 
+notes "To run this program, type 'python3.9 ${prefix}/share/${name}/main.py'.
 You can modify the output by changing ${prefix}/share/${name}/config.py"
 
 livecheck.url       ${homepage}

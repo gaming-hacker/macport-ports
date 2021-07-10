@@ -149,7 +149,7 @@ if {![option configure.ccache]} {
 
 destroot.target     install
 
-if {${name} eq ${subport}} { 
+if {${name} eq ${subport}} {
     configure.args-append \
                     -DARROW_BUILD_UTILITIES:BOOL=ON
 }
@@ -169,7 +169,7 @@ proc change_arrow_rpath { binname libname_re } {
 }
 
 # create Python subports
-set python.versions {39}
+set python_versions {39}
 foreach v ${python_versions} {
     subport py${v}-py${github.project} {
         PortGroup   python 1.0

@@ -38,7 +38,7 @@ depends_build       port:autoconf \
                     port:libtool
 
 # Python port
-subport py27-simstring {
+subport py39-simstring {
     PortGroup           python 1.0
     name                py-simstring
     python.versions 39

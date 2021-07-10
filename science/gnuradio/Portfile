@@ -22,7 +22,7 @@ compiler.c_standard   2011
 compiler.cxx_standard 2017
 
 boost.version       1.71
-
+set python_versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    gnuradio gnuradio 3.8.3.1 v
@@ -134,8 +134,8 @@ size    3950832
 
     conflicts           gnuradio gnuradio37
 
-    set python.versions {39}
-    set default_python_variant +python37
+    set python_versions {39}
+    set default_python_variant +python39
 
     # fix Quartz behaviour
     # TODO verify https://github.com/gnuradio/gnuradio/issues/2726
@@ -148,14 +148,15 @@ size    3950832
 
 }
 
+
 # obsolete 20191016
 subport gnuradio-devel {
     replaced_by     gnuradio
     version         20180824
     revision        9
     PortGroup       obsolete 1.0
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
     set GR_VERSION_INFO ""
 }
 

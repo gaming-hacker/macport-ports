@@ -15,14 +15,14 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
     version         20170402
     revision        6
     replaced_by     gr37-pcap
     PortGroup       obsolete 1.0
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 }
 
 subport gr37-pcap {

@@ -21,7 +21,7 @@ long_description    ${description} \
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    osmocom gr-fosphor defdd4aca6cd157ccc3b10ea16b5b4f552f34b96
@@ -36,8 +36,8 @@ size    244575
     depends_lib-append \
         path:lib/libgnuradio-runtime.dylib:gnuradio
 
-    set python.versions {39}
-    set default_python_variant +python37
+    set python_versions {39}
+    set default_python_variant +python39
 
     conflicts_build gr-fosphor
 
@@ -61,8 +61,8 @@ size    253973
     depends_lib-append \
         port:gnuradio37
 
-    set python.versions {39}
-    set default_python_variant +python27
+    set python_versions {39}
+    set default_python_variant +python39
 
 }
 

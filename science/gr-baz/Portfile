@@ -23,7 +23,7 @@ revision            4
 
 # use C++11
 compiler.cxx_standard 2017
-
+set python_versions {39}
 if {${subport} eq ${name}} {
     # fix gnuradio version
     patchfiles-append \
@@ -35,7 +35,7 @@ if {${subport} eq ${name}} {
         path:lib/libgnuradio-runtime.dylib:gnuradio
 
     set python.versions {39}
-    set default_python_variant +python37
+    set default_python_variant +python39
 
     pre-configure {
         file copy -force ${worksrcpath}/CMakeLists-3.8.txt ${worksrcpath}/CMakeLists.txt
@@ -50,7 +50,7 @@ subport gr37-baz {
     depends_lib-append \
         port:gnuradio37
 
-    set python.versions {39}
+    set python_versions {39}
     set default_python_variant +python27
 
     pre-configure {
