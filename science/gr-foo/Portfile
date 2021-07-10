@@ -16,7 +16,7 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
     github.setup    bastibl gr-foo 13fac53de827ece4f2a5a367ed8cb3900238b3f6
     version         20191217-[string range ${github.version} 0 7]
@@ -51,7 +51,7 @@ size    107447
     depends_lib-append \
         port:gnuradio37
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
 }

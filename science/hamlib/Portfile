@@ -65,7 +65,7 @@ depends_lib-append \
     port:libusb-compat \
     port:libxml2
 
-set python_versions {39}
+set python.versions {39}
 # python binding is not enabled by default
 set default_python_variant ""
 

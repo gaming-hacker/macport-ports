@@ -14,13 +14,13 @@ long_description      ${description}
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
     version         20180717-d28ae3d3
     revision        1
     replaced_by     gr37-sdrplay
     PortGroup       obsolete 1.0
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 }
 
@@ -42,7 +42,7 @@ subport gr37-sdrplay {
 
     conflicts gr37-sdrplay
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
     depends_lib-append \

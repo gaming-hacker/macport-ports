@@ -19,7 +19,7 @@ platforms           darwin
 compiler.cxx_standard 2017
 configure.cxxflags-append -std=c++17
 compiler.blacklist    {clang < 1103}
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    kit-cel gr-specest fe599836c38e2a858c1ae0703ebd006a2fe9edae
@@ -35,7 +35,7 @@ size    568696
         path:lib/libgnuradio-runtime.dylib:gnuradio \
         port:gr-osmosdr
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
 }
@@ -60,7 +60,7 @@ size   562474
         port:gnuradio37 \
         port:gr37-osmosdr
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
 }

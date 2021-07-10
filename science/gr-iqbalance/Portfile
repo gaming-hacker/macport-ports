@@ -18,7 +18,7 @@ long_description    ${description}. This port is kept up with the \
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
 
     github.setup  osmocom gr-iqbal 0.38.2 v
@@ -35,7 +35,7 @@ size    106418
     depends_lib-append \
         path:lib/libgnuradio-runtime.dylib:gnuradio
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
 }

@@ -15,7 +15,7 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    bastibl gr-rds feaba5b1619c5b483fe66e7a91f4565fcf165eff
@@ -32,7 +32,7 @@ size    210653
         path:lib/libgnuradio-runtime.dylib:gnuradio \
         port:gr-osmosdr
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
     post-destroot {

@@ -15,13 +15,13 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
     version         20180220
     revision        4
     replaced_by     gr37-lte
     PortGroup       obsolete 1.0
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 }
 
@@ -38,7 +38,7 @@ sha256 7a2ef415aa0f736d131d44ac9dec97e5d6af94b4bcf68fbd161e73d2a6b952ad
     conflicts \
         gr-lte
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
     depends_lib-append \

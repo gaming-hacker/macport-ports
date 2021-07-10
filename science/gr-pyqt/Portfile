@@ -15,13 +15,13 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
     version         20160712
     revision        9
     replaced_by     gr37-pyqt
     PortGroup       obsolete 1.0
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 }
 

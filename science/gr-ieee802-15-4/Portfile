@@ -15,7 +15,7 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    bastibl gr-ieee802-15-4 a3c79af96e18de3eb3a76659e1669a370efccf17
@@ -31,7 +31,7 @@ size    94433
 
     conflicts gr37-ieee802-15-4
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
 }
@@ -50,7 +50,7 @@ size    195350
 
     conflicts gr-ieee802-15-4
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
     depends_lib-append \

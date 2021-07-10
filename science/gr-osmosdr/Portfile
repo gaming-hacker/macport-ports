@@ -21,7 +21,7 @@ long_description    Includes OSMO SDR support GNU Radio source and sink blocks i
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${name} eq ${subport}} {
     github.setup osmocom gr-osmosdr cffef690f29e0793cd2d6c5d028c0c929115f0ac
     version      20210117-[string range ${github.version} 0 7]
@@ -35,7 +35,7 @@ size    252770
 
     conflicts gr37-osmosdr
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
     # add out-of-tree backend
@@ -60,7 +60,7 @@ size    278344
 
     conflicts gr-osmosdr
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
     depends_lib-append \

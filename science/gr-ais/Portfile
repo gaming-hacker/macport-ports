@@ -25,7 +25,7 @@ if {${subport} eq ${name}} {
     set default_python_variant +python27
 }
 
-set python_versions {39}
+set python.versions {39}
 
 subport gr37-ais {
 
@@ -43,7 +43,7 @@ sha256 e62755e674d5c7b306fb9a22ed0ab88a69fb46dbc179bc80a4dcff3c7fc826b7
     conflicts \
         gr-ais
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
     depends_lib-append \

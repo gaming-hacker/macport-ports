@@ -15,7 +15,7 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    analogdevicesinc gr-iio 456589948229cc7bbed4c5724811ca24116711fe
@@ -33,7 +33,7 @@ size    56107
     depends_lib-append \
         path:lib/libgnuradio-runtime.dylib:gnuradio
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
 }
@@ -58,7 +58,7 @@ size   68707
     depends_lib-append \
         port:gnuradio37
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
 }

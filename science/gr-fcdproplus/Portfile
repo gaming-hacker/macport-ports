@@ -15,7 +15,7 @@ platforms           darwin
 
 # use C++11
 compiler.cxx_standard 2017
-set python_versions {39}
+set python.versions {39}
 if {${subport} eq ${name}} {
 
     github.setup    dl1ksv gr-fcdproplus f1154db33e7c22ff6456cf3385586832fff413f0
@@ -36,7 +36,7 @@ size    49706
         path:lib/libgnuradio-runtime.dylib:gnuradio \
         port:hidapi
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
 }
@@ -58,7 +58,7 @@ size   132229
         port:gnuradio37 \
         path:lib/libusb-1.0.dylib:libusb
 
-    set python_versions {39}
+    set python.versions {39}
     set default_python_variant +python39
 
     pre-patch {
