@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ long_description    This is a gdb-like debugger for Python. It is a rewrite of p
                     as well as an remote access interface over TCP/IP.
 
 checksums           rmd160  e679b48b4b5e4adc4af84065bac7afbf9d043771 \
-                    sha256  fd399c6aec8af99a4c4e9984840d4f8c1f190dc24bd9c152bd711d2f39154285 \
-                    size    265675
+sha256  fd399c6aec8af99a4c4e9984840d4f8c1f190dc24bd9c152bd711d2f39154285 \
+size    265675
 
-python.versions     37 38 39
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_lib-append \

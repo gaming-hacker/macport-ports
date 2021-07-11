@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -33,9 +33,9 @@ homepage            https://www.mercurial-scm.org
 master_sites        ${homepage}/release/
 
 checksums           ${distname}${extract.suffix}  \
-                    rmd160  0c6dde2ddcd08aeed00e422e04bed62bd3fd75f9 \
-                    sha256  81baa3fe2087bdda2dd119d7ea948f6badebaeb7b528a7d18b277e2ceb22b19b \
-                    size    7988000
+rmd160  0c6dde2ddcd08aeed00e422e04bed62bd3fd75f9 \
+sha256  81baa3fe2087bdda2dd119d7ea948f6badebaeb7b528a7d18b277e2ceb22b19b \
+size    7988000
 
 python.default_version 39
 
@@ -215,7 +215,7 @@ variant rust description {Enable experimental Rust optimizations} {
     rustc-serialize                 0.3.24  dcf128d1287d2ea9d80910b5f1120d0b8eede3fbf1abe91c40d39ea7d51e6fda \
     same-file                        1.0.6  93fc1dc3aaa9bfed95e02e6eadabb4baf7e3078b0bd1b4d7b6b0b68378900502 \
     scopeguard                       1.1.0  d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd \
-    sized-chunks                     0.6.2  1ec31ceca5644fa6d444cc77548b88b67f46db6f7c71683b0f9336e671830d2f \
+sized-chunks                     0.6.2  1ec31ceca5644fa6d444cc77548b88b67f46db6f7c71683b0f9336e671830d2f \
     static_assertions                1.1.0  a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \
     syn                             1.0.54  9a2af957a63d6bd42255c359c93d9bfdb97076bd3b820897ce55ffbfbf107f44 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -15,8 +15,8 @@ maintainers             @pedrohdz \
 license                 MIT
 
 checksums               rmd160  6a0365cbee0627dac08d07521fce6a277f969929 \
-                        sha256  97e3064162260ed1e8d7328410ec672c37de596f8869b28bb83892e61ed85c68 \
-                        size    807629
+sha256  97e3064162260ed1e8d7328410ec672c37de596f8869b28bb83892e61ed85c68 \
+size    807629
 
 description             Bash tool to store private data inside a git repo.
 long_description        A bash tool to store your private data inside a git \

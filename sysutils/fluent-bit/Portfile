@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -35,8 +35,8 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 master_sites        ${homepage}/releases/${branch}/
 
 checksums           rmd160  4b6bac6e8abb8dc670440b2354e7de5669231500 \
-                    sha256  4b971ac6cb2ab6b4978b2f4eae7571e0c470d38e18d686125c2bd376c7989776 \
-                    size    14549645
+sha256  4b971ac6cb2ab6b4978b2f4eae7571e0c470d38e18d686125c2bd376c7989776 \
+size    14549645
 
 # /usr/bin/ranlib: unknown option character `n' in: -no_warning_for_no_symbols
 compiler.blacklist-append   {clang < 700}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,9 +18,9 @@ long_description    oha is a tiny program that sends some load to a web \
 
 
 checksums           ${name}-${version}${extract.suffix} \
-                    rmd160  4c3c26e132fe8b58670af257f1c5d9736c4d6aca \
-                    sha256  157ebcbc7290d52b428c947b07957994693d4a6d40f440cb7ff0de16c7464ebc \
-                    size    1053956
+rmd160  4c3c26e132fe8b58670af257f1c5d9736c4d6aca \
+sha256  157ebcbc7290d52b428c947b07957994693d4a6d40f440cb7ff0de16c7464ebc \
+size    1053956
 
 depends_lib-append  path:lib/libssl.dylib:openssl
 
@@ -174,7 +174,7 @@ cargo.crates \
     serde                          1.0.126  ec7505abeacaec74ae4778d9d9328fe5a5d04253220a85c4ee022239fc996d03 \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha-1                            0.9.6  8c4cfa741c5832d0ef7fab46cabed29c2aae926db0b11bb2069edd8db5e64e16 \
+sha-1                            0.9.6  8c4cfa741c5832d0ef7fab46cabed29c2aae926db0b11bb2069edd8db5e64e16 \
     signal-hook                     0.1.17  7e31d442c16f047a671b5a71e2161d6e68814012b7f5379d269ebd915fac2729 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     slab                             0.4.3  f173ac3d1a7e3b28003f40de0b5ce7fe2710f9b9dc3fc38664cebee46b3b6527 \
