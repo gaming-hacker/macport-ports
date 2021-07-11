@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           boost 1.0
@@ -43,25 +43,25 @@ distfiles           ${main_distfile}:main \
                     f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140-opens___.ttf:opens
 
 checksums           libreoffice-${version}.tar.xz \
-rmd160  3959a4707bc652d7edcc41d308087a49c9875dca \
-sha256  e5896f533852395f4758fe3fed824ae8f929b6e75b7eca602139a7a2dc94af90 \
-size    244309736 \
+                    rmd160  3959a4707bc652d7edcc41d308087a49c9875dca \
+                    sha256  e5896f533852395f4758fe3fed824ae8f929b6e75b7eca602139a7a2dc94af90 \
+                    size    244309736 \
                     libreoffice-dictionaries-${version}.tar.xz \
-rmd160  7fb292b16809f257c378b0dc28a6e103a4985e69 \
-sha256  e488d39e5b5b2d8a18d32dd1d43b7ca92cd940d22a4f1b3b3038edb2b2b2853e \
-size    47964516 \
+                    rmd160  7fb292b16809f257c378b0dc28a6e103a4985e69 \
+                    sha256  e488d39e5b5b2d8a18d32dd1d43b7ca92cd940d22a4f1b3b3038edb2b2b2853e \
+                    size    47964516 \
                     libreoffice-translations-${version}.tar.xz \
-rmd160  0f1930c5c676499051f343c837d7d1b196f85dc5 \
-sha256  0d2356fc78928d047381a78961369ed7ca548cb33a887d332c7fc77efeaac165 \
-size    184947664 \
+                    rmd160  0f1930c5c676499051f343c837d7d1b196f85dc5 \
+                    sha256  0d2356fc78928d047381a78961369ed7ca548cb33a887d332c7fc77efeaac165 \
+                    size    184947664 \
                     dtoa-20180411.tgz \
-rmd160  8d1bba737d8b58c3fb09533f35af2a03e05d9849 \
-sha256  0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4 \
-size    48893 \
+                    rmd160  8d1bba737d8b58c3fb09533f35af2a03e05d9849 \
+                    sha256  0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4 \
+                    size    48893 \
                     f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140-opens___.ttf \
-rmd160  b9e2cc0c836faa59eca3bfc0f24e1b790646b112 \
-sha256  f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140 \
-size    207992
+                    rmd160  b9e2cc0c836faa59eca3bfc0f24e1b790646b112 \
+                    sha256  f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140 \
+                    size    207992
 
 depends_build-append \
     port:autoconf \
@@ -166,7 +166,7 @@ pre-configure {
     system "cd ${worksrcpath} && env NOCONFIGURE=1 ./autogen.sh"
 }
 
-use_xcode  no
+use_xcode               yes
 compiler.cxx_standard   2017
 # CMS_NO_REGISTER_KEYWORD required for C++17 or newer compiler.
 # PYTHON_CFLAGS and PYTHON_LIBS have to be non-empty
