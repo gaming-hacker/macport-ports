@@ -115,7 +115,7 @@ foreach qt_major {5} {
         }
     }
 
-    set python.versions {39}
+    set python_versions {39}
 
     foreach pver ${python_versions} {
         subport py${pver}-${name}-qt${qt_major} {
