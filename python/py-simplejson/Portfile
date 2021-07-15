@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   www
 platforms           darwin
 license             MIT
 
-python.versions     27 35 36 37 38 39
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,8 +25,8 @@ long_description    simplejson is a simple, fast, complete, correct and \
 homepage            http://simplejson.readthedocs.org/
 
 checksums           rmd160  dd8b4144a7cc24f152a6720094fbd032e0cc328a \
-                    sha256  da72a452bcf4349fc467a12b54ab0e63e654a571cacc44084826d52bde12b6ee \
-                    size    82434
+sha256  da72a452bcf4349fc467a12b54ab0e63e654a571cacc44084826d52bde12b6ee \
+size    82434
 
 if {${name} ne ${subport}} {
     post-destroot {

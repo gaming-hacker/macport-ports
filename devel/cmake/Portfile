@@ -242,7 +242,7 @@ size    7264123
     }
 
     # Supported pythons
-    set python_versions {39}
+    set python.versions {39}
 
     # declare all +python* variants, with conflicts
     foreach pyver ${python_versions} {

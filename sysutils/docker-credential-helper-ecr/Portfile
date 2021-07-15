@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,8 +21,8 @@ license             Apache-2
 installs_libs       no
 
 checksums           rmd160  0bee2612b828c7c5f529bd568dc9a139984d3887 \
-                    sha256  8105d65c838af9a097f25ceb4b7e180df89b161e51353e730d4d36f1ac533d59 \
-                    size    1143994
+sha256  8105d65c838af9a097f25ceb4b7e180df89b161e51353e730d4d36f1ac533d59 \
+size    1143994
 
 set build_target    bin/local/docker-credential-ecr-login
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    An opinionated code formatter for Lua 5.1, Lua 5.2 and Luau.
                     a consistent code style.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  9a29b547d8ba3784cfc3c4db8a9da3666df79a76 \
-                    sha256  ffd1fafe3a44e3cd70f139d343149501d010c0cd2ed569243c827f917a795f77 \
-                    size    258124
+rmd160  9a29b547d8ba3784cfc3c4db8a9da3666df79a76 \
+sha256  ffd1fafe3a44e3cd70f139d343149501d010c0cd2ed569243c827f917a795f77 \
+size    258124
 
 cargo.crates \
     aho-corasick                    0.7.18  1e37cfd5e7657ada45f742d6e99ca5788580b5c529dc78faf11ece6dc702656f \

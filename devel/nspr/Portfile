@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem  1.0
 PortGroup           muniversal 1.0
@@ -19,8 +19,8 @@ master_sites        http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${vers
                     ftp://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${version}/src/
 
 checksums           rmd160  e7b4a6903ac891161149b59142fccf29c11eb58f \
-                    sha256  bb6bf4f534b9559cf123dcdc6f9cd8167de950314a90a88b2a329c16836e7f6c \
-                    size    1079004
+sha256  bb6bf4f534b9559cf123dcdc6f9cd8167de950314a90a88b2a329c16836e7f6c \
+size    1079004
 
 worksrcdir          ${worksrcdir}/nspr
 
