@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/twpayne/chezmoi 2.1.0 v
+go.setup            github.com/twpayne/chezmoi 2.1.2 v
 revision            0
 
 homepage            https://chezmoi.io
@@ -42,13 +42,13 @@ destroot {
         ${destroot}${prefix}/share/zsh/site-functions/_${name}
 
     # Install fish completion
-    xinstall -d ${destroot}${prefix}/share/fish/completions
+    xinstall -d ${destroot}${prefix}/share/fish/vendor_completions.d
     xinstall -m 0644 ${worksrcpath}/completions/${name}.fish \
-        ${destroot}${prefix}/share/fish/completions/${name}.fish
+        ${destroot}${prefix}/share/fish/vendor_completions.d/${name}.fish
 }
 
 github.tarball_from archive
 
-checksums           rmd160  8759a9c24ca24ac3a2766cc681f9d23b610cd313 \
-sha256  8385e08fdcc37e88f4153c7ac750c6c55d09207b61129cce40b1f5ce1608e465 \
-size    2300942
+checksums           rmd160  8641cc7691c9f05b7d98b4ec45a40dc529f85257 \
+                    sha256  0d17795a499bef2d113953725927305a5fdfccfa1681e1c29bc44a25cee458a3 \
+                    size    2293789
