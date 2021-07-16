@@ -3,8 +3,8 @@
 PortSystem                  1.0
 
 name                        pinentry
-version                     1.1.0
-revision                    1
+version                     1.1.1
+revision                    0
 categories                  security
 license                     GPL-2+
 maintainers                 {ionic @Ionic} openmaintainer
@@ -19,9 +19,9 @@ long_description            This is a collection of simple PIN or passphrase ent
 
 use_bzip2                   yes
 
-checksums                   rmd160  33b1f9ae44172a0bba37ad4b7d264822e040fe9e \
-sha256  68076686fa724a290ea49cdf0d1c0c1500907d1b759a3bcbfbec0293e8f56570 \
-size    467702
+checksums  rmd160  1b1a42245564b57c0fc0695d1c3c2d68e1cbf3ba \
+sha256  cd12a064013ed18e2ee8475e669b9f58db1b225a0144debdb85a68cecddba57f \
+size    515723
 
 configure.args              --with-libiconv-prefix=${prefix} \
                             --with-ncurses-include-dir=${prefix}/include/ncurses \
@@ -73,13 +73,6 @@ variant gnome3 description {Enable GNOME3/gtk3-based pinentry tool} {
 #    configure.args-append   --enable-pinentry-tqt \
 #                            --enable-fallback-curses
 #}
-
-variant qt4 conflicts qt5 description {Enable qt4-based pinentry tool} {
-    PortGroup               qt4 1.0
-    configure.args-delete   --disable-pinentry-qt
-    configure.args-append   --enable-pinentry-qt \
-                            --enable-fallback-curses
-}
 
 variant qt5 conflicts qt4 description {Enable qt5-based pinentry tool} {
     PortGroup               qt5 1.0
