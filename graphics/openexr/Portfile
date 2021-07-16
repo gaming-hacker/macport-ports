@@ -74,7 +74,7 @@ size    595490
 
 set python.versions {39}
 
-foreach pver ${python_versions} {
+foreach pver ${python.versions} {
     subport py${pver}-pyilmbase {
         PortGroup   active_variants 1.1
         PortGroup   boost           1.0
@@ -87,7 +87,7 @@ size    524975
 
         # so long as boost can only be installed with one version of python at a time,
         #    conflict with all other pyilmbase ports
-        foreach over ${python_versions} {
+        foreach over ${python.versions} {
             if {${over} ne ${pver}} {
                 conflicts-append py${over}-pyilmbase
             }

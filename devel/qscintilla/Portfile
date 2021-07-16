@@ -117,7 +117,7 @@ foreach qt_major {5} {
 
     set python.versions {39}
 
-    foreach pver ${python_versions} {
+    foreach pver ${python.versions} {
         subport py${pver}-${name}-qt${qt_major} {
             if {${qt_major} eq 4} {
                 PortGroup qt4 1.0

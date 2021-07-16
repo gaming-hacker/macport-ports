@@ -38,7 +38,7 @@ if {${name} eq ${subport}} {
     }
 }
 
-foreach python_version ${python_versions} {
+foreach python_version ${python.versions} {
     revision    0
 
     set python_branch [string index ${python_version} 0].[string range ${python_version} 1 end]

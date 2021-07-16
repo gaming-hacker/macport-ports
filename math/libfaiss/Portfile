@@ -54,7 +54,7 @@ default_variants +openblas
 
 # create Python subports
 set python.versions {39}
-foreach v ${python_versions} {
+foreach v ${python.versions} {
     subport py${v}-${github.project} {
         PortGroup   python 1.0
 

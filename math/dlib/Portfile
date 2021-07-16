@@ -37,7 +37,7 @@ cmake.build_type    Release
 
 # create Python subports
 set python.versions {39}
-foreach v ${python_versions} {
+foreach v ${python.versions} {
     subport py${v}-${github.project} {
         PortGroup   python 1.0
         python.default_version  ${v}
