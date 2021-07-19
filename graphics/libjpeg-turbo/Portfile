@@ -48,7 +48,9 @@ if {${universal_possible} && [variant_isset universal]} {
     depends_build-append port:nasm
     configure.env       ASM_NASM=${prefix}/bin/nasm
 } elseif {${configure.build_arch} eq "ppc"} {
-    configure.args-append   -DWITH_SIMD=OFF
+    if {[catch {sysctl hw.vectorunit} result] || $result == 0} {
+        configure.args-append   -DWITH_SIMD=OFF
+    }
 }
 
 variant java description "Add Java support" {
