@@ -1,0 +1,224 @@
+From 281f1efd7d9a3e0bd89ef3e0b2f004943817a5ab Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?=C4=B0lteri=C5=9F=20Ya=C4=9F=C4=B1ztegin=20Ero=C4=9Flu?=
+ <ilteris@asenkron.com.tr>
+Date: Wed, 7 Jul 2021 00:34:17 +0300
+Subject: [PATCH] Support MacPorts
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: İlteriş Yağıztegin Eroğlu <ilteris@asenkron.com.tr>
+---
+ Makefile.defs   |  5 +++-
+ client/Makefile | 80 +++++++++++++++++++++++++++++++++----------------
+ 2 files changed, 59 insertions(+), 26 deletions(-)
+
+diff --git a/Makefile.defs b/Makefile.defs
+index 40fb49b8b..5140ddfb3 100644
+--- a/Makefile.defs
++++ b/Makefile.defs
+@@ -59,7 +59,10 @@ else
+ endif
+ 
+ ifeq ($(USE_BREW),1)
+-  BREW_PREFIX = $(shell brew --prefix)
++  BREW_PREFIX = $(shell brew --prefix 2>/dev/null)
++  ifeq ($(strip $(BREW_PREFIX)),)
++    MACPORTS_PREFIX ?= /opt/local
++  endif
+ endif
+ 
+ ifeq ($(DEBUG),1)
+diff --git a/client/Makefile b/client/Makefile
+index bf46792ee..06db2e5e3 100644
+--- a/client/Makefile
++++ b/client/Makefile
+@@ -14,11 +14,21 @@ vpath %.dic dictionaries
+ OBJDIR = obj
+ 
+ ifeq ($(USE_BREW),1)
+-	INCLUDES += -I$(BREW_PREFIX)/include
+-	LDLIBS += -L$(BREW_PREFIX)/lib
+-	PKG_CONFIG_ENV := PKG_CONFIG_PATH=$(BREW_PREFIX)/opt/qt/lib/pkgconfig
+-	PKG_CONFIG_ENV := PKG_CONFIG_PATH=$(BREW_PREFIX)/opt/qt5/lib/pkgconfig
+-endif
++	ifdef MACPORTS_PREFIX
++                INCLUDES += -I$(MACPORTS_PREFIX)/include
++		LDLIBS += -L$(MACPORTS_PREFIX)/lib
++		PKG_CONFIG_ENV := PKG_CONFIG_PATH=$(MACPORTS_PREFIX)/lib/pkgconfig
++		PKG_CONFIG_ENV := PKG_CONFIG_PATH=$(MACPORTS_PREFIX)/libexec/qt/lib/pkgconfig
++		PKG_CONFIG_ENV := PKG_CONFIG_PATH=$(MACPORTS_PREFIX)/libexec/qt5/lib/pkgconfig
++	else
++		INCLUDES += -I$(BREW_PREFIX)/include
++		LDLIBS += -L$(BREW_PREFIX)/lib
++		PKG_CONFIG_ENV := PKG_CONFIG_PATH=$(BREW_PREFIX)/opt/qt/lib/pkgconfig
++		PKG_CONFIG_ENV := PKG_CONFIG_PATH=$(BREW_PREFIX)/opt/qt5/lib/pkgconfig
++	endif
++endif
++
++PM3INCLUDES =
+ 
+ ###################
+ # local libraries #
+@@ -101,24 +111,29 @@ MBEDTLSLIBCLIENTRELPATH = ../../client
+ # not distributed as system library
+ STATICLIBS += $(AMIIBOLIB)
+ LDLIBS += $(AMIIBOLIBLD)
+-INCLUDES += $(AMIIBOLIBINC)
++PM3INCLUDES += $(AMIIBOLIBINC)
+ 
+ ## Cliparser / Argtable3
+ # not distributed as system library
+ STATICLIBS += $(CLIPARSERLIB)
+ LDLIBS += $(CLIPARSERLIBLD)
+-INCLUDES += $(CLIPARSERLIBINC)
++PM3INCLUDES += $(CLIPARSERLIBINC)
+ 
+ ## Hardnested
+ # not distributed as system library
+ STATICLIBS += $(HARDNESTEDLIB)
+ LDLIBS +=$(HARDNESTEDLIBLD)
+-INCLUDES += $(HARDNESTEDLIBINC)
++PM3INCLUDES += $(HARDNESTEDLIBINC)
+ 
+ ## Lua
+ ifneq ($(SKIPLUASYSTEM),1)
+-    LUAINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags lua5.2 2>/dev/null)
+-    LUALDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs lua5.2 2>/dev/null)
++    ifdef MACPORTS_PREFIX
++        LUAINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags lua-5.2 2>/dev/null)
++        LUALDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs lua-5.2 2>/dev/null)
++    else
++        LUAINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags lua5.2 2>/dev/null)
++        LUALDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs lua5.2 2>/dev/null)
++    endif
+     ifneq ($(LUALDLIBS),)
+         LUALIB =
+         LUALIBLD = $(LUALDLIBS)
+@@ -126,9 +141,10 @@ ifneq ($(SKIPLUASYSTEM),1)
+         LUA_FOUND = 1
+     endif
+ endif
++
+ STATICLIBS += $(LUALIB)
+ LDLIBS += $(LUALIBLD)
+-INCLUDES += $(LUALIBINC)
++PM3INCLUDES += $(LUALIBINC)
+ 
+ ## Jansson
+ # Jansson section needs to be after Lua to avoid interferences on macOS if a locally incompatible Lua was available, see PR 1155
+@@ -144,25 +160,25 @@ ifneq ($(SKIPJANSSONSYSTEM),1)
+ endif
+ STATICLIBS += $(JANSSONLIB)
+ LDLIBS += $(JANSSONLIBLD)
+-INCLUDES += $(JANSSONLIBINC)
++PM3INCLUDES += $(JANSSONLIBINC)
+ 
+ ## mbed TLS
+ # system library cannot be used because it is compiled by default without CMAC support
+ STATICLIBS += $(MBEDTLSLIB)
+ LDLIBS += $(MBEDTLSLIBLD)
+-INCLUDES += $(MBEDTLSLIBINC)
++PM3INCLUDES += $(MBEDTLSLIBINC)
+ 
+ ## Reveng
+ # not distributed as system library
+ STATICLIBS += $(REVENGLIB)
+ LDLIBS += $(REVENGLIBLD)
+-INCLUDES += $(REVENGLIBINC)
++PM3INCLUDES += $(REVENGLIBINC)
+ 
+ ## Tinycbor
+ # not distributed as system library
+ STATICLIBS += $(TINYCBORLIB)
+ LDLIBS += $(TINYCBORLIBLD)
+-INCLUDES += $(TINYCBORLIBINC)
++PM3INCLUDES += $(TINYCBORLIBINC)
+ 
+ ## Whereami
+ ifneq ($(SKIPWHEREAMISYSTEM),1)
+@@ -175,7 +191,7 @@ ifneq ($(SKIPWHEREAMISYSTEM),1)
+ endif
+ STATICLIBS += $(WHEREAMILIB)
+ LDLIBS += $(WHEREAMILIBLD)
+-INCLUDES += $(WHEREAMILIBINC)
++PM3INCLUDES += $(WHEREAMILIBINC)
+ 
+ ####################
+ # system libraries #
+@@ -203,7 +219,7 @@ ifneq ($(SKIPBT),1)
+     endif
+ endif
+ LDLIBS += $(BTLIBLD)
+-INCLUDES += $(BTLIBINC)
++PM3INCLUDES += $(BTLIBINC)
+ 
+ ## Math
+ LDLIBS += -lm
+@@ -216,16 +232,26 @@ endif
+ 
+ ## Python3 (optional)
+ ifneq ($(SKIPPYTHON),1)
+-    PYTHONINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags python3 2>/dev/null)
+-    PYTHONLDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs python3 2>/dev/null)
++    ifdef MACPORTS_PREFIX
++        PYTHONINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags python-3.9 2>/dev/null)
++        PYTHONLDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs python-3.9 2>/dev/null)
++    else
++        PYTHONINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags python3 2>/dev/null)
++        PYTHONLDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs python3 2>/dev/null)
++    endif
+     ifneq ($(PYTHONLDLIBS),)
+         PYTHONLIBLD = $(PYTHONLDLIBS)
+         PYTHONLIBINC = $(PYTHONINCLUDES)
+         PYTHON_FOUND = 1
+     else
+         # since python3.8, applications willing to embed python must use -embed:
+-        PYTHONINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags python3-embed 2>/dev/null)
+-        PYTHONLDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs python3-embed 2>/dev/null)
++        ifdef MACPORTS_PREFIX
++            PYTHONINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags python-3.9-embed 2>/dev/null)
++            PYTHONLDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs python-3.9-embed 2>/dev/null)
++        else
++            PYTHONINCLUDES = $(shell $(PKG_CONFIG_ENV) pkg-config --cflags python3-embed 2>/dev/null)
++            PYTHONLDLIBS = $(shell $(PKG_CONFIG_ENV) pkg-config --libs python3-embed 2>/dev/null)
++        endif
+         ifneq ($(PYTHONLDLIBS),)
+             PYTHONLIBLD = $(PYTHONLDLIBS)
+             PYTHONLIBINC = $(PYTHONINCLUDES)
+@@ -234,7 +260,7 @@ ifneq ($(SKIPPYTHON),1)
+     endif
+ endif
+ LDLIBS += $(PYTHONLIBLD)
+-INCLUDES += $(PYTHONLIBINC)
++PM3INCLUDES += $(PYTHONLIBINC)
+ 
+ ## QT5 (or QT4 fallback) (optional)
+ ifneq ($(SKIPQT),1)
+@@ -279,8 +305,12 @@ CXXINCLUDES += $(QTINCLUDES)
+ ## Readline
+ ifneq ($(SKIPREADLINE),1)
+     ifeq ($(USE_BREW),1)
+-        LDLIBS += -L$(BREW_PREFIX)/opt/readline/lib
+-        INCLUDES += -I$(BREW_PREFIX)/opt/readline/include
++        ifdef MACPORTS_PREFIX
++            PM3INCLUDES += -I$(MACPORTS_PREFIX)/include/readline
++        else
++            LDLIBS += -L$(BREW_PREFIX)/opt/readline/lib
++            PM3INCLUDES += -I$(BREW_PREFIX)/opt/readline/include
++        endif
+     endif
+     LDLIBS += -lreadline
+     READLINE_FOUND = 1
+@@ -303,7 +333,7 @@ endif
+ CFLAGS ?= $(DEFCFLAGS)
+ # We cannot just use CFLAGS+=... because it has impact on sub-makes if CFLAGS is defined in env:
+ PM3CFLAGS = $(CFLAGS)
+-PM3CFLAGS += -I./src -I./include -I../include -I../common -I../common_fpga $(INCLUDES)
++PM3CFLAGS += -I./src -I./include -I../include -I../common -I../common_fpga $(PM3INCLUDES) $(INCLUDES)
+ # WIP Testing
+ #PM3CFLAGS += -std=c11 -pedantic
+ 
+-- 
+2.30.1 (Apple Git-130)
+

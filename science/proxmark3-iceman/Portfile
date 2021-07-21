@@ -1,0 +1,49 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem                1.0
+PortGroup                 github 1.0
+
+name                      proxmark3-iceman
+version                   4.13441
+revision                  0
+license                   GPL-2
+categories                science comms
+platforms                 darwin macosx
+
+description               RRG/Iceman version of proxmark3 RFID Instrument Client/FW
+
+long_description          ${description}. By default, the repository is built for PM3RDV4. \
+                          To build for older hardware releases, please install the package \
+                          with the "pm3generic" variant.
+
+maintainers               {@linuxgemini linuxgemini.space:proxmark3packaging} openmaintainer
+
+depends_lib-append        port:readline \
+                          port:qt5 \
+                          port:qt5-qtbase \
+                          port:lua52 \
+                          port:python39
+
+depends_build-append      port:pkgconfig \
+                          port:arm-none-eabi-gcc \
+                          port:arm-none-eabi-binutils
+
+github.setup              RfidResearchGroup proxmark3 4.13441 v
+checksums                 sha256 9fd8d6e017d941c403a8f3d0d2f3ab1f9623b82de58dd7aa841d0471b310bd52 \
+                          rmd160 923a587f44bbfad3ee92f3aad91fcaa16c5c9f4b \
+                          size 24568220
+
+patch.pre_args            -p1
+patchfiles-append         0001-Support-MacPorts.patch
+
+use_configure             no
+
+variant pm3generic description {Build firmware for PM3GENERIC instead of PM3RDV4} {
+    build.env-append          PLATFORM=PM3GENERIC
+    destroot.env-append       PLATFORM=PM3GENERIC
+}
+
+build.env-append          PREFIX=${prefix}
+build.env-append          MACPORTS_PREFIX=${prefix}
+destroot.env-append       PREFIX=${prefix}
+destroot.env-append       MACPORTS_PREFIX=${prefix}
