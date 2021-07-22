@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -32,8 +32,8 @@ homepage            https://dbeaver.io/
 distname            dbeaver-ce-${version}-macosx.cocoa.x86_64
 
 checksums           rmd160  9894be3775cd1c470e0fd1a2822dbde62a3659bb \
-                    sha256  f3ee433728925ce4866047a84731e394bbabc55bd4dc04829a7c9eb15b645bc9 \
-                    size    96662354
+sha256  f3ee433728925ce4866047a84731e394bbabc55bd4dc04829a7c9eb15b645bc9 \
+size    96662354
 
 extract.mkdir       yes
 

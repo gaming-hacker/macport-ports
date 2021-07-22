@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -55,8 +55,8 @@ github.tarball_from releases
 distname        mn-darwin-amd64-v${version}
 
 checksums       rmd160  093df5edd690e4faa1c3a96805a69945c67fbd59 \
-                sha256  976da995dbd3e0e29666b26eb8a579b4c4af7d1009592cce8b69e2352a5f772a \
-                size    20153076
+sha256  976da995dbd3e0e29666b26eb8a579b4c4af7d1009592cce8b69e2352a5f772a \
+size    20153076
 
 use_zip         yes
 use_configure   no

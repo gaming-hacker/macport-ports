@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ long_description    libfive is a software library and set of tools for solid mod
                     domain-specific CAD tools.
 
 checksums           rmd160  00534d1377c208a7cbcaa34f636dc9334fe70a1c \
-                    sha256  ee34bfd335062d89888e819e929f51926667ea5c33699bf6627e38ee572306f8 \
-                    size    879290
+sha256  ee34bfd335062d89888e819e929f51926667ea5c33699bf6627e38ee572306f8 \
+size    879290
 
 # Even though eigen3 is header-only, it must be a library dependency because
 # the libfive headers include it.

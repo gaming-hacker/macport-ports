@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -31,8 +31,8 @@ distname            ${name}-${version}
 worksrcdir          ${github.project}
 
 checksums           rmd160  89fcc2aa9bad7ecc1de7bee4edea68fdff39706a \
-                    sha256  624c8a792b0bc7ff3776499c2c743b32273569efd0567615e570a7e739e8d521 \
-                    size    281055
+sha256  624c8a792b0bc7ff3776499c2c743b32273569efd0567615e570a7e739e8d521 \
+size    281055
 
 depends_lib-append  port:py${python.version}-pyqt5
 

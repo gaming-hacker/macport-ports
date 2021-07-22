@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    The traitsui project contains a toolkit-independent GUI\
 platforms           darwin
 
 checksums           rmd160  1aa66786bdd896ea747e38a984cf2d890c842045 \
-                    sha256  3698378683f80f4eb6cbfa7bce6f1e68f5bc95e883ef77d2445751abd47419fe \
-                    size    6219916
+sha256  3698378683f80f4eb6cbfa7bce6f1e68f5bc95e883ef77d2445751abd47419fe \
+size    6219916
 
-python.versions     36 37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,9 +27,9 @@ license             MIT
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  14d084659dded4deaff6a626645d8ebe07d804e5 \
-                    sha256  e8f3f190d75b89050ca7a85114ddb80aa8f03af66376452bbd5ed5c412a94e76 \
-                    size    5006292
+rmd160  14d084659dded4deaff6a626645d8ebe07d804e5 \
+sha256  e8f3f190d75b89050ca7a85114ddb80aa8f03af66376452bbd5ed5c412a94e76 \
+size    5006292
 
 github.tarball_from archive
 

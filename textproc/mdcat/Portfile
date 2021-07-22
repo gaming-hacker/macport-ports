@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,9 +27,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  4b018bab4c2523df99dddcbb586d1f4f68dccde2 \
-                    sha256  354f1bea0a53c5547693b7de9731d6e2648a0da10aa485ca16e4e643e49be14c \
-                    size    346607
+rmd160  4b018bab4c2523df99dddcbb586d1f4f68dccde2 \
+sha256  354f1bea0a53c5547693b7de9731d6e2648a0da10aa485ca16e4e643e49be14c \
+size    346607
 
 github.tarball_from archive
 

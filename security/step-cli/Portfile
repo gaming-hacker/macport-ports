@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,8 +26,8 @@ installs_libs       no
 build.env-delete    GO111MODULE=off GOPROXY=off
 
 checksums           rmd160  9dd0c75087c192e6fecdf9fa022433fbf7d54928 \
-                    sha256  b04281bfe53ec39a4056dd3b199715471ff785e3036e22c49d6197a333ee660c \
-                    size    1794368
+sha256  b04281bfe53ec39a4056dd3b199715471ff785e3036e22c49d6197a333ee660c \
+size    1794368
 
 build.cmd           make
 build.target        binary-darwin
