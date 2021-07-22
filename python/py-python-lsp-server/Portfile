@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,17 +14,17 @@ categories-append   devel
 platforms           darwin
 supported_archs     noarch
 license             MIT
-maintainers         {gpanders.com:greg @gpanders} openmaintainer
+maintainers         {reneeotten @reneeotten} openmaintainer
 
 description         A Python implementation of the Language Server Protocol
 long_description    Fork of the python-language-server project, maintained by the Spyder \
                     IDE team and the community.
 
 checksums           rmd160  ed800ce49f963cd61cc239f3d1ecb8169af298ee \
-sha256  987eb87073fca65bd1b0d32e408935f2146a98d33ae06d716d00969fc8c935b3 \
-size    57851
+                    sha256  987eb87073fca65bd1b0d32e408935f2146a98d33ae06d716d00969fc8c935b3 \
+                    size    57851
 
-python.versions 39
+python.versions     36 37 38 39
 
 if {${subport} ne ${name}} {
     depends_lib-append \
@@ -63,6 +63,13 @@ if {${subport} ne ${name}} {
     test.target
     test.env        PYTHONPATH=${worksrcpath}/build/lib
 
+    post-destroot {
+        set docdir ${prefix}/share/doc/${subport}
+        xinstall -d ${destroot}${docdir}
+        xinstall -m 0644 -W ${worksrcpath} README.md LICENSE \
+            ${destroot}${docdir}
+    }
+
     depends_run-append \
                     port:python-lsp-server_select
 
@@ -70,8 +77,8 @@ if {${subport} ne ${name}} {
     select.file     ${filespath}/py${python.version}-pylsp
 
     notes "
-To make the Python ${python.branch} version of python-lsp-server the one \
-that is run when you execute the commands without a version suffix, e.g. \
+To make the Python ${python.branch} version of python-lsp-server the one\
+that is run when you execute the commands without a version suffix, e.g.\
 'pylsp', run:
 
 port select --set ${select.group} [file tail ${select.file}]

@@ -95,8 +95,8 @@ if {${subport} ne ${name}} {
     select.file     ${filespath}/py${python.version}-pyls
 
     notes "
-To make the Python ${python.branch} version of python language server the one \
-that is run when you execute the commands without a version suffix, e.g. \
+To make the Python ${python.branch} version of python language server the one\
+that is run when you execute the commands without a version suffix, e.g.\
 'pyls', run:
 
 port select --set ${select.group} [file tail ${select.file}]
