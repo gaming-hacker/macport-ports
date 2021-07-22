@@ -45,6 +45,7 @@ post-patch {
 }
 
 depends_build-append \
+                    port:asciidoc \
                     port:intltool \
                     port:pkgconfig \
                     port:python${python_ver_no_dot} \
@@ -68,12 +69,12 @@ depends_lib-append  port:spice-protocol \
 configure.cppflags-append \
                     -D_XOPEN_SOURCE
 
-variant quartz {
+variant quartz conflicts x11 {
     # Quartz & X11 binaries are incompatible, although built similarly
     require_active_variants gtk3 quartz x11
 }
 
-variant x11 {
+variant x11 conflicts quartz {
     # Quartz & X11 binaries are incompatible, although built similarly
     require_active_variants gtk3 x11 quartz
 }
