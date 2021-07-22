@@ -6,8 +6,9 @@ PortGroup           active_variants 1.1
 
 name                gildas
 version             202107a
-revision            1
+revision            2
 set my_version      [string tolower [clock format [clock scan 2000-[string range ${version} 4 5]-10] -format %b]][string range ${version} 2 3][string range ${version} 6 end]
+supported_archs     arm64 x86_64
 set my_machine      [if {[string match *arm* ${os.arch}]} {list arm64} {list x86_64}]
 categories          science
 platforms           darwin
@@ -73,17 +74,16 @@ configure {
         set cxxstdlib [string map {lib -l} ${configure.cxx_stdlib}]
     }
 
-    reinplace -W ${worksrcpath}/admin "s|@PREFIX@|${prefix}|g" define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@CC@|${configure.cc}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@CCFLAGS@|${configure.cflags}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@FC@|${configure.fc}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@FCFLAGS@|${configure.fcflags}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@CXX@|${configure.cxx}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@CPP@|${configure.cpp}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@CPPFLAGS@|${configure.cppflags}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@LDFLAGS@|${configure.ldflags}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@PYTHON@|${configure.python}|g" Makefile.build Makefile.def Makefile.python gildas-env.sh define-system.sh
-    reinplace -W ${worksrcpath}/admin "s|@STDCXXLIB@|${cxxstdlib}|g" Makefile.def Makefile.python gildas-env.sh define-system.sh
+    reinplace -W ${worksrcpath}/admin "s|@PREFIX@|${prefix}|g" define-system.sh gildas-env.sh
+    reinplace -W ${worksrcpath}/admin "s|@CC@|${configure.cc}|g" define-system.sh
+    reinplace -W ${worksrcpath}/admin "s|@CCFLAGS@|${configure.cflags}|g" Makefile.def
+    reinplace -W ${worksrcpath}/admin "s|@FC@|${configure.fc}|g" define-system.sh
+    reinplace -W ${worksrcpath}/admin "s|@FCFLAGS@|${configure.fcflags}|g" Makefile.def
+    reinplace -W ${worksrcpath}/admin "s|@CXX@|${configure.cxx}|g" define-system.sh
+    reinplace -W ${worksrcpath}/admin "s|@CPP@|${configure.cpp}|g" Makefile.def define-system.sh
+    reinplace -W ${worksrcpath}/admin "s|@CPPFLAGS@|${configure.cppflags}|g" Makefile.def
+    reinplace -W ${worksrcpath}/admin "s|@LDFLAGS@|${configure.ldflags}|g" Makefile.def
+    reinplace -W ${worksrcpath}/admin "s|@PYTHON@|${configure.python}|g" Makefile.build Makefile.def Makefile.python gildas-env.sh
 }
 
 build {
@@ -105,6 +105,7 @@ destroot {
     xinstall ${filespath}/imager.in ${destroot}${prefix}/bin/imager
 
     reinplace -W ${destroot}${prefix}/bin s|@PREFIX@|${prefix}|g astro class clic greg mapping mira mrtcal sic sched-30m imager
+    reinplace -W ${destroot}${prefix}/bin s|@ARCH@|${my_machine}|g astro class clic greg mapping mira mrtcal sic sched-30m imager
 
     # delete broken module
     delete ${destroot}${prefix}/lib/gildas/${my_machine}-darwin-gfortran/python/pyclassfiller
