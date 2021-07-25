@@ -43,12 +43,12 @@ depends_build   port:gettext port:zlib port:flex port:texinfo
 
 depends_lib     port:libiconv port:ncurses port:sqlite3
 
-patchfiles  patch-macosx-nat.c.diff \
-            patch-include-libiberty.h.diff
+patchfiles      patch-macosx-nat.c.diff
 
 if {${os.platform} eq "darwin" && ${os.major} < 10} {
     if {${os.major} == 8} {
         patchfiles-append   patch-gdb-tiger.diff
+        patchfiles-append   patch-include-libiberty.h.diff
     }
     patchfiles-append   patch-gdb-pre-snow-leopard.diff
     # Fix a hang that appears at least on Tiger/PPC.
