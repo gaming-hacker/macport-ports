@@ -1,0 +1,11 @@
+--- gdb/macosx/macosx-tdep.c.orig
++++ gdb/macosx/macosx-tdep.c
+@@ -1558,7 +1558,7 @@
+   if (plist_data == NULL)
+     return NULL;
+ 
+-  CFPropertyListRef plist = CFPropertyListCreateWithData (kCFAllocatorDefault, plist_data, kCFPropertyListImmutable, NULL, NULL);
++  CFPropertyListRef plist = CFPropertyListCreateFromXMLData (kCFAllocatorDefault, plist_data, kCFPropertyListImmutable, NULL);
+ 
+   if (plist == NULL || CFGetTypeID (plist) != CFDictionaryGetTypeID())
+     {
