@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pythran
-version             0.9.11
+version             0.9.12.post1
 revision            0
 
 categories-append   devel
@@ -17,11 +17,11 @@ long_description    ${description}
 
 homepage            https://github.com/serge-sans-paille/pythran
 
-checksums           rmd160  37de6c0929a4f507e3e2a94f070cad4d3390aaaf \
-sha256  a317f91e2aade9f6550dc3bf40b5caeb45b7e012daf27e2b3e4ad928edb01667 \
-size    3764841
+checksums           rmd160  51d65f4d61ee5dc2287a18a7ea99180c0a533058 \
+                    sha256  e7589cf83b0befa9a1b55e98223caf89aff887d9e3f14be912cf8703a717f185 \
+                    size    3845740
 
-python.versions 39
+python.versions     37 38 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

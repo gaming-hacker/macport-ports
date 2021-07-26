@@ -1,32 +1,32 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-backports
 version             1.0
+revision            0
+
 categories-append   devel
 platforms           darwin
-license             PSF
 supported_archs     noarch
-
-# do not add subports for python > 3.4
-python.versions 39
-
 maintainers         {stromnov @stromnov} openmaintainer
+license             PSF
+
+homepage            https://pypi.python.org/pypi/backports
 
 description         Namespace for backported Python features
 long_description    ${description}
 
-homepage            http://bitbucket.org/brandon/backports
-master_sites        ${homepage}
+# keep all Python versions here, indirect dependency of py-virtualenv
+python.versions     27 34 35 36 37 38 39
 
 if {${name} ne ${subport}} {
     distfiles
 
-    worksrcdir          backports
+    worksrcdir      backports
 
-    extract.mkdir       yes
+    extract.mkdir   yes
 
     post-extract {
         file copy ${filespath}/setup.py ${worksrcpath}
