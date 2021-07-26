@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup compilers 1.0
@@ -22,8 +22,8 @@ distname            ${name}.tgz.v${version}
 extract.suffix
 set version_g2clib  1.4.0
 checksums           rmd160  d4a1807fb7df6242f899f740e75f984cabcac9af \
-                    sha256  70bb21bb64648627c8678b0b8948d8f5558ce423752fda8603c674cacf8d9e68 \
-                    size    28757467
+sha256  70bb21bb64648627c8678b0b8948d8f5558ce423752fda8603c674cacf8d9e68 \
+size    28757467
 long_description   \
     wgrib2 is a swiss army knife for grib2 files. \
     GRIB-2 has arrived and has begun replacing the the older standard GRIB-1. \

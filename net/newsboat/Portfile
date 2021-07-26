@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo_fetch 1.0
@@ -25,13 +25,13 @@ maintainers         {en.sent.com:macports @Raimondi} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  b325e45cff5caf62510445ab1e5e6dfbd32e06d9 \
-                    sha256  3eae6943e7d90d2a1272f09bd73384579737cce3c3e4b7cbcd55f6b6b34ed668 \
-                    size    1148587 \
+rmd160  b325e45cff5caf62510445ab1e5e6dfbd32e06d9 \
+sha256  3eae6943e7d90d2a1272f09bd73384579737cce3c3e4b7cbcd55f6b6b34ed668 \
+size    1148587 \
 
 github.tarball_from         archive
 
-compiler.cxx_standard       2011
+compiler.cxx_standard 2017
 
 patchfiles                  patch-libiconv-makefile.diff \
                             patch-libiconv-rust.diff

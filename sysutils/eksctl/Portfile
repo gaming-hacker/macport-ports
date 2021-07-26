@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -24,8 +24,8 @@ license             Apache-2
 installs_libs       no
 
 checksums           rmd160  777ce0168081fd331d1aed5336d6ac9571c90478 \
-                    sha256  e73c8d0370a84da84ef22b609c30680c4dd07075878bc4771cf56bd4afa73ab3 \
-                    size    9926766
+sha256  e73c8d0370a84da84ef22b609c30680c4dd07075878bc4771cf56bd4afa73ab3 \
+size    9926766
 
 # Allow fetching dependencies
 build.env-delete    GO111MODULE=off GOPROXY=off

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           luarocks 1.0
@@ -26,8 +26,8 @@ long_description    Luacheck is a static analyzer and a linter for Lua. \
 homepage            https://github.com/mpeterv/luacheck
 
 checksums           rmd160  3c90d231e26cd8a587c9868ab894263ba4f13afd \
-                    sha256  58eb0ab4668ad2f17947317afccd075255576bb25c61215424a82e066d4dc046 \
-                    size    224423
+sha256  58eb0ab4668ad2f17947317afccd075255576bb25c61215424a82e066d4dc046 \
+size    224423
 
 if {${subport} ne ${name}} {
     depends_lib-append \

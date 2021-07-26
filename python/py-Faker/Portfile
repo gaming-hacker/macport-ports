@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    \
 homepage            https://github.com/joke2k/faker
 
 checksums           rmd160  7c35d0b86c31fd5ac2a22388a9333e096a429fcc \
-                    sha256  2f62a30e79e7802655ee7f0cc88a49c39622a5d11f609992bf6ffbbbbf65db25 \
-                    size    1150102
+sha256  2f62a30e79e7802655ee7f0cc88a49c39622a5d11f609992bf6ffbbbbf65db25 \
+size    1150102
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
