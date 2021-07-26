@@ -28,7 +28,7 @@ can run on most popular UNIX and Microsoft Windows variants.
 
 homepage        http://opensource.apple.com/source/gdb
 platforms       darwin
-supported_archs x86_64 i386
+supported_archs x86_64 i386 ppc
 
 # xm.h can be created out of order
 use_parallel_build no
@@ -43,7 +43,18 @@ depends_build   port:gettext port:zlib port:flex port:texinfo
 
 depends_lib     port:libiconv port:ncurses port:sqlite3
 
-patchfiles	patch-macosx-nat.c.diff
+patchfiles      patch-macosx-nat.c.diff
+
+if {${os.platform} eq "darwin" && ${os.major} < 10} {
+    if {${os.major} == 8} {
+        patchfiles-append   patch-gdb-tiger.diff
+        patchfiles-append   patch-include-libiberty.h.diff
+    }
+    patchfiles-append   patch-gdb-pre-snow-leopard.diff
+    # Fix a hang that appears at least on Tiger/PPC.
+    # The fix is innocuous, so apply to Leopard too.
+    patchfiles-append   patch-gdb-pthread.diff
+}
 
 worksrcdir	${worksrcdir}/src
 
@@ -53,6 +64,11 @@ post-patch {
         ${worksrcpath}/gdb/config/i386/macosx.mh \
         ${worksrcpath}/libiberty/config/mh-macosx \
         ${worksrcpath}/bfd/configure.host
+
+    # https://trac.macports.org/ticket/63153
+    reinplace "s|\$(SDKROOT)/usr/bin/mig|/usr/bin/mig|" \
+        ${worksrcpath}/gdb/config/i386/macosx.mh \
+        ${worksrcpath}/gdb/config/powerpc/macosx.mh
 }
 
 configure.args \
@@ -71,8 +87,10 @@ destroot.args \
     LEXLIB="${prefix}/lib/libfl.a"
 
 post-destroot {
-    system "chgrp procmod ${destroot}${prefix}/bin/*-apple"
-    system "chmod g+s ${destroot}${prefix}/bin/*-apple"
+    if { ${os.arch} ne "powerpc" } {
+        system "chgrp procmod ${destroot}${prefix}/bin/*-apple"
+        system "chmod g+s ${destroot}${prefix}/bin/*-apple"
+    }
 
     foreach info [glob -tails -directory ${destroot}${prefix}/share/info g*] {
         move ${destroot}${prefix}/share/info/${info} ${destroot}${prefix}/share/info/apple-${info}
