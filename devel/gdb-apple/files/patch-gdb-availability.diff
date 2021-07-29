@@ -1,3 +1,35 @@
+--- gdb/config.in.orig
++++ gdb/config.in
+@@ -124,6 +124,9 @@
+ /* Define to 1 if you have the <dlfcn.h> header file. */
+ #undef HAVE_DLFCN_H
+ 
++/* Define to 1 if you have the <execinfo.h> header file. */
++#undef HAVE_EXECINFO_H
++
+ /* Define to 1 if you have the `fork' function. */
+ #undef HAVE_FORK
+ 
+@@ -169,6 +172,9 @@
+ /* Define to 1 if you have the `m' library (-lm). */
+ #undef HAVE_LIBM
+ 
++/* Define to 1 if you have the <libproc.h> header file. */
++#undef HAVE_LIBPROC_H
++
+ /* Define if libunwind library is being used. */
+ #undef HAVE_LIBUNWIND
+ 
+@@ -337,6 +343,9 @@
+ /* Define to 1 if the system has the type `socklen_t'. */
+ #undef HAVE_SOCKLEN_T
+ 
++/* Define to 1 if you have the <spawn.h> header file. */
++#undef HAVE_SPAWN_H
++
+ /* Define to 1 if you have the <stddef.h> header file. */
+ #undef HAVE_STDDEF_H
+ 
 --- gdb/configure.orig
 +++ gdb/configure
 @@ -27720,7 +27720,7 @@ fi
