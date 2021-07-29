@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                                       1.0
 PortGroup           select                       1.0
@@ -12,8 +12,8 @@ epoch               0
 name                gcc11
 
 # Note, ARM builds have their own version below...
-version             11.1.0
-revision            2
+version             11.2.0
+revision            0
 
 platforms           darwin
 categories          lang
@@ -45,17 +45,18 @@ master_sites        https://ftpmirror.gnu.org/gcc/gcc-${version}/ \
 # Branch from the Darwin maintainer of GCC with Apple Silicon support
 if { ${os.arch} eq "arm" } {
     version         11.1.0
+    revision        2
     master_sites    https://github.com/fxcoudert/gcc/archive
     distname        gcc-${version}-arm-20210504
     checksums       rmd160  ccb26e52571aff9230f4bdf067fe8c9d1fb79235 \
-sha256  ce862b4a4bdc8f36c9240736d23cd625a48af82c2332d2915df0e16e1609a74c \
-size    125460899
+                    sha256  ce862b4a4bdc8f36c9240736d23cd625a48af82c2332d2915df0e16e1609a74c \
+                    size    125460899
 } else {
     distname        gcc-${version}
     use_xz          yes
-    checksums       rmd160  083384ca351ea1cb6e04d15425af2103c908edf4 \
-sha256  4c4a6fb8a8396059241c2e674b85b351c26a5d678274007f076957afa1cc9ddf \
-size    78877216
+    checksums       rmd160  0fdd0b2c0954ccbd32e24f027d7b55fd26dcc627 \
+                    sha256  d08edc536b54c372a1010ff6619dd274c0f1603aa49212ba20f7aa2cda36fa8b \
+                    size    80888824
 }
 
 subport             libgcc11 { revision [ expr ${revision} + 0 ] }
@@ -91,9 +92,11 @@ platform darwin {
 
 set gcc_configure_langs {c c++ objc obj-c++ lto fortran}
 if {${subport} eq ${name}} {
-    # the jit is not building on i386 systems
-    # see https://trac.macports.org/ticket/61130
-    if {${build_arch} ne "i386"} {
+    # jit compiler is not building on i386 systems
+    #   https://trac.macports.org/ticket/61130
+    # Update - Failures also seen with 11.2 on Big Sur
+    #   https://trac.macports.org/ticket/63312
+    if {${build_arch} ne "i386" && ${os.major} < 20 } {
         lappend gcc_configure_langs jit
     }
 }

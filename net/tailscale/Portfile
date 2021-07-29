@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/tailscale/tailscale 1.10.2 v
+go.setup            github.com/tailscale/tailscale 1.12.1 v
 go.package          tailscale.com
 revision            0
 
@@ -21,9 +21,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 license             BSD
 installs_libs       no
 
-checksums           rmd160  9c70767047691026301c0710808fa1efade4d915 \
-sha256  f4cd66efa1c0cbb758d8e89528b82d1c0472d7d23bcec2affc7554abb4e8f926 \
-size    727707
+checksums           rmd160  111f49bf46feaf173123e61b455763c16639ded6 \
+                    sha256  9a94e6073f5e171c9ba6c3f5ca291bdae688c8e26fb586c3df4302204af77e86 \
+                    size    776844
 
 github.tarball_from archive
 
