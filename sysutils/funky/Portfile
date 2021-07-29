@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 installs_libs       no
 
 checksums           rmd160  99c0c42eece3b72f25045786c9f7001ac7c8fcf6 \
-                    sha256  4f99e195f1651e25674f92c1ad325947dcc8f929ea2d00bf43d7869e995d96f1 \
-                    size    403712
+sha256  4f99e195f1651e25674f92c1ad325947dcc8f929ea2d00bf43d7869e995d96f1 \
+size    403712
 
 set fky_script_dir  ${prefix}/share
 set fky_script      ${fky_script_dir}/${name}/${name}.sh

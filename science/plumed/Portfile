@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ platforms           darwin
 homepage            http://www.plumed.org/
 
 checksums           rmd160  87d54981199bd70e6ceeb894222ff2a5caf27180 \
-                    sha256  7ab21b793d2a73fed3e8a16a3545a4a46d60241bd3f13465192e051e7ce3570f \
-                    size    106488002
+sha256  7ab21b793d2a73fed3e8a16a3545a4a46d60241bd3f13465192e051e7ce3570f \
+size    106488002
 
 # Enable optional features.
 # --enable-asmjit:        Compile internal asmjit. Notice that internal asmjit is protected in
@@ -64,7 +64,7 @@ configure.args-append BASH_COMPLETION_DIR=${prefix}/share/bash-completion/comple
 configure.cppflags-append "-D__PLUMED_DEFAULT_KERNEL=${prefix}/lib/libplumedKernel.dylib"
 
 compilers.choose    cc cxx
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 mpi.setup
 
@@ -125,8 +125,8 @@ subport plumed-devel {
     long_description    ${long_description} (development version)
     conflicts plumed
     checksums           rmd160  2646f9849fb6ff1c38d600eede8d67dcb350beff \
-                        sha256  95b54829a2d4cf355578183e58ab37f1c5ff6fcb5f3f8d4350cb9a3009842947 \
-                        size    107286908
+sha256  95b54829a2d4cf355578183e58ab37f1c5ff6fcb5f3f8d4350cb9a3009842947 \
+size    107286908
 }
 
 # Allow running tests from MacPorts

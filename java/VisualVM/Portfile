@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ distname            [strsed ${name}_${version} {g/[.]//}]
 use_dmg             yes
 
 checksums           rmd160  ee2deb2c1d83d7e7e653fcc03f2f8784dbc89d8d \
-                    sha256  89c014f4b01c65c802ad0db913d5645b889c68e26974106ca91fa5e12730e926 \
-                    size    20363143
+sha256  89c014f4b01c65c802ad0db913d5645b889c68e26974106ca91fa5e12730e926 \
+size    20363143
 
 java.version        1.8+
 java.fallback       openjdk11

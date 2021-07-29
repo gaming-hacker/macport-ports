@@ -15,8 +15,8 @@ long_description        Bootstrapping tools like the Mach Interface \
                         Generator (MIG) required to build the XNU kernel.
 
 checksums               rmd160  4b8304d058d2b8953e938b09aaeb979c88f98355 \
-                        sha256  e56cc6fade7b5ebbbacb77f2015bad7efc3313bf9a9245f3852f013d73502703 \
-                        size    108971
+sha256  e56cc6fade7b5ebbbacb77f2015bad7efc3313bf9a9245f3852f013d73502703 \
+size    108971
 
 xcode.target            migcom
 xcode.destroot.path     ${prefix}/bin
@@ -28,7 +28,7 @@ if {${os.major} < 12} {
     version         80
     revision        5
     checksums       rmd160  072e399562eb021e4fa0cd66132153afcc02f417 \
-                    sha256  2ae65cd2ca6f0f684b25aad46a649aeb95a774d06a8287c59962fba42900a2fc
+sha256  2ae65cd2ca6f0f684b25aad46a649aeb95a774d06a8287c59962fba42900a2fc
 
     supported_archs i386 ppc
     xcode.project   migcom.tproj/migcom.xcodeproj

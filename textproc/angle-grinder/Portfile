@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ platforms           darwin
 installs_libs       no
 
 checksums-append    ${distfiles} \
-                    rmd160  c05500c74a01466c2845ba61545c5d4592ec6060 \
-                    sha256  13813ca500d928fd109a57cf4102792c6eb27aab15d68830890924601fa91d07 \
-                    size    941603
+rmd160  c05500c74a01466c2845ba61545c5d4592ec6060 \
+sha256  13813ca500d928fd109a57cf4102792c6eb27aab15d68830890924601fa91d07 \
+size    941603
 
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
@@ -240,7 +240,7 @@ cargo.crates \
     serde_derive                   1.0.126  963a7dbc9895aeac7ac90e74f34a5d5261828f79df35cbed41e10189d3804d43 \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sized-chunks                     0.3.1  f01db57d7ee89c8e053245deb77040a6cc8508311f381c88749c33d4b9b78785 \
+sized-chunks                     0.3.1  f01db57d7ee89c8e053245deb77040a6cc8508311f381c88749c33d4b9b78785 \
     slab                             0.4.3  f173ac3d1a7e3b28003f40de0b5ce7fe2710f9b9dc3fc38664cebee46b3b6527 \
     socket2                         0.3.19  122e570113d28d773067fab24266b66753f6ea915758651696b6e35e49f88d6e \
     spin                             0.5.2  6e63cff320ae2c57904679ba7cb63280a3dc4613885beafb148ee7bf9aa9042d \
