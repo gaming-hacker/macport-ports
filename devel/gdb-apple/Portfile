@@ -43,17 +43,14 @@ depends_build   port:gettext port:zlib port:flex port:texinfo
 
 depends_lib     port:libiconv port:ncurses port:sqlite3
 
-patchfiles      patch-macosx-nat.c.diff
+patchfiles      patch-macosx-nat.c.diff \
+                patch-macosx-tdep.c.diff \
+                patch-macosx-nat-threads.c.diff \
+                patch-gdb-availability.diff
 
-if {${os.platform} eq "darwin" && ${os.major} < 10} {
-    if {${os.major} == 8} {
-        patchfiles-append   patch-gdb-tiger.diff
-        patchfiles-append   patch-include-libiberty.h.diff
-    }
-    patchfiles-append   patch-gdb-pre-snow-leopard.diff
-    # Fix a hang that appears at least on Tiger/PPC.
-    # The fix is innocuous, so apply to Leopard too.
-    patchfiles-append   patch-gdb-pthread.diff
+platform darwin 8 {
+    patchfiles-append   patch-macosx-nat-info.c.diff
+    patchfiles-append   patch-include-libiberty.h.diff
 }
 
 worksrcdir	${worksrcdir}/src
