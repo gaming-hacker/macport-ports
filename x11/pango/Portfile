@@ -2,7 +2,7 @@
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
-PortGroup               gobject_introspection 1.0
+PortGroup               meson 1.0
 
 # Please keep the pango and pango-devel ports as similar as possible.
 
@@ -10,11 +10,11 @@ name                    pango
 conflicts               pango-devel
 set my_name             pango
 epoch                   1
-version                 1.42.4
+version                 1.48.7
 revision                3
-checksums               rmd160  e91880e0e9a459bbc2c280ac747ab31f80352000 \
-                        sha256  1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d \
-                        size    833876
+checksums               rmd160  982a7c1efe32b757b6dae1a674c9ec96a4d394a8 \
+                        sha256  28a82f6a6cab60aa3b75a90f04197ead2d311fa8fe8b7bfdf8666e2781d506dc \
+                        size    2050880
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11
@@ -45,13 +45,11 @@ depends_lib \
     port:fribidi \
     port:harfbuzz
 
-patchfiles-append       fix-pango_layout_get_pixel_extents-crash.patch
+configure.args-append   -Dxft=disabled \
+                        -Dintrospection=enabled
 
-configure.args          --enable-static \
-                        --disable-silent-rules \
-                        --without-xft
-
-gobject_introspection   yes
+compiler.cxx_standard 2011
+configure.cxxflags-append -std=c++11
 
 license_noconflict      gobject-introspection
 
@@ -75,9 +73,7 @@ platform macosx {
 
 variant x11 {
     depends_lib-append      port:Xft2
-    configure.args-delete   --without-xft
-    configure.args-append   --x-include=${prefix}/include \
-                            --x-lib=${prefix}/lib
+    configure.args-replace  -Dxft=disabled -Dxft=enabled
 }
 
 default_variants        +x11
@@ -91,10 +87,14 @@ if {[variant_isset x11]} {
     require_active_variants path:lib/pkgconfig/cairo.pc:cairo x11
 }
 
+pre-configure {
+    delete ${worksrcpath}/subprojects/glib ${worksrcpath}/subprojects/glib.wrap
+}
+
 post-destroot {
     set docdir ${prefix}/share/doc/${my_name}
     xinstall -d ${destroot}${docdir}
-    xinstall -m 0644 -W ${worksrcpath} AUTHORS ChangeLog COPYING MAINTAINERS NEWS README THANKS \
+    xinstall -m 0644 -W ${worksrcpath} CODING_STYLE.md COPYING NEWS README.md  THANKS \
         ${destroot}${docdir}
 }
 
