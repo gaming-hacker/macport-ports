@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                      1.0
 PortGroup                       xcodeversion 1.0
@@ -7,14 +7,14 @@ PortGroup                       xcodeversion 1.0
 
 name                            graphviz
 set my_name                     graphviz
-version                         2.40.1
+version                         2.48.0
 set thisbranch                  [strsed ${name} "g/^${my_name}//"]
 set otherbranch                 [expr {${thisbranch} eq {} ? {-devel} : {}}]
 categories                      graphics
 maintainers                     {ryandesign @ryandesign}
 license                         EPL-1
 homepage                        https://www.graphviz.org/
-master_sites                    ${homepage}pub/graphviz/stable/SOURCES/
+master_sites                    https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/${version}/
 platforms                       darwin
 use_parallel_build              yes
 dist_subdir                     ${my_name}
@@ -30,15 +30,16 @@ long_description                Graphviz is ${description}. Graph visualization 
                                 simple text language, and produce output in a \
                                 variety of visual and text formats.
 
-checksums                       rmd160  8fc103fc519e07e9db522ec2f748838571c71acf \
-sha256  ca5218fade0204d59947126c38439f432853543b0818d9d728c589dfe7f3a421
+checksums                       rmd160  c2c0486f8896a9ae04a5cae90f540f3f2591fe9c \
+                                sha256  264987fb7927afa07a745e14584be401164a4cdf9ddc9e0334bb5c7b01682186 \
+                                size    29882711
 
 # graphviz needs Xcode 3.1+ to avoid the libGL error when building the smyrna variant
 # graphviz-gui needs Xcode 3.1.2+; see #18811
 minimum_xcodeversions           {9 3.1.2}
 
 if {${name} eq ${subport}} {
-revision                        4
+revision                        0
 
 conflicts                       graphviz${otherbranch}
 
@@ -57,9 +58,6 @@ depends_lib                     path:include/turbojpeg.h:libjpeg-turbo \
                                 port:gettext
 
 depends_run                     port:urw-fonts
-
-patchfiles                      implicit.patch \
-                                libtool-tag.patch
 
 configure.args                  --disable-silent-rules \
                                 --with-codegens \
@@ -185,12 +183,12 @@ variant perl description {Include PERL 5 language bindings} {
 #}
 
 variant python27 description {Include Python 2.7 language bindings} {
-    depends_lib-append          port:python39
+    depends_lib-append          port:python27
     depends_build-append        port:swig-python
 
     configure.args-replace      --disable-swig --enable-swig
     configure.args-replace      --disable-python --enable-python
-    configure.python            ${prefix}/bin/python3.9
+    configure.python            ${prefix}/bin/python2.7
 }
 
 variant ruby description {Include Ruby language bindings} {
@@ -299,7 +297,7 @@ livecheck.regex                 ${my_name}-(\[0-9\]+\\.\[0-9\]*\[02468\](\\.\[0-
 subport graphviz-gui${thisbranch} {
     PortGroup                   xcode 1.0
     
-    revision                    2
+    revision                    0
 
     conflicts                   graphviz-gui${otherbranch} graphviz-oldgui
     
@@ -323,12 +321,8 @@ subport graphviz-gui${thisbranch} {
     extract.post_args-append    ${worksrcdir}/macosx ${worksrcdir}/doc
     
     patchfiles                  patch-project.pbxproj.diff
-    patchfiles-append           super-dealloc.patch
     
     if {[vercmp ${xcodeversion} 10.0] >= 0} {
-        # Xcode 10+ will not build against an IBDocument.SystemTarget of 10.5
-        patchfiles-append       patch-xib-target.diff
-
         # This port does not build with the new Xcode build system at present
         build.pre_args          -UseNewBuildSystem=NO
         destroot.pre_args       -UseNewBuildSystem=NO
@@ -346,7 +340,7 @@ subport gvedit${thisbranch} {
     PortGroup                   app 1.0
     PortGroup                   qt4 1.0
     
-    revision                    1
+    revision                    0
 
     conflicts                   gvedit${otherbranch}
     

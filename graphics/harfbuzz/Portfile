@@ -3,6 +3,7 @@
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
 PortGroup           github 1.0
+PortGroup           gobject_introspection 1.0
 
 github.setup        harfbuzz harfbuzz 2.8.2
 checksums           rmd160  4d8b963437f6318952c791e375387e9626013435 \
@@ -43,7 +44,7 @@ configure.cflags-append     -DHB_NO_PRAGMA_GCC_DIAGNOSTIC_ERROR
 configure.cxxflags-append   -DHB_NO_PRAGMA_GCC_DIAGNOSTIC_ERROR
 
 if {${name} eq ${subport}} {
-    revision        0
+    revision        1
     
     depends_lib-append \
                     path:lib/pkgconfig/cairo.pc:cairo \
@@ -56,8 +57,11 @@ if {${name} eq ${subport}} {
                     --with-freetype \
                     --with-glib \
                     --with-graphite2 \
+                    --with-gobject \
                     --without-icu
-    
+
+    gobject_introspection   yes
+
     test.run        yes
     test.target     check
 
