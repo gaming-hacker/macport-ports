@@ -48,7 +48,8 @@ depends_run         port:shared-mime-info \
                     port:hicolor-icon-theme
 
 patchfiles-append   patch-aliases.diff \
-                    patch-gtk-builder-convert.diff \
+                    patch-gtk-builder-convert.diff
+
 # https://gitlab.gnome.org/GNOME/gimp/-/issues/5989 and https://trac.macports.org/ticket/59481
 patchfiles-append   gimp_issue_5989_bigsur_performance_gtk.patch \
                     gimp_issue_5989_bigsur_performance_gtk_2.patch
