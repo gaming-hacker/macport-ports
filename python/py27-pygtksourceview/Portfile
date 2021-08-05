@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 
@@ -17,22 +17,25 @@ homepage        https://www.gnome.org/
 master_sites    gnome:sources/pygtksourceview/${branch}/
 distname        pygtksourceview-${version}
 
-checksums       md5     7a4dd87a515374637e1acf0b340eaa92 \
-sha1    fe4d3ce889427d5a5ae418415fc18f36b9b02524 \
-rmd160  867b6986beec48538bf4aa8af8a566578d16085c
+checksums       rmd160  867b6986beec48538bf4aa8af8a566578d16085c \
+                sha256  2ae9356b0b189e7ebf61e366152aac0a471b17b4ddead5bf747bf4c912a0d698 \
+                size    368703
+
+# macOS 11 libtool bug
+patchfiles-append pygtksourceview-libtool-bug.diff
 
 depends_build   port:pkgconfig \
                 port:libxslt \
                 port:docbook-xsl-nons
 
-depends_lib     port:py39-gobject \
-                port:py39-pygtk \
+depends_lib     port:py27-gobject \
+                port:py27-pygtk \
                 port:gtksourceview2
 
-configure.python    ${prefix}/bin/python3.9
-set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.9
+configure.python    ${prefix}/bin/python2.7
+set python_prefix   ${frameworks_dir}/Python.framework/Versions/2.7
 configure.pre_args  --prefix=${python_prefix}
-configure.args      --includedir=${python_prefix}/include/python3.9
+configure.args      --includedir=${python_prefix}/include/python2.7
 configure.pkg_config_path  ${python_prefix}/lib/pkgconfig:${prefix}/lib/pkgconfig
 
 platform darwin 9 {

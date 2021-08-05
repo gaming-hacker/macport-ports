@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -45,12 +45,12 @@ if {${subport} eq ${name}} {
 
     gitlab.setup    cmake cmake 3.20.5 v
     checksums       rmd160  f0f13ae525878d7929dcc95f322d224e7b47443d \
-sha256  54dd3e0dcd64e27ff8442071aacc4f5a9605896b5701de46d76f22d686238eba \
-size    7264123
-    revision        1
+                    sha256  54dd3e0dcd64e27ff8442071aacc4f5a9605896b5701de46d76f22d686238eba \
+                    size    7264123
+    revision        2
 
     gitlab.livecheck.regex {([0-9.]+)}
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2011
 
     platform darwin {
         if {!((${os.major} < 9) || ${build_arch} eq "ppc" ||
@@ -78,7 +78,8 @@ size    7264123
         patch-fix-system-prefix-path.diff \
         patch-cmake-leopard-tiger.diff \
         patch-fix-clock_gettime-test.diff \
-        patch-qt5gui.diff
+        patch-qt5gui.diff \
+        patch-restore-no-default-rpath-added-on-Tiger.diff
 
     depends_lib-append \
         port:curl \
@@ -242,13 +243,13 @@ size    7264123
     }
 
     # Supported pythons
-    set python.versions {39}
+    set python_versions {27 35 36 37 38 39}
 
     # declare all +python* variants, with conflicts
-    foreach pyver ${python.versions} {
+    foreach pyver ${python_versions} {
         # Conflicting python versions
         set other_python_versions {}
-        foreach other_pyver ${python.versions} {
+        foreach other_pyver ${python_versions} {
             if {${other_pyver} ne ${pyver}} {
                 if {${other_pyver} ni ${other_python_versions}} {
                     lappend other_python_versions python${other_pyver}
@@ -265,7 +266,7 @@ size    7264123
     if {[variant_isset docs]} {
 
         set python_isset false
-        foreach pyver ${python.versions} {
+        foreach pyver ${python_versions} {
             if {!${python_isset}} {
                 set python_isset [variant_isset python${pyver}]
                 set python_isset_ver_no_dot ${pyver}
@@ -283,7 +284,7 @@ size    7264123
 
         # make sure one of the +python* variants is set
         set python_isset false
-        foreach pyver ${python.versions} {
+        foreach pyver ${python_versions} {
             if {!${python_isset}} {
                 set python_isset  [variant_isset python${pyver}]
                 set python_branch "[string index ${pyver} 0].[string range ${pyver} 1 end]"

@@ -1,13 +1,13 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cmake 1.0
 
-github.setup        pothosware SoapySDR 0.8.0 soapy-sdr-
-checksums           rmd160  dd1c898692a993caab1e76b178bf56a1851f381c \
-sha256  93f878e0a79cd90671dc5bc7258ea1884d2e913823ae4b66ee408b051e448b2f \
-size    130737
+github.setup        pothosware SoapySDR 0.8.1 soapy-sdr-
+checksums           rmd160  c9488967b821f644b46df69c5d37c6888718ae56 \
+                    sha256  cc1dc3878861270fd95f9226f87abe63eff1413f17a778b4236e8cfd016c1faa \
+                    size    131245
 revision            0
 
 platforms           darwin macosx
@@ -20,7 +20,7 @@ long_description    SoapySDR is an open-source generalized C/C++ API and runtime
 
 homepage            https://github.com/pothosware/SoapySDR/wiki
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 configure.args-append \
     -DENABLE_PYTHON=OFF \
