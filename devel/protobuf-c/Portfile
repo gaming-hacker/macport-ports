@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -22,8 +22,8 @@ long_description \
                 original protoc.
 
 checksums       sha256  09d9a2013236c482b4a8af5a40d19e9931748788d6bf4ba96cef1287d2be8b58 \
-                rmd160  2943650fc3cb7b53121028d44a6cf89b22471628 \
-                size    134388
+rmd160  2943650fc3cb7b53121028d44a6cf89b22471628 \
+size    134388
 
 use_autoreconf  yes
 
@@ -32,7 +32,7 @@ depends_build-append \
 
 depends_lib     port:protobuf3-cpp
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # error: constexpr constructor never produces a constant expression [-Winvalid-constexpr]
 compiler.blacklist-append {clang < 900}

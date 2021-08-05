@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,22 +19,17 @@ homepage            https://tls.mbed.org
 github.tarball_from archive
 
 checksums           rmd160  85932a10587fa86deafdf49d799570a7de1e321c \
-                    sha256  4f6a43f06ded62aa20ef582436a39b65902e1126cbbe2fb17f394e9e9a552767 \
-                    size    4212185
+sha256  4f6a43f06ded62aa20ef582436a39b65902e1126cbbe2fb17f394e9e9a552767 \
+size    4212185
 
 set python.branch 3.9
-variant python38 conflicts python39 description {Use Python 3.8} {
-    depends_build-append \
-                    port:python38
 
-    set python.branch 3.8
-}
 variant python39 conflicts python38 description {Use Python 3.9} {
     depends_build-append \
                     port:python39
 }
 
-if {![variant_isset python38]} {
+if {![variant_isset python39]} {
     default_variants +python39
 }
 

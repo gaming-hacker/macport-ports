@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github  1.0
@@ -18,8 +18,8 @@ long_description    FreeRDP is a free implementation of the Remote Desktop Proto
 homepage            http://www.freerdp.com
 
 checksums           rmd160  de05f073216aac61c47b6fcbfb9f432f446d34a1 \
-                    sha256  37af9c98b2f096120a8f1c5d0c1023ca3e80cc5737b9e76fa1e4d8308aef339b \
-                    size    7245098
+sha256  37af9c98b2f096120a8f1c5d0c1023ca3e80cc5737b9e76fa1e4d8308aef339b \
+size    7245098
 
 depends_build-append \
                     port:pkgconfig
@@ -57,7 +57,7 @@ post-patch {
     }
 }
 
-use_xcode           yes
+use_xcode  no
 
 configure.args-append \
                     -DWITH_ALSA=OFF \

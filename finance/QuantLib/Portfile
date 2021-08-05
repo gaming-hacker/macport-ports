@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ PortGroup           boost 1.0
 github.setup        lballabio QuantLib 1.23 QuantLib-v
 revision            0
 checksums           rmd160  c5cff95fa9e77612f9a242fc2d161fde6424a962 \
-                    sha256  f6c648dd0f8989e9afde31587bca7b04680fba78d692e626227047c6868420d8 \
-                    size    9277653
+sha256  f6c648dd0f8989e9afde31587bca7b04680fba78d692e626227047c6868420d8 \
+size    9277653
 
 categories          finance
 platforms           darwin
@@ -31,7 +31,7 @@ compiler.cxx_standard \
 
 # https://github.com/lballabio/QuantLib/issues/1090
 configure.cxxflags-append \
-                    -std=c++11
+                    -std=c++17
 
 # https://github.com/lballabio/QuantLib/issues/1091
 # error: default initialization of an object of const type 'const ext::function<Real (Real)>' (aka 'const function<double (double)>') without a user-provided default constructor

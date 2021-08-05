@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description \
     is part of PySAL the Python Spatial Analysis Library.
 
 checksums           rmd160  146d302ef88a4c3734bd47175515375dd67e194d \
-                    sha256  b897dc5fde06fe7251911aa78888225a9a0f666de455fa3a7fbcdf9d12fc4aac \
-                    size    15010320
+sha256  b897dc5fde06fe7251911aa78888225a9a0f666de455fa3a7fbcdf9d12fc4aac \
+size    15010320
 
-python.versions     37 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

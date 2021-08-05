@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           boost 1.0
@@ -45,29 +45,29 @@ distfiles           ${main_distfile}:main \
                     libcmis-0.5.2.tar.xz:libcmis
 
 checksums           libreoffice-${version}.tar.xz \
-                    rmd160  2de3ba21c8499d1eee856f459d8ac959917b225a \
-                    sha256  54018ede2f9fb4e04011a0f7af664a40a81b252204afe8583d5b8c756b40a469 \
-                    size    251820436 \
+rmd160  2de3ba21c8499d1eee856f459d8ac959917b225a \
+sha256  54018ede2f9fb4e04011a0f7af664a40a81b252204afe8583d5b8c756b40a469 \
+size    251820436 \
                     libreoffice-dictionaries-${version}.tar.xz \
-                    rmd160  2b9e101014cabe20d3eff154b3ceab7218342085 \
-                    sha256  b92d169deb430165965affe20a61e84902915ad9614577a358c0e4937580309c \
-                    size    49523516 \
+rmd160  2b9e101014cabe20d3eff154b3ceab7218342085 \
+sha256  b92d169deb430165965affe20a61e84902915ad9614577a358c0e4937580309c \
+size    49523516 \
                     libreoffice-translations-${version}.tar.xz \
-                    rmd160  54b88ec3dc2a40b88710f900f3d3241c28cc53a8 \
-                    sha256  0a313c2a4c73cf8fdaf9b5854ddba8c7a54c42c20215c7dd497406d63031feb6 \
-                    size    192125004 \
+rmd160  54b88ec3dc2a40b88710f900f3d3241c28cc53a8 \
+sha256  0a313c2a4c73cf8fdaf9b5854ddba8c7a54c42c20215c7dd497406d63031feb6 \
+size    192125004 \
                     dtoa-20180411.tgz \
-                    rmd160  8d1bba737d8b58c3fb09533f35af2a03e05d9849 \
-                    sha256  0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4 \
-                    size    48893 \
+rmd160  8d1bba737d8b58c3fb09533f35af2a03e05d9849 \
+sha256  0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4 \
+size    48893 \
                     f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140-opens___.ttf \
-                    rmd160  b9e2cc0c836faa59eca3bfc0f24e1b790646b112 \
-                    sha256  f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140 \
-                    size    207992 \
+rmd160  b9e2cc0c836faa59eca3bfc0f24e1b790646b112 \
+sha256  f543e6e2d7275557a839a164941c0a86e5f2c3f2a0042bfc434c88c6dde9e140 \
+size    207992 \
                     libcmis-0.5.2.tar.xz \
-                    rmd160  cb17ab0d699ab56faae46ebaaabca618f3cf8b28 \
-                    sha256  d7b18d9602190e10d437f8a964a32e983afd57e2db316a07d87477a79f5000a2 \
-                    size    484404
+rmd160  cb17ab0d699ab56faae46ebaaabca618f3cf8b28 \
+sha256  d7b18d9602190e10d437f8a964a32e983afd57e2db316a07d87477a79f5000a2 \
+size    484404
 
 depends_build-append \
     port:autoconf \
@@ -168,7 +168,7 @@ pre-configure {
     system "cd ${worksrcpath} && env NOCONFIGURE=1 ./autogen.sh"
 }
 
-use_xcode               yes
+use_xcode  no
 compiler.cxx_standard   2017
 # CMS_NO_REGISTER_KEYWORD required for C++17 or newer compiler.
 # PYTHON_CFLAGS and PYTHON_LIBS have to be non-empty

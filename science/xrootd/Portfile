@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                       1.0
 PortGroup           cmake                        1.1
@@ -21,8 +21,8 @@ platforms           darwin
 homepage            http://xrootd.org/
 
 checksums           rmd160  d247bbcabf0d00f7805fd8b9c17cec9003844788 \
-                    sha256  71e97bd412f1a22eccf0eb478fe9b7e3de938f3bf3269ac90ca49257cbf2a042 \
-                    size    2857180
+sha256  71e97bd412f1a22eccf0eb478fe9b7e3de938f3bf3269ac90ca49257cbf2a042 \
+size    2857180
 
 depends_build-append port:cctools \
                      port:pkgconfig
@@ -42,8 +42,8 @@ cmake.out_of_source yes
 # Force a compatible compiler
 compiler.blacklist-append *gcc* {clang < 900} {macports-clang-3.[0-9]} {macports-clang-[4-5].0}
 
-configure.cxxflags-append -std=c++14
-compiler.cxx_standard  2014
+configure.cxxflags-append -std=c++17
+compiler.cxx_standard 2017
 
 configure.args-append -DENABLE_CRYPTO=False \
                       -DENABLE_READLINE=False \

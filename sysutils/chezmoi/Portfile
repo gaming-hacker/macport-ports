@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,8 +21,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  ce8f11d8cc8a7eaf77554f0959f41a7ae849b159 \
-                    sha256  bad16bdddcb6e517671b80a53526d9cfa81b08484ad91f945497d0f7b37e4a64 \
-                    size    2291826
+sha256  bad16bdddcb6e517671b80a53526d9cfa81b08484ad91f945497d0f7b37e4a64 \
+size    2291826
 
 set cm_doc_dir      ${prefix}/share/doc/${name}
 

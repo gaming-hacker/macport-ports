@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -17,8 +17,8 @@ long_description    Stern allows you to tail multiple pods on Kubernetes and \
                     coded for quicker debugging.
 
 checksums           rmd160  32298f4ee835c906883fa0e9d5df6b053617980f \
-                    sha256  d7d0349f37aab5158bf667317a2b843c2244eec4dc6e39053d0a6faf5312af25 \
-                    size    97275
+sha256  d7d0349f37aab5158bf667317a2b843c2244eec4dc6e39053d0a6faf5312af25 \
+size    97275
 
 set go_ldflags      "-s -w -X ${go.package}/cmd.version=${version}"
 build.args          -ldflags \"${go_ldflags}\" -o bin/${name}

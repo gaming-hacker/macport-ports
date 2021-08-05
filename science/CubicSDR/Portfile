@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,11 +20,11 @@ homepage            https://www.cubicsdr.com
 github.setup        cjcliffe CubicSDR 5c78738d334d481b4bead165c0a138bf8633bd4b
 version             20210802-[string range ${github.version} 0 7]
 checksums           rmd160  bcb657fc9cfafa80a44c7f5d0fc3caf3861fed02 \
-                    sha256  3e11f0340dcd903e74b63e53165e172e96701b9b304410cbe677ee10a6304f7f \
-                    size    37121251
+sha256  3e11f0340dcd903e74b63e53165e172e96701b9b304410cbe677ee10a6304f7f \
+size    37121251
 revision            0
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # CubicSDR requires wxWidgets.use of wxWidgets-3.1 or newer -- "3.2"
 # by the wxWidgets PG -- which is what this provides. selecting 3.0

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -23,8 +23,8 @@ long_description        Gramps is a genealogy program to store, edit, \
 homepage                https://www.gramps-project.org/
 
 checksums           rmd160  1f101d3305a8832f091e6d3c0e578e4fb0bb966b \
-                    sha256  6e64a5c1175a4897256ca9eb73a4b77c8e84ebff020b8668bdc527d6dcd14273 \
-                    size    17425713
+sha256  6e64a5c1175a4897256ca9eb73a4b77c8e84ebff020b8668bdc527d6dcd14273 \
+size    17425713
 
 depends_build-append    port:intltool
 
@@ -45,27 +45,27 @@ depends_run             port:adwaita-icon-theme
 patchfiles              patch-gramps-gen-utils-resourcepath.py.diff
 
 variant python36 conflicts python37 python38 python39 description {Use Python 3.6} {
-    python.default_version  36
-    depends_lib-append  port:py36-bsddb3 \
-                        port:py36-gobject3 \
-                        port:py36-Pillow \
-                        port:py36-pyicu
+    python.default_version 39
+    depends_lib-append  port:py39-bsddb3 \
+                        port:py39-gobject3 \
+                        port:py39-Pillow \
+                        port:py39-pyicu
 }
 
 variant python37 conflicts python36 python38 python39 description {Use Python 3.7} {
-    python.default_version  37
-    depends_lib-append  port:py37-bsddb3 \
-                        port:py37-gobject3 \
-                        port:py37-Pillow \
-                        port:py37-pyicu
+    python.default_version 39
+    depends_lib-append  port:py39-bsddb3 \
+                        port:py39-gobject3 \
+                        port:py39-Pillow \
+                        port:py39-pyicu
 }
 
 variant python38 conflicts python36 python37 python39 description {Use Python 3.8} {
-    python.default_version  38
-    depends_lib-append  port:py38-bsddb3 \
-                        port:py38-gobject3 \
-                        port:py38-Pillow \
-                        port:py38-pyicu
+    python.default_version 39
+    depends_lib-append  port:py39-bsddb3 \
+                        port:py39-gobject3 \
+                        port:py39-Pillow \
+                        port:py39-pyicu
 }
 
 variant python39 conflicts python36 python37 python38 description {Use Python 3.9} {

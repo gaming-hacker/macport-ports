@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
@@ -13,8 +13,8 @@ set my_name                 glib
 version                     2.68.3
 revision                    0
 checksums                   rmd160  2e4d20249d9db0c108596db4e7691eb389bb9666 \
-                            sha256  e7e1a3c20c026109c45c9ec4a31d8dcebc22e86c69486993e565817d64be3138 \
-                            size    4945236
+sha256  e7e1a3c20c026109c45c9ec4a31d8dcebc22e86c69486993e565817d64be3138 \
+size    4945236
 
 set branch                  [join [lrange [split ${version} .] 0 1] .]
 categories                  devel
@@ -121,8 +121,8 @@ platform darwin {
 if {${os.platform} eq "darwin" && ${os.major} <= 10} {
     # Requires python 2.7 as of 2.53.4
     # See https://bugzilla.gnome.org/show_bug.cgi?id=785193
-    depends_lib-append      port:python27
-    configure.python        ${prefix}/bin/python2.7
+    depends_lib-append      port:python39
+    configure.python        ${prefix}/bin/python3.9
 }
 
 variant quartz conflicts x11 {

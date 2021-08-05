@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -16,71 +16,71 @@ long_description    A shell script formatter supporting POSIX shell, Bash, and m
 go.package          mvdan.cc/sh
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  d5a065180cc97f7f410c57105a8ebeb75846f69e \
-                        sha256  cdbec496c8918c9b4384346859593a8c1e9b91457f41a80a5809770a8a646913 \
-                        size    185400
+rmd160  d5a065180cc97f7f410c57105a8ebeb75846f69e \
+sha256  cdbec496c8918c9b4384346859593a8c1e9b91457f41a80a5809770a8a646913 \
+size    185400
 
 go.vendors          mvdan.cc/editorconfig \
                         repo    github.com/mvdan/editorconfig \
                         lock    v0.2.0 \
-                        rmd160  eeb4ad1e0690027cac47e6bcaa7567937e1177d4 \
-                        sha256  0f53c5da1bc4c459c91f8a4a64397ec0b0321a483a2a9e95f2ffc6607f35b54b \
-                        size    9402 \
+rmd160  eeb4ad1e0690027cac47e6bcaa7567937e1177d4 \
+sha256  0f53c5da1bc4c459c91f8a4a64397ec0b0321a483a2a9e95f2ffc6607f35b54b \
+size    9402 \
                     gopkg.in/errgo.v2 \
                         lock    v2.1.0 \
-                        rmd160  6629a8436aacbbf5e42c0211d591941bfd8ce34d \
-                        sha256  c14c14eba0928e6dfa4f89449bdbe2b6feafc76116b60bdc1b51956abf55c6bf \
-                        size    9938 \
+rmd160  6629a8436aacbbf5e42c0211d591941bfd8ce34d \
+sha256  c14c14eba0928e6dfa4f89449bdbe2b6feafc76116b60bdc1b51956abf55c6bf \
+size    9938 \
                     gopkg.in/check.v1 \
                         lock    788fd7840127 \
-                        rmd160  b63165c8909a27edc15dda210df66a1b49efb49e \
-                        sha256  7e5547c6471cc48da89a7c87f965b20ca5311f43fc4d883ca62f9fccf7551630 \
-                        size    31597 \
+rmd160  b63165c8909a27edc15dda210df66a1b49efb49e \
+sha256  7e5547c6471cc48da89a7c87f965b20ca5311f43fc4d883ca62f9fccf7551630 \
+size    31597 \
                     golang.org/x/term \
                         lock    6886f2dfbf5b \
-                        rmd160  8688e7b350892399f2918c70c87435016c64c572 \
-                        sha256  e52745c19f7ebe30ab78db8af43216b6795928089a433925ef3ebef0eaad98f3 \
-                        size    14938 \
+rmd160  8688e7b350892399f2918c70c87435016c64c572 \
+sha256  e52745c19f7ebe30ab78db8af43216b6795928089a433925ef3ebef0eaad98f3 \
+size    14938 \
                     golang.org/x/sys \
                         lock    0f9fa26af87c \
-                        rmd160  b5e5b546cddec0ad97bccbc3a19fe3630792097b \
-                        sha256  e9ff4a07a3cc01341990da0d8ecd1cfa05643a2db423bb1efcf62f577901ea77 \
-                        size    1202158 \
+rmd160  b5e5b546cddec0ad97bccbc3a19fe3630792097b \
+sha256  e9ff4a07a3cc01341990da0d8ecd1cfa05643a2db423bb1efcf62f577901ea77 \
+size    1202158 \
                     golang.org/x/sync \
                         lock    036812b2e83c \
-                        rmd160  f42be6eb3565d2ed3d1066ea1a7f69437c8bb1e6 \
-                        sha256  6f1daceb16cd75bdbf35da6c50aa352d1995d68ccd0049851d27686f451fad92 \
-                        size    18756 \
+rmd160  f42be6eb3565d2ed3d1066ea1a7f69437c8bb1e6 \
+sha256  6f1daceb16cd75bdbf35da6c50aa352d1995d68ccd0049851d27686f451fad92 \
+size    18756 \
                     github.com/rogpeppe/go-internal \
                         lock    v1.8.0 \
-                        rmd160  22e8b4dadfbeefb32fd38f3ebab26c94d4b165c5 \
-                        sha256  c7ab367e516959a51525f8152a62df0acc9a32ca153a502da967f072ae69d899 \
-                        size    129032 \
+rmd160  22e8b4dadfbeefb32fd38f3ebab26c94d4b165c5 \
+sha256  c7ab367e516959a51525f8152a62df0acc9a32ca153a502da967f072ae69d899 \
+size    129032 \
                     github.com/pkg/diff \
                         lock    20ebb0f2a09e \
-                        rmd160  f8336f7442e9394b64a6aad23a6ae1d6a230dfc4 \
-                        sha256  086dfcc0449ef79f412e6308fd2ace2207a8a88cde2c86f13f77635673e08890 \
-                        size    200592 \
+rmd160  f8336f7442e9394b64a6aad23a6ae1d6a230dfc4 \
+sha256  086dfcc0449ef79f412e6308fd2ace2207a8a88cde2c86f13f77635673e08890 \
+size    200592 \
                     github.com/kr/text \
                         lock    v0.2.0 \
-                        rmd160  48558c7e8ff67d510f83c66883907e95f4783163 \
-                        sha256  2f2e21ac8a9d523e88cbba4039441defc4a66bfaa78811c900a88fcf28729c4c \
-                        size    8702 \
+rmd160  48558c7e8ff67d510f83c66883907e95f4783163 \
+sha256  2f2e21ac8a9d523e88cbba4039441defc4a66bfaa78811c900a88fcf28729c4c \
+size    8702 \
                     github.com/kr/pretty \
                         lock    v0.2.1 \
-                        rmd160  eaf5b58a46b962079cbafddbc3ef83bdbf02b31e \
-                        sha256  253c4a190c9337800e08aba66b77ea3db0835e3ae61289d80093995a649eb7ae \
-                        size    8769 \
+rmd160  eaf5b58a46b962079cbafddbc3ef83bdbf02b31e \
+sha256  253c4a190c9337800e08aba66b77ea3db0835e3ae61289d80093995a649eb7ae \
+size    8769 \
                     github.com/google/renameio \
                         lock    v1.0.1 \
-                        rmd160  4e610d6aa3fc73e729598b33a3b195c4c7d9053a \
-                        sha256  dc243ccb81b4c58723f1c226f07e4a2a6152bced50dccbaeacabdb51a22e5538 \
-                        size    10489 \
+rmd160  4e610d6aa3fc73e729598b33a3b195c4c7d9053a \
+sha256  dc243ccb81b4c58723f1c226f07e4a2a6152bced50dccbaeacabdb51a22e5538 \
+size    10489 \
                     github.com/creack/pty \
                         lock    v1.1.13 \
-                        rmd160  65804131cb88aad68eecc7633da5a5d3b7bad7e0 \
-                        sha256  d5bbc957a30edd8189bb0125f2d0d09e8b161114f1179127508635b9b787cfee \
-                        size    9951
+rmd160  65804131cb88aad68eecc7633da5a5d3b7bad7e0 \
+sha256  d5bbc957a30edd8189bb0125f2d0d09e8b161114f1179127508635b9b787cfee \
+size    9951
 
 build.pre_args      -ldflags '-X main.version=${version}'
 build.post_args     ${go.package}/cmd/shfmt

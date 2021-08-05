@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -13,8 +13,8 @@ epoch                   1
 version                 1.48.7
 revision                3
 checksums               rmd160  982a7c1efe32b757b6dae1a674c9ec96a4d394a8 \
-                        sha256  28a82f6a6cab60aa3b75a90f04197ead2d311fa8fe8b7bfdf8666e2781d506dc \
-                        size    2050880
+sha256  28a82f6a6cab60aa3b75a90f04197ead2d311fa8fe8b7bfdf8666e2781d506dc \
+size    2050880
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11
@@ -48,8 +48,8 @@ depends_lib \
 configure.args-append   -Dxft=disabled \
                         -Dintrospection=enabled
 
-compiler.cxx_standard 2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 license_noconflict      gobject-introspection
 
