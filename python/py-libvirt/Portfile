@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,8 +8,8 @@ name                py-libvirt
 version             7.6.0
 revision            0
 checksums           rmd160  78f1f7dc877a74bcd6b7bb54491c6d55737ca462 \
-                    sha256  d8f9d4efdc79ad6b44bc43e49d6fa56d119895ba6c0bb000c6514ce84f19a13e \
-                    size    217448
+sha256  d8f9d4efdc79ad6b44bc43e49d6fa56d119895ba6c0bb000c6514ce84f19a13e \
+size    217448
 
 platforms           darwin
 license             MIT
@@ -26,7 +26,7 @@ homepage            https://libvirt.org
 master_sites        ${homepage}/sources/python
 distname            libvirt-python-${version}
 
-python.versions     35 36 37 38 39
+python.versions 39
 
 
 if {${name} ne ${subport}} {

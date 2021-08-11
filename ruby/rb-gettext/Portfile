@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ruby 1.0
@@ -24,8 +24,8 @@ long_description \
 homepage            https://ruby-gettext.github.io
 
 checksums           rmd160  62bc985abac203d247eb1defa7b9f23c139f235a \
-                    sha256  58d9efd0f48e7213746df8d5be3d7a0cfb878b0a62bb6ba1f1e25624c0f4a753 \
-                    size    231424
+sha256  58d9efd0f48e7213746df8d5be3d7a0cfb878b0a62bb6ba1f1e25624c0f4a753 \
+size    231424
 
 if {${name} ne ${subport}} {
     depends_run-append  port:rb${ruby.suffix}-locale \

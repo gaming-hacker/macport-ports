@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github  1.0
@@ -21,9 +21,9 @@ license             MIT
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  510f902b37db342a82f4e74d1dbbf8d32c698698 \
-                    sha256  fb3b33e627a9d9a955852c726b10671ca721f652435d492117f99d22b6bb9242 \
-                    size    4426829
+rmd160  510f902b37db342a82f4e74d1dbbf8d32c698698 \
+sha256  fb3b33e627a9d9a955852c726b10671ca721f652435d492117f99d22b6bb9242 \
+size    4426829
 
 github.tarball_from archive
 
@@ -170,7 +170,7 @@ cargo.crates \
     serde_derive                   1.0.126  963a7dbc9895aeac7ac90e74f34a5d5261828f79df35cbed41e10189d3804d43 \
     serde_json                      1.0.66  336b10da19a12ad094b59d870ebde26a45402e5b470add4b5fd03c5048a32127 \
     serde_yaml                      0.8.17  15654ed4ab61726bf918a39cb8d98a2e2995b002387807fa6ba58fdf7f59bb23 \
-    shared_child                     0.3.5  6be9f7d5565b1483af3e72975e2dee33879b3b86bd48c0929fccf6585d79e65a \
+shared_child                     0.3.5  6be9f7d5565b1483af3e72975e2dee33879b3b86bd48c0929fccf6585d79e65a \
     signal-hook                      0.3.9  470c5a6397076fae0094aaf06a08e6ba6f37acb77d3b1b91ea92b4d6c8650c39 \
     signal-hook-mio                  0.2.1  29fd5867f1c4f2c5be079aee7a2adf1152ebb04a4bc4d341f504b7dece607ed4 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -28,8 +28,8 @@ long_description    This is c-ares, an asynchronous resolver \
 homepage            https://c-ares.haxx.se/
 
 checksums           rmd160 facbdff9395ab01e313d21565c87ee5e06aed1ab \
-                    sha256 4803c844ce20ce510ef0eb83f8ea41fa24ecaae9d280c468c582d2bb25b3913d \
-                    size   1538276
+sha256 4803c844ce20ce510ef0eb83f8ea41fa24ecaae9d280c468c582d2bb25b3913d \
+size   1538276
 
 configure.args-append \
                     -DCARES_SHARED:BOOL=ON

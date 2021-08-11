@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,11 +16,11 @@ long_description    {*}${description}
 platforms           darwin
 homepage            https://github.com/Unidata/MetPy
 
-python.versions     37 38 39
+python.versions 39
 
 checksums           rmd160  5e98c450277a28de8a8681ebf1ee83e694b96f60 \
-                    sha256  e5ef6967a0721cccc92d6aeae27768bbc9eac66db252c36be6e233f43f228e53 \
-                    size    8277970
+sha256  e5ef6967a0721cccc92d6aeae27768bbc9eac66db252c36be6e233f43f228e53 \
+size    8277970
 
 if {${name} ne ${subport}} {
     depends_build-append \

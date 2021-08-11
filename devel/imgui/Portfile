@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -28,8 +28,8 @@ long_description    \
     operating system features are non-standard.
 
 checksums           rmd160 ce2df5295f32903d58d9ef4b2378147ddc362fec \
-                    sha256 3de7af5078882edbebff452f2a9ee362ae05107896e14f6ab33621a3473eb95a \
-                    size 1448525
+sha256 3de7af5078882edbebff452f2a9ee362ae05107896e14f6ab33621a3473eb95a \
+size 1448525
 
 post-extract {
     # https://raw.githubusercontent.com/microsoft/vcpkg/master/ports/imgui/CMakeLists.txt

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ license             MIT
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  0c9cca0442da2bd08d1456118c60923672e81c2c \
-                    sha256  fedb9745d6c82fa6e0593856b1b995b286782f52f3497861839c6ee46559c881 \
-                    size    118307
+rmd160  0c9cca0442da2bd08d1456118c60923672e81c2c \
+sha256  fedb9745d6c82fa6e0593856b1b995b286782f52f3497861839c6ee46559c881 \
+size    118307
 
 test.run            yes
 test.cmd            ${cargo.bin} test
@@ -219,8 +219,8 @@ cargo.crates \
     serde_yaml                      0.8.14  f7baae0a99f1a324984bcdc5f0718384c1f69775f1c7eec8b859b71b443e3fd7 \
     serial_test                      0.5.1  e0bccbcf40c8938196944a3da0e133e031a33f4d6b72db3bda3cc556e361905d \
     serial_test_derive               0.5.1  b2acd6defeddb41eb60bb468f8825d0cfd0c2a76bc03bfd235b6a1dc4f6a1ad5 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    shared_child                     0.3.4  8cebcf3a403e4deafaf34dc882c4a1b6a648b43e5670aa2e4bb985914eaeb2d2 \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+shared_child                     0.3.4  8cebcf3a403e4deafaf34dc882c4a1b6a648b43e5670aa2e4bb985914eaeb2d2 \
     shell-escape                     0.1.5  45bb67a18fa91266cc7807181f62f9178a6873bfad7dc788c42e6430db40184f \
     similar                          1.3.0  1ad1d488a557b235fc46dae55512ffbfc429d2482b08b4d9435ab07384ca8aec \
     slab                             0.4.2  c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8 \

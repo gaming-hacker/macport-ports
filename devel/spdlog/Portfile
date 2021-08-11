@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           cmake 1.1
 github.setup        gabime spdlog 1.9.1 v
 revision            0
 checksums           rmd160  e50b1935f592441578bc2fab190c3fb88d66070b \
-                    sha256  9a452cfa24408baccc9b2bc2d421d68172a7630c99e9504a14754be840d31a62 \
-                    size    327823
+sha256  9a452cfa24408baccc9b2bc2d421d68172a7630c99e9504a14754be840d31a62 \
+size    327823
 
 conflicts           spdlog0
 categories          devel
@@ -23,5 +23,5 @@ github.tarball_from archive
 
 # only header files are installed, but C++11 is still required for build tests
 supported_archs     noarch
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 compiler.thread_local_storage yes
