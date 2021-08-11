@@ -1,0 +1,27 @@
+PortSystem 1.0
+PortGroup           cmake 1.0
+PortGroup           github 1.0
+github.setup        dankamongmen notcurses 2.3.13 v
+github.tarball_from archive
+
+revision         0
+categories       devel
+maintainers      linux.com:nickblack
+description      blingful tuis and character graphics
+long_description \
+ Notcurses facilitates the creation of modern TUI programs, making \
+ full use of Unicode and 24-bit TrueColor. Its API is similar \
+ to that of NCURSES, but extends that with z-buffering, rendering \
+ of images and video using ffmpeg, alpha blending, widgets, palette \
+ fades, resize awareness, and multithreading support.
+homepage         https://notcurses.com
+platforms        darwin
+license          Apache-2
+depends_build    port:doctest
+depends_lib      port:ffmpeg port:readline port:libunistring
+test.run         yes
+test.target      check
+
+checksums           rmd160  b4465532024cd1343071bf12d7d01368b6cb588b \
+                    sha256  c5eb822ea5b98028acd4a8dd21b155f893d928e4a30a8309eea0c406403af4e8 \
+                    size    12187270
