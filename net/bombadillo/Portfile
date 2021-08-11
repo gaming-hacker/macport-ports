@@ -1,0 +1,58 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+# This is a Go project, but cannot use the golang PortGroup right now because
+# the project is hosted at an unsupported domain (at the moment).
+
+name                bombadillo
+version             2.3.3
+revision            1
+
+homepage            https://bombadillo.colorfield.space
+
+description         Bombabillo is a non-web client for the terminal, \
+                    supporting Gopher, Gemini and much more.
+
+long_description    {*}${description}
+
+categories          net
+license             GPL-3
+platforms           darwin
+installs_libs       no
+
+set project_url     https://tildegit.org/sloum/${name}
+master_sites        "${project_url}/archive"
+distname            ${version}
+dist_subdir         ${name}
+
+maintainers         {gmail.com:herby.gillot @herbygillot} \
+                    openmaintainer
+
+checksums           rmd160  60877591c21a9c332d3b38386f6cefc625997b3a \
+                    sha256  2d4ec15cac6d3324f13a4039cca86fecf3141503f556a6fa48bdbafb86325f1c \
+                    size    103435
+
+post-extract {
+    ln -s ${workpath}/${name} ${worksrcpath}
+}
+
+patch {
+    reinplace -E {/GOOS=(linux|windows)/d} ${worksrcpath}/Makefile
+}
+
+depends_build-append \
+                    port:go
+
+use_configure       no
+
+build.target        build
+
+destroot.pre_args-append \
+                    DESTDIR=${destroot} \
+                    PREFIX=${prefix}
+destroot.target     install
+
+livecheck.url       "${project_url}/releases"
+livecheck.type      regex
+livecheck.regex     {archive/([0-9.]+)\.}
