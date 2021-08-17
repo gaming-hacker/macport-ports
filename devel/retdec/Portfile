@@ -1,0 +1,99 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           cmake 1.1
+PortGroup           github 1.0
+
+categories          devel
+license             MIT
+platforms           darwin
+
+description         RetDec is a retargetable machine-code decompiler based on LLVM.
+
+long_description    RetDec is a retargetable machine-code decompiler based on LLVM.\
+                    The decompiler is not limited to any particular target architecture, \
+                    operating system, or executable file format.
+
+maintainers         nomaintainer
+
+github.setup        avast retdec 4.0 v
+
+revision            0
+
+checksums           rmd160  305e901b37441337d5c0dada1ccc5e737831ef1e \
+                    sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
+                    size    8732003
+
+depends_build-append \
+                    port:autoconf \
+                    port:automake \
+                    port:cmake \
+                    port:doxygen \
+                    port:git \
+                    path:bin/dot:graphviz \
+                    port:libtool \
+                    port:pkgconfig \
+                    port:openssl
+
+depends_run         port:upx
+
+patch.pre_args      -p1
+patchfiles          patch-python3.diff \
+                    patch-yara-syntax-error.diff
+
+
+subport retdec-devel {
+    conflicts        $name
+
+    version         20210812
+    github.setup    avast retdec 18b434f02b64bfb85232525ca10a6026b5d1f54f
+    revision        0
+
+    checksums       rmd160  bdbfe70797f15f8fab648b99eba288e126186a60 \
+                    sha256  7c0cb951e1cd3c37aa95241a1d554f9c4e7e234d388c97865d9b4cb4737537fe \
+                    size    12129751
+
+    # Requires c++17 (std::filesystem)
+    compiler.cxx_standard   2017
+
+    # Before Catalina it also requires macports-libcxx
+    if {${os.platform} eq "darwin" && ${os.major} < 19} {
+        depends_lib-append        port:macports-libcxx
+        configure.cxxflags-append -nostdinc++ -I${prefix}/include/libcxx/v1
+        configure.ldflags-append  -L${prefix}/lib/libcxx
+
+        notes-append        "This build of ${name} will use an external libc++ as your system\
+                             libc++ is not new enough to support ${name}. Issues may arise."
+    }
+}
+
+variant python36 conflicts python37 python38 python39 description {Build using Python 3.6} {
+    depends_lib-append      port:python36
+}
+
+variant python37 conflicts python36 python38 python39 description {Build using Python 3.7} {
+    depends_lib-append      port:python37
+}
+
+variant python38 conflicts python36 python37 python39 description {Build using Python 3.8} {
+    depends_lib-append      port:python38
+}
+
+variant python39 conflicts python36 python37 python38 description {Build using Python 3.9} {
+    depends_lib-append      port:python39
+}
+
+if {![variant_isset python36] &&
+    ![variant_isset python37] &&
+    ![variant_isset python38] &&
+    ![variant_isset python39] } {
+    default_variants +python39
+}
+
+post-extract {
+    # Never touch files outside of destroot
+    reinplace "s|\${CMAKE_INSTALL_PREFIX}|${destroot}/\${CMAKE_INSTALL_PREFIX}|" ${worksrcpath}/CMakeLists.txt
+    reinplace "s|\${CMAKE_INSTALL_PREFIX}|${destroot}/\${CMAKE_INSTALL_PREFIX}|" ${worksrcpath}/support/CMakeLists.txt
+}
+
+github.livecheck.regex  {([^"v]+)}
