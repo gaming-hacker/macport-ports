@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Additional formats
 long_description    Collected TeX `formats', i.e., large-scale macro packages designed to be dumped into .fmt files -- excluding the most common ones, such as latex and context, which have their own package(s). It also includes the Aleph engine and related Omega formats and packages.
 
 checksums           texlive-formats-extra-58418-run.tar.xz \
-                    rmd160  20af6cb45208ce0817650d9029271d2a93e1b528 \
-                    sha256  55decab98eabce095953aaadb762b6fa0ab7bba0cd0e04adc5904ece9ef41897 \
-                    size    5024784 \
+rmd160  20af6cb45208ce0817650d9029271d2a93e1b528 \
+sha256  55decab98eabce095953aaadb762b6fa0ab7bba0cd0e04adc5904ece9ef41897 \
+size    5024784 \
                     texlive-formats-extra-58418-doc.tar.xz \
-                    rmd160  45b9b7600ea3258ba6d8c378683477317ca14124 \
-                    sha256  8cb1acb29dd1ae63bca95f3990f8f9edfaefda2c4e8f0d688318d849de6f9beb \
-                    size    2945560 \
+rmd160  45b9b7600ea3258ba6d8c378683477317ca14124 \
+sha256  8cb1acb29dd1ae63bca95f3990f8f9edfaefda2c4e8f0d688318d849de6f9beb \
+size    2945560 \
                     texlive-formats-extra-58418-src.tar.xz \
-                    rmd160  3a0ea38c48c0a3d600e3e041f9af0a8a9b1604cd \
-                    sha256  7e5e7ef99a5b50149169dea875ede770b7d7d602ef6217ad1816cafb2d6ab5f2 \
-                    size    478992
+rmd160  3a0ea38c48c0a3d600e3e041f9af0a8a9b1604cd \
+sha256  7e5e7ef99a5b50149169dea875ede770b7d7d602ef6217ad1816cafb2d6ab5f2 \
+size    478992
 
 depends_lib         port:texlive-basic port:texlive-latex
 

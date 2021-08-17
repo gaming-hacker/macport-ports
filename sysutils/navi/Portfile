@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ long_description    \
     arguments are dynamically displayed in a list.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  70e35bbf6bd0b58c00045162f6649ded4e6d0a2e \
-                    sha256  c0c049a111a30d6d039e56651862e25b84b20baa9ad7c82a8bcfdbbee40de626 \
-                    size    57630
+rmd160  70e35bbf6bd0b58c00045162f6649ded4e6d0a2e \
+sha256  c0c049a111a30d6d039e56651862e25b84b20baa9ad7c82a8bcfdbbee40de626 \
+size    57630
 
 cargo.crates \
     aho-corasick                    0.7.18  1e37cfd5e7657ada45f742d6e99ca5788580b5c529dc78faf11ece6dc702656f \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ homepage            https://profanity-im.github.io
 license             {GPL-3+ OpenSSLException}
 
 checksums           rmd160  b96522967e52e9af9a187c200248f4af13ed3e53 \
-                    sha256  b5dd1cd4081655ee03049f79d48300af1ade05550c2fb518c1bbbe1f27f6a84e \
-                    size    541676
+sha256  b5dd1cd4081655ee03049f79d48300af1ade05550c2fb518c1bbbe1f27f6a84e \
+size    541676
 
 depends_build-append \
                     port:pkgconfig \

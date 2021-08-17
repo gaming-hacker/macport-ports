@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Polish
 long_description    Support for Polish.
 
 checksums           texlive-lang-polish-58661-run.tar.xz \
-                    rmd160  5c96850442dae404d86104af1d303f74c5436427 \
-                    sha256  53920bf67139469acfc4ba046b5d76acdb428afe1d4c6be24b1e4f4b90a1fba0 \
-                    size    7172668 \
+rmd160  5c96850442dae404d86104af1d303f74c5436427 \
+sha256  53920bf67139469acfc4ba046b5d76acdb428afe1d4c6be24b1e4f4b90a1fba0 \
+size    7172668 \
                     texlive-lang-polish-58661-doc.tar.xz \
-                    rmd160  10aa7f9c7b5dac6bd24873f14cb5824c1620d9a3 \
-                    sha256  10c074ff7ae5b5ba061a99b5843bc2b6a5d29e47ef87269e57114142195f568b \
-                    size    4573808 \
+rmd160  10aa7f9c7b5dac6bd24873f14cb5824c1620d9a3 \
+sha256  10c074ff7ae5b5ba061a99b5843bc2b6a5d29e47ef87269e57114142195f568b \
+size    4573808 \
                     texlive-lang-polish-58661-src.tar.xz \
-                    rmd160  95f18830dc78601fd251061789785d66a965b0f7 \
-                    sha256  494f3fb43c483d4f68b2610a8713aef37347be867c2b39a21f56b9236549c8e1 \
-                    size    106808
+rmd160  95f18830dc78601fd251061789785d66a965b0f7 \
+sha256  494f3fb43c483d4f68b2610a8713aef37347be867c2b39a21f56b9236549c8e1 \
+size    106808
 
 depends_lib         port:texlive-basic port:texlive-latex
 

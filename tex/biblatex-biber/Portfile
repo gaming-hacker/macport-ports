@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup perl5 1.0
@@ -10,7 +10,7 @@ PortGroup texlive 1.0
 name            biblatex-biber
 epoch           3
 
-perl5.branches  5.32
+perl5.branches 5.30
 
 perl5.setup     Biber 2.16
 version         ${perl5.moduleversion}
@@ -37,8 +37,8 @@ distname        v${version}
 worksrcdir      biber-${version}
 
 checksums       rmd160  f6d804a72a30160b5f46fceaf2588c2052662717 \
-                sha256  57111ebc6d0d1933e55d3fe1a92f8ef57c602388ae83598a8073c8a77fd811e2 \
-                size    1594209
+sha256  57111ebc6d0d1933e55d3fe1a92f8ef57c602388ae83598a8073c8a77fd811e2 \
+size    1594209
 #patchfiles      patch-use-encode.pm
 
 depends_build-append    port:p${perl5.major}-config-autoconf \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: TeX auxiliary programs
 long_description    Myriad additional TeX-related support programs. Includes programs and macros for DVI file manipulation, literate programming, patgen, and plenty more.
 
 checksums           texlive-bin-extra-58661-run.tar.xz \
-                    rmd160  7e84c41a0fdf96b0779774d0e350f5aec79c55d9 \
-                    sha256  5ea7e975e62aa3a22a1b14ac6a5fa00cc8853971c0c669111838253f13688310 \
-                    size    125974512 \
+rmd160  7e84c41a0fdf96b0779774d0e350f5aec79c55d9 \
+sha256  5ea7e975e62aa3a22a1b14ac6a5fa00cc8853971c0c669111838253f13688310 \
+size    125974512 \
                     texlive-bin-extra-58661-doc.tar.xz \
-                    rmd160  911b1e573e8c0bfd64a330e14fc77b5f70b6f4de \
-                    sha256  f27b473c1d2c5d538ea314b1d5e1915d28b2d73c94c19be0e3ae9f562c25bbf2 \
-                    size    30020792 \
+rmd160  911b1e573e8c0bfd64a330e14fc77b5f70b6f4de \
+sha256  f27b473c1d2c5d538ea314b1d5e1915d28b2d73c94c19be0e3ae9f562c25bbf2 \
+size    30020792 \
                     texlive-bin-extra-58661-src.tar.xz \
-                    rmd160  fdf1789f838d0f0ed307c7b6d8b0256d0a0e068f \
-                    sha256  6486ef905aec5032f3aa78889f0e867c705a4d96d03bc73f8394cd507e2bdbde \
-                    size    435968
+rmd160  fdf1789f838d0f0ed307c7b6d8b0256d0a0e068f \
+sha256  6486ef905aec5032f3aa78889f0e867c705a4d96d03bc73f8394cd507e2bdbde \
+size    435968
 
 depends_lib         port:texlive-basic
 

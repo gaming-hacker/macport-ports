@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcodeversion 1.0
@@ -61,8 +61,8 @@ master_sites        ${homepage}releases/
 use_xz              yes
 
 checksums           rmd160  0169ae4eb185de3a851a9926bc0b3289512c4be0 \
-                    sha256  06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909 \
-                    size    9557868
+sha256  06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909 \
+size    9557868
 
 depends_build       port:pkgconfig \
                     port:gmake \

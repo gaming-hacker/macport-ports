@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           wxWidgets 1.0
 wxWidgets.use       wxWidgets-3.2
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 name                saga
 categories          gis
@@ -24,8 +24,8 @@ homepage            http://www.saga-gis.org/en/index.html
 master_sites        sourceforge:project/saga-gis/SAGA%20-%207/SAGA%20-%20${version}
 
 checksums           rmd160  fe7b74b3627277428e17141fe216f209d587a5ef \
-                    sha256  26ad4b84149e26eabd4a5365fe4a3923cfa39e36672cc7c660d3549f3556a3bc \
-                    size    5512365
+sha256  26ad4b84149e26eabd4a5365fe4a3923cfa39e36672cc7c660d3549f3556a3bc \
+size    5512365
 
 patchfiles          patch-configure.diff
 
@@ -59,7 +59,7 @@ post-patch {
 }
 
 configure.cppflags-append   -I${prefix}/lib/proj8/include
-configure.cxxflags-append   -std=c++11
+configure.cxxflags-append   -std=c++17
 configure.ldflags-append    -L${prefix}/lib/proj8/lib
 
 configure.args              --disable-openmp \

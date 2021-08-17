@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         ExtUtils-MakeMaker 7.62
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -14,8 +14,8 @@ long_description    This utility is designed to write a Makefile for an \
 platforms           darwin
 
 checksums           rmd160  2a76e9a614a44fcddffc3a72676db7011e8b08bc \
-                    sha256  5022ad857fd76bd3f6b16af099fe2324639d9932e08f21e891fb313d9cae1705 \
-                    size    480049
+sha256  5022ad857fd76bd3f6b16af099fe2324639d9932e08f21e891fb313d9cae1705 \
+size    480049
 
 perl5.link_binaries no
 if {${perl5.major} != ""} {

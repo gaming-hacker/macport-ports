@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Recommended fonts
 long_description    Recommended fonts, including the base 35 PostScript fonts, Latin Modern, TeX Gyre, and T1 and other encoding support for Computer Modern, in outline form.
 
 checksums           texlive-fonts-recommended-58637-run.tar.xz \
-                    rmd160  6ece2565778004964bc59837089aa14bc1c6dea6 \
-                    sha256  b541a85e71675d6543bbd57f48951d39e9cc1d89643288052be8c00d8dcee4aa \
-                    size    109108204 \
+rmd160  6ece2565778004964bc59837089aa14bc1c6dea6 \
+sha256  b541a85e71675d6543bbd57f48951d39e9cc1d89643288052be8c00d8dcee4aa \
+size    109108204 \
                     texlive-fonts-recommended-58637-doc.tar.xz \
-                    rmd160  a92666cd54689805d792b4f89424136500ccee07 \
-                    sha256  c28d35ab854006b1f2cbd0a19efbcef619bbf7e784a9bf19ccf916e43c90cdc7 \
-                    size    13957204 \
+rmd160  a92666cd54689805d792b4f89424136500ccee07 \
+sha256  c28d35ab854006b1f2cbd0a19efbcef619bbf7e784a9bf19ccf916e43c90cdc7 \
+size    13957204 \
                     texlive-fonts-recommended-58637-src.tar.xz \
-                    rmd160  bb7bf578165a66a463e4f459460bd8a939357397 \
-                    sha256  75ed3ce376dcba5b09e6430c8f821653cf8ae964c2a2b5204f121a38323847d1 \
-                    size    1564188
+rmd160  bb7bf578165a66a463e4f459460bd8a939357397 \
+sha256  75ed3ce376dcba5b09e6430c8f821653cf8ae964c2a2b5204f121a38323847d1 \
+size    1564188
 
 depends_lib         port:texlive-basic
 

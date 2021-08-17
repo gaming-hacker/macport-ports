@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -21,8 +21,8 @@ master_sites    gnu
 use_xz          yes
 
 checksums       rmd160  07849ea26faade7d3204b78379acb345eb252a71 \
-                sha256  5c10da312460aec721984d5d83246d24520ec438dd48d7ab5a05dbc0d6d6823c \
-                size    1641196
+sha256  5c10da312460aec721984d5d83246d24520ec438dd48d7ab5a05dbc0d6d6823c \
+size    1641196
 
 # error: type name requires a specifier or qualifier
 # error: expected member name or ';' after declaration specifiers

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ license             MIT
 homepage            https://${name}.github.io/
 
 checksums           rmd160  3e32adad11e9942bd9bf5e4020b0c3a07af2136e \
-                    sha256  3492ff0da20f4c3ae1d182e34d20dca9ff1b214eb7be21661247798189367364 \
-                    size    415442
+sha256  3492ff0da20f4c3ae1d182e34d20dca9ff1b214eb7be21661247798189367364 \
+size    415442
 
 # Leave the first letter as lowercase
 app.name            ${name}

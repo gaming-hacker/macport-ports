@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,8 +30,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 supported_archs     noarch
 
 checksums           rmd160  da1c0df259c9587e4557723ef2349f3c126e49d7 \
-                    sha256  3fb21d7c1f08821c0282c1e08d8725d11e932ee3cffed0e11ac82e7462bb725d \
-                    size    170534
+sha256  3fb21d7c1f08821c0282c1e08d8725d11e932ee3cffed0e11ac82e7462bb725d \
+size    170534
 
 patch {
     # Loosen restriction on using only a single particular version of distro.

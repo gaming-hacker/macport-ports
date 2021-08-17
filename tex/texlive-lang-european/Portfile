@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Other European languages
 long_description    Support for a number of European languages\; others (Greek, German, French, ...) have their own collections, depending simply on the size of the support.
 
 checksums           texlive-lang-european-58652-run.tar.xz \
-                    rmd160  9b0d221a6a76e0728858a5e42e1d5e0ede2e461c \
-                    sha256  aa12ec87cc2382cda7ca8d79469219d324b150bfaa542531000a834bf5aef3ba \
-                    size    14583652 \
+rmd160  9b0d221a6a76e0728858a5e42e1d5e0ede2e461c \
+sha256  aa12ec87cc2382cda7ca8d79469219d324b150bfaa542531000a834bf5aef3ba \
+size    14583652 \
                     texlive-lang-european-58652-doc.tar.xz \
-                    rmd160  0cf0b8a57725ada964705a430bfaca70570b6c5a \
-                    sha256  750b378ad90dbafc8ad47664f56d9763ed7e248f50230baa158b3552584e4afc \
-                    size    12748632 \
+rmd160  0cf0b8a57725ada964705a430bfaca70570b6c5a \
+sha256  750b378ad90dbafc8ad47664f56d9763ed7e248f50230baa158b3552584e4afc \
+size    12748632 \
                     texlive-lang-european-58652-src.tar.xz \
-                    rmd160  5a00cac3bd0166e11082191f8f197b2771d4be42 \
-                    sha256  572d407c97370140e2f74a32faaefecd3c16068303957ff306b3d1ce713bae76 \
-                    size    144796
+rmd160  5a00cac3bd0166e11082191f8f197b2771d4be42 \
+sha256  572d407c97370140e2f74a32faaefecd3c16068303957ff306b3d1ce713bae76 \
+size    144796
 
 depends_lib         port:texlive-basic
 
