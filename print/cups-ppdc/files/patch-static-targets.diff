@@ -1,0 +1,44 @@
+--- ppdc/Makefile.orig
++++ ppdc/Makefile
+@@ -275,6 +275,13 @@
+ 	$(CXX) $(LDFLAGS) -o $@ ppdhtml.o -L. -lcupsppdc $(LIBS)
+ 
+ 
++ppdhtml-static:			ppdhtml.o libcupsppdc.a  ../cups/libcups.a
++	echo Linking $@...
++	$(CXX) $(ARCHFLAGS) $(LDFLAGS) -o ppdhtml-static ppdhtml.o libcupsppdc.a \
++		../cups/libcups.a $(LIBGSSAPI) $(SSLLIBS) $(DNSSDLIBS) \
++		$(COMMONLIBS) $(LIBZ)
++
++
+ #
+ # ppdi, import PPD files.
+ #
+@@ -311,6 +318,13 @@
+ 	$(CXX) $(LDFLAGS) -o $@ ppdmerge.o $(LIBS)
+ 
+ 
++ppdmerge-static:			ppdmerge.o ../cups/libcups.a
++	echo Linking $@...
++	$(CXX) $(ARCHFLAGS) $(LDFLAGS) -o $@ ppdmerge.o \
++		../cups/libcups.a $(LIBGSSAPI) $(SSLLIBS) $(DNSSDLIBS) \
++		$(COMMONLIBS) $(LIBZ)
++
++
+ #
+ # ppdpo, create message catalog files.
+ #
+@@ -320,6 +334,13 @@
+ 	$(CXX) $(LDFLAGS) -o $@ ppdpo.o -L. -lcupsppdc $(LIBS)
+ 
+ 
++ppdpo-static:		ppdc-static ppdpo.o libcupsppdc.a  ../cups/libcups.a
++	echo Linking $@...
++	$(CXX) $(ARCHFLAGS) $(LDFLAGS) -o ppdpo-static ppdpo.o libcupsppdc.a \
++		../cups/libcups.a $(LIBGSSAPI) $(SSLLIBS) $(DNSSDLIBS) \
++		$(COMMONLIBS) $(LIBZ)
++
++
+ #
+ # testcatalog, test ppdcCatalog class.
+ #
