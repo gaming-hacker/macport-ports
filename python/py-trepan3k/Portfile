@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-trepan3k
-version             1.2.6
+version             1.2.7
 revision            0
 
 categories-append   devel
@@ -21,11 +21,11 @@ long_description    This is a gdb-like debugger for Python. It is a rewrite of p
 
 homepage            https://github.com/rocky/python3-trepan
 
-checksums           rmd160  41c424e4e5abad41d0e378e7d8a041520fee1063 \
-sha256  a147d4bb0d7a970546bdb41c9abf7e4c6c1235c8e0606d1777e7a1a6c4f86c14 \
-size    515813
+checksums           rmd160  7b7fc27134b1b37fc9c853bc9e2203b14358e3ab \
+                    sha256  2d0b49f82ac50581e0bfa3e80bee57906587f7276b06fd91acd5ffd3b1081543 \
+                    size    516119
 
-python.versions 39
+python.versions     37 38 39
 
 if {${subport} ne ${name}} {
     depends_lib-append \

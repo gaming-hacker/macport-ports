@@ -28,4 +28,5 @@ size 374702
 configure.args-append \
                     -DSKIP_PORTABILITY_TEST=ON \
                     -DTHREAD_SAFE=ON \
-                    -DWITH_WERROR=OFF
+                    -DWITH_WERROR=OFF \
+                    -DJUST_INSTALL_CEREAL=ON

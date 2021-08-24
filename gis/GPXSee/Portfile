@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           qmake5 1.0
 
-github.setup        tumic0 GPXSee 9.4
+github.setup        tumic0 GPXSee 9.5
 revision            0
 categories          gis graphics
 platforms           darwin
@@ -17,16 +17,16 @@ long_description    GPXSee is a Qt-based GPS log file viewer and analyzer \
 
 homepage            https://www.gpxsee.org/
 
-checksums           rmd160  288fe5fd9ca587cbbe32fe24cb1e0a328b0ca0b3 \
-sha256  39189499bc5db33c3f915716242357445af3f6411db0ef4d531e63ce3ed55ab6 \
-size    4439043
+checksums           rmd160  c992a150a3bb63a6eef6e2b65f1d68c87b89661f \
+                    sha256  1cf851aa6302add928b4825fa7b962f6284075e0ee9a006f1180dd18aaeaf675 \
+                    size    4708395
 
 patchfiles          patch-src_GUI_app_cpp.diff
 
 qt5.depends_build_component     qttools
 qt5.depends_runtime_component   qtimageformats qttranslations
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 depends_run-append  port:QtPBFImagePlugin
 
