@@ -1,15 +1,15 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
 PortGroup               legacysupport 1.1
 
 name                    capnproto
-version                 0.8.0
+version                 0.9.0
 revision                0
-checksums               rmd160  4de4d4ef8745b793665485e35e2e24c5239fa725 \
-sha256  d1f40e47574c65700f0ec98bf66729378efabe3c72bc0cda795037498541c10d \
-size    1579090
+checksums               rmd160  bbf0a47756fe2ab99e039513da21c83d8e8a32b3 \
+                        sha256  b28054a7a2bfea42bfc392c8d009630d94d72e8ce86a23ad6f18b5e72574064f \
+                        size    1664135
 
 maintainers             {cal @neverpanic} openmaintainer
 platforms               darwin
@@ -28,7 +28,7 @@ distname                ${name}-c++-${version}
 
 use_autoreconf          yes
 
-compiler.cxx_standard 2017
+compiler.cxx_standard   2014
 
 # clang 3.2 - clang-3.5 and all clangs from Xcode < 5 crash while compiling this.
 # see http://llvm.org/bugs/show_bug.cgi?id=18340
