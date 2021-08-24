@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,9 +24,9 @@ license             GPL-3.0
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  431829aff53f49c48421cf00ff70084de89fcc57 \
-                    sha256  6bda07b2a78a67d887101349b4984fd2523af4d82c78a22e444e30c393ccbcb1 \
-                    size    49545
+rmd160  431829aff53f49c48421cf00ff70084de89fcc57 \
+sha256  6bda07b2a78a67d887101349b4984fd2523af4d82c78a22e444e30c393ccbcb1 \
+size    49545
 
 github.tarball_from archive
 
@@ -140,8 +140,8 @@ cargo.crates \
     serde_derive                   1.0.127  a024926d3432516606328597e0f224a51355a493b49fdd67e9209187cbe55ecc \
     serde_json                      1.0.66  336b10da19a12ad094b59d870ebde26a45402e5b470add4b5fd03c5048a32127 \
     serde_regex                      1.1.0  a8136f1a4ea815d7eac4101cfd0b16dc0cb5e1fe1b8609dfd728058656b7badf \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
     slug                             0.1.4  b3bc762e6a4b6c6fcaade73e77f9ebc6991b676f88bb2358bddb56560f073373 \
     static_assertions                1.1.0  a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -21,8 +21,8 @@ homepage        https://opensource.apple.com/source/cups
 distname        cups-327.7
 master_sites    https://opensource.apple.com/tarballs/cups
 checksums       rmd160  5d99a2fe54182993956a17e813b73c583478d2d1 \
-                sha256  6106bab36b25ad45c03575da1a900133cc69e18eb41db15a366d8f8a930b97bb \
-                size    8979707
+sha256  6106bab36b25ad45c03575da1a900133cc69e18eb41db15a366d8f8a930b97bb \
+size    8979707
 
 patchfiles      patch-static-targets.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                      1.0
 PortGroup           python                      1.0
@@ -12,8 +12,8 @@ revision            0
 github.setup        explosion thinc ${version} v
 
 checksums           rmd160  4a53fb66a87f16d6d12420f2d4c95a304ea38d5f \
-                    sha256  5099cf9cbe31eeaa5d86a18c5ef1766c103a54cd81964b45a1a54a0816dfc706 \
-                    size    1329938
+sha256  5099cf9cbe31eeaa5d86a18c5ef1766c103a54cd81964b45a1a54a0816dfc706 \
+size    1329938
 
 platforms           darwin
 supported_archs     x86_64
@@ -29,10 +29,10 @@ long_description    {*}${description}
 github.livecheck.regex {([0-9.]+)}
 
 # Support python versions
-python.versions     36 37 38 39
+python.versions 39
 
 # Compiler selection
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 compiler.blacklist-append *gcc* {clang < 900} {macports-clang-3.[0-9]} macports-clang-4.0
 
 if {${name} ne ${subport}} {

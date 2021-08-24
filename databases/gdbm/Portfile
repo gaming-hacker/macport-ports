@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -26,8 +26,8 @@ depends_lib         port:gettext \
 master_sites        gnu
 
 checksums           rmd160  6fab4bf0948c178ef23905bbb10c3655513961da \
-                    sha256  3aeac05648b3482a10a2da986b9f3a380a29ad650be80b9817a435fb8114a292 \
-                    size    987628
+sha256  3aeac05648b3482a10a2da986b9f3a380a29ad650be80b9817a435fb8114a292 \
+size    987628
 
 if {${os.platform} eq "darwin" && ${os.major} < 11 && ${cxx_stdlib} eq "libc++"} {
     # This port is in the dependency chain for clang 3.7 and later

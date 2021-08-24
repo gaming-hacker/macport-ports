@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ long_description    The findlib library provides a scheme to manage reusable \
                     can directly deal with packages.
 
 checksums           rmd160  b1495a782a05e0049aecdf745bde85367368cc5f \
-                    sha256  b736221800dcf2fdc4d0cb20b35d3adcb7812c5f3f16d8a2627cff675b082396 \
-                    size    167983
+sha256  b736221800dcf2fdc4d0cb20b35d3adcb7812c5f3f16d8a2627cff675b082396 \
+size    167983
 
 depends_lib         port:ocaml
 

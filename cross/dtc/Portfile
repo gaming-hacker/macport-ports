@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ homepage            https://git.kernel.org/pub/scm/utils/dtc/dtc.git
 master_sites        "${homepage}/snapshot/"
 
 checksums           rmd160  b8d7f9a6ec654e1574df0b4246497560b5206bd6 \
-                    sha256  6401c9a0f577a270df4632bf0f3e5454ccc7a5ca3caefa67a3e1c29c9c6b8c60 \
-                    size    205388
+sha256  6401c9a0f577a270df4632bf0f3e5454ccc7a5ca3caefa67a3e1c29c9c6b8c60 \
+size    205388
 
 depends_build       port:gmake \
                     port:pkgconfig

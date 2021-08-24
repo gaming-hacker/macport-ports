@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,10 +15,10 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/qore/releases/download/release-${version}
 
 checksums           rmd160 c34659ae699c68b5c603b9be56ef9f4d23213aee \
-                    sha256 3efb954c184813888edcc3a409b14c8d9e535b171cedf6b1c66c1e74619bd8b4 \
-                    size 43047816
+sha256 3efb954c184813888edcc3a409b14c8d9e535b171cedf6b1c66c1e74619bd8b4 \
+size 43047816
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 depends_build-append \
                     port:flex \

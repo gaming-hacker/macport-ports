@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -56,8 +56,8 @@ if ${source_build} {
     use_parallel_build  no
 
     checksums       rmd160  e9fd68c263ac144353e0a31557be1cae5064eb20 \
-                    sha256  5d93535395a6684dee1d9d1d3cde859addd76f56581e0111d95a9c685d582426 \
-                    size    548905
+sha256  5d93535395a6684dee1d9d1d3cde859addd76f56581e0111d95a9c685d582426 \
+size    548905
 
     github.tarball_from archive
 
@@ -74,8 +74,8 @@ if ${source_build} {
     distname        gh_${version}_macOS_amd64
 
     checksums       rmd160  d39b0dde3444a00291b84dc55a95dea9b346a83e \
-                    sha256  33dd2c9aff1ef2397100263e6c63d4f2a119add725eb4fb10d684412879e6d0a \
-                    size    7005549
+sha256  33dd2c9aff1ef2397100263e6c63d4f2a119add725eb4fb10d684412879e6d0a \
+size    7005549
 
     github.tarball_from releases
 

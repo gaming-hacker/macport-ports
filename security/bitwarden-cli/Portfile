@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    CLI implementation of the Bitwarden password manager.
 homepage            https://bitwarden.com
 
 checksums           rmd160  c2304e98e5c7f744cb651e63c950c87c45ae8bb4 \
-                    sha256  57b21ff53a9a83b1d7fecfc9120156db256881eafa3e009fc5fa14a315ada1fd \
-                    size    19611629
+sha256  57b21ff53a9a83b1d7fecfc9120156db256881eafa3e009fc5fa14a315ada1fd \
+size    19611629
 
 github.tarball_from releases
 distname            bw-macos-${version}

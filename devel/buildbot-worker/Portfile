@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,8 +7,8 @@ name                buildbot-worker
 version             3.3.0
 revision            0
 checksums           rmd160  48e8684fb79528fe772747d143e7c11b3b0b36ae \
-                    sha256  9c33f8eab2d66175ca264b51e8d4d62dbd1eac2e8553c7d77bd140217f8c5ae5 \
-                    size    99996
+sha256  9c33f8eab2d66175ca264b51e8d4d62dbd1eac2e8553c7d77bd140217f8c5ae5 \
+size    99996
 
 categories          devel
 platforms           darwin

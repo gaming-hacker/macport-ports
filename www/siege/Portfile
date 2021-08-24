@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ homepage            https://www.joedog.org/siege-home/
 master_sites        http://download.joedog.org/siege/
 
 checksums           rmd160  3ccf8d6ba69f1aeb6d83ec5971a2bf8264a5e0e8 \
-                    sha256  143c25727b9bb2c439486c35121602f4d963385305aab4ed1ff9851581bfe4a8 \
-                    size    543378
+sha256  143c25727b9bb2c439486c35121602f4d963385305aab4ed1ff9851581bfe4a8 \
+size    543378
 
 depends_lib         path:lib/libssl.dylib:openssl
 

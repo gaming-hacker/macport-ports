@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,8 +26,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 installs_libs       no
 
 checksums           rmd160  13c36720f38efea35a2b7262dd1c889cf14df485 \
-                    sha256  74c6ba83c45fef76ff3ff7ab43d9be3c4adc15f16da23fde264f737e98bd93dd \
-                    size    226938
+sha256  74c6ba83c45fef76ff3ff7ab43d9be3c4adc15f16da23fde264f737e98bd93dd \
+size    226938
 
 depends_build-append \
                     port:realpath
