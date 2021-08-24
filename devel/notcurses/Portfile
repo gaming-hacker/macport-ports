@@ -1,12 +1,15 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
 PortSystem 1.0
-PortGroup           cmake 1.0
+PortGroup           cmake 1.1
 PortGroup           github 1.0
-github.setup        dankamongmen notcurses 2.3.13 v
+
+github.setup        dankamongmen notcurses 2.3.17 v
 github.tarball_from archive
 
 revision         0
 categories       devel
-maintainers      linux.com:nickblack
+maintainers      {linux.com:nickblack @dankamongmen} openmaintainer
 description      blingful tuis and character graphics
 long_description \
  Notcurses facilitates the creation of modern TUI programs, making \
@@ -17,11 +20,13 @@ long_description \
 homepage         https://notcurses.com
 platforms        darwin
 license          Apache-2
-depends_build    port:doctest
+depends_build    port:pandoc
 depends_lib      port:ffmpeg port:readline port:libunistring
 test.run         yes
-test.target      check
 
-checksums           rmd160  b4465532024cd1343071bf12d7d01368b6cb588b \
-sha256  c5eb822ea5b98028acd4a8dd21b155f893d928e4a30a8309eea0c406403af4e8 \
-size    12187270
+configure.args-append \
+                 -DUSE_DOCTEST=OFF
+
+checksums           rmd160  fff296406bfd54655c223cb3d65f37a8ff46b124 \
+                    sha256  81db9d13b515d01b134619f3e69cc1efe9f326030c4e49128131d3288ee68e33 \
+                    size    12189795
