@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -31,8 +31,8 @@ master_sites        http://rutschle.net/tech/sslh/
 distname            ${name}-v${version}
 
 checksums           rmd160  b491ed5573092e455b57ee1ba35c42549d841fa6 \
-                    sha256  5ef48dd9dacec8dc04c100f273952e534be9ae1ef02baa52708a8ecdbd4173cc \
-                    size    146860
+sha256  5ef48dd9dacec8dc04c100f273952e534be9ae1ef02baa52708a8ecdbd4173cc \
+size    146860
 
 depends_lib         port:libconfig-hr \
                     port:pcre

@@ -11,11 +11,11 @@ PortGroup                   conflicts_build 1.0
 name                        ImageMagick
 # 6.9.11-61 changes the major version of libMagickCore which will
 # require increasing the revision of all ports that link with it.
-version                     7.1.0-2
+version                     7.1.0-5
 revision                    0
-checksums rmd160  6084050ec1fa06b089a0aa63497eefdbe720c55a \
-sha256  039006f616bb326598e7b910932694e2a3ca925586560e1b8d153a7048f52980 \
-size    10312288
+checksums rmd160  7fd1c6083a8a861e3b6ea83e55fb7c7581b6ff41 \
+sha256  faeae351785447834c44850f2d3d80bbb0fed500228373098fce553a0df1ac6b \
+size    10308228
 
 categories                  graphics devel
 maintainers                 {ryandesign @ryandesign}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github  1.0
@@ -38,9 +38,9 @@ patchfiles          patch-Cargo.lock.diff
 depends_lib         path:lib/libssl.dylib:openssl
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  967707a0a06667fdb935b5d5c70c3e39436a5201 \
-                    sha256  28e50071009a1430c5f8df94e2585d095f85f906f04101fe35ee9ed53c353cc4 \
-                    size    12386538
+rmd160  967707a0a06667fdb935b5d5c70c3e39436a5201 \
+sha256  28e50071009a1430c5f8df94e2585d095f85f906f04101fe35ee9ed53c353cc4 \
+size    12386538
 
 github.tarball_from archive
 
@@ -300,8 +300,8 @@ cargo.crates \
     serde_json                      1.0.66  336b10da19a12ad094b59d870ebde26a45402e5b470add4b5fd03c5048a32127 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
     serde_yaml                      0.8.19  6375dbd828ed6964c3748e4ef6d18e7a175d408ffe184bca01698d0c73f915a9 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
     siphasher                        0.3.6  729a25c17d72b06c68cb47955d44fda88ad2d3e7d77e025663fdd69b93dd71a1 \
     slab                             0.4.4  c307a32c1c5c437f38c7fd45d753050587732ba8628319fbdf12a7e289ccc590 \
     slotmap                          1.0.5  a952280edbecfb1d4bd3cf2dbc309dc6ab523e53487c438ae21a6df09fe84bc4 \

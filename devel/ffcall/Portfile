@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,8 +16,8 @@ homepage            https://www.gnu.org/software/libffcall/
 platforms           darwin
 distname            libffcall-${version}
 checksums           rmd160  b5f5b9c3447eb67cb4c827ac993035e81aa8ee93 \
-                    sha256  8ef69921dbdc06bc5bb90513622637a7b83a71f31f5ba377be9d8fd8f57912c2 \
-                    size    1253767
+sha256  8ef69921dbdc06bc5bb90513622637a7b83a71f31f5ba377be9d8fd8f57912c2 \
+size    1253767
 master_sites        gnu:libffcall
 
 test.run            yes

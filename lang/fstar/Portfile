@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github  1.0
@@ -161,8 +161,8 @@ subport fstar {
 
     distname            V${version}
     checksums           rmd160  bec45d793880ecf815bdc3d79cdb58f7f6ba7414 \
-                        sha256  baa60f5f8a6c0dd5237a4fc7de5b8e940a3c620d680d255ae0057cf765163618 \
-                        size    7173479
+sha256  baa60f5f8a6c0dd5237a4fc7de5b8e940a3c620d680d255ae0057cf765163618 \
+size    7173479
 
     patchfiles-append   fstar-stable/patch-ocaml4.08 \
                         fstar-stable/patch-examples-fix-tests \
@@ -199,8 +199,8 @@ subport fstar-devel {
     revision            0
 
     checksums           rmd160  5a9425b3267e68dd3151e43d737e29f0cd492992 \
-                        sha256  8c47e48d3b4ee97d2f0c672205af754087eca5d70be7776bbc7a81b58a318b8a \
-                        size    8168870
+sha256  8c47e48d3b4ee97d2f0c672205af754087eca5d70be7776bbc7a81b58a318b8a \
+size    8168870
     github.tarball_from archive
 
     patchfiles-append   fstar-devel/patch-fix-get_exec_dir \
@@ -235,8 +235,8 @@ subport kremlin {
     github.tarball_from archive
 
     checksums           rmd160  b806353b0dbc89ad4e398e14d332b36d9ea2f69a \
-                        sha256  547d3374e347d4e0b50bda2ed17a78719aa2265a91a2e1828a0e492e82dfb558 \
-                        size    660454
+sha256  547d3374e347d4e0b50bda2ed17a78719aa2265a91a2e1828a0e492e82dfb558 \
+size    660454
 
     depends_lib-append  port:ocaml-ulex
 
@@ -260,8 +260,8 @@ subport kremlin-devel {
     revision            0
 
     checksums           rmd160  ae7b00b1c118ac9abed39ffcc2ef41427a61f630 \
-                        sha256  af26f369566fdcb0154f533dcd01d48c08bedb65551c04ce16fdf42dc3c41562 \
-                        size    895674
+sha256  af26f369566fdcb0154f533dcd01d48c08bedb65551c04ce16fdf42dc3c41562 \
+size    895674
     github.tarball_from archive
 
     patchfiles-append   kremlin-devel/patch-clang-driver-options \
@@ -331,8 +331,8 @@ if {${fstar.project} eq "fstar"} {
         foreach {fstar_src fstar_dest} {
             lib/fstar               ulib
             bin                     bin
-            share/fstar/examples    examples
-            share/fstar/contrib     ucontrib
+share/fstar/examples    examples
+share/fstar/contrib     ucontrib
         } {
             ln -shf \
                 ../${fstar_src} \
@@ -419,7 +419,7 @@ if {${fstar.project} eq "fstar"} {
             lib/kremlin/runtime     runtime
             include                 include
             bin/krml                krml
-            share/kremlin/misc      misc
+share/kremlin/misc      misc
         } {
             ln -shf \
                 ../${kremlin_src} \

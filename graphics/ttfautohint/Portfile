@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 
@@ -18,8 +18,8 @@ license            {freetype GPL-2}
 master_sites       sourceforge:project/freetype/ttfautohint/${version}
 
 checksums          rmd160 afa55ddda0f55c0ec91d0268d4e275568ef54706 \
-                   sha256 8a876117fa6ebfd2ffe1b3682a9a98c802c0f47189f57d3db4b99774206832e1 \
-                   size 3539332
+sha256 8a876117fa6ebfd2ffe1b3682a9a98c802c0f47189f57d3db4b99774206832e1 \
+size 3539332
 
 depends_build      port:pkgconfig
 

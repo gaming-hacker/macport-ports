@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       legacysupport 1.1
@@ -22,13 +22,13 @@ long_description \
 homepage        https://cgdb.github.io
 master_sites    https://cgdb.me/files/
 checksums       rmd160  c3de8f0f229595cf622481b3f4eaaf7cbdc7adca \
-                sha256  bb723be58ec68cb59a598b8e24a31d10ef31e0e9c277a4de07b2f457fe7de198 \
-                size    731818
+sha256  bb723be58ec68cb59a598b8e24a31d10ef31e0e9c277a4de07b2f457fe7de198 \
+size    731818
 
 depends_lib     port:ncurses port:readline
 
 compiler.c_standard 2011
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args  --infodir=${prefix}/share/info \
                 --mandir=${prefix}/share/man

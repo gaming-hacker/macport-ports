@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel
 platforms           darwin
 license             PSF
 
-python.versions     27 35 36 37 38 39
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,8 +23,8 @@ homepage            https://bitbucket.org/mrabarnett/mrab-regex
 distname            ${python.rootname}-${distversion}
 
 checksums           rmd160  b5a1c3b69db344c6b145db3a7d6a356702bb7240 \
-                    sha256  faf08b0341828f6a29b8f7dd94d5cf8cc7c39bfc3e67b78514c54b494b66915a \
-                    size    693951
+sha256  faf08b0341828f6a29b8f7dd94d5cf8cc7c39bfc3e67b78514c54b494b66915a \
+size    693951
 
 if {${name} ne ${subport}} {
     depends_build-append \
