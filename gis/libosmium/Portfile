@@ -1,0 +1,51 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           cmake 1.1
+PortGroup           github 1.0
+PortGroup           boost 1.0
+
+github.setup        osmcode libosmium 2.17.0 v
+
+categories          gis
+platforms           darwin
+maintainers         {@frankdean fdsd.co.uk:frank.dean} openmaintainer
+
+license             Boost-1 public-domain
+
+description         A fast and flexible C++ library for working with OpenStreetMap data
+
+long_description    Low-level: this is designed to be a building block \
+                    for writing a very customized decoder for a stable \
+                    protobuf schema. If your protobuf schema is \
+                    changing frequently or lazy decoding is not \
+                    critical for your application then this approach \
+                    offers no value: just use the C++ API that can be \
+                    generated with the Google Protobufs protoc \
+                    program.
+
+checksums           rmd160  9600b1c3b77923359a228580c731843d5898e6dc \
+                    sha256  a6c70e42a8eb08aadaadd1bce012f2c5115b3fca3de802ac33e3cbdeed77fb43 \
+                    size    513437
+
+compiler.cxx_standard 2011
+
+universal_variant   no
+
+depends_lib         port:zlib \
+                    port:protozero \
+                    port:expat \
+                    port:bzip2 \
+                    port:proj8
+
+cmake.build_type    Release
+
+configure.pkg_config ${prefix}/bin/pkg-config
+
+test.run            yes
+test.cmd            ctest --output-on-failure
+
+#https://osmcode.org/libosmium/manual.html#dependencies
+variant gdal description {Support converting OSM geometries into OGR geometries} {
+    depends_lib-append port:gdal
+}
