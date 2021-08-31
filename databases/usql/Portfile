@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/xo/usql 0.9.3 v
-revision            0
+go.setup            github.com/xo/usql 0.9.4 v
+revision            1
 
 description         Universal command-line interface for SQL databases
 
@@ -25,12 +25,13 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 installs_libs       no
 
-checksums           rmd160  13c36720f38efea35a2b7262dd1c889cf14df485 \
-sha256  74c6ba83c45fef76ff3ff7ab43d9be3c4adc15f16da23fde264f737e98bd93dd \
-size    226938
+checksums           rmd160  c2c63da0455aed96190a638e72e64d1b95d7bd74 \
+                    sha256  4f44ed554e65b77da80587957e1e29d5bfefab66eab49465479fba0f626b5bcc \
+                    size    239444
 
 depends_build-append \
-                    port:realpath
+                    port:realpath \
+                    port:upx
 depends_lib-append  port:icu
 
 # Allow Go to download dependencies during build time
@@ -41,10 +42,13 @@ build.args          -v ${github.tag_prefix}${version}
 
 patch {
     # Do not compress the binary
-    reinplace -E {s|^EXT=.*|EXT=|} ${worksrcpath}/build-release.sh
+    reinplace -E {s|^EXT=.*|EXT=|}      ${worksrcpath}/build-release.sh
 
     # Disable sqlite_icu driver
-    reinplace -E {s|sqlite_icu||} ${worksrcpath}/build-release.sh
+    reinplace -E {s|sqlite_icu||}       ${worksrcpath}/build-release.sh
+
+    # Disable strip command
+    reinplace -E {s|\s*strip|#strip|g}  ${worksrcpath}/build-release.sh
 }
 
 destroot {

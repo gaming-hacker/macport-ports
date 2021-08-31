@@ -1,42 +1,42 @@
 --- ppdc/Makefile.orig
 +++ ppdc/Makefile
-@@ -275,6 +275,13 @@
- 	$(CXX) $(LDFLAGS) -o $@ ppdhtml.o -L. -lcupsppdc $(LIBS)
+@@ -220,6 +220,13 @@
+ 	$(CODE_SIGN) -s "$(CODE_SIGN_IDENTITY)" $@
  
  
-+ppdhtml-static:			ppdhtml.o libcupsppdc.a  ../cups/libcups.a
++ppdhtml-static:			ppdhtml.o libcupsppdc.a  ../cups/$(LIBCUPSSTATIC)
 +	echo Linking $@...
-+	$(CXX) $(ARCHFLAGS) $(LDFLAGS) -o ppdhtml-static ppdhtml.o libcupsppdc.a \
-+		../cups/libcups.a $(LIBGSSAPI) $(SSLLIBS) $(DNSSDLIBS) \
-+		$(COMMONLIBS) $(LIBZ)
++	$(LD_CXX) $(ARCHFLAGS) $(ALL_LDFLAGS) -o ppdhtml-static ppdhtml.o libcupsppdc.a \
++		$(LINKCUPSSTATIC)
++	$(CODE_SIGN) -s "$(CODE_SIGN_IDENTITY)" $@
 +
 +
  #
  # ppdi, import PPD files.
  #
-@@ -311,6 +318,13 @@
- 	$(CXX) $(LDFLAGS) -o $@ ppdmerge.o $(LIBS)
+@@ -258,6 +265,13 @@
+ 	$(CODE_SIGN) -s "$(CODE_SIGN_IDENTITY)" $@
  
  
-+ppdmerge-static:			ppdmerge.o ../cups/libcups.a
++ppdmerge-static:		ppdmerge.o libcupsppdc.a ../cups/$(LIBCUPSSTATIC)
 +	echo Linking $@...
-+	$(CXX) $(ARCHFLAGS) $(LDFLAGS) -o $@ ppdmerge.o \
-+		../cups/libcups.a $(LIBGSSAPI) $(SSLLIBS) $(DNSSDLIBS) \
-+		$(COMMONLIBS) $(LIBZ)
++	$(LD_CXX) $(ARCHFLAGS) $(ALL_LDFLAGS) -o ppdmerge-static ppdmerge.o libcupsppdc.a \
++		$(LINKCUPSSTATIC)
++	$(CODE_SIGN) -s "$(CODE_SIGN_IDENTITY)" $@
 +
 +
  #
  # ppdpo, create message catalog files.
  #
-@@ -320,6 +334,13 @@
- 	$(CXX) $(LDFLAGS) -o $@ ppdpo.o -L. -lcupsppdc $(LIBS)
+@@ -268,6 +282,13 @@
+ 	$(CODE_SIGN) -s "$(CODE_SIGN_IDENTITY)" $@
  
  
-+ppdpo-static:		ppdc-static ppdpo.o libcupsppdc.a  ../cups/libcups.a
++ppdpo-static:		ppdpo.o libcupsppdc.a ../cups/$(LIBCUPSSTATIC)
 +	echo Linking $@...
-+	$(CXX) $(ARCHFLAGS) $(LDFLAGS) -o ppdpo-static ppdpo.o libcupsppdc.a \
-+		../cups/libcups.a $(LIBGSSAPI) $(SSLLIBS) $(DNSSDLIBS) \
-+		$(COMMONLIBS) $(LIBZ)
++	$(LD_CXX) $(ARCHFLAGS) $(ALL_LDFLAGS) -o ppdpo-static ppdpo.o libcupsppdc.a \
++		$(LINKCUPSSTATIC)
++	$(CODE_SIGN) -s "$(CODE_SIGN_IDENTITY)" $@
 +
 +
  #

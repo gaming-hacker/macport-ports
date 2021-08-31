@@ -1,48 +1,57 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
+PortGroup       legacysupport 1.1
+PortGroup       github 1.0
 
+# clock_gettime
+legacysupport.newest_darwin_requires_legacy 15
+
+github.setup    apple cups 2.3.3 v
 name            cups-ppdc
-version         1.6.2
 categories      print textproc
-license         GPL-2
+license         Apache-2
 maintainers     nomaintainer
 description     Compiler for PostScript Printer Description (PPD) files
 long_description \
     cups-ppdc is a collection of utilities taken from the Common UNIX Printing System (CUPS) \
     for working with PostScript Printer Description (PPD) files\; \
     PPD files can be used to set up a printer when proprietary drivers are not available. \
-    These utilities (ppdc, ppdi, ppdmerge, ppdhtml, and ppdpo) are present on Mac OS X 10.6 and later\; \
-    this package includes the versions that shipped with Mac OS X 10.8. \
     See the ppdcfile(5) man page for information on the PPD file format.
 
-homepage        https://opensource.apple.com/source/cups
+checksums       rmd160  676fec5542a7ee80111011757589fe44f7354c29 \
+                sha256  fe381d941907011e0f2323dce93f0dc4a60cca9fa56b5d896288819cb933f074 \
+                size    8148606
 
-distname        cups-327.7
-master_sites    https://opensource.apple.com/tarballs/cups
-checksums       rmd160  5d99a2fe54182993956a17e813b73c583478d2d1 \
-sha256  6106bab36b25ad45c03575da1a900133cc69e18eb41db15a366d8f8a930b97bb \
-size    8979707
+patchfiles      patch-static-targets.diff \
+                patch-configure.diff \
+                patch-cups-hash-sha224.diff \
+                patch-cups-usersys-ssl.diff \
+                patch-cups-getifaddrs.diff \
+                patch-cups-tempfile.diff
 
-patchfiles      patch-static-targets.diff
-
-worksrcdir  ${worksrcdir}/cups
+platform darwin 8 {
+    patchfiles-append \
+                patch-cups-transcode-iconv.diff
+}
 
 post-patch {
     # Fix broken build with old GCC and unrecognized flag warnings with new GCC
     reinplace "s|@PIEFLAGS@||" Makedefs.in
+
+    # <os/availability.h> introduced in 10.12
+    if {${os.platform} eq "darwin" && ${os.major} < 16} {
+        reinplace "s|<os/availability.h>|<AvailabilityMacros.h>|" cups/versioning.h
+    }
 }
 
-if {[string match *gcc* ${configure.compiler}] && ![string match *gcc-\[4-6\]* ${configure.compiler}]} {
-    configure.cflags-append     -Wno-format-truncation
-    configure.cxxflags-append     -Wno-format-truncation
-}
-
-configure.args-append   --disable-dnssd
-configure.args-append   --disable-gssapi
-configure.args-append   --disable-ssl
-configure.args-append   --disable-shared
-configure.args-append   --with-bundledir=""
+configure.args  --disable-dnssd \
+                --disable-gssapi \
+                --disable-ssl \
+                --disable-shared \
+                --with-bundledir=""
+# code signing is broken on Snow Leopard - "sign" with /usr/bin/true
+configure.env-append CODE_SIGN=true
 configure.cflags-append -fno-stack-protector
 configure.cxxflags-append -fno-stack-protector
 if {${os.platform} eq "darwin" && ${os.major} < 10} {
@@ -60,35 +69,31 @@ post-configure {
 }
 
 build {
-    exec -ignorestderr make -C ${worksrcpath}/cups
+    system -W ${worksrcpath}/cups "make"
     foreach tool {ppdc ppdi ppdpo ppdhtml ppdmerge} {
-        exec -ignorestderr make -C ${worksrcpath}/ppdc ${tool}-static
+        system -W ${worksrcpath}/ppdc "make ${tool}-static"
     }
-    foreach tool {ppdc ppdi ppdpo ppdhtml ppdmerge} {
-        exec make -C ${worksrcpath}/man ${tool}.1.gz 2>@1
-    }
-    exec make -C ${worksrcpath}/man ppdcfile.5.gz 2>@1
 }
 
 destroot {
     xinstall -d ${destroot}${prefix}/share/cups/ppdc
 
-    xinstall -m 644 -W ${worksrcpath}/data \
+    xinstall -m 0644 -W ${worksrcpath}/data \
         font.defs media.defs raster.defs \
         epson.h hp.h label.h \
         ${destroot}${prefix}/share/cups/ppdc
 
     foreach tool {ppdc ppdi ppdpo ppdhtml ppdmerge} {
-        xinstall -m 755 ${worksrcpath}/ppdc/${tool}-static \
+        xinstall -m 0755 ${worksrcpath}/ppdc/${tool}-static \
             ${destroot}${prefix}/bin
         file rename ${destroot}${prefix}/bin/${tool}-static \
             ${destroot}${prefix}/bin/${tool}
     }
 
     foreach tool {ppdc ppdi ppdpo ppdhtml ppdmerge} {
-        xinstall -m 644 ${worksrcpath}/man/${tool}.1.gz \
+        xinstall -m 0644 ${worksrcpath}/man/${tool}.1 \
             ${destroot}${prefix}/share/man/man1
     }
-    xinstall -m 644 ${worksrcpath}/man/ppdcfile.5.gz \
+    xinstall -m 0644 ${worksrcpath}/man/ppdcfile.5 \
         ${destroot}${prefix}/share/man/man5
 }
