@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ homepage            https://www.nushell.sh
 build.args          --features extra
 
 checksums           nushell-${version}.tar.gz \
-                    rmd160  2767fa81c9b3719727fb09d6888d065ce2a12ab2 \
-                    sha256  f1349c37f28bed75a79a1a2e54080a02d9a55561d0950fa33ff209c95f0d2945 \
-                    size    6289388
+rmd160  2767fa81c9b3719727fb09d6888d065ce2a12ab2 \
+sha256  f1349c37f28bed75a79a1a2e54080a02d9a55561d0950fa33ff209c95f0d2945 \
+size    6289388
 
 destroot {
     delete {*}[glob ${worksrcpath}/target/[cargo.rust_platform]/release/*.d]
@@ -334,9 +334,9 @@ cargo.crates \
     malloc_buf                       0.0.6  62bb907fe88d54d8d9ce32a3cceab4218ed2f6b7d35617cafe9adf84e43919cb \
     markup5ever                     0.10.1  a24f40fb03852d1cdd84330cddcaf98e9ec08a7b7768e952fad3b4cf048ec8fd \
     matches                          0.1.8  7ffc5c5338469d4d3ea17d269fa8ea3512ad247247c30bd2df69e68309ed0a08 \
-    md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
-    md5                              0.6.1  7e6bcd6433cff03a4bfc3d9834d504467db1f1cf6d0ea765d37d330249ed629d \
-    md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
+md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
+md5                              0.6.1  7e6bcd6433cff03a4bfc3d9834d504467db1f1cf6d0ea765d37d330249ed629d \
+md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
     memchr                           2.4.0  b16bd47d9e329435e309c58469fe0791c2d0d1ba96ec0954152a5ae2b04387dc \
     memmap2                          0.2.3  723e3ebdcdc5c023db1df315364573789f8857c11b631a2fdfad7c00f5c046b4 \
     memoffset                        0.6.4  59accc507f1338036a0477ef61afdae33cde60840f4dfe481319ce3ad116ddf9 \
@@ -523,11 +523,11 @@ cargo.crates \
     serial_test                      0.5.1  e0bccbcf40c8938196944a3da0e133e031a33f4d6b72db3bda3cc556e361905d \
     serial_test_derive               0.5.1  b2acd6defeddb41eb60bb468f8825d0cfd0c2a76bc03bfd235b6a1dc4f6a1ad5 \
     servo_arc                        0.1.1  d98238b800e0d1576d8b6e3de32827c2d74bee68bb97748dcf5071fb53965432 \
-    sha1                             0.2.0  cc30b1e1e8c40c121ca33b86c23308a090d19974ef001b4bf6e61fd1a0fb095c \
-    sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
-    sha2                             0.6.0  7d963c78ce367df26d7ea8b8cc655c651b42e8a1e584e869c1e17dae3ccb116a \
-    sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
-    shadow-rs                        0.6.8  442a33cdfd55c916c7c9a3aff44a2612a7da95652dd9d09b0dca0571748af49e \
+sha1                             0.2.0  cc30b1e1e8c40c121ca33b86c23308a090d19974ef001b4bf6e61fd1a0fb095c \
+sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
+sha2                             0.6.0  7d963c78ce367df26d7ea8b8cc655c651b42e8a1e584e869c1e17dae3ccb116a \
+sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
+shadow-rs                        0.6.8  442a33cdfd55c916c7c9a3aff44a2612a7da95652dd9d09b0dca0571748af49e \
     shell-escape                     0.1.5  45bb67a18fa91266cc7807181f62f9178a6873bfad7dc788c42e6430db40184f \
     shell-words                      1.0.0  b6fa3938c99da4914afedd13bf3d79bcb6c277d1b2c398d23257a304d9e1b074 \
     signal-hook                     0.1.17  7e31d442c16f047a671b5a71e2161d6e68814012b7f5379d269ebd915fac2729 \

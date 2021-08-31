@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gpg_verify 1.0
@@ -49,13 +49,13 @@ distfiles           ${distname}-x86_64-apple-darwin${extract.suffix} \
                     ${distname}-testsuite${extract.suffix}
 
 checksums           ${distname}-x86_64-apple-darwin${extract.suffix} \
-                    rmd160  0869c97fa384e1ffe414792c805050b64b0fe314 \
-                    sha256  287db0f9c338c9f53123bfa8731b0996803ee50f6ee847fe388092e5e5132047 \
-                    size    189784784 \
+rmd160  0869c97fa384e1ffe414792c805050b64b0fe314 \
+sha256  287db0f9c338c9f53123bfa8731b0996803ee50f6ee847fe388092e5e5132047 \
+size    189784784 \
                     ${distname}-testsuite${extract.suffix} \
-                    rmd160  ea29da92a5c6d6abb6ccb2128b615cf04e0a78a3 \
-                    sha256  df8627dc50b9182dec96085afeb005ccf5a0adc56c40340330a5df65de2b82fe \
-                    size    2266208
+rmd160  ea29da92a5c6d6abb6ccb2128b615cf04e0a78a3 \
+sha256  df8627dc50b9182dec96085afeb005ccf5a0adc56c40340330a5df65de2b82fe \
+size    2266208
 
 gpg_verify.use_gpg_verification \
                     yes
@@ -66,9 +66,9 @@ if {[option gpg_verify.use_gpg_verification]} {
                     ${distname}-testsuite${extract.suffix}.sig
     checksums-append \
                     ${distname}-x86_64-apple-darwin${extract.suffix}.sig \
-                    size    438 \
+size    438 \
                     ${distname}-testsuite${extract.suffix}.sig \
-                    size    438
+size    438
 
     post-checksum {
         # check GPG signature: https://www.haskell.org/ghc/download_ghc_8_6_5.html
@@ -175,9 +175,9 @@ if { [variant_isset "prebuilt"] } {
                     ${distname}-src${extract.suffix}
     checksums-append \
                     ${distname}-src${extract.suffix} \
-                    rmd160  c8ce8ca9d952511438d5e8af25c689fd38f11fed \
-                    sha256  e3eef6229ce9908dfe1ea41436befb0455fefb1932559e860ad4c606b0d03c9d \
-                    size    19932668
+rmd160  c8ce8ca9d952511438d5e8af25c689fd38f11fed \
+sha256  e3eef6229ce9908dfe1ea41436befb0455fefb1932559e860ad4c606b0d03c9d \
+size    19932668
 
     depends_build-append \
                     port:alex \

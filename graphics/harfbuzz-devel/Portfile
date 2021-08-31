@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -12,8 +12,8 @@ name                harfbuzz-devel
 conflicts           harfbuzz
 set my_name         harfbuzz
 checksums           rmd160  eb92c8f986c2c7221de52b8d20d931a98c3cccea \
-                    sha256  3e1c2e1d2c65d56364fd16d1c41a06b2a35795496f78dfff635c2b7414b54c5a \
-                    size    10551720
+sha256  3e1c2e1d2c65d56364fd16d1c41a06b2a35795496f78dfff635c2b7414b54c5a \
+size    10551720
 
 categories          graphics
 platforms           darwin
@@ -94,9 +94,9 @@ if {${name} eq ${subport}} {
 
     if {${os.platform} eq "darwin" && ${os.major} < 10} {
         depends_test-append \
-                    port:python27
+                    port:python39
         test.env-append \
-                    PATH=${frameworks_dir}/Python.framework/Versions/2.7/bin:$env(PATH)
+                    PATH=${frameworks_dir}/Python.framework/Versions/3.9/bin:$env(PATH)
     }
 } else {
     livecheck.type  none

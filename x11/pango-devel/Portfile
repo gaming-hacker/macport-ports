@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -12,8 +12,8 @@ set my_name             pango
 version                 1.49.0
 revision                0
 checksums               rmd160  606410f9b83a243b26d5fc5755ef936de3311136 \
-                        sha256  9d42177518c95815b11f5c9face419d64c397c7c0fff686eb516e6d4c24e02a8 \
-                        size    2332588
+sha256  9d42177518c95815b11f5c9face419d64c397c7c0fff686eb516e6d4c24e02a8 \
+size    2332588
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11
@@ -51,9 +51,9 @@ configure.args-append   -Dxft=disabled \
 configure.cflags-append \
                         -Wno-error,-Wimplicit-fallthrough
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 configure.cxxflags-append \
-                        -std=c++11
+                        -std=c++17
 
 license_noconflict      gobject-introspection
 

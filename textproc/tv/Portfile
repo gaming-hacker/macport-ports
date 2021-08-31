@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -20,9 +20,9 @@ license             MIT
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  213a885fc59ac49bbe8270e27948179e987e54a6 \
-                    sha256  b0d6f172f5a278bff26b404096f499099c46e79d2de2270407aeebc8fb6daeaa \
-                    size    299221
+rmd160  213a885fc59ac49bbe8270e27948179e987e54a6 \
+sha256  b0d6f172f5a278bff26b404096f499099c46e79d2de2270407aeebc8fb6daeaa \
+size    299221
 
 patch {
     # Fix incorrect version for tv in Cargo.lock

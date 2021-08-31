@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -9,7 +9,7 @@ platforms               darwin
 maintainers             {ryandesign @ryandesign} openmaintainer
 license                 BSD
 
-php.branches            7.2 7.3 7.4
+php.branches 8.0
 
 if {[vercmp ${php.branch} 7.5] < 0} {
     conflicts-append    ${php}-phalcon3
@@ -19,8 +19,8 @@ if {[vercmp ${php.branch} 7.2] >= 0} {
     github.setup        phalcon cphalcon 4.1.1 v
     revision            0
     checksums           rmd160  01cd262b893717326eb243f3496ea9a999518933 \
-                        sha256  6ceb5105abe199c2805c8a743e8f66c917ea416f39348ac17419e7fdf7e29f3b \
-                        size    7080268
+sha256  6ceb5105abe199c2805c8a743e8f66c917ea416f39348ac17419e7fdf7e29f3b \
+size    7080268
 
 }
 

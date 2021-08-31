@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ license             MIT
 homepage            https://${name}.github.io/
 
 checksums           rmd160  b16189ed8ad34efb2fdfbbd5c36d597d4fdb8978 \
-                    sha256  688765ec81cd76b7c0748c20ace9b2ac6645d19cc868f7fbf2f0762388b04fa0 \
-                    size    415241
+sha256  688765ec81cd76b7c0748c20ace9b2ac6645d19cc868f7fbf2f0762388b04fa0 \
+size    415241
 
 app.name            Lite XL
 app.icon            resources/icons/${name}.svg

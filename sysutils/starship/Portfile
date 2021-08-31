@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ platforms           darwin
 license             ISC
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  f2ded94dd72ac055104f05dd7d343c5b196eac9a \
-                    sha256  fba20e4ea3c11cc06d50d7fb8422242f420085e109a46e37b4ed8cd51b514b81 \
-                    size    6010666
+rmd160  f2ded94dd72ac055104f05dd7d343c5b196eac9a \
+sha256  fba20e4ea3c11cc06d50d7fb8422242f420085e109a46e37b4ed8cd51b514b81 \
+size    6010666
 
 # crate:openssl-sys requires pkgconfig & libssl.dylib
 depends_build-append \
@@ -218,8 +218,8 @@ cargo.crates \
     serde_json                      1.0.66  336b10da19a12ad094b59d870ebde26a45402e5b470add4b5fd03c5048a32127 \
     serde_repr                       0.1.7  98d0516900518c29efa217c298fa1f4e6c6ffc85ae29fd7f4ee48f176e1a9ed5 \
     serde_urlencoded                 0.6.1  9ec5d77e2d4c73717816afac02670d5c4f534ea95ed430442cad02e7a6e32c97 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    shadow-rs                        0.7.1  3ca10942770d8f21d47e4c4a270bdb9d20a9cb723aa6b672a14cba9f49920fad \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+shadow-rs                        0.7.1  3ca10942770d8f21d47e4c4a270bdb9d20a9cb723aa6b672a14cba9f49920fad \
     shell-words                      1.0.0  b6fa3938c99da4914afedd13bf3d79bcb6c277d1b2c398d23257a304d9e1b074 \
     slab                             0.4.4  c307a32c1c5c437f38c7fd45d753050587732ba8628319fbdf12a7e289ccc590 \
     socket2                          0.4.1  765f090f0e423d2b55843402a07915add955e7d60657db13707a159727326cad \
