@@ -4,7 +4,6 @@ PortSystem          1.0
 PortGroup           golang 1.0
 
 go.setup            github.com/gokcehan/lf 24 r
-revision            1
 categories          sysutils
 maintainers         {outlook.de:judaew @judaew} openmaintainer
 license             MIT
@@ -67,12 +66,6 @@ go.vendors          gopkg.in/djherbis/times.v1 \
                         sha256  4f470c7308790bea8a526ea26cecbaa22345aad8dc566821cda6175b3d241ee1 \
                         size    10900
 
-patchfiles          patch-config-file-in-prefix.diff
-
-post-patch {
-    reinplace "s|@@PREFIX@@|${prefix}|g" ${worksrcpath}/os.go
-}
-
 destroot {
     xinstall -m 0755 ${worksrcpath}/${name} ${destroot}${prefix}/bin/
 
@@ -108,19 +101,16 @@ destroot {
 
     xinstall -d ${destroot}${prefix}/share/${name}
     xinstall -m 0644 -W ${worksrcpath}/etc \
-        lfcd.sh lfcd.csh lfcd.fish \
-        ${destroot}${prefix}/share/${name}
-    xinstall -m 0644 -W ${worksrcpath} LICENSE README.md \
+        lfcd.sh lfcd.csh lfcd.fish lfrc.example \
         ${destroot}${prefix}/share/${name}
 
-    xinstall -d ${destroot}${prefix}/etc/${name}
-    xinstall -m 0644 ${worksrcpath}/etc/lfrc.example \
-        ${destroot}${prefix}/etc/${name}
+    xinstall -m 0644 -W ${worksrcpath} LICENSE README.md \
+        ${destroot}${prefix}/share/${name}
 }
 
 notes "
 A sample configuration file can be found at the following path:
-    ${prefix}/etc/${name}/lfrc.example
+    ${prefix}/share/${name}/lfrc.exampl
 
 The Vim plugin is already included within the port and installed in Vim's
 global plugin directory. If you are using Neovim, add the following line to
