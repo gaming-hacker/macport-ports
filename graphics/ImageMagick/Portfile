@@ -12,7 +12,7 @@ name                        ImageMagick
 # 6.9.11-61 changes the major version of libMagickCore which will
 # require increasing the revision of all ports that link with it.
 version                     7.1.0-5
-revision                    0
+revision                    1
 checksums rmd160  7fd1c6083a8a861e3b6ea83e55fb7c7581b6ff41 \
 sha256  faeae351785447834c44850f2d3d80bbb0fed500228373098fce553a0df1ac6b \
 size    10308228
@@ -67,7 +67,9 @@ depends_lib                 port:bzip2 \
                             port:openexr \
                             port:expat \
                             port:libxml2 \
-                            port:libheif
+                            port:libheif \
+                            port:libwmf \
+                            port:liblqr
 
 # Magick-config etc. use pkg-config
 depends_lib-append          port:pkgconfig
@@ -102,10 +104,10 @@ configure.args              --enable-shared \
                             --without-gcc-arch \
                             --without-perl \
                             --without-fpx \
-                            --without-wmf \
+                            --with-wmf \
                             --without-gvc \
                             --without-rsvg \
-                            --without-lqr \
+                            --with-lqr \
                             --without-pango \
                             --without-x \
                             --with-zstd \
@@ -114,6 +116,7 @@ configure.args              --enable-shared \
                             --with-urw-base35-font-dir=${prefix}/share/fonts/urw-core35-fonts \
                             --with-dejavu-font-dir=${prefix}/share/fonts/dejavu-fonts \
                             --enable-openmp \
+                            --with-fftw \
                             --with-quantum-depth=64
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
@@ -139,10 +142,6 @@ variant graphviz description {Support Graphviz} {
     configure.args-replace  --without-gvc --with-gvc
 }
 
-variant lqr description {Support Liquid Rescale (experimental)} {
-    depends_lib-append      port:liblqr
-    configure.args-replace  --without-lqr --with-lqr
-}
 
 variant pango description {Support Pango} {
     depends_lib-append      path:lib/pkgconfig/pango.pc:pango
@@ -154,11 +153,6 @@ variant rsvg description {Support SVG using librsvg} {
     configure.args-replace  --without-rsvg --with-rsvg
 }
 
-variant wmf description {Support the Windows Metafile Format} {
-    depends_lib-append      port:libwmf
-    configure.args-replace  --without-wmf --with-wmf
-}
-
 variant x11 {
     depends_lib-append      port:xorg-libX11 \
                             port:xorg-libXext \
@@ -166,7 +160,6 @@ variant x11 {
     configure.args-replace  --without-x --with-x
 }
 
-default_variants            +x11
 
 livecheck.type              regex
 livecheck.url               [lindex ${master_sites} 0]
