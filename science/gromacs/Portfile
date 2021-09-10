@@ -3,7 +3,6 @@
 PortSystem          1.0
 PortGroup           muniversal 1.0
 PortGroup           cmake 1.0
-configure.cxx_standard 2017
 PortGroup           mpi 1.0
 PortGroup           linear_algebra 1.0
 
@@ -38,6 +37,8 @@ depends_build-append \
                     port:pkgconfig
 
 depends_lib-append  port:fftw-3-single port:hwloc port:zlib
+
+configure.cxx_standard 2017
 
 # FIXME: enable use of avx when appropriate, instead of just SSE
 configure.args-append  -DGMX_SIMD:STRING="SSE4.1" -DBUILD_TESTING:BOOL=ON -DGMX_X11:BOOL=OFF -DGMX_HWLOC:BOOL=ON -DGMX_OPENMP:BOOL=OFF
