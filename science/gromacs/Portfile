@@ -31,10 +31,7 @@ homepage            http://www.gromacs.org/
 master_sites        http://ftp.gromacs.org/pub/gromacs
 
 # md5 as on http://manual.gromacs.org/documentation/2021.3/download.html
-checksums           rmd160  e59309b1a9d0de14a547f7727d4f4915aa3a6df7 \
-                    sha256  bcbf5cc071926bc67baa5be6fb04f0986a2b107e1573e15fadcb7d7fc4fb9f7e \
-                    md5     1850870fbbfb228051ee0afc1c5ddeff \
-                    size    33437869
+checksums           md5     1850870fbbfb228051ee0afc1c5ddeff
 
 depends_build-append \
                     port:pkgconfig
@@ -42,7 +39,12 @@ depends_build-append \
 depends_lib-append  port:fftw-3-single port:hwloc port:zlib
 
 # FIXME: enable use of avx when appropriate, instead of just SSE
-configure.args-append  -DGMX_SIMD:STRING="SSE4.1" -DBUILD_TESTING:BOOL=ON -DGMX_X11:BOOL=OFF -DGMX_HWLOC:BOOL=ON -DGMX_OPENMP:BOOL=OFF -DGMX_VERSION_STRING_OF_FORK="macports"
+configure.args-append  -DGMX_SIMD:STRING="SSE4.1" -DBUILD_TESTING:BOOL=ON -DGMX_X11:BOOL=OFF -DGMX_HWLOC:BOOL=ON -DGMX_OPENMP:BOOL=OFF
+# Ensure that GROMACS log files reflect that the build was
+# done via macports, to help users troubleshoot issues
+configure.args-append  -DGMX_VERSION_STRING_OF_FORK="macports"
+# Always use libc++
+configure.args-append  -DGMX_STDLIB_CXX_FLAGS=-stdlib=libc++ -DGMX_STDLIB_LIBRARIES='-lc++abi -lc++'
 
 variant x11 description {Enable GMX view via X11} {
     configure.args-replace  -DGMX_X11:BOOL=OFF -DGMX_X11:BOOL=ON
