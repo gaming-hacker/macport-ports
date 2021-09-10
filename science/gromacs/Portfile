@@ -33,7 +33,7 @@ master_sites        http://ftp.gromacs.org/pub/gromacs
 # md5 as on http://manual.gromacs.org/documentation/2021.3/download.html
 checksums           rmd160  e59309b1a9d0de14a547f7727d4f4915aa3a6df7 \
                     sha256  bcbf5cc071926bc67baa5be6fb04f0986a2b107e1573e15fadcb7d7fc4fb9f7e \
-                    md5     1850870fbbfb228051ee0afc1c5ddef \
+                    md5     1850870fbbfb228051ee0afc1c5ddeff \
                     size    33437869
 
 depends_build-append \
@@ -96,7 +96,7 @@ subport gromacs-plumed {
     depends_lib-append     path:${prefix}/lib/libplumedKernel.dylib:plumed
     post-patch {
 # I need to execute with full path since PATH variable is not properly set here
-# Also notice that I am patching with runtime. Notice that 
+# Also notice that I am patching with runtime. Notice that
 # plumed compiled for MacPorts has the hardcoded path also in the runtime patch.
 # This allows the user to work with MacPorts plumed and possibly
 # override the choice setting the PLUMED_KERNEL environment variable.
