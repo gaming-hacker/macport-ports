@@ -12,7 +12,7 @@ PortGroup           linear_algebra 1.0
 name                gromacs
 # not all versions have patches available for plumed; subport's patch will fail if not there
 # find list at https://www.plumed.org/doc-v2.5/user-doc/html/_code_specific_notes.html
-version             2019.2
+version             2021.3
 categories          science math
 license             LGPL-2.1
 maintainers         {dstrubbe @dstrubbe} openmaintainer
@@ -30,28 +30,23 @@ platforms           darwin
 homepage            http://www.gromacs.org/
 master_sites        http://ftp.gromacs.org/pub/gromacs
 
-# md5 as on http://manual.gromacs.org/documentation/2019.2/download.html
+# md5 as on http://manual.gromacs.org/documentation/2021.3/download.html
 checksums           rmd160  e59309b1a9d0de14a547f7727d4f4915aa3a6df7 \
                     sha256  bcbf5cc071926bc67baa5be6fb04f0986a2b107e1573e15fadcb7d7fc4fb9f7e \
-                    md5     9978498d904ec81f50796b3cdaa9c5df \
+                    md5     1850870fbbfb228051ee0afc1c5ddef \
                     size    33437869
 
 depends_build-append \
                     port:pkgconfig
 
-depends_lib-append  port:fftw-3-single port:libxml2 port:zlib
+depends_lib-append  port:fftw-3-single port:hwloc port:zlib
 
 # FIXME: enable use of avx when appropriate, instead of just SSE
-configure.args-append  -DGMX_SIMD:STRING="SSE4.1" -DBUILD_TESTING:BOOL=ON -DGMX_X11:BOOL=OFF -DGMX_HWLOC:BOOL=OFF -DGMX_OPENMP:BOOL=OFF
-# boost?
+configure.args-append  -DGMX_SIMD:STRING="SSE4.1" -DBUILD_TESTING:BOOL=ON -DGMX_X11:BOOL=OFF -DGMX_HWLOC:BOOL=ON -DGMX_OPENMP:BOOL=OFF -DGMX_VERSION_STRING_OF_FORK="macports"
 
 variant x11 description {Enable GMX view via X11} {
     configure.args-replace  -DGMX_X11:BOOL=OFF -DGMX_X11:BOOL=ON
     depends_lib-append      port:xorg-libX11 port:xorg-libXext
-}
-
-variant hwloc description {Enable usage of HWLOC for hardware locality} {
-    configure.args-replace  -DGMX_HWLOC:BOOL=OFF -DGMX_HWLOC:BOOL=ON
 }
 
 variant threads description {Enable usage of OpenMP} {
