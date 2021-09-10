@@ -1,9 +1,9 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
-configure.cxx_standard 2017
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
 PortGroup           cmake 1.0
+configure.cxx_standard 2017
 PortGroup           mpi 1.0
 PortGroup           linear_algebra 1.0
 
@@ -29,7 +29,10 @@ homepage            http://www.gromacs.org/
 master_sites        http://ftp.gromacs.org/pub/gromacs
 
 # md5 as on http://manual.gromacs.org/documentation/2021.3/download.html
-checksums           md5     1850870fbbfb228051ee0afc1c5ddeff
+checksums           rmd160  74adb5fc9e2fa461d4d7ff603d0fe7e08476da20 \
+                    sha256  e109856ec444768dfbde41f3059e3123abdb8fe56ca33b1a83f31ed4575a1cc6 \
+                    md5     1850870fbbfb228051ee0afc1c5ddeff \
+                    size    37987972
 
 depends_build-append \
                     port:pkgconfig
