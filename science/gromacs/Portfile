@@ -1,11 +1,9 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+configure.cxx_standard 2017
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
 PortGroup           cmake 1.0
-# this line is needed to allow use of gcc
-configure.cxx_stdlib   libstdc++
-PortGroup           cxx11 1.1
 PortGroup           mpi 1.0
 PortGroup           linear_algebra 1.0
 
