@@ -106,7 +106,7 @@ subport gromacs-plumed {
 # override the choice setting the PLUMED_KERNEL environment variable.
 # Also notice that gromacs version is hardcoded here. Plumed patch is not always
 # updated when gromacs is.
-        exec ${prefix}/bin/plumed patch --mdroot=${worksrcpath} -e gromacs-2019.2 --runtime -p
+        exec ${prefix}/bin/plumed patch --mdroot=${worksrcpath} -e gromacs-2021.3 --runtime -p
     }
     notes "
 PLUMED is linked with runtime binding. By setting the environment variable PLUMED_KERNEL\
