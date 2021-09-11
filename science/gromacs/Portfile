@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
-PortGroup           cmake 1.0
+PortGroup           cmake 1.1
 PortGroup           mpi 1.0
 PortGroup           linear_algebra 1.0
 
@@ -10,10 +10,12 @@ name                gromacs
 # not all versions have patches available for plumed; subport's patch will fail if not there
 # find list at https://www.plumed.org/doc-v2.5/user-doc/html/_code_specific_notes.html
 version             2021.3
+revision            0
 categories          science math
+platform            darwin
 license             LGPL-2.1
 maintainers         {dstrubbe @dstrubbe} openmaintainer
-description         The World's fastest Molecular Dynamics package
+description         Molecular dynamics package designed for simulations of proteins, lipids, and nucleic acids. 
 long_description    GROMACS is a versatile package to perform molecular \
                     dynamics, i.e. simulate the Newtonian equations of motion for \
                     systems with hundreds to millions of particles. It is primarily \
