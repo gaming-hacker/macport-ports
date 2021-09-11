@@ -1,0 +1,38 @@
+diff --git a/beetsplug/moveall.py b/beetsplug/moveall.py
+index 43847e9..d8dc382 100644
+--- a/beetsplug/moveall.py
++++ b/beetsplug/moveall.py
+@@ -35,23 +35,23 @@ def handle_item_moved(source, destination, **_kwargs):
+ 
+ 
+ def handle_cli_exit(lib, **_kwargs):
+-    for src_dir, dst_dir in directories_moved.iteritems():
++    for src_dir, dst_dir in directories_moved.items():
+         if dst_dir is MULTIPLE_DESTS:
+-            print ("moves out of %s have multiple dests, will not moveall" %
+-                   (src_dir,))
++            print("moves out of %s have multiple dests, will not moveall" % (src_dir,))
+             continue
+         remaining_items = lib.items(library.PathQuery('path', src_dir))
+         if next(iter(remaining_items), None):
+-            print "some Beets items left in %s, will not moveall" % (src_dir,)
++            print("some Beets items left in %s, will not moveall" % (src_dir,))
+         elif os.path.exists(src_dir):
+-            print "moving all leftovers in %s to %s" % (src_dir, dst_dir)
++            print("moving all leftovers in %s to %s" % (src_dir, dst_dir))
+             for dirent in os.listdir(src_dir):
+                 dirent_path = os.path.join(src_dir, dirent)
+                 try:
+-                    shutil.move(dirent_path, dst_dir)
+-                except shutil.Error, ex:
++                    shutil.move(util.py3_path(dirent_path), util.py3_path(dst_dir))
++                except shutil.Error as ex:
+                     # Log it but move on.
+-                    # XXX unicode problem here if path has non-ascii
+-                    log.critical("failed to move {0} to {1}: {2}", dirent_path,
+-                                 dst_dir, ex)
++                    log.critical("failed to move {0} to {1}: {2}",
++                                 util.py3_path(dirent_path),
++                                 util.py3_path(dst_dir),
++                                 ex)
+             util.prune_dirs(src_dir)
