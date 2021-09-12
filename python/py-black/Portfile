@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -29,10 +29,10 @@ long_description \
 homepage            https://${python.rootname}.readthedocs.io/
 
 checksums           rmd160  22904e0bf26fa33ae24cc7afb4043f0956b5fc65 \
-                    sha256  570608d28aa3af1792b98c4a337dbac6367877b47b12b88ab42095cfc1a627c2 \
-                    size    561013
+sha256  570608d28aa3af1792b98c4a337dbac6367877b47b12b88ab42095cfc1a627c2 \
+size    561013
 
-python.versions     36 37 38 39
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_build-append \

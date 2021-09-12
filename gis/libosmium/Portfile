@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -27,12 +27,12 @@ long_description    Low-level: this is designed to be a building block \
                     program.
 
 checksums           rmd160  3923cb87ea091aa69a23ca2ee517ea438ac9fe56 \
-                    sha256  4a7672d7caf4da3bc68619912b298462370c423c697871a0be6273c6686e10d6 \
-                    size    513404
+sha256  4a7672d7caf4da3bc68619912b298462370c423c697871a0be6273c6686e10d6 \
+size    513404
 
 installs_libs       no
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args-append \
                     -DBUILD_TESTING=OFF \

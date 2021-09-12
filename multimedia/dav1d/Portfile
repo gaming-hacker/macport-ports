@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -28,8 +28,8 @@ master_sites        https://code.videolan.org/videolan/dav1d/-/archive/${version
 distname            ${name}_${version}
 
 checksums           rmd160  92ce76083f287df70f01374816af7cb7ec653720 \
-                    sha256  d9bbdbf54923b19199162f6357da2932ee7caed7dbefb0d37626b6669bc50e57 \
-                    size    834322
+sha256  d9bbdbf54923b19199162f6357da2932ee7caed7dbefb0d37626b6669bc50e57 \
+size    834322
 
 use_bzip2           yes
 

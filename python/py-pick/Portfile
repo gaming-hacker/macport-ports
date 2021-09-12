@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    ${description}
 homepage            https://github.com/wong2/pick
 
 checksums           rmd160  d2b17f8f2f1d1f622c65625cd0063a3cca6829f2 \
-                    sha256  03f13d4f5bfe74db4b969fb74c0ef110ec443978419d6c0f1f375a0d49539034 \
-                    size    5382
+sha256  03f13d4f5bfe74db4b969fb74c0ef110ec443978419d6c0f1f375a0d49539034 \
+size    5382
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

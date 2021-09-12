@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,260 +20,260 @@ long_description    V2Ray supports many protocols, including Socks, HTTP, Shadow
 homepage            https://www.v2fly.org
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  f3015f70bd3337d3f59aaea2c6f9f3eff843fa24 \
-                        sha256  5945f6be9c3dae46493876e4fe46f57468ba6b2f1934b9ed6eaaab44111353db \
-                        size    854833
+rmd160  f3015f70bd3337d3f59aaea2c6f9f3eff843fa24 \
+sha256  5945f6be9c3dae46493876e4fe46f57468ba6b2f1934b9ed6eaaab44111353db \
+size    854833
 
 go.vendors          h12.io/socks \
                         repo    github.com/h12w/socks \
                         lock    v1.0.2 \
-                        rmd160  d38001dd368cc82d59737103fa424606962b51e6 \
-                        sha256  7b9cd9c72f120d0a8f307beb2bbb18f6d23f5ccd3540238da59fa348690e15c3 \
-                        size    14642 \
+rmd160  d38001dd368cc82d59737103fa424606962b51e6 \
+sha256  7b9cd9c72f120d0a8f307beb2bbb18f6d23f5ccd3540238da59fa348690e15c3 \
+size    14642 \
                     gopkg.in/yaml.v3 \
                         lock    a5ece683394c \
-                        rmd160  116bf894dbfb00c6220a71d5eecc134b16c3a50e \
-                        sha256  850336c9e11f09d7a7c81aa9cdf8b81ca3059589a78ff3195c9b9d84a4244e3e \
-                        size    88419 \
+rmd160  116bf894dbfb00c6220a71d5eecc134b16c3a50e \
+sha256  850336c9e11f09d7a7c81aa9cdf8b81ca3059589a78ff3195c9b9d84a4244e3e \
+size    88419 \
                     gopkg.in/yaml.v2 \
                         lock    v2.4.0 \
-                        rmd160  66e9feb7944b3804efa63155ed9b618717b8955c \
-                        sha256  72812077e7f20278003de6ab0d85053d89131d64c443f39115a022114fd032b6 \
-                        size    73231 \
+rmd160  66e9feb7944b3804efa63155ed9b618717b8955c \
+sha256  72812077e7f20278003de6ab0d85053d89131d64c443f39115a022114fd032b6 \
+size    73231 \
                     gopkg.in/tomb.v1 \
                         lock    dd632973f1e7 \
-                        rmd160  ae07f5ddbbc6afc772d6dc5273bb72eaba50529a \
-                        sha256  91c562a4e31c89d13e5391143ff653231fc2d80562743db89ce2172ad8f81008 \
-                        size    3636 \
+rmd160  ae07f5ddbbc6afc772d6dc5273bb72eaba50529a \
+sha256  91c562a4e31c89d13e5391143ff653231fc2d80562743db89ce2172ad8f81008 \
+size    3636 \
                     gopkg.in/check.v1 \
                         lock    788fd7840127 \
-                        rmd160  b63165c8909a27edc15dda210df66a1b49efb49e \
-                        sha256  7e5547c6471cc48da89a7c87f965b20ca5311f43fc4d883ca62f9fccf7551630 \
-                        size    31597 \
+rmd160  b63165c8909a27edc15dda210df66a1b49efb49e \
+sha256  7e5547c6471cc48da89a7c87f965b20ca5311f43fc4d883ca62f9fccf7551630 \
+size    31597 \
                     google.golang.org/protobuf \
                         repo    github.com/protocolbuffers/protobuf-go \
                         lock    v1.27.1 \
-                        rmd160  a4ac7b66fd88a34a9ea447476d19ff3c1f2b57dd \
-                        sha256  fe1055b9bf6b8792aed1771f56c31f836c24a18d69eaeb13c88990db3d9da7ce \
-                        size    1278850 \
+rmd160  a4ac7b66fd88a34a9ea447476d19ff3c1f2b57dd \
+sha256  fe1055b9bf6b8792aed1771f56c31f836c24a18d69eaeb13c88990db3d9da7ce \
+size    1278850 \
                     google.golang.org/grpc \
                         repo    github.com/grpc/grpc-go \
                         lock    v1.39.0 \
-                        rmd160  50d5fec91cecd3bf7f7d184db24f309ed32239bc \
-                        sha256  9f3777f79b45e0fb84a097def4128503985a8519b76044042965f6937d50bbca \
-                        size    1287018 \
+rmd160  50d5fec91cecd3bf7f7d184db24f309ed32239bc \
+sha256  9f3777f79b45e0fb84a097def4128503985a8519b76044042965f6937d50bbca \
+size    1287018 \
                     google.golang.org/genproto \
                         repo    github.com/googleapis/go-genproto \
                         lock    cb27e3aa2013 \
-                        rmd160  f3c94d0c3129c395d89a2a7d982eb864f961dfea \
-                        sha256  3da27c47ecfe5e05f805d0b239e4aa5ecfbdbc666cf258a1bb9f415dab28faef \
-                        size    9293290 \
+rmd160  f3c94d0c3129c395d89a2a7d982eb864f961dfea \
+sha256  3da27c47ecfe5e05f805d0b239e4aa5ecfbdbc666cf258a1bb9f415dab28faef \
+size    9293290 \
                     golang.org/x/xerrors \
                         lock    5ec99f83aff1 \
-                        rmd160  6e8267f353e153297f205e4be219236d6ae43880 \
-                        sha256  9a500a49d83a09e7de6c71b215d1c14b81e315d26884530ef327c95ddf1f2d28 \
-                        size    13667 \
+rmd160  6e8267f353e153297f205e4be219236d6ae43880 \
+sha256  9a500a49d83a09e7de6c71b215d1c14b81e315d26884530ef327c95ddf1f2d28 \
+size    13667 \
                     golang.org/x/tools \
                         lock    v0.1.1 \
-                        rmd160  861f7f72627b4449752dded9ab7c1a376435e841 \
-                        sha256  b26d3b51fbcbabc7ff8fd2cfdb152421753dfeb8f7e38be9041c0bddfa1b8acd \
-                        size    2785629 \
+rmd160  861f7f72627b4449752dded9ab7c1a376435e841 \
+sha256  b26d3b51fbcbabc7ff8fd2cfdb152421753dfeb8f7e38be9041c0bddfa1b8acd \
+size    2785629 \
                     golang.org/x/text \
                         lock    v0.3.6 \
-                        rmd160  e3da48fcc60d98e202458228188bf6dac408e309 \
-                        sha256  6b2d69df22b5ba1634bc6730c3f03404db499536a96c48b8016da80ced804450 \
-                        size    8356058 \
+rmd160  e3da48fcc60d98e202458228188bf6dac408e309 \
+sha256  6b2d69df22b5ba1634bc6730c3f03404db499536a96c48b8016da80ced804450 \
+size    8356058 \
                     golang.org/x/sys \
                         lock    a4fc73990273 \
-                        rmd160  d84a8efc171e995222baca45281ac52792ad4f38 \
-                        sha256  4cc40923a22cbce7ea65b6d7f274df37e10c944cb4665e1597f647f9c97bce1d \
-                        size    1200575 \
+rmd160  d84a8efc171e995222baca45281ac52792ad4f38 \
+sha256  4cc40923a22cbce7ea65b6d7f274df37e10c944cb4665e1597f647f9c97bce1d \
+size    1200575 \
                     golang.org/x/sync \
                         lock    036812b2e83c \
-                        rmd160  f42be6eb3565d2ed3d1066ea1a7f69437c8bb1e6 \
-                        sha256  6f1daceb16cd75bdbf35da6c50aa352d1995d68ccd0049851d27686f451fad92 \
-                        size    18756 \
+rmd160  f42be6eb3565d2ed3d1066ea1a7f69437c8bb1e6 \
+sha256  6f1daceb16cd75bdbf35da6c50aa352d1995d68ccd0049851d27686f451fad92 \
+size    18756 \
                     golang.org/x/net \
                         lock    04defd469f4e \
-                        rmd160  47092b053c171103a372f7bf3fa3cce9e8364f44 \
-                        sha256  f107dd06bb11819efefb6ec8181773c33720d7259279817c0894fdb4114dd7d6 \
-                        size    1252145 \
+rmd160  47092b053c171103a372f7bf3fa3cce9e8364f44 \
+sha256  f107dd06bb11819efefb6ec8181773c33720d7259279817c0894fdb4114dd7d6 \
+size    1252145 \
                     golang.org/x/crypto \
                         lock    c07d793c2f9a \
-                        rmd160  bd005f5fd86d9021e5da5d606b5a0b0091f27476 \
-                        sha256  cfd0c4c624ae799ae9dae5ac2b1ca48c054c8db8b2f281be6c7bd6a7ee277919 \
-                        size    1732033 \
+rmd160  bd005f5fd86d9021e5da5d606b5a0b0091f27476 \
+sha256  cfd0c4c624ae799ae9dae5ac2b1ca48c054c8db8b2f281be6c7bd6a7ee277919 \
+size    1732033 \
                     go.starlark.net \
                         repo    github.com/google/starlark-go \
                         lock    1cdb82c9e17a \
-                        rmd160  576f3d04ab3f742abd5518542b9f84a72f2235ed \
-                        sha256  fe81b4bc7839285c5589ee3763b306ca9aa45c0a9c6ae236ac29793d60e0c3f8 \
-                        size    268299 \
+rmd160  576f3d04ab3f742abd5518542b9f84a72f2235ed \
+sha256  fe81b4bc7839285c5589ee3763b306ca9aa45c0a9c6ae236ac29793d60e0c3f8 \
+size    268299 \
                     github.com/xtaci/smux \
                         lock    v1.5.15 \
-                        rmd160  7bbcc1c0071529dc6d595d28c9927837f67caf12 \
-                        sha256  94a9f2291d2de2ce29a0e5d62db3b137ef79e803bbbb54defa361513ff6c22da \
-                        size    138027 \
+rmd160  7bbcc1c0071529dc6d595d28c9927837f67caf12 \
+sha256  94a9f2291d2de2ce29a0e5d62db3b137ef79e803bbbb54defa361513ff6c22da \
+size    138027 \
                     github.com/v2fly/ss-bloomring \
                         lock    28617310f63e \
-                        rmd160  761b61e00dc364aeb34f0291bea63c29d4d79d25 \
-                        sha256  37bd8667b8f62fc979f7956e3e5b4ac3b294b590654cde51c386a0374b356d46 \
-                        size    5707 \
+rmd160  761b61e00dc364aeb34f0291bea63c29d4d79d25 \
+sha256  37bd8667b8f62fc979f7956e3e5b4ac3b294b590654cde51c386a0374b356d46 \
+size    5707 \
                     github.com/v2fly/VSign \
                         lock    e2adc24bf848 \
-                        rmd160  d3a77e34e06c1c47945a2c52c062eebf554765c5 \
-                        sha256  9dfe839716da561fde853aec6a04352f8f487e29321bb156a02ddef95fdec43a \
-                        size    9339 \
+rmd160  d3a77e34e06c1c47945a2c52c062eebf554765c5 \
+sha256  9dfe839716da561fde853aec6a04352f8f487e29321bb156a02ddef95fdec43a \
+size    9339 \
                     github.com/v2fly/BrowserBridge \
                         lock    0570fc1d7d08 \
-                        rmd160  9c0aee77e864f9ecc85447971f9a33285ce03235 \
-                        sha256  8669339da1b08918734f0ecc73878f5ce7dff1413a8827ede3b0a63653d4bc5c \
-                        size    370373 \
+rmd160  9c0aee77e864f9ecc85447971f9a33285ce03235 \
+sha256  8669339da1b08918734f0ecc73878f5ce7dff1413a8827ede3b0a63653d4bc5c \
+size    370373 \
                     github.com/stretchr/testify \
                         lock    v1.7.0 \
-                        rmd160  adae5096e8c4cfcc8e3f6d096646d1165b5ef49a \
-                        sha256  f7dde97d0c9634483ae6ea273968f80f3105c22382a1f841886cd20d57586642 \
-                        size    91096 \
+rmd160  adae5096e8c4cfcc8e3f6d096646d1165b5ef49a \
+sha256  f7dde97d0c9634483ae6ea273968f80f3105c22382a1f841886cd20d57586642 \
+size    91096 \
                     github.com/seiflotfy/cuckoofilter \
                         lock    bc6005554a0c \
-                        rmd160  dd2cba6fa1638370854dc1ba4ff67181c172796a \
-                        sha256  b4fd5ca5f88e5e1b8931069691bf78fb107b1050ef914ed8145c98034c9a1a17 \
-                        size    6769 \
+rmd160  dd2cba6fa1638370854dc1ba4ff67181c172796a \
+sha256  b4fd5ca5f88e5e1b8931069691bf78fb107b1050ef914ed8145c98034c9a1a17 \
+size    6769 \
                     github.com/riobard/go-bloom \
                         lock    cdc8013cb5b3 \
-                        rmd160  516e59eed4200c50f09b4a4e32751cd59c37b02e \
-                        sha256  27c2479459dd154b496a019d595bd2863d47b98f9d9c9e9b7c97125636685987 \
-                        size    5502 \
+rmd160  516e59eed4200c50f09b4a4e32751cd59c37b02e \
+sha256  27c2479459dd154b496a019d595bd2863d47b98f9d9c9e9b7c97125636685987 \
+size    5502 \
                     github.com/pmezard/go-difflib \
                         lock    v1.0.0 \
-                        rmd160  fc879bfbdef9e3ff50844def58404e2b5a613ab8 \
-                        sha256  7cd492737641847266115f3060489a67f63581e521a8ec51efbc280c33fc991f \
-                        size    11409 \
+rmd160  fc879bfbdef9e3ff50844def58404e2b5a613ab8 \
+sha256  7cd492737641847266115f3060489a67f63581e521a8ec51efbc280c33fc991f \
+size    11409 \
                     github.com/pires/go-proxyproto \
                         lock    v0.6.0 \
-                        rmd160  187c43259347e219ed8f4acd9b263ee6480afa8f \
-                        sha256  10643877819d2c010d4533c33279a0c55f08a2074a91d4bc8c273b2b8d7266d0 \
-                        size    35454 \
+rmd160  187c43259347e219ed8f4acd9b263ee6480afa8f \
+sha256  10643877819d2c010d4533c33279a0c55f08a2074a91d4bc8c273b2b8d7266d0 \
+size    35454 \
                     github.com/phayes/freeport \
                         lock    95f893ade6f2 \
-                        rmd160  d1fc5421ad2ca6cf03a0838e2b18b5704a32e956 \
-                        sha256  eae7763d5bc66e629379a0c691a5543ccc8b76cf92bd79a4ccf555b023c2512f \
-                        size    3355 \
+rmd160  d1fc5421ad2ca6cf03a0838e2b18b5704a32e956 \
+sha256  eae7763d5bc66e629379a0c691a5543ccc8b76cf92bd79a4ccf555b023c2512f \
+size    3355 \
                     github.com/onsi/gomega \
                         lock    v1.13.0 \
-                        rmd160  dc92bda8de121272ba08a6fd53d305f86af161fb \
-                        sha256  84bb470e2662d0243c708df882666f82aa735376b837fa3edecea02ede08efac \
-                        size    127847 \
+rmd160  dc92bda8de121272ba08a6fd53d305f86af161fb \
+sha256  84bb470e2662d0243c708df882666f82aa735376b837fa3edecea02ede08efac \
+size    127847 \
                     github.com/onsi/ginkgo \
                         lock    v1.16.4 \
-                        rmd160  e0c7145b2a5a9fa39d1883b7ceb788af8a3dd4db \
-                        sha256  1cf29213663b89b7578f41a0185b814dab82d40fb5233bf0fe951591ce32ab10 \
-                        size    164059 \
+rmd160  e0c7145b2a5a9fa39d1883b7ceb788af8a3dd4db \
+sha256  1cf29213663b89b7578f41a0185b814dab82d40fb5233bf0fe951591ce32ab10 \
+size    164059 \
                     github.com/nxadm/tail \
                         lock    v1.4.8 \
-                        rmd160  bb6c5515804a1d141478074ba9a4f836fa51fb71 \
-                        sha256  a4e98c422980433e9a9830f16b4155836baba4c3e3aa387f03840e5cb608c84d \
-                        size    1256274 \
+rmd160  bb6c5515804a1d141478074ba9a4f836fa51fb71 \
+sha256  a4e98c422980433e9a9830f16b4155836baba4c3e3aa387f03840e5cb608c84d \
+size    1256274 \
                     github.com/miekg/dns \
                         lock    v1.1.43 \
-                        rmd160  e75226f069ef60f98ba1e236740e0cb91d0b477a \
-                        sha256  86210f5d727b429c39d9dad8010e91cbbe13de1839257b26b688fc3486e39112 \
-                        size    200644 \
+rmd160  e75226f069ef60f98ba1e236740e0cb91d0b477a \
+sha256  86210f5d727b429c39d9dad8010e91cbbe13de1839257b26b688fc3486e39112 \
+size    200644 \
                     github.com/marten-seemann/qtls-go1-17 \
                         lock    v0.1.0-rc.1 \
-                        rmd160  5f5bcb47b85e9cbffeab69189cff5dd3bd587770 \
-                        sha256  53a447b1a2518642e7c1d807b74caaf6638037bb5d63d6bd612e34ee87cc9b30 \
-                        size    421746 \
+rmd160  5f5bcb47b85e9cbffeab69189cff5dd3bd587770 \
+sha256  53a447b1a2518642e7c1d807b74caaf6638037bb5d63d6bd612e34ee87cc9b30 \
+size    421746 \
                     github.com/marten-seemann/qtls-go1-16 \
                         lock    v0.1.4 \
-                        rmd160  1cadd0881456cc0d4dd653b432c06be1e1a1e43e \
-                        sha256  6e750d55689b9eeff04ddadd5fd37f57c794f0eb0897622ea318b4b73990261a \
-                        size    415570 \
+rmd160  1cadd0881456cc0d4dd653b432c06be1e1a1e43e \
+sha256  6e750d55689b9eeff04ddadd5fd37f57c794f0eb0897622ea318b4b73990261a \
+size    415570 \
                     github.com/marten-seemann/qtls-go1-15 \
                         lock    v0.1.5 \
-                        rmd160  935629c05cf01066de57f62599e6b60122f7cc6d \
-                        sha256  942e3d2166894e4cdfd21af9313021e8f90b5ff42792456671d6eb1a5cfd90c6 \
-                        size    413667 \
+rmd160  935629c05cf01066de57f62599e6b60122f7cc6d \
+sha256  942e3d2166894e4cdfd21af9313021e8f90b5ff42792456671d6eb1a5cfd90c6 \
+size    413667 \
                     github.com/lunixbochs/struc \
                         lock    784aaebc1d40 \
-                        rmd160  a9a289f74c01c85c6c272ee3a5a21550c1d65fbf \
-                        sha256  7ba956f1055c32b76274641f2af6d9893f732b3bbf6877d2d7e827f4c6ba3ba6 \
-                        size    16071 \
+rmd160  a9a289f74c01c85c6c272ee3a5a21550c1d65fbf \
+sha256  7ba956f1055c32b76274641f2af6d9893f732b3bbf6877d2d7e827f4c6ba3ba6 \
+size    16071 \
                     github.com/lucas-clemente/quic-go \
                         lock    v0.21.2 \
-                        rmd160  fcd2d1043bb97c9870e0d1cffc3aafd372daf911 \
-                        sha256  507de250c82cd1cec0dd9b215f74408d760a72628ed6695b959f90c9cb5441ea \
-                        size    519535 \
+rmd160  fcd2d1043bb97c9870e0d1cffc3aafd372daf911 \
+sha256  507de250c82cd1cec0dd9b215f74408d760a72628ed6695b959f90c9cb5441ea \
+size    519535 \
                     github.com/kr/text \
                         lock    v0.1.0 \
-                        rmd160  0b3c78459e227170a3b80a0103d87a3eef77ed88 \
-                        sha256  5ed970aad0da3cba3cffacdb4d154a162a8968655ee6d6f7b627e71b869efaf6 \
-                        size    8691 \
+rmd160  0b3c78459e227170a3b80a0103d87a3eef77ed88 \
+sha256  5ed970aad0da3cba3cffacdb4d154a162a8968655ee6d6f7b627e71b869efaf6 \
+size    8691 \
                     github.com/kr/pretty \
                         lock    v0.1.0 \
-                        rmd160  9aa7a5aad4c48840eecfd0f80186d1fb5ded0fd6 \
-                        sha256  f6c3f89667c63e5b7f1fc6ee2c06b6a6bfdce88f3a965ccd395b64c6f95c9a47 \
-                        size    8553 \
+rmd160  9aa7a5aad4c48840eecfd0f80186d1fb5ded0fd6 \
+sha256  f6c3f89667c63e5b7f1fc6ee2c06b6a6bfdce88f3a965ccd395b64c6f95c9a47 \
+size    8553 \
                     github.com/jhump/protoreflect \
                         lock    v1.9.0 \
-                        rmd160  d8d66278f00e0e5d28b1269e64d46dcc05088a8c \
-                        sha256  bb2d309863be07b6ff808257eb3b71b9f343aaebd295efe1278fd7aaf991000d \
-                        size    599317 \
+rmd160  d8d66278f00e0e5d28b1269e64d46dcc05088a8c \
+sha256  bb2d309863be07b6ff808257eb3b71b9f343aaebd295efe1278fd7aaf991000d \
+size    599317 \
                     github.com/h12w/go-socks5 \
                         lock    76189e178364 \
-                        rmd160  f9edbe0fc88a462f7b2b68f96ebbf0d090d25a73 \
-                        sha256  9d3c58b3d85dbcaed892e47999a957f9b55e9ce00db583d3ede20aaa0cba84fd \
-                        size    8646 \
+rmd160  f9edbe0fc88a462f7b2b68f96ebbf0d090d25a73 \
+sha256  9d3c58b3d85dbcaed892e47999a957f9b55e9ce00db583d3ede20aaa0cba84fd \
+size    8646 \
                     github.com/gorilla/websocket \
                         lock    v1.4.2 \
-                        rmd160  784f79f05da87fc2f2af618ad4e1eb576d7c16d8 \
-                        sha256  7805b8fc2002f7d1a7acdaa98feee2d6746d9241db0c597e0ee256cf0ff93a0b \
-                        size    54121 \
+rmd160  784f79f05da87fc2f2af618ad4e1eb576d7c16d8 \
+sha256  7805b8fc2002f7d1a7acdaa98feee2d6746d9241db0c597e0ee256cf0ff93a0b \
+size    54121 \
                     github.com/google/go-cmp \
                         lock    v0.5.6 \
-                        rmd160  b93086d92bddc7a3b593fb637776f055c022049f \
-                        sha256  fa1ca0f00fe02f645c4ed12ef753ff6c46b6621db01e09d96599cf1fd990aebe \
-                        size    104422 \
+rmd160  b93086d92bddc7a3b593fb637776f055c022049f \
+sha256  fa1ca0f00fe02f645c4ed12ef753ff6c46b6621db01e09d96599cf1fd990aebe \
+size    104422 \
                     github.com/golang/protobuf \
                         lock    v1.5.2 \
-                        rmd160  9924f66e6525b49769f4ef61f7196387185b2f9b \
-                        sha256  d7b5f7c44e324b3f510fec1b79de20bd8d7537229b23ad7236769cf3974ce0c7 \
-                        size    171736 \
+rmd160  9924f66e6525b49769f4ef61f7196387185b2f9b \
+sha256  d7b5f7c44e324b3f510fec1b79de20bd8d7537229b23ad7236769cf3974ce0c7 \
+size    171736 \
                     github.com/golang/mock \
                         lock    v1.6.0 \
-                        rmd160  ed853462703f04ce365bb17b8c88a92994aa5006 \
-                        sha256  4b107f6d26db03f8a36ae38f7b017399ed56571cdbf7b7ebc7bff0006c7dffb5 \
-                        size    69263 \
+rmd160  ed853462703f04ce365bb17b8c88a92994aa5006 \
+sha256  4b107f6d26db03f8a36ae38f7b017399ed56571cdbf7b7ebc7bff0006c7dffb5 \
+size    69263 \
                     github.com/go-task/slim-sprig \
                         lock    348f09dbbbc0 \
-                        rmd160  7cc4d26be51d6fdf2b54b1fd1506b58c58317303 \
-                        sha256  94d84e08cdff9c92c5cf526f0ec803f46593247f8e0d4b19b30c9df1819c933d \
-                        size    40027 \
+rmd160  7cc4d26be51d6fdf2b54b1fd1506b58c58317303 \
+sha256  94d84e08cdff9c92c5cf526f0ec803f46593247f8e0d4b19b30c9df1819c933d \
+size    40027 \
                     github.com/fsnotify/fsnotify \
                         lock    v1.4.9 \
-                        rmd160  4660b5721da8aea4c890786e49d7cec39c2e04d3 \
-                        sha256  7920cf1e5ccf268962fcff0b501398ed6c28ed75b1e1281fb17b19a8b0e4db5c \
-                        size    31910 \
+rmd160  4660b5721da8aea4c890786e49d7cec39c2e04d3 \
+sha256  7920cf1e5ccf268962fcff0b501398ed6c28ed75b1e1281fb17b19a8b0e4db5c \
+size    31910 \
                     github.com/ebfe/bcrypt_pbkdf \
                         lock    3c8d2dcb253a \
-                        rmd160  b705ef4caeebacbd1acaad342b6f4738474bfcef \
-                        sha256  ad6b7710f4b47c58f101b1958ce80a02e932b7e9217a52325b6664fa832281c9 \
-                        size    15165 \
+rmd160  b705ef4caeebacbd1acaad342b6f4738474bfcef \
+sha256  ad6b7710f4b47c58f101b1958ce80a02e932b7e9217a52325b6664fa832281c9 \
+size    15165 \
                     github.com/dgryski/go-metro \
                         lock    85c65e2d0165 \
-                        rmd160  fbd65fabced91793fb7202c08ee7540837503ca6 \
-                        sha256  140bc38b19a344608113cceb764172a399930135b5bb1f51ad0deaceb5f2f706 \
-                        size    4475 \
+rmd160  fbd65fabced91793fb7202c08ee7540837503ca6 \
+sha256  140bc38b19a344608113cceb764172a399930135b5bb1f51ad0deaceb5f2f706 \
+size    4475 \
                     github.com/davecgh/go-spew \
                         lock    v1.1.1 \
-                        rmd160  7c02883aa81f81aca14e13a27fdca9e7fbc136f7 \
-                        sha256  e85d6afa83e64962e0d63dd4812971eccf2b9b5445eda93f46a4406f0c177d5f \
-                        size    42171 \
+rmd160  7c02883aa81f81aca14e13a27fdca9e7fbc136f7 \
+sha256  e85d6afa83e64962e0d63dd4812971eccf2b9b5445eda93f46a4406f0c177d5f \
+size    42171 \
                     github.com/cheekybits/genny \
                         lock    v1.0.0 \
-                        rmd160  c8f3f5af635b83ade08f9f8e08e7f2018cb5879c \
-                        sha256  528d149522e053aed14048608751da8ace5b44466038b1a8d47d04a050d81bdc \
-                        size    15585
+rmd160  c8f3f5af635b83ade08f9f8e08e7f2018cb5879c \
+sha256  528d149522e053aed14048608751da8ace5b44466038b1a8d47d04a050d81bdc \
+size    15585
 # Notes for updating this port:
 # Replace go.googlesource.com/protobuf with github.com/protocolbuffers/protobuf-go
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,10 +21,10 @@ long_description    Fork of the python-language-server project, maintained by th
                     IDE team and the community.
 
 checksums           rmd160  195e60ccc5ca09e7a2dc91f3aabf38feb4419fd0 \
-                    sha256  facffab7eeb0daff4aaf6efa834689f4203c52effa0074029a37125ec469399b \
-                    size    66599
+sha256  facffab7eeb0daff4aaf6efa834689f4203c52effa0074029a37125ec469399b \
+size    66599
 
-python.versions     36 37 38 39
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_lib-append \

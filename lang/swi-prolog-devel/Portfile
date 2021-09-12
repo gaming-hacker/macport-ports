@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -33,8 +33,8 @@ distname            swipl-${version}
 dist_subdir         swi-prolog
 
 checksums           rmd160  8a7e2db45095782d12fc4d4627952ee5695db08d \
-                    sha256  4e15d8bde2d9da4fd504e17e10cbd7a7c3a77104972f10772396bad5015a9ee0 \
-                    size    11362591
+sha256  4e15d8bde2d9da4fd504e17e10cbd7a7c3a77104972f10772396bad5015a9ee0 \
+size    11362591
 
 depends_build-append \
                     port:pkgconfig

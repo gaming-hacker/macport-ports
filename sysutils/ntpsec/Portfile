@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           waf 1.0
@@ -20,8 +20,8 @@ conflicts           ntp openntpd
 
 master_sites        ftp://ftp.ntpsec.org/pub/releases/
 checksums           rmd160  ca5d758bf6572b460ba8e8c8e70f09b8a7417fd0 \
-                    sha256  f2684835116c80b8f21782a5959a805ba3c44e3a681dd6c17c7cb00cc242c27a \
-                    size    2681237
+sha256  f2684835116c80b8f21782a5959a805ba3c44e3a681dd6c17c7cb00cc242c27a \
+size    2681237
 
 # 10.5 x86_64 builds successfully and passes all build tests, but doesn't
 # actually work.  This has apparently been true forever, but until recently,
@@ -36,7 +36,7 @@ if { ${os.platform} eq "darwin" && ${os.major} < 10 } {
 # To avoid breaking any code that uses our Python package, keep the Python
 # version at 2.7 until we add variants for Python versions.  The upstream
 # code itself works with 2.6, 2.7, and 3.3+.
-python.versions     27
+python.versions 39
 
 # Note that the upstream --python option may not work correctly, so waf
 # must be run with the target Python version.  The waf PortGroup doesn't

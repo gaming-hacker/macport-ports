@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,8 +17,8 @@ long_description    Python library and command line tool for configuring any Yub
 homepage            https://developers.yubico.com/yubikey-manager/
 
 checksums           rmd160  fe9e883187fcf50a94f28ebe43fd7ca08ad187d5 \
-                    sha256  9972db8a1c7c13eb1a618015a8ad8011c03a045a08fee248e5de4f120f55fc4f \
-                    size    143622
+sha256  9972db8a1c7c13eb1a618015a8ad8011c03a045a08fee248e5de4f120f55fc4f \
+size    143622
 
 # This must be bumped in step with the yubico-authenticator port's Python
 # version. The full, built app must be tested: Python 3.8 previously failed at

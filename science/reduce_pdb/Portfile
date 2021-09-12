@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ description         Tool for adding and correcting hydrogens in PDB files
 long_description    {*}${description}
 
 checksums           rmd160  835227836178f9ccd1f2d5b8f128a45631213ac8 \
-                    sha256  8416959fd6e4d3c3eaf6b0815a87615c82d2870dd529c3905155da672c9b321d \
-                    size    11017307
+sha256  8416959fd6e4d3c3eaf6b0815a87615c82d2870dd529c3905155da672c9b321d \
+size    11017307
 
 patchfiles-append   patch-reduce_src_CMakeLists.txt.diff
 
@@ -30,7 +30,7 @@ post-patch {
         ${worksrcpath}/reduce_src/CMakeLists.txt
 }
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 build.target        reduce
 

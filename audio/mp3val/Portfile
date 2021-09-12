@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -24,8 +24,8 @@ master_sites        sourceforge:project/mp3val/mp3val/mp3val%20${version}
 distname            mp3val-${version}-src
 
 checksums           rmd160  25b63be18d40623324b1ce4d622bd18204965c13 \
-                    sha256  95a16efe3c352bb31d23d68ee5cb8bb8ebd9868d3dcf0d84c96864f80c31c39f \
-                    size    21406
+sha256  95a16efe3c352bb31d23d68ee5cb8bb8ebd9868d3dcf0d84c96864f80c31c39f \
+size    21406
 
 build.target        mp3val
 build.args          -f Makefile.linux

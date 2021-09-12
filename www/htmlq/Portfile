@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -21,9 +21,9 @@ long_description    ${description} Uses CSS selectors to extract bits content \
                     from HTML files.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  2cd9a1792e7bbcecd1bd9cffcf25f90405e2a63a \
-                    sha256  559f4ff25b0b8014d5b4e72cd06c20f40e5f0cf07a88dc0467418a6b2d7d5075 \
-                    size    10706
+rmd160  2cd9a1792e7bbcecd1bd9cffcf25f90405e2a63a \
+sha256  559f4ff25b0b8014d5b4e72cd06c20f40e5f0cf07a88dc0467418a6b2d7d5075 \
+size    10706
 
 destroot {
     xinstall -m 755 \

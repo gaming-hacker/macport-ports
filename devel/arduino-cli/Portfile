@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,8 +20,8 @@ long_description    \
 homepage            https://arduino.github.io/arduino-cli
 
 checksums           rmd160  59a7329ad8f2545bf3bb2490e0c5eb2bc766301b \
-                    sha256  f33754d50668b72e9585bde5301d2ad7dcb24dac46ada12962dab36c5f8d502d \
-                    size    7157901
+sha256  f33754d50668b72e9585bde5301d2ad7dcb24dac46ada12962dab36c5f8d502d \
+size    7157901
 
 set date_build      [clock format [clock seconds] -format %Y-%m-%d]
 

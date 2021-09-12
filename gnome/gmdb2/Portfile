@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -17,8 +17,8 @@ long_description \
                 export data, and view a list of stored macros.
 
 checksums       rmd160  91b116fef814120802a285b840c2ac5335a65760 \
-                sha256  7fc7f98bfd7564e5a0d6cd84318a7a0a2f7fb7929e5204d697e49d9d93e1fe1b \
-                size    511414
+sha256  7fc7f98bfd7564e5a0d6cd84318a7a0a2f7fb7929e5204d697e49d9d93e1fe1b \
+size    511414
 
 depends_build   port:gawk \
                 port:itstool \

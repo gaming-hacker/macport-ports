@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,10 +21,10 @@ long_description    A multipurpose command line tool for working with \
                     OpenStreetMap data based on the Osmium library
 
 checksums           rmd160  3b024c02f3a1ae1a31ab3ef7369579e3d13fe59e \
-                    sha256  d6273e2614d390d8444b767018b7023bdac3538cbe094d2799eee50b6f08cd03 \
-                    size    394224
+sha256  d6273e2614d390d8444b767018b7023bdac3538cbe094d2799eee50b6f08cd03 \
+size    394224
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_lib-append  port:bzip2 \
                     port:expat \

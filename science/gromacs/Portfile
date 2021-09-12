@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,9 +25,9 @@ long_description    GROMACS is a versatile package to perform molecular \
 homepage            http://www.gromacs.org/
 master_sites        http://ftp.gromacs.org/pub/gromacs
 checksums           md5     1850870fbbfb228051ee0afc1c5ddeff \
-                    size    37987972 \
-                    rmd160  74adb5fc9e2fa461d4d7ff603d0fe7e08476da20 \
-                    sha256  e109856ec444768dfbde41f3059e3123abdb8fe56ca33b1a83f31ed4575a1cc6
+size    37987972 \
+rmd160  74adb5fc9e2fa461d4d7ff603d0fe7e08476da20 \
+sha256  e109856ec444768dfbde41f3059e3123abdb8fe56ca33b1a83f31ed4575a1cc6
 
 depends_lib-append  port:fftw-3 port:zlib
 configure.args-append  -DGMX_SIMD=SSE4.1 -DGMX_FFT_LIBRARY=fftw3 -DREGRESSIONTEST_DOWNLOAD=ON

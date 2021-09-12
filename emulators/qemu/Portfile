@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup compiler_blacklist_versions 1.0
@@ -26,8 +26,8 @@ master_sites            https://download.qemu.org/
 use_xz                  yes
 
 checksums               rmd160  00f21e102c9ca70c154b770d0094fd48568bbdd5 \
-                        sha256  eebc089db3414bbeedf1e464beda0a7515aad30f73261abc246c9b27503a3c96 \
-                        size    111258808
+sha256  eebc089db3414bbeedf1e464beda0a7515aad30f73261abc246c9b27503a3c96 \
+size    111258808
 
 depends_build           port:texinfo \
                         port:libtool \

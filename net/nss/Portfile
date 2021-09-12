@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -30,8 +30,8 @@ master_sites        https://ftp.mozilla.org/pub/mozilla.org/security/nss/release
                     ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/${my_release}/src/
 
 checksums           rmd160  308700c69b7b7d3dfe94d7340f6256d345ff98ff \
-                    sha256  2b89abb8601ee405be8ac5b5703d71f1fb38a51c3a64a3d834387f78b325511b \
-                    size    83917362
+sha256  2b89abb8601ee405be8ac5b5703d71f1fb38a51c3a64a3d834387f78b325511b \
+size    83917362
 
 # build fails with gcc-4.2 on Intel, but succeeds with gcc-4.2 on PPC
 # cc1: error: unrecognized command line option "-mpclmul"
@@ -108,7 +108,7 @@ use_parallel_build  no
 
 # tls13esni.c:72: error: 'for' loop initial declaration used outside C99 mode
 compiler.c_standard 1999
-configure.cflags-append -std=c99
+configure.cflags-append -std=c11
 
 # mimic nss/coreconf/Darwin.mk
 
