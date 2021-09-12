@@ -34,7 +34,7 @@ configure.args      --disable-silent-rules \
 
 # Bypass year 2038 awareness code that causes the universal variant to fail.
 configure.args-append \
-                    TIME_T_32_BIT_OK=yes
+                    gl_cv_type_time_t_y2038=yes
 
 post-destroot {
     set docdir ${prefix}/share/doc/${name}
