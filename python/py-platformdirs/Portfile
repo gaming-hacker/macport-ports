@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-platformdirs
-version             2.2.0
-revision            2
+version             2.3.0
+revision            0
 
 categories-append   devel
 platforms           darwin
@@ -18,12 +18,12 @@ long_description    ${description}, e.g. a \"user data dir\".
 
 homepage            https://github.com/platformdirs/platformdirs
 
-checksums           rmd160  7950892ad04906a41fadd8dd6a95ca794c4f1e35 \
-sha256  632daad3ab546bd8e6af0537d09805cec458dce201bccfe23012df73332e181e \
-size    21691
+checksums           rmd160  242c0868d604a217515475cb876ef46820dc4c30 \
+                    sha256  15b056538719b1c94bdaccb29e5f81879c7f7f0f4a153f46086d155dffcd4f0f \
+                    size    22730
 
 # keep all these Python versions, port is a dependency of py-virtualenv
-python.versions 39
+python.versions     27 35 36 37 38 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -36,8 +36,8 @@ if {${name} ne ${subport}} {
         epoch           1
         revision        0
         checksums       rmd160  b03f9dd52b9b7232f6e154ae51eaf662b645c05e \
-sha256  3b00d081227d9037bbbca521a5787796b5ef5000faea1e43fd76f1d44b06fcfa \
-size    11445
+                        sha256  3b00d081227d9037bbbca521a5787796b5ef5000faea1e43fd76f1d44b06fcfa \
+                        size    11445
     }
 
     post-destroot {

@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           python 1.0
 
 name                py-acme
-github.setup        certbot certbot 1.18.0 v
+github.setup        certbot certbot 1.19.0 v
 revision            0
 categories-append   security
 license             Apache-2
@@ -15,11 +15,11 @@ long_description    {*}${description}
 platforms           darwin
 homepage            https://certbot.eff.org/
 
-python.versions 39
+python.versions     36 37 38 39
 
-checksums           rmd160  155d8e1a5493f8fe39caa9a3abe0fb7658238f3a \
-sha256  752c8c1e6896a3545c7b25f9852d921d84ed78a8c297a186c16fcf15d9097939 \
-size    1332530
+checksums           rmd160  a6fb0d847ea3838f04edf0c28bedb7bc1b8a4ab1 \
+                    sha256  db359828e15562216a777123e83b438ac6ae341c052801e0411b23f6c9cd610f \
+                    size    1338578
 
 if {${name} ne ${subport}} {
     build.dir       ${worksrcpath}/acme

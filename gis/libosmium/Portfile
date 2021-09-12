@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -6,6 +6,8 @@ PortGroup           github 1.0
 PortGroup           boost 1.0
 
 github.setup        osmcode libosmium 2.17.0 v
+github.tarball_from archive
+revision            0
 
 categories          gis
 platforms           darwin
@@ -24,28 +26,42 @@ long_description    Low-level: this is designed to be a building block \
                     generated with the Google Protobufs protoc \
                     program.
 
-checksums           rmd160  9600b1c3b77923359a228580c731843d5898e6dc \
-sha256  a6c70e42a8eb08aadaadd1bce012f2c5115b3fca3de802ac33e3cbdeed77fb43 \
-size    513437
+checksums           rmd160  3923cb87ea091aa69a23ca2ee517ea438ac9fe56 \
+                    sha256  4a7672d7caf4da3bc68619912b298462370c423c697871a0be6273c6686e10d6 \
+                    size    513404
 
-compiler.cxx_standard 2017
+installs_libs       no
 
-universal_variant   no
+compiler.cxx_standard 2011
 
-depends_lib         port:zlib \
-                    port:protozero \
-                    port:expat \
-                    port:bzip2 \
-                    port:proj8
+configure.args-append \
+                    -DBUILD_TESTING=OFF \
+                    -DBUILD_EXAMPLES=OFF
 
-cmake.build_type    Release
+depends_build-append \
+                    port:protozero
 
-configure.pkg_config ${prefix}/bin/pkg-config
+boost.depends_type  build
 
-test.run            yes
-test.cmd            ctest --output-on-failure
+variant tests description {Build and run unit tests} {
 
-#https://osmcode.org/libosmium/manual.html#dependencies
-variant gdal description {Support converting OSM geometries into OGR geometries} {
-    depends_lib-append port:gdal
+    depends_build-append \
+                        port:bzip2 \
+                        port:expat \
+                        port:gdal \
+                        port:proj4 \
+                        port:sparsehash \
+                        port:zlib
+
+    configure.args-delete \
+                        -DBUILD_TESTING=OFF \
+                        -DBUILD_EXAMPLES=OFF
+
+    configure.args-append \
+                        -DPROJ_INCLUDE_DIR=${prefix}/lib/proj49/include \
+                        -DPROJ_LIBRARY=${prefix}/lib/proj49/lib/libproj.dylib \
+
+    test.run            yes
+    test.cmd            ctest --output-on-failure
+
 }
