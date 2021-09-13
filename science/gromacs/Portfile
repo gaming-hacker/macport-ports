@@ -15,7 +15,7 @@ categories          science math
 platforms           darwin
 license             LGPL-2.1
 maintainers         {dstrubbe @dstrubbe} openmaintainer
-description         Molecular dynamics package designed for simulations of proteins, lipids, and nucleic acids. 
+description         Molecular dynamics package designed for simulations of proteins, lipids, and nucleic acids.
 long_description    GROMACS is a versatile package to perform molecular \
                     dynamics, i.e. simulate the Newtonian equations of motion for \
                     systems with hundreds to millions of particles. It is primarily \
@@ -26,8 +26,8 @@ long_description    GROMACS is a versatile package to perform molecular \
                     research on non-biological systems, e.g. polymers.
 platforms           darwin
 
-homepage            http://www.gromacs.org/
-master_sites        http://ftp.gromacs.org/pub/gromacs
+homepage            https://www.gromacs.org/
+master_sites        https://ftp.gromacs.org/pub/gromacs
 
 # md5 as on http://manual.gromacs.org/documentation/2021.3/download.html
 checksums           rmd160  74adb5fc9e2fa461d4d7ff603d0fe7e08476da20 \
@@ -108,7 +108,7 @@ subport gromacs-plumed {
 # override the choice setting the PLUMED_KERNEL environment variable.
 # Also notice that gromacs version is hardcoded here. Plumed patch is not always
 # updated when gromacs is.
-        exec ${prefix}/bin/plumed patch --mdroot=${worksrcpath} -e gromacs-2021.3 --runtime -p
+        exec ${prefix}/bin/plumed patch --mdroot=${worksrcpath} -e gromacs-${version} --runtime -p
     }
     notes "
 PLUMED is linked with runtime binding. By setting the environment variable PLUMED_KERNEL\
@@ -132,5 +132,5 @@ variant double description "Build in double precision (much slower, use only if 
 }
 
 livecheck.type          regex
-livecheck.url           http://ftp.gromacs.org/pub/gromacs/
+livecheck.url           https://ftp.gromacs.org/pub/gromacs/
 livecheck.regex         ${name}-(\[0-9.\]+)${extract.suffix}
