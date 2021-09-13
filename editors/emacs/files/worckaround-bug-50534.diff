@@ -1,0 +1,186 @@
+diff --git src/nsmenu.m src/nsmenu.m
+index 3493e4e131..517b133c16 100644
+--- src/nsmenu.m
++++ src/nsmenu.m
+@@ -1094,10 +1094,10 @@ - (void)menu:(NSMenu *)menu willHighlightItem:(NSMenuItem *)item
+ #undef TOOLPROP
+     }
+ 
+-  if ([toolbar isVisible] != FRAME_EXTERNAL_TOOL_BAR (f))
++  if (![toolbar isVisible])
+     {
+       f->output_data.ns->in_animation = 1;
+-      [toolbar setVisible: FRAME_EXTERNAL_TOOL_BAR (f)];
++      [toolbar setVisible: YES];
+       f->output_data.ns->in_animation = 0;
+     }
+ 
+diff --git src/nsterm.m src/nsterm.m
+index 8d88f7bd3d..2ee502fa99 100644
+--- src/nsterm.m
++++ src/nsterm.m
+@@ -6956,6 +6956,43 @@ - (NSSize)windowWillResize: (NSWindow *)sender toSize: (NSSize)frameSize
+ }
+ 
+ 
++- (void)windowDidResize: (NSNotification *)notification
++{
++  NSTRACE ("[EmacsView windowDidResize:]");
++  if (!FRAME_LIVE_P (emacsframe))
++    {
++      NSTRACE_MSG ("Ignored (frame dead)");
++      return;
++    }
++  if (emacsframe->output_data.ns->in_animation)
++    {
++      NSTRACE_MSG ("Ignored (in animation)");
++      return;
++    }
++
++  if (! [self fsIsNative])
++    {
++      NSWindow *theWindow = [notification object];
++      /* We can get notification on the non-FS window when in
++         fullscreen mode.  */
++      if ([self window] != theWindow) return;
++    }
++
++  NSTRACE_RECT ("frame", [[notification object] frame]);
++
++#ifdef NS_IMPL_GNUSTEP
++  NSWindow *theWindow = [notification object];
++
++   /* In GNUstep, at least currently, it's possible to get a didResize
++      without getting a willResize, therefore we need to act as if we got
++      the willResize now.  */
++  NSSize sz = [theWindow frame].size;
++  sz = [self windowWillResize: theWindow toSize: sz];
++#endif /* NS_IMPL_GNUSTEP */
++
++  ns_send_appdefined (-1);
++}
++
+ #ifdef NS_IMPL_COCOA
+ - (void)viewDidEndLiveResize
+ {
+@@ -6973,30 +7010,38 @@ - (void)viewDidEndLiveResize
+ #endif /* NS_IMPL_COCOA */
+ 
+ 
+-- (void)resizeWithOldSuperviewSize: (NSSize)oldSize
++- (void)viewDidResize:(NSNotification *)notification
+ {
+-  NSRect frame;
+-  int width, height;
+-
+-  NSTRACE ("[EmacsView resizeWithOldSuperviewSize:]");
+-
+-  [super resizeWithOldSuperviewSize:oldSize];
++  NSRect frame = [self frame];
++  int neww, newh, oldw, oldh;
+ 
+   if (! FRAME_LIVE_P (emacsframe))
+     return;
+ 
+-  frame = [self frame];
+-  width = (int)NSWidth (frame);
+-  height = (int)NSHeight (frame);
++  NSTRACE ("[EmacsView viewDidResize]");
++
++  neww = (int)NSWidth (frame);
++  newh = (int)NSHeight (frame);
++  oldw = FRAME_PIXEL_WIDTH (emacsframe);
++  oldh = FRAME_PIXEL_HEIGHT (emacsframe);
+ 
+-  NSTRACE_SIZE ("New size", NSMakeSize (width, height));
+-  NSTRACE_SIZE ("Original size", size);
++  /* Don't want to do anything when the view size hasn't changed. */
++  if (emacsframe->new_size_p
++      ? (newh == emacsframe->new_height
++         && neww == emacsframe->new_width)
++      : (oldh == newh && oldw == neww))
++    {
++      NSTRACE_MSG ("No change");
++      return;
++    }
+ 
+-  change_frame_size (emacsframe, width, height, false, YES, false);
++  NSTRACE_SIZE ("New size", NSMakeSize (neww, newh));
++  NSTRACE_SIZE ("Original size", NSMakeSize (oldw, oldh));
++
++  change_frame_size (emacsframe, neww, newh, false, YES, false);
+ 
+   SET_FRAME_GARBAGED (emacsframe);
+   cancel_mouse_face (emacsframe);
+-  ns_send_appdefined (-1);
+ }
+ 
+ 
+@@ -7132,7 +7177,7 @@ - (instancetype) initFrameFromEmacs: (struct frame *)f
+   /* These settings mean AppKit will retain the contents of the frame
+      on resize.  Unfortunately it also means the frame will not be
+      automatically marked for display, but we can do that ourselves in
+-     resizeWithOldSuperviewSize.  */
++     viewDidResize.  */
+   [self setWantsLayer:YES];
+   [self setLayerContentsRedrawPolicy:
+           NSViewLayerContentsRedrawOnSetNeedsDisplay];
+@@ -7152,6 +7197,13 @@ - (instancetype) initFrameFromEmacs: (struct frame *)f
+   [NSApp registerServicesMenuSendTypes: ns_send_types
+                            returnTypes: [NSArray array]];
+ 
++  /* Set up view resize notifications.  */
++  [self setPostsFrameChangedNotifications:YES];
++  [[NSNotificationCenter defaultCenter]
++      addObserver:self
++         selector:@selector (viewDidResize:)
++             name:NSViewFrameDidChangeNotification object:nil];
++
+   ns_window_num++;
+   return self;
+ }
+@@ -7938,28 +7990,24 @@ - (void)copyRect:(NSRect)srcRect to:(NSRect)dstRect
+    redisplay before drawing.
+ 
+    This used to be done in viewWillDraw, but with the custom layer
+-   that method is not called.  We cannot call redisplay directly from
+-   [NSView layout], because it may trigger another round of layout by
+-   changing the frame size and recursive layout calls are banned.  It
+-   appears to be safe to call redisplay here.  */
+-- (void)layoutSublayersOfLayer:(CALayer *)layer
+-{
+-  if (!redisplaying_p && FRAME_GARBAGED_P (emacsframe))
+-    {
+-      /* If there is IO going on when redisplay is run here Emacs
+-         crashes.  I think it's because this code will always be run
+-         within the run loop and for whatever reason processing input
+-         is dangerous.  This technique was stolen wholesale from
+-         nsmenu.m and seems to work.  */
+-      bool owfi = waiting_for_input;
+-      waiting_for_input = 0;
+-      block_input ();
++   that method is not called.  */
++- (void)layout
++{
++  [super layout];
++
++  /* If there is IO going on when redisplay is run here Emacs
++     crashes.  I think it's because this code will always be run
++     within the run loop and for whatever reason processing input
++     is dangerous.  This technique was stolen wholesale from
++     nsmenu.m and seems to work.  */
++  bool owfi = waiting_for_input;
++  waiting_for_input = 0;
++  block_input ();
+ 
+-      redisplay ();
++  redisplay ();
+ 
+-      unblock_input ();
+-      waiting_for_input = owfi;
+-    }
++  unblock_input ();
++  waiting_for_input = owfi;
+ }
+ #endif
+ 
