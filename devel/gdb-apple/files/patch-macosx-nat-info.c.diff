@@ -1,3 +1,6 @@
+Use the old underscore-free struct field names - patch should be applied only
+on Tiger.
+
 --- gdb/macosx/macosx-nat-info.c.orig
 +++ gdb/macosx/macosx-nat-info.c
 @@ -268,8 +268,8 @@

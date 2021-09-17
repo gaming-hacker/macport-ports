@@ -1,3 +1,5 @@
+Fixes compilation targeting 10.4 and 10.5
+
 --- gdb/macosx/macosx-tdep.c.orig
 +++ gdb/macosx/macosx-tdep.c
 @@ -1558,7 +1558,11 @@

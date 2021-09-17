@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           github 1.0
 
-github.setup        BelledonneCommunications ortp 5.0.18
+github.setup        BelledonneCommunications ortp 5.0.23
 github.tarball_from archive
 revision            0
 
@@ -19,9 +19,9 @@ long_description    \
     available for most unix clones (primilarly Linux and HP-UX), and \
     Microsoft Windows.
 
-checksums           rmd160 a59b92e1c08ed711eaf0456ea0d9dac9eaef24dd \
-sha256 a0039438970100c7e7baf19825ffdc8407f987f7659a5c76be5f4c93be9b5746 \
-size 234103
+checksums           rmd160 521bfdf670bd61f91526bfbe00a95360706db5ff \
+                    sha256 bc7b5926c442ffc8efc2be5727a74264b7caeb9ded0caf1e2faa1197bbc4e2a9 \
+                    size 234105
 
 depends_lib         port:bctoolbox
 
@@ -40,11 +40,13 @@ variant docs description {Build and install documentation in HTML format} {
     depends_build-append \
                     port:doxygen
 
-    configure.args-append \
-                    -DENABLE_DOC=YES
+    configure.args-replace \
+                    -DENABLE_DOC=NO -DENABLE_DOC=YES
 
     post-destroot {
         move ${destroot}${prefix}/share/doc/ortp-5.0.0/html \
             ${destroot}${prefix}/share/doc/ortp
     }
 }
+
+github.livecheck.regex  {([0-9.]+)}

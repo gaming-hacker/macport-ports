@@ -1,3 +1,7 @@
+Check for spawn.h, execinfo.h, and libproc.h and block out sections of code
+where related system functions are not available. This enables compilation
+on 10.4 and 10.5.
+
 --- gdb/config.in.orig
 +++ gdb/config.in
 @@ -124,6 +124,9 @@
@@ -30,17 +34,6 @@
  /* Define to 1 if you have the <stddef.h> header file. */
  #undef HAVE_STDDEF_H
  
---- gdb/configure.orig
-+++ gdb/configure
-@@ -27720,7 +27720,7 @@ fi
- done
- 
- 
--for ac_header in unistd.h
-+for ac_header in unistd.h spawn.h execinfo.h libproc.h
- do
- as_ac_Header=`echo "ac_cv_header_$ac_header" | $as_tr_sh`
- if { as_var=$as_ac_Header; eval "test \"\${$as_var+set}\" = set"; }; then
 --- gdb/configure.ac.orig
 +++ gdb/configure.ac
 @@ -524,7 +524,7 @@ AC_CHECK_HEADERS(sys/user.h, [], [],
@@ -52,6 +45,17 @@
  
  # On Solaris 2.[789], we need to define _MSE_INT_H to avoid a clash
  # between <widec.h> and <wchar.h> that would cause AC_CHECK_HEADERS to
+--- gdb/configure.orig
++++ gdb/configure
+@@ -27720,7 +27720,7 @@ fi
+ done
+ 
+ 
+-for ac_header in unistd.h
++for ac_header in unistd.h spawn.h execinfo.h libproc.h
+ do
+ as_ac_Header=`echo "ac_cv_header_$ac_header" | $as_tr_sh`
+ if { as_var=$as_ac_Header; eval "test \"\${$as_var+set}\" = set"; }; then
 --- gdb/macosx/macosx-nat-dyld.c.orig
 +++ gdb/macosx/macosx-nat-dyld.c
 @@ -791,7 +791,7 @@ macosx_locate_dyld_via_taskinfo (macosx_dyld_thread_status *s)
