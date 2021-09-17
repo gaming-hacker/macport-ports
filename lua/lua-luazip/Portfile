@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           luarocks 1.0
@@ -17,7 +17,7 @@ long_description    LuaZip is a lightweight Lua extension library used to read f
 homepage            https://github.com/mpeterv/luazip
 
 checksums           rmd160  c450d2eeb42ee54ce0618f1c5ad9d7020fd7af24 \
-                    sha256  7480e980da7a1b1e51094242e16fb83f3d5f2bbc0e23e421d47099ab42a6f9fa \
-                    size    50385
+sha256  7480e980da7a1b1e51094242e16fb83f3d5f2bbc0e23e421d47099ab42a6f9fa \
+size    50385
 
 depends_lib         port:libzzip

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,8 +26,8 @@ build.cmd           make
 build.args          TAG=v${version} build
 
 checksums           rmd160  b6f12edb79b97ccc676ebf79018007e0b776abb2 \
-                    sha256  69380cdffb0f581ba29b9e26894e48a0e2cc2be17cffa9956265791b88039de9 \
-                    size    235960
+sha256  69380cdffb0f581ba29b9e26894e48a0e2cc2be17cffa9956265791b88039de9 \
+size    235960
 
 github.tarball_from archive
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,9 +21,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 license             MIT
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  f51f0b297db66b9e9d9f99583d6ddd485761f4cb \
-                    sha256  5d94031790118579aab9b5c3ba619030618cc2a3955c5cdb625fee064fc467aa \
-                    size    3396222
+rmd160  f51f0b297db66b9e9d9f99583d6ddd485761f4cb \
+sha256  5d94031790118579aab9b5c3ba619030618cc2a3955c5cdb625fee064fc467aa \
+size    3396222
 
 depends_run-append  port:fzf
 
