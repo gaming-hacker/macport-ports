@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -16,8 +16,8 @@ long_description    ${description}
 github.setup        drowe67 freedv-gui 5e9f5c3b06b0358be6ba5ad99809eec752b1a3d3
 version             20210919-[string range ${github.version} 0 7]
 checksums           rmd160  eb3c317f0f476be59faeaf26282bf23fd28047f1 \
-                    sha256  d1f285cadee1608ba4a9184423a4ac277c2fd9fbd99df57c3d5608e52b947cee \
-                    size    9448428
+sha256  d1f285cadee1608ba4a9184423a4ac277c2fd9fbd99df57c3d5608e52b947cee \
+size    9448428
 revision            0
 
 # move from commit to version
@@ -40,7 +40,7 @@ depends_lib-append \
     port:lpcnetfreedv \
     port:speexDSP
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args-append \
     -DUSE_INTERNAL_CODEC2=FALSE \

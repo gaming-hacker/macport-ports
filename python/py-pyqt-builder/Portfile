@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ long_description    ${description}
 homepage            https://www.riverbankcomputing.com/software/pyqt-builder/
 
 checksums           rmd160  fc38e15c4277a23436e187b156af673090af966d \
-                    sha256  6ade47445b7d8c08eb96e91ebda5f8b3494b3e7a9da2be343b9d0704419cb5c7 \
-                    size    5725537
+sha256  6ade47445b7d8c08eb96e91ebda5f8b3494b3e7a9da2be343b9d0704419cb5c7 \
+size    5725537
 
-python.versions     35 36 37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

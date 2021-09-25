@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -47,9 +47,9 @@ compiler.cxx_standard \
                     2017
 
 checksums           ${distname}${extract.suffix}  \
-                    rmd160  4e74142f248561cbec56e5d0a2a3fbbac06fcacf \
-                    sha256  1efc783e4544289aaad90820e7526eb721dcf15780941f7ef02fcaa428e79903 \
-                    size    3753547
+rmd160  4e74142f248561cbec56e5d0a2a3fbbac06fcacf \
+sha256  1efc783e4544289aaad90820e7526eb721dcf15780941f7ef02fcaa428e79903 \
+size    3753547
 
 cargo.crates \
     ahash                            0.3.8  e8fd72866655d1904d6b0997d0b07ba561047d070fbe29de039031c641b61217 \

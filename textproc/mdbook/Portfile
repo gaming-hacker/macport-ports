@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -23,9 +23,9 @@ license             MPL-2.0
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  eb2a2dbb2d5b3b3bc0c0d20324b6d17f781a75b1 \
-                    sha256  d28b958c71a7934fde1c22204c3dc41ffc74df98c90afc1bf3ddafd131d4af77 \
-                    size    1485183
+rmd160  eb2a2dbb2d5b3b3bc0c0d20324b6d17f781a75b1 \
+sha256  d28b958c71a7934fde1c22204c3dc41ffc74df98c90afc1bf3ddafd131d4af77 \
+size    1485183
 
 set mdb_doc_dir     ${prefix}/share/doc/${name}
 
@@ -193,8 +193,8 @@ cargo.crates \
     serde_derive                   1.0.125  b093b7a2bb58203b5da3056c05b4ec1fed827dcfdb37347a8841695263b3d06d \
     serde_json                      1.0.64  799e97dc9fdae36a5c8b8f2cae9ce2ee9fdce2058c57a93e6099d919fd982f79 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha-1                            0.9.5  b659df5fc3ce22274daac600ffb845300bd2125bcfaec047823075afdab81c00 \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.9.5  b659df5fc3ce22274daac600ffb845300bd2125bcfaec047823075afdab81c00 \
     shlex                            1.0.0  42a568c8f2cd051a4d283bd6eb0343ac214c1b0f1ac19f93e1175b2dee38c73d \
     siphasher                        0.3.5  cbce6d4507c7e4a3962091436e56e95290cb71fa302d0d270e32130b75fbff27 \
     slab                             0.4.3  f173ac3d1a7e3b28003f40de0b5ce7fe2710f9b9dc3fc38664cebee46b3b6527 \

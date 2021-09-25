@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    DVBcut is a Qt application that allows you to select certain
                     file.
 
 checksums           rmd160  7ae24ba9c72754effc92a88a694a092ad416e2f9 \
-                    sha256  c0397919e89bd3a77f488b8c25d3bad9a11f14cd30d16097c3bf666bc3f56d7b \
-                    size    186547
+sha256  c0397919e89bd3a77f488b8c25d3bad9a11f14cd30d16097c3bf666bc3f56d7b \
+size    186547
 
 patchfiles          pkgconfig.patch byteswap.patch
 
@@ -36,8 +36,8 @@ qt5.depends_build_component qttools
 
 use_autoreconf      yes
 
-compiler.cxx_standard 2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 configure.env       PATH=$env(PATH):${prefix}/libexec/qt5/bin
 build.env           PATH=$env(PATH):${prefix}/libexec/qt5/bin

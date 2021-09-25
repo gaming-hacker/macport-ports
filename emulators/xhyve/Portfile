@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,10 +21,10 @@ long_description \
     may gain support for other guest operating systems in the future.
 
 checksums           rmd160  8371e4638d2caee3323338c735156f0a683c3277 \
-                    sha256  e16034a57ddf4409e7e3939f683820b03891232dffa522bff9e0bc0507c6cecb \
-                    size    11718776
+sha256  e16034a57ddf4409e7e3939f683820b03891232dffa522bff9e0bc0507c6cecb \
+size    11718776
 
-use_xcode           yes
+use_xcode  no
 
 patch.pre_args      -p1
 patchfiles          cast-int.patch \

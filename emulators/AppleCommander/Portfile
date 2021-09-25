@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -36,13 +36,13 @@ master_sites-append https://services.gradle.org/distributions/
 distfiles-append    ${gradle_distfile}
 
 checksums           ${main_distfile} \
-                    rmd160  149ee11f2e3f616fc514ce1497973d0f5f4e3c5b \
-                    sha256  246cdf31812a9034d1b8f1492d48560ef65e5a2cf13ee873522ded3980c5f627 \
-                    size    2637590 \
+rmd160  149ee11f2e3f616fc514ce1497973d0f5f4e3c5b \
+sha256  246cdf31812a9034d1b8f1492d48560ef65e5a2cf13ee873522ded3980c5f627 \
+size    2637590 \
                     ${gradle_distfile} \
-                    rmd160  b1bb3127d1df4fa2abe8e7546e03f3fc5d74ef7b \
-                    sha256  32fce6628848f799b0ad3205ae8db67d0d828c10ffe62b748a7c0d9f4a5d9ee0 \
-                    size    93890597
+rmd160  b1bb3127d1df4fa2abe8e7546e03f3fc5d74ef7b \
+sha256  32fce6628848f799b0ad3205ae8db67d0d828c10ffe62b748a7c0d9f4a5d9ee0 \
+size    93890597
 
 proc percent_encode {str} {
     return [subst [regsub -all {[^a-zA-Z0-9/.~_-]} $str {%[format %02x [scan {&} %c]]}]]

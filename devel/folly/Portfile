@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -36,15 +36,15 @@ long_description    Folly (acronymed loosely after Facebook Open Source Library)
                     Good performance at large scale is a unifying theme in all of Folly.
 
 checksums           rmd160  5ef9b149f625ba1480514854613210dd767f7d8f \
-                    sha256  20d60ac4773153483b447981c5e63438eb97922407486aae9328c40096648a13 \
-                    size    3487346
+sha256  20d60ac4773153483b447981c5e63438eb97922407486aae9328c40096648a13 \
+size    3487346
 
 depends_build-append \
                     port:ninja
 
 # doesn't build with libressl as of 2016-09-05
 depends_lib-append  port:bzip2 \
-                    port:python27 \
+                    port:python39 \
                     port:gflags \
                     port:google-glog \
                     port:double-conversion \

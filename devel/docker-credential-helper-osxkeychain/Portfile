@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -17,8 +17,8 @@ long_description    docker-credential-helpers is a suite of programs to use \
                     port installs the macOS keychain credential helper.
 
 checksums           rmd160  53f9fc31d4f31c219c3226abe6cac9f2a79a02ce \
-                    sha256  a3a3e785931533b3cd868d555d251d3ee185dc63671bfb71cd790f12bfd40796 \
-                    size    35654
+sha256  a3a3e785931533b3cd868d555d251d3ee185dc63671bfb71cd790f12bfd40796 \
+size    35654
 
 set docker.helper   docker-credential-osxkeychain
 build.pre_args      -ldflags -s -o bin/${docker.helper}

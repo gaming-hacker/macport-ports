@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -20,9 +20,9 @@ license             MIT
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  3d0ba23c738c9ed75381b3761067d24619624fdc \
-                    sha256  8c488aabf5d15af9627c98603dc034c9f01cd40930045ef4dfdec6c54de7e2dc \
-                    size    39507
+rmd160  3d0ba23c738c9ed75381b3761067d24619624fdc \
+sha256  8c488aabf5d15af9627c98603dc034c9f01cd40930045ef4dfdec6c54de7e2dc \
+size    39507
 
 destroot {
     xinstall -m 755 \

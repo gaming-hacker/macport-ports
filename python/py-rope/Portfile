@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,10 +22,10 @@ long_description    Rope is a Python refactoring library that can be used \
                     documentation.
 
 checksums           rmd160  347c2a8ec26aa521f7e1172521c36ca9850f8772 \
-                    sha256  83bd664e41fceeb7506d95781ec8cbe0e4c957d9602220e52896793507dc1384 \
-                    size    255444
+sha256  83bd664e41fceeb7506d95781ec8cbe0e4c957d9602220e52896793507dc1384 \
+size    255444
 
-python.versions     27 35 36 37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

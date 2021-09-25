@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ homepage            https://www.smittyware.com/palm/cachemate/tools.php
 master_sites        http://www.smittyware.com/download/
 
 checksums           rmd160  f7e50e99ce33db0d79e070ba9da9431c3662678e \
-                    sha256  8f79d26cd4a8b4e70053bee0d53cfdbc93c1e6e1a5cb95e0fbc643dfe1313076 \
-                    size    142858
+sha256  8f79d26cd4a8b4e70053bee0d53cfdbc93c1e6e1a5cb95e0fbc643dfe1313076 \
+size    142858
 
 depends_lib         port:expat \
                     port:libzzip

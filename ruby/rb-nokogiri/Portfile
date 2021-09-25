@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ruby 1.0
 
-ruby.branches       3.0 2.7 2.6 2.5 2.4
+ruby.branches 3.0
 ruby.setup          nokogiri 1.12.4 gem
 revision            0
 maintainers         {kimuraw @kimuraw} \
@@ -17,8 +17,8 @@ platforms           darwin
 homepage            https://nokogiri.org
 
 checksums           rmd160  cc3550259ed66d0a2871622c102050eca6d497c2 \
-                    sha256  7fec161ee1c7b2329e05fed019bfc7b1f910a39e6b30ae95825e75dda2094de9 \
-                    size    9588736
+sha256  7fec161ee1c7b2329e05fed019bfc7b1f910a39e6b30ae95825e75dda2094de9 \
+size    9588736
 
 if {${name} ne ${subport}} {
     depends_extract     port:rb${ruby.suffix}-gem-patch

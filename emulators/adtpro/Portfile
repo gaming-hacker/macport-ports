@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               app 1.0
@@ -7,8 +7,8 @@ PortGroup               github 1.0
 github.setup            ADTPro adtpro 2_1_0 v_
 revision                0
 checksums               rmd160  80862646a17617389d617ad03a3d6da3ea634d8c \
-                        sha256  b5ece4d6aa19dd31a2bebdf7b11129ebac7b3402b1818f00e3571610d26c0b86 \
-                        size    1217467
+sha256  b5ece4d6aa19dd31a2bebdf7b11129ebac7b3402b1818f00e3571610d26c0b86 \
+size    1217467
 
 version                 [string map {_ .} ${github.version}]
 categories              emulators

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    ${description}
 # neede for macOS =< 10.14
 github.setup        AlexandreRouma SDRPlusPlus b7c95de8ccf4623e9237799e99b02c4cfaee8931
 checksums           rmd160  c0cc18b37b68f9162ab492f61dc468f43aecb504 \
-                    sha256  047bbd23953df806766be363e024c1900a501d350f74bc7d794e1c9991a75116 \
-                    size    3672235
+sha256  047bbd23953df806766be363e024c1900a501d350f74bc7d794e1c9991a75116 \
+size    3672235
 revision            0
 
 compiler.c_standard   2011

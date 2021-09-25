@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160  c29acf6096eb798bde72b621fcb79119adea40a1 \
-                    sha256  abdc4addccadbc7d89abe27c4d6427d78e57d139f69c1f45749227393c68bf79 \
-                    size    4017852
+sha256  abdc4addccadbc7d89abe27c4d6427d78e57d139f69c1f45749227393c68bf79 \
+size    4017852
 
 depends_build       port:pkgconfig
 
@@ -32,7 +32,7 @@ patchfiles-append   patch-src-shrpx_client_handler.cc.diff \
 
 use_autoreconf      yes
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 
 configure.args      --disable-silent-rules \
                     --disable-threads \
@@ -80,7 +80,7 @@ subport nghttp2-tools {
     }
 }
 
-set pyversions {36 37 38 39}
+set pyversions {39}
 
 foreach pyversion ${pyversions} {
     subport py${pyversion}-${name} {
