@@ -50,7 +50,7 @@ if {${subport} eq ${name}} {
     revision        0
 
     gitlab.livecheck.regex {([0-9.]+)}
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
 
     platform darwin {
         if {!((${os.major} < 9) || ${build_arch} eq "ppc" ||
