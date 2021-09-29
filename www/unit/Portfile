@@ -45,6 +45,7 @@ configure.args  --prefix=${prefix} \
                 --modules=libexec/${name}/modules \
                 --pid=${unit_pidfile} \
                 --state=${unit_dbdir} \
+                --control=unix:${unit_sockfile} \
                 --tmp=${unit_tmpdir} \
                 --user=_www \
                 --group=_www
@@ -73,10 +74,12 @@ foreach perl_v ${perl_versions} {
         set perl_ver        [string index ${perl_v} 0][string range ${perl_v} 1 end]
 
         depends_build       port:perl${perl_ver_dot}
-        depends_run         port:unit
+        depends_run         port:perl${perl_ver_dot} \
+                            port:unit
 
         post-configure {
-            system -W ${worksrcpath} "${configure.cmd} perl --perl=${prefix}/bin/perl${perl_ver_dot} --module=perl${perl_ver}"
+            system -W ${worksrcpath} \
+                "${configure.cmd} perl --perl=${prefix}/bin/perl${perl_ver_dot} --module=perl${perl_ver}"
         }
 
         build {
@@ -101,7 +104,8 @@ foreach perl_v ${perl_versions} {
 #        set php_ver         [string index ${php_v} 0][string range ${php_v} 1 end]
 #
 #        depends_build       port:php${php_ver}
-#        depends_run         port:unit
+#        depends_run         port:php${php_ver}
+#                            port:unit
 #
 #        post-configure {
 #            system -W ${worksrcpath} \
@@ -130,7 +134,8 @@ foreach python_v ${python_versions} {
         set python_ver      [string index ${python_v} 0][string range ${python_v} 1 end]
 
         depends_build       port:python${python_ver}
-        depends_run         port:unit
+        depends_run         port:python${python_ver} \
+                            port:unit
 
         post-configure {
             system -W ${worksrcpath} \
@@ -158,7 +163,11 @@ foreach ruby_v ${ruby_versions} {
         set ruby_ver_dot    [string index ${ruby_v} 0].[string range ${ruby_v} 1 end]
         set ruby_ver        [string index ${ruby_v} 0][string range ${ruby_v} 1 end]
 
-        depends_run         port:unit
+        depends_build       port:ruby${ruby_ver}
+        depends_run         port:ruby${ruby_ver} \
+                            port:unit
+
+        configure.cflags-append -fdeclspec
 
         post-configure {
             system -W ${worksrcpath} \
