@@ -40,6 +40,7 @@ set unit_tmpdir         ${unit_vardir}/tmp/${name}
 set unit_moddir         ${prefix}/libexec/${name}/modules
 
 configure.args  --prefix=${prefix} \
+                --cc-opt=\"${configure.cflags}\" \
                 --ld-opt=\"${configure.ldflags}\" \
                 --log=${unit_logfile} \
                 --modules=libexec/${name}/modules \
