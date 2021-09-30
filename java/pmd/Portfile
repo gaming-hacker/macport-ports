@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ homepage            https://pmd.github.io
 use_zip             yes
 distname            ${name}-bin-${version}
 checksums           ${distname}${extract.suffix} \
-                    rmd160  8297d29b8d12907e78e953bd86c8089a4f8322f5 \
-                    sha256  3831a51241c38285e4c0e375e844a2195c0dc5216d7247ffe12f2ab3fced64fd \
-                    size    44611853
+rmd160  8297d29b8d12907e78e953bd86c8089a4f8322f5 \
+sha256  3831a51241c38285e4c0e375e844a2195c0dc5216d7247ffe12f2ab3fced64fd \
+size    44611853
 
 java.version        1.8+
 java.fallback       openjdk11
@@ -36,9 +36,9 @@ variant doc description "Include offline documentation" {
     distfiles-append    ${name}-doc-${version}${extract.suffix}:doc
 
     checksums-append    ${name}-doc-${version}${extract.suffix} \
-                        rmd160  8e20bf84c9dd37249bc73a15589334787cae745e \
-                        sha256  2c140098c18aa08c77ba92327912f81dff58283a3950f033dff2c2bc1a50c3ee \
-                        size    4661515
+rmd160  8e20bf84c9dd37249bc73a15589334787cae745e \
+sha256  2c140098c18aa08c77ba92327912f81dff58283a3950f033dff2c2bc1a50c3ee \
+size    4661515
 }
 
 pre-destroot {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -23,8 +23,8 @@ homepage        https://unit.nginx.org/
 master_sites    https://unit.nginx.org/download/
 
 checksums       sha256  4ab4f05a934dd00628c0e067f7d0c5ba62bb55e9e2e7a333fa3764a180b9765d \
-                size    853280 \
-                rmd160  d08da7f6404e3fad4a69f31ba203cc9a3b69024c
+size    853280 \
+rmd160  d08da7f6404e3fad4a69f31ba203cc9a3b69024c
 
 depends_lib     port:pcre2 \
                 port:zlib
@@ -126,8 +126,8 @@ foreach perl_v ${perl_versions} {
 #    }
 #}
 
-set python_versions {27 37 38 39}
-foreach python_v ${python_versions} {
+set python.versions {39}
+foreach python_v ${python.versions} {
     subport ${name}-python${python_v} {
         description         Python module for NGINX Unit
 

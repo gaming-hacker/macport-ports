@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,12 +22,12 @@ long_description    PyQtWebEngine is a set of Python bindings for The Qt Company
 homepage            https://www.riverbankcomputing.com/software/pyqtwebengine
 
 checksums           rmd160  2e073104865646c9c5e2afaa9c839e23ce392385 \
-                    sha256  cedc28f54165f4b8067652145aec7f732a17eadf6736835852868cf76119cc19 \
-                    size    49022
+sha256  cedc28f54165f4b8067652145aec7f732a17eadf6736835852868cf76119cc19 \
+size    49022
 
-python.versions     35 36 37 38 39
+python.versions 39
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {${name} ne ${subport}} {
     PortGroup       qmake5 1.0

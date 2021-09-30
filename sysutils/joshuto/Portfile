@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ description         ranger-like terminal file manager written in Rust
 long_description    {*}${description}
 
 checksums           ${distfiles} \
-                    rmd160  70d061d62212c4ed36899d8beb8d489625211bc4 \
-                    sha256  6fc4c5a977d909d02543665650381b4b7b382b566242b604130b021455286083 \
-                    size    595430
+rmd160  70d061d62212c4ed36899d8beb8d489625211bc4 \
+sha256  6fc4c5a977d909d02543665650381b4b7b382b566242b604130b021455286083 \
+size    595430
 
 cargo.crates \
     aho-corasick                    0.7.18  1e37cfd5e7657ada45f742d6e99ca5788580b5c529dc78faf11ece6dc702656f \
@@ -127,7 +127,7 @@ cargo.crates \
     serde                          1.0.130  f12d06de37cf59146fbdecab66aa99f9fe4f78722e3607577a5375d66bd0c913 \
     serde_derive                   1.0.130  d7bc1a1ab1961464eae040d96713baa5a724a8152c1222492465b54322ec508b \
     serde_json                      1.0.68  0f690853975602e1bfe1ccbf50504d67174e3bcf340f23b5ea9992e0587a52d8 \
-    sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
+sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
     shell-words                      1.0.0  b6fa3938c99da4914afedd13bf3d79bcb6c277d1b2c398d23257a304d9e1b074 \
     shellexpand                      2.1.0  83bdb7831b2d85ddf4a7b148aa19d0587eddbe8671a436b7bd1182eaad0f2829 \
     shlex                            0.1.1  7fdf1b9db47230893d76faad238fd6097fd6d6a9245cd7a4d90dbd639536bbd2 \

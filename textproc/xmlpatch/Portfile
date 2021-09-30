@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           deprecated 1.0
@@ -24,8 +24,8 @@ master_sites        sourceforge:project/xmlpatch/xmlpatch/${version}
 distname            lib${name}_${version}
 
 checksums           rmd160  eab2230c55df1883251f401afe16f80aa0316b9b \
-                    sha256  6d92df0b3ac98f68325f99a012c06151a2bef29cee325010fd64c4d84ccbfdd2 \
-                    size    351587
+sha256  6d92df0b3ac98f68325f99a012c06151a2bef29cee325010fd64c4d84ccbfdd2 \
+size    351587
 
 depends_build-append \
                     port:pkgconfig
