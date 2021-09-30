@@ -3,19 +3,14 @@
 PortSystem          1.0
 PortGroup           muniversal 1.0
 
-name                openssl
-epoch               1
-version             3.0.0
+name                openssl11
+version             1.1.1l
 revision            0
-
-# Please revbump these ports when updating OpenSSL.
-#  - freeradius (#43461)
-#  - openssh (#54990)
 
 categories          devel security
 platforms           darwin
-license             Apache-2
-maintainers         {larryv @larryv} {cal @neverpanic} openmaintainer
+license             OpenSSL SSLeay
+maintainers         nomaintainer
 
 description         OpenSSL SSL/TLS cryptography library
 long_description    The OpenSSL Project is a collaborative effort to \
@@ -27,9 +22,8 @@ long_description    The OpenSSL Project is a collaborative effort to \
                     library.
 homepage            https://www.openssl.org
 
-conflicts           libressl libressl-devel
-
 depends_lib         port:zlib
+distname            openssl-${version}
 
 # See https://www.openssl.org/source/mirror.html
 master_sites        ${homepage}/source \
@@ -41,9 +35,9 @@ master_sites        ${homepage}/source \
                     ftp://ftp.linux.hr/pub/openssl/source/ \
                     ftp://guest.kuria.katowice.pl/pub/openssl/source/
 
-checksums           rmd160  a31de80cc0ab6b37bc92fa6e0c16fb94e95a599e \
-sha256  59eedfcb46c25214c9bd37ed6078297b4df01d012267fe9e9eee31f61bc70536 \
-size    14978663
+checksums           rmd160  aa470eea95b127e7ea389c39610a7568579d6b86 \
+                    sha256  0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1 \
+                    size    9834044
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     # Having the stdlib set to libc++ on 10.6 causes a dependency on a
@@ -51,19 +45,19 @@ if {${os.platform} eq "darwin" && ${os.major} < 11} {
     configure.cxx_stdlib
 }
 
-#   https://github.com/openssl/openssl/commit/c023d98dcf2ba1cc30f545ae54d0e037e80a8794
-#   https://github.com/openssl/openssl/commit/24cdb1bfecbd765e829b9932a5a60ff63a7dff4b
+#   https://github.com/openssl/openssl/commit/96ac8f13f4d0ee96baf5724d9f96c44c34b8606c
+#   https://github.com/openssl/openssl/commit/2f3b120401533db82e99ed28de5fc8aab1b76b33
 #   Patches updated to fix 10.4 build
 patchfiles-append   patch-pre-Sierra.diff
 
 configure.ccache    no
-configure.perl      ${prefix}/bin/perl5
+configure.perl      /usr/bin/perl
 configure.cmd       ./Configure
 configure.args      -L${prefix}/lib \
                     --openssldir=${prefix}/etc/openssl \
-shared \
+                    --libdir=lib/openssl-1.1 \
+                    shared \
                     zlib
-
 # Use SDK if necessary.
 if {${configure.sdkroot} ne ""} {
     configure.args-append   '-isysroot ${configure.sdkroot}' \
@@ -93,9 +87,6 @@ platform darwin {
         configure.perl          ${prefix}/bin/perl5
     }
 }
-
-append merger_configure_args(x86_64) { no-asm}
-
 # Don't pass --host to configure.
 array set merger_host {ppc {} i386 {} ppc64 {} x86_64 {} arm64 {}}
 
@@ -122,12 +113,25 @@ pre-destroot {
     }
 }
 
-destroot.args       MANDIR=${prefix}/share/man MANSUFFIX=ssl
+post-destroot {
+    # Move some files around
+    xinstall -d ${destroot}${prefix}/include/openssl-1.1
+    move ${destroot}${prefix}/include/openssl ${destroot}${prefix}/include/openssl-1.1/
+    move ${destroot}${prefix}/bin/openssl ${destroot}${prefix}/bin/openssl-1.1
+
+    # Update includedir in .pc files
+    reinplace "s|/include$|/include/openssl-1.1|" {*}[glob ${destroot}${prefix}/lib/openssl-1.1/pkgconfig/*.pc]
+
+    file delete -force ${destroot}${prefix}/etc
+    file delete ${destroot}${prefix}/bin/c_rehash
+}
+
+destroot.target     install_sw
 
 variant rfc3779 description {enable RFC 3779: X.509 Extensions for IP Addresses and AS Identifiers} {
     configure.args-append   enable-rfc3779
 }
 
 livecheck.type      regex
-livecheck.url       [lindex ${master_sites} 0]
-livecheck.regex     ${name}-(\[0-9.\]+\[a-z\]?)\\.tar\\.gz
+livecheck.url       https://www.openssl.org/source/old/1.1.1/
+livecheck.regex     openssl-(1.1.\[0-9.\]+\[a-z\]?)\\.tar\\.gz
