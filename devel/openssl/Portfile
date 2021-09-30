@@ -57,7 +57,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 11} {
 patchfiles-append   patch-pre-Sierra.diff
 
 configure.ccache    no
-configure.perl      /usr/bin/perl
+configure.perl      ${prefix}/bin/perl5
 configure.cmd       ./Configure
 configure.args      -L${prefix}/lib \
                     --openssldir=${prefix}/etc/openssl \
@@ -93,6 +93,9 @@ platform darwin {
         configure.perl          ${prefix}/bin/perl5
     }
 }
+
+append merger_configure_args(x86_64) { no-asm}
+
 # Don't pass --host to configure.
 array set merger_host {ppc {} i386 {} ppc64 {} x86_64 {} arm64 {}}
 
