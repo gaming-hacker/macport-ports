@@ -74,13 +74,14 @@ foreach perl_v ${perl_versions} {
         set perl_ver_dot    [string index ${perl_v} 0].[string range ${perl_v} 1 end]
         set perl_ver        [string index ${perl_v} 0][string range ${perl_v} 1 end]
 
+        depends_lib-append  port:perl${perl_ver_dot}
         depends_build       port:perl${perl_ver_dot}
         depends_run         port:perl${perl_ver_dot} \
                             port:unit
 
         post-configure {
             system -W ${worksrcpath} \
-                "${configure.cmd} perl --perl=${prefix}/bin/perl${perl_ver_dot} --module=perl${perl_ver}"
+                "${configure.cmd} perl --perl=${prefix}/bin/perl${perl_ver_dot} --module=perl${perl_ver} || cat build/autoconf.err"
         }
 
         build {
@@ -104,6 +105,7 @@ foreach perl_v ${perl_versions} {
 #        set php_ver_dot     [string index ${php_v} 0].[string range ${php_v} 1 end]
 #        set php_ver         [string index ${php_v} 0][string range ${php_v} 1 end]
 #
+#        depends_lib-append  port:php${php_ver}
 #        depends_build       port:php${php_ver}
 #        depends_run         port:php${php_ver}
 #                            port:unit
@@ -134,6 +136,7 @@ foreach python_v ${python_versions} {
         set python_ver_dot  [string index ${python_v} 0].[string range ${python_v} 1 end]
         set python_ver      [string index ${python_v} 0][string range ${python_v} 1 end]
 
+        depends_lib-append  port:python${python_ver}
         depends_build       port:python${python_ver}
         depends_run         port:python${python_ver} \
                             port:unit
@@ -164,6 +167,7 @@ foreach ruby_v ${ruby_versions} {
         set ruby_ver_dot    [string index ${ruby_v} 0].[string range ${ruby_v} 1 end]
         set ruby_ver        [string index ${ruby_v} 0][string range ${ruby_v} 1 end]
 
+        depends_lib-append  port:ruby${ruby_ver}
         depends_build       port:ruby${ruby_ver}
         depends_run         port:ruby${ruby_ver} \
                             port:unit
