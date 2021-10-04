@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -6,8 +6,8 @@ PortGroup               github 1.0
 github.setup            HOST-Oman libraqm 0.7.2 v
 revision                0
 checksums               rmd160  8e03a43bcb1024de4f5a8df6eb22662ff8e27c0b \
-                        sha256  92e765f180033ef3750832eb6fee4e07de3f99bd3d1eae7cf7e4e390ed2ae8eb \
-                        size    223692
+sha256  92e765f180033ef3750832eb6fee4e07de3f99bd3d1eae7cf7e4e390ed2ae8eb \
+size    223692
 
 categories              devel
 platforms               darwin

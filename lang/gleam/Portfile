@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ long_description    Gleam is a type safe functional programming language for \
                     such as Erlang, Elixir and LFE.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  ec07b9a971783cf649469390a2abb6ea4538ebcf \
-                    sha256  9472c5c7108cabf8f7f17bdd4df7b02c6307ea31858bdb90ba5ac94937fe3cd2 \
-                    size    330917
+rmd160  ec07b9a971783cf649469390a2abb6ea4538ebcf \
+sha256  9472c5c7108cabf8f7f17bdd4df7b02c6307ea31858bdb90ba5ac94937fe3cd2 \
+size    330917
 
 depends_lib-append  port:libiconv
 depends_run-append  port:erlang \
@@ -184,9 +184,9 @@ cargo.crates \
     serde_json                      1.0.67  a7f9e390c27c3c0ce8bc5d725f6e4d30a29d26659494aa4b17535f7522c5c950 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
     serde_yaml                      0.8.20  ad104641f3c958dab30eb3010e834c2622d1f3f4c530fef1dee20ad9485f3c09 \
-    sharded-slab                     0.1.3  740223c51853f3145fe7c90360d2d4232f2b62e3449489c207eccde818979982 \
+sharded-slab                     0.1.3  740223c51853f3145fe7c90360d2d4232f2b62e3449489c207eccde818979982 \
     similar                          1.3.0  1ad1d488a557b235fc46dae55512ffbfc429d2482b08b4d9435ab07384ca8aec \
-    sized-chunks                     0.6.5  16d69225bde7a69b235da73377861095455d298f2b970996eec25ddbb42b3d1e \
+sized-chunks                     0.6.5  16d69225bde7a69b235da73377861095455d298f2b970996eec25ddbb42b3d1e \
     slab                             0.4.4  c307a32c1c5c437f38c7fd45d753050587732ba8628319fbdf12a7e289ccc590 \
     smallvec                         1.6.1  fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e \
     socket2                          0.4.1  765f090f0e423d2b55843402a07915add955e7d60657db13707a159727326cad \

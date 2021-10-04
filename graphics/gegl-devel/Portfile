@@ -30,8 +30,8 @@ distname            ${my_name}-${version}
 use_xz              yes
 
 checksums           rmd160  e55ce5195c6db210c790722b7bf94f2f8e3aa0ce \
-                    sha256  668e3c6b9faf75fb00512701c36274ab6f22a8ba05ec62dbf187d34b8d298fa1 \
-                    size    5633796
+sha256  668e3c6b9faf75fb00512701c36274ab6f22a8ba05ec62dbf187d34b8d298fa1 \
+size    5633796
 
 depends_build-append \
                     port:pkgconfig \

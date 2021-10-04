@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ homepage            https://www.openntpd.org/
 master_sites        openbsd:OpenNTPD
 
 checksums           rmd160  5ba2a9e89c328dc95b7718ce6f74049db374fcec \
-                    sha256  8582db838a399153d4a17f2a76518b638cc3020f58028575bf54127518f55a46 \
-                    size    443997
+sha256  8582db838a399153d4a17f2a76518b638cc3020f58028575bf54127518f55a46 \
+size    443997
 
 startupitem.create     yes
 startupitem.netchange  yes

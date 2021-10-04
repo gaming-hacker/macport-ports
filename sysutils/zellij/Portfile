@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -28,9 +28,9 @@ license             MIT
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  2479d3d1c8ad1042935df6d958e2350311e42627 \
-                    sha256  6b12ea039462db0c585b17a153acbd2627b8bd41e6f7615e4c2f718ccc4c9b93 \
-                    size    4099495
+rmd160  2479d3d1c8ad1042935df6d958e2350311e42627 \
+sha256  6b12ea039462db0c585b17a153acbd2627b8bd41e6f7615e4c2f718ccc4c9b93 \
+size    4099495
 
 set zlj_share_dir   ${prefix}/share/${name}
 

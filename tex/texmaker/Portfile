@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake5 1.0
@@ -23,8 +23,8 @@ homepage            ${master_sites}
 use_bzip2           yes
 
 checksums           rmd160  7d91038621ae9090a4aa3b08a19d98da443a90ac \
-                    sha256  526896f2c1ae561130eec7aae815b9dcda9e8eeb772b6541d0dc94ce91a71044 \
-                    size    15199358
+sha256  526896f2c1ae561130eec7aae815b9dcda9e8eeb772b6541d0dc94ce91a71044 \
+size    15199358
 
 qt5.depends_component \
                     qtwebengine

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,12 +17,12 @@ long_description    ${description}
 homepage            http://james.ahlstrom.name/quisk/
 
 checksums           rmd160  7e1d3c24a89e11fca8490f2bd4e09d359a223e76 \
-                    sha256  c76f6414bd1c9b4429d9db76e164bd4eb3652b4789ed56925cc7664f3e54bac4 \
-                    size    3455113
+sha256  c76f6414bd1c9b4429d9db76e164bd4eb3652b4789ed56925cc7664f3e54bac4 \
+size    3455113
 
-python.versions     36 37 38 39
+python.versions 39
 # keep in sync with gnuradio and other SDRs software
-python.default_version 37
+python.default_version 39
 
 patchfiles-append \
     codec2_fix_freedv.c.patch

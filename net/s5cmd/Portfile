@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -22,9 +22,9 @@ long_description    s5cmd is a very fast S3 and local filesystem execution tool.
 
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  40a580718af3c1edeb5d691c4b38454a2992155e \
-                        sha256  5602fc9558f06fa38d3804e077fce18f52fb947ebd259b2fc2cb6d805dbcc3a5 \
-                        size    2373968
+rmd160  40a580718af3c1edeb5d691c4b38454a2992155e \
+sha256  5602fc9558f06fa38d3804e077fce18f52fb947ebd259b2fc2cb6d805dbcc3a5 \
+size    2373968
 
 build.cmd           make
 build.args          build

@@ -25,8 +25,8 @@ distname            ${my_name}-${version}
 use_xz              yes
 
 checksums           rmd160  848aca23f6a4200de1c8086fc1e3a07288534da3 \
-                    sha256  4f0d7f4aaa0bb2e725f349adf7b351a957d9fb26d555d9895a7af816b4167039 \
-                    size    299972
+sha256  4f0d7f4aaa0bb2e725f349adf7b351a957d9fb26d555d9895a7af816b4167039 \
+size    299972
 
 configure.args-append \
                     -Dwith-docs=false

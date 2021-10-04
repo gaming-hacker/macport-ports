@@ -36,8 +36,8 @@ master_sites        ${homepage}/source \
                     ftp://guest.kuria.katowice.pl/pub/openssl/source/
 
 checksums           rmd160  aa470eea95b127e7ea389c39610a7568579d6b86 \
-                    sha256  0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1 \
-                    size    9834044
+sha256  0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1 \
+size    9834044
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     # Having the stdlib set to libc++ on 10.6 causes a dependency on a
@@ -56,7 +56,7 @@ configure.cmd       ./Configure
 configure.args      -L${prefix}/lib \
                     --openssldir=${prefix}/etc/openssl \
                     --libdir=lib/openssl-1.1 \
-                    shared \
+shared \
                     zlib
 # Use SDK if necessary.
 if {${configure.sdkroot} ne ""} {
