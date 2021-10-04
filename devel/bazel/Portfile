@@ -104,14 +104,14 @@ size    269384742
     set extra_args "--host_javabase=@local_jdk//:jdk"
 
 } elseif { "bazel-2.0" eq ${subport} } {
-    
+
     # Specific version for py-tensorflow - DO NOT CHANGE
     github.setup      bazelbuild ${name} 2.0.0
     revision          1
 
     # livecheck none is correct here, see above.
     livecheck.type    none
-    
+
     checksums         rmd160  acf9b886d2ec69f2c7019037e3aeba6de48cb011 \
 sha256  724da3c656f68e787a86ebb9844773aa1c2e3a873cc39462a8f1b336153d6cbb \
 size    259625808
@@ -346,7 +346,7 @@ build {
 
     # Put executable in main working folder
     xinstall -m 755 -W ${worksrcpath}/output ${name} ${worksrcpath}
-    
+
     # Include bash completion support ?
     if { [variant_isset bash_completion]} {
 
