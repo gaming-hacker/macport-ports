@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ license             GPL-3+
 homepage            https://www.gnu.org/software/recutils/
 master_sites        gnu
 checksums           sha256  df8eae69593fdba53e264cbf4b2307dfb82120c09b6fab23e2dad51a89a5b193 \
-rmd160  d3f0042a5898ad5630f1295d9fa2f87a08031a34 \
-size    2474024
+                    rmd160  d3f0042a5898ad5630f1295d9fa2f87a08031a34 \
+                    size    2474024
 
 depends_build       port:flex
 depends_lib         port:curl \
@@ -30,6 +30,10 @@ depends_test        port:check
 
 configure.args      --disable-dependency-tracking \
                     --disable-silent-rules
+
+# This is needed to make the build work on newer versions of MacOS where warnings are treated as errors.
+# See thread at https://lists.gnu.org/archive/html/bug-recutils/2021-09/msg00001.html for details
+configure.cflags    -Wno-implicit-function-declaration
 
 test.target         check
 test.run            yes

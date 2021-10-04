@@ -1,10 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
-PortGroup           github 1.0
-PortGroup           cargo 1.0
+PortGroup           cargo   1.0
+PortGroup           github  1.0
 
-github.setup        orhun git-cliff 0.3.0 v
+github.setup        orhun git-cliff 0.4.0 v
+github.tarball_from archive
 revision            0
 
 description         A highly customizable Changelog Generator that follows \
@@ -17,18 +18,17 @@ long_description    {*}${description}. ${name} can generate changelog files \
                     match the desired format.
 
 categories          devel
-platforms           darwin
+installs_libs       no
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 license             GPL-3.0
-installs_libs       no
+platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-rmd160  d727f8f43d52e6f13c8ef54266d1013d680c9f2c \
-sha256  a2961e97837c40e3b3b00a31e3221585932ac65981bc31d0c20d061c003e9462 \
-size    50090
+                    rmd160  c75ca1cd56c776517d73673d77ab752beeb757fb \
+                    sha256  a02e75d49c10103c9b07169e264479e1b6ca2a5387594057be6dd6953dd2bbe6 \
+                    size    51467
 
-github.tarball_from archive
 
 destroot {
     xinstall -m 755 \
@@ -114,7 +114,7 @@ cargo.crates \
     pest_meta                        2.1.3  54be6e404f5317079812fc8f9f5279de376d8856929e21c184ecf6bbd692a11d \
     pkg-config                      0.3.19  3831453b3449ceb48b6d9c7ad7c96d5ea673e9b470a1dc578c2ce6521230884c \
     ppv-lite86                      0.2.10  ac74c624d6b2d21f425f752262f42188365d7b8ff1aff74c82e45136510a4857 \
-    pretty_assertions                0.7.2  1cab0e7c02cf376875e9335e0ba1da535775beb5450d21e1dffca068818ed98b \
+    pretty_assertions                1.0.0  ec0cfe1b2403f172ba0f234e500906ee0a3e493fb81092dac23ebefe129301cc \
     pretty_env_logger                0.4.0  926d36b9553851b8b0005f1275891b392ee4d2d833852c417ed025477350fb9d \
     proc-macro-error                 1.0.4  da25490ff9892aab3fcf7c36f08cfb902dd3e71ca0f9f9517bea02a73a5ce38c \
     proc-macro-error-attr            1.0.4  a1be40180e52ecc98ad80b184934baf3d0d29f979574e439af5a55274b35f869 \
@@ -138,8 +138,8 @@ cargo.crates \
     serde_derive                   1.0.130  d7bc1a1ab1961464eae040d96713baa5a724a8152c1222492465b54322ec508b \
     serde_json                      1.0.66  336b10da19a12ad094b59d870ebde26a45402e5b470add4b5fd03c5048a32127 \
     serde_regex                      1.1.0  a8136f1a4ea815d7eac4101cfd0b16dc0cb5e1fe1b8609dfd728058656b7badf \
-sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
+    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+    sha2                             0.9.5  b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12 \
     slug                             0.1.4  b3bc762e6a4b6c6fcaade73e77f9ebc6991b676f88bb2358bddb56560f073373 \
     static_assertions                1.1.0  a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \
