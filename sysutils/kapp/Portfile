@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/vmware-tanzu/carvel-kapp 0.40.0 v
+go.setup            github.com/vmware-tanzu/carvel-kapp 0.42.0 v
 name                kapp
 revision            0
 
@@ -23,15 +23,14 @@ long_description    kapp (pronounced: kap) CLI encourages Kubernetes users to \
                     Kubernetes configuration.
 
 categories          sysutils
-license             Apache-2
 installs_libs       no
-
+license             Apache-2
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  c5caab4becaec2d1cd1d9711c6753c1a79956a27 \
-sha256  51cc6ec9aea673d70b45ced19a7835a499cd733e3e960b52a872f1b2997dae23 \
-size    6251216
+checksums           rmd160  1091a98388006d6513f827674ffad1657e659673 \
+                    sha256  620eaabbaf6537ae90443e2eed169809333532aa28723257fd62f3d6d73172b3 \
+                    size    6259741
 
 # Allow fetching dependencies at build time.
 build.env-delete            GO111MODULE=off GOPROXY=off

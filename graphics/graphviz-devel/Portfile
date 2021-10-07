@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                      1.0
 PortGroup                       xcodeversion 1.0
@@ -8,7 +8,7 @@ PortGroup                       compiler_blacklist_versions 1.0
 
 name                            graphviz-devel
 set my_name                     graphviz
-version                         2.48.0
+version                         2.49.1
 set thisbranch                  [strsed ${name} "g/^${my_name}//"]
 set otherbranch                 [expr {${thisbranch} eq {} ? {-devel} : {}}]
 categories                      graphics
@@ -31,9 +31,9 @@ long_description                Graphviz is ${description}. Graph visualization 
                                 simple text language, and produce output in a \
                                 variety of visual and text formats.
 
-checksums                       rmd160  c2c0486f8896a9ae04a5cae90f540f3f2591fe9c \
-sha256  264987fb7927afa07a745e14584be401164a4cdf9ddc9e0334bb5c7b01682186 \
-size    29882711
+checksums                       rmd160  ab2c71686391bb19dce380747caa5313dcb4ac94 \
+                                sha256  ba1aa7a209025cb3fc5aca1f2c0114e18ea3ad29c481d75e4d445ad44e0fb0f7 \
+                                size    29777850
 
 # graphviz needs Xcode 3.1+ to avoid the libGL error when building the smyrna variant
 # graphviz-gui needs Xcode 3.1.2+; see #18811
@@ -128,16 +128,17 @@ platform macosx {
         configure.args-replace  --without-quartz --with-quartz
     }
 
-    post-patch {
-        if {[string match *clang* ${configure.cxx}] && ${configure.cxx_stdlib} eq "libc++"} {
-            reinplace "s:-lstdc\+\+:-lc++:" \
-                ${worksrcpath}/configure.ac \
-                ${worksrcpath}/cmd/dot/Makefile.am \
-                ${worksrcpath}/cmd/edgepaint/Makefile.am \
-                ${worksrcpath}/cmd/mingle/Makefile.am \
-                ${worksrcpath}/plugin/gdiplus/Makefile.am
-        }
-    }
+    # This fix no longer applicable, as of the latest releases
+#    post-patch {
+#        if {[string match *clang* ${configure.cxx}] && ${configure.cxx_stdlib} eq "libc++"} {
+#            reinplace "s:-lstdc\+\+:-lc++:" \
+#                ${worksrcpath}/configure.ac \
+#                ${worksrcpath}/cmd/dot/Makefile.am \
+#                ${worksrcpath}/cmd/edgepaint/Makefile.am \
+#                ${worksrcpath}/cmd/mingle/Makefile.am \
+#                ${worksrcpath}/plugin/gdiplus/Makefile.am
+#        }
+#    }
 }
 
 variant guile description {Include Guile language bindings} {
@@ -196,12 +197,12 @@ variant perl description {Include PERL 5 language bindings} {
 #}
 
 variant python27 description {Include Python 2.7 language bindings} {
-    depends_lib-append          port:python39
+    depends_lib-append          port:python27
     depends_build-append        port:swig-python
 
     configure.args-replace      --disable-swig --enable-swig
     configure.args-replace      --disable-python --enable-python
-    configure.python            ${prefix}/bin/python3.9
+    configure.python            ${prefix}/bin/python2.7
 }
 
 variant ruby description {Include Ruby language bindings} {
@@ -301,8 +302,8 @@ post-destroot {
 }
 
 livecheck.type                  regex
-livecheck.url                   https://www2.graphviz.org/Packages/development/portable_source/
-livecheck.regex                 ${my_name}-(\[0-9\]+\\.\[0-9\]*\[13579\](\\.\[0-9\]+)*)\\.tar
+livecheck.url                   https://gitlab.com/api/v4/projects/4207231/releases
+livecheck.regex                 \"name\":\s*\"(\[0-9\]+\\.\[0-9\]+\\.\[0-9\]+)*\"
 } else {
     livecheck.type              none
 }
@@ -364,16 +365,14 @@ subport gvedit${thisbranch} {
     
     depends_lib-append          port:graphviz${thisbranch}
     
-    ## the sed command in `get_short_version_string` is currently not working,
-    ## so hard-coding the short_version_string
-#    post-extract {
-#        set short_version_string [get_short_version_string]
-#        if {${short_version_string} eq ""} {
-#            return -code error "cannot find ${app.name} short version string"
-#        } else {
-#            ui_debug "${app.name} short version string: ${short_version_string}"
-#        }
-#    }
+    post-extract {
+        set short_version_string [get_short_version_string]
+        if {${short_version_string} eq ""} {
+            return -code error "cannot find ${app.name} short version string"
+        } else {
+            ui_debug "${app.name} short version string: ${short_version_string}"
+        }
+    }
     
     patchfiles                  patch-cmd-gvedit-Makefile.in.diff
     
@@ -387,15 +386,13 @@ subport gvedit${thisbranch} {
     app.name                    GVEdit
     app.executable              gvedit
     app.icon                    ${build.dir}/images/icon.png
-    # from '${build.dir}/mainwindow.cpp' line 276, " version: 1.02\n"
-    app.short_version_string    1
     
-#    pre-destroot {
-#        app.short_version_string [get_short_version_string]
-#    }
-#
-#    proc get_short_version_string {} {
-#        global build.dir
-#        return [exec /usr/bin/sed -E -n s/^\[\[:space:\]\]*"\[Vv\]ersion:\[\[:space:\]\]*(\[0-9.\]+).*/\\1/p ${build.dir}/mainwindow.cpp]
-#    }
+    pre-destroot {
+        app.short_version_string [get_short_version_string]
+    }
+    
+    proc get_short_version_string {} {
+        global build.dir
+        return [exec /usr/bin/sed -E -n s/^\[\[:space:\]\]*\"\[\[:space:\]\]*\[Vv\]ersion:\[\[:space:\]\]*(\[0-9.\]+).*/\\1/p ${build.dir}/mainwindow.cpp]
+    }
 }

@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
 name                py-pydicom
-version             2.2.1
-python.versions 39
+version             2.2.2
+python.versions     27 37 38 39
 platforms           darwin
 license             MIT BSD
 maintainers         {eborisch @eborisch} \
@@ -28,15 +28,15 @@ if {${name} ne ${subport}} {
     if { ${subport} eq "py27-pydicom" } {
         github.setup        pydicom pydicom 1.4.2 v
         checksums \
-rmd160  df34e5bbd665f135df0f34e292bc8d7bfbc81659 \
-sha256  e47ced50f15ab7217dfe8a2463a23eb46079995c98e05178e0b2cba315aadb5e \
-size    35308760
+            rmd160  df34e5bbd665f135df0f34e292bc8d7bfbc81659 \
+            sha256  e47ced50f15ab7217dfe8a2463a23eb46079995c98e05178e0b2cba315aadb5e \
+            size    35308760
     } else {
         github.setup        pydicom pydicom ${version} v
         checksums \
-rmd160  f298b1fa14a2c1039e07dd73d7471bc7cac54601 \
-sha256  e2edfa86ab4c2bbdfe476c451228149470e06fdd50d49c07755a4f3f8fb0b7b7 \
-size    2173462
+            rmd160  46aaa15383711a56477bfcaeba959ca7c0e06477 \
+            sha256  6ef1c299e8898f65f51880fa4d638c62a49a9dca47d1b327142e4eadcbdb1672 \
+            size    2174907
     }
 
     depends_lib-append      port:py${python.version}-numpy
