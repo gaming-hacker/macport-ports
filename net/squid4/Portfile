@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -32,9 +32,9 @@ master_sites    https://mirror.aarnet.edu.au/pub/squid/squid/ \
 distname        squid-${version}
 use_xz          yes
 checksums       md5 47b94b2d27516f1764c9d5dc1b9645e5 \
-                sha1 f6bd15fabbd67b53a831fe9f67de3279868036c1 \
-                rmd160 bbd2ade0960eac70298b78a34bb85cdf6cce617c \
-                sha256 cb928ac08c7c86b151b1c8f827abe1a84d83181a2a86e0d512286163e1e31418
+sha1 f6bd15fabbd67b53a831fe9f67de3279868036c1 \
+rmd160 bbd2ade0960eac70298b78a34bb85cdf6cce617c \
+sha256 cb928ac08c7c86b151b1c8f827abe1a84d83181a2a86e0d512286163e1e31418
 
 patchfiles      patch-cf.data.pre.diff \
                 patch-compat_types.h.diff \
@@ -51,7 +51,7 @@ depends_lib     port:expat port:zlib
 
 conflicts       squid2 squid3
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args  --mandir=${prefix}/share/man \
                 --sysconfdir=${prefix}/etc/squid \

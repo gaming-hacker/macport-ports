@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description \
 homepage            https://plotly.com/python/
 
 checksums           rmd160  679e2ce0095eb3b9e250ed2d6b100120a4613bc1 \
-                    sha256  6598393e898a9c5ae78397f76f07002ec41fd92e5f746d3b9806248d53885643 \
-                    size    7296601
+sha256  6598393e898a9c5ae78397f76f07002ec41fd92e5f746d3b9806248d53885643 \
+size    7296601
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

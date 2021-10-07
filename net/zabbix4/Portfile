@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -45,9 +45,9 @@ dist_subdir         zabbix${zver}
 if {$zver == 4} {
     livecheck.regex     "zabbix-(4\\.0\\.\[0-9\]+).tar.gz"
     checksums \
-        rmd160  1eb17c6bfeb9e8eeda2ee74717cf0b4b49a138b9 \
-        sha256  57773c6fb02c42452f39d17fbd3f0a5af1a00162db2a727396b2261e3c015807 \
-        size    17614409
+rmd160  1eb17c6bfeb9e8eeda2ee74717cf0b4b49a138b9 \
+sha256  57773c6fb02c42452f39d17fbd3f0a5af1a00162db2a727396b2261e3c015807 \
+size    17614409
 }
 
 if {$zver == 42 || $zver == 44} {
@@ -62,9 +62,9 @@ if {$zver == 42 || $zver == 44} {
 if {$zver == 5} {
     livecheck.regex     "zabbix-(5\\.0\\.\[0-9\]+).tar.gz"
     checksums \
-        rmd160  85e4adca20421a88565e7caafa6a91b1a6617b32 \
-        sha256  c458f62ed4349abcb558263efc5c6292b397a7cf4d3c506a43d5b7cf876a36d8 \
-        size    21312183
+rmd160  85e4adca20421a88565e7caafa6a91b1a6617b32 \
+sha256  c458f62ed4349abcb558263efc5c6292b397a7cf4d3c506a43d5b7cf876a36d8 \
+size    21312183
 }
 
 patchfiles          log_and_pid_locations.patch
