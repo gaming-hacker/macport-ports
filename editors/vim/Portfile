@@ -6,7 +6,7 @@ PortGroup           github 1.0
 set vim_version     8.2
 set vim_patchlevel  2681
 github.setup        vim vim ${vim_version}.${vim_patchlevel} v
-revision            1
+revision            2
 
 categories          editors
 platforms           darwin freebsd
@@ -74,12 +74,14 @@ variant athena description {Build GUI version using Athena widgets} requires x11
 variant gtk2 description {Build GUI version using GTK 2.x widgets} requires x11 conflicts athena gtk3 motif {
     configure.args-delete   --disable-gui
     configure.args-append   --enable-gui=gtk2 --disable-darwin
-    depends_lib-append      port:gtk2
+    depends_lib-append      port:gtk2 \
+                            port:pkgconfig
 }
 variant gtk3 description {Build GUI version using GTK 3.x widgets} requires x11 conflicts athena gtk2 motif {
     configure.args-delete   --disable-gui
     configure.args-append   --enable-gui=gtk3 --disable-darwin
-    depends_lib-append      port:gtk3
+    depends_lib-append      port:gtk3 \
+                            port:pkgconfig
 }
 variant motif description {Build GUI version with Motif widgets} requires x11 conflicts athena gtk2 gtk3 {
     configure.args-delete   --disable-gui
