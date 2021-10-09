@@ -19,7 +19,7 @@ size    2063756
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11
-maintainers             {ryandesign @ryandesign} openmaintainer
+maintainers             {ryandesign @ryandesign} {mascguy @mascguy} openmaintainer
 license                 LGPL-2+
 homepage                https://www.pango.org/
 master_sites            gnome:sources/${my_name}/${branch}
@@ -46,7 +46,7 @@ depends_lib \
     path:lib/pkgconfig/glib-2.0.pc:glib2 \
     path:lib/pkgconfig/cairo.pc:cairo \
     port:fribidi \
-    port:harfbuzz-devel
+    path:lib/pkgconfig/harfbuzz.pc:harfbuzz
 
 patchfiles              pango-tiger-no-coretext.diff
 
@@ -66,6 +66,17 @@ license_noconflict      gobject-introspection
 platform darwin 8 {
     # meson on Tiger cannot use rpaths, so we workaround with this to find dylib
     build.env-append    "DYLD_LIBRARY_PATH=${build_dir}/pango"
+}
+
+# Fix build errors on 10.4 and 10.5, caused by outdated 'nm'
+# Issue: https://trac.macports.org/ticket/60253
+if {${os.platform} eq "darwin" && ${os.major} < 10} {
+    depends_build-append \
+                        port:cctools
+    configure.env-append \
+                        NM=${prefix}/bin/nm
+    configure.args-append \
+                        -Dlt_cv_path_NM=${prefix}/bin/nm
 }
 
 if {${os.platform} eq "darwin" && ${os.subplatform} eq "macosx" && ${os.major} > 8} {
@@ -88,8 +99,10 @@ if {${os.platform} eq "darwin" && ${os.subplatform} eq "macosx" && ${os.major} >
 }
 
 variant x11 {
-    depends_lib-append      port:Xft2
-    configure.args-replace  -Dxft=disabled -Dxft=enabled
+    depends_lib-append \
+                        port:Xft2
+    configure.args-replace \
+                        -Dxft=disabled -Dxft=enabled
 }
 
 default_variants        +x11

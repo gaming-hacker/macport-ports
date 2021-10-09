@@ -1,24 +1,25 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
 PortGroup               meson 1.0
 
 # Please keep the pango and pango-devel ports as similar as possible.
+# Note: Stable Pango releases have an even-numbered minor version.
 
 name                    pango
 conflicts               pango-devel
 set my_name             pango
 epoch                   1
-version                 1.49.0
+version                 1.48.9
 revision                0
-checksums               rmd160  606410f9b83a243b26d5fc5755ef936de3311136 \
-sha256  9d42177518c95815b11f5c9face419d64c397c7c0fff686eb516e6d4c24e02a8 \
-size    2332588
+checksums               rmd160  d32ff4e68d870416e53b13b2dbac8f8ec57f51be \
+                        sha256  a913657d3fe5aa04c03958a3b5d3fc859e891b75cd81b873a819330f6c0872aa \
+                        size    2063756
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11
-maintainers             {ryandesign @ryandesign} openmaintainer
+maintainers             {ryandesign @ryandesign} {mascguy @mascguy} openmaintainer
 license                 LGPL-2+
 homepage                https://www.pango.org/
 master_sites            gnome:sources/${my_name}/${branch}
@@ -38,7 +39,8 @@ long_description \
 
 depends_build \
     port:pkgconfig \
-    port:gobject-introspection
+    port:gobject-introspection \
+    port:help2man
 
 depends_lib \
     path:lib/pkgconfig/glib-2.0.pc:glib2 \
@@ -46,24 +48,44 @@ depends_lib \
     port:fribidi \
     path:lib/pkgconfig/harfbuzz.pc:harfbuzz
 
+patchfiles              pango-tiger-no-coretext.diff
+
 configure.args-append   -Dxft=disabled \
                         -Dintrospection=enabled
 
 configure.cflags-append \
                         -Wno-error,-Wimplicit-fallthrough
 
-compiler.cxx_standard 2017
+compiler.cxx_standard   2011
 configure.cxxflags-append \
-                        -std=c++17
+                        -std=c++11
 
 license_noconflict      gobject-introspection
 
-platform macosx {
+# Fix help2man invocation on Tiger
+platform darwin 8 {
+    # meson on Tiger cannot use rpaths, so we workaround with this to find dylib
+    build.env-append    "DYLD_LIBRARY_PATH=${build_dir}/pango"
+}
+
+# Fix build errors on 10.4 and 10.5, caused by outdated 'nm'
+# Issue: https://trac.macports.org/ticket/60253
+if {${os.platform} eq "darwin" && ${os.major} < 10} {
+    depends_build-append \
+                        port:cctools
+    configure.env-append \
+                        NM=${prefix}/bin/nm
+    configure.args-append \
+                        -Dlt_cv_path_NM=${prefix}/bin/nm
+}
+
+if {${os.platform} eq "darwin" && ${os.subplatform} eq "macosx" && ${os.major} > 8} {
     variant quartz {
         # Although this variant does nothing, pango will automatically build
-        # itself differently depending on whether or not cairo is installed with
-        # the quartz variant. Therefore this variant is necessary to be able to
-        # distinguish whether an installed pango has Quartz support or not.
+        # itself differently depending on whether or not cairo is installed
+        # with the quartz variant and whether CoreText is available. Therefore
+        # this variant is necessary to be able to distinguish whether an
+        # installed pango has Quartz support or not.
     }
 
     default_variants    +quartz
@@ -77,14 +99,16 @@ platform macosx {
 }
 
 variant x11 {
-    depends_lib-append      port:Xft2
-    configure.args-replace  -Dxft=disabled -Dxft=enabled
+    depends_lib-append \
+                        port:Xft2
+    configure.args-replace \
+                        -Dxft=disabled -Dxft=enabled
 }
 
 default_variants        +x11
-if {${os.platform} ne "darwin" || ${os.subplatform} ne "macosx"} {
-    # When not on macOS, don't allow X11 support to be disabled, since it is the
-    # only available option.
+if {${os.platform} ne "darwin" || ${os.subplatform} ne "macosx" || ${os.major} <= 8} {
+    # When not on macOS 10.5+, don't allow X11 support to be disabled, since it
+    # is the only available option.
     variant_set         x11
 }
 
@@ -94,6 +118,9 @@ if {[variant_isset x11]} {
 
 pre-configure {
     delete ${worksrcpath}/subprojects/glib ${worksrcpath}/subprojects/glib.wrap
+
+    # Fix for issue 56409: pango-view.1 man page not generated
+    delete ${worksrcpath}/pango-view/pango-view.1.in
 }
 
 post-destroot {

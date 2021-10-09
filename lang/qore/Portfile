@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 name                qore
-version             1.0.8
+version             1.0.9
 categories          lang
 license             {LGPL-2.1 MIT}
 maintainers         {davidnichols @davidnich} openmaintainer
@@ -14,11 +14,11 @@ homepage            http://qore.org
 platforms           darwin
 master_sites        https://github.com/qorelanguage/qore/releases/download/release-${version}
 
-checksums           rmd160 158d605aa5b11cc691a454a1e4bfddf4c2ed14f8 \
-sha256 45c50647f68ce40b066812f8bf3796067bfe75f439c34f1aba781bc461af397b \
-size 43254812
+checksums           rmd160 796216867b030935aa7a7c05412fbf1bfb852af6 \
+                    sha256 e21c3c9315dfb0aab6fcfb77dca41bb31667ed5184b10d63131b0b74daea4fb3 \
+                    size 43125014
 
-compiler.cxx_standard 2017
+compiler.cxx_standard  2011
 
 depends_build-append \
                     port:flex \
