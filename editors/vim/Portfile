@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
 set vim_version     8.2
-set vim_patchlevel  3370
+set vim_patchlevel  3491
 github.setup        vim vim ${vim_version}.${vim_patchlevel} v
-revision            2
+revision            0
 
 categories          editors
 platforms           darwin freebsd
@@ -20,9 +20,9 @@ long_description    Vim is an advanced text editor that seeks to provide the\
 
 homepage            https://www.vim.org/
 
-checksums           rmd160  2e30082d1e9e301eb7fc26d009adb0fe1bd343cf \
-sha256  1cf7397ba345a7ab85ffbc3b712deb1fa8aac3809fc40835d46b14b2f3c62a17 \
-size    15699003
+checksums           rmd160  f40126b0f0fc89ee309cdc890a601c791ad16fa1 \
+                    sha256  1bdda74ccf0d21c50c8bc806172e284384b80a4d34412b3e5fc25ea454248820 \
+                    size    15753385
 
 depends_lib         port:ncurses \
                     port:gettext \
@@ -74,14 +74,12 @@ variant athena description {Build GUI version using Athena widgets} requires x11
 variant gtk2 description {Build GUI version using GTK 2.x widgets} requires x11 conflicts athena gtk3 motif {
     configure.args-delete   --disable-gui
     configure.args-append   --enable-gui=gtk2 --disable-darwin
-    depends_lib-append      port:gtk2 \
-                            port:pkgconfig
+    depends_lib-append      port:gtk2
 }
 variant gtk3 description {Build GUI version using GTK 3.x widgets} requires x11 conflicts athena gtk2 motif {
     configure.args-delete   --disable-gui
     configure.args-append   --enable-gui=gtk3 --disable-darwin
-    depends_lib-append      port:gtk3 \
-                            port:pkgconfig
+    depends_lib-append      port:gtk3
 }
 variant motif description {Build GUI version with Motif widgets} requires x11 conflicts athena gtk2 gtk3 {
     configure.args-delete   --disable-gui
@@ -107,36 +105,36 @@ variant perl description {Enable Perl scripting} {
 }
 
 variant python27 description {Enable Python scripting} {
-    configure.args-append   --enable-pythoninterp --with-python-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-pythoninterp --with-python-command=${prefix}/bin/python2.7
     patchfiles-append       patch-python.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python27
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
     depends_build-append port:autoconf
 }
 variant python36 conflicts python37 python38 python39 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.6
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python36
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
     depends_build-append port:autoconf
 }
 variant python37 conflicts python36 python38 python39 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.7
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python37
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
     depends_build-append port:autoconf
 }
 variant python38 conflicts python36 python37 python39 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.8
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python38
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
