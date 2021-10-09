@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -40,13 +40,13 @@ if {${os.platform} eq "darwin" && ${os.major} < 16} {
     set go_armbin_dist ${name}${version}.darwin-arm64${extract.suffix}
 
     checksums       ${go_src_dist} \
-                        rmd160  26d7fee33a77331e78c2d0563dff25823d88754f \
-                        sha256  0a1cc7fd7bd20448f71ebed64d846138850d5099b18cf5cc10a4fc45160d8c3d \
-                        size    20921003 \
+rmd160  26d7fee33a77331e78c2d0563dff25823d88754f \
+sha256  0a1cc7fd7bd20448f71ebed64d846138850d5099b18cf5cc10a4fc45160d8c3d \
+size    20921003 \
                     ${go_armbin_dist} \
-                        rmd160  235ccdbe8600589c1a8b74087696d2a97baf1609 \
-                        sha256  cfbb4fa46f09671b7fe21be06232abad36cfef1673b45b92229fa15e75d347b6 \
-                        size    125698903
+rmd160  235ccdbe8600589c1a8b74087696d2a97baf1609 \
+sha256  cfbb4fa46f09671b7fe21be06232abad36cfef1673b45b92229fa15e75d347b6 \
+size    125698903
 } else {
     # macOS 10.12+
     version         1.17.2
@@ -56,13 +56,13 @@ if {${os.platform} eq "darwin" && ${os.major} < 16} {
     set go_armbin_dist ${name}${version}.darwin-arm64${extract.suffix}
 
     checksums       ${go_src_dist} \
-                        rmd160  746baea495791be0e9f4ed6a162cc4466d4ce4cd \
-                        sha256  2255eb3e4e824dd7d5fcdc2e7f84534371c186312e546fb1086a34c17752f431 \
-                        size    22182111 \
+rmd160  746baea495791be0e9f4ed6a162cc4466d4ce4cd \
+sha256  2255eb3e4e824dd7d5fcdc2e7f84534371c186312e546fb1086a34c17752f431 \
+size    22182111 \
                     ${go_armbin_dist} \
-                        rmd160  fee842e0a9f3e35c5f092e4a3a00baa3a187e0fb \
-                        sha256  ce8771bd3edfb5b28104084b56bbb532eeb47fbb7769c3e664c6223712c30904 \
-                        size    129424944
+rmd160  fee842e0a9f3e35c5f092e4a3a00baa3a187e0fb \
+sha256  ce8771bd3edfb5b28104084b56bbb532eeb47fbb7769c3e664c6223712c30904 \
+size    129424944
 }
 
 

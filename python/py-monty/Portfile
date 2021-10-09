@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    \
 homepage            https://guide.materialsvirtuallab.org/monty/
 
 checksums           rmd160  269b60978d925ea557d0ad98ec94840d4e140569 \
-                    sha256  d4d5b85566bda80360e275e6ffb72228d203de68c5155446a0e09f19c63e8540 \
-                    size    38323
+sha256  d4d5b85566bda80360e275e6ffb72228d203de68c5155446a0e09f19c63e8540 \
+size    38323
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
