@@ -4,9 +4,9 @@ PortSystem          1.0
 PortGroup           github 1.0
 
 set vim_version     8.2
-set vim_patchlevel  3491
+set vim_patchlevel  2681
 github.setup        vim vim ${vim_version}.${vim_patchlevel} v
-revision            0
+revision            2
 
 categories          editors
 platforms           darwin freebsd
@@ -20,9 +20,9 @@ long_description    Vim is an advanced text editor that seeks to provide the\
 
 homepage            https://www.vim.org/
 
-checksums           rmd160  f40126b0f0fc89ee309cdc890a601c791ad16fa1 \
-                    sha256  1bdda74ccf0d21c50c8bc806172e284384b80a4d34412b3e5fc25ea454248820 \
-                    size    15753385
+checksums           rmd160  6635aee5718a31c6b692b3529fb4ea96a217eb20 \
+                    sha256  f0b8b7f013097adc9b3a40d199f4c5bc58cba9774b08bb1427ce51bd7dbf50d8 \
+                    size    15458967
 
 depends_lib         port:ncurses \
                     port:gettext \
@@ -43,6 +43,7 @@ configure.args      --disable-gui \
                     --without-x \
                     --without-local-dir \
                     --disable-gpm \
+                    --disable-canberra \
                     --mandir=${prefix}/share/man \
                     --with-tlib=ncurses \
                     --enable-multibyte \
