@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    ${description}. It uses the same native messaging interface 
                     open-source ExpressVPN browser extension.
 
 checksums           rmd160  d72ec5e5da46eb3a8535369b099be016f35327e1 \
-                    sha256  5cc00ffb222387c0dc19d3251b338607ccda47869af5659475779c07ad71171e \
-                    size    858176
+sha256  5cc00ffb222387c0dc19d3251b338607ccda47869af5659475779c07ad71171e \
+size    858176
 
 depends_build       port:msbuild
 depends_lib         port:mono \

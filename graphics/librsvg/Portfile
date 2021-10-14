@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -21,8 +21,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  97ad5e5b6c45046c4bdc4a5098897605d100c3ea \
-                    sha256  949dffcb0414865409e17a6c89ae30bc8bb014a51fba5186f73d1a46c6c5ccde \
-                    size    23159536
+sha256  949dffcb0414865409e17a6c89ae30bc8bb014a51fba5186f73d1a46c6c5ccde \
+size    23159536
 
 depends_build-append port:pkgconfig
 
@@ -62,8 +62,8 @@ if {${os.platform} eq "darwin" && (${os.major} < ${max_darwin_for_rust} || ${bui
     epoch           1
 
     checksums       rmd160  e697e1220779f77e81a890718ef5cda5b5e6b740 \
-                    sha256  cff4dd3c3b78bfe99d8fcfad3b8ba1eee3289a0823c0e118d78106be6b84c92b \
-                    size    1796376
+sha256  cff4dd3c3b78bfe99d8fcfad3b8ba1eee3289a0823c0e118d78106be6b84c92b \
+size    1796376
 
     # pre-cargo versions still use libcroco
     depends_lib-append \

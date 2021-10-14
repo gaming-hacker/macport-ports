@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -43,8 +43,8 @@ master_sites        ${homepage}/source \
                     ftp://guest.kuria.katowice.pl/pub/openssl/source/
 
 checksums           rmd160  a31de80cc0ab6b37bc92fa6e0c16fb94e95a599e \
-                    sha256  59eedfcb46c25214c9bd37ed6078297b4df01d012267fe9e9eee31f61bc70536 \
-                    size    14978663
+sha256  59eedfcb46c25214c9bd37ed6078297b4df01d012267fe9e9eee31f61bc70536 \
+size    14978663
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     # Having the stdlib set to libc++ on 10.6 causes a dependency on a
@@ -88,7 +88,7 @@ configure.cmd       ./Configure
 configure.pre_args  --prefix=${my_prefix}
 configure.args      -L${prefix}/lib \
                     --openssldir=${my_prefix}/etc/openssl \
-                    shared \
+shared \
                     zlib
 
 # Use SDK if necessary.
