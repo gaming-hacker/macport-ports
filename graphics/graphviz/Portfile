@@ -58,7 +58,8 @@ revision                        0
 
 conflicts                       graphviz${otherbranch}
 
-depends_build                   port:pkgconfig
+depends_build                   port:pkgconfig \
+                                port:autoconf-archive
 
 depends_lib                     path:include/turbojpeg.h:libjpeg-turbo \
                                 port:libpng \
@@ -120,7 +121,7 @@ configure.args                  --disable-silent-rules \
 
 # Teach glibtool about -stdlib=libc++
 use_autoreconf  yes
-autoreconf.args -fvi
+autoreconf.args -vif
 if {[vercmp [macports_version] 2.6.99] >= 0} {
 configure.checks.implicit_function_declaration.whitelist-append strchr
 }
