@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-sunpy
-version             3.0.1
+version             3.0.2
 revision            0
 categories          python
 license             BSD
@@ -15,11 +15,11 @@ long_description    {*}${description}
 platforms           darwin
 homepage            https://sunpy.org
 
-python.versions 39
+python.versions     37 38 39
 
-checksums           rmd160  d4f961e57ec0425f75b859fcc01a1b2a44d5e644 \
-sha256  5a9aa4080c0361be8bf96e154c2ff56ae1956db967358c01c5b93eb596c0881c \
-size    7532016
+checksums           rmd160  4013fbb4c808e184c9099336c31bab888eda3252 \
+                    sha256  5dcd2c5cbf2f419da00abde00798d067b515c2f082ce63f4fbe1de47682c1c41 \
+                    size    7536590
 
 if {${name} ne ${subport}} {
     depends_build-append \

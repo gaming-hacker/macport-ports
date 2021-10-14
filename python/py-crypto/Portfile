@@ -29,6 +29,9 @@ size    446240
 python.versions 39
 
 if {${name} ne ${subport}} {
+    # See: See: https://trac.macports.org/ticket/63481
+    conflicts           py${python.version}-pycryptodome
+
     depends_lib-append  port:gmp
 
     post-destroot {
