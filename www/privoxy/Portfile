@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           gpg_verify 1.0
@@ -30,9 +30,9 @@ distfiles           ${distname}${extract.suffix}
 extract.only        ${distname}${extract.suffix}
 
 checksums           ${distname}${extract.suffix} \
-rmd160  e6fa3d638af4054d97be87df64d156bdbcb4057a \
-sha256  c61de4008c62445ec18f1f270407cbf2372eaba93beaccdc9e3238bb2defeed7 \
-size    1834528
+                    rmd160  e6fa3d638af4054d97be87df64d156bdbcb4057a \
+                    sha256  c61de4008c62445ec18f1f270407cbf2372eaba93beaccdc9e3238bb2defeed7 \
+                    size    1834528
 
 gpg_verify.use_gpg_verification \
                     yes
@@ -42,7 +42,7 @@ if {[option gpg_verify.use_gpg_verification]} {
                     ${distname}${extract.suffix}.asc
     checksums-append \
                     ${distname}${extract.suffix}.asc \
-size    833
+                    size    833
 
     post-checksum {
         gpg_verify.verify_gpg_signature \
@@ -318,7 +318,7 @@ if { [variant_isset "https_inspection"] } {
             openssl pkcs12 -export -out certs/ca.p12 \\
                 -inkey private/ca.key.pem -in certs/ca.cert.pem \\
                 -passin file:private/passphrase.txt \\
-                -passout pass:\$(head -1 private/passphrase.txt)
+                -passout pass:\$'${tls_ca_passphrase}'
 TLS_PRIVOXY_ROOT_CA
 "
 
@@ -381,6 +381,7 @@ platform darwin {
     startupitem.stop-append     "else"
     startupitem.stop-append     "\t/usr/bin/killall -SIGUSR1 privoxy 2>/dev/null"
     startupitem.stop-append     "fi"
+    startupitem.pidfile         auto ${prefix}/var/run/privoxy.pid
 }
 
 livecheck.type      regex
