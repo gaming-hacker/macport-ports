@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 PortGroup        github 1.0
@@ -24,8 +24,8 @@ long_description libuv is a multi-platform support library with a \
 homepage         https://libuv.org/
 
 checksums        rmd160  09e85ff38d67be34eb467ecb72d9a092de298ec8 \
-                 sha256  1aa2d2b85899976f47313d80737a57cdac943ba39df993cfca36944ccbecaffa \
-                 size    1293521
+sha256  1aa2d2b85899976f47313d80737a57cdac943ba39df993cfca36944ccbecaffa \
+size    1293521
 
 patchfiles       patch-libuv-legacy.diff \
                  patch-libuv-unix-core-close-nocancel.diff

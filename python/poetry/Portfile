@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -24,8 +24,8 @@ long_description        Poetry: Dependency Management for Python. \
 homepage                https://python-poetry.org/
 
 checksums               rmd160  341856b46f96107aa4ea0b157e3c2d05e448c426 \
-                        sha256  7d7d22f55fbebb830cc85b1c69cd7a91fd85f49e5396e7a14b953645a470f69e \
-                        size    135723
+sha256  7d7d22f55fbebb830cc85b1c69cd7a91fd85f49e5396e7a14b953645a470f69e \
+size    135723
 
 variant python37 conflicts python38 python39 description {Use Python 3.7} {}
 variant python38 conflicts python37 python39 description {Use Python 3.8} {}

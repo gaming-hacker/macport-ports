@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ if {${subport} eq ${name}} {
     github.setup        scummvm scummvm 2.5.0 v
     revision            0
     checksums           sha256  b47ee4b195828d2c358e38a4088eda49886dc37a04f1cc17b981345a59e0d623 \
-                        rmd160  a4fa5b99f483d27e7c132fd5c553aa88030c627e \
-                        size    130095472
+rmd160  a4fa5b99f483d27e7c132fd5c553aa88030c627e \
+size    130095472
 
     conflicts           ${name}-devel
     long_description ${description}: \
@@ -45,8 +45,8 @@ subport ${name}-devel {
     version             20211011
     revision            0
     checksums           rmd160  ff96dad1308e4184a4965eeaec35cd592bc65aa6 \
-                        sha256  96cd2135dcdb0ffe4de802181f14faa821f5868ce1c0bff4e869f1488a18e9de \
-                        size    151853236
+sha256  96cd2135dcdb0ffe4de802181f14faa821f5868ce1c0bff4e869f1488a18e9de \
+size    151853236
 
     conflicts           ${name}
     long_description ${description}: \
@@ -119,7 +119,7 @@ platform powerpc {
 }
 
 # Leopard build, at least, fails without c++11
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 variant mpeg2 description {add mpeg2 support - has many dependencies} {
      # this builds fine, but libmpeg2 is old (2008) and pulls in a lot of deps
@@ -132,7 +132,7 @@ variant mpeg2 description {add mpeg2 support - has many dependencies} {
                     port:libsdl \
                     port:libxml2 \
                     path:lib/libssl.dylib:openssl \
-                    port:python27 \
+                    port:python39 \
                     port:python2_select \
                     port:python_select \
                     port:sqlite3 \

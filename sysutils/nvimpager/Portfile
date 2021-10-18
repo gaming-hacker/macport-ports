@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ description         Using neovim as a pager to view man pages, git diffs,\
 long_description    {*}${description}
 
 checksums           rmd160  e3208a5ef6242b7293f343d91df8f3b8109512b5 \
-                    sha256  c369c75f3de0c95d8ceca5ab13deaae22626b08bcd2f98b2b42df85ca60d7609 \
-                    size    25641
+sha256  c369c75f3de0c95d8ceca5ab13deaae22626b08bcd2f98b2b42df85ca60d7609 \
+size    25641
 
 depends_build       port:scdoc
 depends_run         port:bash port:neovim

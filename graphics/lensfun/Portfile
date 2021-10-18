@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -24,8 +24,8 @@ homepage            http://lensfun.sourceforge.net/
 master_sites        sourceforge:project/${name}/${version}
 
 checksums           rmd160  646fdf37b12eee66ac9edd6c0e92585756e51dc4 \
-                    sha256  82c29c833c1604c48ca3ab8a35e86b7189b8effac1b1476095c0529afb702808 \
-                    size    2731561
+sha256  82c29c833c1604c48ca3ab8a35e86b7189b8effac1b1476095c0529afb702808 \
+size    2731561
 
 # With 0.3.0 and gcc-4.2:
 #    #error "I don't know how to change symbol visibility for your compiler"

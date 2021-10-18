@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,9 +26,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  fe921cc02e9b9eef6da7b2736450833d4707e3ce \
-                    sha256  a8775b7d8524098311ea88cb4e00a5e8f9f3ff187c982aabebaf88498f32778b \
-                    size    218093
+rmd160  fe921cc02e9b9eef6da7b2736450833d4707e3ce \
+sha256  a8775b7d8524098311ea88cb4e00a5e8f9f3ff187c982aabebaf88498f32778b \
+size    218093
 
 depends_lib-append  port:libgit2
 
@@ -241,7 +241,7 @@ cargo.crates \
     serde_derive                   1.0.129  e57ae87ad533d9a56427558b516d0adac283614e347abf85b0dc0cbbf0a249f3 \
     serde_json                      1.0.66  336b10da19a12ad094b59d870ebde26a45402e5b470add4b5fd03c5048a32127 \
     serde_yaml                      0.8.20  ad104641f3c958dab30eb3010e834c2622d1f3f4c530fef1dee20ad9485f3c09 \
-    sharded-slab                     0.1.3  740223c51853f3145fe7c90360d2d4232f2b62e3449489c207eccde818979982 \
+sharded-slab                     0.1.3  740223c51853f3145fe7c90360d2d4232f2b62e3449489c207eccde818979982 \
     signal-hook                      0.3.9  470c5a6397076fae0094aaf06a08e6ba6f37acb77d3b1b91ea92b4d6c8650c39 \
     signal-hook-mio                  0.2.1  29fd5867f1c4f2c5be079aee7a2adf1152ebb04a4bc4d341f504b7dece607ed4 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ maintainers         {@szczad gmail.com:szczad} \
 platforms           darwin
 
 checksums           rmd160  769486f7a1313670d5054e9e9c09303d9f4c985c \
-                    sha256  7fa79d4693b7752d26f41fe00a484ed1d07f7c78413d73ef153bb4b193b8915b \
-                    size    9964562
+sha256  7fa79d4693b7752d26f41fe00a484ed1d07f7c78413d73ef153bb4b193b8915b \
+size    9964562
 
 # Allow fetching dependencies
 build.env-delete    GO111MODULE=off GOPROXY=off
