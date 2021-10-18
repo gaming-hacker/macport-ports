@@ -21,6 +21,6 @@ sha1    d8f8cccb98c27e1ae97af675f62fa286a03cdcbf \
 rmd160  ee98aecfa678586573938f49e46a200c0332c72a
 
 depends_build       port:intltool port:pkgconfig
-depends_lib         port:gtk2
+depends_lib         path:lib/pkgconfig/gtk+-2.0.pc:gtk2
 
 configure.args      --mandir=${prefix}/share/man

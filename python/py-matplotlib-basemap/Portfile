@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,10 +18,10 @@ long_description    Matplotlib basemap is a matplotlib toolkit python library \
                     for plotting data on map projections
 
 checksums           rmd160  f2c03ce587eb4cd7624bce7f524aa1165c4f0843 \
-sha256  620ce82a32078865617b2085c5257398fa6086f4408601aa047828655ae450c6 \
-size    132525148
+                    sha256  620ce82a32078865617b2085c5257398fa6086f4408601aa047828655ae450c6 \
+                    size    132525148
 
-python.versions 39
+python.versions     27 35 36 37 38 39
 
 build.env-append    GEOS_DIR=${prefix}
 destroot.env-append GEOS_DIR=${prefix}
@@ -29,6 +29,8 @@ destroot.env-append GEOS_DIR=${prefix}
 universal_variant   no
 
 if {${name} ne ${subport}} {
+    compiler.c_standard 1999
+
     depends_build-append \
                     port:py${python.version}-setuptools
 
@@ -39,6 +41,20 @@ if {${name} ne ${subport}} {
                     port:py${python.version}-pyproj \
                     port:py${python.version}-pyshp \
                     port:py${python.version}-six
+
+    # The bundled src/_geoslib.c file is incompatible with Python 3.9
+    # See https://github.com/matplotlib/basemap/issues/518
+    # regenerate using cythonize
+    if {${python.version} eq 39} {
+        depends_build-append \
+                    port:py${python.version}-cython
+
+        post-extract {
+            delete ${worksrcpath}/src/_geoslib.c
+
+            exec ${prefix}/bin/cythonize-${python.branch} -3 ${worksrcpath}/src/_geoslib.pyx
+        }
+    }
 
     post-destroot {
         delete ${destroot}${python.pkgd}/mpl_toolkits/__init__.py

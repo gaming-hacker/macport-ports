@@ -22,7 +22,7 @@ sha256  04004fc1097e0e45945180f844b1f7cef62db18390d752c8abca78253192f6c4
 depends_build   port:pkgconfig
 
 depends_lib     path:lib/pkgconfig/glib-2.0.pc:glib2 \
-                port:gtk2 \
+                path:lib/pkgconfig/gtk+-2.0.pc:gtk2 \
                 port:libxml2 \
                 port:gnutls \
                 port:libgsasl \

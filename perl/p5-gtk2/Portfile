@@ -23,7 +23,7 @@ size    766708
 
 if {${perl5.major} != ""} {
     depends_lib-append \
-                    port:gtk2 \
+                    path:lib/pkgconfig/gtk+-2.0.pc:gtk2 \
                     port:p${perl5.major}-extutils-depends \
                     port:p${perl5.major}-extutils-pkgconfig \
                     port:p${perl5.major}-glib \

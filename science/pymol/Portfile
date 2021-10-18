@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,18 +24,18 @@ long_description    PyMOL is a molecular graphics system with an embedded Python
 homepage            https://www.pymol.org/
 
 checksums           rmd160  6432d47616aee1e5d9d40cc2a74425b33159d7a0 \
-sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
-size    10471287
+                    sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
+                    size    10471287
 
 subport pymol-devel {
-    github.setup    schrodinger pymol-open-source a37118f6780dd9f76cf0a89155801e54cdb2e14d
-    version         20211007-[string range ${github.version} 0 7]
+    github.setup    schrodinger pymol-open-source a869dc396e4697343b55325ff2038f9fc820511e
+    version         20211014-[string range ${github.version} 0 7]
     conflicts       pymol
     revision        0
     maintainers     {reneeotten @reneeotten} openmaintainer
-    checksums       rmd160  b26414cc661313746968679be2a1789b083ae65e \
-sha256  6c65f7969b703f67049841078a7f42eec2d15ac8b53fefc814b9500e642d1989 \
-size    10479135
+    checksums       rmd160  630814b2244e35ae9353f989f6f58a84a9bbcf0f \
+                    sha256  562e3462e326b1aeb0a8bfec95da72dd0203dbb80ffa77992413e900a771ecc5 \
+                    size    10479131
 }
 
 variant python36 conflicts python37 python38 python39 description {Use Python 3.6} {}
@@ -44,11 +44,11 @@ variant python38 conflicts python36 python37 python39 description {Use Python 3.
 variant python39 conflicts python36 python37 python38 description {Use Python 3.9} {}
 
 if {[variant_isset python36]} {
-    python.default_version 39
+    python.default_version 36
 } elseif {[variant_isset python37]} {
-    python.default_version 39
+    python.default_version 37
 } elseif {[variant_isset python38]} {
-    python.default_version 39
+    python.default_version 38
 } else {
     default_variants +python39
     python.default_version 39
@@ -57,7 +57,7 @@ python.link_binaries no
 
 boost.depends_type build
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 variant vtkm description {Use VTK-m for isosurface generation} {
     depends_lib-append  port:vtk-m
@@ -80,6 +80,12 @@ depends_run-append  port:py${python.version}-pyqt5
 patchfiles          pymol_shell.diff \
                     setup.py.diff \
                     patch-boost-include.diff
+
+# fix for build on 10.13 and below, can be removed upon next update
+# see: https://github.com/schrodinger/pymol-open-source/issues/193
+if {${subport} != "pymol-devel"} {
+    patchfiles-append   patch-layer1_Wizard.cpp.diff
+}
 
 post-patch {
     reinplace  "s|@PREFIX@|${prefix}|g" ${worksrcpath}/setup.py

@@ -19,7 +19,7 @@ sha256  50d3e842c9c214e02e43da1f149831a36bd166528d3a2f7bb16a76f81ddf499d
 depends_build   port:pkgconfig \
                 port:intltool
 
-depends_lib     port:gtk3 \
+depends_lib     path:lib/pkgconfig/gtk+-3.0.pc:gtk3 \
                 port:freetype \
                 port:desktop-file-utils
 

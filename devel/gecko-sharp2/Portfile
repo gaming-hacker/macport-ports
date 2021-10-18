@@ -28,7 +28,7 @@ rmd160  af1eafb98583f2eb5e3f3ee877ea3f8fd0e6757f
 depends_build   port:pkgconfig
 
 depends_lib     port:mono \
-                port:gtk2 \
+                path:lib/pkgconfig/gtk+-2.0.pc:gtk2 \
                 port:gtk-sharp2
 
 # mono is not universal

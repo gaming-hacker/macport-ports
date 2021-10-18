@@ -20,4 +20,4 @@ rmd160  f711a10dd959555ae38d5c9c32f2063f10fc00d0 \
 size    331787
 
 depends_build   port:pkgconfig
-depends_lib     port:gtk2
+depends_lib     path:lib/pkgconfig/gtk+-2.0.pc:gtk2

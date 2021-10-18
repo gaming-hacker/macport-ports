@@ -29,7 +29,7 @@ sha256  a8f02ce073e2b920cca8ac45d418e7cb64438ad0814780c5912c6d63f8a4e038
 
 depends_build   port:pkgconfig
 
-depends_lib     port:gtk3 \
+depends_lib     path:lib/pkgconfig/gtk+-3.0.pc:gtk3 \
                 port:dbus-glib
 
 gobject_introspection yes

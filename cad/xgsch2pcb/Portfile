@@ -26,7 +26,7 @@ sha1    5bddd5973c2ecf8c43e03ee3f9484de44f649572
 distname            geda-${name}-${version}
 depends_build       port:intltool
 depends_lib         port:desktop-file-utils \
-                    port:gtk2 \
+                    path:lib/pkgconfig/gtk+-2.0.pc:gtk2 \
                     port:pcb \
                     port:py39-pygtk \
                     port:dbus-python27

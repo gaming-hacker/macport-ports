@@ -26,7 +26,7 @@ sha256  521493ec038973c77edcb8bc5eac23eed41645117894aaee7300b2487cb42b06
 
 depends_build       port:pkgconfig
 
-depends_lib         port:gtk3 \
+depends_lib         path:lib/pkgconfig/gtk+-3.0.pc:gtk3 \
                     port:clutter
 
 gobject_introspection yes

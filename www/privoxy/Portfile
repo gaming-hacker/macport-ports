@@ -1,7 +1,8 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           gpg_verify 1.0
+PortGroup           perl5 1.0
 
 name                privoxy
 version             3.0.32
@@ -30,9 +31,9 @@ distfiles           ${distname}${extract.suffix}
 extract.only        ${distname}${extract.suffix}
 
 checksums           ${distname}${extract.suffix} \
-rmd160  e6fa3d638af4054d97be87df64d156bdbcb4057a \
-sha256  c61de4008c62445ec18f1f270407cbf2372eaba93beaccdc9e3238bb2defeed7 \
-size    1834528
+                    rmd160  e6fa3d638af4054d97be87df64d156bdbcb4057a \
+                    sha256  c61de4008c62445ec18f1f270407cbf2372eaba93beaccdc9e3238bb2defeed7 \
+                    size    1834528
 
 gpg_verify.use_gpg_verification \
                     yes
@@ -42,7 +43,7 @@ if {[option gpg_verify.use_gpg_verification]} {
                     ${distname}${extract.suffix}.asc
     checksums-append \
                     ${distname}${extract.suffix}.asc \
-size    833
+                    size    833
 
     post-checksum {
         gpg_verify.verify_gpg_signature \
@@ -54,14 +55,7 @@ size    833
 
 worksrcdir          ${name}-${version}-stable
 
-variant https_inspection \
-                    description {Use Privoxy HTTPS inspection.} {}
-
-default_variants-append \
-                    +https_inspection
-
 depends_build-append \
-                    port:perl5 \
                     port:p5-sgmlspm
 
 depends_lib-append \
@@ -81,38 +75,6 @@ post-patch {
         ${worksrcpath}/config
 }
 
-if { [variant_isset "https_inspection"] } {
-    depends_build-append \
-                    port:sf-pwgen
-
-    depends_lib-append \
-                    path:share/apple-pki-bundle/apple-pki-bundle.pem:apple-pki-bundle \
-                    path:share/curl/curl-ca-bundle.crt:curl-ca-bundle \
-                    path:lib/libssl.dylib:openssl
-
-    # diff -Naur privoxy-orig/match-all.action privoxy-new/match-all.action | sed -E -e 's/privoxy-(orig|new)/./g' > patch-match-all.action.diff
-    patchfiles-append \
-                    patch-match-all.action.diff
-
-    post-patch {
-        reinplace -E "s|^#(ca-directory )|\\1|" \
-            ${worksrcpath}/config
-        reinplace -E "s|^#(certificate-directory )|\\1|" \
-            ${worksrcpath}/config
-    }
-
-    set tls_ca_dir ${prefix}/etc/privoxy/ca.macports
-
-    # random 4-word-based passphrase
-    proc correct_horse_battery_staple {} {
-        # ignore errors from sf-pwgen if the password is shorter than requested
-        return \
-            [join [exec sh -c "sf-pwgen \
-                  --algorithm memorable --count 2 --length 16 \
-                              2>/dev/null || true"] -]
-    }
-}
-
 pre-configure {
     if {[existsuser ${privoxyUser}] != 0 && [existsgroup ${privoxyGroup}] != 0} {
         configure.args-append   --with-user=${privoxyUser} \
@@ -129,11 +91,6 @@ configure.args      --sysconfdir=${prefix}/etc/${name} \
                     --enable-zlib \
                     --with-brotli
 
-if { [variant_isset "https_inspection"] } {
-    configure.args-append \
-                    --with-openssl
-}
-
 # work around bug 30345
 post-configure {
     file delete ${workpath}/.CC_PRINT_OPTIONS
@@ -146,13 +103,6 @@ post-build {
 
 destroot.keepdirs   ${destroot}${prefix}/var/log/privoxy \
                     ${destroot}${prefix}/var/run
-
-if { [variant_isset "https_inspection"] } {
-    destroot.keepdirs-append \
-                    ${destroot}${prefix}/etc/privoxy/CA \
-                    ${destroot}${prefix}/var/privoxy \
-                    ${destroot}${prefix}/var/privoxy/certs
-}
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/var/run
@@ -195,11 +145,79 @@ post-destroot {
     if {[existsuser ${privoxyUser}] != 0 && [existsgroup ${privoxyGroup}] != 0} {
         # Make sure log directory owned by privoxy user/group
         file attributes ${destroot}${prefix}/var/log/privoxy \
-                    -group ${privoxyGroup} -owner ${privoxyUser}
+            -group ${privoxyGroup} -owner ${privoxyUser}
     }
 }
 
-if { [variant_isset "https_inspection"] } {
+post-activate {
+    # Make sure initial log files are present and setup correctly
+    foreach privoxyLog {jarfile logfile} {
+        touch ${prefix}/var/log/privoxy/${privoxyLog}
+        if {[existsuser ${privoxyUser}] != 0 && [existsgroup ${privoxyGroup}] != 0} {
+            file attributes ${prefix}/var/log/privoxy/${privoxyLog} \
+                -group ${privoxyGroup} -owner ${privoxyUser} \
+                -permissions 0660
+        }
+    }
+    foreach privoxyConf {config match-all.action trust user.action user.filter} {
+        if {![file exists ${prefix}/etc/privoxy/${privoxyConf}]} {
+            # restore config files before fix #23970
+            if {[file exists ${prefix}/etc/privoxy/${privoxyConf}.mp_backup]} {
+                file copy ${prefix}/etc/privoxy/${privoxyConf}.mp_backup \
+                    ${prefix}/etc/privoxy/${privoxyConf}
+            } else {
+                file copy ${prefix}/etc/privoxy/${privoxyConf}.new \
+                    ${prefix}/etc/privoxy/${privoxyConf}
+            }
+            if {[existsuser ${privoxyUser}] != 0 && [existsgroup ${privoxyGroup}] != 0} {
+                file attributes ${prefix}/etc/privoxy/${privoxyConf} \
+                    -group ${privoxyGroup} -owner ${privoxyUser} \
+                    -permissions 0660
+            }
+        }
+    }
+}
+
+set tls_ca_dir      ${prefix}/etc/privoxy/ca.macports
+
+variant https_inspection \
+    description {Use Privoxy HTTPS inspection.} {
+    depends_build-append \
+                    port:sf-pwgen
+
+    depends_lib-append \
+                    path:share/apple-pki-bundle/apple-pki-bundle.pem:apple-pki-bundle \
+                    path:share/curl/curl-ca-bundle.crt:curl-ca-bundle \
+                    path:lib/libssl.dylib:openssl
+
+    # diff -Naur privoxy-orig/match-all.action privoxy-new/match-all.action | sed -E -e 's/privoxy-(orig|new)/./g' > patch-match-all.action.diff
+    patchfiles-append \
+                    patch-match-all.action.diff
+
+    post-patch {
+        reinplace -E "s|^#(ca-directory )|\\1|" \
+            ${worksrcpath}/config
+        reinplace -E "s|^#(certificate-directory )|\\1|" \
+            ${worksrcpath}/config
+    }
+
+    # random 4-word-based passphrase
+    proc correct_horse_battery_staple {} {
+        # ignore errors from sf-pwgen if the password is shorter than requested
+        return \
+            [join [exec sh -c "sf-pwgen \
+                  --algorithm memorable --count 2 --length 16 \
+                              2>/dev/null || true"] -]
+    }
+
+    configure.args-append \
+                    --with-openssl
+
+    destroot.keepdirs-append \
+                    ${destroot}${prefix}/etc/privoxy/CA \
+                    ${destroot}${prefix}/var/privoxy \
+                    ${destroot}${prefix}/var/privoxy/certs
+
     post-destroot {
         xinstall -m 770 -d \
                     ${destroot}${prefix}/etc/privoxy/CA \
@@ -241,38 +259,7 @@ if { [variant_isset "https_inspection"] } {
         }
         close ${outfile}
     }
-}
 
-post-activate {
-    # Make sure initial log files are present and setup correctly
-    foreach privoxyLog {jarfile logfile} {
-        touch ${prefix}/var/log/privoxy/${privoxyLog}
-        if {[existsuser ${privoxyUser}] != 0 && [existsgroup ${privoxyGroup}] != 0} {
-            file attributes ${prefix}/var/log/privoxy/${privoxyLog} \
-                -group ${privoxyGroup} -owner ${privoxyUser} \
-                -permissions 0660
-        }
-    }
-    foreach privoxyConf {config match-all.action trust user.action user.filter} {
-        if {![file exists ${prefix}/etc/privoxy/${privoxyConf}]} {
-            # restore config files before fix #23970
-            if {[file exists ${prefix}/etc/privoxy/${privoxyConf}.mp_backup]} {
-                file copy ${prefix}/etc/privoxy/${privoxyConf}.mp_backup \
-                    ${prefix}/etc/privoxy/${privoxyConf}
-            } else {
-                file copy ${prefix}/etc/privoxy/${privoxyConf}.new \
-                    ${prefix}/etc/privoxy/${privoxyConf}
-            }
-            if {[existsuser ${privoxyUser}] != 0 && [existsgroup ${privoxyGroup}] != 0} {
-                file attributes ${prefix}/etc/privoxy/${privoxyConf} \
-                    -group ${privoxyGroup} -owner ${privoxyUser} \
-                    -permissions 0660
-            }
-        }
-    }
-}
-
-if { [variant_isset "https_inspection"] } {
     pre-activate {
         if { [file exists ${tls_ca_dir}] } {
             delete  ${tls_ca_dir}.previous
@@ -366,6 +353,9 @@ TLS_PRIVOXY_ROOT_CA
         }
     }
 }
+
+default_variants-append \
+                    +https_inspection
 
 platform darwin {
     startupitem.create          yes

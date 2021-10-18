@@ -28,7 +28,7 @@ sha256  c728e2b7d4425ae81b54e1e07a3d3c8a4bd6377a63cffa43006045bceaa92e90
 depends_build       port:pkgconfig \
                     port:gettext
 
-depends_lib         port:gtk3
+depends_lib         path:lib/pkgconfig/gtk+-3.0.pc:gtk3
 
 patchfiles          patch-configure.diff
 

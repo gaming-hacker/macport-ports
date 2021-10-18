@@ -1,3 +1,12 @@
+On 32-bit systems, gsize is an int but size_t is a (32-bit) long. This
+discrepancy results in compilation errors when attempting to interchange their
+pointers. The patch below changes gsize to size_t, and vice versa, depending
+on the surrounding context.
+
+For a complete discussion, see:
+
+https://gitlab.gnome.org/GNOME/gjs/-/merge_requests/680
+
 --- gi/arg.cpp.orig
 +++ gi/arg.cpp
 @@ -1267,7 +1267,7 @@

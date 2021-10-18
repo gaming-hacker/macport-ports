@@ -23,7 +23,7 @@ rmd160  545b4abbcb0a02636072e5acadeba7d99f59365f
 depends_run         bin:wget:wget
 
 depends_lib         port:libwww \
-                    port:gtk2 \
+                    path:lib/pkgconfig/gtk+-2.0.pc:gtk2 \
                     port:libiconv
 
 patchfiles          patch-src-compat.hh.diff

@@ -27,7 +27,7 @@ sha256 9c78dfdf84493c551b49447e4bb46c8d7b33f0785b93893222b70b6115013a85
 
 depends_build       port:pkgconfig
 
-depends_lib         port:gtk3 \
+depends_lib         path:lib/pkgconfig/gtk+-3.0.pc:gtk3 \
                     path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:lua52 \
                     port:libiconv \

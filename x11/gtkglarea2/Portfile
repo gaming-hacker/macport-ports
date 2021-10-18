@@ -30,7 +30,7 @@ sha256  8e1e545877d2f5139300b54c2e3bcd70acf7d80a78421a894192186a64db82de
 
 depends_build           port:pkgconfig
 depends_lib             port:mesa \
-                        port:gtk2
+                        path:lib/pkgconfig/gtk+-2.0.pc:gtk2
 
 # see #42982
 require_active_variants gtk2 x11

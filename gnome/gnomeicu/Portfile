@@ -31,7 +31,7 @@ sha256  abbc21cf1e03892d46f03d2feb3e8576f591b71b67f09fc8445cd4b08ca6a90c
 depends_build           port:intltool \
                         port:pkgconfig
 
-depends_lib             port:gtk2 \
+depends_lib             path:lib/pkgconfig/gtk+-2.0.pc:gtk2 \
                         port:gdbm \
                         port:gconf \
                         port:libgnomeui \
