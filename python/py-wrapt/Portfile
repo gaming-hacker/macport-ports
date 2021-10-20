@@ -23,6 +23,9 @@ sha256  909a80ce028821c7ad01bdcaa588126825931d177cdccd00b3545818d4a195ce \
 size    48803
 
 if {${name} ne ${subport}} {
+    depends_build-append \
+                        port:py${python.version}-setuptools
+
     build.env-append    "WRAPT_INSTALL_EXTENSIONS=true"
     destroot.env-append "WRAPT_INSTALL_EXTENSIONS=true"
 

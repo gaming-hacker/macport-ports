@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -12,15 +12,15 @@ if {[string first "qt4" ${subport}] != -1 || [string first "py" ${subport}] != -
 
     version         2.11.6
     checksums       rmd160  bc00b95128956424a2f3466d25c4dd9f03169c0b \
-sha256  e7346057db47d2fb384467fafccfcb13aa0741373c5d593bc72b55b2f0dd20a7 \
-size    3027764
+                    sha256  e7346057db47d2fb384467fafccfcb13aa0741373c5d593bc72b55b2f0dd20a7 \
+                    size    3027764
     revision        1
     distname        QScintilla-${version}
 } else {
-    version         2.13.0
-    checksums       rmd160  755f8388b226f4f11315cce1956a81bce88e3cb0 \
-sha256  05116938bedfceb2953d3c24f862e1ab4d68ba7845f135d1d7aa1086595449b2 \
-size    3059601
+    version         2.13.1
+    checksums       rmd160  a9df08e12acab7c604149b48db1ade143cb9c6f9 \
+                    sha256  800e3d2071a96bcccd7581346af0d2fe28fc30cd68530cb8302685d013afd54a \
+                    size    3059819
     revision        0
     distname        QScintilla_src-${version}
 }
@@ -71,7 +71,7 @@ foreach qt_major {4 5} {
 
         if {${qt_major} eq 4} {
             # enable C++11
-            configure.cxxflags-append -std=c++17
+            configure.cxxflags-append -std=c++11
             # respect configure.cxx_stdlib when linking
             if {[string match *clang* ${configure.cxx}]} {
                 configure.ldflags-append -stdlib=${configure.cxx_stdlib}
@@ -127,7 +127,7 @@ foreach qt_major {4 5} {
         distfiles
         patchfiles
         supported_archs noarch
-        depends_lib port:py39-qscintilla-qt${qt_major}
+        depends_lib port:py27-qscintilla-qt${qt_major}
         build {}
         destroot {
             xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${subport}
@@ -135,14 +135,14 @@ foreach qt_major {4 5} {
         }
     }
 
-    set python.versions {39}
+    set python_versions {27 35 36 37 38 39}
 
     # Python bindings for the latest upstream Qt5 version are in py-pyqt5-scintilla
     if {${qt_major} eq 5} {
-        set python.versions {39}
+        set python_versions {27 35}
     }
 
-    foreach pver ${python.versions} {
+    foreach pver ${python_versions} {
         subport py${pver}-${name}-qt${qt_major} {
             if {${qt_major} eq 4} {
                 PortGroup qt4 1.0
@@ -212,9 +212,9 @@ foreach qt_major {4 5} {
 
 # set pyXY-qscintilla-qt5 (where XY is => 36) to be replaced_by pyXY-pyqt5-scintilla
 # this section can be removed after September 2022
-set python.versions {39}
+set python_versions {36 37 38 39}
 
-foreach pver ${python.versions} {
+foreach pver ${python_versions} {
     subport py${pver}-${name}-qt5 {
         PortGroup   obsolete 1.0
 
