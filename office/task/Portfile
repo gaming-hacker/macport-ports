@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,8 +24,8 @@ homepage            https://taskwarrior.org/
 
 distname            task-${github.version}
 checksums           rmd160  c63475e31abdc12807380f511b3f77eeb9a6b099\
-                    sha256  00aa6032b3d8379a5cfa29afb66d2b0703a69e3d1fea733d225d654dbcb0084f\
-                    size    836830
+sha256  00aa6032b3d8379a5cfa29afb66d2b0703a69e3d1fea733d225d654dbcb0084f\
+size    836830
 
 depends_lib         port:gnutls
 

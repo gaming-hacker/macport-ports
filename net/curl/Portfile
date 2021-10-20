@@ -26,9 +26,9 @@ set curl_distfile               ${distfiles}
 distfiles                       ${curl_distfile}:curl
 
 checksums                       ${curl_distfile} \
-                                rmd160  a3c6639da7482c5ed9aac36a16d1daa253e4a9d1 \
-                                sha256  be42766d5664a739c3974ee3dfbbcbe978a4ccb1fe628bb1d9b59ac79e445fb5 \
-                                size    2440640
+rmd160  a3c6639da7482c5ed9aac36a16d1daa253e4a9d1 \
+sha256  be42766d5664a739c3974ee3dfbbcbe978a4ccb1fe628bb1d9b59ac79e445fb5 \
+size    2440640
 
 if {${name} eq ${subport}} {
     PortGroup                   muniversal 1.0
@@ -261,9 +261,9 @@ subport curl-ca-bundle {
     distfiles-append            ${certdata_distfile}:certdata
 
     checksums-append            ${certdata_distfile} \
-                                rmd160  763c2ffbbc521d7cafb5644ff5d2692b5543197d \
-                                sha256  d3d290e88c6781ba81105205036a5da320d5eb5f58fd14561afee07c344d185d \
-                                size    248478
+rmd160  763c2ffbbc521d7cafb5644ff5d2692b5543197d \
+sha256  d3d290e88c6781ba81105205036a5da320d5eb5f58fd14561afee07c344d185d \
+size    248478
 
     extract.only                ${curl_distfile}
     extract.post_args-append    ${worksrcdir}/Makefile \

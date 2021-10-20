@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -44,13 +44,13 @@ if {${build_arch} eq "arm64"} {
 distname            dbeaver-ce-${version}-macosx.cocoa.${arch}
 
 checksums           dbeaver-ce-${version}-macosx.cocoa.x86_64${extract.suffix} \
-                        rmd160  ca49335a1a37cd016d3c0a854523001f929100dd \
-                        sha256  940eb52988c4645847b7460f9e0b0d924b543cf30fe87c45f967ef4e15326179 \
-                        size    104293007 \
+rmd160  ca49335a1a37cd016d3c0a854523001f929100dd \
+sha256  940eb52988c4645847b7460f9e0b0d924b543cf30fe87c45f967ef4e15326179 \
+size    104293007 \
                     dbeaver-ce-${version}-macosx.cocoa.aarch64${extract.suffix} \
-                        rmd160  ec4ce934b779cbf927a0e47e896d85bf14134b1c \
-                        sha256  58dd81b64fbad074087948801c2c8f843f58439da60d8f8765301f371e964fd6 \
-                        size    104946765
+rmd160  ec4ce934b779cbf927a0e47e896d85bf14134b1c \
+sha256  58dd81b64fbad074087948801c2c8f843f58439da60d8f8765301f371e964fd6 \
+size    104946765
 
 extract.mkdir       yes
 use_configure       no
@@ -69,15 +69,15 @@ set openjdk_distname zulu11.50.19-ca-jdk11.0.12-macosx
 if {${build_arch} eq "x86_64"} {
     distfiles-append    ${openjdk_distname}_x64${extract.suffix}
     checksums-append    ${openjdk_distname}_x64${extract.suffix} \
-                        rmd160  2b136a6fbe8f0d9bcf52cf12a41099825f1fac07 \
-                        sha256  0b8c8b7cf89c7c55b7e2239b47201d704e8d2170884875b00f3103cf0662d6d7 \
-                        size    195713033
+rmd160  2b136a6fbe8f0d9bcf52cf12a41099825f1fac07 \
+sha256  0b8c8b7cf89c7c55b7e2239b47201d704e8d2170884875b00f3103cf0662d6d7 \
+size    195713033
 } elseif {${build_arch} eq "arm64"} {
     distfiles-append    ${openjdk_distname}_aarch64${extract.suffix}
     checksums-append    ${openjdk_distname}_aarch64${extract.suffix} \
-                        rmd160  c482f2433c9aa6451b915bb5b56c748e7f153436 \
-                        sha256  e908a0b4c0da08d41c3e19230f819b364ff2e5f1dafd62d2cf991a85a34d3a17 \
-                        size    179357206
+rmd160  c482f2433c9aa6451b915bb5b56c748e7f153436 \
+sha256  e908a0b4c0da08d41c3e19230f819b364ff2e5f1dafd62d2cf991a85a34d3a17 \
+size    179357206
 }
 pre-destroot {
     delete ${worksrcpath}/DBeaver.app/Contents/Eclipse/jre/Contents/MacOS/libjli.dylib
