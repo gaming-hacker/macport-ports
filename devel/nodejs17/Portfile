@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -8,10 +8,10 @@ PortGroup               legacysupport 1.1
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard 2017
+compiler.cxx_standard   2014
 
 name                    nodejs17
-version                 17.0.0
+version                 17.0.1
 
 categories              devel net
 platforms               darwin
@@ -31,9 +31,9 @@ homepage                https://nodejs.org/
 master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
-checksums               rmd160  9634d1e2c3c8c0491980bf7c0f746abe5f302765 \
-sha256  c352ac4d8e8de429a3f940e202fdffc31dd6809d0e92a5b23ddca9a9a62e35ff \
-size    34727720
+checksums               rmd160  25efc001f784db731ae6369ac428f46ce4786bec \
+                        sha256  6ec480f872cb7c34877044985e3d7bd89329ace5b8e2ad90b57980601786341c \
+                        size    34723932
 
 distname                node-v${version}
 
@@ -43,8 +43,6 @@ depends_lib-append      port:python39
 
 # TODO: when icu is upgraded to v68.x, use MacPorts'.
 #depends_lib-append             port:icu
-
-use_xcode  no
 
 # error: 'atomic_load<v8::internal::OwnedVector<const unsigned char> >' is unavailable: introduced in macOS 10.9
 set min_darwin 13
@@ -95,17 +93,17 @@ configure.args-append   --without-npm
 # configure.args-append   --with-intl=system-icu
 
 # V8 only supports ARM and IA-32 processors
-supported_archs         x86_64
+supported_archs         i386 x86_64 arm64
 
 universal_variant       no
 
 # https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V17.md#openssl-30
-# variant no_openssl3_with_quic description {use MacPort's OpenSSL rather than Node.js' provided OpenSSL 3.0 extended with QUIC} {
-#     depends_lib-append      port:openssl3
-#     configure.args-append   --shared-openssl
-#     configure.args-append   --shared-openssl-includes=${prefix}/libexec/openssl3/include/openssl
-#     configure.args-append   --shared-openssl-libpath=${prefix}/libexec/openssl3/lib
-# }
+variant no_openssl3_with_quic description {use MacPort's OpenSSL rather than Node.js' provided OpenSSL 3.0 extended with QUIC} {
+    depends_lib-append      port:openssl3
+    configure.args-append   --shared-openssl
+    configure.args-append   --shared-openssl-includes=${prefix}/libexec/openssl3/include/openssl
+    configure.args-append   --shared-openssl-libpath=${prefix}/libexec/openssl3/lib
+}
 
 # "V8 doesn't like cache."
 configure.ccache        no
@@ -113,25 +111,26 @@ configure.ccache        no
 test.run                yes
 test.cmd                ${build.cmd} -j${build.jobs}
 
-# switch $build_arch {
-#     i386 {
-#         configure.args-append   --dest-cpu=ia32
-#     }
-#     x86_64 {
-#         configure.args-append   --dest-cpu=x64
-#     }
-#    arm64 {
-#         configure.args-append   --dest-cpu=arm64
-#     }
-# }
+switch $build_arch {
+    i386 {
+        configure.args-append   --dest-cpu=ia32
+    }
+    x86_64 {
+        configure.args-append   --dest-cpu=x64
+    }
+   arm64 {
+        configure.args-append   --dest-cpu=arm64
+    }
+}
 
-configure.args-append   --dest-cpu=x64
-compiler.blacklist-append {clang < 900}
+# Node.js 17.x requires Xcode >= 11 (Apple LLVM >= 11)
+# https://github.com/nodejs/node/blob/v17.x/BUILDING.md#supported-toolchains
+compiler.blacklist-append {clang < 1100}
 
-build.args-append   CC=/opt/local/bin/gcc-mp-11 \
-                    CXX=/opt/local/bin/g++-mp-11 \
-                    CXX.host=/opt/local/bin/g++-mp-11 \
-                    CPP="/opt/local/bin/gcc-mp-11 -E"\
+build.args-append   CC=${configure.cc} \
+                    CXX=${configure.cxx} \
+                    CXX.host=${configure.cxx} \
+                    CPP=${configure.cpp} \
                     CPPFLAGS="${configure.cppflags}" \
                     CFLAGS="${configure.cflags} ${configure.cppflags}" \
                     CXXFLAGS="${configure.cxxflags} ${configure.cppflags}" \

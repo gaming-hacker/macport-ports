@@ -27,6 +27,8 @@ size    596285
 depends_build       port:automake \
                     port:autoconf
 
+patchfiles          implicit.patch
+
 pre-configure {
     system -W "${worksrcpath}" "tar xzf Autotools.tar.gz"
 }
