@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ description         \
 long_description    {*}${description}
 
 checksums           rmd160 5835979bcf7039acbf6803a3927cb86029ee2e97 \
-                    sha256 d7b4100a870f8aea96efbf37a6e9a1ee14bdf4acc9b159cdfbc0fd621943f2ef \
-                    size 179861
+sha256 d7b4100a870f8aea96efbf37a6e9a1ee14bdf4acc9b159cdfbc0fd621943f2ef \
+size 179861
 
 if {${os.major} <= 10} {
     known_fail      yes

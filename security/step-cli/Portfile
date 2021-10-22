@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -25,8 +25,8 @@ platforms           darwin
 build.env-delete    GO111MODULE=off GOPROXY=off
 
 checksums           rmd160  bf532f26f98b3403949b38a0d37209f44175c76b \
-                    sha256  9a527df183a0e2d2fe6401c00fa5f251805ad208065e65e72c925113d4a45edc \
-                    size    1805381
+sha256  9a527df183a0e2d2fe6401c00fa5f251805ad208065e65e72c925113d4a45edc \
+size    1805381
 
 # Mirrors already have a tarball named cli-${version}.  Since the tarball
 # is versioned, then we don't have to version our dist_subdir. We need only
