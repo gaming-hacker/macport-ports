@@ -95,17 +95,17 @@ configure.args-append   --without-npm
 # configure.args-append   --with-intl=system-icu
 
 # V8 only supports ARM and IA-32 processors
-supported_archs         i386 x86_64 arm64
+supported_archs         x86_64
 
 universal_variant       no
 
 # https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V17.md#openssl-30
-variant no_openssl3_with_quic description {use MacPort's OpenSSL rather than Node.js' provided OpenSSL 3.0 extended with QUIC} {
-    depends_lib-append      port:openssl3
-    configure.args-append   --shared-openssl
-    configure.args-append   --shared-openssl-includes=${prefix}/libexec/openssl3/include/openssl
-    configure.args-append   --shared-openssl-libpath=${prefix}/libexec/openssl3/lib
-}
+# variant no_openssl3_with_quic description {use MacPort's OpenSSL rather than Node.js' provided OpenSSL 3.0 extended with QUIC} {
+#     depends_lib-append      port:openssl3
+#     configure.args-append   --shared-openssl
+#     configure.args-append   --shared-openssl-includes=${prefix}/libexec/openssl3/include/openssl
+#     configure.args-append   --shared-openssl-libpath=${prefix}/libexec/openssl3/lib
+# }
 
 # "V8 doesn't like cache."
 configure.ccache        no
@@ -113,24 +113,25 @@ configure.ccache        no
 test.run                yes
 test.cmd                ${build.cmd} -j${build.jobs}
 
-switch $build_arch {
-    i386 {
-        configure.args-append   --dest-cpu=ia32
-    }
-    x86_64 {
-        configure.args-append   --dest-cpu=x64
-    }
-   arm64 {
-        configure.args-append   --dest-cpu=arm64
-    }
-}
+# switch $build_arch {
+#     i386 {
+#         configure.args-append   --dest-cpu=ia32
+#     }
+#     x86_64 {
+#         configure.args-append   --dest-cpu=x64
+#     }
+#    arm64 {
+#         configure.args-append   --dest-cpu=arm64
+#     }
+# }
 
+configure.args-append   --dest-cpu=x64
 compiler.blacklist-append {clang < 900}
 
-build.args-append   CC=${configure.cc} \
-                    CXX=${configure.cxx} \
-                    CXX.host=${configure.cxx} \
-                    CPP=${configure.cpp} \
+build.args-append   CC=/opt/local/bin/gcc-mp-11 \
+                    CXX=/opt/local/bin/g++-mp-11 \
+                    CXX.host=/opt/local/bin/g++-mp-11 \
+                    CPP="/opt/local/bin/gcc-mp-11 -E"\
                     CPPFLAGS="${configure.cppflags}" \
                     CFLAGS="${configure.cflags} ${configure.cppflags}" \
                     CXXFLAGS="${configure.cxxflags} ${configure.cppflags}" \
