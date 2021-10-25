@@ -1,0 +1,20 @@
+--- mkspecs/macx-clang/qmake.conf.orig	2021-10-21 19:16:41.000000000 -0400
++++ mkspecs/macx-clang/qmake.conf	2021-10-21 19:17:51.000000000 -0400
+@@ -24,6 +24,17 @@
+ QMAKE_LIBDIR_X11 = /opt/local/lib
+ QMAKE_INCDIR_X11 = /opt/local/include
+ 
++ QMAKE_INCDIR_OPENGL     = \
++    /System/Library/Frameworks/OpenGL.framework/Headers \
++    /System/Library/Frameworks/AGL.framework/Headers/   \
++    /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/ \
++    /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AGL.framework/Headers/ \
++
++QMAKE_LIBDIR_OPENGL     = \
++    /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Libraries/ \
++    /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AGL.framework/Versions/Current/Libraries/ \
++ 
++
+ include(../common/macx.conf)
+ include(../common/gcc-base-mac.conf)
+ include(../common/clang.conf)
