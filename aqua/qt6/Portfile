@@ -13,7 +13,7 @@ license             {LGPL-3 GPL-3 OpenSSLException}
 
 homepage            https://www.qt.io
 
-version             6.2.0
+version             6.2.1
 set middle_name     everywhere
 
 set just_want_qt6_variables yes
@@ -98,9 +98,9 @@ foreach {qt_test_name qt_test_info} [array get available_qt_versions] {
 array set modules {
     qt3d {
         {
-            fcfa0a71222bba3dac77d7f05192593131a7c6c2 \
-            304352ae74fc8e7fe50a822413d69094efb25f15a2323e083a2a53dc5a43a6c6
-            104016164
+            18887bc685306ad2f2a1213a98763c5babb619b3 \
+            730c0e8e1a1a59c4acbeca68e206bab14ef770f5dacb94b84103a82243cfeeb3
+            104023248
         }
         ""
         "port:assimp"
@@ -111,26 +111,56 @@ array set modules {
         "revision 0"
         "License: "
     }
-    qtbase {
+    qt5compat {
         {
-            f4e1f9f76ee4b0a8479d88d062b2fc6e2ada2c90 \
-            fdfff0716d093bcb6bcd53746ce1d3c9701a6bf3326d47813866d43949b47769
-            46638880
+            5f539c3eeda04b63124b1d14ee45c2ea28f9fb44 \
+            3865c031450a3c2616de1e20104ca9470ac5447adf51faa918f8b01a2c425de7
+            8198156
         }
         ""
-        "port:cmake port:Ninja port:zlib port:libpng path:include/turbojpeg.h:libjpeg-turbo port:freetype path:bin/dbus-daemon:dbus path:lib/pkgconfig/glib-2.0.pc:glib2 port:icu port:pcre2 path:lib/pkgconfig/harfbuzz.pc:harfbuzz port:double-conversion port:zstd"
+        ""
+        "qtbase qtdeclarative"
+        {"Qt5 Compatabilty"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtbase {
+        {
+            5f790b52b28e90e762929bc9c3a66ccd8953722a \
+            2c5f07b5c3ea27d3fc1a46686ea3fb6724f94dddf1fb007de3eb0bdb87429079
+            46641424
+        }
+        ""
+        "port:cmake port:Ninja port:harfbuzz port:zlib port:libpng path:include/turbojpeg.h:libjpeg-turbo port:freetype path:bin/dbus-daemon:dbus path:lib/pkgconfig/glib-2.0.pc:glib2 port:icu port:pcre2 path:lib/pkgconfig/harfbuzz.pc:harfbuzz port:double-conversion port:zstd"
         ""
         {"Qt Core" "Qt GUI" "Qt Network" "Qt SQL" "Qt Test" "Qt Widgets" "Qt Concurrent" "Qt D-Bus" "Qt OpenGL" "Qt Platform Headers" "Qt Print Support" "Qt XML"}
         ""
         "variant overrides: "
-        "revision 2"
+        "revision 0"
         "License: "
+    }
+    qtcharts {
+        {
+            9416511d83ce2b23b9492fbf9284762f39128d65 \
+            f92ad16abd382a1488e6aafa129d88887a14300cb0f237fe37bca9173cf5a688
+            4382880
+        }
+        ""
+        ""
+        "qtbase qtdeclarative qtmultimedia"
+        {"Qt Charts"}
+        "GPLv3 license only"
+        "variant overrides: "
+        "revision 0"
+        "License: {GPL-3 OpenSSLException}"
     }
     qtconnectivity {
         {
-            85867b7d0a02819ec2b2d39bd3cbe32e3f2eee16 \
-            4c689100bb43f78a7e30380296376b7f4dff356d9a02b0bba97362d6b497649c
-            1070032
+            c15218f42ec48aad9633d82a6b5594d46e533c44 \
+            8dcc366b0f5f124b20bf25e1b207a5ae4b75e45c62d2cc1f4dce138075c2714e
+            1072208
         }
         ""
         ""
@@ -143,11 +173,11 @@ array set modules {
     }
     qtdeclarative {
         {
-            d709f055928ce5d4354e5c93e0bce3e1f670ac61 \
-            46737feceb9e54d63ad0c87a08d33f08ca58f4b8920ccefad8f1ebd64f0d1270
-            29708368
+            13849d151710f3c8078c5b09ad1fc5f8a0c313d8 \
+            5aeb841a5665f79672a302569754ea7d541c69102c551707e43489e797213c71
+            29764804
         }
-        "port:python38"
+        "port:python39"
         ""
         "qtbase qtsvg"
         {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
@@ -158,9 +188,9 @@ array set modules {
     }
     qtimageformats {
         {
-            ddf7de7e74f79f28af2eaa074d426418a3a05a97 \
-            fdaa35536c3d0f8f5f313d0d52dedfbf6d8fcd81a82d6a56f473253f135072ad
-            1845004
+            d7fc2ceddb89495a67644233feb47f3bf9fe70a9 \
+            df61dc1a517988bfa123117c78a7dbeda859cbb6d9cbd080ce60058277bca3df
+            1845284
         }
         ""
         "port:jasper port:libmng port:tiff port:webp"
@@ -171,11 +201,101 @@ array set modules {
         "revision 0"
         "License: "
     }
+    qtlocation {
+        {
+            438885e8a07f1a307cc278c95bb9b461533641d8 \
+            a99e92c762d45b17e14685cd8a3c1564a3da0ce1cfd1a68ffd5b3fd7c409dcad
+            6675600
+        }
+        ""
+        "port:icu port:zlib"
+        "qtbase qtdeclarative qtserialport"
+        {"Qt Location" "Qt Positioning"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtmultimedia {
+        {
+            46e921cdd129c0a112634f08faee2da0f43b2483 \
+            07764ad31d4d4ef679c3ceb861e762d12690b4fa899b3ccec45e5353309a90d0
+            3710324
+        }
+        ""
+        ""
+        "qtbase qtdeclarative qtshadertools"
+        {"Qt Multimedia" "Qt Multimedia Widgets"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtnetworkauth {
+        {
+            56547cc10525dbf557c151a8455ac2055d680bb7 \
+            8027f85095a9c56d8cada988527454f786a5f8dd4157206db4f21299016d1c9e
+            144292
+        }
+        ""
+        ""
+        "qtbase"
+        {"Qt Network Authorization"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtshadertools {
+    {
+         5cd3ff4c1bbd1c56f54fac710ce0841a1e11eba8 \
+         2c8d38724181b31cd828a56e377775c2d461ee2ea0d6362ebec411c3b288067e
+         986656
+     }
+     ""
+     ""
+     "qtbase"
+     {"Qt Shader Tools" "Qt Shader Widgets"}
+     ""
+     "variant overrides: "
+     "revision 0"
+     "License: "
+    }
+    qtserialbus {
+        {
+            00c46347f19928501a798a6f73a6a35af7c9a457 \
+            15e7a0a578dc9ed306ff2598edb9822081902ef1a4b52b20f1d2dd6461239f85
+            378596
+        }
+        ""
+        ""
+        "qtbase qtserialport"
+        {"Qt Serial Bus"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtserialport {
+        {
+            13b54c9622e90aa17dbba118eba214882ffeddc8 \
+            ec77f4c9d6096588f3e735315f873976103479be453985b27f27fe8994e0776a
+            318916
+        }
+        ""
+        ""
+        "qtbase"
+        {"Qt Serial Port"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
     qtsvg {
         {
-            7cb9fbfc8cc34c8f4ff8e71185c20b4fc9005b40 \
-            af9eabefbb0dcb772f18fae4d2c39bcc23579a5dfff569c35ea7e497591db3d4
-            1717816
+            dea5b2492dd16c71a30714c75ab3b3864063fffa \
+            86e27e005c2421052ca90e619c8d13f1bd19c6bf1a7b84dd4e0f7855fc884fd7
+            1717684
         }
         ""
         ""
@@ -188,9 +308,9 @@ array set modules {
     }
     qttools {
         {
-            12c85ab68564322f354b419bf0616cee76990806 \
-            a903d005f8ab39545aed88a13b04f13ddbbe073da7007203a91fb8b42b890057
-            8665784
+            a2afeabfe2037491631891333d8d226db4479548 \
+            5a856d3d3d5fe6e15dc3f1af707a0ef1df2e687850403fc94af635edb9312bfb
+            8668512
         }
         ""
         "port:clang-11"
@@ -198,6 +318,21 @@ array set modules {
         {"Qt Designer" "Qt Help" "Qt UI Tools"}
         ""
         "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qttranslations {
+        {
+            623817eb7f3967fe3911aad89f537d48dc2d291c \
+            3f680b520da585697fc725697a52c7d2074a6a728f6830366b491a6f8b9183c7
+            1444712
+        }
+        ""
+        ""
+        "qttools"
+        {"translation files"}
+        ""
+        "variant overrides: ~examples ~tests noarch ~docs"
         "revision 0"
         "License: "
     }
@@ -232,7 +367,7 @@ array set sql_plugins {
             "port:postgresql13"
             "${prefix}/include/postgresql13"
             "${prefix}/lib/postgresql13"
-            "libpg.dylib"
+            "libpq.dylib"
             ""
         }
         {
@@ -240,7 +375,7 @@ array set sql_plugins {
             "port:postgresql12"
             "${prefix}/include/postgresql12"
             "${prefix}/lib/postgresql12"
-            "libpg.dylib"
+            "libpq.dylib"
             ""
         }
         {
@@ -248,7 +383,7 @@ array set sql_plugins {
             "port:postgresql11"
             "${prefix}/include/postgresql11"
             "${prefix}/lib/postgresql11"
-            "libpg.dylib"
+            "libpq.dylib"
             ""
         }
         {
@@ -256,39 +391,7 @@ array set sql_plugins {
             "port:postgresql10"
             "${prefix}/include/postgresql10"
             "${prefix}/lib/postgresql10"
-            "libpg.dylib"
-            ""
-        }
-        {
-            "postgresql96"
-            "port:postgresql96"
-            "${prefix}/include/postgresql96"
-            "${prefix}/lib/postgresql96"
-            "libpg.dylib"
-            ""
-        }
-        {
-            "postgresql95"
-            "port:postgresql95"
-            "${prefix}/include/postgresql95"
-            "${prefix}/lib/postgresql95"
-            "libpg.dylib"
-            ""
-        }
-        {
-            "postgresql94"
-            "port:postgresql94"
-            "${prefix}/include/postgresql94"
-            "${prefix}/lib/postgresql94"
-            "libpg.dylib"
-            ""
-        }
-        {
-            "postgresql84"
-            "port:postgresql84"
-            "${prefix}/include/postgresql84"
-            "${prefix}/lib/postgresql84"
-            "libpg.dylib"
+            "libpq.dylib"
             ""
         }
     }
@@ -357,14 +460,6 @@ array set sql_plugins {
             "libmysqlclient_r.dylib"
             ""
         }
-        {
-            "mysql56"
-            "port:mysql56"
-            "${prefix}/include/mysql56/mysql"
-            "${prefix}/lib/mysql56/mysql"
-            "libmysqlclient_r.dylib"
-            ""
-        }
     }
 }
 
@@ -422,9 +517,7 @@ foreach {module module_info} [array get modules] {
         }
 
         foreach qtdeps [lindex ${module_info} 3] {
-            if { ${qtdeps} ne "qtbase" } {
-                depends_lib-append port:${name}-${qtdeps}
-            }
+            depends_lib-append port:${name}-${qtdeps}
         }
 
         description       Tools and Module(s) for Qt Tool Kit ${qt_major}
@@ -445,8 +538,6 @@ foreach {module module_info} [array get modules] {
             PortGroup               qt6 1.0
             PortGroup               developerversion 1.0
             PortGroup               openssl 1.0
-
-            use_xcode               yes
 
             # use ninja for the build/installation
             build.cmd               ninja
@@ -494,9 +585,6 @@ foreach {module module_info} [array get modules] {
 
             # respect MacPorts build variables
             patchfiles-append patch-mkspecs.diff
-
-            ## patch OpenGL to new SDK/framework location
-            patchfiles-append patch-opengl-framework.diff
 
             # respect configure.compiler
             if { ${configure.compiler} eq "clang" } {
@@ -650,7 +738,6 @@ foreach {module module_info} [array get modules] {
                 -system-libpng      \
                 -system-libjpeg     \
                 -system-freetype    \
-                -system-harfbuzz    \
                 -no-openssl         \
                 -no-libproxy        \
                 -system-pcre        \
@@ -686,13 +773,13 @@ foreach {module module_info} [array get modules] {
                 -no-system-proxies
 
             # MacOS/iOS options:
-            configure.args-append    \
-                -framework           \
+            configure.args-append       \
+                -framework              \
                 -securetransport
 
             # configure options that don't show up in configure --help
-            configure.args-append \
-                -no-libudev       \
+            configure.args-append       \
+                -no-libudev             \
                 -no-egl
 
             # Qt builds part of the system using environment provided my MacPorts.
@@ -748,7 +835,8 @@ foreach {module module_info} [array get modules] {
                 configure.pre_args-append                            \
                     -DOPENSSL_ROOT_DIR=[openssl::install_area]       \
                     -DOPENSSL_INCLUDE_DIR=[openssl::include_dir]     \
-                    -DOPENSSL_LIBRARIES=[openssl::install_area]/lib
+                    -DOPENSSL_LIBRARIES=[openssl::install_area]/lib  \
+                    -DOPENSSL_LIBS='-L[openssl::install_area]/lib -lssl -lcrypto'
             }
             default_variants-append +openssl
 
@@ -934,7 +1022,7 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         }
 
 
-       	# as of Qt 5.8, QMAKE_USE is used to find external libraries
+        # as of Qt 5.8, QMAKE_USE is used to find external libraries
         set use_name [string toupper ${driver}]
 
         # In QT6, the include and library paths are now SQL database specific
@@ -949,7 +1037,7 @@ foreach {sql_names sql_info} [array get sql_plugins] {
                     [subst -D${dbms}_INCLUDE_DIR=\"[lindex ${variant_info} 2]\"]   \
                     [subst -DCMAKE_INCLUDE_PATH=\"[lindex ${variant_info} 2]\"]    \
                     [subst -D${dbms}_LIBRARY=\"[lindex ${variant_info} 3]/[lindex ${variant_info} 4]"] \
-                    [subst -DCMAKE_LIBRARY_PATH=\"[lindex ${variant_info} 2]\"]
+                    [subst -DCMAKE_LIBRARY_PATH=\"[lindex ${variant_info} 3]\"]
             }
         }
         # Need to update the prefix after the INCLUDE and LIB variables are set

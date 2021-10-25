@@ -264,7 +264,7 @@ default qt_qmake_spec {[qt6pg::get_default_spec]}
 namespace eval qt6pg {
     proc get_default_spec {} {
         global configure.build_arch qt_qmake_spec_32 qt_qmake_spec_64
-      	return ${qt_qmake_spec_64}
+        return ${qt_qmake_spec_64}
 
     }
 }
