@@ -75,7 +75,7 @@ post-patch {
 gobject_introspection yes
 
 # https://trac.macports.org/ticket/63663
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 use_autoreconf      yes
 autoreconf.args     -fvi

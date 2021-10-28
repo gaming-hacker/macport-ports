@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ long_description    Tox as is a generic virtualenv management and test command l
 homepage            https://tox.readthedocs.io/en/latest/
 
 checksums           rmd160  a57156c64d39c2fb78c1cd68322cc09ccab07a9d \
-                    sha256  c30b57fa2477f1fb7c36aa1d83292d5c2336cd0018119e1b1c17340e2c2708ca \
-                    size    316762
+sha256  c30b57fa2477f1fb7c36aa1d83292d5c2336cd0018119e1b1c17340e2c2708ca \
+size    316762
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

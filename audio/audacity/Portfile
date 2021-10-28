@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ if {${subport} eq "${name}-manual"} {
     github.setup    audacity audacity-manual 3.1.0 v
     homepage        https://manual.audacityteam.org/
     checksums       rmd160  8e8916ad861888538ca2844c107470a262651222 \
-                    sha256  f30068e8eabe70b001e4fc2f6ace6b6e87b815d3bd756902485a960e41523e93 \
-                    size    23695970
+sha256  f30068e8eabe70b001e4fc2f6ace6b6e87b815d3bd756902485a960e41523e93 \
+size    23695970
     depends_run     path:bin/audacity:audacity
     use_configure   no
     build           {}
@@ -87,8 +87,8 @@ if {${subport} eq "${name}-legacy"} {
     # incl. those not in MacPorts.
     github.setup    audacity audacity 2.4.2 Audacity-
     checksums       rmd160  d9e04c029a144800e378a6b5464c74f3fdb2a7e2 \
-                    sha256  032273e2408ad51f97c6846ac8d8fe9e4a3fbc6e4c620e630ea4c1d0124d9a94 \
-                    size    61254313
+sha256  032273e2408ad51f97c6846ac8d8fe9e4a3fbc6e4c620e630ea4c1d0124d9a94 \
+size    61254313
     set PPREFIX     ./
     if {[variant_isset wxsystem]} {
         variant wx30 conflicts wx32 requires wxsystem description {build against wxWidgets-3.0} {}
@@ -104,8 +104,8 @@ if {${subport} eq "${name}-legacy"} {
     # distname        audacity-git
     worksrcdir      audacity-${version}
     checksums       rmd160  3615af185a7338b83fba23c943b9898c7bbb260d \
-                    sha256  58349631840adf45a81b57037819e14e18cb684586cde249630e66488b911902 \
-                    size    64490814
+sha256  58349631840adf45a81b57037819e14e18cb684586cde249630e66488b911902 \
+size    64490814
     set PPREFIX     devel/
 
     livecheck.type  none
@@ -120,7 +120,7 @@ if {![variant_exists wxsystem] || [variant_isset wxsystem]} {
 }
 
 supported_archs     x86_64 arm64
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 build.post_args-append -k
 cmake.generator     Ninja
 if {${os.major} >= 17} {
@@ -190,8 +190,8 @@ if {[variant_isset wxsystem]} {
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python37
-set python_bin      ${prefix}/bin/python3.7
+                    port:python39
+set python_bin      ${prefix}/bin/python3.9
 
 depends_lib-append  port:freetype \
                     path:lib/pkgconfig/harfbuzz.pc:harfbuzz \

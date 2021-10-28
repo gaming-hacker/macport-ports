@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,9 +26,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  70e6b954e2b06b40600dd2152a596cede5c0c2c5 \
-                    sha256  b0c656e194e2d3fe31dc1c6ee15fd5808db3b2428d79adf786c6900ebbba0849 \
-                    size    82006
+rmd160  70e6b954e2b06b40600dd2152a596cede5c0c2c5 \
+sha256  b0c656e194e2d3fe31dc1c6ee15fd5808db3b2428d79adf786c6900ebbba0849 \
+size    82006
 
 depends_run-append  port:bash
 
@@ -126,7 +126,7 @@ cargo.crates \
     rust-argon2                      0.8.3  4b18820d944b33caa75a71378964ac46f58517c92b6ae5f762636247c09e78fb \
     rustc-demangle                  0.1.20  dead70b0b5e03e9c814bcb6b01e03e68f7c57a80aa48c72ec92152ab3e818d49 \
     scopeguard                       1.1.0  d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
     signal-hook                     0.1.17  7e31d442c16f047a671b5a71e2161d6e68814012b7f5379d269ebd915fac2729 \
     signal-hook                      0.2.3  844024c8913df6bfbfeee3061075ccc47216a897ac0b54a683dea3dfe16d19af \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

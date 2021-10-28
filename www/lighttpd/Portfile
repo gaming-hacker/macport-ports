@@ -54,7 +54,7 @@ post-patch {
 compiler.blacklist          *gcc-3.* *gcc-4.*
 
 # Per README
-configure.cflags-append     -std=c99
+configure.cflags-append     -std=c11
 
 configure.args-append       CC_FOR_BUILD="${configure.cc}" \
                             CFLAGS_FOR_BUILD="${configure.cflags}" \

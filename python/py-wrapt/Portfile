@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ revision            0
 platforms           darwin
 license             BSD
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -19,8 +19,8 @@ long_description    ${description}
 homepage            https://github.com/GrahamDumpleton/wrapt
 
 checksums           rmd160  6fcd1fd7b3b292d6534ed626b5c3021333af4a94 \
-                    sha256  dca56cc5963a5fd7c2aa8607017753f534ee514e09103a6c55d2db70b50e7447 \
-                    size    48836
+sha256  dca56cc5963a5fd7c2aa8607017753f534ee514e09103a6c55d2db70b50e7447 \
+size    48836
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -71,7 +71,7 @@ compiler.blacklist *gcc-3.* *gcc-4.*
 compiler.c_standard 1999
 
 # Code uses 'asm' instead of '__asm__', so we need a GNU standard
-configure.cflags-append -std=gnu99
+configure.cflags-append -std=c11
 
 #configure.cflags-append -g
 configure.python    ${prefix}/bin/python3.9

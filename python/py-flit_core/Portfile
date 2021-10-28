@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,14 +17,14 @@ long_description    {*}${description}
 homepage            https://github.com/takluyver/flit
 
 checksums           md5 a4bb11b54bcf029ec2cd5cb981c07ded \
-                    rmd160 f8c8435049941067c60e6e5d9931e0924b2c3d93 \
-                    sha256 29468fa2330969167d1f5c23eb9c0661cb6dacfcd46f361a274609a7f4197530 \
-                    size   27151
+rmd160 f8c8435049941067c60e6e5d9931e0924b2c3d93 \
+sha256 29468fa2330969167d1f5c23eb9c0661cb6dacfcd46f361a274609a7f4197530 \
+size   27151
 revision            1
 
 dist_subdir         ${name}/${version}_1
 
-python.versions     36 37 38 39 310
+python.versions 39
 
 python.pep517       yes
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ master_sites        https://gitlab.com/gitlab-org/gitlab-runner/-/archive/v${ver
 distname            gitlab-runner-v${version}
 
 checksums           rmd160  9d275870dc3ebf0b876eda2961469c2d2f82b751 \
-                    sha256  ca598a7624e48a32ada0fe780df2042489a0f2199694ef1f17b0ef1091a36723 \
-                    size    9130465
+sha256  ca598a7624e48a32ada0fe780df2042489a0f2199694ef1f17b0ef1091a36723 \
+size    9130465
 
 # Reproduce the "build_simple" target from the upstream Makefile
 set go_ldflags      "-X ${go.package}/common.NAME=${go.package} \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -55,9 +55,9 @@ if {${os.major} > 12} {
 
     checksums-append \
                     ${distname}${extract.suffix} \
-                    rmd160  8ba17a9c3a9d2c1d515d35aceb8629d9f6e2f78b \
-                    sha256  a35b800d1c17026cba3815019216e90c2ab994553258f6d73cd9a35d4ade59e9 \
-                    size    89726709
+rmd160  8ba17a9c3a9d2c1d515d35aceb8629d9f6e2f78b \
+sha256  a35b800d1c17026cba3815019216e90c2ab994553258f6d73cd9a35d4ade59e9 \
+size    89726709
 
     livecheck.type  regex
     livecheck.url   https://opencv.org/releases.html
@@ -68,9 +68,9 @@ if {${os.major} > 12} {
 
     checksums-append \
                     ${distname}${extract.suffix} \
-                    rmd160  fadb405b7d38f829775da60a62d29368b2159ce4 \
-                    sha256  03d9f7d777d8a62a5481934dbba2fd692b6cb43f1690a8546e45f9bdb1ee0863 \
-                    size    90119002
+rmd160  fadb405b7d38f829775da60a62d29368b2159ce4 \
+sha256  03d9f7d777d8a62a5481934dbba2fd692b6cb43f1690a8546e45f9bdb1ee0863 \
+size    90119002
 
     livecheck.type  none
 }
@@ -441,15 +441,15 @@ if {${name} eq ${subport}} {
         if {${os.major} > 12} {
             checksums-append \
                     ${github.project}_contrib-${version}${extract.suffix} \
-                    rmd160  ed7fabd08db3e57db41ae7844fa01fe99ea02b28 \
-                    sha256  92275d7abdb85da720e4dfc669f1dccba1f412c8bf097232cf00077e713c2570 \
-                    size    61052252
+rmd160  ed7fabd08db3e57db41ae7844fa01fe99ea02b28 \
+sha256  92275d7abdb85da720e4dfc669f1dccba1f412c8bf097232cf00077e713c2570 \
+size    61052252
         } else {
             checksums-append \
                     ${github.project}_contrib-${version}${extract.suffix} \
-                    rmd160  179e9842172a67db96c976e6ab4944b826835970 \
-                    sha256  f16aa7c7960e6a0d855b681d19437d4e05bc8abd6af5adf5ab86f37d1019d663 \
-                    size    60120338
+rmd160  179e9842172a67db96c976e6ab4944b826835970 \
+sha256  f16aa7c7960e6a0d855b681d19437d4e05bc8abd6af5adf5ab86f37d1019d663 \
+size    60120338
         }
 
         depends_lib-append \

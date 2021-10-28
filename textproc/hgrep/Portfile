@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -31,9 +31,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  1229432a8c51bc65ad8bb5e35c64eac88fc12fbc \
-                    sha256  d263ef8190f2d956943dff43665736717a3fc0fe712f24a57d7dc61e3b18fa02 \
-                    size    791776
+rmd160  1229432a8c51bc65ad8bb5e35c64eac88fc12fbc \
+sha256  d263ef8190f2d956943dff43665736717a3fc0fe712f24a57d7dc61e3b18fa02 \
+size    791776
 
 depends_lib-append  port:pcre2
 

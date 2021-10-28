@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -19,7 +19,7 @@ homepage            https://www.pypy.org/
 master_sites        https://downloads.python.org/${name}
 
 depends_build       port:pkgconfig \
-                    port:py27-docutils
+                    port:py39-docutils
 depends_lib         port:libffi \
                     port:sqlite3 \
                     port:bzip2 \
@@ -119,8 +119,8 @@ if {${python.branch} == 2.7} {
     patchfiles-append   pypy2-darwin.py.diff
 
     checksums           rmd160  fffd65ed0ba685ab2eb419758431b827701e4d22 \
-                        sha256  0114473c8c57169cdcab1a69c60ad7fef7089731fdbe6f46af55060b29be41e4 \
-                        size    21621891
+sha256  0114473c8c57169cdcab1a69c60ad7fef7089731fdbe6f46af55060b29be41e4 \
+size    21621891
 
     set use_prefix no
 } elseif {${python.branch} == 3.6} {
@@ -132,8 +132,8 @@ if {${python.branch} == 2.7} {
     patchfiles-append   pypy3-darwin.py.diff
 
     checksums           rmd160  02e9c76e0b381d1bb7ea2f828f221a4d7cdd403a \
-                        sha256  a23d21ca0de0f613732af4b4abb0b0db1cc56134b5bf0e33614eca87ab8805af \
-                        size    22484684
+sha256  a23d21ca0de0f613732af4b4abb0b0db1cc56134b5bf0e33614eca87ab8805af \
+size    22484684
 
     if {${os.platform} eq "darwin" && ${os.major} >= 20} {
         patchfiles-append patch-big-sur-pypy36.diff
@@ -144,16 +144,16 @@ if {${python.branch} == 2.7} {
     patchfiles-append   pypy3-darwin.py.diff
 
     checksums           rmd160  19304ae652f6f987841d693d52d9e855ae8c7129 \
-                        sha256  2ed02ac9e710859c41bc82deafb08619792bb9a27eeaa1676c741ededd214dd7 \
-                        size    23804463
+sha256  2ed02ac9e710859c41bc82deafb08619792bb9a27eeaa1676c741ededd214dd7 \
+size    23804463
 
     set use_prefix no
 } elseif {${python.branch} == 3.8} {
     patchfiles-append   pypy3-darwin.py.diff
 
     checksums           rmd160  541e6d98e10379d8982cf08e99a68c9f103a506d \
-                        sha256  21ae339f4f5016d6ca7300305f3e3b554373835cb3c39a9041fe30e6811c80c6 \
-                        size    24375444
+sha256  21ae339f4f5016d6ca7300305f3e3b554373835cb3c39a9041fe30e6811c80c6 \
+size    24375444
 
     set use_prefix yes
 }
@@ -230,18 +230,18 @@ if {$subport ne $name} {
         distfiles-append        ${bootstrapper}${extract.suffix}
         checksums-append \
             ${bootstrapper}${extract.suffix} \
-            rmd160  3d58032c522e135b2b13027f1dd55781e7d15959 \
-            sha256  9a97de82037d4be1949ec0c35a4d638ba635e8b34948549ae2fa08abd2cbaa8c \
-            size    24367213
+rmd160  3d58032c522e135b2b13027f1dd55781e7d15959 \
+sha256  9a97de82037d4be1949ec0c35a4d638ba635e8b34948549ae2fa08abd2cbaa8c \
+size    24367213
     } else {
         # for compatibility, don't bump this needlessly
         set bootstrapper        "pypy-5.1.0-osx64"
         distfiles-append        ${bootstrapper}${extract.suffix}
         checksums-append \
             ${bootstrapper}${extract.suffix} \
-            rmd160  fb209f68f77de56037faed5920678887608cdb0a \
-            sha256  7e270c66347158dd794c101c4817f742f760ed805aa0d10abe19ba4a78a75118 \
-            size    19466885
+rmd160  fb209f68f77de56037faed5920678887608cdb0a \
+sha256  7e270c66347158dd794c101c4817f742f760ed805aa0d10abe19ba4a78a75118 \
+size    19466885
     }
 
     build.cmd       ${workpath}/${bootstrapper}/bin/pypy

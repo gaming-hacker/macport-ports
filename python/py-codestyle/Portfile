@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,10 +28,10 @@ long_description    \
 homepage            https://pycodestyle.readthedocs.io
 
 checksums           rmd160  334c5291d1dc722f433283754f75c6fa9f64a995 \
-                    sha256  eddd5847ef438ea1c7870ca7eb78a9d47ce0cdb4851a5523949f2601d0cbbe7f \
-                    size    102299
+sha256  eddd5847ef438ea1c7870ca7eb78a9d47ce0cdb4851a5523949f2601d0cbbe7f \
+size    102299
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-setuptools

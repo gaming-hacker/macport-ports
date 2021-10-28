@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,8 +30,8 @@ foreach pv {39 38 37} {
 }
 
 checksums           rmd160  aa1be43b3e3687428d2359d8993a1c3c8be8b2f1 \
-                    sha256  8e51c5043efa95d751481b516071a006f87c2a4059961a9ac43ec238915de09f \
-                    size    98656
+sha256  8e51c5043efa95d751481b516071a006f87c2a4059961a9ac43ec238915de09f \
+size    98656
 
 depends_build-append \
                     port:py${python.version}-setuptools

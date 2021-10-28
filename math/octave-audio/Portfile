@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -13,8 +13,8 @@ description         Audio recording, processing, and playing tools.
 long_description    {*}${description}
 
 checksums           rmd160  053b32a1d75a7bfb00c91f836b3ce8694bf48ea5 \
-                    sha256  1968580486dd73f8b2b8f545aaa03c0ace338ad77064d4f3b75977588fbb6190 \
-                    size    356449
+sha256  1968580486dd73f8b2b8f545aaa03c0ace338ad77064d4f3b75977588fbb6190 \
+size    356449
 
 configure.env-append \
                     RTMIDI_CFLAGS=-pthread -D__UNIX_JACK__ -D__MACOSX_CORE__ -I/include/rtmidi

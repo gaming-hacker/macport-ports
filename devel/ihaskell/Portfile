@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,8 +28,8 @@ long_description    IHaskell is a kernel for the Jupyter project, \
                     IHaskell features.
 
 checksums           rmd160  4fd095d32cc83d9bcaa415e0aa0f4576dd1fe325 \
-                    sha256  73558262c66c7aa95f41e4f71154989ed0d1d942ba6cac96cac3a040aa75d73b \
-                    size    627906
+sha256  73558262c66c7aa95f41e4f71154989ed0d1d942ba6cac96cac3a040aa75d73b \
+size    627906
 
 # use these to specify python versions, python3 required
 # use ${prefix}/var/macports/sources/rsync.macports.org/macports/release/tarballs/ports/_resources/port1.0/group/python-1.0.tcl
@@ -61,7 +61,7 @@ haskell_stack.system_ghc \
 # relative paths to ${prefix}
 set ihaskell_libdir ${prefix}/lib/${name}
 set ihaskell_datadir \
-                    share/${name}
+share/${name}
 set jupyter_dir     share/jupyter
 set hlint_datadir   share/hlint
 
@@ -143,7 +143,7 @@ proc shared_library_chase { binname libdir rpath_re } {
         if { ${builtlib} ne ""
             && ![file exists ${destroot}${libpath}] } {
             xinstall -m 0644 ${builtlib} ${destroot}${libpath}
-            shared_library_chase \
+shared_library_chase \
                     ${destroot}${libpath} \
                     ${libdir} ${rpath_re}
         }
@@ -172,7 +172,7 @@ post-destroot {
         ${destroot}${prefix}/bin/ihaskell install \
             --prefix=${destroot}${prefix}"
 
-    shared_library_chase \
+shared_library_chase \
                     ${destroot}${prefix}/bin/ihaskell \
                     ${ihaskell_libdir} \
                     {@rpath/libHS.+\.dylib}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,8 +21,8 @@ long_description    A very simple, fast, multithreaded, platform independent \
                     to make REST resources available from C++ applications.
 
 checksums           rmd160  ebf87ddc11735a8ef5b93cdf05dd6afe07d33011 \
-                    sha256  7d9b2d3eb2f62e37771eba32023dad2fa8ae2b8703a5245d6a5d1f4bcd580209 \
-                    size    62494
+sha256  7d9b2d3eb2f62e37771eba32023dad2fa8ae2b8703a5245d6a5d1f4bcd580209 \
+size    62494
 
 installs_libs       no
 
@@ -32,7 +32,7 @@ variant tests description {Enable tests} {
     PortGroup       openssl 1.0
 
     configure.args-append -DBUILD_TESTING=ON
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
 
     test.run        yes
 }

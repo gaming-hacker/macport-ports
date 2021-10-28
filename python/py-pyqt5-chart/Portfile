@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,12 +20,12 @@ long_description    PyQtChart is a set of Python bindings for The Qt Company's Q
 homepage            https://www.riverbankcomputing.com/software/pyqtchart
 
 checksums           rmd160  d6177d643f23faeb557d17e0d6b77941d8d67a40 \
-                    sha256  e47750632851e105eabc27fdfa8180989d120b822181e512f6643b3c5c4d8074 \
-                    size    69252
+sha256  e47750632851e105eabc27fdfa8180989d120b822181e512f6643b3c5c4d8074 \
+size    69252
 
-python.versions     35 36 37 38 39 310
+python.versions 39
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {${name} ne ${subport}} {
     PortGroup       qmake5 1.0

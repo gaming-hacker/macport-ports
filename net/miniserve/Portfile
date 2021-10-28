@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ long_description    \
     ${description} Sometimes this is just a more practical and quick way than doing things properly.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  2fec25c16e2439653c5665e1f249e5b54e2ce2e7 \
-                    sha256  24860f103879fd881a522a7ad8f25f2c9dcd5e01287b0485bcabf3e88c719015 \
-                    size    139581
+rmd160  2fec25c16e2439653c5665e1f249e5b54e2ce2e7 \
+sha256  24860f103879fd881a522a7ad8f25f2c9dcd5e01287b0485bcabf3e88c719015 \
+size    139581
 
 # Remove the specific reference to download the mime_guess package via Git.
 # See https://github.com/macports/macports-ports/blob/d1ac384e5be77cf36af716173d3dafc351e968cb/net/bandwhich/Portfile#L31-L35
@@ -288,9 +288,9 @@ cargo.crates \
     serde_derive                   1.0.130  d7bc1a1ab1961464eae040d96713baa5a724a8152c1222492465b54322ec508b \
     serde_json                      1.0.67  a7f9e390c27c3c0ce8bc5d725f6e4d30a29d26659494aa4b17535f7522c5c950 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
-    sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
-    sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
+sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
+sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
+sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     simplelog                       0.10.2  85d04ae642154220ef00ee82c36fb07853c10a4f2a0ca6719f9991211d2eb959 \
     siphasher                        0.3.7  533494a8f9b724d33625ab53c6c4800f7cc445895924a8ef649222dcb76e938b \
