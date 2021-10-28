@@ -23,11 +23,17 @@ sha256 931378d93d11b298cf511dd634cf5ea4cb249a28ef84160b3247ee9afb4e8ab0
 python.versions 39
 
 if {$subport ne $name} {
-    depends_lib-append  port:py${python.version}-tomli
+    python.pep517   yes
+    python.add_dependencies no
+    depends_build   port:py-bootstrap-modules
+    depends_lib     port:python${python.version} \
+                    port:py${python.version}-tomli
     if {${python.version} < 38} {
         depends_lib-append  port:py${python.version}-importlib-metadata \
                             port:py${python.version}-zipp
     }
     patchfiles      no-deps-option.diff
+    build.env-append    PYTHONPATH=${prefix}/share/py-bootstrap-modules
+    destroot.env-append PYTHONPATH=${prefix}/share/py-bootstrap-modules
     livecheck.type  none
 }

@@ -1,6 +1,7 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+PortGroup           yelp 1.0
 
 # as of version 3.21.4 requires C++11 to build
 compiler.cxx_standard 2017

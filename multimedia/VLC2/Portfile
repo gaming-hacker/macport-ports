@@ -128,7 +128,7 @@ sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
                         port:libssh2 \
                         port:libtheora \
                         port:libupnp \
-                        port:libusb \
+                        path:lib/pkgconfig/libusb-1.0.pc:libusb \
                         port:libvorbis \
                         port:libvpx \
                         port:libxml2 \

@@ -21,4 +21,4 @@ sha256  36428c6a6cb3088cad5a3592933385253da5f29f2effa61518ee5991ea38f833
 
 depends_build       port:pkgconfig
 
-depends_lib         port:libusb
+depends_lib         path:lib/pkgconfig/libusb-1.0.pc:libusb

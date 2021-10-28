@@ -22,7 +22,7 @@ sha256  1133287818af9c42dec109da4770aee6935828da480f2b131bb7c1c68c846845
 
 worksrcdir          labjack-exodriver-${git_tag}/liblabjackusb
 
-depends_lib         port:libusb
+depends_lib         path:lib/pkgconfig/libusb-1.0.pc:libusb
 
 patchfiles          patch-Makefile.diff
 

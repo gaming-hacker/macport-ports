@@ -26,5 +26,5 @@ sha256  945e74d8e27683f9b8a6f6e529557b305d120df347a960a6a7ead6cb388f4072 \
 size    484309
 
 depends_build           port:pkgconfig
-depends_lib             port:libusb \
+depends_lib             path:lib/pkgconfig/libusb-1.0.pc:libusb \
                         port:libusb-compat

@@ -23,7 +23,7 @@ size    915727
 depends_build-append \
                     port:pkgconfig
 
-depends_lib-append  port:libusb \
+depends_lib-append  path:lib/pkgconfig/libusb-1.0.pc:libusb \
                     port:rtl-sdr \
                     port:SoapySDR
 

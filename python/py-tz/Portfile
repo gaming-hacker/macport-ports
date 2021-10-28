@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    pytz brings the Olson tz database into Python. This library 
 homepage            https://pypi.python.org/pypi/pytz
 
 checksums           rmd160  01bf711ede0e704ff5bf0d63145e647dcdae0c6d \
-sha256  acad2d8b20a1af07d4e4c9d2e9285c5ed9104354062f275f3fcd88dcef4f1326 \
-size    320512
+                    sha256  acad2d8b20a1af07d4e4c9d2e9285c5ed9104354062f275f3fcd88dcef4f1326 \
+                    size    320512
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 if {${name} ne ${subport}} {
     if {${python.version} in "27 35 36"} {

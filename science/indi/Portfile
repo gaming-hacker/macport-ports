@@ -33,7 +33,7 @@ sha256  44ef0a943fe9f312f874b2e76b9892bd850c60cbd936f608fb2c224375d6d0b3
 
 depends_lib         port:libnova \
                     port:zlib \
-                    port:libusb \
+                    path:lib/pkgconfig/libusb-1.0.pc:libusb \
                     port:libusb-compat \
                     port:cfitsio
 
