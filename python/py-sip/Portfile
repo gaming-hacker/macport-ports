@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-sip
-version             6.3.1
-revision            1
+version             6.4.0
+revision            0
 epoch               1
 
 categories-append   devel
@@ -22,19 +22,19 @@ long_description    SIP is a tool that makes it very easy to create \
 
 homepage            https://www.riverbankcomputing.com/software/sip/
 
-checksums           rmd160  54a37fc3a58b922a3324ebdcdc90675859f29bea \
-sha256  2f9cd6ce0e19226d53d62ad6ba81a62f624626f14924724eab2a23390d4dc684 \
-size    1200906
+checksums           rmd160  0e2ed22071b11af693cd5221e0c946ed19b95cf0 \
+                    sha256  42ec368520b8da4a0987218510b1b520b4981e4405086c1be384733affc2bcb0 \
+                    size    1201890
 
-python.versions 39
+python.versions     35 36 37 38 39 310
 
 if {${name} ne ${subport}} {
     if {${python.version} == 35} {
         version     5.5.0
         revision    0
         checksums   rmd160  fe56e4f7617fcc8aad3c63e10b19996f58ba44dc \
-sha256  5d024c419b30fea8a6de8c71a560c7ab0bc3c221fbfb14d55a5b865bd58eaac5 \
-size    1108126
+                    sha256  5d024c419b30fea8a6de8c71a560c7ab0bc3c221fbfb14d55a5b865bd58eaac5 \
+                    size    1108126
     }
 
     depends_lib-append \

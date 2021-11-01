@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; c-basic-offset: 2 -*-
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -27,20 +27,20 @@ master_sites        https://downloads.skewed.de/graph-tool/
 use_bzip2           yes
 
 checksums           rmd160  786b809ef049c25e08ce549d96f19efdfd7c2e1f \
-sha256  5f1bee094220cfb24868db0faf47f8e2ffd26f77dd709995842e4d9e898da86c \
-size    15170272
+                    sha256  5f1bee094220cfb24868db0faf47f8e2ffd26f77dd709995842e4d9e898da86c \
+                    size    15170272
 
 boost.version       1.71
 
-python.versions 39
+python.versions     27 37 38 39
 
 if {${os.major} <= 12 && ${os.platform} eq "darwin"} {
     version         2.2.26
     revision        0
     master_sites    https://downloads.skewed.de/graph-tool/old/
     checksums       md5     317b29de0d3ef715fdc9281e078cfb17 \
-sha1    108be4cf6212eb6886f172ea03813187f73e4c3c \
-rmd160  cd2e8506522821750d70a97b951254f0a133d218
+                    sha1    108be4cf6212eb6886f172ea03813187f73e4c3c \
+                    rmd160  cd2e8506522821750d70a97b951254f0a133d218
 } else {
     if {${name} ne ${subport}} {
         compiler.cxx_standard   2017
@@ -56,6 +56,14 @@ rmd160  cd2e8506522821750d70a97b951254f0a133d218
 }
 
 if {${name} ne ${subport}} {
+    if {${python.version} == 27} {
+        version         2.37
+        revision        0
+        checksums       rmd160  93fb76ab7506d09847a2c8d03c2b56f635b18b22 \
+                        sha256  df472a0debb683d2f58243945bb9fd525dfdac9ee0b1e9e70f054cff49235170 \
+                        size    15164210
+    }
+
     universal_variant   no
 
     depends_build-append \
@@ -72,7 +80,7 @@ if {${name} ne ${subport}} {
                     port:py${python.version}-scipy
 
     # graph-tool relies on Boost.Python, so make sure it is installed.
-    require_active_variants boost${boost.version} python${python.version}
+    require_active_variants boost[boost::version_nodot] python${python.version}
 
     use_configure   yes
     # parallel build starts swapping with 8GB of RAM.
@@ -90,14 +98,14 @@ if {${name} ne ${subport}} {
     # https://trac.macports.org/ticket/61583#comment:8
     macosx_deployment_target
 
-    # With python3.9 PYTHON_EXTRA_LIBS is determined to be
-    # '-u _PyMac_Error Python.framework/Versions/3.9/Python'. Not clear whether
-    # python3.9 or py-graph-tool's configure script is to blame, but we can easily
+    # With python2.7 PYTHON_EXTRA_LIBS is determined to be
+    # '-u _PyMac_Error Python.framework/Versions/2.7/Python'. Not clear whether
+    # python2.7 or py-graph-tool's configure script is to blame, but we can easily
     # work around this:
     if {${python.version} eq "27"} {
         configure.env-append "PYTHON_EXTRA_LIBS=-u _PyMac_Error"
     }
-    # Something similar is happening with python3.9
+    # Something similar is happening with python3.6
     if {${python.version} eq "36"} {
         configure.env-append "PYTHON_EXTRA_LIBS=-Wl,-stack_size,1000000 -framework CoreFoundation ${python.lib}"
     }
@@ -131,7 +139,7 @@ if {${name} ne ${subport}} {
     variant gtk3 description "Enable interactive drawing with gtk3" {
         depends_lib-append \
                     path:lib/pkgconfig/gtk+-3.0.pc:gtk3 \
-                    port:librsvg
+                    path:lib/pkgconfig/librsvg-2.0.pc:librsvg
     }
 
     post-destroot {

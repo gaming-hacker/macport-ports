@@ -1,14 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        sleuthkit sleuthkit 4.11.0 sleuthkit-
+github.setup        sleuthkit sleuthkit 4.11.1 sleuthkit-
 revision            0
 
-checksums           rmd160  8691d1dbdee0aa455a57c9f803db525838180826 \
-sha256  02e3698fb0bd349a4c7c5af27ddf9cf6c2f99618b195e44dcaaf9f59147813fb \
-size    4421671
+checksums           rmd160  d848551282020e2e43729dc2d5d3a45624cb2f10 \
+                    sha256  c3999f4a727bf5bc8a46bba933dcfb95c4170e52c76916d1137b534a3576405f \
+                    size    4446299
 
 categories          sysutils
 maintainers         nomaintainer
@@ -29,7 +29,7 @@ long_description    The Sleuth Kit (previously known as TASK) is a collection \
     disks. With these tools, you can identify where partitions are located and \
     extract them so that they can be analyzed with file system analysis tools.
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2014
 
 use_autoconf        yes
 autoconf.cmd        ./bootstrap

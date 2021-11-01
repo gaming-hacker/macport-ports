@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 PortGroup           compiler_blacklist_versions 1.0
 PortGroup           legacysupport               1.1
 
-legacysupport.use_static                    yes
-legacysupport.newest_darwin_requires_legacy 15
+legacysupport.use_static                        yes
+legacysupport.newest_darwin_requires_legacy     15
 
 name                rust
-version             1.56.0
-revision            2
+version             1.56.1
+revision            0
 categories          lang devel
 platforms           darwin
 supported_archs     x86_64 arm64
@@ -118,34 +118,34 @@ distfiles-append    rust-std-${binTag}${extract.suffix} \
                     cargo-${binTag}${extract.suffix}
 
 checksums           ${distname}${extract.suffix} \
-rmd160  368b8a5a81bdbc45394f00a7b20a47f3ed215604 \
-sha256  cd0fd72d698deb3001c18e0f4bf8261d8f86420097eef94ca3a1fe047f2df43f \
-size    179965258
+                    rmd160  0ffd146c73d9f1df7df3b3f1426719f53e472dbc \
+                    sha256  c3898dfaadaa193dc88ddbc5345946a163211b58621df1cfff70186b4fc79511 \
+                    size    179961977
 
 checksums-append    rust-std-${rustc_version}-x86_64-apple-${os.platform}${extract.suffix} \
-rmd160  e176c7bd39f849a2464fe21e80bf7ecc4c323bcb \
-sha256  8888fb0a1cbc645f86e1551d27cc127697361fecab9cd414691e434976412733 \
-size    33794732 \
+                    rmd160  e176c7bd39f849a2464fe21e80bf7ecc4c323bcb \
+                    sha256  8888fb0a1cbc645f86e1551d27cc127697361fecab9cd414691e434976412733 \
+                    size    33794732 \
                     rustc-${rustc_version}-x86_64-apple-${os.platform}${extract.suffix} \
-rmd160  790e5eae325061eab3f1d3b452b42ec0ae9caf8e \
-sha256  7d1197687c72d4c72ae04905b96a7205ec4ad7c9da0231ea6f3bbbc8399adb84 \
-size    116313306 \
+                    rmd160  790e5eae325061eab3f1d3b452b42ec0ae9caf8e \
+                    sha256  7d1197687c72d4c72ae04905b96a7205ec4ad7c9da0231ea6f3bbbc8399adb84 \
+                    size    116313306 \
                     cargo-${rustc_version}-x86_64-apple-${os.platform}${extract.suffix} \
-rmd160  d8bdc56338c54499e937fd8b61523e39070ca1e9 \
-sha256  4e004cb231c8efbd4241b012c6abeefc7d61e2b4357cfe69feb0d4a448d30f05 \
-size    6572300 \
+                    rmd160  d8bdc56338c54499e937fd8b61523e39070ca1e9 \
+                    sha256  4e004cb231c8efbd4241b012c6abeefc7d61e2b4357cfe69feb0d4a448d30f05 \
+                    size    6572300 \
                     rust-std-${rustc_version}-aarch64-apple-${os.platform}${extract.suffix} \
-rmd160  51d1c05310a9babcf59e86685b04051e9991d4cc \
-sha256  bd364710331b34f454258b73e5cfc0583d3c0763ecce0994d8a990c1847604a4 \
-size    32289409 \
+                    rmd160  51d1c05310a9babcf59e86685b04051e9991d4cc \
+                    sha256  bd364710331b34f454258b73e5cfc0583d3c0763ecce0994d8a990c1847604a4 \
+                    size    32289409 \
                     rustc-${rustc_version}-aarch64-apple-${os.platform}${extract.suffix} \
-rmd160  c0797be71ee5b6154d2a9751809cd8eab5c57606 \
-sha256  4d782c947f1a35f5fb60799f019b4b82ad121a017746c935ab37fbd105c66c8f \
-size    115416478 \
+                    rmd160  c0797be71ee5b6154d2a9751809cd8eab5c57606 \
+                    sha256  4d782c947f1a35f5fb60799f019b4b82ad121a017746c935ab37fbd105c66c8f \
+                    size    115416478 \
                     cargo-${rustc_version}-aarch64-apple-${os.platform}${extract.suffix} \
-rmd160  b0af0cc32e828a545f9e49cfda0468a74fe189cc \
-sha256  9e49c057f8020fa4f67e6530aa2929c175e5417d19fc9f3a14c9ffb168c2932d \
-size    5832622
+                    rmd160  b0af0cc32e828a545f9e49cfda0468a74fe189cc \
+                    sha256  9e49c057f8020fa4f67e6530aa2929c175e5417d19fc9f3a14c9ffb168c2932d \
+                    size    5832622
 
 set min_darwin 13
 if {${os.platform} eq "darwin" && ${os.major} < ${min_darwin}} {
@@ -268,7 +268,7 @@ subport ${ccwrap} {
                 "\$\{MACPORTS_RUST_LD\:\-${sel_ld}\}" \
                 "\$\{MACPORTS_LEGACY_SUPPORT_LDFLAGS\}"
             foreach cmd { ar as nm nm-classic libtool lipo objdump otool ranlib \
-size size-classic strip strings bitcode-strip segedit } {
+                          size size-classic strip strings bitcode-strip segedit } {
                 ln -s ${prefix}/bin/${cmd} ${destroot}${wrapdir}/${cmd}
             }
         }

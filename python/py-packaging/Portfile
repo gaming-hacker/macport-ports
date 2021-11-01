@@ -69,4 +69,6 @@ size    74402
             xinstall -m 0644 -W ${worksrcpath} ${docfile} ${destroot}${docdir}
         }
     }
+
+    livecheck.type  none
 }

@@ -24,8 +24,9 @@ size    19692
 python.versions 39
 
 if {${subport} ne ${name}} {
+    patchfiles      patch-setup.py.diff
+
     depends_build-append \
-                    port:py${python.version}-nose \
                     port:py${python.version}-setuptools
 
     if {${python.version} == 27} {
