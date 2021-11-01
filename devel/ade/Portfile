@@ -24,5 +24,8 @@ size    116075
 
 compiler.cxx_standard 2017
 
-compiler.blacklist-append *gcc* {clang < 900} {macports-clang-3.[0-9]} {macports-clang-[4-6].0}
+compiler.blacklist-append {clang < 900} {macports-clang-3.[0-9]} {macports-clang-[4-6].0}
 compiler.fallback-append  macports-clang-8.0 macports-clang-7.0
+
+# GCC error: '{anonymous}::HostBufferImpl::~HostBufferImpl()' defined but not used
+configure.cxxflags  -Wno-unused-function
