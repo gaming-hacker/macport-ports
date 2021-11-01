@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,10 +26,10 @@ long_description    The parsing module is an alternative approach to creating \
 homepage            https://github.com/pyparsing/pyparsing/
 
 checksums           rmd160  5ae07df408ef57ec36e213d815a5c7fa1a3030f8 \
-                    sha256  e0df773d7fa2240322daae7805626dfc5f2d5effb34e1a7be2702c99cfb9f6b1 \
-                    size    879722
+sha256  e0df773d7fa2240322daae7805626dfc5f2d5effb34e1a7be2702c99cfb9f6b1 \
+size    879722
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -38,8 +38,8 @@ if {${name} ne ${subport}} {
     if {${python.version} <= 35} {
         version     2.4.7
         checksums   rmd160  2dbbca645985bb7f4b4d7a36b6ba3958302adfb9 \
-                    sha256  c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1 \
-                    size    649718
+sha256  c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1 \
+size    649718
     }
 
     test.run        yes

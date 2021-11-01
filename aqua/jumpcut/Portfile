@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -36,8 +36,8 @@ if {${os.major} < 14 } {
     extract.suffix      .tgz
 
     checksums           rmd160  4812eddf7f6efd116a511192dae398682a68beba \
-                        sha256  19c84eefbc7f173af45affe3a9ca6fd9ec58d9bdf6bacef165085e63e82d54e1 \
-                        size    530939
+sha256  19c84eefbc7f173af45affe3a9ca6fd9ec58d9bdf6bacef165085e63e82d54e1 \
+size    530939
 } else {
     PortGroup           github 1.0
 
@@ -50,8 +50,8 @@ if {${os.major} < 14 } {
     use_bzip2           yes
 
     checksums           rmd160  ef7e23249a314c092ac7ad8e70828c638d16891d \
-                        sha256  170c669ae3dffdf029434412eb6ec5d733905583ad7ad72120179b5af3615c1a \
-                        size    2148931
+sha256  170c669ae3dffdf029434412eb6ec5d733905583ad7ad72120179b5af3615c1a \
+size    2148931
 }
 
 extract.mkdir       yes

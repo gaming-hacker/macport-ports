@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ dist_subdir         ${name}/${version}_${revision}
 use_zip             yes
 
 checksums           rmd160  53de899b5012c18dcf655754974f6b8374713179 \
-                    sha256  8c4492baf6d5b1d26d157877f53d063259e615d784e8ab4d046d3ee67fb9b345 \
-                    size    4570479
+sha256  8c4492baf6d5b1d26d157877f53d063259e615d784e8ab4d046d3ee67fb9b345 \
+size    4570479
 
 use_configure       no
 

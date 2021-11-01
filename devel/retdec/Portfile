@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -18,8 +18,8 @@ long_description    ${description}. The decompiler is not limited to any particu
                     target architecture, operating system, or executable file format.
 
 checksums           rmd160  305e901b37441337d5c0dada1ccc5e737831ef1e \
-                    sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
-                    size    8732003
+sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
+size    8732003
 
 patch.pre_args      -p1
 patchfiles          patch-python3.diff \
@@ -64,8 +64,8 @@ subport retdec-devel {
     revision        0
 
     checksums       rmd160  fcb1da52fd605e36c573e3dde7f9043eedcc2b83 \
-                    sha256  550bcfb33e655fce1238f7c204191429433b9ad3423cf251c18e40177142b363 \
-                    size    12132198
+sha256  550bcfb33e655fce1238f7c204191429433b9ad3423cf251c18e40177142b363 \
+size    12132198
 
     patchfiles-delete \
                     patch-python3.diff \

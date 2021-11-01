@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ homepage            http://waterlan.home.xs4all.nl/
 master_sites        ${homepage}wcd
 
 checksums           rmd160  e83736afbea8f323545706c384b823f61935c137 \
-                    sha256  5673645f77505c8d03ca75ffcb32f6a2a86fa1b1e9a8dd9d0a5bd10a202eabf2 \
-                    size    935815
+sha256  5673645f77505c8d03ca75ffcb32f6a2a86fa1b1e9a8dd9d0a5bd10a202eabf2 \
+size    935815
 
 depends_lib         port:gettext \
                     port:ncurses

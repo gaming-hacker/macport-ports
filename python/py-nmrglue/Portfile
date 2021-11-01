@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    nmrglue is a module for working with NMR data in Python. \
 homepage            https://nmrglue.com
 
 checksums           rmd160  283a2f59f730affc60dde525152bcb405d8ec909 \
-                    sha256  198375ce724ab9776953a3d3ed3eb4fa0d1b859fac97360cffa5d9143f8a5bfe \
-                    size    176607
+sha256  198375ce724ab9776953a3d3ed3eb4fa0d1b859fac97360cffa5d9143f8a5bfe \
+size    176607
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 foreach pver {36 37 38 39 310} {
     subport py${pver}-nmrglue-devel {
@@ -35,8 +35,8 @@ foreach pver {36 37 38 39 310} {
         version         20211011-[string range ${github.version} 0 7]
         revision        0
         checksums       rmd160  8850e19036918de473bae8db85383aaa81021e17 \
-                        sha256  b80110712253b2542939608696f3c37076e51619b2f30241bd281f88cf9e92a4 \
-                        size    14797276
+sha256  b80110712253b2542939608696f3c37076e51619b2f30241bd281f88cf9e92a4 \
+size    14797276
         conflicts       py${pver}-nmrglue
     }
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160  61227fb3e59bd38b9dcc632964e79576dad730d2 \
-                    sha256  ab45d7c70ba837f01e6b5b5c18acf8af6200dad4bae8e47e4c2ca01fbf2fa930 \
-                    size    304492
+sha256  ab45d7c70ba837f01e6b5b5c18acf8af6200dad4bae8e47e4c2ca01fbf2fa930 \
+size    304492
 
 depends_build       port:pkgconfig \
                     port:gsed
@@ -36,7 +36,7 @@ depends_lib         port:djvulibre \
 patchfiles          patch-i18n.hh.diff \
                     patch-sys-uuid.diff
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 # explicitly configure to build with system libuuid, overriding pkg-config
 # this prevents linking with ossp-uuid if it is installed
@@ -60,6 +60,6 @@ post-destroot {
 }
 
 test.run            yes
-depends_test-append port:python27 \
-                    port:py27-nose
-test.args           PYTHON=${prefix}/bin/python2.7
+depends_test-append port:python39 \
+                    port:py39-nose
+test.args           PYTHON=${prefix}/bin/python3.9

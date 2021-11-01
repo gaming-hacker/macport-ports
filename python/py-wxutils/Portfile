@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    \
 homepage            https://github.com/newville/wxutils
 
 checksums           rmd160  51ee95e8f84b51a2ba35d8fee338bf2b918dfff7 \
-                    sha256  6b4ae621b6a0ad0d0e4b8b822bd982413ba053d6e11cd97f021632716e175eac \
-                    size    33928
+sha256  6b4ae621b6a0ad0d0e4b8b822bd982413ba053d6e11cd97f021632716e175eac \
+size    33928
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ python.default_version \
 depends_lib         port:py${python.version}-setuptools
 
 checksums           rmd160  d09cc3f7bf8ed5e7fb897e062b9ed0191943d383 \
-                    sha256  6051b90b1ed7ddf051c5a9c7ec06d422df8810bf0b63957191f5ab7aab1a2593 \
-                    size    82037
+sha256  6051b90b1ed7ddf051c5a9c7ec06d422df8810bf0b63957191f5ab7aab1a2593 \
+size    82037
 
 post-destroot {
     set docdir ${prefix}/share/doc/${subport}

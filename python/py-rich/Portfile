@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    {*}${description}. The Rich API makes it easy to add color \
 homepage            https://rich.readthedocs.io/en/latest/
 
 checksums           rmd160 27f7811cfd8af9aa264b517b97b39baac3db6e14 \
-                    sha256 83fb3eff778beec3c55201455c17cccde1ccdf66d5b4dade8ef28f56b50c4bd4 \
-                    size   195363
+sha256 83fb3eff778beec3c55201455c17cccde1ccdf66d5b4dade8ef28f56b50c4bd4 \
+size   195363
 
-python.versions     36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
 

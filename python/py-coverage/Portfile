@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    Coverage measures code coverage, typically during test \
 homepage            https://github.com/nedbat/coveragepy
 
 checksums           rmd160  e154af4a3e0b6ee991306aab92419d27fd72a1be \
-                    sha256  b8e4f15b672c9156c1154249a9c5746e86ac9ae9edc3799ee3afebc323d9d9e0 \
-                    size    715305
+sha256  b8e4f15b672c9156c1154249a9c5746e86ac9ae9edc3799ee3afebc323d9d9e0 \
+size    715305
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -41,8 +41,8 @@ if {${name} ne ${subport}} {
     if {${python.version} in "27 35"} {
         version     5.5
         checksums   rmd160  5652a14045197a2e4f051128f4826f9b0dd3c6fa \
-                    sha256  ebe78fe9a0e874362175b02371bdfbee64d8edc42a044253ddf4ee7d3c15212c \
-                    size    691258
+sha256  ebe78fe9a0e874362175b02371bdfbee64d8edc42a044253ddf4ee7d3c15212c \
+size    691258
         revision    0
 
         patchfiles  patch-v55-setup.py.diff

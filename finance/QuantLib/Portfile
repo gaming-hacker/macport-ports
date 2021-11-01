@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ PortGroup           boost 1.0
 github.setup        lballabio QuantLib 1.24 QuantLib-v
 revision            0
 checksums           rmd160  6b1a1336bb84faa8b30e36e225421abe0d07ba5a \
-                    sha256  ddda3707002b5af3103bf8b9ac250b233bd06de111c0faca031f2931d884b2e7 \
-                    size    9299324
+sha256  ddda3707002b5af3103bf8b9ac250b233bd06de111c0faca031f2931d884b2e7 \
+size    9299324
 
 categories          finance
 platforms           darwin
