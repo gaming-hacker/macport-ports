@@ -28,7 +28,7 @@ size    186547
 patchfiles          pkgconfig.patch byteswap.patch
 
 depends_lib         port:a52dec \
-                    port:ffmpeg \
+                    path:lib/libavcodec.dylib:ffmpeg \
                     port:libao \
                     port:libmad
 depends_build       port:pkgconfig

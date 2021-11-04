@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-tifffile
-version             2021.10.12
+version             2021.11.2
 revision            0
 platforms           darwin
 license             BSD
@@ -17,11 +17,11 @@ long_description    {*}${description} Read image and metadata from TIFF-like fil
 
 homepage            https://www.lfd.uci.edu/~gohlke/
 
-checksums           rmd160  3106be516bafc19a33d28327d14cf5e6e2da2e18 \
-sha256  0a78268a2d844af94929512d28b39bd1ea6fe46de4124103840b5fe4e1c555cd \
-size    266448
+checksums           rmd160  91ccc788c3222e77c94f607f1f885a1faa6f00cb \
+                    sha256  153e31fa1d892f482fabb2ae9f2561fa429ee42d01a6f67e58cee13637d9285b \
+                    size    271504
 
-python.versions 39
+python.versions     37 38 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

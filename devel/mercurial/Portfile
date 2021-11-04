@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                mercurial
 # don't forget to update dependents for mercurial:
 # port echo rdepends:mercurial and \( name:hg or name:mercurial \) | grep -v 'py[[:digit:]]'
-version             5.9.2
+version             5.9.3
 revision            0
 categories          devel python
 platforms           darwin
@@ -32,9 +32,9 @@ long_description    Mercurial is a fast, lightweight Source Control Management \
 homepage            https://www.mercurial-scm.org
 
 checksums           ${distname}${extract.suffix}  \
-rmd160  29d52487d7da57c5182b6daad7e8ca73403933d7 \
-sha256  1edad93096f64d5cae55b9550bb835ac73840c7406861c3cf4e14c3b443bec54 \
-size    8125497
+                    rmd160  99d4a3a244a2c721a9ec88e6955aec607628e452 \
+                    sha256  3b43f68977ad0fa75aa7f1e5c8f0a83ba935621ab2396129abb498e56d1be08e \
+                    size    8126023
 
 python.default_version 39
 
@@ -209,8 +209,8 @@ variant rust description {Enable experimental Rust optimizations} {
     remove_dir_all                   0.5.3  3acd125665422973a33ac9d3dd2df85edad0f4ae9b00dafb1a05e43a9f5ef8e7 \
     same-file                        1.0.6  93fc1dc3aaa9bfed95e02e6eadabb4baf7e3078b0bd1b4d7b6b0b68378900502 \
     scopeguard                       1.1.0  d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd \
-sha-1                            0.9.6  8c4cfa741c5832d0ef7fab46cabed29c2aae926db0b11bb2069edd8db5e64e16 \
-sized-chunks                     0.6.2  1ec31ceca5644fa6d444cc77548b88b67f46db6f7c71683b0f9336e671830d2f \
+    sha-1                            0.9.6  8c4cfa741c5832d0ef7fab46cabed29c2aae926db0b11bb2069edd8db5e64e16 \
+    sized-chunks                     0.6.2  1ec31ceca5644fa6d444cc77548b88b67f46db6f7c71683b0f9336e671830d2f \
     static_assertions                1.1.0  a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \
     syn                             1.0.54  9a2af957a63d6bd42255c359c93d9bfdb97076bd3b820897ce55ffbfbf107f44 \

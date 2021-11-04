@@ -25,6 +25,10 @@ size    14638
 python.versions 39
 
 if {${name} ne ${subport}} {
+    # Backport https://gitlab.com/rubdos/pyreflink/-/merge_requests/10
+    patch.pre_args  -p1
+    patchfiles      before-sierra.patch
+
     depends_build-append \
                     port:py${python.version}-pip \
                     port:py${python.version}-pytest-runner \

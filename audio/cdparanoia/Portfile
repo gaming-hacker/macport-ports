@@ -45,8 +45,14 @@ rmd160  d6c4ea9cc4aa4d5bcca4985e668ea6142d53cc55
 patchfiles	    osx_interface.patch \
                 fixing-include.patch \
                 fixing-labs.patch \
-                fixing-fprintf.patch
+                fixing-fprintf.patch \
+                configure.in.patch
 patch.args -p1
+
+post-patch {
+    move ${worksrcpath}/configure.guess ${worksrcpath}/config.guess
+    move ${worksrcpath}/configure.sub ${worksrcpath}/config.sub
+}
 
 use_autoconf	yes
 
