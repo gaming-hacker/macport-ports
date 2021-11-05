@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -30,8 +30,8 @@ if {${name} eq ${subport}} {
     revision        1
 
     checksums       rmd160  6a0153bc53f7c107c700404262ce1b4d02e6dd91 \
-                    sha256  e994d263f2fd2c22febfbe45103526e00145a7674a0fda79c822b97c2770a9e3 \
-                    size    2202328
+sha256  e994d263f2fd2c22febfbe45103526e00145a7674a0fda79c822b97c2770a9e3 \
+size    2202328
 
     patchfiles      debian/010_upstream.patch \
                     debian/020_debian.patch
@@ -53,8 +53,8 @@ subport w3m-devel {
     version         20211027
 
     checksums       rmd160  367dfca9fec89d60d99e94c2c3bea881c1bdfcef \
-                    sha256  efe73a7a81cb7d926963fcb422787b163e8f5e5486c811b2286204e3b20b6a52 \
-                    size    2304899
+sha256  efe73a7a81cb7d926963fcb422787b163e8f5e5486c811b2286204e3b20b6a52 \
+size    2304899
 
     conflicts       w3m
 }

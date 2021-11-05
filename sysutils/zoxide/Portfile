@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,9 +24,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  a4c0a2682ecd683606829ce724448719e095e967 \
-                    sha256  aea1a55d107a2367d46be19617fbd8fb440d906121a84d6d9e7b86f3a24fbad4 \
-                    size    268633
+rmd160  a4c0a2682ecd683606829ce724448719e095e967 \
+sha256  aea1a55d107a2367d46be19617fbd8fb440d906121a84d6d9e7b86f3a24fbad4 \
+size    268633
 
 notes "
     If you're using bash, add the following to your ~/.bashrc:

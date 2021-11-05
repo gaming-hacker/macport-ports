@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -38,10 +38,10 @@ if {$subport == $name} {
     distname        scala-${version}
     extract.suffix  .tgz
     checksums       md5     2bd6e3e0c89109f8500da7fcc7bf6096 \
-                    sha1    de040c8a1410adf46d03a48189435b69cbbe9a93 \
-                    rmd160  7e49651448b692eb9cd04d31205d62db1c86a235 \
-                    sha256  14ef16008786bc7b37135b284be624507701f651396d16fd8a48a35a4bcea94e \
-                    size    23743593
+sha1    de040c8a1410adf46d03a48189435b69cbbe9a93 \
+rmd160  7e49651448b692eb9cd04d31205d62db1c86a235 \
+sha256  14ef16008786bc7b37135b284be624507701f651396d16fd8a48a35a4bcea94e \
+size    23743593
 
     destroot {
         set man1dir ${sharedir}/man/man1
@@ -76,10 +76,10 @@ subport ${name}-docs {
     use_xz          yes
     extract.suffix  .txz
     checksums       md5     4a51c17990fc589afe5153368ece46ba \
-                    sha1    479ef3dc9aae385a1a66ffcec8a2c9057eeb2a20 \
-                    rmd160  51412e9f4715f1f06a54140c4bd79d4a002694d6 \
-                    sha256  70ada5a0fd4535638e0c333facd80bb5e935523816985bdb46ab3384797eaefd \
-                    size    62334616
+sha1    479ef3dc9aae385a1a66ffcec8a2c9057eeb2a20 \
+rmd160  51412e9f4715f1f06a54140c4bd79d4a002694d6 \
+sha256  70ada5a0fd4535638e0c333facd80bb5e935523816985bdb46ab3384797eaefd \
+size    62334616
 
     worksrcdir      scala-${version}
 

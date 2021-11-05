@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -24,8 +24,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           rmd160  fbc5d1991c7983172a21a362c6fa4a5be05c821a \
-                    sha256  74e29757fbaa9744e5707f6666195f21515f3abe29da284f833635afe60d12ec \
-                    size    2321983
+sha256  74e29757fbaa9744e5707f6666195f21515f3abe29da284f833635afe60d12ec \
+size    2321983
 
 build.args          -o ${name} \
                     -ldflags '-X main.version=${version} -X main.date='
