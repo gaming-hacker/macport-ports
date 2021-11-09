@@ -18,8 +18,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  d1482a8ac4b1fd863f1f4edc267cc7e87e00a49f \
-                    sha256  118dc659d229e2fa7e6c03c8b7aef738f0e9e7e773cc941329b5afbeb82e88a9 \
-                    size    320484
+sha256  118dc659d229e2fa7e6c03c8b7aef738f0e9e7e773cc941329b5afbeb82e88a9 \
+size    320484
 
 depends_build       port:autoconf \
                     port:automake \

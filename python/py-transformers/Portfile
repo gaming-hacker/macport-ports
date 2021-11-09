@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,11 +26,11 @@ long_description    🤗 Transformers provides thousands of pretrained \
 
 homepage            https://huggingface.co/transformers/
 
-python.versions     38 39
+python.versions 39
 
 checksums           rmd160  c5bbfb05c5781fd724b47a04f1ac3231af5a4367 \
-                    sha256  8a94015e3163cb4168dc0110ab4d9f4e64e8a79be51bd0137e5da43a3796f75e \
-                    size    10762285
+sha256  8a94015e3163cb4168dc0110ab4d9f4e64e8a79be51bd0137e5da43a3796f75e \
+size    10762285
 
 if {${name} ne ${subport}} {
     # see https://github.com/huggingface/transformers/blob/master/setup.py

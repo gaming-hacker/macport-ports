@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,9 +21,9 @@ homepage            https://www.nushell.sh
 build.args          --features extra
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  1d96c0f58dd2264cea70edcd24e4ed97d38ffd91 \
-                    sha256  0f5d174c8200f35d93f97b3ae61e8f4487307f038e524822843ee48220e7ed0b \
-                    size    6297106
+rmd160  1d96c0f58dd2264cea70edcd24e4ed97d38ffd91 \
+sha256  0f5d174c8200f35d93f97b3ae61e8f4487307f038e524822843ee48220e7ed0b \
+size    6297106
 
 destroot {
     delete {*}[glob ${worksrcpath}/target/[cargo.rust_platform]/release/*.d]
@@ -282,9 +282,9 @@ cargo.crates \
     malloc_buf                       0.0.6  62bb907fe88d54d8d9ce32a3cceab4218ed2f6b7d35617cafe9adf84e43919cb \
     markup5ever                     0.10.1  a24f40fb03852d1cdd84330cddcaf98e9ec08a7b7768e952fad3b4cf048ec8fd \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
-    md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
-    md5                              0.6.1  7e6bcd6433cff03a4bfc3d9834d504467db1f1cf6d0ea765d37d330249ed629d \
-    md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
+md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
+md5                              0.6.1  7e6bcd6433cff03a4bfc3d9834d504467db1f1cf6d0ea765d37d330249ed629d \
+md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
     memchr                           2.4.1  308cc39be01b73d0d18f82a0e7b2a3df85245f84af96fdddc5d202d27e47b86a \
     memmap2                          0.2.3  723e3ebdcdc5c023db1df315364573789f8857c11b631a2fdfad7c00f5c046b4 \
     memoffset                        0.6.4  59accc507f1338036a0477ef61afdae33cde60840f4dfe481319ce3ad116ddf9 \
@@ -446,9 +446,9 @@ cargo.crates \
     serial_test                      0.5.1  e0bccbcf40c8938196944a3da0e133e031a33f4d6b72db3bda3cc556e361905d \
     serial_test_derive               0.5.1  b2acd6defeddb41eb60bb468f8825d0cfd0c2a76bc03bfd235b6a1dc4f6a1ad5 \
     servo_arc                        0.1.1  d98238b800e0d1576d8b6e3de32827c2d74bee68bb97748dcf5071fb53965432 \
-    sha1                             0.2.0  cc30b1e1e8c40c121ca33b86c23308a090d19974ef001b4bf6e61fd1a0fb095c \
-    sha2                             0.9.6  9204c41a1597a8c5af23c82d1c921cb01ec0a4c59e07a9c7306062829a3903f3 \
-    shadow-rs                       0.6.13  34aa4acee547e80ee27be89308f61409058e0b4e9396f59461ed2de11c71e5b6 \
+sha1                             0.2.0  cc30b1e1e8c40c121ca33b86c23308a090d19974ef001b4bf6e61fd1a0fb095c \
+sha2                             0.9.6  9204c41a1597a8c5af23c82d1c921cb01ec0a4c59e07a9c7306062829a3903f3 \
+shadow-rs                       0.6.13  34aa4acee547e80ee27be89308f61409058e0b4e9396f59461ed2de11c71e5b6 \
     shell-escape                     0.1.5  45bb67a18fa91266cc7807181f62f9178a6873bfad7dc788c42e6430db40184f \
     shell-words                      1.0.0  b6fa3938c99da4914afedd13bf3d79bcb6c277d1b2c398d23257a304d9e1b074 \
     signal-hook                     0.1.17  7e31d442c16f047a671b5a71e2161d6e68814012b7f5379d269ebd915fac2729 \

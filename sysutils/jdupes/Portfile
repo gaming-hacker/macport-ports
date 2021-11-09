@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        jbruchon jdupes 1.20.2 v
 revision            0
 checksums           rmd160  ffad1b8a7e1c15247aa8dc4cbe7f9b07c57ce4c5 \
-                    sha256  54a03a338bac1081c57d2ca64c72f6f616d85b728ada47690a86010ac63cee23 \
-                    size    94371
+sha256  54a03a338bac1081c57d2ca64c72f6f616d85b728ada47690a86010ac63cee23 \
+size    94371
 
 platforms           darwin
 categories          sysutils

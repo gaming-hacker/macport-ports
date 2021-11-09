@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ maintainers         {kimuraw @kimuraw} \
 platforms           darwin
 
 checksums           sha256  891a3a72ad0ba67e533b6c0e85730ae1e96080a267fdc7bfb5b83204644e048e \
-                    rmd160  b751a957816084e0bd2a01985616443c0c556553 \
-                    size    405278
+rmd160  b751a957816084e0bd2a01985616443c0c556553 \
+size    405278
 
 # requirements:
 # - mas: Xcode 11.4 or later
@@ -38,7 +38,7 @@ post-patch {
 }
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build.cmd           swift
 build.target        build

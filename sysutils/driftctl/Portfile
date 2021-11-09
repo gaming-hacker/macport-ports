@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ platforms           darwin
 installs_libs       no
 
 checksums           rmd160  09a905599c91ae87a5fac107947007dc805c6d85 \
-                    sha256  3827a253c70ee5f18091efbff0f922c8f71e7d947c5d4e74294e33f1dfd06b88 \
-                    size    12905104
+sha256  3827a253c70ee5f18091efbff0f922c8f71e7d947c5d4e74294e33f1dfd06b88 \
+size    12905104
 
 # Allow fetching dependencies at build time
 build.env-delete    GOPROXY=off GO111MODULE=off

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ long_description    \
     Microsoft Windows.
 
 checksums           rmd160 f89945cc93c18eb3513e05854bed0db1e68aba1e \
-                    sha256 fe12be310217a601f7a847344a9c7e7b97a4e704899b8ccbe41c698a500cc7cd \
-                    size 234266
+sha256 fe12be310217a601f7a847344a9c7e7b97a4e704899b8ccbe41c698a500cc7cd \
+size 234266
 
 depends_lib         port:bctoolbox
 

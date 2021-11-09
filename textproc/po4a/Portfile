@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -11,7 +11,7 @@ revision            2
 #   is being phased out. Indeed, it's no longer included in the core Perl5
 #   distribution, starting with 5.32. So until upstream migrates completely
 #   to 'pod-simple', we cannot go beyond 5.30.
-perl5.branches      5.30
+perl5.branches 5.30
 
 categories          textproc
 platforms           darwin
@@ -28,8 +28,8 @@ homepage            https://po4a.org/
 github.tarball_from releases
 
 checksums           rmd160  33975d49c568a087f71bdd8ad73df58b333099e2 \
-                    sha256  34d14042e1925cf9a77649cb64f5b900125d2fc9ca5298c67889a76c2d3975e5 \
-                    size    4121565
+sha256  34d14042e1925cf9a77649cb64f5b900125d2fc9ca5298c67889a76c2d3975e5 \
+size    4121565
 
 # TODO: check and fix dependencies
 depends_lib-append  \

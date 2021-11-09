@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github          1.0
@@ -40,8 +40,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin linux freebsd
 
 checksums           rmd160  ca41e2f686a7bb9ae48e8bdac97db58f6f0df6e1 \
-                    sha256  0885dc65377057fcfea0e7053d01d95a83668ec1907aced84dface8e00b83dee \
-                    size    657567
+sha256  0885dc65377057fcfea0e7053d01d95a83668ec1907aced84dface8e00b83dee \
+size    657567
 
 # error: 'uncaught_exceptions' is unavailable: introduced in macOS 10.12
 if {${os.platform} eq "darwin" && ${os.major} < 16} {

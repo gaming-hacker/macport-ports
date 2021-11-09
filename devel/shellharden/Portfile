@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -24,8 +24,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           rmd160  3dce0ce095223b6ea36e76c41f4c0eaca0151e48 \
-                    sha256  0de69b7749d6ca4cf2c4b46e608cc1d17a3fb6d76313d701a9ce54666726eda7 \
-                    size    186197
+sha256  0de69b7749d6ca4cf2c4b46e608cc1d17a3fb6d76313d701a9ce54666726eda7 \
+size    186197
 
 destroot {
     xinstall -m 0755 \

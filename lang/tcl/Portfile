@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ homepage            https://www.tcl-lang.org/
 master_sites        sourceforge:project/tcl/Tcl/${version}
 
 checksums           rmd160  1cdcec3404ae4b36014e183a156877bebb58b179 \
-                    sha256  26c995dd0f167e48b11961d891ee555f680c175f7173ff8cb829f4ebcde4c1a6 \
-                    size    10353486
+sha256  26c995dd0f167e48b11961d891ee555f680c175f7173ff8cb829f4ebcde4c1a6 \
+size    10353486
 
 distname            ${name}${version}-src
 worksrcdir          ${name}${version}/unix
