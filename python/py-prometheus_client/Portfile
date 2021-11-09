@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,18 +11,18 @@ platforms           darwin
 license             Apache-2
 supported_archs     noarch
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
 description         Prometheus instrumentation library for Python applications
-long_description    ${description}
+long_description    {*}${description}
 
 homepage            https://github.com/prometheus/client_python
 
 checksums           rmd160  433abad4b6afb4c0e5c5727d2cc8d592049b171e \
-sha256  3a8baade6cb80bcfe43297e33e7623f3118d660d41387593758e2fb1ea173a86 \
-size    91886
+                    sha256  3a8baade6cb80bcfe43297e33e7623f3118d660d41387593758e2fb1ea173a86 \
+                    size    91886
 
 if {${name} ne ${subport}} {
     depends_build-append \

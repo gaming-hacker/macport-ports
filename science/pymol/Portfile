@@ -28,8 +28,8 @@ sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
 size    10471287
 
 subport pymol-devel {
-    github.setup    schrodinger pymol-open-source a869dc396e4697343b55325ff2038f9fc820511e
-    version         20211014-[string range ${github.version} 0 7]
+    github.setup    schrodinger pymol-open-source 9d5b1f07eadfc75b350fe70b31c02ca7cbbfe47b9d5b1f07eadfc75b350fe70b31c02ca7cbbfe47b
+    version         20211105-[string range ${github.version} 0 7]
     conflicts       pymol
     revision        0
     maintainers     {reneeotten @reneeotten} openmaintainer

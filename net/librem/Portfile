@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -14,9 +14,9 @@ long_description    ${name} is a ${description}.
 
 github.setup        baresip rem 1.0.0 v
 checksums           rmd160  6d122eb2c386cfc29aa8427ceb73e63e151ae2a7 \
-sha256  7adec440616377c268130f00ac9e0d4f338dd880c9747d96d7031046e6489a68 \
-size    47226
-revision            0
+                    sha256  7adec440616377c268130f00ac9e0d4f338dd880c9747d96d7031046e6489a68 \
+                    size    47226
+revision            1
 
 
 depends_lib-append  \

@@ -5,7 +5,7 @@ PortSystem          1.0
 name                sudo
 epoch               1
 version             1.9.8p2
-revision            0
+revision            2
 categories          sysutils security
 license             ISC
 maintainers         {mps @Schamschula}
@@ -28,7 +28,12 @@ sha256  9e3b8b8da7def43b6e60c257abe80467205670fd0f7c081de1423c414b680f2d \
 size    4302256
 
 patchfiles          patch-configure.diff \
-                    patch-sudoers.in.diff
+                    patch-sudoers.in.diff \
+                    patch-lib-util-arc4random_buf.diff
+
+depends_lib         port:gettext \
+                    path:lib/libssl.dylib:openssl \
+                    port:zlib
 
 configure.args      --infodir=${prefix}/share/info \
                     --mandir=${prefix}/share/man \

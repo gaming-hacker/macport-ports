@@ -2,11 +2,12 @@
 
 PortSystem          1.0
 PortGroup           select 1.0
+PortGroup           openssl 1.0
 PortGroup           compiler_blacklist_versions 1.0
 
 name                ruby30
 version             3.0.2
-revision            2
+revision            4
 
 categories          lang ruby
 maintainers         {kimuraw @kimuraw} openmaintainer
@@ -35,8 +36,10 @@ size 19941179
 use_parallel_build  no
 universal_variant   no
 
+# ruby/openssl does not support openssl-3
+openssl.branch      1.1
+
 depends_lib         port:readline \
-                    path:lib/libssl.dylib:openssl \
                     port:zlib \
                     port:libyaml \
                     port:libffi \
@@ -49,7 +52,9 @@ select.group        ruby
 select.file         ${filespath}/ruby30
 
 # patch-random.c.diff: fix build error at Lion (#63571)
-patchfiles          patch-random.c.diff
+# patch-ext-openssl-extconf.rb.diff: fix ext/openssl uses wrong pkgconfig (#63845)
+patchfiles          patch-random.c.diff \
+                    patch-ext-openssl-extconf.rb.diff
 #----------------------------------------------------------------------------------------
 # Fix compilation on buildbots for 10.12 and earlier.
 # Issue: 62183: error: use of undeclared identifier 'fmt'; did you mean 'fma'?
@@ -68,6 +73,8 @@ configure.args      --enable-shared \
                     --with-opt-dir="${prefix}" \
                     --program-suffix=3.0 \
                     --with-rubylibprefix="${prefix}/lib/ruby3.0" \
+                    --with-openssl-include=[openssl::include_dir] \
+                    --with-openssl-lib=[openssl::lib_dir] \
                     --without-baseruby
 # prefer Apple cctools to GNU binutils, build with binutils may fail.
 configure.args-append   AR=${prefix}/bin/ar RANLIB=${prefix}/bin/ranlib
@@ -117,7 +124,7 @@ post-destroot {
     destroot.keepdirs-append ${destroot}${prefix}/libexec/ruby3.0
 }
 
-notes "
+notes-append "
 To make this the default Ruby (i.e., the version run by\
 the 'ruby', 'gem' or 'bundle' commands), run:
     sudo port select --set ruby $name

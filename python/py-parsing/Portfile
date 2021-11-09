@@ -5,9 +5,11 @@ PortGroup           python 1.0
 
 name                py-parsing
 python.rootname     pyparsing
+# 3.0.5 is broken
+# See: https://github.com/pyparsing/pyparsing/issues/329
 version             3.0.4
 revision            0
-epoch               1
+epoch               2
 
 categories-append   lang
 platforms           darwin
