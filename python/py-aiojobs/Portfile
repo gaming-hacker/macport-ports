@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,10 +16,10 @@ long_description    Jobs scheduler for managing background task (asyncio). The \
 homepage            https://github.com/aio-libs/aiojobs
 
 checksums           rmd160 67d82112841069e0ce02087b7906b0143cfefead \
-                    sha256 5097580bb73d838e3f80e49d6a81d8e5f1dfc22fc6e75a44383cb2164daea8ea \
-                    size 4697
+sha256 5097580bb73d838e3f80e49d6a81d8e5f1dfc22fc6e75a44383cb2164daea8ea \
+size 4697
 
-python.versions     37 38 39 310
+python.versions 39
 
 python.pep517       yes
 
