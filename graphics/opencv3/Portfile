@@ -88,7 +88,7 @@ set parent_subport_name \
 worksrcdir          ${parent_subport_name}-${version}
 
 compiler.cxx_standard \
-                    2011
+                    2017
 
 compiler.blacklist-append \
                     cc \
@@ -346,40 +346,7 @@ if {${universal_possible} && [variant_isset universal]} {
 # Name consistency with ${python.branch} and ${python.version} in
 # ${prefix}/var/macports/sources/rsync.macports.org/macports/release/tarballs/ports/_resources/port1.0/group/python-1.0.tcl
 
-foreach python_branch {2.7} {
-    set python_version [join [lrange [split ${python_branch} .] 0 1] ""]
-    subport py${python_version}-${name} {
-        depends_lib-append \
-                            port:${name} \
-                            port:python${python_version} \
-                            port:py${python_version}-numpy
-        configure.args-replace \
-                            -DBUILD_opencv_python2=OFF \
-                            -DBUILD_opencv_python2=ON
-        configure.args-replace \
-                            -DBUILD_opencv_apps=ON \
-                            -DBUILD_opencv_apps=OFF
-        configure.args-replace \
-                            -DPYTHON_EXECUTABLE=/usr/bin/python \
-                            -DPYTHON_EXECUTABLE=${prefix}/bin/python${python_branch}
-        configure.args-append \
-                            -DPYTHON2_EXECUTABLE=${prefix}/bin/python${python_branch} \
-                            -DPYTHON_LIBRARIES=${prefix}/lib/libpython${python_branch}.dylib \
-                            -DPYTHON2_LIBRARIES=${prefix}/lib/libpython${python_branch}.dylib \
-                            -DPYTHON2_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/${python_branch}/Headers \
-                            -DPYTHON2_PACKAGES_PATH=${frameworks_dir}/Python.framework/Versions/${python_branch}/lib/python${python_branch}/site-packages
-
-        # Deconflict with parent port contents
-        post-destroot {
-            ui_debug "${subport}: python subport: removing files unrelated to Python bindings"
-            foreach f [exec port contents ${name}] {
-                delete ${destroot}${f}
-            }
-        }
-    }
-}
-
-set python_branches {3.5 3.6 3.7 3.8 3.9}
+set python_branches {3.9}
 foreach python_branch ${python_branches} {
     set python_version [join [lrange [split ${python_branch} .] 0 1] ""]
     subport py${python_version}-${name} {
