@@ -87,7 +87,7 @@ if {[string match macports-clang-* ${configure.compiler}]} {
     configure.args-append           -DCMAKE_LIBTOOL=${prefix}/bin/libtool
 }
 
-set py_ver              3.10
+set py_ver              3.9
 set py_ver_nodot        [string map {. {}} ${py_ver}]
 depends_build-append    port:python${py_ver_nodot} \
                         port:py${py_ver_nodot}-pygments \
@@ -100,7 +100,7 @@ platform darwin {
     depends_lib-append port:libcxx
     pre-fetch {
         if {${os.major} < 11} {
-           supported_archs i386 x86_64
+           supported_archs x86_64
             if {![file exists /usr/lib/libc++.dylib]} {
                 ui_error "$name requires a C++11 runtime, which your configuration does not allow"
                 error "unsupported configuration"
@@ -190,9 +190,9 @@ if {${subport} eq "llvm-${llvm_version}"} {
 
 if {${subport} eq "mlir-${llvm_version}"} {
     homepage            https://mlir.llvm.org
-    
+
     description         The MLIR project is a novel approach to building reusable \
-                        and extensible compiler infrastructure. 
+                        and extensible compiler infrastructure.
     long_description    {*}${description} MLIR aims to address software fragmentation, \
                         improve compilation for heterogeneous hardware, significantly \
                         reduce the cost of building domain specific compilers, and aid \
@@ -301,7 +301,7 @@ if { ${subport} eq "clang-${llvm_version}" || ${subport} eq "flang-${llvm_versio
         -DCLANG_ENABLE_STATIC_ANALYZER=OFF \
         -DCLANG_ENABLE_ARCMT=OFF           \
         -DDARWIN_PREFER_PUBLIC_SDK=ON      \
-        -DLLVM_BUILD_RUNTIME=ON     
+        -DLLVM_BUILD_RUNTIME=ON
 
     if {${os.major} <= 18} {
         # on systems that might build i386, we need atomic builtins
@@ -426,7 +426,7 @@ post-destroot {
         # fix errant permissions on the flang binary
         system "chmod 755 ${destroot}${sub_prefix}/bin/flang"
     }
-    
+
     if {${subport} eq "clang-${llvm_version}"} {
         # fix the cmake scripts to point to the versioned files
         reinplace "s|/bin/clang-${llvm_version}|/bin/clang|g" \
@@ -435,7 +435,7 @@ post-destroot {
         # http://trac.macports.org/ticket/33207
         ln -s ${prefix}/libexec/ld64/ld ${destroot}${sub_prefix}/bin/ld
     }
-    
+
     if {${subport} eq "lldb-${llvm_version}"} {
         delete ${destroot}${prefix}/bin/debugserver-${suffix}
     }
