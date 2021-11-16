@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    lesspipe.sh is an input filter for the pager less as \
             compressed files using compress, gzip, bzip2 or zip.
 
 checksums           rmd160  a062f2cd15b5d1a3c5bf455a38360fb82e63aee4 \
-                    sha256  3d7b87af3666bd900c060684e8d93f50834d26b95252df15ed42e096beb8db91 \
-                    size    122010
+sha256  3d7b87af3666bd900c060684e8d93f50834d26b95252df15ed42e096beb8db91 \
+size    122010
 
 configure.args      --yes --shell=/bin/bash
 build               {}

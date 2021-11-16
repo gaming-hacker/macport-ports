@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                       1.0
 PortGroup           cmake                        1.1
@@ -10,8 +10,8 @@ github.setup        xrootd xrootd 5.3.3 v
 revision            0
 
 checksums           rmd160  a14aec908c697fa6158d788c17c5b8e02f046971 \
-                    sha256  107b11041372ee5f32913548fbba297547a936a012b0f529b7f07a7687b958fd \
-                    size    2918163
+sha256  107b11041372ee5f32913548fbba297547a936a012b0f529b7f07a7687b958fd \
+size    2918163
 
 categories          science
 maintainers         {jonesc @cjones051073} openmaintainer
@@ -42,8 +42,8 @@ cmake.out_of_source yes
 # Force a compatible compiler
 compiler.blacklist-append *gcc* {clang < 900} {macports-clang-3.[0-9]} {macports-clang-[4-5].0}
 
-configure.cxxflags-append -std=c++14
-compiler.cxx_standard  2014
+configure.cxxflags-append -std=c++17
+compiler.cxx_standard 2017
 
 configure.args-append -DENABLE_CRYPTO=False \
                       -DENABLE_READLINE=False \

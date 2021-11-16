@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -23,8 +23,8 @@ if {${subport} eq ${name}} {
     conflicts           eigen3-devel
 
     checksums           rmd160  4b70962c6c1454d0909ed04776c812a78ffdce03 \
-                        sha256  b4c198460eba6f28d34894e3a5710998818515104d6e74e5cc331ce31e46e626 \
-                        size    2143091
+sha256  b4c198460eba6f28d34894e3a5710998818515104d6e74e5cc331ce31e46e626 \
+size    2143091
 }
 
 subport eigen3-devel {
@@ -42,9 +42,9 @@ subport eigen3-devel {
     gitlab.livecheck.branch 3.4
 
     checksums \
-        rmd160  a0700aa74add60e0ff85f3a369cb8394c28b4337 \
-        sha256  142c80fbed173c2d22b5512aef4f0bf0073d78884e0d2a4a4ff5168500acc8e1 \
-        size    2143408
+rmd160  a0700aa74add60e0ff85f3a369cb8394c28b4337 \
+sha256  142c80fbed173c2d22b5512aef4f0bf0073d78884e0d2a4a4ff5168500acc8e1 \
+size    2143408
 }
 
 # Exclude pre-release versions
@@ -72,7 +72,7 @@ if {![variant_isset blas]} {
     configure.env-append    FC=nofortran
 }
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.env-append    PKG_CONFIG_LIBDIR=${prefix}/lib/pkgconfig
 cmake.out_of_source     yes

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,7 @@ version             3.8.1
 categories-append   devel
 license             Apache-2
 
-python.versions     36 37 38 39 310
+python.versions 39
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    aiohttp key futures are the support for both client and \
 homepage            https://github.com/aio-libs/aiohttp
 
 checksums           rmd160  9c479c917062b19b9a301597b8d55e83b1582eb0 \
-                    sha256  fc5471e1a54de15ef71c1bc6ebe80d4dc681ea600e68bfd1cbce40427f0b7578 \
-                    size    7324180
+sha256  fc5471e1a54de15ef71c1bc6ebe80d4dc681ea600e68bfd1cbce40427f0b7578 \
+size    7324180
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

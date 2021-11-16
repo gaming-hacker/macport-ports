@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         Composable build system for OCaml
 long_description    Dune is a build system for OCaml and Reason.
 
 checksums           rmd160  21482d60a4cbc761d2f4cd538d9ab3d97b343ef0 \
-                    sha256  f54527c88ccc72ecd88b5a36c84055e6fdc9a5386009d4c4052147a1363158e9 \
-                    size    1385454
+sha256  f54527c88ccc72ecd88b5a36c84055e6fdc9a5386009d4c4052147a1363158e9 \
+size    1385454
 
 if { ${subport} eq ${name} } {
     depends_lib         port:ocaml \

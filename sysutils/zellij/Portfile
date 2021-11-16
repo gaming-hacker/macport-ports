@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -28,9 +28,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  020a9fe68e981dc038d0b2f0cbbb783e834d7f50 \
-                    sha256  aa2cc622f924c1d41a8b1b616aae3d7b989e483bca1041061db43b6d0c6c9f52 \
-                    size    4132544
+rmd160  020a9fe68e981dc038d0b2f0cbbb783e834d7f50 \
+sha256  aa2cc622f924c1d41a8b1b616aae3d7b989e483bca1041061db43b6d0c6c9f52 \
+size    4132544
 
 depends_build-append \
                     port:go-md2man

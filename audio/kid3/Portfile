@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ distname            ${name}-${version}-Darwin
 use_dmg             yes
 
 checksums           rmd160  9348682b5cf6b1c5d5a814361e691b67c1bd2cac \
-                    sha256  236d02b5c87d4758e7c0f415a3937028ff88b22a400a1f42536e1021aa1b64b7 \
-                    size    18206595
+sha256  236d02b5c87d4758e7c0f415a3937028ff88b22a400a1f42536e1021aa1b64b7 \
+size    18206595
 
 use_configure       no
 build {}

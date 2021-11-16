@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,9 +14,9 @@ description         A tool for generating cargo.crates option from Cargo.lock
 long_description    {*}${description}.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  afdc2fb52435815a2aa87c3e25b7673ee54a298a \
-                    sha256  1afa327e3fcd98a71b36c7b14adb82e9e7d41419ba8307dda13fb038668c778a \
-                    size    3790
+rmd160  afdc2fb52435815a2aa87c3e25b7673ee54a298a \
+sha256  1afa327e3fcd98a71b36c7b14adb82e9e7d41419ba8307dda13fb038668c778a \
+size    3790
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} ${destroot}${prefix}/bin/

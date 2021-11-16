@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,10 +25,10 @@ long_description    ${app.name} is a powerful, cross-platform \
 master_sites        https://rawtherapee.com/shared/source/
 use_xz              yes
 checksums           rmd160  79a01872a7edcc64e78b3d05d17d0a38fcb4f83f \
-                    sha256  360528a0aae922eb5af8742f415475fb91b6d62a739da5f2804828f04ec40853 \
-                    size    12653148
+sha256  360528a0aae922eb5af8742f415475fb91b6d62a739da5f2804828f04ec40853 \
+size    12653148
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 compiler.openmp_version 3.1
 
 depends_lib-append  port:gtkmm3 \

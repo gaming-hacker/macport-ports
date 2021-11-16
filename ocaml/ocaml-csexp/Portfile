@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -19,7 +19,7 @@ long_description    This library provides minimal support for Canonical S-expres
 platforms           darwin
 
 checksums           rmd160  b4ad682a6ff16d68d1ef1173cb3ee358f777c9f2 \
-                    sha256  e7c7f79cc81526c7506ee8ce17eccd7f552deb01fad264116a509aabe0bef72e \
-                    size    10976
+sha256  e7c7f79cc81526c7506ee8ce17eccd7f552deb01fad264116a509aabe0bef72e \
+size    10976
 
 ocaml.build_type    dune

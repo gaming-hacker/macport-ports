@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: t; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: t; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -29,8 +29,8 @@ long_description Nmap is a utility for port scanning large networks, although \
 master_sites	https://nmap.org/dist/
 
 checksums      rmd160  90e066815ff7f9d6e8bffcd6464a22061c150a24 \
-               sha256  a5479f2f8a6b0b2516767d2f7189c386c1dc858d997167d7ec5cfc798c7571a1 \
-               size    10498200
+sha256  a5479f2f8a6b0b2516767d2f7189c386c1dc858d997167d7ec5cfc798c7571a1 \
+size    10498200
 
 depends_lib	port:libpcap \
             port:zlib \
@@ -79,6 +79,6 @@ variant pcre description {build with pcre support} {
 
 variant zenmap description {build zenmap in addition to nmap} {
     configure.args-delete --without-zenmap
-    configure.python ${prefix}/bin/python2.7
-    depends_lib-append port:py27-pygtk
+    configure.python ${prefix}/bin/python3.9
+    depends_lib-append port:py39-pygtk
 }

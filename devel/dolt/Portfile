@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 license             Apache-2
 
 checksums           rmd160  eb48d79410f5eba1b3305c598e498e9f17b8515d \
-                    sha256  28df295e5d5d8e6a7244392881cd4dca7649c22641a7ee789ea43df0db769c18 \
-                    size    3909480
+sha256  28df295e5d5d8e6a7244392881cd4dca7649c22641a7ee789ea43df0db769c18 \
+size    3909480
 
 build.env-delete    GO111MODULE=off GOPROXY=off
 

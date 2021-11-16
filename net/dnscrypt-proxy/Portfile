@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -6,8 +6,8 @@ PortGroup github    1.0
 github.setup        DNSCrypt dnscrypt-proxy 2.1.1
 revision            0
 checksums           rmd160  a747304a71c2df1f188d59e5a927f468c0148889 \
-                    sha256  586aeaf29dba527c5a7a256dfc38a9cf81ae6a28a84b3807040d09c34d523902 \
-                    size    6113888
+sha256  586aeaf29dba527c5a7a256dfc38a9cf81ae6a28a84b3807040d09c34d523902 \
+size    6113888
 
 categories          net
 license             ISC

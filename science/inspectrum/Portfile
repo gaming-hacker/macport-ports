@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -9,8 +9,8 @@ PortGroup           app 1.0
 github.setup        miek inspectrum 4653c38eb58d24ff7b2e65d876a95650f4b1b438
 version             20211025-[string range ${github.version} 0 7]
 checksums           rmd160  9d3cda8ee71d0ece678c9e4206948fa7c6ced612 \
-                    sha256  c69dc4cb07dfb1f0377f998f6b11b8bfdecb70a2c6343a4c2021fa51d99d8edc \
-                    size    110520
+sha256  c69dc4cb07dfb1f0377f998f6b11b8bfdecb70a2c6343a4c2021fa51d99d8edc \
+size    110520
 revision            0
 
 categories          science comms
@@ -25,7 +25,7 @@ depends_lib-append \
     port:fftw-3-single \
     port:liquid-dsp
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 # remove top-level library and header paths, such that internal ones
 # are looked at before of any already-installed ones.

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -25,7 +25,7 @@ if {$subport eq $name} {
     PortGroup           github 1.0
     PortGroup           compiler_blacklist_versions 1.0
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
 
     # https://trac.macports.org/ticket/60805
     compiler.blacklist-append {clang < 900}
@@ -64,13 +64,13 @@ if {$subport eq $name} {
                  https://github.com/${submodule_github_author}/${submodule_github_project}/archive/${submodule_github_branch}:tagtwo
 
     checksums       ${main_distfile} \
-                    rmd160  e35df07c2461f243d3ce42eb1e4ee0c340d5b108 \
-                    sha256  3faa55d30a6d8a75b47342eaae6ec59f1f13b308e0f5e3211c1fab33667152a1 \
-                    size    65087230 \
+rmd160  e35df07c2461f243d3ce42eb1e4ee0c340d5b108 \
+sha256  3faa55d30a6d8a75b47342eaae6ec59f1f13b308e0f5e3211c1fab33667152a1 \
+size    65087230 \
                     ${submodule_distfile} \
-                    rmd160  c2b5c79914342ab2d546e05d6a3af51bfd540847 \
-                    sha256  9df8813ccc64f8f206d924a2210a7d74bf3801b6a4c7ed376ffb3cd7a8420921 \
-                    size    967825
+rmd160  c2b5c79914342ab2d546e05d6a3af51bfd540847 \
+sha256  9df8813ccc64f8f206d924a2210a7d74bf3801b6a4c7ed376ffb3cd7a8420921 \
+size    967825
 
     worksrcdir   ${github.project}-${git.branch}
 

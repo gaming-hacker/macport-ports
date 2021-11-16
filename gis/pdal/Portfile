@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup           cmake       1.1
@@ -22,11 +22,11 @@ long_description    PDAL is a C++ BSD library for translating and\
 
 homepage            https://www.pdal.io
 distname            PDAL-${version}-src
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 checksums           rmd160  5693467133c5fb90b71315dddc1f4d6698fe3b7b \
-                    sha256  213cb39606013fefea1bc5f37a87dd9b3388c1316457ff84b2f034516fd19397 \
-                    size    113434304
+sha256  213cb39606013fefea1bc5f37a87dd9b3388c1316457ff84b2f034516fd19397 \
+size    113434304
 
 depends_lib-append  port:geos \
                     port:gdal \

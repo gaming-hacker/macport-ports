@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,8 +28,8 @@ long_description    librsync is a free software library that implements \
 homepage            https://librsync.github.io/
 
 checksums           sha256  ef8ce23df38d5076d25510baa2cabedffbe0af460d887d86c2413a1c2b0c676f \
-                    rmd160  cb2c372c3dc550e6b3d090f761cce8bda7db87a9 \
-                    size    194461
+rmd160  cb2c372c3dc550e6b3d090f761cce8bda7db87a9 \
+size    194461
 
 depends_lib         port:bzip2 \
                     port:popt \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    Python implementation of the Happy Eyeballs Algorithm descri
 homepage            https://github.com/sethmlarson/rfc6555
 
 checksums           rmd160  5a2e58cbbdbe6134dcd4f0d86867e236081774ab \
-                    sha256  123905b8f68e2bec0c15f321998a262b27e2eaadea29a28bd270021ada411b67 \
-                    size    10094
+sha256  123905b8f68e2bec0c15f321998a262b27e2eaadea29a28bd270021ada411b67 \
+size    10094
 
-python.versions     27 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

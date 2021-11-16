@@ -24,8 +24,8 @@ if {[vercmp ${php.branch} 5.4] >= 0} {
     version         2021.5
     revision        0
     checksums       rmd160  3f2815eb76068475b66fcc0d11a500879c10d90d \
-                    sha256  30c85bd45da91e91f07a33711fc4f6b29aa220b9df356ecd43540be1e7a53cc2 \
-                    size    631371
+sha256  30c85bd45da91e91f07a33711fc4f6b29aa220b9df356ecd43540be1e7a53cc2 \
+size    631371
 } elseif {[vercmp ${php.branch} 5.2] >= 0} {
     version         2021.1
     revision        0

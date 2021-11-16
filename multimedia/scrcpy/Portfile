@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,13 +24,13 @@ extract.only        ${distfiles}
 distfiles-append    ${name}-server-v${version}:bootstrap
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  dc807e9ec422ac6e7dc4e806353e51e64b0e646c \
-                    sha256  c9350493d223a427bf0c32f7c075322d607af6fb348f9a57188f6c2cb644eea9 \
-                    size    343606 \
+rmd160  dc807e9ec422ac6e7dc4e806353e51e64b0e646c \
+sha256  c9350493d223a427bf0c32f7c075322d607af6fb348f9a57188f6c2cb644eea9 \
+size    343606 \
                     ${name}-server-v${version} \
-                    rmd160  bcad5ef4b09f01b0aeb3fe318eab6205e1533e2f \
-                    sha256  b20aee4951f99b060c4a44000ba94de973f9604758ef62beb253b371aad3df34 \
-                    size    37139
+rmd160  bcad5ef4b09f01b0aeb3fe318eab6205e1533e2f \
+sha256  b20aee4951f99b060c4a44000ba94de973f9604758ef62beb253b371aad3df34 \
+size    37139
 
 depends_build-append \
                     port:pkgconfig

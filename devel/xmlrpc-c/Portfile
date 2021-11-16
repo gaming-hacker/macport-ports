@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ homepage            http://xmlrpc-c.sourceforge.net/
 master_sites        sourceforge:project/xmlrpc-c/Xmlrpc-c%20Super%20Stable/${version}
 
 checksums           rmd160  575bfddc44f958b10f9b42a15d559e25715b3907 \
-                    sha256  a48f6becfdc2897b8a90522ec506000f966a75e4a7c348c3f8b18fce828d49e6 \
-                    size    933148
+sha256  a48f6becfdc2897b8a90522ec506000f966a75e4a7c348c3f8b18fce828d49e6 \
+size    933148
 
 # latest release is does not have the "-c" suffix; check for next update
 distname            xmlrpc-${version}

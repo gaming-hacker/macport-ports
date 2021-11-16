@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,14 +28,14 @@ master_sites        ftp://ftp.icarus.com/pub/eda/verilog/v${major}/
 distname            verilog-${version}
 
 checksums           rmd160  d5ce7247745c2d047d51e7f9f125d8a97fca946c \
-                    sha256  d54785616b63fe6739948e9967499624f29ded54adb57e1e00eb897567a655d5 \
-                    size    1784307
+sha256  d54785616b63fe6739948e9967499624f29ded54adb57e1e00eb897567a655d5 \
+size    1784307
 
 depends_lib-append  port:bzip2 \
                     port:readline \
                     port:zlib
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {[string match *clang* ${configure.cxx}]} {
     configure.ldflags-append -stdlib=${configure.cxx_stdlib}

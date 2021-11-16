@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -11,8 +11,8 @@ epoch               1
 github.setup        mongodb mongo 5.0.4 r
 revision            0
 checksums           rmd160  26e20f859097c9ab1e45bc1e03b7f71b60abbd36 \
-                    sha256  2e9f5b0333fe58010822d420077738dc566dc8fa243cb51c132d3575e39e8e51 \
-                    size    54827004
+sha256  2e9f5b0333fe58010822d420077738dc566dc8fa243cb51c132d3575e39e8e51 \
+size    54827004
 
 name                mongodb
 conflicts           mongodb-devel

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -9,8 +9,8 @@ github.setup            OpenSC OpenSC 0.22.0
 revision                0
 
 checksums               rmd160  7796feadb78c57457eb97d9409be2fac36bf61e9 \
-                        sha256  cbe0f660773458ca09b5167addca1f00c65cad424a906749f68eb34ceb6dcd0d \
-                        size    1790141
+sha256  cbe0f660773458ca09b5167addca1f00c65cad424a906749f68eb34ceb6dcd0d \
+size    1790141
 
 categories              security
 platforms               darwin

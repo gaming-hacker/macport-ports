@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ github.setup        tumic0 GPXSee 9.11
 revision            0
 
 checksums           rmd160  5dc502065665f343e8778c406d346fc9eaa52522 \
-                    sha256  efc5852c2bed08822bee61a14b615b53a69317f7ed6e12a63c4d11779d60d27a \
-                    size    4835242
+sha256  efc5852c2bed08822bee61a14b615b53a69317f7ed6e12a63c4d11779d60d27a \
+size    4835242
 
 categories          gis graphics
 platforms           darwin
@@ -27,7 +27,7 @@ patchfiles          patch-src_GUI_app_cpp.diff
 qt5.depends_build_component     qttools
 qt5.depends_runtime_component   qtimageformats qttranslations
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_run-append  port:QtPBFImagePlugin
 

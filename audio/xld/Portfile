@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ distname            xld-${version}
 use_dmg             yes
 
 checksums           rmd160  ff488c700ce45116cd9c92910d7162955b036b92 \
-                    sha256  5234e17218624e6bb341a2bb23c8994310b7d4962d3f878c3ed27b265d2791d6 \
-                    size    10967402
+sha256  5234e17218624e6bb341a2bb23c8994310b7d4962d3f878c3ed27b265d2791d6 \
+size    10967402
 
 variant universal {}
 default_variants +universal
