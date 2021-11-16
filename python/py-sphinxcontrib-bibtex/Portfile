@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-sphinxcontrib-bibtex
-version             2.2.0
+version             2.2.1
 revision            0
 
 categories-append   textproc devel
@@ -18,19 +18,19 @@ long_description    ${description}
 
 homepage            https://github.com/mcmtroffaes/sphinxcontrib-bibtex
 
-checksums           rmd160  0b7ad73abfc03f36e6e1674cbcad91306d3865d1 \
-sha256  7500843e154d76983c23bca5ca7380965e0725c46b8f484c1322d0b58a6ce3b2 \
-size    96027
+checksums           rmd160  7d9fe43e9d63b754fa811028a231ee0eab2d3480 \
+                    sha256  00d474092e04b1d941e645cf6c027632a975cd0b9337cf47d379f63a5928f334 \
+                    size    96251
 
-python.versions 39
+python.versions     27 36 37 38 39 310
 
 if {${name} ne ${subport}} {
     if {${python.version} == 27} {
         version     0.4.2
         revision    0
         checksums   rmd160  dfe9eb50f1278f05416f6c3f3a09cff7aa2d222b \
-sha256  169afb3a3485775e5473934a0fdff1780e8bdcdd44db7ed286044a074331c729 \
-size    49490
+                    sha256  169afb3a3485775e5473934a0fdff1780e8bdcdd44db7ed286044a074331c729 \
+                    size    49490
 
         depends_lib-append \
                     port:py${python.version}-six \

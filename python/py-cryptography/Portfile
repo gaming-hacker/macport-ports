@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,12 +7,12 @@ PortGroup           openssl 1.0
 
 github.setup        pyca cryptography 35.0.0
 name                py-${github.project}
-revision            1
+revision            3
 categories-append   devel
 platforms           darwin
 license             BSD
 
-python.versions 39
+python.versions     27 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -22,9 +22,9 @@ description         cryptography is a package designed to expose \
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-rmd160  2ad58a7a018cdb76757f221a06eb08b1ec9673d4 \
-sha256  cfebfd51fd5a1cc3505feaaef6a344d6a61032faa7110e3c81894532e086e273 \
-size    35760201 \
+                    rmd160  2ad58a7a018cdb76757f221a06eb08b1ec9673d4 \
+                    sha256  cfebfd51fd5a1cc3505feaaef6a344d6a61032faa7110e3c81894532e086e273 \
+                    size    35760201 \
 
 # See:
 # * https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst
@@ -37,7 +37,6 @@ if {${name} ne ${subport}
                     port:py${python.version}-setuptools
 
     depends_lib-append \
-                    path:lib/libssl.dylib:openssl \
                     port:py${python.version}-cffi
 
     # legacy support
@@ -54,8 +53,8 @@ if {${name} ne ${subport}
         long_description    {*}${description}
 
         checksums       rmd160  75817f068f434d70cf3ff485058de2d2077bc365 \
-sha256  76a63bd63565b482f2afad5102508903f445754ccd2e3bb049d4653e64e8cc27 \
-size    35679949
+                        sha256  76a63bd63565b482f2afad5102508903f445754ccd2e3bb049d4653e64e8cc27 \
+                        size    35679949
 
         # TODO: Necessary, as upstream tarball for 2.9.2 has changed
         dist_subdir     ${name}/${version}_1
@@ -82,6 +81,14 @@ size    35679949
             CVE CVE-2020-36242."
     } else {
         PortGroup   cargo_fetch 1.0
+
+        # Needs to use the same openssl version as python itself was built with...
+        # https://trac.macports.org/ticket/63968
+        if { ${python.version} < 39 } {
+            openssl.branch  1.1
+        } else {
+            openssl.branch  3
+        }
 
         depends_build-append \
                     port:py${python.version}-setuptools-rust

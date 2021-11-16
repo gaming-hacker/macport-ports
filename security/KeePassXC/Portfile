@@ -21,7 +21,7 @@ license                 GPL-2+
 license_noconflict      openssl
 
 github.setup            keepassxreboot keepassxc 2.6.6
-revision                0
+revision                3
 github.tarball_from     releases
 distname                keepassxc-${version}-src
 use_xz                  yes
@@ -54,6 +54,7 @@ if {[option gpg_verify.use_gpg_verification]} {
     }
 }
 
+qt5.min_version         5.5.0
 qt5.depends_component   qtmacextras qtsvg
 qt5.depends_build_component \
                         qttools
@@ -70,6 +71,7 @@ depends_lib-append      port:argon2 \
 compiler.cxx_standard 2017
 
 patchfiles              patch-no-deployqt.diff \
+                        patch-no-findpackage-path.diff \
                         patch-old-mac.diff
 
 # KeePassXC uses -fstack-protector-strong on Clang [1]. That flag is not

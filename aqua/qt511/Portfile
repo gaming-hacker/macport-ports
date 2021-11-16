@@ -1149,6 +1149,12 @@ size    [lindex [lindex ${module_info} 0] 2]
                 -no-libinput            \
                 -no-system-proxies
 
+            # do not opportunistically enable Vulkan support
+            # (MoltenVK support unavailable in Qt < 5.12)
+            # see https://trac.macports.org/ticket/62104
+            configure.args-append \
+                -no-feature-vulkan
+
             # MacOS/iOS options:
             configure.args-append    \
                 -framework           \

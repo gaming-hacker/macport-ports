@@ -31,6 +31,14 @@ size    3744814
 depends_build       bin:perl:perl5 \
                     port:texinfo
 
+# use gmake on 10.4, see:
+# https://trac.macports.org/ticket/63790
+platform darwin 8 {
+    depends_build-append \
+                    port:gmake
+    build.cmd       gmake
+}
+
 depends_lib         port:libiconv
 
 patchfiles          0010-AC_INIT.patch \
