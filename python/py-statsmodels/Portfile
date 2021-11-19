@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-statsmodels
-version             0.13.0
+version             0.13.1
 revision            0
 categories-append   science math
 platforms           darwin
 license             BSD
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,9 +23,9 @@ long_description    Statsmodels is  a  Python  package  that  provides \
 
 homepage            https://www.statsmodels.org/
 
-checksums           rmd160  218964eb70268884a1fca70aab827f0bbc4cd71e \
-sha256  f2efc02011b7240a9e851acd76ab81150a07d35c97021cb0517887539a328f8a \
-size    17766215
+checksums           rmd160  6acab61406f34ca074f7059707222a55a241cb58 \
+                    sha256  006ec8d896d238873af8178d5475203844f2c391194ed8d42ddac37f5ff77a69 \
+                    size    18144383
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -41,8 +41,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  9b437ff8df046770847ac865d4c4b55b7e1b4e3b \
-sha256  9cd2194c6642a8754e85f9a6e6912cdf996bebf6ff715d3cc67f65dadfd37cc9 \
-size    14065612
+                            sha256  9cd2194c6642a8754e85f9a6e6912cdf996bebf6ff715d3cc67f65dadfd37cc9 \
+                            size    14065612
     }
 
     post-patch {

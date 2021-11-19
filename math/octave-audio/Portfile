@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           octave 1.0
 
 octave.setup        audio 2.0.3
-revision            0
+revision            1
 octave.config_h     yes
 platforms           darwin
 license             GPL-2+ public-domain
@@ -17,6 +17,6 @@ sha256  1968580486dd73f8b2b8f545aaa03c0ace338ad77064d4f3b75977588fbb6190 \
 size    356449
 
 configure.env-append \
-                    RTMIDI_CFLAGS=-pthread -D__UNIX_JACK__ -D__MACOSX_CORE__ -I/include/rtmidi
+                    RTMIDI_CFLAGS=-pthread -D__UNIX_JACK__ -D__MACOSX_CORE__ -I${prefix}/include/rtmidi
 
 depends_lib         port:rtmidi

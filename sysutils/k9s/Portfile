@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/derailed/k9s 0.25.0 v
+go.setup            github.com/derailed/k9s 0.25.3 v
 github.tarball_from archive
 revision            0
 
@@ -26,9 +26,9 @@ maintainers         {breun.nl:nils @breun} \
                     openmaintainer
 platforms           darwin
 
-checksums           rmd160  a8db0a51f605d49687faae862180bcdb398c7ad3 \
-sha256  635342b90db7397b2fd02b1f019bd9e6fa210a5ca3afec2ab3dde815e7af7a1e \
-size    6240988
+checksums           rmd160  92016af8f74314ee3492f2b0e80af3cceff54722 \
+                    sha256  1068d18d20ae66babd88f77ec00280a13f318277cadd49cda5ab506924ddade0 \
+                    size    6252490
 
 # FIXME: This port currently can't be built without allowing go mod to fetch
 # dependencies during the build phase. See
