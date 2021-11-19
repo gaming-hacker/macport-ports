@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,8 +19,8 @@ long_description    {*}${description}. The decompiler is not limited to any part
                     target architecture, operating system, or executable file format.
 
 checksums           rmd160  305e901b37441337d5c0dada1ccc5e737831ef1e \
-                    sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
-                    size    8732003
+sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
+size    8732003
 
 post-patch {
     reinplace "s|\${CMAKE_INSTALL_PREFIX}|${destroot}\${CMAKE_INSTALL_PREFIX}|" ${worksrcpath}/CMakeLists.txt
@@ -90,8 +90,8 @@ subport retdec-devel {
     revision        0
 
     checksums       rmd160  91ab301f2a02ed93d9ba47cb0f96db4b79e61200 \
-                    sha256  a0db993d9f41a0ae5a6ab649271f913105e618781452fa5ef9f4ff5fe80cca8a \
-                    size    12133669
+sha256  a0db993d9f41a0ae5a6ab649271f913105e618781452fa5ef9f4ff5fe80cca8a \
+size    12133669
 
     # Before Catalina it also requires macports-libcxx
     if {${os.platform} eq "darwin" && ${os.major} < 19} {

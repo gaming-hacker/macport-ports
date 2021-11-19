@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup python 1.0
@@ -10,7 +10,7 @@ github.setup        pyside PySide 1.2.4
 name                py-pyside
 revision            0
 set                 qt.ver 4.8
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 categories-append   devel
 maintainers         nomaintainer
 license             LGPL
@@ -24,8 +24,8 @@ platforms           darwin
 license             LGPL
 
 checksums           rmd160  7a13c41e91011849ad22f57dc50d2826a500a6b5 \
-                    sha256  412133c4f37697296e4631aa5a9435336727df3ec0835b0b5eef536e0ace0a86 \
-                    size    3905032
+sha256  412133c4f37697296e4631aa5a9435336727df3ec0835b0b5eef536e0ace0a86 \
+size    3905032
 
 if {${name} ne ${subport}} {
     patchfiles      patch-cmakepkgconfig.diff

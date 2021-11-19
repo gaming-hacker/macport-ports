@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -13,8 +13,8 @@ if {[string match "${name}-qt5*" ${subport}]} {
     set Qt_Major        qt5
     version             2.3.4
     checksums           rmd160  88589c5b4f2a87cb048b5a90ff39256ec996fdb1 \
-                        sha256  6b695881a7e3fd95f73aaee6eaeab96f6ad17e515e9c2b3d4b3272d7862ff5c4 \
-                        size    737072
+sha256  6b695881a7e3fd95f73aaee6eaeab96f6ad17e515e9c2b3d4b3272d7862ff5c4 \
+size    737072
 } else {
     PortGroup           qt4 1.0
     set Qt_Major        qt4
@@ -23,8 +23,8 @@ if {[string match "${name}-qt5*" ${subport}]} {
     # set the epoch because we've had to downgrade
     epoch               202111
     checksums           rmd160  dddc3cf240dc5424b9df13fc1bf41c8e04f3b814 \
-                        sha256  d716d2d8e3ed8d95bbdb061f03081d7d032206f746a30a4d29d72196f50e7b02 \
-                        size    691676
+sha256  d716d2d8e3ed8d95bbdb061f03081d7d032206f746a30a4d29d72196f50e7b02 \
+size    691676
 }
 # best included after the required Qt PG
 PortGroup               cmake 1.1
@@ -91,9 +91,9 @@ configure.args-append   -DCMAKE_INSTALL_PREFIX:PATH=${qt_dir} \
                         -DOSX_FRAMEWORK:BOOL=OFF
 
 # botan requires C++11
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 configure.cxxflags-append \
-                        -std=c++11
+                        -std=c++17
 
 post-destroot {
     if {${subport} eq ${name} || ${subport} eq "${subport}-qt5"} {

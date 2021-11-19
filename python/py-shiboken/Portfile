@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup cmake 1.1
@@ -9,7 +9,7 @@ PortGroup github 1.0
 github.setup        pyside Shiboken 1.2.4
 name                py-shiboken
 revision            2
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 categories-append   devel
 maintainers         nomaintainer
 license             LGPL
@@ -21,8 +21,8 @@ long_description    Shiboken is a plugin (front-end) for generatorrunner that \
 platforms           darwin
 
 checksums           rmd160  efcfb5820bb85360e1c8c045ae2cfdea8d6e81f3 \
-                    sha256  cf634ad51e9b0538c4283dbbf5e86268db793552364a03735c51299bc36ee4e4 \
-                    size    1039570
+sha256  cf634ad51e9b0538c4283dbbf5e86268db793552364a03735c51299bc36ee4e4 \
+size    1039570
 
 if {${name} ne ${subport}} {
     pre-patch {
@@ -38,8 +38,8 @@ if {${name} ne ${subport}} {
                         port:libxslt \
                         port:sparsehash
     use_configure   yes
-    compiler.cxx_standard 2011
-    configure.cxxflags-append -std=c++11
+    compiler.cxx_standard 2017
+    configure.cxxflags-append -std=c++17
     # build.cmd must be set before configure.args is changed
     #    (see https://github.com/macports/macports-ports/commit/63c9c8e6e312c8e36603cb118d94f995aa8a6e67)
     build.cmd       make

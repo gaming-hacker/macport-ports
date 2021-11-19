@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -9,7 +9,7 @@ version                 7
 # Needed for change to meta-versioning
 epoch                   1
 name                    py-clang
-python.versions         27 37 38 39
+python.versions 39
 platforms               darwin
 license                 NCSA
 maintainers             {eborisch @eborisch} \
@@ -33,14 +33,14 @@ if {${name} ne ${subport}} {
 
     checksums \
      cfe-3.7.1.src.tar.xz \
-      rmd160  185b0f75970bc50682766a21794440578db87b5d \
-      sha256  56e2164c7c2a1772d5ed2a3e57485ff73ff06c97dff12edbeea1acc4412b0674 \
+rmd160  185b0f75970bc50682766a21794440578db87b5d \
+sha256  56e2164c7c2a1772d5ed2a3e57485ff73ff06c97dff12edbeea1acc4412b0674 \
      clang-12.0.1.src.tar.xz \
-      rmd160  662d890fe81218fbf79c25540eb09c7664bc5b8a \
-      sha256  6e912133bcf56e9cfe6a346fa7e5c52c2cde3e4e48b7a6cc6fcc7c75047da45f \
+rmd160  662d890fe81218fbf79c25540eb09c7664bc5b8a \
+sha256  6e912133bcf56e9cfe6a346fa7e5c52c2cde3e4e48b7a6cc6fcc7c75047da45f \
      clang-13.0.0.src.tar.xz \
-      rmd160  41d60ff0bfa3dbd9e4f04461db1750c2d9f50ac2 \
-      sha256  5d611cbb06cfb6626be46eb2f23d003b2b80f40182898daa54b1c4e8b5b9e17e
+rmd160  41d60ff0bfa3dbd9e4f04461db1750c2d9f50ac2 \
+sha256  5d611cbb06cfb6626be46eb2f23d003b2b80f40182898daa54b1c4e8b5b9e17e
 
     depends_build-append    port:py${python.version}-setuptools
 
