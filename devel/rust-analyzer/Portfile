@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cargo   1.0
 PortGroup           github  1.0
 
-github.setup        rust-analyzer rust-analyzer 2021-11-15
+github.setup        rust-analyzer rust-analyzer 2021-11-22
 github.tarball_from archive
 version             [string map { {-} {} } ${github.version}]
 revision            0
@@ -26,9 +26,9 @@ maintainers         @fabius \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-rmd160  a8270573171985183005171b2fdbd3860675c12c \
-sha256  f8a075733a354303967cb8d4e244d0ee9a328917b660a5959a18e36eea2ac5ca \
-size    2130430
+                        rmd160  3adc32a1d15b1e9e1e68311d07be2a3151a00948 \
+                        sha256  6eadbf82c80fcaaa0b499aec4213a91604ea39e9115cc2e6e3efb4c10691fd81 \
+                        size    2164284
 
 destroot {
     xinstall -m 0755 \
@@ -151,7 +151,7 @@ cargo.crates \
     serde_derive                   1.0.130  d7bc1a1ab1961464eae040d96713baa5a724a8152c1222492465b54322ec508b \
     serde_json                      1.0.69  e466864e431129c7e0d3476b92f20458e5879919a0596c6472738d9fa2d342f8 \
     serde_repr                       0.1.7  98d0516900518c29efa217c298fa1f4e6c6ffc85ae29fd7f4ee48f176e1a9ed5 \
-sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     smallvec                         1.7.0  1ecab6c735a6bb4139c0caafd0cc3635748bbb3acf4550e8138122099251f309 \
     smol_str                        0.1.21  61d15c83e300cce35b7c8cd39ff567c1ef42dde6d4a1a38dbdbf9a59902261bd \
     snap                             1.0.5  45456094d1983e2ee2a18fdfebce3189fa451699d0502cb8e3b49dba5ba41451 \

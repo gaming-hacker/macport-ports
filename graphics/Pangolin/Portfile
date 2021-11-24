@@ -2,7 +2,6 @@
 
 PortSystem          1.0
 PortGroup           cmake 1.1
-PortGroup           cxx11 1.1
 PortGroup           github 1.0
 
 github.setup        stevenlovegrove Pangolin 0.5 v
@@ -37,5 +36,7 @@ sha256  7d9ac216ae4ef86150a3ced1cfb0bb23572493aae4f7403b1552be4314b766df
 
 patchfiles-append   CMakeLists.txt.patch \
                     ffmpeg-4.0.patch
+
+compiler.cxx_standard   2011
 
 configure.args      -DBUILD_PANGOLIN_GUI=OFF

@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-fonttools
-version             4.28.1
+version             4.28.2
 revision            0
 
 description         XML<->TrueType/OpenType Converter
@@ -21,11 +21,11 @@ categories          python print
 license             MIT
 maintainers         {amake @amake} openmaintainer
 
-checksums           rmd160  a5332a7fcbd7b6596ca79c0ecba08e03582f7355 \
-sha256  8c8f84131bf04f3b1dcf99b9763cec35c347164ab6ad006e18d2f99fcab05529 \
-size    4532250
+checksums           rmd160  e6023271d72026c15149c28d4410aea757d4e6ad \
+                    sha256  dca694331af74c8ad47acc5171e57f6b78fac5692bf050f2ab572964577ac0dd \
+                    size    4833916
 
-python.versions 39
+python.versions     27 36 37 38 39 310
 
 if {${name} ne ${subport}} {
     use_zip         yes
@@ -38,16 +38,16 @@ if {${name} ne ${subport}} {
         version     3.44.0
         revision    0
         checksums   rmd160  0efc3c629774234752c7d41896b25c0efa5f77e9 \
-sha256  b72cc654e07219d8d7d8c624d1af13cec6f6cc2a51189f8385c295725e4ac36c \
-size    3529542
+                    sha256  b72cc654e07219d8d7d8c624d1af13cec6f6cc2a51189f8385c295725e4ac36c \
+                    size    3529542
     }
 
     if {${python.version} > 27 && ${python.version} < 37} {
         version     4.27.1
         revision    0
         checksums   rmd160  a36a87b0d909d98bc4987dcd50f7422c439eb70f \
-sha256  6e483f77dc5b862452c2888ec944fca5b79cffb741c7469786a442360681b4e8 \
-size    4522523
+                    sha256  6e483f77dc5b862452c2888ec944fca5b79cffb741c7469786a442360681b4e8 \
+                    size    4522523
     }
 
     default_variants +lxml +woff +unicode
