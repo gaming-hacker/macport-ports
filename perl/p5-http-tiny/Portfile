@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         HTTP-Tiny 0.080
 revision            0
 platforms           darwin
@@ -15,8 +15,8 @@ description         A small, simple, correct HTTP/1.1 client
 long_description    ${description}
 
 checksums           rmd160  5098e8bfdfc06b7effb7ea8bca1ff8af9ab4c0ba \
-                    sha256  243c6d566aa8f160fa1c6b0b92e5752356136b341ffffdd3ec07b23b745fde15 \
-                    size    74191
+sha256  243c6d566aa8f160fa1c6b0b92e5752356136b341ffffdd3ec07b23b745fde15 \
+size    74191
 
 if {${perl5.major} != ""} {
     depends_lib-append \

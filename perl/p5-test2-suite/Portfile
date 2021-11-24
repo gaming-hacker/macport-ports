@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         Test2-Suite 0.000142 ../../authors/id/E/EX/EXODIST
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  8c0272638c0a09c844d511643e92d84f29b57701 \
-                    sha256  8845b568db4f22be6e0e133d1e47fba05ba1b9a19136b4dad8b275171ead7b8e \
-                    size    229184
+sha256  8845b568db4f22be6e0e133d1e47fba05ba1b9a19136b4dad8b275171ead7b8e \
+size    229184
 
 if {${perl5.major} != ""} {
     depends_lib-append \

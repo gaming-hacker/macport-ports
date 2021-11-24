@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,10 +19,10 @@ description         Read one-dimensional barcodes and QR codes from Python 2 and
 long_description    ${description}
 
 checksums           rmd160  e863508491e4237c91d5c3ea8c1d79f601a9a630 \
-                    sha256  ce49f08ad1ede72cf8d9df43de83be7cfda54df9da9bd77cc027cc3a58c05036 \
-                    size    41545
+sha256  ce49f08ad1ede72cf8d9df43de83be7cfda54df9da9bd77cc027cc3a58c05036 \
+size    41545
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

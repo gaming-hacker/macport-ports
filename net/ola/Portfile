@@ -41,7 +41,7 @@ depends_build-append \
 
 depends_lib         port:protobuf3-cpp
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args      --disable-fatal-warnings \
                     --disable-libftdi \

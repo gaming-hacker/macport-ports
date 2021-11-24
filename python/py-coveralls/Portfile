@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    ${description}
 homepage            http://github.com/TheKevJames/coveralls-python
 
 checksums           rmd160  76526fac69adffb06b50989648726c7d3a33a5db \
-                    sha256  b32a8bb5d2df585207c119d6c01567b81fba690c9c10a753bfe27a335bfc43ea \
-                    size    17964
+sha256  b32a8bb5d2df585207c119d6c01567b81fba690c9c10a753bfe27a335bfc43ea \
+size    17964
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

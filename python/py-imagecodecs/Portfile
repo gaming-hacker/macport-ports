@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    {*}${description}
 homepage            https://www.lfd.uci.edu/~gohlke/
 
 checksums           rmd160  b3ca900bc0aaeb2596b2912f8668b6faab1fb0d1 \
-                    sha256  04b378ddaafa3178d079b1a84f3d8fdce0980f85a17b89cb6c68bf3de687293c \
-                    size    11196655
+sha256  04b378ddaafa3178d079b1a84f3d8fdce0980f85a17b89cb6c68bf3de687293c \
+size    11196655
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

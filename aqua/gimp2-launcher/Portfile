@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ master_sites        gimp:gimp/v${branch}/osx
 distfiles           gimp-${version}-x86_64.dmg
 
 checksums           rmd160  567583b258fe68fa78a2e97a70a315f8654594e6 \
-                    sha256  8cf0db374dcaba6fb0e1184ff8c6a3c585aa1814189ed4b97ba51780469f0805 \
-                    size    155493037
+sha256  8cf0db374dcaba6fb0e1184ff8c6a3c585aa1814189ed4b97ba51780469f0805 \
+size    155493037
 
 use_configure       no
 supported_archs     noarch

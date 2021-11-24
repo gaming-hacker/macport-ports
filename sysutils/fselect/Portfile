@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -26,9 +26,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  5b9998389a357fee3754738dc6ad264d604c00d7 \
-                    sha256  9ad3b7e2a8928ac5cf1694a72594ff56ab118dcb01803b780cdf70779355c000 \
-                    size    102903
+rmd160  5b9998389a357fee3754738dc6ad264d604c00d7 \
+sha256  9ad3b7e2a8928ac5cf1694a72594ff56ab118dcb01803b780cdf70779355c000 \
+size    102903
 
 destroot {
     xinstall -m 0755 \
@@ -150,9 +150,9 @@ cargo.crates \
     serde                          1.0.130  f12d06de37cf59146fbdecab66aa99f9fe4f78722e3607577a5375d66bd0c913 \
     serde_derive                   1.0.130  d7bc1a1ab1961464eae040d96713baa5a724a8152c1222492465b54322ec508b \
     serde_json                      1.0.71  063bf466a64011ac24040a49009724ee60a57da1b437617ceb32e53ad61bfb19 \
-    sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
-    sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
-    sha3                             0.9.1  f81199417d4e5de3f04b1e871023acea7389672c4135918f05aa9cbf2f2fa809 \
+sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
+sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
+sha3                             0.9.1  f81199417d4e5de3f04b1e871023acea7389672c4135918f05aa9cbf2f2fa809 \
     siphasher                        0.3.7  533494a8f9b724d33625ab53c6c4800f7cc445895924a8ef649222dcb76e938b \
     smallvec                         1.7.0  1ecab6c735a6bb4139c0caafd0cc3635748bbb3acf4550e8138122099251f309 \
     static_assertions                1.1.0  a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f \

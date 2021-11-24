@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -31,9 +31,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  3ecafdd5435ac13c00607132dba90ea6fbcd9b18 \
-                    sha256  7c3b1780ab8c4de9a358cce3379d24aaf0dababbc919208d2792e85392c04742 \
-                    size    62888
+rmd160  3ecafdd5435ac13c00607132dba90ea6fbcd9b18 \
+sha256  7c3b1780ab8c4de9a358cce3379d24aaf0dababbc919208d2792e85392c04742 \
+size    62888
 
 depends_build-append \
                     port:cmake

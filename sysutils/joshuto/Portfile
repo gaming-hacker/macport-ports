@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ description         ranger-like terminal file manager written in Rust
 long_description    {*}${description}
 
 checksums           ${distfiles} \
-                    rmd160  4920130fdfe4744007c3c4ef9fb34f01fa7013f9 \
-                    sha256  5d900079c65b644851f6a4cc49e308448a0ad28fa9b4b93ff62460b487c7d839 \
-                    size    601696
+rmd160  4920130fdfe4744007c3c4ef9fb34f01fa7013f9 \
+sha256  5d900079c65b644851f6a4cc49e308448a0ad28fa9b4b93ff62460b487c7d839 \
+size    601696
 
 cargo.crates \
     aho-corasick                    0.7.18  1e37cfd5e7657ada45f742d6e99ca5788580b5c529dc78faf11ece6dc702656f \

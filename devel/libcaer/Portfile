@@ -24,7 +24,7 @@ depends_lib-append  path:lib/pkgconfig/libusb-1.0.pc:libusb
 checksums           rmd160  67b5c16b8da39a193249dcdd055d90a9930cd9e4 \
 sha256  431b606934b40de498a7d0f50876745b92b95d64b5ea81da0a52d055a2b89cd7
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 compiler.blacklist-append \
                     {clang < 602}

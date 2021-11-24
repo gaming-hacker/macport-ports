@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,14 +17,14 @@ if {${subport} eq "${name}-fstar"} {
     github.setup        Z3Prover z3 4.8.5 Z3-
     revision            5
     checksums           rmd160  cb3509b35dc3a428019950df2e2f94c555a7ee94 \
-                        sha256  4e8e232887ddfa643adb6a30dcd3743cb2fa6591735fbd302b49f7028cdc0363 \
-                        size    4177051
+sha256  4e8e232887ddfa643adb6a30dcd3743cb2fa6591735fbd302b49f7028cdc0363 \
+size    4177051
 } else {
     github.setup        Z3Prover z3 4.8.13 z3-
     revision            0
     checksums           rmd160  b91efb8bb07119c7942964298648ba631b962724 \
-                        sha256  59a0b35711fa7ae48dd535116d2067a6a16955fcbf2623c516a3f630cd2832d8 \
-                        size    5103999
+sha256  59a0b35711fa7ae48dd535116d2067a6a16955fcbf2623c516a3f630cd2832d8 \
+size    5103999
 }
 
 platforms           darwin freebsd
@@ -43,7 +43,7 @@ worksrcdir          ${name}-${github.tag_prefix}${version}
 cmake.build_type    Release
 cmake.generator     Ninja
 
-# Build requires -std=gnu++17
+# Build requires -std=c++17
 compiler.cxx_standard   2017
 
 # Don't overide z3's default optimization flags 
@@ -88,7 +88,7 @@ variant debug description {Enable the debug build configuration} {
 
 # Options not shared with our language-binding subports
 if {${subport} eq ${name} || ${subport} eq "${name}-fstar"} {
-    depends_build-append    port:python27 \
+    depends_build-append    port:python39 \
                             port:bash
 
     patchfiles-append       build-z3-qprofdiff.diff
@@ -99,7 +99,7 @@ if {${subport} eq ${name} || ${subport} eq "${name}-fstar"} {
         legacysupport.use_mp_libcxx                 yes
     }
 
-    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
 
     if {[vercmp ${version} "4.8.7"] >= 0} {
         configure.args-append   -DZ3_ENABLE_EXAMPLE_TARGETS=ON
@@ -321,7 +321,7 @@ subport ${name}-fstar {
     }
 }
 
-set pyversions {27 37 38 39}
+set pyversions {39}
 
 # Create a top-level Python binding metaport
 subport py-${name} {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    {*}${description}
 homepage            https://sphinx-rtd-theme.readthedocs.io/
 
 checksums           rmd160  98f5aacf8df23644aaf628f379d78aa1702db786 \
-                    sha256  eec6d497e4c2195fa0e8b2016b337532b8a699a68bcb22a512870e16925c6a5c \
-                    size    2780623
+sha256  eec6d497e4c2195fa0e8b2016b337532b8a699a68bcb22a512870e16925c6a5c \
+size    2780623
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_build-append \

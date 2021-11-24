@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,8 +7,8 @@ name                py-asgiref
 version             3.4.1
 
 checksums           rmd160  eaa56d19ca70a533a2ede141906ba589af70dbca \
-                    sha256  4ef1ab46b484e3c706329cedeff284a5d40824200638503f5768edb6de7d58e9 \
-                    size    32529
+sha256  4ef1ab46b484e3c706329cedeff284a5d40824200638503f5768edb6de7d58e9 \
+size    32529
 
 platforms           darwin
 license             BSD
@@ -19,7 +19,7 @@ long_description    {*}${description}
 
 homepage            https://asgi.readthedocs.io/en/latest
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

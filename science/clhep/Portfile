@@ -24,7 +24,7 @@ size    1537195
 
 worksrcdir          ${version}/CLHEP
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 # https://its.cern.ch/jira/browse/CLHEP-134
 compiler.blacklist-append {clang < 600} macports-clang-3.3 macports-clang-3.4

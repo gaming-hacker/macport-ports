@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,8 +21,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 license             GPL-3.0
 
 checksums           rmd160  716ded6bc89d5485a3b9e559b9ab6c5d61dfd4f3 \
-                    sha256  93a8b913d61a8c246f61137eea3a4760a825d223d00eef612bab0feb82c5b454 \
-                    size    3513841
+sha256  93a8b913d61a8c246f61137eea3a4760a825d223d00eef612bab0feb82c5b454 \
+size    3513841
 
 build.dir           ${worksrcpath}/src
 
