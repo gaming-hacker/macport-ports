@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,13 +16,13 @@ long_description    ${description}
 
 github.setup        NanoVNA-Saver nanovna-saver 0.3.9 v
 checksums           rmd160  1b1af4b109834a93427ef6a435953b45d5ff5c65 \
-sha256  0a0a19c24235c019a4f7a1f76439a1877f331d10660ab0395cde9b3ea6f49caf \
-size    363689
+                    sha256  0a0a19c24235c019a4f7a1f76439a1877f331d10660ab0395cde9b3ea6f49caf \
+                    size    363689
 revision            0
 
 github.livecheck.regex  {([0-9.]+)}
 
-python.versions 39
+python.versions     39
 
 # I am not a python expert but to avoid
 # error "The 'PyQt5' distribution was not found"
