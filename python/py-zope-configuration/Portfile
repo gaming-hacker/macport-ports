@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,7 +7,7 @@ name                py-zope-configuration
 python.rootname     zope.configuration
 version             4.4.0
 revision            0
-python.versions     38 39 310
+python.versions 39
 maintainers         nomaintainer
 platforms           darwin
 license             ZPL-2.1
@@ -29,8 +29,8 @@ categories-append   zope
 homepage            https://github.com/zopefoundation/zope.configuration
 
 checksums           rmd160  9960529cdf2dec73e17751e517f991e164b5811c \
-                    sha256  e9f02bac44405ad1526399d6574b91d792f9694f9c67df8b64e91fe10fcddb3c \
-                    size    83230
+sha256  e9f02bac44405ad1526399d6574b91d792f9694f9c67df8b64e91fe10fcddb3c \
+size    83230
 
 if {${name} ne ${subport}} {
     depends_build-append \

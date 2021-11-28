@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -20,8 +20,8 @@ distname                Img-${version}-Source
 worksrcdir              Img-${version}
 
 checksums               rmd160  3fc3942847eef222046652719eee4c21b11e4151 \
-                        sha256  f0868c1cad9752dcf1234f81f00c417d34a11c0f0dd499ba469df29f1c40d163 \
-                        size    8366556
+sha256  f0868c1cad9752dcf1234f81f00c417d34a11c0f0dd499ba469df29f1c40d163 \
+size    8366556
 
 # ensure tkimg works when tk is installed +quartz
 patchfiles-append       patch-quartz.diff

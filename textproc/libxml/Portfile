@@ -6,8 +6,8 @@ name                libxml
 version             1.8.17
 revision            1
 checksums           rmd160  3d01879e6e5a38f4453d009ea8bd2d2fc9e86bcc \
-                    sha256  bffd3178dec8d75e2cfe05f4a4c36319c8fd3206209e32ef84e1a7c5173a86ed \
-                    size    996351
+sha256  bffd3178dec8d75e2cfe05f4a4c36319c8fd3206209e32ef84e1a7c5173a86ed \
+size    996351
 
 set branch          [join [lrange [split ${version} .] 0 1] .]
 categories          textproc

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -25,8 +25,8 @@ long_description    bfs is a variant of the UNIX find command that operates brea
     If you're not familiar with find, the GNU find manual provides a good introduction.
 
 checksums           rmd160  8007092bbc372ccb99d93936594c4462615c5211 \
-                    sha256  e53f3854c2e97185043ead773e2fc2680d7c1a9be113a88c90c6b1236c6f2723 \
-                    size    143505
+sha256  e53f3854c2e97185043ead773e2fc2680d7c1a9be113a88c90c6b1236c6f2723 \
+size    143505
 
 # clang: error: unable to execute command: Segmentation fault: 11
 compiler.blacklist  {clang < 500}

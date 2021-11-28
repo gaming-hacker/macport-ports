@@ -29,8 +29,8 @@ if {${name} ne ${subport}} {
     if {${python.version} < 36} {
         version     1.1.0
         checksums   rmd160  3a1b71343357fd9cef28039753c78f0bf24d91ff \
-                    sha256  321b033d07f2a4136d3ec762eac9f16a10ccd60f53c0c91af90217ace7ba1f19 \
-                    size    53219
+sha256  321b033d07f2a4136d3ec762eac9f16a10ccd60f53c0c91af90217ace7ba1f19 \
+size    53219
     }
 
     depends_build-append \

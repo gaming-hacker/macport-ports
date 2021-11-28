@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -23,8 +23,8 @@ distname            postgresql-${version}
 set rname           postgresql12
 
 checksums           rmd160  7bdb6e85259fbb520a93f66fab82fcedee9fee2c \
-                    sha256  89fda2de33ed04a98548e43f3ee5f15b882be17505d631fe0dd1a540a2b56dce \
-                    size    20904260
+sha256  89fda2de33ed04a98548e43f3ee5f15b882be17505d631fe0dd1a540a2b56dce \
+size    20904260
 
 use_bzip2           yes
 dist_subdir         ${rname}

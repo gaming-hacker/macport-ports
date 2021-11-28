@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -24,9 +24,9 @@ maintainers         {saagarjha.com:saagar @saagarjha} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  c37b6673e35cb9151028a0c96cbeef9075da4afe \
-                    sha256  3c5a8a03c4f6ade73b92432ed0ba51591db19b0d136073fa3ccfa99d63403d52 \
-                    size    93470
+rmd160  c37b6673e35cb9151028a0c96cbeef9075da4afe \
+sha256  3c5a8a03c4f6ade73b92432ed0ba51591db19b0d136073fa3ccfa99d63403d52 \
+size    93470
 
 pre-build {
     file mkdir ${worksrcpath}/shell_completions

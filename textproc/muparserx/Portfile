@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,11 +14,11 @@ long_description    ${description}
 
 github.setup        beltoforion muparserx 4.0.11 v
 checksums           rmd160  b3d27ee35ada50a78a546992803146caecf9da04 \
-                    sha256  4968c4870a4923dcb2a03a81b8d30a65cd84e8ea56b5a19541b2c4bc830fa75b \
-                    size    215876
+sha256  4968c4870a4923dcb2a03a81b8d30a65cd84e8ea56b5a19541b2c4bc830fa75b \
+size    215876
 revision            0
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args-append \
     -DBUILD_SHARED_LIBS=ON

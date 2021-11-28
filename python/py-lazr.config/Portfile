@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             LGPL-3
 
-python.versions     38 39
+python.versions 39
 
 maintainers         nomaintainer
 
@@ -22,8 +22,8 @@ long_description    The LAZR config system is typically used to manage \
 homepage            https://launchpad.net/lazr.config
 
 checksums           rmd160  873f01ec03c407d725f2ff76b548fdbaac49a146 \
-                    sha256  b74a73f8b63e6dc6732fc1f3d88e2f236596ddf089ef6e1794ece060e8cfabe1 \
-                    size    34213
+sha256  b74a73f8b63e6dc6732fc1f3d88e2f236596ddf089ef6e1794ece060e8cfabe1 \
+size    34213
 
 if {${name} ne ${subport}} {
     depends_build-append \
