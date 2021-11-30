@@ -9,13 +9,11 @@ PortGroup                   conflicts_build 1.0
 # PHP Warning:  Version warning: Imagick was compiled against Image Magick version XXXX but version YYYY is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
 
 name                        ImageMagick
-# 6.9.11-61 changes the major version of libMagickCore which will
-# require increasing the revision of all ports that link with it.
-version                     7.1.0-5
-revision                    1
-checksums rmd160  7fd1c6083a8a861e3b6ea83e55fb7c7581b6ff41 \
-sha256  faeae351785447834c44850f2d3d80bbb0fed500228373098fce553a0df1ac6b \
-size    10308228
+version                     7.1.0-16
+revision                    0
+checksums           rmd160  cd9f7f3305586f5fb8c635a0f1fcf9a359c33a73 \
+sha256  770219ae4087cc9a107dde04473ba7a932a374f310f9ec9ff6a545798e9da039 \
+size    10322260
 
 categories                  graphics devel
 maintainers                 {ryandesign @ryandesign}
@@ -40,7 +38,7 @@ long_description            ImageMagick is a robust collection of tools and \
                             supported, including GIF, JPEG, JPEG 2000, PNG, PDF, \
                             PhotoCD and TIFF.
 
-homepage                    https://legacy.imagemagick.org
+homepage                    https://imagemagick.org
 master_sites                https://download.imagemagick.org/ImageMagick/download/releases/ \
                             http://mirror.checkdomain.de/imagemagick/releases/ \
                             ftp://ftp.u-aizu.ac.jp/pub/graphics/image/ImageMagick/imagemagick.org/releases/ \
@@ -119,16 +117,16 @@ configure.args              --enable-shared \
                             --with-fftw \
                             --with-quantum-depth=64
 
-if {${os.platform} eq "darwin" && ${os.major} < 11} {
+# if {${os.platform} eq "darwin" && ${os.major} < 11} {
     configure.args-append   --disable-opencl
-} else {
-    configure.args-append   --enable-opencl
-    # On case-insensitive filesystems, ImageMagick finds cryptlib's libcl and
-    # tries to use it as if it were Apple's OpenCL, which fails; see #23354.
-    if {[file exists ${prefix}/lib/libCL.dylib]} {
-        conflicts_build         cryptlib
-    }
-}
+# } else {
+#     configure.args-append   --enable-opencl
+#     # On case-insensitive filesystems, ImageMagick finds cryptlib's libcl and
+#     # tries to use it as if it were Apple's OpenCL, which fails; see #23354.
+#     if {[file exists ${prefix}/lib/libCL.dylib]} {
+#         conflicts_build         cryptlib
+#     }
+# }
 
 test.run                    yes
 test.target                 check
