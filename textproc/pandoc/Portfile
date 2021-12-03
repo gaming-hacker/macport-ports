@@ -35,6 +35,8 @@ size    7199857
 test.run            yes
 test.args           --test-arguments='-p markdown'
 
+installs_libs       no
+
 compiler.blacklist-append \
                    {clang < 900}
 

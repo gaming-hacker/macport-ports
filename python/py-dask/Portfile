@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -29,8 +29,8 @@ long_description    Dask provides multi-core execution on larger-than-memory \
 homepage            https://github.com/dask/dask/
 
 checksums           rmd160  351a8e870960e563600bb544508101c782217eb9 \
-sha256  7c1ed5069fd81925130db7a7c94037eb8259fb3599adb4d130748aa3966e5684 \
-size    3792016
+                    sha256  7c1ed5069fd81925130db7a7c94037eb8259fb3599adb4d130748aa3966e5684 \
+                    size    3792016
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -51,8 +51,8 @@ if {${name} ne ${subport}} {
         epoch               1
         distname            ${python.rootname}-${version}
         checksums           rmd160  94cce1974d6ad2830a6fd3d745cbe5d4100ff5ba \
-sha256  5e7876bae2a01b355d1969b73aeafa23310febd8c353163910b73e93dc7e492c \
-size    2404729
+                            sha256  5e7876bae2a01b355d1969b73aeafa23310febd8c353163910b73e93dc7e492c \
+                            size    2404729
     }
 
     if {${python.version} eq 35} {
@@ -61,8 +61,8 @@ size    2404729
         epoch               1
         distname            ${python.rootname}-${version}
         checksums           rmd160  29c49c566dfbb45c0908dd40d969538390ad231a \
-sha256  81c7891f0d2e7ac03d1f7fabf1f639360a1db52c03a7155ba9b08e9ee6280f2b \
-size    2479716
+                            sha256  81c7891f0d2e7ac03d1f7fabf1f639360a1db52c03a7155ba9b08e9ee6280f2b \
+                            size    2479716
     }
 
     livecheck.type      none

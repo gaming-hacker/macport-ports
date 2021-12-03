@@ -112,18 +112,10 @@ its original source file as follows:
 1.  Make a copy of `/opt/local/share/openstreetmap-carto/project.mml` and edit
     the `dbname` attribute appropriately in the copy.
 
-1.  Use Node.js to install the carto package which is used to create the
-    Mapnik stylesheet:
-
-		$ sudo port install npm6
-		$ npm install -g carto@0.18.2
-
-	Depending on your Node.js installation, you may need to use the `sudo`
-    command with `npm install`.
-
 1.  Use `carto` to re-create `mapnik.xml` using the copy of the `project.mml`
     source file:
 
+		$ sudo port install carto
 		$ carto project.mml | sudo tee /opt/local/etc/openstreetmap-carto/mapnik.xml
 
 ## Useful Resources

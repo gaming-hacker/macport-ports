@@ -24,7 +24,7 @@ sha256  c7df5921edd121ca5d5b1cf6fb01e430aff9b31242262e4f690d3af72ccbe72a \
 size    10340
 
 depends_lib-append  port:libpng \
-                    port:libjpeg-turbo
+                    path:include/turbojpeg.h:libjpeg-turbo
 
 legacysupport.newest_darwin_requires_legacy 10
 

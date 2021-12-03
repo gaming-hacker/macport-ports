@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/twpayne/chezmoi 2.8.0 v
+go.setup            github.com/twpayne/chezmoi 2.9.2 v
 github.tarball_from archive
 revision            0
 
@@ -20,9 +20,9 @@ license             MIT
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  fb0433fc1aa6366935a177aa039c4f1372dd8006 \
-sha256  3c7408625639c215926e1401b9acc037a0c2216984a7d063cf647d9ec0798937 \
-size    2346821
+checksums           rmd160  f9c13186b1de8a59848f4cb02809f1f27814dd73 \
+                    sha256  8d193ad8b6cf509ee596ac8f96ace7b719f71926368b4befe6c6eabb820a022e \
+                    size    2351160
 
 # Allow Go to fetch dependencies at build time
 build.env-delete    GO111MODULE=off GOPROXY=off

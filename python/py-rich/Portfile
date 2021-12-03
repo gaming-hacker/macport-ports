@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-rich
-version             10.14.0
+version             10.15.2
 platforms           darwin
 license             MIT
 supported_archs     noarch
@@ -21,11 +21,11 @@ long_description    {*}${description}. The Rich API makes it easy to add color \
 
 homepage            https://rich.readthedocs.io/en/latest/
 
-checksums           rmd160 d9f649899418212796e088ca264e8407648643e0 \
-sha256 8bfe4546d56b4131298d3a9e571a0742de342f1593770bd0d4707299f772a0af \
-size   196976
+checksums           rmd160 6ed81e52bd6dfec477246c90f1d2782fcd1dd355 \
+                    sha256 1dded089b79dd042b3ab5cd63439a338e16652001f0c16e73acdcf4997ad772d \
+                    size   197381
 
-python.versions 39
+python.versions     36 37 38 39 310
 
 if {${name} ne ${subport}} {
 

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/pulumi/pulumi 3.18.0 v
+go.setup            github.com/pulumi/pulumi 3.19.0 v
 github.tarball_from archive
 revision            0
 
@@ -29,9 +29,9 @@ license             Apache-2
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  21ddc813fab92a7af3cd4c80056ac66af27de187 \
-sha256  3547f5a0223e1f2aafa79898f4d72dc433e15b9000714023ecf84d225bd74fa7 \
-size    9055321
+checksums           rmd160  a14531ea18be63209bcaa5881de15d7fb4ddcb47 \
+                    sha256  e758e0053c7a80ff0e64252beb1b47a4434d584a3d4fe4964eac8720e3322e5b \
+                    size    9174658
 
 build.cmd           make
 build.pre_args      BREW_VERSION="${github.tag_prefix}${version}"
@@ -45,7 +45,7 @@ build.args          brew
 build.env-delete    GOPROXY=off GO111MODULE=off
 
 destroot {
-    xinstall -m 755 {*}[glob ${gopath}/bin/pulumi*] ${destroot}${prefix}/bin/
+    xinstall -m 0755 {*}[glob ${gopath}/bin/pulumi*] ${destroot}${prefix}/bin/
 }
 
 github.livecheck.regex  {([0-9.]+)}

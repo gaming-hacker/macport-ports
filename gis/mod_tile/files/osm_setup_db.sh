@@ -82,7 +82,7 @@ GIS_DB_USER="${GIS_DB_USER:-$GIS_USER}"
 PG_SUPER_USER="${PG_SUPER_USER:-postgres}"
 CURL_BIN="$PREFIX/bin/curl"
 MD5SUM_BIN="$PREFIX/bin/gmd5sum"
-OSM2PGSQL_BIN="$PREFIX/bin/osm2pgsql"
+OSM2PGSQL_BIN="$PREFIX/bin/osm2pgsql-lua"
 PBF_DOWNLOAD_BASE_URL="${PBF_DOWNLOAD_BASE_URL:-https://download.geofabrik.de}"
 PBF_FILENAME="${PBF_FILENAME:-europe/monaco-latest.osm.pbf}"
 POLY_FILENAME="${POLY_FILENAME:-europe/monaco.poly}"
@@ -94,9 +94,9 @@ EXTERNAL_DATA_EXTRA_OPTIONS="${EXTERNAL_DATA_EXTRA_OPTIONS}"
 CUT_BIN=/usr/bin/cut
 GREP_BIN=/usr/bin/grep
 
-if [ "$EUID" -ne 0 ]; then
-    >&2 echo "This script must be executed by root"
-    exit 1
+if [ $(id -u) -ne 0 ]; then
+    sudo $0
+    exit 0
 fi
 
 initializeDatabase()
