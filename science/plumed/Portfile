@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ platforms           darwin
 homepage            http://www.plumed.org/
 
 checksums           rmd160  25b9e84980d08583c782780281b241f5eca47e55 \
-                    sha256  5d7f052697b05d0a2c3b934606d8890b2655b68070fa3a22009d83f8aea5a73f \
-                    size    106492582
+sha256  5d7f052697b05d0a2c3b934606d8890b2655b68070fa3a22009d83f8aea5a73f \
+size    106492582
 
 # Enable optional features.
 # --enable-asmjit:        Compile internal asmjit. Notice that internal asmjit is protected in
@@ -64,7 +64,7 @@ configure.args-append BASH_COMPLETION_DIR=${prefix}/share/bash-completion/comple
 configure.cppflags-append "-D__PLUMED_DEFAULT_KERNEL=${prefix}/lib/libplumedKernel.dylib"
 
 compilers.choose    cc cxx
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 mpi.setup
 
@@ -125,8 +125,8 @@ subport plumed-devel {
     long_description    ${long_description} (development version)
     conflicts plumed
     checksums           rmd160  c5b0dbcb7ab6cf26092a57fd91d2eb739dc91bea \
-                        sha256  f689ddb2b4931de6ded67061d7e7d4501e3dd5d6d40785b107a675d17cf545ec \
-                        size    107893701
+sha256  f689ddb2b4931de6ded67061d7e7d4501e3dd5d6d40785b107a675d17cf545ec \
+size    107893701
     configure.ldflags-delete -lxdrfile
     depends_lib-delete       port:xdrfile
     configure.args-delete    --enable-asmjit

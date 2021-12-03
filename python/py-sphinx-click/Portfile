@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    sphinx-click is a Sphinx plugin that allows you to automatic
 homepage            https://sphinx-click.readthedocs.io/en/latest/
 
 checksums           rmd160 bec74b9fdff0a02929b4df6f28618de9f9bea19e \
-                    sha256 29896dd12bfaacb566a8c7af2e2b675d010d69b0c5aad3b52495d4842358b15b \
-                    size   19764
+sha256 29896dd12bfaacb566a8c7af2e2b675d010d69b0c5aad3b52495d4842358b15b \
+size   19764
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
 

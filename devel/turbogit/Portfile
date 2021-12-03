@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    Opinionated cli enforcing clean git workflow without compris
 github.tarball_from archive
 
 checksums           rmd160  e322ffa79c691097ff3b0570747dcca7ec468534 \
-                    sha256  c2acaf6b3a14de44e81c04ebd2ea2a2ddce827c1cb9680b4aea3caf5a16c96e3 \
-                    size    1141496
+sha256  c2acaf6b3a14de44e81c04ebd2ea2a2ddce827c1cb9680b4aea3caf5a16c96e3 \
+size    1141496
 
 use_configure       no
 installs_libs       no

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,11 +17,11 @@ long_description    This package contains libraries and templates for \
 
 homepage            https://gitlab.com/mailman/django-mailman3
 
-python.versions     38 39 310
+python.versions 39
 
 checksums           rmd160  07c8c8065e7efddc658d819dfe3696c45230de17 \
-                    sha256  6ea8c24c13e7afe744f18e18e4d19d0e74223e0d9bd5d782deea85dcb865feb7 \
-                    size    404133
+sha256  6ea8c24c13e7afe744f18e18e4d19d0e74223e0d9bd5d782deea85dcb865feb7 \
+size    404133
 
 if {${name} ne ${subport}} {
     depends_lib-append \

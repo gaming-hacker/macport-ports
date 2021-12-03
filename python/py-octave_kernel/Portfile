@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,10 +15,10 @@ platforms           darwin
 homepage            https://github.com/Calysto/octave_kernel
 
 checksums           rmd160  20954a5e37ee525fd4b3c02a84bf59c270d5f5ea \
-                    sha256  21cd40465d5d8aa6ad2a1ee69220c536517e7cbd6900e8da0b2928b7860d46ec \
-                    size    257918
+sha256  21cd40465d5d8aa6ad2a1ee69220c536517e7cbd6900e8da0b2928b7860d46ec \
+size    257918
 
-python.versions     27 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

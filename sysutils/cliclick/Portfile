@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -25,8 +25,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 19} {
     github.setup            BlueM cliclick 5.0.1
     revision                0
     checksums               rmd160  98c441982cf58fb9542545fd7724ac8d879fe34d \
-                            sha256  798fb8b26f6a42b5002ca58e018b91f7677162c4f035b38aee8d905829db64a7 \
-                            size    36195
+sha256  798fb8b26f6a42b5002ca58e018b91f7677162c4f035b38aee8d905829db64a7 \
+size    36195
     github.tarball_from     archive
 
     if {${os.platform} eq "darwin" && ${os.major} >= 21} {
@@ -42,8 +42,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 19} {
     github.setup            BlueM cliclick 4.0.1
     revision                1
     checksums               rmd160  c79e26f413cb829c49e92cf45a5cab2042bd99dd \
-                            sha256  c218b3356a804d768d5f074fc64eb1ff6842083bf476a80b363d95211deff59f \
-                            size    35710
+sha256  c218b3356a804d768d5f074fc64eb1ff6842083bf476a80b363d95211deff59f \
+size    35710
 
     patchfiles-append       32-bit.patch \
                             c89.patch \

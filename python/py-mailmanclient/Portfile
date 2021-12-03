@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,11 +17,11 @@ long_description    The mailmanclient library provides official \
 
 homepage            http://www.list.org/
 
-python.versions     38 39 310
+python.versions 39
 
 checksums           rmd160  0782fe37b64d71cf6fb524393ea60e6f2bd1ac2e \
-                    sha256  92fe624675e41f41f59de1208e0125dfaa8d062bbe6138bd7cd79e4dd0b6f85e \
-                    size    90137
+sha256  92fe624675e41f41f59de1208e0125dfaa8d062bbe6138bd7cd79e4dd0b6f85e \
+size    90137
 
 if {${name} ne ${subport}} {
     depends_lib-append \

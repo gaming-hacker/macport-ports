@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -124,34 +124,34 @@ distfiles-append    rust-std-${binTag}${extract.suffix} \
                     cargo-${binTag}${extract.suffix}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  7c4752686cae9c21ddc7300fca99086ce9502256 \
-                    sha256  3546f9c3b91b1f8b8efd26c94d6b50312c08210397b4072ed2748e2bd4445c1a \
-                    size    180813373
+rmd160  7c4752686cae9c21ddc7300fca99086ce9502256 \
+sha256  3546f9c3b91b1f8b8efd26c94d6b50312c08210397b4072ed2748e2bd4445c1a \
+size    180813373
 
 checksums-append    rust-std-${rustc_version}-x86_64-apple-${os.platform}${extract.suffix} \
-                    rmd160  257de6a860d78c5b9bb421b90d7a2a17e57bdabf \
-                    sha256  a1cedfaea1508bf3bfc8a77d82d15c693b41e70e56fad930d24f21f0bce5052a \
-                    size    35631735 \
+rmd160  257de6a860d78c5b9bb421b90d7a2a17e57bdabf \
+sha256  a1cedfaea1508bf3bfc8a77d82d15c693b41e70e56fad930d24f21f0bce5052a \
+size    35631735 \
                     rustc-${rustc_version}-x86_64-apple-${os.platform}${extract.suffix} \
-                    rmd160  b7ccabcdebbb332b49ad03edbb41a9c8fa68eff5 \
-                    sha256  876b9ed13a71ada3c00878c6006d837b852973cba84419753445c8a8a76efe00 \
-                    size    95731845 \
+rmd160  b7ccabcdebbb332b49ad03edbb41a9c8fa68eff5 \
+sha256  876b9ed13a71ada3c00878c6006d837b852973cba84419753445c8a8a76efe00 \
+size    95731845 \
                     cargo-${rustc_version}-x86_64-apple-${os.platform}${extract.suffix} \
-                    rmd160  26e37d31c82cb751a39726a20bdb77bae078c037 \
-                    sha256  cd60c32d0bb0ed59508df96bebb83cf6f85accb9908fb5d63ca95c983a190cf3 \
-                    size    6655466 \
+rmd160  26e37d31c82cb751a39726a20bdb77bae078c037 \
+sha256  cd60c32d0bb0ed59508df96bebb83cf6f85accb9908fb5d63ca95c983a190cf3 \
+size    6655466 \
                     rust-std-${rustc_version}-aarch64-apple-${os.platform}${extract.suffix} \
-                    rmd160  850c330590c4c6674a69f42170ef06e60e5604ee \
-                    sha256  59fcdb16c264fce206a1a59261fc576f547fa0a807d3370b542ab25261ae5158 \
-                    size    33934051 \
+rmd160  850c330590c4c6674a69f42170ef06e60e5604ee \
+sha256  59fcdb16c264fce206a1a59261fc576f547fa0a807d3370b542ab25261ae5158 \
+size    33934051 \
                     rustc-${rustc_version}-aarch64-apple-${os.platform}${extract.suffix} \
-                    rmd160  48f287d172efe937cedba720359449bccce44cbd \
-                    sha256  fcb2c2e46e3cc7e7cba3abbb78ba87131aea56770145f8d97944b675a491312a \
-                    size    97168910 \
+rmd160  48f287d172efe937cedba720359449bccce44cbd \
+sha256  fcb2c2e46e3cc7e7cba3abbb78ba87131aea56770145f8d97944b675a491312a \
+size    97168910 \
                     cargo-${rustc_version}-aarch64-apple-${os.platform}${extract.suffix} \
-                    rmd160  c57b195d0fe756ba5287fff0737c599c888745af \
-                    sha256  6ed30275214e956ee10b03db87b0b4297948fd102d39896cece01669555047ef \
-                    size    5918639
+rmd160  c57b195d0fe756ba5287fff0737c599c888745af \
+sha256  6ed30275214e956ee10b03db87b0b4297948fd102d39896cece01669555047ef \
+size    5918639
 
 set min_darwin 13
 if {${os.platform} eq "darwin" && ${os.major} < ${min_darwin}} {
@@ -274,7 +274,7 @@ subport ${ccwrap} {
                 "\$\{MACPORTS_RUST_LD\:\-${sel_ld}\}" \
                 "\$\{MACPORTS_LEGACY_SUPPORT_LDFLAGS\}"
             foreach cmd { ar as nm nm-classic libtool lipo objdump otool ranlib \
-                          size size-classic strip strings bitcode-strip segedit } {
+size size-classic strip strings bitcode-strip segedit } {
                 ln -s ${prefix}/bin/${cmd} ${destroot}${wrapdir}/${cmd}
             }
         }

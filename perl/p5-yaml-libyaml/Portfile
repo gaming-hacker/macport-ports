@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         YAML-LibYAML 0.83
 revision            0
 license             {Artistic-1 GPL}
@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  12fc71e20b044afba259cf7422df04f3dcbb2794 \
-                    sha256  b47175b4ff397ad75a4f7781d3d83c08637da6ff0bae326af3b389d854bec490 \
-                    size    152593
+sha256  b47175b4ff397ad75a4f7781d3d83c08637da6ff0bae326af3b389d854bec490 \
+size    152593
 
 # builds using embedded libyaml 0.2.4 source, no dependencies required

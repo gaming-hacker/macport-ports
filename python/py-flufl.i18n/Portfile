@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 supported_archs     noarch
 license             Apache-2.0
 
-python.versions     38 39
+python.versions 39
 
 maintainers         nomaintainer
 
@@ -25,8 +25,8 @@ long_description    {*}${description} The flufl.i18n library provides \
 homepage            https://flufli18n.readthedocs.io/
 
 checksums           rmd160  650b6bc7b2451372f0d3e6116e1b29970e264521 \
-                    sha256  c35c8f8eab66adb7fd64a1420860105066d2b36cb655b33ffb14afe8e223ed62 \
-                    size    24209
+sha256  c35c8f8eab66adb7fd64a1420860105066d2b36cb655b33ffb14afe8e223ed62 \
+size    24209
 
 if {${name} ne ${subport}} {
     depends_build-append \

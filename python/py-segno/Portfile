@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    {*}${description}. This package implements ISO/IEC 18004:201
 homepage            https://segno.readthedocs.io/en/latest/
 
 checksums           rmd160 249e278de984bbf7c1ecac84e1f7db024f39fd21 \
-                    sha256 b8e90823b7ab5249044d22f022291bb06e112104779d6339baf0997fad656c9a \
-                    size   86381
+sha256 b8e90823b7ab5249044d22f022291bb06e112104779d6339baf0997fad656c9a \
+size   86381
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
 

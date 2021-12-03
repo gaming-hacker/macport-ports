@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ homepage            https://grails.org/
 distname            ${name}-${version}
 
 checksums           rmd160  a1cd7f7494f4a8b85895c32afebda3147bb6e307 \
-                    sha256  7ab83eae780db077724fc69425d43429f1af627a2ca83ddb527b4b79bfe88dd5 \
-                    size    174996765
+sha256  7ab83eae780db077724fc69425d43429f1af627a2ca83ddb527b4b79bfe88dd5 \
+size    174996765
 
 use_zip             yes
 use_configure       no

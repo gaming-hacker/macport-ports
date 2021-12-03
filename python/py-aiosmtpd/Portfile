@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 supported_archs     noarch
 license             Apache-2
 
-python.versions     38 39
+python.versions 39
 
 maintainers         {danchr @danchr} openmaintainer
 
@@ -25,8 +25,8 @@ long_description    An asyncio based implementation of a server for \
 homepage            http://aiosmtpd.readthedocs.io
 
 checksums           rmd160  57e208c9d265ef8938218a4b7b2217ed5a6981af \
-                    sha256  aa891d010d2097274189078c6ce2a59a167f3fb2e974e028b572a61e92e1549c \
-                    size    140630
+sha256  aa891d010d2097274189078c6ce2a59a167f3fb2e974e028b572a61e92e1549c \
+size    140630
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ supported_archs     noarch
 license             GPL-3
 supported_archs     noarch
 
-python.versions     38 39 310
+python.versions 39
 
 maintainers         nomaintainer
 
@@ -22,8 +22,8 @@ long_description    HyperKitty is an open source Django application \
 homepage            https://gitlab.com/mailman/hyperkitty
 
 checksums           rmd160  bdfc101a1d4962b40afcec758e2dec7c2decc961 \
-                    sha256  8269222bca481dfb9b6dbc4d766fc3e8bda8ef6d85a6dc5880835874850e9f86 \
-                    size    2488492
+sha256  8269222bca481dfb9b6dbc4d766fc3e8bda8ef6d85a6dc5880835874850e9f86 \
+size    2488492
 
 if {${name} ne ${subport}} {
     python.rootname HyperKitty

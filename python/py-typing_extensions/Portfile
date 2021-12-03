@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup python 1.0
@@ -21,10 +21,10 @@ long_description    The typing module was added to the standard library in Pytho
 homepage            https://github.com/python/typing/blob/master/typing_extensions/README.rst
 
 checksums           rmd160  26d24872b6f914c1a8cbc7d4b41e1846217c8781 \
-                    sha256  4ca091dea149f945ec56afb48dae714f21e8692ef22a395223bcd328961b6a0e \
-                    size    22706
+sha256  4ca091dea149f945ec56afb48dae714f21e8692ef22a395223bcd328961b6a0e \
+size    22706
 
-python.versions     36 37 38 39 310
+python.versions 39
 
 python.pep517       yes
 

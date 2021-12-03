@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -15,8 +15,8 @@ platforms               darwin freebsd linux
 use_parallel_build      yes
 
 checksums               rmd160  93b5bf20f0cb7f0fb5342a948b86d55682b99521 \
-                        sha256  c77d0da3102aec9c07f43671e60611ebff89a996ef159497ce8e59d075786b12 \
-                        size    24181849
+sha256  c77d0da3102aec9c07f43671e60611ebff89a996ef159497ce8e59d075786b12 \
+size    24181849
 
 # https://trac.macports.org/ticket/31167
 compiler.blacklist-append   {clang < 211.10.1}
