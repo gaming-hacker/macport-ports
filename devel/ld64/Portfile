@@ -6,7 +6,7 @@ PortGroup               compiler_blacklist_versions 1.0
 name                    ld64
 epoch                   2
 version                 3
-revision                4
+revision                5
 set dyld_version        655.1.1
 categories              devel
 platforms               darwin
@@ -49,146 +49,6 @@ rmd160  4d263cff143228e021c438d3c2d1800ff367c895 \
 sha256  140619e676e099581771dbad98277850ff731cd23938bed95b4d7171616acca1 \
 size    729639
 
-subport ld64-97 {
-    # Xcode 3.2.6
-    version             97.17
-    revision            9
-
-    set makefile        "Makefile-97"
-    set ld64_ver        97
-
-    # the fallbacks on all current systems (10.6+ at least) are not set up to build this
-    compiler.blacklist-append *clang*
-
-    patchfiles-append \
-        ld64-version.patch \
-        ld64-97-no-LTO.patch \
-        ld64-97-ppc-branch-island.patch \
-        ld64-97-arm_types_PR38931.patch \
-        ld64-97-long-branch-warn.patch \
-        ld64-97-standalone-libunwind-headers.patch \
-        ld64-97-no-Availability.h.patch \
-        ld64-97-BaseAtomImplicitDecl.patch \
-        ld64-97-no-ppc-thread_status.patch \
-        ld64-97-configured_architectures.patch
-
-    if {${os.major} >= 14} {
-        known_fail yes
-        pre-fetch {
-            ui_error "$subport is not supported on Yosemite or later."
-            error "unsupported platform"
-        }
-    }
-}
-
-subport ld64-127 {
-    # Xcode 4.2
-    # This was the last ld64 release that supported linking ppc executables.
-    version             127.2
-    revision            14
-
-    # multiple errors with macports clang versions newer than 3.7
-    compiler.blacklist-append {macports-clang-[5-9].0} macports-clang-devel
-
-    set makefile        "Makefile-127"
-    set ld64_ver        127
-
-    patchfiles-append \
-        ld64-version.patch \
-        ld64-134-missing-include.patch \
-        ld64-127-any-cctools.patch \
-        ld64-127-long-branch-warn.patch \
-        ld64-127-cxx_initializer_order_and_sim.patch \
-        ld64-127-ppc.patch \
-        ld64-127-configured_architectures.patch \
-        ld64-127-align_file_offset_with_address_layout.patch \
-        ld64-127-alignment_padding.patch \
-        ld64-127-filter_out_zero_length_functions.patch \
-        ld64-127-i386-reloc.patch \
-        ld64-127-malformed_object_crash.patch \
-        ld64-127-no_ld_classic.patch \
-        ld64-127-static_slidable.patch \
-        ld64-97-no-Availability.h.patch \
-        PR-12249048.patch \
-        PR-12057707.patch \
-        PR-13282463.patch \
-        PR-29117886.patch \
-        ld64-ppc-9610466.patch
-}
-
-subport ld64-236 {
-    # Xcode 5.1
-    version             236.3
-    revision            8
-
-    # http://trac.macports.org/ticket/43737
-    # < 100 is a guess.  Xcode 4.1 might work, so I'm leaving it as an option unless someone reports a failure.
-    compiler.blacklist-append *gcc* {clang < 100}
-
-    # multiple errors with macports clang versions newer than 5.0
-    compiler.blacklist-append {macports-clang-[6-9].0} macports-clang-devel
-
-    set makefile        "Makefile-133"
-    set ld64_ver        236
-
-    patchfiles-append \
-        ld64-version.patch \
-        ld64-133-no-CrashReporterClient.h.patch \
-        ld64-134-missing-include.patch \
-        ld64-136-i386-badAddress.patch \
-        PR-16935960.patch \
-        PR-16936488.patch \
-        PR-28988396.patch \
-        PR-29117886.patch \
-        PR-33746767.patch \
-        ld64-ppc-9610466.patch
-
-    if {${configure.cxx_stdlib} eq "libstdc++"} {
-        patchfiles-append   ld64-236-hash_set.patch
-    }
-
-    if {${os.major} <= 9} {
-        known_fail yes
-        pre-fetch {
-            ui_error "$subport is not supported on Leopard or earlier.  It requires the blocks runtime."
-            error "unsupported platform"
-        }
-    }
-}
-
-subport ld64-274 {
-    # Xcode 8.2.1
-    version             274.2
-    revision            0
-
-    # https://trac.macports.org/ticket/43737
-    # https://trac.macports.org/ticket/50130
-    compiler.blacklist-append *gcc* {clang < 300}
-
-    set makefile        "Makefile-274"
-    set ld64_ver        274
-
-    patchfiles-append \
-        ld64-version.patch \
-        ld64-133-no-CrashReporterClient.h.patch \
-        ld64-134-missing-include.patch \
-        ld64-136-i386-badAddress.patch \
-        ld64-ppc-9610466.patch \
-        PR-49393.patch \
-        PR-28988396.patch \
-        PR-29117886.patch \
-        PR-29679726.patch \
-        PR-29723276.patch \
-        PR-29723629.patch \
-        PR-33746767.patch
-
-    depends_lib-append port:libcxx
-    configure.cxx_stdlib libc++
-    configure.cxxflags-append -std=c++17
-
-    supported_archs i386 x86_64
-}
-
 subport ld64-latest {
     # Xcode 10.2
     version 450.3
@@ -227,10 +87,8 @@ subport ld64-latest {
 }
 
 subport ld64-xcode {
-    version             2
+    version             3
 }
-
-variant universal {}
 
 if {${subport} eq ${name}} {
     distfiles
@@ -238,11 +96,6 @@ if {${subport} eq ${name}} {
     use_configure no
     # avoid cyclic macports-clang dep on 10.6/libc++
     configure.cxx_stdlib
-
-    variant ld64_97 conflicts ld64_127 ld64_236 ld64_274 ld64_xcode description {Use ld64-97 as the default linker (last version that works on Tiger)} {}
-    variant ld64_127 conflicts ld64_97 ld64_236 ld64_274 ld64_xcode description {Use ld64-127 as the default linker (last version that supports ppc and works on Leopard)} {}
-    variant ld64_236 conflicts ld64_97 ld64_127 ld64_274 ld64_xcode description {Use ld64-236 as the default linker (last version that builds against OS X's libstdc++)} {}
-    variant ld64_274 conflicts ld64_97 ld64_127 ld64_236 ld64_xcode description {Use ld64-274 as the default linker (last version that builds without libtapi support)} {}
     variant ld64_xcode conflicts ld64_97 ld64_127 ld64_236 ld64_274 description {Use ld64-xcode as the default linker (version provided by the selected Xcode.app toolchain)} {}
 
     if {![variant_isset ld64_97] && ![variant_isset ld64_127] && ![variant_isset ld64_236] && ![variant_isset ld64_274] && ![variant_isset ld64_xcode]} {
@@ -326,17 +179,8 @@ if {${subport} eq ${name}} {
         depends_build-append port:cctools
     }
 
-    set all_llvm_variants {llvm50 llvm60 llvm70 llvm80 llvm90 llvmdev}
-    if {${os.major} < 10} {
-        lappend all_llvm_variants llvm33
-    }
-    if {${os.major} < 12} {
-        lappend all_llvm_variants llvm34
-    }
-    if {${os.major} < 14} {
-        lappend all_llvm_variants llvm37
-    }
-    array set llvm_variant_version {llvm33 3.3 llvm34 3.4 llvm37 3.7 llvm50 5.0 llvm60 6.0 llvm70 7.0 llvm80 8.0 llvm90 9.0 llvmdev devel}
+    set all_llvm_variants {llvm12 llvm13}
+    array set llvm_variant_version {llvm12 12 llvm13 13 }
     set llvm_version {}
 
     foreach variantname $all_llvm_variants {
@@ -374,7 +218,7 @@ if {${subport} eq ${name}} {
         }
 
         if {![some_llvm_variant_set] && ![variant_isset ld64_xcode] && ${os.major} >= 9} {
-            default_variants +llvm90
+            default_variants +llvm13
         }
 
         if {![some_llvm_variant_set] && ![variant_isset ld64_xcode] && ${os.major} >= 9} {
