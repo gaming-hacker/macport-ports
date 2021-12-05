@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ homepage            http://gpredict.oz9aec.net/
 github.setup        csete gpredict a0a563684702ad4d1de6e128ca9219d6ee9daa47
 version             20210509-[string range ${github.version} 0 7]
 checksums           rmd160  691c040622f62c966b6a4af83ebbbcd90a8af69b \
-                    sha256  824a2943fe9ea22ea9ff9f262407dc8c4320738aee171618903b55efdab832cf \
-                    size    7715873
+sha256  824a2943fe9ea22ea9ff9f262407dc8c4320738aee171618903b55efdab832cf \
+size    7715873
 revision            0
 
 

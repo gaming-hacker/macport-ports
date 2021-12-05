@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -43,8 +43,8 @@ patchfiles          patch-ace-config.h.diff \
                     patch-archflags.diff
 
 checksums           rmd160  7154f78548c105c99e23c3b9445326dfc78cf360 \
-                    sha256  438bf41e184a5262e2b79f95edb6fd8384fb7ea69e249c54e75daf059a8d9757 \
-                    size    8286805
+sha256  438bf41e184a5262e2b79f95edb6fd8384fb7ea69e249c54e75daf059a8d9757 \
+size    8286805
 
 set os.name "mojave"
 array set os.names {

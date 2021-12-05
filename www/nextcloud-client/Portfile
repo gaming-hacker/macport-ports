@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -9,8 +9,8 @@ PortGroup               app 1.0
 
 github.setup            nextcloud desktop 3.4.0 v
 checksums               rmd160  dbd064a452c49ec99e9c4d8604e5326c8a8184c3 \
-                        sha256  68fee269a95a35316f6f9a8aa082706703198c385c0c1ddc06e11ba05e127106 \
-                        size    14279588
+sha256  68fee269a95a35316f6f9a8aa082706703198c385c0c1ddc06e11ba05e127106 \
+size    14279588
 revision                1
 
 name                    nextcloud-client
@@ -24,8 +24,8 @@ long_description \
     server with your computer.
 homepage                https://nextcloud.com/
 
-use_xcode               yes
-compiler.cxx_standard   2014
+use_xcode  no
+compiler.cxx_standard 2017
 
 depends_lib-append      port:sqlite3 port:zlib port:qtkeychain-qt5
 

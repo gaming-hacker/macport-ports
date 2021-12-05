@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -20,13 +20,13 @@ set userguide_distname  ${userguide_branch}-r${userguide_revision}
 set userguide_distfile  ${userguide_distname}${extract.suffix}
 
 checksums               ${source_distfile} \
-                        rmd160  822f8bbc2a9a1bbc1c0ccaad77eea45c19233118 \
-                        sha256  c65fcad80229c8ac2999a6ee10709c8ee4f1f73995e0a4423029250c21233756 \
-                        size    2924439 \
+rmd160  822f8bbc2a9a1bbc1c0ccaad77eea45c19233118 \
+sha256  c65fcad80229c8ac2999a6ee10709c8ee4f1f73995e0a4423029250c21233756 \
+size    2924439 \
                         ${userguide_distfile} \
-                        rmd160  19ca5edcdacc110ba0f4fa4d87106a720701013a \
-                        sha256  74ae5c9df00f1654eea60913cd11e7347df111032afc09b315b0567b54bf0b8f \
-                        size    1805574
+rmd160  19ca5edcdacc110ba0f4fa4d87106a720701013a \
+sha256  74ae5c9df00f1654eea60913cd11e7347df111032afc09b315b0567b54bf0b8f \
+size    1805574
 
 categories              graphics
 platforms               darwin freebsd linux
@@ -311,8 +311,8 @@ patchfiles-append       patch-python.diff
 if {${os.platform} eq "darwin" && ${os.major} < 10} {
     # the system python is too old to run scripts
     depends_build-append \
-                        port:python27
-    configure.python    ${prefix}/bin/python2.7
+                        port:python39
+    configure.python    ${prefix}/bin/python3.9
 } else {
     configure.python    /usr/bin/python
 }

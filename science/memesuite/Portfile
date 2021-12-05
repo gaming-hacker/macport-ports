@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,14 +23,14 @@ master_sites        https://meme-suite.org/meme/meme-software/${version}
 distname            meme-${version}
 
 checksums           rmd160  374da0b9e887c839544f0b256fb9530af85b10a9 \
-                    sha256  c07fb8afafa60fc5e84ca24493c82fa6f4bd1df1a2622102edbf86a1c30fd11f \
-                    size    52143122
+sha256  c07fb8afafa60fc5e84ca24493c82fa6f4bd1df1a2622102edbf86a1c30fd11f \
+size    52143122
 
 depends_lib         port:expat \
                     port:gawk \
                     port:ghostscript \
                     port:gsed \
-                    port:perl5.28 \
+                    port:perl5.30 \
                     port:p5.28-file-which \
                     port:p5.28-html-template \
                     port:p5.28-html-tree \
@@ -39,14 +39,14 @@ depends_lib         port:expat \
                     port:p5.28-sys-info \
                     port:p5.28-xml-parser \
                     port:p5.28-xml-simple \
-                    port:python37 \
-                    port:py37-gnureadline \
+                    port:python39 \
+                    port:py39-gnureadline \
                     port:zlib
 
 configure.args      --enable-build-libxml2 \
                     --enable-build-libxslt \
-                    --with-python=${prefix}/bin/python3.7 \
-                    --with-perl=${prefix}/bin/perl5.28 \
+                    --with-python=${prefix}/bin/python3.9 \
+                    --with-perl=${prefix}/bin/perl5.30 \
                     --with-gs=${prefix}/bin/gs
 
 #
