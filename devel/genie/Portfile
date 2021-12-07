@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    GENie (pronounced as Jenny) is a project generator tool.\
                     applying the same settings for multiple projects easy.
 
 checksums           rmd160  4ec7ad059c10f9c801c9c31267ef384641e16b73 \
-                    sha256  f336475f8374acb8fa1a2b83a12ebc4b350beaa5a10073bb7eb58c93de8b6e7e \
-                    size    541923
+sha256  f336475f8374acb8fa1a2b83a12ebc4b350beaa5a10073bb7eb58c93de8b6e7e \
+size    541923
 
 patchfiles-append \
                     patch-makefile-no-git.diff

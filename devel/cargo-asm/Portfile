@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ description         cargo subcommand showing the assembly or llvm-ir generated f
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  a4a789e7d60540b329168a0b4009d4d7b4df642a \
-                    sha256  817be55a3ef179c873ddc20574dd7ca39ccec86cc3bf039d6097fefeade2f2be \
-                    size    34670 \
+rmd160  a4a789e7d60540b329168a0b4009d4d7b4df642a \
+sha256  817be55a3ef179c873ddc20574dd7ca39ccec86cc3bf039d6097fefeade2f2be \
+size    34670 \
 
 build.pre_args-replace \
                     --frozen --offline

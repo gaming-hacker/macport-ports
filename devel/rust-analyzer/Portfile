@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -26,9 +26,9 @@ maintainers         @fabius \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  0a3cee5d6821751c51168417eefd4c790688ecc5 \
-                        sha256  9dbe21debc6138354483f2b22d760c43cb98ad3fbe97c7edba76ae19ddd1ff95 \
-                        size    2189907
+rmd160  0a3cee5d6821751c51168417eefd4c790688ecc5 \
+sha256  9dbe21debc6138354483f2b22d760c43cb98ad3fbe97c7edba76ae19ddd1ff95 \
+size    2189907
 
 destroot {
     xinstall -m 0755 \
@@ -153,7 +153,7 @@ cargo.crates \
     serde_derive                   1.0.130  d7bc1a1ab1961464eae040d96713baa5a724a8152c1222492465b54322ec508b \
     serde_json                      1.0.72  d0ffa0837f2dfa6fb90868c2b5468cad482e175f7dad97e7421951e663f2b527 \
     serde_repr                       0.1.7  98d0516900518c29efa217c298fa1f4e6c6ffc85ae29fd7f4ee48f176e1a9ed5 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     smallvec                         1.7.0  1ecab6c735a6bb4139c0caafd0cc3635748bbb3acf4550e8138122099251f309 \
     smol_str                        0.1.21  61d15c83e300cce35b7c8cd39ff567c1ef42dde6d4a1a38dbdbf9a59902261bd \
     snap                             1.0.5  45456094d1983e2ee2a18fdfebce3189fa451699d0502cb8e3b49dba5ba41451 \

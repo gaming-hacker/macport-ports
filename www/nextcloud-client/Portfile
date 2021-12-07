@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -8,8 +8,8 @@ PortGroup               github 1.0
 
 github.setup            nextcloud desktop 3.3.6 v
 checksums               rmd160  991e91faddcda0e2e0ab87e2f72370ac37a40e71 \
-                        sha256  5bf7a5436a6461dd7c49dccffaee4f6c3c255803236f347a14f26c5a1e10e3dc \
-                        size    14107390
+sha256  5bf7a5436a6461dd7c49dccffaee4f6c3c255803236f347a14f26c5a1e10e3dc \
+size    14107390
 revision                0
 # due to a bug revert to previous version
 # https://github.com/nextcloud/desktop/issues/4016
@@ -26,8 +26,8 @@ long_description \
     server with your computer.
 homepage                https://nextcloud.com/
 
-use_xcode               yes
-compiler.cxx_standard   2014
+use_xcode  no
+compiler.cxx_standard 2017
 
 depends_lib-append      port:sqlite3 port:zlib port:qtkeychain-qt5
 
