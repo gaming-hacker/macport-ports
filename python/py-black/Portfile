@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-black
-version             21.11b1
+version             21.12b0
 revision            0
 
 platforms           darwin
@@ -28,11 +28,11 @@ long_description \
 
 homepage            https://${python.rootname}.readthedocs.io/
 
-checksums           rmd160  54e23fb3429fc2f31ed446e9a6d9727894b6ada1 \
-sha256  a042adbb18b3262faad5aff4e834ff186bb893f95ba3a8013f09de1e5569def2 \
-size    593556
+checksums           rmd160  5a94bd57d10e64388db451fae61c8fc4b0723d75 \
+                    sha256  77b80f693a569e2e527958459634f18df9b0ba2625ba4e0c2d5da5be42e6f2b3 \
+                    size    594232
 
-python.versions 39
+python.versions     36 37 38 39 310
 
 if {${subport} ne ${name}} {
     depends_build-append \
@@ -44,7 +44,6 @@ if {${subport} ne ${name}} {
                     port:py${python.version}-click \
                     port:py${python.version}-mypy_extensions \
                     port:py${python.version}-pathspec \
-                    port:py${python.version}-regex \
                     port:py${python.version}-tomli \
                     port:py${python.version}-typing_extensions
 
