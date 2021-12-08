@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,8 +20,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  0f414e3e2b71e9c0e93fe8c411ed366cf2664595 \
-                    sha256  3f9700a3ab7b9b9de450255a702bc43067c67a7b6ceec13f649d2e84eaf7224d \
-                    size    2334324
+sha256  3f9700a3ab7b9b9de450255a702bc43067c67a7b6ceec13f649d2e84eaf7224d \
+size    2334324
 
 
 # Allow Go to download deps at runtime.

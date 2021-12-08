@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -27,9 +27,9 @@ long_description    Podman is a tool for running Linux containers. \
 maintainers         {judaew @judaew} openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  877cab2e1c3fef990cefed06553a030e3f0def7a \
-                        sha256  f0571acd254c86091d65123a1c1d4286cab1d71a6f5ab62842e3fa5b29e10821 \
-                        size    10945852
+rmd160  877cab2e1c3fef990cefed06553a030e3f0def7a \
+sha256  f0571acd254c86091d65123a1c1d4286cab1d71a6f5ab62842e3fa5b29e10821 \
+size    10945852
 
 depends_run         port:gvisor-tap-vsock port:qemu
 
