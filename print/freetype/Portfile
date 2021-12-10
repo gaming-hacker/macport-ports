@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -9,13 +9,13 @@ revision                0
 set docdistname         ${name}-doc-${version}
 use_xz                  yes
 checksums               ${distname}${extract.suffix} \
-                        rmd160  55a74710c913e677e8cd9efae2f97d51da8ef0e0 \
-                        sha256  3333ae7cfda88429c97a7ae63b7d01ab398076c3b67182e960e5684050f2c5c8 \
-                        size    2270728 \
+rmd160  55a74710c913e677e8cd9efae2f97d51da8ef0e0 \
+sha256  3333ae7cfda88429c97a7ae63b7d01ab398076c3b67182e960e5684050f2c5c8 \
+size    2270728 \
                         ${docdistname}${extract.suffix} \
-                        rmd160  66c5e9f927b337ce3dd0d1ddd956a7adf6b718de \
-                        sha256  755e29908093c19138a38775784b0accf7e838ffa28a25b8722b3dfe651d80fa \
-                        size    2038348
+rmd160  66c5e9f927b337ce3dd0d1ddd956a7adf6b718de \
+sha256  755e29908093c19138a38775784b0accf7e838ffa28a25b8722b3dfe651d80fa \
+size    2038348
 
 categories              print graphics
 maintainers             {ryandesign @ryandesign}

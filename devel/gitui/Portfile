@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,9 +20,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  958797b4d5a1425020d11b0c23d89f9782629026 \
-                    sha256  bcbffb592a5ae49658c79ac7b0daefe4bac3d2b988fdbaf0e868b8c308962f0d \
-                    size    21232828
+rmd160  958797b4d5a1425020d11b0c23d89f9782629026 \
+sha256  bcbffb592a5ae49658c79ac7b0daefe4bac3d2b988fdbaf0e868b8c308962f0d \
+size    21232828
 
 depends_lib-append  path:lib/libssl.dylib:openssl \
                     port:libgit2 \

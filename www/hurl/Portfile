@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -21,9 +21,9 @@ long_description    \
     used for both fetching data and testing HTTP sessions.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  d83066ce5f31d313f690cfb583969f4eb2ef7d95 \
-                    sha256  469cca44022d9339fad246fd417b22703258164fd1cdbe040476a1c127791184 \
-                    size    8295826
+rmd160  d83066ce5f31d313f690cfb583969f4eb2ef7d95 \
+sha256  469cca44022d9339fad246fd417b22703258164fd1cdbe040476a1c127791184 \
+size    8295826
 
 categories          www
 installs_libs       no
@@ -97,7 +97,7 @@ cargo.crates \
     libxml                           0.3.0  02c07ecb409949e5c5c0818e189e6bc766bcb8b08b3401772ca8c61a58c682b8 \
     libz-sys                         1.1.2  602113192b08db8f38796c4e85c39e960c145965140e918018bcde1952429655 \
     matches                          0.1.8  7ffc5c5338469d4d3ea17d269fa8ea3512ad247247c30bd2df69e68309ed0a08 \
-    md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
+md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
     memchr                           2.4.0  b16bd47d9e329435e309c58469fe0791c2d0d1ba96ec0954152a5ae2b04387dc \
     num-integer                     0.1.44  d2cc698a63b549a70bc047073d2949cce27cd1c7b0a4a862d08a8031bc2801db \
     num-traits                      0.2.11  c62be47e61d1842b9170f0fdeec8eba98e60e90e5446449a0545e5152acd7096 \
@@ -131,7 +131,7 @@ cargo.crates \
     schannel                        0.1.19  8f05ba609c234e60bee0d547fe94a4c7e9da733d1c962cf6e59efa4cd9c8bc75 \
     serde                          1.0.131  b4ad69dfbd3e45369132cc64e6748c2d65cdfb001a2b1c232d128b4ad60561c1 \
     serde_json                      1.0.72  d0ffa0837f2dfa6fb90868c2b5468cad482e175f7dad97e7421951e663f2b527 \
-    sha2                            0.10.0  900d964dd36bb15bcf2f2b35694c072feab74969a54f2bbeec7a2d725d2bdcb6 \
+sha2                            0.10.0  900d964dd36bb15bcf2f2b35694c072feab74969a54f2bbeec7a2d725d2bdcb6 \
     socket2                          0.4.0  9e3dfc207c526015c632472a77be09cf1b6e46866581aecae5cc38fb4235dea2 \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \
     sxd-document                     0.3.2  94d82f37be9faf1b10a82c4bd492b74f698e40082f0f40de38ab275f31d42078 \

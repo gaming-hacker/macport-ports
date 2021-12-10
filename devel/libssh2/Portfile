@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github      1.0
@@ -25,8 +25,8 @@ long_description    libssh2 is a library implementing the SSH2 protocol as \
 license             BSD
 
 checksums           rmd160  b3af89cc5974dbffbcba0dd80dcd521e6e60b39d \
-                    sha256  2d64e90f3ded394b91d3a2e774ca203a4179f69aebee03003e5a6fa621e41d51 \
-                    size    965044
+sha256  2d64e90f3ded394b91d3a2e774ca203a4179f69aebee03003e5a6fa621e41d51 \
+size    965044
 
 if {${os.platform} eq "darwin" && ${os.major} < 10} {
     # remove errant pragmas inside functions no supported on older gcc versions
