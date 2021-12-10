@@ -28,7 +28,7 @@ sha256  00753ca57a9911f0c99202505a6b05b1777168134842d7924fd827766642608a
 
 default_variants    +subseconds +messages
 
-depends_build       port:coreutils
+depends_build       path:libexec/coreutils/libstdbuf.so:coreutils
 
 depends_lib-append \
     port:fox \

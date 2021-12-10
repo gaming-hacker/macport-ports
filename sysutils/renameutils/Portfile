@@ -28,7 +28,7 @@ size    954114
 
 depends_lib         port:readline \
                     port:gettext \
-                    port:coreutils
+                    path:libexec/coreutils/libstdbuf.so:coreutils
 
 patchfiles          patch-use_coreutils.diff \
                     patch-fix_install.diff

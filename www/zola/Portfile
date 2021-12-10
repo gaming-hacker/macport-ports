@@ -1,44 +1,41 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github  1.0
 PortGroup           cargo   1.0
 PortGroup           openssl 1.0
 
-github.setup        getzola zola 0.15.0 v
+github.setup        getzola zola 0.15.1 v
 github.tarball_from archive
 revision            0
 
 homepage            https://www.getzola.org
 
-description         A fast static site generator in a single binary with \
-                    everything built-in.
+description         \
+    A fast static site generator in a single binary with everything built-in.
 
-long_description    {*}${description} Zola comes as a single executable with \
-                    Sass compilation, syntax highlighting, table of contents \
-                    and many other features that traditionally require \
-                    setting up a dev environment or adding some JavaScript \
-                    libraries to your site. The average site will be \
-                    generated in less than a second, including Sass \
-                    compilation and syntax highlighting.  Zola renders your \
-                    whole site as static sites, making it trivial to handle \
-                    any kind of traffic you will throw at it at no cost \
-                    without having to worry about managing a server or a \
-                    database. Using augmented Markdown, Zola comes with \
-                    shortcodes and internal links to make it easier to write \
-                    your content.
+long_description    \
+    {*}${description} Zola comes as a single executable with Sass \
+    compilation, syntax highlighting, table of contents and many other \
+    features that traditionally require setting up a dev environment or \
+    adding some JavaScript libraries to your site. The average site will be \
+    generated in less than a second, including Sass compilation and syntax \
+    highlighting.  Zola renders your whole site as static sites, making it \
+    trivial to handle any kind of traffic you will throw at it at no cost \
+    without having to worry about managing a server or a database. Using \
+    augmented Markdown, Zola comes with shortcodes and internal links to \
+    make it easier to write your content.
 
 categories          www devel
 installs_libs       no
-platforms           darwin
 license             MIT
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-rmd160  2b679706cfbc582aaaf7107fa7d0f5d04e308791 \
-sha256  944e200a8ad5f4126ca08bbae576d1979b99755b554460f0f6fa3ba0924be30d \
-size    12471887
+                    rmd160  6b05ae0396b8da2ba7c0fb1754fec1c39fd42398 \
+                    sha256  b676cbb03aa19d1c60244fccf4c3211114afde953a5f130209e1abba24f6683c \
+                    size    12473116
 
 destroot {
     xinstall -m 0755 \
@@ -297,8 +294,8 @@ cargo.crates \
     serde_json                      1.0.72  d0ffa0837f2dfa6fb90868c2b5468cad482e175f7dad97e7421951e663f2b527 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
     serde_yaml                      0.8.21  d8c608a35705a5d3cdc9fbe403147647ff34b921f8e833e49306df898f9b20af \
-sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
+    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+    sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     siphasher                        0.3.7  533494a8f9b724d33625ab53c6c4800f7cc445895924a8ef649222dcb76e938b \
     slab                             0.4.5  9def91fd1e018fe007022791f865d0ccc9b3a0d5001e01aabb8b40e46000afb5 \

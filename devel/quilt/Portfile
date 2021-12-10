@@ -22,7 +22,7 @@ sha256 314b319a6feb13bf9d0f9ffa7ce6683b06919e734a41275087ea457cc9dc6e07
 
 depends_lib         port:gsed \
                     port:getopt \
-                    port:coreutils
+                    path:libexec/coreutils/libstdbuf.so:coreutils
 
 patchfiles          patch-Makefile.in-quilt_scripts_backup-files.in-make-stat-configurable.diff
 

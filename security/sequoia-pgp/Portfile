@@ -29,7 +29,7 @@ sha256  20ebfb2a48c4141fa6356768b3fc6b04025062db3e25973627e36d615624616c \
 size    2466222
 
 depends_build       port:pkgconfig \
-                    port:coreutils \
+                    path:libexec/coreutils/libstdbuf.so:coreutils \
                     port:cargo \
                     port:rust
 depends_lib         port:capnproto \

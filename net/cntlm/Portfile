@@ -29,7 +29,7 @@ size    78198
 
 patchfiles              patch-Makefile.diff
 
-depends_lib             port:coreutils
+depends_lib             path:libexec/coreutils/libstdbuf.so:coreutils
 
 build.args              SYSCONFDIR=${destroot}${prefix}/etc \
                         BINDIR=${destroot}${prefix}/sbin \

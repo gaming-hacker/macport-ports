@@ -25,7 +25,7 @@ sha256  f0763bda24ba947e80430be787c4b068d8b6aa6027a26a19923f0acfa3dac97e \
 size    760604
 
 depends_build-append \
-                    port:coreutils
+                    path:libexec/coreutils/libstdbuf.so:coreutils
 depends_lib-append  port:bzip2 \
                     port:zlib
 

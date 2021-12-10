@@ -30,10 +30,10 @@ size    127921
 
 depends_build       port:getopt
 
-depends_run         port:coreutils \
+depends_run         path:libexec/coreutils/libstdbuf.so:coreutils \
                     port:docbook-xml \
                     port:docbook-xsl-nons \
-                    port:findutils \
+                    path:libexec/gnubin/find:findutils \
                     port:fop \
                     port:getopt \
                     port:grep \

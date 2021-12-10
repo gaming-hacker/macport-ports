@@ -21,7 +21,7 @@ rmd160	6bd3c87e0b35f0de81a37e4c0ee145dd21d3ad02
 
 python.default_version 39
 
-depends_lib	port:coreutils\
+depends_lib	path:libexec/coreutils/libstdbuf.so:coreutils\
 		port:nmap \
 		port:py${python.version}-pygtk
 

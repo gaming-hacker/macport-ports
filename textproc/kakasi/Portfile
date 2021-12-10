@@ -27,7 +27,7 @@ sha256  004276fd5619c003f514822d82d14ae83cd45fb9338e0cb56a44974b44961893 \
 size    1352154
 
 depends_lib         port:libiconv
-depends_build       port:coreutils
+depends_build       path:libexec/coreutils/libstdbuf.so:coreutils
 
 use_autoconf        yes
 
