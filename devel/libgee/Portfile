@@ -27,7 +27,7 @@ sha256  d0b5edefc88cbca5f1709d19fa62aef490922c6577a14ac4e7b085507911a5de \
 size    678488
 
 depends_build       port:pkgconfig \
-                    port:vala
+                    bin:vala:vala
 
 patchfiles          patch-typelib-use-absolute-sharedlib-path.diff
 
