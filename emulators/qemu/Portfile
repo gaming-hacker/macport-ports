@@ -272,6 +272,10 @@ variant ssh description {Support remote block devices over SSH} {
     depends_lib-append      port:libssh
 }
 
+variant prefix_smbd description {Use MacPorts smbd. On macOS /usr/sbin/smbd does not work with qemu} {
+    configure.args-append --smbd=${prefix}/sbin/smbd
+}
+
 # Default universal variant does not work
 universal_variant       no
 
