@@ -4,8 +4,8 @@ name                pdfgrep
 version             2.1.2
 revision            0
 checksums           rmd160  59fe7845f96c988a3f96cf324a0bb72fcc6d8b97 \
-                    sha256  0ef3dca1d749323f08112ffe68e6f4eb7bc25f56f90a2e933db477261b082aba \
-                    size    197289
+sha256  0ef3dca1d749323f08112ffe68e6f4eb7bc25f56f90a2e933db477261b082aba \
+size    197289
 
 conflicts           pdfgrep-legacy
 categories          textproc
@@ -19,7 +19,7 @@ long_description \
 homepage            https://pdfgrep.org
 master_sites        ${homepage}/download/
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_build       port:pkgconfig
 depends_lib         port:poppler \

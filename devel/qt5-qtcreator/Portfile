@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake5 1.0
@@ -21,8 +21,8 @@ distname            qt-creator-opensource-src-${version}
 master_sites        https://download.qt.io/official_releases/qtcreator/[join [lrange [split ${version} .] 0 1] .]/${version}/
 
 checksums           rmd160  79293d7d2a74ab9c263f11a5a6b505206d1d1156 \
-                    sha256  b3e884b411deba328ac2ea1e3b22a8a0b790460abba8c33f6ac1238032ce7939 \
-                    size    56704717
+sha256  b3e884b411deba328ac2ea1e3b22a8a0b790460abba8c33f6ac1238032ce7939 \
+size    56704717
 
 compiler.cxx_standard \
                     2014
@@ -50,7 +50,7 @@ license_noconflict  openssl
 if { ${subport} eq ${name}  } {
 
     # Requires Xcode
-    use_xcode yes
+    use_xcode  no
 
     qt5.depends_component  qtscript qtdeclarative qttools qtmacextras qtquickcontrols qtsvg
 

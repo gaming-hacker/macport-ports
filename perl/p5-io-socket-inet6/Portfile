@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         IO-Socket-INET6 2.73 IO/SHLOMIF
 revision            0
 maintainers         nomaintainer
@@ -18,8 +18,8 @@ long_description    IO::Socket::INET6 provides an object \
                     IO::Socket::IP.
 
 checksums           rmd160  135031ba1b9d865b5ae9ed5fc356747822c37fbf \
-                    sha256  b6da746853253d5b4ac43191b4f69a4719595ee13a7ca676a8054cf36e6d16bb \
-                    size    27786
+sha256  b6da746853253d5b4ac43191b4f69a4719595ee13a7ca676a8054cf36e6d16bb \
+size    27786
 
 if {${perl5.major} != ""} {
     depends_lib-append \

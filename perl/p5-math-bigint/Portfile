@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         Math-BigInt 1.999827
 revision            0
 maintainers         nomaintainer
@@ -15,8 +15,8 @@ description         Arbitrary size integer math package
 long_description    ${description}
 
 checksums           rmd160  ba62ebfeb6130a60376bbf60a54431a2e89c1b33 \
-                    sha256  46e995b696284df8dbbedce0c718261f40692df7e9cda535312cb87999adcae6 \
-                    size    3072323
+sha256  46e995b696284df8dbbedce0c718261f40692df7e9cda535312cb87999adcae6 \
+size    3072323
 
 if {${perl5.major} != ""} {
     depends_lib-append \

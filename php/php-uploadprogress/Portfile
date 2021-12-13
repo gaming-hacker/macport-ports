@@ -23,8 +23,8 @@ if {[vercmp ${php.branch} 7.2] >= 0} {
     version             2.0.2
     revision            0
     checksums           rmd160  2ab73c7a6024e7f5108c2584435d0d6129580b0a \
-                        sha256  2c63ce727340121044365f0fd83babd60dfa785fa5979fae2520b25dad814226 \
-                        size    19969
+sha256  2c63ce727340121044365f0fd83babd60dfa785fa5979fae2520b25dad814226 \
+size    19969
 } elseif {[vercmp ${php.branch} 5.2] >= 0} {
     version             1.1.4
     revision            0

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ PortGroup           github 1.0
 github.setup        ksh93 ksh 1.0.0-beta.1 v
 revision            0
 checksums           rmd160  05ab17ff1b248ccfdc0e7e71c929f171458b9fcf \
-                    sha256  7d77b59a9352ffe3fc60a1af936e022c1f12cb42753d4a8a116d6c8126915738 \
-                    size    2376823
+sha256  7d77b59a9352ffe3fc60a1af936e022c1f12cb42753d4a8a116d6c8126915738 \
+size    2376823
 
 name                ksh93-devel
 version             93u+m-${github.version}

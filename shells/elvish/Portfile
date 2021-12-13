@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -50,28 +50,28 @@ destroot {
 github.livecheck.regex  {([0-9.]+)}
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  e7a30b5662da15ce9fa7b4323c5c8ba0fd8f696f \
-                        sha256  0e255849723129d8c4dc24f67656e651b4e4b7566bc16009109ba76099681fa1 \
-                        size    673347
+rmd160  e7a30b5662da15ce9fa7b4323c5c8ba0fd8f696f \
+sha256  0e255849723129d8c4dc24f67656e651b4e4b7566bc16009109ba76099681fa1 \
+size    673347
 
 go.vendors          golang.org/x/sys \
                         lock    41cdb8703e55 \
-                        rmd160  1b61146b9b05b2065b2e3faf7267b938f220f11b \
-                        sha256  8c7729f6f4c4e0649a75eb973d95c8e5ac3bf5df5660ecfe14d8b49e0d8a46ce \
-                        size    1210583 \
+rmd160  1b61146b9b05b2065b2e3faf7267b938f220f11b \
+sha256  8c7729f6f4c4e0649a75eb973d95c8e5ac3bf5df5660ecfe14d8b49e0d8a46ce \
+size    1210583 \
                     go.etcd.io/bbolt \
                         repo    github.com/etcd-io/bbolt \
                         lock    v1.3.6 \
-                        rmd160  934af729b47e620f5cd9dc35df49aa25ee1d4132 \
-                        sha256  9a4df17332a1e279b44a288d33dfbdb151ecf5be825ce5075fa97d7d7e930ec6 \
-                        size    98074 \
+rmd160  934af729b47e620f5cd9dc35df49aa25ee1d4132 \
+sha256  9a4df17332a1e279b44a288d33dfbdb151ecf5be825ce5075fa97d7d7e930ec6 \
+size    98074 \
                     github.com/mattn/go-isatty \
                         lock    v0.0.13 \
-                        rmd160  91c4e10ae78db94432a94bc7f9816df4093ec8d7 \
-                        sha256  6a6b35588efb0abec5a951246775a4cb47fab11ff161715875de4c02c9cdf309 \
-                        size    4445 \
+rmd160  91c4e10ae78db94432a94bc7f9816df4093ec8d7 \
+sha256  6a6b35588efb0abec5a951246775a4cb47fab11ff161715875de4c02c9cdf309 \
+size    4445 \
                     github.com/creack/pty \
                         lock    v1.1.15 \
-                        rmd160  ebe4230c1bf93c41b6cd9ea891c61388c0aa8df5 \
-                        sha256  d0a31b170ee5ea4940f8476e0d912cbc308227f0e1dd22a446b87b48c52e72c0 \
-                        size    9955
+rmd160  ebe4230c1bf93c41b6cd9ea891c61388c0aa8df5 \
+sha256  d0a31b170ee5ea4940f8476e0d912cbc308227f0e1dd22a446b87b48c52e72c0 \
+size    9955

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,14 +19,14 @@ long_description    Enchant aims to provide a simple but comprehensive abstracti
                     parallel with legacy Enchant 1.x versions without conflict.
 
 checksums           rmd160  ac88c45e1363361bc3677d5af7c538888d50de3c \
-                    sha256  ce9ba47fd4d34031bd69445598a698a6611602b2b0e91d705e91a6f5099ead6e \
-                    size    991782
+sha256  ce9ba47fd4d34031bd69445598a698a6611602b2b0e91d705e91a6f5099ead6e \
+size    991782
 
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2
 
 depends_build       port:pkgconfig
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args      --without-hunspell \
                     --without-applespell \

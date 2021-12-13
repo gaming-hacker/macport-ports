@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell_stack 1.0
@@ -36,8 +36,8 @@ homepage            https://github.com/essandess/adblock2privoxy
 master_sites        https://hackage.haskell.org/package/${name}-${version}
 
 checksums           rmd160  da82eb5ece0f97b9ebf3ec97f6631f45d4bb30c5 \
-                    sha256  1c5ac2cb54cc9fd336a5ece50a8acbfaee13281ffe8c3a9d8c8b8b44f5859e70 \
-                    size    42526
+sha256  1c5ac2cb54cc9fd336a5ece50a8acbfaee13281ffe8c3a9d8c8b8b44f5859e70 \
+size    42526
 
 depends_run-append \
                     port:nginx \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,8 +29,8 @@ distname            ${my_name}-${version}
 use_xz              yes
 
 checksums           rmd160  a94c39463ec55e842b18f882493b27d8bc17d66d \
-                    sha256  6051270a2fc30de023c88562566f2f6043e67beb4da4b799c14cdf12048eb40c \
-                    size    3906944
+sha256  6051270a2fc30de023c88562566f2f6043e67beb4da4b799c14cdf12048eb40c \
+size    3906944
 
 depends_build       port:pkgconfig \
                     port:bison \

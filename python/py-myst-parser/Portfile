@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,10 +24,10 @@ long_description    \
 homepage            https://github.com/executablebooks/MyST-Parser
 
 checksums           rmd160  178f98ee886240abc15f8c1e8e12b73294a7e58e \
-                    sha256  be31e426d9f0698dbac879bb9a41afe555fa9c4a9e659a82887a1e1e195c9f92 \
-                    size    52500
+sha256  be31e426d9f0698dbac879bb9a41afe555fa9c4a9e659a82887a1e1e195c9f92 \
+size    52500
 
-python.versions     36 37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

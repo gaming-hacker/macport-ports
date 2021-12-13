@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,7 +12,7 @@ revision            0
 #   is being phased out. Indeed, it's no longer included in the core Perl5
 #   distribution, starting with 5.32. So until upstream migrates completely
 #   to 'pod-simple', we cannot go beyond 5.30.
-perl5.branches      5.30
+perl5.branches 5.30
 # Higher versions of perl being active can cause build failure
 conflicts_build     perl5.32 perl5.34
 
@@ -31,8 +31,8 @@ homepage            https://po4a.org/
 github.tarball_from releases
 
 checksums           rmd160  fa065c2cb92d8110a762cfa84730b5f22d9bd2fe \
-                    sha256  1797651c6e47bc83dae9a58b1ddeaf0200c750155f45f5123287a8c30039a180 \
-                    size    4152612
+sha256  1797651c6e47bc83dae9a58b1ddeaf0200c750155f45f5123287a8c30039a180 \
+size    4152612
 
 # TODO: check and fix dependencies
 depends_lib-append  \

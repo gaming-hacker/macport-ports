@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -30,8 +30,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 19} {
     version         63.0.0
     revision        0
     checksums       rmd160  5bd2d9cd4517a268e9fd58960b0498fa359bcc0d \
-                    sha256  1884165cf1bdea6ed8697dda319a17967772152e3b2b3a5fdf6ec5c7740d1ec9 \
-                    size    7670248
+sha256  1884165cf1bdea6ed8697dda319a17967772152e3b2b3a5fdf6ec5c7740d1ec9 \
+size    7670248
     
     boost.depends_type \
                     build
@@ -47,8 +47,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 19} {
     version         53.0.0
     revision        1
     checksums       rmd160  5fb3ea63712cbdaf9e61b8fd573ef7e1d9a06540 \
-                    sha256  8dfd66278c81e6f1df0fd84aad30ce2b4cf7a2ad4336924f01f1879f9d1e4cd6 \
-                    size    7567276
+sha256  8dfd66278c81e6f1df0fd84aad30ce2b4cf7a2ad4336924f01f1879f9d1e4cd6 \
+size    7567276
 
     if {${os.platform} eq "darwin" && ${os.major} == 17} {
         # libc++ on 10.13 supports std::optional but the compilers that
@@ -65,8 +65,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 19} {
     version         41.0.0
     revision        1
     checksums       rmd160  17b2f3b7d6eb87e9d9d4aac536b66705c18d497f \
-                    sha256  7cdd6ad9144324162604172b7e96cb13cdbb7913e07c4ad7633344aac20e4103 \
-                    size    7401548
+sha256  7cdd6ad9144324162604172b7e96cb13cdbb7913e07c4ad7633344aac20e4103 \
+size    7401548
 }
 
 distname            ${my_name}-${version}

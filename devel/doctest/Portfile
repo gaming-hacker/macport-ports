@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -18,10 +18,10 @@ long_description    doctest is a light and feature-rich C++98 / C++11 \
                     single-header testing framework for unit tests and TDD.
 
 checksums           rmd160  daa6dcd0182440f5438d713f54f3da6e2b14f543 \
-                    sha256  551941e0b08fefdde39e394d484ed7ac6c867022c865e771f68a717cd3ce7d76 \
-                    size    2281756
+sha256  551941e0b08fefdde39e394d484ed7ac6c867022c865e771f68a717cd3ce7d76 \
+size    2281756
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 # a few test fail becase it is looking for a .dylib in the MacPorts prefix, but it is
 # only present in the examples directory (the port install no libs)
