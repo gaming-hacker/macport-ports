@@ -21,7 +21,12 @@ checksums           rmd160  daa6dcd0182440f5438d713f54f3da6e2b14f543 \
 sha256  551941e0b08fefdde39e394d484ed7ac6c867022c865e771f68a717cd3ce7d76 \
 size    2281756
 
+<<<<<<< HEAD
 compiler.cxx_standard 2017
+=======
+compiler.cxx_standard   2011
+compiler.thread_local_storage yes
+>>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 # a few test fail becase it is looking for a .dylib in the MacPorts prefix, but it is
 # only present in the examples directory (the port install no libs)

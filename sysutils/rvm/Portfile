@@ -20,7 +20,7 @@ sha256  7a0c126b9e6e01b406c5900d890ed901c7a7cb00bf40e419e4aa49e39bd2303e
 
 distfiles           ${name}_${version}${extract.suffix}
 
-depends_lib         bin:rsync:rsync
+depends_lib         path:bin/rsync:rsync
 
 configure.args      --with-rsync=${prefix}/bin/rsync \
                     --with-default-config-file=${prefix}/etc/rvm.conf \

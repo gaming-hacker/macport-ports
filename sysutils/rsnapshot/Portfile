@@ -31,7 +31,7 @@ sha256  c1cb7cb748c5a9656c386362bdf6c267959737724abb505fbf9e940a9d988579 \
 size    374269
 
 depends_lib         port:p${perl5.major}-lchown \
-                    bin:rsync:rsync \
+                    path:bin/rsync:rsync \
                     bin:ssh:openssh
 
 configure.args      --mandir=${prefix}/share/man \

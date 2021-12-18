@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                commitizen
-version             2.20.0
-revision            0
+version             2.20.2
+revision            1
 categories-prepend  devel
 platforms           darwin
 license             MIT
@@ -26,9 +26,15 @@ long_description    Commitizen is a tool designed for teams. Its main purpose is
 
 homepage            https://${name}-tools.github.io/${name}/
 
+<<<<<<< HEAD
 checksums           rmd160  6df87775a032630e5101a3f8c4bf36b8786865bd \
 sha256  b52eb35ffbe8281fc3187e648fae2bdd75ed1d17d31c8a0592909ccb7278292f \
 size    31911
+=======
+checksums           rmd160  d60334658ff57e2a6e95a7546673532c495c85a6 \
+                    sha256  4b8f5c0faa2603f05f4835dcaba318fbaa062e75c9041051547ff0d1e4bcead1 \
+                    size    31715
+>>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 depends_lib-append \
     port:py${python.version}-setuptools
@@ -43,14 +49,17 @@ depends_run-append \
     port:py${python.version}-tomlkit \
     port:py${python.version}-yaml
 
-default_variants    +bash
+default_variants    +bash_completion
 
-variant bash description {Include Bash completion support} {
-    depends_run-append \
-        port:py${python.version}-argcomplete \
-        port:bash
+variant bash_completion {
+    depends_run-append  port:py${python.version}-argcomplete \
+                        path:etc/bash_completion:bash-completion
 
-    notes-append "
-        To use bash completion, run the following:
-            register-python-argcomplete-${python.branch} cz >> ~/.bashrc"
+    post-destroot {
+        set bash-completions ${prefix}/share/bash-completion/completions
+        xinstall -d -m 0755 ${destroot}${bash-completions}
+        foreach cmd [list cz git-cz] {
+            system "register-python-argcomplete-${python.branch} ${cmd} > ${destroot}${bash-completions}/${cmd}"
+        }
+    }
 }

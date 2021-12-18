@@ -10,7 +10,11 @@ categories-append   science
 license             BSD
 platforms           darwin
 
+<<<<<<< HEAD
 python.versions 39
+=======
+python.versions     27 35 36 37 38 39 310
+>>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -49,6 +53,14 @@ size    198184
                         port:py${python.version}-scipy \
                         port:py${python.version}-pandas \
                         port:py${python.version}-matplotlib
+
+    depends_test-append \
+                        port:py${python.version}-pytest
+
+    test.run            yes
+    test.cmd            py.test-${python.branch}
+    test.target
+    test.env-append     PYTHONPATH=${worksrcpath}/build/lib
 
     livecheck.type      none
 }

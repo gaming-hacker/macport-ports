@@ -4,33 +4,38 @@ PortSystem          1.0
 PortGroup           cargo   1.0
 PortGroup           github  1.0
 
-github.setup        zellij-org zellij 0.21.0 v
+github.setup        zellij-org zellij 0.22.1 v
 github.tarball_from archive
 revision            0
 
 homepage            https://zellij.dev
 
-description         A terminal workspace with batteries included
+description         \
+    A terminal workspace with batteries included
 
-long_description    Zellij is a workspace aimed at developers, ops-oriented \
-                    people and anyone who loves the terminal. At its core, it \
-                    is a terminal multiplexer (similar to tmux and screen), \
-                    but this is merely its infrastructure layer.  Zellij \
-                    includes a layout system, and a plugin system allowing \
-                    one to create plugins in any language that compiles to \
-                    WebAssembly.
+long_description    \
+    Zellij is a workspace aimed at developers, ops-oriented people and anyone \
+    who loves the terminal. At its core, it is a terminal multiplexer \
+    (similar to tmux and screen), but this is merely its infrastructure \
+    layer.  Zellij includes a layout system, and a plugin system allowing \
+    one to create plugins in any language that compiles to WebAssembly.
 
 categories          sysutils
 installs_libs       no
 license             MIT
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
-platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
+<<<<<<< HEAD
 rmd160  4239c8ac280720ad4b628cae84a929bc4ee6ee29 \
 sha256  5cd2e9d24380b62a85f22b18462fa9873202f3dd2b9020b513613f156ac1f37d \
 size    4144406
+=======
+                    rmd160  8e6d41046734606206fce391eb444710da8af8b7 \
+                    sha256  8d71fc7fbca1f89e4a20b87f4e149ee4a97644b7d4807201c50cd9178a0feb57 \
+                    size    4171066
+>>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 depends_build-append \
                     port:go-md2man

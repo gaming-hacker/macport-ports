@@ -36,7 +36,7 @@ sha256  7c3b1780ab8c4de9a358cce3379d24aaf0dababbc919208d2792e85392c04742 \
 size    62888
 
 depends_build-append \
-                    port:cmake
+                    path:bin/cmake:cmake
 
 destroot {
     xinstall -m 0755 \
