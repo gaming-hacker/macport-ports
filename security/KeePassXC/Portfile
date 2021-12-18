@@ -62,7 +62,7 @@ size    488
     configure.pre_args-append \
         -DWITH_XC_KEESHARE_SECURE=ON
 
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2017
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
     patchfiles          patch-no-deployqt.diff \
@@ -85,8 +85,8 @@ size    10077852
 
 =======
     checksums           rmd160  71a484f172097333e891029ef94e510594c045ae \
-                        sha256  9a1c22f3ca4febf1e40fd3ce31b0643f4fd8b48c57aa30082ace44bf2ec8c278 \
-                        size    10070552
+sha256  9a1c22f3ca4febf1e40fd3ce31b0643f4fd8b48c57aa30082ace44bf2ec8c278 \
+size    10070552
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
     gpg_verify.use_gpg_verification \

@@ -7,7 +7,7 @@ PortGroup           perl5 1.0
 perl5.branches 5.30
 perl5.setup         Time-Duration-Parse 0.15
 =======
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         Time-Duration-Parse 0.16
 revision            0
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
@@ -24,8 +24,8 @@ sha256  61d8143a8e6981cc1f7a974804d492039e5e56716767829d5e4bcd9ed74ae381 \
 size    11735
 =======
 checksums           rmd160  2fac82c194f9452d2bdf47bde5da11b80d8a3b46 \
-                    sha256  1084a6463ee2790f99215bd76b135ca45afe2bfa6998fa6fd5470b69e1babc12 \
-                    size    11810
+sha256  1084a6463ee2790f99215bd76b135ca45afe2bfa6998fa6fd5470b69e1babc12 \
+size    11810
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${perl5.major} != ""} {

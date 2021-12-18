@@ -7,7 +7,7 @@ PortGroup           perl5 1.0
 perl5.branches 5.30
 perl5.setup         Dist-Zilla-Plugin-InstallGuide 1.200013
 =======
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         Dist-Zilla-Plugin-InstallGuide 1.200014
 revision            0
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
@@ -24,8 +24,8 @@ sha256  c5550af5865723e728297a67bb9ed7a7afd677cd04f4e5c3eb60b9c4f3d7081b \
 size    33586
 =======
 checksums           rmd160  4a3f52baa085bcab280b9a7f4b9b96b8a38d9223 \
-                    sha256  5bcd68cdff8665f2685bb64a4aefd505f43c6703801c9e144fe72f35e7c6afd8 \
-                    size    33296
+sha256  5bcd68cdff8665f2685bb64a4aefd505f43c6703801c9e144fe72f35e7c6afd8 \
+size    33296
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${perl5.major} != ""} {

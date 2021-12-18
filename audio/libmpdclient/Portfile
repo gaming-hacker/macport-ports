@@ -7,8 +7,8 @@ name                libmpdclient
 version             2.20
 revision            0
 checksums           rmd160  29274cad27256a6fcef1132928e41fc5e6cc5a7c \
-                    sha256  18793f68e939c3301e34d8fcadea1f7daa24143941263cecadb80126194e277d \
-                    size    71552
+sha256  18793f68e939c3301e34d8fcadea1f7daa24143941263cecadb80126194e277d \
+size    71552
 
 set branch          [join [lrange [split ${version} .] 0 0] .]
 categories          audio

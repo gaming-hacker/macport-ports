@@ -8,8 +8,8 @@ name                mpc
 version             0.34
 revision            0
 checksums           rmd160  b5c6e7279aed751891333a293f753d4ce96f0bbf \
-                    sha256  691e3f3654bc10d022bb0310234d0bc2d8c075a698f09924d9ebed8f506fda20 \
-                    size    47940
+sha256  691e3f3654bc10d022bb0310234d0bc2d8c075a698f09924d9ebed8f506fda20 \
+size    47940
 
 set branch          [join [lrange [split ${version} .] 0 0] .]
 categories          audio

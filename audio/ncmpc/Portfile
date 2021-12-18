@@ -8,8 +8,8 @@ name                ncmpc
 version             0.46
 revision            0
 checksums           rmd160  049cdd18f1cdefe820578ddae31bb8bfa22b0e34 \
-                    sha256  177f77cf09dd4ab914e8438be399cdd5d83c9aa992abc8d9abac006bb092934e \
-                    size    289332
+sha256  177f77cf09dd4ab914e8438be399cdd5d83c9aa992abc8d9abac006bb092934e \
+size    289332
 
 set branch          [join [lrange [split ${version} .] 0 0] .]
 categories          audio

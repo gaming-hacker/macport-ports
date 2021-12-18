@@ -7,7 +7,7 @@ PortGroup           perl5 1.0
 perl5.branches 5.30
 perl5.setup         WWW-Mechanize-Cached 1.54
 =======
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         WWW-Mechanize-Cached 1.55
 revision            0
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
@@ -24,8 +24,8 @@ sha256  002fb3d63074527218329bb736b3e9bb1649d1751780260bdc84398e37673723 \
 size    34868
 =======
 checksums           rmd160  d63fffa9177e42993997dc1b50920a35beb543b2 \
-                    sha256  3ab16463beede3061db7b7d3c66ea9536f02b737467cc6b1172aa08302d9fb60 \
-                    size    34945
+sha256  3ab16463beede3061db7b7d3c66ea9536f02b737467cc6b1172aa08302d9fb60 \
+size    34945
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${perl5.major} != ""} {

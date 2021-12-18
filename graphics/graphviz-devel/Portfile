@@ -10,8 +10,8 @@ name                            graphviz-devel
 set my_name                     graphviz
 version                         2.50.0
 checksums                       rmd160  76cc0668568f6bca1ddaf13b44106718fba8b04e \
-                                sha256  e17021a510bbd2770d4ca4b4eb841138122aaa5948f9e617e6bc12b4bac62e8d \
-                                size    29761610
+sha256  e17021a510bbd2770d4ca4b4eb841138122aaa5948f9e617e6bc12b4bac62e8d \
+size    29761610
 
 set thisbranch                  [strsed ${name} "g/^${my_name}//"]
 set otherbranch                 [expr {${thisbranch} eq {} ? {-devel} : {}}]

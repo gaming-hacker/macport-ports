@@ -7,7 +7,7 @@ PortGroup           perl5 1.0
 perl5.branches 5.30
 perl5.setup         Devel-CheckOS 1.85 ../../authors/id/D/DC/DCANTRELL
 =======
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         Devel-CheckOS 1.87 ../../authors/id/D/DC/DCANTRELL
 revision            0
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
@@ -24,8 +24,8 @@ sha256  6f43a9da1dc6fafdaac9b61b83cd02d883bf62aef151c93986bef98a7ae658ca \
 size    33262
 =======
 checksums           rmd160  a86317ccc68759e6da177328fd84649662b13314 \
-                    sha256  9cda4399044fc11150caeb92c2c68a8a4b8c54370b3bcf65943b2cd1fd648331 \
-                    size    33745
+sha256  9cda4399044fc11150caeb92c2c68a8a4b8c54370b3bcf65943b2cd1fd648331 \
+size    33745
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${perl5.major} != ""} {

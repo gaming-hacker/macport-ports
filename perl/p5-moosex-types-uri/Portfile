@@ -7,7 +7,7 @@ PortGroup           perl5 1.0
 perl5.branches 5.30
 perl5.setup         MooseX-Types-URI 0.08
 =======
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         MooseX-Types-URI 0.09
 revision            0
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
@@ -24,8 +24,8 @@ sha256  d310d20fa361fe2dff758236df87949cc7bf98e5cf3a7c79115365eccde6ccc1 \
 size    29511
 =======
 checksums           rmd160  ada6d08f54927c410015449f8eb74fff6a04b356 \
-                    sha256  2717754dadb91086e11d21fea06cbaa9a12e601b41d15443150edd7d9508efe8 \
-                    size    33724
+sha256  2717754dadb91086e11d21fea06cbaa9a12e601b41d15443150edd7d9508efe8 \
+size    33724
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${perl5.major} != ""} {

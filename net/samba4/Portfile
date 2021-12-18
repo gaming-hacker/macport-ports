@@ -24,8 +24,8 @@ conflicts           samba3
 version             4.14.7
 revision            1
 checksums           rmd160  732a018b5b97e9efc91efd1b2d3540c23aec1dca \
-                    sha256  6f50353f9602aa20245eb18ceb00e7e5ec793df0974aebd5254c38f16d8f1906 \
-                    size 18668592
+sha256  6f50353f9602aa20245eb18ceb00e7e5ec793df0974aebd5254c38f16d8f1906 \
+size 18668592
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 categories          net
@@ -68,7 +68,7 @@ depends_lib         port:cctools \
                     path:lib/libldap.dylib:openldap \
                     port:p5.28-parse-yapp \
                     port:popt \
-                    port:python38 \
+                    port:python39 \
                     port:readline \
                     port:zlib
 
@@ -118,8 +118,8 @@ configure.args		-C \
 			--with-gpgme \
 			--disable-spotlight
 =======
-configure.perl      ${prefix}/bin/perl5.28
-configure.python    ${prefix}/bin/python3.8
+configure.perl      ${prefix}/bin/perl5.30
+configure.python    ${prefix}/bin/python3.9
 configure.env-append \
                     YAPP=${prefix}/bin/yapp-5.28
 configure.cmd       ${configure.python} ./buildtools/bin/waf configure

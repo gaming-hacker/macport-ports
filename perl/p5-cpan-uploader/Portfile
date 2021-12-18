@@ -7,7 +7,7 @@ PortGroup           perl5 1.0
 perl5.branches 5.30
 perl5.setup         CPAN-Uploader 0.103015
 =======
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         CPAN-Uploader 0.103016
 revision            0
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
@@ -24,8 +24,8 @@ sha256  8e087efe3625decb816b2991ff8d7de4ad7190f9863d0490967014f6719fbbc5 \
 size    21615
 =======
 checksums           rmd160  3fde55a8885b248c47bcfae9911beaed977dea07 \
-                    sha256  291419ad6473f40e8b0fbea210e68ee81f87eff75436029cd9f0b2471cdec4df \
-                    size    22508
+sha256  291419ad6473f40e8b0fbea210e68ee81f87eff75436029cd9f0b2471cdec4df \
+size    22508
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${perl5.major} != ""} {

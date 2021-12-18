@@ -7,7 +7,7 @@ PortGroup           perl5 1.0
 perl5.branches 5.30
 perl5.setup         Math-MPFR 4.14
 =======
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         Math-MPFR 4.18
 revision            0
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
@@ -27,8 +27,8 @@ sha256  49fc1195fbbe3a5f8d9e6da30951cb3fbb7f165695f7d606ea4a835afa84746c \
 size    184586
 =======
 checksums           rmd160  0ffdf788ac720605b1e928b8b96420fba8f08cce \
-                    sha256  724cce36ab4e13b12c7db9cda29727220d0593725c9a817a1a25d63de601031a \
-                    size    208848
+sha256  724cce36ab4e13b12c7db9cda29727220d0593725c9a817a1a25d63de601031a \
+size    208848
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${perl5.major} != ""} {

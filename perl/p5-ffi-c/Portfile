@@ -7,7 +7,7 @@ PortGroup           perl5 1.0
 perl5.branches 5.30
 perl5.setup         FFI-C 0.10
 =======
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         FFI-C 0.11
 revision            0
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
@@ -24,8 +24,8 @@ sha256  3e7d519c5b35362eedd4f6e8bc2bc8f51c2dce4ce07fc641e360af64e502a1a2 \
 size    44189
 =======
 checksums           rmd160  3a987c0c0a69ac1b286efd6262e84bfd2cace951 \
-                    sha256  677eb0ee9f651b914a956cc8e947a20afef4d206c8a2fd64fd4dbbc32dd618a1 \
-                    size    43870
+sha256  677eb0ee9f651b914a956cc8e947a20afef4d206c8a2fd64fd4dbbc32dd618a1 \
+size    43870
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${perl5.major} != ""} {

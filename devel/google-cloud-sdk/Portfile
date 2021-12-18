@@ -37,18 +37,18 @@ sha256  9ef1d8e5774848e262d64f06ca39302b81d64289a12095a2fe029d8996c1d898 \
 size    93520490
 =======
     checksums       rmd160  7dcea5a11cb2b5df0ce32889c45b8f3e3b328d79 \
-                    sha256  0793754d58f1aca3a7f7b726714fe49817789b57a26eb84d98135da86b208ed5 \
-                    size    97372275
+sha256  0793754d58f1aca3a7f7b726714fe49817789b57a26eb84d98135da86b208ed5 \
+size    97372275
 } elseif { ${configure.build_arch} eq "x86_64" } {
     distname        ${name}-${version}-darwin-x86_64
     checksums       rmd160  46589b463e1233bf7e74219e55b7a3e068a4090c \
-                    sha256  870ca3ca68b0a98af934cb4eae3f8910d1cd971b052eead53397325d9f140233 \
-                    size    93636198
+sha256  870ca3ca68b0a98af934cb4eae3f8910d1cd971b052eead53397325d9f140233 \
+size    93636198
 } elseif { ${configure.build_arch} eq "arm64" } {
     distname        ${name}-${version}-darwin-arm
     checksums       rmd160  7bb1e7b972097d81018b3503bd6699f1bed72a45 \
-                    sha256  1689b401444887ee527a5fe5c02cab8b4220e120b432c9244b94582d0ee7e002 \
-                    size    93568866
+sha256  1689b401444887ee527a5fe5c02cab8b4220e120b432c9244b94582d0ee7e002 \
+size    93568866
 >>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 }
 

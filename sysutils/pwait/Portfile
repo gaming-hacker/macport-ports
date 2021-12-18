@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -9,13 +9,13 @@ set man_commit      5bdce6ff546e00673f9f515d2165d02901e858aa
 version             20210121
 revision            0
 checksums           ${name}-${man_commit}.1 \
-                    rmd160  75f925ce9c9f4457f073895091a8c1c7dd8afecb \
-                    sha256  5457079fafdd832492ab3ef9aef3f18d1d3dfc083de2de28e320354223859a12 \
-                    size    3854 \
+rmd160  75f925ce9c9f4457f073895091a8c1c7dd8afecb \
+sha256  5457079fafdd832492ab3ef9aef3f18d1d3dfc083de2de28e320354223859a12 \
+size    3854 \
                     ${name}-${git.branch}.c \
-                    rmd160  d96462f2410ffb3c016d99b5272d63d28a4ac1f5 \
-                    sha256  928104a2cb0cfe0ff97bc1202f574165b6dd4c3e21b6e65442a4966eaca13f84 \
-                    size    5064
+rmd160  d96462f2410ffb3c016d99b5272d63d28a4ac1f5 \
+sha256  928104a2cb0cfe0ff97bc1202f574165b6dd4c3e21b6e65442a4966eaca13f84 \
+size    5064
 
 categories          sysutils
 maintainers         {ryandesign @ryandesign} openmaintainer
