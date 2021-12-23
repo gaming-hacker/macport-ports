@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -24,10 +24,10 @@ long_description    ${description}. VTK-m supports the fine-grained concurrency 
 homepage            https://m.vtk.org/
 
 checksums           rmd160  ead655851a71112b92eaf281889832abe61625c2 \
-                    sha256  a38333d4e50157b67bacb0c10e9f0a055cfc162e611150ef6087493baca853b7 \
-                    size    10120435
+sha256  a38333d4e50157b67bacb0c10e9f0a055cfc162e611150ef6087493baca853b7 \
+size    10120435
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 
 configure.args-append \
     -DBUILD_SHARED_LIBS=ON \

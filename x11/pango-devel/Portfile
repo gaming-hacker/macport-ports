@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -14,8 +14,8 @@ epoch                   1
 version                 1.50.3
 revision                0
 checksums               rmd160  b134b26067937fd0fb6f48a5dae6f551730f03a6 \
-                        sha256  4add05edf51c1fb375a1ccde7498914120e23cb280dd7395b1aeb441f1838a4c \
-                        size    4093644
+sha256  4add05edf51c1fb375a1ccde7498914120e23cb280dd7395b1aeb441f1838a4c \
+size    4093644
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11
@@ -54,9 +54,9 @@ configure.args-append   -Dxft=disabled \
 configure.cflags-append \
                         -Wno-error,-Wimplicit-fallthrough
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 configure.cxxflags-append \
-                        -std=c++11
+                        -std=c++17
 
 license_noconflict      gobject-introspection
 

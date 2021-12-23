@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32
+perl5.branches 5.30
 perl5.setup         Graph 0.9725
 revision            1
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ long_description    This is Graph, a Perl module for creating abstract data stru
                     rendering any sort of graphics or images, business, visualization, or otherwise.
 
 checksums           rmd160  3d062f7fb9ea72d0a2dd899e80de8fbfb43da953 \
-                    sha256  e75b0ecc9a7f62fd70f896b173d11c3fc00cdffd35c3e99286689d3ca2debefe \
-                    size    147502
+sha256  e75b0ecc9a7f62fd70f896b173d11c3fc00cdffd35c3e99286689d3ca2debefe \
+size    147502
 
 if {${perl5.major} != ""} {
     depends_build-append \

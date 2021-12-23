@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    ${description}
 homepage            https://github.com/SoCo/SoCo
 
 checksums           rmd160  2c549211ac8f08795269325a13c8f51b14911083 \
-                    sha256  a62049e5da0ca9b14ebcdd0b065ccf501ae86aed1b8a6eaf387a2bd0d2d2bec9 \
-                    size    719168
+sha256  a62049e5da0ca9b14ebcdd0b065ccf501ae86aed1b8a6eaf387a2bd0d2d2bec9 \
+size    719168
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

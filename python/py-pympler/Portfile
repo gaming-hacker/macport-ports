@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ long_description    Pympler is a development tool to measure, monitor and analyz
 homepage            https://github.com/pympler/pympler
 
 checksums           rmd160  818e0cae2c19c747296d36edf7bfa9ccf6f986f3 \
-                    sha256  f2e82c3e33835d0378ed95fffabc00806f4070f00decaa38b340ca99b1aca25c \
-                    size    681005
+sha256  f2e82c3e33835d0378ed95fffabc00806f4070f00decaa38b340ca99b1aca25c \
+size    681005
 
-python.versions     36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
        depends_build-append \

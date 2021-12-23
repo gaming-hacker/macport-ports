@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           makefile 1.0
 github.setup        auriamg macdylibbundler 1.0.3
 revision            0
 checksums           rmd160  09d1ed98a92bbebacc94aa3a44f0841c48155ab7 \
-                    sha256  84e37c6884b71a6d40d99202729dfc21479d53a82a343488f1d5378f0561d615 \
-                    size    13031
+sha256  84e37c6884b71a6d40d99202729dfc21479d53a82a343488f1d5378f0561d615 \
+size    13031
 
 name                dylibbundler
 categories          devel
@@ -37,7 +37,7 @@ pre-fetch {
     }
 }
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 post-destroot {
     set docdir ${prefix}/share/doc/${subport}

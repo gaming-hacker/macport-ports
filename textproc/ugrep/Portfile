@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,10 +19,10 @@ long_description    ${description}: search file systems, source code, text, \
                     (gz/Z/bz2/lzma/xz/lz4/zstd), documents and more.
 
 checksums           rmd160  bd9a18784ff2db0c3ebba73b6a6b7177f0d27754 \
-                    sha256  b6404b0bc83e6e852892e705deeafbe1593faf5435baa6fb58991da6242c45e4 \
-                    size    4335290
+sha256  b6404b0bc83e6e852892e705deeafbe1593faf5435baa6fb58991da6242c45e4 \
+size    4335290
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # fix build failure on OS X 10.9 and 10.8:
 # /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/list:227:9: error: field has incomplete type 'GrepWorker'

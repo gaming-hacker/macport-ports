@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -23,8 +23,8 @@ master_sites        https://secure.nic.cz/files/knot-dns/ \
 use_xz              yes
 
 checksums           rmd160  751b6435edfb4290a0e3a2bda214709fe8e7396e \
-                    sha256  2da6e50b0662297d55f80e349568224e07fe88cad20bee1d2e22f54bb32da064 \
-                    size    1414500
+sha256  2da6e50b0662297d55f80e349568224e07fe88cad20bee1d2e22f54bb32da064 \
+size    1414500
 
 depends_build       port:pkgconfig
 

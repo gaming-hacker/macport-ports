@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    {*}${description}
 homepage            https://github.com/containers/podman-compose
 
 checksums           rmd160  dd21ace3714b9baa9113a9a48fded2ab65f1a2c8 \
-                    sha256  9c9fe8249136e45257662272ade33760613e2d9ca6153269e1e970400ea14675 \
-                    size    21424
+sha256  9c9fe8249136e45257662272ade33760613e2d9ca6153269e1e970400ea14675 \
+size    21424
 
 python.default_version 39
 

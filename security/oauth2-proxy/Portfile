@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               golang 1.0
@@ -23,8 +23,8 @@ maintainers             {gmail.com:herby.gillot @herbygillot} \
                         openmaintainer
 
 checksums               rmd160  5fbfa71fff6bddb034310e78f8187bea12eb7fa9 \
-                        sha256  fbbb1581582c1a5655272070599f1739f919add79836027f34b366939c250273 \
-                        size    845314
+sha256  fbbb1581582c1a5655272070599f1739f919add79836027f34b366939c250273 \
+size    845314
 
 set o2p_conf_dir        ${prefix}/etc/${name}
 set o2p_log_dir         ${prefix}/var/log/${name}

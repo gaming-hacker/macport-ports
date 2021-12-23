@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -27,13 +27,13 @@ master_sites-append https://github.com/dankamongmen/${name}/releases/download/v$
 distfiles-append    ${name}-doc-${version}${extract.suffix}:bootstrap
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  6074bb7d0559cdf4ce8da92ef6cd0b5e3d7d3e9d \
-                    sha256  32041c300e92fc0fe56c19e65d1d1e374e824c781dfcd4f959ab0dcdbb90cdb2 \
-                    size    10119898 \
+rmd160  6074bb7d0559cdf4ce8da92ef6cd0b5e3d7d3e9d \
+sha256  32041c300e92fc0fe56c19e65d1d1e374e824c781dfcd4f959ab0dcdbb90cdb2 \
+size    10119898 \
                     ${name}-doc-${version}${extract.suffix} \
-                    rmd160  73c5cd260121b378ad9b3644f0f1e378b0a7136c \
-                    sha256  43be760c5f2f4a7b2c9a9527254cd2bbdda8ad7d6f4fc7f841a776f0ee3cdd05 \
-                    size    145503
+rmd160  73c5cd260121b378ad9b3644f0f1e378b0a7136c \
+sha256  43be760c5f2f4a7b2c9a9527254cd2bbdda8ad7d6f4fc7f841a776f0ee3cdd05 \
+size    145503
 
 extract.only        ${distname}${extract.suffix}
 

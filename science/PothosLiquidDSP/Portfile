@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,11 +17,11 @@ long_description    This toolkit wraps Pothos blocks around the Liquid \
 github.setup        pothosware PothosLiquidDSP bb0f8f8456426c3a99c448bfbacc52134f6f366c
 version             0.0.0-git-20211220
 checksums           rmd160  87d6893e2d5b8689bd8783224c03d7ead6c497e9 \
-                    sha256  74b90b071cd7a36f951a853b055a942d792a79216fd41a20c2b63ccf361783c7 \
-                    size    37837
+sha256  74b90b071cd7a36f951a853b055a942d792a79216fd41a20c2b63ccf361783c7 \
+size    37837
 revision            0
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # set Python version and variants
 set PythonVersionNoDot ""

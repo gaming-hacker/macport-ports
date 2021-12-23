@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -26,8 +26,8 @@ long_description    Cadabra is a computer algebra system for the \
 homepage            http://cadabra.phi-sci.com/
 
 checksums           rmd160  efc6bf8f523598258b0e9fb70b8d4775cc2daf3f \
-                    sha256  0386a188200c4df244dca06a89f2721ec3b1ff00a30207dff1a620f68600d7d2 \
-                    size    24656994
+sha256  0386a188200c4df244dca06a89f2721ec3b1ff00a30207dff1a620f68600d7d2 \
+size    24656994
 
 compiler.cxx_standard 2017
 
