@@ -1,14 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               github 1.0
 PortGroup               openssl 1.0
 
-github.setup            frankmorgner openpace 1.1.1
+github.setup            frankmorgner openpace 1.1.2
 revision                0
-checksums               rmd160  54f62c79089888198be93c076ba9fcd7d4b37315 \
-sha256  b6d45b3ae6fa0209a246dab603b19f070caceeb6a111b849c2e7d2b7aa8f1b21 \
-size    3421712
+checksums               rmd160  3f539feb6b8c0a5797ebb4ec9fcd3b0da337aa38 \
+                        sha256  c5653ac2ca2ff06073833278af21e752e27bc1e5095bb381cbdc101e32cb512c \
+                        size    3470016
 
 categories              security libs
 platforms               darwin
@@ -20,16 +20,11 @@ long_description        OpenPACE implements Extended Access Control (EAC) \
                         version 2 as specified in BSI TR-03110.
 
 github.tarball_from     releases
-<<<<<<< HEAD
-checksums               rmd160  9962fbf76f82809bc6cc91ef98df85ad112e5066 \
-sha256  30eac481a4256efc374367110076593b770516c221653a9d1f8fa275bf324dc6 \
-size    3428532
-=======
 
-# https://github.com/frankmorgner/openpace/issues/53
-openssl.branch          1.1
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+openssl.branch          3
 
 depends_build           port:gengetopt port:help2man port:pkgconfig
+
+patchfiles              openssl-3.patch
 
 configure.args          --disable-silent-rules

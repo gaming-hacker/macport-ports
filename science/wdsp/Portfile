@@ -20,6 +20,9 @@ sha256  66a5eb244037815d82e9572016e23ba7a28c40cc0416ffe5ab8df636d6e18024 \
 size    5660642
 revision            0
 
+depends_build-append \
+    path:bin/pkg-config:pkgconfig
+
 depends_lib-append \
     port:fftw-3
 
@@ -27,7 +30,7 @@ use_configure       no
 # remove useless includes
 build.env-append    INCLUDES=
 
-pre-configure {
+post-patch {
     reinplace "s|/usr/local|${prefix}|g" ${worksrcpath}/Makefile
 }
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -36,19 +36,11 @@ homepage            https://gqrx.dk
 
 if {${subport} eq ${name}} {
 
-<<<<<<< HEAD
-    github.setup    gqrx-sdr gqrx 2.14.6 v
-    checksums       rmd160  b7a28f75d1803c515233828d671f310b262a67ce \
-sha256  61cd4a759280e095fccdabfd9b694fdcbd71a65e823dc486949b2fb090c1a4fb \
-size    1346750
-    revision        1
-=======
-    github.setup    gqrx-sdr gqrx 2.15 v
-    checksums       rmd160  fa0a133c44ee094762e6d84b8e0bcd2dff1f7a84 \
-sha256  a7426a572f0a3bbe4e9c6106325d6013ec5da75d95af14699920b504f545cac7 \
-size    1347621
+    github.setup    gqrx-sdr gqrx 2.15.1 v
+    checksums       rmd160  32ab249a5e506051175b7b9779b2a6a182117f72 \
+                    sha256  21e48f8f93aae5d70a6598a2b59ed03186b1a7e4cd372ef1a5eb1cbb9e65ae5f \
+                    size    1347332
     revision        0
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
     epoch           1
 
     # repo moved, so treat like a stealth update
@@ -56,7 +48,7 @@ size    1347621
     dist_subdir   ${name}/${version}_1
 
     compiler.c_standard   2011
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2011
 
     boost.version   1.71
 

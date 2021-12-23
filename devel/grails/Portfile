@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           java 1.0
 
-github.setup        grails grails-core 5.1.0 v
+github.setup        grails grails-core 5.1.1 v
 github.tarball_from releases
 revision            0
 name                grails
@@ -21,15 +21,9 @@ homepage            https://grails.org/
 
 distname            ${name}-${version}
 
-<<<<<<< HEAD
-checksums           rmd160  a1cd7f7494f4a8b85895c32afebda3147bb6e307 \
-sha256  7ab83eae780db077724fc69425d43429f1af627a2ca83ddb527b4b79bfe88dd5 \
-size    174996765
-=======
-checksums           rmd160  4e6a3b6f890d4eb2a654ab7e98dfe6028a31d52a \
-sha256  028299f9bad0eb9a81ffb7e0cb055e378374e08c8d05f6549c1ae97704341c14 \
-size    181816574
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums           rmd160  bc994fdcc0a67d0a7a31bad0f2d8b98332e33b1d \
+                    sha256  ca02c0481b3c18cf553340ccbf46aa3c75e4796294bdaa97d915cb1e58e864ef \
+                    size    181817862
 
 use_zip             yes
 use_configure       no

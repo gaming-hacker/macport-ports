@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -11,17 +11,11 @@ name                    pango-devel
 conflicts               pango
 set my_name             pango
 epoch                   1
-version                 1.50.1
+version                 1.50.3
 revision                0
-<<<<<<< HEAD
-checksums               rmd160  042c2036057af817a6eecbc98a71b8495d68bd94 \
-sha256  21e1f5798bcdfda75eabc4280514b0896ab56f656d4e7e66030b9a2535ecdc98 \
-size    2071736
-=======
-checksums               rmd160  e8e9e8629df9889b587f75ff3b9d9c8686483d5e \
-sha256  7760a03e9a652a7a10384a55a63c3196bfc645796a45d110131781d4814c81cf \
-size    4067632
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums               rmd160  b134b26067937fd0fb6f48a5dae6f551730f03a6 \
+                        sha256  4add05edf51c1fb375a1ccde7498914120e23cb280dd7395b1aeb441f1838a4c \
+                        size    4093644
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11
@@ -54,17 +48,15 @@ depends_lib \
     port:fribidi \
     path:lib/pkgconfig/harfbuzz.pc:harfbuzz
 
-patchfiles              errno.patch
-
 configure.args-append   -Dxft=disabled \
                         -Dintrospection=enabled
 
 configure.cflags-append \
                         -Wno-error,-Wimplicit-fallthrough
 
-compiler.cxx_standard 2017
+compiler.cxx_standard   2011
 configure.cxxflags-append \
-                        -std=c++17
+                        -std=c++11
 
 license_noconflict      gobject-introspection
 
@@ -150,7 +142,7 @@ post-destroot {
 }
 
 test.run                yes
-test.target             check
+test.target             test
 
 livecheck.type          gnome-with-unstable
 livecheck.name          ${my_name}
