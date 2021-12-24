@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -30,8 +30,8 @@ homepage            http://vicerveza.homeunix.net/~viric/soft/ts/
 master_sites        ${homepage}
 
 checksums           rmd160  8ca536f7eefd3b5e78958c4172c3ce957f786e34 \
-                    sha256  f73452aed80e2f9a7764883e9353aa7f40e65d3c199ad1f3be60fd58b58eafec \
-                    size    67010
+sha256  f73452aed80e2f9a7764883e9353aa7f40e65d3c199ad1f3be60fd58b58eafec \
+size    67010
 
 patchfiles          patch-Makefile.diff 
 

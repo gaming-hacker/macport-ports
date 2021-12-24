@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -22,10 +22,10 @@ platforms           darwin
 license             LGPL-2.1+
 
 checksums           rmd160  a06b1429daab2171bbf57d59a88db4db62b6fb49 \
-                    sha256  1f0d17b28390ddd796e8fef49d20d7da67aa4366cd79dc140594c3359f4310e5 \
-                    size    1581420
+sha256  1f0d17b28390ddd796e8fef49d20d7da67aa4366cd79dc140594c3359f4310e5 \
+size    1581420
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_build-append  port:gmake
 depends_lib-append  path:lib/libavcodec.dylib:ffmpeg \
