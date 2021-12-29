@@ -20,7 +20,7 @@ sha256  00c83de0b35c84f8ff85862badabafe581812b85513d35d31f46d0271b7bc1b4
 
 depends_build       port:pkgconfig
 
-depends_lib         port:gimp2 \
+depends_lib         path:lib/pkgconfig/gimp-2.0.pc:gimp2 \
                     port:exiv2 \
                     port:lensfun
 

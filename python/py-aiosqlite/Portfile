@@ -30,10 +30,10 @@ size    25407
 python.versions 39
 
 python.pep517       yes
+python.pep517_backend   flit
 
 if {${name} ne ${subport}} {
     depends_build-append \
-                    port:py${python.version}-flit_core \
                     port:py${python.version}-typing_extensions \
                     port:py${python.version}-wheel
     

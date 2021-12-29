@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cargo  1.0
 
-github.setup        crate-ci committed 0.2.7 v
+github.setup        crate-ci committed 0.2.8 v
 revision            0
 
 categories          devel
@@ -16,15 +16,9 @@ description         A linter for git commit messages
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-<<<<<<< HEAD
-rmd160  9087f77f739833fffb4a3d6e212bc97cee75f34d \
-sha256  119a1356f18bd690ab5902ecb88dd58571f482539195436818b62c6679c5d420 \
-size    31933
-=======
-rmd160  1282da0f0210d9083759ecae428f0c2f1b7b69c3 \
-sha256  899786821d498402615181738d5946a3b992463acc13ea5227b583e20b083241 \
-size    32112
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+                    rmd160  c0f453e3a32c7d9d60f1e5fdaefea630a1f266be \
+                    sha256  71a36885876ad4baba7df619ac19a0514969c3f3f0d74a6be2e3a4bb81dfefce \
+                    size    32119
 
 depends_lib-append  port:libgit2 \
                     port:zlib \

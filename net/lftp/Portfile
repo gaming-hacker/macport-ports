@@ -5,7 +5,7 @@ PortGroup           muniversal 1.0
 
 name                lftp
 version             4.9.2
-revision            4
+revision            5
 categories          net
 platforms           darwin
 maintainers         {mps @Schamschula} openmaintainer
@@ -32,10 +32,11 @@ size    1654960
 
 depends_build       port:autoconf \
                     port:automake \
-                    port:bison
+                    port:bison \
+                    port:gettext
 
 depends_lib         port:expat \
-                    port:gettext \
+                    port:gettext-runtime \
                     port:libiconv \
                     port:libidn2 \
                     port:ncurses \

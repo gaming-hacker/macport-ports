@@ -1,19 +1,13 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/gohugoio/hugo 0.91.0 v
+go.setup            github.com/gohugoio/hugo 0.91.2 v
 revision            0
-<<<<<<< HEAD
-checksums           rmd160  ddc5481eb7abb0ad52efd699e40ca773755805a5 \
-sha256  a4b0246abc310f032b324f80983c6cb8ab4bbf3bb8b6da740b35735ae8514565 \
-size    37375481
-=======
-checksums           rmd160  203e11bd3c3e9a8db8f073aad089d6713e103e00 \
-sha256  8778d0ae7f5345e590df2581d58ac946e7c07f298255fdef4d1df565eb154677 \
-size    28287213
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums           rmd160  785089a58bfc9d973986a6b51ee6b69ef69e098f \
+                    sha256  c52f83d3e3c5a1029dda5cd69a61c64a288685a0edfdc33aec59289df83207d6 \
+                    size    28415983
 
 categories          www
 platforms           darwin

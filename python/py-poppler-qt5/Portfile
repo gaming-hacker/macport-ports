@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,13 +23,13 @@ long_description    ${python.rootname} is a Python binding for Poppler-Qt5 \
 homepage            https://github.com/wbsoft/${python.rootname}
 
 checksums           md5     83a1c785aa3d0a0b0e82a7805492eabb \
-rmd160  26aea457226155b8a6120fa0e19f631a38c8afcc \
-sha256  add766db2c04026a6087f38f2044e66c8b053c81002f3753d8059713497d022d \
-size    28235
+                    rmd160  26aea457226155b8a6120fa0e19f631a38c8afcc \
+                    sha256  add766db2c04026a6087f38f2044e66c8b053c81002f3753d8059713497d022d \
+                    size    28235
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
-compiler.cxx_standard 2017
+compiler.cxx_standard   2011
 
 if {${name} ne ${subport}} {
     if {${python.version} eq 27} {

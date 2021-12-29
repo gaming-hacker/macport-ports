@@ -1,15 +1,15 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
 PortGroup           conflicts_build 1.0
 
 name                magic
-version             8.3.242
+version             8.3.245
 revision            0
-checksums           rmd160  48692df1264b6e888b2878f1ada135350958a853 \
-sha256  038625cb188fa2c600b8c21a95a051ca0050cb400fa2ab4c42c6765939bdca7e \
-size    4094888
+checksums           rmd160  1a40d55a61baef239aa1217c735bbfa8a8c02222 \
+                    sha256  8d0718dd6107648ad2fb65352ee44d3ccd1e8cd5259d571797888980c8fc7345 \
+                    size    4095189
 
 set branch          [join [lrange [split ${version} .] 0 1] .]
 categories          science

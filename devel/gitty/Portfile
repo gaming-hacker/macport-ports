@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/muesli/gitty 0.4.1 v
+go.setup            github.com/muesli/gitty 0.5.0 v
 github.tarball_from archive
 revision            0
 
@@ -18,17 +18,9 @@ license             MIT
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-<<<<<<< HEAD
-checksums           rmd160  ccf961b2153536c6eed386c65f163c990ab25328 \
-sha256  e8e8438997fd7d5d3b8e3e1361172b90edc26f15f6614d1f08e50d99fd4ba120 \
-size    237217
-
-github.tarball_from archive
-=======
-checksums           rmd160  dc183e8cc9e58a56e352ad7ed94db0bfd7149a0e \
-sha256  44442108ae4f8824bf7a2b07f4814b52d7e169b96cfc83e64f21207032b2df4e \
-size    308107
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums           rmd160  430625e18f81f958fad744424381fda1de4d5dc0 \
+                    sha256  58c5e8a393c552426695b3910473184452fb3fa10bad5c911d2e3bc3c6c46536 \
+                    size    309191
 
 # Allow Go to fetch deps at build time
 build.env-delete    GO111MODULE=off GOPROXY=off

@@ -24,6 +24,7 @@ size 27497
 python.versions 39
 
 python.pep517       yes
+python.pep517_backend   other
 
 if {$subport ne $name} {
     depends_run-append  port:py${python.version}-tomli

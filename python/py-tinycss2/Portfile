@@ -25,11 +25,9 @@ size    65703
 python.versions 39
 
 python.pep517       yes
+python.pep517_backend   flit
 
 if {${name} ne ${subport}} {
-    depends_build-append \
-                    port:py${python.version}-flit_core
-
     depends_lib-append \
                     port:py${python.version}-webencodings
 

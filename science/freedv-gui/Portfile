@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -13,19 +13,11 @@ description         GUI Application for FreeDV - an open source digital \
     voice protocol that integrates the modems, codecs, and FEC
 long_description    ${description}
 
-<<<<<<< HEAD
-github.setup        drowe67 freedv-gui 99987f3cd9719ffefc3dfd73d4a3358a35133ce7
-version             20211119-[string range ${github.version} 0 7]
-checksums           rmd160  c81af14efb40704c7fe0a6e761573a8e3332ec0f \
-sha256  322f9220c7c3870d59bb09e6050b8a81c422df12fdd321f4102421e19bbcd429 \
-size    9449599
-=======
-github.setup        drowe67 freedv-gui 265e4428bc34039b837461ba37db5c9200f054d8
-version             20211207-[string range ${github.version} 0 7]
-checksums           rmd160  dc64246117ba3740e5684beb443130a3f92dd32d \
-sha256  5c0b5563810674cf173b2f1410e58a77daae390eb7c7a42aabd9e8e30a7a0716 \
-size    9451159
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+github.setup        drowe67 freedv-gui 737418b51044d1ce5d5888d61ddc0b8c1dd167dd
+version             20211217-[string range ${github.version} 0 7]
+checksums           rmd160  306457b9786ec1c1bfbc594504c2afeba44a619f \
+                    sha256  4fc2d80790597e2aa104075fcc04e9120ae64b1423056defc37c98dfb7f49fc7 \
+                    size    9448975
 revision            0
 
 # move from commit to version
@@ -48,7 +40,7 @@ depends_lib-append \
     port:lpcnetfreedv \
     port:speexDSP
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 configure.args-append \
     -DUSE_INTERNAL_CODEC2=FALSE \

@@ -25,9 +25,9 @@ size    81167
 
 if {${name} ne ${subport}} {
     python.pep517   yes
+    python.pep517_backend   poetry
 
-    depends_build-append    port:py${python.version}-poetry-core \
-                            port:py${python.version}-wheel
+    depends_build-append    port:py${python.version}-wheel
 
     depends_lib-append      port:py${python.version}-dateutil \
                             port:py${python.version}-pytzdata

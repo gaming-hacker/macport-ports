@@ -28,6 +28,7 @@ size    5270757
 python.versions 39
 
 python.pep517       yes
+python.pep517_backend   flit
 
 if {${name} ne ${subport}} {
     depends_build-append \

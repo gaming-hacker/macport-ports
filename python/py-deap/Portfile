@@ -28,6 +28,14 @@ sha256  11f54493ceb54aae10dde676577ef59fc52d52f82729d5a12c90b0813c857a2f \
 size    1068273
 
 if {${name} ne ${subport}} {
+    if {${python.version} >= 36} {
+        patchfiles-append   no_2to3.diff
+
+        post-patch {
+            system -W ${worksrcpath} "${prefix}/bin/2to3-${python.branch} --write --nobackups deap"
+        }
+    }
+
     depends_build-append \
                         port:py${python.version}-setuptools
 
