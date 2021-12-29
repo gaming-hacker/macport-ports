@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -30,8 +30,8 @@ distname            ${my_name}-${version}
 use_xz              yes
 
 checksums           rmd160  78d01091f5b749718c0c9f350b2368333b3cbe8f \
-                    sha256  ef63f0bca5b431c6119addd834ca7fbb507c900c4861c57b3667b6f4ccfcaaaa \
-                    size    5647516
+sha256  ef63f0bca5b431c6119addd834ca7fbb507c900c4861c57b3667b6f4ccfcaaaa \
+size    5647516
 
 depends_build-append \
                     port:pkgconfig \
@@ -73,7 +73,7 @@ post-patch {
 }
 
 # needs C++14 C11
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.c_standard   2011
 
 # version 0.4.14+ requires apple clang 700.0.72 (Xcode 7.0.0) to build new parallelization code

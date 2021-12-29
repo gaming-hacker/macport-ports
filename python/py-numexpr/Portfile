@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   math
 platforms           darwin
 license             MIT
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -26,8 +26,8 @@ long_description    The numexpr package evaluates multiple-operator array \
 homepage            https://github.com/pydata/numexpr
 
 checksums           rmd160  a165da0c66334bbfc3ca208d226e314f462afd50 \
-                    sha256  cd779aa44dd986c4ef10163519239602b027be06a527946656207acf1f58113b \
-                    size    94824
+sha256  cd779aa44dd986c4ef10163519239602b027be06a527946656207acf1f58113b \
+size    94824
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -39,8 +39,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  a2d301d01e5148b07eca9fa9e0650d0c986bde36 \
-                            sha256  b0d239d9827e1bcee08344fd05835823bc60aff97232e35a928214d03ff802b1 \
-                            size    99196
+sha256  b0d239d9827e1bcee08344fd05835823bc60aff97232e35a928214d03ff802b1 \
+size    99196
     }
 
     post-destroot {

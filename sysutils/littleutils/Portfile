@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ master_sites        sourceforge:project/littleutils/littleutils-source/${version
 use_xz              yes
 
 checksums           rmd160  f53a0cbd12f40004a0dbeecea08d4d9ae82e4ba6 \
-                    sha256  dfbedc748992d69b65f101ee655b1834cba918e22e39b94e6e1a16a1ab12812d \
-                    size    212952
+sha256  dfbedc748992d69b65f101ee655b1834cba918e22e39b94e6e1a16a1ab12812d \
+size    212952
 
 depends_build       port:gettext
 
@@ -55,15 +55,15 @@ depends_lib         port:bash \
 destroot.target     "install install-extra"
 
 variant python37 conflicts python38 python39 python310 description {Use Python 3.7} {
-    configure.env   PROGPYTHON=${prefix}/bin/python3.7
+    configure.env   PROGPYTHON=${prefix}/bin/python3.9
     depends_lib-append \
-                    port:python37
+                    port:python39
 }
 
 variant python38 conflicts python37 python39 python310 description {Use Python 3.8} {
-    configure.env   PROGPYTHON=${prefix}/bin/python3.8
+    configure.env   PROGPYTHON=${prefix}/bin/python3.9
     depends_lib-append \
-                    port:python38
+                    port:python39
 }
 
 variant python39 conflicts python37 python38 python310 description {Use Python 3.9} {

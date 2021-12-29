@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,10 +18,10 @@ description         Hosted coverage reports for Github, Bitbucket and Gitlab
 long_description    {*}${description}.
 
 checksums           rmd160  e95c6827e83e9a91b533a4d70dc8cfc1f25e7fc5 \
-                    sha256  e68121a6e0f39acdde9c6e611acd8bce8bc7c9a8910ddcd53f0477063dae1bbd \
-                    size    27160
+sha256  e68121a6e0f39acdde9c6e611acd8bce8bc7c9a8910ddcd53f0477063dae1bbd \
+size    27160
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -54,8 +54,8 @@ depends_build-append    \
 depends_test-append port:p5.30-text-diff path:libexec/coreutils/libstdbuf.so:coreutils
 
 checksums           rmd160  6609ade7e8ff026b0ae7a0f334981e6145bbcaee \
-                    sha256  04191f094f6e38971fd0c4e55a0834428c1316ab5a82303c52823efaf4eda5d0 \
-                    size    9093525
+sha256  04191f094f6e38971fd0c4e55a0834428c1316ab5a82303c52823efaf4eda5d0 \
+size    9093525
 
 post-extract {
     if {[variant_isset gui]} {
@@ -75,7 +75,7 @@ compiler.blacklist *gcc-3.* *gcc-4.*
 compiler.c_standard 1999
 
 # Code uses 'asm' instead of '__asm__', so we need a GNU standard
-configure.cflags-append -std=gnu99
+configure.cflags-append -std=c11
 
 platform darwin 8 {
     # ./libc-config.h:87:21: error: operator '%' has no left operand

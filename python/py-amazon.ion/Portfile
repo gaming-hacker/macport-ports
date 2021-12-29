@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup python 1.0
@@ -21,10 +21,10 @@ long_description    Amazon Ion is a richly-typed, self-describing, hierarchical 
 homepage            https://github.com/amzn/ion-python
 
 checksums           rmd160  1c5d79ec4112cc8ccf920d027a58706fb8ae38bb \
-                    sha256  8b4aee9ff9a90e84324b90b940c55f08d6922957e5b7c1f2792fe738947c137b \
-                    size    222836
+sha256  8b4aee9ff9a90e84324b90b940c55f08d6922957e5b7c1f2792fe738947c137b \
+size    222836
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools \

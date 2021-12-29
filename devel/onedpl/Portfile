@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    oneAPI DPC++ Library (oneDPL) provides high-productivity \
                     performance parallel applications.
 
 checksums           rmd160  82cc1afa2baa3ebae8ad6d8053286a085bcf6680 \
-                    sha256  c05738365b359e662234a25d7093314ba550f79ac8eb918e87116246b934470b \
-                    size    3671693
+sha256  c05738365b359e662234a25d7093314ba550f79ac8eb918e87116246b934470b \
+size    3671693
 
 depends_lib-append  port:onetbb
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -6,8 +6,8 @@ name            mpeg4ip
 version         1.5.0.1
 revision        3
 checksums       rmd160  fee5c21c17a470e6de349e07d233a1eb46b2064a \
-                sha256  23535dd818898ec75ffa0df22d9f27189e77361ce8a500d58328073ee247bcb6 \
-                size    4826180
+sha256  23535dd818898ec75ffa0df22d9f27189e77361ce8a500d58328073ee247bcb6 \
+size    4826180
 
 categories      audio multimedia
 platforms       darwin
@@ -70,7 +70,7 @@ configure.args  --disable-player \
 
 use_parallel_build      no
 
-configure.cflags-append -std=gnu89 -Wno-error=return-type
+configure.cflags-append -std=c11 -Wno-error=return-type
 
 variant universal {
     post-configure {

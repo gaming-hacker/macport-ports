@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup python 1.0
@@ -17,10 +17,10 @@ long_description    This python module helps converting arbitrary Python \
 homepage            https://github.com/DLR-RM/python-jsonconversion
 
 checksums           rmd160  524c175c978fa6d6e8dabda0bbb4779a27672c11 \
-                    sha256  e21318d0dfcfc7e839ce7dd8ccd7c358fca2f0f825bddfdcd8df52782e09a19d \
-                    size    10463
+sha256  e21318d0dfcfc7e839ce7dd8ccd7c358fca2f0f825bddfdcd8df52782e09a19d \
+size    10463
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     post-extract {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 platforms           darwin
 license             Apache
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://msgpack.org/
 
 checksums           rmd160  03bf4bb0a66b8e58bea395293dbda300d2e2f9cf \
-                    sha256  51fdc7fb93615286428ee7758cecc2f374d5ff363bdd884c7ea622a7a327a81e \
-                    size    123830
+sha256  51fdc7fb93615286428ee7758cecc2f374d5ff363bdd884c7ea622a7a327a81e \
+size    123830
 
 if {${name} ne ${subport}} {
     depends_build-append \

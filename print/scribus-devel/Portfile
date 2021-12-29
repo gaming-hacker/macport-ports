@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -13,8 +13,8 @@ github.setup        scribusproject scribus 551a34ccf2da24852acce3feae808ed1c3055
 version             1.5.8.svn-20211215
 revision            0
 checksums           rmd160  8b765403fc68ea6eb6b1fa9cd0d7a1f0ab141b91 \
-                    sha256  9ef5ca364d0113d1480dfcd31ce666406d9a825c9f0d736083b90518b911230e \
-                    size    88516955
+sha256  9ef5ca364d0113d1480dfcd31ce666406d9a825c9f0d736083b90518b911230e \
+size    88516955
 
 name                scribus-devel
 categories          print
@@ -66,7 +66,7 @@ depends_lib-append \
 
 use_parallel_build  no
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 compiler.c_standard   2011
 
 set PyFRM           ${frameworks_dir}/Python.framework/Versions

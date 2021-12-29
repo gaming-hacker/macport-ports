@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -33,9 +33,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  3c4df1e0986e4d46aa59e0003c67b8e3e404a816 \
-                    sha256  3c521b1bbcb664572b05ee6c73d14c64ee8e67c9213fff9020aaca6610312c0b \
-                    size    46163
+rmd160  3c4df1e0986e4d46aa59e0003c67b8e3e404a816 \
+sha256  3c521b1bbcb664572b05ee6c73d14c64ee8e67c9213fff9020aaca6610312c0b \
+size    46163
 
 build.pre_args-delete   --frozen
 
