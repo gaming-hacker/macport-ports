@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -28,7 +28,7 @@ if {${os.platform} eq "darwin" && ${os.major} == 10} {
     github.setup    glfw glfw a94a84b507b0d6d11e8a3f257cb21f4bd6553516
     version         3.1.2-20151024
     checksums       rmd160 1c07a75a88f272653ca246aa1212a208a83ecb30 \
-sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
+                    sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
     revision        0
 
     # bump the epoch because I moved the version from 20151012 to 3.1.2
@@ -55,7 +55,7 @@ sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
     PortGroup compiler_blacklist_versions 1.0
     compiler.blacklist-append {clang < 700}
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2011
 
     configure.args-append -DCMAKE_C_STANDARD=11 -DCMAKE_C_EXTENSIONS=OFF
 
@@ -67,8 +67,8 @@ sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
 
         github.setup glfw glfw 3.3.6
         checksums   rmd160  d37061c7cc1342a7debfd339b97a7ca809e971fb \
-sha256  5d295ba8ec079afbd785ed7dc135ce153695ca2d5d475a742d410b519f496138 \
-size    776863
+                    sha256  5d295ba8ec079afbd785ed7dc135ce153695ca2d5d475a742d410b519f496138 \
+                    size    776863
         revision    0
 
         # bump the epoch because I moved the version from 20151012 to 3.1.2
@@ -87,19 +87,11 @@ size    776863
 
         # devel
 
-<<<<<<< HEAD
-        github.setup glfw glfw fb0f2f92a38c1d6a776ffeb253329f8d1c65694c
-        version     20211028-[string range ${github.version} 0 7]
-        checksums   rmd160  07f933012ee00eadea7f3743ea14b1a8c3ce3857 \
-sha256  3baa27febf0e749e156e6190063676db8611cb12d6eff2718553bf10310a3d3a \
-size    827172
-=======
-        github.setup glfw glfw 6281f498c875f49d8ac5c5a02d968fb1792fd9f5
-        version     20211214-[string range ${github.version} 0 7]
-        checksums   rmd160  d175c8191ff540afc00373040bf3f003cb41e6c4 \
-sha256  0bf33465d71f1361e48ef498383ba234cde48a495247afc434884c071370d394 \
-size    827668
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+        github.setup glfw glfw 7d060ba4f1237c87ed53e007db619da8c25df282
+        version     20211222-[string range ${github.version} 0 7]
+        checksums   rmd160  709e026411e04ab104b3f9455d0398dc35afcca9 \
+                    sha256  78081e6f2b39a50e7b5c58c8c5f619430bbf3af2176062be94d0ba35161037fe \
+                    size    828051
         revision    0
 
         conflicts   glfw

@@ -1,16 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-<<<<<<< HEAD
-perl5.branches 5.30
-perl5.setup         Data-Printer 0.40
-=======
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Data-Printer 1.000004
 revision            0
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
 description         Data::Printer - colored pretty-print of Perl data structures and objects
@@ -18,13 +13,8 @@ long_description    ${description}
 
 platforms           darwin
 
-<<<<<<< HEAD
-checksums           rmd160  26b478adb789d9b67008dad0ee7e66928e790f2f \
-sha256  606930107d8275ccae2f254543a376ef4816137ad566298021cca9723f82525a
-=======
 checksums           rmd160  9e3870eff40df4810d48af567a4d3d741c443450 \
-sha256  4f26ce9722307d3fe8938ecb39e33ffb622ea577721ad8766164c1632e639014 \
-size    114981
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+                    sha256  4f26ce9722307d3fe8938ecb39e33ffb622ea577721ad8766164c1632e639014 \
+                    size    114981
 
 supported_archs     noarch

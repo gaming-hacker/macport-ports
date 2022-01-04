@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
-github.setup        spyder-ide qtpy 1.11.3 v
+github.setup        spyder-ide qtpy 2.0.0 v
 github.tarball_from archive
 revision            0
 name                py-qtpy
@@ -22,15 +22,35 @@ long_description    QtPy (pronounced 'cutie pie') is a small abstraction layer \
                     using the Qt5 layout (where the QtGui module has been split \
                     into QtGui and QtWidgets).
 
-checksums           rmd160  41115ac22fbd547d86ecd37476e1be82562caaa6 \
-sha256  eae5c5f11acd85b0c35cd39656e093fb1c0bf20fc5176a0010d466405788c5f6 \
-size    39447
+checksums           rmd160  ab655d515311b948deb849d75b7b1cc8c7e21dc5 \
+                    sha256  070ac20c5276a22ba54b411faac59c55b6c2743b345d4423186e9f4e8e4037ac \
+                    size    42387
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 if {${name} ne ${subport}} {
-    depends_build-append \
+    if {${python.version} == 27} {
+        github.setup    spyder-ide qtpy 1.11.3 v
+        github.tarball_from archive
+        revision    0
+        checksums   rmd160  41115ac22fbd547d86ecd37476e1be82562caaa6 \
+                    sha256  eae5c5f11acd85b0c35cd39656e093fb1c0bf20fc5176a0010d466405788c5f6 \
+                    size    39447
+        depends_build-append \
                     port:py${python.version}-setuptools
+    } elseif {${python.version} == 35} {
+        github.setup    spyder-ide qtpy 1.9.0 v
+        github.tarball_from archive
+        revision    0
+        epoch       1
+        checksums   rmd160  2c557686126864e9f0ea150ff0769a7744f91928 \
+                    sha256  436cffcd843a51703ee69e3c800aa471e0b887e491b3612ae6fd3ffeaa940fd2 \
+                    size    35576
+        depends_build-append \
+                    port:py${python.version}-setuptools
+    } else {
+        python.pep517   yes
+    }
 
     depends_test-append \
                     port:py${python.version}-pytest \
@@ -38,6 +58,7 @@ if {${name} ne ${subport}} {
 
     test.run        yes
     test.cmd        py.test-${python.branch}
+    test.args       -o addopts=''
     test.target
     test.env        PYTHONPATH=${worksrcpath}/build/lib
 

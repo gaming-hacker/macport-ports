@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ long_description    Subversion (svn) is a version control system designed to be 
 
 homepage            https://subversion.apache.org/
 
-set perl5.branches {5.30}
+set perl5.branches {5.28 5.30 5.32 5.34}
 foreach branch ${perl5.branches} {
     set p_idx [lsearch ${perl5.branches} ${branch}]
     set other_perls [lreplace ${perl5.branches} $p_idx $p_idx]
@@ -52,8 +52,8 @@ if {${subport} eq ${name}} {
     master_sites    apache:subversion
     use_bzip2       yes
     checksums       rmd160  037b14fd7e47a470a3b4925a4fe925d866c8c718 \
-sha256  2c5da93c255d2e5569fa91d92457fdb65396b0666fad4fd59b22e154d986e1a9 \
-size    8504612
+                    sha256  2c5da93c255d2e5569fa91d92457fdb65396b0666fad4fd59b22e154d986e1a9 \
+                    size    8504612
 
     distname        subversion-${version}
     dist_subdir     subversion

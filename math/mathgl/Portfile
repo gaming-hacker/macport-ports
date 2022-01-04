@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.0
 
 name                mathgl
-version             2.5
-revision            1
+version             8.0
+revision            0
 categories          math
 license             GPL-3
 maintainers         {mps @Schamschula} openmaintainer
@@ -18,9 +18,9 @@ platforms           darwin
 homepage            http://mathgl.sourceforge.net/
 master_sites        sourceforge
 
-checksums           rmd160  6abade12b455817a82b98752a384af5bc4f7ef63 \
-sha256  f58178a31f35cc5a75ed3ef1dce8cdaf4102903e69672ef38cebfe648ba927db \
-size    23974688
+checksums           rmd160  e813c13fec7817290d2d3750e1cd63b314391d29 \
+                    sha256  1ab804db3f34c9308ad2ad98f533939dec90535912aa7a4615ac18182c9c0654 \
+                    size    23979879
 
 depends_build-append \
                     port:gettext
@@ -66,7 +66,7 @@ configure.cflags-append \
 # currently broken
 # see https://sourceforge.net/p/mathgl/discussion/508393/thread/fb61ebd073/
 # variant arma description {Enable armadillo support} {
-#     compiler.cxx_standard 2017
+#     compiler.cxx_standard           2011
 #     compiler.thread_local_storage   yes
 # 
 #     depends_lib-append  port:armadillo
@@ -88,14 +88,6 @@ variant python38 conflicts python39 python310 description {Use Python 3.8} {}
 variant python39 conflicts python38 python310 description {Use Python 3.9} {}
 variant python310 conflicts python38 python39 description {Use Python 3.10} {}
 
-<<<<<<< HEAD
-    depends_lib-append  \
-        port:python39   \
-        port:py39-numpy
-
-    configure.args-replace -Denable-python=OFF -Denable-python=ON
-    configure.args-append  -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
-=======
 foreach pv {310 39 38} {
     if {[variant_isset python${pv}]} {
         set python_branch "[string index ${pv} 0].[string range ${pv} 1 end]"
@@ -114,7 +106,6 @@ foreach pv {310 39 38} {
 
         break
     }
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 }
 
 #currently broken

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           github 1.0
 
-github.setup        BelledonneCommunications bzrtp 5.0.58
+github.setup        BelledonneCommunications bzrtp 5.0.61
 github.tarball_from archive
 revision            0
 
@@ -19,15 +19,9 @@ long_description    \
     library written in C89 is fully portable and can be executed on many \
     platforms including both ARM processor and x86.
 
-<<<<<<< HEAD
-checksums           rmd160 686026410cc399c1a805a42636653de07d66c06c \
-sha256 53e94486fdb2bece03ebe0daf49b5d476cab977babec364cd04407aca25be4c2 \
-size 180123
-=======
-checksums           rmd160 0b34809bc1c08de976a60f726e312a6f13436d0e \
-sha256 45d98c2115dbddded5aac33a8c9d7e8ea8717974e05292084afbd1f15df7697a \
-size 180122
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums           rmd160 9b47567ed7ce559d2292503ee927660c147a8380 \
+                    sha256 aeaa6da18674d07e8210ef4921f5ebd7bc48d468faa47c6c953e6c60f32cf834 \
+                    size 180129
 
 depends_build-append \
                     port:bcunit

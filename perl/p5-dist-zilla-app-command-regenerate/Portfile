@@ -1,16 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-<<<<<<< HEAD
-perl5.branches 5.30
-perl5.setup         Dist-Zilla-App-Command-regenerate 0.001001
-=======
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Dist-Zilla-App-Command-regenerate 0.001002
 revision            0
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
 description         Dist::Zilla::App::Command::regenerate - Write content \
@@ -19,15 +14,9 @@ long_description    ${description}
 
 platforms           darwin
 
-<<<<<<< HEAD
-checksums           rmd160  21d458992158ad038df4f657d8e898c6868c39fa \
-sha256  bcb4ef0fd7b8895909ead5c338dc68c94bc9796c9fc13162435423f9c552ba85 \
-size    29462
-=======
 checksums           rmd160  b94bcac10472cfc492c323dbaf25d733e3f363e4 \
-sha256  967c5ee82a6ffc9c6b4cfbc33d322a82564fcb6f134cc003b03d84c56ae0168a \
-size    24054
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+                    sha256  967c5ee82a6ffc9c6b4cfbc33d322a82564fcb6f134cc003b03d84c56ae0168a \
+                    size    24054
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -1,16 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-<<<<<<< HEAD
-perl5.branches 5.30
-perl5.setup         Perl-MinimumVersion 1.38
-=======
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Perl-MinimumVersion 1.40
 revision            0
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         Perl::MinimumVersion - Find a minimum required version of perl for Perl code
@@ -18,15 +13,9 @@ long_description    ${description}
 
 platforms           darwin
 
-<<<<<<< HEAD
-checksums           rmd160  402f34d854b9e901ff154cfbb1a9a4cbaf1d0d66 \
-sha256  478b5824791b87fc74c94a892180682bd06ad2cdf34034b1a4b859273927802a \
-size    30629
-=======
 checksums           rmd160  74e2ad17b22d0fcbd35a43eaf930d9988d6ddeaa \
-sha256  7589a578cb60d70ca4755c395b3592b440a0cd6a1b074e4eceac93b031a1be90 \
-size    37601
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+                    sha256  7589a578cb60d70ca4755c395b3592b440a0cd6a1b074e4eceac93b031a1be90 \
+                    size    37601
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -27,19 +27,11 @@ homepage            https://mkvtoolnix.download
 master_sites        ${homepage}/sources/
 use_xz              yes
 
-<<<<<<< HEAD
-version             58.0.0
+version             64.0.0
 revision            0
-checksums           rmd160  3c513bf1851cfa9f439e2739a8027692ad2de6ea \
-sha256  1af727fa203e2bd8c54a005f28b635c96a4b80aa4ee8d23b4def0b6800ca6e38 \
-size    7651964
-=======
-version             63.0.0
-revision            1
-checksums           rmd160  5bd2d9cd4517a268e9fd58960b0498fa359bcc0d \
-sha256  1884165cf1bdea6ed8697dda319a17967772152e3b2b3a5fdf6ec5c7740d1ec9 \
-size    7670248
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums           rmd160  ab98744c6ed4fa63d55744e9fa1e0d19041d9bb3 \
+                    sha256  843ea623f21ae2407f8f42839c41a22abf116bdd509e87d875bdc737703ab953 \
+                    size    7700012
 
 distname            ${my_name}-${version}
 dist_subdir         ${my_name}
@@ -73,7 +65,7 @@ depends_build       port:ruby${version_ruby_mp} \
 depends_lib         port:bzip2 \
                     port:expat \
                     port:flac \
-                    port:gettext \
+                    port:gettext-runtime \
                     port:libebml \
                     port:libmatroska \
                     port:libogg \

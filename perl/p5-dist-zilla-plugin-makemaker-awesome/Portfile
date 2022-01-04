@@ -1,16 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-<<<<<<< HEAD
-perl5.branches 5.30
-perl5.setup         Dist-Zilla-Plugin-MakeMaker-Awesome 0.48
-=======
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Dist-Zilla-Plugin-MakeMaker-Awesome 0.49
 revision            0
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
 description         Dist::Zilla::Plugin::MakeMaker::Awesome - A more awesome MakeMaker plugin for Dist::Zilla
@@ -18,15 +13,9 @@ long_description    ${description}
 
 platforms           darwin
 
-<<<<<<< HEAD
-checksums           rmd160  109ee739282070f9b046a35041a5badf44e2ebe9 \
-sha256  6175b6483ae4e3c32fcfc788960ec0f451b634e1ac804218ecdc7e59d1d1425d \
-size    46262
-=======
 checksums           rmd160  66d03c0445438e9d5fcc5afaa33ed2fbe879fcc3 \
-sha256  1ff46df84886fcb9d00f53fe300d74bc7bac7b92023597e651c436d1824c030e \
-size    46669
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+                    sha256  1ff46df84886fcb9d00f53fe300d74bc7bac7b92023597e651c436d1824c030e \
+                    size    46669
 
 if {${perl5.major} != ""} {
     depends_build-append \

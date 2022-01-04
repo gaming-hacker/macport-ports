@@ -6,6 +6,7 @@ name                librttopo
 categories          gis
 license             GPL-2
 version             1.1.0
+revision            1
 epoch               1
 platforms           darwin
 maintainers         nomaintainer
@@ -24,6 +25,8 @@ size    301077
 
 extract.mkdir       yes
 extract.post_args   | tar -x -C ${worksrcpath} --strip-components 1
+
+patchfiles          patch-rtout_x3d_c.diff
 
 use_autoreconf      yes
 autoreconf.cmd      ./autogen.sh

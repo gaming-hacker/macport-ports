@@ -33,7 +33,7 @@ depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
                     path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:gettext-runtime \
                     port:gsl \
-                    port:harfbuzz \
+                    path:lib/pkgconfig/harfbuzz.pc:harfbuzz \
                     port:libiconv \
                     port:libxml2 \
                     path:lib/pkgconfig/librsvg-2.0.pc:librsvg \
@@ -86,6 +86,7 @@ platform darwin 8 {
 #configure.cflags-append -g
 configure.python    ${prefix}/bin/python3.9
 configure.perl      ${prefix}/bin/perl5.30
+configure.env-append    PYTHON3=${configure.python}
 configure.args-append   --disable-rpath \
                         --without-libpq \
                         --without-gui \
@@ -118,7 +119,7 @@ variant postgres description {Enables reading of postgresql databases} {
 
 variant gui description {Build PSPPIRE, the graphical interface} {
     depends_lib-append      port:atk \
-                            port:gdk-pixbuf2 \
+                            path:lib/pkgconfig/gdk-pixbuf-2.0.pc:gdk-pixbuf2 \
                             path:lib/pkgconfig/gtk+-3.0.pc:gtk3 \
                             port:gtksourceview3
 

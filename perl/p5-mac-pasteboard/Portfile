@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Mac-Pasteboard 0.101
 revision            0
 license             {Artistic-1 GPL}
@@ -15,8 +15,8 @@ long_description    ${name} is a perl module to ${description}.
 platforms           darwin
 
 checksums           rmd160  83bcedecdae23688cec80faf5788c8027c4046ae \
-sha256  9e8ae448009ae6781c8e91c590ea1fe122a5324dd03d74e6f71d4357ad5c3e8c \
-size    101874
+                    sha256  9e8ae448009ae6781c8e91c590ea1fe122a5324dd03d74e6f71d4357ad5c3e8c \
+                    size    101874
 
 if {${perl5.major} != ""} {
     patchfiles      disable-unnecessary-developer-code.patch

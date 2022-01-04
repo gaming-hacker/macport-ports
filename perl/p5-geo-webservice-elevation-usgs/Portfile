@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Geo-WebService-Elevation-USGS 0.120
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  6ad4246fdb36d067e47359c6dafc7177cdaacd18 \
-sha256  709e284123aa3941a49e06e4609e5bbbfbb5500ba79ade499c105e6a8f030fc9 \
-size    39349
+                    sha256  709e284123aa3941a49e06e4609e5bbbfbb5500ba79ade499c105e6a8f030fc9 \
+                    size    39349
 
 if {${perl5.major} != ""} {
     depends_lib-append \

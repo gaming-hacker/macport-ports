@@ -46,7 +46,7 @@ depends_lib         port:a52dec \
                     port:flac \
                     port:fontconfig \
                     port:freetype \
-                    port:gdk-pixbuf2 \
+                    path:lib/pkgconfig/gdk-pixbuf-2.0.pc:gdk-pixbuf2 \
                     port:gnutls \
                     port:ImageMagick \
                     port:jack \
@@ -74,6 +74,7 @@ depends_lib         port:a52dec \
                     port:xorg-xcb-util
 
 patchfiles-append   XineOpenGLView.patch \
+                    dynamic_lookup-11.patch \
                     implicit.patch \
                     libcaca0.99.beta20.patch
 

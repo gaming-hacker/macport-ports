@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Net-Dict 2.22 ../../authors/id/N/NE/NEILB/
 maintainers         nomaintainer
 categories-append   textproc
@@ -16,8 +16,8 @@ long_description    Perl class implementing a simple client API for the \
 platforms           darwin
 
 checksums           rmd160  5ade0bb850f556292a754a4bb8270ee71d4fd192 \
-sha256  38ce82a1aab4f80a65c8889d5c863ba80b24e643bcba688ab045cb3813de2c51 \
-size    38819
+                    sha256  38ce82a1aab4f80a65c8889d5c863ba80b24e643bcba688ab045cb3813de2c51 \
+                    size    38819
 
 if {${perl5.major} != ""} {
     depends_build-append \

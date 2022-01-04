@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                      1.0
 PortGroup                       cmake 1.0
 PortGroup                       mpi 1.0
 
 name                            armadillo
-version                         10.7.5
+version                         10.8.0
 revision                        0
 categories                      science
 platforms                       darwin
@@ -27,15 +27,9 @@ master_sites                    sourceforge:project/arma
 
 use_xz                          yes
 
-<<<<<<< HEAD
-checksums                       rmd160  7f093b39a837c536e663c75f4569da6cda09d3a3 \
-sha256  2c1b32c5b259b05e34bc2dcde1cab589cfcbb58179c72a93c5daaea1e3950652 \
-size    6260656
-=======
-checksums                       rmd160  d270ec261507fed0bf995b92ec49fe05547742ba \
-sha256  5d0d9fd6b34efcba6a6fceff54c0d2d13fcbe915d7af8a30c5e72cf317d2094f \
-size    6262212
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums                       rmd160  bffcbcdf9064af44b171bd7565c162cf3b35c266 \
+                                sha256  7c5d2fd4bba095733829f7fe03d4a74e732b81c75dd4d40001163487c967d5bc \
+                                size    6265772
 
 depends_build-append            port:pkgconfig
 
@@ -72,7 +66,7 @@ if {[variant_isset gcc44] || [variant_isset gcc45] || [variant_isset gcc46] || \
     configure.cxx_stdlib        libstdc++
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard           2011
 compiler.thread_local_storage   yes
 
 livecheck.type                  regex

@@ -1,16 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-<<<<<<< HEAD
-perl5.branches 5.30
-perl5.setup         App-Cmd 0.331
-=======
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         App-Cmd 0.334
 revision            0
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         App::Cmd - write command line apps with less suffering
@@ -18,14 +13,9 @@ long_description    ${description}
 
 platforms           darwin
 
-<<<<<<< HEAD
-checksums           rmd160  1ffec54a54731017d7cee4b16306b0e2037bcecf \
-sha256  4a5d3df0006bd278880d01f4957aaa652a8f91fe8f66e93adf70fba0c3ecb680
-=======
 checksums           rmd160  3523ecabd76b02034727f4de0470adb46a355ca6 \
-sha256  22e31e0f8f7b8c4303ad62b0ab1f941fcf598ca6e3a146b7e482e5870d6d58d3 \
-size    50175
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+                    sha256  22e31e0f8f7b8c4303ad62b0ab1f941fcf598ca6e3a146b7e482e5870d6d58d3 \
+                    size    50175
 
 if {${perl5.major} != ""} {
     depends_build-append \

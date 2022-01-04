@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Mixin-Linewise 0.110 ../by-authors/id/R/RJ/RJBS
 revision            0
 platforms           darwin
@@ -17,8 +17,8 @@ description         Mixin::Linewise - Write your linewise code for handles, this
 long_description    ${description}
 
 checksums           rmd160  44b8f1af089d7d09d110dfab152825bc26721f21 \
-sha256  a7f120b7aa82dfb1a5ad1aa11abd33232b26a2b09c654e649e97a3c2128b1d8b \
-size    20035
+                    sha256  a7f120b7aa82dfb1a5ad1aa11abd33232b26a2b09c654e649e97a3c2128b1d8b \
+                    size    20035
 
 if {${perl5.major} != ""} {
     depends_lib-append \

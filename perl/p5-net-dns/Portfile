@@ -1,15 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup perl5     1.0
 
-<<<<<<< HEAD
-perl5.branches 5.30
-perl5.setup         Net-DNS 1.32 ../../authors/id/N/NL/NLNETLABS
-=======
-perl5.branches 5.30
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.setup         Net-DNS 1.33 ../../authors/id/N/NL/NLNETLABS
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 revision            0
 license             MIT
 maintainers         {devans @dbevans} openmaintainer
@@ -20,15 +15,9 @@ long_description    Net::DNS is a DNS resolver implemented in Perl.  It \
 
 platforms           darwin
 
-<<<<<<< HEAD
-checksums           rmd160  e7828d79fddbeabcce29b41afdf584c4a0906425 \
-sha256  b890a7b44d573f27cc713caadf1e12eaaa4478a6504d1157194df614316b5b50 \
-size    259004
-=======
 checksums           rmd160  aab17f18464bfdddc502702277e9a4b84c040997 \
-sha256  5a40e7cf524e4bd2c33cf03b82b47d5308b712083aa5ee180b0b5af54c71fbd2 \
-size    262218
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+                    sha256  5a40e7cf524e4bd2c33cf03b82b47d5308b712083aa5ee180b0b5af54c71fbd2 \
+                    size    262218
 
 if {${perl5.major} != ""} {
     depends_lib-append \
