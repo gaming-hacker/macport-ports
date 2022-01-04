@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -44,31 +44,31 @@ set go_amdbin_dist  go${version}.darwin-amd64${extract.suffix}
 if {$subport eq "${name}-devel"} {
     # Go (DEVEL / UNSTABLE)
     checksums       ${go_src_dist} \
-                    rmd160  d37a45365b7df68498764b3924efad7d90a95935 \
-                    sha256  418c028db14699cb5b2d4907ad3a419d79f789b31916ef8764867e4a78e653a1 \
-                    size    22750283 \
+rmd160  d37a45365b7df68498764b3924efad7d90a95935 \
+sha256  418c028db14699cb5b2d4907ad3a419d79f789b31916ef8764867e4a78e653a1 \
+size    22750283 \
                     ${go_armbin_dist} \
-                    rmd160  b9cdfa3db99e16c85a7753c5f9e6b702d890e99e \
-                    sha256  09b7718f2354acb9826eef27f8257ac41c77df6389b14e91af09b90f79f200e8 \
-                    size    137381896 \
+rmd160  b9cdfa3db99e16c85a7753c5f9e6b702d890e99e \
+sha256  09b7718f2354acb9826eef27f8257ac41c77df6389b14e91af09b90f79f200e8 \
+size    137381896 \
                     ${go_amdbin_dist} \
-                    rmd160  d65ca3fbba38b938674d0993384884c700f9c3e0 \
-                    sha256  013d6d427a9591711d6e05defc46c4086e2fb9dffbc41c9a0fce09192e6e8ede \
-                    size    143162528
+rmd160  d65ca3fbba38b938674d0993384884c700f9c3e0 \
+sha256  013d6d427a9591711d6e05defc46c4086e2fb9dffbc41c9a0fce09192e6e8ede \
+size    143162528
 } else {
     # Go (RELEASE)
     checksums       ${go_src_dist} \
-                    rmd160  306df91a527008768e41b7ed55d3588f0bf2a27e \
-                    sha256  3defb9a09bed042403195e872dcbc8c6fae1485963332279668ec52e80a95a2d \
-                    size    22186577 \
+rmd160  306df91a527008768e41b7ed55d3588f0bf2a27e \
+sha256  3defb9a09bed042403195e872dcbc8c6fae1485963332279668ec52e80a95a2d \
+size    22186577 \
                     ${go_armbin_dist} \
-                    rmd160  0ba907734c951b5dea85b00e2cda9de92782a278 \
-                    sha256  111f71166de0cb8089bb3e8f9f5b02d76e1bf1309256824d4062a47b0e5f98e0 \
-                    size    130264235 \
+rmd160  0ba907734c951b5dea85b00e2cda9de92782a278 \
+sha256  111f71166de0cb8089bb3e8f9f5b02d76e1bf1309256824d4062a47b0e5f98e0 \
+size    130264235 \
                     ${go_amdbin_dist} \
-                    rmd160  31ea569528efb343584ec9cd557574503d10dbf5 \
-                    sha256  2db6a5d25815b56072465a2cacc8ed426c18f1d5fc26c1fc8c4f5a7188658264 \
-                    size    136774992
+rmd160  31ea569528efb343584ec9cd557574503d10dbf5 \
+sha256  2db6a5d25815b56072465a2cacc8ed426c18f1d5fc26c1fc8c4f5a7188658264 \
+size    136774992
 }
 
 master_sites        https://storage.googleapis.com/golang/

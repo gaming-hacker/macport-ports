@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 name                p5-text-tabsxwrap
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Text-Tabs+Wrap 2021.0814
 revision            0
 platforms           darwin
@@ -30,5 +30,5 @@ long_description    Text::Tabs performs the same job that the unix expand(1) \
                     paragraphs. It uses Text::Wrap::wrap() to do the work.
 
 checksums           rmd160  93d9693f67a593169059a00961668615ad01a5f9 \
-                    sha256  30bbea13a5f5ef446b676b4493644df0ea19fc6a70ff649a8beb64571dbf6dfa \
-                    size    17452
+sha256  30bbea13a5f5ef446b676b4493644df0ea19fc6a70ff649a8beb64571dbf6dfa \
+size    17452

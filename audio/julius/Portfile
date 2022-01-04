@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        julius-speech julius 4.6 v
 revision            0
 checksums           rmd160  0f54727b58b85e31b7ae0d9f7068ab3f7ef19f6a \
-                    sha256  74447d7adb3bd119adae7915ba9422b7da553556f979ac4ee53a262d94d47b47 \
-                    size    9472943 \
+sha256  74447d7adb3bd119adae7915ba9422b7da553556f979ac4ee53a262d94d47b47 \
+size    9472943 \
 
 categories          audio japanese
 maintainers         nomaintainer
@@ -65,9 +65,9 @@ variant kit description {Add dictation kit} {
     distfiles-append    ${kit_distfile}:kit
     master_sites-append sourceforge_jp:julius/60416/:kit
     checksums-append    ${kit_distfile} \
-                        rmd160  2db607e470a8f2516a9cd0b9a1b8925523b62e9d \
-                        sha256  2ff46d1bd4d8e7690bd568d2973978081460e661085f6b4c2a0a630234a911c1 \
-                        size    260745034
+rmd160  2db607e470a8f2516a9cd0b9a1b8925523b62e9d \
+sha256  2ff46d1bd4d8e7690bd568d2973978081460e661085f6b4c2a0a630234a911c1 \
+size    260745034
 
     global confs scripts libdir libexecdir
     set confs           [list am-dnn.jconf am-gmm.jconf dnnclient.conf main.jconf]

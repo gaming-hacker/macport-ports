@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ master_sites        http://download.osgeo.org/postgis/source
 distname            postgis-${version}
 
 checksums           rmd160  ac46701c61ef4b86b4346eb9c5f17d5e8bee6cbd \
-                    sha256  7ab9e154c6947c0cffb8fa12d70806add9aa060e62b6c86a2e206f9d4b507cfd \
-                    size    16884722
+sha256  7ab9e154c6947c0cffb8fa12d70806add9aa060e62b6c86a2e206f9d4b507cfd \
+size    16884722
 
 depends_build       port:autoconf \
                     port:automake \

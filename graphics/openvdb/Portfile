@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -28,10 +28,10 @@ long_description        OpenVDB is an open source C++ library \
                         animation.
 
 checksums               rmd160  35d98cf9e057ea8e0a5f0146ef23548144ea4b40 \
-                        sha256  0d0a3706108ce84012a2f1834d8746f3218cd3203fb0485aa0754561d1a0d391 \
-                        size    2621095
+sha256  0d0a3706108ce84012a2f1834d8746f3218cd3203fb0485aa0754561d1a0d391 \
+size    2621095
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 # error: cannot refer to variable template 'Contains' without a template
 # argument list
 #     static_assert(NodeChainType::template Contains<NonConstNodeType>,

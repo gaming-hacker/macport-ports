@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Net-DNS-SEC 1.19 ../../authors/id/N/NL/NLNETLABS
 revision            0
 license             MIT
@@ -17,8 +17,8 @@ long_description    The Net::DSN::SEC suite provides the resource records \
                     RSA and DSA crypto routines are supported.
 
 checksums           rmd160  c80578a7df32ff839a669aac62c5d8012b802547 \
-                    sha256  abbc460893f7a774bc2b76659c813e3975d5dbb7b7ad461c902bfb5dd6eda310 \
-                    size    46818
+sha256  abbc460893f7a774bc2b76659c813e3975d5dbb7b7ad461c902bfb5dd6eda310 \
+size    46818
 
 platforms           darwin
 supported_archs     noarch

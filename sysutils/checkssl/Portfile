@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,8 +21,8 @@ maintainers         {breun.nl:nils @breun} \
                     openmaintainer
 
 checksums           rmd160  c53f2b6f34f9f02f7fe0f45e60cf21685911ace4 \
-                    sha256  1e2db906419b7f91ae3834f62a21fe7892a9e0f1b86f202d70ebf0dde0a8f35f \
-                    size    8156
+sha256  1e2db906419b7f91ae3834f62a21fe7892a9e0f1b86f202d70ebf0dde0a8f35f \
+size    8156
 
 destroot {
     set doc_dir ${destroot}${prefix}/share/doc/${name}

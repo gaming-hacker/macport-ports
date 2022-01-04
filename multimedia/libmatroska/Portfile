@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ name                libmatroska
 version             1.6.3
 revision            0
 checksums           rmd160  6989f3464fffc3f681e2f7488217fc1b0ffa8a81 \
-                    sha256  daf91a63f58dd157ca340c457871e66260cb9c3333fefb008b318befbb0e081a \
-                    size    65612
+sha256  daf91a63f58dd157ca340c457871e66260cb9c3333fefb008b318befbb0e081a \
+size    65612
 
 categories          multimedia
 maintainers         {ryandesign @ryandesign} openmaintainer
@@ -27,7 +27,7 @@ use_xz              yes
 depends_lib         port:libebml
 
 # https://github.com/Matroska-Org/libmatroska/issues/60
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args      -DBUILD_SHARED_LIBS=ON
 

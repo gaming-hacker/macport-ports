@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,9 +15,9 @@ long_description    {*}${description}.
 homepage            https://tectonic-typesetting.github.io/
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  483c51f5c9b9d1249e15fdff863a0122bd19a3c3 \
-                    sha256  4c87b7fd0289c6f83bf9e0f3bd80c21598dd9371a7d7568f4f45514d54b42088 \
-                    size    2322144
+rmd160  483c51f5c9b9d1249e15fdff863a0122bd19a3c3 \
+sha256  4c87b7fd0289c6f83bf9e0f3bd80c21598dd9371a7d7568f4f45514d54b42088 \
+size    2322144
 
 depends_build       port:pkgconfig
 
@@ -158,7 +158,7 @@ cargo.crates \
     log                             0.4.14  51b9bbe6c47d51fc3e1a9b945965946b4c44142ab8792c50835a980d362c2710 \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
     maybe-uninit                     2.0.0  60302e4db3a61da70c0cb7991976248362f30319e88850c487b9b95bbf059e00 \
-    md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
+md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
     memchr                           2.4.1  308cc39be01b73d0d18f82a0e7b2a3df85245f84af96fdddc5d202d27e47b86a \
     memoffset                        0.5.6  043175f069eda7b85febe4a74abbaeff828d9f8b448515d3151a14a3542811aa \
     memoffset                        0.6.4  59accc507f1338036a0477ef61afdae33cde60840f4dfe481319ce3ad116ddf9 \
@@ -241,8 +241,8 @@ cargo.crates \
     serde_derive                   1.0.130  d7bc1a1ab1961464eae040d96713baa5a724a8152c1222492465b54322ec508b \
     serde_json                      1.0.68  0f690853975602e1bfe1ccbf50504d67174e3bcf340f23b5ea9992e0587a52d8 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
     siphasher                        0.3.7  533494a8f9b724d33625ab53c6c4800f7cc445895924a8ef649222dcb76e938b \
     slab                             0.4.4  c307a32c1c5c437f38c7fd45d753050587732ba8628319fbdf12a7e289ccc590 \
     smallvec                        0.6.14  b97fcaeba89edba30f044a10c6a3cc39df9c3f17d7cd829dd1446cab35f890e0 \

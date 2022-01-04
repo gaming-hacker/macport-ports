@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github  1.0
@@ -32,8 +32,8 @@ use_xz                  yes
 homepage                http://www.cgal.org/
 
 checksums               rmd160  ca512e541cc990793b2f7759d795685ec675c687 \
-                        sha256  ab76633b023d72ea3ca9ad22e2fa39ed3b5c8fb4e2c091a78035fabb5eb3fccf \
-                        size    23295932
+sha256  ab76633b023d72ea3ca9ad22e2fa39ed3b5c8fb4e2c091a78035fabb5eb3fccf \
+size    23295932
 
 worksrcdir              CGAL-${version}
 depends_lib-append      port:mpfr \
@@ -41,7 +41,7 @@ depends_lib-append      port:mpfr \
                         port:gmp \
                         path:include/eigen3/Eigen/Eigen:eigen3
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 compiler.thread_local_storage yes
 
 github.livecheck.regex  {([0-9.]+)}

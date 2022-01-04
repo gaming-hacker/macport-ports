@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ PortGroup           compiler_blacklist_versions 1.0
 github.setup        enzo1982 BoCA 1.0.5 v
 revision            0
 checksums           rmd160  5665880a576d3f90e7754362be6bfd1b414b3c4d \
-                    sha256  9befa4555b5d9a0ecf3b8472f1d8f14c26dee50993d1d66f35a2d0f140a72870 \
-                    size    2634890
+sha256  9befa4555b5d9a0ecf3b8472f1d8f14c26dee50993d1d66f35a2d0f140a72870 \
+size    2634890
 
 categories          audio
 platforms           darwin

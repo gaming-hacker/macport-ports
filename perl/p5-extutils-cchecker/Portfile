@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         ExtUtils-CChecker 0.11
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  6163905dd79285d23f6bf903be6f40cec73fac61 \
-                    sha256  117736677e37fc611f5b76374d7f952e1970eb80e1f6ad5150d516e7ae531bf5 \
-                    size    20241
+sha256  117736677e37fc611f5b76374d7f952e1970eb80e1f6ad5150d516e7ae531bf5 \
+size    20241
 
 if {${perl5.major} != ""} {
     depends_build-append \

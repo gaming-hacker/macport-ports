@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Math-GMPz 0.52
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  2714acc02243cbf4f17d13a83b52c20c0aace590 \
-                    sha256  0d0f31ee727d4a74515e9905d248774ab5faec7545896d95775379b986cb887d \
-                    size    95283
+sha256  0d0f31ee727d4a74515e9905d248774ab5faec7545896d95775379b986cb887d \
+size    95283
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -19,10 +19,10 @@ homepage        http://www.pygame.org/
 
 python.rootname pygame
 checksums       md5 8467a125e9075fa701f082806d228366 \
-                rmd160 063aebffd5aae53e22c239f7edfb20af36c6e3ff \
-                sha256 d6d0eca28f886f0477cd0721ac688189155a587f2bb8eae740e52ca56c3ad23c
+rmd160 063aebffd5aae53e22c239f7edfb20af36c6e3ff \
+sha256 d6d0eca28f886f0477cd0721ac688189155a587f2bb8eae740e52ca56c3ad23c
 
-python.versions 27 36 37 38 39 310
+python.versions 39
 
 if {$subport ne $name} {
     patchfiles  patch-config_darwin.py.diff \
@@ -58,8 +58,8 @@ if {$subport ne $name} {
         version     2.0.3
         revision    0
         checksums   md5 04e082d216b3b771b8d52769597b2fb2 \
-                    rmd160 03970781db89e80b3378119247e6e1ea7b69924a \
-                    sha256 d097f2802a9d0d7fb40c49c789af2984b202baa8fd32701082598755f5973f51
+rmd160 03970781db89e80b3378119247e6e1ea7b69924a \
+sha256 d097f2802a9d0d7fb40c49c789af2984b202baa8fd32701082598755f5973f51
 
         patchfiles-replace  patch-config_darwin.py.diff \
                             patch-config_darwin.py-27.diff

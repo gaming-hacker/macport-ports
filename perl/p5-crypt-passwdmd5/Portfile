@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Crypt-PasswdMD5 1.41
 revision            0
 license             {Artistic-1 GPL}
@@ -15,8 +15,8 @@ long_description    The unix_md5_crypt() provides a crypt()-compatible \
                     implementation found on FreeBSD 2.2-RELEASE.
 
 checksums           rmd160  887d9d74f22c3305c748dadedd2377eb21fc502a \
-                    sha256  1f369123333631a751b8219ca9fc27f9efcf09f39c1ebfeb96e274171c83083a \
-                    size    14275
+sha256  1f369123333631a751b8219ca9fc27f9efcf09f39c1ebfeb96e274171c83083a \
+size    14275
 
 extract.suffix      .tgz
 

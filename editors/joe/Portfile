@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem  1.0
 
@@ -8,15 +8,15 @@ conflicts-delete    ${subport}
 version             4.6
 revision            0
 checksums           rmd160  cd5a8eff82b7e8043f1a5fdbc875ec37b4de5f5a \
-                    sha256  495a0a61f26404070fe8a719d80406dc7f337623788e445b92a9f6de512ab9de \
-                    size    1895046
+sha256  495a0a61f26404070fe8a719d80406dc7f337623788e445b92a9f6de512ab9de \
+size    1895046
 
 subport ${name}37 {
     version         3.7
     revision        0
     checksums       rmd160  7e2c72a750c6aac4732cf4369bceee5333460f15 \
-                    sha256  cae456e1ad5a8c1d3c94920a3416c2347277739b260e3494d3bc0f2b9b73106f \
-                    size    696036
+sha256  cae456e1ad5a8c1d3c94920a3416c2347277739b260e3494d3bc0f2b9b73106f \
+size    696036
 }
 
 categories          editors

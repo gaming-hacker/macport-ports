@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,8 +7,8 @@ name                py-chainer
 version             1.1.2
 revision            0
 checksums           rmd160  6a081a1e0b8a69a3c756469de22ae3106d736475 \
-                    sha256  f40b89602f13498ef42f6382a16c98fbb6cb2be2d99ee54008d97e3f6d991d5c \
-                    size    91692
+sha256  f40b89602f13498ef42f6382a16c98fbb6cb2be2d99ee54008d97e3f6d991d5c \
+size    91692
 
 maintainers         nomaintainer
 license             MIT
@@ -19,7 +19,7 @@ long_description    ${description}
 
 homepage            https://chainer.org
 
-python.versions     27 35 36
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-numpy \
