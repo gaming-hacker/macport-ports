@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-botocore
-version             1.23.26
+version             1.23.30
 revision            0
 
 platforms           darwin
@@ -20,11 +20,11 @@ long_description    A low-level interface to a growing number of Amazon Web \
 
 homepage            https://github.com/boto/botocore
 
-checksums           rmd160  f98c48ed0d92cb17949e20c1300e2c5a780e3244 \
-sha256  0a933e3af6ecf79666beb2dfcb52a60f8ad1fee7df507f2a9202fe26fe569483 \
-size    8688841
+checksums           rmd160  2f9ef704f08569db8beae9001310b207190e326d \
+                    sha256  c6a60cffe095296b78ff03adae0fdf2875210a74531a0d1f68206091203573fe \
+                    size    8706551
 
-python.versions 39
+python.versions     36 37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

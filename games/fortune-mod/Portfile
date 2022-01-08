@@ -1,0 +1,33 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           github 1.0
+PortGroup           cmake 1.1
+
+github.setup        shlomif fortune-mod 3.12.0 fortune-mod-
+github.tarball_from releases
+conflicts           fortune
+
+categories          games
+platforms           darwin
+license             BSD
+maintainers         {outlook.com:mohd.akram @mohd-akram} openmaintainer
+
+description         Fortune-cookie generator
+
+long_description    Implementation of the Unix fortune command for displaying \
+                    a random quotation.
+
+depends_lib         port:recode
+
+checksums           rmd160  96fe1d695b78be850aced4c94c3c3977bbdf57f9 \
+                    sha256  7d5aed7cb9998950d349eba83a5b57fefba71928b34b0f998508419fdb740b71 \
+                    size    1427848
+
+use_xz              yes
+
+configure.args      -DLOCALDIR=${prefix}/share/games/fortunes
+
+post-destroot {
+    move ${destroot}${prefix}/games/fortune ${destroot}${prefix}/bin
+}

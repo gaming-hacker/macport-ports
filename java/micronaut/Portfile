@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       github 1.0
 PortGroup       java 1.0
 
-github.setup    micronaut-projects micronaut-starter 3.2.3 v
+github.setup    micronaut-projects micronaut-starter 3.2.4 v
 revision        0
 name            micronaut
 categories      java
@@ -54,15 +54,9 @@ homepage        https://micronaut.io
 github.tarball_from releases
 distname        mn-darwin-amd64-v${version}
 
-<<<<<<< HEAD
-checksums       rmd160  95de2877e9bb80e85a03240c0734800e73609381 \
-sha256  aaa2ce02c56595ee50436386678e32599760be2ef2b653bccb93d317aaaa2cb0 \
-size    20573967
-=======
-checksums       rmd160  e6da120fc5e5af753c951846fa5efb5c3271524e \
-sha256  364c1a680c4feb3d8e7352140e26c15595642a20c937a7f2da5d9f664214e618 \
-size    21113005
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums       rmd160  8ff00317f57a1f4b0b614c148d0f056a89574479 \
+                sha256  263111ff981bb94d52ec0836c6788c70568f1d7fef81b54779adab2eb4376fb4 \
+                size    21102350
 
 use_zip         yes
 use_configure   no

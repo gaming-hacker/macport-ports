@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,22 +17,14 @@ long_description    CubicSDR is the software portion of Software Defined \
     functions in software instead of traditional hardwre.
 homepage            https://www.cubicsdr.com
 
-<<<<<<< HEAD
-github.setup        cjcliffe CubicSDR 0248e5aeac4a113efa4a1328aa057de12a175591
-version             20210814-[string range ${github.version} 0 7]
-checksums           rmd160  2d482ae2b55e2c92d932082bbf9cdc4a4e852384 \
-sha256  42ca22c2c50f32f1a3cd105084eb999d93fde0787b08e751259cdd18fd29452c \
-size    37102363
-=======
-github.setup        cjcliffe CubicSDR b826d58cd056bf66388e53363b815b62f6a04411
-version             20211211-[string range ${github.version} 0 7]
-checksums           rmd160  6de4d21a7fc8664395d8629e626bb2743384c721 \
-sha256  eb0577b179d18a655fb4d923a1bc3d0972503ee259cf6a9fd42a5627609fcf89 \
-size    37185032
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+github.setup        cjcliffe CubicSDR f461fcb94cd18c17172abfcce7460cbfde2b0467
+version             20211229-[string range ${github.version} 0 7]
+checksums           rmd160  164c5debda149034c3c906e655e42c9d87ebc754 \
+                    sha256  fde59606b25ade10be6739250f5ee2907ec4ba8bea8484358ae6651b2248c025 \
+                    size    37185011
 revision            0
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 # CubicSDR requires wxWidgets.use of wxWidgets-3.1 or newer -- "3.2"
 # by the wxWidgets PG -- which is what this provides. selecting 3.0

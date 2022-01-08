@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
 PortGroup           compiler_blacklist_versions 1.0
 
 name                nss
-version             3.73.1
+version             3.74
 revision            0
 set NSS_VMAJOR      [lindex [split ${version} .] 0]
 set NSS_VMINOR      [lindex [split ${version} .] 1]
@@ -29,15 +29,9 @@ set my_release      NSS_[strsed ${version} {g/\./_/}]_RTM
 master_sites        https://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/${my_release}/src/ \
                     ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/${my_release}/src/
 
-<<<<<<< HEAD
-checksums           rmd160  f37bb5d89d92c971ab49d0e7f8b6a95a4ae7462d \
-sha256  566d3a68da9b10d7da9ef84eb4fe182f8f04e20d85c55d1bf360bb2c0096d8e5 \
-size    83928905
-=======
-checksums           rmd160  44dbc3fbdc438480c4cb32fe622bc76805cb17ef \
-sha256  c768f9fe3129e8bcc2e9679456d7edd9453a225784a8fc7dc4501806f1fe9abe \
-size    83931597
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums           rmd160  dfc376b0e07c4d3caf68e7571fd051f332ad2c62 \
+                    sha256  88928811f9f40f87d42e2eaccdf6e454562e51486067f2ddbe90aa47ea6cd056 \
+                    size    83937875
 
 # build fails with gcc-4.2 on Intel, but succeeds with gcc-4.2 on PPC
 # cc1: error: unrecognized command line option "-mpclmul"
@@ -114,7 +108,7 @@ use_parallel_build  no
 
 # tls13esni.c:72: error: 'for' loop initial declaration used outside C99 mode
 compiler.c_standard 1999
-configure.cflags-append -std=c11
+configure.cflags-append -std=c99
 
 # mimic nss/coreconf/Darwin.mk
 
