@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           github 1.0
 
 github.setup        pydicom pynetdicom 2.0.1 v
 name                py-pynetdicom
-python.versions     37 38 39 310
+python.versions 39
 platforms           darwin
 license             MIT BSD
 maintainers         {eborisch @eborisch} openmaintainer
@@ -20,9 +20,9 @@ long_description    pynetdicom is a pure Python 3 package that implements the \
                     (SCUs) and Service Class Providers (SCPs).
 
 checksums \
-    rmd160  ab1cc434e974a10c2c2982996e11167bd5fd5aff \
-    sha256  82c49c17f1fa293bd9526508598712bd719b8716224f8c8ebbdc7cc4a3617865 \
-    size    1803769
+rmd160  ab1cc434e974a10c2c2982996e11167bd5fd5aff \
+sha256  82c49c17f1fa293bd9526508598712bd719b8716224f8c8ebbdc7cc4a3617865 \
+size    1803769
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-pydicom

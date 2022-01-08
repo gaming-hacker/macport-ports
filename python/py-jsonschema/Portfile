@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    {*}${description}
 homepage            https://github.com/Julian/jsonschema
 
 checksums           rmd160  dbe1f6720acc59a4e21cb4956f17fd0e4258c638 \
-                    sha256  f210d4ce095ed1e8af635d15c8ee79b586f656ab54399ba87b8ab87e5bff0ade \
-                    size    311720
+sha256  f210d4ce095ed1e8af635d15c8ee79b586f656ab54399ba87b8ab87e5bff0ade \
+size    311720
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -38,8 +38,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  fb79174fba8955cf5433fa0e79d3ad3a48c590fb \
-                            sha256  c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a \
-                            size    167226
+sha256  c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a \
+size    167226
         if {${python.version} eq 27} {
             depends_lib-append  port:py${python.version}-functools32
         }

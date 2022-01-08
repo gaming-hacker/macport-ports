@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -10,8 +10,8 @@ legacysupport.newest_darwin_requires_legacy 10
 
 github.setup        assimp  assimp 5.1.5 v
 checksums           rmd160  adf21a78900d6bab170898c1536fdec94195e319 \
-                    sha256  8fea5953ac509fd0687e80cc19c7a35c0d5d4d8c654efd003a6112372d4edfda \
-                    size    48978688
+sha256  8fea5953ac509fd0687e80cc19c7a35c0d5d4d8c654efd003a6112372d4edfda \
+size    48978688
 revision            0
 
 conflicts           assimp2
@@ -37,7 +37,7 @@ depends_lib         port:minizip \
 patchfiles-append   patch-code-AssetLib-glTF2-glTF2Asset.inl.diff \
                     patch-code-CMakeLists.txt.diff
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 configure.args-append -DASSIMP_BUILD_ASSIMP_TOOLS:BOOL=OFF -DASSIMP_BUILD_TESTS:BOOL=OFF
 
 subport assimp_tools {

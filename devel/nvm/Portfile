@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         Node version manager
 long_description    NVM is a simple shell script to manage multiple active Node.js versions.
 
 checksums           rmd160  7d54587f89b199c7d957997b6e0c6a194c1d5e99 \
-                    sha256  4a946557d47fe29bc29109bac3a4100ff65d3e5f8e3dab9af6a95b8b47fe701b \
-                    size    166893
+sha256  4a946557d47fe29bc29109bac3a4100ff65d3e5f8e3dab9af6a95b8b47fe701b \
+size    166893
 
 use_configure       no
 

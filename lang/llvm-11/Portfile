@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup select        1.0
@@ -21,8 +21,8 @@ distname                llvm-project-${version}.src
 use_xz                  yes
 
 checksums               rmd160  f566b4b75c8f30418f19069a9a84864ead766401 \
-                        sha256  74d2529159fd118c3eac6f90107b5611bccc6f647fdea104024183e8d5e25831 \
-                        size    84065492
+sha256  74d2529159fd118c3eac6f90107b5611bccc6f647fdea104024183e8d5e25831 \
+size    84065492
 
 name                    llvm-${llvm_version}
 revision                2
@@ -523,7 +523,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
                 ${worksrcpath}/tools/clang/tools/scan-build/libexec/c++-analyzer \
                 ${worksrcpath}/tools/clang/tools/scan-build/bin/scan-build
 
-            # pythonfullpath is set above, depending on presence of system python2.7
+            # pythonfullpath is set above, depending on presence of system python3.9
             reinplace "s|/usr/bin/env python|${pythonfullpath}|g" \
                  ${worksrcpath}/tools/clang/tools/scan-view/bin/scan-view
 

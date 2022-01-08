@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,8 +24,8 @@ long_description    Most digital cameras produce EXIF files, which are JPEG file
 platforms           darwin
 
 checksums           rmd160  bff739c42464b69d2fa302a6f95f240316ff6688 \
-                    sha256  fef1ec4d1b56d90eb2cee748e8a13e62f86a1d753bac367a92dfd1c6b214c725 \
-                    size    1139117
+sha256  fef1ec4d1b56d90eb2cee748e8a13e62f86a1d753bac367a92dfd1c6b214c725 \
+size    1139117
 
 depends_build       port:pkgconfig
 depends_lib         port:gettext \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        Boolector boolector 3.2.2
 revision            0
 checksums           rmd160  2179695681ba6abbb2812a06caf8a252accc7bc5 \
-                    sha256  9a5bdbacf83f2dd81dbed1e1a9f923766807470afa29b73729c947ae769d42b9 \
-                    size    1566009
+sha256  9a5bdbacf83f2dd81dbed1e1a9f923766807470afa29b73729c947ae769d42b9 \
+size    1566009
 
 categories          math science
 license             MIT
@@ -42,7 +42,7 @@ patchfiles          DYLD_LIBRARY_PATH.patch \
                     googletest.patch
 
 compiler.c_standard 1999
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args      -DBUILD_SHARED_LIBS=ON \
                     -DUSE_GMP=ON \

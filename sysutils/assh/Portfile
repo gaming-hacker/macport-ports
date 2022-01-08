@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -24,8 +24,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  7701317e0c7388f5a6cade0e53f1bd60a4ce23af \
-                    sha256  bc22b229cac9f5c1f43b534788cfa0a024b6b70ed62eb215f81d443d571e10e8 \
-                    size    376639
+sha256  bc22b229cac9f5c1f43b534788cfa0a024b6b70ed62eb215f81d443d571e10e8 \
+size    376639
 
 # Allow deps to be fetched at build time.
 build.env-delete    GO111MODULE=off GOPROXY=off

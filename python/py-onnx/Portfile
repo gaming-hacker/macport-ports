@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -9,8 +9,8 @@ github.setup        onnx onnx 1.10.2 v
 revision            0
 
 checksums           rmd160  1082eebe49ea5f9144b48f5c63eab6619ba6ba5f \
-                    sha256  007199674f9a7058dc01a25fa678ca0061ad93f0002bf1fd025e02399b3c440a \
-                    size    9413896
+sha256  007199674f9a7058dc01a25fa678ca0061ad93f0002bf1fd025e02399b3c440a \
+size    9413896
 
 name                py-${github.project}
 categories-append   science
@@ -33,7 +33,7 @@ long_description    Open Neural Network Exchange (ONNX) is an open\
 
 homepage            https://onnx.ai/
 
-python.versions     37 38 39 310
+python.versions 39
 
 # Needed to fix: constexpr constructor never produces a constant expression
 compiler.blacklist-append \
@@ -43,7 +43,7 @@ if {${name} ne ${subport}} {
 
     PortGroup cmake 1.1
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
 
     depends_build-append \
         port:cctools \

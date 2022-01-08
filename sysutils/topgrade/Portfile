@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ long_description    Keeping your system up to date mostly involves invoking more
 homepage            https://github.com/r-darwish/topgrade
 
 checksums           ${distfiles} \
-                    rmd160  33a39e64d98125f129689592adce86a951d85628 \
-                    sha256  94bc739610dd48f1dabd9ff20497e17c218a7dc42f88ddab2568c5916be58264 \
-                    size    835554
+rmd160  33a39e64d98125f129689592adce86a951d85628 \
+sha256  94bc739610dd48f1dabd9ff20497e17c218a7dc42f88ddab2568c5916be58264 \
+size    835554
 
 # include support for AppStore apps
 # disable this until https://github.com/mas-cli/mas/issues/252 has been fixed

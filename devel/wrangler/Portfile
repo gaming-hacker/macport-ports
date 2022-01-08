@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -23,9 +23,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  5e56dd1c35dd6364877d35002fcb9ff0a6984de8 \
-                    sha256  97e982d4230e5de9d8e6d8f6f20c0deceb40780fce7371ff87634cf41126026f \
-                    size    976673
+rmd160  5e56dd1c35dd6364877d35002fcb9ff0a6984de8 \
+sha256  97e982d4230e5de9d8e6d8f6f20c0deceb40780fce7371ff87634cf41126026f \
+size    976673
 
 depends_lib-append  port:curl
 
@@ -276,9 +276,9 @@ cargo.crates \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
     serde_with                      1.11.0  ad6056b4cb69b6e43e3a0f055def223380baecc99da683884f205bf347f7c4b3 \
     serde_with_macros                1.5.1  12e47be9471c72889ebafb5e14d5ff930d89ae7a67bbdb5f8abb564f845a927e \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
-    sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
+sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     siphasher                        0.3.7  533494a8f9b724d33625ab53c6c4800f7cc445895924a8ef649222dcb76e938b \
     slab                             0.4.5  9def91fd1e018fe007022791f865d0ccc9b3a0d5001e01aabb8b40e46000afb5 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,8 +8,8 @@ github.setup        computationalmodelling nbval 0.9.6
 revision            0
 
 checksums           rmd160  05f3f40c43465cb1f4f6d3d7962b9c6945c0e4cb \
-                    sha256  c1a60b00cad32aef9f101484057c2d1a415abfc73d65606e297a810247864d41 \
-                    size    62154
+sha256  c1a60b00cad32aef9f101484057c2d1a415abfc73d65606e297a810247864d41 \
+size    62154
 
 name                py-${github.project}
 categories-append   science
@@ -31,7 +31,7 @@ long_description    The plugin adds functionality to py.test to\
                     ensuring that the notebooks are running without\
                     errors.
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
 

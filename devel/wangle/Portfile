@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -8,8 +8,8 @@ PortGroup           boost 1.0
 github.setup        facebook wangle 2022.01.03.00 v
 revision            0
 checksums           rmd160  0dc395c52c7d92073a9c5581a6500199dcd6cde9 \
-                    sha256  bce2875bb6d665eabc36bb0359300a934f454a3b41093eed59d963917701a1b7 \
-                    size    345065
+sha256  bce2875bb6d665eabc36bb0359300a934f454a3b41093eed59d963917701a1b7 \
+size    345065
 
 categories          devel
 license             BSD

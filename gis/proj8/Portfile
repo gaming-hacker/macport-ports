@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -27,10 +27,10 @@ master_sites        http://download.osgeo.org/proj/
 distname            ${realname}-${version}
 
 checksums           rmd160  7456023fdeb03f7d1c182fe67f617960ea3efede \
-                    sha256  76ed3d0c3a348a6693dfae535e5658bbfd47f71cb7ff7eb96d9f12f7e068b1cf \
-                    size    5882136
+sha256  76ed3d0c3a348a6693dfae535e5658bbfd47f71cb7ff7eb96d9f12f7e068b1cf \
+size    5882136
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # error: return type 'const nn<[...]>' must match previous return type
 # 'nn<[...]>' when lambda expression has unspecified explicit return type

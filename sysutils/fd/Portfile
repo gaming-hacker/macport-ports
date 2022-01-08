@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -23,9 +23,9 @@ maintainers         {saagarjha.com:saagar @saagarjha} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  e690ecfe358089fb3bdd80bee2c75a1d55f11a8d \
-                    sha256  834a90fbb4e1deee2ca7f3aa84575c9187869d8af00f72e431ecab4776ae1f62 \
-                    size    94617
+rmd160  e690ecfe358089fb3bdd80bee2c75a1d55f11a8d \
+sha256  834a90fbb4e1deee2ca7f3aa84575c9187869d8af00f72e431ecab4776ae1f62 \
+size    94617
 
 pre-build {
     file mkdir ${worksrcpath}/shell_completions

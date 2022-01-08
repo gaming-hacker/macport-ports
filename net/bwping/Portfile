@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -22,8 +22,8 @@ homepage        https://bwping.sourceforge.io/
 master_sites    sourceforge
 
 checksums       rmd160  6dbb1ef0a9c186ba9a4965ebe11da76165f88b93 \
-                sha256  2f79c2a61cdc46f639233e0fcce8024c8d9fb4812b3ce77bbbed9baaee1a0166 \
-                size    112687
+sha256  2f79c2a61cdc46f639233e0fcce8024c8d9fb4812b3ce77bbbed9baaee1a0166 \
+size    112687
 
 configure.args  --mandir=${prefix}/share/man/
 

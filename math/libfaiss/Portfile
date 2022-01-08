@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -8,8 +8,8 @@ epoch               1
 github.setup        facebookresearch faiss 1.7.1 v
 revision            0
 checksums           rmd160  c5cd0b939754a4c82bbef156af233ee32a2193be \
-                    sha256  d676d3107ad41203a49e0afda2630519299dc8666f8d23322cbe1eac0c431871 \
-                    size    709030
+sha256  d676d3107ad41203a49e0afda2630519299dc8666f8d23322cbe1eac0c431871 \
+size    709030
 
 name                libfaiss
 categories          math
@@ -23,7 +23,7 @@ description         Efficient similarity search library from \
 long_description    Library for efficient similarity search and \
                     clustering of dense vectors. It contains \
                     algorithms that search in sets of vectors of any \
-                    size, up to ones that possibly do not fit in \
+size, up to ones that possibly do not fit in \
                     RAM. It also contains supporting code for \
                     evaluation and parameter tuning. Faiss is written \
                     in C++ with complete wrappers for \
@@ -32,7 +32,7 @@ long_description    Library for efficient similarity search and \
 
 github.tarball_from archive
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 compiler.openmp_version 2.5
 
@@ -53,8 +53,8 @@ variant openblas description {Use OpenBLAS instead of Apple's Accelerate framewo
 default_variants +openblas
 
 # create Python subports
-set python_versions {37 38 39}
-foreach v ${python_versions} {
+set python.versions {39}
+foreach v ${python.versions} {
     subport py${v}-${github.project} {
         PortGroup   python 1.0
 

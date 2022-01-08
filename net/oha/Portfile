@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ long_description    oha is a tiny program that sends some load to a web \
                     application and show realtime tui inspired by rakyll/hey.
 
 checksums           ${name}-${version}${extract.suffix} \
-                    rmd160  857422b42f079a09a3ecbe8bef049660be2a170c \
-                    sha256  e2e2f6e6fff0132bba5eb52d66f8713a224bf081f98a7b320298f126fb6ae21c \
-                    size    1053866
+rmd160  857422b42f079a09a3ecbe8bef049660be2a170c \
+sha256  e2e2f6e6fff0132bba5eb52d66f8713a224bf081f98a7b320298f126fb6ae21c \
+size    1053866
 
 depends_lib-append  path:lib/libssl.dylib:openssl
 
@@ -168,7 +168,7 @@ cargo.crates \
     serde                          1.0.132  8b9875c23cf305cd1fd7eb77234cbb705f21ea6a72c637a5c6db5fe4b8e7f008 \
     serde_json                      1.0.73  bcbd0344bc6533bc7ec56df11d42fb70f1b912351c0825ccb7211b59d8af7cf5 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
+sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
     signal-hook                     0.3.13  647c97df271007dcea485bb74ffdb57f2e683f1306c854f468a0c244badabf2d \
     signal-hook-mio                  0.2.1  29fd5867f1c4f2c5be079aee7a2adf1152ebb04a4bc4d341f504b7dece607ed4 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

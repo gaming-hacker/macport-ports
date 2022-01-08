@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 PortGroup        github 1.0
@@ -12,8 +12,8 @@ github.setup     libuv libuv 1.43.0 v
 revision         0
 
 checksums        rmd160  eb60597009fcd8a4b18a60bcd84af56f6ba7dfa1 \
-                 sha256  f9fa91c99e9858de61b7191a1d5d46c51ac995dc4f086d0de761e4afa25cdcba \
-                 size    1296112
+sha256  f9fa91c99e9858de61b7191a1d5d46c51ac995dc4f086d0de761e4afa25cdcba \
+size    1296112
 
 categories       devel
 platforms        darwin

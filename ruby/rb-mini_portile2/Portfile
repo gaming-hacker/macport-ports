@@ -3,7 +3,7 @@ PortGroup           ruby 1.0
 
 # Keep the version compatible with rb-nokogiri:
 # https://rubygems.org/gems/nokogiri
-ruby.branches       3.1 3.0 2.7 2.6 2.5 2.4
+ruby.branches 3.0
 ruby.setup          mini_portile2 2.7.0 gem
 revision            0
 maintainers         {judaew @judaew} openmaintainer
@@ -16,7 +16,7 @@ platforms           darwin
 homepage            https://github.com/flavorjones/mini_portile
 
 checksums           rmd160  2988dc25f5311c0540f70a6ce9037ceae57dcef2 \
-                    sha256  6416bf22d3e463fc318b34810920e73055418483b074330d95c773f4596dbdfc \
-                    size    28160
+sha256  6416bf22d3e463fc318b34810920e73055418483b074330d95c773f4596dbdfc \
+size    28160
 
 livecheck.type      none

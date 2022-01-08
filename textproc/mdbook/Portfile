@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  af608b237facf201efeaefa6a10e9bf966eb6f28 \
-                    sha256  fa7f217fb6be229c25be21ccb712af8d0012241b529d1bbacb8f5cac65fe0013 \
-                    size    1508364
+rmd160  af608b237facf201efeaefa6a10e9bf966eb6f28 \
+sha256  fa7f217fb6be229c25be21ccb712af8d0012241b529d1bbacb8f5cac65fe0013 \
+size    1508364
 
 set mdb_doc_dir     ${prefix}/share/doc/${name}
 
@@ -203,8 +203,8 @@ cargo.crates \
     serde_derive                   1.0.129  e57ae87ad533d9a56427558b516d0adac283614e347abf85b0dc0cbbf0a249f3 \
     serde_json                      1.0.66  336b10da19a12ad094b59d870ebde26a45402e5b470add4b5fd03c5048a32127 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha-1                            0.9.7  1a0c8611594e2ab4ebbf06ec7cbbf0a99450b8570e96cbf5188b5d5f6ef18d81 \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.9.7  1a0c8611594e2ab4ebbf06ec7cbbf0a99450b8570e96cbf5188b5d5f6ef18d81 \
     shlex                            1.0.0  42a568c8f2cd051a4d283bd6eb0343ac214c1b0f1ac19f93e1175b2dee38c73d \
     siphasher                        0.3.6  729a25c17d72b06c68cb47955d44fda88ad2d3e7d77e025663fdd69b93dd71a1 \
     slab                             0.4.4  c307a32c1c5c437f38c7fd45d753050587732ba8628319fbdf12a7e289ccc590 \
