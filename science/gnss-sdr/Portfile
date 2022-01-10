@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,7 +16,7 @@ platforms           darwin
 
 dist_subdir         gnss-sdr
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.thread_local_storage yes
 boost.version 1.71
 
@@ -28,8 +28,8 @@ if {${subport} eq "gnss-sdr"} {
     github.setup        gnss-sdr gnss-sdr 0.0.15 v
     revision            2
     checksums           rmd160 dd47b983c26be07aa712b948bfbc504e72d7634a \
-                        sha256 628df32a4376e2307637ea21e9bdd8215beec70a597c85946bda239052ec4f36 \
-                        size   4357206
+sha256 628df32a4376e2307637ea21e9bdd8215beec70a597c85946bda239052ec4f36 \
+size   4357206
 
     conflicts           gnss-sdr-devel
 
@@ -45,8 +45,8 @@ subport gnss-sdr-devel {
     github.setup    gnss-sdr gnss-sdr 33366ef6df5902e0c5751604c41c0bd796a8028a
     version         20211214-[string range ${github.version} 0 7]
     checksums       rmd160  14b03979110303eb633bb26aa0c88944377d4e2c \
-                    sha256  af73c5821f8dece7e4ec7546658f7ef8a020882d7ff10eb01862c1b2d2aca596 \
-                    size    4447248
+sha256  af73c5821f8dece7e4ec7546658f7ef8a020882d7ff10eb01862c1b2d2aca596 \
+size    4447248
     revision        1
 
     conflicts       gnss-sdr

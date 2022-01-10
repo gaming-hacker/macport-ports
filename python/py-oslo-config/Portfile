@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,11 +16,11 @@ homepage            https://docs.openstack.org/oslo.config/latest/
 master_sites        pypi:o/oslo.config/
 distname            oslo.config-${version}
 checksums           md5     f28614f3647fdbf6348f377dada38af2 \
-                    rmd160  3bb48fec41ac70f977286b7ec91226b507ca45e8 \
-                    sha256  dfbb83dc5b4c86ddf8b96f3967252f17586a67f2cef65309df2fd510bf9e87fc \
-                    size    149370
+rmd160  3bb48fec41ac70f977286b7ec91226b507ca45e8 \
+sha256  dfbb83dc5b4c86ddf8b96f3967252f17586a67f2cef65309df2fd510bf9e87fc \
+size    149370
 
-python.versions     37 38
+python.versions 39
 
 if {${subport} ne ${name}} {
     livecheck.type  none

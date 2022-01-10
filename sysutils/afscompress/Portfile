@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem           1.0
 PortGroup            cmake 1.1
@@ -28,8 +28,8 @@ long_description     AFSC (Apple File System Compression) tool is a utility that
     compress the specified files in parallel.
 
 checksums            sha256  cc4ca89af59cede79c32722d92bdb805d4cb93a9e9117e8e23b83eda1aa93ca7 \
-                     rmd160  9237a055a04c83f1203865ac5231680f9e86b288 \
-                     size    111841
+rmd160  9237a055a04c83f1203865ac5231680f9e86b288 \
+size    111841
 
 depends_build-append port:pkgconfig
 
@@ -45,7 +45,7 @@ pre-fetch {
     }
 }
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 configure.args-append \
     -DCMAKE_STRIP:PATH=/bin/echo

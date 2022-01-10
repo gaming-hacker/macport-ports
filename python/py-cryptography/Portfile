@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,7 +12,7 @@ categories-append   devel
 platforms           darwin
 license             BSD
 
-python.versions     27 36 37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -22,9 +22,9 @@ description         cryptography is a package designed to expose \
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  846241058b8928b3f8f68a2b7b8ad6f46ee0fcf5 \
-                    sha256  0df2f3aed1a0af7b537bcb9479786d84b543b51c415020a5e7ecb7b337581320 \
-                    size    35825191
+rmd160  846241058b8928b3f8f68a2b7b8ad6f46ee0fcf5 \
+sha256  0df2f3aed1a0af7b537bcb9479786d84b543b51c415020a5e7ecb7b337581320 \
+size    35825191
 
 # See:
 # * https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst
@@ -53,8 +53,8 @@ if {${name} ne ${subport}
         long_description    {*}${description}
 
         checksums       rmd160  75817f068f434d70cf3ff485058de2d2077bc365 \
-                        sha256  76a63bd63565b482f2afad5102508903f445754ccd2e3bb049d4653e64e8cc27 \
-                        size    35679949
+sha256  76a63bd63565b482f2afad5102508903f445754ccd2e3bb049d4653e64e8cc27 \
+size    35679949
 
         # TODO: Necessary, as upstream tarball for 2.9.2 has changed
         dist_subdir     ${name}/${version}_1

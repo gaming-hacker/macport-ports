@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 epoch               2
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Test-Differences 0.69 ../../authors/id/D/DC/DCANTRELL
 revision            0
 license             {Artistic-1 GPL}
@@ -19,8 +19,8 @@ long_description    When the code you're testing returns multiple lines, \
 platforms           darwin
 
 checksums           rmd160  afa0eda6a6652aba944d2cc5c0c058c80cc7350f \
-                    sha256  18f644fdd4a1fef93ef3f7f67df8e95b593d811899f34bcbbaba4d717222f58f \
-                    size    14526
+sha256  18f644fdd4a1fef93ef3f7f67df8e95b593d811899f34bcbbaba4d717222f58f \
+size    14526
 
 if {${perl5.major} != ""} {
     depends_lib-append \

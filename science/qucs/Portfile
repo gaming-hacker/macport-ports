@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qt4 1.0
@@ -18,8 +18,8 @@ homepage            http://qucs.sourceforge.net/
 # with next version move to github
 version             0.0.20-rc2
 checksums           rmd160  3374cf6f2a90d084c23f670a4193a11d42c1c842 \
-                    sha256  66cfa0b9f8baa8468feb81b3a15f165e1946511893fa9cfee7009167daa04d19 \
-                    size    20643591
+sha256  66cfa0b9f8baa8468feb81b3a15f165e1946511893fa9cfee7009167daa04d19 \
+size    20643591
 revision            2
 
 master_sites        sourceforge:project/${name}/${name}/[lindex [split ${version} -] 0]

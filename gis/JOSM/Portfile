@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ master_sites        ${homepage}/download/macosx/
 distname            josm-macos-${version}-java17
 
 checksums           rmd160  042c11eef63eb31baf5ce2c47a9cd92bef28de91 \
-                    sha256  642c9b81a2f03df4151b6809f9db4494863b6c66547bd47c6bfd01e902bcc8af \
-                    size    78493316
+sha256  642c9b81a2f03df4151b6809f9db4494863b6c66547bd47c6bfd01e902bcc8af \
+size    78493316
 
 extract.mkdir       yes
 
