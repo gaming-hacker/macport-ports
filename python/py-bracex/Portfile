@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                py-bracex
 version             2.2.1
 revision            0
-python.versions 39
+python.versions     37 38 39 310
 
 platforms           darwin
 license             MIT
@@ -18,8 +18,8 @@ long_description    ${description} Brace expanding is used to generate \
 homepage            https://github.com/facelessuser/bracex
 
 checksums           rmd160  235e21ec8caf2d7453d4576ee47c7f918ab56073 \
-sha256  1c8d1296e00ad9a91030ccb4c291f9e4dc7c054f12c707ba3c5ff3e9a81bcd21 \
-size    28645
+                    sha256  1c8d1296e00ad9a91030ccb4c291f9e4dc7c054f12c707ba3c5ff3e9a81bcd21 \
+                    size    28645
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

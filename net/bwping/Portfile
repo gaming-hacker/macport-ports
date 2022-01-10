@@ -27,6 +27,9 @@ size    112687
 
 configure.args  --mandir=${prefix}/share/man/
 
+compiler.c_standard \
+                2011
+
 # clock_gettime
 legacysupport.newest_darwin_requires_legacy \
                 15

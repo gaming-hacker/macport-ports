@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -6,7 +6,7 @@ PortGroup               compiler_blacklist_versions 1.0
 PortGroup               github 1.0
 PortGroup               openssl 1.0
 
-github.setup            jupyter-xeus xeus 2.3.0
+github.setup            jupyter-xeus xeus 2.3.1
 revision                0
 categories              devel science
 license                 BSD
@@ -18,11 +18,11 @@ long_description        {*}${description} It takes the burden of implementing th
                         the interpreter part of the kernel.
 platforms               darwin
 
-checksums               rmd160  0dac318fca16c66f7f589479d0b9cd834851f710 \
-sha256  5fd232acb406c7c6c2beb72567492f915378ead0d5ff0ce367680a07e4dcfb54 \
-size    9062005
+checksums               rmd160  2219f37f5b255f8a0639fd56cd94751c2c9f162d \
+                        sha256  f3a3c62ef239825cada26ae45f1ac28058901409c5626d41867daf27242bf1ac \
+                        size    9062021
 
-compiler.cxx_standard 2017
+compiler.cxx_standard   2014
 compiler.blacklist-append {clang < 900}
 
 depends_build-append    port:pkgconfig \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -16,7 +16,7 @@ platforms           darwin
 
 dist_subdir         gnss-sdr
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2014
 compiler.thread_local_storage yes
 boost.version 1.71
 
@@ -26,10 +26,10 @@ if {${subport} eq "gnss-sdr"} {
         This port is kept up with the GNSS-SDR release, which is typically updated every few months.
 
     github.setup        gnss-sdr gnss-sdr 0.0.15 v
-    revision            1
+    revision            2
     checksums           rmd160 dd47b983c26be07aa712b948bfbc504e72d7634a \
-sha256 628df32a4376e2307637ea21e9bdd8215beec70a597c85946bda239052ec4f36 \
-size   4357206
+                        sha256 628df32a4376e2307637ea21e9bdd8215beec70a597c85946bda239052ec4f36 \
+                        size   4357206
 
     conflicts           gnss-sdr-devel
 
@@ -42,20 +42,12 @@ subport gnss-sdr-devel {
     long_description    ${description}: \
         This port is kept up with the GNSS-SDR GIT next branch, which is typically updated daily to weekly. This version of GNSS-SDR generally contains fixes and new features that will be incorporated in an upcoming release.
     name            gnss-sdr-devel
-<<<<<<< HEAD
-    github.setup    gnss-sdr gnss-sdr ede805f9c3d9db9a7a65096a7854664dac0288d3
-    version         20211122-[string range ${github.version} 0 7]
-    checksums       rmd160  d504b2c5f171c81ae1620054a224786248336248 \
-sha256  8117219f1d3451672f09aa4a17bcba882e1708b45c50dc408a854376fea76ef3 \
-size    4414343
-=======
     github.setup    gnss-sdr gnss-sdr 33366ef6df5902e0c5751604c41c0bd796a8028a
     version         20211214-[string range ${github.version} 0 7]
     checksums       rmd160  14b03979110303eb633bb26aa0c88944377d4e2c \
-sha256  af73c5821f8dece7e4ec7546658f7ef8a020882d7ff10eb01862c1b2d2aca596 \
-size    4447248
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
-    revision        0
+                    sha256  af73c5821f8dece7e4ec7546658f7ef8a020882d7ff10eb01862c1b2d2aca596 \
+                    size    4447248
+    revision        1
 
     conflicts       gnss-sdr
 

@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cmake 1.1
 PortGroup           compiler_blacklist_versions 1.0
 
-github.setup        fontforge fontforge 20200314
-revision            2
+github.setup        fontforge fontforge 20201107
+revision            0
 github.tarball_from releases
 use_xz              yes
 
@@ -24,9 +24,9 @@ long_description    FontForge allows you to edit outline and bitmap fonts.  You 
 
 homepage            https://fontforge.org
 
-checksums           rmd160  c7368a53f6a5b6649f7bc18a957368006870b67b \
-sha256  cd190b237353dc3f48ddca7b0b3439da8ec4fcf27911d14cc1ccc76c1a47c861 \
-size    13850076
+checksums           rmd160  25ef811489661aa66200c3d49a5e6f8951129d9c \
+                    sha256  68bcba8f602819eddc29cd356ee13fafbad7a80d19b652d354c6791343476c78 \
+                    size    14163424
 
 # don't override cmake build dependencies
 depends_build-append \
@@ -57,16 +57,20 @@ compiler.blacklist-append {clang < 500}
 # fix 32bit builds by masking an old Carbon call to GetTime
 patchfiles-append   patch-fontforge-carbon-gettime-namecollision.diff
 
-# use older noerr macros, and replace missing SRefCon definition
+# use older noerr macros
 if {${os.platform} eq "darwin" && ${os.major} <= 9} {
     patchfiles-append \
-                patch-fontforge-startui-require-noerr-and-SRefCon-fix.diff \
+                patch-fontforge-startui-require-noerr.diff \
 }
 
 # the date command on Tiger is too old for this port, use gnu coreutils dates instead
 platform darwin 8 {
     depends_build-append path:libexec/coreutils/libstdbuf.so:coreutils
     configure.env-append PATH=${prefix}/libexec/gnubin/:$env(PATH)
+
+    # add SRefCon definition, which is missing in the Tiger SDK
+    patchfiles-append \
+                patch-fontforge-startui-SRefCon-tiger.diff \
 }
 
 configure.args-append -DENABLE_GUI=False \
@@ -84,27 +88,27 @@ configure.args-append -DENABLE_GUI=False \
                       -DENABLE_X11=False
 
 variant python37 conflicts python38 python39 description {Enable Python support (Python 3.7)} {
-    depends_lib-append      port:python39
+    depends_lib-append      port:python37
     configure.args-replace  -DENABLE_PYTHON_EXTENSION=False \
                             -DENABLE_PYTHON_EXTENSION=True
     configure.args-replace  -DENABLE_PYTHON_SCRIPTING=False \
                             -DENABLE_PYTHON_SCRIPTING=True
-    configure.args-append   -DPython3_EXECUTABLE="${prefix}/bin/python3.9" \
-                            -DPYHOOK_INSTALL_DIR="${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages"
+    configure.args-append   -DPython3_EXECUTABLE="${prefix}/bin/python3.7" \
+                            -DPYHOOK_INSTALL_DIR="${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages"
     configure.pkg_config_path \
-                            "${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig"
+                            "${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig"
 }
 
 variant python38 conflicts python37 python39 description {Enable Python support (Python 3.8)} {
-    depends_lib-append      port:python39
+    depends_lib-append      port:python38
     configure.args-replace  -DENABLE_PYTHON_EXTENSION=False \
                             -DENABLE_PYTHON_EXTENSION=True
     configure.args-replace  -DENABLE_PYTHON_SCRIPTING=False \
                             -DENABLE_PYTHON_SCRIPTING=True
-    configure.args-append   -DPython3_EXECUTABLE="${prefix}/bin/python3.9" \
-                            -DPYHOOK_INSTALL_DIR="${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages"
+    configure.args-append   -DPython3_EXECUTABLE="${prefix}/bin/python3.8" \
+                            -DPYHOOK_INSTALL_DIR="${frameworks_dir}/Python.framework/Versions/3.8/lib/python3.8/site-packages"
     configure.pkg_config_path \
-                            "${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig"
+                            "${frameworks_dir}/Python.framework/Versions/3.8/lib/pkgconfig"
 }
 
 variant python39 conflicts python37 python38 description {Enable Python support (Python 3.9)} {
