@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,8 +24,8 @@ homepage            https://beets.io/
 maintainers         {@catap korins.ky:kirill} openmaintainer
 
 checksums           rmd160  5866c23b2fcd122f4044601fe6b2631107f028f0 \
-sha256  aa6fb734e44afc9b039c0abd0edd4c7706df00d4eb4aae7afa9ff4b6bb15525d \
-size    1698333
+                    sha256  aa6fb734e44afc9b039c0abd0edd4c7706df00d4eb4aae7afa9ff4b6bb15525d \
+                    size    1698333
 
 python.default_version 310
 
@@ -39,13 +39,13 @@ if {$subport eq $name} {
 subport ${name}-devel {
     conflicts       $name
 
-    github.setup    beetbox beets 1dc5163cb4845a06e808d80edd96b747a242b1b5
-    version         20211222
+    github.setup    beetbox beets 2fea53c34dd505ba391cb345424e0613901c8025
+    version         20220108
     revision        0
 
-    checksums       rmd160  4048f824bbea6c11d7e5c32445d457c5fa292dd2 \
-sha256  50c0a6cb70829f3b519ec665d6e8871804342a97ab4aaf5c0f55c143e2ea1c15 \
-size    1681114
+    checksums       rmd160  9338864efa8a4db1a6e8b65fbda8a34047263a90 \
+                    sha256  bfb4098be8cc3d34c6af7f55b6095551e0f180d602f5c902091289c50b83bc61 \
+                    size    1684452
 
     depends_build-append \
                     port:py${python.version}-sphinx
@@ -140,8 +140,8 @@ subport ${name}-alternatives {
     homepage        https://www.github.com/geigerzaehler/beets-alternatives
 
     checksums       rmd160  832db7cf388d766671184b53e9d2a9ce2a578e7e \
-sha256  2ad1213b9a395233082062860a8ba165c29a4125624f7cd9a3a749ee15600bd6 \
-size    10943
+                    sha256  2ad1213b9a395233082062860a8ba165c29a4125624f7cd9a3a749ee15600bd6 \
+                    size    10943
 }
 
 subport ${name}-amazon {
@@ -157,8 +157,8 @@ subport ${name}-amazon {
                     ${description}
 
     checksums       rmd160  144a3a4935fa56b30266f6b8233850d2836da406 \
-sha256  a6dc5061c9354b8e6fa77a42f7568f07e01ef8011a267547f291aa3a0f7098ca \
-size    3532
+                    sha256  a6dc5061c9354b8e6fa77a42f7568f07e01ef8011a267547f291aa3a0f7098ca \
+                    size    3532
 
     depends_lib-append \
                     port:py${python.version}-bottlenose
@@ -187,8 +187,8 @@ subport ${name}-artistcountry {
     homepage        https://github.com/agrausem/beets-artistcountry
 
     checksums       rmd160  289bd9b7d0f0f11fcda8194bff5c737e25bcdbcc \
-sha256  76f18ed29837be1fdd6f661261f290e691b341ce11375a0ae770353af7e04b89 \
-size    2107
+                    sha256  76f18ed29837be1fdd6f661261f290e691b341ce11375a0ae770353af7e04b89 \
+                    size    2107
 }
 
 subport ${name}-autofix {
@@ -204,8 +204,8 @@ subport ${name}-autofix {
     homepage        https://github.com/adamjakab/BeetsPluginAutofix
 
     checksums       rmd160  d72ba141c508d3891c591caf60f19f19806a7a2b \
-sha256  f734c24f5208e170da99732c7a5be77eb1f729810a29fc8a7cfd88cd7d49d1bd \
-size    11033
+                    sha256  f734c24f5208e170da99732c7a5be77eb1f729810a29fc8a7cfd88cd7d49d1bd \
+                    size    11033
 
     depends_lib-append \
                     port:py${python.version}-alive-progress
@@ -223,8 +223,8 @@ subport ${name}-barcode {
                     ${description}
 
     checksums       rmd160  a866d52c0b4458f5815eb57010ee12737c3c8a94 \
-sha256  2ec3897a6fb05e2e528b4f154a3eaadde2ab0e758040f1c4566f4fc2a3c4d228 \
-size    4742
+                    sha256  2ec3897a6fb05e2e528b4f154a3eaadde2ab0e758040f1c4566f4fc2a3c4d228 \
+                    size    4742
 
     depends_lib-append \
                     port:py${python.version}-zbar
@@ -244,8 +244,8 @@ subport ${name}-beetcamp {
     homepage        https://github.com/snejus/beetcamp
 
     checksums       rmd160  1e1c7e767cd959008f07e5d6189f6616a9f9945c \
-sha256  0171236fdc389d86c78671663b765d59824a3dfd6ca316e360a5b5244e7301bf \
-size    30755
+                    sha256  0171236fdc389d86c78671663b765d59824a3dfd6ca316e360a5b5244e7301bf \
+                    size    30755
 
     depends_lib-append \
                     port:py${python.version}-cached-property \
@@ -266,8 +266,8 @@ subport ${name}-bpmanalyser {
     homepage        https://github.com/adamjakab/BeetsPluginBpmAnalyser
 
     checksums       rmd160  4d5371f92997132ab51796f8b3c6469febb02c65 \
-sha256  c5e5ce8e7919655d42b9b3e60288c51fd921d4b055da4e012400e37bc11fecf4 \
-size    6684
+                    sha256  c5e5ce8e7919655d42b9b3e60288c51fd921d4b055da4e012400e37bc11fecf4 \
+                    size    6684
 
     depends_lib-append \
                     port:py${python.version}-aubio \
@@ -287,8 +287,8 @@ subport ${name}-check {
     homepage        https://www.github.com/geigerzaehler/beets-check
 
     checksums       rmd160  51faf5466651b51e336804004b216e3ee3eac1ce \
-sha256  ada6bc23b02041a9afa24a4943413950bcd43670d6e5c3f9f8813e5dbbc9bffc \
-size    13455
+                    sha256  ada6bc23b02041a9afa24a4943413950bcd43670d6e5c3f9f8813e5dbbc9bffc \
+                    size    13455
 }
 
 subport ${name}-copyartifacts {
@@ -305,8 +305,8 @@ subport ${name}-copyartifacts {
     homepage        https://github.com/adammillerio/beets-copyartifacts
 
     checksums       rmd160  0a3295d358bf353247fdb1911b3a7656a7beb9e5 \
-sha256  e9fb32f3ec5dc279c96bd010322e0792e55e84eecf0c3383f74ef2b624539969 \
-size    5452
+                    sha256  e9fb32f3ec5dc279c96bd010322e0792e55e84eecf0c3383f74ef2b624539969 \
+                    size    5452
 }
 
 subport ${name}-describe {
@@ -322,8 +322,8 @@ subport ${name}-describe {
     homepage        https://github.com/adamjakab/BeetsPluginDescribe
 
     checksums       rmd160  fa35987e55e63e1090318dc79bd95b4cec5459ed \
-sha256  4f47bd8b4b3852b4d9f4b698f0727ddd75a813e9c528100ee20876df6d6227f0 \
-size    8398
+                    sha256  4f47bd8b4b3852b4d9f4b698f0727ddd75a813e9c528100ee20876df6d6227f0 \
+                    size    8398
 
     depends_lib-append \
                     port:py${python.version}-numpy \
@@ -344,8 +344,8 @@ subport ${name}-follow {
                     ${description}
 
     checksums       rmd160  ebe6866b1055ea5459fa33c77b08f904dece5be8 \
-sha256  e1dd35c3ea1cf8c3f5893fa3b49f3fd2f1c1c230e05f5fa0bf03b805a9eea39a \
-size    4145
+                    sha256  e1dd35c3ea1cf8c3f5893fa3b49f3fd2f1c1c230e05f5fa0bf03b805a9eea39a \
+                    size    4145
 
     patch.pre_args  -p1
     patchfiles      follow-confuse.diff
@@ -367,8 +367,8 @@ subport ${name}-goingrunning {
     homepage        https://github.com/adamjakab/BeetsPluginGoingRunning
 
     checksums       rmd160  e761fda8ec710d6df6b930e502432c1ce9751646 \
-sha256  1facf57accbc77329831ceff15ffcbf024de40fa4826f63ae7987607ebf0c1d5 \
-size    22371
+                    sha256  1facf57accbc77329831ceff15ffcbf024de40fa4826f63ae7987607ebf0c1d5 \
+                    size    22371
 
     depends_lib-append \
                     port:py${python.version}-alive-progress
@@ -388,8 +388,8 @@ subport ${name}-ibroadcast {
     homepage        https://github.com/ctrueden/beets-ibroadcast
 
     checksums       rmd160  bbd7ede95fa6d20b55c9a86b9dc540a1b9bd3b3a \
-sha256  838968ee4ccb3d08dbb8c465efbbcf0f2c87b387402e91fa1b506c01b0775db2 \
-size    10974
+                    sha256  838968ee4ccb3d08dbb8c465efbbcf0f2c87b387402e91fa1b506c01b0775db2 \
+                    size    10974
 
     patch.pre_args  -p1
     patchfiles      ibroadcast-confuse.diff
@@ -409,8 +409,8 @@ subport ${name}-importreplace {
                     ${description}
 
     checksums       rmd160  7a396c53b82be492a98e79bde02d4d0f59e969a8 \
-sha256  2c63a3c6be7ad7e9bbdb082bd15c460d9b54c29371e05a5bcaae1d31e325f973 \
-size    4934
+                    sha256  2c63a3c6be7ad7e9bbdb082bd15c460d9b54c29371e05a5bcaae1d31e325f973 \
+                    size    4934
 }
 
 subport ${name}-mosaic {
@@ -427,8 +427,8 @@ subport ${name}-mosaic {
     homepage        https://github.com/susannamaria/beets-mosaic
 
     checksums       rmd160  71d68c17894f255fcea01d6da07782e8eab9b324 \
-sha256  7e6ff14be69502c394dfc7abe57f144747adba700a2a50dd36c06e9a3e18a966 \
-size    6195
+                    sha256  7e6ff14be69502c394dfc7abe57f144747adba700a2a50dd36c06e9a3e18a966 \
+                    size    6195
 
     depends_lib-append \
                     port:py${python.version}-fonttools \
@@ -450,8 +450,8 @@ subport ${name}-moveall {
                     ${description}
 
     checksums       rmd160  c93492b8b1b4df2f864acd9467c063cb6640694c \
-sha256  e055b07c5f5072cacb5c8858b009918b7542fa968964b4133bfc821ccc6f8a9d \
-size    8110
+                    sha256  e055b07c5f5072cacb5c8858b009918b7542fa968964b4133bfc821ccc6f8a9d \
+                    size    8110
 
     patch.pre_args  -p1
     patchfiles      moveall-2to3.diff
@@ -480,8 +480,8 @@ subport ${name}-noimport {
     homepage        https://www.github.com/ttsda/beets-noimport
 
     checksums       rmd160  2755bf7b969712da0931c5972ddf23f6aff7ec90 \
-sha256  86a6291e1de90b292829e6f7286b057be2bc556f5a49e9c30ffead2985ae998a \
-size    3167
+                    sha256  86a6291e1de90b292829e6f7286b057be2bc556f5a49e9c30ffead2985ae998a \
+                    size    3167
 }
 
 subport ${name}-originquery {
@@ -496,8 +496,8 @@ subport ${name}-originquery {
                     ${description}
 
     checksums       rmd160  6adbd6e65ef1a701af7daa7b137b6792ef4f8c12 \
-sha256  d015e1d21caba32ee02de184f71c12357c33e7b12d329976c1d1221bfa6f4033 \
-size    7563
+                    sha256  d015e1d21caba32ee02de184f71c12357c33e7b12d329976c1d1221bfa6f4033 \
+                    size    7563
 
     patch.pre_args  -p1
     patchfiles      originquery-utf8.diff
@@ -520,8 +520,8 @@ subport ${name}-summarize {
                     ${description}
 
     checksums       rmd160  9631bc2b10a0c6d09bd5c4f743ae6d91ce610155 \
-sha256  029cd7799cab022861599af58b608bacd2087aab01ff7096b25ba6303d76cd24 \
-size    11013
+                    sha256  029cd7799cab022861599af58b608bacd2087aab01ff7096b25ba6303d76cd24 \
+                    size    11013
 }
 
 subport ${name}-usertag {
@@ -536,8 +536,8 @@ subport ${name}-usertag {
                     ${description}
 
     checksums       rmd160  30ab572c6400feffaf245da349bf66a63ae39441 \
-sha256  d486e241309948b5b764c7776a7da2dcebe2dd7ffb36affdf880b77da77d67df \
-size    2655
+                    sha256  d486e241309948b5b764c7776a7da2dcebe2dd7ffb36affdf880b77da77d67df \
+                    size    2655
 }
 
 subport ${name}-xtractor {
@@ -553,8 +553,8 @@ subport ${name}-xtractor {
     homepage        https://github.com/adamjakab/BeetsPluginXtractor
 
     checksums       rmd160  dc79a85606a5162c36c1b9d076a6ee272ad46ad9 \
-sha256  bee843cd04c1ed6e6796b39f0ed1054fa80e9e8ec0a9eb05cc4db133ea5e74f0 \
-size    10578
+                    sha256  bee843cd04c1ed6e6796b39f0ed1054fa80e9e8ec0a9eb05cc4db133ea5e74f0 \
+                    size    10578
 
     depends_lib-append \
                     port:py${python.version}-yaml
@@ -573,8 +573,8 @@ subport ${name}-yearfixer {
     homepage        https://github.com/adamjakab/BeetsPluginYearFixer
 
     checksums       rmd160  dee186219952dafba3fbfc84abf1cb885ec29a15 \
-sha256  b22601ea6b515ba0426ee692a98ba08d8b656c68041637dac28b31a68a0d968a \
-size    6563
+                    sha256  b22601ea6b515ba0426ee692a98ba08d8b656c68041637dac28b31a68a0d968a \
+                    size    6563
 
     depends_lib-append \
                     port:py${python.version}-requests

@@ -1,18 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 name                parallel
-version             20211122
+version             20211222
 revision            0
-checksums           rmd160  9f168eedfb18506b9c2e7550a00a733819fc020c \
-sha256  48b256322c56a4cb1a7818fe0894fdde575dab0e0f925c6a2289517b6bd8962e \
-size    2267617
+checksums           rmd160  2237e35275f89000d8083cb86e07819ac7717da6 \
+                    sha256  058491cf4c52a4855977bde803c63688b2ca9c5991be10e7b8b0c0aede46d19c \
+                    size    2267909
 
 categories          sysutils
-platforms           darwin
 license             GPL-3+
-maintainers         {ciserlohn @ci42}
+maintainers         {ciserlohn @ci42} openmaintainer
 supported_archs     noarch
 
 description         GNU parallel: Shell command parallelization utility
@@ -25,13 +24,6 @@ use_bzip2           yes
 
 depends_lib         port:perl5
 
-<<<<<<< HEAD
-checksums           rmd160  0cdc3d4ab93ab4d4588bcb8408835619d11d6d69 \
-sha256  2810412b616b59dcf6a6bd172f2b2561807cf370ccf93417aa1c8229f94c4172 \
-size    2101918
-
-=======
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 post-patch {
     set perl_bin ${prefix}/bin/perl
     set src_dir ${worksrcpath}/src/

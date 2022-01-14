@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,7 +20,7 @@ long_description    \
 
 homepage            https://direnv.net/
 
-go.setup            github.com/direnv/direnv 2.30.2 v
+go.setup            github.com/direnv/direnv 2.30.3 v
 revision            0
 
 destroot {
@@ -28,62 +28,64 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-rmd160  7f3f9938105edb7c379b6acbe6a1301ec796c09e \
-sha256  75b811a7b2c93eb1b91ad6a2fee996c0bc9ec4fa95c1358e35e2c4c57f24c61f \
-size    77988
+                    rmd160  2c4adeeb5778a28f068cad0947b6dd05722e6738 \
+                    sha256  6e84703605e6b552c6765cc26de117c8e904529c0b9ddf6d40ad851ef1ec0cef \
+                    size    79038
 
+# see ${WORKSRCPATH}/gopath/src/github.com/direnv/direnv/go.sum
+# pick the most recent version of each and verify downloading and building
 go.vendors          github.com/BurntSushi/toml \
                     lock    v0.4.1 \
-rmd160  7aec9154737999a2764c5178b3686ca4c1b64736 \
-sha256  c315c77d3f54a5d3d89dffcc24cd24dd1997d9324924ba406ee819dbfbbcc8ca \
-size    81017 \
+                    rmd160  7aec9154737999a2764c5178b3686ca4c1b64736 \
+                    sha256  c315c77d3f54a5d3d89dffcc24cd24dd1997d9324924ba406ee819dbfbbcc8ca \
+                    size    81017 \
                     github.com/direnv/go-dotenv \
                     lock    d90326084211 \
-rmd160  ab110f8a7acdcbc1e74f880047c4482b25b9a6b2 \
-sha256  ca0a5be64b26e82fd0ef6327b04a4405b78a4595cc70622d4d1dbf1352854220 \
-size    4214 \
+                    rmd160  ab110f8a7acdcbc1e74f880047c4482b25b9a6b2 \
+                    sha256  ca0a5be64b26e82fd0ef6327b04a4405b78a4595cc70622d4d1dbf1352854220 \
+                    size    4214 \
                     github.com/mattn/go-isatty \
                     lock    v0.0.14 \
-rmd160  8ebfd3a6f2898a729e41dff6b5359e88959c46e1 \
-sha256  dc141c207a7f4eb83992df90ca087841a0a3aab5a4f2b528bf81d42a186bcc1e \
-size    4705 \
+                    rmd160  8ebfd3a6f2898a729e41dff6b5359e88959c46e1 \
+                    sha256  dc141c207a7f4eb83992df90ca087841a0a3aab5a4f2b528bf81d42a186bcc1e \
+                    size    4705 \
                     golang.org/x/crypto \
                     lock    87dc89f01550 \
-rmd160  fe423943cd10a4dbe4bf5956abdcd4feb7fcba71 \
-sha256  452b5b4bbf469674ca6b50a856785641c45e3eb6c2ef8675cc618f5ea68dfa88 \
-size    1709161 \
+                    rmd160  fe423943cd10a4dbe4bf5956abdcd4feb7fcba71 \
+                    sha256  452b5b4bbf469674ca6b50a856785641c45e3eb6c2ef8675cc618f5ea68dfa88 \
+                    size    1709161 \
                     golang.org/x/mod \
                     lock    v0.5.1 \
-rmd160  6aac73c99cc5111f9b4675fbfeee0871ecea71a7 \
-sha256  1c5e2438581c6755be6c984375c51f93cee56b00de0898cdd61ce3d64c938d38 \
-size    112675 \
+                    rmd160  6aac73c99cc5111f9b4675fbfeee0871ecea71a7 \
+                    sha256  1c5e2438581c6755be6c984375c51f93cee56b00de0898cdd61ce3d64c938d38 \
+                    size    112675 \
                     golang.org/x/net \
                     lock    3b0461eec859 \
-rmd160  24dae39afb612a8977e6f4a91596c64d15dd3664 \
-sha256  15f077bb408fb71b22e4015312be5fab7010576e824fdbfdfdb697b611621197 \
-size    1099249 \
+                    rmd160  24dae39afb612a8977e6f4a91596c64d15dd3664 \
+                    sha256  15f077bb408fb71b22e4015312be5fab7010576e824fdbfdfdb697b611621197 \
+                    size    1099249 \
                     golang.org/x/sync \
                     lock    112230192c58 \
-rmd160  37a8b11def31e2ad355002a8671245962be359f6 \
-sha256  951a6df1dadb061510f1c646197dd8f8a7c7842729d02c6a68a86bce66349f79 \
-size    16832 \
+                    rmd160  37a8b11def31e2ad355002a8671245962be359f6 \
+                    sha256  951a6df1dadb061510f1c646197dd8f8a7c7842729d02c6a68a86bce66349f79 \
+                    size    16832 \
                     golang.org/x/sys \
                     lock    1d35b9e2eb4e \
-rmd160  1d786ecdc43231da66a13fbc671ea7ce7a7484db \
-sha256  9d5531092221dbbbcba97c14906db4e9100ee583bf12bc2d18f850d45ace09c2 \
-size    1255779 \
+                    rmd160  1d786ecdc43231da66a13fbc671ea7ce7a7484db \
+                    sha256  9d5531092221dbbbcba97c14906db4e9100ee583bf12bc2d18f850d45ace09c2 \
+                    size    1255779 \
                     golang.org/x/text \
                     lock    v0.3.0 \
-rmd160  81061ce2006da3d6f7a8ef8dae237d65305513d3 \
-sha256  6243d5bbd9d8550bc44cb58a0d70180f7a3f6767299b490015107b4d27c604ae \
-size    6102563 \
+                    rmd160  81061ce2006da3d6f7a8ef8dae237d65305513d3 \
+                    sha256  6243d5bbd9d8550bc44cb58a0d70180f7a3f6767299b490015107b4d27c604ae \
+                    size    6102563 \
                     golang.org/x/tools \
                     lock    298f0cb1881e \
-rmd160  6c23716885a92d5294df41c016d7640c04db9dee \
-sha256  20cc8a79e64c263ab6151c1c37e6360c0c24225761cf5e23394ec42f77f2bf77 \
-size    2301788 \
+                    rmd160  6c23716885a92d5294df41c016d7640c04db9dee \
+                    sha256  20cc8a79e64c263ab6151c1c37e6360c0c24225761cf5e23394ec42f77f2bf77 \
+                    size    2301788 \
                     golang.org/x/xerrors \
                     lock    1b5146add898 \
-rmd160  2cc4b800c18d0a62360e39184f2a99b1ebd49a95 \
-sha256  6369e59584a604215ed9649649fe273e46295d3fb8d5a811f4028844c861faaa \
-size    12201
+                    rmd160  2cc4b800c18d0a62360e39184f2a99b1ebd49a95 \
+                    sha256  6369e59584a604215ed9649649fe273e46295d3fb8d5a811f4028844c861faaa \
+                    size    12201

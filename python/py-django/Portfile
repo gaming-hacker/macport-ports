@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           python 1.0
 
-github.setup        django django 2.2.23
+github.setup        django django 2.2.26
 name                py-django
 categories-append   www
 platforms           darwin
@@ -18,7 +18,7 @@ long_description    Django is a high-level Python Web framework that \
 
 homepage            https://www.djangoproject.com
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 supported_archs     noarch
 
 if {${name} ne ${subport}} {
@@ -26,14 +26,14 @@ if {${name} ne ${subport}} {
         github.setup    django django 1.11.28
 
         checksums       rmd160  f75415ccfa94f0940b451e823fec729e12344535 \
-sha256  1fceeac5be47850fe435c5e66f7b398b949f6a25f7ecfb804a05b6785ce23616 \
-size    7899879
+                        sha256  1fceeac5be47850fe435c5e66f7b398b949f6a25f7ecfb804a05b6785ce23616 \
+                        size    7899879
 
         github.livecheck.regex  {(1\..+?)}
     } else {
-        checksums       rmd160  ea22fba68a0cd8fe5b7d8d1329e9c26087700b25 \
-sha256  2145979ea31f3bf683a51c389d0523a12ec1a104935729b51d4465709f497715 \
-size    8939544
+        checksums       rmd160  100fa88eb9f3aeb62626bf49d089bf3a93baf422 \
+                        sha256  766f169cc43723128021c6584c012a9caf4ed2983d34b59164b35256928cb618 \
+                        size    8944324
 
         livecheck.type  none
 

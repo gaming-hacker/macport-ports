@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                google-cloud-sdk
-version             367.0.0
+version             368.0.0
 revision            0
 categories          devel python
 license             Apache-2
@@ -21,35 +21,19 @@ supported_archs     i386 x86_64 arm64
 
 if { ${configure.build_arch} eq "i386" } {
     distname        ${name}-${version}-darwin-x86
-<<<<<<< HEAD
-    checksums       rmd160  a39d296d351e1eaba8d75be4a9caab77df84f9ca \
-sha256  8dcc623d320f17f3cb4959ab3b79e08ff602204fc7eacc51b82b1532f24135c5 \
-size    97323547
+    checksums       rmd160  1c4037a7aeb3b6fdb210c781a061831a811e6ea6 \
+                    sha256  813ed5808cb94ce70271e12786977e4874ef89ccc82944470eca7ae7445d1791 \
+                    size    97467794
 } elseif { ${configure.build_arch} eq "x86_64" } {
     distname        ${name}-${version}-darwin-x86_64
-    checksums       rmd160  6bf389d4ed0b660a829cdd6ba1541cc1cfe425d6 \
-sha256  7241cf19d0116f82d4600c2e60c7f63f084c384759b1febabaafe11501ae81fe \
-size    93594071
+    checksums       rmd160  142d0a84b7e0c9a65b70eae545d17063e2fa5da1 \
+                    sha256  05b8a839b5140399fdc05c94b3d6d3e3b9c5f227d3fb7541bfd4150365b70864 \
+                    size    93733059
 } elseif { ${configure.build_arch} eq "arm64" } {
     distname        ${name}-${version}-darwin-arm
-    checksums       rmd160  8a5d1dc0361160937328484d6c5a10603b7b0091 \
-sha256  9ef1d8e5774848e262d64f06ca39302b81d64289a12095a2fe029d8996c1d898 \
-size    93520490
-=======
-    checksums       rmd160  7dcea5a11cb2b5df0ce32889c45b8f3e3b328d79 \
-sha256  0793754d58f1aca3a7f7b726714fe49817789b57a26eb84d98135da86b208ed5 \
-size    97372275
-} elseif { ${configure.build_arch} eq "x86_64" } {
-    distname        ${name}-${version}-darwin-x86_64
-    checksums       rmd160  46589b463e1233bf7e74219e55b7a3e068a4090c \
-sha256  870ca3ca68b0a98af934cb4eae3f8910d1cd971b052eead53397325d9f140233 \
-size    93636198
-} elseif { ${configure.build_arch} eq "arm64" } {
-    distname        ${name}-${version}-darwin-arm
-    checksums       rmd160  7bb1e7b972097d81018b3503bd6699f1bed72a45 \
-sha256  1689b401444887ee527a5fe5c02cab8b4220e120b432c9244b94582d0ee7e002 \
-size    93568866
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+    checksums       rmd160  c015ae8f77ed0084ce9f43f5bdce04ffe00bae10 \
+                    sha256  d37e86b852475088d4ed9d880f61f174b2535c848c66236bc580e2ea0c98d641 \
+                    size    93665033
 }
 
 homepage            https://cloud.google.com/sdk/

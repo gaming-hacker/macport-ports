@@ -1,61 +1,29 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
-<<<<<<< HEAD
-name			samba4
-conflicts		samba3
-version			4.14.7
-revision		0
-checksums		rmd160  732a018b5b97e9efc91efd1b2d3540c23aec1dca \
-sha256  6f50353f9602aa20245eb18ceb00e7e5ec793df0974aebd5254c38f16d8f1906 \
-size 18668592
-                
-categories		net
-platforms		darwin
-maintainers		nomaintainer
-license			GPL-3
-description		SMB/CIFS server and client
-long_description  Samba is an software suite that provides seamless file \
-			      and print services to SMB/CIFS clients.
-=======
+# O_CLOEXEC, AT_FDCWD
+PortGroup           legacysupport 1.1
+legacysupport.newest_darwin_requires_legacy 13
+
 name                samba4
 conflicts           samba3
-version             4.14.7
-revision            1
-checksums           rmd160  732a018b5b97e9efc91efd1b2d3540c23aec1dca \
-sha256  6f50353f9602aa20245eb18ceb00e7e5ec793df0974aebd5254c38f16d8f1906 \
-size 18668592
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+version             4.15.3
+revision            0
+checksums           rmd160  0d4a2443d6e3f53268389e3504ef97765ac8b9be \
+                    sha256  519399404391550345846768ea4dd0fe7fcb04e20c2b891b5eeb02e5554137db \
+                    size    19272345
 
 categories          net
-platforms           darwin
 maintainers         nomaintainer
 license             GPL-3
 description         SMB/CIFS server and client
 long_description    Samba is an software suite that provides seamless file \
                     and print services to SMB/CIFS clients.
 
-<<<<<<< HEAD
-depends_build   port:pkgconfig 
-depends_lib		port:cctools \
-	            port:gettext \
-		        port:gnutls \
-                port:gpgme \
-                port:jansson \
-		        port:libarchive \
-	            port:libiconv \
-			    path:lib/libldap.dylib:openldap \
-			    port:p5.28-parse-yapp \
-			    port:popt \
-			    port:python39 \
-			    port:readline \
-			    port:zlib
-=======
-homepage            http://www.samba.org/
+homepage            https://www.samba.org
 master_sites        https://download.samba.org/pub/samba/stable
 distname            samba-${version}
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 depends_build       port:pkgconfig
 depends_lib         port:cctools \
@@ -68,17 +36,11 @@ depends_lib         port:cctools \
                     path:lib/libldap.dylib:openldap \
                     port:p5.28-parse-yapp \
                     port:popt \
-                    port:python39 \
+                    port:python310 \
                     port:readline \
                     port:zlib
 
-patch.pre_args      -p1
-
 platform darwin {
-    # fix missing header
-    patchfiles-append \
-                    patch-fix-debug.diff
-
     # patch "get_user_groups: failed to get the unix group list" on
     # macOS
     #
@@ -95,7 +57,7 @@ platform darwin {
     # https://github.com/Homebrew/legacy-homebrew/issues/5954
     patchfiles-append \
                     patch-macos-grouplimit.diff
- }
+}
 
 # patch to disable building documentation on MacOS
 # this enables us to have a working samba4 port without docs,
@@ -103,23 +65,8 @@ platform darwin {
 # doc build issues are resolved.
 patchfiles-append patch-no-xsltproc.diff
 
-<<<<<<< HEAD
-configure.perl          ${prefix}/bin/perl5.30
-configure.python        ${prefix}/bin/python3.9
-configure.env-append    YAPP=${prefix}/bin/yapp-5.28
-configure.cmd		${configure.python} ./buildtools/bin/waf configure
-configure.args		-C \
-			--enable-fhs \
-			--mandir=${prefix}/share/man \
-			--with-libiconv=${prefix} \
-			--without-acl-support \
-			--without-ad-dc \
-			--disable-avahi \
-			--with-gpgme \
-			--disable-spotlight
-=======
-configure.perl      ${prefix}/bin/perl5.30
-configure.python    ${prefix}/bin/python3.9
+configure.perl      ${prefix}/bin/perl5.28
+configure.python    ${prefix}/bin/python3.10
 configure.env-append \
                     YAPP=${prefix}/bin/yapp-5.28
 configure.cmd       ${configure.python} ./buildtools/bin/waf configure
@@ -132,7 +79,6 @@ configure.args      -C \
                     --disable-avahi \
                     --with-gpgme \
                     --disable-spotlight
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 build.cmd           ${configure.python} ./buildtools/bin/waf -v
 build.pre_args
@@ -268,5 +214,5 @@ post-destroot {
 }
 
 livecheck.type  regex
-livecheck.url   http://us4.samba.org/samba/ftp/samba4/?M=D
+livecheck.url   https://download.samba.org/pub/samba/
 livecheck.regex samba-(\[0-9a-z.\]+)\\.tar\\.gz
