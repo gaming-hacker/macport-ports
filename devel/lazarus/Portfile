@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ homepage            https://wiki.freepascal.org/Main_Page
 master_sites        sourceforge:lazarus
 
 checksums           rmd160  101bd48ae7bae9fdf941d96ea62c4b386085526f \
-                    sha256  b6b5d516511e3dfb34910d7656db068d4bba80f009692500aebbcae79cb12160 \
-                    size    76777421
+sha256  b6b5d516511e3dfb34910d7656db068d4bba80f009692500aebbcae79cb12160 \
+size    76777421
 
 depends_lib         port:fpc port:fpc-sources
 supported_archs     x86_64 arm64

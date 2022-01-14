@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -49,9 +49,9 @@ if {${subport} ne "${name}-bootstrap"} {
 
 
     checksums       ${distname}${extract.suffix} \
-                    rmd160  588842410587bada4268e465160084e3c52a87bb \
-                    sha256  bd2141380a5051c7ef0cf6814c463b94da95f5cd97fa0a75800faab81c7ff5dd \
-                    size    1974996
+rmd160  588842410587bada4268e465160084e3c52a87bb \
+sha256  bd2141380a5051c7ef0cf6814c463b94da95f5cd97fa0a75800faab81c7ff5dd \
+size    1974996
 
     github.tarball_from     archive
     pre-configure {
@@ -127,13 +127,13 @@ if {${subport} ne "${name}-bootstrap"} {
 
     checksums-append \
         ${name}-${version}-aarch64-apple-darwin${extract.suffix} \
-                    rmd160  b810fe314b99b9836fc05f333139d4e3c92012e8 \
-                    sha256  9144ee0f614c8dcb5f34a774e47a24b676860fa442afda2a3c7f45abfe694e6a \
-                    size    5906007 \
+rmd160  b810fe314b99b9836fc05f333139d4e3c92012e8 \
+sha256  9144ee0f614c8dcb5f34a774e47a24b676860fa442afda2a3c7f45abfe694e6a \
+size    5906007 \
         ${name}-${version}-x86_64-apple-darwin${extract.suffix} \
-                    rmd160  a549b5d7ce05fa2152ef81e8086320da11b7ecd3 \
-                    sha256  60203fc7ec453f2a9eb93734c70a72f8ee88e349905edded04155c1646e283a6 \
-                    size    6644822
+rmd160  a549b5d7ce05fa2152ef81e8086320da11b7ecd3 \
+sha256  60203fc7ec453f2a9eb93734c70a72f8ee88e349905edded04155c1646e283a6 \
+size    6644822
 
     set cargo_dist_suffix ${arch}-apple-${os.platform}
     distfiles  ${name}-${version}-${cargo_dist_suffix}${extract.suffix}:rust_dist
@@ -271,7 +271,7 @@ if {${subport} ne "${name}-bootstrap"} {
         serde_ignored                    0.1.2  1c2c7d39d14f2f2ea82239de71594782f186fd03501ac81f0ce08e674819ff2f \
         serde_json                      1.0.74  ee2bb9cd061c5865d345bb02ca49fcef1391741b672b54a0bf7b679badec3142 \
         shell-escape                     0.1.5  45bb67a18fa91266cc7807181f62f9178a6873bfad7dc788c42e6430db40184f \
-        sized-chunks                     0.6.5  16d69225bde7a69b235da73377861095455d298f2b970996eec25ddbb42b3d1e \
+sized-chunks                     0.6.5  16d69225bde7a69b235da73377861095455d298f2b970996eec25ddbb42b3d1e \
         socket2                          0.4.2  5dc90fe6c7be1a323296982db1836d1ea9e47b6839496dde9a541bc496df3516 \
         strip-ansi-escapes               0.1.1  011cbb39cf7c1f62871aea3cc46e5817b0937b49e9447370c93cacbe93a766d8 \
         strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \

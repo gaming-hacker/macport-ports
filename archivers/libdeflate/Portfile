@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github      1.0
@@ -28,7 +28,7 @@ maintainers         {linux.com:nickblack @dankamongmen} \
                     openmaintainer
 
 checksums           rmd160  f29f63f61527eeb68ccffe6779273bfcc45c6410 \
-                    sha256  a537ab6125c226b874c02b166488b326aece954930260dbf682d88fc339137e3 \
-                    size    157565
+sha256  a537ab6125c226b874c02b166488b326aece954930260dbf682d88fc339137e3 \
+size    157565
 
 makefile.has_destdir yes

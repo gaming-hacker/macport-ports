@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -13,8 +13,8 @@ description         A beautifier tool for xcodebuild, SPM, and bazel output.
 long_description    {*}${description}
 
 checksums           rmd160  00617be7a198b09e8b637eeff8637154375177d8 \
-                    sha256  c4560fbf55bdb70074425848667cd663852f2e9cec5fa753ff57b30f11ce521b \
-                    size    27786
+sha256  c4560fbf55bdb70074425848667cd663852f2e9cec5fa753ff57b30f11ce521b \
+size    27786
 
 # TODO: 
 set xcodeversion_min_required 11.4
@@ -27,7 +27,7 @@ pre-fetch {
 }
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build.cmd           swift
 build.target        build

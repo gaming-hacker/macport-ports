@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    {*}${description}
 homepage            https://github.com/gbouvignies/chemex
 
 checksums           rmd160  76c833331c000362d11af484dfd98fe6e600fcd0 \
-                    sha256  018d7fddbbef1bbe4b12efcc24dcf92477d6108f439a0ffbd2d5956c386a0ae4 \
-                    size    532047
+sha256  018d7fddbbef1bbe4b12efcc24dcf92477d6108f439a0ffbd2d5956c386a0ae4 \
+size    532047
 
 python.pep517       yes
 python.default_version  39
@@ -45,8 +45,8 @@ subport ${name}-devel {
     revision            0
 
     checksums           rmd160  cc98266cf254b0213e1aa4066b9fb852a76b811a \
-                        sha256  a51d01cdfe2f4378263d4244c6aede034cc36f5a1b99131e8357cbd84a293011 \
-                        size    2395324
+sha256  a51d01cdfe2f4378263d4244c6aede034cc36f5a1b99131e8357cbd84a293011 \
+size    2395324
 
     python.pep517_backend   poetry
 

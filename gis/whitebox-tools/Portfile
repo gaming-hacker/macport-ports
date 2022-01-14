@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,9 +18,9 @@ license             MIT
 patchfiles          patch-Cargo.lock.diff
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  5b5ee28ed2020d4583f7bffd5e3052a5359e7f61 \
-                    sha256  b7e87307b13a80b3fce2d03bbdfadc61f9a77e6e1f7a58202d085a043fdd28d8 \
-                    size    34083798
+rmd160  5b5ee28ed2020d4583f7bffd5e3052a5359e7f61 \
+sha256  b7e87307b13a80b3fce2d03bbdfadc61f9a77e6e1f7a58202d085a043fdd28d8 \
+size    34083798
 
 # When updating Portfile version, see instructions in cargo_fetch
 # PortGroup file for updating crate versions and checksums:

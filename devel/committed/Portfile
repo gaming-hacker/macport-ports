@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,9 +16,9 @@ description         A linter for git commit messages
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  66e855e08b03a9aebf2c17bc50442eb5882b755b \
-                    sha256  0d79e083bc8cc70af54e0948810486e5285bb1f0cdb504d18be93cb88dba0cd2 \
-                    size    32014
+rmd160  66e855e08b03a9aebf2c17bc50442eb5882b755b \
+sha256  0d79e083bc8cc70af54e0948810486e5285bb1f0cdb504d18be93cb88dba0cd2 \
+size    32014
 
 depends_lib-append  port:libgit2 \
                     port:zlib \

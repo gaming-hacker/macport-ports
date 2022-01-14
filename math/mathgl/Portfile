@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -19,8 +19,8 @@ homepage            http://mathgl.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  f00e3b8ac0973eeef89a5509110845692094824d \
-                    sha256  ca84bf9480c39ed3112e920c16ce3d8f2898698f62896f3a57714128622a55aa \
-                    size    23979834
+sha256  ca84bf9480c39ed3112e920c16ce3d8f2898698f62896f3a57714128622a55aa \
+size    23979834
 
 depends_build-append \
                     port:gettext
@@ -66,7 +66,7 @@ configure.cflags-append \
 # currently broken
 # see https://sourceforge.net/p/mathgl/discussion/508393/thread/fb61ebd073/
 # variant arma description {Enable armadillo support} {
-#     compiler.cxx_standard           2011
+#     compiler.cxx_standard 2017
 #     compiler.thread_local_storage   yes
 # 
 #     depends_lib-append  port:armadillo

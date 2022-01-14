@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           php 1.1
@@ -16,14 +16,14 @@ if {[vercmp ${php.branch} 7.0] >= 0} {
     version         3.2.7
     revision        0
     checksums       rmd160  f8fe0d27c0113c91f6f7b4958546e12c8c88be83 \
-                    sha256  d0dc0d0b56a985f4f52cea20717133d3da05368876bc0f94317c1e60e0319e7d \
-                    size    97792
+sha256  d0dc0d0b56a985f4f52cea20717133d3da05368876bc0f94317c1e60e0319e7d \
+size    97792
 } elseif {[vercmp ${php.branch} 5.2] >= 0} {
     version         2.0.8
     revision        0
     checksums       rmd160  ea29b28150104df01f26557c0465af4bf2819ece \
-                    sha256  bacbab1172e073b1857dc07a486bfdaca6d60fbed678ce0f4b37cd018ef5b680 \
-                    size    76708
+sha256  bacbab1172e073b1857dc07a486bfdaca6d60fbed678ce0f4b37cd018ef5b680 \
+size    76708
 }
 
 description         PHP serializer.

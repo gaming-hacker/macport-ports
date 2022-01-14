@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,11 +14,11 @@ description         JOSE protocol implementation in Python using cryptography
 long_description    {*}${description}
 platforms           darwin
 
-python.versions     37 38 39 310
+python.versions 39
 
 checksums           rmd160  d3d74530ab04dec7c2570ff3c274642360540262 \
-                    sha256  267004a64f08c016cd54b7aaf7c323fa3ef3679fb62f4b086cd56448d0fecb25 \
-                    size    59205
+sha256  267004a64f08c016cd54b7aaf7c323fa3ef3679fb62f4b086cd56448d0fecb25 \
+size    59205
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools

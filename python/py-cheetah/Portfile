@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,8 +7,8 @@ name                py-cheetah
 python.rootname     Cheetah3
 version             3.2.6.post2
 checksums           rmd160  278072b8b609e23428b0c563ea30a4614ef5a504 \
-                    sha256  63157d7a00a273b59676b5be5aa817c75c37efc88478231f1a160f4cfb7f7878 \
-                    size    295952
+sha256  63157d7a00a273b59676b5be5aa817c75c37efc88478231f1a160f4cfb7f7878 \
+size    295952
 revision            0
 
 categories-append   www
@@ -30,7 +30,7 @@ homepage            https://www.cheetahtemplate.org/
 master_sites        pypi:C/Cheetah3/
 distname            Cheetah3-${version}
 
-python.versions     27 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

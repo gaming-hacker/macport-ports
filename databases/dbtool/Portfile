@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ homepage            https://www.daemon.de/DBTOOL
 master_sites        https://www.daemon.de/idisk/Apps/dbtool/
 
 checksums           rmd160  9b485b6b75d4571fd992a2bed66da45abf12c801 \
-                    sha256  afd3fa03d4b69f25c689817dc1b6ac452eb16ed4b9712c20695b3b4d13a5e647 \
-                    size    965751
+sha256  afd3fa03d4b69f25c689817dc1b6ac452eb16ed4b9712c20695b3b4d13a5e647 \
+size    965751
 
 depends_build       port:pkgconfig
 depends_lib         port:gdbm \

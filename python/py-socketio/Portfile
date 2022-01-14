@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,10 +18,10 @@ long_description    \
     Python implementation of the Socket.IO realtime client and server.
 
 checksums           rmd160  f044649cff21269423b4da6551a32a821d90abf2 \
-                    sha256  f1f7922632f4f350948a6aea350e98221c97ec375a5a7a5e1cd47446652c9843 \
-                    size    141471
+sha256  f1f7922632f4f350948a6aea350e98221c97ec375a5a7a5e1cd47446652c9843 \
+size    141471
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

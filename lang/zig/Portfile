@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -29,8 +29,8 @@ set llvm_version    13
 depends_lib-append  port:llvm-${llvm_version}
 
 checksums           rmd160  ab5c78bdce07475096a5d562c5c8ad78f5a086d2 \
-                    sha256  5a01d7ae22b1bee1292a8688e8847c07bb31279d1a496808675002237ad0f7e5 \
-                    size    21994175
+sha256  5a01d7ae22b1bee1292a8688e8847c07bb31279d1a496808675002237ad0f7e5 \
+size    21994175
 
 set llvm_config     LLVM_CONFIG=llvm-config-mp-${llvm_version}
 
