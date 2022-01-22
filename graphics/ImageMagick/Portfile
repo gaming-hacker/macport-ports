@@ -10,7 +10,7 @@ PortGroup                   conflicts_build 1.0
 
 name                        ImageMagick
 version                     7.1.0-16
-revision                    0
+revision                    1
 checksums           rmd160  cd9f7f3305586f5fb8c635a0f1fcf9a359c33a73 \
 sha256  770219ae4087cc9a107dde04473ba7a932a374f310f9ec9ff6a545798e9da039 \
 size    10322260
@@ -24,25 +24,10 @@ use_parallel_build          yes
 
 description                 Tools and libraries to manipulate images in many formats
 
-long_description            ImageMagick is a robust collection of tools and \
-                            libraries to create, edit and compose bitmap images \
-                            in a wide variety of formats. You can crop, resize, \
-                            rotate, sharpen, color reduce or add effects or text \
-                            or straight or curved lines to an image or image \
-                            sequence and save your completed work in the same or \
-                            differing image format. You can even create images \
-                            from scratch. Image processing operations are \
-                            available from the command line as well as through \
-                            C, Ch, C++, Java, Perl, PHP, Python, Ruby and Tcl/Tk \
-                            programming interfaces. Over 90 image formats are \
-                            supported, including GIF, JPEG, JPEG 2000, PNG, PDF, \
-                            PhotoCD and TIFF.
+long_description            ImageMagick is a robust collection of tools
 
-homepage                    https://imagemagick.org
-master_sites                https://download.imagemagick.org/ImageMagick/download/releases/ \
-                            http://mirror.checkdomain.de/imagemagick/releases/ \
-                            ftp://ftp.u-aizu.ac.jp/pub/graphics/image/ImageMagick/imagemagick.org/releases/ \
-                            ftp://sunsite.icm.edu.pl/packages/ImageMagick/releases/
+homepage       https://imagemagick.org
+master_sites   https://download.imagemagick.org/ImageMagick/download
 
 depends_lib                 port:bzip2 \
                             port:djvulibre \
@@ -109,7 +94,7 @@ configure.args              --enable-shared \
                             --without-pango \
                             --without-x \
                             --with-zstd \
-                            --with-gs-font-dir=${prefix}/share/ghostscript/9.54.0/Resource/Font \
+                            --with-gs-font-dir=${prefix}/share/ghostscript/9.55.0/Resource/Font \
                             --with-apple-font-dir=/Library/Fonts \
                             --with-urw-base35-font-dir=${prefix}/share/fonts/urw-core35-fonts \
                             --with-dejavu-font-dir=${prefix}/share/fonts/dejavu-fonts \
