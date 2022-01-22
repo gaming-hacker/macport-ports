@@ -20,15 +20,9 @@ long_description    {*}${description}
 
 homepage            https://github.com/erdewit/nest_asyncio
 
-<<<<<<< HEAD
 checksums           rmd160  9efe6f3ae69eb9e6c3214405d050691f2c9ae492 \
 sha256  afc5a1c515210a23c461932765691ad39e8eba6551c055ac8d5546e69250d0aa \
 size    5738
-=======
-checksums           rmd160  79e5c321a0dcda2e018396113812ff3b310cbf1b \
-sha256  f969f6013a16fadb4adcf09d11a68a4f617c6049d7af7ac2c676110169a63abd \
-size    5893
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${name} ne ${subport}} {
     depends_build-append \

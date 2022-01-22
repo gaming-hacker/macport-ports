@@ -5,9 +5,6 @@ PortSystem              1.0
 name                    argyll
 version                 2.2.1
 revision                1
-checksums               rmd160  69375947aa45f26558b9c18acef327079b0f4232 \
-sha256  24cbef0e81a7ce8424957cbcb399cdea2f069f64866536d181e879ce1ed18ff8 \
-size    14030108
 
 categories              graphics
 platforms               darwin
@@ -25,14 +22,10 @@ homepage                http://www.argyllcms.com/
 master_sites            ${homepage}
 use_zip                 yes
 distname                Argyll_V${version}_src
-<<<<<<< HEAD
-
 checksums               rmd160  101fb5f2dd3965cdeb4ac4a61bfe67239c94615b \
 sha256  be378ca836b17b8684db05e9feaab138d711835ef00a04a76ac0ceacd386a3e3 \
 size    13837056
 
-=======
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 worksrcdir              Argyll_V${version}
 
 depends_build           port:jam

@@ -28,12 +28,9 @@ long_description    Chrony can synchronise the system clock with NTP servers, \
 
 homepage            https://chrony.tuxfamily.org/
 master_sites        https://download.tuxfamily.org/chrony/
-<<<<<<< HEAD
 checksums           rmd160  9df3b31d78433fcb251dd2c80034f874b0d987a0 \
 sha256  ed76f2d3f9347ac6221a91ad4bd553dd0565ac188cd7490d0801d08f7171164c \
 size    564648
-=======
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 depends_build       port:pkgconfig
 
@@ -93,14 +90,14 @@ post-destroot {
     xinstall -d ${destroot}${prefix}/share/examples/${name}
     xinstall -d ${destroot}${prefix}/var/log/${name}
     xinstall -d ${destroot}${prefix}/var/run/${name}
-    
+
     xinstall -m 0644 ${filespath}/chrony.conf \
                      ${destroot}${prefix}/etc/chrony.conf.dist
     reinplace -W ${destroot}${prefix} "s|@@prefix@@|${prefix}|g" \
               etc/chrony.conf.dist
     reinplace -W ${destroot}${prefix} "s|@@name@@|${name}|g" \
               etc/chrony.conf.dist
-    
+
     xinstall -m 0644 {*}[glob ${worksrcpath}/examples/*.example*] \
                      ${destroot}${prefix}/share/examples/${name}
 }

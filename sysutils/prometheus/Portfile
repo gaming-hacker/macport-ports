@@ -48,15 +48,9 @@ set prom_share_dir  ${prefix}/share/${name}
 set prom_log_dir    ${prefix}/var/log/${name}
 set prom_log_file   ${prom_log_dir}/${name}.log
 
-<<<<<<< HEAD
 checksums           rmd160  2b9170cf3a2be9d736c5f22333c112330568a799 \
 sha256  8b6970c9080bc2020f85990886c6e2cb1ad3796f303c88d9b474fe7de20b5f6e \
 size    5852339
-=======
-checksums           rmd160  f2b26202bf6688c05ffa6c0633d73456d52fd1c9 \
-sha256  36665c49bd122f76560b89500c44aae5126edd53c8b57ae126af5e1dfd262ee0 \
-size    5829166
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 add_users           ${prom_user} \
                     group=${prom_user} \

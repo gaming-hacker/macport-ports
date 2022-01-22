@@ -21,13 +21,9 @@ github.tarball_from releases
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
-<<<<<<< HEAD
 perl5.branches 5.30
 perl5.default_branch 5.30
-=======
-perl5.branches 5.30
-perl5.default_branch 5.30
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+
 perl5.create_variants   ${perl5.branches}
 require_active_variants mod_perl2 ${perl5.variant}
 

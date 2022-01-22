@@ -20,12 +20,6 @@ homepage            https://www.musicpd.org/libs/${name}/
 master_sites        https://www.musicpd.org/download/${name}/${branch}/
 platforms           darwin
 use_xz              yes
-<<<<<<< HEAD
-checksums           rmd160  5def195263e827c826bdad7fcbc06b1b8ab2dadb \
-sha256  4cb01e1f567e0169aca94875fb6e1200e7f5ce35b63a4df768ec1591fb1081fa \
-size    67236
-=======
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 livecheck.url       https://www.musicpd.org/download/${name}/${branch}/
 livecheck.regex     "${name}-(\\d+(?:\\.\\d+)*)"

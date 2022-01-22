@@ -19,15 +19,9 @@ long_description            {*}${description}
 platforms                   darwin
 
 checksums                   ${name}-${version}${extract.suffix} \
-<<<<<<< HEAD
 rmd160  733bb28c712c08289c0360b6b38e1fbe4eebabdc \
 sha256  624b046a4ff3dfd7a80ace536b108e6922347664257459378f648a6f3dac939d \
 size    2698143
-=======
-rmd160  7cd77518f3f29e8703ea1e38b6f6a5069dc54e5d \
-sha256  1e176ebc51d8f2a39b1eca557e2bc9c8b9f4814572b6f33c8ab2435c5ff1f5f3 \
-size    2698302
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 depends_build-append        port:cargo-c
 if {${configure.build_arch} in {i386 x86_64}} {

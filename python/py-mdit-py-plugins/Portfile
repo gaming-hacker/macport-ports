@@ -18,19 +18,12 @@ description         Collection of core plugins for markdown-it-py.
 
 long_description    Collection of core plugins for markdown-it-py.
 
-<<<<<<< HEAD
 checksums           rmd160  a1e7942b944e0f3bf2baa037da7f6dac7a17ede1 \
 sha256  97fa290816e9c2f7eec5d3c16ac67bfca6a546a4574afee425714641c63fdd51 \
 size    45833
 
 python.versions 39
-=======
-checksums           rmd160  220ad6cabf5dba5e87fb96c223643561f4ff0f3c \
-sha256  d8c1e76736a6bac9bfd1c0c7384065d4729a6d3b2330dc3362338b83f7f72d18 \
-size    50650
 
-python.versions 39
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-setuptools

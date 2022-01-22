@@ -54,16 +54,7 @@ size    488
     gpg_verify.use_gpg_verification \
                         yes
 
-<<<<<<< HEAD
     compiler.cxx_standard 2017
-=======
-    depends_lib-append  port:quazip1
-
-    configure.pre_args-append \
-        -DWITH_XC_KEESHARE_SECURE=ON
-
-    compiler.cxx_standard 2017
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
     patchfiles          patch-no-deployqt.diff \
                         patch-no-findpackage-path.diff \
@@ -78,16 +69,10 @@ size    488
 
     conflicts           KeePassXC
 
-<<<<<<< HEAD
     checksums           rmd160  84e8cba8ab75f124f9b9ae244a06a7cd4b7f906d \
 sha256  d1104c587298c26d1d02ccb01593ee70313c354d049b36ed480d8384a128e986 \
 size    10077852
 
-=======
-    checksums           rmd160  71a484f172097333e891029ef94e510594c045ae \
-sha256  9a1c22f3ca4febf1e40fd3ce31b0643f4fd8b48c57aa30082ace44bf2ec8c278 \
-size    10070552
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
     gpg_verify.use_gpg_verification \
                         no

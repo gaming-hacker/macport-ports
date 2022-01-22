@@ -11,16 +11,7 @@ revision            0
 #   is being phased out. Indeed, it's no longer included in the core Perl5
 #   distribution, starting with 5.32. So until upstream migrates completely
 #   to 'pod-simple', we cannot go beyond 5.30.
-<<<<<<< HEAD
 perl5.branches 5.30
-# Higher versions of perl being active can cause build failure
-conflicts_build     perl5.32 perl5.34
-=======
-
-# Pod::Parser is now available as a port for perl5.32+ where it is no longer in core
-# See conditional dependency below with allows build on these perls
-perl5.branches 5.30
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 categories          textproc
 platforms           darwin

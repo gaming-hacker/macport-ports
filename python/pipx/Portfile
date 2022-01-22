@@ -19,43 +19,16 @@ platforms           darwin
 description         Execute binaries from Python packages in isolated environments
 long_description    ${description}
 
-<<<<<<< HEAD
 checksums           rmd160  b1c899439b2c01645698768c059f68333f3b33f0 \
 sha256  7485257483d8c4ffd45dd3cf657cf4152c19d48dcb982603741a686dae86ee5d \
 size    396930
 
-=======
-github.tarball_from archive
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 github.livecheck.regex  {([\d.]+)}
 
-if {
-    ![variant_isset python36] &&
-    ![variant_isset python37] &&
-    ![variant_isset python38] &&
-    ![variant_isset python39] &&
-    ![variant_isset python310]
-} {
-    default_variants +python39
-}
+variant python39 description {Use Python 3.9} {}
 
-variant python36 conflicts python37 python38 python39 python310 description {Use Python 3.6} {}
-variant python37 conflicts python36 python38 python39 python310 description {Use Python 3.7} {}
-variant python38 conflicts python36 python37 python39 python310 description {Use Python 3.8} {}
-variant python39 conflicts python36 python37 python38 python310 description {Use Python 3.9} {}
-variant python310 conflicts python36 python37 python38 python39 description {Use Python 3.10} {}
+python.default_version 39
 
-if {[variant_isset python310]} {
-    python.default_version 310
-} elseif {[variant_isset python39]} {
-    python.default_version 39
-} elseif {[variant_isset python38]} {
-    python.default_version 39
-} elseif {[variant_isset python37]} {
-    python.default_version 39
-} elseif {[variant_isset python36]} {
-    python.default_version 39
-}
 
 depends_lib-append \
                     port:py${python.version}-argcomplete \

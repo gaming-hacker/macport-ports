@@ -20,15 +20,9 @@ long_description    {*}${description}
 
 homepage            https://github.com/davidhalter/jedi
 
-<<<<<<< HEAD
 checksums           rmd160  7740bb22fb438e5ac33ab94ade5578a27e10c661 \
 sha256  92550a404bad8afed881a137ec9a461fed49eca661414be45059329614ed0707 \
 size    1127968
-=======
-checksums           rmd160  740b67d3c68041a2a47aa1285f766cb7f69760c8 \
-sha256  74137626a64a99c8eb6ae5832d99b3bdd7d29a3850fe2aa80a4126b2a7d949ab \
-size    1222511
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 if {${name} ne ${subport}} {
     depends_build-append \

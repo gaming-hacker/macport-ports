@@ -28,15 +28,9 @@ master_sites        https://artifacts.elastic.co/downloads/${name}/
 worksrcdir          ${distname}
 distname            ${name}-${version}-darwin-x86_64
 
-<<<<<<< HEAD
-checksums           rmd160  380ed3230f0cd6fb4cfb3250f22f31f2968f2892 \
-sha256  b9a834ed68f9c67c3f65deb0c9ea78ad32ee22330f907cf2c6db7e7868aa7390 \
-size    338667324
-=======
 checksums           rmd160  e7de56cb0129aa88f12b7f9ab92964540946daec \
 sha256  da5d346d4b4114ee6c141b8d603a295b1b3e2e9dce56cf1e3701ad4bf0be0716 \
 size    340743823
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 use_configure       no
 build {}

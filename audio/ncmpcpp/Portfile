@@ -22,12 +22,6 @@ license             GPL-2+
 platforms           darwin
 master_sites        ${homepage}stable/
 use_bzip2           yes
-<<<<<<< HEAD
-checksums           rmd160  ff4f9c7ca7e34f20ac8518fca578f92dd16c5d3c \
-sha256  650ba3e8089624b7ad9e4cc19bc1ac6028edb7523cc111fa1686ea44c0921554 \
-size    465713
-=======
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 depends_build       port:pkgconfig
 
@@ -38,12 +32,7 @@ depends_lib         port:curl \
                     port:readline \
                     port:taglib
 
-<<<<<<< HEAD
-# Requires C++14.
 compiler.cxx_standard 2017
-=======
-compiler.cxx_standard 2017
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 configure.args      --with-boost=[boost::install_area] \
                     --with-taglib=${prefix} \

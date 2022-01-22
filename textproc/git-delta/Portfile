@@ -23,15 +23,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin
 
 checksums           ${distname}${extract.suffix} \
-<<<<<<< HEAD
 rmd160  8eb6270ea29327ea3406976c0b6ff26a239889b1 \
 sha256  7dff2a7cc69277b757c08c7398931cb13372458891f1dd992beb2dae8ee42411 \
 size    1196336
-=======
-rmd160  4d1aa96102a9f48a2a59c040b87037364f55e7cd \
-sha256  cf68f43d4d26c10551c0137a7e718719958e52267d83f29a8f7794af12095b9e \
-size    1198656
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
 
 depends_lib-append  port:libgit2 \
                     port:zlib
