@@ -122,11 +122,3 @@ sha256  5d611cbb06cfb6626be46eb2f23d003b2b80f40182898daa54b1c4e8b5b9e17e
         cindex.set_library_(path|file)().
     }
 }
-
-foreach {old} {36} {
-    subport py${old}-${python.rootname} "
-        replaced_by py${python.default_version}-${python.rootname}
-        PortGroup obsolete 1.0
-
-    "
-}

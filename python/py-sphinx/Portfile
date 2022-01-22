@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-sphinx
-version             4.3.2
+version             4.4.0
 categories-append   textproc devel
 license             BSD
 maintainers         {jmr @jmroot} openmaintainer
@@ -22,15 +22,14 @@ supported_archs     noarch
 homepage            https://www.sphinx-doc.org/
 python.rootname     Sphinx
 
-checksums           md5 fed523361a7099d1e3b61fa887005b16 \
-rmd160 5b6201f083a216aa87bde1df4d07dc7c501b0d06 \
-sha256 0a8836751a68306b3fe97ecbe44db786f8479c3bf4b80e3a7f5c838657b4698c
+checksums           md5 663e2f2ee9219ef4913831950825f68b \
+                    rmd160 fcb1f18c208d853ebae080582f8a9a75f0795e5c \
+                    sha256 6caad9786055cb1fa22b4a365c1775816b876f91966481765d7d50e9f0dd35cc
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 if {$subport ne $name} {
-    depends_lib     port:py${python.version}-docutils \
-                    port:py${python.version}-setuptools
+    depends_lib     port:py${python.version}-docutils
     depends_run     port:py${python.version}-alabaster \
                     port:py${python.version}-babel \
                     port:py${python.version}-imagesize \
@@ -43,15 +42,19 @@ if {$subport ne $name} {
     if {${python.version} > 35} {
         patchfiles-append   setup.py.patch
         python.pep517   yes
-        depends_build-append    port:py${python.version}-wheel
+        if {${python.version} <= 39} {
+            depends_lib-append  port:py${python.version}-importlib-metadata
+        }
+    } else {
+        depends_lib-append  port:py${python.version}-setuptools
     }
     if {${python.version} == 35} {
         version     3.5.4
         revision    0
         checksums   md5 dd46088ebc01f6f721ee7618df680d68 \
-rmd160 70102258335337eff3cc16526e84e9a95c625018 \
-sha256 19010b7b9fa0dc7756a6e105b2aacd3a80f798af3c25c273be64d7beeb482cb1 \
-size 5911093
+                    rmd160 70102258335337eff3cc16526e84e9a95c625018 \
+                    sha256 19010b7b9fa0dc7756a6e105b2aacd3a80f798af3c25c273be64d7beeb482cb1 \
+                    size 5911093
 
         patch.pre_args      -p1
         # Source of patch: https://github.com/catap/sphinx/tree/docutils-1.8-v354
@@ -61,8 +64,8 @@ size 5911093
         version     1.8.5
         revision    0
         checksums   md5 554f7a4e752f48b2601e5ef5ab463346 \
-rmd160 a7a38523976288c13a8a7e5bf4a81367db9af462 \
-sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
+                    rmd160 a7a38523976288c13a8a7e5bf4a81367db9af462 \
+                    sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
 
         depends_run-append  port:py${python.version}-six \
                             port:py${python.version}-sphinxcontrib-websupport \

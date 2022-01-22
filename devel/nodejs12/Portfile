@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -13,10 +13,10 @@ openssl.configure       pkgconfig build_flags
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard 2017
+compiler.cxx_standard   2014
 
 name                    nodejs12
-version                 12.22.8
+version                 12.22.9
 revision                0
 
 categories              devel net
@@ -37,15 +37,9 @@ homepage                https://nodejs.org/
 master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
-<<<<<<< HEAD
-checksums               rmd160  3ac959f37af003d7ab8bbf845609bdbc02c6024f \
-sha256  cc6a23b44870679a94bd8f3c8d4e1f4b77bb2712a36888ab87463459e6785f6b \
-size    23661696
-=======
-checksums               rmd160  671bae14edaf9882affe72e7a100af2a69168b80 \
-sha256  2785cb1da108130083224b60e4b94009a153b26ef34bb22afc5180b6be84113c \
-size    24062856
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums               rmd160  cf76ce57f297a52624e49ac60773a45378448455 \
+                        sha256  da982c03e584c2b6e50f432cc5e46605d4e3d8451125be25a645fe716873e24a \
+                        size    24101592
 
 distname                node-v${version}
 
@@ -57,7 +51,7 @@ set py_ver_nodot        [string map {. {}} ${py_ver}]
 depends_lib-append      port:icu \
                         port:python${py_ver_nodot}
 
-use_xcode  no
+use_xcode               yes
 
 proc rec_glob {basedir pattern} {
     set files [glob -directory $basedir -nocomplain -type f $pattern]

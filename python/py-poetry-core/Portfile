@@ -13,7 +13,6 @@ sha256  98c11c755a16ef6c5673c22ca94a3802a7df4746a0853a70b6fae8b9f5cac206 \
 size    346244
 
 categories-append   devel
-platforms           darwin
 supported_archs     noarch
 license             MIT
 maintainers         nomaintainer
@@ -29,6 +28,10 @@ python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
+
+    if {${python.version} < 38} {
+        depends_lib-append  port:py${python.version}-importlib-metadata
+    }
 
     post-destroot {
         set docdir ${prefix}/share/doc/${subport}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -6,11 +6,11 @@ PortSystem          1.0
 PortGroup           muniversal 1.0
 
 name                expat
-version             2.4.2
+version             2.4.3
 revision            0
-checksums           rmd160  8c1feade9bf9e35dd353e4fe0b055c79363393a3 \
-sha256  e40737134bdc08b8ea7d23a2c0a5cd11c04d5be152fe562d3253c1e4a0be6686 \
-size    558087
+checksums           rmd160  c313bd1e965fdf6325e395412cfecd7b7a5051f0 \
+                    sha256  6f262e216a494fbf42d8c22bc841b3e117c21f2467a19dc4c27c991b5622f986 \
+                    size    559674
 
 categories          textproc devel
 platforms           darwin freebsd

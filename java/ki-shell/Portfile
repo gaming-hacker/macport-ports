@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       java 1.0
 
 name            ki-shell
-version         0.4.0
+version         0.4.4
 revision        0
 
 categories      java
@@ -27,9 +27,9 @@ master_sites    https://search.maven.org/remotecontent?filepath=org/jetbrains/ko
 
 distname        ${name}-${version}-archive
 
-checksums       rmd160  349b904ed1687f5fdfd7d32eafa72b28284ad746 \
-sha256  19b7ca5b5d5330cb45cf38022f5d51e87ae46f56558dbb5f0ba683cccd3f0dbf \
-size    61848043
+checksums       rmd160  7c592c798d75ad05361235ff41fefbe9b97b2b6d \
+                sha256  0aa28320cc5014883b51c832c0a4f379055eca44ad71d7ee9a08ba539dd81aab \
+                size    61898092
 
 use_zip         yes
 use_configure   no

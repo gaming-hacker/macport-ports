@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,6 @@ revision            0
 name                py-myst-parser
 
 categories-append   textproc devel
-platforms           darwin
 supported_archs     noarch
 license             MIT
 maintainers         {judaew @judaew} openmaintainer
@@ -25,19 +24,11 @@ long_description    \
     to write MyST Markdown in Sphinx.
 homepage            https://github.com/executablebooks/MyST-Parser
 
-<<<<<<< HEAD
-checksums           rmd160  178f98ee886240abc15f8c1e8e12b73294a7e58e \
-sha256  be31e426d9f0698dbac879bb9a41afe555fa9c4a9e659a82887a1e1e195c9f92 \
-size    52500
-
-python.versions 39
-=======
 checksums           rmd160  6782c2d550f3c260cabe8b8d828e57441f32eddc \
-sha256  38eda99173355b60caedd34c2d34a7321828f16374475fc6a7ea2adf8e02765a \
-size    864194
+                    sha256  38eda99173355b60caedd34c2d34a7321828f16374475fc6a7ea2adf8e02765a \
+                    size    864194
 
-python.versions 39
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

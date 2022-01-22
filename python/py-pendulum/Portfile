@@ -26,6 +26,8 @@ size    81167
 if {${name} ne ${subport}} {
     python.pep517   yes
     python.pep517_backend   poetry
+    # https://trac.macports.org/ticket/64425
+    build.cmd       pyproject-build-${python.branch} --wheel --no-isolation --outdir ${workpath}
 
     depends_build-append    port:py${python.version}-wheel
 

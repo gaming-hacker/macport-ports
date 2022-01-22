@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -16,11 +16,11 @@ maintainers         {ra1nb0w @ra1nb0w} openmaintainer
 description         piHPSDR is an HPSDR application designed for low power boards, like Raspberry.
 long_description    ${description}
 
-github.setup        dl1ycf pihpsdr c8438287a2b18a4aaa2b0cbd22b7e60e0730be34
-version             20220112-[string range ${github.version} 0 7]
-checksums           rmd160  9d57bd198702f96102fbc3214b36731debc16bca \
-sha256  570ee4423fb3af425663bb9d60256deb3df36c7b7116bb6f372e401894342b66 \
-size    119378221
+github.setup        dl1ycf pihpsdr 69ff2e3de37f6c03846022038f927306f2e66a83
+version             20220117-[string range ${github.version} 0 7]
+checksums           rmd160  e1277b02111235a4db3786da787075474959c3cf \
+                    sha256  2af875e7b40850ce8484cfc9e5407db75d476a65d9049fdd52fc5eb4f7918232 \
+                    size    119386040
 revision            0
 
 patchfiles-append \

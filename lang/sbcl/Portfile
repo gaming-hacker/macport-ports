@@ -1,4 +1,4 @@
-# -*- mode: _tcl; coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- # vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- mode: tcl; coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- # vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 
@@ -8,7 +8,7 @@ name            sbcl
 #
 # Please bump the revision of math/maxima (and when it exists
 # math/maxima-devel) when this port changes.
-version         2.1.11
+version         2.2.0
 revision        0
 
 categories      lang
@@ -41,9 +41,9 @@ distfiles       ${name}-${version}-source${extract.suffix}:sbcl
 worksrcdir      ${name}-${version}
 
 checksums       ${name}-${version}-source${extract.suffix} \
-rmd160  b283a6b118c1066c77ec496f975d74a23befea85 \
-sha256  bfc1481de7fdbdfaeef2ab0f0e8e84efd343433dea8d21cfbea8b0146cbdfefd \
-size    6687529 
+    rmd160  40f49626bf1ce9d212f9b4e08c63c7447357d95f \
+    sha256  2276957ea86ae9968ca486a9928c67a34cb31c9403ec657d24ecdf8458daa5c6 \
+    size    6697729 
 
 # Since SBCL is written in lisp, it requires a running lisp binary to
 # bootstrap from.
@@ -59,9 +59,9 @@ if {${build_arch} eq "x86_64"} {
     master_sites-append sourceforge:project/sbcl/sbcl/${bootversion}:sbcl_amd64
     distfiles-append    ${name}-${bootversion}-x86-64-darwin-binary${extract.suffix}:sbcl_amd64
     checksums-append    ${name}-${bootversion}-x86-64-darwin-binary${extract.suffix} \
-rmd160  7065f30033c0a38ea4bd5b2bdead76ed12eb8af4 \
-sha256  057d3a1c033fb53deee994c0135110636a04f92d2f88919679864214f77d0452 \
-size    10038928
+        rmd160  7065f30033c0a38ea4bd5b2bdead76ed12eb8af4 \
+        sha256  057d3a1c033fb53deee994c0135110636a04f92d2f88919679864214f77d0452 \
+        size    10038928
     global host_lisp
     set host_lisp "\"${workpath}/${name}-${bootversion}-x86-64-darwin/src/runtime/sbcl --core ${workpath}/${name}-${bootversion}-x86-64-darwin/output/sbcl.core --disable-debugger --sysinit /dev/null --userinit /dev/null\" "
 }
@@ -70,9 +70,9 @@ if {${build_arch} eq "arm64"} {
     master_sites-append sourceforge:project/sbcl/sbcl/${bootversion}:sbcl_arm64
     distfiles-append    ${name}-${bootversion}-arm64-darwin-binary${extract.suffix}:sbcl_arm64
     checksums-append    ${name}-${bootversion}-arm64-darwin-binary${extract.suffix} \
-rmd160  ce5856a0e1f0040e95c9d79ef0a6199a0f932ab3 \
-sha256  1f400b8a05dc588ca9740f9f4dfee3111b1cc1b6fb40801f728c42b460e1d115 \
-size    9204605
+        rmd160  ce5856a0e1f0040e95c9d79ef0a6199a0f932ab3 \
+        sha256  1f400b8a05dc588ca9740f9f4dfee3111b1cc1b6fb40801f728c42b460e1d115 \
+        size    9204605
     global host_lisp
     set host_lisp "\"${workpath}/${name}-${bootversion}-arm64-darwin/src/runtime/sbcl --core ${workpath}/${name}-${bootversion}-arm64-darwin/output/sbcl.core --disable-debugger --sysinit /dev/null --userinit /dev/null\" "
 }
@@ -82,9 +82,9 @@ if {${build_arch} eq "i386"} {
     master_sites-append sourceforge:project/sbcl/sbcl/${bootversion}:sbcl_i386
     distfiles-append    ${name}-${bootversion}-x86-darwin-binary${extract.suffix}:sbcl_i386
     checksums-append    ${name}-${bootversion}-x86-darwin-binary${extract.suffix} \
-rmd160  fb1ab24f3605b29af5716f0ba425ee178c6cfc06 \
-sha256  5801c60e2a875d263fccde446308b613c0253a84a61ab63569be62eb086718b3 \
-size    9091955
+        rmd160  fb1ab24f3605b29af5716f0ba425ee178c6cfc06 \
+        sha256  5801c60e2a875d263fccde446308b613c0253a84a61ab63569be62eb086718b3 \
+        size    9091955
     global host_lisp
     set host_lisp "\"${workpath}/${name}-${bootversion}-x86-darwin/src/runtime/sbcl --core ${workpath}/${name}-${bootversion}-x86-darwin/output/sbcl.core --disable-debugger --sysinit /dev/null --userinit /dev/null\" "
 }

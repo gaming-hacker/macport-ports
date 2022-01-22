@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -36,8 +36,8 @@ long_description    Mako is a template library written in Python. \
 homepage            https://www.makotemplates.org/
 
 checksums           rmd160  542024ab96ad5443cc44210f927b25915f5ce70e \
-sha256  4e9e345a41924a954251b95b4b28e14a301145b544901332e658907a7464b6b2 \
-size    495132
+                    sha256  4e9e345a41924a954251b95b4b28e14a301145b544901332e658907a7464b6b2 \
+                    size    495132
 
 if {${name} ne ${subport}} {
     # Mako depends on pkg_resources from setuptools

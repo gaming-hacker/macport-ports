@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       legacysupport 1.0
 
 name            bind9
-version         9.16.24
+version         9.16.25
 categories      net
 maintainers     {geeklair.net:dluke @danielluke}
 platforms       darwin freebsd sunos
@@ -27,15 +27,9 @@ homepage        https://www.isc.org/
 distname        bind-${version}
 master_sites    isc:${name}/${version}
 
-<<<<<<< HEAD
-checksums       rmd160    ee5657af7c7f13ceaf43a4817b45d5ee1082df07 \
-sha256    dedb5e27aa9cb6a9ce3e872845887ff837b99e4e9a91a5e2fcd67cf6e1ef173c \
-size      5068344
-=======
-checksums       rmd160    edeae39b025579605758f8eadf02fdf5a2fdea6f \
-sha256    5582f3734bd6232284f93f14206b8a46d1f819dea4797ae157066f6963b08507 \
-size      5070180
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
+checksums       rmd160    392897a9a27216cbae8969f8ed1aefee1ab6beb9 \
+                sha256    9fa328850f82843ef8b7bf1ff5322cb68b110273a33f375ba41f35270f5e1ff3 \
+                size      5086780
 
 use_xz          yes
 

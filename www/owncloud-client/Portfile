@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -26,8 +26,8 @@ if {${os.platform} eq "darwin"} {
         distname            owncloudclient-${version}.${build_id}
 
         checksums           rmd160  effe036ca72c8714b80947430b4aa9bdea7dff2f \
-sha256  e3d38de31e041f0e1836b2b74acfc1fc76eea4955968952a65643cbf36a493f5 \
-size    21246672
+                            sha256  e3d38de31e041f0e1836b2b74acfc1fc76eea4955968952a65643cbf36a493f5 \
+                            size    21246672
 
         patchfiles-append   patch-use-system-sqlite.diff
 
@@ -38,16 +38,16 @@ size    21246672
         # Check https://download.owncloud.com/desktop/ownCloud/stable/
         # to find the build_id in the source tarball:
         # ownCloud-${version}.${build_id}.tar.xz
-        set build_id        6206
-        version             2.9.2.${build_id}
+        set build_id        6519
+        version             2.10.0.${build_id}
         revision            0
 
         master_sites        https://download.owncloud.com/desktop/ownCloud/stable/${version}/source/
         distname            ownCloud-${version}
 
-        checksums           rmd160  0c30b1df06b1de5f522adfb055d56b8316276e6f \
-sha256  8ba4e624512e1f80358d3ca82a2268554ef20be0176481f89a26129375f3544a \
-size    5759996
+        checksums           rmd160  29755cd9a333c19a1fcf5860ee502f5d25cae05a \
+                            sha256  1c31fcb3f54f78e01b932adf13b85b85e3e1b56731d4851d9610c29e87689a1f \
+                            size    5791912
 
         depends_build-append \
                             port:kde-extra-cmake-modules
@@ -72,7 +72,7 @@ size    5759996
 
 use_xz                  yes
 
-use_xcode  no
+use_xcode               yes
 
 compiler.cpath
 compiler.library_path

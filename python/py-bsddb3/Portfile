@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -8,7 +8,6 @@ version                 6.2.9
 revision                0
 
 categories-append       databases
-platforms               darwin
 license                 MIT
 maintainers             nomaintainer
 
@@ -23,10 +22,10 @@ long_description        This port provides a nearly complete wrapping \
 homepage                https://pypi.python.org/pypi/${python.rootname}
 
 checksums               rmd160  dd01d1fa55d37cd4948b539f8f6296a89cb9f433 \
-sha256  70d05ec8dc568f42e70fc919a442e0daadc2a905a1cfb7ca77f549d49d6e7801 \
-size    230475
+                        sha256  70d05ec8dc568f42e70fc919a442e0daadc2a905a1cfb7ca77f549d49d6e7801 \
+                        size    230475
 
-python.versions 39
+python.versions         37 38 39
 python.link_binaries    no
 python.move_binaries    no
 
