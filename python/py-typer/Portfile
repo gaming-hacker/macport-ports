@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,11 +14,11 @@ supported_archs     noarch
 description         Typer, build great CLIs. Easy to code. Based on Python type hints.
 long_description    {*}${description}
 
-python.versions     37 38 39 310
+python.versions 39
 
 checksums           rmd160  091fbdfdf0e8489c6569d70382d31a7f3818b797 \
-                    sha256  63c3aeab0549750ffe40da79a1b524f60e08a2cbc3126c520ebf2eeaf507f5dd \
-                    size    218979
+sha256  63c3aeab0549750ffe40da79a1b524f60e08a2cbc3126c520ebf2eeaf507f5dd \
+size    218979
 
 if {${name} ne ${subport}} {
     python.pep517   yes

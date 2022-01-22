@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -17,10 +17,10 @@ long_description        ${description}
 homepage                https://curtsies.readthedocs.io
 
 checksums               rmd160  376d6c00706f5425c6fcfeecf7236e8cac61195e \
-                        sha256  11efbb153d9cb22223dd9a44041ea0c313b8411e246e7f684aa843f6aa9c1600 \
-                        size    53340
+sha256  11efbb153d9cb22223dd9a44041ea0c313b8411e246e7f684aa843f6aa9c1600 \
+size    53340
 
-python.versions         27 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     livecheck.type          none
@@ -43,8 +43,8 @@ if {${name} ne ${subport}} {
                             port:py${python.version}-wcwidth
 
         checksums           rmd160  a9839baf73fe50b367899243ee22006cac16d5f1 \
-                            sha256  4ca543998d8bbba7185db099f8b7bb30baeb47426f7ac1a271e4d9ca8bbb2b05 \
-                            size    52733
+sha256  4ca543998d8bbba7185db099f8b7bb30baeb47426f7ac1a271e4d9ca8bbb2b05 \
+size    52733
     }
 
     if {${python.version} == 37 } {

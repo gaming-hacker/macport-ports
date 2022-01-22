@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             Apache-2
 supported_archs     noarch
 
-python.versions     37 38 39
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/aio-libs/aiobotocore
 
 checksums           rmd160  6e4d26cb40224ef8a29ef151abe79e956fe5c60a \
-                    sha256  b6bae95c55ef822d790bf8ebf6aed3d09b33e2817fa5f10e16a77028332963c2 \
-                    size    50597
+sha256  b6bae95c55ef822d790bf8ebf6aed3d09b33e2817fa5f10e16a77028332963c2 \
+size    50597
 
 if {${name} ne ${subport}} {
     depends_build-append \

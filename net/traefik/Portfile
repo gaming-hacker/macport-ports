@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,8 +21,8 @@ long_description    \
     should be the only configuration step you need.
 
 checksums           rmd160  448dd9b5051497cadb0a8391cab13525931522bb \
-                    sha256  8d817c7f77722bcfdee74eb1e8f4a1f5a421c6d9885930d8cd63f2e0a588f317 \
-                    size    8554897
+sha256  8d817c7f77722bcfdee74eb1e8f4a1f5a421c6d9885930d8cd63f2e0a588f317 \
+size    8554897
 
 depends_build-append \
                     port:go-bindata

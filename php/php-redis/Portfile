@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -15,14 +15,14 @@ if {[vercmp ${php.branch} 7.0] >= 0} {
     version             5.3.6
     revision            0
     checksums           rmd160  fadba3410245671a60d495f6c28c0ade1a3e8120 \
-                        sha256  fe295ec26a25204e6c07e8d7144210f767bd7008858719da230409eb3f6f2e09 \
-                        size    274235
+sha256  fe295ec26a25204e6c07e8d7144210f767bd7008858719da230409eb3f6f2e09 \
+size    274235
 } elseif {[vercmp ${php.branch} 5.3] >= 0} {
     version             4.3.0
     revision            0
     checksums           rmd160  e1888440b3446200fdc83e79f2aec873bd18b6b2 \
-                        sha256  c0f04cec349960a842b60920fb8a433656e2e494eaed6e663397d67102a51ba2 \
-                        size    241883
+sha256  c0f04cec349960a842b60920fb8a433656e2e494eaed6e663397d67102a51ba2 \
+size    241883
 }
 
 description             an API for communicating with a Redis database from PHP

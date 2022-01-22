@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    ${description}, e.g. creating a Python package project from 
 homepage            https://github.com/cookiecutter/cookiecutter
 
 checksums           rmd160  9a42a55f657e276389b74c06ae3e84e395bfdd19 \
-                    sha256  6b9a4d72882e243be077a7397d0f1f76fe66cf3df91f3115dbb5330e214fa457 \
-                    size    133496
+sha256  6b9a4d72882e243be077a7397d0f1f76fe66cf3df91f3115dbb5330e214fa457 \
+size    133496
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
 

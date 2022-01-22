@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Path-Tiny 0.122 ../../authors/id/D/DA/DAGOLDEN
 revision            0
 license             {Artistic-1 GPL}
@@ -16,8 +16,8 @@ long_description    This module provide a small, fast utility for working with f
 platforms           darwin
 
 checksums           rmd160  b47358a4dd7a064f34da6414530ada4cbec89f9a \
-                    sha256  4bc6f76d0548ccd8b38cb66291a885bf0de453d0167562c7b82e8861afdcfb7c \
-                    size    98664
+sha256  4bc6f76d0548ccd8b38cb66291a885bf0de453d0167562c7b82e8861afdcfb7c \
+size    98664
 
 if {${perl5.major} != ""} {
     depends_build-append \

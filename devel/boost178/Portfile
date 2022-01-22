@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -16,8 +16,8 @@ name            boost${tag}
 # The boost-numpy subport has its own revision number
 
 checksums       rmd160  cdab0f7aedffdfe93c0aac268c1817bd4cb10645 \
-                sha256  8681f175d4bdb26c52222665793eef08490d7758529330f98d3b29dd0735bccc \
-                size    110675550
+sha256  8681f175d4bdb26c52222665793eef08490d7758529330f98d3b29dd0735bccc \
+size    110675550
 
 license         Boost-1
 categories      devel
@@ -39,7 +39,7 @@ set distver     [join [split ${version} .] _]
 distname        boost_${distver}
 use_bzip2       yes
 
-compiler.cxx_standard     2011
+compiler.cxx_standard 2017
 compiler.blacklist-append {clang < 1000}
 
 depends_lib-append \
@@ -141,8 +141,8 @@ mpi.setup          -gcc
 # Further: Building Boost using C++11 compliance does not seem to then
 # require ports depending on Boost to also require C++11 compliance,
 # and requiring it does make such building easier for those ports.
-configure.cxxflags-append -std=gnu++11
-compiler.cxx_standard   2011
+configure.cxxflags-append -std=c++17
+compiler.cxx_standard 2017
 
 # This flag fixes the return type of unsetenv(3)
 # See: https://trac.macports.org/ticket/63121

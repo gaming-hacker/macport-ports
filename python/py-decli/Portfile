@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    Decli is minimal wrapper around argparse. It's useful when w
 homepage            https://github.com/Woile/decli
 
 checksums           rmd160  aba6ffb7a31e624e0e1e63b5577326126d919821 \
-                    sha256  f2cde55034a75c819c630c7655a844c612f2598c42c21299160465df6ad463ad \
-                    size    10575
+sha256  f2cde55034a75c819c630c7655a844c612f2598c42c21299160465df6ad463ad \
+size    10575
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -6,8 +6,8 @@ PortGroup       github 1.0
 github.setup    Quagga quagga 1.2.4 quagga-
 revision        0
 checksums       rmd160  9d4b807ce150db9d3cec1f6bf9a3f836d4973428 \
-                sha256  e364c082c3309910e1eb7b068bf39ee298e2f2f3f31a6431a5c115193bd653d3 \
-                size    2925847
+sha256  e364c082c3309910e1eb7b068bf39ee298e2f2f3f31a6431a5c115193bd653d3 \
+size    2925847
 
 categories      net
 license         GPL-2+

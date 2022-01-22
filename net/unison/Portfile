@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ homepage            http://www.cis.upenn.edu/~bcpierce/unison/
 platforms           darwin
 
 checksums           rmd160  a1024b19350dee2cf952ed924eba1dc921485154 \
-                    sha256  77eb8bc28cec5eaa7ceb2011354f77f4a753fd033589497a56c8cb9306f9459f \
-                    size    1385506
+sha256  77eb8bc28cec5eaa7ceb2011354f77f4a753fd033589497a56c8cb9306f9459f \
+size    1385506
 
 # from ocaml port
 supported_archs     i386 x86_64 arm64
@@ -75,7 +75,7 @@ variant aqua description {Build Aqua front-end} conflicts gtk {
     destroot.args-replace   UISTYLE=text \
                             UISTYLE=mac14
 
-    use_xcode               yes
+    use_xcode  no
 
     destroot {
         copy ${worksrcpath}/src/uimac/build/Default/Unison.app ${destroot}${applications_dir}

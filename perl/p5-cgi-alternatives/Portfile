@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         CGI-Alternatives 0.19
 revision            0
 platforms           darwin
@@ -15,8 +15,8 @@ description         Documentation for alternative solutions to CGI.pm
 long_description    ${description}
 
 checksums           rmd160  7b4f1e33920046e516aa50750594b3fb1c5fb934 \
-                    sha256  950f569de115ac52831812481a7854bf2c0d8a29f122d9c3d3c071b58c895a2d \
-                    size    11428
+sha256  950f569de115ac52831812481a7854bf2c0d8a29f122d9c3d3c071b58c895a2d \
+size    11428
 
 if {${perl5.major} != ""} {
     depends_build-append \

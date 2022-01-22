@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    Client for the OpenStack Volume API. There’s a \
 homepage            https://docs.openstack.org/python-cinderclient/latest/
 
 checksums           rmd160  9706fd47624c8490cfbbcc8620a4fe986ecb79b0 \
-                    sha256  625d34dd6a3626f9a02e83af554441d96ff91ab20aa081412c7530c1e87ec642 \
-                    size    243949
+sha256  625d34dd6a3626f9a02e83af554441d96ff91ab20aa081412c7530c1e87ec642 \
+size    243949
 
-python.versions     37 38
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_build-append \

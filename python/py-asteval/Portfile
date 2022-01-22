@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ long_description    ASTEVAL is a safe(ish) evaluator of Python expressions and \
 homepage            https://github.com/newville/asteval
 
 checksums           rmd160  80716cab40fac3786e4886120a3577ae64bc8868 \
-                    sha256  36125613ec21ed3e33e370ca8960a1f1e8a2324d78a8016bfa5ad76f1e16ef05 \
-                    size    40113
+sha256  36125613ec21ed3e33e370ca8960a1f1e8a2324d78a8016bfa5ad76f1e16ef05 \
+size    40113
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_build-append \

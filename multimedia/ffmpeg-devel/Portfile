@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcodeversion 1.0
@@ -63,8 +63,8 @@ dist_subdir         ${my_name}
 use_xz              yes
 
 checksums           rmd160  181f07234e028a65677b3201373dc7c2354c34b7 \
-                    sha256  51e919f7d205062c0fd4fae6243a84850391115104ccf1efc451733bc0ac7298 \
-                    size    9811480
+sha256  51e919f7d205062c0fd4fae6243a84850391115104ccf1efc451733bc0ac7298 \
+size    9811480
 
 depends_build       port:pkgconfig \
                     port:gmake \

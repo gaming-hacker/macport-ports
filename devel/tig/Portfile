@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        jonas tig 2.5.5 tig-
 github.tarball_from releases
 checksums           rmd160  b1f9ce1c19f5da0c0681542d5be9fecbe09f12f1 \
-                    sha256  24ba2c8beae889e6002ea7ced0e29851dee57c27fde8480fb9c64d5eb8765313 \
-                    size    1175752
+sha256  24ba2c8beae889e6002ea7ced0e29851dee57c27fde8480fb9c64d5eb8765313 \
+size    1175752
 
 categories          devel
 maintainers         {cal @neverpanic} \

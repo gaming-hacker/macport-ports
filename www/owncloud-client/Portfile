@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -26,8 +26,8 @@ if {${os.platform} eq "darwin"} {
         distname            owncloudclient-${version}.${build_id}
 
         checksums           rmd160  effe036ca72c8714b80947430b4aa9bdea7dff2f \
-                            sha256  e3d38de31e041f0e1836b2b74acfc1fc76eea4955968952a65643cbf36a493f5 \
-                            size    21246672
+sha256  e3d38de31e041f0e1836b2b74acfc1fc76eea4955968952a65643cbf36a493f5 \
+size    21246672
 
         patchfiles-append   patch-use-system-sqlite.diff
 
@@ -46,8 +46,8 @@ if {${os.platform} eq "darwin"} {
         distname            ownCloud-${version}
 
         checksums           rmd160  29755cd9a333c19a1fcf5860ee502f5d25cae05a \
-                            sha256  1c31fcb3f54f78e01b932adf13b85b85e3e1b56731d4851d9610c29e87689a1f \
-                            size    5791912
+sha256  1c31fcb3f54f78e01b932adf13b85b85e3e1b56731d4851d9610c29e87689a1f \
+size    5791912
 
         depends_build-append \
                             port:kde-extra-cmake-modules
@@ -72,7 +72,7 @@ if {${os.platform} eq "darwin"} {
 
 use_xz                  yes
 
-use_xcode               yes
+use_xcode  no
 
 compiler.cpath
 compiler.library_path

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,9 +28,9 @@ extract.suffix      .tgz
 # Please keep the sha1 - users can use it to validate sha values
 # published on npmjs.org for the package
 checksums           rmd160  b5a694b384ba82350721cf896d30ec0f24181949 \
-                    sha1    50149817779f10429959919dc7f5f85a2c85db69 \
-                    sha256  5029c93c6338a23e9c5ab4e47f034d74b6b7602cabbae22346757c5d18d5742b \
-                    size    2243073
+sha1    50149817779f10429959919dc7f5f85a2c85db69 \
+sha256  5029c93c6338a23e9c5ab4e47f034d74b6b7602cabbae22346757c5d18d5742b \
+size    2243073
 
 worksrcdir          "package"
 

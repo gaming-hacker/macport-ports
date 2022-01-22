@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,8 +8,8 @@ version             0.5.0
 revision            0
 
 checksums           rmd160  f64c671c5a5d3bfccaf3ce1e3cf1dd11ea653201 \
-                    sha256  50ed823e1dc5868ad40c8dc92072f757aa0e653a192845c94a3b676f4a62da4c \
-                    size    133535
+sha256  50ed823e1dc5868ad40c8dc92072f757aa0e653a192845c94a3b676f4a62da4c \
+size    133535
 
 platforms           darwin
 license             Apache-2
@@ -20,7 +20,7 @@ long_description    ${description}
 
 homepage            https://github.com/boto/${python.rootname}
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

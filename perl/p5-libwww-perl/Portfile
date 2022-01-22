@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         libwww-perl 6.61 ../../authors/id/O/OA/OALDERS
 revision            0
 maintainers         nomaintainer
@@ -24,8 +24,8 @@ long_description    The libwww-perl collection is a set of Perl \
                     simple HTTP servers.
 
 checksums           rmd160  d587767808c4a4646bbfa38224bb8b4983dcd862 \
-                    sha256  2f69069bd0df0ee222e25d41093bcc42e58d0a45885fba400356454c25621a5f \
-                    size    179453
+sha256  2f69069bd0df0ee222e25d41093bcc42e58d0a45885fba400356454c25621a5f \
+size    179453
 
 platforms           darwin
 

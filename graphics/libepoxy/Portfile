@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ description         Epoxy is a library for handling OpenGL function \
 long_description    {*}${description}
 
 checksums           rmd160  4280973f55a9c5eedd4307fff200b6bf389867ef \
-                    sha256  cb9ba79bfedb6993594adaf81c13f81a17732eaa57353b2e1b92bdc44451c9ee \
-                    size    332017
+sha256  cb9ba79bfedb6993594adaf81c13f81a17732eaa57353b2e1b92bdc44451c9ee \
+size    332017
 
 # Yes, mesa and xorg-libX11 are *build* dependencies.  The library will function correctly
 # if they are not present because it loads mesa dynamically only when GLX is used.  When
@@ -47,11 +47,11 @@ configure.args-append \
 set python_vers     3.9
 
 variant python37 conflicts  python38 python39 python310 description {build with python 3.7} {
-    depends_build-append    port:python37
+    depends_build-append    port:python39
     set python_vers         3.7
 }
 variant python38 conflicts  python37 python39 python310 description {build with python 3.8} {
-    depends_build-append    port:python38
+    depends_build-append    port:python39
     set python_vers         3.8
 }
 variant python39 conflicts  python37 python38 python310 description {build with python 3.9} {

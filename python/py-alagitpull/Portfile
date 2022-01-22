@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    {*}${description}
 homepage            https://github.com/git-pull/alagitpull
 
 checksums           rmd160  731ca2bc6235f7dde697345c49378caf12454632 \
-                    sha256  f6076f81a738c3291b598d8016b248edf5adf25d1d348c2599eff92c1eedaed9 \
-                    size    7516
+sha256  f6076f81a738c3291b598d8016b248edf5adf25d1d348c2599eff92c1eedaed9 \
+size    7516
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

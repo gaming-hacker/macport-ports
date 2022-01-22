@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   mpi 1.0
@@ -15,8 +15,8 @@ homepage                    https://code.mpimet.mpg.de/projects/cdo
 master_sites                https://code.mpimet.mpg.de/attachments/download/26676
 
 checksums           rmd160  f00d10bfefaa49e2d5dbb148476c92dc857b9e39 \
-                    sha256  25520260ccb4e5324c27fa2160dfafc8152b180dd7f0133bd80425df3ef7c65a \
-                    size    11781699
+sha256  25520260ccb4e5324c27fa2160dfafc8152b180dd7f0133bd80425df3ef7c65a \
+size    11781699
 
 long_description \
     CDO is a collection of command line Operators               \
@@ -26,7 +26,7 @@ long_description \
 
 fetch.ignore_sslcert        yes
 
-compiler.cxx_standard       2011
+compiler.cxx_standard 2017
 compilers.choose            cc cxx
 mpi.setup
 mpi.enforce_variant         hdf5

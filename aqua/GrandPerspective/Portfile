@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -22,8 +22,8 @@ distname            ${name}-${version_unsc}-src
 extract.suffix      .tgz
 
 checksums           rmd160  f2115b5a3b251cf9d7ec5bf011bcb693867783ce \
-                    sha256  dfe8942d4255d7a2bd07af962c1529b4f94819d1e118641fae4186718074637d \
-                    size    1885714
+sha256  dfe8942d4255d7a2bd07af962c1529b4f94819d1e118641fae4186718074637d \
+size    1885714
 
 build.dir           ${worksrcpath}/src
 

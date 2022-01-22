@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ long_description    FontForge allows you to edit outline and bitmap fonts.  You 
 homepage            https://fontforge.org
 
 checksums           rmd160  25ef811489661aa66200c3d49a5e6f8951129d9c \
-                    sha256  68bcba8f602819eddc29cd356ee13fafbad7a80d19b652d354c6791343476c78 \
-                    size    14163424
+sha256  68bcba8f602819eddc29cd356ee13fafbad7a80d19b652d354c6791343476c78 \
+size    14163424
 
 # don't override cmake build dependencies
 depends_build-append \
@@ -88,27 +88,27 @@ configure.args-append -DENABLE_GUI=False \
                       -DENABLE_X11=False
 
 variant python37 conflicts python38 python39 python310 description {Enable Python support (Python 3.7)} {
-    depends_lib-append      port:python37
+    depends_lib-append      port:python39
     configure.args-replace  -DENABLE_PYTHON_EXTENSION=False \
                             -DENABLE_PYTHON_EXTENSION=True
     configure.args-replace  -DENABLE_PYTHON_SCRIPTING=False \
                             -DENABLE_PYTHON_SCRIPTING=True
-    configure.args-append   -DPython3_EXECUTABLE="${prefix}/bin/python3.7" \
-                            -DPYHOOK_INSTALL_DIR="${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages"
+    configure.args-append   -DPython3_EXECUTABLE="${prefix}/bin/python3.9" \
+                            -DPYHOOK_INSTALL_DIR="${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages"
     configure.pkg_config_path \
-                            "${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig"
+                            "${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig"
 }
 
 variant python38 conflicts python37 python39 python310 description {Enable Python support (Python 3.8)} {
-    depends_lib-append      port:python38
+    depends_lib-append      port:python39
     configure.args-replace  -DENABLE_PYTHON_EXTENSION=False \
                             -DENABLE_PYTHON_EXTENSION=True
     configure.args-replace  -DENABLE_PYTHON_SCRIPTING=False \
                             -DENABLE_PYTHON_SCRIPTING=True
-    configure.args-append   -DPython3_EXECUTABLE="${prefix}/bin/python3.8" \
-                            -DPYHOOK_INSTALL_DIR="${frameworks_dir}/Python.framework/Versions/3.8/lib/python3.8/site-packages"
+    configure.args-append   -DPython3_EXECUTABLE="${prefix}/bin/python3.9" \
+                            -DPYHOOK_INSTALL_DIR="${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages"
     configure.pkg_config_path \
-                            "${frameworks_dir}/Python.framework/Versions/3.8/lib/pkgconfig"
+                            "${frameworks_dir}/Python.framework/Versions/3.9/lib/pkgconfig"
 }
 
 variant python39 conflicts python37 python38 python310 description {Enable Python support (Python 3.9)} {

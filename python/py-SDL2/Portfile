@@ -17,10 +17,10 @@ python.rootname     PySDL2
 homepage            https://pypi.org/project/${python.rootname}
 
 checksums           md5 98ebe1b7a657614c38b6805dc1df9b59 \
-                    rmd160 d36fd73bf8be46167558be5aeb424c0d42f51a07 \
-                    sha256 20f6aa5dbb4e2a17fce883fc4c7a044f675a044d91291c3ba2647ef438aad359
+rmd160 d36fd73bf8be46167558be5aeb424c0d42f51a07 \
+sha256 20f6aa5dbb4e2a17fce883fc4c7a044f675a044d91291c3ba2647ef438aad359
 
-python.versions     27 36 37 38 39 310
+python.versions 39
 
 if {$subport ne $name} {
     depends_build       port:py${python.version}-setuptools

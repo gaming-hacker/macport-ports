@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 homepage            https://github.com/pbrod/numdifftools
 
 checksums           rmd160  6bbe9dd92546eaebfdd422c4b20dbc56046ec023 \
-                    sha256  940692fd795e47083fad481d93c432b7fa9378758b5681dfc73a65152abfcd57 \
-                    size    6615752
+sha256  940692fd795e47083fad481d93c432b7fa9378758b5681dfc73a65152abfcd57 \
+size    6615752
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

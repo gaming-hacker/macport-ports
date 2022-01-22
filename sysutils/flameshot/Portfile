@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake   1.1
@@ -24,8 +24,8 @@ maintainers             {gmail.com:herby.gillot @herbygillot} \
                         openmaintainer
 
 checksums               rmd160  e4bd5f67e1a69e768f9e083c062a57b7f165da37 \
-                        sha256  4cd158719031e97c97ecb6db1c14dd8ded44bf531c062bce496fc63be18bc2cf \
-                        size    12662479
+sha256  4cd158719031e97c97ecb6db1c14dd8ded44bf531c062bce496fc63be18bc2cf \
+size    12662479
 
 qt5.depends_build_component \
                         qttools

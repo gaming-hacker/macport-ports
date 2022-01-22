@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -17,8 +17,8 @@ long_description    {*}${description} Thanks to the Magick++ image libraries it 
 platforms           darwin
 
 checksums           rmd160  5f773b10d5daa5a963a484734bb9f7af6c8673e5 \
-                    sha256  8958dd2805972dfc2cb4ed95fabcb595b66fb040e569e4a23e3be1fe80b1a124 \
-                    size    284939
+sha256  8958dd2805972dfc2cb4ed95fabcb595b66fb040e569e4a23e3be1fe80b1a124 \
+size    284939
 
 depends_lib-append  port:ImageMagick
 

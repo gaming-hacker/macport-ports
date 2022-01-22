@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,12 +6,12 @@ PortGroup           python 1.0
 
 name                py-oct2py
 
-python.versions     37 38 39 310
+python.versions 39
 
 github.setup        blink1073 oct2py 5.4.2 v
 checksums           rmd160  151e31389479ae1b492c2f6f5d7796db6a42caf6 \
-                    sha256  af7f78685bbd9c29a2b14344c074513a7a53e3d6e8281ad94d357495a66a3edd \
-                    size    440076
+sha256  af7f78685bbd9c29a2b14344c074513a7a53e3d6e8281ad94d357495a66a3edd \
+size    440076
 revision            0
 
 license             MIT

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             Apache-2
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -28,8 +28,8 @@ long_description    Most existing Python modules for dealing HTTP \
 homepage            https://requests.readthedocs.io/
 
 checksums           rmd160  4bcd04983842ddce16afbfa83bfd042ba7e7a468 \
-                    sha256  68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61 \
-                    size    106758
+sha256  68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61 \
+size    106758
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -49,8 +49,8 @@ if {${name} ne ${subport}} {
             epoch            1
             revision         0
             checksums        rmd160  4a8a60da9b3619a53bd5a74245e58123702ae7e6 \
-                             sha256  27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804 \
-                             size    102161
+sha256  27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804 \
+size    102161
         }
     }
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,12 +22,12 @@ long_description    Behavior-driven development (or BDD) is an agile\
                     Python code.
 
 checksums           rmd160  a78eda96ca951924b19f20c4589f82f4d2d91de0 \
-                    sha256  ea4351f89631c9a0f439d831c3d27c32f9f33d8965e1ec47bf4cac8800add7bd \
-                    size    701895
+sha256  ea4351f89631c9a0f439d831c3d27c32f9f33d8965e1ec47bf4cac8800add7bd \
+size    701895
 
 supported_archs     noarch
 
-python.versions      37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_lib-append \

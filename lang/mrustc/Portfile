@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -26,17 +26,17 @@ set rust_version_major_underscore [join [lrange [split ${rust_version} .-] 0 1] 
 distfiles-append rustc-${rust_version}-src.tar.gz
 
 checksums       mrustc-${github.version}.tar.gz \
-                rmd160  c16b5b1ceb5f79f61712c22488662a0c68464ea9 \
-                sha256  28f53fca94ef4edec4f1e37d0d9d3c12bca5b4b867dbb2a62e80692afaee141e \
-                size    1173691 \
+rmd160  c16b5b1ceb5f79f61712c22488662a0c68464ea9 \
+sha256  28f53fca94ef4edec4f1e37d0d9d3c12bca5b4b867dbb2a62e80692afaee141e \
+size    1173691 \
                 rustc-${rust_version}-src.tar.gz \
-                rmd160  d5b04b87fc336e3be7d592f70de0363aa66622aa \
-                sha256  b4a1f6b6a93931f270691aba4fc85eee032fecda973e6b9c774cd06857609357 \
-                size    152803201
+rmd160  d5b04b87fc336e3be7d592f70de0363aa66622aa \
+sha256  b4a1f6b6a93931f270691aba4fc85eee032fecda973e6b9c774cd06857609357 \
+size    152803201
 
 use_configure   no
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.c_standard 2011
 
 # Thread-local storage is not needed to compile mrustc, but is required

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       legacysupport 1.0
@@ -28,8 +28,8 @@ distname        bind-${version}
 master_sites    isc:${name}/${version}
 
 checksums       rmd160    392897a9a27216cbae8969f8ed1aefee1ab6beb9 \
-                sha256    9fa328850f82843ef8b7bf1ff5322cb68b110273a33f375ba41f35270f5e1ff3 \
-                size      5086780
+sha256    9fa328850f82843ef8b7bf1ff5322cb68b110273a33f375ba41f35270f5e1ff3 \
+size      5086780
 
 use_xz          yes
 
