@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             Apache-2
 
-python.versions 39
+python.versions     36 37 38 39 310
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 
@@ -19,18 +19,10 @@ long_description    URL library with immutable URL objects.
 homepage            https://github.com/aio-libs/yarl
 
 checksums           rmd160  bc92e7285e3be1631e375f635a2032e596e0e915 \
-sha256  45399b46d60c253327a460e99856752009fcee5f5d3c80b2f7c0cae1c38d56dd \
-size    168562
+                    sha256  45399b46d60c253327a460e99856752009fcee5f5d3c80b2f7c0cae1c38d56dd \
+                    size    168562
 
 if {${name} ne ${subport}} {
-    if {${python.version} == 35} {
-        version     1.6.0
-        revision    0
-        checksums   rmd160  925d24709dd602170d553daf8a243d30fb20abd6 \
-sha256  61d3ea3c175fe45f1498af868879c6ffeb989d4143ac542163c45538ba5ec21b \
-size    175492
-    }
-
     depends_build-append    port:py${python.version}-setuptools
     depends_lib-append      port:py${python.version}-idna \
                             port:py${python.version}-multidict

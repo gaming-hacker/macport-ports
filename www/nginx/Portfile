@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 name                nginx
-version             1.21.5
+version             1.21.6
 revision            0
 categories          www mail
 platforms           darwin
@@ -39,9 +39,9 @@ master_sites        https://nginx.org/download:nginx \
 
 distfiles           ${name}-${version}${extract.suffix}:nginx
 checksums           ${name}-${version}${extract.suffix} \
-rmd160  9ddfabd19a655d42c24ee49830376a44afd85af2 \
-sha256  b20f3bf533a518a6f0f3a7967dfeed872d268d31e4cc121a0001329602ddcfbb \
-size    1072633
+                    rmd160  b00f302758d3671afddbfcb95dca84a938f54472 \
+                    sha256  66dc7081488811e9f925719e34d1b4504c2801c81dee2920e5452a86b11405ae \
+                    size    1073364
 
 depends_lib         port:pcre \
                     port:zlib
@@ -154,9 +154,9 @@ variant davext description {Add WebDAV (extended) support to server} {
     set davext_distname     ${davext_filename}-${davext_version}
     distfiles-append        v${davext_version}.tar.gz:davext_module
     checksums-append        v${davext_version}.tar.gz \
-rmd160  8d099215bde79492565a39c3c8feb7695138138e \
-sha256  d2499d94d82d4e4eac8425d799e52883131ae86a956524040ff2fd230ef9f859 \
-size    14558
+                            rmd160  8d099215bde79492565a39c3c8feb7695138138e \
+                            sha256  d2499d94d82d4e4eac8425d799e52883131ae86a956524040ff2fd230ef9f859 \
+                            size    14558
 
     configure.args-append   --with-http_dav_module --add-module=${workpath}/${davext_distname}
 }
@@ -188,9 +188,9 @@ variant geoip2 description {Enable Ngx http GeoIP2 module (https://github.com/le
     set geoipext_distname   ${geoipext_filename}-${geoipext_version}
     distfiles-append        ${geoipext_version}.tar.gz:geoip2_module
     checksums-append        ${geoipext_version}.tar.gz \
-rmd160  7b272aad1a402ae6ca8fac873d4555afbeab7b75 \
-sha256  41378438c833e313a18869d0c4a72704b4835c30acaf7fd68013ab6732ff78a7 \
-size    8509
+                            rmd160  7b272aad1a402ae6ca8fac873d4555afbeab7b75 \
+                            sha256  41378438c833e313a18869d0c4a72704b4835c30acaf7fd68013ab6732ff78a7 \
+                            size    8509
 
     configure.args-append   --add-module=${workpath}/${geoipext_distname}
     depends_lib-append      port:libmaxminddb
@@ -282,9 +282,9 @@ variant upload description {Enable Valery Kholodkov's upload module (http://grid
     set upload_distname     ${upload_version}
     distfiles-append        ${upload_distname}.tar.gz:upload_module
     checksums-append        ${upload_distname}.tar.gz \
-rmd160  5443cf56908be57a95647146926110cdcf0a0bde \
-sha256  c86e318addb9c88d70fdbd58ff1f6ef6f404a93070f6db8017a1f880c97946c4 \
-size    40139
+                            rmd160  5443cf56908be57a95647146926110cdcf0a0bde \
+                            sha256  c86e318addb9c88d70fdbd58ff1f6ef6f404a93070f6db8017a1f880c97946c4 \
+                            size    40139
 
     configure.args-append   --add-module=${workpath}/${upload_filename}-${upload_distname}
 
@@ -297,9 +297,9 @@ variant upload_progress description {Enable Brice Figureau's upload progress mod
     set uploadprg_distname  v${uploadprg_version}
     distfiles-append        ${uploadprg_distname}.tar.gz:uploadprogress_module
     checksums-append        ${uploadprg_distname}.tar.gz \
-rmd160  eedb9d9acd6450df0f940902165dc5113ede0171 \
-sha256  b286689355442657650421d8e8398bd4abf9dbbaade65947bb0cb74a349cc497 \
-size    17268
+                            rmd160  eedb9d9acd6450df0f940902165dc5113ede0171 \
+                            sha256  b286689355442657650421d8e8398bd4abf9dbbaade65947bb0cb74a349cc497 \
+                            size    17268
 
     configure.args-append   --add-module=${workpath}/nginx-upload-progress-module-${uploadprg_version}
 }
@@ -315,9 +315,9 @@ variant zip description {Enable Ngx zip download module (https://github.com/evan
     set zip_version         1.2.0
     distfiles-append        ${zip_version}.tar.gz:zip_module
     checksums-append        ${zip_version}.tar.gz \
-rmd160  41f9570894de3e8adcd72956ac26378f23ae2275 \
-sha256  9b6294c651166a0c06b4aa723d3bc54feebc5cd495dcb3bdfd362c4b2c84bf62 \
-size    27046
+                            rmd160  41f9570894de3e8adcd72956ac26378f23ae2275 \
+                            sha256  9b6294c651166a0c06b4aa723d3bc54feebc5cd495dcb3bdfd362c4b2c84bf62 \
+                            size    27046
 
     configure.args-append   --add-module=${workpath}/mod_zip-${zip_version}
     patchfiles-append       patch-src-http-ngx_http_upstream.c.diff \
@@ -330,9 +330,9 @@ variant redis description {Enable Ngx HTTP Redis module} {
     set redis_distname      ${redis_filename}-${redis_version}
     distfiles-append        ${redis_distname}.tar.gz:redis_module
     checksums-append        ${redis_distname}.tar.gz \
-rmd160  ecaa081631c67e8ab7ffe2f6abf49e78d8cddbda \
-sha256  21f87540f0a44b23ffa5df16fb3d788bc90803b255ef14f9c26e3847a6f26f46 \
-size    13051
+                            rmd160  ecaa081631c67e8ab7ffe2f6abf49e78d8cddbda \
+                            sha256  21f87540f0a44b23ffa5df16fb3d788bc90803b255ef14f9c26e3847a6f26f46 \
+                            size    13051
 
     configure.args-append   --add-module=${workpath}/${redis_distname}
 }
@@ -343,9 +343,9 @@ variant rtmp description {Enable Ngx RTMP module (https://github.com/arut/nginx-
     set rtmp_distname       ${rtmp_filename}-${rtmp_version}
     distfiles-append        v${rtmp_version}:rtmp_module
     checksums-append        v${rtmp_version} \
-rmd160  a19f42e4f15214fd11ac8f334468dc400b86b5bd \
-sha256  07f19b7bffec5e357bb8820c63e5281debd45f5a2e6d46b1636d9202c3e09d78 \
-size    519934
+                            rmd160  a19f42e4f15214fd11ac8f334468dc400b86b5bd \
+                            sha256  07f19b7bffec5e357bb8820c63e5281debd45f5a2e6d46b1636d9202c3e09d78 \
+                            size    519934
 
     configure.args-append   --add-module=${workpath}/${rtmp_distname}
 
@@ -366,9 +366,9 @@ variant http_push description {Enable Ngx HTTP Push module (https://github.com/s
     set http_push_distname  ${http_push_filename}-${http_push_version}
     distfiles-append        v${http_push_version}.tar.gz:http_push_module
     checksums-append        v${http_push_version}.tar.gz \
-rmd160  1d36b1c82c1e4e125f6763bf7e73933bc3113da9 \
-sha256  dbb05bec6a4cf6ad1c1a4e613a2c832669c0eb87847e70ab26bc6c590361a818 \
-size    734488
+                            rmd160  1d36b1c82c1e4e125f6763bf7e73933bc3113da9 \
+                            sha256  dbb05bec6a4cf6ad1c1a4e613a2c832669c0eb87847e70ab26bc6c590361a818 \
+                            size    734488
 
      configure.args-append   --add-module=${workpath}/${http_push_distname}
 }
@@ -379,9 +379,9 @@ variant devel_kit description {Enable ngx_devel_kit module (https://github.com/s
     set devel_kit_distname  ${devel_kit_filename}-${devel_kit_version}
     distfiles-append        v${devel_kit_version}.tar.gz:devel_kit_module
     checksums-append        v${devel_kit_version}.tar.gz \
-rmd160  5c52a463544294096611aa9dec1c76e937a1aa23 \
-sha256  0e971105e210d272a497567fa2e2c256f4e39b845a5ba80d373e26ba1abfbd85 \
-size    66542
+                            rmd160  5c52a463544294096611aa9dec1c76e937a1aa23 \
+                            sha256  0e971105e210d272a497567fa2e2c256f4e39b845a5ba80d373e26ba1abfbd85 \
+                            size    66542
 
     configure.args-append     --add-module=${workpath}/${devel_kit_distname}
 }
@@ -394,9 +394,9 @@ variant lua requires devel_kit description {Enable Lua module (https://github.co
     set ngx_lua_distname    ${ngx_lua_filename}-${ngx_lua_version}
     distfiles-append        v${ngx_lua_version}.tar.gz:lua_module
     checksums-append        v${ngx_lua_version}.tar.gz \
-rmd160  1e3801a632eee54458c53a05293cf301653240ec \
-sha256  7d5f3439c8df56046d0564b5857fd8a30296ab1bd6df0f048aed7afb56a0a4c2 \
-size    655110
+                            rmd160  1e3801a632eee54458c53a05293cf301653240ec \
+                            sha256  7d5f3439c8df56046d0564b5857fd8a30296ab1bd6df0f048aed7afb56a0a4c2 \
+                            size    655110
 
     configure.cflags        -I${prefix}/include/luajit-2.1/ ${configure.cflags}
     configure.env           LUAJIT_INC=${prefix}/include/luajit-2.1/
@@ -412,9 +412,9 @@ variant headers_more description {Enable headers-more module (https://github.com
     set ngx_h_more_distname     ${ngx_h_more_filename}-${ngx_h_more_version}
     distfiles-append            v${ngx_h_more_version}.tar.gz:h_more_module
     checksums-append            v${ngx_h_more_version}.tar.gz \
-rmd160  fb27195a722e81f533016e693b5a6616fd6b4f72 \
-sha256  a3dcbab117a9c103bc1ea5200fc00a7b7d2af97ff7fd525f16f8ac2632e30fbf \
-size    28130
+                                rmd160  fb27195a722e81f533016e693b5a6616fd6b4f72 \
+                                sha256  a3dcbab117a9c103bc1ea5200fc00a7b7d2af97ff7fd525f16f8ac2632e30fbf \
+                                size    28130
 
     configure.args-append       --add-module=${workpath}/${ngx_h_more_distname}
 }
@@ -425,9 +425,9 @@ variant jwt description {Add JWT (Javascript Web Token) support to server using 
     set jwt_distname        ${jwt_filename}-${jwt_version}
     distfiles-append        ${jwt_version}.tar.gz:jwt_module
     checksums-append        ${jwt_version}.tar.gz \
-rmd160  b9ccb4f971eb864ad018e5ecff718150687dab71 \
-sha256  9043bf1b46ecf71b03f6b9292b774bc283181d674ad4c2b61b6d74c838798dac \
-size    13804
+                            rmd160  b9ccb4f971eb864ad018e5ecff718150687dab71 \
+                            sha256  9043bf1b46ecf71b03f6b9292b774bc283181d674ad4c2b61b6d74c838798dac \
+                            size    13804
 
     configure.args-append   --add-dynamic-module=${workpath}/${jwt_distname}
     depends_lib-append      port:libjwt
@@ -439,9 +439,9 @@ variant fancyindex description {Add fancy index support; file listings, like the
     set fancyindex_distname        ${fancyindex_filename}-${fancyindex_version}
     distfiles-append        v${fancyindex_version}.tar.gz:fancyindex_module
     checksums-append        v${fancyindex_version}.tar.gz \
-rmd160  71a2e8ab3d07396a7f55b8134a30916d6e0f5ed3 \
-sha256  c3dd84d8ba0b8daeace3041ef5987e3fb96e9c7c17df30c9ffe2fe3aa2a0ca31 \
-size    29052
+                            rmd160  71a2e8ab3d07396a7f55b8134a30916d6e0f5ed3 \
+                            sha256  c3dd84d8ba0b8daeace3041ef5987e3fb96e9c7c17df30c9ffe2fe3aa2a0ca31 \
+                            size    29052
 
     configure.args-append   --add-module=${workpath}/${fancyindex_distname}
 }
@@ -452,9 +452,9 @@ variant vod description {Add MP4 repackeging for HLS, DASH, HDS, HSS using nginx
     set vod_distname        ${vod_filename}-${vod_version}
     distfiles-append        ${vod_version}.tar.gz:vod_module
     checksums-append        ${vod_version}.tar.gz \
-rmd160  843062897e3e9825ee32833f7204045aecc62a23 \
-sha256  775898874367900f14b6197366501c782e8c86dd2b0c3cc45973abf4e8a9217c \
-size    469764
+                            rmd160  843062897e3e9825ee32833f7204045aecc62a23 \
+                            sha256  775898874367900f14b6197366501c782e8c86dd2b0c3cc45973abf4e8a9217c \
+                            size    469764
 
     configure.args-append   --add-module=${workpath}/${vod_distname}
 }

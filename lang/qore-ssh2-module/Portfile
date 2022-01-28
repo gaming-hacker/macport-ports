@@ -1,0 +1,29 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+PortGroup           github 1.0
+github.setup        qorelanguage module-ssh2 1.4.1 v
+github.tarball_from releases
+
+name                qore-ssh2-module
+revision            1
+categories          lang
+license             {LGPL-2.1 MIT}
+maintainers         {davidnichols @davidnich} openmaintainer
+description         ssh2 module for Qore
+long_description    Module providing access to the ssh2 protocol including sftp support
+use_bzip2           yes
+homepage            http://qore.org
+platforms           darwin
+distname            qore-ssh2-module-${github.version}
+
+checksums           rmd160 6a2fff28e85f0d3a087bb43317b002b6caee2237 \
+                    sha256 5be67c9ae59b6f1bd4088f908ccb44c86300e9a4ad62677f59d9813519793caf \
+                    size 981421
+
+depends_lib         port:qore \
+                    port:libssh2
+
+configure.args      --disable-debug
+configure.ldflags-append -Wl,-undefined -Wl,dynamic_lookup

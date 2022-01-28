@@ -1,14 +1,13 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           openssl 1.0
 
 name                zeek
-version             4.1.1
-revision            2
+version             4.2.0
+revision            0
 categories          net security
-platforms           darwin
 maintainers         {mps @Schamschula} openmaintainer
 license             BSD
 
@@ -23,9 +22,9 @@ homepage            https://www.zeek.org/
 master_sites        https://download.zeek.org/
 
 
-checksums           rmd160  80bdd58785bd9237108d3b9d05cf12d37abc2b32 \
-sha256  8c0afc999a8dd1c1f677a5cf818479b99c2d527e679e1ef99fb1b03f989c0373 \
-size    32348208
+checksums           rmd160  14851770e6c581bbd473fef521626e8daf0e4d4f \
+                    sha256  8d9a028ca9fec7ad4a9e48a763e296052384cf402ea4cd371577bff183c27451 \
+                    size    32993539
 
 openssl.branch      1.1
 
@@ -64,18 +63,18 @@ configure.args      -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
 
 variant python37 conflicts python38 python39 python310 description {Build using Python 3.7} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 \
-                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/config-3.7m-darwin/python-config.py
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
+                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/config-3.7m-darwin/python-config.py
     depends_lib-append  \
-                    port:python39
+                    port:python37
 }
 
 variant python38 conflicts python37 python39 python310 description {Build using Python 3.8} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 \
-                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/config-3.8-darwin/python-config.py
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.8 \
+                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.8/lib/python3.8/config-3.8-darwin/python-config.py
     depends_lib-append  \
-                    port:python39
+                    port:python38
 }
 
 variant python39 conflicts python37 python38 python310 description {Build using Python 3.9} {

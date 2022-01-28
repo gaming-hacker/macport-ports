@@ -1,13 +1,15 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 
 name                    argyll
-version                 2.2.1
-revision                1
+version                 2.3.0
+revision                0
+checksums               rmd160  fcd8d70e14bea0758946270f8cfa748469c247a0 \
+                        sha256  daa21b6de8e20b5319a10ea8f72829d32eadae14c6581b50972f2f8dd5cde924 \
+                        size    14042268
 
 categories              graphics
-platforms               darwin
 maintainers             {lbschenkel @lbschenkel} openmaintainer
 license                 AGPL-3
 
@@ -22,10 +24,6 @@ homepage                http://www.argyllcms.com/
 master_sites            ${homepage}
 use_zip                 yes
 distname                Argyll_V${version}_src
-checksums               rmd160  101fb5f2dd3965cdeb4ac4a61bfe67239c94615b \
-sha256  be378ca836b17b8684db05e9feaab138d711835ef00a04a76ac0ceacd386a3e3 \
-size    13837056
-
 worksrcdir              Argyll_V${version}
 
 depends_build           port:jam

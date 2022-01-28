@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 
 perl5.branches 5.30
 perl5.setup         Net-HTTP 6.22
-revision            0
+revision            1
 platforms           darwin
 maintainers         nomaintainer
 license             {Artistic-1 GPL}
@@ -21,7 +21,7 @@ size    39087
 
 if {${perl5.major} != ""} {
     depends_lib-append \
-                    port:p${perl5.major}-io-socket-inet6 \
+                    port:p${perl5.major}-io-socket-ip \
                     port:p${perl5.major}-io-socket-ssl \
                     port:p${perl5.major}-uri
 }

@@ -4,8 +4,8 @@ PortSystem          1.0
 
 name                libots
 version             0.5.0
+revision            0
 categories          textproc
-platforms           darwin
 maintainers         gmail.com:cedstrom openmaintainer
 license             GPL-2+
 
@@ -28,6 +28,7 @@ sha256  ea908d22256166d1200fef55a82dd3ea8e096a249eaaf0b926f3577f1a63e137 \
 size    371126
 
 patchfiles          makefile-dependencies.patch \
+                    implicit.patch \
                     patch-configure.in.diff
 
 depends_build       port:pkgconfig
