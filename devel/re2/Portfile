@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -9,8 +9,8 @@ github.setup        google re2 2021-11-01
 revision            1
 
 checksums           rmd160  e821ad726d2ee886d67ba9152b18ad4c0b088bd3 \
-                    sha256  1d10b5cf7ad4cde7f085ca02a0f78296beb43bb02efe79b2dd6f796677a933be \
-                    size    408960
+sha256  1d10b5cf7ad4cde7f085ca02a0f78296beb43bb02efe79b2dd6f796677a933be \
+size    408960
 
 categories          devel textproc
 maintainers         nomaintainer
@@ -25,7 +25,7 @@ license             BSD
 
 patchfiles          re2.h.patch
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args-append \
                     -DBUILD_SHARED_LIBS:BOOL=ON

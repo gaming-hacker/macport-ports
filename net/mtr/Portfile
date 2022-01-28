@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,8 +29,8 @@ depends_lib         port:ncurses \
 
 master_sites        ftp://ftp.bitwizard.nl/mtr/
 checksums           rmd160  71c29a1bd8546e724776bee281c661a9b0c11104 \
-                    sha256  cead6802a1cd2a97d5fdf5e850bf6de4349a7a9d0f463ff715a1ed4555b64a41 \
-                    size    291991
+sha256  cead6802a1cd2a97d5fdf5e850bf6de4349a7a9d0f463ff715a1ed4555b64a41 \
+size    291991
 
 configure.args      --without-gtk \
                     --with-jansson

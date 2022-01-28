@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        jgaeddert liquid-dsp 1ac09861a04e1a7b315e89020c3312cb206999d3
 version             20220126-[string range ${github.version} 0 7]
 checksums           rmd160  06c7365280cb1cd240c1283c223994b92d57fb3c \
-                    sha256  275fb44c5f23dd333c5ff63a654f6f3a4605e0b5fe888dcd35fc30504cae2dec \
-                    size    1175688
+sha256  275fb44c5f23dd333c5ff63a654f6f3a4605e0b5fe888dcd35fc30504cae2dec \
+size    1175688
 revision            0
 
 maintainers         {michaelld @michaelld} {ra1nb0w @ra1nb0w} openmaintainer

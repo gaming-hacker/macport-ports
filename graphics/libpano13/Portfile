@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             cmake 1.1
@@ -19,8 +19,8 @@ homepage              http://panotools.sourceforge.net/
 master_sites          sourceforge:project/panotools/libpano13/libpano13-${version}/
 
 checksums             rmd160  a2e4529112f09f24a2ff6bacee5031261965f279 \
-                      sha256  79e5a1452199305e2961462720ef5941152779c127c5b96fc340d2492e633590 \
-                      size    2801535
+sha256  79e5a1452199305e2961462720ef5941152779c127c5b96fc340d2492e633590 \
+size    2801535
 
 cmake.generator       Ninja
 configure.args-append -DJPEG_INCLUDE_DIR=${prefix}/include \

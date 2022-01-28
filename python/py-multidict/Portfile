@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             Apache-2
 
-python.versions     36 37 38 39 310
+python.versions 39
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 
@@ -20,16 +20,16 @@ long_description    Multidict is dict-like collection of key-value pairs where \
 homepage            https://github.com/aio-libs/multidict
 
 checksums           rmd160  99f5d4a3971ec2614a2ca4de4ff16edffef7805e \
-                    sha256  5ff3bd75f38e4c43f1f470f2df7a4d430b821c4ce22be384e1459cb57d6bb013 \
-                    size    50334
+sha256  5ff3bd75f38e4c43f1f470f2df7a4d430b821c4ce22be384e1459cb57d6bb013 \
+size    50334
 
 if {${name} ne ${subport}} {
     if {${python.version} == 36} {
         version     5.2.0
         revision    0
 checksums           rmd160  192d746363616767e86f46159a337748f0e158b0 \
-                    sha256  0dd1c93edb444b33ba2274b66f63def8a327d607c6c790772f448a53b6ea59ce \
-                    size    49004
+sha256  0dd1c93edb444b33ba2274b66f63def8a327d607c6c790772f448a53b6ea59ce \
+size    49004
     }
 
     depends_build-append    port:py${python.version}-setuptools

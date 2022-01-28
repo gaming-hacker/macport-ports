@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,11 +14,11 @@ long_description    ${description}
 
 github.setup        pothosware SoapyHackRF 0.3.4 soapy-hackrf-
 checksums           rmd160  09edfc9c61fe901d1911e7b01106e51f91cbcc09 \
-                    sha256  4e8872adb8966a3ae41538518abd085fda2c9c29cf9070b51f1d79246c9b549c \
-                    size    16474
+sha256  4e8872adb8966a3ae41538518abd085fda2c9c29cf9070b51f1d79246c9b549c \
+size    16474
 revision            0
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_build-append \
     port:pkgconfig

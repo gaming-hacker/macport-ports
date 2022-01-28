@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -38,13 +38,13 @@ if {${build_arch} eq "arm64"} {
 distname            dbeaver-ce-${version}-macosx.cocoa.${arch}
 
 checksums           dbeaver-ce-${version}-macosx.cocoa.x86_64${extract.suffix} \
-                        rmd160  243141d5971691981c7b03bf2882095125693efb \
-                        sha256  d19b2dbc13d7403632ce11b710feb3ef60610e9986909ada404c8981ab2bf332 \
-                        size    105967493 \
+rmd160  243141d5971691981c7b03bf2882095125693efb \
+sha256  d19b2dbc13d7403632ce11b710feb3ef60610e9986909ada404c8981ab2bf332 \
+size    105967493 \
                     dbeaver-ce-${version}-macosx.cocoa.aarch64${extract.suffix} \
-                        rmd160  a4d465a1e231553fd2f00d9c49991e547f47e1e4 \
-                        sha256  7127df0b20ee9fcc691b32bc20c0d5727fcba46df28f7bbd9d43ebc519e33589 \
-                        size    106684209
+rmd160  a4d465a1e231553fd2f00d9c49991e547f47e1e4 \
+sha256  7127df0b20ee9fcc691b32bc20c0d5727fcba46df28f7bbd9d43ebc519e33589 \
+size    106684209
 
 extract.mkdir       yes
 use_configure       no

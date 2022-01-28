@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,8 +9,8 @@ version             1.0.7
 revision            1
 
 checksums           rmd160  25eb60bd64122e02697ee2c1afe5b76eb414616c \
-                    sha256  98c11c755a16ef6c5673c22ca94a3802a7df4746a0853a70b6fae8b9f5cac206 \
-                    size    346244
+sha256  98c11c755a16ef6c5673c22ca94a3802a7df4746a0853a70b6fae8b9f5cac206 \
+size    346244
 
 categories-append   devel
 supported_archs     noarch
@@ -24,7 +24,7 @@ long_description    ${description} This project is intended to be a light \
                     compatible build frontends to build Poetry managed projects.
 
 # keep older Python versions here, do add the EOL version to the list below
-python.versions     36 37 38 39 310
+python.versions 39
 python.pep517       yes
 # Bootstraps itself, no backend dependencies needed
 python.pep517_backend

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -24,8 +24,8 @@ homepage            https://git.causal.agency/catgirl/
 master_sites        ${homepage}snapshot/
 
 checksums           rmd160  32b166b77b67e04ceab9f4655d25f7e3e9b6e54c \
-                    sha256  01bcf34ea6ae94f0e9967b70458c387d5c595d4209d8bd0c299bf25aae25beba \
-                    size    63237
+sha256  01bcf34ea6ae94f0e9967b70458c387d5c595d4209d8bd0c299bf25aae25beba \
+size    63237
 
 patchfiles          patch-0001-install-sandman.diff
 

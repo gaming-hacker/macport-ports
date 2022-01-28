@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  0bfba24efa75ee1e2b9df53338e59ec75bce2d39 \
-                    sha256  265f4cf83004465d5a87b8e8ff6d64cc0c9c31bd5994c9d4334f951a42972a97 \
-                    size    56320
+rmd160  0bfba24efa75ee1e2b9df53338e59ec75bce2d39 \
+sha256  265f4cf83004465d5a87b8e8ff6d64cc0c9c31bd5994c9d4334f951a42972a97 \
+size    56320
 
 destroot {
     xinstall -m 0755 \
@@ -152,7 +152,7 @@ cargo.crates \
     serde                          1.0.133  97565067517b60e2d1ea8b268e59ce036de907ac523ad83a0475da04e818989a \
     serde_derive                   1.0.133  ed201699328568d8d08208fdd080e3ff594e6c422e438b6705905da01005d537 \
     serde_json                      1.0.75  c059c05b48c5c0067d4b4b2b4f0732dd65feb52daf7e0ea09cd87e7dadc1af79 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     signal-hook                     0.3.13  647c97df271007dcea485bb74ffdb57f2e683f1306c854f468a0c244badabf2d \
     signal-hook-mio                  0.2.1  29fd5867f1c4f2c5be079aee7a2adf1152ebb04a4bc4d341f504b7dece607ed4 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

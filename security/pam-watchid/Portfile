@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,8 +18,8 @@ long_description        A PAM plugin that allows the Apple Watch to be used for 
                         API in macOS 10.15, written in Swift.
 
 checksums               rmd160  961cae147fbd38e0133cfcfa7e970fa2ace41eee \
-                        sha256  48c5f07c8b8495e348ed2416fa5f3e5ef89ab8ec9155652e58b564f552c08283 \
-                        size    1312638
+sha256  48c5f07c8b8495e348ed2416fa5f3e5ef89ab8ec9155652e58b564f552c08283 \
+size    1312638
 
 # Makefile fix-ups and enable verbose
 post-patch {
@@ -42,7 +42,7 @@ notes-append "
 
 if {${os.platform} eq "darwin" && ${os.major} == 19} {
     # Fix "error: redefinition of module 'libxml2'"
-    use_xcode yes
+    use_xcode  no
 }
 
 if {${os.platform} eq "darwin" && ${os.major} < 19} {

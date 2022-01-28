@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,14 +20,14 @@ set python_version  3.9
 set py_ver_no_dot   [join [split ${python_version} "."] ""]
 set python_framework_dir ${frameworks_dir}/Python.framework/Versions/${python_version}
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 
 if {${name} eq ${subport}} {
 
     gitlab.setup        kicad/code kicad ${version}
     checksums           rmd160  33751495a79b0a376f22f01f00506c0a2b28b70d \
-                        sha256  49996d77768d2e337dad768daa7dd6f4f22a7147b77dafc63287858d2ba33ab4 \
-                        size    33856728
+sha256  49996d77768d2e337dad768daa7dd6f4f22a7147b77dafc63287858d2ba33ab4 \
+size    33856728
     revision            0
 
     patchfiles-append \
@@ -124,8 +124,8 @@ subport kicad-docs {
     distname            ${name}-doc-${version}
 
     checksums           rmd160  3c3a4dec15eff4de328fe45e47dfef164c3b3bba \
-                        sha256  6093c99cfde827fb42fc351ef301f0dcad805f0c256ef02a0e82d9daafc238d3 \
-                        size    258546012
+sha256  6093c99cfde827fb42fc351ef301f0dcad805f0c256ef02a0e82d9daafc238d3 \
+size    258546012
     revision            1
 
     use_configure       no
@@ -146,8 +146,8 @@ subport kicad-symbols {
     gitlab.setup        kicad/libraries kicad-symbols ${version}
 
     checksums           rmd160  73b730aee67e1b4cc1b99bfa6d1832e4ac861589 \
-                        sha256  868829e8c7fe82ebfb304ded3115b9c77dafcd4a73bc8ab1029b91d5a7a1c327 \
-                        size    2248886
+sha256  868829e8c7fe82ebfb304ded3115b9c77dafcd4a73bc8ab1029b91d5a7a1c327 \
+size    2248886
 
     patchfiles-append   kicad_libraries_cmakelists.txt.patch
 }
@@ -160,8 +160,8 @@ subport kicad-footprints {
     gitlab.setup        kicad/libraries kicad-footprints ${version}
 
     checksums           rmd160  bbb715a5475b7c2b8d6e56f3badbb6ca6897aaa2 \
-                        sha256  a344442fdb95d3661e4e0e2681f475dd9281ede334eb41ac350118c83c26fa7c \
-                        size    23374811
+sha256  a344442fdb95d3661e4e0e2681f475dd9281ede334eb41ac350118c83c26fa7c \
+size    23374811
 
     patchfiles-append   kicad_libraries_cmakelists.txt.patch
 }
@@ -174,8 +174,8 @@ subport kicad-packages3D {
     gitlab.setup        kicad/libraries kicad-packages3D ${version}
 
     checksums           rmd160  7e1613650858b12d955353a9d462ec448cb78311 \
-                        sha256  caf3359cf474b4f71fa2b62a5128d594f92285a92817adbcd6be99f199ac36da \
-                        size    727835459
+sha256  caf3359cf474b4f71fa2b62a5128d594f92285a92817adbcd6be99f199ac36da \
+size    727835459
 
     patchfiles-append   kicad_libraries_cmakelists.txt.patch
 }
@@ -188,8 +188,8 @@ subport kicad-templates {
     gitlab.setup        kicad/libraries kicad-templates ${version}
 
     checksums           rmd160  e882173af935f3b3bf8ef1ddc30db19afd561b15 \
-                        sha256  67300769de41cea7f28e6529358b7c80a5507827acee5253e3b8952af51dfb5b \
-                        size    2057874
+sha256  67300769de41cea7f28e6529358b7c80a5507827acee5253e3b8952af51dfb5b \
+size    2057874
 
     patchfiles-append   kicad_libraries_cmakelists.txt.patch
 }

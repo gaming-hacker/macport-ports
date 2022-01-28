@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        rrthomas recode 3.7.11 v
 revision            0
 checksums           rmd160  d3d4836e6bc95f58b7151af78ca4211f791d4ede \
-                    sha256  97267a0e6ee3d859b7f4d1593282900dbc798151b70a6d1f73718880563b485e \
-                    size    2405035
+sha256  97267a0e6ee3d859b7f4d1593282900dbc798151b70a6d1f73718880563b485e \
+size    2405035
 
 categories          textproc
 license             GPL-3+

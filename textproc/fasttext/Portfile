@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,12 +17,12 @@ long_description    fastText is a library for efficient learning of \
                     word representations and sentence classification.
 
 checksums           rmd160  f83305b9e95c7e97a0a51c8a82293b235346315b \
-                    sha256  e9ce4ab7d2bf6c5e2343faa5920c59370d3e8a08bf6bd07b1f1e7ea48d441fe7 \
-                    size    4036928
+sha256  e9ce4ab7d2bf6c5e2343faa5920c59370d3e8a08bf6bd07b1f1e7ea48d441fe7 \
+size    4036928
 
 patchfiles          no-march-native.patch
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 if {${name} eq ${subport}} {
     PortGroup       cmake 1.1
@@ -36,10 +36,10 @@ post-destroot {
 }
 
 # create Python subports
-set python_versions {38 39}
+set python.versions {39}
 
 # Python modules
-foreach v ${python_versions} {
+foreach v ${python.versions} {
     subport py${v}-${name} {
         PortGroup   python 1.0
 

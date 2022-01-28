@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake          1.1
@@ -26,10 +26,10 @@ distname                gmsh-${version}-source
 extract.suffix          .tgz
 
 checksums               rmd160  1ccc85a5c496824dd45506168a931eb29cb11e6c \
-                        sha256  9e06751e9fef59ba5ba8e6feded164d725d7e9bc63e1cb327b083cbc7a993adb \
-                        size    13038257
+sha256  9e06751e9fef59ba5ba8e6feded164d725d7e9bc63e1cb327b083cbc7a993adb \
+size    13038257
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 compiler.c_standard     1999
 
 mpi.setup

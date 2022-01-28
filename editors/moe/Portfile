@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ master_sites        gnu
 use_lzip            yes
 
 checksums           rmd160  0ae511b28d9b557db8412d6bae0e9ea6ce7ea9c6 \
-                    sha256  8a885f2be426f8e04ad39c96012bd860954085a23744f2451663168826d7a1e8 \
-                    size    87917
+sha256  8a885f2be426f8e04ad39c96012bd860954085a23744f2451663168826d7a1e8 \
+size    87917
 
 depends_lib         port:ncurses
 

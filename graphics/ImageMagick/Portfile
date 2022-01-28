@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   conflicts_build 1.0
@@ -14,8 +14,8 @@ name                        ImageMagick
 version                     6.9.11-60
 revision                    2
 checksums                   rmd160  1c293ba06fd43833be35efb4476e559bf137ccef \
-                            sha256  ba0fa683b0721d1f22b0ccb364e4092e9a7a34ffd3bd6348c82b50fd93b1d7ba \
-                            size    9167220
+sha256  ba0fa683b0721d1f22b0ccb364e4092e9a7a34ffd3bd6348c82b50fd93b1d7ba \
+size    9167220
 
 categories                  graphics devel
 maintainers                 {ryandesign @ryandesign}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -26,8 +26,8 @@ homepage            https://dm3mat.darc.de/qdmr/
 github.setup        hmatuschek qdmr ${version} v
 
 checksums           rmd160  2ec1707160945fe59ff63c87c653978314b3a5e3 \
-                    sha256  dfe4f68f44d514e81ab10ef0ed824225eae9e02a2c0709f7cdbdbd0b2d5f6a9e \
-                    size    5843669
+sha256  dfe4f68f44d514e81ab10ef0ed824225eae9e02a2c0709f7cdbdbd0b2d5f6a9e \
+size    5843669
 
 qt5.depends_build_component \
     qttools

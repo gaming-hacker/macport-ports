@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,8 +21,8 @@ description         A Beautiful Gemini Client
 long_description    ${description}
 
 checksums           rmd160  2cff37c455098916dc13861e3689e1a4ff95ca44 \
-                    sha256  76b5a866ce535ea4b2250b232d5148e30aba16d44c26f9a9ca3dceea0075bbff \
-                    size    8659158
+sha256  76b5a866ce535ea4b2250b232d5148e30aba16d44c26f9a9ca3dceea0075bbff \
+size    8659158
 
 depends_build-append \
                     port:pkgconfig \

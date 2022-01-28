@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,11 +16,11 @@ long_description    ${description}
 github.setup        pothosware SoapySDRPlay3 b789d5985b900973c81c69aa04cb3c7ebe620a75
 version             20220120-[string range ${github.version} 0 7]
 checksums           rmd160  0082f44608a2008145461b24ef23d7d73f6b22aa \
-                    sha256  e7b18c1466f833471fd8209976af612d6e3462274d3fce75e3c88e37ae92539d \
-                    size    21071
+sha256  e7b18c1466f833471fd8209976af612d6e3462274d3fce75e3c88e37ae92539d \
+size    21071
 revision            0
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_lib-append \
     port:SoapySDR \

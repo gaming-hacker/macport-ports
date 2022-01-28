@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -25,8 +25,8 @@ maintainers         {l2dy @l2dy} \
                     openmaintainer
 
 checksums           rmd160  7ea42ea456100991a74aee0d90f3bb847f94cf0a \
-                    sha256  835e84e52eb40a3ec6297bdea5937fee74ba30a8ab5db8e0600c81e48af24848 \
-                    size    6848776
+sha256  835e84e52eb40a3ec6297bdea5937fee74ba30a8ab5db8e0600c81e48af24848 \
+size    6848776
 
 build.env-delete    GO111MODULE=off
 

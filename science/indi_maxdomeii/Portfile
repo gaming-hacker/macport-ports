@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -8,8 +8,8 @@ epoch               1
 github.setup        indilib indi-3rdparty 1.9.4 v
 revision            0
 checksums           rmd160  c9aa67acb1f7f733035f60b0fbbf44d077477137 \
-                    sha256  10ed5e6c3a306bd77c8e39d40a942dd166ae623b12bcd6bd52b871b7ba8c908b \
-                    size    132105943
+sha256  10ed5e6c3a306bd77c8e39d40a942dd166ae623b12bcd6bd52b871b7ba8c908b \
+size    132105943
 
 # This project contains all of the 3rd-party modules and this port could
 # be expanded to have subports for each of them, similar to the
