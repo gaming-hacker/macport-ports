@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -14,7 +14,7 @@ revision            0
 
 # Subport for Go Unstable Version
 subport ${name}-devel {
-    version         1.18beta1
+    version         1.18beta2
     revision        0
 }
 
@@ -47,34 +47,33 @@ livecheck.url       ${homepage}/dl/
 if {$subport eq "${name}-devel"} {
     # Go (DEVEL / UNSTABLE)
     checksums       ${go_src_dist} \
-rmd160  d37a45365b7df68498764b3924efad7d90a95935 \
-sha256  418c028db14699cb5b2d4907ad3a419d79f789b31916ef8764867e4a78e653a1 \
-size    22750283 \
+                    rmd160  24b9f86d94026765b80a7a37b7b11e6b64570638 \
+                    sha256  3cb14e2c82da366f7393c988f1f3fc2c16b71a5492bd3d49d35886cdf27a9d13 \
+                    size    22816245 \
                     ${go_armbin_dist} \
-rmd160  b9cdfa3db99e16c85a7753c5f9e6b702d890e99e \
-sha256  09b7718f2354acb9826eef27f8257ac41c77df6389b14e91af09b90f79f200e8 \
-size    137381896 \
+                    rmd160  a8368984db743d5d1dad35aafc76a5a2a8094a3b \
+                    sha256  b442585cbd50759bd11d7a9971e02ec3b2e8cfc1ff1094fa23afadc9e3889689 \
+                    size    137682754 \
                     ${go_amdbin_dist} \
-rmd160  d65ca3fbba38b938674d0993384884c700f9c3e0 \
-sha256  013d6d427a9591711d6e05defc46c4086e2fb9dffbc41c9a0fce09192e6e8ede \
-size    143162528
-
+                    rmd160  09699dd715981f8118e0247861bca4da2e77bf2c \
+                    sha256  83fa94b3101d1a00dc5685645e4b49809a5dad18ce19ab449392806a85c05125 \
+                    size    143466224
 
     livecheck.regex {go([0-9.A-z]+)\.src\.tar\.gz}
 } else {
     # Go (RELEASE)
     checksums       ${go_src_dist} \
-rmd160  8384bf0e133ebff52c9dcd4f3568963769f4c3ff \
-sha256  4dc1bbf3ff61f0c1ff2b19355e6d88151a70126268a47c761477686ef94748c8 \
-size    22191372 \
+                    rmd160  8384bf0e133ebff52c9dcd4f3568963769f4c3ff \
+                    sha256  4dc1bbf3ff61f0c1ff2b19355e6d88151a70126268a47c761477686ef94748c8 \
+                    size    22191372 \
                     ${go_armbin_dist} \
-rmd160  721116b37981f63bc5b00b5f206663e9a2e0e0bf \
-sha256  dc54f3f4099e2be9e9c33bf926a7dc3ad64f34717142f7abcaff9ae44bc03d0c \
-size    130265710 \
+                    rmd160  721116b37981f63bc5b00b5f206663e9a2e0e0bf \
+                    sha256  dc54f3f4099e2be9e9c33bf926a7dc3ad64f34717142f7abcaff9ae44bc03d0c \
+                    size    130265710 \
                     ${go_amdbin_dist} \
-rmd160  68e660cf7aac327b96f515fe801d3c150a542bec \
-sha256  874bc6f95e07697380069a394a21e05576a18d60f4ba178646e1ebed8f8b1f89 \
-size    136792188
+                    rmd160  68e660cf7aac327b96f515fe801d3c150a542bec \
+                    sha256  874bc6f95e07697380069a394a21e05576a18d60f4ba178646e1ebed8f8b1f89 \
+                    size    136792188
 
     livecheck.regex {go([0-9.]+)\.src\.tar\.gz}
 }

@@ -21,7 +21,8 @@ rmd160  fb6f9042ff4018e758191b5649577393c0af77e4
 
 depends_build       port:byacc
 
-patchfiles          patch-flowd.conf.diff
+patchfiles          patch-flowd.conf.diff \
+                    implicit.patch
 
 post-patch {
     reinplace "s|@PREFIX@|${prefix}|g" ${worksrcpath}/flowd.conf

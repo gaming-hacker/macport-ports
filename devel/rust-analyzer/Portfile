@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cargo   1.0
 PortGroup           github  1.0
 
-github.setup        rust-analyzer rust-analyzer 2022-01-24
+github.setup        rust-analyzer rust-analyzer 2022-01-31
 github.tarball_from archive
 version             [string map { {-} {} } ${github.version}]
 revision            0
@@ -25,15 +25,16 @@ maintainers         @fabius \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-rmd160  3876cfd5fd2fd00989b16f513c088ea0911514fe \
-sha256  634dc4fda60674b10d1f945dfb9f64a6a8c0e41c6fbb42bffbeeb3bae16fb1db \
-size    2254412
+                        rmd160  4a5c64e4168ab999b461284eea069de29cf382e5 \
+                        sha256  351c76c1f9e8698c937da271332bceae42f63655affdfaf35bbd89695a80158f \
+                        size    2257192
 
 destroot {
     xinstall -m 0755 \
         ${worksrcpath}/target/[cargo.rust_platform]/release/${name} \
         ${destroot}${prefix}/bin/
 }
+
 
 cargo.crates \
     addr2line                       0.17.0  b9ecd88a8c8378ca913a680cd98f0f13ac67383d35993f86c90a70e3f137816b \
@@ -154,7 +155,7 @@ cargo.crates \
     serde_derive                   1.0.134  784ed1fbfa13fe191077537b0d70ec8ad1e903cfe04831da608aa36457cb653d \
     serde_json                      1.0.75  c059c05b48c5c0067d4b4b2b4f0732dd65feb52daf7e0ea09cd87e7dadc1af79 \
     serde_repr                       0.1.7  98d0516900518c29efa217c298fa1f4e6c6ffc85ae29fd7f4ee48f176e1a9ed5 \
-sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     smallvec                         1.8.0  f2dd574626839106c320a323308629dcb1acfc96e32a8cba364ddc61ac23ee83 \
     smol_str                        0.1.21  61d15c83e300cce35b7c8cd39ff567c1ef42dde6d4a1a38dbdbf9a59902261bd \
     snap                             1.0.5  45456094d1983e2ee2a18fdfebce3189fa451699d0502cb8e3b49dba5ba41451 \
@@ -198,4 +199,4 @@ sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd0
     xflags                           0.2.3  2c2854f07e689d7388420d1c73512073630df31ec5ddf18554f64aea0ae73775 \
     xflags-macros                    0.2.3  da260301476ad19a4733a0e930db8227a48ea04561e235a5102978145ec69fcc \
     xshell                          0.1.17  eaad2035244c56da05573d4d7fda5f903c60a5f35b9110e157a14a1df45a9f14 \
-    xshell-macros                   0.1.17  4916a4a3cad759e499a3620523bf9545cc162d7a06163727dde97ce9aaa4cf39 \
+    xshell-macros                   0.1.17  4916a4a3cad759e499a3620523bf9545cc162d7a06163727dde97ce9aaa4cf39

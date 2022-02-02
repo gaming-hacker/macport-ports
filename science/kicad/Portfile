@@ -107,7 +107,7 @@ size    33856728
         }
     }
 
-    gitlab.livecheck.regex {([0-9]+\.[0-8]+\.[0-8]+)}
+    gitlab.livecheck.regex {([0-9]+\.[0-8]+\.[0-9]+)}
 
 } else {
     livecheck.type      none
