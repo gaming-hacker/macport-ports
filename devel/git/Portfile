@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -25,18 +25,18 @@ distfiles           git-${version}${extract.suffix} \
                     git-manpages-${version}${extract.suffix}
 
 checksums           git-${version}${extract.suffix} \
-                    rmd160  f11712caafb5266ede02aeeacc434e74fa5a52b6 \
-                    sha256  d768528e6443f65a203036266f1ca50f9d127ba89751e32ead37117ed9191080 \
-                    size    6874520 \
+rmd160  f11712caafb5266ede02aeeacc434e74fa5a52b6 \
+sha256  d768528e6443f65a203036266f1ca50f9d127ba89751e32ead37117ed9191080 \
+size    6874520 \
                     git-manpages-${version}${extract.suffix} \
-                    rmd160  90b460d3fbf567a9813d581690e09383dbcafcf6 \
-                    sha256  e4e3a751f2c05959222c3ea2f0f09481700eca8f915d1398bb270eb6846c3803 \
-                    size    497284
+rmd160  90b460d3fbf567a9813d581690e09383dbcafcf6 \
+sha256  e4e3a751f2c05959222c3ea2f0f09481700eca8f915d1398bb270eb6846c3803 \
+size    497284
 
 perl5.require_variant   false
 perl5.conflict_variants yes
-perl5.branches          5.28 5.30 5.32 5.34
-perl5.default_branch    5.28
+perl5.branches 5.30
+perl5.default_branch 5.30
 perl5.create_variants   ${perl5.branches}
 
 depends_build-append \
@@ -66,7 +66,7 @@ compiler.c_standard 1999
 
 variant universal   {}
 
-set CFLAGS          "${configure.cflags} -std=gnu99 [get_canonical_archflags cc]"
+set CFLAGS          "${configure.cflags} -std=c11 [get_canonical_archflags cc]"
 set LDFLAGS         "${configure.ldflags} [get_canonical_archflags ld]"
 
 build.args          CFLAGS="${CFLAGS}" \
@@ -164,9 +164,9 @@ variant pcre description {Use pcre} {
 variant doc description {Install HTML and plaintext documentation} {
     distfiles-append        git-htmldocs-${version}${extract.suffix}
     checksums-append        git-htmldocs-${version}${extract.suffix} \
-                            rmd160  ce45695ac3fedf039590e02c1b76dfd1d22cd5c0 \
-                            sha256  ca2f0bd4a9d24d9b6b3a021f11b8eacee863948c67a4cc0ff6d7adef8137ea18 \
-                            size    1410148
+rmd160  ce45695ac3fedf039590e02c1b76dfd1d22cd5c0 \
+sha256  ca2f0bd4a9d24d9b6b3a021f11b8eacee863948c67a4cc0ff6d7adef8137ea18 \
+size    1410148
 
     patchfiles-append       patch-git-subtree.html.diff
 

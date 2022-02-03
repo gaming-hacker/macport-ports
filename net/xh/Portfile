@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,9 +18,9 @@ long_description    ${description} It reimplements as much as possible of \
 homepage            https://github.com/ducaale/xh
 
 checksums           ${distfiles} \
-                    rmd160  683fda79d6a3e026bbdd2c7fc17652f6d519c69a \
-                    sha256  67dcea38d58115fb745eb41142a118110ff070d7d484128cc066d9b4bb01c68d \
-                    size    253435
+rmd160  683fda79d6a3e026bbdd2c7fc17652f6d519c69a \
+sha256  67dcea38d58115fb745eb41142a118110ff070d7d484128cc066d9b4bb01c68d \
+size    253435
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} ${destroot}${prefix}/bin/
@@ -137,7 +137,7 @@ cargo.crates \
     linked-hash-map                  0.5.4  7fb9b38af92608140b86b693604b9ffcc5824240a484d1ecd4795bacb2fe88f3 \
     log                             0.4.14  51b9bbe6c47d51fc3e1a9b945965946b4c44142ab8792c50835a980d362c2710 \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
-    md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
+md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
     memchr                           2.4.1  308cc39be01b73d0d18f82a0e7b2a3df85245f84af96fdddc5d202d27e47b86a \
     mime                            0.3.16  2a60c7ce501c71e03a9c9c0d35b861413ae925bd979cc7a4e30d060069aaac8d \
     mime2ext                        0.1.49  6368e0cd00990a5533eb0c291c5e715f43fd39aa26aa386c1e1b666663cb1c57 \
@@ -208,8 +208,8 @@ cargo.crates \
     serde_derive                   1.0.130  d7bc1a1ab1961464eae040d96713baa5a724a8152c1222492465b54322ec508b \
     serde_json                      1.0.67  a7f9e390c27c3c0ce8bc5d725f6e4d30a29d26659494aa4b17535f7522c5c950 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
-    sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
-    sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
+sha1                             0.6.0  2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d \
+sha2                             0.9.8  b69f9a4c9740d74c5baa3fd2e547f9525fa8088a8a958e0ca2409a514e33f5fa \
     slab                             0.4.4  c307a32c1c5c437f38c7fd45d753050587732ba8628319fbdf12a7e289ccc590 \
     socket2                          0.4.1  765f090f0e423d2b55843402a07915add955e7d60657db13707a159727326cad \
     spin                             0.5.2  6e63cff320ae2c57904679ba7cb63280a3dc4613885beafb148ee7bf9aa9042d \

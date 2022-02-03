@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ long_description    Gleam is a type safe functional programming language for \
                     such as Erlang, Elixir and LFE.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  592f2e93d7e791d9794c028d93b21ba2cf50b349 \
-                    sha256  54fb41fa2db923f06d4d078f5ae57e75f955cec3b913a14abb9c88cfa6456696 \
-                    size    372329
+rmd160  592f2e93d7e791d9794c028d93b21ba2cf50b349 \
+sha256  54fb41fa2db923f06d4d078f5ae57e75f955cec3b913a14abb9c88cfa6456696 \
+size    372329
 
 depends_lib-append  port:libiconv
 depends_run-append  port:erlang \
@@ -204,10 +204,10 @@ cargo.crates \
     serde_json                      1.0.74  ee2bb9cd061c5865d345bb02ca49fcef1391741b672b54a0bf7b679badec3142 \
     serde_urlencoded                 0.7.0  edfa57a7f8d9c1d260a549e7224100f6c43d43f9103e06dd8b4095a9b2b43ce9 \
     serde_yaml                      0.8.23  a4a521f2940385c165a24ee286aa8599633d162077a54bdcae2a6fd5a7bfa7a0 \
-    sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     similar                          2.1.0  2e24979f63a11545f5f2c60141afe249d4f19f84581ea2138065e400941d83d3 \
-    sized-chunks                     0.6.5  16d69225bde7a69b235da73377861095455d298f2b970996eec25ddbb42b3d1e \
+sized-chunks                     0.6.5  16d69225bde7a69b235da73377861095455d298f2b970996eec25ddbb42b3d1e \
     slab                             0.4.5  9def91fd1e018fe007022791f865d0ccc9b3a0d5001e01aabb8b40e46000afb5 \
     smallvec                         1.7.0  1ecab6c735a6bb4139c0caafd0cc3635748bbb3acf4550e8138122099251f309 \
     smawk                            0.3.1  f67ad224767faa3c7d8b6d91985b78e70a1324408abcb1cfcc2be4c06bc06043 \

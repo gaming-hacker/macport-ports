@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ if {${subport} eq ${name}} {
     revision            0
 
     checksums           rmd160  45afcb79be30b22c5b07d06aa18af4a6e5e06a58 \
-                        sha256  ded5c3861d4aab51859f82010c8d40567e6157cb699cbdc5d35fdaa68ba058fb \
-                        size    436610
+sha256  ded5c3861d4aab51859f82010c8d40567e6157cb699cbdc5d35fdaa68ba058fb \
+size    436610
 
     conflicts           lite-xl-luajit
 
@@ -50,8 +50,8 @@ subport lite-xl-luajit {
     description         An out-of-branch LuaJIT-based version of lite-xl
 
     checksums           rmd160  875de6d17bb304ecf62a86987da4fc4da0879cd9 \
-                        sha256  595914d46c835c442bd02cfbe6a0f50a2f21a10be83aeb1666fcc8d2d15dfe2e \
-                        size    439883
+sha256  595914d46c835c442bd02cfbe6a0f50a2f21a10be83aeb1666fcc8d2d15dfe2e \
+size    439883
 
     conflicts           lite-xl
 

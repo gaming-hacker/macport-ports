@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ revision            0
 categories-append   science
 license             BSD
 
-python.versions     37 38 39
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    GeoPandas is a project to add support for geographic data \
 homepage            https://geopandas.org
 
 checksums           rmd160  ac2f47cef558a17c3dce0c2ab647512058f36ed2 \
-                    sha256  63972ab4dc44c4029f340600dcb83264eb8132dd22b104da0b654bef7f42630a \
-                    size    991735
+sha256  63972ab4dc44c4029f340600dcb83264eb8132dd22b104da0b654bef7f42630a \
+size    991735
 
 if {${name} ne ${subport}} {
     depends_build-append \

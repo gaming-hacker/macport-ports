@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,12 +21,12 @@ homepage            https://www.ctcms.nist.gov/oof/oof2
 master_sites        ${homepage}/source
 
 checksums           rmd160 35f299b7a4f3658c0dedf77dd0ddb3cc51986860 \
-                    sha256 3b6d19e5360a65487a12d8d6dc55f92bb812aa9f3e7260abf445e989bab686e5 \
-                    size 15103683
+sha256 3b6d19e5360a65487a12d8d6dc55f92bb812aa9f3e7260abf445e989bab686e5 \
+size 15103683
 
-python.default_version 27
+python.default_version 39
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_build       port:pkgconfig
 

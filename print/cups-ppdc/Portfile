@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       legacysupport 1.1
@@ -20,8 +20,8 @@ long_description \
     See the ppdcfile(5) man page for information on the PPD file format.
 
 checksums       rmd160  0299587dcc04fdd0602c9719a7ca0998256bdf41 \
-                sha256  604225bf809a3acf612c1c077c9454e4205f5f39582276c9d4eae12b21305b70 \
-                size    8160454
+sha256  604225bf809a3acf612c1c077c9454e4205f5f39582276c9d4eae12b21305b70 \
+size    8160454
 
 patchfiles      patch-static-targets.diff \
                 patch-cups-getifaddrs.diff

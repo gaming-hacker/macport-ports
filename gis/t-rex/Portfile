@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,9 +15,9 @@ homepage            https://t-rex.tileserver.ch
 license             MIT
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  4973a648b300bf96fb892a2dcc0f7b3d0d78d9fd \
-                    sha256  102a757f3e3296c40b1c64dd818a7c60c05bd72b21a22931ad24d672a5265c9a \
-                    size    6665855
+rmd160  4973a648b300bf96fb892a2dcc0f7b3d0d78d9fd \
+sha256  102a757f3e3296c40b1c64dd818a7c60c05bd72b21a22931ad24d672a5265c9a \
+size    6665855
 
 cargo.crates \
     actix-codec                      0.3.0  78d1833b3838dbe990df0f1f87baf640cf6146e898166afe401839d1b001e570 \
@@ -179,8 +179,8 @@ cargo.crates \
     match_cfg                        0.1.0  ffbee8634e0d45d258acb448e7eaab3fce7a0a467395d4d9f228e3c1f01fb2e4 \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
     maybe-uninit                     2.0.0  60302e4db3a61da70c0cb7991976248362f30319e88850c487b9b95bbf059e00 \
-    md-5                            0.10.0  e6a38fc55c8bbc10058782919516f88826e70320db6d206aebc49611d24216ae \
-    md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
+md-5                            0.10.0  e6a38fc55c8bbc10058782919516f88826e70320db6d206aebc49611d24216ae \
+md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
     memchr                           2.4.1  308cc39be01b73d0d18f82a0e7b2a3df85245f84af96fdddc5d202d27e47b86a \
     memoffset                        0.5.6  043175f069eda7b85febe4a74abbaeff828d9f8b448515d3151a14a3542811aa \
     mime                            0.3.16  2a60c7ce501c71e03a9c9c0d35b861413ae925bd979cc7a4e30d060069aaac8d \
@@ -285,12 +285,12 @@ cargo.crates \
     serde_derive                   1.0.136  08597e7152fcd306f41838ed3e37be9eaeed2b61c42e2117266a554fab4662f9 \
     serde_json                      1.0.78  d23c1ba4cf0efd44be32017709280b32d1cea5c3f1275c3b6d9e8bc54f758085 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
-    sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
-    sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
-    sha2                             0.8.2  a256f46ea78a0c0d9ff00077504903ac881a1dafdc20da66545699e7776b3e69 \
-    sha2                            0.10.1  99c3bd8169c58782adad9290a9af5939994036b76187f7b4f0e6de91dbbfc0ec \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
+sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
+sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
+sha2                             0.8.2  a256f46ea78a0c0d9ff00077504903ac881a1dafdc20da66545699e7776b3e69 \
+sha2                            0.10.1  99c3bd8169c58782adad9290a9af5939994036b76187f7b4f0e6de91dbbfc0ec \
     shlex                            0.1.1  7fdf1b9db47230893d76faad238fd6097fd6d6a9245cd7a4d90dbd639536bbd2 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     siphasher                        0.3.9  a86232ab60fa71287d7f2ddae4a7073f6b7aac33631c3015abb556f08c6d0a3e \

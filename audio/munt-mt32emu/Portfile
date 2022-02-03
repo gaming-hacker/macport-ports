@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        munt munt 2_5_3 libmt32emu_
 revision            0
 checksums           rmd160  f79f8befdb16d9a698a00c8bb08dce20ffe0d6d7 \
-                    sha256  062d110bbdd7253d01ef291f57e89efc3ee35fd087587458381f054bac49a8f5 \
-                    size    527698
+sha256  062d110bbdd7253d01ef291f57e89efc3ee35fd087587458381f054bac49a8f5 \
+size    527698
 
 description         Munt library
 long_description    mt32emu is a C/C++ library which allows to emulate (approximately) the Roland MT-32, CM-32L and LAPC-I synthesiser modules.

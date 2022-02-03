@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -34,8 +34,8 @@ homepage            https://www.zetetic.net/sqlcipher/
 github.setup        sqlcipher sqlcipher 4.4.2 v
 github.tarball_from archive
 checksums           rmd160  bc0a00765058b864a95686d9efe9f24a2e68f6cb \
-                    sha256  87458e0e16594b3ba6c7a1f046bc1ba783d002d35e0e7b61bb6b7bb862f362a7 \
-                    size    17611236
+sha256  87458e0e16594b3ba6c7a1f046bc1ba783d002d35e0e7b61bb6b7bb862f362a7 \
+size    17611236
 
 openssl.configure   build_flags
 

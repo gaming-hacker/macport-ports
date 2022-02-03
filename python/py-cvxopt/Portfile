@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,10 +30,10 @@ long_description    CVXOPT is a free software package for convex \
 homepage            https://cvxopt.org/
 
 checksums           rmd160  4af2fec6a886aa076206de428e5b7ead9447e1d4 \
-                    sha256  e03d8cdd2c952672fa45fd365338857f2d30fbd913df5708747a0535558a51ea \
-                    size    4115655
+sha256  e03d8cdd2c952672fa45fd365338857f2d30fbd913df5708747a0535558a51ea \
+size    4115655
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${subport} ne ${name}} {
     # ignore empty BLAS and LAPACK inputs

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -38,8 +38,8 @@ if {${name} eq ${subport}} {
     revision        1
 
     checksums       rmd160  fdeee43b73f0b005738661bb9b86d9f9a4434f63 \
-                    sha256  0697a90c2f0b0602bf707070267caecc59638a8bf7a719d5950acff764f57b8e \
-                    size    22490250
+sha256  0697a90c2f0b0602bf707070267caecc59638a8bf7a719d5950acff764f57b8e \
+size    22490250
 
     patchfiles      patch-fop-java_home.diff
 
@@ -51,8 +51,8 @@ subport ${name}2 {
     revision        0
 
     checksums       rmd160  e56160fd3fc8df80a39d51fabea1ee82e0535a4f \
-                    sha256  ec75d6135f55f57b275f8332e069f8817990fdc7f63b1f5c0cb9da5609aa3074 \
-                    size    21309353
+sha256  ec75d6135f55f57b275f8332e069f8817990fdc7f63b1f5c0cb9da5609aa3074 \
+size    21309353
 
     livecheck.type  regex
     livecheck.url   https://www.apache.org/dist/xmlgraphics/fop/binaries/

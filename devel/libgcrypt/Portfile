@@ -1,4 +1,4 @@
-# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -26,15 +26,15 @@ master_sites    gnupg
 use_bzip2       yes
 
 checksums       rmd160  ace5262a32b0219c0dd173d2e6f254dd0b619ddb \
-                sha256  6a00f5c05caa4c4acc120c46b63857da0d4ff61dc4b4b03933fa8d46013fae81 \
-                size    3774491
+sha256  6a00f5c05caa4c4acc120c46b63857da0d4ff61dc4b4b03933fa8d46013fae81 \
+size    3774491
 
 depends_lib     port:libgpg-error
 
 configure.args  --disable-asm
 
 # Build fix for compilers that default to c99 (clang)
-configure.cflags-append "-std=gnu89"
+configure.cflags-append "-std=c11"
 
 # Some versions of gcc fail to build this for i386 including:
 #     gcc-4.0 from Xcode 3.1.6 (5493) -- Note that gcc-4.0 from Xcode 2.5 (5370) works 

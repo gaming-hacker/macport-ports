@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ homepage            http://miniupnp.free.fr/
 master_sites        http://miniupnp.free.fr/files/download.php?file=${distname}${extract.suffix}&dummy=
 
 checksums           rmd160  8818a5a5c607618cceaa11780287c25f4e2101fa \
-                    sha256  888fb0976ba61518276fe1eda988589c700a3f2a69d71089260d75562afd3687 \
-                    size    100008
+sha256  888fb0976ba61518276fe1eda988589c700a3f2a69d71089260d75562afd3687 \
+size    100008
 
 use_configure       no
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ long_description    A low-level interface to a growing number of Amazon Web \
 homepage            https://github.com/boto/botocore
 
 checksums           rmd160  3f1521e4b8080b79f24867576bda30e31490524b \
-                    sha256  38dd4564839f531725b667db360ba7df2125ceb3752b0ba12759c3e918015b95 \
-                    size    8743469
+sha256  38dd4564839f531725b667db360ba7df2125ceb3752b0ba12759c3e918015b95 \
+size    8743469
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           openssl 1.0
@@ -17,8 +17,8 @@ homepage            https://goaccess.io/
 master_sites        https://tar.goaccess.io/
 
 checksums           rmd160  515419ac7fe499d0eb5dae2623cbd4ccd0b1f497 \
-                    sha256  f1e4a12db822568aaddfa0c62d53099dbefed05440fc696f46089e1a352669e7 \
-                    size    652845
+sha256  f1e4a12db822568aaddfa0c62d53099dbefed05440fc696f46089e1a352669e7 \
+size    652845
 
 openssl.branch      1.1
 

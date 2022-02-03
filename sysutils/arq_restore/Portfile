@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ PortGroup           xcode 1.0
 github.setup        arqbackup arq_restore 5.7
 revision            0
 checksums           rmd160  770de6a7905a48f92007adb2874015d70133aac2 \
-                    sha256  5b8b674bccc141e10d99874490cee0e786bc325c915eb5003f83f849e973b658 \
-                    size    2299178
+sha256  5b8b674bccc141e10d99874490cee0e786bc325c915eb5003f83f849e973b658 \
+size    2299178
 
 categories          sysutils
 license             MIT

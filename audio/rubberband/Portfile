@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -7,8 +7,8 @@ name                rubberband
 version             2.0.2
 revision            0
 checksums           rmd160  6be9c41466f0453666f427db109d40f294ac6f36 \
-                    sha256  b9eac027e797789ae99611c9eaeaf1c3a44cc804f9c8a0441a0d1d26f3d6bdf9 \
-                    size    178974
+sha256  b9eac027e797789ae99611c9eaeaf1c3a44cc804f9c8a0441a0d1d26f3d6bdf9 \
+size    178974
 
 categories          audio
 maintainers         {ryandesign @ryandesign} openmaintainer
@@ -35,7 +35,7 @@ patchfiles          arch.patch
 
 # /usr/bin/../lib/c++/v1/atomic:535:2: error: <atomic> is not implemented
 # https://hg.sr.ht/~breakfastquay/rubberband/rev/812a666b042abf0e41465bee9924c7ffc8532bbf
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 
 configure.args      -Dfft=vdsp \
                     -Dresampler=libsamplerate

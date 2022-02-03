@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,8 +28,8 @@ long_description    Pandoc is a Haskell library for converting from \
 homepage            https://pandoc.org
 
 checksums           rmd160  3e286ec2e11f8bc511246e7d3d0fb5ce6f425963 \
-                    sha256  73386f2f26d0c304baff486aaeda0ed980b8a48edd2b1be4482682b7a2ded3e9 \
-                    size    7246572
+sha256  73386f2f26d0c304baff486aaeda0ed980b8a48edd2b1be4482682b7a2ded3e9 \
+size    7246572
 
 test.run            yes
 test.args           --test-arguments='-p markdown'
