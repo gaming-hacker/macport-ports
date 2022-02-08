@@ -4,11 +4,10 @@ PortSystem          1.0
 PortGroup           muniversal 1.0
 PortGroup           xcodeversion 1.0
 PortGroup           xcode_workaround 1.0
-PortGroup           bitbucket 1.0
 
 name                x264
-bitbucket.setup     videolan x264 master
-revision            1
+version             20220206
+revision            2
 categories          multimedia
 license             GPL-2+
 platforms           darwin
@@ -20,24 +19,16 @@ long_description    x264 is a free library for encoding H264/AVC video streams. 
                     Merritt from scratch. It is released under the terms of the \
                     GPL license.
 homepage            https://www.videolan.org/x264.html
-master_sites        https://code.videolan.org/videolan/x264/-/archive/master
-
-dist_subdir         x264
-distname            ${name}-master
+master_sites        file:///Users/glen/local/repo/macports/
 use_bzip2           yes
 
-checksums           rmd160  2642307e154e3573d4e8999a6baa73d2eba43561 \
-sha256  c1527a33bb91dd1536605c2e9b4804e831db7893f7923bb8eaa8530579a63935 \
-size    773461
+checksums           rmd160  4751c79dda81bca90f3efb746cd60a736b0cc72b \
+sha256  ff07414d3fadebdd5b966d2d45ee417b8774f5e7bac4eca00df9fcfb5872e2f5 \
+size    772871
 
 minimum_xcodeversions {9 3.1}
 
 depends_build       port:nasm
-
-# as of 20190313 the PPC assembly uses VSX, which is Power7+ only. We could disable asm, but
-# instead we can use the previous ppc assembly,  which does compile and provides the same functions
-# patchfiles-append   patch-x264-older-ppc-code.diff \
-#                     patch-x264-apple-silicon.diff
 
 configure.args      --enable-pic \
                     --enable-shared \
@@ -49,44 +40,10 @@ configure.args      --enable-pic \
                     --disable-gpac \
                     --disable-lsmash
 
-# as of build 148 asm optimizations are believed to work with x86_64 Snow Leopard and up
-# please file a ticket if you have evidence to the contrary
-# i386 clang build issues remain which break i386 build when asm optimizations are enabled
-# assert configure option --disable-asm for all i386 builds
-# see https://mailman.videolan.org/pipermail/x264-devel/2014-February/010371.html, #42672.
-if {![info exists universal_possible]} {
-    set universal_possible [expr {${os.universal_supported} && [llength ${configure.universal_archs}] >= 2}]
-}
-if {${os.platform} eq "darwin" && ${configure.build_arch} ne "" && (!${universal_possible} || ![variant_isset universal])} {
-    if {${configure.build_arch} eq "i386"} {
-        configure.args-append   --host=i686-apple-darwin${os.major} \
-                                --disable-asm
-    } else {
-        configure.args-append   --host=${configure.build_arch}-apple-darwin${os.major}
-    }
-    configure.ldflags-append {*}${configure.cc_archflags}
-}
 
-foreach arch ${configure.universal_archs} {
-    if {${arch} eq "i386"} {
-        set merger_configure_args(${arch}) "--host=i686-apple-darwin${os.major} --disable-asm"
-    } else {
-        set merger_configure_args(${arch}) --host=${arch}-apple-darwin${os.major}
-    }
-}
+configure.args-append   --host=${configure.build_arch}-apple-darwin${os.major}
 
 configure.universal_args-delete --disable-dependency-tracking
-
-platform darwin 8 {
-    # https://trac.macports.org/ticket/24893
-    if {${configure.build_arch} eq "i386" && (!${universal_possible} || ![variant_isset universal])} {
-        configure.cflags-append -msse2
-    }
-    set merger_configure_cflags(i386) -msse2
-
-    depends_build-append port:gmake
-    build.cmd            gmake
-}
 
 # sets its own optflags
 configure.optflags
