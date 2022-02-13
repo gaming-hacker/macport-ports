@@ -108,18 +108,15 @@ size    1465759
     
     use_configure   no
 
-    build {}
+    build           {}
 
     destroot.cmd    pip-${python.branch}
     destroot.args   --ignore-installed \
                     --no-cache-dir \
                     --no-dependencies \
-                    --root ${destroot}
+                    --root ${destroot} \
+                    ${distpath}/${distfiles}
     destroot.post_args
-
-    destroot {
-        system "${destroot.cmd} ${destroot.target} ${destroot.args} ${distpath}/${distname}${extract.suffix}"
-    }
 
     livecheck.type  none
 }

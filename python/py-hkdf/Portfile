@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ categories-append   security
 homepage            https://github.com/casebeer/python-hkdf
 
 checksums           rmd160  655173ded611e8c58a3d05225bc18aa2c6896bd7 \
-sha256  622a31c634bc185581530a4b44ffb731ed208acf4614f9c795bdd70e77991dca \
-size    3959
+                    sha256  622a31c634bc185581530a4b44ffb731ed208acf4614f9c795bdd70e77991dca \
+                    size    3959
 
-python.versions 39
+python.versions     38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

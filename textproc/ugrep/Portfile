@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           compiler_blacklist_versions 1.0
 
-github.setup        Genivia ugrep 3.7.1 v
+github.setup        Genivia ugrep 3.7.2 v
 github.tarball_from archive
 revision            0
 
@@ -17,11 +17,11 @@ long_description    ${description}: search file systems, source code, text, \
                     binary files, archives (cpio/tar/pax/zip), compressed files \
                     (gz/Z/bz2/lzma/xz/lz4/zstd), documents and more.
 
-checksums           rmd160  9e664f3a590614763fed8bb722c65a27b3157b76 \
-sha256  90c358f2fa16de9a183f1ef2c18965ad0921d41c8b870b70155310de7436a8b3 \
-size    4400237
+checksums           rmd160  aa65fd468335e21e39bd7e5fafd9846441725b82 \
+                    sha256  ce36c0ef91cfd99fd3a5fdcbd0b04eae4b7dc40c7af8e3df67e732e9213bf28c \
+                    size    4407650
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 # fix build failure on OS X 10.9 and 10.8:
 # /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/list:227:9: error: field has incomplete type 'GrepWorker'

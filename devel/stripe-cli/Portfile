@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/stripe/stripe-cli 1.7.10 v
+go.setup            github.com/stripe/stripe-cli 1.7.12 v
 github.tarball_from archive
 revision            0
 
@@ -24,9 +24,9 @@ license             Apache-2
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  2e38c486206876e01d7cd543da0bbe2f721e2f07 \
-sha256  9c0933c01d88ffd9e3854c052620e1d755c5c4280a04a51a78759d54048bf0fc \
-size    1333432
+checksums           rmd160  cb567677345e206f1337eec5865ea2ea87410347 \
+                    sha256  feead467ebae53384cad2e294e4d73d47fb1de1d75ca9e0331f2430a858a0901 \
+                    size    1335054
 
 # Allow Go to fetch dependencies at build time
 build.env-delete    GO111MODULE=off GOPROXY=off

@@ -61,7 +61,7 @@ compiler.cxx_standard 2017
 
 # Uses more memory per compile process than we can accommodate on our
 # automated build system. See https://github.com/dtschump/gmic/issues/325
-use_parallel_build              no
+#use_parallel_build              no
 
 subport ${name}-qt {
     description-append          (GUI application)
@@ -145,6 +145,9 @@ if {${subport} eq ${name}} {
 
     makefile.override-append    PREFIX
     makefile.prefix_name        USR
+
+    # parallel build fails
+    use_parallel_build          no
 
     variant x11 {
         depends_lib-append      port:xorg-libX11

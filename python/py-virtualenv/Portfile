@@ -1,15 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-virtualenv
-version             20.13.0
+version             20.13.1
 revision            0
 
 categories-append   devel
-platforms           darwin
 supported_archs     noarch
 license             MIT
 maintainers         {reneeotten @reneeotten} {larryv @larryv} openmaintainer
@@ -20,12 +19,12 @@ long_description    virtualenv is a tool to create isolated Python \
 
 homepage            https://virtualenv.pypa.io
 
-checksums           rmd160  ac3db331d56777c73f796ba41ea28536302df27f \
-sha256  d8458cf8d59d0ea495ad9b34c2599487f8a7772d796f9910858376d1600dd2dd \
-size    9957090
+checksums           rmd160  9c327e9e18f24c0a3655da8b6d1970f1ed9c40de \
+                    sha256  e0621bcbf4160e4e1030f05065c8834b4e93f4fcc223255db2a823440aca9c14 \
+                    size    11990886
 
 # keep older Python versions here, do add the EOL version to the list below
-python.versions 39
+python.versions     27 34 35 36 37 38 39 310
 
 if {${name} ne ${subport}} {
     # add EOL warnings
@@ -61,8 +60,8 @@ if {${name} ne ${subport}} {
         version     20.6.0
         revision    0
         checksums   rmd160  e5a870dc14efbc5b5d9d021d55b6f123c978967c \
-sha256  51df5d8a2fad5d1b13e088ff38a433475768ff61f202356bb9812c454c20ae45 \
-size    8700762
+                    sha256  51df5d8a2fad5d1b13e088ff38a433475768ff61f202356bb9812c454c20ae45 \
+                    size    8700762
 
         depends_lib-replace \
                     port:py${python.version}-platformdirs \

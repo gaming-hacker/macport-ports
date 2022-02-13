@@ -22,7 +22,7 @@ sha256  a29e61a82b1a5727b145403914812273dfa033a0c07a15500078726bb3b84165 \
 size    1075852
 
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
-                    port:gobject-introspection \
+                    path:lib/pkgconfig/gobject-introspection-1.0.pc:gobject-introspection \
                     port:icu \
                     port:libsoup \
                     port:libxml2 \

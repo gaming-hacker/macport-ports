@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-awscli
-version             1.22.46
+version             1.22.54
 revision            0
 
 categories          python devel
@@ -18,11 +18,11 @@ long_description    {*}${description}
 
 homepage            https://aws.amazon.com/cli/
 
-checksums           rmd160  2e341d246e0812f019fc06c39dca1be26192ea89 \
-sha256  17e6af079f6c8abe29086e3380ad23b0bdae4cdf4773d0f91ef7430a9e7d7ef1 \
-size    1561256
+checksums           rmd160  e56fde84fd0608bba8d2f655ac27cb4ad1a531ef \
+                    sha256  3f6413e168fca67859222af8ed0760a3be1493c332a642c0b53088804269074b \
+                    size    1561713
 
-python.versions 39
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -72,6 +72,18 @@ To make the Python ${python.branch} version of AWS CLI the one that is run when\
 you execute the commands without a version suffix, e.g. 'aws', run:
 
 port select --set ${select.group} [file tail ${select.file}]
+
+---
+
+If you use a plugin in your ~/.aws/config, it must be installed. For example,
+Wasabi for S3 uses the awscli_plugin_endpoint plugin. Just install it:
+
+port install py${python.version}-awscli_plugin_endpoint
+
+If your plugin is not in MacPorts, you can install it using the
+py${python.version}-pip port, for example:
+
+pip-${python.branch} install --user <plugin-name>
 "
 
     livecheck.type      none

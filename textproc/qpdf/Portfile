@@ -1,13 +1,13 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        qpdf qpdf 10.5.0 release-qpdf-
+github.setup        qpdf qpdf 10.6.1 release-qpdf-
 revision            0
-checksums           rmd160  020c3b569a95e5a72362d3df1a6e9350aaed23ea \
-sha256  88257d36a44fd5c50b2879488324dd9cafc11686ae49d8c4922a4872203ce006 \
-size    18362586
+checksums           rmd160  b2d8982cccce402d74c1b6c54bb6b277a82348fd \
+                    sha256  4c56328e1eeedea3d87eb79e1fe09374a923fe28756f7a56bcff58523617f05f \
+                    size    18518114
 
 categories          textproc pdf
 platforms           darwin
@@ -26,7 +26,7 @@ depends_lib         path:include/turbojpeg.h:libjpeg-turbo \
                     port:libxslt \
                     port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard   2014
 
 platform darwin 8 {
     depends_build-append \
@@ -46,4 +46,6 @@ variant openssl conflicts gnutls description {Build against openssl} {
                         --enable-crypto-openssl
 }
 
-default_variants    +gnutls
+if {![variant_isset openssl]} {
+    default_variants    +gnutls
+}

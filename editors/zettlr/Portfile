@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        Zettlr Zettlr 2.1.2 v
+github.setup        Zettlr Zettlr 2.2.1 v
 github.tarball_from archive
 name                zettlr
 revision            0
@@ -30,16 +30,16 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 supported_archs     x86_64 arm64
 
-checksums           rmd160  52788ecdd96a6104cd2bfe68aaaa6f7310086c74 \
-sha256  5e7c17ee7664c84929f859e46d3bd098c6f8047a69c9a40a1c6a90af0fe9d816 \
-size    28301300
+checksums           rmd160  95b5a12cd8ee88fbdbaa485fbecf36c8781fb30d \
+                    sha256  df97c37bd9393def1ee3bf1b763cd793b823505612b461e34040746df88f804b \
+                    size    28342701
 
 depends_build       port:yarn
 
 build.env-append    CSC_IDENTITY_AUTO_DISCOVERY=false
 
 use_configure       no
-use_xcode  no
+use_xcode           yes
 
 build {
     switch $build_arch {

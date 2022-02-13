@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/ivaaaan/smug 0.2.6 v
+go.setup            github.com/ivaaaan/smug 0.2.7 v
 github.tarball_from archive
 revision            0
 
@@ -45,22 +45,22 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-rmd160  0bcf68d75722c887ac71c9a27e9034907c13dafc \
-sha256  7e4779686fbb7d79413119c1d2f315bdfdf33dbd0e2b8fdfead38548bed8c6ab \
-size    15216
+                        rmd160  25af6cdd002a939d83a1f4afd1a208517a5d0e0a \
+                        sha256  10b4a849b028e8eb3087414950e14cd8ac0521bc6cee4d606a08a209dfa04749 \
+                        size    15365
 
 go.vendors          gopkg.in/yaml.v2 \
                         lock    v2.4.0 \
-rmd160  66e9feb7944b3804efa63155ed9b618717b8955c \
-sha256  72812077e7f20278003de6ab0d85053d89131d64c443f39115a022114fd032b6 \
-size    73231 \
+                        rmd160  66e9feb7944b3804efa63155ed9b618717b8955c \
+                        sha256  72812077e7f20278003de6ab0d85053d89131d64c443f39115a022114fd032b6 \
+                        size    73231 \
                     gopkg.in/check.v1 \
                         lock    20d25e280405 \
-rmd160  412aa0d109919182ff84259e9b5bbc9f24d78117 \
-sha256  233f8faf427ce6701ac3427f85c28bc6b6ae7cdc97a303a52873c69999223325 \
-size    30360 \
+                        rmd160  412aa0d109919182ff84259e9b5bbc9f24d78117 \
+                        sha256  233f8faf427ce6701ac3427f85c28bc6b6ae7cdc97a303a52873c69999223325 \
+                        size    30360 \
                     github.com/spf13/pflag \
                         lock    v1.0.5 \
-rmd160  2ce81608a38c6f383a35bccd24d64361df5828c9 \
-sha256  7f41acdcba65b1fab5b9b633947a139f9915b60f94bdab486cdbe9d90c54f61e \
-size    50815
+                        rmd160  2ce81608a38c6f383a35bccd24d64361df5828c9 \
+                        sha256  7f41acdcba65b1fab5b9b633947a139f9915b60f94bdab486cdbe9d90c54f61e \
+                        size    50815

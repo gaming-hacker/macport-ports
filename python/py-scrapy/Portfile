@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -25,10 +25,10 @@ python.rootname         Scrapy
 set rootname_lower      [string tolower ${python.rootname}]
 
 checksums               rmd160  856a396190ff0df7b2ccbea22d7fcb492e2e09fc \
-sha256  13af6032476ab4256158220e530411290b3b934dd602bb6dacacbf6d16141f49 \
-size    1072669
+                        sha256  13af6032476ab4256158220e530411290b3b934dd602bb6dacacbf6d16141f49 \
+                        size    1072669
 
-python.versions 39
+python.versions 37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_lib-append  \
@@ -80,8 +80,8 @@ if {${name} ne ${subport}} {
         epoch               1
 
         checksums           rmd160  8cc9d59d8428fb948ed1463274bb895d09a86e38 \
-sha256  fe06576f9a4971de9dc0175c60fd92561e8275f2bad585c1cb5d65c5181b2db0 \
-size    977658
+                            sha256  fe06576f9a4971de9dc0175c60fd92561e8275f2bad585c1cb5d65c5181b2db0 \
+                            size    977658
 
         # Dependencies:
         # https://github.com/scrapy/scrapy/blob/be2e910dd06ba4904e7b10eb5a7e3251e8dab099/setup.py#L67

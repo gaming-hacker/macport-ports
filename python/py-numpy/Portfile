@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -13,10 +13,10 @@ maintainers             {michaelld @michaelld} openmaintainer
 description             The core utilities for the scientific library scipy for Python
 long_description        ${description}
 
-github.setup            numpy numpy 1.22.1 v
-checksums               rmd160  c9fce11f3964b7d0bc1d19568745450a17660d81 \
-sha256  dd1968402ae20dfd59b34acd799b494be340c774f6295e9bf1c2b9842a5e416d \
-size    10522216
+github.setup            numpy numpy 1.22.2 v
+checksums               rmd160  7a98f8c1650c6d63ae906c15c1e9a5fcfa653dc6 \
+                        sha256  093d513a460fd94f94c16193c3ef29b2d69a33e482071e3d6d6e561a700587a6 \
+                        size    10523600
 revision                0
 
 if {${name} ne ${subport}} {
@@ -26,7 +26,7 @@ if {${name} ne ${subport}} {
     pre-destroot { set_compilers }
 }
 
-python.versions 39
+python.versions         27 35 36 37 38 39 310
 
 # http://trac.macports.org/ticket/34562
 python.consistent_destroot yes
@@ -41,7 +41,7 @@ compiler.blacklist-append {clang < 910}
 # require a C/C++11 compliant compiler, to match SciPy and allow some
 # older macOS to build this port.
 compiler.c_standard   2011
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 # default livecheck
 github.livecheck.regex {(\d+(?:\.\d+)+)}
@@ -51,8 +51,8 @@ if {${name} ne ${subport}} {
     if {${python.version} == 27} {
         github.setup        numpy numpy 1.16.6 v
         checksums           rmd160  cbb34cf0981ea142ff45722d05a9daad20a134ea \
-sha256  2dce87065d5de1a83485cfb3de5e4e793787890f5c1dcc3536a9cabf2e1620af \
-size    4691852
+                            sha256  2dce87065d5de1a83485cfb3de5e4e793787890f5c1dcc3536a9cabf2e1620af \
+                            size    4691852
         revision            3
         set PATCH_PY_EXT    ".27"
         patchfiles-append   patch-cpu-detection.py.27.patch
@@ -61,8 +61,8 @@ size    4691852
     } elseif {${python.version} == 35} {
         github.setup        numpy numpy 1.18.5 v
         checksums           rmd160  c14f2725afe0f7420d69a6f9ed5744639a2d2b31 \
-sha256  4a421fdf82dbb3dce7e62400f69c43722b530db109c3321c6c95452f166560d9 \
-size    5167349
+                            sha256  4a421fdf82dbb3dce7e62400f69c43722b530db109c3321c6c95452f166560d9 \
+                            size    5167349
         revision            2
         patchfiles-append   patch-cpu-detection.py.35.patch
         set PATCH_PY_EXT    ".35"
@@ -71,8 +71,8 @@ size    5167349
     } elseif {${python.version} == 36} {
         github.setup        numpy numpy 1.19.5 v
         checksums           rmd160 66861032bbd7c1f7e7741d913c9edf6c0b8be68a \
-sha256 40e0a919cb8741556f8402cb7ec862b3b27903725ba59af44fd5b88620c5a7e1 \
-size   7037758
+                            sha256 40e0a919cb8741556f8402cb7ec862b3b27903725ba59af44fd5b88620c5a7e1 \
+                            size   7037758
         revision            1
         # because I pushed 1.20 and it requires Py37+ and so reverting back to 1.19
         epoch               1
@@ -82,18 +82,15 @@ size   7037758
     } elseif {${python.version} == 37} {
         github.setup        numpy numpy 1.21.5 v
         checksums           rmd160  5f8dc27842bb11ae7652963f080dbb24f0e37d3e \
-sha256  1a7ee0ffb35dc7489aebe5185a483f4c43b0d2cf784c3c9940f975a7dde56506 \
-size    9770548
+                            sha256  1a7ee0ffb35dc7489aebe5185a483f4c43b0d2cf784c3c9940f975a7dde56506 \
+                            size    9770548
         revision            1
+        github.tarball_from releases
         set PATCH_PY_EXT    ".37"
         livecheck.url       https://numpy.org/doc/stable/release.html
         livecheck.regex     {(1\.21(?:\.\d+)+)}
     } else {
         github.tarball_from releases
-
-        # remove capping of setuptools; it appears tests fail with >= 60.0.0
-        # see: https://github.com/numpy/numpy/issues/20692
-        patchfiles-append       patch-setuptools_setup.py.diff
     }
 
     patchfiles-append       patch-numpy_core_setup.py${PATCH_PY_EXT}.diff \
