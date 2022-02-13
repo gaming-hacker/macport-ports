@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,10 +26,10 @@ distname            ephem-${version}
 master_sites        pypi:e/ephem/
 
 checksums           rmd160  ffd3edcf7b9c87e88b96b8c598526036c890ae42 \
-                    sha256  607148429f85412915e32265779c0cf6d09f73aa97cf1ff0d101ac22c69c4436 \
-                    size    745041
+sha256  607148429f85412915e32265779c0cf6d09f73aa97cf1ff0d101ac22c69c4436 \
+size    745041
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     # fix permissions

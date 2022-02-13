@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ruby 1.0
@@ -28,8 +28,8 @@ long_description    Asciidoctor is a fast, open source, Ruby-based \
 homepage            https://asciidoctor.org/
 
 checksums           rmd160  3640e7a18ba65487d40aa7b11921d0adbcb9d178 \
-                    sha256  ed5b5e399e8d64994cc16f0983f993d6e33990909a8415b6fc8b786cdeb00f3d \
-                    size    279040
+sha256  ed5b5e399e8d64994cc16f0983f993d6e33990909a8415b6fc8b786cdeb00f3d \
+size    279040
 
 post-destroot {
     set man1 ${destroot}${prefix}/share/man/man1

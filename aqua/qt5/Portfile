@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,7 +29,7 @@ if { ${subport} eq "${name}-qtwebkit-examples" } {
 }
 
 # https://trac.macports.org/ticket/63154
-use_xcode           yes
+use_xcode  no
 
 set just_want_qt5_variables yes
 PortGroup qt5 1.0
@@ -41,7 +41,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://wiki.qt.io/New_Features_in_Qt_5.7
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 master_sites        \
     https://download.qt.io/official_releases/qt/${branch}/${version}/submodules \
@@ -74,13 +74,13 @@ if { ${subport} in [list "${name}-qtwebengine" "${name}-qtwebengine-docs"] } {
        https://github.com/qt/qtwebengine-chromium/archive/${qtwebengine_chromium_ref}:tagtwo
 
     checksums       ${qtwebengine_distfile} \
-                    rmd160  bce8cf438c61aa74b85e300f92b7fc181721d52f \
-                    sha256  2f92476a1b635f441370836ca57855efdbb2cab0983f2d526b80cfb413631480 \
-                    size    3774901 \
+rmd160  bce8cf438c61aa74b85e300f92b7fc181721d52f \
+sha256  2f92476a1b635f441370836ca57855efdbb2cab0983f2d526b80cfb413631480 \
+size    3774901 \
                     ${qtwebengine_chromium_distfile} \
-                    rmd160  90cf613a0d96297bb4f1373287f22f9900cfedba \
-                    sha256  a6c578f7feec67b090fd10e1462590ce6d2182b4e889f2f92a5fde5acbf84d38 \
-                    size    462445254
+rmd160  90cf613a0d96297bb4f1373287f22f9900cfedba \
+sha256  a6c578f7feec67b090fd10e1462590ce6d2182b4e889f2f92a5fde5acbf84d38 \
+size    462445254
 
     # Using system ninja: no need to extract bundled ninja
     extract.post_args-append --exclude=${distname}/ninja/
@@ -273,7 +273,7 @@ array set modules {
             c600d09716940f75d684f61c5bdaced797f623a86db1627da599027f6c635651
             21559880
         }
-        "port:python27"
+        "port:python39"
         ""
         "qtbase qtsvg"
         {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
@@ -674,7 +674,7 @@ array set modules {
     }
     qtwebengine {
         {}
-        "port:python27 port:py27-ply path:bin/ninja:ninja port:gperf port:bison port:flex port:qt5-qtwebengine-gn"
+        "port:python39 port:py39-ply path:bin/ninja:ninja port:gperf port:bison port:flex port:qt5-qtwebengine-gn"
         "port:fontconfig port:dbus path:lib/pkgconfig/harfbuzz.pc:harfbuzz path:lib/pkgconfig/glib-2.0.pc:glib2 port:zlib port:minizip port:libevent port:libxml2 port:jsoncpp port:protobuf3-cpp port:poppler port:pulseaudio port:icu path:lib/libavcodec.dylib:ffmpeg port:libopus port:webp port:libpng port:lcms2 port:freetype port:re2 port:snappy"
         "qtdeclarative qtquickcontrols qtquickcontrols2 qtlocation qtwebchannel qttools"
         {"Qt WebEngine"}
@@ -704,7 +704,7 @@ array set modules {
             c7ce0bbaea5ed89bba04fdf893e3030c8887f15f45dee5958d645a9f577952e1
             35301876
         }
-        "port:python27 port:bison port:flex"
+        "port:python39 port:bison port:flex"
         "port:fontconfig port:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3 path:include/turbojpeg.h:libjpeg-turbo"
         "qtbase qtdeclarative qtlocation qtmultimedia qtsensors qtwebchannel qtxmlpatterns"
         {"Qt WebKit" "Qt WebKit Widgets"}
@@ -976,9 +976,9 @@ foreach {module module_info} [array get modules] {
 
         if { ${module} ne "qtwebengine" } {
             checksums                                        \
-                rmd160  [lindex [lindex ${module_info} 0] 0] \
-                sha256  [lindex [lindex ${module_info} 0] 1] \
-                size    [lindex [lindex ${module_info} 0] 2]
+rmd160  [lindex [lindex ${module_info} 0] 0] \
+sha256  [lindex [lindex ${module_info} 0] 1] \
+size    [lindex [lindex ${module_info} 0] 2]
         }
 
         set license_string [lindex ${module_info} 8]
@@ -1760,7 +1760,7 @@ foreach {module module_info} [array get modules] {
                 patchfiles-append patch-qtwebengine_chromium_static_page_size.diff
 
                 # see https://trac.macports.org/ticket/59294
-                use_xcode yes
+                use_xcode  no
 
                 # see config_help.txt
                 configure.post_args-append         \
@@ -1894,9 +1894,9 @@ foreach {module module_info} [array get modules] {
 
             if { ${module} ne "qtwebengine" } {
                 checksums                                        \
-                    rmd160  [lindex [lindex ${module_info} 0] 0] \
-                    sha256  [lindex [lindex ${module_info} 0] 1] \
-                    size    [lindex [lindex ${module_info} 0] 2]
+rmd160  [lindex [lindex ${module_info} 0] 0] \
+sha256  [lindex [lindex ${module_info} 0] 1] \
+size    [lindex [lindex ${module_info} 0] 2]
             }
 
             depends_build-append            \
@@ -1929,7 +1929,7 @@ foreach {module module_info} [array get modules] {
                 build.env-append      CC=${configure.cc}
                 configure.args-append QMAKE_LINK=${configure.cxx}
                 # see https://trac.macports.org/ticket/59294
-                use_xcode yes
+                use_xcode  no
                 # Use bundled GN from separately-built qt5-qtwebengine-gn port
                 # Duplicated from special case for qt5-qtwebengine
                 patchfiles-append patch-qtwebengine_gn_binary_path.diff
@@ -1972,9 +1972,9 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         revision ${revision_string}
 
         checksums                                          \
-            rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
-            sha256  [lindex [lindex $modules(qtbase) 0] 1] \
-            size    [lindex [lindex $modules(qtbase) 0] 2]
+rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
+sha256  [lindex [lindex $modules(qtbase) 0] 1] \
+size    [lindex [lindex $modules(qtbase) 0] 2]
 
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}
@@ -2126,7 +2126,7 @@ if { [info exists depends_lib] } {
 }
 
 foreach deps ${depends_check} {
-    if { [string first ":python27" ${deps}] >= 0 } {
+#     if { [string first ":python27" ${deps}] >= 0 } {
         # If Qt components use Python, ensure that MacPorts python27 is used
         #
         # a better solution would be to force components to use a specific python program
@@ -2138,8 +2138,8 @@ foreach deps ${depends_check} {
         #    (see mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
-    }
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.9
+#     }
 }
 if { ${python_framework} ne "" } {
     configure.env-append PATH=${python_framework}/bin:$env(PATH)

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -13,12 +13,12 @@ long_description    ${description}
 github.setup        f4exb libsigmf 8623f04c1e4e817ebcaacbe55265a7740da015a4
 version             20201115-[string range ${github.version} 0 7]
 checksums           rmd160  279499167fbc999a4d33cd797a5896a9e393189a \
-                    sha256  5930140b578ce180075a0b66e9a02a9b6b2bb43b554e788e8f8f9c52651d85a7 \
-                    size    43602
+sha256  5930140b578ce180075a0b66e9a02a9b6b2bb43b554e788e8f8f9c52651d85a7 \
+size    43602
 revision            0
 github.livecheck.branch new-namespaces
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 
 patchfiles-append \
     flatbuffersV2.patch

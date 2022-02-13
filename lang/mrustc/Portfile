@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,20 +26,20 @@ set rust_version_major_underscore [join [lrange [split ${rust_version} .-] 0 1] 
 distfiles-append    rustc-${rust_version}-src.tar.gz:rust
 
 checksums           mrustc-${github.version}.tar.gz \
-                    rmd160  f54d1fd8e9b2493e9a81f31d53da0236cefbd786 \
-                    sha256  ef0f9f9fefe7e2e1b6798af9077cb01936131a0d493ccf6919d8b4d6fd6f9c63 \
-                    size    1180689  \
+rmd160  f54d1fd8e9b2493e9a81f31d53da0236cefbd786 \
+sha256  ef0f9f9fefe7e2e1b6798af9077cb01936131a0d493ccf6919d8b4d6fd6f9c63 \
+size    1180689  \
                     rustc-${rust_version}-src.tar.gz \
-                    rmd160  be2de16e2deaf91aee723e631a36f6de52636ddd \
-                    sha256  ac8511633e9b5a65ad030a1a2e5bdaa841fdfe3132f2baaa52cc04e71c6c6976 \
-                    size    170480637
+rmd160  be2de16e2deaf91aee723e631a36f6de52636ddd \
+sha256  ac8511633e9b5a65ad030a1a2e5bdaa841fdfe3132f2baaa52cc04e71c6c6976 \
+size    170480637
 
 # arm64 and i386 requires future patches
 supported_archs     x86_64
 
 use_configure       no
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.c_standard 2011
 compiler.thread_local_storage yes
 
@@ -207,10 +207,10 @@ subport mrustc-rust {
 
     # use the system python27 if present
     if {${os.platform} eq "darwin" && ${os.major} >= 11 && ${os.major} <= 21} {
-        set pythonfullpath   /usr/bin/python2.7
+        set pythonfullpath   /usr/bin/python3.9
     } else {
-        set pythonfullpath   ${prefix}/bin/python2.7
-        depends_build-append port:python27
+        set pythonfullpath   ${prefix}/bin/python3.9
+        depends_build-append port:python39
     }
 
     build.env-append \

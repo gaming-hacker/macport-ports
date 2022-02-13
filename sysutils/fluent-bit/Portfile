@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake                       1.1
@@ -35,8 +35,8 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 master_sites        ${homepage}/releases/${branch}/
 
 checksums           rmd160  b49fa3956d67a7da292c93adc77e8785263c8aea \
-                    sha256  97bc8f2bc2f9d443c08e57ddf7863cac5549571e7c96c32c482a075bbd219d86 \
-                    size    14827047
+sha256  97bc8f2bc2f9d443c08e57ddf7863cac5549571e7c96c32c482a075bbd219d86 \
+size    14827047
 
 if {${os.platform} eq "darwin" && ${configure.build_arch} eq "arm64"} {
     patchfiles      patch-monkey-remove-malloc-h.diff \

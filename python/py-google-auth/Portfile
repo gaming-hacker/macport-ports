@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ long_description    {*}${description}
 homepage            https://pypi.python.org/pypi/${python.rootname}
 
 checksums           rmd160  471d535f41aa69f225e62bd74af1779a5fdbed04 \
-                    sha256  ad160fc1ea8f19e331a16a14a79f3d643d813a69534ba9611d2c80dc10439dad \
-                    size    188477
+sha256  ad160fc1ea8f19e331a16a14a79f3d643d813a69534ba9611d2c80dc10439dad \
+size    188477
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -39,8 +39,8 @@ if {${name} ne ${subport}} {
         version     1.25.0
         revision    0
         checksums   rmd160 077e7c5a61134747ba2879b9fa0710f05615bff4 \
-                    sha256 514e39f4190ca972200ba33876da5a8857c5665f2b4ccc36c8b8ee21228aae80 \
-                    size 121940
+sha256 514e39f4190ca972200ba33876da5a8857c5665f2b4ccc36c8b8ee21228aae80 \
+size 121940
     }
 
     livecheck.type  none

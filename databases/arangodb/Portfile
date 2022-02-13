@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ long_description    🥑 ArangoDB is a native multi-model database with \
 homepage            https://www.arangodb.com/
 
 checksums           rmd160  64449522fc63197f5000a45a16cbe43d3da9c2f2 \
-                    sha256  591f6ce28c4ded7648e945e4c32164e1d2a388fae0608b62b15ba9959f4cb297 \
-                    size    166184200
+sha256  591f6ce28c4ded7648e945e4c32164e1d2a388fae0608b62b15ba9959f4cb297 \
+size    166184200
 
 # use these to specify python versions, python3 required
 # use ${prefix}/var/macports/sources/rsync.macports.org/macports/release/tarballs/ports/_resources/port1.0/group/python-1.0.tcl
@@ -54,7 +54,7 @@ configure.ccache    no
 # 3rdParty builds use ccache
 set ccache_dir      ${workpath}/.ccache
 
-# Build requires -std=gnu++17
+# Build requires -std=c++17
 compiler.cxx_standard \
                     2017
 

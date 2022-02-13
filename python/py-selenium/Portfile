@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,7 +17,7 @@ long_description    The selenium package is used to automate web \
 
 homepage            https://www.seleniumhq.org/
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -31,8 +31,8 @@ if {${name} ne ${subport}} {
     distname        selenium-${version}-py3-none-any
 
     checksums       rmd160  036d430dc7775f582e6606b27a20ff37cfa1c0c7 \
-                    sha256  27e7b64df961d609f3d57237caa0df123abbbe22d038f2ec9e332fb90ec1a939 \
-                    size    958787
+sha256  27e7b64df961d609f3d57237caa0df123abbbe22d038f2ec9e332fb90ec1a939 \
+size    958787
 
     extract.suffix  .whl
     extract.only

@@ -61,8 +61,8 @@ if {${subport} eq ${name}} {
     master_sites    https://github.com/qt/qtwebengine-chromium/archive/${qtwebengine_chromium_ref}
 
     checksums       rmd160  90cf613a0d96297bb4f1373287f22f9900cfedba \
-                    sha256  a6c578f7feec67b090fd10e1462590ce6d2182b4e889f2f92a5fde5acbf84d38 \
-                    size    462445254
+sha256  a6c578f7feec67b090fd10e1462590ce6d2182b4e889f2f92a5fde5acbf84d38 \
+size    462445254
 
     # Just extract gn; do not extract all of chromium (~2GB) or ninja
     worksrcdir      ${distname}/gn
@@ -73,7 +73,7 @@ if {${subport} eq ${name}} {
     # Backport change to avoid "unknown current_cpu arm" build error on arm64
     patchfiles-append patch-qtwebengine_gn_host_cpu_arm64.diff
 
-    compiler.cxx_standard 2014
+    compiler.cxx_standard 2017
 
     # see https://github.com/qt/qtwebengine/blob/v5.15.8-lts/src/buildtools/gn.pro#L21
     pre-configure {

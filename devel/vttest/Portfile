@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ master_sites        ftp://ftp.invisible-island.net/pub/vttest/ \
 extract.suffix      .tgz
 
 checksums           rmd160  cb9fbee6e899f5f38e2dd799092b1499ca794c7a \
-                    sha256  0f98a2e305982915f1520984c3e8698e3acd508ee210711528c89f5a7ea7f046 \
-                    size    213997
+sha256  0f98a2e305982915f1520984c3e8698e3acd508ee210711528c89f5a7ea7f046 \
+size    213997
 
 livecheck.url       https://invisible-island.net/vttest/CHANGES
 livecheck.regex     ^(20\\d\\d\\d\\d\\d\\d)

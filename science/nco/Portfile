@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -22,8 +22,8 @@ if {${os.major} > 12} {
 }
 
 checksums           rmd160  1671b0b9d110628860813f9bc0fcd1944fdf02fc \
-                    sha256  b8f8b02d0eab3be6bac8334cc370ca57ddbdaaffc8219f527b9e35ef4452247e \
-                    size    5772035
+sha256  b8f8b02d0eab3be6bac8334cc370ca57ddbdaaffc8219f527b9e35ef4452247e \
+size    5772035
 
 homepage            http://nco.sourceforge.net/
 long_description \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github  1.0
@@ -22,8 +22,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  9736e9e48a419a4e490036400d32a1574a8ec0ed \
-                    sha256  ae2837ddad9993d5e28fe8db00efec6b2378d68b7366021353a1e297b5fa2025 \
-                    size    60619
+sha256  ae2837ddad9993d5e28fe8db00efec6b2378d68b7366021353a1e297b5fa2025 \
+size    60619
 
 depends_build-append \
                     port:pkgconfig \

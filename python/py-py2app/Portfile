@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description \
 homepage            https://py2app.readthedocs.io/
 
 checksums           md5 60bfea1f09b0e7c4c029cfb46feb6b68 \
-                    rmd160 1727a9f46389be3734468e7b27c2f4ece6be7b6d \
-                    sha256 cefd26e9f0fda35abef766142061e2b8566e0e08f54792c75dfd500258948bd3
+rmd160 1727a9f46389be3734468e7b27c2f4ece6be7b6d \
+sha256 cefd26e9f0fda35abef766142061e2b8566e0e08f54792c75dfd500258948bd3
 
-python.versions     27 37 38 39 310
+python.versions 39
 
 if {$subport ne $name} {
     # needs pkg_resources at runtime

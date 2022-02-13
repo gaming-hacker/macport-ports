@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup clang_dependency 1.0
@@ -20,8 +20,8 @@ version          3.6.0
 revision         0
 
 checksums        rmd160  5ad2bf08211c842991a72c6ddaf3813f0cad1cae \
-                 sha256  a36613695ffa2905fdedc997b6df04a3006ccfd71d747a339b78aa8412c3d852 \
-                 size    8570393
+sha256  a36613695ffa2905fdedc997b6df04a3006ccfd71d747a339b78aa8412c3d852 \
+size    8570393
 
 homepage         https://libarchive.org/
 master_sites     ${homepage}downloads/

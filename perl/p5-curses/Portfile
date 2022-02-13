@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Curses 1.38
 revision            0
 license             Artistic-1
@@ -15,8 +15,8 @@ long_description    Curses is the interface between Perl and your system's curse
                     (:-) between different curses(3) libraries and operating systems.
 
 checksums           rmd160  d9229bb48e379f78276e4fc6dd8e691e7af6bbb0 \
-                    sha256  d521408298eb6413b209ef29d4ffcba6f5f58ee1abc60160739a17aafcb8f2f2 \
-                    size    135789
+sha256  d521408298eb6413b209ef29d4ffcba6f5f58ee1abc60160739a17aafcb8f2f2 \
+size    135789
 
 platforms           darwin
 if {${perl5.major} != ""} {

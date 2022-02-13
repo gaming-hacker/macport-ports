@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ homepage            https://www.riverbankcomputing.com/software/sip/
 distname            PyQt5_sip-${version}
 
 checksums           rmd160  471a4ba4e693a651a37f047fe85ecef6d1de4805 \
-                    sha256  2f24f299b44c511c23796aafbbb581bfdebf78d0905657b7cee2141b4982030e \
-                    size    121419
+sha256  2f24f299b44c511c23796aafbbb581bfdebf78d0905657b7cee2141b4982030e \
+size    121419
 
-python.versions     35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -39,12 +39,12 @@ master_sites        http://lyx.cybermirror.org/stable/${branch}.x/ \
                     ftp://ftp.lyx.org/pub/lyx/stable/${branch}.x/
 
 checksums           rmd160  42ef899a4cff27dee4bac65f8018de65c1cdde44 \
-                    sha256  c6bed2633419898e01a7cc350310d7d934bf591cab7259fc2581aa4c00eafa78 \
-                    size    16242608
+sha256  c6bed2633419898e01a7cc350310d7d934bf591cab7259fc2581aa4c00eafa78 \
+size    16242608
 
 configure.args      --disable-silent-rules
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.blacklist-append { clang < 800 }
 patchfiles-append   patch-lyx-applescriptproxy-add-stringh.diff
 patchfiles-append   patch-lyx-linkbackserver-older-nsalert.diff
@@ -61,26 +61,14 @@ if {![variant_isset qt4]} {
 }
 
 # Make the default match boost's default.
-if {![variant_isset python37] && ![variant_isset python38] && ![variant_isset python39]} {
-    default_variants-append +python310
-}
+    default_variants-append +python39
 
-variant python37 conflicts python38 python39 python310 description {Use python37} {
-    depends_build-append    port:python37
-    configure.python        ${prefix}/bin/python3.7
-}
-
-variant python38 conflicts python37 python39 python310 description {Use python38} {
-    depends_build-append    port:python38
-    configure.python        ${prefix}/bin/python3.8
-}
-
-variant python39 conflicts python37 python38 python310 description {Use python39} {
+variant python39 conflicts python310 description {Use python39} {
     depends_build-append    port:python39
     configure.python        ${prefix}/bin/python3.9
 }
 
-variant python310 conflicts python37 python38 python39 description {Use python310} {
+variant python310 conflicts python39 description {Use python310} {
     depends_build-append    port:python310
     configure.python        ${prefix}/bin/python3.10
 }
@@ -104,7 +92,7 @@ variant qt5 conflicts qt4 description {Use Qt5} {
                                 qtmacextras \
                                 qtsvg
 
-    configure.cxxflags-append -std=c++11
+    configure.cxxflags-append -std=c++17
     configure.pre_args  --prefix=${applications_dir}/LyX.app
     configure.args-append \
                         --without-x \

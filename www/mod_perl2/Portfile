@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -27,12 +27,12 @@ master_sites        apache:perl/
 distname            mod_perl-${version}
 
 checksums           rmd160  fa9911194f415e446aeca7af64fcbb4fdccda605 \
-                    sha256  f5b821b59b0fdc9670e46ed0fcf32d8911f25126189a8b68c1652f9221eee269 \
-                    size    3848030
+sha256  f5b821b59b0fdc9670e46ed0fcf32d8911f25126189a8b68c1652f9221eee269 \
+size    3848030
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches          5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.default_branch    5.30
 perl5.create_variants   ${perl5.branches}
 

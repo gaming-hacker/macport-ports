@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -31,8 +31,8 @@ homepage            http://fping.org/
 master_sites        ${homepage}dist/
 
 checksums           rmd160  81696e4095c043b76628c0427d5813f9d1a40798 \
-                    sha256  1ee5268c063d76646af2b4426052e7d81a42b657e6a77d8e7d3d2e60fd7409fe \
-                    size    191224
+sha256  1ee5268c063d76646af2b4426052e7d81a42b657e6a77d8e7d3d2e60fd7409fe \
+size    191224
 
 configure.args      --enable-ipv4 \
                     --enable-ipv6

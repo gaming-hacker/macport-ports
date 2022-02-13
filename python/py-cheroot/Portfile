@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,10 +24,10 @@ distname            ${python.rootname}-${version}
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 checksums           rmd160  40b2beea7207bf3f75710ad4e7bc396878e61dab \
-                    sha256  5b525b3e4a755adf78070ab54c1821fb860d4255a9317dba2b88eb2df2441cff \
-                    size    89470
+sha256  5b525b3e4a755adf78070ab54c1821fb860d4255a9317dba2b88eb2df2441cff \
+size    89470
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools_scm_git_archive

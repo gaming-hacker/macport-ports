@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -13,8 +13,8 @@ long_description    ${description}
 github.setup        srcejon aptdec 794d69c9a7753feba4bd89cb037eac40cf6bbcd2
 version             20210507-[string range ${github.version} 0 7]
 checksums           rmd160  fbbf45015a84225f2fda1fe4f421ee0ce0d619c7 \
-                    sha256  4d5fdf3df9cf648bbd3577c0021246345ecc6e853cb34a2d4415b3c7ce2c11d9 \
-                    size    180337
+sha256  4d5fdf3df9cf648bbd3577c0021246345ecc6e853cb34a2d4415b3c7ce2c11d9 \
+size    180337
 revision            0
 
 

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         CryptX 0.076 ../../authors/id/M/MI/MIK
 revision            0
 
@@ -14,8 +14,8 @@ description         Crypto toolkit (self-contained no external libraries needed)
 long_description    ${description}
 
 checksums           rmd160  a7e243657acef85538ec75adb015ba06679e3a46 \
-                    sha256  bb84ac012438c7cecdb51a5a6fffb4f1fee3b0eae0022e96cebc2e167522621c \
-                    size    1647443
+sha256  bb84ac012438c7cecdb51a5a6fffb4f1fee3b0eae0022e96cebc2e167522621c \
+size    1647443
 
 if {${perl5.major} != ""} {
     depends_lib-append \

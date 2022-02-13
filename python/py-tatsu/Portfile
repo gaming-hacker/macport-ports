@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel textproc
 platforms           darwin
 license             BSD
 
-python.versions     38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,8 +23,8 @@ homepage            https://github.com/neogeny/tatsu
 use_zip             yes
 
 checksums           rmd160  006130861640e9120c13d50d24bdf066032dc33d \
-                    sha256  cf1f3b16fc4f8c8f4d0135749407dc01c10051c34ce1f6c7e859867d89b5ac69 \
-                    size    233998
+sha256  cf1f3b16fc4f8c8f4d0135749407dc01c10051c34ce1f6c7e859867d89b5ac69 \
+size    233998
 
 if {${name} ne ${subport}} {
     if {${python.version} < 310} {
@@ -32,8 +32,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  5529b54b5b4ce48032e43d8f02af300e975bdbbc \
-                            sha256  6a4f07aa7bfe9dfbee8015824feaf13f0b1a89577e2ee5a4a62c18630c309d4e \
-                            size    192828
+sha256  6a4f07aa7bfe9dfbee8015824feaf13f0b1a89577e2ee5a4a62c18630c309d4e \
+size    192828
 
         patchfiles-append   patch-MANIFEST.in.diff \
                             patch-setup.py.diff

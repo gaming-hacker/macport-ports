@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -39,15 +39,15 @@ notes-append "\
     Note that TeX is not needed after installation."
 
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {${subport} eq ${name}} {
     version         2.22.1
     revision        5
     conflicts       lilypond-devel
     checksums       rmd160  efb911332e0b96011340d7a21ad091881aae9cd0 \
-                    sha256  72ac2d54c310c3141c0b782d4e0bef9002d5519cf46632759b1f03ef6969cc30 \
-                    size    18033161
+sha256  72ac2d54c310c3141c0b782d4e0bef9002d5519cf46632759b1f03ef6969cc30 \
+size    18033161
 
     set livecheck_url "source.html"
 
@@ -60,8 +60,8 @@ if {${subport} eq ${name}} {
     revision        0
     conflicts       lilypond
     checksums       rmd160  759be6e7a06cc14f7cf824e7a81e1004a16fb34d \
-                    sha256  a179bd974a0e64390efef5bb0cc1e7287f1218237548433adba51c4f25bba2ce \
-                    size    17311135
+sha256  a179bd974a0e64390efef5bb0cc1e7287f1218237548433adba51c4f25bba2ce \
+size    17311135
 
     set livecheck_url "development.html"
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    ${description}
 homepage            https://github.com/h2non/filetype.py
 
 checksums           rmd160  fca259a638f74cea90deb2cd65ad4916ee158045 \
-                    sha256  323a13500731b6c65a253bc3930bbce9a56dfba71e90b60ffd968ab69d9ae937 \
-                    size    804374
+sha256  323a13500731b6c65a253bc3930bbce9a56dfba71e90b60ffd968ab69d9ae937 \
+size    804374
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
