@@ -11,7 +11,7 @@ name                    pango
 conflicts               pango-devel
 set my_name             pango
 epoch                   1
-version                 1.50.4
+version                 1.50.3
 revision                0
 checksums               rmd160  79a1d0f67818f2d17f0662253ffc11fdd79bd925 \
 sha256  f4ad63e87dc2b145300542a4fb004d07a9f91b34152fae0ddbe50ecdd851c162 \
@@ -38,7 +38,6 @@ long_description \
 
 depends_build \
     port:pkgconfig \
-    path:lib/pkgconfig/gobject-introspection-1.0.pc:gobject-introspection \
     port:help2man
 
 depends_lib \

@@ -7,7 +7,7 @@ PortGroup           xcode_workaround 1.0
 
 name                x264
 version             20220206
-revision            2
+revision            4
 categories          multimedia
 license             GPL-2+
 platforms           darwin
@@ -38,7 +38,9 @@ configure.args      --enable-pic \
                     --disable-lavf \
                     --disable-ffms \
                     --disable-gpac \
-                    --disable-lsmash
+                    --disable-lsmash \
+                    --bit-depth=all \
+                    --chroma-format=all
 
 
 configure.args-append   --host=${configure.build_arch}-apple-darwin${os.major}

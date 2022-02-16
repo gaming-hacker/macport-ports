@@ -5,7 +5,7 @@ PortGroup           github 1.0
 
 epoch               1
 github.setup        ninja-build ninja 1.10.2 v
-revision            4
+revision            5
 
 checksums           rmd160  1346989347fbb47b7211c1a49d5f9236f3027488 \
 sha256  ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed \
@@ -43,7 +43,7 @@ patchfiles          patch-configure.py-bootstrap-only.diff \
 depends_build-append \
                     port:re2c
 
-set py_ver          3.10
+set py_ver          3.9
 set py_ver_nodot    [string map {. {}} ${py_ver}]
 
 depends_lib-append  port:python${py_ver_nodot}
