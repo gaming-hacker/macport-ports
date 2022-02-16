@@ -19,7 +19,7 @@ conflicts           ffmpeg-devel
 # Please increase the revision of mpv whenever ffmpeg's version is updated.
 epoch               1
 version             4.4.1
-revision            1
+revision            2
 license             LGPL-2.1+
 categories          multimedia
 maintainers         {devans @dbevans} {jeremyhu @jeremyhu} {mascguy @mascguy} openmaintainer
@@ -92,7 +92,9 @@ depends_lib         port:lame \
                     port:soxr \
                     port:bzip2 \
                     port:xz \
-                    port:zlib
+                    port:zlib \
+                    port:x264 \
+                    port:x265
 
 patchfiles          patch-libavcodec-audiotoolboxenc.c.diff
 
@@ -364,6 +366,7 @@ variant gpl2 description {Enable GPL code, license will be GPL-2+} {
     configure.args-append   --enable-gpl \
                             --enable-postproc \
                             --enable-libx264 \
+                            --enable-libx265 \
                             --enable-libxvid
     depends_lib-append      port:XviD \
                             port:x264
