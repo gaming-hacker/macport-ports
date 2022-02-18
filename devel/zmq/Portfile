@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ if {${name} eq ${subport}} {
 
     github.setup    zeromq libzmq 4.3.4 v
     checksums       rmd160  540c9bc003266579d84985c52cc27fe6cbb098cd \
-sha256  5aa12435d152435a441ecfa8ad49b56eb845829b9bde22f90ea232cebaff055f \
-size    918351
+                    sha256  5aa12435d152435a441ecfa8ad49b56eb845829b9bde22f90ea232cebaff055f \
+                    size    918351
     revision        0
 
     conflicts zmq-devel zmq22 zmq3
@@ -60,7 +60,7 @@ subport zmq3 {
     revision     1
 
     checksums    rmd160 959e1403e4c8e36603711c9cf3bb5ff5cd5727aa \
-sha256 3ba8fbdee4845e26f25f3d1d43492bc182077338f4e857fa50a06e1b21bade7f
+                 sha256 3ba8fbdee4845e26f25f3d1d43492bc182077338f4e857fa50a06e1b21bade7f
 
     conflicts    zmq zmq-devel zmq22
 
@@ -80,7 +80,7 @@ subport zmq22 {
     github.setup zeromq zeromq2-x 2.2.0 v
     revision     2
     checksums    rmd160 5bf0cfe29e26348dc4c201764d099a8117c43735 \
-sha256 e021b62c6be211b5a1ac4b9e038068e0a8caaf81c22ee050183b25e991825e05
+                 sha256 e021b62c6be211b5a1ac4b9e038068e0a8caaf81c22ee050183b25e991825e05
 
     conflicts    zmq zmq-devel zmq3
 
@@ -98,14 +98,17 @@ sha256 e021b62c6be211b5a1ac4b9e038068e0a8caaf81c22ee050183b25e991825e05
 subport zmq-devel {
     PortGroup cmake 1.1
 
-    github.setup    zeromq libzmq a01d259db372bff5e049aa966da4efce7259af67
-    version         20220118-[string range ${github.version} 0 7]
-    checksums       rmd160  0b21be7669a279b876747b5f4bbd0a0519d08232 \
-sha256  97b08b558bb6739194eb15b30353181eb5fe78ebbbf379434e939dd37c6a2d6e \
-size    931467
+    github.setup    zeromq libzmq 81a8211eeb647ad821e2f1e13b7a43357ddc4599
+    version         20220210-[string range ${github.version} 0 7]
+    checksums       rmd160  9ddd7d817039302624123be757da7fd6b38c1427 \
+                    sha256  c182746c43c7aea201f0202395975f9d97ad50f72a4e983dde47d3d5855312b5 \
+                    size    931567
     revision        0
 
     conflicts zmq zmq22 zmq3
+
+    configure.checks.implicit_function_declaration.whitelist-append \
+        pthread_set_name_np pthread_setaffinity_np
 
     depends_lib-append port:libsodium
 

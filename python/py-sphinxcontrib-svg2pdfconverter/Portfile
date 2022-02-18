@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${name} is a ${description}.
 homepage            https://sphinx-doc.org/
 
 checksums           rmd160  7cfc8638b006a16a64896d0941754c770d9288f5 \
-sha256  60d14562bc7e6f1ad30f1b63a137659508868c87ce182c1d7fc08bee67b5851d \
-size    5479
+                    sha256  60d14562bc7e6f1ad30f1b63a137659508868c87ce182c1d7fc08bee67b5851d \
+                    size    5479
 
-python.versions 39
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -30,6 +30,4 @@ if {${name} ne ${subport}} {
     # can use inkscape, librsvg, or cairosvg to do the image conversion
     depends_run-append  path:lib/pkgconfig/librsvg-2.0.pc:librsvg \
                         port:py${python.version}-sphinx
-
-    livecheck.type      none
 }

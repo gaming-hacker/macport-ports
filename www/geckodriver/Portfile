@@ -189,6 +189,6 @@ sha-1 0.9.8 99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
 
 destroot {
     xinstall -m 755 \
-        [glob ${worksrcpath}/target/${build_arch}-*-${os.platform}/release/geckodriver] \
+        [glob ${worksrcpath}/target/[regsub {^arm64$} $build_arch aarch64]-*-${os.platform}/release/geckodriver] \
         ${destroot}${prefix}/bin
 }

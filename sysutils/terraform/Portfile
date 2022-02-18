@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               select 1.0
@@ -35,18 +35,18 @@ proc terraformDistBase {} {
 }
 
 subport terraform-1.1 {
-    set patchNumber     5
+    set patchNumber     6
 
     set armAvailable    yes
 
     checksums           [terraformDistBase]_amd64.zip \
-rmd160  64d1cab23e109ad214e4fc558de212b6d3445b24 \
-sha256  7d4dbd76329c25869e407706fed01213beb9d6235c26e01c795a141c2065d053 \
-size    20157551 \
+                        rmd160  22dbd3e573b77d0c6907f2f652c02b4736a51090 \
+                        sha256  bbfc916117e45788661c066ec39a0727f64c7557bf6ce9f486bbd97c16841975 \
+                        size    20168574 \
                         [terraformDistBase]_arm64.zip \
-rmd160  b930f45a2c6126a73d30a071a9c1f0b5c2b00939 \
-sha256  723363af9524c0897e9a7d871d27f0d96f6aafd11990df7e6348f5b45d2dbe2c \
-size    19328643
+                        rmd160  60cd00637af34644e3ab1e0d27f00fecd49c2456 \
+                        sha256  dddb11195fc413653b98e7a830ec7314f297e6c22575fc878f4ee2287a25b4f5 \
+                        size    19326402
 }
 
 subport terraform-1.0 {
@@ -55,48 +55,48 @@ subport terraform-1.0 {
     set armAvailable    yes
 
     checksums           [terraformDistBase]_amd64.zip \
-rmd160  a8ea8e4ec4087d753801f19c5f5625204cfcc098 \
-sha256  92f2e7eebb9699e23800f8accd519775a02bd25fe79e1fe4530eca123f178202 \
-size    19340098 \
+                        rmd160  a8ea8e4ec4087d753801f19c5f5625204cfcc098 \
+                        sha256  92f2e7eebb9699e23800f8accd519775a02bd25fe79e1fe4530eca123f178202 \
+                        size    19340098 \
                         [terraformDistBase]_arm64.zip \
-rmd160  5194880e62164b3991d14e8ef39ef6f5e5a05c5c \
-sha256  0f38af81641b00a2cbb8d25015d917887a7b62792c74c28d59e40e56ce6f265c \
-size    18498208
+                        rmd160  5194880e62164b3991d14e8ef39ef6f5e5a05c5c \
+                        sha256  0f38af81641b00a2cbb8d25015d917887a7b62792c74c28d59e40e56ce6f265c \
+                        size    18498208
 }
 
 subport terraform-0.15 {
     set patchNumber     5
     checksums           rmd160  d57fbd764112a5cc7d46b04c8d17d220eb5fddc8 \
-sha256  27d5ae2431240dff928e6483170b570782a8dd1a2b7c32ce1793097af1acb9bd \
-size    33803323
+                        sha256  27d5ae2431240dff928e6483170b570782a8dd1a2b7c32ce1793097af1acb9bd \
+                        size    33803323
 }
 
 subport terraform-0.14 {
     set patchNumber     11
     checksums           rmd160  9c9236549e343f402e3617cea6f5773f2695b06b \
-sha256  5c0110a4dc44ec01edd159c69bf60cebd18540eaf168aacd8b37d828b70e265d \
-size    34597577
+                        sha256  5c0110a4dc44ec01edd159c69bf60cebd18540eaf168aacd8b37d828b70e265d \
+                        size    34597577
 }
 
 subport terraform-0.13 {
     set patchNumber     7
     checksums           rmd160  aa35c4f8d1d03fb05736fb1dcabc3a243b8a72d6 \
-sha256  d5fbb589bc35c2655d0705c26117135cbb25e4259f120415009e0e6427ea97c8 \
-size    35672990
+                        sha256  d5fbb589bc35c2655d0705c26117135cbb25e4259f120415009e0e6427ea97c8 \
+                        size    35672990
 }
 
 subport terraform-0.12 {
     set patchNumber     31
     checksums           rmd160  3b275cfdfa5adbe8834bf3b1eaf3a9352f1e2389 \
-sha256  c1a6ca04026cebe7849610037ebc960609484c25f47a58344efaa7fcd5be1e56 \
-size    29180819
+                        sha256  c1a6ca04026cebe7849610037ebc960609484c25f47a58344efaa7fcd5be1e56 \
+                        size    29180819
 }
 
 subport terraform-0.11 {
     set patchNumber     15
     checksums           rmd160  0887b1812921fce1135170c23a9faf1775f5db5f \
-sha256  b0d2c9f9068be007f9b8eff211a679e1f07368b640245871bb02a6c2cdf28c07 \
-size    21882476
+                        sha256  b0d2c9f9068be007f9b8eff211a679e1f07368b640245871bb02a6c2cdf28c07 \
+                        size    21882476
 }
 
 subport terraform_select {}
@@ -105,7 +105,7 @@ if {${subport} eq ${name}} {
     PortGroup           obsolete 1.0
 
     replaced_by         ${latestVersion}
-    version             1.1.5
+    version             1.1.6
     revision            0
 
 } elseif {${subport} eq "terraform_select"} {
