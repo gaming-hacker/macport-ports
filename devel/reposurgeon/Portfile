@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -28,8 +28,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  c322295f6b6850a2470baddc0ba2bb65fa07f569 \
-                    sha256  e72e774da2313e3be656bf447a180be496e6bde19e05539be648aaa7def0b292 \
-                    size    1604141
+sha256  e72e774da2313e3be656bf447a180be496e6bde19e05539be648aaa7def0b292 \
+size    1604141
 
 depends_build-append \
                     port:gawk \

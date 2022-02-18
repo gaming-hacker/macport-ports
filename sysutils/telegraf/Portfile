@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   golang 1.0
@@ -27,8 +27,8 @@ maintainers                 {gmail.com:herby.gillot @herbygillot} \
                             openmaintainer
 
 checksums                   rmd160  84d41bbef618414ec66b450e5c6f0c841953a8b5 \
-                            sha256  dc1f04662fe81c970019271a215979c5549aec86b896562376d69bc76d7eaeda \
-                            size    3217354
+sha256  dc1f04662fe81c970019271a215979c5549aec86b896562376d69bc76d7eaeda \
+size    3217354
 
 set telegraf_user           ${name}
 set telegraf_conf_dir       ${prefix}/etc/${name}

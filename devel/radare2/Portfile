@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           conflicts_build 1.0
@@ -22,8 +22,8 @@ depends_lib         port:capstone \
 conflicts_build     ${name}
 
 checksums           rmd160  1774c592162e8db4300795ba839ea3024107f83e \
-                    sha256  0f60b7109fb939957697a9b40e5f9eeb0087370aeeff04e11edd435b17747e9f \
-                    size    9668560
+sha256  0f60b7109fb939957697a9b40e5f9eeb0087370aeeff04e11edd435b17747e9f \
+size    9668560
 
 configure.args-append \
                     --with-syscapstone \

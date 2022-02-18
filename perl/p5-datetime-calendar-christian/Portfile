@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         DateTime-Calendar-Christian 0.13
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  117828da1eb8f880342a2e946b1a42a5ec5fbb8f \
-                    sha256  7c5f3458f1c867aae548329d1e06fa03c3e4e9ecfe1080ffce4dead7b8af9212 \
-                    size    31348
+sha256  7c5f3458f1c867aae548329d1e06fa03c3e4e9ecfe1080ffce4dead7b8af9212 \
+size    31348
 
 if {${perl5.major} != ""} {
     depends_build-append \

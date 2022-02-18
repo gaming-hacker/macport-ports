@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ description         Extension for automatic generation of an example gallery
 long_description    ${description}
 
 checksums           rmd160  7b7ca8d16bbbcf037c8e36f8c0fa04eb95000863 \
-                    sha256  e04f2458cb8bc431f15d09b5c0bf42a920a0dad2fd4fa6b5f07313b3deb8af09 \
-                    size    688860
+sha256  e04f2458cb8bc431f15d09b5c0bf42a920a0dad2fd4fa6b5f07313b3deb8af09 \
+size    688860
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_build-append \

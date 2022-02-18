@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ PortGroup           makefile 1.0
 github.setup        mcg1969 vecLibFort 0.4.3
 revision            0
 checksums           rmd160  52429e533071664d0ab94d05f0cbc42795540e59 \
-                    sha256  fe9e7e0596bfb4aa713b2273b21e7d96c0d7a6453ee4b214a8a50050989d5586 \
-                    size    10689
+sha256  fe9e7e0596bfb4aa713b2273b21e7d96c0d7a6453ee4b214a8a50050989d5586 \
+size    10689
 
 categories          devel math science
 maintainers         {takeshi @tenomoto}

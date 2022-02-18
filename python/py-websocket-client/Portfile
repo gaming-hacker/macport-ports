@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    websocket-client is a WebSocket client for Python. It provid
 homepage            https://websocket-client.readthedocs.io/
 
 checksums           rmd160  71adf207cb874be18ae3f001266f1f644eba6b0b \
-                    sha256  b68e4959d704768fa20e35c9d508c8dc2bbc041fd8d267c0d7345cffe2824568 \
-                    size    58890
+sha256  b68e4959d704768fa20e35c9d508c8dc2bbc041fd8d267c0d7345cffe2824568 \
+size    58890
 
-python.versions     27 37 38 39 310
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_build-append \
@@ -39,8 +39,8 @@ if {${subport} ne ${name}} {
         version      0.59.0
 
         checksums   rmd160  a6aea33de3d817b69b0d57062dc12edcad3450f6 \
-                    sha256  d376bd60eace9d437ab6d7ee16f4ab4e821c9dae591e1b783c58ebd8aaf80c5c \
-                    size    57897
+sha256  d376bd60eace9d437ab6d7ee16f4ab4e821c9dae591e1b783c58ebd8aaf80c5c \
+size    57897
     }
 
     test.run        yes

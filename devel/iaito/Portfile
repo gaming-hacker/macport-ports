@@ -36,7 +36,7 @@ configure.args-append \
                     src/Iaito.pro \
                     INCLUDEPATH+=${prefix}/include/libr \
                     INCLUDEPATH+=${prefix}/include/libr/sdb
-use_xcode           yes
+use_xcode  no
 
 destroot {
     copy ${worksrcpath}/iaito.app ${destroot}${applications_dir}

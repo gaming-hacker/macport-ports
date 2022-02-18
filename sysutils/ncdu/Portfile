@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ subport ncdu1 {
     conflicts           ncdu
 
     checksums           rmd160  c0fb3bac76629a75222abf51f47ab80acafcd0ca \
-                        sha256  2b915752a183fae014b5e5b1f0a135b4b408de7488c716e325217c2513980fd4 \
-                        size    149705
+sha256  2b915752a183fae014b5e5b1f0a135b4b408de7488c716e325217c2513980fd4 \
+size    149705
 
     livecheck.url       ${homepage}/changes
 }
@@ -35,8 +35,8 @@ if {${subport} eq ${name}} {
     conflicts           ncdu1
 
     checksums           rmd160  20f69506b46382d51440a6175e974f9e61cbdfef \
-                        sha256  4ba8d20a64a55cc00af2d2c6138afcc9dc25e40a5ed6a8c544cb9e2285a195fe \
-                        size    52449
+sha256  4ba8d20a64a55cc00af2d2c6138afcc9dc25e40a5ed6a8c544cb9e2285a195fe \
+size    52449
 
     depends_build       port:zig
 

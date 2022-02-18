@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -25,9 +25,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  8fe907ba2dfef7edbb7badd10764beccc4001fe0 \
-                    sha256  1034905ba031cd2b77f32e42835e228ae76f10005829e24ed0ad1035d12a6c4b \
-                    size    9418812
+rmd160  8fe907ba2dfef7edbb7badd10764beccc4001fe0 \
+sha256  1034905ba031cd2b77f32e42835e228ae76f10005829e24ed0ad1035d12a6c4b \
+size    9418812
 
 depends_lib-append  port:libgit2 \
                     port:xorg-libxcb \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         ssh-askpass for OS X/macOS
 long_description    {*}${description}
 
 checksums           rmd160  5f17a4fa696597b45458bdee9fb3255e23c64649 \
-                    sha256  9f13178d3856e7b280f8cc07bb7e755d8d1cd4ee4411fd48ffaa3235fcef9c32 \
-                    size    17291
+sha256  9f13178d3856e7b280f8cc07bb7e755d8d1cd4ee4411fd48ffaa3235fcef9c32 \
+size    17291
 
 patchfiles          patch-fix-prefix.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
@@ -34,8 +34,8 @@ supported_archs x86_64 i386
 master_sites    gnu
 
 checksums       rmd160  fa6438443a42a5bb06ef61dd3b31f92bd1ea2676 \
-                sha256  b558b66084835e43b6361f60d60d314c487447419cdf53adf83a87020c367290 \
-                size    37839607
+sha256  b558b66084835e43b6361f60d60d314c487447419cdf53adf83a87020c367290 \
+size    37839607
 
 # these dependencies are listed under depends_lib rather than depends_build
 # because gdb will link with libraries they provide if installed.
@@ -57,7 +57,7 @@ compiler.thread_local_storage \
 
 # Needs C++11; halfway redundant due to the blacklist above, but make sure selected
 # compiler supports the standard - getting rid of old Apple GCC versions and the like?
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.dir ${workpath}/build
 configure.cmd ${worksrcpath}/configure

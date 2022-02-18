@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    ${description}: it can parse strings, return objects represe
 homepage            https://www.courtbouillon.org/tinycss2
 
 checksums           rmd160  a97bc4996a1d830b098ca36e2cfa7d026f2da7c8 \
-                    sha256  b2e44dd8883c360c35dd0d1b5aad0b610e5156c2cb3b33434634e539ead9d8bf \
-                    size    65703
+sha256  b2e44dd8883c360c35dd0d1b5aad0b610e5156c2cb3b33434634e539ead9d8bf \
+size    65703
 
-python.versions     37 38 39 310
+python.versions 39
 
 python.pep517       yes
 python.pep517_backend   flit

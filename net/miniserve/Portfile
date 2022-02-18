@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    \
     ${description} Sometimes this is just a more practical and quick way than doing things properly.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  413f162174374e1bb9204597ed42be9d45315c7d \
-                    sha256  39d8c6448bfbde329fac5b8979927dba467b29f5b964a0fe4bb8bdbdcab79de4 \
-                    size    142046
+rmd160  413f162174374e1bb9204597ed42be9d45315c7d \
+sha256  39d8c6448bfbde329fac5b8979927dba467b29f5b964a0fe4bb8bdbdcab79de4 \
+size    142046
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} \
@@ -265,8 +265,8 @@ cargo.crates \
     serde_derive                   1.0.136  08597e7152fcd306f41838ed3e37be9eaeed2b61c42e2117266a554fab4662f9 \
     serde_json                      1.0.79  8e8d9fa5c3b304765ce1fd9c4c8a3de2c8db365a5b91be52f186efc675681d95 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
-    sha2                            0.10.1  99c3bd8169c58782adad9290a9af5939994036b76187f7b4f0e6de91dbbfc0ec \
+sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
+sha2                            0.10.1  99c3bd8169c58782adad9290a9af5939994036b76187f7b4f0e6de91dbbfc0ec \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     simplelog                       0.11.2  c1348164456f72ca0116e4538bdaabb0ddb622c7d9f16387c725af3e96d6001c \
     siphasher                        0.3.9  a86232ab60fa71287d7f2ddae4a7073f6b7aac33631c3015abb556f08c6d0a3e \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -16,19 +16,19 @@ long_description    An implementation of the Double Ratchet cryptographic ratche
 license             Apache-2
 
 checksums           rmd160  f7fc8b779ebee548f6c3b0353398f845fb10893d \
-                    sha256  c41ed0a0fe613ed8ca78144855d1f82477a3539329e1dd73f47b6b2e2739e8b5 \
-                    size    2733952
+sha256  c41ed0a0fe613ed8ca78144855d1f82477a3539329e1dd73f47b6b2e2739e8b5 \
+size    2733952
 
 patchfiles          patch-CMakeLists-enable-pkgconfig.diff
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 if {${name} eq ${subport}} {
     PortGroup       cmake 1.1
 
 }
 
-set python.versions {36 37 38 39}
+set python.versions {39}
 
 foreach v ${python.versions} {
     subport py${v}-${name} {
