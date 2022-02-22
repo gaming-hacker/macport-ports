@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,7 +18,7 @@ long_description    ${description}
 platforms           darwin
 
 # block compilers that do not support thread-local storage.
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 compiler.c_standard   2011
 compiler.thread_local_storage yes
 
@@ -46,8 +46,8 @@ if {[string first "-devel" $subport] > 0} {
     github.setup    xianyi  OpenBLAS 5ad66f0e96a41428d69e449761ad41d3271327d5
     version         20220221-[string range ${github.version} 0 7]
     checksums       rmd160  85300aa731a7a170168058a76f2b6846bcce8339 \
-                    sha256  9be5da535e4c4eac887d4707b40a9391c932bc8520954865016ee85b8273179b \
-                    size    12747965
+sha256  9be5da535e4c4eac887d4707b40a9391c932bc8520954865016ee85b8273179b \
+size    12747965
     revision        0
 
     name            ${github.project}-devel
@@ -65,8 +65,8 @@ if {[string first "-devel" $subport] > 0} {
 
     github.setup    xianyi  OpenBLAS 0.3.20 v
     checksums       rmd160  d23aa98a2d15d7f3e8c1ed9de1ef59c6c30173a7 \
-                    sha256  1b889733180df61cfbe636dd7682747a630b9d3a4c2757c4292ccc36143ec92e \
-                    size    12749006
+sha256  1b889733180df61cfbe636dd7682747a630b9d3a4c2757c4292ccc36143ec92e \
+size    12749006
     revision        0
 
     conflicts       OpenBLAS-devel

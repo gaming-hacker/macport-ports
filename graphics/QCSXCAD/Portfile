@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -9,8 +9,8 @@ PortGroup           active_variants 1.1
 github.setup        thliebig QCSXCAD 3f09a8b83be6c945964ec3f29f8724ace563897e
 version             20220214-[string range ${github.version} 0 7]
 checksums           rmd160  e9fba314ef31df65b7d4e62b97d041b3aff31f37 \
-                    sha256  1b9fced9dc58f3e28a7d70441d40414b7b3bbd2f623b25e0d77b06ed1a386a03 \
-                    size    628645
+sha256  1b9fced9dc58f3e28a7d70441d40414b7b3bbd2f623b25e0d77b06ed1a386a03 \
+size    628645
 revision            0
 
 platforms           darwin macosx
@@ -21,7 +21,7 @@ maintainers         {ra1nb0w @ra1nb0w} openmaintainer
 description         Qt-GUI library for CSXCAD
 long_description    ${description}
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_lib-append \
     port:CSXCAD \

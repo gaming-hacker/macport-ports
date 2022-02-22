@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,10 +30,10 @@ long_description    ${description} \
 supported_archs     noarch
 
 checksums           rmd160  e57a589dbcaf231e992f0e252517e602495443b6 \
-                    sha256  217904208a5efb4dbd04d23910fad1ffe201c3dd7607a8adb08b9583bdd08c58 \
-                    size    30260069
+sha256  217904208a5efb4dbd04d23910fad1ffe201c3dd7607a8adb08b9583bdd08c58 \
+size    30260069
 
-python.versions     37 38
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools_scm \

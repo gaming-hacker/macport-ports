@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -24,13 +24,13 @@ distfiles           ${version}.tar.gz:macpass \
                     ${ddhotkey_hash}.tar.gz:ddhotkey
 
 checksums           ${version}.tar.gz \
-                    rmd160  07cd17c6c37bedd27879d6ad928778fc85b6499d \
-                    sha256  41d66936aa48c5c17676a167b28275f1fb98b8110422055fd282f176d046e910 \
-                    size    11046597 \
+rmd160  07cd17c6c37bedd27879d6ad928778fc85b6499d \
+sha256  41d66936aa48c5c17676a167b28275f1fb98b8110422055fd282f176d046e910 \
+size    11046597 \
                     ${ddhotkey_hash}.tar.gz \
-                    rmd160  12ce0935b45c9b8a1e258f267ff8d18f0429eed0 \
-                    sha256  656d090cca863b236b7d319df4a5853b55ebf9af39a31a08cb471122c9bfbf56 \
-                    size    27575
+rmd160  12ce0935b45c9b8a1e258f267ff8d18f0429eed0 \
+sha256  656d090cca863b236b7d319df4a5853b55ebf9af39a31a08cb471122c9bfbf56 \
+size    27575
 
 if {${os.platform} eq "darwin" && ${os.major} < 20} {
     known_fail yes

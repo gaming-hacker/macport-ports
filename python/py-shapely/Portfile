@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,7 +7,7 @@ PortGroup           github 1.0
 name                py-shapely
 github.setup        Toblerity Shapely 1.8.1
 revision            0
-python.versions     36 37 38 39 310
+python.versions 39
 categories-append   devel
 platforms           darwin
 supported_archs     noarch
@@ -28,9 +28,9 @@ long_description \
 #master_sites       pypi:S/Shapely
 
 checksums           md5     d257b40941a4be632a7ce138498b97f6 \
-                    rmd160  83a9cba3a5add046a4c8825446f3192d45e1d865 \
-                    sha256  f05bec39603b19f0c239494b72e472f6d496e0b7a8a387c5bf6a14c92245f4d1 \
-                    size    321805
+rmd160  83a9cba3a5add046a4c8825446f3192d45e1d865 \
+sha256  f05bec39603b19f0c239494b72e472f6d496e0b7a8a387c5bf6a14c92245f4d1 \
+size    321805
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:geos

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -45,25 +45,25 @@ distfiles           ${distname}${extract.suffix}:gcc \
                     ${ISL}.tar.bz2:gccinfrastructure
 
 checksums           gcc-10.3.0.tar.gz \
-                    rmd160  b6da30053864a10e8acdac62b9008b607db1f318 \
-                    sha256  8fcf994811ad4e5c7ac908e8cf62af2c1982319e5551f62ae72016064dacdf16 \
-                    size    135659248 \
+rmd160  b6da30053864a10e8acdac62b9008b607db1f318 \
+sha256  8fcf994811ad4e5c7ac908e8cf62af2c1982319e5551f62ae72016064dacdf16 \
+size    135659248 \
                     mpfr-4.1.0.tar.bz2 \
-                    rmd160  7a6d028b63c864566f62d47a58521e00a2890c28 \
-                    sha256  feced2d430dd5a97805fa289fed3fc8ff2b094c02d05287fd6133e7f1f0ec926 \
-                    size    1747243 \
+rmd160  7a6d028b63c864566f62d47a58521e00a2890c28 \
+sha256  feced2d430dd5a97805fa289fed3fc8ff2b094c02d05287fd6133e7f1f0ec926 \
+size    1747243 \
                     gmp-6.2.1.tar.bz2 \
-                    rmd160  2a4204453eb608bec6bb647ff5a0c47ca4d43878 \
-                    sha256  eae9326beb4158c386e39a356818031bd28f3124cf915f8c5b1dc4c7a36b4d7c \
-                    size    2493916 \
+rmd160  2a4204453eb608bec6bb647ff5a0c47ca4d43878 \
+sha256  eae9326beb4158c386e39a356818031bd28f3124cf915f8c5b1dc4c7a36b4d7c \
+size    2493916 \
                     mpc-1.2.1.tar.gz \
-                    rmd160  8c25b71d080936aab6ffa84f4f9d99b662d82c47 \
-                    sha256  17503d2c395dfcf106b622dc142683c1199431d095367c6aacba6eec30340459 \
-                    size    838731 \
+rmd160  8c25b71d080936aab6ffa84f4f9d99b662d82c47 \
+sha256  17503d2c395dfcf106b622dc142683c1199431d095367c6aacba6eec30340459 \
+size    838731 \
                     isl-0.24.tar.bz2 \
-                    rmd160  b3bf8e1ad50207d4eebecc47cb4cffdac6581a57 \
-                    sha256  fcf78dd9656c10eb8cf9fbd5f59a0b6b01386205fe1934b3b287a0a1898145c0 \
-                    size    2261594
+rmd160  b3bf8e1ad50207d4eebecc47cb4cffdac6581a57 \
+sha256  fcf78dd9656c10eb8cf9fbd5f59a0b6b01386205fe1934b3b287a0a1898145c0 \
+size    2261594
 
 extract {
     foreach f ${distfiles} {
@@ -162,9 +162,9 @@ platform darwin 8 {
     master_sites-append gnu:make:gccmake
     distfiles-append    ${MAKE_V}.tar.gz:gccmake
     checksums-append    make-3.81.tar.gz \
-                        rmd160  a713a72875cb9a29568677c98022465c6f55cbbf \
-                        sha256  16b77de9f013bcd536b7bc1efbe314223aedfe250f9063e33cbb4dfd347215a2 \
-                        size    1564560
+rmd160  a713a72875cb9a29568677c98022465c6f55cbbf \
+sha256  16b77de9f013bcd536b7bc1efbe314223aedfe250f9063e33cbb4dfd347215a2 \
+size    1564560
 
     pre-configure {
         file mkdir ${workpath}/bins

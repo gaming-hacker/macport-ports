@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -24,8 +24,8 @@ long_description \
                 as a PostgreSQL extension.
 
 checksums       rmd160  d703312a4d0e00640e254352054f4a74e283135e \
-                sha256  7f51b2c9dce0fd8158f737245ccdf15ba391583210b88aa2e4b1006bee16a18e \
-                size    2863710
+sha256  7f51b2c9dce0fd8158f737245ccdf15ba391583210b88aa2e4b1006bee16a18e \
+size    2863710
 
 depends_build   path:bin/cmake:cmake \
                 port:perl${perl5.major} \

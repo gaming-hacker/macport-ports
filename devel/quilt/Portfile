@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,7 +17,7 @@ homepage            https://savannah.nongnu.org/projects/quilt/
 
 master_sites        savannah
 checksums           rmd160 bc5149d25460e075f8d3bcc934ea0b0f645e6772 \
-                    sha256 3be3be0987e72a6c364678bb827e3e1fcc10322b56bc5f02b576698f55013cc2
+sha256 3be3be0987e72a6c364678bb827e3e1fcc10322b56bc5f02b576698f55013cc2
 
 depends_lib         port:gsed \
                     port:getopt \

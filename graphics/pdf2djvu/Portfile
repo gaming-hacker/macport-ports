@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160  5690847778dacd242d95fbf07fa772c94fa1b55c \
-                    sha256  9ea03f21d841a336808d89d65015713c0785e7295a6559d77771dc795333a9fa \
-                    size    305912
+sha256  9ea03f21d841a336808d89d65015713c0785e7295a6559d77771dc795333a9fa \
+size    305912
 
 depends_build       port:pkgconfig \
                     port:gsed
@@ -62,6 +62,6 @@ post-destroot {
 }
 
 test.run            yes
-depends_test-append port:python27 \
-                    port:py27-nose
-test.args           PYTHON=${prefix}/bin/python2.7
+depends_test-append port:python39 \
+                    port:py39-nose
+test.args           PYTHON=${prefix}/bin/python3.9

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                Thunar
 version             4.16.10
 revision            0
 checksums           rmd160  b80a1c30edde8e90e12a5defcde38ba32cd70203 \
-                    sha256  f105c8f5abc50c411f6218f913561ae3a485826bd0cd09503a4772d015899c92 \
-                    size    2324476
+sha256  f105c8f5abc50c411f6218f913561ae3a485826bd0cd09503a4772d015899c92 \
+size    2324476
 
 set branch          [join [lrange [split ${version} .] 0 1] .]
 categories          xfce

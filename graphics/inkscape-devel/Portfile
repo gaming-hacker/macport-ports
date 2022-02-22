@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -35,8 +35,8 @@ dist_subdir         ${my_name}
 use_xz              yes
 
 checksums           rmd160  da35944357541b0febb910b9591d6ce7da071df6 \
-                    sha256  e622a92e4bb3ff56abe3123b7b0371770a210a569656809ed965d8ff70041500 \
-                    size    35395764
+sha256  e622a92e4bb3ff56abe3123b7b0371770a210a569656809ed965d8ff70041500 \
+size    35395764
 
 set python_major    3
 set python_minor    10

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -23,8 +23,8 @@ distfiles           ${distname}.jar
 worksrcdir          ${distname}
 
 checksums           rmd160  266ab8fa8acb5d97c4f94cba956addbbd8eaab1c \
-                    sha256  8f3c20e3e2d565d26f33e8d4857a37d0d7f8ac39b62a7026496fcab1bdac30d4 \
-                    size    5867298
+sha256  8f3c20e3e2d565d26f33e8d4857a37d0d7f8ac39b62a7026496fcab1bdac30d4 \
+size    5867298
 
 extract {
     file copy ${distpath}/${distname}.jar ${workpath}

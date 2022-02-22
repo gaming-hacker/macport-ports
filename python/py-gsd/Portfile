@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ name                py-gsd
 categories-append   science
 license             BSD
 
-python.versions     37 38 39 310
+python.versions 39
 
 maintainers         {gmail.com:giovanni.bussi @GiovanniBussi} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description} \
 homepage            https://gsd.readthedocs.io/
 
 checksums           rmd160  d554a949a626fbe651704a9306339eb4d96db973 \
-                    sha256  bdaa57343bb136326071874c201b11ea3eb31ce55110d1a3a2d9de22cbedcea4 \
-                    size    104699
+sha256  bdaa57343bb136326071874c201b11ea3eb31ce55110d1a3a2d9de22cbedcea4 \
+size    104699
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-cython \

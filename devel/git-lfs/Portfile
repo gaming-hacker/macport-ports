@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               golang 1.0
@@ -16,8 +16,8 @@ homepage                https://git-lfs.github.com/
 license                 MIT
 
 checksums               rmd160  63a1c513fc1b3054afdd944cecdec601cc68d4b9 \
-                        sha256  37a3f6e2d2b43a5a5f48342c099d8e56f618b195a5688219e7c2821c39b208f8 \
-                        size    3252258
+sha256  37a3f6e2d2b43a5a5f48342c099d8e56f618b195a5688219e7c2821c39b208f8 \
+size    3252258
 
 depends_build-append    port:rb30-ronn-ng
 depends_run             port:git

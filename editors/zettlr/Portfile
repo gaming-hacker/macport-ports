@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -31,15 +31,15 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 supported_archs     x86_64 arm64
 
 checksums           rmd160  854ca73b648de7f0b4f7f80eaee9763b39d79d73 \
-                    sha256  9527d5aaf7b00f2d4d57f46142a7643bff7c21265c146c4ab0502a96379b5677 \
-                    size    28356267
+sha256  9527d5aaf7b00f2d4d57f46142a7643bff7c21265c146c4ab0502a96379b5677 \
+size    28356267
 
 depends_build       port:yarn
 
 build.env-append    CSC_IDENTITY_AUTO_DISCOVERY=false
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build {
     switch $build_arch {

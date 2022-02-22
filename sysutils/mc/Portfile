@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  legacysupport 1.0
@@ -28,8 +28,8 @@ master_sites        ${homepage}/downloads
 use_xz              yes
 
 checksums           rmd160  d1d9aff2bcd569018ef1a66bc58785acc20c3749\
-                    sha256  31be59225ffa9920816e9a8b3be0ab225a16d19e4faf46890f25bdffa02a4ff4\
-                    size    2510296
+sha256  31be59225ffa9920816e9a8b3be0ab225a16d19e4faf46890f25bdffa02a4ff4\
+size    2510296
 
 depends_build       port:pkgconfig
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2

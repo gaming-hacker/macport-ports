@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -6,8 +6,8 @@ name            xfce4-terminal
 version         0.8.9.2
 revision        0
 checksums       sha256  9ba23bf86d350ef8a95d2dfb50bbd1bbb2144d82985a779ec28caf47faaeeeeb \
-                rmd160  51383754fec97c4b2f8a537bc98305790832f466 \
-                size    945176
+rmd160  51383754fec97c4b2f8a537bc98305790832f466 \
+size    945176
 
 set branch      [join [lrange [split ${version} .] 0 1] .]
 categories      xfce
