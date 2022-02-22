@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -30,13 +30,13 @@ long_description    A network analyzer that lets you capture and \
 #   https://gitlab.com/wireshark/wireshark/-/merge_requests/1404
 
 if {${os.major} >= 16} {
-    version         3.6.1
+    version         3.6.2
     revision        0
 
-    checksums       sha256  0434eda8fb6bf88e2b42a67eb5d1de254a67d505bec3bb51fee9d7cad7925a38 \
-rmd160  04bf556bcb1313b323cfcd1fbee2df281a7de4db \
-sha1    ce592bc9b71491793cfe0b6c456727a4be04b805 \
-size    39632140
+    checksums       sha256  5d901a5572aef953f04adc253ed2a0699d4c62779d3249021e1e8541a024c30e \
+                    rmd160  da465f279204f8913b9dcb76043b8162b60ed40d \
+                    sha1    d4cf3da54021a763e0bf5f28b4f0bf5c0912d344 \
+                    size    39654296
 
     livecheck.type  regex
     livecheck.url   ${homepage}download.html
@@ -46,9 +46,9 @@ size    39632140
     revision        5
 
     checksums       sha256  f8165211f5b4a4f6708df73ef9be51df917927f2da78348b32d3a6eb5fc458a3 \
-rmd160  1b5e1fee340c149b70dbe8e8cf935518b06656e8 \
-sha1    3c9a24b8954d712a189f997131e283fbd0b606bc \
-size    32470004
+                    rmd160  1b5e1fee340c149b70dbe8e8cf935518b06656e8 \
+                    sha1    3c9a24b8954d712a189f997131e283fbd0b606bc \
+                    size    32470004
 
     patchfiles-append \
                     patch-wireshark3-3.4.1-fix-clock_realtime.diff
@@ -168,15 +168,15 @@ variant chmodbpf description {Enable Wireshark to access macOS capture devices} 
 }
 
 variant python36 conflicts python37 python38 python39 description {Use python36 during build} {
-    depends_build-append    port:python39
+    depends_build-append    port:python36
 }
 
 variant python37 conflicts python36 python38 python39 description {Use python37 during build} {
-    depends_build-append    port:python39
+    depends_build-append    port:python37
 }
 
 variant python38 conflicts python36 python37 python39 description {Use python38 during build} {
-    depends_build-append    port:python39
+    depends_build-append    port:python38
 }
 
 variant python39 conflicts python36 python37 python38 description {Use python39 during build} {

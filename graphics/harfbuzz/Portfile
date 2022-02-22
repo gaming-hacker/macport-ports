@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -7,16 +7,15 @@ PortGroup           gobject_introspection 1.0
 
 # Please keep the harfbuzz and harfbuzz-devel ports as similar as possible.
 
-github.setup        harfbuzz harfbuzz 3.2.0
+github.setup        harfbuzz harfbuzz 3.3.2
 name                harfbuzz
 conflicts           harfbuzz-devel
 set my_name         harfbuzz
-checksums           rmd160  89c6082e0ca31be6e4c4e4bca89ac71b2244a285 \
-sha256  0ada50a1c199bb6f70843ab893c55867743a443b84d087d54df08ad883ebc2cd \
-size    14501956
+checksums           rmd160  58757c236faf19af97ce8bafed4a6a49c68fc6c2 \
+                    sha256  1c13bca136c4f66658059853e2c1253f34c88f4b5c5aba6050aba7b5e0ce2503 \
+                    size    14928456
 
 categories          graphics
-platforms           darwin
 maintainers         {ryandesign @ryandesign} {mascguy @mascguy} openmaintainer
 license             MIT
 
@@ -94,9 +93,9 @@ if {${name} eq ${subport}} {
 
     if {${os.platform} eq "darwin" && ${os.major} < 10} {
         depends_test-append \
-                    port:python39
+                    port:python27
         test.env-append \
-                    PATH=${frameworks_dir}/Python.framework/Versions/3.9/bin:$env(PATH)
+                    PATH=${frameworks_dir}/Python.framework/Versions/2.7/bin:$env(PATH)
     }
 } else {
     livecheck.type  none

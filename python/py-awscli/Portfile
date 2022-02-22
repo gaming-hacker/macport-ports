@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-awscli
-version             1.22.57
+version             1.22.59
 revision            0
 
 categories          python devel
@@ -18,11 +18,11 @@ long_description    {*}${description}
 
 homepage            https://aws.amazon.com/cli/
 
-checksums           rmd160  f603bda66ba06d7d4017eec0ba9fe4586971045a \
-sha256  74ce758bbde92577b64885d0ff21986522cd77856c6c5054328944c3f8401847 \
-size    1561324
+checksums           rmd160  505b57bc72c03bb2ecd6acde51a72133ab86090d \
+                    sha256  6771ab40f83254fffe567320fc730795ff4f7679c1f7b36d519bda1a34b2fe6b \
+                    size    1561200
 
-python.versions 39
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

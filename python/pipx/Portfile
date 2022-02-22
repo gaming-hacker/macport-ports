@@ -1,14 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
-github.setup        pypa pipx 0.16.5
+github.setup        pypa pipx 1.0.0
 revision            0
-checksums           rmd160  ac622728c8d28cfb5136f6812d9c7837b057c114 \
-sha256  88b10fb8e4425b97acc9bbbbf93cb97ae9b23fc7a95777970e4f3eb849848bf9 \
-size    397901
+checksums           rmd160  d92ce539cff9ecb3f7a477963594466dc5316cc4 \
+                    sha256  6411399e6d323161983cab9c997e5ad819b7198a9965f0d5797e5e9f7760d908 \
+                    size    399078
 
 categories          python sysutils
 license             MIT
@@ -19,21 +19,39 @@ platforms           darwin
 description         Execute binaries from Python packages in isolated environments
 long_description    ${description}
 
-checksums           rmd160  b1c899439b2c01645698768c059f68333f3b33f0 \
-sha256  7485257483d8c4ffd45dd3cf657cf4152c19d48dcb982603741a686dae86ee5d \
-size    396930
-
+github.tarball_from archive
 github.livecheck.regex  {([\d.]+)}
 
-variant python39 description {Use Python 3.9} {}
+if {
+    ![variant_isset python36] &&
+    ![variant_isset python37] &&
+    ![variant_isset python38] &&
+    ![variant_isset python39] &&
+    ![variant_isset python310]
+} {
+    default_variants +python39
+}
 
-python.default_version 39
+variant python36 conflicts python37 python38 python39 python310 description {Use Python 3.6} {}
+variant python37 conflicts python36 python38 python39 python310 description {Use Python 3.7} {}
+variant python38 conflicts python36 python37 python39 python310 description {Use Python 3.8} {}
+variant python39 conflicts python36 python37 python38 python310 description {Use Python 3.9} {}
+variant python310 conflicts python36 python37 python38 python39 description {Use Python 3.10} {}
 
+if {[variant_isset python310]} {
+    python.default_version 310
+} elseif {[variant_isset python39]} {
+    python.default_version 39
+} elseif {[variant_isset python38]} {
+    python.default_version 38
+} elseif {[variant_isset python37]} {
+    python.default_version 37
+} elseif {[variant_isset python36]} {
+    python.default_version 36
+}
 
 depends_lib-append \
                     port:py${python.version}-argcomplete \
                     port:py${python.version}-setuptools \
                     port:py${python.version}-packaging \
                     port:py${python.version}-userpath
-
-patchfiles          version.patch
