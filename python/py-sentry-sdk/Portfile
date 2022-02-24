@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-sentry-sdk
-version             1.5.5
+version             1.5.6
 revision            0
 
 supported_archs     noarch
@@ -16,11 +16,11 @@ long_description    This is the next line of the Python SDK for Sentry, \
                     intended to replace the raven package on PyPI.
 homepage            https://github.com/getsentry/sentry-python
 
-checksums           rmd160  065f0f73cc7539b10780b695f48a91df908750d0 \
-sha256  98fd155fa5d5fec1dbabed32a1a4ae2705f1edaa5dae4e7f7b62a384ba30e759 \
-size    111019
+checksums           rmd160  3a08b398efcf1c481b484a3951ac898f25862646 \
+                    sha256  ac2a50128409d57655279817aedcb7800cace1f76b266f3dd62055d5afd6e098 \
+                    size    111563
 
-python.versions 39
+python.versions     38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

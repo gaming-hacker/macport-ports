@@ -6,7 +6,7 @@ PortGroup           texlive 1.0
 
 name                dblatex
 version             0.3.12
-revision            0
+revision            1
 categories          textproc tex
 maintainers         {cal @neverpanic} openmaintainer
 license             GPL-2+
@@ -37,6 +37,8 @@ rmd160  135ed1bc2a709d4eae2dc9b3656408022f877b99 \
 size    1693272
 
 use_bzip2           yes
+
+patchfiles          patch-64720.diff
 
 depends_lib         port:texlive-latex-extra \
                     port:texlive-latex-recommended \

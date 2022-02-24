@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,13 +6,13 @@ PortGroup           select 1.0
 
 name                py-cython
 python.rootname     Cython
-version             0.29.26
+version             0.29.28
 revision            0
 categories-append   devel
 platforms           darwin
 license             Apache-2
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,9 +25,9 @@ long_description    Cython is a language that makes writing C extensions for \
 
 homepage            http://www.cython.org/
 
-checksums           rmd160  cc5f2f9cef5186dff48c782317473746d357fa77 \
-sha256  af377d543a762867da11fcf6e558f7a4a535ff8693f30cce123fab10c00fa312 \
-size    2079448
+checksums           rmd160  0597dde8c2b6fe6bf651fcabde5b43bef5ecac41 \
+                    sha256  d6fac2342802c30e51426828fe084ff4deb1b3387367cf98976bb2e64b6f8e45 \
+                    size    2081368
 
 if {${name} ne ${subport}} {
     depends_lib-append \
@@ -37,14 +37,14 @@ if {${name} ne ${subport}} {
         version             0.29.13
         revision            0
         checksums           rmd160  40caf2eb2ebcc6cec9ca782fb6dad70fda0f9dfa \
-sha256  c29d069a4a30f472482343c866f7486731ad638ef9af92bfe5fca9c7323d638e \
-size    2051189
+                            sha256  c29d069a4a30f472482343c866f7486731ad638ef9af92bfe5fca9c7323d638e \
+                            size    2051189
     } elseif {${python.version} eq 35} {
         version             0.29.17
         revision            0
         checksums           rmd160  130804bc375318396f2bd47073bd1d514acbdcdb \
-sha256  6361588cb1d82875bcfbad83d7dd66c442099759f895cf547995f00601f9caf2 \
-size    2060265
+                            sha256  6361588cb1d82875bcfbad83d7dd66c442099759f895cf547995f00601f9caf2 \
+                            size    2060265
     }
 
     depends_run         port:cython_select

@@ -4,9 +4,9 @@ PortSystem          1.0
 
 name                BWidget
 version             1.9.15
+revision            1
 categories          x11
 license             Tcl/Tk
-platforms           darwin
 supported_archs     noarch
 installs_libs       no
 maintainers         nomaintainer
@@ -29,6 +29,8 @@ sha256  edcf580512170aba9ba6c55854e3b9ec6a11a3b08dcfb89bac99901971687c40 \
 size    329390
 
 depends_lib         port:tk
+
+worksrcdir          [string tolower ${name}]-${version}
 
 use_configure       no
 build               {}

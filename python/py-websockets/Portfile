@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-websockets
-version             10.1
+version             10.2
 license             BSD
 platforms           darwin
 maintainers         {toby @tobypeterson} openmaintainer
@@ -16,11 +16,11 @@ long_description    websockets is a library for building WebSocket servers and \
 
 homepage            https://github.com/aaugustin/websockets
 
-checksums           rmd160 00028bbef4c8f8dee12e670baf14c409bb4c6d94 \
-sha256 181d2b25de5a437b36aefedaf006ecb6fa3aa1328ec0236cdde15f32f9d3ff6d \
-size 83091
+checksums           rmd160 f91b84f40b29d0c2e5fa1f8b6fef9c8c4e6a2175 \
+                    sha256 8351c3c86b08156337b0e4ece0e3c5ec3e01fcd14e8950996832a23c99416098 \
+                    size 83402
 
-python.versions 39
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools
