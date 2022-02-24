@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -29,8 +29,8 @@ build.cmd           make
 build.target        build
 
 checksums           rmd160  71f0af2b25c4816b6f60532edc451dbb8dd90ba0 \
-                    sha256  8c908538d4181f946447c8de36660b7bb861d92e36ffbba2f7e96c922517a5c7 \
-                    size    1992219
+sha256  8c908538d4181f946447c8de36660b7bb861d92e36ffbba2f7e96c922517a5c7 \
+size    1992219
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/bin/${name} ${destroot}${prefix}/bin/

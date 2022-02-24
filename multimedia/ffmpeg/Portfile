@@ -91,7 +91,7 @@ configure.args     --arch=x86_64 \
 --cxx=/opt/local/bin/clang++-mp-13 \
 --env="CFLAGS=-I/opt/local/include LDFLAGS=-L/opt/local/lib" \
 --extra-cflags='-O3 -pipe -m64 -arch x86_64 -march=native -mtune=native -mmacosx-version-min=10.13 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2 -std=gnu11' \
---extra-cxxflags='-O3 -pipe -m64 -arch x86_64 -march=native -mtune=native -mmacosx-version-min=10.13 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2 -std=gnu++17' \
+--extra-cxxflags='-O3 -pipe -m64 -arch x86_64 -march=native -mtune=native -mmacosx-version-min=10.13 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2 -std=c++17' \
 --extra-libs='-lpthread -lm' \
 --enable-swscale --enable-avfilter  \
 --enable-lzma --enable-gnutls --enable-fontconfig \

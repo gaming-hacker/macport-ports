@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ homepage            https://github.com/pylast/pylast
 maintainers         {@catap korins.ky:kirill} openmaintainer
 
 checksums           rmd160  1052d79e022a8513af3d64622039b43a2a30b4f1 \
-                    sha256  62800b72e971dadac40c3d6f538c6188219d6f53853ddc48d69d9fc25659018f \
-                    size    44070
+sha256  62800b72e971dadac40c3d6f538c6188219d6f53853ddc48d69d9fc25659018f \
+size    44070
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

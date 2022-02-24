@@ -21,8 +21,8 @@ python.pep517           yes
 
 if {${name} ne ${subport}} {
     checksums           rmd160  37c195115b06524a15f811fdc6fada5bef6d2ef7 \
-                        sha256  9342ae5c99b17c37d15850c2dbcdb9c1a991a12de7f0ec61f06c246d5688db68 \
-                        size    15285
+sha256  9342ae5c99b17c37d15850c2dbcdb9c1a991a12de7f0ec61f06c246d5688db68 \
+size    15285
 
     depends_lib-append	port:tidy
     depends_build-append port:py${python.version}-sphinx

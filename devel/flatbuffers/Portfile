@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -26,12 +26,12 @@ maintainers             {gmail.com:herby.gillot @herbygillot} {judaew @judaew} \
                         openmaintainer
 
 checksums               rmd160  99ab80bd0db35cacb7db9a4a748e80482e9689ba \
-                        sha256  e2dc24985a85b278dd06313481a9ca051d048f9474e0f199e372fea3ea4248c9 \
-                        size    1724250
+sha256  e2dc24985a85b278dd06313481a9ca051d048f9474e0f199e372fea3ea4248c9 \
+size    1724250
 
 patchfiles              patch-disable-Werror-in-CMakeLists.diff
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 # Needed for - error: unknown attribute 'no_sanitize' ignored [-Werror,-Wattributes]
 compiler.blacklist-append {clang < 800}
 

@@ -1,4 +1,4 @@
-# -*- mode: tcl; indent-tabs-mode: nil; tab-width: 4; c-basic-offset: 4 -*-
+# -*- mode: _tcl; indent-tabs-mode: nil; tab-width: 2; c-basic-offset: 2 -*-
 
 PortSystem          1.0
 PortGroup           boost 1.0
@@ -28,10 +28,10 @@ homepage            https://www.ogre3d.org/
 platforms           darwin
 
 checksums           rmd160  49bc6880f59acf954127aae801130d192127007b \
-                    sha256  8b874952a8f6161b3307c29df00f21a0d5710de5e85bf41383b405717da07bb4 \
-                    size    91278446
+sha256  8b874952a8f6161b3307c29df00f21a0d5710de5e85bf41383b405717da07bb4 \
+size    91278446
 
-use_xcode           yes
+use_xcode  no
 
 cmake.build_type    Release
 compiler.cxx_standard \

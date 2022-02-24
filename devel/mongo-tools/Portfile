@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ PortGroup           golang 1.0
 go.setup            github.com/mongodb/mongo-tools 100.5.2
 revision            0
 checksums           rmd160  cf255ef8a6a5ca668bad5812a6c29afc7985f97e \
-                    sha256  1a37212e2581e0d3cbaa34b87191f2febb7018a734d781bbe2a1f5870b3aa5a6 \
-                    size    3803965
+sha256  1a37212e2581e0d3cbaa34b87191f2febb7018a734d781bbe2a1f5870b3aa5a6 \
+size    3803965
 
 categories          devel
 maintainers         {ryandesign @ryandesign} openmaintainer

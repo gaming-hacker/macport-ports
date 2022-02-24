@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ distname            CSFML-${version}-sources
 use_zip             yes
 
 checksums           rmd160  5d8eecf7d3be6061e3a749511af9dd1674c1ae97 \
-                    sha256  5453f04ae782a22697ebeb2694a0f7a56bf172c1406ca2b9134143198705ddc7 \
-                    size    324088
+sha256  5453f04ae782a22697ebeb2694a0f7a56bf172c1406ca2b9134143198705ddc7 \
+size    324088
 
 worksrcdir          CSFML-${version}
 

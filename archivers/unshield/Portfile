@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ depends_lib         port:libiconv \
                     port:zlib
 
 checksums           sha256  34cd97ff1e6f764436d71676e3d6842dc7bd8e2dd5014068da5c560fe4661f60 \
-                    rmd160  fe9c5f3717efa433a864e614068406fd83b974a5 \
-                    size    67454
+rmd160  fe9c5f3717efa433a864e614068406fd83b974a5 \
+size    67454
 
 configure.ldflags-append -liconv
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -17,8 +17,8 @@ description         Collection of multi-dimensional data structure and indexing 
 long_description    {*}${description}
 
 checksums           rmd160  c24775dfb6df42935656e8c48e793a8b51239ad8 \
-                    sha256  0a5b6d8867374660e9416c33b4cb47e15af5ce8e74291caff8a4f569834e112c \
-                    size    695144
+sha256  0a5b6d8867374660e9416c33b4cb47e15af5ce8e74291caff8a4f569834e112c \
+size    695144
 
 compiler.cxx_standard \
                     2017

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ platforms           darwin
 homepage            http://www.plumed.org/
 
 checksums           rmd160  841a9a9c06fe3b0af921839b9e8fa1de509939da \
-                    sha256  b2bafea1c763c1cf65b6b1a3ede5b9c6d82b80ff7e41e0b8517a1fcd5f5e6fde \
-                    size    107835309
+sha256  b2bafea1c763c1cf65b6b1a3ede5b9c6d82b80ff7e41e0b8517a1fcd5f5e6fde \
+size    107835309
 
 # Disable additional features.
 # --disable-doc:          Do not create documentation, and avoid searching for Doxygen.
@@ -58,7 +58,7 @@ configure.args-append BASH_COMPLETION_DIR=${prefix}/share/bash-completion/comple
 configure.cppflags-append "-D__PLUMED_DEFAULT_KERNEL=${prefix}/lib/libplumedKernel.dylib"
 
 compilers.choose    cc cxx
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 mpi.setup
 
@@ -119,8 +119,8 @@ subport plumed-devel {
     long_description    ${long_description} (development version)
     conflicts plumed
     checksums           rmd160  8a0300ff023d7fe839a9fa06c646d5506bb5f65b \
-                        sha256  48df9b5c970e2eb3ef581300babc16644683b8e268c0c25f62a068650d6d5133 \
-                        size    111048258
+sha256  48df9b5c970e2eb3ef581300babc16644683b8e268c0c25f62a068650d6d5133 \
+size    111048258
 }
 
 # Allow running tests from MacPorts

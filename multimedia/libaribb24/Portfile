@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -21,9 +21,9 @@ depends_build           port:pkgconfig
 depends_lib             port:libpng
 
 checksums    \
-    rmd160  a4cd98433629f4e7619297c38f0daf1aa3ee2fcb \
-    sha256  c2507340cca89f13a0f7e590521189957610b7398b9d50fbdf23e6a95bc84f63 \
-    size    57417
+rmd160  a4cd98433629f4e7619297c38f0daf1aa3ee2fcb \
+sha256  c2507340cca89f13a0f7e590521189957610b7398b9d50fbdf23e6a95bc84f63 \
+size    57417
 
 # The first patch ensures libtool provides the compiler correct include flags.
 # The second patch ensures that we look for png.h in the right paths.
