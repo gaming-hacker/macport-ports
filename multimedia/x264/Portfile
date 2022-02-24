@@ -2,12 +2,12 @@
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
-PortGroup           xcodeversion 1.0
-PortGroup           xcode_workaround 1.0
+# PortGroup           xcodeversion 1.0
+# PortGroup           xcode_workaround 1.0
 
 name                x264
-version             20220206
-revision            4
+version             20220222
+revision            0
 categories          multimedia
 license             GPL-2+
 platforms           darwin
@@ -17,18 +17,25 @@ long_description    x264 is a free library for encoding H264/AVC video streams. 
                     The code is written by Laurent Aimar, Eric Petit(OS X), Min \
                     Chen (vfw/nasm), Justin Clay(vfw), Måns Rullgård and Loren \
                     Merritt from scratch. It is released under the terms of the \
-                    GPL license.
+                    GPL license. --host=x86_64-apple-darwin17
+
 homepage            https://www.videolan.org/x264.html
+
 master_sites        file:///Users/glen/local/repo/macports/
-use_bzip2           yes
+distname            ${name}
 
-checksums           rmd160  4751c79dda81bca90f3efb746cd60a736b0cc72b \
-sha256  ff07414d3fadebdd5b966d2d45ee417b8774f5e7bac4eca00df9fcfb5872e2f5 \
-size    772871
+# checksums           rmd160  219e0704e94bd67a6d767a7b4dd0523d60f9a559 \
+#  sha256  4c083284310eb78f47f2478ed710a1bf6670bbeccb5d11a17797b3814a456031 \
+#  size    7920585
+extract.suffix      .zip
+use_zip             yes
 
-minimum_xcodeversions {9 3.1}
+checksum.skip  yes
 
 depends_build       port:nasm
+
+configure.cc gcc-mp-11
+configure.cpp g++-mp-11
 
 configure.args      --enable-pic \
                     --enable-shared \
