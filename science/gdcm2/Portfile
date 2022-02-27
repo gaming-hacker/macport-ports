@@ -5,7 +5,7 @@ PortGroup               cmake 1.1
 
 name                    gdcm2
 version                 2.8.9
-revision                4
+revision                5
 categories              science graphics
 license                 BSD
 maintainers             {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
@@ -26,7 +26,8 @@ size    3762694
 patchfiles-append       patch-cxx_standard.diff
 compiler.cxx_standard 2017
 
-depends_build-append    port:pkgconfig
+depends_build-append    port:pkgconfig \
+                        port:docbook-xsl-ns
 
 depends_lib-append      port:zlib \
                         path:lib/libssl.dylib:openssl \
