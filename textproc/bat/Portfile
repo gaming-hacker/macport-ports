@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -20,9 +20,9 @@ maintainers         {l2dy @l2dy} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  2790a95e9979bbcef29493e742fcfe4c11e23b4d \
-                    sha256  12eca3add56f21b8056a4c17cfb5bffc45e107f23f75a8e0f5de948d8e997c39 \
-                    size    1698850
+rmd160  2790a95e9979bbcef29493e742fcfe4c11e23b4d \
+sha256  12eca3add56f21b8056a4c17cfb5bffc45e107f23f75a8e0f5de948d8e997c39 \
+size    1698850
 
 # For crate:onig_sys
 depends_build-append \

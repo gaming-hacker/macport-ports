@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github  1.0
@@ -20,10 +20,10 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  60f9295f958feb31a240a22a3374fd930675bf28 \
-                    sha256  55e98b851976d258c1211d3c04d99ce2ec104580cc78f5d30064accef6e3d952 \
-                    size    11054
+sha256  55e98b851976d258c1211d3c04d99ce2ec104580cc78f5d30064accef6e3d952 \
+size    11054
 
-use_xcode           yes
+use_xcode  no
 
 post-configure {
     reinplace "s|/usr/local|${prefix}|g" ${worksrcpath}/Makefile

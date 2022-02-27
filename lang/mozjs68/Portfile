@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -30,13 +30,13 @@ distname            mozjs-${version}
 use_bzip2           yes
 
 checksums           rmd160  8f1decdf3b50d6c4cb6f2123497d4ee59b0ebbb8 \
-                    sha256  097fb482aa0e57fb117fde6816fbabfedcb862ee81906990363954f47ce93227 \
-                    size    70569055
+sha256  097fb482aa0e57fb117fde6816fbabfedcb862ee81906990363954f47ce93227 \
+size    70569055
 
 depends_build       port:autoconf213 \
                     port:cargo \
                     port:pkgconfig \
-                    port:python27 \
+                    port:python39 \
                     port:yasm
 
 depends_lib         port:nspr \
@@ -44,7 +44,7 @@ depends_lib         port:nspr \
                     port:xorg-libXt
 
 # requires C++14 compiler to build
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 
 # Rust components require a MacPorts clang (i.e. one with llvm-config)
 compiler.blacklist  *gcc* clang macports-clang-3.*
@@ -73,7 +73,7 @@ post-patch {
 }
 
 configure.perl      /usr/bin/perl
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.9
 
 # The combination of JS_STANDALONE=1 and --disable-jemalloc are needed
 # to ensure that mozglue is statically linked.

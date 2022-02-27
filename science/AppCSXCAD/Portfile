@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -10,8 +10,8 @@ PortGroup           app 1.0
 github.setup        thliebig AppCSXCAD 97ba30e4ad9ed03209018a383c6a0d703470698e
 version             20210214-[string range ${github.version} 0 7]
 checksums           rmd160  5dae0219f1ec515d03dd20e2a59460871b403a8a \
-                    sha256  1a41f9208e716e4b3203cd20b1612a83682533785f3f4da17115bec78ae22f22 \
-                    size    18779
+sha256  1a41f9208e716e4b3203cd20b1612a83682533785f3f4da17115bec78ae22f22 \
+size    18779
 revision            0
 
 platforms           darwin macosx
@@ -22,7 +22,7 @@ maintainers         {ra1nb0w @ra1nb0w} openmaintainer
 description         Minimal GUI Application using the QCSXCAD library
 long_description    ${description}
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 depends_lib-append \
     port:glew \

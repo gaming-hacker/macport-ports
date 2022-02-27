@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ long_description    netCDF version 4 has many features not found in \
 homepage            https://unidata.github.io/netcdf4-python/
 
 checksums           rmd160  3164795f291cdba22de9b808096cca6aea36a4d9 \
-                    sha256  ca3d468f4812c0999df86e3f428851fb0c17ac34ce0827115c246b0b690e4e84 \
-                    size    767013
+sha256  ca3d468f4812c0999df86e3f428851fb0c17ac34ce0827115c246b0b690e4e84 \
+size    767013
 
 mpi.enforce_variant netcdf
 mpi.setup
@@ -34,15 +34,15 @@ mpi.setup
 build.env-append    USE_NCCONFIG=1
 destroot.env-append USE_NCCONFIG=1
 
-python.versions     27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     if {${python.version} in "27 35"} {
         version         1.5.3
         revision        5
         checksums       rmd160  b855fcb0cc51bf349824ada5129feab9f3911728 \
-                        sha256  2a3ca855848f4bbf07fac366da77a681fcead18c0a8813d91d46302f562dc3be \
-                        size    790343
+sha256  2a3ca855848f4bbf07fac366da77a681fcead18c0a8813d91d46302f562dc3be \
+size    790343
     }
 
     depends_build-append \

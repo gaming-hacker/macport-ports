@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -16,8 +16,8 @@ long_description    ${description}
 github.setup        g0orx linhpsdr 081e684c6b37eff72a2af9612ce10b55b7291095
 version             20220216-[string range ${github.version} 0 7]
 checksums           rmd160  ace6487f842c16ffea23a1ca0fcd567b175da82c \
-                    sha256  3a2f94a5956e7576e4672a5f1c9d0a3c42e0750d230e4d5045db01399723eba8 \
-                    size    8176321
+sha256  3a2f94a5956e7576e4672a5f1c9d0a3c42e0750d230e4d5045db01399723eba8 \
+size    8176321
 revision            0
 
 # sent upstream
