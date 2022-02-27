@@ -82,7 +82,7 @@ depends_lib \
     port:zlib
 
 patchfiles              prefix.patch
-patchfiles-append       SSL_INIT.patch
+#patchfiles-append       SSL_INIT.patch
 
 configure.checks.implicit_function_declaration.whitelist-append strchr
 
