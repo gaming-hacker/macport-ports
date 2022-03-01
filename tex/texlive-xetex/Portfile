@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-xetex
-version             58633
+version             62258
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: XeTeX and packages
 long_description    Packages for XeTeX, the Unicode/OpenType-enabled TeX by Jonathan Kew, http://tug.org/xetex.
 
-checksums           texlive-xetex-58633-run.tar.xz \
-                    rmd160  47f3174e1fbaeab7d7a6713e7ac5612d9fce7352 \
-                    sha256  852ff774fb7751c18291c9b08d88cad9f1b32999a7be7f5ac5ba63898479a869 \
-                    size    12766200 \
-                    texlive-xetex-58633-doc.tar.xz \
-                    rmd160  6db8cfeb35e2e8ec0fe417bd4c33d28dbc2095fc \
-                    sha256  329a54e130d67311214c9f3be2b1e5c3739f61f11eac532aa2ad0ae67c0d27b1 \
-                    size    11808712 \
-                    texlive-xetex-58633-src.tar.xz \
-                    rmd160  7758bdbc417fbb8a621d388bee45847fd10f7e6c \
-                    sha256  3aca06c475e93f8a0864eb6c6cd5f349efc267aceca9ecbf915de55554bb7f0a \
-                    size    140592
+checksums           texlive-xetex-62258-run.tar.xz \
+                    rmd160  25880781b0cc01bf9f078529125263f23bd55f1f \
+                    sha256  9353a4cb9e067abd95cb33929fbeedda5d464844f14b829cd47f1d489d296e73 \
+                    texlive-xetex-62258-doc.tar.xz \
+                    rmd160  b753e0b5e606ecce6d075265c3e19c0008fc3c75 \
+                    sha256  c2a6449d5fb4e2f24ef751a4d267489d50f9ec287f9754ccd2778b51ab193935 \
+                    texlive-xetex-62258-src.tar.xz \
+                    rmd160  1d22a23f2a967eae05ac25db24afbad13ce4ad12 \
+                    sha256  66b7efdd42d921683b35ceb80ca0aeb4aaf6cd89d6809f7ac754807118bb715c
 
 depends_lib         port:texlive-basic
 
@@ -33,7 +30,7 @@ texlive.formats      \
     {1 xelatex xetex language.dat {-etex xelatex.ini}} \
     {1 xetex xetex language.def {-etex xetex.ini}}
 
-texlive.binaries    teckit_compile xelatex xelatex-dev xetex
+texlive.binaries    teckit_compile xelatex xelatex-dev xelatex-unsafe xetex xetex-unsafe
 
 texlive.exclude     tlpkg/tlpostcode/xetex.pl
 

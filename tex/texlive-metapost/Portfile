@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-metapost
-version             58586
+version             62258
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: MetaPost and Metafont packages
 long_description    MetaPost and Metafont packages
 
-checksums           texlive-metapost-58586-run.tar.xz \
-                    rmd160  13167cd154209014c77e22c32f24548439407830 \
-                    sha256  82c0d4ea3c6afef22fc2eda00297e27a8f7b2394b5ead5573890ccf6ff75b043 \
-                    size    35831596 \
-                    texlive-metapost-58586-doc.tar.xz \
-                    rmd160  a6d3cce721f6980992cdc1b1bf0acd0ba569de47 \
-                    sha256  0b4c1cfc5c5719bc5a744f26e198f0d103c845bb1028bc9f204194fd548e9e05 \
-                    size    35118040 \
-                    texlive-metapost-58586-src.tar.xz \
-                    rmd160  f6ba48a3a737601f592494b49efd43491bcd6419 \
-                    sha256  cb190ff400ce75d0cd29e6ba2a50a85e641b08e9c1101544b0ac09861fd09d9f \
-                    size    326868
+checksums           texlive-metapost-62258-run.tar.xz \
+                    rmd160  04ad73a0cd5ff24e6a707cba491cdcbc99c643ac \
+                    sha256  8b6d9ea880dfda28313f1a343f5f42792dea78b854733c84d1fa5a6dbadc592f \
+                    texlive-metapost-62258-doc.tar.xz \
+                    rmd160  994fd3427d505e28dfaaa766250463262a095810 \
+                    sha256  24346755c50df4e601b057aafa4e0d3c13fe70322056927c0b7bddde41d96122 \
+                    texlive-metapost-62258-src.tar.xz \
+                    rmd160  d028ff1f8901bbc481fdcbcb4c275b45904e1b22 \
+                    sha256  2cf6fbb8149854c63a6c1627867588cbaf4983a250e993fc5ad4dabd8f14b25b
 
 depends_lib         port:texlive-basic
 

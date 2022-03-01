@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-fonts-extra
-version             58661
+version             62201
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Additional fonts
 long_description    Additional fonts
 
-checksums           texlive-fonts-extra-58661-run.tar.xz \
-                    rmd160  729255c6603ea21f1738c46cabe33c0a5620fb7a \
-                    sha256  597996819d2fb346fec4bbf442b51b0d4c36622df601863cde7d63dfa57fac19 \
-                    size    664777728 \
-                    texlive-fonts-extra-58661-doc.tar.xz \
-                    rmd160  1419cae12a456d79a876adb742be1bf4367408ba \
-                    sha256  3bf995c687a20d35c9e1f8f8a58629e5698146546a9e5db857d6aaf1bd5d8fec \
-                    size    104469816 \
-                    texlive-fonts-extra-58661-src.tar.xz \
-                    rmd160  51e054e564f7a34a05dec694973bdf3d182098b9 \
-                    sha256  c9cb29ad2887ad9d6c964abc8cd8d7954fff32dd94235eb543490c5d50f119ee \
-                    size    9272000
+checksums           texlive-fonts-extra-62201-run.tar.xz \
+                    rmd160  61921fa6ec74ecf9395935ba14906aef432b713a \
+                    sha256  b564d52a3d996fb446db49b7d88c96399e7ac51435ef747b0ba6ab2785bde2d5 \
+                    texlive-fonts-extra-62201-doc.tar.xz \
+                    rmd160  3e92254f71b3823467971f0c04b20eb4dfe654fd \
+                    sha256  b872b7938d3d41843f1a3719833c785456179890493b6213102f65a10cbfa88f \
+                    texlive-fonts-extra-62201-src.tar.xz \
+                    rmd160  801c3d646492b086903e7a74d0eac9369915830b \
+                    sha256  6c7adac0f5c17a71b52e47c206cb153221f83a0d092536523c80addfe683f994
 
 depends_lib         port:texlive-basic
 
@@ -39,6 +36,7 @@ texlive.maps      \
     {Map AlgolRevived.map} \
     {MixedMap allrunes.map} \
     {Map almendra.map} \
+    {Map andika.map} \
     {Map AnonymousPro.map} \
     {Map uaq.map} \
     {Map antt.map} \
@@ -57,6 +55,7 @@ texlive.maps      \
     {Map Baskervaldx.map} \
     {Map BaskervilleF.map} \
     {MixedMap bbold.map} \
+    {Map bboldx.map} \
     {Map belleek.map} \
     {Map bera.map} \
     {Map ybd.map} \
@@ -234,9 +233,9 @@ texlive.maps      \
     {Map PlayfairDisplay.map} \
     {Map plex.map} \
     {Map plimsoll.map} \
+    {Map PoiretOne.map} \
     {Map ap.map} \
     {Map prodint.map} \
-    {Map pxtx.map} \
     {Map quattrocento.map} \
     {Map Raleway.map} \
     {Map recycle.map} \

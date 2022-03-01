@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-humanities
-version             58589
+version             61878
 revision            0
 
 categories          tex
@@ -13,22 +13,27 @@ license             Copyleft Permissive
 description         TeX Live: Humanities packages
 long_description    Packages for law, linguistics, social sciences, humanities, etc.
 
-checksums           texlive-humanities-58589-run.tar.xz \
-                    rmd160  987d5f6100f8da7c494bf2a7084be10fc254dfc4 \
-                    sha256  3bb6fcea2d4496ecd6111f973c5e16550ec9d4b8ca69d33a305c5d16a934cec2 \
-                    size    27754296 \
-                    texlive-humanities-58589-doc.tar.xz \
-                    rmd160  eb6cbad820b7ce786bfc5afca9cdf001c23cdbaa \
-                    sha256  3e2b26433becad15550ce19b7dc31832cd985bf90316cb19e6207ea2d9326e06 \
-                    size    26933088 \
-                    texlive-humanities-58589-src.tar.xz \
-                    rmd160  ed14efa835e79a6caaf0f3c3904bcc3bbeeaf54b \
-                    sha256  d2fddb7f3f6d3a367f2f61872627bf340fa1b0a4722de53b619eeb64e4594a08 \
-                    size    644164
+checksums           texlive-humanities-61878-run.tar.xz \
+                    rmd160  95f3d860d16e277ba18f6990c0a1ae7ae99a6472 \
+                    sha256  c9e3ceaa8b86fc0814389bd415fde0376e524c2d578768bb03fd8e30bc1e9a1f \
+                    texlive-humanities-61878-doc.tar.xz \
+                    rmd160  5375eed82a332d90a97bac1abba3eadb9e7622a7 \
+                    sha256  8577d952242fb563b1d0e2912f3d6c0279ac109d2a62da6fd53a963b9f874496 \
+                    texlive-humanities-61878-src.tar.xz \
+                    rmd160  2d2085dd151bfef8e0cd5e54472b576ac8bc3d60 \
+                    sha256  0abbbd9504d7da5e9d0775e90e2c68b2f10c7c93e62cd31853c521ce63f53047
 
 depends_lib         port:texlive-latex
 
 texlive.binaries    diadia
+
+pre-activate {
+    # Handle conflicts for TL2018 upgrade
+    if { ![catch {set vers [lindex [registry_active texlive-latex-extra] 0]}]
+         && ([vercmp [lindex $vers 1] 47410] < 0) } {
+        registry_deactivate_composite texlive-latex-extra "" [list ports_nodepcheck 1]
+    }
+}
 
 
 texlive.texmfport

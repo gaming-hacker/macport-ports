@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-lang-cyrillic
-version             58685
+version             62110
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Cyrillic
 long_description    Support for Cyrillic scripts (Bulgarian, Russian, Serbian, Ukrainian), even if Latin alphabets may also be used.
 
-checksums           texlive-lang-cyrillic-58685-run.tar.xz \
-                    rmd160  a5ff3713ffda521134465708e075fe1b274349ea \
-                    sha256  682e591eccc328dace32fafb8a961821b83b51cbd2e19d5321a2f8601c15fd8c \
-                    size    20656392 \
-                    texlive-lang-cyrillic-58685-doc.tar.xz \
-                    rmd160  1186bf1087e5da11e1f0cab15c7bba55ad893b75 \
-                    sha256  f808759e2fa60595211f52cf9c8a16ef399c03be9fa86bf5f0f4229a8ad8b4ef \
-                    size    17417740 \
-                    texlive-lang-cyrillic-58685-src.tar.xz \
-                    rmd160  23b5153e05b9e5bce795e0e2af708771aa2b1ffe \
-                    sha256  6b15b14fa89975e2c79def007b5acfc524a0fe84ccf778b361e7455b3a4b5e5b \
-                    size    201844
+checksums           texlive-lang-cyrillic-62110-run.tar.xz \
+                    rmd160  3204d94ddcd5795eeb285aa88e5c0cea832f9814 \
+                    sha256  8afc3774f58cd5c73d191e89fa22fb4b72ab9f9587c66f896beb79208a2023ba \
+                    texlive-lang-cyrillic-62110-doc.tar.xz \
+                    rmd160  808995600f924e6f296c7c6d0f6b70e78930c4c7 \
+                    sha256  d0ed40f531fe119172c76c8897d86be9138ea945cace035667cd5dac1f2e9f00 \
+                    texlive-lang-cyrillic-62110-src.tar.xz \
+                    rmd160  88ba6ff3680e30bd39fe47de35bfe509a896bec5 \
+                    sha256  0c7ec8aa37efd461014be4b32e98b4ae8ec01be3edd3bf764f78b957956d269c
 
 depends_lib         port:texlive-basic port:texlive-latex
 
@@ -40,7 +37,7 @@ texlive.languages      \
     {ukrainian loadhyph-uk.tex 2 2 {} {hyph-uk.pat.txt} {} {} }
 
 texlive.maps      \
-    {Map cmcyr.map} \
+    {MixedMap cmcyr.map} \
     {MixedMap mongolian.map}
 
 texlive.binaries    rubibtex rumakeindex

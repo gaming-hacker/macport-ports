@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-bibtex-extra
-version             58661
+version             62180
 revision            0
 
 categories          tex
@@ -13,22 +13,19 @@ license             Copyleft Permissive
 description         TeX Live: BibTeX additional styles
 long_description    Additional BibTeX styles and bibliography data(bases), notably including BibLaTeX.
 
-checksums           texlive-bibtex-extra-58661-run.tar.xz \
-                    rmd160  95e7be37b135401ed9f8e9399b32dc0f5b45cc85 \
-                    sha256  ab3341b2a936ebb7ca1fbd7549b723c773d3b712c935c346e1c5fb5bc999433a \
-                    size    69818624 \
-                    texlive-bibtex-extra-58661-doc.tar.xz \
-                    rmd160  0e1f3055c80eda14efd91264c9276a0486d55872 \
-                    sha256  8056a996e738778176fffb782b9fcc705560e77f81a099945428af8cb009024a \
-                    size    64156264 \
-                    texlive-bibtex-extra-58661-src.tar.xz \
-                    rmd160  86cd88db7ef6cbc99d8134816c90153ef4dc47df \
-                    sha256  ff48400a5b135c821b2d4ac333e28e57d4f415e3a0e9101a8634c78ec311f0ef \
-                    size    2394552
+checksums           texlive-bibtex-extra-62180-run.tar.xz \
+                    rmd160  25794b20796e28935b52671d661a692b2ad04d8a \
+                    sha256  4d883a2b3229b26d9554cc1cdf450648c902cf893c3a4ccee3ec48e108c9a6eb \
+                    texlive-bibtex-extra-62180-doc.tar.xz \
+                    rmd160  54143859383cabbd1ad7c3629dd2f397894bbf7e \
+                    sha256  2d44320da8a99b039c59a9ebc6a82333e8abc9241aa9a584be05bcb9614a7524 \
+                    texlive-bibtex-extra-62180-src.tar.xz \
+                    rmd160  452d3b03dff9dd5ade73b9f29565b3245b7467c2 \
+                    sha256  8f4c95b98630a50a14e5b775e8a1ee2ae1540539fc7fe37eee8617576638ce23
 
 depends_lib         port:texlive-latex
 
-texlive.binaries    bbl2bib bib2gls bibdoiadd bibexport bibmradd biburl2doi bibzbladd convertgls2bib listbib ltx2crossrefxml multibibliography urlbst
+texlive.binaries    bbl2bib bib2gls bibdoiadd bibexport bibmradd biburl2doi bibzbladd citeproc convertgls2bib listbib ltx2crossrefxml multibibliography urlbst
 
 
 texlive.texmfport

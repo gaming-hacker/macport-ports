@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-math-science
-version             58667
+version             62258
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Mathematics, natural sciences, computer science packages
 long_description    Mathematics, natural sciences, computer science packages
 
-checksums           texlive-math-science-58667-run.tar.xz \
-                    rmd160  369cad6fc52c18871b354e3bc9530ef6d73ede32 \
-                    sha256  0b38e0d824b04031a66b47737138ab60cf7709e6193006c638b665e78c2469a2 \
-                    size    74598464 \
-                    texlive-math-science-58667-doc.tar.xz \
-                    rmd160  2e343179c03111238cffe67cb9db194d6439aae0 \
-                    sha256  b08cd26b5800dc8c5b8e6d01aebf4029b299b3920b9c7e7033bfce88410c8e6b \
-                    size    69664536 \
-                    texlive-math-science-58667-src.tar.xz \
-                    rmd160  f50451c274a30bf7ccb0d392abfbe0620d4d0faa \
-                    sha256  c88de1a7e411a4a04e662138a21b678df121e5650082c04a07c086a78217eb60 \
-                    size    1649500
+checksums           texlive-math-science-62258-run.tar.xz \
+                    rmd160  ddae4b2df0e85d64cc025107818e76351fd8a2dd \
+                    sha256  d94c2024ecd27efaa7e69ccfd652c809823b1d894149352605641bea16094a9b \
+                    texlive-math-science-62258-doc.tar.xz \
+                    rmd160  3ac428859a55647690a571cd693555ec8bcf4c92 \
+                    sha256  6d9873f237475b19d5a8647885f8904d7d437334a35bd292ad2d5fbd3e84ffa8 \
+                    texlive-math-science-62258-src.tar.xz \
+                    rmd160  2f64867830c30ade0d13da5baaf8e5e65400c639 \
+                    sha256  9c3bfac9a647806513a645fd632c68beebea8348a53a5bd2348b56cfb36664b4
 
 depends_lib         port:texlive-fonts-recommended port:texlive-latex
 
@@ -37,6 +34,14 @@ texlive.maps      \
     {MixedMap yhmath.map}
 
 texlive.binaries    amstex axohelp ulqda
+
+pre-activate {
+    # Handle conflicts for TL2017 upgrade
+    if { ![catch {set vers [lindex [registry_active texlive-latex-extra] 0]}]
+         && ([vercmp [lindex $vers 1] 44430] < 0) } {
+        registry_deactivate_composite texlive-latex-extra "" [list ports_nodepcheck 1]
+    }
+}
 
 
 texlive.texmfport

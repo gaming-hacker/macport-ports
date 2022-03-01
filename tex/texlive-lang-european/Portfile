@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-lang-european
-version             58652
+version             61512
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Other European languages
 long_description    Support for a number of European languages\; others (Greek, German, French, ...) have their own collections, depending simply on the size of the support.
 
-checksums           texlive-lang-european-58652-run.tar.xz \
-                    rmd160  9b0d221a6a76e0728858a5e42e1d5e0ede2e461c \
-                    sha256  aa12ec87cc2382cda7ca8d79469219d324b150bfaa542531000a834bf5aef3ba \
-                    size    14583652 \
-                    texlive-lang-european-58652-doc.tar.xz \
-                    rmd160  0cf0b8a57725ada964705a430bfaca70570b6c5a \
-                    sha256  750b378ad90dbafc8ad47664f56d9763ed7e248f50230baa158b3552584e4afc \
-                    size    12748632 \
-                    texlive-lang-european-58652-src.tar.xz \
-                    rmd160  5a00cac3bd0166e11082191f8f197b2771d4be42 \
-                    sha256  572d407c97370140e2f74a32faaefecd3c16068303957ff306b3d1ce713bae76 \
-                    size    144796
+checksums           texlive-lang-european-61512-run.tar.xz \
+                    rmd160  41bcca8b93ad6c7e9c15f744ac02aa7603a465ce \
+                    sha256  c33e1a2f850e08f6f42f490a4f1380b08e687c00e0e86f0e58acec5d5414c923 \
+                    texlive-lang-european-61512-doc.tar.xz \
+                    rmd160  138fde940e04ac148bc6927d3097bcc0cf8ab0ad \
+                    sha256  8ac986b173bc770a1d1cfda253d78185132c275c955295e50823e29ebbf0a002 \
+                    texlive-lang-european-61512-src.tar.xz \
+                    rmd160  287be60c3f65ce4118d76fcbffff19e755c240a6 \
+                    sha256  c6b90afa1860e1ca3707e0199c06efd448dcc717c6067d862ba0086a80ab7d9e
 
 depends_lib         port:texlive-basic
 

@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-lang-cjk
-version             57908
+version             62258
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Chinese/Japanese/Korean (base)
 long_description    Packages supporting a combination of Chinese, Japanese, Korean, including macros, fonts, documentation. Also Thai in the c90 encoding, since there is some overlap in those fonts\; standard Thai support is in collection-langother. Additional packages for CJK are in their individual language collections.
 
-checksums           texlive-lang-cjk-57908-run.tar.xz \
-                    rmd160  49ae83d52c539d3fc0ce84e83e0c46ff59f00d8a \
-                    sha256  9ce41045d1e0931b48b54b38d1e49ee18cbd24b402ef1a3fc8b5514deb6b387e \
-                    size    5044068 \
-                    texlive-lang-cjk-57908-doc.tar.xz \
-                    rmd160  1cc284184b8c91ac01170d9f189c4544b13dce18 \
-                    sha256  3ae6d38ca32dc5d8bf3f08524170a386b8049a5cb642fc06abed16ec5a451868 \
-                    size    2389752 \
-                    texlive-lang-cjk-57908-src.tar.xz \
-                    rmd160  39e9f6f0dd5271ae9c16b07559cd0d0070ac519c \
-                    sha256  21a2fd34f56a65ae52e99a1ead3ee908c57587eb0924131f222aba860f817868 \
-                    size    91736
+checksums           texlive-lang-cjk-62258-run.tar.xz \
+                    rmd160  7a1d9a7c11fb1512458c4241bc93c4561a42bd90 \
+                    sha256  b0a05c952c3483b0abd52cc4cce7f9ff0ed71fca37a11ce62eec38d6bb950568 \
+                    texlive-lang-cjk-62258-doc.tar.xz \
+                    rmd160  9ff0ba28b02f308272c75c8db82edbf23eda360a \
+                    sha256  0440eb49127410e4bc8d72f54279d600006b4c3573a8ae5e6d0a6bfa738dd70d \
+                    texlive-lang-cjk-62258-src.tar.xz \
+                    rmd160  13252a5c51304319ddb221117d51b6d6c4d3e556 \
+                    sha256  cd3507a4a48df576b6de79f914292a64dabdbc7a9b4fe9816a04d75a3f5c670e
 
 depends_lib         port:texlive-basic
 

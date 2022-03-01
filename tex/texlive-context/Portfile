@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-context
-version             58167
+version             62071
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: ConTeXt and packages
 long_description    Hans Hagen's powerful ConTeXt system, http://pragma-ade.com. Also includes third-party ConTeXt packages.
 
-checksums           texlive-context-58167-run.tar.xz \
-                    rmd160  3befc8a5ebd90c3b865678f3921e3d603cefc4cf \
-                    sha256  3da7c10afd7cfedd8c2f554737b8cb20087a581dfd02db0b6e4f6f1daea70c5e \
-                    size    113277220 \
-                    texlive-context-58167-doc.tar.xz \
-                    rmd160  f69c0af6d83bd61b0089f8e4346390735ec2e7d6 \
-                    sha256  c370dab1b9d723f633869ac269657f2390463c848af65bd4212866b2e791a199 \
-                    size    103249948 \
-                    texlive-context-58167-src.tar.xz \
-                    rmd160  2fc8b59cc8384e724440ad84f00eafb201d9b359 \
-                    sha256  0986f520c07fee4bfa35c6b12e6b427ab590d9ac37936202c842647f1b50f405 \
-                    size    6700
+checksums           texlive-context-62071-run.tar.xz \
+                    rmd160  6206428eb7a3bfef0780f299804cbdd4ef2d7149 \
+                    sha256  be0dfe22ddd39b7cae2bd7af2b94de642280417778cd06ce2c74bc032ed06c77 \
+                    texlive-context-62071-doc.tar.xz \
+                    rmd160  f1a2a93503678f6b7dba0ffdf109fdf7ec20b88c \
+                    sha256  0df87c8f742b6cad3c513a780a5488f9abaf701036c5b23334c19646283d4550 \
+                    texlive-context-62071-src.tar.xz \
+                    rmd160  cfd4e86472e50356bf96487a489238b9902c0fab \
+                    sha256  8873899a7dccf9e61c3b42022992d458d6dae0dee288791dc9639c24860b52c7
 
 depends_lib         port:texlive-basic
 

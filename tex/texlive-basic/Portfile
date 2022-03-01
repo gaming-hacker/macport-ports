@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-basic
-version             58690
+version             62258
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Essential programs and files
 long_description    These files are regarded as basic for any TeX system, covering plain TeX macros, Computer Modern fonts, and configuration for common drivers\; no LaTeX.
 
-checksums           texlive-basic-58690-run.tar.xz \
-                    rmd160  e57cf6a22d2624936903369f30d52cc9075a47cb \
-                    sha256  26afbdfb359acd4890df28b2167d0963d615f102f253aff5cac748e384442efb \
-                    size    20327628 \
-                    texlive-basic-58690-doc.tar.xz \
-                    rmd160  95e12968dc1267948548b6cb6d5fdcab5b3b9dd0 \
-                    sha256  9725c16718171ece0bd84c0d95470f926503ee4aff36796c2f7856484f6438fe \
-                    size    15056184 \
-                    texlive-basic-58690-src.tar.xz \
-                    rmd160  5312842b1e51a796d69da9fa14679cf644d350a2 \
-                    sha256  99305c46b749836a88acbbf69c992ac8f2c2ed60c81efe021caec289b46342fd \
-                    size    293356
+checksums           texlive-basic-62258-run.tar.xz \
+                    rmd160  1444cdd4fa5e22b58176b194f3f01e32f8918853 \
+                    sha256  3eef3848ea7b712f3b95571427cd60b0c46531f6dce7a37c1a2e4367c5ec5b96 \
+                    texlive-basic-62258-doc.tar.xz \
+                    rmd160  8b1cd069fe51061807a77422b3a47f63f0b70647 \
+                    sha256  a98fd35ea4f37247bcabf66e5e6e635161763429026afb2c58fe4e4aa4e4c3cb \
+                    texlive-basic-62258-src.tar.xz \
+                    rmd160  39c1d6ad1d1844ae5b51248bd32b129ad428e0e6 \
+                    sha256  6b2ac8772de593e7f4e3a0d60b90f9519d146cc605c5775f50590ca444d767f5
 
 texlive.formats      \
     {1 luahbtex luahbtex language.def,language.dat.lua {luatex.ini}} \
@@ -44,10 +41,9 @@ texlive.maps      \
     {MixedMap latxfont.map} \
     {MixedMap symbols.map} \
     {MixedMap cmtext-bsr-interpolated.map} \
-    {Map dummy-space.map} \
-    {Map mathpple.map}
+    {Map dummy-space.map}
 
-texlive.binaries    afm2tfm bibtex dviluatex dvipdfm dvipdfmx dvipdft dvips ebb etex extractbb fmtutil fmtutil-sys fmtutil-user gftodvi gftopk gftype inimf initex kpseaccess kpsereadlink kpsestat kpsewhich luahbtex luatex makeindex mf mf-nowin mft mkindex mktexfmt mktexlsr mktexmf mktexpk mktextfm pdfetex pdftex pktogf pktype rungs simpdftex tex texhash texlua texluac tlshell updmap updmap-sys updmap-user xdvi xdvipdfmx
+texlive.binaries    afm2tfm bibtex dviluatex dvipdfm dvipdfmx dvipdft dvips ebb etex extractbb gftodvi gftopk gftype inimf initex kpseaccess kpsereadlink kpsestat kpsewhich luahbtex luatex makeindex mf mf-nowin mft mkindex pdfetex pdftex pktogf pktype simpdftex tex texlua texluac tlshell xdvi xdvipdfmx
 
 texlive.exclude     texmf-dist/web2c/fmtutil.cnf \
                     texmf-dist/web2c/texmf.cnf \

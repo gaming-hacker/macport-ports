@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-luatex
-version             58515
+version             62254
 revision            0
 
 categories          tex
@@ -13,18 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: LuaTeX packages
 long_description    Packages for LuaTeX, a Unicode-aware extension of pdfTeX, using Lua as an embedded scripting and extension language. http://luatex.org/
 
-checksums           texlive-luatex-58515-run.tar.xz \
-                    rmd160  4866a662e10285169f2fdf14c80f5dc7a97e225b \
-                    sha256  9f2f4f099be021e1a04bdbea1276afe1b09e22a8f095dbc11a94f79347ba412c \
-                    size    14953404 \
-                    texlive-luatex-58515-doc.tar.xz \
-                    rmd160  34ccf3830393c3ba7b3ba1f141c9b9deab88064c \
-                    sha256  95e99df742c475001bfaf49f480ea2575ad143f51d458cda8136cc226c01837d \
-                    size    12852308 \
-                    texlive-luatex-58515-src.tar.xz \
-                    rmd160  046a09b79f8fa96e24aee619279b72301c8d7f19 \
-                    sha256  b6a7e62fc5e73ac8ee83f1791480b8b4318e49d177b068f338b9055b7ea32da5 \
-                    size    263148
+checksums           texlive-luatex-62254-run.tar.xz \
+                    rmd160  68b1221779dec35e304a2bd178d156a69c56679c \
+                    sha256  61858e8db5ff5674e71552225d5430e79dcb4ebd1423058a278db4420c5c651e \
+                    texlive-luatex-62254-doc.tar.xz \
+                    rmd160  55b962f468430200b8306a5994bef8dceb514d04 \
+                    sha256  b65368dd84db38a925f450fce26e3a02d5fa05ff507a011047ff599ea82a5774 \
+                    texlive-luatex-62254-src.tar.xz \
+                    rmd160  a16147251baa235091c34e86af6b8042a0e23967 \
+                    sha256  bbda81c20291f45b3e080fee1efb692609532547fc83546c75b1f4b03fcea609
 
 depends_lib         port:texlive-basic
 
@@ -33,12 +30,5 @@ texlive.formats      \
 
 texlive.binaries    checkcites luaotfload-tool optex
 
-pre-activate {
-    # Handle conflicts for TL2021 upgrade
-    if { ![catch {set vers [lindex [registry_active texlive-latex-extra] 0]}]
-         && ([vercmp [lindex $vers 1] 58668] < 0) } {
-        registry_deactivate_composite texlive-latex-extra "" [list ports_nodepcheck 1]
-    }
-}
 
 texlive.texmfport
