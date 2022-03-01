@@ -14,8 +14,7 @@ PortGroup       texlive 1.0
 PortGroup       muniversal 1.0
 
 name            texlive-bin
-version         2021.58693
-revision        2
+version         2022.62272
 
 categories      tex
 maintainers     {dports @drkp}
@@ -39,13 +38,13 @@ license         Copyleft Permissive LGPL-2.1+ BSD
 # download time, it omits a number of libraries and utilities that we
 # don't build. However, the port should still work with an unmodified
 # texlive distfile.
-master_sites    https://www.ambulatoryclam.net/texlive/ \
+master_sites    https://www.ambulatoryclam.net/texlive/test/ \
                 https://alpaca.cs.washington.edu/texlive/ \
                 https://giraffe.cs.washington.edu/texlive/
 
 
 use_xz          yes
-distname        texlive-source-${version}-stripped
+distname        texlive-source-${version}
 worksrcdir      ${distname}
 
 compiler.cxx_standard \
@@ -55,14 +54,14 @@ compiler.cxx_standard \
 set tlpkgdistname   tlpkg-TeXLive-${version}
 distfiles-append    ${tlpkgdistname}${extract.suffix}
 
-checksums           texlive-source-2021.58693-stripped.tar.xz \
-                    rmd160  7383168824e228f13f8032324f50040b2402138f \
-                    sha256  4a6f4505a270e7a14c89dd9c8ccca0fab682451b62b6377e2002f3a4237f07e0 \
-                    size    21591372 \
-                    tlpkg-TeXLive-2021.58693.tar.xz \
-                    rmd160  ebb0f0662a0b42297a94cc67997365450753a068 \
-                    sha256  386fd30e541675c879094c02c7b493e85e43fe73bfaee6f8f7f7513ae7bee391 \
-                    size    112336
+checksums           texlive-source-2022.62272.tar.xz \
+                    rmd160  be77b08c808084fe60d3fd44008997e7d93f5ac3 \
+                    sha256  322c0761e9a7c84bc7f8aae47347344b6a31b0ac0c5449f7133561d472940959 \
+                    size    65398500 \
+                    tlpkg-TeXLive-2022.62272.tar.xz \
+                    rmd160  8ce76340e87bf6b3fcaa6a202aee14ca385cce8b \
+                    sha256  f850f0fc6eb22945dfd9b4f7fd6ed94e048b73d8159ac0a4e3e8fae6132f58fb \
+                    size    114688
 
 depends_lib     port:fontconfig \
                 port:freetype \
@@ -101,10 +100,6 @@ patchfiles-append  \
 # architecture in universal builds
 patchfiles-append  patch-libs_luajit_configure.diff \
                    patch-texk_web2c_configure.diff
-
-# patch to fix duplicate symbol error on 10.6/10.7
-# remove when TexLive 2022 is released (expected 1-Apr-2022)
-patchfiles-append  patch-texk_xdvik_gui_print-log.h.diff
 
 post-patch {
     reinplace "s|@@TEXMFDIST@@|${texlive_texmfdist}|" ${worksrcpath}/texk/texlive/linked_scripts/Makefile.in
