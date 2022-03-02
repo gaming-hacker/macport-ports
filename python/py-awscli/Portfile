@@ -25,6 +25,8 @@ size    1561347
 python.versions 39
 
 if {${name} ne ${subport}} {
+    conflicts           py${python.version}-awscli2
+
     depends_build-append \
                         port:py${python.version}-setuptools
 

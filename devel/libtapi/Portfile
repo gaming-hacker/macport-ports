@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -20,22 +20,22 @@ long_description        ${description} Newer MacOS SDKs contain only these TAPI 
 homepage                http://opensource.apple.com/source/tapi/
 
 checksums               rmd160  cbd3719ff2a33d4f5d738e0c89c5c194b05e0dee \
-sha256  f2c3b3e467814b45d4afc768e4eb94b591dbfb24e086724f6b9a9c4c05793861 \
-size    32204487
+                        sha256  f2c3b3e467814b45d4afc768e4eb94b591dbfb24e086724f6b9a9c4c05793861 \
+                        size    32204487
 
 platform darwin {
     # pick a suitable python to build with
     if {${os.major} < 11} {
         # system python is too old, use python27-bootstrap to minimize dependencies
-        depends_build-append    port:python39-bootstrap
-        configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/libexec/libcxx-bootstrap/bin/python3.9
+        depends_build-append    port:python27-bootstrap
+        configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/libexec/python27-bootstrap/bin/python2.7
         depends_skip_archcheck-append python27-bootstrap
     } elseif {${os.major} > 19} {
         # Use system python 3.x
         configure.args-append   -DPYTHON_EXECUTABLE=/usr/bin/python3
     } else {
         # use the system python, which is known to be fine for darwin 11 to 19
-        configure.args-append   -DPYTHON_EXECUTABLE=/usr/bin/python3.9
+        configure.args-append   -DPYTHON_EXECUTABLE=/usr/bin/python2.7
     }
 }
 
@@ -48,7 +48,7 @@ configure.args-append -DLLVM_ENABLE_ZLIB=OFF
 # avoid opportunistic linking ncuses
 configure.args-append -DLLVM_ENABLE_TERMINFO=OFF
 
-compiler.cxx_standard 2017
+compiler.cxx_standard   2011
 
 cmake.build_type        Release
 

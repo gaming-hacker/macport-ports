@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                      1.0
 PortGroup                       xcodeversion 1.0
@@ -8,10 +8,10 @@ PortGroup                       compiler_blacklist_versions 1.0
 
 name                            graphviz-devel
 set my_name                     graphviz
-version                         2.50.0
-checksums                       rmd160  76cc0668568f6bca1ddaf13b44106718fba8b04e \
-sha256  e17021a510bbd2770d4ca4b4eb841138122aaa5948f9e617e6bc12b4bac62e8d \
-size    29761610
+version                         3.0.0
+checksums                       rmd160  ef802c0a93f607df1636d97d9bfff0dcb3902e40 \
+                                sha256  e6f0ac0b975bcadc000559d5a767111737d0a03919dfc0e47ce6450c877c7834 \
+                                size    29483148
 
 set thisbranch                  [strsed ${name} "g/^${my_name}//"]
 set otherbranch                 [expr {${thisbranch} eq {} ? {-devel} : {}}]
@@ -35,10 +35,6 @@ long_description                Graphviz is ${description}. Graph visualization 
                                 simple text language, and produce output in a \
                                 variety of visual and text formats.
 
-checksums                       rmd160  e05acd8e1387ddf270ac192d55af80170fd4eab2 \
-sha256  f79b203ddc98e0f994d218acd6cb490b962003be7145f7e31de05b6ab0e2ccbf \
-size    29753688
-
 # graphviz needs Xcode 3.1+ to avoid the libGL error when building the smyrna variant
 # graphviz-gui needs Xcode 3.1.2+; see #18811
 minimum_xcodeversions           {9 3.1.2}
@@ -55,7 +51,7 @@ minimum_xcodeversions           {9 3.1.2}
 compiler.blacklist-append       \
                                 {clang < 900}
 
-compiler.cxx_standard 2017
+compiler.cxx_standard           2011
 
 if {${name} eq ${subport}} {
 revision                        0
@@ -190,12 +186,12 @@ variant perl description {Include PERL 5 language bindings} {
 #}
 
 variant python27 description {Include Python 2.7 language bindings} {
-    depends_lib-append          port:python39
+    depends_lib-append          port:python27
     depends_build-append        port:swig-python
 
     configure.args-replace      --disable-swig --enable-swig
     configure.args-replace      --disable-python --enable-python
-    configure.python            ${prefix}/bin/python3.9
+    configure.python            ${prefix}/bin/python2.7
 }
 
 variant ruby description {Include Ruby language bindings} {

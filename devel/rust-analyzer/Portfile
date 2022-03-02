@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cargo   1.0
 PortGroup           github  1.0
 
-github.setup        rust-analyzer rust-analyzer 2022-02-22
+github.setup        rust-analyzer rust-analyzer 2022-02-28
 github.tarball_from archive
 version             [string map { {-} {} } ${github.version}]
 revision            0
@@ -25,9 +25,9 @@ maintainers         @fabius \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-rmd160  4b4ae792e283127c8f8dd03306acb4e4edfaca1e \
-sha256  c68dde3367f6c8962eb5e56e45c915880b7257d0472348b6d7e7198f950149ce \
-size    2267854
+                        rmd160  c1b79e64333307b249ff7333af86f063b773666d \
+                        sha256  ceed6658555bb0af0de68be80f58a714040796dcec9e2dcfd52e13878f1bb472 \
+                        size    2275995
 
 destroot {
     xinstall -m 0755 \
@@ -157,7 +157,7 @@ cargo.crates \
     serde_derive                   1.0.136  08597e7152fcd306f41838ed3e37be9eaeed2b61c42e2117266a554fab4662f9 \
     serde_json                      1.0.79  8e8d9fa5c3b304765ce1fd9c4c8a3de2c8db365a5b91be52f186efc675681d95 \
     serde_repr                       0.1.7  98d0516900518c29efa217c298fa1f4e6c6ffc85ae29fd7f4ee48f176e1a9ed5 \
-sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     smallvec                         1.8.0  f2dd574626839106c320a323308629dcb1acfc96e32a8cba364ddc61ac23ee83 \
     smol_str                        0.1.21  61d15c83e300cce35b7c8cd39ff567c1ef42dde6d4a1a38dbdbf9a59902261bd \
     snap                             1.0.5  45456094d1983e2ee2a18fdfebce3189fa451699d0502cb8e3b49dba5ba41451 \
@@ -178,7 +178,7 @@ sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd0
     tracing-subscriber               0.3.8  74786ce43333fcf51efe947aed9718fbe46d5c7328ec3f1029e818083966d9aa \
     tracing-tree                     0.2.0  3ce989c9962c7f61fe084dd4a230eec784649dfc2392467c790007c3a6e134e7 \
     typed-arena                      2.0.1  0685c84d5d54d1c26f7d3eb96cd41550adb97baed141a761cf335d3d33bcd0ae \
-    ungrammar                       1.14.9  66be59c2fd880e3d76d1a6cf6d34114008f1d8af2748d4ad9d39ea712f14fda9 \
+    ungrammar                       1.15.0  ed01567101450f7d600508e7680df6005ae4fe97119d79b0364cc5910ff39732 \
     unicase                          2.6.0  50f37be617794602aabbeee0be4f259dc1778fabe05e2d67ee8f79326d5cb4f6 \
     unicode-bidi                     0.3.7  1a01404663e3db436ed2746d9fefef640d868edae3cceb81c3b8d5732fda678f \
     unicode-normalization           0.1.19  d54590932941a9e9266f0832deed84ebe1bf2e4c9e4a3554d393d18f5e854bf9 \
