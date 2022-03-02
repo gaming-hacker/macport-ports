@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -44,25 +44,25 @@ dist_subdir         zabbix${zver}
 if {$zver == 4} {
     livecheck.regex     "zabbix-(4\\.0\\.\[0-9\]+).tar.gz"
     checksums \
-        rmd160  bdf12d771710912e039ff0fa7c6ce7c65348499a \
-        sha256  5425693737205ab8822a7ed7289aa65ac19634cd699d759e557e8b81883b69b9 \
-        size    17548415
+rmd160  bdf12d771710912e039ff0fa7c6ce7c65348499a \
+sha256  5425693737205ab8822a7ed7289aa65ac19634cd699d759e557e8b81883b69b9 \
+size    17548415
 }
 
 if {$zver == 5} {
     livecheck.regex     "zabbix-(5\\.0\\.\[0-9\]+).tar.gz"
     checksums \
-        rmd160  55980375dcbc5a2db10847c0922d09264c3b6e81 \
-        sha256  6b8d0849c014b746fa0084b6c8f07eb5a244fcc5c1c4147e19945dd22f06335d \
-        size    21459282
+rmd160  55980375dcbc5a2db10847c0922d09264c3b6e81 \
+sha256  6b8d0849c014b746fa0084b6c8f07eb5a244fcc5c1c4147e19945dd22f06335d \
+size    21459282
 }
 
 if {$zver == 6} {
     livecheck.regex     "zabbix-(6\\.0\\.\[0-9\]+).tar.gz"
     checksums \
-        rmd160  1c763ee59a26004a6c0dec863e6beaa730bf281e \
-        sha256  2dd92383cc169ce8b8cbbe660ed656e5d6b5b75bf4936743b8a9d59cdfcf3af1 \
-        size    32974585
+rmd160  1c763ee59a26004a6c0dec863e6beaa730bf281e \
+sha256  2dd92383cc169ce8b8cbbe660ed656e5d6b5b75bf4936743b8a9d59cdfcf3af1 \
+size    32974585
 }
 
 patchfiles          log_and_pid_locations.patch

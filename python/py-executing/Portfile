@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/alexmojaki/executing
 
 checksums           rmd160  e93a011adef0bf6a4facb1b17b99deeca8f4afef \
-                    sha256  c6554e21c6b060590a6d3be4b82fb78f8f0194d809de5ea7df1c093763311501 \
-                    size    482046
+sha256  c6554e21c6b060590a6d3be4b82fb78f8f0194d809de5ea7df1c093763311501 \
+size    482046
 
 if {${name} ne ${subport}} {
     depends_build-append \

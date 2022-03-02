@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -24,8 +24,8 @@ master_sites        http://download.geany.org/
 use_bzip2           yes
 
 checksums           rmd160  fa373cb09b33b068a0c47ad7f09ca70721f79979 \
-                    sha256  abff176e4d48bea35ee53037c49c82f90b6d4c23e69aed6e4a5ca8ccd3aad546 \
-                    size    4860717
+sha256  abff176e4d48bea35ee53037c49c82f90b6d4c23e69aed6e4a5ca8ccd3aad546 \
+size    4860717
 
 depends_build       port:autoconf \
                     port:automake \
@@ -68,8 +68,8 @@ configure.args      --disable-silent-rules \
 # therefore don't repeat it here
 
 variant python38 conflicts python39 description {Use Python v3.8} {
-    configure.args-append --with-python-command=${prefix}/bin/python3.8
-    depends_run-append port:python38
+    configure.args-append --with-python-command=${prefix}/bin/python3.9
+    depends_run-append port:python39
 }
 
 variant python39 conflicts python38 description {Use Python v3.9} {

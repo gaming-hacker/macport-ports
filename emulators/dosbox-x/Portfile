@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -11,8 +11,8 @@ github.setup        joncampbell123 dosbox-x 0.83.23 dosbox-x-v
 revision            0
 
 checksums           rmd160  6ee7cab4cb0f1d95cdd48e018c073f6142d9011d \
-                    sha256  026f3986aae61d5f5cc7a95c7ad8ee9646f3249b282c8136a00b239bf6fed711 \
-                    size    64494344
+sha256  026f3986aae61d5f5cc7a95c7ad8ee9646f3249b282c8136a00b239bf6fed711 \
+size    64494344
 
 categories          emulators
 platforms           darwin
@@ -79,7 +79,7 @@ if {[variant_isset sdl1]} {
 # needs "___cpu_model" in compiler.rt
 compiler.blacklist-append {clang < 900}
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 configure.cxxflags-append -Wno-unknown-warning-option
 
 post-destroot {

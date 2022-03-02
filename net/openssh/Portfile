@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -30,8 +30,8 @@ long_description    OpenSSH is a FREE version of the SSH protocol suite of \
 homepage            https://www.openbsd.org/openssh/
 
 checksums           rmd160  6fcc50d852586bae60eb22c86c7bc9c7ef358e91 \
-                    sha256  fd497654b7ab1686dac672fb83dfb4ba4096e8b5ffcdaccd262380ae58bec5e7 \
-                    size    1820282
+sha256  fd497654b7ab1686dac672fb83dfb4ba4096e8b5ffcdaccd262380ae58bec5e7 \
+size    1820282
 
 master_sites        openbsd:OpenSSH/portable \
                     ftp://ftp.cise.ufl.edu/pub/mirrors/openssh/portable/ \

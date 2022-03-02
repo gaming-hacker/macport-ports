@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -25,9 +25,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  6728f4f190884dc2832d42f07d49771e6688b803 \
-                    sha256  86d742a59025c4fe49838e8fb98aec754315cb9e0710c1b793e16f8caa566cfb \
-                    size    4963171
+rmd160  6728f4f190884dc2832d42f07d49771e6688b803 \
+sha256  86d742a59025c4fe49838e8fb98aec754315cb9e0710c1b793e16f8caa566cfb \
+size    4963171
 
 build.dir           ${worksrcpath}/lib/cli
 
@@ -263,9 +263,9 @@ cargo.crates \
     serde_json                      1.0.78  d23c1ba4cf0efd44be32017709280b32d1cea5c3f1275c3b6d9e8bc54f758085 \
     serial_test                      0.5.1  e0bccbcf40c8938196944a3da0e133e031a33f4d6b72db3bda3cc556e361905d \
     serial_test_derive               0.5.1  b2acd6defeddb41eb60bb468f8825d0cfd0c2a76bc03bfd235b6a1dc4f6a1ad5 \
-    sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
-    sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
+sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     shlex                            0.1.1  7fdf1b9db47230893d76faad238fd6097fd6d6a9245cd7a4d90dbd639536bbd2 \
     slab                             0.4.5  9def91fd1e018fe007022791f865d0ccc9b3a0d5001e01aabb8b40e46000afb5 \
     smallvec                         1.8.0  f2dd574626839106c320a323308629dcb1acfc96e32a8cba364ddc61ac23ee83 \

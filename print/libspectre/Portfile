@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ homepage            https://www.freedesktop.org/wiki/Software/libspectre/
 master_sites        https://libspectre.freedesktop.org/releases/
 
 checksums           rmd160  9711fa7df58adb9d2eed04d63697a43f74c1aa48 \
-                    sha256  cf60b2a80f6bfc9a6b110e18f08309040ceaa755210bf94c465a969da7524d07 \
-                    size    436690
+sha256  cf60b2a80f6bfc9a6b110e18f08309040ceaa755210bf94c465a969da7524d07 \
+size    436690
 
 depends_build       port:pkgconfig
 

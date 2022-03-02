@@ -56,7 +56,7 @@ post-extract {
 
 # Fixes errors like "Could not resolve SDK Path for 'macosx12' using --show-sdk-path"
 # See https://trac.macports.org/ticket/62934#comment:18
-use_xcode           yes
+use_xcode  no
 
 destroot {
     xinstall -d ${destroot}${applications_dir}

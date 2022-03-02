@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -31,10 +31,10 @@ long_description    ${description}. \
 homepage            https://www.spyder-ide.org/
 
 checksums           rmd160  2d7fa3a79715aa737975f47cc40a450ec9c23c50 \
-                    sha256  b0b65028d7a280d0a25fad7999b13ec9b795d08efd2ea938648a90b89dd332bc \
-                    size    23923184
+sha256  b0b65028d7a280d0a25fad7999b13ec9b795d08efd2ea938648a90b89dd332bc \
+size    23923184
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-spyder
