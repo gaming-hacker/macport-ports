@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -6,10 +6,9 @@ PortGroup               muniversal 1.0
 name                    wget
 version                 1.21.3
 revision                0
-checksums  rmd160  4f031d214dd109f09ac47f444aeebcacd2b71e4e \
-sha256  dbd2fb5e47149d4752d0eaa0dac68cc49cf20d46df4f8e326ffc8f18b2af4ea5 \
-size    2450396
-
+checksums               rmd160  4f031d214dd109f09ac47f444aeebcacd2b71e4e \
+                        sha256  dbd2fb5e47149d4752d0eaa0dac68cc49cf20d46df4f8e326ffc8f18b2af4ea5 \
+                        size    2450396
 
 categories              net www
 maintainers             {ryandesign @ryandesign} openmaintainer
@@ -82,7 +81,6 @@ depends_lib \
     port:zlib
 
 patchfiles              prefix.patch
-#patchfiles-append       SSL_INIT.patch
 
 configure.checks.implicit_function_declaration.whitelist-append strchr
 
@@ -93,7 +91,7 @@ configure.env-append    POD2MAN=${prefix}/bin/pod2man-${perl_version}
 configure.args-append       ac_cv_header_uuid_uuid_h=no
 
 # tempname.c:290: error: 'for' loop initial declaration used outside C99 mode
-configure.cflags-append -std=c11
+configure.cflags-append -std=c99
 
 test.run                yes
 test.target             check
@@ -106,6 +104,7 @@ variant gnutls conflicts ssl description {SSL support via GnuTLS} {
 
 variant ssl conflicts gnutls description {SSL support via OpenSSL} {
     PortGroup openssl 1.0
+
     configure.args-replace  --without-ssl --with-ssl=openssl
     configure.args-append   --with-libssl-prefix=[openssl::install_area]
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                                      1.0
 PortGroup           python                      1.0
@@ -8,12 +8,12 @@ PortGroup           compiler_blacklist_versions 1.0
 name                py-blis
 epoch               1
 # Don't upgrade past py-spaCy's highest supported version.
-github.setup        explosion cython-blis 0.7.5 v
+github.setup        explosion cython-blis 0.7.6 v
 revision            0
 
-checksums           rmd160  8e5c7deaf4e46eadc1ada072dd726b16b520d6bf \
-sha256  a65a5451e84e3b24dd9da91a2b1bf74cdc9588774cb14c968929d1540731c12c \
-size    3082713
+checksums           rmd160  fd7ad00419a6ffe2f387a18d1de90a34879ed25a \
+                    sha256  a8d3097bd845029979382f28237b67225aa9a55cf2262ef6f8b79e6f6483e0af \
+                    size    3083008
 
 platforms           darwin
 supported_archs     x86_64
@@ -30,11 +30,11 @@ long_description    {*}${description}
 github.livecheck.regex  {([0-9.]+)}
 
 # Supported python versions
-python.versions 39
+python.versions        35 36 37 38 39 310
 
 # Compiler selection
 compiler.c_standard    1999
-compiler.cxx_standard 2017
+compiler.cxx_standard  2011
 compiler.blacklist-append *gcc* {clang < 999} macports-clang-3.* {macports-clang-[4-6].0}
 
 # Pass selected compiler to BLIS
