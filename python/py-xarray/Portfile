@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    \
 homepage            https://github.com/pydata/xarray
 
 checksums           rmd160  b03541b7e6b0ad1d05a190e18377cef5361e1925 \
-                    sha256  398344bf7d170477aaceff70210e11ebd69af6b156fe13978054d25c48729440 \
-                    size    2943007
+sha256  398344bf7d170477aaceff70210e11ebd69af6b156fe13978054d25c48729440 \
+size    2943007
 
-python.versions     37 38 39 310
+python.versions 39
 python.pep517       yes
 
 if {${name} ne ${subport}} {
@@ -41,8 +41,8 @@ if {${name} ne ${subport}} {
         version     0.20.2
         revision    0
         checksums   rmd160  4b642a722560b4b592f9fe7c8886c1534ba68eee \
-                    sha256  c2ebe80ca81b10a0241f6876dcc34ac9696e5c5cdcdf4758da7cf4bd732c41f7 \
-                    size    2906021
+sha256  c2ebe80ca81b10a0241f6876dcc34ac9696e5c5cdcdf4758da7cf4bd732c41f7 \
+size    2906021
 
         depends_lib-delete \
                     port:py${python.version}-packaging

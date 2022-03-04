@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,13 +21,13 @@ long_description    PyMC3 is a Python package for Bayesian statistical modeling 
                     suite of problems.
 
 checksums           rmd160  7d9e53b90bb741925b3a37992b0300cda8fb73a7 \
-                    sha256  9e534a1c29a12d5e1900b5e6fddea4bf5c1e7e26af4a6ca91b29f247a1805e67 \
-                    size    1958459
+sha256  9e534a1c29a12d5e1900b5e6fddea4bf5c1e7e26af4a6ca91b29f247a1805e67 \
+size    1958459
 
 # upstream renamed their repository, and checksums have changed.... remove upon next update
 dist_subdir   ${name}/${version}_1
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
    depends_lib-append \

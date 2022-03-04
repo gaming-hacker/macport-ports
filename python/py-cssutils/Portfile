@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -15,13 +15,13 @@ supported_archs         noarch
 description             A CSS Cascading Style Sheets library for Python
 long_description        ${description}
 
-python.versions         37 38 39 310
+python.versions 39
 
 homepage                https://github.com/jaraco/cssutils
 
 checksums               rmd160  d90f51a54e0f50e68dbf1818b5a2408ef957bbbf \
-                        sha256  2d97210a83b0a3fe1e4469f5ff9a6420b078572035188b1bab7103c3a36dc89b \
-                        size    725986
+sha256  2d97210a83b0a3fe1e4469f5ff9a6420b078572035188b1bab7103c3a36dc89b \
+size    725986
 
 python.pep517           yes
 

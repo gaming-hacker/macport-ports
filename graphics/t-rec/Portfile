@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -29,9 +29,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  3ae40d9bd2c8e6d8247abd4e41e0fc02abef637b \
-                    sha256  f013c8a4e9933afd1097908087a31309c6b6874434652382990c88201798f2aa \
-                    size    4828761
+rmd160  3ae40d9bd2c8e6d8247abd4e41e0fc02abef637b \
+sha256  f013c8a4e9933afd1097908087a31309c6b6874434652382990c88201798f2aa \
+size    4828761
 
 depends_lib-append  port:ImageMagick
 

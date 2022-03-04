@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -28,8 +28,8 @@ master_sites        ${homepage}sites/acpica/files/ \
 distname            acpica-unix-${version}
 
 checksums           rmd160  7217ad445e1b66274cbe2798dbb3d09c131cc6d0 \
-                    sha256  2511f85828820d747fa3e2c3433d3a38c22db3d9c2fd900e1a84eb4173cb5992 \
-                    size    1905319
+sha256  2511f85828820d747fa3e2c3433d3a38c22db3d9c2fd900e1a84eb4173cb5992 \
+size    1905319
 
 depends_build       port:bison
 depends_skip_archcheck-append \
