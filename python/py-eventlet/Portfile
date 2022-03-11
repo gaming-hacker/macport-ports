@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,10 +24,10 @@ long_description    Eventlet is a networking library written in \
 homepage            https://eventlet.net/
 
 checksums           rmd160  1b41eed51644beb2b883752e859bdfada917a40b \
-                    sha256  80144f489c1bb273a51b6f96ff9785a382d2866b9bab1f5bd748385019f4141f \
-                    size    414929
+sha256  80144f489c1bb273a51b6f96ff9785a382d2866b9bab1f5bd748385019f4141f \
+size    414929
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           github 1.0
 
 github.setup        daviddrysdale python-phonenumbers 8.12.44 v
 name                py-phonenumbers
-python.versions     37 38 39 310
+python.versions 39
 python.pep517       yes
 categories-append   textproc
 license             Apache-2
@@ -16,8 +16,8 @@ description         parsing, formatting, storing and validating international ph
 long_description    Python version of the Google common library for ${description}
 
 checksums           rmd160  0ecf3fa7464115bf8715a42ca631f89ae0cedf13 \
-                    sha256  bacaf54e894af6b08b841279eb853326e5759b58d8936e08eb00414d0225ec4e \
-                    size    4898404
+sha256  bacaf54e894af6b08b841279eb853326e5759b58d8936e08eb00414d0225ec4e \
+size    4898404
 
 worksrcdir          ${worksrcdir}/python
 

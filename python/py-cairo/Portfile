@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -19,24 +19,24 @@ description             Pycairo is set of Python bindings for the cairo graphics
 long_description        ${description}
 
 checksums               rmd160  a8218e7dd1d88643c9e2035fc1c830e8f1f62a26 \
-                        sha256  251907f18a552df938aa3386657ff4b5a4937dde70e11aa042bc297957f4b74b \
-                        size    340712
+sha256  251907f18a552df938aa3386657ff4b5a4937dde70e11aa042bc297957f4b74b \
+size    340712
 
-python.versions         27 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     if {${python.version} == 27} {
         github.setup    pygobject pycairo 1.18.2 v
         revision        0
         checksums       rmd160  49a2ed4c9cf5c2606e7cf7c9693bceff40a1bebf \
-                        sha256  dcb853fd020729516e8828ad364084e752327d4cff8505d20b13504b32b16531 \
-                        size    200462
+sha256  dcb853fd020729516e8828ad364084e752327d4cff8505d20b13504b32b16531 \
+size    200462
     } elseif {${python.version} < 37} {
         github.setup    pygobject pycairo 1.20.1 v
         revision        0
         checksums       rmd160  7e4477f3067503c40b6e31d985b21cf6c214acc2 \
-                        sha256  1ee72b035b21a475e1ed648e26541b04e5d7e753d75ca79de8c583b25785531b \
-                        size    344639
+sha256  1ee72b035b21a475e1ed648e26541b04e5d7e753d75ca79de8c583b25785531b \
+size    344639
     }
 
     depends_build-append    port:pkgconfig \

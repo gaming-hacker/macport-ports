@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gpg_verify 1.0
@@ -66,19 +66,19 @@ distfiles           ${ghc_distname}${extract.suffix} \
 
 if {${build_arch} eq {arm64}} {
     checksums       ${ghc_distname}${extract.suffix} \
-                    rmd160  320ff19925143d52047bcc6a09849bd23a800ac5 \
-                    sha256  356b99081ae38ded43b78840d673e8c782e0088e9a2aea0e19faaf677ccb54cf \
-                    size    123959636
+rmd160  320ff19925143d52047bcc6a09849bd23a800ac5 \
+sha256  356b99081ae38ded43b78840d673e8c782e0088e9a2aea0e19faaf677ccb54cf \
+size    123959636
 } elseif {${build_arch} eq {x86_64}} {
     checksums       ${ghc_distname}${extract.suffix} \
-                    rmd160  0e758f28b4bbb581b105e369de2a004f4d0085d2 \
-                    sha256  c527700a210306098ce85d2c956089deea539aefe1d1816701d5c14cf9c113b7 \
-                    size    122462092
+rmd160  0e758f28b4bbb581b105e369de2a004f4d0085d2 \
+sha256  c527700a210306098ce85d2c956089deea539aefe1d1816701d5c14cf9c113b7 \
+size    122462092
 }
 checksums-append    ${distname}-testsuite${extract.suffix} \
-                    rmd160  f37e923d76381cb34da478b8c047d4440d9a4933 \
-                    sha256  0402066000db81781b343976f1a274e54ebb117d599da1a979ccb0b99ab782cd \
-                    size    3170520
+rmd160  f37e923d76381cb34da478b8c047d4440d9a4933 \
+sha256  0402066000db81781b343976f1a274e54ebb117d599da1a979ccb0b99ab782cd \
+size    3170520
 
 gpg_verify.use_gpg_verification \
                     yes
@@ -89,9 +89,9 @@ if {[option gpg_verify.use_gpg_verification]} {
                     ${distname}-testsuite${extract.suffix}.sig
     checksums-append \
                     ${ghc_distname}${extract.suffix}.sig \
-                    size    586 \
+size    586 \
                     ${distname}-testsuite${extract.suffix}.sig \
-                    size    586
+size    586
 
     post-checksum {
         # https://bgamari.github.io/media/ben@well-typed.com.asc
@@ -198,9 +198,9 @@ if { [variant_isset "prebuilt"] } {
                     ${distname}-src${extract.suffix}
     checksums-append \
                     ${distname}-src${extract.suffix} \
-                    rmd160  93a5bb73ffab85daabeed6b65dc349bda28f4359 \
-                    sha256  f444012f97a136d9940f77cdff03fda48f9475e2ed0fec966c4d35c4df55f746 \
-                    size    23338772
+rmd160  93a5bb73ffab85daabeed6b65dc349bda28f4359 \
+sha256  f444012f97a136d9940f77cdff03fda48f9475e2ed0fec966c4d35c4df55f746 \
+size    23338772
 
     depends_build-append \
                     port:alex \

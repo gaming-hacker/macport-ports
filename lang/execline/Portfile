@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ master_sites        ${homepage}
 depends_build       port:skalibs
 
 checksums           rmd160  375002982124f55df85972586e5c543a5e667937 \
-                    sha256  235dbecd594c82e0523c87c2eacf04c48781b39264158f57049f1a1ff8b4ad80 \
-                    size    98448
+sha256  235dbecd594c82e0523c87c2eacf04c48781b39264158f57049f1a1ff8b4ad80 \
+size    98448
 
 configure.args      --disable-shared \
                     --with-lib=${prefix}/lib/skalibs

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -7,8 +7,8 @@ go.setup            github.com/gohugoio/hugo 0.94.0 v
 github.tarball_from archive
 revision            0
 checksums           rmd160  b61d22473d4c1ba639fe882fa6657be6f41311be \
-                    sha256  76f6ee1f9138c7f5562f02679576889d0087910c9a6e49ef16a5ebbefda9e917 \
-                    size    27852489
+sha256  76f6ee1f9138c7f5562f02679576889d0087910c9a6e49ef16a5ebbefda9e917 \
+size    27852489
 
 categories          www
 license             Apache-2

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -17,8 +17,8 @@ master_sites    https://archive.xfce.org/src/xfce/${name}/${branch}/
 use_bzip2       yes
 
 checksums       rmd160  811d530bd4751f147075bba3d2420f9d42685f41 \
-                sha256  bfe3e9bd92695014ee74a2fbb7f5fd1b4c29cf043c4a11598b8958324c81e7ec \
-                size    579984
+sha256  bfe3e9bd92695014ee74a2fbb7f5fd1b4c29cf043c4a11598b8958324c81e7ec \
+size    579984
 
 depends_build   port:intltool port:xfce4-dev-tools port:pkgconfig
 depends_lib     port:libxfce4ui port:garcon port:Thunar

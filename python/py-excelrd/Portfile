@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,7 +7,7 @@ name                py-excelrd
 version             2.0.3
 revision            0
 
-python.versions     37 38 39
+python.versions 39
 maintainers         nomaintainer
 license             BSD
 homepage            https://github.com/thombashi/excelrd
@@ -17,8 +17,8 @@ long_description    excelrd is a Python module to extract data from Microsoft \
                     for the latest python versions
 
 checksums           rmd160  f7670790dadd2d54f7b29fef89af595e310d8a53 \
-                    sha256  87eb026805385a2a0009e34b84533a8f020ae589de986acf2c4e6ba2e23636d0 \
-                    size    759865
+sha256  87eb026805385a2a0009e34b84533a8f020ae589de986acf2c4e6ba2e23636d0 \
+size    759865
 
 if {${name} ne ${subport}} {
     depends_build-append \

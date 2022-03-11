@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    iniparse is an INI parser for Python which is API compatible
                     when data is updated), and is more convenient to use.
 
 checksums           rmd160  9f111a446f0e4ecce1573b14e3018312aa8017ec \
-                    sha256  932e5239d526e7acb504017bb707be67019ac428a6932368e6851691093aa842 \
-                    size    32233
+sha256  932e5239d526e7acb504017bb707be67019ac428a6932368e6851691093aa842 \
+size    32233
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

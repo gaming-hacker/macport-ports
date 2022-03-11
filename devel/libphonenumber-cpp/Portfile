@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -30,13 +30,13 @@ master_sites        ${github.master_sites}:main \
                     ${gtest_master}:gtest
 
 checksums           ${main_distfile} \
-                    rmd160  7be20fa914cf9396a41e3730a6cfa9045f398861 \
-                    sha256  7b4dd63ade3f965af4bd9c0372cb1a5d41e828dea4437e9085281ba5ed97a4ef \
-                    size    11139779 \
+rmd160  7be20fa914cf9396a41e3730a6cfa9045f398861 \
+sha256  7b4dd63ade3f965af4bd9c0372cb1a5d41e828dea4437e9085281ba5ed97a4ef \
+size    11139779 \
                     ${gtest_distfile} \
-                    rmd160  4a1a53c93848c3e80cfd857b0eb2c2aa5029e38b \
-                    sha256  b4870bf121ff7795ba20d20bcdd8627b8e088f2d1dab299a031c1034eddc93d5 \
-                    size    886330
+rmd160  4a1a53c93848c3e80cfd857b0eb2c2aa5029e38b \
+sha256  b4870bf121ff7795ba20d20bcdd8627b8e088f2d1dab299a031c1034eddc93d5 \
+size    886330
 
 worksrcdir          google-libphonenumber-9e9f635/cpp
 
@@ -55,8 +55,8 @@ configure.args-append \
                     -DABSL_PROPAGATE_CXX_STD=ON
 
 # as of 3.6.0, protobuf3-cpp requires c++11
-compiler.cxx_standard 2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 # force protobuf3-cpp into the no_threadlocal mode on older systems
 if { ${os.platform} eq "darwin" && ${os.major} < 11 } {

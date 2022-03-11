@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions     36 37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/agronholm/anyio
 
 checksums           rmd160  08b492256d964cad9816da05b03bf3cff98be0bb \
-                    sha256  a0aeffe2fb1fdf374a8e4b471444f0f3ac4fb9f5a5b542b48824475e0042a5a6 \
-                    size    136934
+sha256  a0aeffe2fb1fdf374a8e4b471444f0f3ac4fb9f5a5b542b48824475e0042a5a6 \
+size    136934
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -38,8 +38,8 @@ if {${name} ne ${subport}} {
         revision            1
         distname            ${python.rootname}-${version}
         checksums           rmd160  c35c743b310fbe8f50125a5410fb0b70b105c482 \
-                            sha256  4a41c5b3a65ed92e469d51b6fba3779301850ea2e352afcf9e36c46f21ee14a9 \
-                            size    97217
+sha256  4a41c5b3a65ed92e469d51b6fba3779301850ea2e352afcf9e36c46f21ee14a9 \
+size    97217
 
         depends_lib-append  port:py${python.version}-async_generator \
                             port:py${python.version}-dataclasses

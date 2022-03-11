@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,8 +16,8 @@ long_description    Arping is a util to find out if a specific IP address on \
 homepage            http://www.habets.pp.se/synscan/programs.php?prog=arping
 master_sites        http://www.habets.pp.se/synscan/files/
 checksums           rmd160  e2bf9da8dda0f1286576ac691cfed714b54f1070 \
-                    sha256  93f2067a36e6fd210140cfb3bb75d0733a16e35c6126b0145579d518b18d608f \
-                    size    182628
+sha256  93f2067a36e6fd210140cfb3bb75d0733a16e35c6126b0145579d518b18d608f \
+size    182628
 
 depends_lib         port:libnet11 \
                     lib:libpcap.DP:libpcap

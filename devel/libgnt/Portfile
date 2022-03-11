@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -18,8 +18,8 @@ homepage            https://www.pidgin.im/
 master_sites        sourceforge:project/pidgin/libgnt/${version}
 
 checksums           rmd160  e2310fd6a6db4601a999d19be1025fee76a5ed0f \
-                    sha256  57f5457f72999d0bb1a139a37f2746ec1b5a02c094f2710a339d8bcea4236123 \
-                    size    106388
+sha256  57f5457f72999d0bb1a139a37f2746ec1b5a02c094f2710a339d8bcea4236123 \
+size    106388
 
 use_xz              yes
 
@@ -30,7 +30,7 @@ depends_build-append \
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:libxml2 \
                     port:ncurses \
-                    port:python27
+                    port:python39
 
 patchfiles          ncurses-sys-prefix.patch
 

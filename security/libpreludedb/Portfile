@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,10 +23,10 @@ homepage            https://www.prelude-siem.org/
 master_sites        ${homepage}pkg/src/${version}/
 
 checksums           md5     732c3c67f1a7318d6e64831a2fa5abce \
-                    sha1    5d1a37dba8e64fdddd46373da8424ac353443272 \
-                    rmd160  bbd43dbc60a34b0dd7e433b12be2c2093c769a0e \
-                    sha256  2077e079d8e23e8d39b31a862bcc79fa43b828942e031f6ee57358af4fd5bb0d \
-                    size    1372810
+sha1    5d1a37dba8e64fdddd46373da8424ac353443272 \
+rmd160  bbd43dbc60a34b0dd7e433b12be2c2093c769a0e \
+sha256  2077e079d8e23e8d39b31a862bcc79fa43b828942e031f6ee57358af4fd5bb0d \
+size    1372810
 
 depends_lib         port:libprelude
 
@@ -49,8 +49,8 @@ default_variants    +sqlite3 +python38
 
 variant python38 description {python v3.8 bindings} {
         configure.args-delete   --without-python3
-        configure.args-append   --with-python3=${prefix}/bin/python3.8
-        depends_lib-append port:python38
+        configure.args-append   --with-python3=${prefix}/bin/python3.9
+        depends_lib-append port:python39
 }
 
 variant sqlite3 description {sqlite3 database support} {

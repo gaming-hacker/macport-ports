@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/geopandas/xyzservices
 
 checksums           rmd160  0df962c2429bc2fdd9178bda6bc696fa69f6c729 \
-                    sha256  c58caec48454ed7436b95eb167709f3a5ce91747062a9dbb33bec72f7ca89fe5 \
-                    size    41458
+sha256  c58caec48454ed7436b95eb167709f3a5ce91747062a9dbb33bec72f7ca89fe5 \
+size    41458
 
 if {${name} ne ${subport}} {
     depends_build-append \

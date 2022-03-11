@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ license             MIT
 maintainers         {amake @amake} openmaintainer
 
 checksums           rmd160  c9965a932aa14a891b61802ba48777438a91f60c \
-                    sha256  084dd1762f083a1bf49e41da1bfeafb475c9dce46265690a6bdd33290b9a63f4 \
-                    size    4864269
+sha256  084dd1762f083a1bf49e41da1bfeafb475c9dce46265690a6bdd33290b9a63f4 \
+size    4864269
 
-python.versions     27 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     use_zip         yes
@@ -38,16 +38,16 @@ if {${name} ne ${subport}} {
         version     3.44.0
         revision    0
         checksums   rmd160  0efc3c629774234752c7d41896b25c0efa5f77e9 \
-                    sha256  b72cc654e07219d8d7d8c624d1af13cec6f6cc2a51189f8385c295725e4ac36c \
-                    size    3529542
+sha256  b72cc654e07219d8d7d8c624d1af13cec6f6cc2a51189f8385c295725e4ac36c \
+size    3529542
     }
 
     if {${python.version} > 27 && ${python.version} < 37} {
         version     4.27.1
         revision    0
         checksums   rmd160  a36a87b0d909d98bc4987dcd50f7422c439eb70f \
-                    sha256  6e483f77dc5b862452c2888ec944fca5b79cffb741c7469786a442360681b4e8 \
-                    size    4522523
+sha256  6e483f77dc5b862452c2888ec944fca5b79cffb741c7469786a442360681b4e8 \
+size    4522523
     }
 
     default_variants +lxml +woff +unicode

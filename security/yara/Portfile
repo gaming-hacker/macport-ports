@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -19,8 +19,8 @@ long_description        YARA is a tool aimed at helping malware researchers to i
                         and classify malware samples.
 
 checksums               rmd160  d5737ef59a8f28317ab28d21da1f4c5157ee4d01 \
-                        sha256  291b759b5b70b6f1357adf80a773cbfe178db0515ff7ba8472ea6ce4a83ddda0 \
-                        size    1284731
+sha256  291b759b5b70b6f1357adf80a773cbfe178db0515ff7ba8472ea6ce4a83ddda0 \
+size    1284731
 
 if {${subport} eq ${name}} {
     depends_build-append \
@@ -50,7 +50,7 @@ if {${subport} eq ${name}} {
             reinplace "s|\t\$(AM_CFLAGS) \$(CFLAGS)|\t\$(AM_CFLAGS) \$(CPPFLAGS)|" ${worksrcpath}/Makefile
     }
 
-    configure.cflags-append -std=gnu99
+    configure.cflags-append -std=c11
     configure.args-append   --with-crypto \
                             --disable-silent-rules \
                             --disable-dependency-tracking \
@@ -80,8 +80,8 @@ foreach b ${python.branches} {
                                 This subport provides bindings for python ${python.branch}
 
         checksums               rmd160  b7b627b4cd787ee5a4ff8501d850dfb49ad8eee1 \
-                                sha256  1f5976611fa5094de9853d9b271eb8fe507fcbd84b9f4e5844c90a5ec22c4c81 \
-                                size    34478
+sha256  1f5976611fa5094de9853d9b271eb8fe507fcbd84b9f4e5844c90a5ec22c4c81 \
+size    34478
 
         depends_build-append    port:py${python.version}-setuptools
         depends_lib-append      port:${name} \

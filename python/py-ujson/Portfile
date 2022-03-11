@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    ${description}
 homepage            https://github.com/ultrajson/ultrajson
 
 checksums           rmd160  ee9232a1d581f3b7ff94608194be98848472a22d \
-                    sha256  a88944d2f99db71a3ca0c63d81f37e55b660edde0b07216fb65a3e46403ef004 \
-                    size    7128147
+sha256  a88944d2f99db71a3ca0c63d81f37e55b660edde0b07216fb65a3e46403ef004 \
+size    7128147
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

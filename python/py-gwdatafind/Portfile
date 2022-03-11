@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ long_description    The DataFind service allows users to query for the \
 homepage            https://gwdatafind.readthedocs.io
 
 checksums           rmd160  74afffe58bf9e6fa4b4ac930832de2a46e71a099 \
-                    sha256  4675b5b88443c7f2c228f99ac13fce0565ab6b2d40900663961ecf4fb5727c8f \
-                    size    34362
+sha256  4675b5b88443c7f2c228f99ac13fce0565ab6b2d40900663961ecf4fb5727c8f \
+size    34362
 
-python.versions     37 38
+python.versions 39
 python.pep517       yes
 
 if {${name} ne ${subport}} {

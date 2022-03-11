@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    Fork of the python-jsonrpc-server project, maintained by the
 homepage            https://github.com/python-lsp/python-lsp-jsonrpc
 
 checksums           rmd160  290706b2d58803c9d12c27207118271286c498d0 \
-                    sha256  7bec170733db628d3506ea3a5288ff76aa33c70215ed223abdb0d95e957660bd \
-                    size    10011
+sha256  7bec170733db628d3506ea3a5288ff76aa33c70215ed223abdb0d95e957660bd \
+size    10011
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

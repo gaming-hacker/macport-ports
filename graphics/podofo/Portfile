@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,8 +21,8 @@ long_description    PoDoFo is a library to work with the PDF file format. The Po
                     The parser can also be used to extract information from a PDF file.
 
 checksums           sha256  7cf2e716daaef89647c54ffcd08940492fd40c385ef040ce7529396bfadc1eb8 \
-                    rmd160  bb0ab87503776119a8b44aa20169f20b58b98bc0 \
-                    size    1005247
+rmd160  bb0ab87503776119a8b44aa20169f20b58b98bc0 \
+size    1005247
 
 depends_lib         port:zlib \
                     port:freetype \
@@ -43,7 +43,7 @@ post-extract {
 patchfiles          patch-cmake-modules-FindFREETYPE.cmake.diff \
                     make-tests-optional.patch
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 configure.args-append \
                     -G \"Unix Makefiles\" \
@@ -54,7 +54,7 @@ configure.args-append \
                     -DCMAKE_INCLUDE_PATH=${prefix}/include \
                     -DCMAKE_LIBRARY_PATH=${prefix}/lib \
                     -DCMAKE_EXE_LINKER_FLAGS='' \
-                    -DCMAKE_CXX_FLAGS='-std=c++11'
+                    -DCMAKE_CXX_FLAGS='-std=c++17'
 
 livecheck.type      regex
 livecheck.url       http://podofo.sourceforge.net/download.html

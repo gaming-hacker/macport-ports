@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -19,8 +19,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  a674e85b1befe86ebe4849ecfcb4013f27256eaf \
-                    sha256  9892cd029f83e1b9c827a62bc3a62da696d0e97fa7570636c0b866bd8ddb99e2 \
-                    size    6498927
+sha256  9892cd029f83e1b9c827a62bc3a62da696d0e97fa7570636c0b866bd8ddb99e2 \
+size    6498927
 
 # Allow Go to fetch dependencies at build time
 build.env-delete    GO111MODULE=off GOPROXY=off

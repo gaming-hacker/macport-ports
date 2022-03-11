@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -15,8 +15,8 @@ description         a programmer's API and an end-user's toolkit for handling BA
 long_description    BamTools provides both {*}${description}.
 
 checksums           rmd160  3b50c1a2c92d619cfe17ccf2c790cc7996f337cd \
-                    sha256  1ba47cbb4322f5faedd76f9a7e6cc5c88f208d66367d4509ca55d346c68869fc \
-                    size    245830
+sha256  1ba47cbb4322f5faedd76f9a7e6cc5c88f208d66367d4509ca55d346c68869fc \
+size    245830
 
 depends_lib-append  \
                     path:lib/libjsoncpp.dylib:jsoncpp
@@ -26,7 +26,7 @@ compiler.cxx_standard \
 
 # the C++11 requirement is being imposed by jsoncpp
 configure.cxxflags-append \
-                    -std=c++11
+                    -std=c++17
 configure.args-append \
                     -DBUILD_SHARED_LIBS=ON
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -54,8 +54,8 @@ subport MacOSX10.13.sdk {
     version             10.13.4-17E189
     revision            0
     checksums           rmd160  29c5a9ad27bf3ccf4ca1aceda973654071b89235 \
-                        sha256  bb99dd83b359b6e85e870f231ee31ee0681b1b7477787b4ddf5b8f0da5ea987d \
-                        size    192491483
+sha256  bb99dd83b359b6e85e870f231ee31ee0681b1b7477787b4ddf5b8f0da5ea987d \
+size    192491483
     distname            Command_Line_Tools_macOS_10.13_for_Xcode_9.3
     xar_file            Command Line Tools (macOS High Sierra version 10.13).pkg
     xar_payload         CLTools_SDK_macOS1013.pkg/Payload
@@ -82,8 +82,8 @@ subport MacOSX10.12.sdk {
     version             10.12.4-16E185
     revision            0
     checksums           rmd160  f11bd2fc98b7b7ab81779da94673f7649df1eeed \
-                        sha256  80f34f206562a10dc8dc14269ab744c16a58134f2bcd26933234fe06ca594683 \
-                        size    166119977
+sha256  80f34f206562a10dc8dc14269ab744c16a58134f2bcd26933234fe06ca594683 \
+size    166119977
     distname            Command_Line_Tools_macOS_10.12_for_Xcode_8.3
     xar_file            Command Line Tools (macOS Sierra version 10.12).pkg
     xar_payload         CLTools_SDK_OSX1012.pkg/Payload
@@ -104,8 +104,8 @@ subport MacOSX10.11.sdk {
     version             10.11.4-15E60
     revision            0
     checksums           rmd160  c15f1f966be258a60cbabdc95cc0085b007fa7df \
-                        sha256  5db90607c1f4f7222b40664c160b033be37433d29ed639f335b5d01545e3bb9c \
-                        size    5047652942
+sha256  5db90607c1f4f7222b40664c160b033be37433d29ed639f335b5d01545e3bb9c \
+size    5047652942
     distname            Xcode_7.3
 }
 
@@ -122,8 +122,8 @@ subport MacOSX10.10.sdk {
     version             10.10.3-14D125
     revision            0
     checksums           rmd160  fab391862be2d7fbd78ba69dcf01b283d2bde7c7 \
-                        sha256  205830f485200252b2d7c34b15c8037ce06de6cee95f6f4ab23f856016057df5 \
-                        size    2685577832
+sha256  205830f485200252b2d7c34b15c8037ce06de6cee95f6f4ab23f856016057df5 \
+size    2685577832
     distname            Xcode_6.3.1
 }
 
@@ -145,8 +145,8 @@ subport MacOSX10.9.sdk {
     version             10.9.5-13F34
     revision            0
     checksums           rmd160  fab391862be2d7fbd78ba69dcf01b283d2bde7c7 \
-                        sha256  205830f485200252b2d7c34b15c8037ce06de6cee95f6f4ab23f856016057df5 \
-                        size    2685577832
+sha256  205830f485200252b2d7c34b15c8037ce06de6cee95f6f4ab23f856016057df5 \
+size    2685577832
     distname            Xcode_6.3.1
 }
 
@@ -170,8 +170,8 @@ subport MacOSX10.8.sdk {
     version             10.8.5-12F37
     revision            0
     checksums           rmd160  275e6cf1ca701792933ec9b7cb59eceb0663deb3 \
-                        sha256  92a38fc37e6928a5b4b4066796dc402bcb8dbbb0070a5c64c3b48c8487901b1a \
-                        size    2171659981
+sha256  92a38fc37e6928a5b4b4066796dc402bcb8dbbb0070a5c64c3b48c8487901b1a \
+size    2171659981
     master_sites.mirror_subdir \
                         xcode_5.0.1
     distname            Xcode_5.0.1
@@ -199,8 +199,8 @@ subport MacOSX10.7.sdk {
     version             10.7.4-11E52
     revision            0
     checksums           rmd160  687b76d45c132485489ff59930cbe96dc64fbf2d \
-                        sha256  aaffbc3949548259e2c05aa40dddff6ed3215ec37733a15cfef888f95b938575 \
-                        size    1662484314
+sha256  aaffbc3949548259e2c05aa40dddff6ed3215ec37733a15cfef888f95b938575 \
+size    1662484314
     master_sites.mirror_subdir \
                         xcode_4.5.1
     distname            Xcode_4.5.1
@@ -232,8 +232,8 @@ subport MacOSX10.6.sdk {
     version             10.6.8-10K549
     revision            0
     checksums           rmd160  1c4cf2f7b384840655b24aef57a21fbcca4349c4 \
-                        sha256  51ad4ad86be70532bec5ba29da1cec9aedfdd040eb14b6b7e15a4d886c2be330 \
-                        size    1493268524
+sha256  51ad4ad86be70532bec5ba29da1cec9aedfdd040eb14b6b7e15a4d886c2be330 \
+size    1493268524
     master_sites.mirror_subdir \
                         xcode_4.3_for_lion_21266
     distname            Xcode_4.3_for_Lion

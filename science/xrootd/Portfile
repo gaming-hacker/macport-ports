@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                       1.0
 PortGroup           cmake                        1.1
@@ -10,8 +10,8 @@ github.setup        xrootd xrootd 5.4.2 v
 revision            0
 
 checksums           rmd160  30ea2b1feb15c35ea0425f1fd04c1c6e8605e7ba \
-                    sha256  468d705a8e744655a6b806d7a006bd478bc8683c2ce08bf0e8abc2bc84c15e2e \
-                    size    3131223
+sha256  468d705a8e744655a6b806d7a006bd478bc8683c2ce08bf0e8abc2bc84c15e2e \
+size    3131223
 
 categories          science
 maintainers         {jonesc @cjones051073} openmaintainer
@@ -45,8 +45,8 @@ compiler.blacklist-append *gcc* {clang < 900} {macports-clang-3.[0-9]} {macports
 # error: template argument for template template parameter must be a class template or type alias template
 compiler.blacklist-append {clang < 1000}
 
-configure.cxxflags-append -std=c++14
-compiler.cxx_standard  2014
+configure.cxxflags-append -std=c++17
+compiler.cxx_standard 2017
 
 configure.args-append -DENABLE_CRYPTO=False \
                       -DENABLE_READLINE=False \

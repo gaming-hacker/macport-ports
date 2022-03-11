@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ if {[string first "-devel" $subport] > 0} {
     github.setup    myriadrf LimeSuite 43391d4bc4c45b91023b6b314d1d66c31d9c0277
     version         20220125-[string range ${github.version} 0 7]
     checksums       rmd160  b169e6ebb6006dafea66fdeac861a0773999558c \
-                    sha256  a6de7091fff9719f042a7e8e741efcea123b214d8538e4388f5e8aafa48e68a6 \
-                    size    5423195
+sha256  a6de7091fff9719f042a7e8e741efcea123b214d8538e4388f5e8aafa48e68a6 \
+size    5423195
     revision        0
 
     name            limesuite-devel
@@ -36,8 +36,8 @@ if {[string first "-devel" $subport] > 0} {
 
     github.setup    myriadrf LimeSuite 20.10.0 v
     checksums       rmd160  060622844755ce2c6dbc4f6a26ef834d01f00c50 \
-                    sha256  d7d97474e7a5417f492aacb697f231334eda994cf8130dd420754eeb3a623866 \
-                    size    5422362
+sha256  d7d97474e7a5417f492aacb697f231334eda994cf8130dd420754eeb3a623866 \
+size    5422362
     revision        3
 
     conflicts       limesuite-devel
@@ -45,7 +45,7 @@ if {[string first "-devel" $subport] > 0} {
 
 }
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # fix where CMake files are installed; in MacPorts we strive for
 # "$PREFIX/share/cmake/$PROJECT_NAME", not "$PREFIX/lib/cmake/$PROJECT_NAME".

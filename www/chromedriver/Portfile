@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -37,12 +37,12 @@ platform i386 {
 # run `port clean --all chromedriver` afterwards
 if {${build_arch} eq {arm64}} {
     checksums       rmd160  e33342d556ffae671a5e6c71336c6c5ad9644625 \
-                    sha256  79c462f3e8445bc371d276d4f38495fece10eb108d8e6f6e5d54b28594e96c42 \
-                    size    7652860
+sha256  79c462f3e8445bc371d276d4f38495fece10eb108d8e6f6e5d54b28594e96c42 \
+size    7652860
 } elseif {${build_arch} eq {x86_64}} {
     checksums       rmd160  57d8521029248c4502710fe159286c30c259799f \
-                    sha256  9723d866b6d9e151e985ed206232264ff1fc41082cd5713a2589e706cb4553d9 \
-                    size    8386915
+sha256  9723d866b6d9e151e985ed206232264ff1fc41082cd5713a2589e706cb4553d9 \
+size    8386915
 }
 
 set major_version   [lindex [split ${version} .] 0]

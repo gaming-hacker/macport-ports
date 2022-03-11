@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -23,8 +23,8 @@ distname            ${name}-${apple_version}
 worksrcdir          ${distname}/xar
 
 checksums           rmd160  287b799d011816ba51a54fda5f78f652e2550ed0 \
-                    sha256  0102eb5c4e1844ea44474624d2d7e542fb6b842377e6962fb879361072802d62 \
-                    size    220690
+sha256  0102eb5c4e1844ea44474624d2d7e542fb6b842377e6962fb879361072802d62 \
+size    220690
 
 depends_build       port:pkgconfig \
                     port:automake
@@ -48,7 +48,7 @@ patchfiles-append   patch-tpoechtrager.diff \
 # add --to-stdout
 patchfiles-append   patch-stdout.diff
 
-configure.cflags-append -std=c99
+configure.cflags-append -std=c11
 
 post-patch {
     copy -force ${prefix}/share/automake-1.16/config.guess ${worksrcpath}

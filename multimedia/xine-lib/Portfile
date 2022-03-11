@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                xine-lib
 version             1.2.12
 revision            0
 checksums           rmd160  42f6755bde10f20604f50a38caae8b8e1a069128 \
-                    sha256  d606270468e1540c2a89c0d7f5fdf11e17ecc0c2698cc0bcb1065ff26abee098 \
-                    size    5341212
+sha256  d606270468e1540c2a89c0d7f5fdf11e17ecc0c2698cc0bcb1065ff26abee098 \
+size    5341212
 
 categories          multimedia
 # bundled libdvdnav is GPL-2 only but we use MacPorts libdvdnav now
