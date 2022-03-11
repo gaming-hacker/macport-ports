@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -26,8 +26,8 @@ long_description    A C++ bittorrent library designed to run on anything from em
                     seed servers. It comes with python bindings and detailed documentation.
 
 checksums           rmd160  90258741cb3f855a74248d4f6024577bcde31ad8 \
-sha256  e965c2e53170c61c0db3a2d898a61769cb7acd541bbf157cbbef97a185930ea5 \
-size    4407260
+                    sha256  e965c2e53170c61c0db3a2d898a61769cb7acd541bbf157cbbef97a185930ea5 \
+                    size    4407260
 
 depends_lib-append  path:lib/libssl.dylib:openssl
 
@@ -35,11 +35,11 @@ patchfiles          patch-python-use-the-right-compiler.diff
 
 # Apple clang less than 900.0.39.2 fails to build
 # build using C++14 for binary compatibility with C++14 dependents
-compiler.cxx_standard 2017
+compiler.cxx_standard 2014
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
 
 # ensure that compiler is using C++14 mode
-configure.cxxflags-append -std=c++17
+configure.cxxflags-append -std=c++14
 
 configure.args-append \
                     -DBoost_LIBRARY_DIR_RELEASE=[boost::lib_dir] \
@@ -54,23 +54,15 @@ universal_variant   no
 
 conflicts_build     ${name}
 
-variant python37 conflicts python38 python39 description {Build bindings for Python 3.7} {
-        require_active_variants boost[boost::version_nodot] python37
-        depends_lib-append port:python39
-        configure.args-append \
-                -DPython3_EXECUTABLE=${prefix}/bin/python3.9 \
-                -DBoost_PYTHON37_LIBRARY_RELEASE=[boost::lib_dir]/libboost_python37-mt.dylib
-}
-
-variant python38 conflicts python37 python39 description {Build bindings for Python 3.8} {
+variant python38 conflicts python39 python310 description {Build bindings for Python 3.8} {
         require_active_variants boost[boost::version_nodot] python38
-        depends_lib-append port:python39
+        depends_lib-append port:python38
         configure.args-append \
-                -DPython3_EXECUTABLE=${prefix}/bin/python3.9 \
+                -DPython3_EXECUTABLE=${prefix}/bin/python3.8 \
                 -DBoost_PYTHON38_LIBRARY_RELEASE=[boost::lib_dir]/libboost_python38-mt.dylib
 }
 
-variant python39 conflicts python37 python38 description {Build bindings for Python 3.9} {
+variant python39 conflicts python38 python310 description {Build bindings for Python 3.9} {
         require_active_variants boost[boost::version_nodot] python39
         depends_lib-append port:python39
         configure.args-append \
@@ -78,10 +70,18 @@ variant python39 conflicts python37 python38 description {Build bindings for Pyt
                 -DBoost_PYTHON39_LIBRARY_RELEASE=[boost::lib_dir]/libboost_python39-mt.dylib
 }
 
+variant python310 conflicts python38 python39 description {Build bindings for Python 3.10} {
+        require_active_variants boost[boost::version_nodot] python310
+        depends_lib-append port:python310
+        configure.args-append \
+                -DPython3_EXECUTABLE=${prefix}/bin/python3.10 \
+                -DBoost_PYTHON39_LIBRARY_RELEASE=[boost::lib_dir]/libboost_python310-mt.dylib
+}
+
 variant error_logging description {Enable logging of errors to disk} {
         configure.args-replace -Dlogging=OFF -Dlogging=ON
 }
 
-if {![variant_isset python37] && ![variant_isset python38] && ![variant_isset python39]} {
-        default_variants +python39
+if {![variant_isset python38] && ![variant_isset python39] && ![variant_isset python310]} {
+        default_variants +python310
 }

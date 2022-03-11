@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-npx
-version             0.1.0
+version             0.1.1
 revision            0
 categories          python
 license             BSD
@@ -18,11 +18,11 @@ long_description    {*}${description}
 supported_archs     noarch
 homepage            https://github.com/nschloe/npx
 
-checksums           rmd160  2256391ca6513d11f8d234f5322ead79f6a5ceac \
-sha256  3edec9508326b6724d7c176dbcba2098508788241b8a671aab583d0c72b2f05b \
-size    12646
+checksums           rmd160  6affdb70bb32ad68aa301f4a732c69fe3549aa82 \
+                    sha256  cce26aad91af079a721750a5bdcb5ca7435bf2feef4642afcf580d58cb151bd4 \
+                    size    12762
 
-python.versions 39
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     python.pep517           yes

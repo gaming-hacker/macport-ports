@@ -1,14 +1,13 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 name                xterm
-version             370
+version             371
 revision            0
 
 categories          x11
 license             X11
-platforms           darwin
 maintainers         {jeremyhu @jeremyhu} openmaintainer
 description         the ubiquitous X terminal emulator, stand-alone
 long_description    The xterm program is a terminal emulator for the X \
@@ -19,9 +18,9 @@ homepage            https://invisible-island.net/xterm/
 master_sites        ftp://ftp.invisible-island.net/pub/xterm/ \
                     https://invisible-mirror.net/archives/xterm/
 
-checksums           rmd160  7f2c0428b5fa8936168c8829897b3b93af0c8b50 \
-sha256  71ed6a48d064893d2149741a002781a973496fd24d52dadd364f63439a764e26 \
-size    1461310
+checksums           rmd160  ca364ef23b1f61c9d8a60d5c4db98640c1965a91 \
+                    sha256  32f888277b19e28ebc0a3112bff000607c07bed0679caa0beebb36f9cad484f5 \
+                    size    1507938
 
 extract.suffix      .tgz
 

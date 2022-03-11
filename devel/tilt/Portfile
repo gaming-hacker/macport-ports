@@ -29,7 +29,9 @@ sha256  f4f51a362b326f3df4c315bb3c932a87b2d7a5a29e6b72bb85beb0f0d82c42df \
 size    23480949
 
 depends_build-append \
-                    port:yarn port:nodejs12
+                    port:yarn \
+                    path:bin/node:nodejs12
+
 use_parallel_build  no
 build.cmd           "make build-js && ${go.bin} build -mod vendor ./cmd/tilt"
 build.env-replace   GO111MODULE=off GO111MODULE=on

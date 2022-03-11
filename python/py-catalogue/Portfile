@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -10,12 +10,11 @@ github.setup        explosion catalogue 2.0.4 v
 revision            0
 
 checksums           rmd160  bafda6dd4b9d82b4441c93204f4c05c83fcb2cc8 \
-sha256  ef4c996a7b5d23cb8582a26baa69607d74d0032c07c166d0e887e7de72a21b18 \
-size    15691
+                    sha256  ef4c996a7b5d23cb8582a26baa69607d74d0032c07c166d0e887e7de72a21b18 \
+                    size    15691
 
 name                py-${github.project}
 categories-append   devel
-platforms           darwin
 supported_archs     noarch
 license             MIT
 maintainers         nomaintainer
@@ -34,7 +33,7 @@ long_description    catalogue is a tiny, zero-dependencies library\
                     instead saved the function, you'd have to use\
                     Pickle for serialization, which has many drawbacks.
 
-python.versions 39
+python.versions     37 38 39
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -59,6 +58,4 @@ if {${name} ne ${subport}} {
         xinstall -m 0644 -W ${worksrcpath} README.md LICENSE \
             ${destroot}${docdir}
     }
-
-    livecheck.type  none
 }
