@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ long_description    \
 homepage            https://sqlmap.org/
 
 checksums           rmd160  64f0ebb5170017557c76fc72fe940584311f317f \
-                    sha256  5bf51d24f2dc14e1071f3ed561e43709c5f2b0d8eee43bb1aaf600fb13246f6d \
-                    size    7245570
+sha256  5bf51d24f2dc14e1071f3ed561e43709c5f2b0d8eee43bb1aaf600fb13246f6d \
+size    7245570
 
 worksrcdir          ${name}
 
@@ -43,21 +43,21 @@ post-patch {
 
 variant python27 conflicts python37 python38 python310 \
     description {Build for Python 2.7} {
-    python.default_version 27
+    python.default_version 39
     depends_build-append \
                     port:py${python.version}-setuptools
 }
 
 variant python37 conflicts python27 python38 python310 \
     description {Build for Python 3.7} {
-    python.default_version 37
+    python.default_version 39
     depends_build-append \
                     port:py${python.version}-setuptools
 }
 
 variant python38 conflicts python27 python37 python310 \
     description {Build for Python 3.8} {
-    python.default_version 38
+    python.default_version 39
     depends_build-append \
                     port:py${python.version}-setuptools
 }

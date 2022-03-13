@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,9 +30,9 @@ if {${os.major} <= 15} {
 use_xz              yes
 
 checksums           ${distfiles} \
-                    rmd160  206e5fcebf8f62d28ae0a14463e97d16684d8190 \
-                    sha256  d8cd0b4967bb61e2a3427b57cb9f45f278813fb6b986f97b370c8c50aa058d18 \
-                    size    4613232
+rmd160  206e5fcebf8f62d28ae0a14463e97d16684d8190 \
+sha256  d8cd0b4967bb61e2a3427b57cb9f45f278813fb6b986f97b370c8c50aa058d18 \
+size    4613232
 
 # To verify the signature during the update, set it to "yes" and then reset
 # the value to "no" back.
@@ -47,7 +47,7 @@ if {[option gpg_verify.use_gpg_verification]} {
 
     checksums-append \
                     ${name}-${version}${extract.suffix}.sig \
-                    size 566
+size 566
 
     post-checksum {
         set gpg_keyid 06BC317B515ACE7C

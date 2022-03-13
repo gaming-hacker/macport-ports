@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python      1.0
@@ -25,10 +25,10 @@ long_description    wxPython is a GUI toolkit for the Python programming \
 homepage            https://www.wxpython.org/
 
 checksums           rmd160  e0d66dfb24bd7738306e70588ed0a5f6f7116de1 \
-                    sha256  00e5e3180ac7f2852f342ad341d57c44e7e4326de0b550b9a5c4a8361b6c3528 \
-                    size    66043287
+sha256  00e5e3180ac7f2852f342ad341d57c44e7e4326de0b550b9a5c4a8361b6c3528 \
+size    66043287
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     patchfiles-append   fix_cc_cxx.patch webkit.patch webkit2.patch build.patch

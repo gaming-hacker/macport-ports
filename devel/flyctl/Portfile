@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,8 +20,8 @@ long_description    ${name} is a command-line interface for fly.io.
 homepage            https://fly.io
 
 checksums           rmd160 7b216faec5629341565c4d999a3845927114ec81 \
-                    sha256 911bdb4b0348ab154771ae56f30681ad0608456593e7d65bec2cfa242db7b997 \
-                    size 1443343
+sha256 911bdb4b0348ab154771ae56f30681ad0608456593e7d65bec2cfa242db7b997 \
+size 1443343
 
 # Allow Go to download dependencies at runtime
 build.env-delete    GO111MODULE=off GOPROXY=off

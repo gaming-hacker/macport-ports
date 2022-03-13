@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -32,8 +32,8 @@ if {${subport} eq ${name}} {
     revision            0
 
     checksums           rmd160  30b7f3f6a6279e86bed685a61e759d69b2025eb7 \
-                        sha256  a9a97b6216252a754d1d4f6c1edfdf3f06f142ce6be6386d5cd33fe270be54e4 \
-                        size    638615
+sha256  a9a97b6216252a754d1d4f6c1edfdf3f06f142ce6be6386d5cd33fe270be54e4 \
+size    638615
 
     conflicts           ${name}-devel
 }
@@ -44,8 +44,8 @@ subport ${name}-devel {
     revision            0
 
     checksums           rmd160  ea6f7ffd0f213572f96c2b4874a9dc0068279eab \
-                        sha256  a95797f54c4db4f5dde0e096534b74075f8e8e216c62b67de597d68676966ce1 \
-                        size    639634
+sha256  a95797f54c4db4f5dde0e096534b74075f8e8e216c62b67de597d68676966ce1 \
+size    639634
 
     conflicts           ${name}
 }

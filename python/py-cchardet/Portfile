@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,10 +16,10 @@ long_description    ${description}
 homepage            https://github.com/PyYoshi/cChardet
 
 checksums           rmd160  8e4588db69c55cc9531e66dd8d73221830d7c9d1 \
-                    sha256  c428b6336545053c2589f6caf24ea32276c6664cb86db817e03a94c60afa0eaf \
-                    size    653617
+sha256  c428b6336545053c2589f6caf24ea32276c6664cb86db817e03a94c60afa0eaf \
+size    653617
 
-python.versions     36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

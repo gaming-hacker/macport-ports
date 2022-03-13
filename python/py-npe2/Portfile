@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,10 +15,10 @@ supported_archs     noarch
 homepage            https://github.com/napari/npe2
 
 checksums           rmd160  5c836c160aa876f0c6ba0fc024bab3c6841dce5c \
-                    sha256  f1749a053ab3437f177fe006f951208f31a932c88f0aca332bb3c7e76fdad6ed \
-                    size    68712
+sha256  f1749a053ab3437f177fe006f951208f31a932c88f0aca332bb3c7e76fdad6ed \
+size    68712
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     python.pep517   yes

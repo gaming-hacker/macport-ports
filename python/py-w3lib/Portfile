@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    ${description}
 homepage            https://github.com/scrapy/w3lib
 
 checksums           rmd160  2e9b10b5770857025006216b7c4d3adc59e22576 \
-                    sha256  0ad6d0203157d61149fd45aaed2e24f53902989c32fc1dccc2e2bfba371560df \
-                    size    39121
+sha256  0ad6d0203157d61149fd45aaed2e24f53902989c32fc1dccc2e2bfba371560df \
+size    39121
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

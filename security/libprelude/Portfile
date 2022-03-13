@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -28,8 +28,8 @@ platforms       darwin
 build.type      gnu
 
 checksums       rmd160  0a1cb980fa55d87b35f575c706415580c7b99b89 \
-                sha256  187e025a5d51219810123575b32aa0b40037709a073a775bc3e5a65aa6d6a66e \
-                size    2902019
+sha256  187e025a5d51219810123575b32aa0b40037709a073a775bc3e5a65aa6d6a66e \
+size    2902019
  
 depends_build-append \
                 port:pkgconfig \
@@ -80,10 +80,10 @@ if {${os.platform} eq "darwin" && ${os.major} < 17} {
     default_variants    +python38
 }
 
-variant python38 description {python3.8 bindings} {
+variant python38 description {python3.9 bindings} {
         configure.args-replace  --without-python3 \
-                                --with-python3=${prefix}/bin/python3.8
-        depends_lib-append port:python38
+                                --with-python3=${prefix}/bin/python3.9
+        depends_lib-append port:python39
 }
 
 variant perl description {perl bindings} {

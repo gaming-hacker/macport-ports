@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -18,10 +18,10 @@ long_description        {A Fish Shell wrapper for Ian Bicking's virtualenv, some
                         Bourne-compatible shells.}
 
 checksums               rmd160  dc1bbd49243cae40a2c74157fd788ef20376bd20 \
-                        sha256  5f9008b2f56ab0cda5fa16be629f7e834e8adf5bfa0e2ad70f6bc9ef096d39a7 \
-                        size    35943
+sha256  5f9008b2f56ab0cda5fa16be629f7e834e8adf5bfa0e2ad70f6bc9ef096d39a7 \
+size    35943
 
-python.versions         37 38 39 310
+python.versions 39
 python.pep517           yes
 python.pep517_backend   poetry
 

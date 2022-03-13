@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    This is the next line of the Python SDK for Sentry, \
 homepage            https://github.com/getsentry/sentry-python
 
 checksums           rmd160  cc6717adfda9e4555c3437cf86d3ab7cf933fec3 \
-                    sha256  aa52da941c56b5a76fd838f8e9e92a850bf893a9eb1e33ffce6c21431d07ee30 \
-                    size    111576
+sha256  aa52da941c56b5a76fd838f8e9e92a850bf893a9eb1e33ffce6c21431d07ee30 \
+size    111576
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

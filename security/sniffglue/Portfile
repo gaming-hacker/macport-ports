@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,9 +21,9 @@ long_description    \
     useful as possible by default.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  db958b8b25875c14a2eefb4dd2f1d47d685fe6f8 \
-                    sha256  ac30c0748a4247d2a36b82d623e88863480c300d3f6bbbdc303077240a8292c5 \
-                    size    421815
+rmd160  db958b8b25875c14a2eefb4dd2f1d47d685fe6f8 \
+sha256  ac30c0748a4247d2a36b82d623e88863480c300d3f6bbbdc303077240a8292c5 \
+size    421815
 
 cargo.crates \
     aho-corasick                    0.7.18  1e37cfd5e7657ada45f742d6e99ca5788580b5c529dc78faf11ece6dc702656f \
@@ -115,7 +115,7 @@ cargo.crates \
     serde                          1.0.136  ce31e24b01e1e524df96f1c2fdd054405f8d7376249a5110886fb4b658484789 \
     serde_derive                   1.0.136  08597e7152fcd306f41838ed3e37be9eaeed2b61c42e2117266a554fab4662f9 \
     serde_json                      1.0.79  8e8d9fa5c3b304765ce1fd9c4c8a3de2c8db365a5b91be52f186efc675681d95 \
-    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
     siphasher                        0.3.9  a86232ab60fa71287d7f2ddae4a7073f6b7aac33631c3015abb556f08c6d0a3e \
     smallvec                         1.8.0  f2dd574626839106c320a323308629dcb1acfc96e32a8cba364ddc61ac23ee83 \
     str-buf                          1.0.5  d44a3643b4ff9caf57abcee9c2c621d6c03d9135e0d8b589bd9afb5992cb176a \
