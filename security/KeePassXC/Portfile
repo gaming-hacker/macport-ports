@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 
@@ -43,18 +43,23 @@ if {${subport} eq ${name}} {
 
     # See keepassxc-${version}-src.tar.xz.DIGEST on upstream GitHub releases page for SHA256 sums
     checksums           ${distname}${extract.suffix} \
-rmd160  c3933aadf16a103f3ae4a5c2150a4c298e15dbe0 \
-sha256  3603b11ac39b289c47fac77fa150e05fd64b393d8cfdf5732dc3ef106650a4e2 \
-size    7640532 \
+                        rmd160  c3933aadf16a103f3ae4a5c2150a4c298e15dbe0 \
+                        sha256  3603b11ac39b289c47fac77fa150e05fd64b393d8cfdf5732dc3ef106650a4e2 \
+                        size    7640532 \
                         ${distname}${extract.suffix}.sig \
-rmd160  e1e03a47d09e8caea290cba591ee4b15e33fa286 \
-sha256  162e577f790bd254aa73db388dd91c0f34e57dac5b83ae831bc72c3c12ad00e3 \
-size    488
+                        rmd160  e1e03a47d09e8caea290cba591ee4b15e33fa286 \
+                        sha256  162e577f790bd254aa73db388dd91c0f34e57dac5b83ae831bc72c3c12ad00e3 \
+                        size    488
 
     gpg_verify.use_gpg_verification \
                         yes
 
-    compiler.cxx_standard 2017
+    depends_lib-append  port:quazip1
+
+    configure.pre_args-append \
+        -DWITH_XC_KEESHARE_SECURE=ON
+
+    compiler.cxx_standard   2011
 
     patchfiles          patch-no-deployqt.diff \
                         patch-no-findpackage-path.diff \
@@ -62,17 +67,16 @@ size    488
                         patch-old-mac.diff
 } else {
     # devel subport
-    github.setup        keepassxreboot keepassxc 12990e59ada1628a3a491afef045902ef254e38f
+    github.setup        keepassxreboot keepassxc 0ad75ccb8fa4228880b035516eb9905517f8b12f
     set githash         [string range ${github.version} 0 6]
-    version             20211215+git${githash}
+    version             20220307+git${githash}
     revision            0
 
     conflicts           KeePassXC
 
-    checksums           rmd160  84e8cba8ab75f124f9b9ae244a06a7cd4b7f906d \
-sha256  d1104c587298c26d1d02ccb01593ee70313c354d049b36ed480d8384a128e986 \
-size    10077852
-
+    checksums           rmd160  24a38c4d0d97ae73f1bbfb3ebba9f6e525c10be7 \
+                        sha256  ce0c8531e93d3981280fe0044909ef05d9f4c47314f82eab801b98e6b1b8d4e4 \
+                        size    10637994
 
     gpg_verify.use_gpg_verification \
                         no

@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup python 1.0
 PortGroup select 1.0
 
 name                py-mypy
-version             0.940
+version             0.941
 license             MIT
 supported_archs     noarch
 maintainers         {toby @tobypeterson} openmaintainer
@@ -19,11 +19,11 @@ long_description    Add type annotations to your Python programs, and use mypy t
 
 homepage            http://www.mypy-lang.org
 
-checksums           rmd160  0cf9f3f1203d5561114601b919db47edda40a56a \
-sha256  71bec3d2782d0b1fecef7b1c436253544d81c1c0e9ca58190aed9befd8f081c5 \
-size    2649669
+checksums           rmd160  64ced3070bbea298ca5d0df1b3ddf5f86096c8ea \
+                    sha256  cbcc691d8b507d54cb2b8521f0a2a3d4daa477f62fe77f0abba41e5febb377b7 \
+                    size    2649786
 
-python.versions 39
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

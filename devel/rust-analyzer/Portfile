@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cargo   1.0
 PortGroup           github  1.0
 
-github.setup        rust-analyzer rust-analyzer 2022-03-07
+github.setup        rust-analyzer rust-analyzer 2022-03-14
 github.tarball_from archive
 version             [string map { {-} {} } ${github.version}]
 revision            0
@@ -25,9 +25,9 @@ maintainers         @fabius \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-rmd160  97d2cfe11e579c9293f6401a238f7d88ff4f3951 \
-sha256  f5b88b0beeec070af3d4e856ee04eb65bf110034982dcca5b216f85d7cb9395a \
-size    2124453
+                        rmd160  b7a2a2adb0e729d9208814936a1a2e2dac52696a \
+                        sha256  d86d39f28b20791320b78dd67f7ddbb98580628e931cdb823e493240cc493216 \
+                        size    2128215
 
 destroot {
     xinstall -m 0755 \
@@ -157,7 +157,7 @@ cargo.crates \
     serde_derive                   1.0.136  08597e7152fcd306f41838ed3e37be9eaeed2b61c42e2117266a554fab4662f9 \
     serde_json                      1.0.79  8e8d9fa5c3b304765ce1fd9c4c8a3de2c8db365a5b91be52f186efc675681d95 \
     serde_repr                       0.1.7  98d0516900518c29efa217c298fa1f4e6c6ffc85ae29fd7f4ee48f176e1a9ed5 \
-sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     smallvec                         1.8.0  f2dd574626839106c320a323308629dcb1acfc96e32a8cba364ddc61ac23ee83 \
     smol_str                        0.1.21  61d15c83e300cce35b7c8cd39ff567c1ef42dde6d4a1a38dbdbf9a59902261bd \
     snap                             1.0.5  45456094d1983e2ee2a18fdfebce3189fa451699d0502cb8e3b49dba5ba41451 \

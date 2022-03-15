@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -13,36 +13,36 @@ php.branches            5.3 5.4 5.5 5.6 7.0 7.1 7.2 7.3 7.4 8.0 8.1
 php.pecl                yes
 
 if {[vercmp ${php.branch} 7.2] >= 0} {
-    version             4.8.6
+    version             4.8.7
     revision            0
-    checksums           rmd160  e23bc627ab89b211e6cdfa58eddfcd7005bcd38f \
-sha256  e28b7c2d7a567233260f77bf133ad834cc6a50f3eea50424bf689b2e46685b1b \
-size    1849356
+    checksums           rmd160  16b6ae49390c789ab963c5426163a43869090447 \
+                        sha256  ca888cb886c883092ebe8788253d600bc52c384e74e27110f97b04ecea6b6fda \
+                        size    1851160
 } elseif {[vercmp ${php.branch} 7.1] >= 0} {
     version             4.5.11
     revision            1
     checksums           rmd160  787880685a821869f19c1b6f4645857b75a048fe \
-sha256  2d85752ee2b0944399c2901bb22832f196ba3f7ba4262c239d12ed494e2460dd \
-size    1554142
+                        sha256  2d85752ee2b0944399c2901bb22832f196ba3f7ba4262c239d12ed494e2460dd \
+                        size    1554142
 } elseif {[vercmp ${php.branch} 7.0] >= 0} {
     version             4.3.6
     revision            1
     checksums           rmd160  e77d9a43dbbc6c133e42bf564af9d975e8874838 \
-sha256  9253d1cb3ae109e18473efc51d14a99067417c28f4c66b1b0a0cdae5141253f9 \
-size    1349407
+                        sha256  9253d1cb3ae109e18473efc51d14a99067417c28f4c66b1b0a0cdae5141253f9 \
+                        size    1349407
 } elseif {[vercmp ${php.branch} 5.5] >= 0} {
     # https://github.com/swoole/swoole-src/issues/1783
     version             2.0.11
     revision            4
     checksums           rmd160  7238015b141faf59d9662d4ab21c73bb66b58e35 \
-sha256  07df75ede4bf0833d2c2443b666a5c3054bc498a78f5251babc1b0e7cc8cd573 \
-size    769029
+                        sha256  07df75ede4bf0833d2c2443b666a5c3054bc498a78f5251babc1b0e7cc8cd573 \
+                        size    769029
 } else {
     version             1.10.5
     revision            4
     checksums           rmd160  48b8c3bf5999e5365b3e804440464114500120ed \
-sha256  5c1dc0b82772ca1c352de4ddf20deeb35f06e4c5a01beba5a446d78a1f747bd2 \
-size    730797
+                        sha256  5c1dc0b82772ca1c352de4ddf20deeb35f06e4c5a01beba5a446d78a1f747bd2 \
+                        size    730797
 }
 
 description             an event-driven asynchronous & concurrent & coroutine networking engine with high performance for PHP
@@ -60,15 +60,10 @@ if {${name} ne ${subport}} {
                         10
 
         if {[vercmp ${version} 4.0.4] >= 0} {
-            compiler.cxx_standard 2017
+            compiler.cxx_standard 2011
 
             if {[vercmp ${version} 4.5.0] >= 0} {
                 compiler.thread_local_storage yes
-
-                # https://github.com/swoole/swoole-src/issues/3896
-                # CLOCK_REALTIME
-                legacysupport.newest_darwin_requires_legacy \
-                        15
             }
 
             if {[vercmp ${version} 4.6.2] < 0} {

@@ -1,0 +1,54 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                dotnet-cli
+version             5.0.11
+revision            0
+categories          dotnet
+license             MIT
+maintainers         {@tsabirgaliev} openmaintainer
+
+description         The .NET command-line interface (CLI) is a cross-platform toolchain \
+                    for developing, building, running, and publishing .NET applications.
+
+long_description    .NET is a free, cross-platform, open source developer platform \
+                    for building many different types of applications. \
+                    \
+                    With .NET, you can use multiple languages, editors, and libraries \
+                    to build for web, mobile, desktop, games, and IoT.
+
+homepage            https://dotnet.microsoft.com/
+platforms           darwin
+supported_archs     x86_64
+distname            dotnet-runtime-${version}-osx-x64
+master_sites        https://dotnetcli.azureedge.net/dotnet/Runtime/${version}/
+
+checksums           rmd160  91e436d83fecf3c195a43f7ef118735e393c1b39 \
+                    sha256  4c36758372ba6c22cf6b387a64c7db41e929e6cdc940f6b1f0adc30f3e8ef027 \
+                    size    30419334
+
+worksrcdir          ${name}-${version}
+extract.mkdir       yes
+
+use_configure       no
+
+build {}
+
+destroot {
+    set dotnet_home ${prefix}/share/dotnet
+    set target ${destroot}${dotnet_home}
+
+    # Create the target directory
+    xinstall -d ${target}
+
+    # Copy over the needed elements of our directory tree
+    move ${worksrcpath}/dotnet \
+         ${worksrcpath}/ThirdPartyNotices.txt \
+         ${worksrcpath}/LICENSE.txt \
+         ${worksrcpath}/host \
+         ${target}
+
+    # Symlink dotnet into the bin directory
+    ln -s ${dotnet_home}/dotnet ${destroot}${prefix}/bin
+}
