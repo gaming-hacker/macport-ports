@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    Beartype is an open-source pure-Python PEP-compliant \
 homepage            https://github.com/beartype/beartype
 
 checksums           rmd160 80644090e45d6d553b68566439177f79082afff8 \
-                    sha256 5ca1bb66dd9647155bfdb82ca1a066663f7743f2bc87f60004addf739def8236 \
-                    size   793884
+sha256 5ca1bb66dd9647155bfdb82ca1a066663f7743f2bc87f60004addf739def8236 \
+size   793884
 
-python.versions     38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
 

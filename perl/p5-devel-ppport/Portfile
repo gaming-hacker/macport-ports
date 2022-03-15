@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Devel-PPPort 3.67
 revision            0
 license             {Artistic-1 GPL}
@@ -14,5 +14,5 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  866fafeed35298b4d2bd7b1707499bf3b31a7cfb \
-                    sha256  77954772eab2a0de4a49a77b334f73ef0b8f5251bdc0ddd70d2a4d8110f66227 \
-                    size    480891
+sha256  77954772eab2a0de4a49a77b334f73ef0b8f5251bdc0ddd70d2a4d8110f66227 \
+size    480891

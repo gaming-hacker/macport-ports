@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -58,8 +58,8 @@ subport openjdk8-adoption-boot {
     master_sites        https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u-${db}/
     supported_archs     x86_64
     checksums           rmd160  3cf5f76ff1d7a4f73a10edf0a893db816faf2224 \
-                        sha256  62816d0de1ee67eefecb3a5dad59b5f5c91e14c53f8ec88b6c3fafc885d185a5 \
-                        size    101520902
+sha256  62816d0de1ee67eefecb3a5dad59b5f5c91e14c53f8ec88b6c3fafc885d185a5 \
+size    101520902
     distname            OpenJDK8U-jdk_x64_mac_hotspot_${db}
     worksrcdir          jdk${version}
     set openboot_path openjdk${version}
@@ -87,7 +87,7 @@ subport openjdk8u {
     }
     patchfiles          patch-openjdk8u-xcode-configure1.diff \
                         patch-openjdk8u-xcode-configure2.diff
-    use_xcode           yes
+    use_xcode  no
     use_configure    yes
     configure.cmd       sh ./configure
     configure.pre_args  --prefix=${tpath}
@@ -120,8 +120,8 @@ subport openjdk11-boot {
     master_sites        https://download.java.net/java/ga/jdk${version}/
 
     checksums           rmd160  c914d38c78b2943c7b47ff2da4e8da89438f96cd \
-                        sha256  6b969d2df6a9758d9458f5ba47939250e848dfba8b49e41c935cf210606b6d38 \
-                        size    182717049
+sha256  6b969d2df6a9758d9458f5ba47939250e848dfba8b49e41c935cf210606b6d38 \
+size    182717049
 
     distname            openjdk-11_osx-x64_bin
     worksrcdir          jdk-11.jdk
@@ -178,8 +178,8 @@ subport openjdk13-boot {
     master_sites        https://download.java.net/java/GA/jdk${version}/5b8a42f3905b406298b72d750b6919f6/${build}/GPL/
 
     checksums           rmd160  d9dd9241fa5d6fbdf0ab59acdb8e21e8c5f98a5f \
-                        sha256  1a9c096630a0e4f27ce61ac9e477378b8581c537568186d4afd0b416a7e9dd68 \
-                        size    189943388
+sha256  1a9c096630a0e4f27ce61ac9e477378b8581c537568186d4afd0b416a7e9dd68 \
+size    189943388
 
     distname            openjdk-13_osx-x64_bin
     worksrcdir          jdk-13.jdk
@@ -238,8 +238,8 @@ subport openjdk15-boot {
     master_sites        https://download.java.net/java/GA/jdk${version}/779bf45e88a44cbd9ea6621d33e33db1/${build}/GPL/
 
     checksums           rmd160  3b40c853f52afa324178c90deb867659e9d99c24 \
-                        sha256  ab842c8c0953b816be308c098c1a021177a4776bef24da85b6bafbbd657c7e1a \
-                        size    192743279
+sha256  ab842c8c0953b816be308c098c1a021177a4776bef24da85b6bafbbd657c7e1a \
+size    192743279
 
     distname            openjdk-15_osx-x64_bin
     worksrcdir          jdk-15.jdk
@@ -299,13 +299,13 @@ subport openjdk17-boot {
     master_sites        https://download.java.net/java/GA/jdk${version}/0d483333a00540d886896bac774ff48b/${build}/GPL/
     if {${configure.build_arch} eq "x86_64"} {
         checksums           rmd160  22047e850be0cfafb6d16a9bf6d08914ca724c9a \
-                            sha256  18e11cf9bbc6f584031e801b11ae05a233c32086f8e1b84eb8a1e9bb8e1f5d90 \
-                            size    184007871
+sha256  18e11cf9bbc6f584031e801b11ae05a233c32086f8e1b84eb8a1e9bb8e1f5d90 \
+size    184007871
         distname            openjdk-17_macos-x64_bin
     } elseif {${configure.build_arch} eq "arm64"} {
         checksums           rmd160  fbcfd2cc8d00322902f7c8c257985e43130d097a \
-                            sha256  b5bf6377aabdc935bd72b36c494e178b12186b0e1f4be50f35134daa33bda052 \
-                            size    181735146
+sha256  b5bf6377aabdc935bd72b36c494e178b12186b0e1f4be50f35134daa33bda052 \
+size    181735146
         distname            openjdk-17_macos-aarch64_bin
     }
     worksrcdir          jdk-17.jdk
@@ -328,7 +328,7 @@ subport openjdk17u {
     supported_archs     x86_64 arm64
     use_configure    yes
     # Xcode is required for latest metal graphics
-    use_xcode           yes
+    use_xcode  no
     configure.cmd       sh configure
     configure.pre_args  --prefix=${tpath}
     configure.args      --with-debug-level=optimized \

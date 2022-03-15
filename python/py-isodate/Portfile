@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    This module implements ISO 8601 date, time and duration \
 homepage            https://pypi.python.org/pypi/${python.rootname}
 
 checksums           rmd160  b1ab88fc360f333f91aaee8ff30c63b695179188 \
-                    sha256  48c5881de7e8b0a0d648cb024c8062dc84e7b840ed81e864c7614fd3c127bde9 \
-                    size    28443
+sha256  48c5881de7e8b0a0d648cb024c8062dc84e7b840ed81e864c7614fd3c127bde9 \
+size    28443
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

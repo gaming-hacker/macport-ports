@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    \
 homepage            https://leather.readthedocs.io/
 
 checksums           rmd160  cdcbef561aacd19bc5ba0d35ec70cf65a1704141 \
-                    sha256  b43e21c8fa46b2679de8449f4d953c06418666dc058ce41055ee8a8d3bb40918 \
-                    size    30605
+sha256  b43e21c8fa46b2679de8449f4d953c06418666dc058ce41055ee8a8d3bb40918 \
+size    30605
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

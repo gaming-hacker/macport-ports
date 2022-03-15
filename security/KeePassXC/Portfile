@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -43,13 +43,13 @@ if {${subport} eq ${name}} {
 
     # See keepassxc-${version}-src.tar.xz.DIGEST on upstream GitHub releases page for SHA256 sums
     checksums           ${distname}${extract.suffix} \
-                        rmd160  c3933aadf16a103f3ae4a5c2150a4c298e15dbe0 \
-                        sha256  3603b11ac39b289c47fac77fa150e05fd64b393d8cfdf5732dc3ef106650a4e2 \
-                        size    7640532 \
+rmd160  c3933aadf16a103f3ae4a5c2150a4c298e15dbe0 \
+sha256  3603b11ac39b289c47fac77fa150e05fd64b393d8cfdf5732dc3ef106650a4e2 \
+size    7640532 \
                         ${distname}${extract.suffix}.sig \
-                        rmd160  e1e03a47d09e8caea290cba591ee4b15e33fa286 \
-                        sha256  162e577f790bd254aa73db388dd91c0f34e57dac5b83ae831bc72c3c12ad00e3 \
-                        size    488
+rmd160  e1e03a47d09e8caea290cba591ee4b15e33fa286 \
+sha256  162e577f790bd254aa73db388dd91c0f34e57dac5b83ae831bc72c3c12ad00e3 \
+size    488
 
     gpg_verify.use_gpg_verification \
                         yes
@@ -59,7 +59,7 @@ if {${subport} eq ${name}} {
     configure.pre_args-append \
         -DWITH_XC_KEESHARE_SECURE=ON
 
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2017
 
     patchfiles          patch-no-deployqt.diff \
                         patch-no-findpackage-path.diff \
@@ -75,8 +75,8 @@ if {${subport} eq ${name}} {
     conflicts           KeePassXC
 
     checksums           rmd160  24a38c4d0d97ae73f1bbfb3ebba9f6e525c10be7 \
-                        sha256  ce0c8531e93d3981280fe0044909ef05d9f4c47314f82eab801b98e6b1b8d4e4 \
-                        size    10637994
+sha256  ce0c8531e93d3981280fe0044909ef05d9f4c47314f82eab801b98e6b1b8d4e4 \
+size    10637994
 
     gpg_verify.use_gpg_verification \
                         no

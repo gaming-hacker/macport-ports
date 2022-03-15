@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -32,8 +32,8 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  25d6bbd750cec1267fb8501999e81f9b5f9daf2e \
-                        sha256  5b0d96db482b273f0324c299ead86ecfbc5d033516e5fc37c92cfccb933ef6ff \
-                        size    19013844
+sha256  5b0d96db482b273f0324c299ead86ecfbc5d033516e5fc37c92cfccb933ef6ff \
+size    19013844
 
 distname                node-v${version}
 
@@ -41,7 +41,7 @@ depends_build-append    port:pkgconfig
 
 # Require OpenSSL 1.1 and not generic OpenSSL
 # https://trac.macports.org/ticket/64095
-depends_lib-append      port:python27 \
+depends_lib-append      port:python39 \
                         port:openssl11
 
 proc rec_glob {basedir pattern} {
@@ -52,7 +52,7 @@ proc rec_glob {basedir pattern} {
     return $files
 }
 
-configure.python        ${prefix}/bin/python2.7
+configure.python        ${prefix}/bin/python3.9
 
 patchfiles              patch-common.gypi.diff \
                         patch-tools-gyp-pylib-gyp-generator-make.py.diff
@@ -112,7 +112,7 @@ switch $build_arch {
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 # error: call to implicitly-deleted copy constructor of 'std::__1::unique_ptr
 compiler.blacklist-append *gcc* {clang < 600}
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -45,8 +45,8 @@ master_sites        ${homepage}/source \
                     ftp://guest.kuria.katowice.pl/pub/openssl/source/
 
 checksums           rmd160  34bded200174b0fdbec22584688869332130ea0c \
-                    sha256  40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a \
-                    size    9850712
+sha256  40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a \
+size    9850712
 
 platform darwin 8 {
     # No Availability.h on Tiger
@@ -68,7 +68,7 @@ configure.cmd       ./Configure
 configure.pre_args  --prefix=${my_prefix}
 configure.args      -L${prefix}/lib \
                     --openssldir=${my_prefix}/etc/openssl \
-                    shared \
+shared \
                     zlib
 
 # Use SDK if necessary.

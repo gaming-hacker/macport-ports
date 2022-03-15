@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -37,9 +37,9 @@ long_description    Mercurial is a fast, lightweight Source Control Management \
 homepage            https://www.mercurial-scm.org
 
 checksums           ${distname}${extract.suffix}  \
-                    rmd160  71f464d948657dded24d3c8f4b9ad2de3bc9dbc8 \
-                    sha256  86f98645e4565a9256991dcde22b77b8e7d22ca6fbb60c1f4cdbd8469a38cc1f \
-                    size    8061104
+rmd160  71f464d948657dded24d3c8f4b9ad2de3bc9dbc8 \
+sha256  86f98645e4565a9256991dcde22b77b8e7d22ca6fbb60c1f4cdbd8469a38cc1f \
+size    8061104
 
 python.default_version 310
 
@@ -218,8 +218,8 @@ variant rust description {Enable experimental Rust optimizations} {
     remove_dir_all                   0.5.3  3acd125665422973a33ac9d3dd2df85edad0f4ae9b00dafb1a05e43a9f5ef8e7 \
     same-file                        1.0.6  93fc1dc3aaa9bfed95e02e6eadabb4baf7e3078b0bd1b4d7b6b0b68378900502 \
     scopeguard                       1.1.0  d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd \
-    sha-1                            0.9.6  8c4cfa741c5832d0ef7fab46cabed29c2aae926db0b11bb2069edd8db5e64e16 \
-    sized-chunks                     0.6.2  1ec31ceca5644fa6d444cc77548b88b67f46db6f7c71683b0f9336e671830d2f \
+sha-1                            0.9.6  8c4cfa741c5832d0ef7fab46cabed29c2aae926db0b11bb2069edd8db5e64e16 \
+sized-chunks                     0.6.2  1ec31ceca5644fa6d444cc77548b88b67f46db6f7c71683b0f9336e671830d2f \
     stable_deref_trait               1.2.0  a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3 \
     static_assertions                1.1.0  a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \

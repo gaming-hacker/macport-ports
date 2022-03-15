@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,8 +17,8 @@ description         Nintendo DS emulator.
 long_description    {*}${description}
 
 checksums           rmd160  9ac70ae80604a84cdad7efebad3b1afd434751cc \
-                    sha256  8b962c6b00fd6fb21267bc05edee49bfb26f35da5265f352bb17c96ba1f9cb79 \
-                    size    2331101
+sha256  8b962c6b00fd6fb21267bc05edee49bfb26f35da5265f352bb17c96ba1f9cb79 \
+size    2331101
 
 compiler.cxx_standard 2017
 

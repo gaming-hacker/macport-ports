@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                dar
 version             2.7.4
 revision            0
 checksums           rmd160  3f140f9baa5503e9f012eef1012db83586845fa4 \
-                    sha256  7acb62d905e8abee5b89ceb7f5e1bdeaf64e4896e83151e60fea1134023a89ce \
-                    size    2404731
+sha256  7acb62d905e8abee5b89ceb7f5e1bdeaf64e4896e83151e60fea1134023a89ce \
+size    2404731
 
 categories          archivers
 maintainers         {ryandesign @ryandesign} openmaintainer
@@ -38,7 +38,7 @@ depends_lib         port:argon2 \
 
 patchfiles          dynamic_lookup-11.patch
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 compiler.thread_local_storage yes
 
 universal_variant   no

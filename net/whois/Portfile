@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 ################################################################
 # The developer of whois is hostile toward bug reports. Do     #
@@ -16,8 +16,8 @@ PortGroup                   perl5 1.0
 github.setup                rfc1036 whois 5.5.12 v
 revision                    0
 checksums                   rmd160  2421867b6ffe14236abfa592f781a4b9050e42ef \
-                            sha256  f1c5bab781b7f2357dab1039e8875d41ff7b5d03a78c27443fa26351952a0822 \
-                            size    85696
+sha256  f1c5bab781b7f2357dab1039e8875d41ff7b5d03a78c27443fa26351952a0822 \
+size    85696
 
 conflicts                   bahamut expect ripe-whois
 categories                  net
@@ -37,7 +37,7 @@ use_xz                      yes
 distfiles                   ${name}_${version}${extract.suffix}
 worksrcdir                  ${name}
 
-perl5.branches              5.28
+perl5.branches 5.30
 
 depends_build               port:perl${perl5.major} \
                             port:pkgconfig

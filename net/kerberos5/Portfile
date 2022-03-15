@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
@@ -8,8 +8,8 @@ version                     1.19.3
 revision                    0
 
 checksums                   rmd160  dde47197b240c4d11f7f6f17f40d6479c84d622d \
-                            sha256  56d04863cfddc9d9eb7af17556e043e3537d41c6e545610778676cf551b9dcd0 \
-                            size    8741343
+sha256  56d04863cfddc9d9eb7af17556e043e3537d41c6e545610778676cf551b9dcd0 \
+size    8741343
 
 set branch                  [join [lrange [split ${version} .] 0 1] .]
 conflicts                   fbopenssl

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,12 +20,12 @@ long_description    {*}${description}
 homepage            https://aws.amazon.com/cli/
 
 checksums           rmd160  b8cc7c3523516a4a0bf0691f925d0ca00863e2b7 \
-                    sha256  9cbfb1f68358fe3107e7d34f4dc2585658d112ffb455ec43d37f8f6271684107 \
-                    size    10284833
+sha256  9cbfb1f68358fe3107e7d34f4dc2585658d112ffb455ec43d37f8f6271684107 \
+size    10284833
 
 # This is what Amazon currently supports and there
 # are hard errors with later Pythons right now.
-python.versions     37 38
+python.versions 39
 
 if {${name} ne ${subport}} {
     if {${os.platform} eq "darwin" && ${os.major} <= 15} {
