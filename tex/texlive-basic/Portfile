@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-basic
-version             62258
+version             62712
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Essential programs and files
 long_description    These files are regarded as basic for any TeX system, covering plain TeX macros, Computer Modern fonts, and configuration for common drivers\; no LaTeX.
 
-checksums           texlive-basic-62258-run.tar.xz \
-                    rmd160  1444cdd4fa5e22b58176b194f3f01e32f8918853 \
-                    sha256  3eef3848ea7b712f3b95571427cd60b0c46531f6dce7a37c1a2e4367c5ec5b96 \
-                    texlive-basic-62258-doc.tar.xz \
-                    rmd160  8b1cd069fe51061807a77422b3a47f63f0b70647 \
-                    sha256  a98fd35ea4f37247bcabf66e5e6e635161763429026afb2c58fe4e4aa4e4c3cb \
-                    texlive-basic-62258-src.tar.xz \
-                    rmd160  39c1d6ad1d1844ae5b51248bd32b129ad428e0e6 \
-                    sha256  6b2ac8772de593e7f4e3a0d60b90f9519d146cc605c5775f50590ca444d767f5
+checksums           texlive-basic-62712-run.tar.xz \
+                    rmd160  896dc2cac4dce568f7a0ae4e77859b4f9ee1be77 \
+                    sha256  13fa6001d3572b2db633613db4150a052d08ea1d285ce81301d022bd19e21bdd \
+                    texlive-basic-62712-doc.tar.xz \
+                    rmd160  747757547dee3a7f8b4e3e661c428de7e069419e \
+                    sha256  a6b244302a4eb17e612c9a2946db706b93701fedf66d9d44fbcd7b4ecb25a1a4 \
+                    texlive-basic-62712-src.tar.xz \
+                    rmd160  a649c0712bded6de5054fda15975cadbf297f445 \
+                    sha256  ea9b130ee475196c8419829a4c59a15d2c7f2c538fef3f44488ab24ac32dbcf5
 
 texlive.formats      \
     {1 luahbtex luahbtex language.def,language.dat.lua {luatex.ini}} \
@@ -41,9 +41,10 @@ texlive.maps      \
     {MixedMap latxfont.map} \
     {MixedMap symbols.map} \
     {MixedMap cmtext-bsr-interpolated.map} \
-    {Map dummy-space.map}
+    {Map dummy-space.map} \
+    {Map mathpple.map}
 
-texlive.binaries    afm2tfm bibtex dviluatex dvipdfm dvipdfmx dvipdft dvips ebb etex extractbb gftodvi gftopk gftype inimf initex kpseaccess kpsereadlink kpsestat kpsewhich luahbtex luatex makeindex mf mf-nowin mft mkindex pdfetex pdftex pktogf pktype simpdftex tex texlua texluac tlshell xdvi xdvipdfmx
+texlive.binaries    afm2tfm bibtex dviluatex dvipdfm dvipdfmx dvipdft dvips ebb etex extractbb fmtutil fmtutil-sys fmtutil-user gftodvi gftopk gftype inimf initex kpseaccess kpsereadlink kpsestat kpsewhich luahbtex luatex makeindex man mf mf-nowin mft mkindex mktexfmt mktexmf mktexpk mktextfm pdfetex pdftex pktogf pktype rungs simpdftex tex texhash texlua texluac tlshell updmap updmap-sys updmap-user xdvi xdvipdfmx
 
 texlive.exclude     texmf-dist/web2c/fmtutil.cnf \
                     texmf-dist/web2c/texmf.cnf \
@@ -64,6 +65,10 @@ post-patch {
     
     reinplace "s|rungs|gs|g" ${worksrcpath}/runfiles/texmf-dist/dvipdfmx/dvipdfmx.cfg
 }
+post-destroot {
+    ln -s mktexlsr.pl ${destroot}${texlive_texmfdist}/scripts/texlive/mktexlsr
+}
+texlive.binaries-append mktexlsr
 
 texlive.forceupdatecnf yes
 texlive.use_mktexlsr_on_deactivate no
