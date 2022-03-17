@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-bibtex-extra
-version             62180
+version             62704
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: BibTeX additional styles
 long_description    Additional BibTeX styles and bibliography data(bases), notably including BibLaTeX.
 
-checksums           texlive-bibtex-extra-62180-run.tar.xz \
-                    rmd160  25794b20796e28935b52671d661a692b2ad04d8a \
-                    sha256  4d883a2b3229b26d9554cc1cdf450648c902cf893c3a4ccee3ec48e108c9a6eb \
-                    texlive-bibtex-extra-62180-doc.tar.xz \
-                    rmd160  54143859383cabbd1ad7c3629dd2f397894bbf7e \
-                    sha256  2d44320da8a99b039c59a9ebc6a82333e8abc9241aa9a584be05bcb9614a7524 \
-                    texlive-bibtex-extra-62180-src.tar.xz \
-                    rmd160  452d3b03dff9dd5ade73b9f29565b3245b7467c2 \
-                    sha256  8f4c95b98630a50a14e5b775e8a1ee2ae1540539fc7fe37eee8617576638ce23
+checksums           texlive-bibtex-extra-62704-run.tar.xz \
+                    rmd160  17283716fc81dabd3a6b183e92f58e7f3de02ee0 \
+                    sha256  9e764407926525f0c820fc79e90e6625aca564fb1cc9f0caad9975c2ec65de40 \
+                    texlive-bibtex-extra-62704-doc.tar.xz \
+                    rmd160  113ea41fc9b5b51dcb0629bf161fe667045eb1c5 \
+                    sha256  cba174161359bc55eb8e39bef3195fd53b980e4ed73b3dbeed96ed5d17e11287 \
+                    texlive-bibtex-extra-62704-src.tar.xz \
+                    rmd160  fd4c7d75946ed9ce84e1642a4587f462f6b4a461 \
+                    sha256  049ac4b4ddd2985928725f06cda589ef915d73f5b6b4b2a3cca6964ed979ee64
 
 depends_lib         port:texlive-latex
 

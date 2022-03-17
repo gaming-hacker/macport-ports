@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-plain-generic
-version             62258
+version             62727
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Plain (La)TeX packages
 long_description    Add-on packages and macros that work with plain TeX, often LaTeX, and occasionally other formats.
 
-checksums           texlive-plain-generic-62258-run.tar.xz \
-                    rmd160  76c534ae9fd7c85e7b3d55bd0b06f8593440895b \
-                    sha256  dad95bff9f5e93f63c819ca4bd0c7f04eca1257c5af446dff44fe3b5d7d2605a \
-                    texlive-plain-generic-62258-doc.tar.xz \
-                    rmd160  28fbbc07bd469667dc6a0769be12f58fb53170b9 \
-                    sha256  6b3858e3f1e6c26019cd0270e4df7acd9da77bdad6897dc2a61bc9185ed4652d \
-                    texlive-plain-generic-62258-src.tar.xz \
-                    rmd160  259484216c3d35382ea82cef4e0bc71526efabfc \
-                    sha256  f4e02e34a27d5300300adcf8ec0a14d144fffa960c78a6154f10d3c6e31003e8
+checksums           texlive-plain-generic-62727-run.tar.xz \
+                    rmd160  7255a54a5100f9b134797626363c33bf7b122403 \
+                    sha256  50f4919fe5d3c28059e63c3d3c8fbc817737bafd00edf4a26ea401888100184d \
+                    texlive-plain-generic-62727-doc.tar.xz \
+                    rmd160  bb95222f43f59b17b0fa46c99f8d49a8fd3a0d79 \
+                    sha256  6e4681cd6300c1ea98280d76e118753b7893f7f406ef4932160d8c87cff21da3 \
+                    texlive-plain-generic-62727-src.tar.xz \
+                    rmd160  328155d4522f7a69abed0d62926257457a1ab5f7 \
+                    sha256  32eae8c1a2759fc1baf913c30a084616b1cc340b8f599ff7f3d53841cdceeea6
 
 depends_lib         port:texlive-basic
 

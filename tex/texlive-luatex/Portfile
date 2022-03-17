@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-luatex
-version             62254
+version             62721
 revision            0
 
 categories          tex
@@ -13,20 +13,20 @@ license             Copyleft Permissive
 description         TeX Live: LuaTeX packages
 long_description    Packages for LuaTeX, a Unicode-aware extension of pdfTeX, using Lua as an embedded scripting and extension language. http://luatex.org/
 
-checksums           texlive-luatex-62254-run.tar.xz \
-                    rmd160  68b1221779dec35e304a2bd178d156a69c56679c \
-                    sha256  61858e8db5ff5674e71552225d5430e79dcb4ebd1423058a278db4420c5c651e \
-                    texlive-luatex-62254-doc.tar.xz \
-                    rmd160  55b962f468430200b8306a5994bef8dceb514d04 \
-                    sha256  b65368dd84db38a925f450fce26e3a02d5fa05ff507a011047ff599ea82a5774 \
-                    texlive-luatex-62254-src.tar.xz \
-                    rmd160  a16147251baa235091c34e86af6b8042a0e23967 \
-                    sha256  bbda81c20291f45b3e080fee1efb692609532547fc83546c75b1f4b03fcea609
+checksums           texlive-luatex-62721-run.tar.xz \
+                    rmd160  0573d770183e2b5e65cb82325ee75c5b32991042 \
+                    sha256  a3b01e8e3f69bd5f4a01e837b8b9425ad07f97b7c6874720b7a5440ea5920f78 \
+                    texlive-luatex-62721-doc.tar.xz \
+                    rmd160  0da585f7b8e52306a4bf5c334f7d369446255fc6 \
+                    sha256  daec1b685b0fc55b04ba840d12b87e437488c7679e5e186895f1cf2aaa7519d6 \
+                    texlive-luatex-62721-src.tar.xz \
+                    rmd160  4f0ce7c1f9d07119370944c402f8d8fe5512f013 \
+                    sha256  affbc0e525067a857f63e6feb242e9daad4b01219b8b46615b78fc5fdbb8e67c
 
 depends_lib         port:texlive-basic
 
 texlive.formats      \
-    {1 optex luatex hyphen-lan.opm {optex.ini}}
+    {1 optex luatex - {optex.ini}}
 
 texlive.binaries    checkcites luaotfload-tool optex
 

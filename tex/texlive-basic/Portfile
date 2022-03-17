@@ -14,14 +14,14 @@ description         TeX Live: Essential programs and files
 long_description    These files are regarded as basic for any TeX system, covering plain TeX macros, Computer Modern fonts, and configuration for common drivers\; no LaTeX.
 
 checksums           texlive-basic-62712-run.tar.xz \
-                    rmd160  896dc2cac4dce568f7a0ae4e77859b4f9ee1be77 \
-                    sha256  13fa6001d3572b2db633613db4150a052d08ea1d285ce81301d022bd19e21bdd \
+                    rmd160  e04813b79b7df2c5bab638f43b0ea3d572bd0bd5 \
+                    sha256  fc49aad7ea5af54fb3e4ccd2783d1d1d9f7ea108a9e365bc215ce8ae249e75a7 \
                     texlive-basic-62712-doc.tar.xz \
-                    rmd160  747757547dee3a7f8b4e3e661c428de7e069419e \
-                    sha256  a6b244302a4eb17e612c9a2946db706b93701fedf66d9d44fbcd7b4ecb25a1a4 \
+                    rmd160  3aeb5771862e1f3019846297cbfa894905d4727e \
+                    sha256  d44acf22bef5323319bc649f3837fc66a32a932915ac56f24386a59dcbe66530 \
                     texlive-basic-62712-src.tar.xz \
-                    rmd160  a649c0712bded6de5054fda15975cadbf297f445 \
-                    sha256  ea9b130ee475196c8419829a4c59a15d2c7f2c538fef3f44488ab24ac32dbcf5
+                    rmd160  4fa6720ceedd3101b6f51484489e48ac82c5dc79 \
+                    sha256  de5d683f770285389a512f3c89b80375ac2bfeb116d89efe2923b0f8b48cae7d
 
 texlive.formats      \
     {1 luahbtex luahbtex language.def,language.dat.lua {luatex.ini}} \
@@ -65,6 +65,10 @@ post-patch {
     
     reinplace "s|rungs|gs|g" ${worksrcpath}/runfiles/texmf-dist/dvipdfmx/dvipdfmx.cfg
 }
+
+
+# mktexlsr is in texlive.infra which we don't install
+# The perl version should be sufficient.
 post-destroot {
     ln -s mktexlsr.pl ${destroot}${texlive_texmfdist}/scripts/texlive/mktexlsr
 }

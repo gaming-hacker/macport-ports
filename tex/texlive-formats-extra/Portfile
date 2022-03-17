@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-formats-extra
-version             62264
+version             62642
 revision            0
 
 categories          tex
@@ -13,21 +13,23 @@ license             Copyleft Permissive
 description         TeX Live: Additional formats
 long_description    Collected TeX `formats', i.e., large-scale macro packages designed to be dumped into .fmt files -- excluding the most common ones, such as latex and context, which have their own package(s). It also includes the Aleph engine and related Omega formats and packages, and the HiTeX engine and related.
 
-checksums           texlive-formats-extra-62264-run.tar.xz \
-                    rmd160  3447858040c2b48ae0a86c3b8e86bf1dc2189925 \
-                    sha256  82da429c569519489b4c7eb496fb73616bc7377f2785f37f1c03c07436c94ec9 \
-                    texlive-formats-extra-62264-doc.tar.xz \
-                    rmd160  3384efab4c8609617299ba827c69f758a1493911 \
-                    sha256  da28f0a40a8915de214aa687f0a96845a16caa2be60d503aa6d4a245f8f52a86 \
-                    texlive-formats-extra-62264-src.tar.xz \
-                    rmd160  6eb0281144be0dc7fa700fbe4355d9c2d3c63910 \
-                    sha256  60d6efc8d5537088ef6ed86a12348690919dc06b187ba43a39c06b32c3280fc8
+checksums           texlive-formats-extra-62642-run.tar.xz \
+                    rmd160  9c41ab33b25a697c8150fd3eeea40a6b97eb59c6 \
+                    sha256  d701339d6f94d30b02441aa030f6939f7ff8fb7e3fe5ae6598a31688325fd13a \
+                    texlive-formats-extra-62642-doc.tar.xz \
+                    rmd160  8b60b90344587ed3806225e50246a99cbd4867d9 \
+                    sha256  7de2248345846f8ef88e4f8bcc56206b55b8f992ae405f2fd7b8b2cfcf02fc5f \
+                    texlive-formats-extra-62642-src.tar.xz \
+                    rmd160  20776631ffb91defea485037e2eaa22cc048872c \
+                    sha256  5e301272df609d4ac5b8d740d473b66b50932ded8372570443c9ab38da0b4662
 
 depends_lib         port:texlive-basic port:texlive-latex
 
 texlive.formats      \
     {1 aleph aleph - {*aleph.ini}} \
     {1 eplain pdftex language.dat {-translate-file=cp227.tcx *eplain.ini}} \
+    {1 hilatex hitex language.dat {-etex -ltx hilatex.ini}} \
+    {1 hitex hitex language.def {-etex -ltx hitex.ini}} \
     {1 jadetex pdftex language.dat {*jadetex.ini}} \
     {1 pdfjadetex pdftex language.dat {*pdfjadetex.ini}} \
     {1 lollipop tex - {lollipop.ini}} \
@@ -41,7 +43,7 @@ texlive.maps      \
     {Map mxedruli.map} \
     {Map omega.map}
 
-texlive.binaries    aleph eplain hishrink histretch hitex jadetex lollipop mllatex mltex odvicopy odvitype ofm2opl omfonts opl2ofm otangle otp2ocp outocp ovf2ovp ovp2ovf pdfjadetex pdfxmltex texsis wofm2opl wopl2ofm wovf2ovp xmltex
+texlive.binaries    aleph eplain hilatex hishrink histretch hitex jadetex lollipop mllatex mltex odvicopy odvitype ofm2opl omfonts opl2ofm otangle otp2ocp outocp ovf2ovp ovp2ovf pdfjadetex pdfxmltex texsis wofm2opl wopl2ofm wovf2ovp xmltex
 
 
 texlive.texmfport

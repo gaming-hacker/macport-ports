@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-lang-english
-version             61918
+version             62564
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: US and UK English
 long_description    Support for, and documentation in, English.
 
-checksums           texlive-lang-english-61918-run.tar.xz \
-                    rmd160  4a0f670eac76473d0df2517804cfb528607ee069 \
-                    sha256  a95dfe7d83440245686363e1375366fb83e497df1aa5d95d9a7bbf5a9e9d7d56 \
-                    texlive-lang-english-61918-doc.tar.xz \
-                    rmd160  415fc17f79cf17b22591accf80fc3801cef8fa15 \
-                    sha256  621239355dda9ab2664fc2ffa40fe0568779d23794a5628513ce3019d26c7b0f \
-                    texlive-lang-english-61918-src.tar.xz \
-                    rmd160  864345a53a3ffd826764ce82ee53464ce9440f35 \
-                    sha256  6a6a20b4c257c6f47c370e0e6503ffddc77a9741525b7b5e8a7911e174a44268
+checksums           texlive-lang-english-62564-run.tar.xz \
+                    rmd160  1fd0be2b4da2813ecff4cb8e850cfba150bc0248 \
+                    sha256  1447dea90a42ca8c8d537723c6aea62e051870adc9fa4b0e916b97eece084b79 \
+                    texlive-lang-english-62564-doc.tar.xz \
+                    rmd160  1f40f20e4a05caa7a26b1b62203fe5ba1f2ddbfa \
+                    sha256  4d48c6d245c3aa6a6a32150797f3a8f33f83c5da674b878076e5979523d37400 \
+                    texlive-lang-english-62564-src.tar.xz \
+                    rmd160  74fd8ac728a7e4afaca8a073e21a71c755929912 \
+                    sha256  4420c71aebae2d231d4570e6d626bbbfbc587d2ca29809520df1f8702b96d43e
 
 depends_lib         port:texlive-basic
 
