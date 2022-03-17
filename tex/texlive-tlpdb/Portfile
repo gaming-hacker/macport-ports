@@ -5,7 +5,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-tlpdb
-version             2021.58693
+version             2022.62729
 
 categories          tex
 maintainers         {dports @drkp}
@@ -18,15 +18,15 @@ platforms           darwin
 supported_archs     noarch
 license             Permissive
 
-master_sites        https://www.ambulatoryclam.net/texlive/ \
+master_sites        https://www.ambulatoryclam.net/texlive/test/ \
                     https://alpaca.cs.washington.edu/texlive/ \
                     https://giraffe.cs.washington.edu/texlive/
 
 use_xz              yes
 
-checksums           rmd160  177fb5ecef7957ce606b8fbfc0242d33771b6c70 \
-                    sha256  3720ed9e051e95d066c6d69d96c7600c21b37ba0dd236a7cc97bc3975712490d \
-                    size    1317088
+checksums           rmd160  f0ba9c7b0b77bc109ce65aec277e1f84b2c867ed \
+                    sha256  44dc3d825a9b92bb956c335e16af275f436f28e8a0df8f5f684c0a95930bb924 \
+                    size    1343004
 
 livecheck.type  regex
 livecheck.url   [lindex ${master_sites} 0]
