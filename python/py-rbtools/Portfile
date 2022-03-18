@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    Tools for integrating with Review Board, a powerful web-base
 homepage            https://www.reviewboard.org/downloads/rbtools/
 
 checksums           rmd160  47bce1015d16dd171616a891fe1bff803e46c6a5 \
-                    sha256  df8d5e834ad291c6e743907e27e50fc2f6006cdc6b8a4f9035acc86b87dcba31 \
-                    size    229394
+sha256  df8d5e834ad291c6e743907e27e50fc2f6006cdc6b8a4f9035acc86b87dcba31 \
+size    229394
 
-python.versions     37 38 39
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_lib-append \

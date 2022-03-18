@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,11 +14,11 @@ long_description    {*}${description}
 supported_archs     noarch
 homepage            https://github.com/aio-libs/aioftp
 
-python.versions     37 38 39 310
+python.versions 39
 
 checksums           rmd160  8436a3e9fb449f766ca63b600c18e8a3a6b7d083 \
-                    sha256  4f03917c287299a0789394370803e3b0f6935e241d8f28bbb367c2379a934f92 \
-                    size    51573
+sha256  4f03917c287299a0789394370803e3b0f6935e241d8f28bbb367c2379a934f92 \
+size    51573
 
 if {${name} ne ${subport}} {
     depends_build-append \

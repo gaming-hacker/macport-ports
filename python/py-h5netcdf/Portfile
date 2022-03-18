@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,11 +16,11 @@ long_description    {*}${description} that reads and writes local or remote HDF5
 supported_archs     noarch
 homepage            https://github.com/h5netcdf/h5netcdf
 
-python.versions     37 38 39 310
+python.versions 39
 
 checksums           rmd160  185a0773e434ce4799832830fdedc4f32bb83618 \
-                    sha256  4b2b873ba72091c5e70c2a7bdb272ad0408b6e05a648aedb5ea96992b5f12138 \
-                    size    51329
+sha256  4b2b873ba72091c5e70c2a7bdb272ad0408b6e05a648aedb5ea96992b5f12138 \
+size    51329
 
 if {${name} ne ${subport}} {
     depends_build-append \

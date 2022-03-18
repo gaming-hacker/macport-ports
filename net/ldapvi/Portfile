@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ homepage            http://www.lichteblau.com/src.html
 master_sites        http://www.lichteblau.com/download/
 
 checksums           rmd160  f4cd1c2fcfc87e7a9e912269e60280e9ecd82156 \
-                    sha256  6f62e92d20ff2ac0d06125024a914b8622e5b8a0a0c2d390bf3e7990cbd2e153 \
-                    size    119503
+sha256  6f62e92d20ff2ac0d06125024a914b8622e5b8a0a0c2d390bf3e7990cbd2e153 \
+size    119503
 
 depends_build       port:pkgconfig \
                     port:autoconf \

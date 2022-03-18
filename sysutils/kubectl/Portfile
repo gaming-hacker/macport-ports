@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               select 1.0
@@ -33,8 +33,8 @@ subport kubectl-1.23 {
     set patchNumber     5
     revision            0
     checksums           rmd160  a132e0114df201ca1e14ae3db08535e1429b4813 \
-                        sha256  3ffcab90374e1bef19a4da7eeda3333eba816cee98dca3899d1b0120c98dba38 \
-                        size    38204715
+sha256  3ffcab90374e1bef19a4da7eeda3333eba816cee98dca3899d1b0120c98dba38 \
+size    38204715
 }
 
 subport kubectl-1.22 {
@@ -45,8 +45,8 @@ subport kubectl-1.22 {
     revision            0
 
     checksums           rmd160  491db96a46cd279cf067fe5bd962bc5096c83f6f \
-                        sha256  cbd255986d2d4def1eef2402bd495b8409bf06de75f9e7964046afe98c47d1e1 \
-                        size    36060758
+sha256  cbd255986d2d4def1eef2402bd495b8409bf06de75f9e7964046afe98c47d1e1 \
+size    36060758
 }
 
 subport kubectl-1.21 {
@@ -55,8 +55,8 @@ subport kubectl-1.21 {
 
     # Use pre-built version to resolve https://trac.macports.org/ticket/63503
     checksums           rmd160  17311641b0e216d7319623fb900a2c6dc11c06da \
-                        sha256  59bd8955b6ec468eb1a69f313e9821e1655e889e3163359afaff681bb96288d9 \
-                        size    52867696
+sha256  59bd8955b6ec468eb1a69f313e9821e1655e889e3163359afaff681bb96288d9 \
+size    52867696
 }
 
 subport kubectl-1.20 {
@@ -69,8 +69,8 @@ subport kubectl-1.20 {
     # because source_build is yes, this is the checksum of the kubernetes
     # source tarball
     checksums           rmd160  5fbd8e7c81a3d9c2012143e350a78c4440688fe7 \
-                        sha256  527289e39bd202f49dbe10d10b3f9856a01de4da68d4ab973deb422f6cf4d034 \
-                        size    34555426
+sha256  527289e39bd202f49dbe10d10b3f9856a01de4da68d4ab973deb422f6cf4d034 \
+size    34555426
 }
 
 subport kubectl-1.19 {
@@ -83,73 +83,73 @@ subport kubectl-1.19 {
     # because source_build is yes, this is the checksum of the kubernetes
     # source tarball
     checksums           rmd160  9a32c6ea4aae6871fe36e435f6e952d0ae837d79 \
-                        sha256  0879f67d8a1b1a1a59952c6104761786e41d4db5065de37680f2816734854070 \
-                        size    33574817
+sha256  0879f67d8a1b1a1a59952c6104761786e41d4db5065de37680f2816734854070 \
+size    33574817
 }
 
 subport kubectl-1.18 {
     set patchNumber     20
     revision            0
     checksums           rmd160  8f4313fecacbb6169305754538a06c61423227f7 \
-                        sha256  bc709378c27da458b31395787a74cd9ac58dce7dbe2a7ba92f8bc2221eeed0be \
-                        size    50095696
+sha256  bc709378c27da458b31395787a74cd9ac58dce7dbe2a7ba92f8bc2221eeed0be \
+size    50095696
 }
 
 subport kubectl-1.17 {
     set patchNumber     17
     revision            0
     checksums           rmd160  4710ba1c832cd9ac6917600bcd54c70eb2b46666 \
-                        sha256  e76b57bbed823a8572f7ccbf9caae56855048434d818dc13559e89ead5f91578 \
-                        size    49542736
+sha256  e76b57bbed823a8572f7ccbf9caae56855048434d818dc13559e89ead5f91578 \
+size    49542736
 }
 
 subport kubectl-1.16 {
     set patchNumber     15
     checksums           rmd160  7450d9abe9aa07c1929b39e96b9e1995257b42ae \
-                        sha256  aff54bfaaed905813f61a2d0ca039176d6d309e59f92ebdb297c7da1df105485 \
-                        size    48907792
+sha256  aff54bfaaed905813f61a2d0ca039176d6d309e59f92ebdb297c7da1df105485 \
+size    48907792
 }
 
 subport kubectl-1.15 {
     set patchNumber     12
     checksums           rmd160  879ef587b357fa4108ca239527e8dd51186ad65d \
-                        sha256  1b06cab9ee7988f8e71c48dd1d9379aa7c14123cbbc63e12ab5342c3e9130972 \
-                        size    48668112
+sha256  1b06cab9ee7988f8e71c48dd1d9379aa7c14123cbbc63e12ab5342c3e9130972 \
+size    48668112
 }
 
 subport kubectl-1.14 {
     set patchNumber     10
     checksums           rmd160  10bdebc38c14482972e0c344d349a6d450c8d182 \
-                        sha256  43d2c24eafb2ef09a6ac77c2b99070668e83edaa325a16a362e304ba578fdc48 \
-                        size    48716328
+sha256  43d2c24eafb2ef09a6ac77c2b99070668e83edaa325a16a362e304ba578fdc48 \
+size    48716328
 }
 
 subport kubectl-1.13 {
     set patchNumber     12
     checksums           rmd160  fdbdf38601ed7767793a4e8540e8454d43c8e91c \
-                        sha256  ddbdc7591569f321b8b0a01dcbd679f6b0a7756f1427a51a39eadfce8d34bea7 \
-                        size    44353656
+sha256  ddbdc7591569f321b8b0a01dcbd679f6b0a7756f1427a51a39eadfce8d34bea7 \
+size    44353656
 }
 
 subport kubectl-1.12 {
     set patchNumber     10
     checksums           rmd160  4212a9f7709ef6a7d36f3ebd477140a7d0ef8e50 \
-                        sha256  67acf17bf77b0a9729d17ad5c058a358c0cbd12dbf46478c37111cdd97a0828c \
-                        size    56860112
+sha256  67acf17bf77b0a9729d17ad5c058a358c0cbd12dbf46478c37111cdd97a0828c \
+size    56860112
 }
 
 subport kubectl-1.11 {
     set patchNumber     10
     checksums           rmd160  8c3f3121088f745bb9eb279f5531b8b61ff84bc7 \
-                        sha256  cf27dd3e8d5a13439de2214b7a07e2371cdbeaf151ee4c7d63e7e7c34ebbf117 \
-                        size    54985744
+sha256  cf27dd3e8d5a13439de2214b7a07e2371cdbeaf151ee4c7d63e7e7c34ebbf117 \
+size    54985744
 }
 
 subport kubectl-1.10 {
     set patchNumber     13
     checksums           rmd160  fe455ab0eb7c862c8dbce970632a9e66c8987cb1 \
-                        sha256  94ec5409ac6715dfec11309795da9b30254b9d818f8b1d38d1ca2e914945868d \
-                        size    54670032
+sha256  94ec5409ac6715dfec11309795da9b30254b9d818f8b1d38d1ca2e914945868d \
+size    54670032
 }
 
 if {${subport} == ${name}} {

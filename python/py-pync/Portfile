@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    ${description} It allows you to send User Notifications to \
 homepage            https://github.com/setem/pync
 
 checksums           rmd160  efa14da3e3618fe70a0d1a74cc83a45835e84db2 \
-                    sha256  38b9e61735a3161f9211a5773c5f5ea698f36af4ff7f77fa03e8d1ff0caa117f \
-                    size    374289
+sha256  38b9e61735a3161f9211a5773c5f5ea698f36af4ff7f77fa03e8d1ff0caa117f \
+size    374289
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${subport} ne ${name}} {
     depends_build-append \

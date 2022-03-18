@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ homepage            https://developers.yubico.com/yubico-piv-tool
 github.tarball_from archive
 
 checksums           rmd160  41da2580a42a25ba96227ff0948c869710736dff \
-                    sha256  65dcc3b77b0a9d5bafb66943070e5c593c44fd9d63c9f1147ba960cd25df680a \
-                    size    1315434
+sha256  65dcc3b77b0a9d5bafb66943070e5c593c44fd9d63c9f1147ba960cd25df680a \
+size    1315434
 
 depends_build-append \
                     port:check \

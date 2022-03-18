@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Scalar-List-Utils 1.62
 revision            0
 license             {Artistic-1 GPL}
@@ -16,5 +16,5 @@ platforms           darwin
 homepage            https://metacpan.org/release/${perl5.module}
 
 checksums           rmd160  0cf91efdcf9a16cd110c03783def1218bb7c425c \
-                    sha256  7279c4ec7df0cf2c0acb874abdfe86956f5028d2414974db56edfbed8a4d339f \
-                    size    177794
+sha256  7279c4ec7df0cf2c0acb874abdfe86956f5028d2414974db56edfbed8a4d339f \
+size    177794

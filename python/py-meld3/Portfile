@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    meld3 is an HTML/XML templating system for Python 2.3+ \
 homepage            https://github.com/supervisor/meld3
 
 checksums           rmd160  087c67816bc0cdcc8dabccec0b1bb9dd384e267a \
-                    sha256  1efda676264490db2e30bfb81b27a918cc6d9c2de6d609491aa43410b9537eb9 \
-                    size    36464
+sha256  1efda676264490db2e30bfb81b27a918cc6d9c2de6d609491aa43410b9537eb9 \
+size    36464
 
-python.versions     37 38
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

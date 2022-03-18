@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           makefile 1.0
 github.setup        zpaq zpaq 7.15
 revision            0
 checksums           rmd160  a8686308a5ffb9f4168f8afa6562b4c7b703b2c9 \
-                    sha256  64280d86cd38ad5ebc1c6415b17eb09ee292078d772176b90e16287687191efe \
-                    size    140057
+sha256  64280d86cd38ad5ebc1c6415b17eb09ee292078d772176b90e16287687191efe \
+size    140057
 
 categories          archivers
 maintainers         {ryandesign @ryandesign} openmaintainer
