@@ -25,7 +25,7 @@ set llvm_version        13
 version                 ${llvm_version}.0.1
 
 name                    llvm-${llvm_version}
-revision                1
+revision                0
 subport                 mlir-${llvm_version}  { revision 0 }
 subport                 clang-${llvm_version} { revision 0 }
 subport                 lldb-${llvm_version}  { revision 0 }
@@ -49,7 +49,7 @@ compiler.blacklist      *gcc* {clang < 1001} macports-clang-3.*
 # clang-13/work/build/include/c++/v1/optional:224:5: error: destructor cannot be marked constexpr
 #     _LIBCPP_CONSTEXPR_AFTER_CXX17 ~__optional_destruct_base()
 compiler.blacklist-append {clang < 1204} {macports-clang-[5-9].0}
-compiler.fallback       clang macports-clang-11 macports-clang-10
+compiler.fallback       clang macports-clang-11
 
 # We can't use Ninja with our custom destrooting plan for llvm
 #cmake.generator         Ninja
@@ -87,7 +87,7 @@ if {[string match macports-clang-* ${configure.compiler}]} {
     configure.args-append           -DCMAKE_LIBTOOL=${prefix}/bin/libtool
 }
 
-set py_ver              3.10
+set py_ver              3.9
 set py_ver_nodot        [string map {. {}} ${py_ver}]
 depends_build-append    port:python${py_ver_nodot} \
                         port:py${py_ver_nodot}-pygments \
@@ -190,7 +190,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
 
 if {${subport} eq "mlir-${llvm_version}"} {
     homepage            https://mlir.llvm.org
-    
+
     description         The MLIR project is a novel approach to building reusable \
                         and extensible compiler infrastructure.
     long_description    {*}${description} MLIR aims to address software fragmentation, \
@@ -428,7 +428,7 @@ post-destroot {
         # fix errant permissions on the flang binary
         system "chmod 755 ${destroot}${sub_prefix}/bin/flang"
     }
-    
+
     if {${subport} eq "clang-${llvm_version}"} {
         # fix the cmake scripts to point to the versioned files
         reinplace "s|/bin/clang-${llvm_version}|/bin/clang|g" \
@@ -437,7 +437,7 @@ post-destroot {
         # http://trac.macports.org/ticket/33207
         ln -s ${prefix}/libexec/ld64/ld ${destroot}${sub_prefix}/bin/ld
     }
-    
+
     if {${subport} eq "lldb-${llvm_version}"} {
         delete ${destroot}${prefix}/bin/debugserver-${suffix}
     }
