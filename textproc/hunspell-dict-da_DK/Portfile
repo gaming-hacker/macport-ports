@@ -1,0 +1,21 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           hunspelldict 1.0
+
+hunspelldict.setup  da_DK 2.6.264 {Danish (Denmark)} ooo
+revision            0
+checksums           rmd160  4fa98c1df5482d42705ea325d10f2bb27a67d56a \
+                    sha256  f7c95a10c00226d9bb7acb088c49cca451dbc7849c71acff9a2cca617b38dd63 \
+                    size    2172057
+
+maintainers         {lbschenkel @lbschenkel} openmaintainer
+homepage            https://stavekontrolden.dk
+license             GPL-2 LGPL MPL
+
+master_sites        ${homepage}/dictionaries/da_DK/
+distname            da_DK-${version}
+extract.suffix      .oxt
+
+livecheck.url       ${homepage}/?dictionaries=1
+livecheck.regex     da_DK-(.+?)\\.oxt

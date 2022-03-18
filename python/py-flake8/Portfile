@@ -6,10 +6,9 @@ PortGroup           select 1.0
 
 name                py-flake8
 version             4.0.1
-revision            0
+revision            1
 
 categories-append   devel
-platforms           darwin
 supported_archs     noarch
 license             MIT
 maintainers         {petr @petrrr} openmaintainer
@@ -29,6 +28,8 @@ sha256  806e034dda44114815e23c16ef92f95c91e4c71100ff52813adf7132a6ad870d \
 size    154905
 
 python.versions 39
+
+patchfiles          patch-mccabe.diff
 
 if {${name} ne ${subport}} {
     if {${python.version} in "27 35"} {

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-sunpy
-version             3.1.4
+version             3.1.5
 revision            0
 categories          python
 license             BSD
@@ -14,11 +14,11 @@ description         SunPy is an open-source Python library for Solar Physics dat
 long_description    {*}${description}
 homepage            https://sunpy.org
 
-python.versions 39
+python.versions     37 38 39 310
 
-checksums           rmd160  58bee2e6fd8f07c6199bc452d2718863a1d76317 \
-sha256  4c3b25635294a2147dcf2c89ebe07de4c30cb142f54c1978f4bfa7482bd9f672 \
-size    7385062
+checksums           rmd160  6444683c664d1d07c3c68aa829a12c2634dead97 \
+                    sha256  13a9dc9a6bc58320c9f5efe45f6a418c0b680fd27edbaee65fed715ec794b155 \
+                    size    7384003
 
 if {${name} ne ${subport}} {
     depends_build-append \
