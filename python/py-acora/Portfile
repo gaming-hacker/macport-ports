@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,10 +7,9 @@ name                py-acora
 version             2.3
 revision            0
 categories-append   textproc devel
-platforms           darwin
 license             BSD
 
-python.versions 39
+python.versions     37 38 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,13 +19,11 @@ long_description    ${description}
 homepage            https://pypi.python.org/pypi/acora
 
 checksums           rmd160  0ab1ddf8197f9057c01d5e2f3602de6edb9ee521 \
-sha256  7f948407050b0c643fbc99d32fb9fdab11cbbf7c980f9ad5b660dff3329c5be3 \
-size    215601
+                    sha256  7f948407050b0c643fbc99d32fb9fdab11cbbf7c980f9ad5b660dff3329c5be3 \
+                    size    215601
 
 if {${name} ne ${subport}} {
     depends_build-append \
                         port:py${python.version}-setuptools \
                         port:py${python.version}-cython
-
-    livecheck.type      none
 }

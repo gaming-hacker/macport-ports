@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,10 +7,9 @@ name                py-datrie
 version             0.8.2
 revision            0
 categories-append   devel
-platforms           darwin
 license             LGPL-2+
 
-python.versions 39
+python.versions     37 38
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,8 +19,8 @@ long_description    ${description}
 homepage            https://github.com/kmike/datrie/
 
 checksums           rmd160  0297585aab3075a09cf39a17955ba311b855268d \
-sha256  525b08f638d5cf6115df6ccd818e5a01298cd230b2dac91c8ff2e6499d18765d \
-size    63278
+                    sha256  525b08f638d5cf6115df6ccd818e5a01298cd230b2dac91c8ff2e6499d18765d \
+                    size    63278
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -33,16 +32,6 @@ if {${name} ne ${subport}} {
                     port:py${python.version}-hypothesis \
                     port:py${python.version}-pytest
 
-    if {${python.version} <= 35} {
-        version             0.8
-        revision            1
-        distname            ${python.rootname}-${version}
-        checksums           rmd160  9eb01a22060a6845cf03780dadd38c3c285ebda2 \
-sha256  bdd5da6ba6a97e7cd96eef2e7441c8d2ef890d04ba42694a41c7dffa3aca680c \
-size    226077
-        depends_build-delete port:py${python.version}-cython
-    }
-
     pre-test {
         test.env    PYTHONPATH=[glob -nocomplain ${worksrcpath}/build/lib*]
     }
@@ -50,6 +39,4 @@ size    226077
     test.run        yes
     test.cmd        py.test-${python.branch}
     test.target
-
-    livecheck.type  none
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,9 +8,8 @@ version             0.9
 revision            1
 categories-append   math
 license             BSD
-platforms           darwin
 
-python.versions 39
+python.versions     37 38 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,8 +19,8 @@ long_description    ${description}
 homepage            https://github.com/caspervdw/pygeos
 
 checksums           rmd160  97717c791ab1c9973977a0a562e98cc53da05af9 \
-sha256  c0584b20e95f80ee57277a6eb1e5d7f86600f8b1ef3c627d238e243afdcc0cc7 \
-size    89760
+                    sha256  c0584b20e95f80ee57277a6eb1e5d7f86600f8b1ef3c627d238e243afdcc0cc7 \
+                    size    89760
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -29,6 +28,4 @@ if {${name} ne ${subport}} {
 
     depends_lib-append  port:py${python.version}-numpy \
                         port:geos
-
-    livecheck.type      none
 }

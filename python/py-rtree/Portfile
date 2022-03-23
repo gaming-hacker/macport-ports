@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,11 +8,10 @@ python.rootname     Rtree
 version             0.9.7
 revision            0
 categories-append   devel
-platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions 39
+python.versions     37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,14 +24,12 @@ long_description    Rtree is a Python library that uses ctypes and an  \
 homepage            https://github.com/Toblerity/rtree
 
 checksums           rmd160  2420ec2ad717dfbcae9a733ed452b400b232facb \
-sha256  be8772ca34699a9ad3fb4cfe2cfb6629854e453c10b3328039301bbfc128ca3e \
-size    44877
+                    sha256  be8772ca34699a9ad3fb4cfe2cfb6629854e453c10b3328039301bbfc128ca3e \
+                    size    44877
 
 if {${name} ne ${subport}} {
     depends_build-append \
                         port:py${python.version}-setuptools \
                         port:py${python.version}-wheel
     depends_lib-append  port:spatialindex
-
-    livecheck.type      none
 }

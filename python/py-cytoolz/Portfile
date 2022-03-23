@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,10 +7,9 @@ name                py-cytoolz
 version             0.11.2
 revision            0
 categories-append   devel
-platforms           darwin
 license             BSD
 
-python.versions 39
+python.versions     37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,8 +19,8 @@ long_description    ${description}
 homepage            https://github.com/pytoolz/cytoolz/
 
 checksums           rmd160  e88b21776da9de46e66d0b90c550989c6111f88d \
-sha256  ea23663153806edddce7e4153d1d407d62357c05120a4e8485bddf1bd5ab22b4 \
-size    481044
+                    sha256  ea23663153806edddce7e4153d1d407d62357c05120a4e8485bddf1bd5ab22b4 \
+                    size    481044
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -29,19 +28,8 @@ if {${name} ne ${subport}} {
                         port:py${python.version}-cython
     depends_lib-append  port:py${python.version}-toolz
 
-    if {${python.version} <= 35} {
-        version             0.10.1
-        revision            0
-        distname            ${python.rootname}-${version}
-        checksums           rmd160  1093edea2b7306f75f46d7ce04268320ed9fa09c \
-sha256  82f5bba81d73a5a6b06f2a3553ff9003d865952fcb32e1df192378dd944d8a5c \
-size    475647
-    }
-
     build.args-append   --with-cython
 
     destroot.args-append \
                         --with-cython
-
-    livecheck.type      none
 }

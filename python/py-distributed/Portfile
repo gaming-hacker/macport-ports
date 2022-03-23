@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,10 +7,9 @@ name                py-distributed
 version             2021.12.0
 revision            0
 categories-append   devel
-platforms           darwin
 license             BSD
 
-python.versions 39
+python.versions     37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,9 +20,9 @@ long_description    Dask.distributed is a lightweight library for distributed \
 
 homepage            https://distributed.readthedocs.io/en/latest/
 
-checksums           rmd160  94ba6c93a7b9320ff0aa438f757132f19a39b13e \
-sha256  22229cd2b2583830ad182f4000e9236f0c3f546ecf75faea277d881d4f7159ba \
-size    848698
+checksums           rmd160  95643b04cf9068c1c3bd411a986c4068d877a9ca \
+                    sha256  c6119a2cf1fb2d8ac60337915bb9a790af6530afcb5d7a809a3308323b874714 \
+                    size    878312
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -41,43 +40,7 @@ if {${name} ne ${subport}} {
                         port:py${python.version}-zict \
                         port:py${python.version}-yaml
 
-    if {${python.version} >= 36} {
-        build.args-append   --with-cython
-        destroot.args-append \
-                            --with-cython
-    } else {
-        depends_lib-delete  port:py${python.version}-cython
-        depends_lib-append  port:py${python.version}-six
-    }
-
-    if {${python.version} eq 27} {
-        version             1.28.1
-        revision            0
-        epoch               1
-        distname            ${python.rootname}-${version}
-        checksums           rmd160  e5d7ee1da92d535e8dc1926f28aa83f3776d5386 \
-sha256  3bd83f8b7eb5938af5f2be91ccff8984630713f36f8f66097e531a63f141c48a \
-size    536974
-        depends_lib-append  port:py${python.version}-futures \
-                            port:py${python.version}-singledispatch
-        depends_lib-delete  port:py${python.version}-jinja2
-    }
-
-    if {${python.version} eq 35} {
-        version             2.6.0
-        revision            0
-        epoch               1
-        distname            ${python.rootname}-${version}
-        checksums           rmd160  442c4f7d765a6e47cb87ef5586427436cf6a3c20 \
-<<<<<<< HEAD
-sha256  30b0ca195ace1e39bdd278bf1ad257f7674b3e2b8e7a2a37ce7e2ade4aecccf3 \
-size    565198
-=======
-sha256  30b0ca195ace1e39bdd278bf1ad257f7674b3e2b8e7a2a37ce7e2ade4aecccf3 \
-size    565198
-        depends_lib-delete  port:py${python.version}-jinja2
->>>>>>> df887e97d3f7fddb142e8a9f96fe0e2dc00d0ad7
-    }
-
-    livecheck.type      none
+    build.args-append   --with-cython
+    destroot.args-append \
+                        --with-cython
 }

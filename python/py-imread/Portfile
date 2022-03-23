@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,10 +7,9 @@ name                py-imread
 version             0.7.4
 revision            1
 categories-append   graphics
-platforms           darwin
 license             MIT
 
-python.versions 39
+python.versions     37 38
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,12 +19,12 @@ long_description    ${description}
 homepage            http://luispedro.org/software/imread/
 
 checksums           rmd160  4c9bee536af59f1448d014171c86b17e8fcc3d5b \
-sha256  0487adef11a22168700968c1727020361a72f6132b6ced2b8826b02d8cbf744f \
-size    151570
+                    sha256  0487adef11a22168700968c1727020361a72f6132b6ced2b8826b02d8cbf744f \
+                    size    151570
 
 if {${name} ne ${subport}} {
-    compiler.cxx_standard 2017
-    configure.cxxflags-append -std=c++17
+    compiler.cxx_standard 2011
+    configure.cxxflags-append -std=c++11
     configure.cc        {*}${configure.cxx} {*}${configure.cxxflags}
     build.env           "CPPFLAGS=${configure.cppflags}"
 
@@ -39,6 +38,4 @@ if {${name} ne ${subport}} {
 
     patchfiles          patch-setup.py.diff \
                         patch-imread__imread.cpp.diff
-
-    livecheck.type      none
 }

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           python 1.0
 
-github.setup        httpie httpie 3.0.2
+github.setup        httpie httpie 3.1.0
 
 maintainers         {g5pw @g5pw} openmaintainer
 categories          net
@@ -16,27 +16,23 @@ long_description    HTTPie (pronounced aych-tee-tee-pie) is a command line HTTP 
                     using a simple and natural syntax, and displays colorized \
                     responses. HTTPie can be used for testing, debugging, and \
                     generally interacting with HTTP servers.
-platforms           darwin
 license             BSD
 homepage            https://httpie.io/
 
-variant python36 conflicts python37 python38 python39 python310 description "Use Python 3.6" {}
-variant python37 conflicts python36 python38 python39 python310 description "Use Python 3.7" {}
-variant python38 conflicts python36 python37 python39 python310 description "Use Python 3.8" {}
-variant python39 conflicts python36 python37 python38 python310 description "Use Python 3.9" {}
-variant python310 conflicts python36 python37 python38 python39 description "Use Python 3.10" {}
+variant python37 conflicts python38 python39 python310 description "Use Python 3.7" {}
+variant python38 conflicts python37 python39 python310 description "Use Python 3.8" {}
+variant python39 conflicts python37 python38 python310 description "Use Python 3.9" {}
+variant python310 conflicts python37 python38 python39 description "Use Python 3.10" {}
 
-if {[variant_isset python36]} {
-    python.default_version 39
-} elseif {[variant_isset python37]} {
-    python.default_version 39
+if {[variant_isset python37]} {
+    python.default_version 37
 } elseif {[variant_isset python39]} {
     python.default_version 39
 } elseif {[variant_isset python310]} {
     python.default_version 310
 } else {
     default_variants +python38
-    python.default_version 39
+    python.default_version 38
 }
 
 depends_lib-append  port:py${python.version}-requests \
@@ -47,8 +43,8 @@ depends_lib-append  port:py${python.version}-requests \
                     port:py${python.version}-defusedxml \
                     port:py${python.version}-multidict
 
-checksums           rmd160  260b780cec271355435686c8ee209d339b98ba73 \
-sha256  faa3cd6240014d82118f7ea488c1d318fb2dca7a60d4073bebe15409abbb27c4 \
-size    1169376
+checksums           rmd160  cd93e40be405dc303adeb65957d5d000dbdf3a19 \
+                    sha256  0debb527b90acd2641c0b6474bec1cb6e4dc0d9a46b2c0c47c73ef05043ef4c0 \
+                    size    1189673
 
 python.link_binaries_suffix

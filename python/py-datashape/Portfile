@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,11 +8,10 @@ python.rootname     DataShape
 version             0.5.2
 revision            0
 categories-append   devel
-platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions 39
+python.versions     37 38
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -27,13 +26,11 @@ homepage            https://packages.python.org/datashape
 distname            datashape-${version}
 
 checksums           rmd160  a97c609e449d1b2e1dc9684d52a1cb35402fe2aa \
-sha256  2356ea690c3cf003c1468a243a9063144235de45b080b3652de4f3d44e57d783 \
-size    76465
+                    sha256  2356ea690c3cf003c1468a243a9063144235de45b080b3652de4f3d44e57d783 \
+                    size    76465
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-numpy \
                         port:py${python.version}-multipledispatch \
                         port:py${python.version}-dateutil
-
-    livecheck.type      none
 }

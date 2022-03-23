@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-urllib3
-version             1.26.8
+version             1.26.9
 revision            0
 categories-append   devel net
 platforms           darwin
 supported_archs     noarch
 license             MIT
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,9 +20,9 @@ long_description    ${description}
 
 homepage            https://urllib3.readthedocs.io/
 
-checksums           rmd160  31c878da2156460eebf389c361c656a358af3fe9 \
-sha256  0e7c33d9a63e7ddfcb86780aac87befc2fbddf46c58dbb487e0855f7ceec283c \
-size    294280
+checksums           rmd160  cff7b02fbe2920307cd79b5162da931f40abac8a \
+                    sha256  aabaf16477806a5e1dd19aa41f8c2b7950dd3c746362d7e3223dbe6de6ac448e \
+                    size    295258
 
 if {${name} ne ${subport}} {
     depends_build-append \
