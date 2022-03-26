@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo_fetch 1.0
@@ -25,9 +25,9 @@ maintainers         {en.sent.com:macports @Raimondi} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  48a228da13e678a959153e083e0d5aa8a150f6c1 \
-                    sha256  3b85c3c4c46986df07ef679dce9ca3426bb8ad75108aa3490b1578d19cf8c70b \
-                    size    1140892 \
+rmd160  48a228da13e678a959153e083e0d5aa8a150f6c1 \
+sha256  3b85c3c4c46986df07ef679dce9ca3426bb8ad75108aa3490b1578d19cf8c70b \
+size    1140892 \
 
 compiler.cxx_standard 2017
 
@@ -118,7 +118,7 @@ cargo.crates \
     locale_config                    0.3.0  08d2c35b16f4483f6c26f0e4e9550717a2f6575bcd6f12a53ff0c490a94a6934 \
     malloc_buf                       0.0.6  62bb907fe88d54d8d9ce32a3cceab4218ed2f6b7d35617cafe9adf84e43919cb \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
-    md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
+md5                              0.7.0  490cc448043f947bae3cbee9c203358d62dbee0db12107a74be5c30ccfd09771 \
     memchr                           2.4.1  308cc39be01b73d0d18f82a0e7b2a3df85245f84af96fdddc5d202d27e47b86a \
     minimal-lexical                  0.2.1  68354c5c6bd36d73ff3feceb05efa59b6acb7626617f4962be322a825e61f79a \
     miniz_oxide                      0.4.4  a92518e98c078586bc6c934028adcca4c92a53d6a958196de835170a01d84e4b \

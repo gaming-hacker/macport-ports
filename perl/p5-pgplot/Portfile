@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -17,8 +17,8 @@ long_description    This module allows the use of the the PGPLOT graphics librar
 platforms           darwin
 
 checksums           rmd160  427dd28dde016dcd429c23565c34caf484850da1 \
-                    sha256  f529cf6c0b222083e418daa1039bf0475c3259e74928054d790feb2f80be9926 \
-                    size    56094
+sha256  f529cf6c0b222083e418daa1039bf0475c3259e74928054d790feb2f80be9926 \
+size    56094
 
 if {${perl5.major} != ""} {
     depends_build-append \

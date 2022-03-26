@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -17,8 +17,8 @@ description         Read Outlook .msg files
 long_description    ${description}
 
 checksums           rmd160  0f542815d91d38b392da122eacefeb20a68e5047 \
-                    sha256  fb4abeea14cda51c1e60bc211cf9521bbbaae74b84118ca6d58f0a7223680388 \
-                    size    48444
+sha256  fb4abeea14cda51c1e60bc211cf9521bbbaae74b84118ca6d58f0a7223680388 \
+size    48444
 
 if {${perl5.major} != ""} {
     depends_lib-append \

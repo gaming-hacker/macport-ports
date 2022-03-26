@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    ${name} read lines of text stream on the standard input and 
 homepage            https://nojhan.github.io/colout/
 
 checksums           rmd160  09e17028c02065efc237ed73dbbc415abde78d4e \
-                    sha256  1dfafc1b62054f08ffdcf813b1207e6a67e2f185fc6df329cea78b7425a18256 \
-                    size    36856
+sha256  1dfafc1b62054f08ffdcf813b1207e6a67e2f185fc6df329cea78b7425a18256 \
+size    36856
 
 python.default_version 310
 

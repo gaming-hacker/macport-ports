@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -15,8 +15,8 @@ if {[vercmp ${php.branch} 7.2] >= 0} {
     version             1.11.0
     revision            0
     checksums           rmd160  6ef7f9da37eb11744cf7a3ca5f43036df4589a45 \
-                        sha256  a57927e47341ee1d981ce11c09cd2d581366a18971e7c8b6b4aba86db6cf1c74 \
-                        size    16084
+sha256  a57927e47341ee1d981ce11c09cd2d581366a18971e7c8b6b4aba86db6cf1c74 \
+size    16084
 }
 
 description             PHP API for reading MaxMind DB files

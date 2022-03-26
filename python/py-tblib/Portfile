@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://github.com/ionelmc/python-tblib
 
 checksums           rmd160  f5b81935eccc5df2cc78da43b683bc2dc415c3d0 \
-                    sha256  059bd77306ea7b419d4f76016aef6d7027cc8a0785579b5aad198803435f882c \
-                    size    33074
+sha256  059bd77306ea7b419d4f76016aef6d7027cc8a0785579b5aad198803435f882c \
+size    33074
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}.
 homepage            https://github.com/PyWavelets/pywt
 
 checksums           rmd160  27ea9a65abba7cfb7c5a705c0e985bf82da813cf \
-                    sha256  cbaa9d62052d9daf8da765fc8e7c30c38ea2b8e9e1c18841913dfb4aec671ee5 \
-                    size    4585209
+sha256  cbaa9d62052d9daf8da765fc8e7c30c38ea2b8e9e1c18841913dfb4aec671ee5 \
+size    4585209
 
 if {${name} ne ${subport}} {
     depends_build-append \

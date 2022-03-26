@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -30,8 +30,8 @@ distname            mozjs-${version}
 use_xz              yes
 
 checksums           rmd160  2576ab03d1293dde567bce6d5253974484653c4f \
-                    sha256  2f57cde35246a54a7abd25454ab5adfa076a8e6515509475eb6a37d048b7a156 \
-                    size    70715356
+sha256  2f57cde35246a54a7abd25454ab5adfa076a8e6515509475eb6a37d048b7a156 \
+size    70715356
 
 depends_build       port:autoconf213 \
                     port:cargo \

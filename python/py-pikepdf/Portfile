@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ homepage            https://github.com/pikepdf/pikepdf
 python.versions 39
 
 checksums           rmd160  896ab934d955a9b24a3395747c3249c9383889c4 \
-                    sha256  559b3d502cc1a6813cbcb0766b0797fec034303f8f9b0734cf938fb1734e2b74 \
-                    size    2364649
+sha256  559b3d502cc1a6813cbcb0766b0797fec034303f8f9b0734cf938fb1734e2b74 \
+size    2364649
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    ${description}
 homepage            https://pypi.python.org/pypi/acora
 
 checksums           rmd160  0ab1ddf8197f9057c01d5e2f3602de6edb9ee521 \
-                    sha256  7f948407050b0c643fbc99d32fb9fdab11cbbf7c980f9ad5b660dff3329c5be3 \
-                    size    215601
+sha256  7f948407050b0c643fbc99d32fb9fdab11cbbf7c980f9ad5b660dff3329c5be3 \
+size    215601
 
 if {${name} ne ${subport}} {
     depends_build-append \

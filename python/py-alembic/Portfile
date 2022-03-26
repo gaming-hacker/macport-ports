@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://alembic.sqlalchemy.org/
 
 checksums           rmd160  3d7535a6bcf3ca495dd5669442b83da6eb8f695f \
-                    sha256  4961248173ead7ce8a21efb3de378f13b8398e6630fab0eb258dc74a8af24c58 \
-                    size    1247590
+sha256  4961248173ead7ce8a21efb3de378f13b8398e6630fab0eb258dc74a8af24c58 \
+size    1247590
 
 if {${name} ne ${subport}} {
     if {${python.version} <= 38} {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -15,8 +15,8 @@ long_description    ${description}
 github.setup        szechyjs dsd 59423fa46be8b41ef0bd2f3d2b45590600be29f0
 version             20220314-[string range ${github.version} 0 7]
 checksums           rmd160  e6378ab28a6be0f12138cbd09a9adcf07d523f4a \
-                    sha256  f5a8b6f23d2e98cfa49219ccd65798683c31b19fba91e3c38e45e3935c81e096 \
-                    size    438643
+sha256  f5a8b6f23d2e98cfa49219ccd65798683c31b19fba91e3c38e45e3935c81e096 \
+size    438643
 revision            0
 
 compiler.cxx_standard 2017

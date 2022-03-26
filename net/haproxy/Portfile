@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # `haproxy` currently does not support OpenSSL 3. Therefore, now this port is
 # using OpenSSL 1.1.
@@ -35,8 +35,8 @@ master_sites        ${homepage}download/${branch}/src/ \
                     https://sources.openwrt.org/
 
 checksums           rmd160  3500115a4863056f7662b4f8c80f2c15e332d06a \
-                    sha256  063c4845cdb2d76f292ef44d9c0117a853d8d10ae5d9615b406b14a4d74fe4b9 \
-                    size    3821477
+sha256  063c4845cdb2d76f292ef44d9c0117a853d8d10ae5d9615b406b14a4d74fe4b9 \
+size    3821477
 
 openssl.branch      1.1
 depends_lib         port:pcre port:zlib

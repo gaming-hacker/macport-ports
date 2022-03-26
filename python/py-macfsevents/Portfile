@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ long_description    MacFSEvents is a Python library that provides thread-safe \
 homepage            https://github.com/malthe/macfsevents
 
 checksums           rmd160  4173250047586f3a48b2ff3c88347cac087304bf \
-                    sha256  1324b66b356051de662ba87d84f73ada062acd42b047ed1246e60a449f833e10 \
-                    size    13772
+sha256  1324b66b356051de662ba87d84f73ada062acd42b047ed1246e60a449f833e10 \
+size    13772
 
 if {${name} ne ${subport}} {
     depends_build-append \

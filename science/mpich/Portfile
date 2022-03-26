@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -37,7 +37,7 @@ long_description    MPICH is a high-performance and widely portable\
                     (1) to provide an MPI implementation that efficiently\
                     supports different computation and communication platforms\
                     including commodity clusters (desktop systems,\
-                    shared-memory systems, multicore architectures), high-speed\
+shared-memory systems, multicore architectures), high-speed\
                     networks (10 Gigabit Ethernet, InfiniBand, Myrinet,\
                     Quadrics) and proprietary high-end computing systems (Blue\
                     Gene, Cray) and (2) to enable cutting-edge research in MPI\
@@ -48,9 +48,9 @@ homepage            https://www.mpich.org/
 master_sites        ${homepage}static/downloads/${version}
 
 checksums \
-    rmd160  5074ee23bdb6f44b70033ea5d798ebf1c8bea724 \
-    sha256  66a1fe8052734af2eb52f47808c4dfef4010ceac461cb93c42b99acfb1a43687 \
-    size    38146191
+rmd160  5074ee23bdb6f44b70033ea5d798ebf1c8bea724 \
+sha256  66a1fe8052734af2eb52f47808c4dfef4010ceac461cb93c42b99acfb1a43687 \
+size    38146191
 
 livecheck.type      regex
 livecheck.regex     {href=.([0-9.p]+)/}

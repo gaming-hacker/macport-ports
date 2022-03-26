@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://github.com/jathanism/cidrize/
 
 checksums           rmd160  4d8b62a6dc7b1f789619bdb6adf61d8c0db2b0e0 \
-                    sha256  0849b2d923cf793b9c9d08a46d1924561fc92724c36892d144ad325b746c7816 \
-                    size    13826
+sha256  0849b2d923cf793b9c9d08a46d1924561fc92724c36892d144ad325b746c7816 \
+size    13826
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ long_description    Seaborn is a library for making attractive and \
 homepage            https://seaborn.pydata.org/
 
 checksums           rmd160  04e64129c8642e6abcfa68e79af3c0c7e778584f \
-                    sha256  cf45e9286d40826864be0e3c066f98536982baf701a7caa386511792d61ff4f6 \
-                    size    268839
+sha256  cf45e9286d40826864be0e3c066f98536982baf701a7caa386511792d61ff4f6 \
+size    268839
 
 if {${name} ne ${subport}} {
     depends_build-append \

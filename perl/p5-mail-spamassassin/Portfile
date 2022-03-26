@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -20,8 +20,8 @@ long_description    SpamAssassin(tm) is a mail filter to identify spam. \
 homepage            https://spamassassin.apache.org/
 
 checksums           rmd160 b16211c5402aac6f0e3f2d7a12cc1062968a6157\
-                    sha256 500c7e2a7cdf3aa4dd822d97aaff2ab22235a60cf17a68ab817861d215a4e568\
-                    size   6572574
+sha256 500c7e2a7cdf3aa4dd822d97aaff2ab22235a60cf17a68ab817861d215a4e568\
+size   6572574
 
 if {${perl5.major} != ""} {
     depends_lib-append \

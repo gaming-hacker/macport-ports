@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ long_description    Image processing algorithms for SciPy, including IO, \
 homepage            https://scikit-image.org/
 
 checksums           rmd160  967e0920ff545d3097cba5c3652aecefd697393e \
-                    sha256  ecae99f93f4c5e9b1bf34959f4dc596c41f2f6b2fc407d9d9ddf85aebd3137ca \
-                    size    29167592
+sha256  ecae99f93f4c5e9b1bf34959f4dc596c41f2f6b2fc407d9d9ddf85aebd3137ca \
+size    29167592
 
 if {${name} ne ${subport}} {
     compiler.openmp_version 2.5

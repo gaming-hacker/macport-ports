@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ long_description    Fiona provides uncomplicated Python interfaces \
 homepage            https://github.com/Toblerity/Fiona
 
 checksums           rmd160  6925907550a2de8d2a510f11c02eb3f31d564de0 \
-                    sha256  3a0edca2a7a070db405d71187214a43d2333a57b4097544a3fcc282066a58bfc \
-                    size    1040639
+sha256  3a0edca2a7a070db405d71187214a43d2333a57b4097544a3fcc282066a58bfc \
+size    1040639
 
 if {${name} ne ${subport}} {
     depends_build-append \

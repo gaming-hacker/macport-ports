@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            http://blockdiag.com/
 
 checksums           rmd160  be072c6735233c7c336577cc35bd3ae8626d6483 \
-                    sha256  16a69dd9f3b44c9e0869999ce82aa968586698febc86ece9ca0c902dba772397 \
-                    size    2694776
+sha256  16a69dd9f3b44c9e0869999ce82aa968586698febc86ece9ca0c902dba772397 \
+size    2694776
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

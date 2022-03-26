@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ long_description    pandasql allows you to query pandas DataFrames using \
 homepage            https://github.com/yhat/pandasql/
 
 checksums           rmd160  2f2497ef0321d762bc1288b715887764fa3aca75 \
-                    sha256  1eb248869086435a7d85281ebd9fe525d69d9d954a0dceb854f71a8d0fd8de69 \
-                    size    26702
+sha256  1eb248869086435a7d85281ebd9fe525d69d9d954a0dceb854f71a8d0fd8de69 \
+size    26702
 
 if {${name} ne ${subport}} {
     depends_build-append \

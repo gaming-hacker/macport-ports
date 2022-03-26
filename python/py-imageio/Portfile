@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    ${description}
 homepage            https://imageio.github.io/
 
 checksums           rmd160  8b3210909fbeb6562f7155f1c3e831e5e22d783f \
-                    sha256  7f123cb23a77ac5abe8ed4e7ad6a60831a82de2c5d123463dcf1d4278c4779d2 \
-                    size    3401236
+sha256  7f123cb23a77ac5abe8ed4e7ad6a60831a82de2c5d123463dcf1d4278c4779d2 \
+size    3401236
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
