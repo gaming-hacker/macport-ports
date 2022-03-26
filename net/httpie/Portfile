@@ -25,14 +25,14 @@ variant python39 conflicts python37 python38 python310 description "Use Python 3
 variant python310 conflicts python37 python38 python39 description "Use Python 3.10" {}
 
 if {[variant_isset python37]} {
-    python.default_version 37
+    python.default_version 39
 } elseif {[variant_isset python39]} {
     python.default_version 39
 } elseif {[variant_isset python310]} {
     python.default_version 310
 } else {
     default_variants +python38
-    python.default_version 38
+    python.default_version 39
 }
 
 depends_lib-append  port:py${python.version}-requests \

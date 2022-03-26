@@ -226,7 +226,7 @@ platform darwin {
 
     # Should eliminate most swift (module) related problems
     if {[vercmp ${xcodeversion} 9.1] >= 0 || ${os.major} >= 16} {
-        use_xcode yes
+        use_xcode  no
     }
 
     # Shared build fixes for 10.6 and 10.7.
@@ -316,11 +316,11 @@ platform darwin {
 
 
 # Shameless copy from ipe-tools.
-set python.versions         {38 39 310}
+set python.versions {39}
 dict set python.legacy_versions 37 38
 # After Python 3.9 is released, and mpv can be built with it,
 # replace with the above lines with the following:
-#set python.versions         {27 39}
+#set python.versions {39}
 #dict set python.legacy_versions 38 39
 
 set python.default_version  310
@@ -570,8 +570,8 @@ variant debug description {Compile with debugging symbols} {
 variant printable_doc description {Generate printable documents (PDF help)} {
     # py27-pdfrw and py27-Pillow are needed by rst2pdf.
     depends_build-append    port:rst2pdf \
-                            port:py27-pdfrw \
-                            port:py27-Pillow
+                            port:py39-pdfrw \
+                            port:py39-Pillow
     configure.args-replace  --disable-pdf-build \
                             --enable-pdf-build
 }

@@ -104,9 +104,9 @@ if {![variant_isset python37] && ![variant_isset python38] && ![variant_isset py
 }
 
 if {[variant_isset python37]} {
-    python.default_version  37
+    python.default_version 39
 } elseif {[variant_isset python38]} {
-    python.default_version  38
+    python.default_version 39
 } elseif {[variant_isset python39]} {
     python.default_version  39
 } elseif {[variant_isset python310]} {

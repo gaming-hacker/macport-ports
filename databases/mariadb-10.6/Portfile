@@ -29,7 +29,7 @@ if {$subport eq $name} {
     PortGroup           openssl 1.0
 
     boost.version       1.71
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
 
     # Not ready for openssl3 yet
     # https://trac.macports.org/ticket/63984

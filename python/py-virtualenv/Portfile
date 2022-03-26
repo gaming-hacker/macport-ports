@@ -24,7 +24,7 @@ checksums           rmd160  ddc573b54feff98c5f60fb74690523c40ca5dcec \
                     size    12153741
 
 # keep older Python versions here, do add the EOL version to the list below
-python.versions     27 34 35 36 37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     # add EOL warnings

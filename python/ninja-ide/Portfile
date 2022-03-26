@@ -24,7 +24,7 @@ checksums           rmd160  da965cf14e5581873477a972356e06ebbedae2c0 \
 
 # current version does not work with Python >3.7; there are upstream commits that
 # allow for this, but no version is released yet
-python.default_version 37
+python.default_version 39
 
 depends_build-append \
                     port:py${python.version}-setuptools

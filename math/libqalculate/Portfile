@@ -55,8 +55,8 @@ depends_lib-append \
                     port:libiconv
 
 # required for ICU
-compiler.cxx_standard 2011
-configure.cxxflags-append -std=c++11
+compiler.cxx_standard 2017
+configure.cxxflags-append -std=c++17
 
 # error: variable length array of non-POD element type 'Number'
 compiler.blacklist-append {clang < 802}

@@ -40,7 +40,7 @@ patchfiles-append   patch-code-AssetLib-glTF2-glTF2Asset.inl.diff \
 # Fix for qt5-qtquick3d build; to be included in release following 5.2.2
 patchfiles-append   4203.patch
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 compiler.thread_local_storage yes
 configure.args-append -DASSIMP_BUILD_ASSIMP_TOOLS:BOOL=OFF -DASSIMP_BUILD_TESTS:BOOL=OFF
 

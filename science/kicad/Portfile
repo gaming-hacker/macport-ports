@@ -20,7 +20,7 @@ set python_version  3.9
 set py_ver_no_dot   [join [split ${python_version} "."] ""]
 set python_framework_dir ${frameworks_dir}/Python.framework/Versions/${python_version}
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 
 if {${name} eq ${subport}} {
 

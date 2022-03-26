@@ -31,7 +31,7 @@ if { ${subport} eq "${name}-qtwebkit-examples" } {
 
 # https://trac.macports.org/ticket/63154
 if { ${xcodeversion} ne "none" } {
-    use_xcode       yes
+    use_xcode  no
 }
 
 set just_want_qt5_variables yes
@@ -44,7 +44,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://wiki.qt.io/New_Features_in_Qt_5.7
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 master_sites        \
     https://download.qt.io/official_releases/qt/${branch}/${version}/submodules \
@@ -276,7 +276,7 @@ array set modules {
             33f15a5caa451bddf8298466442ccf7ca65e4cf90453928ddbb95216c4374062
             21567896
         }
-        "port:python27"
+        "port:python39"
         ""
         "qtbase qtsvg"
         {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
@@ -677,7 +677,7 @@ array set modules {
     }
     qtwebengine {
         {}
-        "port:python27 port:py27-ply path:bin/ninja:ninja port:gperf port:bison port:flex port:qt5-qtwebengine-gn"
+        "port:python39 port:py39-ply path:bin/ninja:ninja port:gperf port:bison port:flex port:qt5-qtwebengine-gn"
         "port:fontconfig port:dbus path:lib/pkgconfig/harfbuzz.pc:harfbuzz path:lib/pkgconfig/glib-2.0.pc:glib2 port:zlib port:minizip port:libevent port:libxml2 port:jsoncpp port:protobuf3-cpp port:poppler port:pulseaudio port:icu path:lib/libavcodec.dylib:ffmpeg port:libopus port:webp port:libpng port:lcms2 port:freetype port:re2 port:snappy"
         "qtdeclarative qtquickcontrols qtquickcontrols2 qtlocation qtwebchannel qttools"
         {"Qt WebEngine"}
@@ -707,7 +707,7 @@ array set modules {
             c7ce0bbaea5ed89bba04fdf893e3030c8887f15f45dee5958d645a9f577952e1
             35301876
         }
-        "port:python27 port:bison port:flex"
+        "port:python39 port:bison port:flex"
         "port:fontconfig port:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3 path:include/turbojpeg.h:libjpeg-turbo"
         "qtbase qtdeclarative qtlocation qtmultimedia qtsensors qtwebchannel qtxmlpatterns"
         {"Qt WebKit" "Qt WebKit Widgets"}
@@ -1766,7 +1766,7 @@ foreach {module module_info} [array get modules] {
                 patchfiles-append patch-qtwebengine_chromium_static_page_size.diff
 
                 # see https://trac.macports.org/ticket/59294
-                use_xcode yes
+                use_xcode  no
 
                 # see config_help.txt
                 configure.post_args-append         \
@@ -1938,7 +1938,7 @@ foreach {module module_info} [array get modules] {
                 build.env-append      CC=${configure.cc}
                 configure.args-append QMAKE_LINK=${configure.cxx}
                 # see https://trac.macports.org/ticket/59294
-                use_xcode yes
+                use_xcode  no
                 # Use bundled GN from separately-built qt5-qtwebengine-gn port
                 # Duplicated from special case for qt5-qtwebengine
                 patchfiles-append patch-qtwebengine_gn_binary_path.diff
@@ -2148,7 +2148,7 @@ foreach deps ${depends_check} {
         #    (see mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.9
     }
 }
 if { ${python_framework} ne "" } {

@@ -44,7 +44,7 @@ depends_lib         port:nspr \
                     port:xorg-libXt
 
 # requires C++14 compiler to build
-compiler.cxx_standard 2014
+compiler.cxx_standard 2017
 
 # Rust components require a MacPorts clang (i.e. one with llvm-config)
 compiler.blacklist  *gcc* clang macports-clang-3.*
