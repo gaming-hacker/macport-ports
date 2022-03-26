@@ -92,9 +92,9 @@ if {${name} eq ${subport}} {
 
     if {${os.platform} eq "darwin" && ${os.major} < 10} {
         depends_test-append \
-                    port:python27
+                    port:python39
         test.env-append \
-                    PATH=${frameworks_dir}/Python.framework/Versions/2.7/bin:$env(PATH)
+                    PATH=${frameworks_dir}/Python.framework/Versions/3.9/bin:$env(PATH)
     }
 } else {
     livecheck.type  none

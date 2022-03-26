@@ -48,7 +48,7 @@ if {${name} eq ${subport}} {
     gobject_introspection yes
 }
 
-set python.versions {27}
+set python.versions {39}
 
 foreach v ${python.versions} {
     set python.version  ${v}

@@ -275,13 +275,13 @@ subport ${subport_docs} {
     }
 
     # Supported pythons
-    set python_versions {27 35 36 37 38 39}
+    set python.versions {39}
 
     # declare all +python* variants, with conflicts
-    foreach pyver ${python_versions} {
+    foreach pyver ${python.versions} {
         # Conflicting python versions
         set other_python_versions {}
-        foreach other_pyver ${python_versions} {
+        foreach other_pyver ${python.versions} {
             if {${other_pyver} ne ${pyver}} {
                 if {${other_pyver} ni ${other_python_versions}} {
                     lappend other_python_versions python${other_pyver}
@@ -296,7 +296,7 @@ subport ${subport_docs} {
 
     # Docs requires one +python* variant
     set python_isset false
-    foreach pyver ${python_versions} {
+    foreach pyver ${python.versions} {
         if {!${python_isset}} {
             set python_isset [variant_isset python${pyver}]
             set python_isset_ver_no_dot ${pyver}
@@ -314,7 +314,7 @@ subport ${subport_docs} {
 
     # make sure one of the +python* variants is set
     set python_isset false
-    foreach pyver ${python_versions} {
+    foreach pyver ${python.versions} {
         if {!${python_isset}} {
             set python_isset  [variant_isset python${pyver}]
             set python_branch "[string index ${pyver} 0].[string range ${pyver} 1 end]"

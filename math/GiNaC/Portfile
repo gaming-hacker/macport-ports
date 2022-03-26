@@ -26,7 +26,7 @@ checksums           rmd160  ba53ddda68c0f10794df863fb37705c60ffeaaa4 \
                     sha256  77c71a586adf6fc0b5dab573434f30cff1579153cd77c6eba02292e178f7a490 \
                     size    1144324
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 depends_build       port:pkgconfig
 depends_lib         port:readline \
@@ -37,14 +37,14 @@ test.target         check
 
 variant python37 conflicts python38 python39 python310 description {Build using Python 3.7} {
     depends_build-append \
-                    port:python37
-    configure.env   PYTHON=${prefix}/bin/python3.7
+                    port:python39
+    configure.env   PYTHON=${prefix}/bin/python3.9
 }
 
 variant python38 conflicts python37 python39 python310 description {Build using Python 3.8} {
     depends_build-append \
-                    port:python38
-    configure.env   PYTHON=${prefix}/bin/python3.8
+                    port:python39
+    configure.env   PYTHON=${prefix}/bin/python3.9
 }
 
 variant python39 conflicts python37 python38 python310 description {Build using Python 3.9} {

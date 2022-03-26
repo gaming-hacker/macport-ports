@@ -57,9 +57,9 @@ configure.cflags-append -fstrict-aliasing
 
 variant python27 description {Build Python bindings using Python 2.7} {
     configure.args-delete --disable-python
-    set python_prefix ${frameworks_dir}/Python.framework/Versions/2.7
-    depends_lib-append port:py27-pygtk
-    configure.python ${prefix}/bin/python2.7
+    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.9
+    depends_lib-append port:py39-pygtk
+    configure.python ${prefix}/bin/python3.9
     configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
     configure.env               PATH=${python_prefix}/bin:$env(PATH)
 }

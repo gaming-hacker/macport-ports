@@ -40,7 +40,7 @@ if {${name} ne ${subport}} {
     legacysupport.newest_darwin_requires_legacy \
                         15
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2017
     compiler.thread_local_storage yes
 
     depends_lib-append  port:brotli \
