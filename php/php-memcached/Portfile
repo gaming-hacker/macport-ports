@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -16,14 +16,14 @@ if {[vercmp ${php.branch} 7] >= 0} {
     version             3.2.0
     revision            0
     checksums           rmd160  fae0abbf1c661e35af856ce0b320e424793d679a \
-                        sha256  2a41143a7b29f4a962a3805b77aa207a99e4566e2d314ce98a051cd24d6e9636 \
-                        size    90722
+sha256  2a41143a7b29f4a962a3805b77aa207a99e4566e2d314ce98a051cd24d6e9636 \
+size    90722
 } else {
     version             2.2.0
     revision            0
     checksums           rmd160  0c620458aadc0f055caab2a18bd6e700b0e7aec6 \
-                        sha256  17b9600f6d4c807f23a3f5c45fcd8775ca2e61d6eda70370af2bef4c6e159f58 \
-                        size    70449
+sha256  17b9600f6d4c807f23a3f5c45fcd8775ca2e61d6eda70370af2bef4c6e159f58 \
+size    70449
 }
 
 description             PHP bindings for memcache

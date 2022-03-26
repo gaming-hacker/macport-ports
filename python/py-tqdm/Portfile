@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    {*}${description}
 homepage            https://github.com/tqdm/tqdm
 
 checksums           rmd160  3a5b587c7dd71d2ab60a4c6b3ff16e95862c6ff2 \
-                    sha256  4230a49119a416c88cc47d0d2d32d5d90f1a282d5e497d49801950704e49863d \
-                    size    168619
+sha256  4230a49119a416c88cc47d0d2d32d5d90f1a282d5e497d49801950704e49863d \
+size    168619
 
 if {${name} ne ${subport}} {
     depends_build-append \

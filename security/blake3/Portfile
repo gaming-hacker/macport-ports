@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -23,9 +23,9 @@ license             Apache-2
 maintainers         {@srirangav} openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  8f8a2571f4744d2fdd124bac90490ea70a2fd777 \
-                    sha256  112becf0983b5c83efff07f20b458f2dbcdbd768fd46502e7ddd831b83550109 \
-                    size    217773
+rmd160  8f8a2571f4744d2fdd124bac90490ea70a2fd777 \
+sha256  112becf0983b5c83efff07f20b458f2dbcdbd768fd46502e7ddd831b83550109 \
+size    217773
 
 build.dir           ${worksrcpath}/b3sum
 
@@ -77,7 +77,7 @@ cargo.crates \
     redox_syscall                   0.2.10  8383f39639269cde97d255a32bdb68c047337295414940c68bdd30c2e13203ff \
     remove_dir_all                   0.5.3  3acd125665422973a33ac9d3dd2df85edad0f4ae9b00dafb1a05e43a9f5ef8e7 \
     scopeguard                       1.1.0  d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd \
-    shared_child                     0.3.5  6be9f7d5565b1483af3e72975e2dee33879b3b86bd48c0929fccf6585d79e65a \
+shared_child                     0.3.5  6be9f7d5565b1483af3e72975e2dee33879b3b86bd48c0929fccf6585d79e65a \
     strsim                          0.10.0  73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623 \
     subtle                           2.4.1  6bdef32e8150c2a081110b42772ffe7d7c9032b606bc226c8260fd97e0976601 \
     tempfile                         3.3.0  5cdb1ef4eaeeaddc8fbd371e5017057064af0911902ef36b39801f67cc6d79e4 \

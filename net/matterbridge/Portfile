@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -19,9 +19,9 @@ long_description    \
     required!)
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  0c86bedaf34340ece3f65a0eb9cc0b526fede430 \
-                        sha256  ee2177f458a29dd8b4547cd6268fb8ac7e2ce2b551475427eca1205d67c236f4 \
-                        size    9924190
+rmd160  0c86bedaf34340ece3f65a0eb9cc0b526fede430 \
+sha256  ee2177f458a29dd8b4547cd6268fb8ac7e2ce2b551475427eca1205d67c236f4 \
+size    9924190
 
 # FIXME: This port currently can't be built without allowing go mod to fetch
 build.env-delete    GOPROXY=off GO111MODULE=off

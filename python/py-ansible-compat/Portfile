@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    {*}${description}
 homepage            https://github.com/ansible/ansible-compat
 
 checksums           rmd160  cb97e49ae1731a7613696f949bb7915b685d0bba \
-                    sha256  c651995dc323ef145bab857fee6540febc881fb71b7feafe8163d49e273163a5 \
-                    size    35072
+sha256  c651995dc323ef145bab857fee6540febc881fb71b7feafe8163d49e273163a5 \
+size    35072
 
 python.pep517       yes
 python.versions 39

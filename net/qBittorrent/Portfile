@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -25,8 +25,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 17} {
     github.setup    qbittorrent qBittorrent 4.4.2 release-
     revision        0
     checksums       rmd160  e295477a5f2e95f12506209594ff3c86718a2d03 \
-                    sha256  20ce7d04837726e41441500167820df40c8161adf458a31570ae5f2f21e0e4ff \
-                    size    9197242
+sha256  20ce7d04837726e41441500167820df40c8161adf458a31570ae5f2f21e0e4ff \
+size    9197242
 
     # Workaround xcrun: error: SDK "macosx12" cannot be located
     configure.sdk_version
@@ -51,8 +51,8 @@ if {${os.platform} ne "darwin" || ${os.major} >= 17} {
     github.setup    qbittorrent qBittorrent 4.3.2 release-
     revision        3
     checksums       rmd160  543c1a5b59c15912cde31d98bed55810709aef75 \
-                    sha256  187b8625e8787384a68a30eff3702b0e5c246512cb20013a38a25553cb18c5e7 \
-                    size    7867939
+sha256  187b8625e8787384a68a30eff3702b0e5c246512cb20013a38a25553cb18c5e7 \
+size    7867939
 
     qt5.min_version 5.9
     configure.args-append \
