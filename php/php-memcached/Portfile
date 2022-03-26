@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -9,21 +9,21 @@ platforms               darwin freebsd openbsd
 maintainers             {ryandesign @ryandesign} openmaintainer
 license                 PHP-3
 
-php.branches 8.0
+php.branches            5.3 5.4 5.5 5.6 7.0 7.1 7.2 7.3 7.4 8.0 8.1
 php.pecl                yes
 
 if {[vercmp ${php.branch} 7] >= 0} {
-    version             3.1.5
+    version             3.2.0
     revision            0
-    checksums           rmd160  5d71f0b19f6ff2e727cadbec00731c7d1b5f2b2b \
-sha256  b288e45f839593e16c4d8508b241de51a86df4f7322153e6becb9e1c819021fd \
-size    83015
+    checksums           rmd160  fae0abbf1c661e35af856ce0b320e424793d679a \
+                        sha256  2a41143a7b29f4a962a3805b77aa207a99e4566e2d314ce98a051cd24d6e9636 \
+                        size    90722
 } else {
     version             2.2.0
     revision            0
     checksums           rmd160  0c620458aadc0f055caab2a18bd6e700b0e7aec6 \
-sha256  17b9600f6d4c807f23a3f5c45fcd8775ca2e61d6eda70370af2bef4c6e159f58 \
-size    70449
+                        sha256  17b9600f6d4c807f23a3f5c45fcd8775ca2e61d6eda70370af2bef4c6e159f58 \
+                        size    70449
 }
 
 description             PHP bindings for memcache

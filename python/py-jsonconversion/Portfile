@@ -23,6 +23,9 @@ size    10463
 python.versions 39
 
 if {${name} ne ${subport}} {
+    depends_build-append    port:py${python.version}-setuptools \
+                            port:py${python.version}-pytest-runner
+
     post-extract {
         fs-traverse item ${worksrcpath} {
             if {[file isdirectory ${item}]} {

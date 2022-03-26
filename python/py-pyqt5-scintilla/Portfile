@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pyqt5-scintilla
 python.rootname     QScintilla
-version             2.13.1
+version             2.13.2
 revision            0
 
 categories-append   devel
@@ -19,16 +19,16 @@ long_description    QScintilla is a port to Qt of the Scintilla programmers edit
 
 homepage            https://www.riverbankcomputing.com/software/qscintilla
 
-checksums           rmd160  b1135b4c84dbb7b6896acf7dc7d38d23603a7e92 \
-sha256  a0e13196dc624d2ad5e89551e35e1d350245e65b5de572a575ae1b4f364f9095 \
-size    1678908
+checksums           rmd160  2084e7755323bc2c3a19231706c87a121246747d \
+                    sha256  355ad3d5375ae3ced454446971aa1f084a2c95613979f1ad204052079b7145dc \
+                    size    1679098
 
-python.versions 39
+python.versions     37 38 39 310
 
 # these Python versions require an older qscintilla-qt5 version
 conflicts           py27-qscintilla-qt5 py35-qscintilla-qt5
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2011
 
 if {${name} ne ${subport}} {
     PortGroup       qmake5 1.0

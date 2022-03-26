@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -7,13 +7,13 @@ PortGroup           gobject_introspection 1.0
 
 # Please keep the harfbuzz and harfbuzz-devel ports as similar as possible.
 
-github.setup        harfbuzz harfbuzz 3.4.0
+github.setup        harfbuzz harfbuzz 4.1.0
 name                harfbuzz
 conflicts           harfbuzz-devel
 set my_name         harfbuzz
-checksums           rmd160  cdc6b4f395f4cb02806246e98a8b17612886759d \
-sha256  7158a87c4db82521fc506711f0c8864115f0292d95f7136c8812c11811cdf952 \
-size    14937008
+checksums           rmd160  6bb281563638423a39571fe694974ac80513b43d \
+                    sha256  f7984ff4241d4d135f318a93aa902d910a170a8265b7eaf93b5d9a504eed40c8 \
+                    size    15028288
 
 categories          graphics
 maintainers         {ryandesign @ryandesign} {mascguy @mascguy} openmaintainer
@@ -79,7 +79,6 @@ if {${name} eq ${subport}} {
                     NEWS \
                     README.md \
                     THANKS \
-                    TODO \
                     ${destroot}${docdir}
     }
 
@@ -93,9 +92,9 @@ if {${name} eq ${subport}} {
 
     if {${os.platform} eq "darwin" && ${os.major} < 10} {
         depends_test-append \
-                    port:python39
+                    port:python27
         test.env-append \
-                    PATH=${frameworks_dir}/Python.framework/Versions/3.9/bin:$env(PATH)
+                    PATH=${frameworks_dir}/Python.framework/Versions/2.7/bin:$env(PATH)
     }
 } else {
     livecheck.type  none

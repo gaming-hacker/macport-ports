@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        denoland deno 1.20.1 v
+github.setup        denoland deno 1.20.3 v
 github.tarball_from releases
 revision            0
 
@@ -30,13 +30,13 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 supported_archs     arm64 x86_64
 
 checksums           ${name}-x86_64-apple-darwin.zip \
-rmd160  2431502540d8d5c1aff61f328a2c139268a73403 \
-sha256  15a2e559025a276fa445a4cc32e6f2208bd2d25291896c67c6b7bea325c13592 \
-size    30126550 \
+                    rmd160  761f13b5f29c002c426793b590874183bf9ea594 \
+                    sha256  05d198385de5318fe4e16448db90be607fc9cbecd30d1a442b9949e5709c12ad \
+                    size    30086317 \
                     ${name}-aarch64-apple-darwin.zip \
-rmd160  e1a45e9ed1f321478893f80a64256744081561c9 \
-sha256  fad31e676fd5acd49a0c8b366774f6d2cfd0383ebb5305c0c71b7473b812ec95 \
-size    30700573
+                    rmd160  5b46ea472b5bf9a830d742d711bb0e232efcdb8f \
+                    sha256  380930f8c72080fb1bb4d8d785b5741a5fdfa0a1c2cfc08715ad710df58e143a \
+                    size    30700438
 
 if {${build_arch} eq "arm64"} {
     set release_arch aarch64
