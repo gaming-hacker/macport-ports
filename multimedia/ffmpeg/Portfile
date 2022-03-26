@@ -1,17 +1,8 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
-#PortGroup           xcodeversion 1.0
 PortGroup           muniversal 1.0
-#PortGroup           compiler_blacklist_versions 1.0
 PortGroup           active_variants 1.1
-
-# For 'TARGET_OS_OSX', 'TARGET_CPU_ARM64' macros
-#PortGroup           legacysupport 1.1
-
-# https://trac.macports.org/ticket/59246
-# https://trac.macports.org/ticket/59308
-#PortGroup           xcode_workaround 1.0
 
 name                ffmpeg
 set my_name         ffmpeg
