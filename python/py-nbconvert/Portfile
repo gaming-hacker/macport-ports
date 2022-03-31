@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-nbconvert
-version             6.1.0
+version             6.4.5
 revision            0
 categories-append   textproc
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,9 +20,9 @@ long_description    ${description}
 
 homepage            https://jupyter.org/
 
-checksums           rmd160  ca9ecf38764b340e42085b9cd8c0853b64af71d3 \
-sha256  d22a8ff202644d31db254d24d52c3a96c82156623fcd7c7f987bba2612303ec9 \
-size    894596
+checksums           rmd160  bd733a46ffb2f0558913f158e51d3f9853bc0c8d \
+                    sha256  21163a8e2073c07109ca8f398836e45efdba2aacea68d6f75a8a545fef070d4e \
+                    size    906309
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -38,15 +38,16 @@ if {${name} ne ${subport}} {
                         port:py${python.version}-pandocfilters \
                         port:py${python.version}-testpath \
                         port:py${python.version}-defusedxml \
-                        port:py${python.version}-nbclient
+                        port:py${python.version}-nbclient \
+                        port:py${python.version}-beautifulsoup4
 
     if {${python.version} eq 27} {
         version             5.5.0
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  9bbc61ecc4d33c03ebaa0c5b552af9b8d86afeec \
-sha256  138381baa41d83584459b5cfecfc38c800ccf1f37d9ddd0bd440783346a4c39c \
-size    583216
+                            sha256  138381baa41d83584459b5cfecfc38c800ccf1f37d9ddd0bd440783346a4c39c \
+                            size    583216
         depends_lib-delete  port:py${python.version}-jupyterlab_pygments \
                             port:py${python.version}-nbclient
     } elseif {${python.version} <= 36} {
@@ -54,8 +55,8 @@ size    583216
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  47b6634e6660409d8fc9dda92757eaad6252e9c8 \
-sha256  21fb48e700b43e82ba0e3142421a659d7739b65568cc832a13976a77be16b523 \
-size    703233
+                            sha256  21fb48e700b43e82ba0e3142421a659d7739b65568cc832a13976a77be16b523 \
+                            size    703233
         depends_lib-delete  port:py${python.version}-jupyterlab_pygments \
                             port:py${python.version}-nbclient
     }

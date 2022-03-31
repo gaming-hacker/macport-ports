@@ -1,18 +1,18 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-pylint
-version             2.12.2
-revision            1
+version             2.13.3
+revision            0
 
 categories-append   devel
 license             GPL-2+
 supported_archs     noarch
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -28,9 +28,9 @@ long_description    Pylint is a tool that checks for errors in python code, \
 
 homepage            https://pylint.org
 
-checksums           rmd160  e067393336f89fedc851d21522f3fe713fddc7f8 \
-sha256  2c9843fff1a88ca0ad98a256806c82c5a8f86086e7ccbdb93297d86c3f90c436 \
-size    327130
+checksums           rmd160  bfdcf9b715fe71d469390ef9a77079e28e24df5e \
+                    sha256  12ed2520510c40db647e4ec7f747b07e0d669b33ab41479c2a07bb89b92877db \
+                    size    358936
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -48,8 +48,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  763a56b52da567df22a09caa965da3e15dccbd9a \
-sha256  ee1e85575587c5b58ddafa25e1c1b01691ef172e139fc25585e5d3f02451da93 \
-size    519076
+                            sha256  ee1e85575587c5b58ddafa25e1c1b01691ef172e139fc25585e5d3f02451da93 \
+                            size    519076
 
         depends_build-append \
                             port:py${python.version}-pytest-runner
@@ -71,8 +71,8 @@ size    519076
                             port:py${python.version}-pytest-runner
 
         checksums           rmd160  0244d65adb569dc35ccf3215576d5579162690bb \
-sha256  718b74786ea7ed07aa0c58bf572154d4679f960d26e9641cc1de204a30b87fc9 \
-size    680364
+                            sha256  718b74786ea7ed07aa0c58bf572154d4679f960d26e9641cc1de204a30b87fc9 \
+                            size    680364
     }
 
     # remove upon next update, see: https://github.com/PyCQA/pylint/pull/5896

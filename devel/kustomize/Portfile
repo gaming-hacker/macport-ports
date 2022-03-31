@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/kubernetes-sigs/kustomize 4.5.2 kustomize/v
+go.setup            github.com/kubernetes-sigs/kustomize 4.5.4 kustomize/v
 revision            0
 
 categories          devel
@@ -23,9 +23,9 @@ long_description    kustomize lets you customize raw, template-free YAML files f
 
 homepage            https://kustomize.io
 
-checksums           rmd160  574c1d2f06d6a111c025f6465ed3cdab32c755e5 \
-sha256  7b1216b0cff7479f07b1ae057787629b4573cf667d74e677d07da1b55dafe538 \
-size    26743328
+checksums           rmd160  a6dcc22c9941ede08d3fe42b4a05e0316ac3c1d6 \
+                    sha256  7fbf59db6880a1c088cd394668078c48c3949d31331b0821001833170d8eae1f \
+                    size    4711002
 
 build.dir           ${worksrcpath}/${name}
 

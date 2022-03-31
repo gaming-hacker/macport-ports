@@ -96,7 +96,7 @@ if { ${os.arch} eq "arm" } {
     dict set clist gcc11 {macports-gcc-11}
     lappend clist_unsupported \
         gcc9 gcc10
-} elseif { ${os.major} >= 12 } {
+} elseif { ${os.major} >= 10 } {
     dict set clist gcc9  {macports-gcc-9}
     dict set clist gcc10 {macports-gcc-10}
     dict set clist gcc11 {macports-gcc-11}
@@ -381,15 +381,7 @@ if {${subport_enabled}} {
         ${name} ${subport} ${cname} ${select.file}
 
 } elseif {${subport} eq ${name}} {
+    PortGroup               stub 1.0
+
     depends_lib-append      port:${name}-default
-    distfiles
-    patchfiles
-    supported_archs         noarch
-    use_configure           no
-    build {}
-    destroot {
-        set docdir          ${destroot}${prefix}/share/doc/${subport}
-        xinstall -d ${docdir}
-        system "echo $subport is a stub port > ${docdir}/README"
-    }
 }

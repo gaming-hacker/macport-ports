@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,14 +17,14 @@ if {${subport} eq "${name}-fstar"} {
     github.setup        Z3Prover z3 4.8.5 Z3-
     revision            5
     checksums           rmd160  cb3509b35dc3a428019950df2e2f94c555a7ee94 \
-sha256  4e8e232887ddfa643adb6a30dcd3743cb2fa6591735fbd302b49f7028cdc0363 \
-size    4177051
+                        sha256  4e8e232887ddfa643adb6a30dcd3743cb2fa6591735fbd302b49f7028cdc0363 \
+                        size    4177051
 } else {
-    github.setup        Z3Prover z3 4.8.14 z3-
+    github.setup        Z3Prover z3 4.8.15 z3-
     revision            0
-    checksums           rmd160  f0693acb84639ed5737a8319d8aedffda5d4e95b \
-sha256  96a1f49a7701120cc38bfa63c02ff93be4d64c7926cea41977dedec7d87a1364 \
-size    5113598
+    checksums           rmd160  f125b6e6eba301c81b28ed0b84c6a7f69427b87b \
+                        sha256  2abe7f5ecb7c8023b712ffba959c55b4515f4978522a6882391de289310795ac \
+                        size    5213633
 }
 
 platforms           darwin freebsd
@@ -43,7 +43,7 @@ worksrcdir          ${name}-${github.tag_prefix}${version}
 cmake.build_type    Release
 cmake.generator     Ninja
 
-# Build requires -std=c++17
+# Build requires -std=gnu++17
 compiler.cxx_standard   2017
 
 # Don't overide z3's default optimization flags 
@@ -325,7 +325,7 @@ subport ${name}-fstar {
     }
 }
 
-set pyversions {39}
+set pyversions {27 37 38 39 310}
 
 # Create a top-level Python binding metaport
 subport py-${name} {

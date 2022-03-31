@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-astroid
-version             2.9.0
+version             2.11.2
 revision            0
 
 categories-append   devel
@@ -12,7 +12,7 @@ platforms           darwin
 license             LGPL-2.1+
 supported_archs     noarch
 
-python.versions 39
+python.versions     27 35 36 37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -26,9 +26,9 @@ long_description    The aim of this module is to provide a common \
 
 homepage            https://github.com/pycqa/astroid
 
-checksums           rmd160  de71587c1fec8a81789adb66d31de0b8a0a935ff \
-sha256  0e361da0744d5011d4f5d57e64473ba9b7ab4da1e2d45d6631ebd67dd28c3cce \
-size    199978
+checksums           rmd160  0710d629b4247025ea9cb37adc01febed7265cbd \
+                    sha256  8d0a30fe6481ce919f56690076eafbb2fb649142a89dc874f1ec0e7a011492d0 \
+                    size    205561
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -47,8 +47,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  bba1d1e3582e557ecbe6a56ca83adef5b1d80506 \
-sha256  fc9b582dba0366e63540982c3944a9230cbc6f303641c51483fa547dcc22393a \
-size    255688
+                            sha256  fc9b582dba0366e63540982c3944a9230cbc6f303641c51483fa547dcc22393a \
+                            size    255688
 
         depends_lib-append  port:py${python.version}-six \
                             port:py${python.version}-enum34 \
@@ -64,8 +64,8 @@ size    255688
         revision            1
         distname            ${python.rootname}-${version}
         checksums           rmd160  0ea44ae5243e5e8abad79672d53b71c1521613f7 \
-sha256  2f4078c2a41bf377eea06d71c9d2ba4eb8f6b1af2135bec27bbbb7d8f12bb703 \
-size    310972
+                            sha256  2f4078c2a41bf377eea06d71c9d2ba4eb8f6b1af2135bec27bbbb7d8f12bb703 \
+                            size    310972
 
         # fix for py-lazy_object_proxy version 1.5
         post-patch {

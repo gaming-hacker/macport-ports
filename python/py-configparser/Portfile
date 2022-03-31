@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,7 +20,7 @@ long_description    ${description}
 
 maintainers         {stromnov @stromnov} openmaintainer
 
-python.versions 39
+python.versions     27 39 310
 
 if {${name} ne ${subport}} {
 
@@ -33,15 +33,15 @@ if {${name} ne ${subport}} {
         distname            ${python.rootname}-${version}
 
         checksums           rmd160  9b6a5b12490e72c47ce2b1d190a35687c2d2c7eb \
-sha256  c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df \
-size    72498
+                            sha256  c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df \
+                            size    72498
     } else {
         depends_build-append \
                             port:py${python.version}-toml
 
         checksums           rmd160  4ff3a2f5f7313e1df0459a7a75b114acbd4caf58 \
-sha256  85d5de102cfe6d14a5172676f09d19c465ce63d6019cf0a4ef13385fc535e828 \
-size    71248
+                            sha256  85d5de102cfe6d14a5172676f09d19c465ce63d6019cf0a4ef13385fc535e828 \
+                            size    71248
     }
 
     depends_build-append \
