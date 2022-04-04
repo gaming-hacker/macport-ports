@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-bin-extra
-version             62723
+version             62815
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: TeX auxiliary programs
 long_description    Myriad additional TeX-related support programs. Includes programs and macros for DVI file manipulation, literate programming, patgen, and plenty more.
 
-checksums           texlive-bin-extra-62723-run.tar.xz \
-                    rmd160  6a61bdb850cfb24ff4c3d48a704b18833f850646 \
-                    sha256  97cf454d9f834c4bcbdb7486c28e9cddfb8966ba3599513f37ad3aff8f474878 \
-                    texlive-bin-extra-62723-doc.tar.xz \
-                    rmd160  24c318d0ad584f7719e9693c4a6d366a77500c49 \
-                    sha256  8b212a60e741bfd14d93ba8ad77a19950a38d25b6bc14d8b9c866b4d231feaea \
-                    texlive-bin-extra-62723-src.tar.xz \
-                    rmd160  00c484f4d94aea48f6564050bda09c1d3c475aad \
-                    sha256  73acd4be7724a886810774bb24f8ef2c074b3dc5d9050dfc1dfccad316512034
+checksums           texlive-bin-extra-62815-run.tar.xz \
+                    rmd160  0b9ba54662c67c0348c8b590c88842568820fe9c \
+                    sha256  a922dc190ea6e0ddc8fca27ba694fd5b467e395f90b230a568a7c622665b193b \
+                    texlive-bin-extra-62815-doc.tar.xz \
+                    rmd160  a408176ad234b366608f8ac12b1ed4029426fa19 \
+                    sha256  68d95dd00daab2e15495446ee3efa84ba89288e903a75219563826f94cb29718 \
+                    texlive-bin-extra-62815-src.tar.xz \
+                    rmd160  0dd489f81a9224d01a20c05a015ab2cadd48552a \
+                    sha256  7cdeb753656b55c3b9c807fcf0dc83d1da1ceb42a76647bc4df7a78d8fc1bb0e
 
 depends_lib         port:texlive-basic
 
@@ -30,7 +30,7 @@ texlive.formats      \
     {1 luajittex luajittex language.def,language.dat.lua {luatex.ini}} \
     {0 mflua mflua-nowin - {mf.ini}}
 
-texlive.binaries    a2ping a5toa4 adhocfilelist allcm allec allneeded arara arlatex bibtex8 bibtexu bundledoc checklistings chkdvifont chklref chktex chkweb cllualatex cluttex clxelatex ctan-o-mat ctanbib ctangle ctanify ctanupload ctie ctwill ctwill-refsort ctwill-twinx cweave de-macro depythontex deweb dt2dv dtxgen dv2dt dvi2fax dviasm dvibook dviconcat dvicopy dvidvi dvihp dviinfox dvilj dvilj2p dvilj4 dvilj4l dvilj6 dvipos dvired dviselect dvispc dvisvgm dvitodvi dvitype e2pall findhyph fragmaster git-latexdiff gsftopk installfont-tl ketcindy kpsepath kpsetool kpsewhere kpsexpand lacheck latex-git-log latex-papersize latex2man latex2nemeth latexdef latexfileversion latexindent latexpand listings-ext.sh llmk ltxfileinfo ltximg luajithbtex luajittex make4ht match_parens mflua mflua-nowin mfluajit mfluajit-nowin mkjobtexmf mkocp mkofm optexcount pamphletangler patgen pdfbook2 pdfclose pdfcrop pdflatexpicscale pdfopen pdftex-quiet pdftosrc pdfxup pfarrei pkfix pkfix-helper pooltype ps2frag pslatex purifyeps pythontex rpdfcrop spix srcredact sty2dtx synctex tangle tex4ebook texconfig texconfig-dialog texconfig-sys texcount texdef texdiff texdirflatten texdoc texdoctk texfot texlinks texliveonfly texloganalyser texlogfilter texlogsieve texluajit texluajitc texosquery texosquery-jre5 texosquery-jre8 texplate tie tlcockpit tpic2pdftex twill typeoutfileinfo weave xindex
+texlive.binaries    a2ping a5toa4 adhocfilelist allcm allec allneeded arara arlatex bibtex8 bibtexu bundledoc checklistings chkdvifont chklref chktex chkweb cllualatex cluttex clxelatex ctan-o-mat ctanbib ctangle ctanify ctanupload ctie ctwill ctwill-refsort ctwill-twinx cweave de-macro depythontex deweb dt2dv dtxgen dv2dt dvi2fax dviasm dvibook dviconcat dvicopy dvidvi dvihp dviinfox dvilj dvilj2p dvilj4 dvilj4l dvilj6 dvipos dvired dviselect dvispc dvitodvi dvitype e2pall findhyph fragmaster git-latexdiff gsftopk installfont-tl ketcindy kpsepath kpsetool kpsewhere kpsexpand lacheck latex-git-log latex-papersize latex2man latex2nemeth latexdef latexfileversion latexindent latexpand listings-ext.sh llmk ltxfileinfo ltximg luajithbtex luajittex make4ht match_parens mflua mflua-nowin mfluajit mfluajit-nowin mkjobtexmf mkocp mkofm optexcount pamphletangler patgen pdfbook2 pdfclose pdfcrop pdflatexpicscale pdfopen pdftex-quiet pdftosrc pdfxup pfarrei pkfix pkfix-helper pooltype ps2frag pslatex purifyeps pythontex rpdfcrop spix srcredact sty2dtx synctex tangle tex4ebook texconfig texconfig-dialog texconfig-sys texcount texdef texdiff texdirflatten texdoc texdoctk texfot texlinks texliveonfly texloganalyser texlogfilter texlogsieve texluajit texluajitc texosquery texosquery-jre5 texosquery-jre8 texplate tie tlcockpit tpic2pdftex twill typeoutfileinfo weave xindex
 
 depends_run         port:texlive-tlpdb \
                     port:latexmk \

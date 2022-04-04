@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-lang-other
-version             62258
+version             62837
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Other languages
 long_description    Support for languages not otherwise listed, including Indic, Thai, Vietnamese, Hebrew, Indonesian, African languages, and plenty more. The split is made simply on the basis of the size of the support, to keep both collection sizes and the number of collections reasonable.
 
-checksums           texlive-lang-other-62258-run.tar.xz \
-                    rmd160  20a86077e951981e97347540fbed624397868053 \
-                    sha256  d3244601142ad1835656c200aa98b50bf01e80f325bd6891508410a7e90449d8 \
-                    texlive-lang-other-62258-doc.tar.xz \
-                    rmd160  6f6db9334bf7a6a36089470825ed96fd9476dce7 \
-                    sha256  dd75625eb1216dc0875ba295a90722a8e202aa7af33d960f76fd008c412c293d \
-                    texlive-lang-other-62258-src.tar.xz \
-                    rmd160  f6e14edf60a3c70c08bd5705d9139709b676f7d0 \
-                    sha256  34dc3b7b3888cfdcef8272ffaeac71ec7e97e5cdfb936594f6ab2d341b3e6d76
+checksums           texlive-lang-other-62837-run.tar.xz \
+                    rmd160  aa18436ee6dc2fb33e04fc0ce0646a444c28b096 \
+                    sha256  22a7dcdf367b59a7dd9a85d1b6d97302bdc42c6dcd435e7284dada29405870d2 \
+                    texlive-lang-other-62837-doc.tar.xz \
+                    rmd160  9890ffe0eaf41c15d349f248747c8cb27f965a33 \
+                    sha256  6476c379517037702680da140f74a8dfe586a33df97b9ca9a11f8e7b30e3c981 \
+                    texlive-lang-other-62837-src.tar.xz \
+                    rmd160  8f8fa714e462f3b0108941c8ef2d713a9dd43891 \
+                    sha256  640c827931c71de4ccf7f28cba46cf74e6a34b9078a81476528137464c379cbf
 
 depends_lib         port:texlive-basic
 

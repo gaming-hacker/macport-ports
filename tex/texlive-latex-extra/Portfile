@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-latex-extra
-version             62725
+version             62868
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: LaTeX additional packages
 long_description    A very large collection of add-on packages for LaTeX.
 
-checksums           texlive-latex-extra-62725-run.tar.xz \
-                    rmd160  057efa886023c82a348c19a29b0029840627b83f \
-                    sha256  0816298f746e45373f2b26ec315dcc328e71d4d20012d27a93fe4e10ea970aa4 \
-                    texlive-latex-extra-62725-doc.tar.xz \
-                    rmd160  5d159a5e2620bc3707d93c6614e376544db82a01 \
-                    sha256  5703b4476339ff99450f7d7094d940b71e17443c14fc9ca8ed01b458311ea810 \
-                    texlive-latex-extra-62725-src.tar.xz \
-                    rmd160  eecabad1ee15d0d9cffdf2d2da74225e55a9c095 \
-                    sha256  d20d3b8b4603371f9ed08673ff4f221904b3f73bbeaa44d8e9e0dcb3aa60fb58
+checksums           texlive-latex-extra-62868-run.tar.xz \
+                    rmd160  2accb4b23c58eaeec5f62d516bf12d3f7821b009 \
+                    sha256  6e99d3a31d294f20789d33c86767757778fec99c5fe27decf595f39705c5b298 \
+                    texlive-latex-extra-62868-doc.tar.xz \
+                    rmd160  a89fdf3d36f5e690c01c3d6d647f883891d4260b \
+                    sha256  fd8090fc4e4af6ec08b4adeacbff00f3f12c409716f7912d19286d26c7f8d104 \
+                    texlive-latex-extra-62868-src.tar.xz \
+                    rmd160  ceaab1443d08b3877842888f9d477abde2c280cb \
+                    sha256  6bd5ada2cd501ba4c3e96768fb7fdf66592c5e28b12f6a6d383022adb6ec108b
 
 depends_lib         port:texlive-latex-recommended port:texlive-pictures
 

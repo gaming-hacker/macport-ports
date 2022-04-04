@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-lang-korean
-version             62397
+version             62856
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Korean
 long_description    Support for Korean\; additional packages in collection-langcjk.
 
-checksums           texlive-lang-korean-62397-run.tar.xz \
-                    rmd160  56d69fe7203ca257c550b1a755aadccfaca354de \
-                    sha256  ac31efde0574d0797d990262715f1e2ad743a0edadc09cf331442145ce009c45 \
-                    texlive-lang-korean-62397-doc.tar.xz \
-                    rmd160  52b585ff8d7e02e4717d7c67e49b983b05ede3fa \
-                    sha256  1d677c24a1e36ca7b554a049df40ac75bd9ed7973ea2f33af1ee6ee9bb95db34 \
-                    texlive-lang-korean-62397-src.tar.xz \
-                    rmd160  5941b7c46a45f6b3abb51a7bda415c56f851afa7 \
-                    sha256  c6546f03fbe15798dfd9543529fb14219c900e4c5b698a39c0345c142990e3e6
+checksums           texlive-lang-korean-62856-run.tar.xz \
+                    rmd160  54cb8fe0b4928fb4a3259f7fdb33f3d78be5b03f \
+                    sha256  71e1120290de9d13b881843a19b93242ae4a9cfdadfdadf51e068de2dc5cc6fd \
+                    texlive-lang-korean-62856-doc.tar.xz \
+                    rmd160  4cc7ad531479abe6dc8b210df5beb2f5c0528a78 \
+                    sha256  e527318f6d4aae3048c80d0062563503d222d587046ac900c68fe68ded8997bd \
+                    texlive-lang-korean-62856-src.tar.xz \
+                    rmd160  4ace588108ca235152aaf98e6401a9935e7a1acc \
+                    sha256  a845d878eeed98b1965bc5a21b21f87edd2b7fa9ac641d0c97970026009b2111
 
 depends_lib         port:texlive-lang-cjk
 

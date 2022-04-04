@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-lang-cjk
-version             62258
+version             62864
 revision            0
 
 categories          tex
@@ -13,15 +13,15 @@ license             Copyleft Permissive
 description         TeX Live: Chinese/Japanese/Korean (base)
 long_description    Packages supporting a combination of Chinese, Japanese, Korean, including macros, fonts, documentation. Also Thai in the c90 encoding, since there is some overlap in those fonts\; standard Thai support is in collection-langother. Additional packages for CJK are in their individual language collections.
 
-checksums           texlive-lang-cjk-62258-run.tar.xz \
-                    rmd160  678319865febc4e069277ca6b06018c89bdc37ba \
-                    sha256  6f5e1614ca7bee9354db7121732090347aed66c30ccd2757a9477de0ad0379f2 \
-                    texlive-lang-cjk-62258-doc.tar.xz \
-                    rmd160  0d72198ac4ad015d39728d0701126d301d814a41 \
-                    sha256  a3af7628ac500be69f1b72c067205a757ec671834355ca7eab5d39a90edd8da7 \
-                    texlive-lang-cjk-62258-src.tar.xz \
-                    rmd160  31fb9a18f8e25b6ce86d9142c0cac3ff9f76e202 \
-                    sha256  81f0db2d33eb2ad48a08af2208eb61eb7d8f4b5573cedc82d26b5a646a4d8868
+checksums           texlive-lang-cjk-62864-run.tar.xz \
+                    rmd160  80ea67abff8057d4561a4f185d1cb3dc4f726b7c \
+                    sha256  15c4060e52257ea0281876c371d4066407827c5a8be747a073d7ec6a6ccc4750 \
+                    texlive-lang-cjk-62864-doc.tar.xz \
+                    rmd160  301e4c0d20ab66f84148b6c63833e14c88ec4860 \
+                    sha256  fb0c680c1f7150bc5f62a673521fb38188ce8d65f6634a7e5ef5b51f6b2cadee \
+                    texlive-lang-cjk-62864-src.tar.xz \
+                    rmd160  b7776793ecec855875bc6597ef31dea8a8a00a41 \
+                    sha256  198946da840de6f979f46fbd53df5c079dd1ada47393f2e237e69ce762c706aa
 
 depends_lib         port:texlive-basic
 

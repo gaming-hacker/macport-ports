@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           texlive 1.0
 
 name                texlive-lang-german
-version             62234
+version             62734
 revision            0
 
 categories          tex
@@ -13,21 +13,21 @@ license             Copyleft Permissive
 description         TeX Live: German
 long_description    Support for German.
 
-checksums           texlive-lang-german-62234-run.tar.xz \
-                    rmd160  8cfa673d12dea312af007df9b05c9288cbe9204f \
-                    sha256  7b4014d8bfd00d6d387050722bd382e89b8f03abff2bd8735633b9a11ec10af8 \
-                    texlive-lang-german-62234-doc.tar.xz \
-                    rmd160  a24f150a12bb4a5e96b2af144f5e0024ef054fb5 \
-                    sha256  7a676327b6c91268d10cd37bea03b2edbaffc082e8295dcaf7d9d043d7a430c9 \
-                    texlive-lang-german-62234-src.tar.xz \
-                    rmd160  6fc0813a3e411291d8f587b68a775d98467b89f8 \
-                    sha256  13aa38a8fd5deb132b4c3e939d8fcb6b8b6c4bed239f41261276d1b4227ad518
+checksums           texlive-lang-german-62734-run.tar.xz \
+                    rmd160  20481ab9d01e34fb848828f5a5df348625464c4a \
+                    sha256  99a368248c4adbff0b40684d9154832f2204892eb9ee6ce7e1451fdcb2ffebc2 \
+                    texlive-lang-german-62734-doc.tar.xz \
+                    rmd160  b3738b2ac417a806ed7f1f69a80fa783cc3fc839 \
+                    sha256  94fb7e0e1d2e75be22030b832e160fc3970965c1304fe2682de99934f70302ee \
+                    texlive-lang-german-62734-src.tar.xz \
+                    rmd160  11a5a12ee90c5ca0a00602e029d6b4a6925e8601 \
+                    sha256  17decc0baa1d75c2e4cab4ed101d194a647946aad52778f8e3ca86d8301e888f
 
 depends_lib         port:texlive-basic
 
 texlive.languages      \
-    {german-x-2021-02-26 dehypht-x-2021-02-26.tex 2 2 {german-x-latest} {hyph-de-1901.pat.txt} {} {} } \
-    {ngerman-x-2021-02-26 dehyphn-x-2021-02-26.tex 2 2 {ngerman-x-latest} {hyph-de-1996.pat.txt} {} {} } \
+    {german-x-2022-03-16 dehypht-x-2022-03-16.tex 2 2 {german-x-latest} {hyph-de-1901.pat.txt} {} {} } \
+    {ngerman-x-2022-03-16 dehyphn-x-2022-03-16.tex 2 2 {ngerman-x-latest} {hyph-de-1996.pat.txt} {} {} } \
     {german loadhyph-de-1901.tex 2 2 {} {hyph-de-1901.pat.txt} {} {} } \
     {ngerman loadhyph-de-1996.tex 2 2 {} {hyph-de-1996.pat.txt} {} {} } \
     {swissgerman loadhyph-de-ch-1901.tex 2 2 {} {hyph-de-ch-1901.pat.txt} {} {} }
