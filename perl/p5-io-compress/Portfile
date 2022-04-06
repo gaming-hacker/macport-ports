@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         IO-Compress 2.103 ../../authors/id/P/PM/PMQS
 revision            0
 license             {Artistic-1 GPL}
@@ -18,8 +18,8 @@ homepage            https://metacpan.org/release/${perl5.module}/
 platforms           darwin
 
 checksums           rmd160  77eb38906dbffb8e14861a5927f86ec20bfd853e \
-                    sha256  4e4b90b740496c974dc7913cbc16f1ed52991cc9375724b9619a51e10599a80d \
-                    size    296172
+sha256  4e4b90b740496c974dc7913cbc16f1ed52991cc9375724b9619a51e10599a80d \
+size    296172
 
 if {${perl5.major} ne ""} {
     depends_build-append \

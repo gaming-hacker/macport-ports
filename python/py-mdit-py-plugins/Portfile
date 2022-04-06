@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ description         Collection of core plugins for markdown-it-py.
 long_description    ${description}
 
 checksums           rmd160  220ad6cabf5dba5e87fb96c223643561f4ff0f3c \
-                    sha256  d8c1e76736a6bac9bfd1c0c7384065d4729a6d3b2330dc3362338b83f7f72d18 \
-                    size    50650
+sha256  d8c1e76736a6bac9bfd1c0c7384065d4729a6d3b2330dc3362338b83f7f72d18 \
+size    50650
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-setuptools

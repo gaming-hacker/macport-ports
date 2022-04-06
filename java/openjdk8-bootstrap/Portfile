@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ homepage            https://javadl.sun.com/
 master_sites        ${homepage}webapps/download/AutoDL?BundleId=236866_42970487e3af4f5aa5bca3f542482c60
 
 checksums           rmd160  b237dd06774127454df314a28fa6b297b50a0dbf \
-                    sha256  5b52df4b3efd51480c40ad5abfa18a075365afbb2040bbc5e9f2db568435a6e2 \
-                    size    257863467
+sha256  5b52df4b3efd51480c40ad5abfa18a075365afbb2040bbc5e9f2db568435a6e2 \
+size    257863467
 
 depends_fetch       port:curl
 depends_extract     port:xar

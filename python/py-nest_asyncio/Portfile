@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 license             BSD
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 39
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -21,8 +21,8 @@ long_description    {*}${description}
 homepage            https://github.com/erdewit/nest_asyncio
 
 checksums           rmd160  00f4eb849d208db92270dbb36276fa83f66addd2 \
-                    sha256  e442291cd942698be619823a17a86a5759eabe1f8613084790de189fe9e16d65 \
-                    size    7386
+sha256  e442291cd942698be619823a17a86a5759eabe1f8613084790de189fe9e16d65 \
+size    7386
 
 if {${name} ne ${subport}} {
     depends_build-append \

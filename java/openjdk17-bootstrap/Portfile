@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,13 +17,13 @@ master_sites        https://download.java.net/java/GA/jdk${version}/0d483333a005
 
 if {${configure.build_arch} eq "x86_64"} {
     checksums           rmd160  22047e850be0cfafb6d16a9bf6d08914ca724c9a \
-                        sha256  18e11cf9bbc6f584031e801b11ae05a233c32086f8e1b84eb8a1e9bb8e1f5d90 \
-                        size    184007871
+sha256  18e11cf9bbc6f584031e801b11ae05a233c32086f8e1b84eb8a1e9bb8e1f5d90 \
+size    184007871
     distname            openjdk-17_macos-x64_bin
 } elseif {${configure.build_arch} eq "arm64"} {
     checksums           rmd160  fbcfd2cc8d00322902f7c8c257985e43130d097a \
-                        sha256  b5bf6377aabdc935bd72b36c494e178b12186b0e1f4be50f35134daa33bda052 \
-                        size    181735146
+sha256  b5bf6377aabdc935bd72b36c494e178b12186b0e1f4be50f35134daa33bda052 \
+size    181735146
     distname            openjdk-17_macos-aarch64_bin
 }
 

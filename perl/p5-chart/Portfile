@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Chart v2.401.1
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ description         Chart - a series of charting modules
 long_description    ${description}
 
 checksums           rmd160  cd7bb64d610bd260d1446d115131140a071e4a59 \
-                    sha256  4834109f7ae03bc83025e9674e3460a0311989ec8c687fc4f3b26c52b61fadf0 \
-                    size    1716318
+sha256  4834109f7ae03bc83025e9674e3460a0311989ec8c687fc4f3b26c52b61fadf0 \
+size    1716318
 
 if {${perl5.major} != ""} {
     depends_lib-append \

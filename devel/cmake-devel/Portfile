@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -39,8 +39,8 @@ gitlab.instance     https://gitlab.kitware.com
 gitlab.setup        cmake   cmake 00677703d00f94702ef94d8dd07387c8405a3caf
 version             20220329-3.23.0-[string range ${gitlab.version} 0 7]
 checksums           rmd160  7912161ed19a4fa7afe67df78990184be304a735 \
-                    sha256  480b5e4fba1016fbeb9e05d9a3100c086b94bb746d12884ddc2dfb52ab412e32 \
-                    size    7671660
+sha256  480b5e4fba1016fbeb9e05d9a3100c086b94bb746d12884ddc2dfb52ab412e32 \
+size    7671660
 revision            0
 
 # switched from "3.23.0" to "date-ver-hash"
@@ -279,13 +279,13 @@ subport ${subport_docs} {
     }
 
     # Supported pythons
-    set python_versions {27 35 36 37 38 39}
+    set python.versions {39}
 
     # declare all +python* variants, with conflicts
-    foreach pyver ${python_versions} {
+    foreach pyver ${python.versions} {
         # Conflicting python versions
         set other_python_versions {}
-        foreach other_pyver ${python_versions} {
+        foreach other_pyver ${python.versions} {
             if {${other_pyver} ne ${pyver}} {
                 if {${other_pyver} ni ${other_python_versions}} {
                     lappend other_python_versions python${other_pyver}
@@ -300,7 +300,7 @@ subport ${subport_docs} {
 
     # Docs requires one +python* variant
     set python_isset false
-    foreach pyver ${python_versions} {
+    foreach pyver ${python.versions} {
         if {!${python_isset}} {
             set python_isset [variant_isset python${pyver}]
             set python_isset_ver_no_dot ${pyver}
@@ -318,7 +318,7 @@ subport ${subport_docs} {
 
     # make sure one of the +python* variants is set
     set python_isset false
-    foreach pyver ${python_versions} {
+    foreach pyver ${python.versions} {
         if {!${python_isset}} {
             set python_isset  [variant_isset python${pyver}]
             set python_branch "[string index ${pyver} 0].[string range ${pyver} 1 end]"

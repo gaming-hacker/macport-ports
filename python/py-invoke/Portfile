@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 license             Apache-2
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 39
 
 maintainers         {danchr @danchr} openmaintainer
 
@@ -25,8 +25,8 @@ long_description    Invoke is a Python (2.7 and 3.4+) library for managing \
 homepage            http://www.pyinvoke.org
 
 checksums           rmd160  7dfdc6217ead0fb9df1601a0e2b824b4a4069f8d \
-                    sha256  de3f23bfe669e3db1085789fd859eb8ca8e0c5d9c20811e2407fa042e8a5e15d \
-                    size    332271
+sha256  de3f23bfe669e3db1085789fd859eb8ca8e0c5d9c20811e2407fa042e8a5e15d \
+size    332271
 
 if {${name} ne ${subport}} {
     depends_build-append \

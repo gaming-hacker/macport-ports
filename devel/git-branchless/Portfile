@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -25,9 +25,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  ed046e835e81ea278ea5a1b5b253d8dbc7938a44 \
-                    sha256  916b0c6dc6d4dd8bcb678c75a24833e8d856d0298a71f3f539ed0fc78478cb75 \
-                    size    266311
+rmd160  ed046e835e81ea278ea5a1b5b253d8dbc7938a44 \
+sha256  916b0c6dc6d4dd8bcb678c75a24833e8d856d0298a71f3f539ed0fc78478cb75 \
+size    266311
 
 depends_lib-append  port:libgit2 \
                     port:zlib
@@ -262,10 +262,10 @@ cargo.crates \
     serial-core                      0.4.0  3f46209b345401737ae2125fe5b19a77acce90cd53e1658cda928e4fe9a64581 \
     serial-unix                      0.4.0  f03fbca4c9d866e24a459cbca71283f545a37f8e3e002ad8c70593871453cab7 \
     serial-windows                   0.4.0  15c6d3b776267a75d31bbdfd5d36c0ca051251caafc285827052bc53bcdc8162 \
-    sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
-    sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
-    shared_library                   0.1.9  5a9e7e0f2bfae24d8a5b5a66c5b257a83c7412304311512a0c054cd5e619da11 \
+sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
+sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+shared_library                   0.1.9  5a9e7e0f2bfae24d8a5b5a66c5b257a83c7412304311512a0c054cd5e619da11 \
     shell-escape                     0.1.5  45bb67a18fa91266cc7807181f62f9178a6873bfad7dc788c42e6430db40184f \
     shell-words                      1.1.0  24188a676b6ae68c3b2cb3a01be17fbf7240ce009799bb56d5b1409051e78fde \
     shlex                            0.1.1  7fdf1b9db47230893d76faad238fd6097fd6d6a9245cd7a4d90dbd639536bbd2 \

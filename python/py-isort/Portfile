@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ long_description    isort is a Python utility / library to sort imports \
 homepage            https://github.com/PyCQA/isort
 
 checksums           rmd160  60745dc344448ef7f473a4e1a28ff270e6277b3a \
-                    sha256  e8443a5e7a020e9d7f97f1d7d9cd17c88bcb3bc7e218bf9cf5095fe550be2951 \
-                    size    174062
+sha256  e8443a5e7a020e9d7f97f1d7d9cd17c88bcb3bc7e218bf9cf5095fe550be2951 \
+size    174062
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

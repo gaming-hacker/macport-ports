@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    {*}${description} - highly compressed 2D barcode \
 distname            ${github.version}${github.tag_suffix}
 
 checksums           rmd160  0cc45bd3c81a8d1ca34cb677791adb33e1ea7653 \
-                    sha256  72ed37f6992ba4894729fa2de90aab0269b2e0984ea9f7bd093c6cef72f7ab33 \
-                    size    39170
+sha256  72ed37f6992ba4894729fa2de90aab0269b2e0984ea9f7bd093c6cef72f7ab33 \
+size    39170
 
 depends_lib-append  port:ImageMagick \
                     port:libpng

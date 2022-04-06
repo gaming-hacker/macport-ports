@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       gitlab 1.0
@@ -19,8 +19,8 @@ long_description \
     package.
 
 checksums       rmd160  f4edebce660d3de3a0430e2762aac4aa59983eb6 \
-                sha256  4b8b86673321c263558b39f98aafbca16eacb85adee249c44363bd370d84c798 \
-                size    892004
+sha256  4b8b86673321c263558b39f98aafbca16eacb85adee249c44363bd370d84c798 \
+size    892004
 
 patchfiles      patch-autogen.sh.diff \
                 patch-configure.ac.diff

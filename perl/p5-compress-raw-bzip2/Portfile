@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Compress-Raw-Bzip2 2.103 ../../authors/id/P/PM/PMQS
 revision            0
 license             {Artistic-1 GPL}
@@ -16,8 +16,8 @@ long_description    Compress::Raw::Bzip2 provides an interface to the \
 platforms           darwin
 
 checksums           rmd160  69375104f876d7785757ff13f8368f286fbc2f27 \
-                    sha256  6172d16b0797b10a14e7e1e8dfddcd3d98910adcf5681285e716659f1197164d \
-                    size    138736
+sha256  6172d16b0797b10a14e7e1e8dfddcd3d98910adcf5681285e716659f1197164d \
+size    138736
 
 if {${perl5.major} ne ""} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 license             BSD
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 39
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://github.com/dask/s3fs/
 
 checksums           rmd160  f1f57c798090986536bf35f03deafa5e99292522 \
-                    sha256  af126157a4dae39df81e8931fbc36591f91da0c6744954fb0dd3f3c0ebdf91e3 \
-                    size    72978
+sha256  af126157a4dae39df81e8931fbc36591f91da0c6744954fb0dd3f3c0ebdf91e3 \
+size    72978
 
 if {${name} ne ${subport}} {
     depends_build-append \

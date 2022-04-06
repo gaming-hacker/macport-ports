@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,10 +30,10 @@ long_description    Features: \
 homepage            https://github.com/axiros/terminal_markdown_viewer
 
 checksums           rmd160  75ed193c1622b88a4eb0099d2a93c0e9f5fb7d0b \
-                    sha256  1534f477c85d580352c82141436f6fdba79d329af8a5ee7e329fea14424a660d \
-                    size    54426
+sha256  1534f477c85d580352c82141436f6fdba79d329af8a5ee7e329fea14424a660d \
+size    54426
 
-python.default_version 37
+python.default_version 39
 
 depends_build-append \
                     port:py${python.version}-setuptools

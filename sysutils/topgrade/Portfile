@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ long_description    Keeping your system up to date mostly involves invoking more
 homepage            https://github.com/r-darwish/topgrade
 
 checksums           ${distfiles} \
-                    rmd160  322ca9d4ef067ffaf1f92e5205f113e0995decdb \
-                    sha256  0e8d447fb25b037f56a4e2a9d922233814d0a93451e9c97fcc32b0834c2d397c \
-                    size    838636
+rmd160  322ca9d4ef067ffaf1f92e5205f113e0995decdb \
+sha256  0e8d447fb25b037f56a4e2a9d922233814d0a93451e9c97fcc32b0834c2d397c \
+size    838636
 
 # include support for AppStore apps
 # disable this until https://github.com/mas-cli/mas/issues/252 has been fixed
@@ -203,8 +203,8 @@ cargo.crates \
     serde_json 1.0.79 8e8d9fa5c3b304765ce1fd9c4c8a3de2c8db365a5b91be52f186efc675681d95 \
     serde_repr 0.1.7 98d0516900518c29efa217c298fa1f4e6c6ffc85ae29fd7f4ee48f176e1a9ed5 \
     serde_urlencoded 0.7.1 d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha1 0.6.1 c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
-    sha1_smol 1.0.0 ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
+sha1 0.6.1 c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
+sha1_smol 1.0.0 ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
     shellexpand 2.1.0 83bdb7831b2d85ddf4a7b148aa19d0587eddbe8671a436b7bd1182eaad0f2829 \
     signal-hook-registry 1.4.0 e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     slab 0.4.5 9def91fd1e018fe007022791f865d0ccc9b3a0d5001e01aabb8b40e46000afb5 \

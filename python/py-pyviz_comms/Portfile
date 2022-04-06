@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ supported_archs     noarch
 homepage            https://github.com/holoviz/pyviz_comms
 
 checksums           rmd160  b549f30673e97e2cf739ce31b11aa11c5090f64f \
-                    sha256  b8c9dcbde01f3847843fb4d04c3b3f4de784920c71e44ced9dfbb560f6c92218 \
-                    size    31910
+sha256  b8c9dcbde01f3847843fb4d04c3b3f4de784920c71e44ced9dfbb560f6c92218 \
+size    31910
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    ${python.rootname} is a Python binding for Poppler-Qt4 \
 homepage            https://github.com/wbsoft/${python.rootname}
 
 checksums           rmd160  8674296b8e224e181537e798cd219aeb30ff7561 \
-                    sha256  29ad1d2246a4733d8fdc8f640a470733c61eea98f923af061c98cc497db4c374 \
-                    size    18085
+sha256  29ad1d2246a4733d8fdc8f640a470733c61eea98f923af061c98cc497db4c374 \
+size    18085
 
-python.versions     37
+python.versions 39
 
 # find poppler-qt4-mac headers and libraries instead of poppler headers and libraries
 configure.env-append PKG_CONFIG_PATH=${prefix}/libexec/poppler-qt4-mac/lib/pkgconfig
@@ -40,7 +40,7 @@ if {${name} ne ${subport}} {
 
     patchfiles              patch-types.sip.diff
 
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2017
 
     post-destroot {
         set doc_dir ${destroot}${prefix}/share/doc/${subport}

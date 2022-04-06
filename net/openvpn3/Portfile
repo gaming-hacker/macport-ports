@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    \
 homepage            https://openvpn.net
 
 checksums           rmd160  3bc3d112f285ec06edbed7e23f53b4e8d02bbdab \
-                    sha256  6f420610b345379ff49caa77a18411f24854a36e4dbf937805f17bb06aa350fb \
-                    size    2062590
+sha256  6f420610b345379ff49caa77a18411f24854a36e4dbf937805f17bb06aa350fb \
+size    2062590
 
 depends_build-append \
                     port:asio \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -19,8 +19,8 @@ long_description    ${description} Oracle's Java Application Bundler is compatib
 homepage            https://github.com/TheInfiniteKind/appbundler/
 
 checksums           rmd160  072359165cda7b616b02ed7a09c7ae08747fb3f4 \
-                    sha256  03a37605a0e7ddf8e8f42c3d8ccd0bd7fcceef0cc7c05fd4261d692b63bfb4f7 \
-                    size    157597
+sha256  03a37605a0e7ddf8e8f42c3d8ccd0bd7fcceef0cc7c05fd4261d692b63bfb4f7 \
+size    157597
 
 depends_build       port:apache-ant
 

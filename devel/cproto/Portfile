@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ master_sites        https://invisible-mirror.net/archives/${name}/ \
 extract.suffix      .tgz
 
 checksums           rmd160  0dc69232624c6c4c2b011b49b7351a25f3f1b4a1 \
-                    sha256  3cce82a71687b69e0a3e23489fe825ba72e693e559ccf193395208ac0eb96fe5 \
-                    size    181095
+sha256  3cce82a71687b69e0a3e23489fe825ba72e693e559ccf193395208ac0eb96fe5 \
+size    181095
 
 depends_lib         port:flex
 depends_build       port:bison

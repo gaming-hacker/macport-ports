@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    FAAC is an AAC audio encoder. FAAC currently supports MPEG-4
                     gapless encoding.
 
 checksums           rmd160  99fb55f82984fb94ca9a85a8cad99962c7d78ef2 \
-                    sha256  adc387ce588cca16d98c03b6ec1e58f0ffd9fc6eadb00e254157d6b16203b2d2 \
-                    size    241750
+sha256  adc387ce588cca16d98c03b6ec1e58f0ffd9fc6eadb00e254157d6b16203b2d2 \
+size    241750
 
 # error: use of undeclared identifier 'bit_SSE2'
 compiler.blacklist-append   {clang < 500}

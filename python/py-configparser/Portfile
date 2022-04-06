@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel
 license             MIT
 supported_archs     noarch
 
-python.versions     27 37 38 39 310
+python.versions 39
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -22,8 +22,8 @@ long_description    ${description}
 homepage            https://github.com/jaraco/configparser
 
 checksums           rmd160  adcc85c128b7759bfdb47479b7930b377f66e9f6 \
-                    sha256  1b35798fdf1713f1c3139016cfcbc461f09edbf099d1fb658d4b7479fcaa3daa \
-                    size    67283
+sha256  1b35798fdf1713f1c3139016cfcbc461f09edbf099d1fb658d4b7479fcaa3daa \
+size    67283
 
 if {${name} ne ${subport}} {
 
@@ -41,8 +41,8 @@ if {${name} ne ${subport}} {
         distname            ${python.rootname}-${version}
 
         checksums           rmd160  9b6a5b12490e72c47ce2b1d190a35687c2d2c7eb \
-                            sha256  c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df \
-                            size    72498
+sha256  c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df \
+size    72498
     } else {
         depends_build-append \
                             port:py${python.version}-toml

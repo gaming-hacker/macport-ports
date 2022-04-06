@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    This module provides various {*}${description}, including va
 homepage            https://github.com/tkem/cachetools
 
 checksums           rmd160  9cd31e8b6ed09a31c49ece2b6f209724388295ca \
-                    sha256  486471dfa8799eb7ec503a8059e263db000cdda20075ce5e48903087f79d5fd6 \
-                    size    26119
+sha256  486471dfa8799eb7ec503a8059e263db000cdda20075ce5e48903087f79d5fd6 \
+size    26119
 
-python.versions     37 38 39 310
+python.versions 39
 
 if {${name} ne ${subport}} {
     depends_build-append \

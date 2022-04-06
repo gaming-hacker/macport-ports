@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -15,12 +15,12 @@ description         yaml-cpp is a YAML parser and emitter in C++ written around 
 long_description    {*}${description}
 
 checksums           rmd160  d574a07e1e12a590dc85e74ee58910c410c31313 \
-                    sha256  2a5ed8e606edce269b5ffaed3f224ba7e4c46ee9163313ac103dc62a56330ff7 \
-                    size    1033398
+sha256  2a5ed8e606edce269b5ffaed3f224ba7e4c46ee9163313ac103dc62a56330ff7 \
+size    1033398
 
 patchfiles          patch-CMakeLists.txt.diff
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2017
 
 configure.args      -DYAML_BUILD_SHARED_LIBS=ON
 
