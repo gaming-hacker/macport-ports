@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,6 @@ version             0.15.4
 revision            1
 
 categories-append   science
-platforms           darwin
 license             MIT BSD
 maintainers         {soap.za.net:git @SoapZA} openmaintainer
 
@@ -20,10 +19,10 @@ long_description    Pysam is a python module for reading and manipulating \
 homepage            https://github.com/pysam-developers/pysam
 
 checksums           rmd160  9ed516489fef88f37047168aa1d126177a7f8fee \
-sha256  a535e15cbd6e27f4ab74cabca30ca1df7eea283cb91d3b536d47fe113fee066f \
-size    1605385
+                    sha256  a535e15cbd6e27f4ab74cabca30ca1df7eea283cb91d3b536d47fe113fee066f \
+                    size    1605385
 
-python.versions 39
+python.versions     37 38
 
 patchfiles          patch-pysam-remove-RPATH.diff
 
@@ -48,8 +47,6 @@ if {${name} ne ${subport}} {
             }
         }
     }
-
-    livecheck.type      none
 
     configure.env       HTSLIB_MODE=shared
 }

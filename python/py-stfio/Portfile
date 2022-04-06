@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,7 +7,6 @@ name                py-stfio
 version             0.15.8
 revision            6
 categories          python science
-platforms           darwin
 license             GPL-2
 maintainers         {gmx.de:christsc @neurodroid}
 description         Electrophysiology file support for Python
@@ -17,9 +16,9 @@ master_sites        ${homepage}
 distname            stimfit-${version}
 
 checksums           rmd160  960efd2fa4f88aba153af560cc49adc40090995b \
-sha256  0fc6b0f52057d9c45107557e615f314179ac92e180123ed9d1da98e7f812df8b
+                    sha256  0fc6b0f52057d9c45107557e615f314179ac92e180123ed9d1da98e7f812df8b
 
-python.versions 39
+python.versions     37
 
 if { ${name} ne ${subport} } {
     PortGroup       boost 1.0
@@ -35,7 +34,7 @@ if { ${name} ne ${subport} } {
                     --enable-module \
                     --without-biosig
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard   2011
 
     configure.python \
                     ${python.bin}

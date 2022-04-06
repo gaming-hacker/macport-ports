@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,14 +7,13 @@ PortGroup           github 1.0
 github.setup        pypa pipx 1.0.0
 revision            0
 checksums           rmd160  d92ce539cff9ecb3f7a477963594466dc5316cc4 \
-sha256  6411399e6d323161983cab9c997e5ad819b7198a9965f0d5797e5e9f7760d908 \
-size    399078
+                    sha256  6411399e6d323161983cab9c997e5ad819b7198a9965f0d5797e5e9f7760d908 \
+                    size    399078
 
 categories          python sysutils
 license             MIT
 maintainers         {lbschenkel @lbschenkel} openmaintainer
 supported_archs     noarch
-platforms           darwin
 
 description         Execute binaries from Python packages in isolated environments
 long_description    ${description}
@@ -23,7 +22,6 @@ github.tarball_from archive
 github.livecheck.regex  {([\d.]+)}
 
 if {
-    ![variant_isset python36] &&
     ![variant_isset python37] &&
     ![variant_isset python38] &&
     ![variant_isset python39] &&
@@ -32,22 +30,19 @@ if {
     default_variants +python39
 }
 
-variant python36 conflicts python37 python38 python39 python310 description {Use Python 3.6} {}
-variant python37 conflicts python36 python38 python39 python310 description {Use Python 3.7} {}
-variant python38 conflicts python36 python37 python39 python310 description {Use Python 3.8} {}
-variant python39 conflicts python36 python37 python38 python310 description {Use Python 3.9} {}
-variant python310 conflicts python36 python37 python38 python39 description {Use Python 3.10} {}
+variant python37 conflicts python38 python39 python310 description {Use Python 3.7} {}
+variant python38 conflicts python37 python39 python310 description {Use Python 3.8} {}
+variant python39 conflicts python37 python38 python310 description {Use Python 3.9} {}
+variant python310 conflicts python37 python38 python39 description {Use Python 3.10} {}
 
 if {[variant_isset python310]} {
     python.default_version 310
 } elseif {[variant_isset python39]} {
     python.default_version 39
 } elseif {[variant_isset python38]} {
-    python.default_version 39
+    python.default_version 38
 } elseif {[variant_isset python37]} {
-    python.default_version 39
-} elseif {[variant_isset python36]} {
-    python.default_version 39
+    python.default_version 37
 }
 
 depends_lib-append \

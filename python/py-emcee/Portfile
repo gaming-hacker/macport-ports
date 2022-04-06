@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,22 +17,18 @@ long_description    emcee is a stable, well tested Python implementation of \
                     Monte Carlo (MCMC) proposed by Goodman & Weare (2010). The \
                     code is open source and has already been used in several \
                     published projects in the astrophysics literature.
-homepage            https://github.com/dfm/emcee
 
-platforms           darwin
 supported_archs     noarch
 license             MIT
 
 checksums           rmd160  9d877a80ce5a19b8c442d225a27a57fe548a14f0 \
-sha256  afb252b304051ca7a936e81adfa69c92b37fdafd8d3be95e920059f08dcf2d00 \
-size    769439
+                    sha256  afb252b304051ca7a936e81adfa69c92b37fdafd8d3be95e920059f08dcf2d00 \
+                    size    769439
 
-python.versions 39
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
-    if {${python.version} >= 36} {
-        conflicts   py${python.version}-emcee3
-    }
+    conflicts       py${python.version}-emcee3
 
     depends_build-append \
                     port:py${python.version}-setuptools
@@ -42,11 +38,10 @@ if {${name} ne ${subport}} {
 
     depends_test-append \
                     port:py${python.version}-nose
+
     test.run        yes
     test.cmd        nosetests-${python.branch}
     test.target
-
-    livecheck.type  none
 } else {
     github.livecheck.regex {(2\.[0-9.]+)}
 }

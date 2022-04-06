@@ -11,7 +11,6 @@ size    72224
 
 maintainers         nomaintainer
 categories          devel
-platforms           darwin
 license             BSD
 description         Remote virtual machine server
 long_description    {*}${description}
@@ -24,7 +23,9 @@ depends_build       port:pkgconfig
 
 depends_lib         path:lib/pkgconfig/libusb-1.0.pc:libusb
 
-# No configure script in tarball.
+patchfiles          no-Werror.patch
+
+# No configure script in tarball and we are patching configure.ac.
 # 0.10.0 and later use meson instead of autotools.
 use_autoreconf      yes
 autoreconf.args     -fvi

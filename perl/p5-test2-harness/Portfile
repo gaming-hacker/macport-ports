@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.30
-perl5.setup         Test2-Harness 1.000112 ../../authors/id/E/EX/EXODIST
+perl5.branches      5.28 5.30 5.32 5.34
+perl5.setup         Test2-Harness 1.000119 ../../authors/id/E/EX/EXODIST
 revision            0
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ long_description    ${description}
 
 platforms           darwin
 
-checksums           rmd160  d9727040b8ea310341ddbcadfb3a06675e070d5c \
-sha256  4bb16284a6ab8ef27a173bffb604fa43c4d7029e8b677bd0595669ad20139f70 \
-size    370490
+checksums           rmd160  4a3178a9bf990df1ec812304bf454d146f527b2b \
+                    sha256  9ab322d62efba48ec4cbc7cba936ef46ef86b5bb35c1964cc3b1ba6f4965178c \
+                    size    374581
 
 if {${perl5.major} != ""} {
     depends_lib-append \
@@ -33,6 +33,7 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-test2-plugin-ioevents \
                     port:p${perl5.major}-test2-plugin-memusage \
                     port:p${perl5.major}-test2-plugin-uuid \
+                    port:p${perl5.major}-text-parsewords \
                     port:p${perl5.major}-time-hires
 
     supported_archs noarch

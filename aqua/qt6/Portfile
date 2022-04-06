@@ -140,11 +140,11 @@ array set modules {
             2c5f07b5c3ea27d3fc1a46686ea3fb6724f94dddf1fb007de3eb0bdb87429079
             46641424
         }
-        "path:bin/cmake:cmake port:ninja port:pkgconfig"
-        "port:assimp port:brotli path:bin/dbus-daemon:dbus port:double-conversion port:freetype          \
-            path:lib/pkgconfig/glib-2.0.pc:glib2 path:lib/pkgconfig/harfbuzz.pc:harfbuzz                 \
-            port:hunspell port:icu path:lib/pkgconfig/jasper.pc:jasper path:include/turbojpeg.h:libjpeg-turbo port:libb2         \
-            port:libiconv port:libpng port:md4c port:nodejs16 path:lib/pkgconfig/libpcre2-posix.pc:pcre2 \
+        "port:ninja port:pkgconfig"
+        "port:assimp port:brotli path:bin/cmake:cmake path:bin/dbus-daemon:dbus port:double-conversion port:freetype
+            path:lib/pkgconfig/glib-2.0.pc:glib2 path:lib/pkgconfig/harfbuzz.pc:harfbuzz
+            port:hunspell port:icu path:lib/pkgconfig/jasper.pc:jasper path:include/turbojpeg.h:libjpeg-turbo port:libb2
+            port:libiconv port:libpng port:md4c port:nodejs16 path:lib/pkgconfig/libpcre2-posix.pc:pcre2
             port:tiff port:webp port:zlib path:lib/pkgconfig/libzstd.pc:zstd"
 
         ""
@@ -152,7 +152,7 @@ array set modules {
          "Qt OpenGL" "Qt Platform Headers" "Qt Print Support" "Qt XML"}
         ""
         "variant overrides: "
-        "revision 3"
+        "revision 4"
         "License: "
     }
     qtconnectivity {
@@ -492,13 +492,6 @@ if { ${os.major} < 18 } {
         ui_error "${subport} requires macOS 10.14 or later"
         return -code error "incompatible OS version"
     }
-} elseif { ${os.major} == 18 } {
-    # https://trac.macports.org/ticket/64345
-    known_fail  yes
-    pre-fetch {
-        ui_error "${subport} is currently broken on macOS 10.14, see https://trac.macports.org/ticket/64345"
-        return -code error "incompatible OS version"
-    }
 }
 
 foreach {module module_info} [array get modules] {
@@ -584,6 +577,10 @@ size    [lindex [lindex ${module_info} 0] 2]
 
             # see https://trac.macports.org/ticket/63805#comment:13
             patchfiles-append patch-sdk-no-stderr.diff
+
+            # Allow building with macOS 10.14 SDK
+            # see https://trac.macports.org/ticket/64345
+            patchfiles-append patch-macos-10.14-sdk.diff
 
             #-----------------------------------------------------------------------------
             # qtbase is used for:
@@ -992,18 +989,6 @@ size    [lindex [lindex ${module_info} 0] 2]
             ###############################################################################
             # Special Cases
             ###############################################################################
-
-            if {${module} eq "qtimageformats"} {
-                # https://trac.macports.org/ticket/64346
-                known_fail  yes
-                depends_lib
-                depends_build
-                depends_extract
-                pre-fetch {
-                    ui_error "${subport} is currently broken, see https://trac.macports.org/ticket/64346"
-                    return -code error "broken port"
-                }
-            }
         }
     }
 }
