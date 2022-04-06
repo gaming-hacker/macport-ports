@@ -36,7 +36,7 @@ legacysupport.newest_darwin_requires_legacy 10
 
 makefile.override   CC PREFIX
 
-compiler.c_standard 1999
+compiler.c_standard 2011
 
 build.args          FREETYPEINC=${prefix}/include/freetype2 \
                     X11INC=${prefix}/include/X11 \

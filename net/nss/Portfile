@@ -106,7 +106,7 @@ post-destroot {
 use_parallel_build  no
 
 # tls13esni.c:72: error: 'for' loop initial declaration used outside C99 mode
-compiler.c_standard 1999
+compiler.c_standard 2011
 configure.cflags-append -std=c11
 
 # mimic nss/coreconf/Darwin.mk

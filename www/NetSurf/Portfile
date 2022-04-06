@@ -39,7 +39,7 @@ depends_lib         port:curl \
 
 patchfiles          perl.patch
 
-compiler.c_standard 1999
+compiler.c_standard 2011
 
 build.target
 build.args          BUILD_CC=${configure.cc} \

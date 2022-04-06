@@ -32,7 +32,7 @@ github.livecheck.regex  {([0-9.]+)}
 python.versions 39
 
 # Compiler selection
-compiler.c_standard    1999
+compiler.c_standard 2011
 compiler.cxx_standard 2017
 compiler.blacklist-append *gcc* {clang < 999} macports-clang-3.* {macports-clang-[4-6].0}
 
