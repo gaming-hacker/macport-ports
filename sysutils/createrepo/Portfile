@@ -21,20 +21,20 @@ patchfiles		patch-Makefile patch-createrepo patch-modifyrepo \
 			patch-dumpMetadata.py patch-genpkgmetadata.py \
 			patch-readMetadata.py patch-modifyrepo.py
 
-depends_run		port:python39 port:rpm port:py39-libxml2 port:py39-yum-metadata-parser
-depends_test	port:py39-checker
+depends_run		port:python310 port:rpm port:py310-libxml2 port:py310-yum-metadata-parser
+depends_test	port:py310-checker
 
 post-patch {
 	reinplace "s|__PREFIX__|${prefix}|g" \
 		${worksrcpath}/bin/createrepo ${worksrcpath}/bin/modifyrepo
-	reinplace "s|__PYTHON__|${prefix}/bin/python3.9|g" \
+	reinplace "s|__PYTHON__|${prefix}/bin/python3.10|g" \
 		${worksrcpath}/dumpMetadata.py ${worksrcpath}/genpkgmetadata.py \
 		${worksrcpath}/readMetadata.py ${worksrcpath}/modifyrepo.py
 }
 
 use_configure	no
 
-build.args	prefix=${prefix} PYTHON="${prefix}/bin/python3.9"
+build.args	prefix=${prefix} PYTHON="${prefix}/bin/python3.10"
 
 destroot.args	prefix=${prefix} INSTALL="/usr/bin/install -p" INSTALL_MODULES="/usr/bin/install -m 755"
 

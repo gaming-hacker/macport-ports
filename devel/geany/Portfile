@@ -68,13 +68,13 @@ configure.args      --disable-silent-rules \
 # therefore don't repeat it here
 
 variant python38 conflicts python39 description {Use Python v3.8} {
-    configure.args-append --with-python-command=${prefix}/bin/python3.9
-    depends_run-append port:python39
+    configure.args-append --with-python-command=${prefix}/bin/python3.10
+    depends_run-append port:python310
 }
 
 variant python39 conflicts python38 description {Use Python v3.9} {
-    configure.args-append --with-python-command=${prefix}/bin/python3.9
-    depends_run-append port:python39
+    configure.args-append --with-python-command=${prefix}/bin/python3.10
+    depends_run-append port:python310
 }
 default_variants +python39
 

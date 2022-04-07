@@ -24,7 +24,7 @@ patchfiles          patch-install-prefix.diff
 
 depends_lib-append  path:bin/npm:npm5 \
                     port:git \
-                    port:python39
+                    port:python310
 
 # atom does not use configure but a custom build script. Additionally, node (or
 # some of the packages) seem to override MACOSX_DEPLOYMENT_TARGET. This has
@@ -36,7 +36,7 @@ configure.cxxflags-append  "-mmacosx-version-min=${macosx_deployment_target}"
 configure.ldflags-append   "-mmacosx-version-min=${macosx_deployment_target}"
 build.env-append           "CC=${configure.cc} [get_canonical_archflags cc]" \
                            "CXX=${configure.cxx} [get_canonical_archflags cxx]" \
-                           PYTHON=${prefix}/bin/python3.9 \
+                           PYTHON=${prefix}/bin/python3.10 \
                            CFLAGS=${configure.cflags} \
                            CXXFLAGS=${configure.cxxflags} \
                            LDFLAGS=${configure.ldflags}

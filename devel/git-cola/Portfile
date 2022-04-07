@@ -18,11 +18,11 @@ checksums           rmd160  0ea666f81054289dc0e98c7a38547b73143e96da \
 sha256  d8a5ee637aea00965121cd4f2388319983bcd05ae7149069a6d553268149350b \
 size    1180032
 
-depends_build       port:py39-sphinx
+depends_build       port:py310-sphinx
 depends_lib         port:git \
-                    port:python39 \
-                    port:py39-pyqt4 \
-                    port:py39-qtpy
+                    port:python310 \
+                    port:py310-pyqt4 \
+                    port:py310-qtpy
 
 patchfiles          patch-pyqt-version.diff
 
@@ -37,7 +37,7 @@ post-patch {
 use_configure no
 
 build.args          prefix=${prefix} \
-                    PYTHON=${prefix}/bin/python3.9 \
+                    PYTHON=${prefix}/bin/python3.10 \
                     SPHINXBUILD=${prefix}/bin/sphinx-build-3.6 \
                     NO_VENDOR_LIBS=1
 build.target        all man
@@ -64,5 +64,5 @@ variant qt5 description (Use qt5 instead of qt4} {
     # py36-qtpy5. However, all variants of py36-qtpy support all Qt versions.
     # Always add the dependency in this port to ensure the selected Qt version
     # is available.
-    depends_lib-replace port:py39-pyqt4 port:py39-pyqt5
+    depends_lib-replace port:py310-pyqt4 port:py310-pyqt5
 }

@@ -18,7 +18,7 @@ checksums                   rmd160  6453dc1efb7c7b90ddf0a016325e4f447986a182 \
 sha256  0d69c67b4eb3a61e7595fca3b8ef6f166eac8b25281017bb84c9dd24c343302f \
 size    3692553
 
-depends_build-append        port:python39
-configure.args-append       -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9
+depends_build-append        port:python310
+configure.args-append       -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10
 
 compiler.cxx_standard 2017

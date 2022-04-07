@@ -36,14 +36,14 @@ variant python27 description {Build with Python shell.} {
         port:swig-python
 
     depends_lib-append \
-        port:python39 \
-        port:py39-wxpython-3.0 \
-        port:py39-numpy \
-        port:py39-matplotlib \
-        port:py39-cvxopt
+        port:python310 \
+        port:py310-wxpython-3.0 \
+        port:py310-numpy \
+        port:py310-matplotlib \
+        port:py310-cvxopt
 
     configure.python \
-        ${prefix}/bin/python3.9
+        ${prefix}/bin/python3.10
 
     configure.args-replace \
         --disable-python \

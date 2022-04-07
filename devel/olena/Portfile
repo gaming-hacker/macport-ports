@@ -36,7 +36,7 @@ depends_lib-append      port:cfitsio \
                         port:gdcm2 \
                         port:GraphicsMagick \
                         port:poppler \
-                        port:python39 \
+                        port:python310 \
                         port:tesseract \
                         port:tiff
 
@@ -51,7 +51,7 @@ configure.args-append   --disable-silent-rules \
 # use GraphicsMagick instead of ImageMagick
 configure.args-append   --with-imagemagickxx=no
 
-configure.env-append    PYTHON=${prefix}/bin/python3.9
+configure.env-append    PYTHON=${prefix}/bin/python3.10
 
 # required by tesseract
 compiler.cxx_standard 2017

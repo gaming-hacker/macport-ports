@@ -123,45 +123,45 @@ variant perl description {Enable Perl scripting} {
 }
 
 variant python27 description {Enable Python scripting} {
-    configure.args-append   --enable-pythoninterp --with-python-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-pythoninterp --with-python-command=${prefix}/bin/python3.10
     patchfiles-append       patch-python.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
     depends_build-append port:autoconf
 }
 variant python36 conflicts python37 python38 python39 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.10
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
     depends_build-append port:autoconf
 }
 variant python37 conflicts python36 python38 python39 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.10
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
     depends_build-append port:autoconf
 }
 variant python38 conflicts python36 python37 python39 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.10
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again
     depends_build-append port:autoconf
 }
 variant python39 conflicts python36 python37 python38 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.9
+    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.10
     patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again

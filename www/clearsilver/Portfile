@@ -44,10 +44,10 @@ perl5.branches 5.30
 
 depends_lib         port:gettext \
                     port:perl${perl5.major} \
-                    port:python39 \
+                    port:python310 \
                     port:zlib
 
-set python_bin      ${prefix}/bin/python3.9
+set python_bin      ${prefix}/bin/python3.10
 
 configure.args      --disable-apache \
                     --disable-java \
@@ -59,7 +59,7 @@ configure.args      --disable-apache \
                     --mandir=${prefix}/share/man
 
 pre-configure   {
-    set PYTHON_PATH ${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9
+    set PYTHON_PATH ${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10
 
     reinplace "s|PYTHON_SITE=`.*|PYTHON_SITE=${PYTHON_PATH}/site-packages|g" \
         ${worksrcpath}/configure

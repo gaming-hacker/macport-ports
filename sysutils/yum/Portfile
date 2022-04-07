@@ -24,8 +24,8 @@ rmd160 ab885fc93875925ae57ceabc8731357221d1fae3
 
 patchfiles	patch-prefix.diff patch-sqlutils.py patch-packages.py
 
-depends_lib	path:lib/python3.9/site-packages/rpm/__init__.py:rpm port:python39 port:py39-urlgrabber port:py39-libxml2 port:py39-yum-metadata-parser port:py39-iniparse port:py39-pygpgme
-depends_build	port:intltool port:py39-nose
+depends_lib	path:lib/python3.10/site-packages/rpm/__init__.py:rpm port:python310 port:py310-urlgrabber port:py310-libxml2 port:py310-yum-metadata-parser port:py310-iniparse port:py310-pygpgme
+depends_build	port:intltool port:py310-nose
 
 set python.bin  ""
 

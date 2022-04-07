@@ -30,8 +30,8 @@ depends_lib         port:xapian-core \
                     port:zlib
 
 depends_run         port:antiword \
-                    port:python39 \
-                    port:py39-lxml \
+                    port:python310 \
+                    port:py310-lxml \
                     port:poppler \
                     port:unrtf \
                     port:unzip

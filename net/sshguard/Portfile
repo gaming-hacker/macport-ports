@@ -27,7 +27,7 @@ size    69279
 use_autoreconf      yes
 
 depends_build-append \
-                    port:py39-docutils
+                    port:py310-docutils
 
 patchfiles          patch-configure.ac.diff \
                     patch-memset-off-by-one.diff

@@ -36,7 +36,7 @@ configure.args-append \
     -DOSQUERY_VERSION="${version}"
 
 depends_build-append \
-    port:python39
+    port:python310
 
 patchfiles \
     patch-default_paths.h.diff \

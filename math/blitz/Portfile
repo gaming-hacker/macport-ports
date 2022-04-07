@@ -25,8 +25,8 @@ size    2941335
 
 compilers.setup         -fortran
 
-depends_build-append    port:python39
-configure.args-append   -DPython_EXECUTABLE=${prefix}/bin/python3.9
+depends_build-append    port:python310
+configure.args-append   -DPython_EXECUTABLE=${prefix}/bin/python3.10
 
 # broken: cannot get build system to respect DYLD_FALLBACK_LIBRARY_PATH
 #variant docs description {Build documentation} {

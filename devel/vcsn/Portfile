@@ -28,7 +28,7 @@ size    14837372
 compiler.cxx_standard 2017
 
 # python3.x is required - force dependencies to use it as well
-set python_branch 3.9
+set python.branch 3.10
 set python_version  [join [split ${python_branch} "."] ""]
 
 depends_build-append    port:doxygen \

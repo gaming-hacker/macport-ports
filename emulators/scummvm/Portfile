@@ -132,7 +132,7 @@ variant mpeg2 description {add mpeg2 support - has many dependencies} {
                     port:libsdl \
                     port:libxml2 \
                     path:lib/libssl.dylib:openssl \
-                    port:python39 \
+                    port:python310 \
                     port:python2_select \
                     port:python_select \
                     port:sqlite3 \

@@ -30,10 +30,10 @@ size   3808584
 master_sites        pypi:p/${python.rootname}/
 patchfiles          pyobjc_setup.py.patch
 
-python.versions 39
+python.versions 310
 
 subport py35-pyobjc-cocoa {
-    python.versions 39
+    python.versions 310
 }
 
 depends_build-append \

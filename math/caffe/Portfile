@@ -117,30 +117,30 @@ variant openblas description {Use OpenBLAS} {
 
 variant python27 description {Install Python 2.7 interface} {
     depends_lib-append \
-                    port:python39 \
-                    port:py39-cython \
-                    port:py39-numpy \
-                    port:py39-scipy \
-                    port:py39-scikit-image \
-                    port:py39-scikit-learn \
-                    port:py39-matplotlib \
-                    port:py39-ipython \
-                    port:py39-h5py \
-                    port:py39-networkx \
-                    port:py39-nose \
-                    port:py39-pandas \
-                    port:py39-protobuf3 \
-                    port:py39-gflags \
-                    port:py39-leveldb \
-                    port:py39-dateutil \
-                    port:py39-pydot
+                    port:python310 \
+                    port:py310-cython \
+                    port:py310-numpy \
+                    port:py310-scipy \
+                    port:py310-scikit-image \
+                    port:py310-scikit-learn \
+                    port:py310-matplotlib \
+                    port:py310-ipython \
+                    port:py310-h5py \
+                    port:py310-networkx \
+                    port:py310-nose \
+                    port:py310-pandas \
+                    port:py310-protobuf3 \
+                    port:py310-gflags \
+                    port:py310-leveldb \
+                    port:py310-dateutil \
+                    port:py310-pydot
 
     build.target-append  pycaffe
     test.target-append   pytest
 
     post-destroot {
         set packages_dir \
-            ${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages
+            ${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages
         xinstall -m 755 -d ${destroot}${packages_dir}
         system "install_name_tool -change @rpath/libcaffe.so.1.0.0 ${prefix}/lib/libcaffe.so \
                 ${worksrcpath}/python/caffe/_caffe.so"

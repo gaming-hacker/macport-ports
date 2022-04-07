@@ -32,28 +32,28 @@ boost.version       1.71
 configure.ldflags-delete    -L${prefix}/lib
 
 depends_build-append \
-                    port:py39-pkgconfig
+                    port:py310-pkgconfig
 
 depends_lib-append  port:hdf5 \
-                    port:py39-mako \
-                    port:py39-numpy
+                    port:py310-mako \
+                    port:py310-numpy
 
 depends_run-append  port:gnutls \
-                    port:py39-dateutil \
-                    port:py39-matplotlib \
-                    port:py39-packaging \
-                    port:py39-pandas \
-                    port:py39-scipy \
-                    port:py39-six \
-                    port:py39-tz \
-                    port:py39-watchdog
+                    port:py310-dateutil \
+                    port:py310-matplotlib \
+                    port:py310-packaging \
+                    port:py310-pandas \
+                    port:py310-scipy \
+                    port:py310-six \
+                    port:py310-tz \
+                    port:py310-watchdog
 
 depends_run-append  path:lib/libgnuradio-runtime.dylib:gnuradio \
                     path:lib/libuhd.dylib:uhd
 
 # CMAKE configuration
 configure.args-append \
-    -DDRF_INSTALL_PREFIX_PYTHON=${frameworks_dir}/Python.framework/Versions/3.9\
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.9/bin/python3.9\
+    -DDRF_INSTALL_PREFIX_PYTHON=${frameworks_dir}/Python.framework/Versions/3.10\
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.10/bin/python3.10\
     -DDRF_DATA_PREFIX_PYTHON=${prefix} \
     -DDRF_SCRIPT_PREFIX_PYTHON=${prefix}/bin

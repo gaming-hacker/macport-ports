@@ -36,7 +36,7 @@ size    5647516
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python39
+                    port:python310
 
 depends_lib         path:lib/pkgconfig/babl.pc:babl \
                     path:lib/pkgconfig/cairo.pc:cairo \
@@ -57,7 +57,7 @@ depends_lib         path:lib/pkgconfig/babl.pc:babl \
                     port:libspiro \
                     port:openexr \
                     port:poly2tri-c \
-                    port:py39-gobject3 \
+                    port:py310-gobject3 \
                     port:poppler \
                     port:SuiteSparse_UMFPACK \
                     port:webp
@@ -81,7 +81,7 @@ compiler.c_standard   2011
 # ../gegl/gegl-parallel.h:134:29: error: expected expression '[] (gint     i,'
 compiler.blacklist-append  {clang < 900}
 
-set python_framework        ${frameworks_dir}/Python.framework/Versions/3.9
+set python_framework        ${frameworks_dir}/Python.framework/Versions/3.10
 configure.pkg_config_path   ${python_framework}/lib/pkgconfig
 
 # disable vala extensions by default (currently broken)

@@ -19,7 +19,7 @@ license             GPL-3
 platforms           darwin
 
 depends_build       port:pkgconfig \
-                    port:python39
+                    port:python310
 
 depends_lib         path:lib/pkgconfig/webkit2gtk-4.0.pc:webkit2-gtk \
                     path:lib/pkgconfig/glib-2.0.pc:glib2 \
@@ -38,7 +38,7 @@ use_xz              yes
 patchfiles          fix-install-name.patch
 
 post-patch {
-    reinplace "s|/usr/bin/python3|${prefix}/bin/python3.9|" \
+    reinplace "s|/usr/bin/python3|${prefix}/bin/python3.10|" \
         configure \
         build.py \
         install.py

@@ -60,9 +60,9 @@ configure.args      --disable-silent-rules \
 
 variant python27 description {Enable support for Python widgets using Python 2.7} {
     configure.args-replace    --disable-python --enable-python
-    configure.python          ${prefix}/bin/python3.9
-    depends_lib-append        port:py39-pygtk
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.9
+    configure.python          ${prefix}/bin/python3.10
+    depends_lib-append        port:py310-pygtk
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.10
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 

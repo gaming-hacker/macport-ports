@@ -207,10 +207,10 @@ subport mrustc-rust {
 
     # use the system python27 if present
     if {${os.platform} eq "darwin" && ${os.major} >= 11 && ${os.major} <= 21} {
-        set pythonfullpath   /usr/bin/python3.9
+        set pythonfullpath   /usr/bin/python3.10
     } else {
-        set pythonfullpath   ${prefix}/bin/python3.9
-        depends_build-append port:python39
+        set pythonfullpath   ${prefix}/bin/python3.10
+        depends_build-append port:python310
     }
 
     build.env-append \

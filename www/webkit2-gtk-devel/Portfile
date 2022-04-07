@@ -42,8 +42,8 @@ depends_build-append \
                     port:gperf \
                     port:gtk-doc \
                     port:pkgconfig \
-                    port:python39 \
-                    port:py39-simplejson
+                    port:python310 \
+                    port:py310-simplejson
 
 depends_lib-append  port:atk \
                     port:at-spi2-atk \

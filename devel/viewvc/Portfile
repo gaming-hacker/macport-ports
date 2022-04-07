@@ -31,10 +31,10 @@ size    361095
 # Note python2 EOL is Jan 2020
 # https://github.com/python/devguide/pull/344
 # April 2020: per website next version 1.3.0 will require python3+
-depends_lib         port:python39
+depends_lib         port:python310
 
 post-patch {
-    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.9|" ${worksrcpath}/viewvc-install
+    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.10|" ${worksrcpath}/viewvc-install
 }
 
 use_configure       no
@@ -49,7 +49,7 @@ variant cvs description {Enable cvs repositories} {
                         port:rcs
 }
 variant subversion description {Enable subversion repositories} {
-    depends_lib-append  port:py39-pysvn \
+    depends_lib-append  port:py310-pysvn \
                         port:subversion-python27bindings
 }
 

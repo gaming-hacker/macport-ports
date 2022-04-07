@@ -72,7 +72,7 @@ size    595490
                 patch-configure.diff
 }
 
-set python.versions {39}
+set python.versions {310}
 
 foreach pver ${python.versions} {
     subport py${pver}-pyilmbase {

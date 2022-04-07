@@ -31,7 +31,7 @@ checksums           rmd160  529d8f8071c4a4537369c991233863850888594b \
 sha256  e26e00cfefda64082afdd540d3c537924f645d6a674afed2cd171005deff5560 \
 size    6088380
 
-depends_build       port:python39
+depends_build       port:python310
 depends_lib         port:bzip2 \
                     port:lzma \
                     port:sqlite3 \
@@ -56,7 +56,7 @@ if {[tbool configure.ccache]} {
     configure.args-append   --cc-bin=${configure.cxx}
 }
 
-configure.cmd       ${prefix}/bin/python3.9 ./configure.py
+configure.cmd       ${prefix}/bin/python3.10 ./configure.py
 configure.args-append --docdir=share/doc \
                       --system-cert-bundle=${prefix}/share/curl/curl-ca-bundle.crt \
                       --with-bzip2 \

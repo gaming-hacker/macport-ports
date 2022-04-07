@@ -157,8 +157,8 @@ if {[variant_isset python27]} {
 }
 
 variant python27 description {build with support for calling Python (2.7) from GDL (using numpy)} {
-    depends_lib-append      port:py39-numpy
-    configure.args-append   -DPYTHONDIR=${frameworks_dir}/Python.framework/Versions/3.9 \
+    depends_lib-append      port:py310-numpy
+    configure.args-append   -DPYTHONDIR=${frameworks_dir}/Python.framework/Versions/3.10 \
                             -DPYTHONVERSION=2.7
 }
 

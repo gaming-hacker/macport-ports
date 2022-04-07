@@ -7,9 +7,9 @@ PortGroup           active_variants 1.1
 name                ffmpeg
 set my_name         ffmpeg
 conflicts           ffmpeg-devel
-# Please increase the revision of mpv whenever ffmpeg's version is updated.
+
 epoch               1
-version             20220406
+version             20220407
 revision            0
 license             LGPL-2.1+
 categories          multimedia
@@ -69,7 +69,8 @@ depends_lib         port:lame \
                     port:dav1d \
                     port:nasm \
                     port:samba3 \
-                    port:libfdk-aac
+                    port:libfdk-aac \
+                    port:xorg-libX11
 
 
 default_variants-append +gpl2

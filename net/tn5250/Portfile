@@ -31,7 +31,7 @@ configure.args      --enable-ssl
 
 #variant python {
 #    configure.args-append   --with-python
-#    depends_lib-append      port:python39
+#    depends_lib-append      port:python310
 #}
 
 variant curses description "add curses terminal support" {

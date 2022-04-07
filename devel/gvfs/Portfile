@@ -98,27 +98,27 @@ post-destroot {
 }
 
 variant python35 conflicts python36 python37 description {Use Python 3.5 for testing} {
-    depends_build-append port:py39-gobject3
+    depends_build-append port:py310-gobject3
     post-patch {
-        reinplace "s|^#!.*|#!${prefix}/bin/python3.9|" \
+        reinplace "s|^#!.*|#!${prefix}/bin/python3.10|" \
             ${worksrcpath}/test/gvfs-test \
             ${worksrcpath}/test/test_polkitd.py
     }
 }
 
 variant python36 conflicts python35 python37 description {Use Python 3.6 for testing} {
-    depends_build-append port:py39-gobject3
+    depends_build-append port:py310-gobject3
     post-patch {
-        reinplace "s|^#!.*|#!${prefix}/bin/python3.9|" \
+        reinplace "s|^#!.*|#!${prefix}/bin/python3.10|" \
             ${worksrcpath}/test/gvfs-test \
             ${worksrcpath}/test/test_polkitd.py
     }
 }
 
 variant python37 conflicts python35 python36 description {Use Python 3.7 for testing} {
-    depends_build-append port:py39-gobject3
+    depends_build-append port:py310-gobject3
     post-patch {
-        reinplace "s|^#!.*|#!${prefix}/bin/python3.9|" \
+        reinplace "s|^#!.*|#!${prefix}/bin/python3.10|" \
             ${worksrcpath}/test/gvfs-test \
             ${worksrcpath}/test/test_polkitd.py
     }

@@ -52,7 +52,7 @@ depends_lib             path:lib/pkgconfig/cairo.pc:cairo \
                         port:ossp-uuid \
                         path:lib/pkgconfig/pango.pc:pango \
                         port:pcre \
-                        port:python39 \
+                        port:python310 \
                         port:readline \
                         port:sqlite3 \
                         port:tiff \
@@ -66,7 +66,7 @@ patchfiles              Cairo-clang-warnings.patch \
                         SHA1-clang-warnings.patch \
                         version.patch
 
-configure.python        ${prefix}/bin/python3.9
+configure.python        ${prefix}/bin/python3.10
 
 # ../../_build/binaries/io_static: No such file or directory
 use_parallel_build      no

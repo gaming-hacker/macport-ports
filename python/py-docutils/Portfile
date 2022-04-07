@@ -23,7 +23,7 @@ checksums           md5    ca5827e2432fd58f4c8d74a6591135de \
 rmd160 a58063172b68280b6c13b7f4829bfceb9fd0e777 \
 sha256 679987caf361a7539d76e584cbeddc311e3aee937877c87346f31debc63e9d06
 
-python.versions 39
+python.versions 310
 
 if {$subport ne $name} {
     depends_build       port:py${python.version}-setuptools

@@ -24,9 +24,9 @@ sha256  5db1d130b144c49136450369da55ab9d8c4861da3351bb4e11ab1e0921764cba
 use_bzip2           yes
 patchfiles          patch-Makefile.in.diff
 
-depends_lib         port:python39
+depends_lib         port:python310
 
-configure.env       PYTHONINTERPRETER=${frameworks_dir}/Python.framework/Versions/3.9/bin/python3.9
+configure.env       PYTHONINTERPRETER=${frameworks_dir}/Python.framework/Versions/3.10/bin/python3.10
 destroot.destdir    prefix=${destroot}${prefix} \
                     iniprefix=${destroot}${prefix}/etc/jailkit
 

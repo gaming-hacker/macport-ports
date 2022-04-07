@@ -21,17 +21,17 @@ checksums           md5     937152fe896241f827689f4b53e79b22 \
 sha1    7012445d921ae1b325c162500750c9b0e777201f \
 rmd160  6c4e43c5464297e0d45aa89f3cb82ed424caa283
 depends_build       port:pkgconfig
-depends_lib         port:py39-pygtk \
+depends_lib         port:py310-pygtk \
                     port:gstreamer010-gst-plugins-base
 
 #gst-python does not use setup.py, so python arguments are passed to configure
-set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.9
+set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.10
 configure.pre_args-delete   --prefix=${prefix}
 configure.pre_args-append   --prefix=${python_prefix}
-configure.args-append       --includedir=${python_prefix}/include/python3.9 \
+configure.args-append       --includedir=${python_prefix}/include/python3.10 \
                             --with-libpython-dir=${prefix}/lib
 configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
-configure.python            ${prefix}/bin/python3.9
+configure.python            ${prefix}/bin/python3.10
 
 # 0.10.22 was the last release in the 0.10.x API series
 # not to be confused with the current 1.x API series

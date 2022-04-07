@@ -37,13 +37,13 @@ depends_lib         path:lib/pkgconfig/gtk+-3.0.pc:gtk3 \
                     port:dbus \
                     port:json-glib \
                     port:telepathy-glib \
-                    port:py39-rdflib \
+                    port:py310-rdflib \
                     port:raptor2 \
                     path:bin/vala:vala
 
 gobject_introspection yes
 
-configure.python    ${prefix}/bin/python3.9
+configure.python    ${prefix}/bin/python3.10
 
 patchfiles          patch-configure.ac.diff \
                     patch-doc-libzeitgeist-Makefile.am.diff \

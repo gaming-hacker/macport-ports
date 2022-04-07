@@ -65,21 +65,21 @@ if {${universal_possible} && [variant_isset universal]} {
 
 variant python38 conflicts python39 python310 description {Build Python 3.8 widgets support} {
     configure.args-replace      -Dpython=disabled -Dpython=enabled
-    configure.python            ${prefix}/bin/python3.9
-    set python_framework        ${frameworks_dir}/Python.framework/Versions/3.9
-    configure.env-append        "PYTHON_LIBS=-L${python_framework}/lib -lpython3.9" \
+    configure.python            ${prefix}/bin/python3.10
+    set python_framework        ${frameworks_dir}/Python.framework/Versions/3.10
+    configure.env-append        "PYTHON_LIBS=-L${python_framework}/lib -lpython3.10" \
                                 PYTHON_LIB_LOC=${python_framework}/lib
-    depends_lib-append          port:py39-gobject3
+    depends_lib-append          port:py310-gobject3
     configure.pkg_config_path   ${python_framework}/lib/pkgconfig
 }
 
 variant python39 conflicts python38 python310 description {Build Python 3.9 widgets support} {
     configure.args-replace      -Dpython=disabled -Dpython=enabled
-    configure.python            ${prefix}/bin/python3.9
-    set python_framework        ${frameworks_dir}/Python.framework/Versions/3.9
-    configure.env-append        "PYTHON_LIBS=-L${python_framework}/lib -lpython3.9" \
+    configure.python            ${prefix}/bin/python3.10
+    set python_framework        ${frameworks_dir}/Python.framework/Versions/3.10
+    configure.env-append        "PYTHON_LIBS=-L${python_framework}/lib -lpython3.10" \
                                 PYTHON_LIB_LOC=${python_framework}/lib
-    depends_lib-append          port:py39-gobject3
+    depends_lib-append          port:py310-gobject3
     configure.pkg_config_path   ${python_framework}/lib/pkgconfig
 }
 

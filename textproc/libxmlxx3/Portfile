@@ -33,13 +33,13 @@ patchfiles-append   patch-meson.build.diff
 
 # make sure the Python version being patched matches the build dependencies below
 post-patch {
-    reinplace "s|@@PYTHON3@@|python3.9|g" ${worksrcpath}/meson.build
+    reinplace "s|@@PYTHON3@@|python3.10|g" ${worksrcpath}/meson.build
 }
 
 depends_build-append  \
                     port:pkgconfig \
-                    port:python39 \
-                    port:py39-setuptools \
+                    port:python310 \
+                    port:py310-setuptools \
 
 depends_lib-append  port:libxml2 \
                     port:glibmm

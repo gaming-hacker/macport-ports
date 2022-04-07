@@ -38,8 +38,8 @@ configure.env-append    GREP=${prefix}/bin/grep
 depends_build-append    port:bison
 configure.env-append    YACC=${prefix}/bin/bison
 
-depends_build-append    port:python39
-configure.env-append    PYTHON3=${prefix}/bin/python3.9
+depends_build-append    port:python310
+configure.env-append    PYTHON3=${prefix}/bin/python3.10
 
 livecheck.url           https://github.com/verilator/verilator/tags
 livecheck.regex         {/v(\d+(?:\.\d+)*)"}

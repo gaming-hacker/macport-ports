@@ -30,7 +30,7 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 depends_build       port:cargo \
-                    port:python39 \
+                    port:python310 \
                     port:rust \
                     port:yarn
 
@@ -42,7 +42,7 @@ use_parallel_build  no
 
 post-extract {
     file mkdir ${workpath}/bin
-    ln -s ${prefix}/bin/python3.9 ${workpath}/bin/python2
+    ln -s ${prefix}/bin/python3.10 ${workpath}/bin/python2
 
     # Replace npm with yarn in the build process
     reinplace "/npm init/ d" ${worksrcpath}/Makefile

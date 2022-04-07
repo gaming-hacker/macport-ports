@@ -81,7 +81,7 @@ variant tests description {Enable running 'port test'} {
 	ui_msg "Tests run using the installed version of this port."
 
 	depends_test	port:check \
-			port:py39-pytest
+			port:py310-pytest
 
 	configure.args-delete	-DENABLE_TESTS=OFF
 	configure.pre_args-replace	-DCMAKE_BUILD_WITH_INSTALL_RPATH:BOOL=ON \

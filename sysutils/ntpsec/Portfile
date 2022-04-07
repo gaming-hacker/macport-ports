@@ -37,7 +37,7 @@ if { ${os.platform} eq "darwin" && ${os.major} < 10 } {
 # To avoid breaking any code that uses our Python package, keep the Python
 # version at 2.7 until we add variants for Python versions.  The upstream
 # code itself works with 2.6, 2.7, and 3.3+.
-python.versions 39
+python.versions 310
 
 # Note that the upstream --python option may not work correctly, so waf
 # must be run with the target Python version.  The waf PortGroup doesn't

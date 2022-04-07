@@ -23,8 +23,8 @@ long_description    namebench hunts down the fastest DNS servers \
                     "py27-libnamebench" port.
 homepage            https://code.google.com/p/namebench/
 
-set python.version 39
-set python.branch 3.9
+set python.version 310
+set python.branch 3.10
 depends_lib-append      port:py${python.version}-libnamebench \
                         port:py${python.version}-pyobjc \
                         port:py${python.version}-pyobjc-cocoa

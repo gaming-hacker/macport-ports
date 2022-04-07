@@ -36,7 +36,7 @@ post-destroot {
 }
 
 # create Python subports
-set python.versions {39}
+set python.versions {310}
 
 # Python modules
 foreach v ${python.versions} {

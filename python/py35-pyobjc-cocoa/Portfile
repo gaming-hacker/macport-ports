@@ -30,7 +30,7 @@ size   3808584
 master_sites        pypi:p/${python.rootname}/
 patchfiles          pyobjc_setup.py.patch
 
-python.versions 39
+python.versions 310
 
 depends_build-append \
                     port:py${python.version}-setuptools

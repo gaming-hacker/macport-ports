@@ -16,7 +16,7 @@ description         Vulkan tools
 long_description    Provides vulkaninfo command for checking Vulkan installation configuration status
 
 depends_build-append \
-                    port:python39 \
+                    port:python310 \
                     port:vulkan-headers
 
 depends_lib-append  port:vulkan-loader
@@ -32,7 +32,7 @@ patchfiles          cmake.patch
 
 pre-configure {
     file mkdir ${workpath}/bin
-    file link -symbolic ${workpath}/bin/python ${prefix}/bin/python3.9
+    file link -symbolic ${workpath}/bin/python ${prefix}/bin/python3.10
     configure.env-append PATH=${workpath}/bin:$::env(PATH)
 }
 configure.args-append -DBUILD_ICD=NO -DBUILD_CUBE=NO -DVULKAN_LOADER_INSTALL_DIR=${prefix}/lib

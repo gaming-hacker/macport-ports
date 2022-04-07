@@ -39,7 +39,7 @@ configure.args      --disable-pam
 
 variant python27 conflicts python35 python36 python37 description {Build python 2.7 bindings} {
     set python_ver          2.7
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
     set python_prefix       ${frameworks_dir}/Python.framework/Versions/${python_ver}
     configure.args-append   --with-python-binary=${prefix}/bin/python${python_ver} \
                             --with-pythonsitedir=${python_prefix}
@@ -47,7 +47,7 @@ variant python27 conflicts python35 python36 python37 description {Build python 
 
 variant python35 conflicts python27 python36 python37 description {Build python 3.5 bindings} {
     set python_ver          3.5
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
     set python_prefix       ${frameworks_dir}/Python.framework/Versions/${python_ver}
     configure.args-append   --with-python-binary=${prefix}/bin/python${python_ver} \
                             --with-pythonsitedir=${python_prefix}
@@ -55,7 +55,7 @@ variant python35 conflicts python27 python36 python37 description {Build python 
 
 variant python36 conflicts python27 python35 python37 description {Build python 3.6 bindings} {
     set python_ver          3.6
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
     set python_prefix       ${frameworks_dir}/Python.framework/Versions/${python_ver}
     configure.args-append   --with-python-binary=${prefix}/bin/python${python_ver} \
                             --with-pythonsitedir=${python_prefix}
@@ -63,7 +63,7 @@ variant python36 conflicts python27 python35 python37 description {Build python 
 
 variant python37 conflicts python27 python35 python36 description {Build python 3.7 bindings} {
     set python_ver          3.7
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
     set python_prefix       ${frameworks_dir}/Python.framework/Versions/${python_ver}
     configure.args-append   --with-python-binary=${prefix}/bin/python${python_ver} \
                             --with-pythonsitedir=${python_prefix}

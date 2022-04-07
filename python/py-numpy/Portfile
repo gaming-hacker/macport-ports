@@ -26,7 +26,7 @@ if {${name} ne ${subport}} {
     pre-destroot { set_compilers }
 }
 
-python.versions 39
+python.versions 310
 
 # http://trac.macports.org/ticket/34562
 python.consistent_destroot yes

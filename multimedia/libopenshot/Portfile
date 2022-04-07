@@ -31,7 +31,7 @@ depends_lib         port:cppzmq \
                     path:lib/libavcodec.dylib:ffmpeg \
                     port:ImageMagick \
                     port:jsoncpp \
-                    port:py39-zmq \
+                    port:py310-zmq \
                     port:swig-python \
                     port:libopenshot-audio
 #depends_test        port:unittest-cpp \
@@ -42,7 +42,7 @@ depends_lib         port:cppzmq \
 # 
 # post-patch {
 #         reinplace -locale C \
-#             "s|@@PyModPath@@|${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages|"  \
+#             "s|@@PyModPath@@|${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages|"  \
 #             src/bindings/python/CMakeLists.txt
 # }
 
@@ -56,15 +56,15 @@ if {[info exists compiler.log_verbose_output]} {
 
 configure.args-append \
                     -DDISABLE_TESTS=ON \
-                    -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.9 \
-                    -DPYTHON_INCLUDE_DIR:PATH=${frameworks_dir}/Python.framework/Versions/3.9/include/python3.9 \
-                    -DPYTHON_LIBRARY:FILEPATH=${frameworks_dir}/Python.framework/Versions/3.9/lib/libpython3.9.dylib \
-                    -DPYTHON_MODULE_PATH:FILEPATH=${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages
+                    -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.10 \
+                    -DPYTHON_INCLUDE_DIR:PATH=${frameworks_dir}/Python.framework/Versions/3.10/include/python3.10 \
+                    -DPYTHON_LIBRARY:FILEPATH=${frameworks_dir}/Python.framework/Versions/3.10/lib/libpython3.10.dylib \
+                    -DPYTHON_MODULE_PATH:FILEPATH=${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages
 
 # ruby bindings - if ruby27, need swig 4.0.3 which is not currently in MacPorts
 # depends_build-append \
 #                     port:ruby26 \
-#                     port:py39-protobuf3
+#                     port:py310-protobuf3
 
 # swig ruby bindings fail to build
 configure.args-append \

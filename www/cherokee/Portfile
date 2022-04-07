@@ -41,7 +41,7 @@ post-extract {
 
     file mkdir ${ck_lcl_bin}
     # cherokee's autogen.sh seeks a python2 symlink
-    ln -s ${prefix}/bin/python3.9 ${ck_lcl_bin}/python2
+    ln -s ${prefix}/bin/python3.10 ${ck_lcl_bin}/python2
 }
 
 openssl.branch 1.0
@@ -53,7 +53,7 @@ configure.cmd   ./autogen.sh
 configure.args-append \
                 --with-wwwroot=${ck_wwwroot} \
                 --with-cgiroot=${ck_cgibin} \
-                --with-python=${prefix}/bin/python3.9 \
+                --with-python=${prefix}/bin/python3.10 \
                 --without-ffmpeg \
                 --without-mysql \
                 --without-ldap \
@@ -67,7 +67,7 @@ depends_build-append \
 depends_lib     port:pcre \
                 port:zlib \
                 port:libgeoip \
-                port:python39 \
+                port:python310 \
                 port:rrdtool
 
 # Startup item.

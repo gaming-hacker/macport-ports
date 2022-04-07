@@ -21,7 +21,7 @@ homepage            http://www.lyx.org/
 
 conflicts           LyX
 
-depends_build-append    port:python39
+depends_build-append    port:python310
 depends_lib-append      bin:tex:texlive \
                         port:ImageMagick
 
@@ -39,7 +39,7 @@ sha256  dcfb6fc0f6880e706d45ea16459ed2206265179f3882b4685e4955c18adaf569
 
 patchfiles          patch-configure.diff
 
-configure.python    ${prefix}/bin/python3.9
+configure.python    ${prefix}/bin/python3.10
 configure.pre_args  --prefix=${applications_dir}/LyX.app
 configure.args      --with-frontend=qt4 --without-x --with-included-gettext \
                     --enable-optimization=-Os --disable-concept-checks \

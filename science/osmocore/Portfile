@@ -78,7 +78,7 @@ depends_build-append \
 depends_lib-append \
     path:lib/pkgconfig/libusb-1.0.pc:libusb \
     port:gnutls \
-    port:python39 \
+    port:python310 \
     port:talloc
 
 patch.pre_args -p1
@@ -95,7 +95,7 @@ patchfiles-append patch-include_osmocom_coding_gsm0503_parity.h.diff
 # fix use of Python2, part 2, for both release and devel
 
 post-patch {
-    reinplace "s|@PYTHON_EXECUTABLE@|${frameworks_dir}/Python.framework/Versions/3.9/bin/python3.9|g" \
+    reinplace "s|@PYTHON_EXECUTABLE@|${frameworks_dir}/Python.framework/Versions/3.10/bin/python3.10|g" \
         ${worksrcpath}/include/Makefile.am \
         ${worksrcpath}/src/gsm/Makefile.am \
         ${worksrcpath}/tests/Makefile.am \

@@ -27,7 +27,7 @@ installs_libs       no
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python39
+                    port:python310
 
 depends_lib-append  port:libpcap \
                     path:lib/pkgconfig/libusb-1.0.pc:libusb

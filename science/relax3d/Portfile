@@ -31,7 +31,7 @@ distfiles           Relax-[string map {. _} ${version}].tgz
 depends_lib-append  port:fftw-3-single \
                     port:gmt4 \
                     port:proj7 \
-                    port:python39
+                    port:python310
 
 # gmt4 is not universal
 universal_variant   no

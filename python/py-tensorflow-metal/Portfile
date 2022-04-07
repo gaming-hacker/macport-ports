@@ -31,11 +31,11 @@ extract.only
 # run `port clean --all py*-tensorflow-metal` afterwards
 
 platform arm {
-    python.versions 39
+    python.versions 310
     set minimum_supported_major_version 21
 }
 platform i386 {
-    python.versions 39
+    python.versions 310
     set minimum_supported_major_version 20
 }
 

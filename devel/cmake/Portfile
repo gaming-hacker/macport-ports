@@ -233,7 +233,7 @@ if {![variant_isset qt5]} {
 }
 
 # Supported pythons
-set python.versions {39}
+set python.versions {310}
 
 # declare all +python* variants, with conflicts
 foreach pyver ${python.versions} {

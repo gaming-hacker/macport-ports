@@ -30,7 +30,7 @@ depends_build-append \
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:libxml2 \
                     port:ncurses \
-                    port:python39
+                    port:python310
 
 patchfiles          ncurses-sys-prefix.patch
 

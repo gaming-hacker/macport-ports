@@ -34,7 +34,7 @@ java.version        1.8+
 java.fallback       openjdk11
 
 # Support python versions
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

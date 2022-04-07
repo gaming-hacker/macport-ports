@@ -65,6 +65,6 @@ post-destroot {
 }
 
 test.run            yes
-depends_test-append port:python39 \
-                    port:py39-nose
-test.args           PYTHON=${prefix}/bin/python3.9
+depends_test-append port:python310 \
+                    port:py310-nose
+test.args           PYTHON=${prefix}/bin/python3.10

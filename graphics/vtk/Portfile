@@ -115,7 +115,7 @@ variant qt5 description {Add Qt5 support.} {
 }
 
 # Supported pythons
-set python.versions {39}
+set python.versions {310}
 
 foreach pyver ${python.versions} {
     # Conflicting python versions

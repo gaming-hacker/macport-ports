@@ -28,9 +28,9 @@ sha256  83b33039787cf99990e977cef7f18a5d5e7aaffc4505548a83d31bd3515eb026 \
 size    970125
 
 subport py27-libdnet {
-    set python.bin	${prefix}/bin/python3.9
-    set python.prefix  ${frameworks_dir}/Python.framework/Versions/3.9
-    depends_lib-append  port:python39
+    set python.bin	${prefix}/bin/python3.10
+    set python.prefix  ${frameworks_dir}/Python.framework/Versions/3.10
+    depends_lib-append  port:python310
 }
 
 if {$subport ne $name} {

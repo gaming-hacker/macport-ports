@@ -28,7 +28,7 @@ maintainers         {@linuxgemini linuxgemini.space:proxmark3packaging} openmain
 depends_lib-append  port:readline \
                     port:jansson \
                     port:lua52 \
-                    port:python39 \
+                    port:python310 \
                     port:bzip2
 
 depends_build-append \

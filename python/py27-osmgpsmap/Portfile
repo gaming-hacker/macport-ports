@@ -22,14 +22,14 @@ sha256  fcd0339a5922bdbbb9c934aa3c2fb9a2b8d04487d037e36cbf308dc83a02a9cf
 depends_build   port:pkgconfig
 
 depends_lib     port:osm-gps-map-gtk2 \
-                port:py39-pygtk
+                port:py310-pygtk
 
 patchfiles      patch-osmgpsmapmodule.c.diff
 
 use_autoreconf  yes
 
-configure.python            ${prefix}/bin/python3.9
-set python_framework        ${frameworks_dir}/Python.framework/Versions/3.9
+configure.python            ${prefix}/bin/python3.10
+set python_framework        ${frameworks_dir}/Python.framework/Versions/3.10
 configure.pkg_config_path   ${python_framework}/lib/pkgconfig
 
 prefix          ${python_framework}

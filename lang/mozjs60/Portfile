@@ -28,7 +28,7 @@ size    32802956
 
 depends_build       port:autoconf213 \
                     port:pkgconfig \
-                    port:python39 \
+                    port:python310 \
                     port:yasm
 
 depends_lib         port:nspr \
@@ -54,7 +54,7 @@ post-patch {
 }
 
 configure.perl      /usr/bin/perl
-configure.python    ${prefix}/bin/python3.9
+configure.python    ${prefix}/bin/python3.10
 
 configure.env-append \
                     SHELL=/bin/bash

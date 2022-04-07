@@ -176,7 +176,7 @@ array set modules {
             5aeb841a5665f79672a302569754ea7d541c69102c551707e43489e797213c71
             29764804
         }
-        "port:python39"
+        "port:python310"
         ""
         "qtbase qtsvg qtimageformats"
         {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
@@ -1149,7 +1149,7 @@ if { [info exists depends_lib] } {
 foreach deps ${depends_check} {
     if { [string first ":python39" ${deps}] >= 0 } {
         # If Qt components use Python, ensure that MacPorts python39 is used
-        set python_framework ${frameworks_dir}/Python.framework/Versions/3.9
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.10
     }
 }
 if { ${python_framework} ne "" } {

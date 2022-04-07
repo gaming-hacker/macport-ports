@@ -26,15 +26,15 @@ git.branch                  7b8df5940eeecfcd91ab3922a65303a0cadf3e24
 depends_lib                 port:zlib \
                             path:include/turbojpeg.h:libjpeg-turbo \
                             path:lib/libssl.dylib:openssl \
-                            port:python39
+                            port:python310
 
 patchfiles                  patch-endian.diff
 
 configure.args-append       -DDISABLE_PYTHON:BOOL=OFF \
-                            -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.9 \
-                            -DPYTHON_LIBRARY:FILEPATH=${prefix}/lib/libpython3.9.dylib
+                            -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.10 \
+                            -DPYTHON_LIBRARY:FILEPATH=${prefix}/lib/libpython3.10.dylib
 
-set pyhsplasma              ${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/PyHSPlasma.so
+set pyhsplasma              ${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/PyHSPlasma.so
 
 post-destroot {
     system "install_name_tool -id ${pyhsplasma} ${destroot}${pyhsplasma}"

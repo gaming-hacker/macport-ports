@@ -97,38 +97,38 @@ variant multi description {Enable libSBML support for the SBML Level 3 Multistat
 
 variant python27 conflicts python35 python36 python37 python38 python39 description {Configure to use Python version 2.7} {
     depends_build-append  port:swig-python
-    depends_lib-append      port:python39
-    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
+    depends_lib-append      port:python310
+    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
 }
 
 variant python35 conflicts python27 python36 python37 python38 python39 description {Configure to use Python version 3.5} {
     depends_build-append  port:swig-python
-    depends_lib-append      port:python39
-    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
+    depends_lib-append      port:python310
+    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
 }
 
 variant python36 conflicts python27 python35 python37 python38 python39 description {Configure to use Python version 3.6} {
     depends_build-append  port:swig-python
-    depends_lib-append      port:python39
-    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
+    depends_lib-append      port:python310
+    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
 }
 
 variant python37 conflicts python27 python35 python36 python38 python39 description {Configure to use Python version 3.7} {
     depends_build-append  port:swig-python
-    depends_lib-append      port:python39
-    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
+    depends_lib-append      port:python310
+    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
 }
 
 variant python38 conflicts python27 python35 python36 python37 python39 description {Configure to use Python version 3.8} {
     depends_build-append  port:swig-python
-    depends_lib-append      port:python39
-    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
+    depends_lib-append      port:python310
+    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
 }
 
 variant python39 conflicts python27 python35 python36 python37 python38 description {Configure to use Python version 3.9} {
     depends_build-append  port:swig-python
-    depends_lib-append      port:python39
-    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
+    depends_lib-append      port:python310
+    configure.args-append   -DWITH_PYTHON:BOOL=ON -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 -DPYTHON_USE_DYNAMIC_LOOKUP:BOOL=ON
 }
 
 variant qual description {Enable libSBML support for the SBML Level 3 Qualitative Models ('qual')} {

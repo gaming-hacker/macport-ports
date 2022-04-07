@@ -30,7 +30,7 @@ patchfiles-append       patch-Makefile.diff \
 
 post-patch {
     reinplace -W ${worksrcpath} \
-        "s|^#!/usr/bin/env python|#!${prefix}/bin/python3.9|" \
+        "s|^#!/usr/bin/env python|#!${prefix}/bin/python3.10|" \
         bowtie \
         bowtie-build \
         bowtie-inspect
@@ -44,7 +44,7 @@ depends_build-append    port:seqan-1
 depends_lib-append      port:zlib \
                         port:tbb
 
-depends_run-append      port:python39
+depends_run-append      port:python310
 
 # replicate values from Makefile prior to patching
 configure.optflags      -O3

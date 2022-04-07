@@ -54,7 +54,7 @@ depends_lib-append \
                     port:p${perl5.major}-net-snmp \
                     port:p${perl5.major}-net-ssleay \
                     port:p${perl5.major}-time-hires \
-                    port:python39 \
+                    port:python310 \
                     port:ruby26
 
 # munindoc needs at least groff version 1.20.1 for good Unicode support.
@@ -88,7 +88,7 @@ post-patch {
         plugins/node.d.debug/sincos \
         plugins/node.d.debug/testplugin
 
-    reinplace -W ${worksrcpath} "s|/usr/bin/env python.*|${prefix}/bin/python3.9|" \
+    reinplace -W ${worksrcpath} "s|/usr/bin/env python.*|${prefix}/bin/python3.10|" \
         Makefile.config \
         doc/conf.py
 
@@ -110,7 +110,7 @@ build.args          PREFIX=${prefix} \
                     HTMLDIR=${prefix}/www/munin \
                     CGIDIR=${prefix}/www/cgi-bin \
                     PERL=${perl5.bin} \
-                    PYTHON=${prefix}/bin/python3.9 \
+                    PYTHON=${prefix}/bin/python3.10 \
                     RUBY=${prefix}/bin/ruby2.6
 destroot.args       PREFIX=${destroot}${prefix} \
                     CONFDIR=${destroot}${prefix}/etc/munin \
@@ -123,7 +123,7 @@ destroot.args       PREFIX=${destroot}${prefix} \
                     HTMLDIR=${destroot}${prefix}/www/munin \
                     CGIDIR=${destroot}${prefix}/www/cgi-bin \
                     PERL=${perl5.bin} \
-                    PYTHON=${prefix}/bin/python3.9 \
+                    PYTHON=${prefix}/bin/python3.10 \
                     RUBY=${prefix}/bin/ruby2.6
 destroot.keepdirs   ${destroot}${prefix}/var/log/munin \
                     ${destroot}${prefix}/var/run/munin \

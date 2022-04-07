@@ -28,7 +28,7 @@ size    2134754
 
 mpi.setup           require
 
-python.versions 39
+python.versions 310
 
 build.env-append    PETSC_DIR=${prefix}/lib/petsc
 destroot.env-append PETSC_DIR=${prefix}/lib/petsc

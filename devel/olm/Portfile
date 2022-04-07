@@ -28,7 +28,7 @@ if {${name} eq ${subport}} {
 
 }
 
-set python.versions {39}
+set python.versions {310}
 
 foreach v ${python.versions} {
     subport py${v}-${name} {

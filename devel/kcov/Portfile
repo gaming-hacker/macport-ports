@@ -31,7 +31,7 @@ github.tarball_from archive
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python39
+                    port:python310
 
 depends_lib-append  port:curl \
                     port:zlib

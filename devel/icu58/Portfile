@@ -36,7 +36,7 @@ if {${build_arch} eq "ppc" || ${build_arch} eq "ppc64"} {
     }
 }
 
-configure.python    /usr/bin/python3.9
+configure.python    /usr/bin/python3.10
 
 worksrcdir          icu/source
 

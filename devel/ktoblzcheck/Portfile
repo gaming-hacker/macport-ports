@@ -18,12 +18,12 @@ checksums           rmd160  d9e6c42a3392b98d1db49aa357438fa80880245b \
 sha256  18b9118556fe83240f468f770641d2578f4ff613cdcf0a209fb73079ccb70c55 \
 size    531459
 
-depends_lib-append  port:python39
+depends_lib-append  port:python310
 patchfiles          patch-ktoblzcheck-remove-hardcoded-libstdcxx.diff
 
-set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.9
+set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.10
 
-set python_libsite  ${python_prefix}/lib/python3.9/site-packages
+set python_libsite  ${python_prefix}/lib/python3.10/site-packages
 
 configure.env-append \
                     am_cv_python_pythondir=${python_libsite} \

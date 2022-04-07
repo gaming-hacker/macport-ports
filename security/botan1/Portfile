@@ -24,7 +24,7 @@ checksums           rmd160  77336d0c9a10c03e86ad5946f1e357ec70cee9e7 \
 sha256  6847ffb64b8d2f939dccfecc17bd2c80385d08f7621e2c56d3a335118e823613 \
 size    2706678
 
-depends_build       port:python39
+depends_build       port:python310
 depends_lib         port:zlib port:bzip2 port:openssl10
 
 # respect MacPorts configure values
@@ -55,7 +55,7 @@ if {[string match *clang* ${configure.compiler}] && ${configure.cxx_stdlib} eq "
     }
 }
 
-configure.cmd       ${prefix}/bin/python3.9 ./configure.py
+configure.cmd       ${prefix}/bin/python3.10 ./configure.py
 configure.args-append --docdir=share/doc --with-zlib --with-bzip2  --with-openssl
 
 if {[string match *clang* ${configure.compiler}]} {

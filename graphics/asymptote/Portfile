@@ -22,7 +22,7 @@ license             LGPL-3+
 license_noconflict  libpaper
 platforms           darwin
 
-set python.branch   3.9
+set python.branch 3.10
 set python.version  [join [split ${python.branch} "."] ""]
 set python.bin      ${prefix}/bin/python${python.branch}
 

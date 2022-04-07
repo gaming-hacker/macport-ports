@@ -25,7 +25,7 @@ size    33327
 # Note: Py3 compatibility is still not "officially" declared. However,
 # the modules seems to work decently well with Py3 and its needed for as
 # dependency.
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

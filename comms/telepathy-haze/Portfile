@@ -23,7 +23,7 @@ checksums       sha256  3e76049c05f2cd5900c5c0c1cfebdf7ae79eec987a599f1090946673
 rmd160  de24452c5060dda443a78e5d56d9a88df54b839c
 
 depends_build   port:pkgconfig \
-                port:python39
+                port:python310
 
 depends_lib     port:dbus-glib \
                 port:telepathy-glib \
@@ -31,7 +31,7 @@ depends_lib     port:dbus-glib \
 
 patchfiles      patch-configure.diff
 
-configure.python ${prefix}/bin/python3.9
+configure.python ${prefix}/bin/python3.10
 
 # disable streaming media support due to incompatibilities with libpurple 2.8+ that break build
 

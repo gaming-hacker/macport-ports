@@ -32,7 +32,7 @@ github.tarball_from releases
 patchfiles          dynamic_lookup-11.patch
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
-    depends_lib-append  port:python39
+    depends_lib-append  port:python310
     configure.python    ${prefix}/bin/python27
 } else {
     configure.python    /usr/bin/python

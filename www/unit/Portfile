@@ -126,7 +126,7 @@ foreach perl_v ${perl_versions} {
 #    }
 #}
 
-set python.versions {39}
+set python.versions {310}
 foreach python_v ${python.versions} {
     subport ${name}-python${python_v} {
         description         Python module for NGINX Unit

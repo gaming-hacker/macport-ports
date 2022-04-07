@@ -24,7 +24,7 @@ long_description            ${my_name} is ${description}.
 
 distname                    ${my_name}-${version}
 
-python.versions 39
+python.versions 310
 
 if {${subport} ne ${name}} {
     depends_lib-append          port:cln

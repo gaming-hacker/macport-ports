@@ -28,7 +28,7 @@ sha256  b3a9de2c6ef801e9247d1527a4b16f92f2cc141cd1489f3fffaf6a9e96729764 \
 size    2090742
 
 # keep older Python versions here, do add the EOL version to the list below
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     # add EOL warnings

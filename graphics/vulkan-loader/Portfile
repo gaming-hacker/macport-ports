@@ -18,7 +18,7 @@ long_description    Loader for Vulkan Installable Client Drivers (ICDs) and Vulk
                     While MoltenVK on macOS can be linked to directly, it is a Level 0 ICD \
                     and thus requires a loader in order to use Layers.
 
-depends_build-append port:MoltenVK port:vulkan-headers port:python39
+depends_build-append port:MoltenVK port:vulkan-headers port:python310
 
 # MoltenVK is x86_64-only
 supported_archs     x86_64

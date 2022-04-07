@@ -33,7 +33,7 @@ distname                    krb5-${version}
 
 depends_build               port:gettext \
                             port:pkgconfig \
-                            port:python39
+                            port:python310
 
 depends_lib                 port:gettext-runtime \
                             port:libcomerr \
@@ -62,7 +62,7 @@ configure.checks.implicit_function_declaration.whitelist-append strchr
 # remove ${prefix}/lib from configure.ldflags to allow linking against its own libs first
 # adding ${worksrcpath}/lib is not necessary and pollutes krb5-config --libs and pkg-config files
 configure.ldflags-delete    -L${prefix}/lib
-configure.python            ${prefix}/bin/python3.9
+configure.python            ${prefix}/bin/python3.10
 configure.args              --with-system-et \
                             --without-system-db \
                             --without-hesiod \

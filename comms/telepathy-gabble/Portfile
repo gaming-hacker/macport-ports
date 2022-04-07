@@ -25,12 +25,12 @@ depends_lib         port:gnutls \
                     port:libsoup \
                     port:libnice \
                     port:cyrus-sasl2 \
-                    port:py39-twisted
+                    port:py310-twisted
 
 patchfiles          patch-configure.diff \
                     patch-lib-ext-wocky-Makefile.in.diff
 
-configure.python    ${prefix}/bin/python3.9
+configure.python    ${prefix}/bin/python3.10
 
 configure.args      --disable-silent-rules \
                     --without-ca-certificates \

@@ -56,7 +56,7 @@ platform darwin 8 {
     test.env-append     SHELL=${prefix}/bin/bash
 }
 
-depends_test-append     port:py39-pexpect
+depends_test-append     port:py310-pexpect
 # other possible options are ansi, dtterm, rxvt, vt52, vt100, vt102, xterm
 test.env-append         TERM=nsterm
 test.run                yes

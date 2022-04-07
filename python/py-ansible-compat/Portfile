@@ -22,7 +22,7 @@ sha256  c651995dc323ef145bab857fee6540febc881fb71b7feafe8163d49e273163a5 \
 size    35072
 
 python.pep517       yes
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

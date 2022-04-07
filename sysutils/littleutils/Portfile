@@ -54,21 +54,21 @@ depends_lib         port:bash \
 destroot.target     "install install-extra"
 
 variant python37 conflicts python38 python39 python310 description {Use Python 3.7} {
-    configure.env   PROGPYTHON=${prefix}/bin/python3.9
+    configure.env   PROGPYTHON=${prefix}/bin/python3.10
     depends_lib-append \
-                    port:python39
+                    port:python310
 }
 
 variant python38 conflicts python37 python39 python310 description {Use Python 3.8} {
-    configure.env   PROGPYTHON=${prefix}/bin/python3.9
+    configure.env   PROGPYTHON=${prefix}/bin/python3.10
     depends_lib-append \
-                    port:python39
+                    port:python310
 }
 
 variant python39 conflicts python37 python38 python310 description {Use Python 3.9} {
-    configure.env   PROGPYTHON=${prefix}/bin/python3.9
+    configure.env   PROGPYTHON=${prefix}/bin/python3.10
     depends_lib-append \
-                    port:python39
+                    port:python310
 }
 
 variant python310 conflicts python37 python38 python39 description {Use Python 3.10} {

@@ -36,7 +36,7 @@ depends_lib         port:c-ares \
                     path:lib/libssl.dylib:openssl
 
 depends_test-append \
-                    port:python39
+                    port:python310
 
 configure.args-append \
                     -DUSE_LIBWRAP:BOOL=ON \
@@ -62,7 +62,7 @@ pre-test {
             reinplace -E "s|\\.so\\.\[^\[:space:\]\]+|.dylib|g" $path
             reinplace -E "s|\\.so\[\[:space:\]\]+|.dylib |g" $path
         } elseif {[string match "*.py" ${path}]} {
-            reinplace "s|^#!/usr/bin/env python$|#!${prefix}/bin/python3.9|" $path
+            reinplace "s|^#!/usr/bin/env python$|#!${prefix}/bin/python3.10|" $path
             reinplace {s|[[:<:]]LD_LIBRARY_PATH|DY&|} $path
         }
     }

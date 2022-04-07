@@ -168,8 +168,8 @@ variant test description {enable tests (Only Works if dbus is Already Installed)
                             --enable-tests
     configure.args-append   --without-dbus-glib
     depends_build-append    path:lib/pkgconfig/glib-2.0.pc:glib2
-    depends_build-append    port:python39 port:dbus-python27 port:py39-gobject3 port:dbus-python
-    configure.python        ${prefix}/bin/python3.9
+    depends_build-append    port:python310 port:dbus-python27 port:py310-gobject3 port:dbus-python
+    configure.python        ${prefix}/bin/python3.10
 }
 
 set cross_opts  "ac_cv_have_abstract_sockets=no"

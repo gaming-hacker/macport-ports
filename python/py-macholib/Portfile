@@ -25,7 +25,7 @@ checksums           md5 0055dc8d68ac70d8571ae03b20343f2c \
 rmd160 95b24287584182efea404a068924b1a28ad66db5 \
 sha256 001bf281279b986a66d7821790d734e61150d52f40c080899df8fefae056e9f7
 
-python.versions 39
+python.versions 310
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-modulegraph

@@ -49,8 +49,8 @@ default_variants    +sqlite3 +python38
 
 variant python38 description {python v3.8 bindings} {
         configure.args-delete   --without-python3
-        configure.args-append   --with-python3=${prefix}/bin/python3.9
-        depends_lib-append port:python39
+        configure.args-append   --with-python3=${prefix}/bin/python3.10
+        depends_lib-append port:python310
 }
 
 variant sqlite3 description {sqlite3 database support} {

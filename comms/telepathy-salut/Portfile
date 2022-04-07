@@ -26,13 +26,13 @@ depends_lib     port:telepathy-glib \
                 port:avahi \
                 port:libsoup \
                 port:ossp-uuid \
-                port:py39-twisted
+                port:py310-twisted
 
 patchfiles      patch-configure.diff \
                 patch-lib-ext-wocky-Makefile.in.diff
 
 configure.python \
-                ${prefix}/bin/python3.9
+                ${prefix}/bin/python3.10
 
 configure.args  --disable-silent-rules \
                 --disable-Werror

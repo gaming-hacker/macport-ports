@@ -43,7 +43,7 @@ patchfiles          patch-configure.py-bootstrap-only.diff \
 depends_build-append \
                     port:re2c
 
-set py_ver          3.9
+set py_ver          3.10
 set py_ver_nodot    [string map {. {}} ${py_ver}]
 
 depends_lib-append  port:python${py_ver_nodot}

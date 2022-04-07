@@ -39,8 +39,8 @@ depends_build-append \
                     port:gtk-doc \
                     port:perl5.30 \
                     port:pkgconfig \
-                    port:python39 \
-                    port:py39-simplejson
+                    port:python310 \
+                    port:py310-simplejson
 
 depends_lib-append  port:atk \
                     port:at-spi2-atk \

@@ -69,67 +69,67 @@ configure.args-append \
 # see https://github.com/imageworks/OpenColorIO/blob/15e96c1f579d3640947a5fcb5ec831383cc3956e/src/pyglue/CMakeLists.txt#L85
 
 variant python27 description {Build the Python 2.7 bindings} conflicts python36 python37 python38 python39 {
-    depends_lib-append port:python39
+    depends_lib-append port:python310
     configure.args-append \
-        -DPYTHON=${prefix}/bin/python3.9
+        -DPYTHON=${prefix}/bin/python3.10
     post-destroot {
         xinstall -d -m 0755 \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages
         ln -s \
-            ${prefix}/lib/python3.9/site-packages/PyOpenColorIO.so \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages/
+            ${prefix}/lib/python3.10/site-packages/PyOpenColorIO.so \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages/
     }
 }
 
 variant python36 description {Build the Python 3.6 bindings} conflicts python27 python37 python38 python39 {
-    depends_lib-append port:python39
+    depends_lib-append port:python310
     configure.args-append \
-        -DPYTHON=${prefix}/bin/python3.9
+        -DPYTHON=${prefix}/bin/python3.10
     post-destroot {
         xinstall -d -m 0755 \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages
         ln -s \
-            ${prefix}/lib/python3.9/site-packages/PyOpenColorIO.so \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages/
+            ${prefix}/lib/python3.10/site-packages/PyOpenColorIO.so \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages/
     }
 }
 
 variant python37 description {Build the Python 3.7 bindings} conflicts python27 python36 python38 python39 {
-    depends_lib-append port:python39
+    depends_lib-append port:python310
     configure.args-append \
-        -DPYTHON=${prefix}/bin/python3.9
+        -DPYTHON=${prefix}/bin/python3.10
     post-destroot {
         xinstall -d -m 0755 \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages
         ln -s \
-            ${prefix}/lib/python3.9/site-packages/PyOpenColorIO.so \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages/
+            ${prefix}/lib/python3.10/site-packages/PyOpenColorIO.so \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages/
     }
 }
 
 variant python38 description {Build the Python 3.8 bindings} conflicts python27 python36 python37 python39 {
-    depends_lib-append port:python39
+    depends_lib-append port:python310
     configure.args-append \
-        -DPYTHON=${prefix}/bin/python3.9
+        -DPYTHON=${prefix}/bin/python3.10
     post-destroot {
         xinstall -d -m 0755 \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages
         ln -s \
-            ${prefix}/lib/python3.9/site-packages/PyOpenColorIO.so \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages/
+            ${prefix}/lib/python3.10/site-packages/PyOpenColorIO.so \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages/
     }
 }
 
 variant python39 description {Build the Python 3.9 bindings} conflicts python27 python36 python37 python38 {
-    depends_lib-append port:python39
+    depends_lib-append port:python310
     configure.args-append \
-        -DPYTHON=${prefix}/bin/python3.9
+        -DPYTHON=${prefix}/bin/python3.10
     post-destroot {
         xinstall -d -m 0755 \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages
         ln -s \
-            ${prefix}/lib/python3.9/site-packages/PyOpenColorIO.so \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/site-packages/
+            ${prefix}/lib/python3.10/site-packages/PyOpenColorIO.so \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/site-packages/
     }
 }
 

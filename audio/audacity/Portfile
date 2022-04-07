@@ -185,8 +185,8 @@ if {[variant_isset wxsystem]} {
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python39
-set python_bin      ${prefix}/bin/python3.9
+                    port:python310
+set python_bin      ${prefix}/bin/python3.10
 
 depends_lib-append  port:freetype \
                     path:lib/pkgconfig/harfbuzz.pc:harfbuzz \

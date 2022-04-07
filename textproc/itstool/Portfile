@@ -38,26 +38,26 @@ patchfiles          patch-configure.diff
 
 variant python27 conflicts python38 python39 python310 description {Use Python 2.7} {
     configure.python \
-                    ${prefix}/bin/python3.9
+                    ${prefix}/bin/python3.10
 
     depends_lib-append \
-                    port:py39-libxml2
+                    port:py310-libxml2
 }
 
 variant python38 conflicts python27 python37 python39 python310 description {Use Python 3.8} {
     configure.python \
-                    ${prefix}/bin/python3.9
+                    ${prefix}/bin/python3.10
 
     depends_lib-append \
-                    port:py39-libxml2
+                    port:py310-libxml2
 }
 
 variant python39 conflicts python27 python37 python38 python310 description {Use Python 3.9} {
     configure.python \
-                    ${prefix}/bin/python3.9
+                    ${prefix}/bin/python3.10
 
     depends_lib-append \
-                    port:py39-libxml2
+                    port:py310-libxml2
 }
 
 variant python310 conflicts python27 python37 python38 python39 description {Use Python 3.10} {

@@ -22,9 +22,9 @@ rmd160  53850d39a09bac40cef8c17aa261048c93c77a95 \
 size    590787
 use_zip             no
 
-depends_build-append port:python39
+depends_build-append port:python310
 pre-configure {
     file mkdir ${workpath}/bin
-    file link -symbolic ${workpath}/bin/python ${prefix}/bin/python3.9
+    file link -symbolic ${workpath}/bin/python ${prefix}/bin/python3.10
     configure.env-append PATH=${workpath}/bin:$::env(PATH)
 }

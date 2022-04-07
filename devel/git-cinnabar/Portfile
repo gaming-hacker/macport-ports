@@ -36,14 +36,14 @@ post-extract {
    file rename -- ${workpath}/git-${git_version} ${worksrcpath}/git-core
 }
 
-depends_lib         port:python39 \
+depends_lib         port:python310 \
                     port:mercurial
 
 patchfiles          patch-python3 \
                     patch-Makefile.in
 
 post-patch {
-    set python_bin ${prefix}/bin/python3.9
+    set python_bin ${prefix}/bin/python3.10
     reinplace "1 s|/usr/bin/env python.*|${python_bin}|g" \
         ${worksrcpath}/git-cinnabar \
         ${worksrcpath}/git-remote-hg

@@ -129,15 +129,15 @@ variant python requires python27 description {add support for python} {
 }
 
 variant python27 conflicts python3 description {add support for python 2.7} {
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
     configure.args-append   --with-python
-    configure.python        ${prefix}/bin/python3.9
+    configure.python        ${prefix}/bin/python3.10
 }
 
 variant python3 conflicts python27 description {add support for python 3.x} {
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
     configure.args-append   --with-python
-    configure.python        ${prefix}/bin/python3.9
+    configure.python        ${prefix}/bin/python3.10
 }
 
 variant perl description {add Perl support} {

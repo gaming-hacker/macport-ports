@@ -148,9 +148,9 @@ configure.cppflags-delete -I${prefix}/include
 
 variant python27 description {Use python 2.7} {
     depends_build-append \
-        port:py39-libxml2
+        port:py310-libxml2
     configure.env-append \
-        PYTHON2=${prefix}/bin/python3.9
+        PYTHON2=${prefix}/bin/python3.10
 }
 
 if {![variant_isset python27]} {

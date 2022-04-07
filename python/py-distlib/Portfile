@@ -24,7 +24,7 @@ sha256  d982d0751ff6eaaab5e2ec8e691d949ee80eddf01a62eaa96ddb11531fe16b05 \
 size    743791
 
 # keep version for PY27 and PY34, these are (indirect) dependencies of py-virtualenv
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     test.run        yes

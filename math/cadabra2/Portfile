@@ -31,7 +31,7 @@ size    24656994
 
 compiler.cxx_standard 2017
 
-set python.version  39
+set python.version 310
 
 depends_build-append \
                     port:pkgconfig \
@@ -52,7 +52,7 @@ configure.args      -DENABLE_MATHEMATICA=OFF \
                     -DSQLITE3_INCLUDE_DIR=${prefix}/include
 
 post-destroot {
-    ln ${destroot}${prefix}/lib/python3.9/site-packages/cadabra2.cpython-39-darwin.so \
+    ln ${destroot}${prefix}/lib/python3.10/site-packages/cadabra2.cpython-39-darwin.so \
             ${destroot}${prefix}/lib/cadabra2.cpython-39-darwin.so
 }
 

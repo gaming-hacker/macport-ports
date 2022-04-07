@@ -26,7 +26,7 @@ use_configure           no
 build                   {}
 
 post-patch {
-    reinplace "s|#!/usr/bin/env python|#!${prefix}/bin/python3.9|" ${worksrcpath}/edmv
+    reinplace "s|#!/usr/bin/env python|#!${prefix}/bin/python3.10|" ${worksrcpath}/edmv
 }
 
 destroot {

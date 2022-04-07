@@ -30,8 +30,8 @@ boost.version       1.71
 depends_lib         port:expgram \
                     port:icu58
 
-depends_build       port:py39-docutils \
-                    port:py39-pygments
+depends_build       port:py310-docutils \
+                    port:py310-pygments
 
 patchfiles          patch-samples.diff \
                     patch-boost_includes.diff

@@ -138,11 +138,11 @@ variant perl description {Enable support for Perl scripting} {
 }
 
 variant python description {Enable support for Python scripting} {
-    depends_lib-append      port:python39
+    depends_lib-append      port:python310
 
     configure.args-delete   --without-python
     configure.args-append   --with-python
-    configure.python        ${prefix}/bin/python3.9
+    configure.python        ${prefix}/bin/python3.10
 }
 
 variant ruby description {Enable support for Ruby scripting} {

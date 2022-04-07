@@ -20,7 +20,7 @@ homepage            https://www.pypy.org/
 master_sites        https://downloads.python.org/${name}
 
 depends_build       port:pkgconfig \
-                    port:py39-docutils
+                    port:py310-docutils
 depends_lib         port:libffi \
                     port:sqlite3 \
                     port:bzip2 \
@@ -55,7 +55,7 @@ array set module_scripts {
 }
 
 subport pypy36 {
-    set python.branch 3.6
+    set python.branch 3.10
 
     set module_scripts(venv) venv
     set module_scripts(idle) idlelib
@@ -67,7 +67,7 @@ subport pypy36 {
 }
 
 subport pypy37 {
-    set python.branch 3.7
+    set python.branch 3.10
 
     set module_scripts(venv) venv
     set module_scripts(idle) idlelib
@@ -79,7 +79,7 @@ subport pypy37 {
 }
 
 subport pypy38 {
-    set python.branch 3.8
+    set python.branch 3.10
 
     set module_scripts(venv) venv
     set module_scripts(idle) idlelib
@@ -92,23 +92,23 @@ subport pypy38 {
 
 
 subport pypy-tkinter {
-    set python.branch   2.7
+    set python.branch 3.10
 }
 
 subport pypy36-tkinter {
-    set python.branch   3.6
+    set python.branch 3.10
 }
 
 subport pypy37-tkinter {
-    set python.branch   3.7
+    set python.branch 3.10
 }
 
 subport pypy38-tkinter {
-    set python.branch   3.8
+    set python.branch 3.10
 }
 
 if {$subport == ${name}} {
-    set python.branch 2.7
+    set python.branch 3.10
 
     depends_run-append port:python2_select
     select.entries-append [list python2 python2-$subport $subport]

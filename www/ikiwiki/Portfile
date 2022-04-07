@@ -57,7 +57,7 @@ depends_lib-append      \
                         port:p${perl5.major}-uri \
                         port:p${perl5.major}-xml-simple \
                         port:p${perl5.major}-yaml-libyaml \
-                        port:py39-docutils
+                        port:py310-docutils
 
 # a couple of optional extra modules bundled from MacPorts used by plugins
 # (for a complete list see Bundle/IkiWiki/Extras.pm)
@@ -111,11 +111,11 @@ post-patch {
     reinplace "s|/etc/ikiwiki/wikilist|${prefix}/etc/ikiwiki/wikilist|g" \
         ${worksrcpath}/ikiwiki-update-wikilist \
         ${worksrcpath}/ikiwiki-mass-rebuild
-    reinplace "s|#!.*|#!${prefix}/bin/python3.9|" \
+    reinplace "s|#!.*|#!${prefix}/bin/python3.10|" \
         ${worksrcpath}/plugins/proxy.py \
         ${worksrcpath}/plugins/pythondemo \
         ${worksrcpath}/plugins/rst
-    reinplace "s|python3 -c|${prefix}/bin/python3.9 -c|" \
+    reinplace "s|python3 -c|${prefix}/bin/python3.10 -c|" \
         ${worksrcpath}/t/rst.t
 }
 

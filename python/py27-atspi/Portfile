@@ -26,17 +26,17 @@ use_bzip2       yes
 checksums       sha256  2d9672e0ca6277c491a0b35421691d96618d9c02e687851ce418811379aa4a2e \
 rmd160  639fe4fd55a19d885d33870f0be3dee162f74238
 
-depends_lib     port:py39-pygtk \
+depends_lib     port:py310-pygtk \
                 port:dbus-python27
 
-set python_prefix ${frameworks_dir}/Python.framework/Versions/3.9
+set python_prefix ${frameworks_dir}/Python.framework/Versions/3.10
 
 configure.pre_args-delete  --prefix=${prefix}
 configure.pre_args-append  --prefix=${python_prefix}
-configure.args-append      --includedir=${python_prefix}/include/python3.9
+configure.args-append      --includedir=${python_prefix}/include/python3.10
 configure.pkg_config_path  ${python_prefix}/lib/pkgconfig
 
-configure.python    ${prefix}/bin/python3.9
+configure.python    ${prefix}/bin/python3.10
 
 post-destroot {
     set docdir ${prefix}/share/doc/${name}

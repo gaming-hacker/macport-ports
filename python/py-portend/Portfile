@@ -26,7 +26,7 @@ checksums           rmd160  cdc3650c93b5801b85e01864c090d0cba2dd208f \
 sha256  239e3116045ea823f6df87d6168107ad75ccc0590e37242af0cc1e98c5d224e4 \
 size    9448
 
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools_scm

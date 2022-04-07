@@ -45,7 +45,7 @@ destroot.target         install
 destroot.post_args      
 variant doc description {Build and install man pages} requires python27 {
     # The documentation requires some python modules to build
-    depends_build       port:py39-beautifulsoup port:py39-markdown
+    depends_build       port:py310-beautifulsoup port:py310-markdown
 }
 variant bash_completion {
     depends_run-append  path:etc/bash_completion:bash-completion
@@ -56,9 +56,9 @@ variant bash_completion {
     }
 }
 variant python27 description {Change shebang lines to use Macports Python 2.7 } {
-    depends_lib port:python39
+    depends_lib port:python310
     configure {
-        reinplace "s|#!/usr/bin/python|#!${prefix}/bin/python3.9|" {*}[glob ${worksrcpath}/*]
+        reinplace "s|#!/usr/bin/python|#!${prefix}/bin/python3.10|" {*}[glob ${worksrcpath}/*]
     }
 }
 variant python_select description {Compatibility variant, requires python27} requires python27 {}

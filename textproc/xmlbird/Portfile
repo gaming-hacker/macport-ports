@@ -25,7 +25,7 @@ sha256  20062cf9d890690f0259b969bd25cfb6038d42c312239ed5038c5aeeb77c8bf9 \
 size    20588
 
 depends_build       port:pkgconfig \
-                    port:python39
+                    port:python310
 
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     path:bin/vala:vala
@@ -33,7 +33,7 @@ depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
 patchfiles          fix-install-name.patch
 
 post-patch {
-    reinplace "s|/usr/bin/python3|${prefix}/bin/python3.9|" \
+    reinplace "s|/usr/bin/python3|${prefix}/bin/python3.10|" \
         configure \
         build.py \
         install.py

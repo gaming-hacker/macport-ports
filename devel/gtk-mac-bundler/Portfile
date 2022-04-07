@@ -33,11 +33,11 @@ use_configure       no
 build {}
 
 pre-destroot {
-    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.9|g" ${worksrcpath}/gtk-mac-bundler.in
+    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.10|g" ${worksrcpath}/gtk-mac-bundler.in
     reinplace "s|@PATH@|${frameworks_dir}/Python.framework/Version/2.7/lib/site-packages|g" ${worksrcpath}/gtk-mac-bundler.in
     reinplace "s|\${env:JHBUILD_PREFIX}|${prefix}|g" ${worksrcpath}/examples/gtk3-demo.bundle
-    xinstall -m 755 -d ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9
-    copy ${worksrcpath}/bundler ${destroot}${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/
+    xinstall -m 755 -d ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10
+    copy ${worksrcpath}/bundler ${destroot}${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/
     file mkdir ${destroot}${prefix}/share/${name}
     copy ${worksrcpath}/examples ${destroot}${prefix}/share/${name}
 }

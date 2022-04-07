@@ -38,7 +38,7 @@ depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:libpng \
                     port:zlib
 
-set python_branch   3.9
+set python.branch 3.10
 set python_version  [join [split ${python_branch} "."] ""]
 
 # installs python3 helper scripts lensfun-add-adapter lensfun-update-data

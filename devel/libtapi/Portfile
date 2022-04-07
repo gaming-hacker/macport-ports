@@ -27,15 +27,15 @@ platform darwin {
     # pick a suitable python to build with
     if {${os.major} < 11} {
         # system python is too old, use python27-bootstrap to minimize dependencies
-        depends_build-append    port:python39-bootstrap
-        configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/libexec/python27-bootstrap/bin/python3.9
+        depends_build-append    port:python310-bootstrap
+        configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/libexec/python27-bootstrap/bin/python3.10
         depends_skip_archcheck-append python27-bootstrap
     } elseif {${os.major} > 19} {
         # Use system python 3.x
         configure.args-append   -DPYTHON_EXECUTABLE=/usr/bin/python3
     } else {
         # use the system python, which is known to be fine for darwin 11 to 19
-        configure.args-append   -DPYTHON_EXECUTABLE=/usr/bin/python3.9
+        configure.args-append   -DPYTHON_EXECUTABLE=/usr/bin/python3.10
     }
 }
 

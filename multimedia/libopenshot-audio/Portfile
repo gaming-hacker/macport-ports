@@ -56,11 +56,11 @@ compiler.blacklist-append *gcc-3.* *gcc-4.*
 compiler.blacklist-append { clang < 700 } macports-clang-3.3 macports-clang-3.4
 
 depends_build-append \
-                    port:python39
+                    port:python310
 depends_lib         port:zlib
 
 
 configure.args-append \
-                    -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.9
+                    -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.10
 
 # ./src/openshot-audio-test-sound  (This should play a test sound)

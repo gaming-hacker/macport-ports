@@ -26,7 +26,7 @@ sha256  37812d863c9ad3e35c0734c42e0bf0320ce8c3bed82cd20ad54cb34d158157ba \
 size    8332
 
 deprecated.upstream_support no
-python.versions     39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     patchfiles-append   no_2to3.diff

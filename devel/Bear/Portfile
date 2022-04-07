@@ -22,9 +22,9 @@ long_description    {*}${description} \
     available then it is easy to re-run the compilation with different \
     programs.
 
-depends_lib-append  port:python39
+depends_lib-append  port:python310
 
 post-patch {
-    reinplace "s|/usr/bin/env @BEAR_PYTHON_EXECUTABLE@|${prefix}/bin/python3.9|g" \
+    reinplace "s|/usr/bin/env @BEAR_PYTHON_EXECUTABLE@|${prefix}/bin/python3.10|g" \
         ${worksrcpath}/bear/bear.py
 }

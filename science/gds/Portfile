@@ -31,8 +31,8 @@ depends_build-append \
               port:swig \
               port:swig-python
 
-depends_lib   port:python39 \
-              port:py39-numpy \
+depends_lib   port:python310 \
+              port:py310-numpy \
               port:curl \
               port:expat \
               port:fftw-3 \
@@ -58,7 +58,7 @@ destroot.post_args      ${destroot.destdir}
 # Use the --without-sasl option since the macports version of sasl2
 # leads to a 5 minute latency for each socket connection.
 
-configure.python ${prefix}/bin/python3.9
+configure.python ${prefix}/bin/python3.10
 configure.args --enable-dtt \
                --enable-python \
                --enable-root-objects \

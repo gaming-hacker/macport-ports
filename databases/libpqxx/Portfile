@@ -55,9 +55,9 @@ if {!$any_variant_set} {
 depends_build   port:pkgconfig
 
 if {${os.platform} eq "darwin" && ${os.major} < 20} {
-    depends_build-append  port:python39
+    depends_build-append  port:python310
     post-patch {
-        reinplace -W ${worksrcpath} "s| /usr/bin/env python3|${prefix}/bin/python3.9|" \
+        reinplace -W ${worksrcpath} "s| /usr/bin/env python3|${prefix}/bin/python3.10|" \
             tools/splitconfig tools/template2mak.py tools/test_all.py tools/m4esc.py
     }
 }

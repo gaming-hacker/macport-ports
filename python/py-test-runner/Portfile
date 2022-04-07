@@ -19,7 +19,7 @@ size    12297
 
 homepage            https://github.com/pytesting/${python.rootname}
 
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

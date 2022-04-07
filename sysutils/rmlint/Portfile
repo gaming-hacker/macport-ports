@@ -27,7 +27,7 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 
 depends_build-append \
                     port:pkgconfig   \
-                    port:py39-sphinx \
+                    port:py310-sphinx \
                     port:scons
 
 depends_lib-append  path:lib/pkgconfig/glib-2.0.pc:glib2 \

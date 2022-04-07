@@ -31,11 +31,11 @@ depends_lib         port:erlang
 depends_build       port:libxslt
 
 if {${os.platform} eq "darwin" && ${os.major} <= 9} {
-    depends_build-append port:py39-simplejson
-    build.args      PYTHON=${prefix}/bin/python3.9
+    depends_build-append port:py310-simplejson
+    build.args      PYTHON=${prefix}/bin/python3.10
 } else {
     # python3.X doesn't work
-    build.args      PYTHON=python3.9
+    build.args      PYTHON=python3.10
 }
 
 set serveruser      rabbitmq

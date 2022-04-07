@@ -19,12 +19,12 @@ rmd160 bbf90d0299bc0665ea78bad9ee892bf3cb2791a9
 
 patchfiles	patch-prefix.diff
 
-depends_lib	port:python39 port:yum
+depends_lib	port:python310 port:yum
 
 patch {
 		foreach patch $patchfiles {
 			system "cd '${workpath}/${distname}' && \
-			sed -e 's#@@PREFIX@@#${prefix}#g' -e 's#@@PYTHON@@#${prefix}/bin/python3.9#g' '${filespath}/${patch}' | patch -p0"
+			sed -e 's#@@PREFIX@@#${prefix}#g' -e 's#@@PYTHON@@#${prefix}/bin/python3.10#g' '${filespath}/${patch}' | patch -p0"
 		}
 }
 

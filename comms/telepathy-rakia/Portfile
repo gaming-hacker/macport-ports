@@ -31,10 +31,10 @@ depends_build   port:pkgconfig
 
 depends_lib     port:telepathy-glib \
                 port:sofia-sip \
-                port:py39-twisted
+                port:py310-twisted
 
 configure.python \
-                ${prefix}/bin/python3.9
+                ${prefix}/bin/python3.10
 
 livecheck.type  regex
 livecheck.url   ${master_sites}

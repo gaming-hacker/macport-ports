@@ -33,11 +33,11 @@ depends_build       port:intltool
 
 depends_lib         port:dbus-python27 \
                     port:gstreamer1-gst-plugins-good \
-                    port:py39-futures \
-                    port:py39-mutagen \
-                    port:py39-feedparser \
-                    port:py39-gobject3 \
-                    port:py39-pyobjc-cocoa
+                    port:py310-futures \
+                    port:py310-mutagen \
+                    port:py310-feedparser \
+                    port:py310-gobject3 \
+                    port:py310-pyobjc-cocoa
 
 depends_run         port:adwaita-icon-theme
 
@@ -50,7 +50,7 @@ if {$subport ne $name} {
     depends_build   port:py${python.version}-distutils
 
     if {${python.version} == 27} {
-        depends_lib-append  port:py39-faulthandler
+        depends_lib-append  port:py310-faulthandler
     }
 
     livecheck.type  none
@@ -64,7 +64,7 @@ variant quartz {
 
 post-patch {
     foreach file { quodlibet.py exfalso.py operon.py } {
-        reinplace "s|/usr/bin/env python3|${frameworks_dir}/Python.framework/Versions/3.9/bin/python3.9|g" \
+        reinplace "s|/usr/bin/env python3|${frameworks_dir}/Python.framework/Versions/3.10/bin/python3.10|g" \
             ${worksrcpath}/${file}
     }
 }
@@ -81,7 +81,7 @@ post-destroot {
 
 app.icon       quodlibet/images/hicolor/scalable/apps/quodlibet.svg
 
-app.executable "${frameworks_dir}/Python.framework/Versions/3.9/bin/quodlibet"
+app.executable "${frameworks_dir}/Python.framework/Versions/3.10/bin/quodlibet"
 
 
 notes "If you want to play mp3 files, don't forget to install gstreamer1-gst-plugins-ugly"

@@ -32,9 +32,9 @@ size    84041185
 
 depends_build       port:apache-ant
 
-depends_lib         port:python39
-depends_run         port:py39-simplejson \
-                    port:py39-yaml
+depends_lib         port:python310
+depends_run         port:py310-simplejson \
+                    port:py310-yaml
 
 post-extract {
     # delete windows specific files
@@ -42,7 +42,7 @@ post-extract {
 }
 
 post-patch {
-    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.9|" ${worksrcpath}/play
+    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.10|" ${worksrcpath}/play
 }
 
 use_configure       no
@@ -54,8 +54,8 @@ build.dir           ${worksrcpath}/framework
 destroot {
     set docdir ${destroot}${prefix}/share/doc/${name}
     set javadir ${destroot}${prefix}/share/java/${distname}
-    set python_prefix ${destroot}${frameworks_dir}/Python.framework/Versions/3.9
-    set pythondir ${python_prefix}/lib/python3.9/site-packages
+    set python_prefix ${destroot}${frameworks_dir}/Python.framework/Versions/3.10
+    set pythondir ${python_prefix}/lib/python3.10/site-packages
 
     xinstall -m 755 -d ${docdir}
     xinstall -m 755 -d ${javadir}

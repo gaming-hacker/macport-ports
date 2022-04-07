@@ -26,7 +26,7 @@ size    562642
 maintainers             {gmail.com:herby.gillot @herbygillot} \
                         openmaintainer
 
-set python_branch       3.9
+set python.branch 3.10
 set python_version      [string map {. {}} ${python_branch}]
 
 use_autoreconf          yes

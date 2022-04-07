@@ -79,6 +79,6 @@ variant pcre description {build with pcre support} {
 
 variant zenmap description {build zenmap in addition to nmap} {
     configure.args-delete --without-zenmap
-    configure.python ${prefix}/bin/python3.9
-    depends_lib-append port:py39-pygtk
+    configure.python ${prefix}/bin/python3.10
+    depends_lib-append port:py310-pygtk
 }

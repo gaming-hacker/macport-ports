@@ -37,8 +37,8 @@ size    70569055
 depends_build       port:autoconf213 \
                     port:cargo \
                     port:pkgconfig \
-                    port:python39 \
-                    port:python39 \
+                    port:python310 \
+                    port:python310 \
                     port:yasm
 
 depends_lib         port:nspr \
@@ -75,13 +75,13 @@ post-patch {
 }
 
 configure.perl      /usr/bin/perl
-configure.python    ${prefix}/bin/python3.9
+configure.python    ${prefix}/bin/python3.10
 
 # The combination of JS_STANDALONE=1 and --disable-jemalloc are needed
 # to ensure that mozglue is statically linked.
 configure.env-append \
                     SHELL=/bin/bash \
-                    PYTHON3=${prefix}/bin/python3.9 \
+                    PYTHON3=${prefix}/bin/python3.10 \
                     JS_STANDALONE=1
 
 configure.dir       ${worksrcpath}/js/src/obj

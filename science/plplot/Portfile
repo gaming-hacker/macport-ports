@@ -52,7 +52,7 @@ post-patch {
     reinplace "s|-ObjC|-ObjC -framework AquaTerm|" ${worksrcpath}/cmake/modules/aqt.cmake
     reinplace "s|-framework AquaTerm|-F${frameworks_dir} -framework AquaTerm|" ${worksrcpath}/cmake/modules/aqt.cmake
     if {[variant_isset python27]} {
-        reinplace "s|\${CMAKE_INSTALL_EXEC_PREFIX}|${frameworks_dir}/Python.framework/Versions/3.9|" \
+        reinplace "s|\${CMAKE_INSTALL_EXEC_PREFIX}|${frameworks_dir}/Python.framework/Versions/3.10|" \
                             ${worksrcpath}/cmake/modules/python.cmake
     }
 }
@@ -215,17 +215,17 @@ variant ocaml description {Add support for OCaml} {
 }
 
 variant python27 description {Add support for python27} {
-    depends_lib-append      port:python39 \
-                            port:py39-numpy \
+    depends_lib-append      port:python310 \
+                            port:py310-numpy \
                             port:swig-python
     configure.args-delete   -DENABLE_python=OFF
     configure.args-append   -DENABLE_python=ON \
                             -DHAVE_NUMPY:BOOL=ON \
-                            -DPYTHON_INCLUDE_PATH=${frameworks_dir}/Python.framework/Versions/3.9/Headers
+                            -DPYTHON_INCLUDE_PATH=${frameworks_dir}/Python.framework/Versions/3.10/Headers
 }
 
 variant py27_pyqt4 requires python27 description {Add support for pyQT4 using python27} {
-    depends_lib-append      port:py39-pyqt4
+    depends_lib-append      port:py310-pyqt4
     configure.args-delete   -DENABLE_pyqt4=OFF
     configure.args-append   -DENABLE_pyqt4=ON
 }

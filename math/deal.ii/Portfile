@@ -116,7 +116,7 @@ variant docs description "Install ${name} documentation" {
 
 variant python description "install python bindings" {
     global python_version
-    set python_branch       3.9
+    set python.branch 3.10
     set python_version      [string map {. ""} ${python_branch}]
     depends_lib-append      port:python${python_version}
     require_active_variants [boost::depends_portname] python${python_version}

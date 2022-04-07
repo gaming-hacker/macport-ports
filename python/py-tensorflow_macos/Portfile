@@ -13,7 +13,7 @@ license             restrictive/distributable
 replaced_by         py-tensorflow-macos
 
 set python_rootname [regsub ^py- [option name] ""]
-set python.versions 39
+set python.versions 310
 foreach pv ${python.versions} {
     subport "py${pv}-${python_rootname}" {
         replaced_by py${pv}-tensorflow-macos

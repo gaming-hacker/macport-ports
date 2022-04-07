@@ -36,7 +36,7 @@ configure.cxxflags-append -fvisibility=hidden -fvisibility-inlines-hidden
 cmake.build_type    Release
 
 # create Python subports
-set python.versions {39}
+set python.versions {310}
 foreach v ${python.versions} {
     subport py${v}-${github.project} {
         PortGroup   python 1.0

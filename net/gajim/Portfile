@@ -33,14 +33,14 @@ depends_build       port:intltool \
 
 depends_lib         path:lib/pkgconfig/gtk+-2.0.pc:gtk2 \
                     port:gtkspell2 \
-                    port:py39-pygtk \
-                    port:py39-docutils \
-                    port:py39-nbxmpp \
-                    port:py39-openssl \
+                    port:py310-pygtk \
+                    port:py310-docutils \
+                    port:py310-nbxmpp \
+                    port:py310-openssl \
                     port:dbus-python27
 
-set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.9
-configure.python    ${prefix}/bin/python3.9
+set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.10
+configure.python    ${prefix}/bin/python3.10
 configure.pkg_config_path  ${python_prefix}/lib/pkgconfig
 
 # reconfigure using autogen.sh for intltool 0.51 compatibility

@@ -27,7 +27,7 @@ size    1958459
 # upstream renamed their repository, and checksums have changed.... remove upon next update
 dist_subdir   ${name}/${version}_1
 
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
    depends_lib-append \

@@ -29,11 +29,11 @@ set localedir       ${prefix}/share/locale/
 depends_build-append \
                     port:gettext
 
-depends_lib-append  port:py39-configobj
+depends_lib-append  port:py310-configobj
 
 post-patch {
     # Fix paths
-    reinplace "s|^#!/usr/bin/python3|#!${prefix}/bin/python3.9|" ${worksrcpath}/pastebinit
+    reinplace "s|^#!/usr/bin/python3|#!${prefix}/bin/python3.10|" ${worksrcpath}/pastebinit
     reinplace "s|/etc/pastebin.d|${prefix}/etc/pastebin.d|" ${worksrcpath}/pastebinit
 }
 

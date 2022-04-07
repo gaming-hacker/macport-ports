@@ -37,20 +37,20 @@ test.target         check
 
 variant python37 conflicts python38 python39 python310 description {Build using Python 3.7} {
     depends_build-append \
-                    port:python39
-    configure.env   PYTHON=${prefix}/bin/python3.9
+                    port:python310
+    configure.env   PYTHON=${prefix}/bin/python3.10
 }
 
 variant python38 conflicts python37 python39 python310 description {Build using Python 3.8} {
     depends_build-append \
-                    port:python39
-    configure.env   PYTHON=${prefix}/bin/python3.9
+                    port:python310
+    configure.env   PYTHON=${prefix}/bin/python3.10
 }
 
 variant python39 conflicts python37 python38 python310 description {Build using Python 3.9} {
     depends_build-append \
-                    port:python39
-    configure.env   PYTHON=${prefix}/bin/python3.9
+                    port:python310
+    configure.env   PYTHON=${prefix}/bin/python3.10
 }
 
 variant python310 conflicts python37 python38 python39 description {Build using Python 3.10} {

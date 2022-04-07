@@ -15,7 +15,7 @@ description         Mongoose OS command-line tool
 long_description    {*}${description}. Provides device management \
                     and firmware building capabilities.
 
-set python_branch 3.9
+set python.branch 3.10
 set python_version  [string map {. {}} ${python_branch}]
 
 depends_build-append \

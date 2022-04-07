@@ -28,14 +28,14 @@ depends_build   port:pkgconfig \
                 port:libxslt \
                 port:docbook-xsl-nons
 
-depends_lib     port:py39-gobject \
-                port:py39-pygtk \
+depends_lib     port:py310-gobject \
+                port:py310-pygtk \
                 port:gtksourceview2
 
-configure.python    ${prefix}/bin/python3.9
-set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.9
+configure.python    ${prefix}/bin/python3.10
+set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.10
 configure.pre_args  --prefix=${python_prefix}
-configure.args      --includedir=${python_prefix}/include/python3.9
+configure.args      --includedir=${python_prefix}/include/python3.10
 configure.pkg_config_path  ${python_prefix}/lib/pkgconfig:${prefix}/lib/pkgconfig
 
 platform darwin 9 {

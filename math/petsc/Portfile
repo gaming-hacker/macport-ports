@@ -32,7 +32,7 @@ mpi.setup                   default
 
 use_parallel_build          no
 
-set python.version          39
+set python.version 310
 set python_ver_dot          [join [split ${python.version} {}] "."]
 
 depends_build-append        port:sowing \

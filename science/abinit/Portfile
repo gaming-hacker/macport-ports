@@ -90,7 +90,7 @@ test.cmd            tests/runtests.py -j ${build.jobs}
 # args -t0 for no timeout since it cannot be found anyway; or: set depends_test-append port:timeout
 test.target         libxc built-in fast tutorespfn tutorial unitary
 #test.target         built-in fast tutorespfn tutorial unitary v1 v2 v3 v4 v5 v6 v67mbpt v7
-depends_test-append port:py39-pandas
+depends_test-append port:py310-pandas
 
 pre-test {
     if {[mpi_variant_isset]} {

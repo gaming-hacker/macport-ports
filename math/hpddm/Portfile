@@ -25,7 +25,7 @@ size    280267
 
 mpi.setup               require require_fortran
 
-depends_lib-append      port:python39 \
+depends_lib-append      port:python310 \
                         port:mumps \
                         port:arpack \
                         port:scalapack \
@@ -48,13 +48,13 @@ pre-build {
                         MPIF90=${mpi.f90} \
                         MPIRUN="${prefix}/bin/${mpi.exec} -np" \
                         MUMPS_INCS=-I${prefix}/include \
-                        PYTHON_INCS=-I${frameworks_dir}/Python.framework/Versions/3.9/include/python3.9 \
+                        PYTHON_INCS=-I${frameworks_dir}/Python.framework/Versions/3.10/include/python3.10 \
                         BLAS_LIBS="-L${prefix}/lib ${linalglib}" \
                         ARPACK_LIBS="-L${prefix}/lib -larpack" \
                         SCALAPACK_LIBS="-L${prefix}/lib -lscalapack" \
                         MUMPS_LIBS="-L${prefix}/lib -lmumps_common -lsmumps -ldmumps -lcmumps -lzmumps -lpord" \
                         HYPRE_LIBS="-L${prefix}/lib -lHYPRE" \
-                        PYTHON_LIBS="-L${frameworks_dir}/Python.framework/Versions/3.9/lib -lpython3.9" \
+                        PYTHON_LIBS="-L${frameworks_dir}/Python.framework/Versions/3.10/lib -lpython3.10" \
                         VERSION=${version} \
                         CVERSION=[join [lrange [split ${version} .] 0 0] .]
 }
@@ -75,12 +75,12 @@ destroot {
 
 test.run                yes
 
-depends_test-append     port:py39-mpi4py \
-                        port:py39-numpy \
-                        port:py39-scipy
+depends_test-append     port:py310-mpi4py \
+                        port:py310-numpy \
+                        port:py310-scipy
 
 pre-test {
-    test.args-append PATH=${frameworks_dir}/Python.framework/Versions/3.9/bin:$env(PATH)
+    test.args-append PATH=${frameworks_dir}/Python.framework/Versions/3.10/bin:$env(PATH)
 }
 
 github.livecheck.branch main

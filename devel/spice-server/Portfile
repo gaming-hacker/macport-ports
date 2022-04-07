@@ -35,7 +35,7 @@ configure.args-append \
 
 depends_build-append \
     port:pkgconfig \
-    port:python39 port:py39-six port:py39-parsing
+    port:python310 port:py310-six port:py310-parsing
 
 depends_lib-append \
     port:lz4 \

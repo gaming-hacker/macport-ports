@@ -19,7 +19,7 @@ sha256  bf6891bfc6bf535a1a99a485478f7896ebacbe3bbf545ba551298080a26f01f1 \
 size    2675939
 
 depends_lib         path:include/turbojpeg.h:libjpeg-turbo port:openjpeg15 port:freetype port:lame \
-                    port:giflib port:python39
+                    port:giflib port:python310
 
 patchfiles          patch-Makefile.common.in.diff \
                     patch-configure.diff \
@@ -28,7 +28,7 @@ patchfiles          patch-Makefile.common.in.diff \
                     patch-setup.py.diff \
                     patch-src_gif2swf.c.diff
 
-configure.python    ${prefix}/bin/python3.9
+configure.python    ${prefix}/bin/python3.10
 
 # Make sure to not link against OpenGL libs from the mesa port, in case it
 # is installed

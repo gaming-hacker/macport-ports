@@ -49,7 +49,7 @@ compiler.cxx_standard  \
 # error: constexpr constructor never produces a constant expression [-Winvalid-constexpr]
 compiler.blacklist {clang < 900}
 
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-protobuf

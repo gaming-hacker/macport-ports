@@ -26,7 +26,7 @@ checksums           rmd160  7c2ba48fba76ab07a9ee1e4e3c788844bcef4b2c \
 sha256  2f9ec46d1537cb5677b717dcaf5668cdc61a84456bc52178b40595759ba35655 \
 size    1259520
 
-depends_lib         port:python39
+depends_lib         port:python310
 
 use_configure       no
 build               {}
@@ -35,7 +35,7 @@ destroot {
     set myinstdir ${prefix}/libexec/${name}
     xinstall -d ${destroot}${myinstdir}
     file copy {*}[glob ${worksrcpath}/*] ${destroot}${myinstdir}
-    reinplace "s|#!/usr/bin/env python|#!${prefix}/bin/python3.9|g" \
+    reinplace "s|#!/usr/bin/env python|#!${prefix}/bin/python3.10|g" \
         ${destroot}${myinstdir}/run.py
     file attributes ${destroot}${myinstdir}/run.py -permissions 0755
     move ${destroot}${myinstdir}/${name}.1 ${destroot}${prefix}/share/man/man1

@@ -62,7 +62,7 @@ if {${subport} ne ${name}} {
     }
     livecheck.type  none
 } else {
-    depends_lib     port:py39-orbit
+    depends_lib     port:py310-orbit
     supported_archs noarch
     distfiles
     use_configure   no

@@ -25,7 +25,7 @@ sha256  4d86fc854e6d6613cd42bf7511e9c6aac947fc8d62ff973a705570b036d969f2 \
 size    139426
 
 python.pep517       yes
-python.versions 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools \

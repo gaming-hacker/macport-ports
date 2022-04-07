@@ -25,8 +25,8 @@ sha256  591a461d5145b4442bf45cae4068dc40dc19803ddfe08f4a0756c6f45d749e53
 depends_lib         port:fftw-3-single \
                     port:libsamplerate \
                     port:libsndfile \
-                    port:python39 \
-                    port:py39-pyqt4
+                    port:python310 \
+                    port:py310-pyqt4
 
 depends_run         path:lib/libavcodec.dylib:ffmpeg
 
@@ -36,4 +36,4 @@ cmake.out_of_source yes
 
 compiler.cxx_standard 2017
 
-configure.args      -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.9
+configure.args      -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.10

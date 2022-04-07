@@ -26,10 +26,10 @@ rmd160  92d6536ed28ae760ea1519fea68565d29249dd33
 depends_build   port:pkgconfig
 
 depends_lib     port:libgnomeui \
-                port:py39-pygtk \
-                port:py39-orbit \
+                port:py310-pygtk \
+                port:py310-orbit \
                 port:libgnome \
-                port:python39 \
+                port:python310 \
                 port:libgnomecanvas \
                 port:gnome-vfs \
                 port:gconf \
@@ -37,7 +37,7 @@ depends_lib     port:libgnomeui \
                 port:libbonoboui
 
 
-set python.branch 3.9
+set python.branch 3.10
 set python.prefix   ${frameworks_dir}/Python.framework/Versions/${python.branch}
 set python.bin      ${python.prefix}/bin/python${python.branch}
 

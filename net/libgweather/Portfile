@@ -28,7 +28,7 @@ size    2702144
 depends_build-append \
                     port:pkgconfig \
                     port:gtk-doc \
-                    port:python39
+                    port:python310
 
 depends_lib         port:geocode-glib \
                     path:lib/pkgconfig/gobject-introspection-1.0.pc:gobject-introspection \
@@ -38,7 +38,7 @@ depends_lib         port:geocode-glib \
                     path:bin/vala:vala
 
 post-patch {
-    reinplace -W ${worksrcpath} "s|^#!.*python3|#!${prefix}/bin/python3.9|" \
+    reinplace -W ${worksrcpath} "s|^#!.*python3|#!${prefix}/bin/python3.10|" \
         data/update-locations.py \
         data/check-observations.py \
         data/locations_diff.py \

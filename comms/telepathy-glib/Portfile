@@ -24,7 +24,7 @@ checksums       rmd160  a01ea8180f4cc25f40b5aeadb1564230b46a0b57 \
 sha256  9e0df1d8f857e0270cf0b32e2d1ca5a24aa7282873361785d573f72ad7f7d5eb
 
 depends_build   port:pkgconfig \
-                port:python39
+                port:python310
 
 depends_lib     port:dbus-glib
 
@@ -32,7 +32,7 @@ patchfiles      patch-configure.diff
 
 use_parallel_build no
 
-configure.python ${prefix}/bin/python3.9
+configure.python ${prefix}/bin/python3.10
 
 variant vala description {Enable GObject introspection and Vala bindings} {
     depends_build-append    path:bin/vala:vala

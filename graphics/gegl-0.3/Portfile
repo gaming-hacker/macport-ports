@@ -35,7 +35,7 @@ depends_build-append \
                     port:gtk-doc \
                     port:pkgconfig \
                     port:w3m \
-                    port:python39
+                    port:python310
 
 depends_lib-append  path:lib/pkgconfig/babl.pc:babl \
                     path:lib/pkgconfig/gdk-pixbuf-2.0.pc:gdk-pixbuf2 \
@@ -80,7 +80,7 @@ compiler.cxx_standard 2017
 use_autoreconf      yes
 autoreconf.args     -fvi
 
-configure.python    ${prefix}/bin/python3.9
+configure.python    ${prefix}/bin/python3.10
 
 configure.args      --disable-docs \
                     --disable-silent-rules \
