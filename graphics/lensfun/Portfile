@@ -7,7 +7,7 @@ PortGroup           compiler_blacklist_versions 1.0
 name                lensfun
 epoch               1
 version             0.3.95
-revision            0
+revision            1
 categories          graphics
 platforms           darwin
 maintainers         {mascguy @mascguy} openmaintainer
@@ -39,7 +39,7 @@ depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:zlib
 
 set python.branch 3.10
-set python_version  [join [split ${python_branch} "."] ""]
+set python_version  [join [split ${python.branch} "."] ""]
 
 # installs python3 helper scripts lensfun-add-adapter lensfun-update-data
 depends_run         port:python${python_version}
@@ -48,10 +48,10 @@ patchfiles          patch-docs-CMakeLists.txt.diff \
                     patch-apps-CMakeLists.txt.diff
 
 post-patch {
-                    reinplace "s|^#!.*|#!${prefix}/bin/python${python_branch}|" \
+                    reinplace "s|^#!.*|#!${prefix}/bin/python${python.branch}|" \
                          ${worksrcpath}/apps/lensfun-add-adapter \
                          ${worksrcpath}/apps/lensfun-update-data
-                    reinplace "s|@@PYTHON_VERSION@@|${python_branch}|" \
+                    reinplace "s|@@PYTHON_VERSION@@|${python.branch}|" \
                          ${worksrcpath}/docs/CMakeLists.txt \
                          ${worksrcpath}/apps/CMakeLists.txt
 }
@@ -59,7 +59,7 @@ post-patch {
 configure.args-append \
                     -DBUILD_LENSTOOL=ON \
                     -DINSTALL_HELPER_SCRIPTS=ON \
-                    -DSETUP_PY_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/${python_branch}
+                    -DSETUP_PY_INSTALL_PREFIX=${destroot}${frameworks_dir}/Python.framework/Versions/${python.branch}
 
 # turn off -msse -msse2 if arch is powerpc
 platform darwin powerpc {

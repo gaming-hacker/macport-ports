@@ -4,7 +4,7 @@ PortSystem          1.0
 
 name                cabal
 version             3.6.2.0
-revision            0
+revision            1
 categories          lang haskell devel
 platforms           darwin
 license             BSD
@@ -75,13 +75,13 @@ size    2118136
 
     # See ${prefix}/var/macports/sources/rsync.macports.org/macports/release/tarballs/ports/_resources/port1.0/group/python-1.0.tcl
     set python.version 310
-    set python_branch   [string index ${python_version} 0].[string range ${python_version} 1 end]
+    set python_branch   [string index ${python.version} 0].[string range ${python.version} 1 end]
     set python_prefix   ${frameworks_dir}/Python.framework/Versions/${python_branch}
     set python_bin      ${python_prefix}/bin/python${python_branch}
 
     depends_build-append  \
                     port:ghc \
-                    port:python${python_version}
+                    port:python${python.version}
 
     extract.only-append \
                     ${distfile_github}
@@ -91,7 +91,7 @@ size    2118136
         reinplace -E "1s|^(#!)/usr/bin/env\[\[:space:]]+python3\[\[:space:]]*$|\\1${python_bin}|" \
                     ${worksrcpath}/bootstrap/bootstrap.py
     }
-    
+
     # bootstrap instructions:
     # https://github.com/haskell/cabal/blob/master/bootstrap/README.md
     build {
@@ -110,7 +110,7 @@ size    2118136
             "${workpath}/bin/cabal v2-run -vnormal+stderr --builddir=dist-newstyle-bootstrap --project=cabal.project.bootstrap cabal-bootstrap-gen -- bootstrap/${platforms}-${ghc_version}.plan.json | tee bootstrap/${platforms}-${ghc_version}.json"
         system -W ${worksrcpath} \
             "bootstrap/bootstrap.py -d bootstrap/${platforms}-${ghc_version}.json -w ${prefix}/bin/ghc"
-        
+
         delete ${workpath}/bin/${name}
         xinstall -m 0755 -W ${worksrcpath}/_build/bin ${name} ${workpath}/bin/${name}
     }

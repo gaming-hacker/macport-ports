@@ -25,7 +25,7 @@ use_xz              yes
 
 # Using the same python as MyPaint for consistency.
 set python.branch 3.10
-set python_version  [string map {. {}} ${python_branch}]
+set python_version  [string map {. {}} ${python.branch}]
 
 depends_build       port:intltool \
                     port:pkgconfig \
@@ -45,7 +45,7 @@ autoreconf.env      ACLOCAL=${prefix}/bin/aclocal \
                     AUTOHEADER=${prefix}/bin/autoheader \
                     AUTOMAKE=${prefix}/bin/automake \
                     LIBTOOLIZE=${prefix}/bin/glibtoolize \
-                    PYTHON=${prefix}/bin/python${python_branch}
+                    PYTHON=${prefix}/bin/python${python.branch}
 
 depends_build-append \
                     port:autoconf \

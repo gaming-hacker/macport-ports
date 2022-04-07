@@ -29,7 +29,7 @@ compiler.cxx_standard 2017
 
 # python3.x is required - force dependencies to use it as well
 set python.branch 3.10
-set python_version  [join [split ${python_branch} "."] ""]
+set python_version  [join [split ${python.branch} "."] ""]
 
 depends_build-append    port:doxygen \
                         port:flex \
@@ -48,7 +48,7 @@ require_active_variants boost python${python_version}
 
 configure.args      --disable-silent-rules
 configure.optflags  -O3 -DNDEBUG
-configure.python    ${prefix}/bin/python${python_branch}
+configure.python    ${prefix}/bin/python${python.branch}
 
 test.run            yes
 test.target         check

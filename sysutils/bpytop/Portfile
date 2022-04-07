@@ -25,8 +25,8 @@ sha256  3a936f8899efb66246e82bbcab33249bf94aabcefbe410e56f045a1ce3c9949f \
 size    632649
 
 set python.branch 3.10
-set python_version  [join [split ${python_branch} "."] ""]
-set python_bin      ${prefix}/bin/python${python_branch}
+set python_version  [join [split ${python.branch} "."] ""]
+set python_bin      ${prefix}/bin/python${python.branch}
 
 depends_run-append  port:python${python_version} \
                     port:py${python_version}-psutil

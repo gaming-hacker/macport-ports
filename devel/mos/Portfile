@@ -5,7 +5,7 @@ PortGroup           golang 1.0
 
 go.setup            github.com/mongoose-os/mos 2.19.1
 conflicts           ${name}-devel
-revision            0
+revision            1
 categories          devel
 license             Apache-2
 
@@ -16,7 +16,7 @@ long_description    {*}${description}. Provides device management \
                     and firmware building capabilities.
 
 set python.branch 3.10
-set python_version  [string map {. {}} ${python_branch}]
+set python_version  [string map {. {}} ${python.branch}]
 
 depends_build-append \
                     port:pkgconfig \
@@ -49,7 +49,7 @@ post-patch {
         fw_meta.py
 }
 
-configure.env       PYTHON3=${prefix}/bin/python${python_branch}
+configure.env       PYTHON3=${prefix}/bin/python${python.branch}
 build.cmd           make
 
 # Test all packages in directory tree

@@ -5,7 +5,7 @@ PortGroup               github 1.0
 
 github.setup            vapoursynth vapoursynth 57 R
 github.tarball_from     archive
-revision                0
+revision                1
 
 categories              multimedia python
 platforms               darwin
@@ -27,7 +27,7 @@ maintainers             {gmail.com:herby.gillot @herbygillot} \
                         openmaintainer
 
 set python.branch 3.10
-set python_version      [string map {. {}} ${python_branch}]
+set python_version      [string map {. {}} ${python.branch}]
 
 use_autoreconf          yes
 autoreconf.cmd          ./autogen.sh
@@ -47,8 +47,8 @@ depends_lib-append      path:lib/libavcodec.dylib:ffmpeg \
                         port:zimg
 
 configure.args          --disable-silent-rules \
-                        --with-cython=${prefix}/bin/cython-${python_branch}
+                        --with-cython=${prefix}/bin/cython-${python.branch}
 
-configure.python        ${prefix}/bin/python${python_branch}
+configure.python        ${prefix}/bin/python${python.branch}
 
 build.env-append        PYTHON=${configure.python}
