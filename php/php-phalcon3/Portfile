@@ -9,7 +9,7 @@ platforms               darwin
 maintainers             {ryandesign @ryandesign} openmaintainer
 license                 BSD
 
-php.branches 8.0
+php.branches 8.1
 
 if {[vercmp ${php.branch} 7.0] < 0} {
     conflicts-append    ${php}-phalcon2

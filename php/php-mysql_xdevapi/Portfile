@@ -12,7 +12,7 @@ license                 PHP-3.01
 
 homepage                https://dev.mysql.com/doc/x-devapi-userguide/en/
 
-php.branches            7.1 7.2 7.3 7.4 8.0
+php.branches 8.1
 php.pecl                yes
 
 if {[vercmp ${php.branch} 7.1] >= 0} {

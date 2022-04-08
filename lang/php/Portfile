@@ -25,7 +25,7 @@ long_description        PHP is a widely-used general-purpose scripting \
                         scripting.
 
 # The list of PHP branches this port provides.
-php.branches            8.1
+php.branches 8.1
 
 # Fix for users specifying the subport name with the wrong case.
 set subport             [string tolower ${subport}]

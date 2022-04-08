@@ -9,7 +9,7 @@ platforms               darwin
 maintainers             {ryandesign @ryandesign} openmaintainer
 license                 MIT
 
-php.branches 8.0
+php.branches 8.1
 
 if {[vercmp ${php.branch} 5.6] >= 0} {
     github.setup        BitOne php-meminfo 1.1.1 v

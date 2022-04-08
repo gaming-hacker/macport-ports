@@ -9,7 +9,7 @@ platforms           darwin
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             PHP-3.01
 
-php.branches 8.0
+php.branches 8.1
 php.pecl            yes
 
 if {[vercmp ${php.branch} 7.1] >= 0} {
