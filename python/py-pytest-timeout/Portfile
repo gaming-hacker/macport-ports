@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -9,8 +9,8 @@ revision            0
 name                py-${github.project}
 
 checksums           rmd160  4da121399642f90fb7ed2cc1b09a52d7dc663a47 \
-                    sha256  9a1491f24855015a529ebb5e924eafbed1c4d9c614ada903fc31cc5adf2f5e36 \
-                    size    15133
+sha256  9a1491f24855015a529ebb5e924eafbed1c4d9c614ada903fc31cc5adf2f5e36 \
+size    15133
 
 license             MIT
 maintainers         {@catap korins.ky:kirill} openmaintainer
@@ -19,7 +19,7 @@ supported_archs     noarch
 description         py.test plugin to abort hanging tests
 long_description    {*}${description}
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

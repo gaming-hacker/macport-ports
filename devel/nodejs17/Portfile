@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -8,7 +8,7 @@ PortGroup               legacysupport 1.1
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard   2014
+compiler.cxx_standard 2017
 
 name                    nodejs17
 version                 17.9.0
@@ -33,8 +33,8 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  5c3a8acf5438e5e3bd7d58b5c8bf1cf9d5bde5fd \
-                        sha256  5659f6da66dc4c959f59ab63e8b9171892847c3440f4d1cb68394dba67ca39e0 \
-                        size    35778144
+sha256  5659f6da66dc4c959f59ab63e8b9171892847c3440f4d1cb68394dba67ca39e0 \
+size    35778144
 
 distname                node-v${version}
 

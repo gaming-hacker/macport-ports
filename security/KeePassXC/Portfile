@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -43,13 +43,13 @@ if {${subport} eq ${name}} {
 
     # See keepassxc-${version}-src.tar.xz.DIGEST on upstream GitHub releases page for SHA256 sums
     checksums           ${distname}${extract.suffix} \
-                        rmd160  e5adf2843c99391f5fdd150caee4cdc4254ab155 \
-                        sha256  6001ba626c35c316dbda6de35736f012a2264f95139fcb4a094b8eb49b15d3e7 \
-                        size    8804436 \
+rmd160  e5adf2843c99391f5fdd150caee4cdc4254ab155 \
+sha256  6001ba626c35c316dbda6de35736f012a2264f95139fcb4a094b8eb49b15d3e7 \
+size    8804436 \
                         ${distname}${extract.suffix}.sig \
-                        rmd160  8faa589c6d808630d38a0da0ad0fe2c69aab070b \
-                        sha256  197a206c10a0c51e9e50aef7a245cc6a99955d928ac3dfb549998953a614bf04 \
-                        size    488
+rmd160  8faa589c6d808630d38a0da0ad0fe2c69aab070b \
+sha256  197a206c10a0c51e9e50aef7a245cc6a99955d928ac3dfb549998953a614bf04 \
+size    488
 
     gpg_verify.use_gpg_verification \
                         yes
@@ -64,8 +64,8 @@ if {${subport} eq ${name}} {
     conflicts           KeePassXC
 
     checksums           rmd160  a2c24f7f12b19baaf47a4f25399f33bee6cefe13 \
-                        sha256  5193db2c656bdbb29605df573057e23316e4572327d616b6ac052e857cf4af73 \
-                        size    11171009
+sha256  5193db2c656bdbb29605df573057e23316e4572327d616b6ac052e857cf4af73 \
+size    11171009
 
     gpg_verify.use_gpg_verification \
                         no

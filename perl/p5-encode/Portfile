@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.30
 perl5.setup         Encode 3.17 ../../authors/id/D/DA/DANKOGAI
 revision            0
 platforms           darwin
@@ -15,7 +15,7 @@ long_description    The "Encode" module provides the interfaces between \
                     are sequences of characters.
 
 checksums           rmd160  bb7168124f2fac2de259399e494ad283ac5e15b5 \
-                    sha256  b44cbf7dd60ec6128ec575dd348484975086522611bc7580cfd305a095faa6d2 \
-                    size    2086257
+sha256  b44cbf7dd60ec6128ec575dd348484975086522611bc7580cfd305a095faa6d2 \
+size    2086257
 
 perl5.link_binaries no

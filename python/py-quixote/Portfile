@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,10 +26,10 @@ long_description    ${description}. Its design goals were to allow easy \
 homepage            http://www.quixote.ca/
 
 checksums           rmd160  a3aa0037ffbd2209a99a8d81cf9d858e3506909c \
-                    sha256  3bda2618e62cc377ebad9370c7d33135d58844490bcb99973a8b9f2c1dc70834 \
-                    size    162876
+sha256  3bda2618e62cc377ebad9370c7d33135d58844490bcb99973a8b9f2c1dc70834 \
+size    162876
 
-python.versions     38 39
+python.versions 310
 
 if {${name} ne ${subport}} {
     post-destroot {

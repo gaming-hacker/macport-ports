@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    PyX is a ${description}. It combines an abstraction of the P
 homepage            https://pyx-project.org/
 
 checksums           rmd160  61ec70ac7fb7b7b8a6fdac5cdb5c9328775c7018 \
-                    sha256  0fc3b00c5e7fb6f4aefbf63b95f624297dde47700a82b8b5ad6ebb346b5e4977 \
-                    size    2559840
+sha256  0fc3b00c5e7fb6f4aefbf63b95f624297dde47700a82b8b5ad6ebb346b5e4977 \
+size    2559840
 
-python.versions     37 38
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_lib-append \
