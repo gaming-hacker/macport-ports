@@ -37,7 +37,7 @@ size    21427772
 depends_build-append \
                     port:gperf \
                     port:gtk-doc \
-                    port:perl5.30 \
+                    port:perl5.34 \
                     port:pkgconfig \
                     port:python310 \
                     port:py310-simplejson
@@ -116,7 +116,7 @@ configure.args-append \
     -DENABLE_MINIBROWSER=OFF \
     -DENABLE_VIDEO=ON \
     -DUSE_SYSTEM_MALLOC=OFF \
-    -DPERL_EXECUTABLE=${prefix}/bin/perl5.30
+    -DPERL_EXECUTABLE=${prefix}/bin/perl5.34
 
 pre-configure {
     if {![variant_isset quartz] && ![variant_isset x11]} {

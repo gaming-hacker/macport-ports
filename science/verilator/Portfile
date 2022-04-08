@@ -26,8 +26,8 @@ compiler.cxx_standard 2017
 
 installs_libs           no
 
-depends_build-append    port:perl5.30
-configure.perl          ${prefix}/bin/perl5.30
+depends_build-append    port:perl5.34
+configure.perl          ${prefix}/bin/perl5.34
 
 depends_build-append    port:flex
 configure.env-append    LEX=${prefix}/bin/flex

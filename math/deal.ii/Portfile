@@ -109,9 +109,9 @@ if {[mpi_variant_isset]} {
 variant docs description "Install ${name} documentation" {
     depends_build-append  port:doxygen \
                           path:bin/dot:graphviz \
-                          port:perl5.30
+                          port:perl5.34
     configure.args-append -DDEAL_II_COMPONENT_DOCUMENTATION=ON \
-                          -DPERL_EXECUTABLE=${prefix}/bin/perl5.30
+                          -DPERL_EXECUTABLE=${prefix}/bin/perl5.34
 }
 
 variant python description "install python bindings" {
