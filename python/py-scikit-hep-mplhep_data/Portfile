@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                           1.0
 PortGroup           python           1.0
@@ -10,8 +10,6 @@ github.setup        scikit-hep mplhep_data 0.0.3 v
 revision            0
 fetch.type          git
 
-platforms           darwin
-
 license             MIT
 
 maintainers         {jonesc @cjones051073} openmaintainer
@@ -20,18 +18,14 @@ description         Sub-package to hold data (fonts) for mplhep.
 long_description    {*}${description}
 
 # Supported python versions
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
-
     depends_build-append \
         port:py${python.version}-setuptools
 
     depends_test-append \
         port:py${python.version}-pytest
-
-    livecheck.type none 
-
 }
 
 # Only allow numbers, to avoid pre-release versions

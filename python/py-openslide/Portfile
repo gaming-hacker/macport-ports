@@ -39,10 +39,9 @@ size    263688
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-sphinx
     # py-flask is only needed for the examples.
-    # On Python 2.x, we can use either PIL or Pillow.
     depends_lib-append  port:openslide \
                         port:py${python.version}-flask \
-                        path:${frameworks_dir}/Python.framework/Versions/${python.branch}/lib/python${python.branch}/site-packages/PIL/Image.py:py${python.version}-Pillow
+                        port:py${python.version}-Pillow
 
     build.target-append build_sphinx
     test.run            yes

@@ -56,4 +56,6 @@ size    213342
             README.md PKG-INFO \
             ${destroot}${prefix}/share/doc/${subport}
     }
+
+    livecheck.type      none
 }
