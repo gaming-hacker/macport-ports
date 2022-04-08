@@ -63,111 +63,6 @@ set subport_branch      [php.branch_from_subport]
 
 # Remember to increment revision of ${php}-eaccelerator when updating version of ${php}.
 switch ${subport_branch} {
-    5.2 {
-        version         5.2.17
-        master_sites    https://museum.php.net/php5/
-        use_bzip2       yes
-        set suhosin_available       yes
-        set suhosin_patch_version   5.2.16-0.9.7
-        set suhosin_patch           suhosin-patch-${suhosin_patch_version}.patch.gz
-        checksums       ${distname}${extract.suffix} \
-md5     b27947f3045220faf16e4d9158cbfe13 \
-rmd160  567fa8d718b93fb83a89494c83a8bec224ac99e9 \
-sha256  e81beb13ec242ab700e56f366e9da52fd6cf18961d155b23304ca870e53f116c \
-size    9092312 \
-                        ${suhosin_patch} \
-rmd160  b28b70faf136b3e04c5b483da0f4c2279378f43a \
-sha256  aae115a318d80b3f32cedf876e7a8e4b932febb1b0c743c0b398003ebe122f91 \
-size    23069
-    }
-    5.3 {
-        version         5.3.29
-        use_bzip2       yes
-        set suhosin_available       yes
-        set suhosin_patch_version   5.3.9-0.9.10
-        set suhosin_patch           suhosin-patch-${suhosin_patch_version}.patch.gz
-        checksums       ${distname}${extract.suffix} \
-md5     9469e240cbe6ac865aeaec89b253dd30 \
-rmd160  e57beb4fdda41bca81b5856161bc97f3c5e3e9da \
-sha256  c4e1cf6972b2a9c7f2777a18497d83bf713cdbecabb65d3ff62ba441aebb0091 \
-size    11396771 \
-                        ${suhosin_patch} \
-rmd160  ce43921fd9b183b154713ecda98294f6c68d5f22 \
-sha256  4438caeab0a10c6c94aee9f7eaa703f5799f97d4e0579f43a947bb7314e38317 \
-size    40967
-    }
-    5.4 {
-        epoch           1
-        version         5.4.45
-        use_bzip2       yes
-        checksums       rmd160  352a0ea8fb75a447301c1434609ac0e4b96acc0c \
-sha256  4e0d28b1554c95cfaea6fa2b64aac85433f158ce72bb571bcd5574f98f4c6582 \
-size    12703324
-    }
-    5.5 {
-        epoch           2
-        version         5.5.38
-        use_xz          yes
-        checksums       rmd160  08d200f9458f37ffd69a2daf30436c5f25fc948f \
-sha256  cb527c44b48343c8557fe2446464ff1d4695155a95601083e5d1f175df95580f \
-size    11077780
-    }
-    5.6 {
-        epoch           2
-        version         5.6.40
-        use_xz          yes
-        checksums       rmd160  43b648cf24cdea59765a1d12c247f83f60af283f \
-sha256  1369a51eee3995d7fbd1c5342e5cc917760e276d561595b6052b21ace2656d1c \
-size    12472236
-    }
-    7.0 {
-        epoch           2
-        version         7.0.33
-        use_xz          yes
-        checksums       rmd160  621c2459c182de0a071f591eec45e4a3c32d8bdd \
-sha256  ab8c5be6e32b1f8d032909dedaaaa4bbb1a209e519abb01a52ce3914f9a13d96 \
-size    12033040
-    }
-    7.1 {
-        epoch           2
-        version         7.1.33
-        use_xz          yes
-        checksums       rmd160  378d66957d3488ce92c74745c4bc799b7b04105a \
-sha256  bd7c0a9bd5433289ee01fd440af3715309faf583f75832b64fe169c100d52968 \
-size    12370228
-    }
-    7.2 {
-        epoch           2
-        version         7.2.34
-        use_xz          yes
-        checksums       rmd160  52a993c201241e2dce521bad225f07330505b2cc \
-sha256  409e11bc6a2c18707dfc44bc61c820ddfd81e17481470f3405ee7822d8379903 \
-size    12309432
-    }
-    7.3 {
-        epoch           2
-        version         7.3.33
-        use_xz          yes
-        checksums       rmd160  b35e975ea04ab1a86a95d17a4f8048d295ab1475 \
-sha256  166eaccde933381da9516a2b70ad0f447d7cec4b603d07b9a916032b215b90cc \
-size    12143820
-    }
-    7.4 {
-        epoch           2
-        version         7.4.28
-        use_xz          yes
-        checksums       rmd160  4499993b1d3d90d503ddc86440ad6c2593001137 \
-sha256  9cc3b6f6217b60582f78566b3814532c4b71d517876c25013ae51811e65d8fce \
-size    10418352
-    }
-    8.0 {
-        epoch           2
-        version         8.0.17
-        use_xz          yes
-        checksums       rmd160  be690fd766aaa17d1db61e9ef87240ae487b57a6 \
-sha256  4e7d94bb3d144412cb8b2adeb599fb1c6c1d7b357b0d0d0478dc5ef53532ebc5 \
-size    10771016
-    }
     8.1 {
         epoch           2
         version         8.1.4
@@ -412,17 +307,6 @@ subport ${php} {
     PortGroup               select 1.0
 
     switch -- ${version} {
-        5.2.17              {revision 16}
-        5.3.29              {revision 7}
-        5.4.45              {revision 6}
-        5.5.38              {revision 7}
-        5.6.40              {revision 5}
-        7.0.33              {revision 5}
-        7.1.33              {revision 3}
-        7.2.34              {revision 4}
-        7.3.33              {revision 1}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -567,17 +451,6 @@ subport ${php}-apache2handler {
     PortGroup               active_variants 1.1
 
     switch -- ${version} {
-        5.2.17              {revision 3}
-        5.3.29              {revision 3}
-        5.4.45              {revision 3}
-        5.5.38              {revision 3}
-        5.6.40              {revision 1}
-        7.0.33              {revision 1}
-        7.1.33              {revision 1}
-        7.2.34              {revision 2}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -633,17 +506,6 @@ To enable ${subport}, run:
 
 subport ${php}-cgi {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 2}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -676,16 +538,6 @@ subport ${php}-cgi {
 if {[vercmp ${branch} 5.3] >= 0} {
 subport ${php}-fpm {
     switch -- ${version} {
-        5.3.29              {revision 1}
-        5.4.45              {revision 1}
-        5.5.38              {revision 1}
-        5.6.40              {revision 1}
-        7.0.33              {revision 1}
-        7.1.33              {revision 1}
-        7.2.34              {revision 2}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -746,17 +598,6 @@ ${phpinidir}/php-fpm.conf.default.
 
 subport ${php}-calendar {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -768,17 +609,6 @@ subport ${php}-calendar {
 
 subport ${php}-curl {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -806,17 +636,6 @@ subport ${php}-curl {
 
 subport ${php}-dba {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -841,16 +660,6 @@ subport ${php}-dba {
 if {[vercmp ${branch} 5.3] >= 0} {
 subport ${php}-enchant {
     switch -- ${version} {
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -891,17 +700,6 @@ subport ${php}-enchant {
 
 subport ${php}-exif {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -914,17 +712,6 @@ subport ${php}-exif {
 
 subport ${php}-ftp {
     switch -- ${version} {
-        5.2.17              {revision 3}
-        5.3.29              {revision 3}
-        5.4.45              {revision 3}
-        5.5.38              {revision 3}
-        5.6.40              {revision 3}
-        7.0.33              {revision 2}
-        7.1.33              {revision 1}
-        7.2.34              {revision 1}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -950,17 +737,6 @@ subport ${php}-ftp {
 
 subport ${php}-gd {
     switch -- ${version} {
-        5.2.17              {revision 1}
-        5.3.29              {revision 1}
-        5.4.45              {revision 1}
-        5.5.38              {revision 1}
-        5.6.40              {revision 1}
-        7.0.33              {revision 1}
-        7.1.33              {revision 1}
-        7.2.34              {revision 1}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1014,17 +790,6 @@ subport ${php}-gd {
 
 subport ${php}-gettext {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1042,17 +807,6 @@ subport ${php}-gettext {
 
 subport ${php}-gmp {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1075,17 +829,6 @@ subport ${php}-gmp {
 
 subport ${php}-iconv {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1103,17 +846,6 @@ subport ${php}-iconv {
 
 subport ${php}-imap {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1143,16 +875,6 @@ subport ${php}-imap {
 if {[vercmp ${branch} 5.3] >= 0} {
 subport ${php}-intl {
     switch -- ${version} {
-        5.3.29              {revision 5}
-        5.4.45              {revision 3}
-        5.5.38              {revision 3}
-        5.6.40              {revision 2}
-        7.0.33              {revision 2}
-        7.1.33              {revision 1}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1187,17 +909,6 @@ subport ${php}-intl {
 
 subport ${php}-ipc {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1211,17 +922,6 @@ subport ${php}-ipc {
 
 subport ${php}-ldap {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1249,17 +949,6 @@ subport ${php}-ldap {
 
 subport ${php}-mbstring {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1277,76 +966,9 @@ subport ${php}-mbstring {
     }
 }
 
-if {[vercmp ${branch} 7.2] < 0} {
-# mcrypt was evicted from PHP core in version 7.2; php72-mcrypt and later
-# subports are found in the separate php-mcrypt Portfile.
-subport ${php}-mcrypt {
-    switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-    }
-
-    categories-append       security
-
-    description             a PHP interface to the mcrypt library, which offers \
-                            a wide variety of algorithms
-
-    long_description        ${description}
-
-    depends_lib-append      port:libmcrypt
-
-    # The mcrypt extension may be using libtool unnecessarily; monitor
-    # https://bugs.php.net/bug.php?id=54500
-    depends_lib-append      port:libtool
-
-    configure.args-append   --with-mcrypt=${prefix}
-}
-}
-
-if {[vercmp ${branch} 7] < 0} {
-subport ${php}-mssql {
-    switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-    }
-
-    php.extensions          mssql pdo_dblib
-
-    categories-append       databases
-
-    description             a PHP interface to MSSQL using FreeTDS, including \
-                            the mssql and pdo_dblib extensions
-
-    long_description        ${description}
-
-    depends_lib-append      port:freetds
-
-    configure.args-append   --with-mssql=${prefix} \
-                            --with-pdo-dblib=${prefix}
-}
-}
 
 subport ${php}-mysql {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1493,17 +1115,6 @@ For percona, use ${prefix}/var/run/percona/mysqld.sock
 
 subport ${php}-odbc {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1558,14 +1169,6 @@ subport ${php}-odbc {
 if {[vercmp ${branch} 5.5] >= 0} {
     subport ${php}-opcache {
         switch -- ${version} {
-            5.5.38              {revision 1}
-            5.6.40              {revision 1}
-            7.0.33              {revision 1}
-            7.1.33              {revision 1}
-            7.2.34              {revision 0}
-            7.3.33              {revision 0}
-            7.4.28              {revision 0}
-            8.0.17              {revision 0}
             8.1.4               {revision 0}
         }
 
@@ -1602,17 +1205,6 @@ if {[vercmp ${branch} 5.5] >= 0} {
 
 subport ${php}-openssl {
     switch -- ${version} {
-        5.2.17              {revision 3}
-        5.3.29              {revision 3}
-        5.4.45              {revision 3}
-        5.5.38              {revision 3}
-        5.6.40              {revision 3}
-        7.0.33              {revision 2}
-        7.1.33              {revision 1}
-        7.2.34              {revision 1}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1657,17 +1249,6 @@ subport ${php}-openssl {
 
 subport ${php}-oracle {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1697,17 +1278,6 @@ subport ${php}-oracle {
 
 subport ${php}-pcntl {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1728,17 +1298,6 @@ a web server environment.
 
 subport ${php}-posix {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1753,17 +1312,6 @@ subport ${php}-posix {
 
 subport ${php}-postgresql {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1883,17 +1431,6 @@ subport ${php}-postgresql {
 
 subport ${php}-pspell {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1911,17 +1448,6 @@ subport ${php}-pspell {
 
 subport ${php}-snmp {
     switch -- ${version} {
-        5.2.17              {revision 2}
-        5.3.29              {revision 2}
-        5.4.45              {revision 2}
-        5.5.38              {revision 2}
-        5.6.40              {revision 1}
-        7.0.33              {revision 1}
-        7.1.33              {revision 1}
-        7.2.34              {revision 1}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1939,17 +1465,6 @@ subport ${php}-snmp {
 
 subport ${php}-soap {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1970,17 +1485,6 @@ subport ${php}-soap {
 
 subport ${php}-sockets {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -1995,10 +1499,6 @@ subport ${php}-sockets {
 if {[vercmp ${branch} 7.2] >= 0} {
 subport ${php}-sodium {
     switch -- ${version} {
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -2026,16 +1526,6 @@ subport ${php}-sodium {
 if {[vercmp ${branch} 5.3] >= 0} {
 subport ${php}-sqlite {
     switch -- ${version} {
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -2075,17 +1565,6 @@ subport ${php}-sqlite {
 
 subport ${php}-tidy {
     switch -- ${version} {
-        5.2.17              {revision 2}
-        5.3.29              {revision 2}
-        5.4.45              {revision 1}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 
@@ -2105,90 +1584,8 @@ subport ${php}-tidy {
     configure.args-append   --with-tidy=${prefix}
 }
 
-if {[vercmp ${branch} 7.4] < 0} {
-subport ${php}-wddx {
-    switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-    }
-
-    categories-append       textproc
-
-    description             a PHP interface to Web Distributed Data Exchange
-
-    long_description        ${description}
-
-    depends_build-append    port:expat \
-                            port:libxml2
-
-    configure.args-append   --with-libexpat-dir=${prefix} \
-                            --with-libxml-dir=${prefix}
-}
-}
-
-if {[vercmp ${branch} 8.0] < 0} {
-subport ${php}-xmlrpc {
-    switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-    }
-
-    categories-append       textproc
-
-    description             a PHP extension for writing XML-RPC clients and servers
-
-    long_description        ${description}
-
-    depends_build-append    port:libiconv \
-                            port:libxml2
-
-    depends_lib-append      port:expat
-
-    configure.args-append   --with-iconv-dir=${prefix}
-
-    if {[vercmp ${branch} 7.4] < 0} {
-        configure.args-append   --with-libexpat-dir=${prefix} \
-                                --with-libxml-dir=${prefix}
-    } else {
-        depends_build-append    port:pkgconfig
-
-        configure.args-append   --with-expat
-    }
-
-    pre-configure {
-        configure.cppflags-append [exec ${prefix}/bin/xml2-config --cflags]
-    }
-}
-}
-
 subport ${php}-xsl {
     switch -- ${version} {
-        5.2.17              {revision 0}
-        5.3.29              {revision 0}
-        5.4.45              {revision 0}
-        5.5.38              {revision 0}
-        5.6.40              {revision 0}
-        7.0.33              {revision 0}
-        7.1.33              {revision 0}
-        7.2.34              {revision 0}
-        7.3.33              {revision 0}
-        7.4.28              {revision 0}
-        8.0.17              {revision 0}
         8.1.4               {revision 0}
     }
 

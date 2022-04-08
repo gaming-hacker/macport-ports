@@ -64,7 +64,7 @@ destroot {
 # use these to specify python versions, python3 required
 # use ${prefix}/var/macports/sources/rsync.macports.org/macports/release/tarballs/ports/_resources/port1.0/group/python-1.0.tcl
 set python.version 310
-set python_branch   [string index ${python_version} 0].[string range ${python_version} 1 end]
+set python_branch   [string index ${python.version} 0].[string range ${python.version} 1 end]
 set python_prefix   ${frameworks_dir}/Python.framework/Versions/${python_branch}
 set python_bin      ${python_prefix}/bin/python${python_branch}
 
@@ -125,7 +125,7 @@ PATCH_CHROMEDRIVER_PY
 The original ${name} binary has been moved to ${subport}-original.\
 Use ${subport} with the port
 
-    py${python_version}-undetected-chromedriver +port_chromedriver_binary
+    py${python.version}-undetected-chromedriver +port_chromedriver_binary
 
 (with your preferred Python version) and the Python code:
 
@@ -137,78 +137,6 @@ To use separate chromedriver binaries with distinct signatures, use:
     driver = uc.Chrome(executable_path='${prefix}/bin/${subport}-original', executable_path_mkdtemp=True)
     driver.delete_executable_path_mkdtemp()
 "
-}
-
-subport ${name}-97 {
-    PortGroup       obsolete 1.0
-
-    version         97.0.4692.71
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
-}
-
-subport ${name}-96 {
-    PortGroup       obsolete 1.0
-
-    version         96.0.4664.45
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
-}
-
-subport ${name}-86 {
-    PortGroup       obsolete 1.0
-
-    version         86.0.4240.22
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
-}
-
-subport ${name}-85 {
-    PortGroup       obsolete 1.0
-
-    version         85.0.4183.87
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
-}
-
-subport ${name}-84 {
-    PortGroup       obsolete 1.0
-
-    version         84.0.4147.30
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
-}
-
-subport ${name}-83 {
-    PortGroup       obsolete 1.0
-
-    version         83.0.4103.39
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
-}
-
-subport ${name}-81 {
-    PortGroup       obsolete 1.0
-
-    version         81.0.4044.20
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
-}
-
-subport ${name}-80 {
-    PortGroup       obsolete 1.0
-
-    version         80.0.3987.106
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
-}
-
-subport ${name}-79 {
-    PortGroup       obsolete 1.0
-
-    version         79.0.3945.36
-    # Obsolete Date: 2023-01-01
-    replaced_by     chromedriver
 }
 
 if {$subport eq $name} {
