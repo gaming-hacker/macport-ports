@@ -10,7 +10,7 @@ conflicts           ffmpeg-devel
 
 epoch               1
 version             20220409
-revision            0
+revision            1
 license             LGPL-2.1+
 categories          multimedia
 maintainers         {devans @dbevans} {jeremyhu @jeremyhu} {mascguy @mascguy} openmaintainer
@@ -70,7 +70,11 @@ depends_lib         port:lame \
                     port:nasm \
                     port:samba3 \
                     port:libfdk-aac \
-                    port:xorg-libX11
+                    port:xorg-libX11 \
+                    port:faad2 \
+                    port:xorg-libxcb \
+                    port:xorg-libXext \
+                    port:xorg-libXfixes
 
 
 default_variants-append +gpl2
@@ -173,21 +177,9 @@ variant x11 {
                             port:xorg-libXfixes
 }
 
-# if {[variant_isset x11]} {
-#     require_active_variants libsdl2 x11
-# } else {
-#     require_active_variants libsdl2 "" x11
-# }
-
-# Allow use of librtmp instead of ffmpeg's internal rtmp implementation
-# May address interoperability issues with CRtmpServer and others
-# https://trac.macports.org/ticket/32219
-# https://groups.google.com/forum/#!topic/c-rtmp-server/ywQPjvciPgc
-# https://trac.ffmpeg.org/ticket/1700
 
 variant librtmp description {Use librtmp (from rtmpdump) as rtmp[t][es]:// protocol handler} {
     configure.args-append   --enable-librtmp
-
     depends_lib-append      port:rtmpdump
 }
 
