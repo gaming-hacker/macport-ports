@@ -11,7 +11,7 @@ revision            0
 
 conflicts           xpdf-tools
 license             GPL-2+
-maintainers         {devans @dbevans} openmaintainer
+maintainers         {devans @dbevans} {mascguy @mascguy} openmaintainer
 categories          graphics
 platforms           darwin
 homepage            https://poppler.freedesktop.org/
@@ -70,6 +70,10 @@ patchfiles-append   patch-cmake_modules_PopplerMacros.cmake.diff
 # fix header include path ordering for gobject-introspection call to
 # be source / build first, then system, as best can be determined
 patchfiles-append   patch-glib_CMakeFiles.txt-fix-include-ordering.diff
+
+if {${configure.compiler} eq "macports-gcc-7"} {
+    patchfiles-append   patch-poppler-gcc7-noexcept.diff
+}
 
 configure.args-append \
                     -DENABLE_UNSTABLE_API_ABI_HEADERS=ON \
