@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        so-fancy diff-so-fancy 1.4.3 v
 revision            0
 checksums           rmd160  2401e2e3c7525b987c3ac0e2967b069bb1b0509f \
-                    sha256  de90659705436cf17d9a8aaad7012c9ed82d7f16eadf1ecee3d6badb0717b73f \
-                    size    39805
+sha256  de90659705436cf17d9a8aaad7012c9ed82d7f16eadf1ecee3d6badb0717b73f \
+size    39805
 
 categories          textproc
 supported_archs     noarch

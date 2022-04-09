@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -22,8 +22,8 @@ homepage            https://www.gnu.org/software/libtool
 
 master_sites        gnu
 checksums           rmd160  732c5329c8fc36cfaf36145c3c8ca301a0c41f88 \
-                    sha256  04e96c2404ea70c590c546eba4202a4e12722c640016c12b9b2f1ce3d481e9a8 \
-                    size    1938886
+sha256  04e96c2404ea70c590c546eba4202a4e12722c640016c12b9b2f1ce3d481e9a8 \
+size    1938886
 
 # hardcode the M4 executable, similar to other executables such as SED, GREP, LN ...
 patchfiles          hardcode-m4.patch
