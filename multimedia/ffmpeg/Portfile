@@ -9,8 +9,8 @@ set my_name         ffmpeg
 conflicts           ffmpeg-devel
 
 epoch               1
-version             20220409
-revision            1
+version             20220411
+revision            0
 license             LGPL-2.1+
 categories          multimedia
 maintainers         {devans @dbevans} {jeremyhu @jeremyhu} {mascguy @mascguy} openmaintainer
@@ -78,7 +78,6 @@ depends_lib         port:lame \
 
 
 default_variants-append +gpl2
-
 
 configure.cflags-append -DHAVE_LRINTF ${configure.cppflags}
 configure.args     --arch=x86_64 \
@@ -167,28 +166,4 @@ platform darwin 8 {
 }
 
 configure.universal_args-delete --disable-dependency-tracking
-
-variant x11 {
-#
-# enable x11grab_xcb input device
-#
-    depends_lib-append      port:xorg-libxcb \
-                            port:xorg-libXext \
-                            port:xorg-libXfixes
-}
-
-
-variant librtmp description {Use librtmp (from rtmpdump) as rtmp[t][es]:// protocol handler} {
-    configure.args-append   --enable-librtmp
-    depends_lib-append      port:rtmpdump
-}
-
-
-
-variant darwinssl description {Enable https support using Apple built-in TLS library instead of GNU TLS} {
-    configure.args-delete   --disable-securetransport
-    configure.args-delete   --enable-gnutls
-    depends_lib-delete      port:gnutls
-}
-
 livecheck.type      none
