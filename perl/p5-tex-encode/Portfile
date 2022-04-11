@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -14,8 +14,8 @@ description         Encode/decode Perl utf-8 strings into TeX
 long_description    ${description}
 
 checksums           rmd160  325dde99a7730f0ff8bdbc38c758c7670aa4bcb7 \
-                    sha256  3f58f908ee272b4438cf338646941cb7d5201e4ebf5e7bf335d70d6fbb7399cf \
-                    size    35865
+sha256  3f58f908ee272b4438cf338646941cb7d5201e4ebf5e7bf335d70d6fbb7399cf \
+size    35865
 
 if {${perl5.major} != ""} {
     depends_lib-append \
