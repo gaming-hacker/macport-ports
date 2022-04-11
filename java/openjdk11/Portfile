@@ -36,7 +36,7 @@ if {${configure.build_arch} eq "x86_64"} {
     depends_build-append       port:openjdk11-bootstrap
 } elseif {${configure.build_arch} eq "arm64"} {
     depends_build-append       port:openjdk11-zulu
-    use_xcode           yes
+    use_xcode  no
 }
 
 default_variants    +server +release
