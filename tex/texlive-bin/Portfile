@@ -44,7 +44,7 @@ master_sites    https://www.ambulatoryclam.net/texlive/ \
 
 
 use_xz          yes
-distname        texlive-source-${version}
+distname        texlive-source-${version}-stripped
 worksrcdir      ${distname}
 
 compiler.cxx_standard \
@@ -54,10 +54,10 @@ compiler.cxx_standard \
 set tlpkgdistname   tlpkg-TeXLive-${version}
 distfiles-append    ${tlpkgdistname}${extract.suffix}
 
-checksums           texlive-source-2022.62882.tar.xz \
-                    rmd160  5b5d29b1b890552d981a265443c5284ab6160acc \
-                    sha256  f3b055b0878bcd08cb1d8f69640a4e8646dcf57e896025aea84911af2303d025 \
-                    size    64792832 \
+checksums           texlive-source-2022.62882-stripped.tar.xz \
+                    rmd160  ad6a0e9a19b7e9c55acedd778e97570b68cde9a2 \
+                    sha256  086ffc6634225a4f1f501de8267892d80b02a47953e42b00d9ab46d7c1ec61d2 \
+                    size    24722892 \
                     tlpkg-TeXLive-2022.62882.tar.xz \
                     rmd160  388de063147e9911476730a81bf061180b019db7 \
                     sha256  6663b2d049a89e9c0ab10b7d08669ec501208d702c02e3d62a5cb540e7569873 \
