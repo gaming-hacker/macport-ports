@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ revision            1
 # See conditional dependency below with allows build on these perls
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches          5.26 5.28 5.30 5.32 5.34
-perl5.default_branch    5.30
+perl5.branches 5.34
+perl5.default_branch 5.34
 perl5.create_variants   ${perl5.branches}
 
 categories          textproc
@@ -35,8 +35,8 @@ homepage            https://po4a.org/
 github.tarball_from releases
 
 checksums           rmd160  fa065c2cb92d8110a762cfa84730b5f22d9bd2fe \
-                    sha256  1797651c6e47bc83dae9a58b1ddeaf0200c750155f45f5123287a8c30039a180 \
-                    size    4152612
+sha256  1797651c6e47bc83dae9a58b1ddeaf0200c750155f45f5123287a8c30039a180 \
+size    4152612
 
 # TODO: check and fix dependencies
 depends_lib-append  \

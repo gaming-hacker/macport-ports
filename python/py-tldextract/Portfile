@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,11 +16,11 @@ long_description    {*}${description}
 homepage            https://github.com/john-kurkowski/tldextract
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 310
 
 checksums           rmd160  1c416f4427fe16de02020fd210790c4d2fb1f9c1 \
-                    sha256  ac9304cdf80b09c37eea965799e0d9ac0aa1ccb6531fae548aabe09baf1a2549 \
-                    size    104364
+sha256  ac9304cdf80b09c37eea965799e0d9ac0aa1ccb6531fae548aabe09baf1a2549 \
+size    104364
 
 if {${name} ne ${subport}} {
     depends_build-append \

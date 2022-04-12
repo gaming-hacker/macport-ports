@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   science
 license             BSD
 supported_archs     noarch
 
-python.versions     27 37 38 39 310
+python.versions 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,8 +23,8 @@ long_description    NetworkX is a Python package for the creation, \
 homepage            https://networkx.github.io
 
 checksums           rmd160  d9c5d60a8ff862de7738298bca06b9baaf7c8dc9 \
-                    sha256  4a52cf66aed221955420e11b3e2e05ca44196b4829aab9576d4d439212b0a14f \
-                    size    1937426
+sha256  4a52cf66aed221955420e11b3e2e05ca44196b4829aab9576d4d439212b0a14f \
+size    1937426
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -36,16 +36,16 @@ if {${name} ne ${subport}} {
         distname            ${python.rootname}-${version}
         use_zip             yes
         checksums           rmd160  255c9146174fb6aa67378001648a00335b4f2392 \
-                            sha256  45e56f7ab6fe81652fb4bc9f44faddb0e9025f469f602df14e3b2551c2ea5c8b \
-                            size    1700336
+sha256  45e56f7ab6fe81652fb4bc9f44faddb0e9025f469f602df14e3b2551c2ea5c8b \
+size    1700336
         depends_lib-append  port:py${python.version}-decorator
     } elseif {${python.version} eq 37} {
         version             2.6.3
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  6e7feda9ad8465c77eef36748daec00c6414130d \
-                            sha256  c0946ed31d71f1b732b5aaa6da5a0388a345019af232ce2f49c766e2d6795c51 \
-                            size    1844862
+sha256  c0946ed31d71f1b732b5aaa6da5a0388a345019af232ce2f49c766e2d6795c51 \
+size    1844862
     } else {
         python.pep517       yes
     }
