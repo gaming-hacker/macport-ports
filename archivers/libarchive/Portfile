@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup clang_dependency 1.0
@@ -17,12 +17,12 @@ long_description \
     also write shar archives.
 platforms        darwin
 
-version          3.6.0
+version          3.6.1
 revision         0
 
-checksums        rmd160  5ad2bf08211c842991a72c6ddaf3813f0cad1cae \
-sha256  a36613695ffa2905fdedc997b6df04a3006ccfd71d747a339b78aa8412c3d852 \
-size    8570393
+checksums        rmd160  1e1787d2ccdab33e63de085864f6ba61c055920a \
+                 sha256  c676146577d989189940f1959d9e3980d28513d74eedfbc6b7f15ea45fe54ee2 \
+                 size    7431598
 
 homepage         https://libarchive.org/
 master_sites     ${homepage}downloads/
