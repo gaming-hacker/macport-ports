@@ -83,7 +83,7 @@ configure.cxxflags-append -std=c++17
 compiler.blacklist-append {clang < 700}
 
 # Create subports for each supported Python version
-foreach v {27 36 37 38} {
+foreach v {310} {
   subport py${v}-${name} {
     set pythonversion     [string index ${v} 0].[string range ${v} 1 end]
     set pythonhome \
@@ -118,13 +118,6 @@ foreach v {27 36 37 38} {
       # Remove Python include directory
       # (duplicate of SWIG headers in ${prefix}/include)
       file delete -force ${destroot}${pythonhome}/include
-
-      # Create symbolic links in ${prefix}/bin to Python 2.7 scripts
-      if {${subport} eq "py27-${name}"} {
-        foreach script [glob -tails -nocomplain -directory ${destroot}${pythonhome}/bin *] {
-          file link -symbolic ${destroot}${prefix}/bin/${script} ../Library/Frameworks/Python.framework/Versions/${pythonversion}/bin/${script}
-        }
-      }
     }
   }
 }
