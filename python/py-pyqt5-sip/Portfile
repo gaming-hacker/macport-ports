@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,18 +18,18 @@ long_description    ${description}
 homepage            https://www.riverbankcomputing.com/software/sip/
 
 checksums           rmd160  77128f2cc6887368621cd0b187913d5186a20b18 \
-                    sha256  97e008795c453488f51a5c97dbff29cda7841afb1ca842c9e819d8e6cc0ae724 \
-                    size    121271
+sha256  97e008795c453488f51a5c97dbff29cda7841afb1ca842c9e819d8e6cc0ae724 \
+size    121271
 
-python.versions     35 36 37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     if {${python.version} < 37} {
         version     12.9.1
         revision    0
         checksums   rmd160  471a4ba4e693a651a37f047fe85ecef6d1de4805 \
-                    sha256  2f24f299b44c511c23796aafbbb581bfdebf78d0905657b7cee2141b4982030e \
-                    size    121419
+sha256  2f24f299b44c511c23796aafbbb581bfdebf78d0905657b7cee2141b4982030e \
+size    121419
     }
 
     distname            PyQt5_sip-${version}

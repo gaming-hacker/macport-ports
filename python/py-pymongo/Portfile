@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ revision            0
 categories-append   databases
 license             Apache
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -23,8 +23,8 @@ long_description \
 homepage            https://www.mongodb.org/
 
 checksums           rmd160  3b7747f6d99d7352ac64045c08ade382a771fd4b \
-                    sha256  dbba77bc0b706c7ee496fc75a6c6ed406d85f6091d5fec488a8944c3828e6462 \
-                    size    774358
+sha256  dbba77bc0b706c7ee496fc75a6c6ed406d85f6091d5fec488a8944c3828e6462 \
+size    774358
 
 if {${name} ne ${subport}} {
     conflicts               py${python.version}-bson

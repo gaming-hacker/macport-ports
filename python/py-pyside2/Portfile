@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -19,11 +19,11 @@ distname                pyside-setup-opensource-src-${version}
 use_xz                  yes
 
 checksums               rmd160  e47a57c7d372862a286c7f1fa362896bff2e3b41 \
-                        sha256  7ff5f1cc4291fffb6d5a3098b3090abe4d415da2adec740b4e901893d95d7137 \
-                        size    3572248
+sha256  7ff5f1cc4291fffb6d5a3098b3090abe4d415da2adec740b4e901893d95d7137 \
+size    3572248
 
 
-python.versions         36 37 38 39 310
+python.versions 310
 
 set llvm_version        13
 

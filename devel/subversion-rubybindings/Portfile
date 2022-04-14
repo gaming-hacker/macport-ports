@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ master_sites        apache:subversion
 use_bzip2           yes
 
 checksums           rmd160  78532f052424f8698f505cbfa3467db53df9d965 \
-                    sha256  c9130e8d0b75728a66f0e7038fc77052e671830d785b5616aad53b4810d3cc28 \
-                    size    8606570
+sha256  c9130e8d0b75728a66f0e7038fc77052e671830d785b5616aad53b4810d3cc28 \
+size    8606570
 
 distname            subversion-${version}
 dist_subdir         subversion

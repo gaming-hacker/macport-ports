@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Humanities packages
 long_description    Packages for law, linguistics, social sciences, humanities, etc.
 
 checksums           texlive-humanities-61878-run.tar.xz \
-                    rmd160  43bb5d2826265fae99949db0af99997b42a20e17 \
-                    sha256  8efcf619ff97d700ce2af79a22329bd1ac56b1cb25295d7f9038edfd6c4c00f2 \
-                    size    27823640 \
+rmd160  43bb5d2826265fae99949db0af99997b42a20e17 \
+sha256  8efcf619ff97d700ce2af79a22329bd1ac56b1cb25295d7f9038edfd6c4c00f2 \
+size    27823640 \
                     texlive-humanities-61878-doc.tar.xz \
-                    rmd160  e7889ad8330c907412f3904d72caf64aa940b308 \
-                    sha256  6c69a638e02a7b39d54e29fe6858832237dc7c38032e7468050cd212b8d9bf41 \
-                    size    26996324 \
+rmd160  e7889ad8330c907412f3904d72caf64aa940b308 \
+sha256  6c69a638e02a7b39d54e29fe6858832237dc7c38032e7468050cd212b8d9bf41 \
+size    26996324 \
                     texlive-humanities-61878-src.tar.xz \
-                    rmd160  55b63d92ce0f5b6bdbc01417d497d2f9eb102153 \
-                    sha256  12b329b1c38fbdb21a1957b5a671c83cbac69edf44863ed7ce29d4b54b4b4f8f \
-                    size    646508
+rmd160  55b63d92ce0f5b6bdbc01417d497d2f9eb102153 \
+sha256  12b329b1c38fbdb21a1957b5a671c83cbac69edf44863ed7ce29d4b54b4b4f8f \
+size    646508
 
 depends_lib         port:texlive-latex
 

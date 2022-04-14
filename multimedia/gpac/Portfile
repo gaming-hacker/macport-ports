@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ homepage            https://gpac.wp.imt.fr
 
 github.tarball_from archive
 checksums           rmd160  a42408350f0ee7f2d7909f7cfe9fae2acd760576 \
-                    sha256  c820386f9d583c740fc3f57cb93864a8164838516dabc96de2f61d5b7429e0b6 \
-                    size    11362932
+sha256  c820386f9d583c740fc3f57cb93864a8164838516dabc96de2f61d5b7429e0b6 \
+size    11362932
 
 depends_build       port:pkgconfig \
                     port:zlib

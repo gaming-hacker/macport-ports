@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -41,13 +41,13 @@ master_sites-append https://github.com/crystal-lang/${name}/releases/download/${
 distfiles-append    ${name}-${cr_full_ver}-${os.platform}-universal${extract.suffix}:bootstrap
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  78c30f96372c0f1eb505aa986c9977a082e44c56 \
-                    sha256  dfc18bf6dcf7521a0a877c5292fdc46fbaf3971523bb52c9c5e0b6ab33537fc4 \
-                    size    2879470 \
+rmd160  78c30f96372c0f1eb505aa986c9977a082e44c56 \
+sha256  dfc18bf6dcf7521a0a877c5292fdc46fbaf3971523bb52c9c5e0b6ab33537fc4 \
+size    2879470 \
                     ${name}-${cr_full_ver}-${os.platform}-universal${extract.suffix} \
-                    rmd160  aa4bb61aef943491b782e3f78cc5b969905e10de \
-                    sha256  def18c529bb35b23870f70bf6663b9395458db47551f8a77a1776909ec00bf43 \
-                    size    46119268
+rmd160  aa4bb61aef943491b782e3f78cc5b969905e10de \
+sha256  def18c529bb35b23870f70bf6663b9395458db47551f8a77a1776909ec00bf43 \
+size    46119268
 
 patchfiles          patch-static.diff
 
@@ -68,7 +68,7 @@ compiler.blacklist-append *gcc* clang
 compiler.fallback   macports-clang-${llvm_version}
 compiler.whitelist  macports-clang-${llvm_version}
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2017
 
 build.args          release=1 FLAGS=--no-debug \
                     CRYSTAL_CONFIG_LIBRARY_PATH=${prefix}/lib

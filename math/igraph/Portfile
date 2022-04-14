@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,13 +25,13 @@ depends_lib         port:arpack \
                     port:SuiteSparse_CXSparse
 
 checksums           rmd160  b294c942c4949537c18fffd121b80fc40105fdcd \
-                    sha256  f9a83473cea3e037b605b79b336be656b00dcf3037b233b4b250bd9270f36397 \
-                    size    3947489
+sha256  f9a83473cea3e037b605b79b336be656b00dcf3037b233b4b250bd9270f36397 \
+size    3947489
 
 test.run            yes
 test.target         check
 
-compiler.c_standard 1999
+compiler.c_standard 2011
 compiler.cxx_standard \
                     2011
 

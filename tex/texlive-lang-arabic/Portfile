@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Arabic
 long_description    Support for Arabic and Persian.
 
 checksums           texlive-lang-arabic-62109-run.tar.xz \
-                    rmd160  6a38a4b94452bec7296fd100a892dd8864339fc6 \
-                    sha256  a6c34cce41b7c3c7f7507b7aaeb28f04356a71453ad62a39a243af30598d400a \
-                    size    25885148 \
+rmd160  6a38a4b94452bec7296fd100a892dd8864339fc6 \
+sha256  a6c34cce41b7c3c7f7507b7aaeb28f04356a71453ad62a39a243af30598d400a \
+size    25885148 \
                     texlive-lang-arabic-62109-doc.tar.xz \
-                    rmd160  261e806cda97645966950db5d73d60dee2bf3dd5 \
-                    sha256  d01232ae5a657d331a562afd5f112d8c956c2d28ce03573f82b704b1d75b2b68 \
-                    size    20487820 \
+rmd160  261e806cda97645966950db5d73d60dee2bf3dd5 \
+sha256  d01232ae5a657d331a562afd5f112d8c956c2d28ce03573f82b704b1d75b2b68 \
+size    20487820 \
                     texlive-lang-arabic-62109-src.tar.xz \
-                    rmd160  58b94be1f4fb1247495bcb2f4ebbcf748e099336 \
-                    sha256  a9548f650f40ac4ba0d8df42d27f9b142790a21a260a681b220e4955160d687d \
-                    size    259476
+rmd160  58b94be1f4fb1247495bcb2f4ebbcf748e099336 \
+sha256  a9548f650f40ac4ba0d8df42d27f9b142790a21a260a681b220e4955160d687d \
+size    259476
 
 depends_lib         port:texlive-basic
 

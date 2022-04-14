@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -55,13 +55,13 @@ set tlpkgdistname   tlpkg-TeXLive-${version}
 distfiles-append    ${tlpkgdistname}${extract.suffix}
 
 checksums           texlive-source-2022.62882-stripped.tar.xz \
-                    rmd160  ad6a0e9a19b7e9c55acedd778e97570b68cde9a2 \
-                    sha256  086ffc6634225a4f1f501de8267892d80b02a47953e42b00d9ab46d7c1ec61d2 \
-                    size    24722892 \
+rmd160  ad6a0e9a19b7e9c55acedd778e97570b68cde9a2 \
+sha256  086ffc6634225a4f1f501de8267892d80b02a47953e42b00d9ab46d7c1ec61d2 \
+size    24722892 \
                     tlpkg-TeXLive-2022.62882.tar.xz \
-                    rmd160  388de063147e9911476730a81bf061180b019db7 \
-                    sha256  6663b2d049a89e9c0ab10b7d08669ec501208d702c02e3d62a5cb540e7569873 \
-                    size    115464
+rmd160  388de063147e9911476730a81bf061180b019db7 \
+sha256  6663b2d049a89e9c0ab10b7d08669ec501208d702c02e3d62a5cb540e7569873 \
+size    115464
 
 depends_lib     port:fontconfig \
                 port:freetype \
@@ -243,7 +243,7 @@ build.env-append        "OBJCXXFLAGS=${configure.objcxxflags} [get_canonical_arc
 # work around differences between libc++ and libstdc++ headers building with clang
 # https://trac.macports.org/ticket/54358#comment:26
 if {[string match *clang* ${configure.cxx}]} {
-    configure.cxxflags-append -std=c++11
+    configure.cxxflags-append -std=c++17
     configure.cxxflags-append -Wno-reserved-user-defined-literal
 }
 
