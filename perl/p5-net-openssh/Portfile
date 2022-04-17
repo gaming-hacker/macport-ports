@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Net-OpenSSH 0.82
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ description         Perl SSH client package implemented on top of OpenSSH
 long_description    ${description}
 
 checksums           rmd160  0b4aaf7741649bce6ec2a889fb7d1e2aced273c2 \
-                    sha256  d41aa24dd53466753209f5a67c6392e6f3fa599709169342cbcc5f4871d97e83 \
-                    size    76431
+sha256  d41aa24dd53466753209f5a67c6392e6f3fa599709169342cbcc5f4871d97e83 \
+size    76431
 
 if {${perl5.major} != ""} {
     depends_lib-append \

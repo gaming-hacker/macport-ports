@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    Pysam is a python module for reading and manipulating \
 homepage            https://github.com/pysam-developers/pysam
 
 checksums           rmd160  b01dae25f1e6306788555330e52b02a07ccf0a61 \
-                    sha256  dcc052566f9509fd93b2a2664f094a13f016fd60cdd189e05fb4eafa0c89505b \
-                    size    3843661
+sha256  dcc052566f9509fd93b2a2664f094a13f016fd60cdd189e05fb4eafa0c89505b \
+size    3843661
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

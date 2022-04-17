@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ homepage            https://github.com/agronholm/sphinx-autodoc-typehints
 distname            sphinx_autodoc_typehints-${version}
 
 checksums           rmd160  b39f26a651ffe7e4c32652aac4b5652e23c64f2e \
-                    sha256  07631c5f0c6641e5ba27143494aefc657e029bed3982138d659250e617f6f929 \
-                    size    31198
+sha256  07631c5f0c6641e5ba27143494aefc657e029bed3982138d659250e617f6f929 \
+size    31198
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

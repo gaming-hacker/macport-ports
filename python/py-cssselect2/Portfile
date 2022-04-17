@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 homepage            https://doc.courtbouillon.org/cssselect2/
 
 checksums           rmd160  6c81cb2ba7913e2a18b8d964f8ca7fd42dfd2287 \
-                    sha256  5b5d6dea81a5eb0c9ca39f116c8578dd413778060c94c1f51196371618909325 \
-                    size    35442
+sha256  5b5d6dea81a5eb0c9ca39f116c8578dd413778060c94c1f51196371618909325 \
+size    35442
 
-python.versions     37 38 39 310
+python.versions 310
 
 python.pep517       yes
 python.pep517_backend   flit

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           openssl 1.0
@@ -23,8 +23,8 @@ long_description    SNOBOL4 (StriNg Oriented and symBOlic Language) is \
                     Includes SPITBOL, Blocks and other extensions.
 
 checksums           rmd160  a05be6f3d02005deaae6d9b00763aa99f4160a2e \
-                    sha256  91244d67d4e29d2aadce5655bd4382ffab44c624a7ea4ad6411427f3abf17535 \
-                    size    986906
+sha256  91244d67d4e29d2aadce5655bd4382ffab44c624a7ea4ad6411427f3abf17535 \
+size    986906
 
 # maximal list for reproducible builds.
 # NOTE: libffi and libsqlite used by BASEDIR/lib/snobol4/VERS/lib/shared/{ffi,sqlite3}.bundle

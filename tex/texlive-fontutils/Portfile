@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Graphics and font utilities
 long_description    Programs for conversion between font formats, testing fonts, virtual fonts, .gf and .pk manipulation, mft, fontinst, etc. Manipulating OpenType, TrueType, Type 1,and for manipulation of PostScript and other image formats.
 
 checksums           texlive-fontutils-62517-run.tar.xz \
-                    rmd160  a5e4f03521f1cb543db96f4899becf4459536fd8 \
-                    sha256  9c7a4e6931cf1cf09965bae3224373bcbb02c2b54c5bdb3c3a1f74dd24fa74bb \
-                    size    5033552 \
+rmd160  a5e4f03521f1cb543db96f4899becf4459536fd8 \
+sha256  9c7a4e6931cf1cf09965bae3224373bcbb02c2b54c5bdb3c3a1f74dd24fa74bb \
+size    5033552 \
                     texlive-fontutils-62517-doc.tar.xz \
-                    rmd160  eba786a052a4992ae75d31b2cdc58a7adc2e0bf1 \
-                    sha256  1ef048757ed58db55f7df09ad0d80ceed5e2230b26a1ece4b8f9c6119d05dd97 \
-                    size    1943172 \
+rmd160  eba786a052a4992ae75d31b2cdc58a7adc2e0bf1 \
+sha256  1ef048757ed58db55f7df09ad0d80ceed5e2230b26a1ece4b8f9c6119d05dd97 \
+size    1943172 \
                     texlive-fontutils-62517-src.tar.xz \
-                    rmd160  4fcfb33b26d9b480c3a1c7dcaadf2b9aa3059cfc \
-                    sha256  2d09259d0685263c2cd316f0bddef092baaea0cd55a542869865b90abfd33043 \
-                    size    667664
+rmd160  4fcfb33b26d9b480c3a1c7dcaadf2b9aa3059cfc \
+sha256  2d09259d0685263c2cd316f0bddef092baaea0cd55a542869865b90abfd33043 \
+size    667664
 
 depends_lib         port:texlive-basic
 

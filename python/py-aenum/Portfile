@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 license             BSD
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -21,5 +21,5 @@ long_description    ${description}
 homepage            https://github.com/ethanfurman/aenum
 
 checksums           rmd160  22f996d1f80a388826e0e77c2badf61a2cb33e83 \
-                    sha256  e47aa190d7ac36dfc39b05b4b15b3275937d068d3a6cef2accabd831f6dde8f7 \
-                    size    130767
+sha256  e47aa190d7ac36dfc39b05b4b15b3275937d068d3a6cef2accabd831f6dde8f7 \
+size    130767

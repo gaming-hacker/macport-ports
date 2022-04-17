@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,8 +8,8 @@ version             1.10.0
 revision            0
 
 checksums           rmd160  61a169e1f8eb1b4467bc1bdd4ec802b73003eca3 \
-                    sha256  782aa5ceb87fd88c81caeb3382f380ef3854d50b27be8857feca611a7dfc60e5 \
-                    size    478984
+sha256  782aa5ceb87fd88c81caeb3382f380ef3854d50b27be8857feca611a7dfc60e5 \
+size    478984
 
 description         The Swiss-Army-knife command-line tool for plotter vector graphics.
 long_description    ${description}

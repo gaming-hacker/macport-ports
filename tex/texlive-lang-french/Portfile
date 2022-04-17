@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: French
 long_description    Support for French and Basque.
 
 checksums           texlive-lang-french-62879-run.tar.xz \
-                    rmd160  f1f1421e172d4dfcefdb54a893cff9ad8cf40287 \
-                    sha256  be3f5f2975a66b9529c847a8797c056188b8c3d697eda093bc86cd68cf8ad796 \
-                    size    81039976 \
+rmd160  f1f1421e172d4dfcefdb54a893cff9ad8cf40287 \
+sha256  be3f5f2975a66b9529c847a8797c056188b8c3d697eda093bc86cd68cf8ad796 \
+size    81039976 \
                     texlive-lang-french-62879-doc.tar.xz \
-                    rmd160  4d1753c4daf94e3c52b040fe76268449d8ef578a \
-                    sha256  16b2496909cc2fac4b828cc79b29983072ad6e984069389691f36c7759438369 \
-                    size    78290248 \
+rmd160  4d1753c4daf94e3c52b040fe76268449d8ef578a \
+sha256  16b2496909cc2fac4b828cc79b29983072ad6e984069389691f36c7759438369 \
+size    78290248 \
                     texlive-lang-french-62879-src.tar.xz \
-                    rmd160  73abd35cd4554ed5ac80cc9a53a9a98b1914b6d8 \
-                    sha256  0342deeaab449eae4ac35524d025731edaeff56db930df912b1177ffe9b7594e \
-                    size    2521492
+rmd160  73abd35cd4554ed5ac80cc9a53a9a98b1914b6d8 \
+sha256  0342deeaab449eae4ac35524d025731edaeff56db930df912b1177ffe9b7594e \
+size    2521492
 
 depends_lib         port:texlive-basic
 

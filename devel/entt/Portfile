@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -16,8 +16,8 @@ description         EnTT is a header-only, tiny and easy to use library for \
 long_description    {*}${description}
 
 checksums           rmd160 c5dadb852b40cd7e2446a41c0ac1c8ecff297b7e \
-                    sha256 83831133fcd7da913cae16fd00bcb56b5403407e0934d31bad2687ae1d35f9ca \
-                    size 676511
+sha256 83831133fcd7da913cae16fd00bcb56b5403407e0934d31bad2687ae1d35f9ca \
+size 676511
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/share/doc/${name}

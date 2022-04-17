@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ long_description \
 homepage            http://www.netlib.org/${name}/
 
 checksums           rmd160  bfae414d56c156ef9399dce073fd14e1c674e9af \
-                    sha256  62ca09e81aefc1cae06861773aca26e143cb5226aefc4d2470c6c42b3598981e \
-                    size    7633700
+sha256  62ca09e81aefc1cae06861773aca26e143cb5226aefc4d2470c6c42b3598981e \
+size    7633700
 
 configure.cppflags-append \
                     -DADD_

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description    iaito (formerly Cutter) is a free and open-source reverse en
 homepage            https://www.radare.org/n/iaito.html
 
 checksums           rmd160  897d63085cab073dc8c230b16b28c66570651f8b \
-                    sha256  f9bd7c73914d0344befc74966dff523ef17d1faab3cda3d7f1090506f8916566 \
-                    size    2787025
+sha256  f9bd7c73914d0344befc74966dff523ef17d1faab3cda3d7f1090506f8916566 \
+size    2787025
 
 depends_lib-append  port:radare2
 qt5.depends_component \
