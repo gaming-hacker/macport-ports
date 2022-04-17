@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Chinese
 long_description    Support for Chinese\; additional packages in collection-langcjk.
 
 checksums           texlive-lang-chinese-62312-run.tar.xz \
-rmd160  3ff96276861c3078a41b078df549bddcf55af685 \
-sha256  140e6f5110b48701b2e0f64f99fda9caf7d37095197ff082594d6906c83f8ae2 \
-size    87136248 \
+                    rmd160  3ff96276861c3078a41b078df549bddcf55af685 \
+                    sha256  140e6f5110b48701b2e0f64f99fda9caf7d37095197ff082594d6906c83f8ae2 \
+                    size    87136248 \
                     texlive-lang-chinese-62312-doc.tar.xz \
-rmd160  156e8a510e5ae7c841dd52101caf8825dc92abfd \
-sha256  dae26714e7f1efb3a9ec3b757823a155cc9c3d96ada8ce8832ff073920f36e18 \
-size    21524704 \
+                    rmd160  156e8a510e5ae7c841dd52101caf8825dc92abfd \
+                    sha256  dae26714e7f1efb3a9ec3b757823a155cc9c3d96ada8ce8832ff073920f36e18 \
+                    size    21524704 \
                     texlive-lang-chinese-62312-src.tar.xz \
-rmd160  c85b9d6816655be862472e6375759304b3fea42a \
-sha256  f00c91b9dc05179f2341fc4a72b28a8e261f7abef28b6aa0283719f0cce04433 \
-size    344660
+                    rmd160  c85b9d6816655be862472e6375759304b3fea42a \
+                    sha256  f00c91b9dc05179f2341fc4a72b28a8e261f7abef28b6aa0283719f0cce04433 \
+                    size    344660
 
 depends_lib         port:texlive-lang-cjk
 

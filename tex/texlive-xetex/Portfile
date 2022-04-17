@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: XeTeX and packages
 long_description    Packages for XeTeX, the Unicode/OpenType-enabled TeX by Jonathan Kew, http://tug.org/xetex.
 
 checksums           texlive-xetex-62790-run.tar.xz \
-rmd160  ea7325872ad79b0d756ba00f5e42f38413be2ba5 \
-sha256  ac2a62c9ba5f497222443f9558478c1aecd2afd43681d40358575c4263ccd898 \
-size    11085556 \
+                    rmd160  ea7325872ad79b0d756ba00f5e42f38413be2ba5 \
+                    sha256  ac2a62c9ba5f497222443f9558478c1aecd2afd43681d40358575c4263ccd898 \
+                    size    11085556 \
                     texlive-xetex-62790-doc.tar.xz \
-rmd160  d49355a21640f2d6e3b2df70718c0c14144b7273 \
-sha256  3066c6c7082f7f4b38a054a84b3664290e8078b915a839436d093ecdd8ac40e1 \
-size    10404440 \
+                    rmd160  d49355a21640f2d6e3b2df70718c0c14144b7273 \
+                    sha256  3066c6c7082f7f4b38a054a84b3664290e8078b915a839436d093ecdd8ac40e1 \
+                    size    10404440 \
                     texlive-xetex-62790-src.tar.xz \
-rmd160  0ebb4fb158cb4a91b2e4cf2243bd5d68a76ddea8 \
-sha256  4f3911ab4de4c7c3b169401490e4612522242d0289184c22db7cda7b04bcb785 \
-size    53088
+                    rmd160  0ebb4fb158cb4a91b2e4cf2243bd5d68a76ddea8 \
+                    sha256  4f3911ab4de4c7c3b169401490e4612522242d0289184c22db7cda7b04bcb785 \
+                    size    53088
 
 depends_lib         port:texlive-basic
 

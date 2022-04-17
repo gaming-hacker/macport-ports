@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,17 +14,17 @@ description         TeX Live: Italian
 long_description    Support for Italian.
 
 checksums           texlive-lang-italian-58653-run.tar.xz \
-rmd160  f2e8b92a071a3d38b7c5dada56d54b15a76666d4 \
-sha256  76fe39968c9587eb58c199399e00d67f0ea834db7d1f6da07c2db32428fb8fe8 \
-size    10676336 \
+                    rmd160  f2e8b92a071a3d38b7c5dada56d54b15a76666d4 \
+                    sha256  76fe39968c9587eb58c199399e00d67f0ea834db7d1f6da07c2db32428fb8fe8 \
+                    size    10676336 \
                     texlive-lang-italian-58653-doc.tar.xz \
-rmd160  6c0a37a72d0062034ceaa5256586bd75e25d0c14 \
-sha256  5e5ed5e640b89de7e326369bb2cec20d91ce8a7b13e8627bfb9c6083d05a8b10 \
-size    10577184 \
+                    rmd160  6c0a37a72d0062034ceaa5256586bd75e25d0c14 \
+                    sha256  5e5ed5e640b89de7e326369bb2cec20d91ce8a7b13e8627bfb9c6083d05a8b10 \
+                    size    10577184 \
                     texlive-lang-italian-58653-src.tar.xz \
-rmd160  ebe5454e4a5d944cdc6adb36957852f0eb8dcafd \
-sha256  746c2f81e6094fffa88c9b7040ebaf6d91ee1c553a5c9f61f446f95069585d83 \
-size    98844
+                    rmd160  ebe5454e4a5d944cdc6adb36957852f0eb8dcafd \
+                    sha256  746c2f81e6094fffa88c9b7040ebaf6d91ee1c553a5c9f61f446f95069585d83 \
+                    size    98844
 
 depends_lib         port:texlive-basic
 
