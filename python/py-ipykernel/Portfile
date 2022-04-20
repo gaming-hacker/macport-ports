@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel
 license             BSD
 supported_archs     noarch
 
-python.versions     27 37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -22,8 +22,8 @@ long_description    {*}${description}
 homepage            https://ipython.org/
 
 checksums           rmd160  c1ff94faa16b29f9dfae9d1572283733868d4774 \
-                    sha256  0e28273e290858393e86e152b104e5506a79c13d25b951ac6eca220051b4be60 \
-                    size    131331
+sha256  0e28273e290858393e86e152b104e5506a79c13d25b951ac6eca220051b4be60 \
+size    131331
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-debugpy \
@@ -42,8 +42,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  055f76d943ed8f8d1011676d418c4cf23fa891c6 \
-                            sha256  c5a498c70f7765c34f3397cf943b069057f5bef4e0218e4cfbb733e9f38fa5fa \
-                            size    95255
+sha256  c5a498c70f7765c34f3397cf943b069057f5bef4e0218e4cfbb733e9f38fa5fa \
+size    95255
 
         python.pep517       no
 

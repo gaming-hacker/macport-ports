@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 
 perl5.setup         Mojolicious 9.24 ../../authors/id/S/SR/SRI
 revision            0
@@ -18,8 +18,8 @@ description         A real-time MVC web framework emphasizing minimalism and sim
 long_description    ${description}
 
 checksums           rmd160  f4bd8d55f3fa8cf30d7f4698b5db629700df7832 \
-                    sha256  5a2f2e064fe50ad94ec5ed175403a26ec1ff4150d77742d14ca7b842e17f9168 \
-                    size    846426
+sha256  5a2f2e064fe50ad94ec5ed175403a26ec1ff4150d77742d14ca7b842e17f9168 \
+size    846426
 
 if {${perl5.major} != ""} {
     depends_lib-append \

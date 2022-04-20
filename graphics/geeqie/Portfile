@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -10,8 +10,8 @@ github.setup        BestImageViewer geeqie 1.7.3 v
 github.tarball_from releases
 
 checksums           rmd160  5caafb8b7e73ee5b447f281ec746d6c5e4736c08 \
-                    sha256  25b1f71cf91bd9a96f399d2a9e70507e54bb377a56e64d89521c0f7a9ce5dd38 \
-                    size    1949696
+sha256  25b1f71cf91bd9a96f399d2a9e70507e54bb377a56e64d89521c0f7a9ce5dd38 \
+size    1949696
 
 categories          graphics x11
 platforms           darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ homepage            https://github.com/TAPR/OpenHPSDR-wdsp
 github.setup        dl1ycf wdsp 04afdda1562ebbcb1f1333f8eff798433e6ce469
 version             20220409-[string range ${github.version} 0 7]
 checksums           rmd160  d68b2ecca3106017cb15f35a753888f6710cab52 \
-                    sha256  82033f1c268ab0343b955f887767b26eeffb8463bc36d143357407170982727f \
-                    size    4983779
+sha256  82033f1c268ab0343b955f887767b26eeffb8463bc36d143357407170982727f \
+size    4983779
 revision            0
 
 depends_build-append \

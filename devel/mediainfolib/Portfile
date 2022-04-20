@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 # normally update mediainfo port at the same time
 github.setup        MediaArea MediaInfoLib 22.03 v
 checksums           rmd160  d891f471de67478419b768ab83451a032ea826db \
-                    sha256  af001f352b199d5efea7cb250d20b38f16d8b12506dc1b85084ee8c23ccaddfe \
-                    size    2682168
+sha256  af001f352b199d5efea7cb250d20b38f16d8b12506dc1b85084ee8c23ccaddfe \
+size    2682168
 
 name                mediainfolib
 description         Supplies technical and tag information about a video or audio file

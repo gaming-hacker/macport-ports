@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ master_sites        ${homepage}static/tarballs/${version}/
 distname            mpich-${version}
 
 checksums           rmd160  120e954afb914de20bf30f2c131d464a1c928c0d \
-                    sha256  5a42f1a889d4a2d996c26e48cbf9c595cbf4316c6814f7c181e3320d21dedd42 \
-                    size    38137945
+sha256  5a42f1a889d4a2d996c26e48cbf9c595cbf4316c6814f7c181e3320d21dedd42 \
+size    38137945
 
 dist_subdir         mpich
 

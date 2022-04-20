@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel science
 license             BSD
 supported_archs     noarch
 
-python.versions     27 37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {aronnax @lpsinger} {stromnov @stromnov} openmaintainer
@@ -22,8 +22,8 @@ long_description    {*}${description}
 homepage            https://ipython.org/
 
 checksums           rmd160  df17bef7f7e02a4e4eeef6505e505df1ed66861f \
-                    sha256  70e5eb132cac594a34b5f799bd252589009905f05104728aea6a403ec2519dc1 \
-                    size    5400583
+sha256  70e5eb132cac594a34b5f799bd252589009905f05104728aea6a403ec2519dc1 \
+size    5400583
 
 if {${name} ne ${subport}} {
     set python_major [string index ${python.version} 0]
@@ -49,8 +49,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  8f11c03f31ed7d11d566f13eeda5cdcec8c07105 \
-                            sha256  4bac649857611baaaf76bc82c173aa542f7486446c335fe1a6c05d0d491c8906 \
-                            size    4977824
+sha256  4bac649857611baaaf76bc82c173aa542f7486446c335fe1a6c05d0d491c8906 \
+size    4977824
         python.pep517       no
         depends_lib-append  port:py${python.version}-backports-shutil_get_terminal_size \
                             port:py${python.version}-pathlib2 \
@@ -63,8 +63,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  4d87cbf576bd491eb0b5c6251891b458f5f52f3d \
-                            sha256  cb6aef731bf708a7727ab6cde8df87f0281b1427d41e65d62d4b68934fa54e97 \
-                            size    5154336
+sha256  cb6aef731bf708a7727ab6cde8df87f0281b1427d41e65d62d4b68934fa54e97 \
+size    5154336
         python.pep517       no
     }
 
