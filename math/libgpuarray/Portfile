@@ -7,7 +7,6 @@ PortGroup           github 1.0
 github.setup        Theano libgpuarray 0.7.6 v
 
 categories          math devel
-platforms           darwin
 license             MIT
 
 supported_archs     x86_64
@@ -24,4 +23,4 @@ size    293866
 depends_build-append \
                     port:pkgconfig
 
-livecheck.regex     {archive/v([0-9.]+).tar.gz}
+github.livecheck.regex  {([0-9.]+)}

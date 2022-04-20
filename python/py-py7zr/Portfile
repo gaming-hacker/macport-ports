@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-py7zr
-version             0.18.3
+version             0.18.4
 revision            0
 
 platforms           darwin
@@ -16,11 +16,11 @@ long_description    ${description}
 
 homepage            https://github.com/miurahr/py7zr
 
-checksums           rmd160  cce45682465b4f016ba3ef8f4cea386937afbab6 \
-sha256  d5bdc81536316f209a3ca4e1ce6e2ef11d8a519d613be47bcdd084bf655f400f \
-size    4225238
+checksums           rmd160  65cbfd2ce4b44ed8cae54c17ae1e64a5c02d6db7 \
+                    sha256  6986e90ca4ca1f4999d57987a54d891673c9f8befa02c9c6cd8201893a17442c \
+                    size    4255058
 
-python.versions 310
+python.versions     38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

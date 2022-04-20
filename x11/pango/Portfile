@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -11,11 +11,11 @@ name                    pango
 conflicts               pango-devel
 set my_name             pango
 epoch                   1
-version                 1.50.6
+version                 1.50.7
 revision                0
-checksums               rmd160  bd71ad53195491e0a12f59cefa21b4d61a23bf19 \
-sha256  a998bcf36881c3ac20495d40bceb304f4eaa9175bd2967c85656434cbdafe86a \
-size    4293168
+checksums               rmd160  c9fba0b53d3fb05add38e01e2f19a678ae3a7965 \
+                        sha256  0477f369a3d4c695df7299a6989dc004756a7f4de27eecac405c6790b7e3ad33 \
+                        size    4294752
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11
@@ -53,9 +53,9 @@ configure.args-append   -Dxft=disabled \
 configure.cflags-append \
                         -Wno-error,-Wimplicit-fallthrough
 
-compiler.cxx_standard 2017
+compiler.cxx_standard   2011
 configure.cxxflags-append \
-                        -std=c++17
+                        -std=c++11
 
 license_noconflict      gobject-introspection
 
