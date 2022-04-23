@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,8 +7,8 @@ name                streamlink
 version             1.7.0
 revision            0
 checksums           rmd160  da6be6fdc2dc905ec2682f2eb7d1455659a3ec9a \
-                    sha256  f87a62a47212d94769929bd040d9c186b461643bdbda06f839b99ec9efefb87a \
-                    size    728957
+sha256  f87a62a47212d94769929bd040d9c186b461643bdbda06f839b99ec9efefb87a \
+size    728957
 
 categories-append   multimedia net
 supported_archs     noarch
@@ -23,7 +23,7 @@ long_description    ${name} is a CLI utility which pipes video streams from vari
 
 homepage            https://github.com/streamlink/streamlink/
 
-python.versions     38
+python.versions 310
 
 depends_build-append \
                     port:py${python.version}-setuptools

@@ -21,8 +21,8 @@ master_sites        https://git.openjdk.java.net/jdk11u/archive/refs/tags
 distname            jdk-11.0.15+10
 
 checksums           rmd160  4e54be9b3a7ee2a0c7d8c5596f6b95396d30bb25 \
-                    sha256  a125f0f2e34061ea1509c9f24caec51e6e23411552d6b660a6f60c054853dc63 \
-                    size    122892672
+sha256  a125f0f2e34061ea1509c9f24caec51e6e23411552d6b660a6f60c054853dc63 \
+size    122892672
 
 depends_build       port:autoconf \
                     port:gmake \

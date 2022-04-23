@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ license             MIT
 maintainers         {amake @amake} openmaintainer
 
 checksums           rmd160  d3feb1d7775585e05b48ed6b2d05bc6fc2320347 \
-                    sha256  65d14ab1fe70cbd2f18fca538d98bd45d73e9b065defb843da71dc3c454deb45 \
-                    size    4973382
+sha256  65d14ab1fe70cbd2f18fca538d98bd45d73e9b065defb843da71dc3c454deb45 \
+size    4973382
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     use_zip         yes

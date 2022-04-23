@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                       1.0
 PortGroup           select                       1.0
@@ -49,8 +49,8 @@ if { ${os.arch} eq "arm" } {
     master_sites    https://github.com/fxcoudert/gcc/archive
     distname        gcc-${version}-arm-20211126
     checksums       rmd160  ce5d0621028c8ff2bf3ab677b29f6c14e4c86dfe \
-                    sha256  39416a5a2a0e00c5096937c456ca7632958271b438398184b9a55f6d437f681d \
-                    size    125611219
+sha256  39416a5a2a0e00c5096937c456ca7632958271b438398184b9a55f6d437f681d \
+size    125611219
     # Patches no longer needed by primary release
     # To be removed once also not needed by arm version
     patchfiles-append   patch-Make-lang.in.diff
@@ -63,8 +63,8 @@ if { ${os.arch} eq "arm" } {
     distname        gcc-${version}
     use_xz          yes
     checksums       rmd160  0c54f3971b4afbd78954d46852f733ff3fae266c \
-                    sha256  b47cf2818691f5b1e21df2bb38c795fac2cfbd640ede2d0a5e1c89e338a3ac39 \
-                    size    81141364
+sha256  b47cf2818691f5b1e21df2bb38c795fac2cfbd640ede2d0a5e1c89e338a3ac39 \
+size    81141364
 }
 
 subport             libgcc11 { revision [ expr ${revision} + 0 ] }

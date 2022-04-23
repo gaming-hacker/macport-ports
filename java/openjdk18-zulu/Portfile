@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -30,13 +30,13 @@ master_sites https://cdn.azul.com/zulu/bin/
 if {${configure.build_arch} eq "x86_64"} {
     distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
     checksums    rmd160  cab34d40201820d9bc04a213f51144df4a4e3e70 \
-                 sha256  c7215afec89b7fd5773cba86db6b6c048021b6c15451fa3292fab859de6146f4 \
-                 size    194031312
+sha256  c7215afec89b7fd5773cba86db6b6c048021b6c15451fa3292fab859de6146f4 \
+size    194031312
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     zulu${version}-ca-jdk${openjdk_version}-macosx_aarch64
     checksums    rmd160  27b550d1e1ba29c8b4439214a0a3c7b85dc3b4ba \
-                 sha256  ad25d692b0a085d4c3b8c707bf715fd32c54161632059132a435a03134455705 \
-                 size    191920037
+sha256  ad25d692b0a085d4c3b8c707bf715fd32c54161632059132a435a03134455705 \
+size    191920037
 }
 
 worksrcdir   ${distname}/zulu-18.jdk
