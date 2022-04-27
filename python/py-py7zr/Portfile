@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,12 +17,12 @@ long_description    ${description}
 homepage            https://github.com/miurahr/py7zr
 
 checksums           rmd160  e71df6f0fd74398f9547ad28a0a1fad93fa9497b \
-                    sha256  81ebb10619739764c2d80ef222e5845373ce84523183371ae9cd88e0df908929 \
-                    size    4260349
+sha256  81ebb10619739764c2d80ef222e5845373ce84523183371ae9cd88e0df908929 \
+size    4260349
 
 python.pep517       yes
 
-python.versions     38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

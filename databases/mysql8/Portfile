@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -62,13 +62,13 @@ if {$subport eq $name} {
                         ${boost_distname}${extract.suffix}:boost
 
     checksums           ${distname}${extract.suffix} \
-                        rmd160  0021a77452399445aea27163545f8407e479a5e2 \
-                        sha256  512170fa6f78a694d6f18d197e999d2716ee68dc541d7644dd922a3663407266 \
-                        size    319976039 \
+rmd160  0021a77452399445aea27163545f8407e479a5e2 \
+sha256  512170fa6f78a694d6f18d197e999d2716ee68dc541d7644dd922a3663407266 \
+size    319976039 \
                         ${boost_distname}${extract.suffix} \
-                        rmd160  850588f968a2086ff27ec7b8224ca8890a74601e \
-                        sha256  5347464af5b14ac54bb945dc68f1dd7c56f0dad7262816b956138fc53bcc0131 \
-                        size    130620992
+rmd160  850588f968a2086ff27ec7b8224ca8890a74601e \
+sha256  5347464af5b14ac54bb945dc68f1dd7c56f0dad7262816b956138fc53bcc0131 \
+size    130620992
 
     depends_lib-append  port:cyrus-sasl2 \
                         port:icu \

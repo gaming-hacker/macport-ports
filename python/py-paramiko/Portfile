@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   net security
 license             LGPL-2.1+
 supported_archs     noarch
 
-python.versions     27 36 37 38 39 310
+python.versions 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -26,8 +26,8 @@ long_description    This is a library for making SSH2 connections (client \
 homepage            https://github.com/paramiko/paramiko/
 
 checksums           rmd160  5ff18116578200c92c1eb92fb40ce69aa11caf4b \
-                    sha256  3d2e650b6812ce6d160abff701d6ef4434ec97934b13e95cf1ad3da70ffb5c58 \
-                    size    1068156
+sha256  3d2e650b6812ce6d160abff701d6ef4434ec97934b13e95cf1ad3da70ffb5c58 \
+size    1068156
 
 if {${name} ne ${subport}} {
     depends_build-append \

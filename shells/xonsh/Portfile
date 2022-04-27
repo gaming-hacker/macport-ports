@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    {*}${description} \
                     experts and novices alike.
 
 checksums           rmd160  b8cb2b9f9e5a51928aed5fe7edb5f08b1d7e0e47 \
-                    sha256  41f4d0893ddd563298459efba3789cfedcfa77d246a009aa1c5b91ef21f52b72 \
-                    size    12678721
+sha256  41f4d0893ddd563298459efba3789cfedcfa77d246a009aa1c5b91ef21f52b72 \
+size    12678721
 
 variant python37 conflicts python38 python39 python310 description {Use Python 3.7} {}
 variant python38 conflicts python37 python39 python310 description {Use Python 3.8} {}
