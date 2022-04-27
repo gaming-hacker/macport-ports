@@ -1,18 +1,18 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-pylint
-version             2.13.5
+version             2.13.7
 revision            0
 
 categories-append   devel
 license             GPL-2+
 supported_archs     noarch
 
-python.versions 310
+python.versions     37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -28,9 +28,9 @@ long_description    Pylint is a tool that checks for errors in python code, \
 
 homepage            https://pylint.org
 
-checksums           rmd160  6acfcfb3fc7f2adf28f1a66d12b1d18f89fc848c \
-sha256  dab221658368c7a05242e673c275c488670144123f4bd262b2777249c1c0de9b \
-size    359423
+checksums           rmd160  b1f53ed162fa4d1564bdaa2b0706da79e3bac325 \
+                    sha256  911d3a97c808f7554643bcc5416028cfdc42eae34ed129b150741888c688d5d5 \
+                    size    359826
 
 if {${name} ne ${subport}} {
     depends_build-append  \

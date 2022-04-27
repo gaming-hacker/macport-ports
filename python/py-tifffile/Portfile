@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-tifffile
-version             2022.4.8
+version             2022.4.26
 revision            0
 license             BSD
 maintainers         {mps @Schamschula} openmaintainer
@@ -16,11 +16,11 @@ long_description    {*}${description} Read image and metadata from TIFF-like fil
 supported_archs     noarch
 homepage            https://www.lfd.uci.edu/~gohlke/
 
-checksums           rmd160  d3f59adcb36c761d91763666f70851abcfeb00a9 \
-sha256  d4a4057e5cb7afe6e24cf7bde42a163970b593afe44c17249894ede755cf3faa \
-size    275731
+checksums           rmd160  f191b146adfe9d86141e8115ab98b0a156269a7f \
+                    sha256  018054f54b3c2fc06842b224077d059340309addfcd94263988c05d7f19724e9 \
+                    size    291834
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

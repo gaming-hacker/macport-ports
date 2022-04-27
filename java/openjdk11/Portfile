@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -7,7 +7,7 @@ name                openjdk11
 # remove 'jdk-' from the latest tag without '-ga' that has commit that corresponds to the latest tag with '-ga'
 version             11.0.15+10
 set ver [string map {+10 {}} ${version}]
-revision            0
+revision            1
 categories          java devel
 platforms           darwin
 supported_archs     x86_64 arm64
@@ -21,22 +21,16 @@ master_sites        https://git.openjdk.java.net/jdk11u/archive/refs/tags
 distname            jdk-11.0.15+10
 
 checksums           rmd160  4e54be9b3a7ee2a0c7d8c5596f6b95396d30bb25 \
-sha256  a125f0f2e34061ea1509c9f24caec51e6e23411552d6b660a6f60c054853dc63 \
-size    122892672
+                    sha256  a125f0f2e34061ea1509c9f24caec51e6e23411552d6b660a6f60c054853dc63 \
+                    size    122892672
 
 depends_build       port:autoconf \
                     port:gmake \
-                    port:bash
+                    port:bash \
+                    port:openjdk11-bootstrap
 
 pre-patch {
     reinplace "s|assert|vmassert|g" ${worksrcpath}/src/hotspot/share/jfr/periodic/jfrNetworkUtilization.cpp
-}
-
-if {${configure.build_arch} eq "x86_64"} {
-    depends_build-append       port:openjdk11-bootstrap
-} elseif {${configure.build_arch} eq "arm64"} {
-    depends_build-append       port:openjdk11-zulu
-    use_xcode  no
 }
 
 if {${os.major} < 16} {
@@ -49,9 +43,6 @@ set tpath /Library/Java
 use_configure    yes
 configure.cmd       ${prefix}/bin/bash configure
 configure.pre_args  --prefix=${tpath}
-set extrachflags "-isysroot `xcrun --sdk macosx --show-sdk-path` -arch ${configure.build_arch}"
-set extracxxflags "-isysroot `xcrun --sdk macosx --show-sdk-path` -arch ${configure.build_arch}"
-set extraldflags "-Wl,-syslibroot,`xcrun --sdk macosx --show-sdk-path` -arch ${configure.build_arch}"
 set bug_url "https://trac.macports.org/newticket?port=${name}"
 # default configure args
 configure.args      --with-debug-level=release \
@@ -59,9 +50,9 @@ configure.args      --with-debug-level=release \
                     --with-version-string=${version} \
                     --with-target-bits=64 \
                     --with-sysroot=`xcrun --sdk macosx --show-sdk-path` \
-                    --with-extra-cflags="${configure.cflags} ${extrachflags}" \
-                    --with-extra-cxxflags="${configure.cxxflags} ${extracxxflags}" \
-                    --with-extra-ldflags="${configure.ldflags} ${extraldflags}" \
+                    --with-extra-cflags="${configure.cflags}" \
+                    --with-extra-cxxflags="${configure.cxxflags}" \
+                    --with-extra-ldflags="${configure.ldflags}" \
                     --with-boot-jdk=/Library/Java/JavaVirtualMachines/openjdk11-bootstrap/Contents/Home \
                     --disable-warnings-as-errors \
                     --disable-precompiled-headers \

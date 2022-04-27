@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -7,13 +7,13 @@ name                exiftool
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches 5.34
-perl5.default_branch 5.34
+perl5.branches          5.28 5.30 5.32 5.34
+perl5.default_branch    5.34
 perl5.create_variants   ${perl5.branches}
 
 # keep version in sync with p5-image-exiftool
-perl5.setup         Image-ExifTool 12.40
-revision                    1
+perl5.setup         Image-ExifTool 12.41
+
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
 platforms           darwin
@@ -22,7 +22,7 @@ supported_archs     noarch
 description         General command line utility to read, write and edit EXIF metadata
 long_description    ${description}
 
-homepage            http://exiftool.sourceforge.net/
+homepage            https://exiftool.org
 
 distname
 distfiles
@@ -41,5 +41,5 @@ destroot {
 }
 
 livecheck.type      regex
-livecheck.url       ${homepage}/history.html
+livecheck.url       ${homepage}/rss.xml
 livecheck.regex     ${perl5.module}-(\[0-9.\]+)${extract.suffix}
