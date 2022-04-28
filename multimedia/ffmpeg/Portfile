@@ -9,7 +9,7 @@ set my_name         ffmpeg
 conflicts           ffmpeg-devel
 
 epoch               1
-version             20220427
+version             20220428
 revision            0
 license             LGPL-2.1+
 categories          multimedia
@@ -31,15 +31,15 @@ extract.suffix      .zip
 use_zip             yes
 checksum.skip  yes
 
-configure.cc clang-mp-13
+configure.cc clang-mp-14
 
-configure.cpp clang++-mp-13
+configure.cpp clang++-mp-14
 
 depends_build       port:pkgconfig \
                     port:gmake \
                     port:cctools \
                     port:texinfo \
-                    port:clang-13
+                    port:clang-14
 
 depends_lib         port:lame \
                     port:libiconv \
@@ -81,8 +81,8 @@ default_variants-append +gpl2
 
 configure.cflags-append -DHAVE_LRINTF ${configure.cppflags}
 configure.args     --arch=x86_64 \
---cc=/opt/local/bin/clang-mp-13 \
---cxx=/opt/local/bin/clang++-mp-13 \
+--cc=/opt/local/bin/clang-mp-14 \
+--cxx=/opt/local/bin/clang++-mp-14 \
 --env="CFLAGS=-I/opt/local/include LDFLAGS=-L/opt/local/lib" \
 --extra-cflags='-O3 -pipe -m64 -arch x86_64 -march=native -mtune=native -mmacosx-version-min=10.13 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2 -std=gnu11' \
 --extra-cxxflags='-O3 -pipe -m64 -arch x86_64 -march=native -mtune=native -mmacosx-version-min=10.13 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2 -std=c++17' \
