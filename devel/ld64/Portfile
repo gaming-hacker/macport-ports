@@ -6,7 +6,7 @@ PortGroup               compiler_blacklist_versions 1.0
 name                    ld64
 epoch                   2
 version                 3
-revision                5
+revision                6
 set dyld_version        655.1.1
 categories              devel
 platforms               darwin
@@ -179,8 +179,8 @@ if {${subport} eq ${name}} {
         depends_build-append port:cctools
     }
 
-    set all_llvm_variants {llvm12 llvm13}
-    array set llvm_variant_version {llvm12 12 llvm13 13 }
+    set all_llvm_variants {llvm14 llvm13}
+    array set llvm_variant_version {llvm14 14 llvm13 13 }
     set llvm_version {}
 
     foreach variantname $all_llvm_variants {
@@ -207,18 +207,8 @@ if {${subport} eq ${name}} {
     # has been installed.
 
     if {![some_llvm_variant_set]} {
-        if {${os.major} == 12 || ${os.major} == 13} {
-            # Using llvm-3.7 to break a dependency cycle (https://trac.macports.org/ticket/53138)
-            default_variants +llvm37
-        } elseif {${os.major} == 10 || ${os.major} == 11} {
-            default_variants +llvm34
-        } elseif {${os.major} == 9} {
-            # Using llvm-3.3 to break dependency cycle (https://trac.macports.org/ticket/52091)
-            default_variants +llvm33
-        }
-
         if {![some_llvm_variant_set] && ![variant_isset ld64_xcode] && ${os.major} >= 9} {
-            default_variants +llvm13
+            default_variants +llvm14
         }
 
         if {![some_llvm_variant_set] && ![variant_isset ld64_xcode] && ${os.major} >= 9} {

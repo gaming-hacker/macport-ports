@@ -22,19 +22,19 @@ license                 NCSA
 maintainers             nomaintainer
 
 set llvm_version        14
-version                 ${llvm_version}.0.1
+version                 ${llvm_version}.0.2
 
 name                    llvm-${llvm_version}
 revision                1
 subport                 mlir-${llvm_version}  { revision 0 }
-subport                 clang-${llvm_version} { revision 1 }
+subport                 clang-${llvm_version} { revision 0 }
 subport                 lldb-${llvm_version}  { revision 0 }
 subport                 flang-${llvm_version} { revision 0 }
 
 
-checksums               rmd160  c76f000c11023caf7f0aa5c639cb0561b1360ff9 \
-sha256  1a3c2e57916c5a70153aaf0a0e6f1230d6368b9e0f4d04dcb9e039a31b1cd4e6 \
-size    105594944
+checksums  rmd160  735ea72b3b943b66e777270244285d3c22d78d14 \
+sha256  dd559ea1b02cb241def100e05b1e406521da50af87aca0f2ae309abd916177d5 \
+size    105590604
 
 master_sites            https://github.com/llvm/llvm-project/releases/download/llvmorg-${version}
 distname                llvm-project-${version}.src
@@ -136,25 +136,6 @@ patchfiles-append \
     0019-10.6-and-less-use-emulated-TLS-before-10.7.patch \
     0025-lldb-add-defines-needed-for-older-SDKs.patch
 
-if {${os.platform} eq "darwin" && ${os.major} < 14} {
-    patchfiles-append \
-        0016-10.10-and-less-compiler-rt-find-macosx-sdk.patch
-}
-
-if {${os.platform} eq "darwin" && ${os.major} < 11} {
-    patchfiles-append \
-        0017-10.6-and-less-libcxx-work-around-no-reexported_symbo.patch \
-        0020-10.6-and-less-work-around-no-directory-watcher-befor.patch \
-        0021-10.6-and-less-libcxx-disable-Availability-tests.patch
-}
-
-if {${os.platform} eq "darwin" && ${os.major} < 10} {
-    patchfiles-append \
-        0022-10.5-and-less-default-to-fno-blocks.patch \
-        0023-10.5-and-less-use-older-cfname-and-fix-uuid-on-leopa.patch \
-        0024-10.5-and-less-compiler-rt-work-around-no-libdispatch.patch
-}
-
 if {${os.platform} eq "darwin" && ${os.major} < 16} {
     # error: 'TARGET_OS_OSX' is not defined, evaluates to 0 [-Werror,-Wundef-prefix=TARGET_OS_]
     patchfiles-append  0100-define-target-os-osx.patch
@@ -185,12 +166,14 @@ if {${subport} eq "llvm-${llvm_version}"} {
     description         llvm is a next generation compiler infrastructure
     long_description    The LLVM Core libraries provide a modern source- and \
                         target-independent optimizer, along with code \
-                        generation support for many popular CPUs (as well as \
-                        some less common ones!) These libraries are built \
-                        around a well specified code representation known as \
-                        the LLVM intermediate representation ("LLVM IR").
+                        generation support for many popular CPUs
 
-    depends_lib-append  port:libedit port:libffi port:ncurses path:lib/libxar.dylib:xar port:zlib
+    depends_lib-append  port:libedit \
+                        port:libffi \
+                        port:ncurses \
+                        path:lib/libxar.dylib:xar \
+                        port:zlib
+
     depends_run-append  port:llvm_select
 
     select.group        llvm
