@@ -130,15 +130,7 @@ if {${subport} eq ${name}} {
         default_variants +ld64_xcode
     }
 
-    if {[variant_isset ld64_97]} {
-        set ld64_ver 97
-    } elseif {[variant_isset ld64_127]} {
-        set ld64_ver 127
-    } elseif {[variant_isset ld64_236]} {
-        set ld64_ver 236
-    } elseif {[variant_isset ld64_274]} {
-        set ld64_ver 274
-    } elseif {[variant_isset ld64_xcode]} {
+    if {[variant_isset ld64_xcode]} {
         set ld64_ver xcode
     } else {
         set ld64_ver latest
