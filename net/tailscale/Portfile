@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/tailscale/tailscale 1.24.0 v
+go.setup            github.com/tailscale/tailscale 1.24.2 v
 go.package          tailscale.com
 github.tarball_from archive
 revision            0
@@ -22,9 +22,9 @@ license             BSD
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  771e7df561f03a95885257d62a4da7eeb393d135 \
-sha256  3c8fe851c440d5dbd9dba2f3242924a7d99e7df37b5ae098507a8feb3663c76f \
-size    1099668
+checksums           rmd160  c597a741c5d441221b6432cfb5df72c4d1b7f8e3 \
+                    sha256  f1fe7770b4e372ace47c5b0ac4cbe21af95c3a6fb1828ee4f407fcfe35b7958f \
+                    size    1102880
 
 set ts_build_sh     ${worksrcpath}/_build.sh
 

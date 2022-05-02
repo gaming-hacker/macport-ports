@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem       1.0
 
@@ -103,8 +103,8 @@ subport openjdk7-zulu {
 
     distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
     checksums    rmd160  5b7a9a2a6c08501a6585df46389d8438b1df23d7 \
-sha256  dcc720d6fe21f4c73d41e3276c032396f4e0a91f51b0fcf2b6530a3daa93c61d \
-size    68525632
+                 sha256  dcc720d6fe21f4c73d41e3276c032396f4e0a91f51b0fcf2b6530a3daa93c61d \
+                 size    68525632
 
     worksrcdir   ${distname}/zulu-7.jdk
 
@@ -126,13 +126,13 @@ subport openjdk8-corretto {
     if {${configure.build_arch} eq "x86_64"} {
         distname     amazon-corretto-${version}-macosx-x64
         checksums    rmd160  4d61d171dccf47712455d3b4e3976a56de7ac665 \
-sha256  6a6e9a6d2592c3705ef736256486133e0c7f4adf8cbd90e8c95f2bda460c01ed \
-size    118754955
+                     sha256  6a6e9a6d2592c3705ef736256486133e0c7f4adf8cbd90e8c95f2bda460c01ed \
+                     size    118754955
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     amazon-corretto-${version}-macosx-aarch64
         checksums    rmd160  cb801bae9d5b436a6ffe014d4827e2a78aece294 \
-sha256  0801bcdf8bb85032a450ac78ffadcf9cfc0d1218c5cdf8a25e3ad1b31200a21e \
-size    102882291
+                     sha256  0801bcdf8bb85032a450ac78ffadcf9cfc0d1218c5cdf8a25e3ad1b31200a21e \
+                     size    102882291
     }
 
     worksrcdir   amazon-corretto-8.jdk
@@ -165,8 +165,8 @@ subport openjdk8-openj9 {
     worksrcdir   jdk${version}-b${build}
 
     checksums    rmd160  a340dad7c239dbd53ea848ae8844d3046d95e2fd \
-sha256  c617b44f13a4fb28d5e31bb1448f2a35600d1f9abeab2e2127da360e08cef3f3 \
-size    129140293
+                 sha256  c617b44f13a4fb28d5e31bb1448f2a35600d1f9abeab2e2127da360e08cef3f3 \
+                 size    129140293
 }
 
 subport openjdk8-temurin {
@@ -186,15 +186,8 @@ subport openjdk8-temurin {
     worksrcdir   jdk${version}-b${build}
 
     checksums    rmd160  335f1bfa3cee50eee7da9d78514dd28e665ae553 \
-sha256  96a3124bf0f5ca777954239893cc89ea34c4bc9a9b7c1559aa2c69baa0ee84e3 \
-size    108075347
-}
-
-# Remove after 2022-04-30
-subport openjdk8-openj9-large-heap {
-    version      8u282
-    revision     2
-    replaced_by  openjdk8-openj9
+                 sha256  96a3124bf0f5ca777954239893cc89ea34c4bc9a9b7c1559aa2c69baa0ee84e3 \
+                 size    108075347
 }
 
 subport openjdk11-corretto {
@@ -212,13 +205,13 @@ subport openjdk11-corretto {
     if {${configure.build_arch} eq "x86_64"} {
         distname     amazon-corretto-${version}-macosx-x64
         checksums    rmd160  752d92e2e87d3feda836e7c7afa39982ea6b24f3 \
-sha256  36afb7f091cd9b986a50c3f878f167c59eae615f004b2cb1c5c394f9f2fc215a \
-size    187526579
+                     sha256  36afb7f091cd9b986a50c3f878f167c59eae615f004b2cb1c5c394f9f2fc215a \
+                     size    187526579
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     amazon-corretto-${version}-macosx-aarch64
         checksums    rmd160  d1980a49d5539b892a6ed09f7d100501da1c7d80 \
-sha256  939f0cc40f4dd749647e352ea2759fbf73c8c59662476ca237113abf9eed0710 \
-size    185394420
+                     sha256  939f0cc40f4dd749647e352ea2759fbf73c8c59662476ca237113abf9eed0710 \
+                     size    185394420
     }
 
     worksrcdir   amazon-corretto-11.jdk
@@ -226,21 +219,29 @@ size    185394420
 
 subport openjdk11-graalvm {
     # https://github.com/graalvm/graalvm-ce-builds/releases
-    supported_archs  x86_64
+    supported_archs  x86_64 arm64
 
-    version      22.0.0.2
+    version      22.1.0
     revision     0
 
     description  GraalVM Community Edition based on OpenJDK 11
     long_description ${long_description_graalvm}
 
     master_sites https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-${version}/
-    distname     graalvm-ce-java11-darwin-amd64-${version}
-    worksrcdir   graalvm-ce-java11-${version}
 
-    checksums    rmd160  d45ec5d0f9dae092471fe1c9381769f23efb08da \
-sha256  8280159b8a66c51a839c8079d885928a7f759d5da0632f3af7300df2b63a6323 \
-size    418371142
+    if {${configure.build_arch} eq "x86_64"} {
+        distname     graalvm-ce-java11-darwin-amd64-${version}
+        checksums    rmd160  6c4afee0143d6cf4373fa8faf36a6e3eeb4bce22 \
+                     sha256  c4c9df94ca47b83b582758b87d39042732ba0193fc63f1ab93f6818005a1fe6b \
+                     size    435795441
+    } elseif {${configure.build_arch} eq "arm64"} {
+        distname     graalvm-ce-java11-darwin-aarch64-${version}
+        checksums    rmd160  5e834b8bc8ea1150e1f8f95bdc623a81d904fddc \
+                     sha256  06bc19a0b1e93aa3df5e15c08e97f8cef624cb6070eeae40a69a51ec7fd41152 \
+                     size    404445467
+    }
+
+    worksrcdir   graalvm-ce-java11-${version}
 }
 
 subport openjdk11-openj9 {
@@ -263,15 +264,8 @@ subport openjdk11-openj9 {
     worksrcdir   jdk-${version}+${build}
 
     checksums    rmd160  d434bc2fdc141267e2b46862494a2aedeac05327 \
-sha256  215e1ff6fa821309548253653e74025d6a830180abe6001db7717fde4eb991d9 \
-size    203401477
-}
-
-# Remove after 2022-04-30
-subport openjdk11-openj9-large-heap {
-    version      11.0.10
-    revision     2
-    replaced_by  openjdk11-openj9
+                 sha256  215e1ff6fa821309548253653e74025d6a830180abe6001db7717fde4eb991d9 \
+                 size    203401477
 }
 
 subport openjdk11-sap {
@@ -289,19 +283,19 @@ subport openjdk11-sap {
     worksrcdir   sapmachine-jdk-${version}.jdk
     
     checksums    rmd160  a96ee4be77f52adaff3e89faa39a0f669dce07b7 \
-sha256  6edc3e6d4a5fcc2782b24d5957fbdfa16f20e5e349d9b28fd536be0d32deb041 \
-size    186905185
+                 sha256  6edc3e6d4a5fcc2782b24d5957fbdfa16f20e5e349d9b28fd536be0d32deb041 \
+                 size    186905185
 
 }
 
 subport openjdk11-temurin {
-    # https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot
+    # https://adoptium.net/temurin/releases/
     supported_archs  x86_64
 
-    version      11.0.14.1
+    version      11.0.15
     revision     0
 
-    set build    1
+    set build    10
 
     description  Eclipse Temurin, based on OpenJDK 11
     long_description ${long_description_temurin}
@@ -311,9 +305,9 @@ subport openjdk11-temurin {
     distname     OpenJDK11U-jdk_x64_mac_hotspot_${version}_${build}
     worksrcdir   jdk-${version}+${build}
 
-    checksums    rmd160  256cf096156ca678da017e8768c7f12c841e9c10 \
-sha256  8c69808f5d9d209b195575e979de0e43cdf5d0f1acec1853a569601fe2c1f743 \
-size    191413871
+    checksums    rmd160  5d66fe3d953619e7a6ca326110654344f1883773 \
+                 sha256  ebd8b9553a7b4514599bc0566e108915ce7dc95d29d49a9b10b8afe4ab7cc9db \
+                 size    186328533
 }
 
 # Remove after 2022-09-14
