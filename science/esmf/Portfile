@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -15,8 +15,8 @@ mpi.enforce_variant netcdf-fortran
 github.setup        esmf-org esmf 8_2_0 ESMF_
 revision            0
 checksums           rmd160  02dfccd24971fc5e89a5d0be874cf74abd8c2cec \
-                    sha256  3693987aba2c8ae8af67a0e222bea4099a48afe09b8d3d334106f9d7fc311485 \
-                    size    10814914
+sha256  3693987aba2c8ae8af67a0e222bea4099a48afe09b8d3d334106f9d7fc311485 \
+size    10814914
 
 version             [string map {_ .} ${github.version}]
 categories          science devel
@@ -67,7 +67,7 @@ if {![variant_isset atlas]} {
 
 use_configure       no
 if {[variant_isset gcc47] || [variant_isset gcc48] || [variant_isset gcc49] || [variant_isset gcc5]} {
-    configure.cxxflags-append   -std=c++11
+    configure.cxxflags-append   -std=c++17
 } elseif {[variant_isset gcc44] || [variant_isset gcc45] || [variant_isset gcc46]} {
     configure.cxxflags-append   -std=c++0x
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  59c2c7f172a0f6721f5f9dfe6778928cb81e81c4 \
-                    sha256  10958957148544da780c1be4004b906e94bafe02a19f0224f6026828fb77a8cc \
-                    size    3093047
+rmd160  59c2c7f172a0f6721f5f9dfe6778928cb81e81c4 \
+sha256  10958957148544da780c1be4004b906e94bafe02a19f0224f6026828fb77a8cc \
+size    3093047
 
 patch {
     reinplace "1113s/.*/version = \"${version}\"/" ${worksrcpath}/Cargo.lock

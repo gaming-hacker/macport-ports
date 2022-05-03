@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Dist-Zilla-Plugin-ModuleBuildTiny-Fallback 0.027
 revision            0
 license             {Artistic-1 GPL}
@@ -15,8 +15,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  45af9e0ed620fcbd36bb7157b6e7dce4694e5678 \
-                    sha256  0a918ff686d9a8d9a4b1f78c01401d5a7aa921a7888f5f91373fab39bd928868 \
-                    size    39716
+sha256  0a918ff686d9a8d9a4b1f78c01401d5a7aa921a7888f5f91373fab39bd928868 \
+size    39716
 
 if {${perl5.major} != ""} {
     depends_build-append \

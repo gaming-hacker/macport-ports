@@ -24,9 +24,9 @@ distfiles           ${distname}${extract.suffix}:ashuffle
 
 checksums-append    \
                     ${distname}${extract.suffix} \
-                    rmd160  3143e83c0fcbecf2c9cd9165cb67c2e5091649c4 \
-                    sha256  e324409280bb07e5b15e250197c3c115cdcbb5de801a8ded6bdfeb0ea89cb006 \
-                    size    85824
+rmd160  3143e83c0fcbecf2c9cd9165cb67c2e5091649c4 \
+sha256  e324409280bb07e5b15e250197c3c115cdcbb5de801a8ded6bdfeb0ea89cb006 \
+size    85824
 
 depends_build-append \
                     port:cmake \
@@ -44,9 +44,9 @@ set abseil_version  20211102.0
 master_sites-append https://github.com/abseil/${abseil_project}/archive/${abseil_version}:abseil
 distfiles-append    ${abseil_project}-${abseil_version}${extract.suffix}:abseil
 checksums-append    ${abseil_project}-${abseil_version}${extract.suffix} \
-                    rmd160  bca4a16eaab1602cdc7ace8dd1ff82467b71b59e \
-                    sha256  dcf71b9cba8dc0ca9940c4b316a0c796be8fab42b070bb6b7cab62b48f0e66c4 \
-                    size    1884080
+rmd160  bca4a16eaab1602cdc7ace8dd1ff82467b71b59e \
+sha256  dcf71b9cba8dc0ca9940c4b316a0c796be8fab42b070bb6b7cab62b48f0e66c4 \
+size    1884080
 
 post-extract {
     foreach submodule [list subprojects/absl:${abseil_project}] {

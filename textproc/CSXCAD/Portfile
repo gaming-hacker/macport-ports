@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ PortGroup           boost 1.0
 github.setup        thliebig CSXCAD 3c4fb665d934349e048fbcc31d6be203483b5e98
 version             20210708-[string range ${github.version} 0 7]
 checksums           rmd160  23fd866935410e9fc15bbb3894bed273128eb685 \
-                    sha256  ae6e8e993c40c62f6e23dcaac45ccf60170a91d9cc0a247f8e552f61f5832271 \
-                    size    169153
+sha256  ae6e8e993c40c62f6e23dcaac45ccf60170a91d9cc0a247f8e552f61f5832271 \
+size    169153
 revision            1
 
 platforms           darwin macosx
@@ -23,7 +23,7 @@ long_description    {*}${description}
 
 boost.version       1.71
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2017
 
 # remove when upstream
 patchfiles-append \

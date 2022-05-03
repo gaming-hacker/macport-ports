@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,13 +24,13 @@ extract.only        ${distfiles}
 distfiles-append    ${name}-server-v${version}:bootstrap
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  4bda028986a9a4b343624f2c78e7ff6d5657dcf3 \
-                    sha256  15cf40c2f1e2f40003ed11ce93a5d799e7f412288df6270a96ed892f63344cc0 \
-                    size    425018 \
+rmd160  4bda028986a9a4b343624f2c78e7ff6d5657dcf3 \
+sha256  15cf40c2f1e2f40003ed11ce93a5d799e7f412288df6270a96ed892f63344cc0 \
+size    425018 \
                     ${name}-server-v${version} \
-                    rmd160  a098197be5fbd69b2ff3f4cc70e3bcec845f9dda \
-                    sha256  ae74a81ea79c0dc7250e586627c278c0a9a8c5de46c9fb5c38c167fb1a36f056 \
-                    size    41159
+rmd160  a098197be5fbd69b2ff3f4cc70e3bcec845f9dda \
+sha256  ae74a81ea79c0dc7250e586627c278c0a9a8c5de46c9fb5c38c167fb1a36f056 \
+size    41159
 
 depends_build-append \
                     port:libusb \

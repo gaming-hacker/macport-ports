@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -35,8 +35,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  3e7ec1eee820c6380a710c6e99add8d5d0bd0e43 \
-                    sha256  3f93229de25a4c3a658249f48407b80f347f076640a9fd50c476a2876212f781 \
-                    size    5725011
+sha256  3f93229de25a4c3a658249f48407b80f347f076640a9fd50c476a2876212f781 \
+size    5725011
 
 python.default_version 310
 
