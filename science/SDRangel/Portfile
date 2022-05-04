@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             github 1.0
@@ -19,8 +19,8 @@ long_description    ${description}
 
 github.setup          f4exb sdrangel 6.20.3 v
 checksums             rmd160  cf472db511f1e3ffd1a21dff45181e2fb43a16b3 \
-                      sha256  c5502dd2bd8c54f92748e9d6290d58769ca26a4abe6be3345ed0e4bdd9d4c650 \
-                      size    68761283
+sha256  c5502dd2bd8c54f92748e9d6290d58769ca26a4abe6be3345ed0e4bdd9d4c650 \
+size    68761283
 revision              0
 
 # check just the version 6 branch for now

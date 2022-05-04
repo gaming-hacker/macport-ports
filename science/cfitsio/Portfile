@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -29,8 +29,8 @@ homepage            https://heasarc.gsfc.nasa.gov/fitsio/
 master_sites        https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/
 
 checksums           rmd160  a7dd21fa12c2aa118ee350322e44dbb540359289 \
-                    sha256  b367c695d2831958e7166921c3b356d5dfa51b1ecee505b97416ba39d1b6c17a \
-                    size    4305184
+sha256  b367c695d2831958e7166921c3b356d5dfa51b1ecee505b97416ba39d1b6c17a \
+size    4305184
 
 patchfiles          patch-configure.diff \
                     patch-Makefile.in.diff
