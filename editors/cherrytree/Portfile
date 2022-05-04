@@ -30,7 +30,7 @@ distname                ${name}_${version}
 legacysupport.use_mp_libcxx \
                         yes
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 patchfiles              patch-cherrytree-all-apple-is-not-homebrew-for-goodness-sake.diff
 

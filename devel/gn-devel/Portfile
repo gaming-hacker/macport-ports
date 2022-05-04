@@ -30,7 +30,7 @@ if {${subport} eq ${name}} {
     git.url         ${homepage}
     git.branch      b175fa5d6ae1640742aad593185780a08f6ba224
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     compiler.blacklist-append {clang < 1001.0.46.4}
 
     destroot {
@@ -74,7 +74,7 @@ size    462412318
     # Backport change to avoid "unknown current_cpu arm" build error on arm64
     patchfiles-append patch-qtwebengine_gn_host_cpu_arm64.diff
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 
     # see https://github.com/qt/qtwebengine/blob/v5.15.8-lts/src/buildtools/gn.pro#L21
     if {${configure.sdkroot} ne ""} {

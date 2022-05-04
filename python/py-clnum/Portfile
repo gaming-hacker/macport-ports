@@ -32,8 +32,8 @@ if {${subport} ne ${name}} {
     patchfiles                  setup.py.patch
 
     # cln now appears to require C++11
-    compiler.cxx_standard 2017
-    configure.cxxflags-append   -std=c++17
+    compiler.cxx_standard 2020
+    configure.cxxflags-append   -std=gnu++20
 
     # distutils ludicrously compiles C++ software with the C compiler so
     # we have to specify that the C compiler is the C++ compiler.

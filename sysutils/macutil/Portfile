@@ -65,7 +65,7 @@ extract.pre_args	-c
 extract.post_args	"| sh"
 
 use_configure		no
-configure.cflags-append -std=c11
+configure.cflags-append -std=gnu2x
 
 variant universal {}
 

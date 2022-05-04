@@ -33,7 +33,7 @@ size    130255
 
 patchfiles          patch-argp-fmtstream.h.diff
 
-configure.cflags-append -std=c11
+configure.cflags-append -std=gnu2x
 
 post-destroot {
     xinstall ${worksrcpath}/libargp.a ${destroot}${prefix}/lib

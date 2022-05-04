@@ -49,7 +49,7 @@ post-patch {
     reinplace s|/usr/bin/perl|${perl5.bin}| ${worksrcpath}/opml2snow
 }
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 # Work around MacPorts base C11 compiler selection bug.
 # https://github.com/macports/macports-base/pull/196
 compiler.blacklist-append {clang < 500}

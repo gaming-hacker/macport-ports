@@ -39,8 +39,8 @@ supported_archs     x86_64
 
 use_configure       no
 
-compiler.cxx_standard 2017
-compiler.c_standard 2011
+compiler.cxx_standard 2020
+compiler.c_standard 2017
 compiler.thread_local_storage yes
 
 # GCC can't be used as a run-time compiler, see

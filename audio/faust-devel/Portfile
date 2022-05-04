@@ -69,8 +69,8 @@ post-patch {
         ${worksrcpath}/tools/faust2appls/faust2faustvst
 }
 
-compiler.cxx_standard 2017
-configure.cxxflags-append -std=c++17
+compiler.cxx_standard 2020
+configure.cxxflags-append -std=gnu++20
 if {[string match *clang* ${configure.compiler}]} {
     configure.cxxflags-append -stdlib=${configure.cxx_stdlib}
 }

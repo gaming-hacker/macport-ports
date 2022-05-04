@@ -23,7 +23,7 @@ homepage            https://github.com/stanislaw/posix-macos-addons
 description         Some missing bits of POSIX for macOS.
 long_description    This is a collection of the POSIX functions which are not available on macOS.
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 compiler.blacklist      *gcc-3.* *gcc-4.* {clang < 700}
 
 post-destroot {

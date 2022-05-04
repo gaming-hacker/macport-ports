@@ -112,7 +112,7 @@ if {${subport} eq "${name}-headers"} {
         configure.ldflags-append -lmacho
     }
 
-    configure.cflags-append -std=c11
+    configure.cflags-append -std=gnu2x
 
     build.args \
         PREFIX="${prefix}" \

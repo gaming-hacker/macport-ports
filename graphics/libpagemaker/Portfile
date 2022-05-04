@@ -28,7 +28,7 @@ depends_build       port:pkgconfig
 
 depends_lib         port:librevenge
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args      --disable-werror \
                     --disable-silent-rules \

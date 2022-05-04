@@ -48,7 +48,7 @@ subport SuiteSparse_GraphBLAS {
     revision                0
     license                 Apache-2
     long_description-append ${subport}: graph algorithms in the language of linear algebra.
-    compiler.c_standard     2011
+    compiler.c_standard 2017
 }
 
 subport SuiteSparse_Mongoose {
@@ -57,7 +57,7 @@ subport SuiteSparse_Mongoose {
     depends_lib-append      port:SuiteSparse_config
     license                 GPL-3
     long_description-append ${subport}: graph partitioning.
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 }
 
 subport SuiteSparse_AMD {

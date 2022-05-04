@@ -61,7 +61,7 @@ set vc_path ${workpath}/vc-${vc_commit}
 
 # ./thirdparty/stdatomic/nix/atomic.h:12:10: fatal error: 'stdatomic.h' file not found
 # Based on cmus port: compatible compilers are Xcode > Xcode 7, clang > 3.7, and gcc > 4.8
-compiler.c_standard 2011
+compiler.c_standard 2017
 compiler.blacklist-append {clang < 700} macports-clang-3.*
 
 # Stop V from looking in Homebrew directories, and remove hardcoded MacPorts prefix.

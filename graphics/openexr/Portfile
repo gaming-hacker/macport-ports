@@ -21,7 +21,7 @@ configure.env-append    NM=${prefix}/bin/nm
 # avoid dependency on port:grep
 configure.env-append    GREP=/usr/bin/grep
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # Only allow numbers, to avoid pre-release versions
 github.livecheck.regex  {([0-9.]+)}

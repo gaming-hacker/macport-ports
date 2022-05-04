@@ -27,6 +27,6 @@ size    2463218
 
 depends_lib-append  port:hwloc
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append  -DTBB_TEST=OFF

@@ -7,7 +7,7 @@ PortGroup           muniversal 1.0
 PortGroup           compiler_blacklist_versions 1.0
 
 # Require C++11
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # some older Clang say they support C++11 when they don't
 # this is the same blacklisting as for jsoncpp, on which vtk depends.

@@ -29,7 +29,7 @@ depends_lib-append          port:dav1d \
                             port:rav1e \
                             port:x265
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append       --disable-go
 

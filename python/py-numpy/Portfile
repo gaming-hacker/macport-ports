@@ -40,8 +40,8 @@ compiler.blacklist-append {clang < 910}
 
 # require a C/C++11 compliant compiler, to match SciPy and allow some
 # older macOS to build this port.
-compiler.c_standard   2011
-compiler.cxx_standard 2017
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 
 # default livecheck
 github.livecheck.regex {(\d+(?:\.\d+)+)}

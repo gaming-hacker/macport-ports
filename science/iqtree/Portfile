@@ -36,7 +36,7 @@ depends_build-append    port:eigen3 \
                         port:libomp \
                         port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 compiler.cpath-append   ${prefix}/include/libomp
 
 post-destroot {

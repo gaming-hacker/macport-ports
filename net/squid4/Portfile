@@ -52,7 +52,7 @@ depends_lib     port:expat port:zlib
 
 conflicts       squid2 squid3 squid5
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args  --mandir=${prefix}/share/man \
                 --sysconfdir=${prefix}/etc/squid \

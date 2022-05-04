@@ -22,7 +22,7 @@ checksums           rmd160  5cc8e03b106460a1bb8859611ab8c7a7a5c0e186 \
 sha256  6d2bf9283533be8009d55a44a2bd17d32193540a58deff05d12557140be8073b \
 size    146271
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 variant ragel description {Build with Ragel support} {
     depends_lib-append port:ragel

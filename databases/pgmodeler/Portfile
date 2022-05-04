@@ -20,7 +20,7 @@ checksums           rmd160  e51bf644f4f140b770abb4ae061b501261372f9f \
 sha256  ca5b577caa821b7394b48293578f0a4a0eddfa20fbdf7ec9163e73ab0f280216 \
 size    3569275
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # src/databaseexplorerwidget.cpp:1761:88: error: chosen constructor is explicit in copy-initialization
 compiler.blacklist-append {clang < 700}
 

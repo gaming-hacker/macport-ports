@@ -48,7 +48,7 @@ size    553892
                             port:py${python.version}-cairo \
                             path:lib/pkgconfig/gobject-introspection-1.0.pc:gobject-introspection
 
-    compiler.c_standard     2011
+    compiler.c_standard 2017
 
     # https://github.com/Damenly/pygobject/commit/01013b1003bac67061e595cd857be9cf7b69d7fd
     # this patch is designed to work around PyGObject's use of GOI's use of LIBFFI

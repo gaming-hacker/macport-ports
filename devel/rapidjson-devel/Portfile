@@ -36,7 +36,7 @@ patchfiles                      patch-test-CmakeLists.txt.diff \
 
 depends_build-append            bin:doxygen:doxygen
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append           -DRAPIDJSON_HAS_STDSTRING=ON \
                                 -DRAPIDJSON_HAS_CXX11_RVALUE_REFS=ON \

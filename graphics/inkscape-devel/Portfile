@@ -94,7 +94,7 @@ post-patch {
     reinplace "s|\"\$\{CMAKE_INSTALL_LIBDIR\}/inkscape\"|\$\{CMAKE_INSTALL_LIBDIR\}|" ${worksrcpath}/src/CMakeLists.txt
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append \
                     -DWITH_OPENMP=OFF \

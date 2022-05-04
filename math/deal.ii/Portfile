@@ -35,7 +35,7 @@ if {[variant_isset debug]} {
 # deal.II sets its own optimization flags
 configure.optflags
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 # install location for LICENSE.md, README.md, detailed.log, summary.log, etc.
 # install location for examples

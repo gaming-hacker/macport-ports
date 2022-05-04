@@ -31,7 +31,7 @@ depends_lib-append      port:python310 \
                         port:scalapack \
                         port:hypre
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 patchfiles-append       patch-install_name.diff
 

@@ -31,9 +31,9 @@ depends_lib         port:curl \
                     port:taglib \
                     port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 configure.objcxxflags-append \
-                        -std=c++17
+                        -std=gnu++20
 configure.args          ac_cv_prog_AWK=/usr/bin/awk \
                         --with-tls=osx \
                         --without-accesscontrol \

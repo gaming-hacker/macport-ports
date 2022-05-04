@@ -49,7 +49,7 @@ conflicts           spidermonkey
 
 depends_lib-append  port:tbb
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # USD fails to compile for Clang older than 8.1.0
 # (Note: Clang 8.1.0 == clang-802 in Xcode)
 compiler.blacklist-append {clang < 802}

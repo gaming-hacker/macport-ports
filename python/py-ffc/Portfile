@@ -31,7 +31,7 @@ size    1378112
 python.versions 310
 python.link_binaries_suffix
 
-configure.cxxflags-append -std=c++17
+configure.cxxflags-append -std=gnu++20
 
 if {${subport} ne ${name}} {
    depends_lib      port:py${python.version}-fiat \

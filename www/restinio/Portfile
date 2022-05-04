@@ -25,7 +25,7 @@ long_description            RESTinio is a header-only C++14 library that gives y
 github.tarball_from         releases
 use_bzip2                   yes
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 depends_build-append        path:lib/libssl.dylib:openssl \
                             port:pcre \

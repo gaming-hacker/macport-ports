@@ -30,7 +30,7 @@ depends_lib         port:librevenge \
                     port:icu \
                     port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args      --disable-werror \
                     --disable-silent-rules \

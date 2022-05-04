@@ -17,7 +17,7 @@ checksums               rmd160  a12f2c7843aa1bc9faecd52e37f4347d8f2c1059 \
 sha256  777d27ab038f40655b90f1e9229b881d58a31f1f1b14b367f6a67beb505b0a2e \
 size    1290064
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 depends_build-append    port:pkgconfig
 depends_lib-append      path:lib/libavcodec.dylib:ffmpeg \

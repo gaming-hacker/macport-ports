@@ -235,7 +235,7 @@ build.env-append    {*}${configure.env}
 destroot.env-append {*}${configure.env}
 
 # requires support for C++17.
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 if {${os.platform} eq "darwin" && ${os.major} > 8} {
     set mpduser       _mpd

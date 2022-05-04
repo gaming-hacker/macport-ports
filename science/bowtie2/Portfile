@@ -44,7 +44,7 @@ post-patch {
 use_configure               no
 supported_archs             x86_64
 installs_libs               no
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 depends_lib-append          port:zlib \
                             port:tbb

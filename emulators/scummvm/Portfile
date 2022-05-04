@@ -119,7 +119,7 @@ platform powerpc {
 }
 
 # Leopard build, at least, fails without c++11
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 variant mpeg2 description {add mpeg2 support - has many dependencies} {
      # this builds fine, but libmpeg2 is old (2008) and pulls in a lot of deps

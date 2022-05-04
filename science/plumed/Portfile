@@ -58,7 +58,7 @@ configure.args-append BASH_COMPLETION_DIR=${prefix}/share/bash-completion/comple
 configure.cppflags-append "-D__PLUMED_DEFAULT_KERNEL=${prefix}/lib/libplumedKernel.dylib"
 
 compilers.choose    cc cxx
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 mpi.setup
 

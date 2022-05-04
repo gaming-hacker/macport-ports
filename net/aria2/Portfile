@@ -52,11 +52,11 @@ post-destroot {
 
 if {![variant_isset gnutls]} {
     # C++14
-    configure.cxxflags-append -std=c++17
+    configure.cxxflags-append -std=gnu++20
     compiler.blacklist-append {clang < 800.0.38}
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 } else {
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 }
 
 variant cares description {Add c-ares support} {

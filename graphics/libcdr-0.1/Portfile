@@ -39,7 +39,7 @@ depends_lib         port:librevenge \
                     port:lcms2 \
                     port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # The packaged glibtool in 0.1.1 doesn't pass --stdlib=libc++ down at link time
 use_autoreconf  yes

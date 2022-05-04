@@ -54,7 +54,7 @@ configure.ccache    no
 # 3rdParty builds use ccache
 set ccache_dir      ${workpath}/.ccache
 
-# Build requires -std=c++17
+# Build requires -std=gnu++20
 compiler.cxx_standard \
                     2017
 

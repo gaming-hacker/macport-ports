@@ -52,7 +52,7 @@ configure.args  --enable-intf-lanplus \
 
 configure.cppflags-append   -Ds6_addr16=__u6_addr.__u6_addr16
 
-compiler.c_standard    2011
+compiler.c_standard 2017
 
 pre-configure {
     system -W ${worksrcpath} "./bootstrap"

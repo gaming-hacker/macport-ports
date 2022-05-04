@@ -33,7 +33,7 @@ depends_lib-append  port:tbb \
                     port:libpng \
                     port:openimageio
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 post-patch {
     # Put tutorials in ${prefix}/share/embree instead of ${prefix}/bin

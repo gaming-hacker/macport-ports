@@ -26,7 +26,7 @@ checksums           rmd160  7b0f61fbe8a791c2f8725e6039cdbd8b8193e59a \
 sha256  6a202007b0f08bb3c1aab42d31109515fed57e46a4642fa2f1f35284683f2ba2 \
 size    116075
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 compiler.blacklist-append *gcc-4.* {clang < 900} {macports-clang-3.[0-9]} {macports-clang-[4-6].0}
 compiler.fallback-append  macports-clang-8.0 macports-clang-7.0

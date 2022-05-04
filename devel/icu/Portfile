@@ -70,7 +70,7 @@ size    24518055
     patchfiles-append patch-declspec-conflict.patch
     patchfiles-append patch-i18n-formatted_string_builder.h.diff
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     configure.python        /usr/bin/python
 
     # prevent ICU from finding installed icu when upgrading (#11981).

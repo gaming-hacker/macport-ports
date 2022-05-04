@@ -36,7 +36,7 @@ depends_lib-append  port:lz4    \
                     port:snappy
 
 # error: ‘for’ loop initial declaration used outside C99 mode
-configure.cflags-append -std=c11
+configure.cflags-append -std=gnu2x
 
 configure.args-append \
                     -DPREFER_EXTERNAL_LZ4=ON \

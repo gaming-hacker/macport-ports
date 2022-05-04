@@ -30,9 +30,9 @@ depends_lib             port:libsigcxx2 \
 patchfiles-append       gnutls-3.4.0.patch
 
 # libsigcxx2 requires C++11
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 configure.cxxflags-append \
-                        -std=c++17
+                        -std=gnu++20
 
 livecheck.type          regex
 livecheck.url           [lindex ${master_sites} 0]

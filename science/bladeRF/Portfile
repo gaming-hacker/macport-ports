@@ -8,7 +8,7 @@ PortGroup           legacysupport 1.0
 # Only enable legacy support on OSX10.6 or older
 legacysupport.newest_darwin_requires_legacy 10
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 github.setup        Nuand bladeRF 5a146b2a0f52e8ec17969579cee62b8ed16e429c
 version             20211028-[string range ${github.version} 0 7]

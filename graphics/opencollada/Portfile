@@ -28,7 +28,7 @@ depends_build-append \
                     port:pkgconfig
 depends_lib-append  port:libxml2
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # DAEValidator/library/src/Dae.cpp:307:23: error: loop variable 'node' is always a copy because the range of type 'const opencollada::XmlNodeSet' does not return a reference [-Werror,-Wrange-loop-analysis]
 #                                for (const auto & node : nodes)

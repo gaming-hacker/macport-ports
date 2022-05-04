@@ -38,7 +38,7 @@ depends_lib         port:gnutls \
 patchfiles          patch-daemon-connect-TlsSocket.cpp.diff
 
 # needs a c++14 compatible compiler
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args      --with-tlslib=GnuTLS \
                     --with-libgnutls-includes=${prefix}/include/gnutls \

@@ -38,7 +38,7 @@ size    1884039
 # ignore pre releases
 github.livecheck.regex  {([0-9.]+)}
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append \
                     -DBUILD_SHARED_LIBS=ON \

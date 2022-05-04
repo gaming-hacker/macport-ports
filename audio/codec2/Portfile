@@ -35,7 +35,7 @@ depends_lib-append \
     port:libsamplerate \
     port:speex
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 configure.args-append \
     -DCMAKE_BUILD_TYPE="Release"

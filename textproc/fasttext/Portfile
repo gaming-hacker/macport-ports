@@ -22,7 +22,7 @@ size    4036928
 
 patchfiles          no-march-native.patch
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 if {${name} eq ${subport}} {
     PortGroup       cmake 1.1

@@ -40,7 +40,7 @@ size    7531860
 revision            0
 
 gitlab.livecheck.regex {([0-9.]+)}
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 platform darwin {
     if {!((${os.major} < 9) || ${build_arch} eq "ppc" ||

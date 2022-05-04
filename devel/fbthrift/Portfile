@@ -30,7 +30,7 @@ depends_lib-append  port:mstch \
                     port:wangle \
                     port:fizz
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 cmake.generator     Ninja
 

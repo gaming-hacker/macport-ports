@@ -45,7 +45,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 10 } {
 
 # attempt to fix build on 10.6 using gcc-4.2
 # error: ‘for’ loop initial declaration used outside C99 mode
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 configure.args-append \
                     -Dtests=false \

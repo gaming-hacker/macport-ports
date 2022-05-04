@@ -32,5 +32,5 @@ depends_lib-append    port:bzip2 \
                       port:zlib
 
 compilers.choose      cxx
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 compiler.whitelist    macports-gcc-11 macports-gcc-10 macports-gcc-9 macports-gcc-8 macports-gcc-7

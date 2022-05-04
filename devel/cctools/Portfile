@@ -252,7 +252,7 @@ post-patch {
 use_configure           no
 
 # https://trac.macports.org/ticket/43745
-configure.cflags-append -std=c11
+configure.cflags-append -std=gnu2x
 
 build.target            all
 

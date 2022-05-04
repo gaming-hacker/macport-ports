@@ -35,7 +35,7 @@ depends_build-append \
 depends_lib         port:libmpdclient \
                     port:yaml-cpp
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 # BEGIN abseil (requires C++17 build)
 set abseil_project  abseil-cpp

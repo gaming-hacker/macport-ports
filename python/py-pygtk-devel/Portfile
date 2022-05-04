@@ -60,8 +60,8 @@ if {${name} ne ${subport}} {
                     patch-pango.override-private-interface.diff \
                     patch-pango-find_shaper.diff
 
-    compiler.c_standard         2011
-    compiler.cxx_standard 2017
+    compiler.c_standard 2017
+    compiler.cxx_standard 2020
 
     use_autoreconf              yes
     autoreconf.post_args        "-I m4"

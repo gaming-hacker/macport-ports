@@ -47,7 +47,7 @@ depends_lib-append \
     port:pcre \
     port:sqlite3
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # The flag `-DCMAKE_BUILD_TYPE=MacPorts` adds -Werror, which causes compile errors with -Wshadow
 # Reference: https://github.com/intel/hyperscan/blob/master/CMakeLists.txt

@@ -59,7 +59,7 @@ if { ${os.platform} eq "darwin" && ${os.major} < 17 } {
     patchfiles-append patch-no-open_memstream.diff
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append -DCUPS_SERVER_BIN:FILEPATH=${prefix}/libexec/cups
 configure.args-append -DCUPS_DATA_DIR:FILEPATH=${prefix}/share/cups

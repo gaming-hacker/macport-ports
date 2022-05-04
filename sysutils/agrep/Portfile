@@ -29,7 +29,7 @@ use_configure       no
 build.type          bsd
 build.target        ""
 build.args          CC="${configure.cc}" \
-                    CFLAGS="${configure.cflags} ${configure.cc_archflags} -std=c11"
+                    CFLAGS="${configure.cflags} ${configure.cc_archflags} -std=gnu2x"
 
 destroot {
     xinstall ${worksrcpath}/agrep ${destroot}${prefix}/bin/

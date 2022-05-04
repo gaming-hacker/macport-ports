@@ -23,7 +23,7 @@ checksums               rmd160  f965b5f490df6069878a9a45769b5abae6a7efd3 \
 sha256  464c26b9ad08c8d106db66b848fc1cb501f8515bd5cdda1062cea6c612f5f4c4 \
 size    6252075
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 destroot {
     copy ${destroot.dir}/bin/${name}.app ${destroot}${applications_dir}

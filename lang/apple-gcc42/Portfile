@@ -227,13 +227,13 @@ if {![variant_isset bootstrap]} {
 }
 
 build.args-append \
-    CC="${configure.cc} -pipe -std=c11" \
+    CC="${configure.cc} -pipe -std=gnu2x" \
     PREFIX="${prefix}" \
     SRCROOT="${srcroot}" \
     OBJROOT="${objroot}" \
     SYMROOT="${symroot}" \
     DSTROOT="${destroot}" \
-    RC_NONARCH_CFLAGS="-pipe -std=c11" \
+    RC_NONARCH_CFLAGS="-pipe -std=gnu2x" \
     RC_OS="macos" \
     RC_ARCHS="[get_canonical_archs]" \
     RC_ProjectSourceVersion="[lindex [split ${version} .] 0]" \

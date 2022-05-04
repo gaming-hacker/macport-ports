@@ -36,7 +36,7 @@ if {![variant_isset sasl]} {
     default_variants    +gssapi
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args      -DPYTHON=false \
                     -DPYTHON_EXECUTABLE=false \

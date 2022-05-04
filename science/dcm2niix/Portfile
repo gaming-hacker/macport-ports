@@ -46,7 +46,7 @@ if {${os.major} <= 10} {
     depends_build-append    port:git
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # Linking with yaml-cpp currently broken; haven't chased down; revisit later.
 # Disabling BATCH_VERSION until this is resolved.

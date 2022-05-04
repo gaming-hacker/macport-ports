@@ -29,7 +29,7 @@ depends_build       port:gmake
 
 depends_lib         path:lib/libssl.dylib:openssl
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 configure.cmd       gmake defconfig
 configure.pre_args

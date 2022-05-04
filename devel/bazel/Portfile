@@ -189,7 +189,7 @@ patch.pre_args        -p1
 # Better solution is to respect MacPorts environment configure.developer_dir
 use_xcode  no
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # Always force the use of the un-versioned SDK
 configure.sdk_version

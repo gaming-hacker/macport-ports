@@ -26,7 +26,7 @@ size    436432
 
 use_configure   no
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 if {[string match *clang* ${configure.cxx}]} {
     configure.ldflags-append -stdlib=${configure.cxx_stdlib}

@@ -27,7 +27,7 @@ long_description            libsoundio is a lightweight abstraction over \
                             underlying backend.
 
 # uses C11
-compiler.c_standard         2011
+compiler.c_standard 2017
 
 # in addition, have to blacklist the following clangs due to
 # fatal error: 'stdatomic.h' file not found

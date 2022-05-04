@@ -37,8 +37,8 @@ compilers.setup
 patchfiles-append       patch-applications-dmft-qmc-CMakeLists.txt.diff
 
 if {([c_variant_isset] && [clang_variant_isset] && ${configure.cxx_stdlib} eq "libc++") || (![c_variant_isset] && [string match *clang* ${configure.cxx}] && ${configure.cxx_stdlib} eq "libc++")} {
-    compiler.cxx_standard 2017
-    configure.cxxflags-append -std=c++17
+    compiler.cxx_standard 2020
+    configure.cxxflags-append -std=gnu++20
 }
 
 configure.args-append   -DALPS_BUILD_TESTS=OFF                                                      \

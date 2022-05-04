@@ -50,7 +50,7 @@ foreach s ${pythons_suffixes} {
     lappend pythons_ports python${s}
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 cmake.out_of_source yes
 configure.args-append   -DWITH_PYTHON_BINDINGS:BOOL="0" -DWITH_KRB5:BOOL="0"

@@ -57,7 +57,7 @@ configure.args      --with-tinyxml=builtin \
 
 configure.env       WXRC=${wxWidgets.wxrc}
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 compiler.thread_local_storage   yes
 
 # https://trac.macports.org/ticket/59805

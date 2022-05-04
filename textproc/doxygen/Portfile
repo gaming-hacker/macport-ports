@@ -70,7 +70,7 @@ patchfiles              patch-src-portable_c.c.diff \
                         doxywizard.patch \
                         patch-longtabu.diff
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # error: no matching constructor for initialization of 'value_type' (aka 'pair<const std::__1::basic_string<char>, DotFilePatcher>')
 compiler.blacklist-append {clang < 900}
 

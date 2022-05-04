@@ -24,7 +24,7 @@ long_description    Look up hashes in the National Software Reference Library da
 homepage            http://rjhansen.github.io/nsrllookup/
 
 # C++14
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 post-destroot {
     set docdir ${prefix}/share/doc/${subport}

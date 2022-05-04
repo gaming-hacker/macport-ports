@@ -31,7 +31,7 @@ use_autoreconf      yes
 autoreconf.args     -fvi
 
 # cairomm  > 1.10.0 requires C++11 or better
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 #
 # dummy variants to ensure that this port gets rebuilt if
 # the corresponding variants for cairo change

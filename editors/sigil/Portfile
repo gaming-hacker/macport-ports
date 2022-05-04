@@ -33,7 +33,7 @@ depends_lib-append      port:hunspell \
 
 patchfiles              pcre.patch
 conflicts_build         libzip
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args          -DCMAKE_BUILD_WITH_INSTALL_RPATH=OFF \
                         -DSYSTEM_LIBS_REQUIRED=ON \

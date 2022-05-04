@@ -51,8 +51,8 @@ default_variants            +aac +gettext +lame +opus +sqlite +twolame +vorbis +
 use_parallel_build          no
 
 # ffmpeg requires a C11 compiler, assume avidemux does too
-compiler.c_standard         2011
-compiler.cxx_standard 2017
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 
 configure.cxxflags-append   -D__ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES=1
 

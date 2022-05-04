@@ -38,7 +38,7 @@ depends_build-append \
 
 extract.post_args   "| gtar -xf -"
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 pre-configure {
     # The configure script will not pick up the compiler correctly from an envvar

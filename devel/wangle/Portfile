@@ -32,7 +32,7 @@ depends_lib-append  port:folly \
 
 cmake.source_dir    ${worksrcpath}/${name}
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 cmake.generator     Ninja
 
 configure.args-append \

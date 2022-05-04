@@ -77,7 +77,7 @@ subport ld64-latest {
 
     depends_lib-append port:libcxx port:libtapi
     configure.cxx_stdlib libc++
-    configure.cxxflags-append -std=c++17
+    configure.cxxflags-append -std=gnu++20
 
     # silence some warnings
     configure.cxxflags-append -Wno-deprecated-declarations

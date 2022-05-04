@@ -28,8 +28,8 @@ patchfiles          patch-src-version.cc.in.diff
 
 configure.args      --enable-binary
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 configure.cxxflags-append \
-                    -std=c++17
+                    -std=gnu++20
 
 livecheck.distname  CSSC

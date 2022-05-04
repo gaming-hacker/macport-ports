@@ -29,5 +29,5 @@ depends_lib-append  port:gflags \
                     port:lz4 \
                     port:zstd
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 compiler.thread_local_storage yes

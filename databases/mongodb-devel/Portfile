@@ -168,8 +168,8 @@ configure.args      --find-links [shellescape ${distpath}] \
                     --verbose \
                     --verbose
 
-compiler.c_standard 2011
-compiler.cxx_standard 2017
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 
 # This matches a version check of __apple_build_version__ in SConstruct.
 # https://jira.mongodb.org/browse/SERVER-62503

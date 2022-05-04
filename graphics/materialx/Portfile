@@ -31,7 +31,7 @@ checksums           rmd160  42a0c04554dec0d118a9cdf2b2e6010fde2a2311 \
 sha256  640c2005ea84e7b57e287b59bceb57b31a5f7f751a150c4a6967292feadec9ea \
 size    69168871
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 if {${os.major} < 16} {
     # Add AppKit wrapper header to compiler library paths

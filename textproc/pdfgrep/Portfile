@@ -19,7 +19,7 @@ long_description \
 homepage            https://pdfgrep.org
 master_sites        ${homepage}/download/
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 depends_build       port:pkgconfig
 depends_lib         port:poppler \

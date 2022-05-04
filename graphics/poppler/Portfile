@@ -57,8 +57,8 @@ configure.cppflags-delete -I${prefix}/include
 configure.ldflags-append -liconv
 gobject_introspection yes
 
-compiler.cxx_standard 2017
-compiler.c_standard 2011
+compiler.cxx_standard 2020
+compiler.c_standard 2017
 compiler.thread_local_storage yes
 
 # fix Boost checking to be optional

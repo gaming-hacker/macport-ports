@@ -27,7 +27,7 @@ size    5082730
 qt5.depends_component qtscript
 qt5.min_version     5.14.0
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # requires std::optional, above is not enough :(
 # https://github.com/macports/macports-base/pull/179
 compiler.blacklist-append {clang < 1001}

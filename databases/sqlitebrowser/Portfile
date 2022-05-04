@@ -47,7 +47,7 @@ depends_lib-append  port:qscintilla-qt5
 
 patchfiles-append   0001-Changes-for-MacPorts.patch
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 platform darwin {
     PortGroup           qmake5 1.0

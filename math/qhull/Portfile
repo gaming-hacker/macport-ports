@@ -40,7 +40,7 @@ variant native description {Build with best native support for local CPU capabil
     }
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append   -DBIN_INSTALL_DIR=${prefix}/bin \
                         -DLIB_INSTALL_DIR=${prefix}/lib \
@@ -49,7 +49,7 @@ configure.args-append   -DBIN_INSTALL_DIR=${prefix}/bin \
                         -DMAN_INSTALL_DIR=${prefix}/share/man/man1
 
 configure.cxxflags-append \
-                        -std=c++17
+                        -std=gnu++20
 
 post-destroot {
     ln -s ${prefix}/include/libqhull ${destroot}${prefix}/include/qhull

@@ -57,7 +57,7 @@ pre-build {
     close ${_version_file}
 }
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 depends_lib-append      port:ncurses
 

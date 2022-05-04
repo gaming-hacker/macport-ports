@@ -23,8 +23,8 @@ sha256  0487adef11a22168700968c1727020361a72f6132b6ced2b8826b02d8cbf744f \
 size    151570
 
 if {${name} ne ${subport}} {
-    compiler.cxx_standard 2017
-    configure.cxxflags-append -std=c++17
+    compiler.cxx_standard 2020
+    configure.cxxflags-append -std=gnu++20
     configure.cc        {*}${configure.cxx} {*}${configure.cxxflags}
     build.env           "CPPFLAGS=${configure.cppflags}"
 

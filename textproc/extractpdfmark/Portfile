@@ -26,7 +26,7 @@ checksums           rmd160  8d6dd90de6f4f555012bd6edd8ac4e00dfc356fc \
 sha256  0935045084211fcf68a9faaba2b65c037d0adfd7fa27224d2b6c7ae0fd7964cb \
 size    308226
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # build fails on 10.9 10.10 using Apple clang
 compiler.blacklist-append {clang < 800.0.38}

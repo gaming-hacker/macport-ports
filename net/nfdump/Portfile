@@ -29,7 +29,7 @@ use_parallel_build  no
 
 configure.cmd       ./autogen.sh && ./configure
 
-configure.cflags-append -std=c11
+configure.cflags-append -std=gnu2x
 configure.args      --enable-sflow \
                     --enable-nfprofile \
                     --enable-nsel \

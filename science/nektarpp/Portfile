@@ -55,7 +55,7 @@ extract.only            ${main_distfile}
 patchfiles              no-homebrew.patch \
                         fusion-copy-constructor.patch
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 cmake.build_type        Release
 
 mpi.setup

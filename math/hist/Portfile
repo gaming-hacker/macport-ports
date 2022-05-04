@@ -17,7 +17,7 @@ license             MIT
 description         Histogramming from standard input
 long_description    ${description}
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
                     port:xorg-libX11

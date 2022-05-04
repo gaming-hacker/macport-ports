@@ -26,7 +26,7 @@ size    1014992
 depends_build-append \
                     port:pkgconfig
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 mpi.setup           require_fortran
 
 use_autoreconf      yes

@@ -15,8 +15,8 @@ description         OpenBLAS is an optimized BLAS library based on GotoBLAS2
 long_description    ${description}
 
 # block compilers that do not support thread-local storage.
-compiler.cxx_standard 2017
-compiler.c_standard   2011
+compiler.cxx_standard 2020
+compiler.c_standard 2017
 compiler.thread_local_storage yes
 
 # 10.6 supports down to Intel Core (32-bit) and Core 2 (64-bit)

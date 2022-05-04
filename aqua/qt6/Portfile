@@ -26,8 +26,8 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://www.qt.io/blog/qt-6.0-released
-compiler.c_standard 2011
-compiler.cxx_standard 2017
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 
 # Save off the actual macports prefix for use late
 set mp_prefix       ${prefix}

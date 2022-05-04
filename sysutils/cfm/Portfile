@@ -28,7 +28,7 @@ configure.optflags
 # https://github.com/WillEccles/cfm/pull/15
 patchfiles-append   patch-Makefile.diff
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 # cfm.c:19:10: fatal error: 'stdatomic.h' file not found
 compiler.blacklist-append {clang < 700}

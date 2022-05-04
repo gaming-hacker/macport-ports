@@ -310,7 +310,7 @@ foreach {geant.version geant.revision geant.datarevision geant.patchlevel geant.
                             patch-cmake-Modules-Geant4BuildProjectConfig.cmake.4102.diff
         }
         if {${geant.version} >= 10.2} {
-            compiler.cxx_standard 2017
+            compiler.cxx_standard 2020
             compiler.thread_local_storage yes
         }
         if {${geant.version} == "10.1"} {

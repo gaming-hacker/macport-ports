@@ -115,7 +115,7 @@ if {![variant_exists wxsystem] || [variant_isset wxsystem]} {
 }
 
 supported_archs     x86_64 arm64
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 build.post_args-append -k
 cmake.generator     Ninja
 if {${os.major} >= 17} {

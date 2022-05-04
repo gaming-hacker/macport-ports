@@ -66,9 +66,9 @@ depends_lib-append  port:xorg-libXres \
                     port:xorg-libXmu \
                     port:libast
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 configure.cflags-append \
-                    -std=c11
+                    -std=gnu2x
 configure.args      --disable-utmp \
                     --enable-auto-encoding \
                     --enable-escreen \

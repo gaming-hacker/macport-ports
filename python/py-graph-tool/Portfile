@@ -42,7 +42,7 @@ sha1    108be4cf6212eb6886f172ea03813187f73e4c3c \
 rmd160  cd2e8506522821750d70a97b951254f0a133d218
 } else {
     if {${name} ne ${subport}} {
-        compiler.cxx_standard   2017
+        compiler.cxx_standard 2020
 
         variant openmp description "Enable OpenMP" {
             # TODO: verify OpenMP version required

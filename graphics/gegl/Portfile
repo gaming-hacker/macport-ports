@@ -74,8 +74,8 @@ post-patch {
 }
 
 # needs C++14 C11
-compiler.cxx_standard 2017
-compiler.c_standard   2011
+compiler.cxx_standard 2020
+compiler.c_standard 2017
 
 # version 0.4.14+ requires apple clang 700.0.72 (Xcode 7.0.0) to build new parallelization code
 # ../gegl/gegl-parallel.h:134:29: error: expected expression '[] (gint     i,'

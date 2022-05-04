@@ -42,8 +42,8 @@ depends_lib     port:glew \
 configure.args  --with-openexr
 
 # vigra header file requires C++11
-compiler.cxx_standard 2017
-configure.cxxflags-append -std=c++17
+compiler.cxx_standard 2020
+configure.cxxflags-append -std=gnu++20
 
 post-patch {
     # avoid c++17 header collision

@@ -59,7 +59,7 @@ if {![variant_isset postgresql96] && \
 patch.pre_args          -p1
 patchfiles-append       test-CMakeLists.txt.patch
 
-compiler.c_standard     2011
+compiler.c_standard 2017
 # Work around MacPorts base C11 compiler selection bug.
 # https://github.com/macports/macports-base/pull/196
 compiler.blacklist-append {clang < 500}

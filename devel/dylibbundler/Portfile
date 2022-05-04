@@ -36,7 +36,7 @@ pre-fetch {
     }
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 post-destroot {
     set docdir ${prefix}/share/doc/${subport}

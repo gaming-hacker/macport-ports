@@ -53,7 +53,7 @@ depends_lib         port:curl \
 # https://github.com/rakshasa/rtorrent/wiki/Installing#non-blocking-hostname-lookup-in-curl
 require_active_variants curl ares
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args      --mandir=${prefix}/share/man \
                     --disable-debug \

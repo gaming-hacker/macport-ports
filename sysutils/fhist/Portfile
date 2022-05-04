@@ -33,7 +33,7 @@ pre-configure {
         "${worksrcpath}/Makefile.in"
 }
 
-configure.cflags-append -std=c11 ${configure.cppflags} ${configure.ldflags}
+configure.cflags-append -std=gnu2x ${configure.cppflags} ${configure.ldflags}
 configure.args          --mandir=${prefix}/share/man --infodir=${prefix}/share/info
 
 use_parallel_build  no

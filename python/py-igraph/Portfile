@@ -31,8 +31,8 @@ size    3723165
 variant external_igraph description {Use external igraph library} { }
 
 if {${name} ne ${subport}} {
-    compiler.c_standard 2011
-    compiler.cxx_standard 2017
+    compiler.c_standard 2017
+    compiler.cxx_standard 2020
 
     depends_lib-append      port:py${python.version}-texttable
 

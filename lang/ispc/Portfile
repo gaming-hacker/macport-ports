@@ -66,7 +66,7 @@ size    19547681
     }
 
     # Need to use a recent MacPorts build.
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     compiler.blacklist     *gcc* clang {macports-clang-[5-8].0} macports-clang-3.*
 
     use_xcode  no
@@ -129,7 +129,7 @@ size    122764036
                            port:cctools \
                            port:python${py_ver_nodot}
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     compiler.blacklist     *gcc* {clang < 801} macports-clang-3.* {macports-clang-[4-8].0}
 
     cmake.install_prefix   ${prefix}/libexec/${subport}

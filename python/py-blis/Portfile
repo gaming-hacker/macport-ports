@@ -32,8 +32,8 @@ github.livecheck.regex  {([0-9.]+)}
 python.versions 310
 
 # Compiler selection
-compiler.c_standard 2011
-compiler.cxx_standard 2017
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 compiler.blacklist-append *gcc* {clang < 999} macports-clang-3.* {macports-clang-[4-6].0}
 
 # Pass selected compiler to BLIS

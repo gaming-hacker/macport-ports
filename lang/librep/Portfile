@@ -38,7 +38,7 @@ depends_lib         port:gdbm \
 
 configure.args      --without-readline
 
-configure.cflags-append -std=c11
+configure.cflags-append -std=gnu2x
 
 variant readline description {build with readline support} {
     depends_lib-append      port:readline

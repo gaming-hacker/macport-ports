@@ -30,7 +30,7 @@ use_parallel_build	yes
 
 compiler.c_standard	1989
 configure.cflags-append \
-					-std=c11
+					-std=gnu2x
 
 variant universal {}
 

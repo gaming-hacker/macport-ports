@@ -32,7 +32,7 @@ depends_lib-append  port:expat \
                     port:libiconv \
                     port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # error: use of undeclared identifier '__builtin_sadd_overflow'
 compiler.blacklist-append \
                     { clang < 426 } \

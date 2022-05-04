@@ -24,7 +24,7 @@ revision            0
 patchfiles-append \
     patch-SOL_TCP.diff
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 # clock_gettime()
 legacysupport.newest_darwin_requires_legacy 15

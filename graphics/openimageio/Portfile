@@ -22,7 +22,7 @@ description             a library for reading and writing images
 long_description        OpenImageIO is a library for reading and writing images, and a bunch of \
                         related classes, utilities, and applications.
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # error: multiple overloads of 'address' instantiate to the same signature 'const_pointer (const_reference) const noexcept'
 # http://lists.llvm.org/pipermail/llvm-bugs/2013-November/031552.html
 # Seen on OSX 10.9 and older.

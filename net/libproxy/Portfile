@@ -34,7 +34,7 @@ depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     path:bin/vala:vala
 
 # https://trac.macports.org/ticket/63267
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # webkit and mozjs pacrunners disabled by default due to the
 # following issues

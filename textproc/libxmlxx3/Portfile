@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           meson 1.0
 
 # requires C++11 as of version 2.39.1
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 name                libxmlxx3
 set gname           libxml++

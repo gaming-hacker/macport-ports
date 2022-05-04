@@ -45,7 +45,7 @@ pre-fetch {
     }
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append \
     -DCMAKE_STRIP:PATH=/bin/echo

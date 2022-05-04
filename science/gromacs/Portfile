@@ -46,7 +46,7 @@ depends_build-append \
 
 depends_lib-append  port:fftw-3-single port:hwloc port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # FIXME: enable use of avx when appropriate, instead of just SSE
 configure.args-append  -DGMX_SIMD:STRING="SSE4.1" -DBUILD_TESTING:BOOL=ON -DGMX_X11:BOOL=OFF -DGMX_HWLOC:BOOL=ON -DGMX_OPENMP:BOOL=OFF

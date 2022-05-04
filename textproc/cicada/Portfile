@@ -37,7 +37,7 @@ patchfiles          patch-samples.diff \
                     patch-boost_includes.diff
 
 # for reasons that are not clear,
-#    -std=c++17 (explicit or the default value) causes a great many errors
+#    -std=gnu++20 (explicit or the default value) causes a great many errors
 #    with the template instantiation of Boost headers
 configure.env-append      ICU_CONFIG=${prefix}/libexec/icu58/bin/icu-config
 configure.cxxflags-append -std=c++03

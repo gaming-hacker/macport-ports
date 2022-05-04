@@ -37,7 +37,7 @@ depends_lib         path:include/turbojpeg.h:libjpeg-turbo \
                     port:fftw-3-single \
                     port:hdf5
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # modify tests for existence of c++11 std::unique_ptr
 # see https://github.com/ukoethe/vigra/pull/421

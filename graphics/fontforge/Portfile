@@ -49,7 +49,7 @@ depends_lib         path:lib/pkgconfig/cairo.pc:cairo \
                     port:woff2 \
                     port:zlib
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 # Work around MacPorts 2.6.2 C11 compiler selection bug.
 # https://github.com/macports/macports-base/pull/196
 compiler.blacklist-append {clang < 500}

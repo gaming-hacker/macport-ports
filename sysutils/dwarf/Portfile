@@ -38,7 +38,7 @@ depends_lib         port:flex \
 patchfiles          Makefile.patch \
                     src-Makefile.patch
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 makefile.override-append \
                     PREFIX

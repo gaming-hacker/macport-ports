@@ -34,7 +34,7 @@ depends_lib         port:gettext-runtime \
 
 # NOTE: No longer necessary, as of 2021-07-31.
 # needs C11 for alignof(x)
-#compiler.c_standard 2011
+#compiler.c_standard 2017
 
 # Clang versions prior to 5 have issues with alignof(x)
 compiler.blacklist-append \

@@ -38,7 +38,7 @@ size    6512834
 patchfiles              CMake_3rdparty.cmake.patch
 patchfiles-append       arm64.patch
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # avoid self-conflict
 configure.cppflags-replace -I${prefix}/include -isystem${prefix}/include

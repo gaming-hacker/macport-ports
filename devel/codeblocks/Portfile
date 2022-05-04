@@ -47,7 +47,7 @@ depends_build-append \
                     port:automake \
                     port:libtool
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # FileManager requires "gamin" to be installed when using wxGTK,
 # not sure whether it works with Carbon/Cocoa at all,

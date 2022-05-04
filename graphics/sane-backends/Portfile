@@ -41,7 +41,7 @@ patchfiles                  patch-configure.diff \
                             patch-frontend-scanimage.c.diff
 
 # genesys backend now uses C++11
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.cppflags-append   -fno-common
 

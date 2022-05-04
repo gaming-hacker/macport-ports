@@ -22,7 +22,7 @@ checksums               rmd160  09cec7da65f525c4a414c1506d153ac72ea38c8a \
 sha256  da600573dfa827d88ce114e0fed30210689381bbdcff543c931e4d6a2e851216 \
 size    359574
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
@@ -51,7 +51,7 @@ post-patch {
 }
 
 #protobuf3-cpp requires c++11 now
-configure.cxxflags-append -std=c++17
+configure.cxxflags-append -std=gnu++20
 
 # force protobuf3-cpp into the no_threadlocal mode on older systems
 if { ${os.platform} eq "darwin" && ${os.major} < 11 } {

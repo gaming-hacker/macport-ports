@@ -51,7 +51,7 @@ if {${subport} eq "${name}-common"} {
 } elseif {[string first "webengine" ${subport}] != -1 || [string first "chart" ${subport}] != -1} {
     PortGroup           qmake5 1.0
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     depends_lib-append  port:py${python.version}-pyqt5
     use_configure       yes
     configure.pre_args
@@ -98,7 +98,7 @@ size    69252
 } else {
     PortGroup           qmake5 1.0
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     # pull in the Qt5 meta-port
     qt5.depends_component \
                         qtscript \

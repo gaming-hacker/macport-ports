@@ -51,8 +51,8 @@ configure.cppflags-append   -Wno-long-long
 # drvpdf.cpp:46:14: warning: variable declaration in a constexpr function is a C++14 extension [-Wc++14-extensions]
 # although clangs up to clang-9 let this through with a warning,
 # gcc generates an error and will not build unless proper std=c++14 is set
-compiler.cxx_standard 2017
-configure.cxxflags-append   -std=c++17
+compiler.cxx_standard 2020
+configure.cxxflags-append   -std=gnu++20
 
 use_parallel_build  no
 

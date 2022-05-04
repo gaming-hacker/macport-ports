@@ -41,7 +41,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 15} {
     }
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # We need to blacklist Xcode Clang/LLVM, because Blender needs to
 # use tools such as llvm-config, which are not included in Xcode.
 # (llvm-config is needed because Blender links to libLLVM. libLLVM is

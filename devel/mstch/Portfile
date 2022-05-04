@@ -24,7 +24,7 @@ size    24355
 patch.pre_args      -p1
 patchfiles-append   patch-shared.diff
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append \
                     -DBUILD_TESTS=OFF \

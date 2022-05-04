@@ -42,7 +42,7 @@ if {$subport eq $name} {
     use_parallel_build  yes
 
     # Requires c++14
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 
     patchfiles          patch-cmake-install_layout.cmake.diff \
                         patch-protobuf.diff \

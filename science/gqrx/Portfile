@@ -35,8 +35,8 @@ size    3608209
     # remove this with next release
     dist_subdir   ${name}/${version}_1
 
-    compiler.c_standard   2011
-    compiler.cxx_standard 2017
+    compiler.c_standard 2017
+    compiler.cxx_standard 2020
 
     qt5.depends_component qtsvg
 

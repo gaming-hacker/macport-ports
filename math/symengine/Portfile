@@ -52,7 +52,7 @@ configure.args-append   -DWITH_COTIRE=OFF
 cmake.module_path-append \
                         ${prefix}/libexec/llvm-${llvm_version}/lib/cmake/llvm
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # mirrors setings in llvm-11
 legacysupport.use_static                     yes

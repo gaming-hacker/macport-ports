@@ -33,7 +33,7 @@ depends_lib     port:libgpg-error
 configure.args  --disable-asm
 
 # Build fix for compilers that default to c99 (clang)
-configure.cflags-append "-std=c11"
+configure.cflags-append "-std=gnu2x"
 
 # Some versions of gcc fail to build this for i386 including:
 #     gcc-4.0 from Xcode 3.1.6 (5493) -- Note that gcc-4.0 from Xcode 2.5 (5370) works 

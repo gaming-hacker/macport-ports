@@ -28,7 +28,7 @@ python.versions 310
 # these Python versions require an older qscintilla-qt5 version
 conflicts           py27-qscintilla-qt5 py35-qscintilla-qt5
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 if {${name} ne ${subport}} {
     PortGroup       qmake5 1.0

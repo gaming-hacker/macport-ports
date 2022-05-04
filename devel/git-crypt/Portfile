@@ -28,7 +28,7 @@ long_description        git-crypt enables transparent encryption and \
                         code, without requiring you to lock down your entire \
                         repository.
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # temporary, just to avoid
 # crypto-openssl-10.cpp:78:11: error: field has incomplete type 'HMAC_CTX' (aka 'hmac_ctx_st')

@@ -46,7 +46,7 @@ post-patch {
         clang.txt
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # botan uses thread_local, which is not supported in Xcode < 8
 compiler.thread_local_storage   yes
 

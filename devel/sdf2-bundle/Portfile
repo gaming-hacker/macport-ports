@@ -27,5 +27,5 @@ build.type          gnu
 depends_build       port:pkgconfig
 depends_lib         port:libaterm
 configure.cflags-append \
-                   -std=c11
+                   -std=gnu2x
 configure.args      --with-aterm=${prefix} --mandir=${prefix}/share/man

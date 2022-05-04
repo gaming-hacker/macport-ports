@@ -26,7 +26,7 @@ patchfiles              utilities_ismrmrd_phandom.cpp.patch
 
 boost.version           1.71
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 depends_lib-append      port:hdf5 \
                         port:fftw-3-single

@@ -43,7 +43,7 @@ patchfiles-append   patch-no-disable-rtti.diff
 # CMake Error in CMakeLists.txt:
 #  Target "snappy" requires the language dialect "CXX11" , but CMake does not
 #  know the compile flags to use to enable it.
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 depends_lib         port:lzo2 \
                     port:zlib \

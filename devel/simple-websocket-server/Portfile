@@ -35,7 +35,7 @@ variant tests description {Enable tests} {
     PortGroup       openssl 1.0
 
     configure.args-append -DBUILD_TESTING=ON
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 
     test.run        yes
 }

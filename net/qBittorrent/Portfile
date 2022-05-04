@@ -34,7 +34,7 @@ size    9197242
     configure.args-append \
                     CONFIG+=c++17 \
                     DEFINES+=QBT_USES_LIBTORRENT2
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
     # Taken from MKVToolNix port
     if {${os.platform} eq "darwin" && ${os.major} == 17} {
@@ -57,7 +57,7 @@ size    7867939
     qt5.min_version 5.9
     configure.args-append \
                     CONFIG+=c++14
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
 }
 

@@ -20,7 +20,7 @@ checksums           rmd160  1d30eb0b71632fe5d4a790f8d6245063f112fbef \
 sha256  8b1773ea2832751071ac19d2708314d68316dd3916434c7dc0dd58cef14d51cd \
 size    701341
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 depends_lib-append  port:asio \
                     path:lib/libssl.dylib:openssl \

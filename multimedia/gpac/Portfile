@@ -68,7 +68,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 12} {
 
 # fatal error: 'stdatomic.h' file not found
 compiler.blacklist-append {clang < 700}
-compiler.c_standard   2011
+compiler.c_standard 2017
 
 # external spidermonkey (--use-js=no) is not recognized because it doesn't provide a pkg-config file and build fails with local copy
 # pulseaudio is recognized if installed but build fails

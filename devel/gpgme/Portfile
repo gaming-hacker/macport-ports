@@ -39,7 +39,7 @@ post-patch {
     reinplace "s|@GPGSM@|${prefix}/bin/gpgsm|" ${worksrcpath}/src/gpgme-config.in
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # We are patching configure.ac.
 use_autoreconf      yes

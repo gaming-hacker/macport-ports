@@ -48,7 +48,7 @@ post-extract {
 test.run            yes
 test.target         check
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 patchfiles          allow-opengl-without-x11.patch \
                     dont-find-x11-opengl.patch \

@@ -40,7 +40,7 @@ if {${name} ne ${subport}} {
 
     patchfiles              patch-types.sip.diff
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 
     post-destroot {
         set doc_dir ${destroot}${prefix}/share/doc/${subport}

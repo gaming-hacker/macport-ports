@@ -66,7 +66,7 @@ configure.cflags-append \
 # currently broken
 # see https://sourceforge.net/p/mathgl/discussion/508393/thread/fb61ebd073/
 # variant arma description {Enable armadillo support} {
-#     compiler.cxx_standard 2017
+#     compiler.cxx_standard 2020
 #     compiler.thread_local_storage   yes
 # 
 #     depends_lib-append  port:armadillo

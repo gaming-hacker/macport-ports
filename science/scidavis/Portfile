@@ -22,7 +22,7 @@ homepage            http://scidavis.sourceforge.net
 #The developer keeps changing naming conventions, so we stay hard-coded for now
 master_sites        sourceforge:project/scidavis/SciDAVis/2/2.7
 
-compiler.cxx_standard       2017
+compiler.cxx_standard 2020
 compiler.blacklist-append   *gcc* {clang < 318.0.61}
 
 depends_lib-append  port:gsl \

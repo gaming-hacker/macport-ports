@@ -30,7 +30,7 @@ post-patch {
 use_autoconf        yes
 autoconf.cmd        ./autogen.sh
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 use_configure       yes
 configure.args-append \

@@ -28,8 +28,8 @@ git.branch              v${version}
 #distname                v${version}
 
 # see build/cmake/aom_configure.cmake
-compiler.cxx_standard 2017
-compiler.c_standard     2011
+compiler.cxx_standard 2020
+compiler.c_standard 2017
 
 set pyver               3.9
 set python_version      [string index ${pyver} 0][string index ${pyver} end]

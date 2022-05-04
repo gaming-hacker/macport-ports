@@ -43,7 +43,7 @@ post-extract {
 patchfiles          patch-cmake-modules-FindFREETYPE.cmake.diff \
                     make-tests-optional.patch
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append \
                     -G \"Unix Makefiles\" \
@@ -54,7 +54,7 @@ configure.args-append \
                     -DCMAKE_INCLUDE_PATH=${prefix}/include \
                     -DCMAKE_LIBRARY_PATH=${prefix}/lib \
                     -DCMAKE_EXE_LINKER_FLAGS='' \
-                    -DCMAKE_CXX_FLAGS='-std=c++17'
+                    -DCMAKE_CXX_FLAGS='-std=gnu++20'
 
 livecheck.type      regex
 livecheck.url       http://podofo.sourceforge.net/download.html

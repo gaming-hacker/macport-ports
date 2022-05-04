@@ -102,7 +102,7 @@ patchfiles-append   patch-avutil-builtin-available.diff
 minimum_xcodeversions {9 3.1}
 
 # requires a C11 compiler
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 # clang-3.1 hits https://trac.macports.org/ticket/30137 (<rdar://problem/11542429>)
 # clang-139 hits https://trac.macports.org/ticket/38141

@@ -80,7 +80,7 @@ if {${os.platform} eq "darwin" && ${os.major} >= 17 } {
 
     require_active_variants root6 python27
 } else {
-    configure.env           CXXFLAGS=-std=c++17
+    configure.env           CXXFLAGS=-std=gnu++20
 
     depends_lib-append  port:root5
 

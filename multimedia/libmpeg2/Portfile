@@ -30,7 +30,7 @@ configure.args      --enable-shared \
                     --mandir=${prefix}/share/man
 
 configure.cflags-append \
-                    -std=c11
+                    -std=gnu2x
 
 variant sdl description {Use libsdl} {
     depends_lib-append      port:libsdl

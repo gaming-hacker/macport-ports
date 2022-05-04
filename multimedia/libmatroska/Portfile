@@ -27,7 +27,7 @@ use_xz              yes
 depends_lib         port:libebml
 
 # https://github.com/Matroska-Org/libmatroska/issues/60
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args      -DBUILD_SHARED_LIBS=ON
 

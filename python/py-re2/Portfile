@@ -31,7 +31,7 @@ if {${name} ne ${subport}} {
     depends_lib-append \
                     port:re2
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     # hack to use proper compiler and stdlib
     configure.cc     ${configure.cxx}
     configure.cflags {*}${configure.cxxflags}

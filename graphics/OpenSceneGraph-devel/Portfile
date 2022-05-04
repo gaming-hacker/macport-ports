@@ -50,7 +50,7 @@ depends_lib             port:curl \
                         port:tiff \
                         port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append   -DOSG_CONFIG_HAS_BEEN_RUN_BEFORE=YES \
                         -DOSG_DEFAULT_IMAGE_PLUGIN_FOR_OSX=imageio \

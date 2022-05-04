@@ -31,7 +31,7 @@ post-patch {
     reinplace "s|@@DYND_VERSION_STRING@@|v${version}|g" ${worksrcpath}/CMakeLists.txt
 }
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append \
                     -DDYND_SHARED_LIB:BOOL=ON \

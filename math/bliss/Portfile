@@ -25,7 +25,7 @@ checksums           rmd160  2b45ac0fff1f5a1f905f83a34ad2faee3c33a50a \
 sha256  acc8b98034f30fad24c897f365abd866c13d9f1bb207e398d0caf136875972a4 \
 size    117888
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 destroot {
     xinstall -W ${workpath}/build bliss ${destroot}${prefix}/bin/

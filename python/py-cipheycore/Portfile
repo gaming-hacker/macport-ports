@@ -47,7 +47,7 @@ if {${name} ne ${subport}} {
 
     # cipheycore requires C++20 standard
     # This acts as a baseline (with additional blacklisting below)
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 
     # See https://en.cppreference.com/w/cpp/compiler_support/20
     # Couldn't get gcc to play nicely with cipheycore

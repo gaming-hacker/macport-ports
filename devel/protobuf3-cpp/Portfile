@@ -47,7 +47,7 @@ github.tarball_from releases
 distname        protobuf-cpp-${version}
 worksrcdir      protobuf-${version}
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 compiler.thread_local_storage   yes
 # error: constexpr constructor never produces a constant expression [-Winvalid-constexpr]
 compiler.blacklist {clang < 900}

@@ -40,7 +40,7 @@ depends_lib-append \
     port:lpcnetfreedv \
     port:speexDSP
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args-append \
     -DUSE_INTERNAL_CODEC2=FALSE \

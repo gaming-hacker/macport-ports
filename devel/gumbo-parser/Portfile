@@ -27,7 +27,7 @@ size    2119366
 
 depends_build       port:autoconf port:automake port:libtool
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 configure.cmd       ./autogen.sh && ./configure
 

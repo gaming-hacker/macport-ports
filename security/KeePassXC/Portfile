@@ -114,7 +114,7 @@ patchfiles              patch-no-deployqt.diff \
 #     https://github.com/llvm-project/clang/blob/release_35/lib/CodeGen/CodeGenModule.cpp
 compiler.blacklist-append {clang < 602}
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 configure.pre_args-append \
     -DCMAKE_INSTALL_PREFIX=${applications_dir} \

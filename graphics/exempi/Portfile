@@ -34,7 +34,7 @@ if {[vercmp $xcodeversion 4.3] < 0 && [string match "*macports*" ${configure.com
 patchfiles          limits.patch \
                     stdlib.patch
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 configure.args      --enable-unittest=no \
                     --disable-silent-rules

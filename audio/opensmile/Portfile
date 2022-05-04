@@ -23,7 +23,7 @@ checksums           rmd160  a6e8dff58b6da247d5a3503d911a8e1ec1a96c0f \
 sha256  00c8382cc7ab7b4a00aabc1ddd09926deb37c7d47c41977c82dd5790e0fb3a75 \
 size    4813287
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 variant portaudio description {Build with PortAudio support} {
     depends_lib-append port:portaudio

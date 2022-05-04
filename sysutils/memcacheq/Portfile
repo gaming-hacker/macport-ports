@@ -28,6 +28,6 @@ patchfiles                  implicit.patch
 
 configure.args              --with-libevent=${prefix}
 
-configure.cflags-append     -std=c11
+configure.cflags-append     -std=gnu2x
 configure.cppflags-append   -I${prefix}/include/db47
 configure.ldflags-append    -L${prefix}/lib/db47

@@ -30,7 +30,7 @@ distname            ${name}-${github.tag_prefix}${version}
 depends_lib-append  port:mnmlstc-core \
                     port:mongo-c-driver
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # Segmentation fault observed during build for Xcode 6.2
 compiler.blacklist-append {clang == 600.0.57}

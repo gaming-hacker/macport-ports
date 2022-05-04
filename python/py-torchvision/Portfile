@@ -43,7 +43,7 @@ if {${name} ne ${subport}} {
                     port:py${python.version}-Pillow \
                     port:py${python.version}-pytorch
 
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
 
     # https://github.com/pytorch/vision/blob/master/packaging/build_wheel.sh
     build.cmd       ${python.bin} setup.py

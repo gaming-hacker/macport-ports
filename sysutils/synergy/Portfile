@@ -35,7 +35,7 @@ depends_lib-append \
 
 patchfiles patch-openssl.diff
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 if {${subport} eq ${name}} {
     revision                1

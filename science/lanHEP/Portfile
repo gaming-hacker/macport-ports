@@ -41,11 +41,11 @@ use_configure       no
 
 compilers.choose    fc
 compilers.setup     require_fortran
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 pre-build {
     build.args      CC=${configure.cc} \
-                    CFLAGS="${configure.cflags} -std=c11 [get_canonical_archflags cc]" \
+                    CFLAGS="${configure.cflags} -std=gnu2x [get_canonical_archflags cc]" \
                     LD=${configure.cc} \
                     LOPT="${configure.ldflags} [get_canonical_archflags ld]" \
                     FC=${configure.fc} \

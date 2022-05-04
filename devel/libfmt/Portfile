@@ -34,7 +34,7 @@ patch.pre_args      -p1
 cmake.build_type    Release
 cmake.generator     Ninja
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # avoid
 #   error: default initialization of an object of const type 'const Answer' without a user-provided default constructor
 # error would be valid except Answer is empty

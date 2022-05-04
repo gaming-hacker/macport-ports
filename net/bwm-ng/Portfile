@@ -26,6 +26,6 @@ depends_lib     port:autoconf \
                 port:automake \
                 port:ncurses
 
-configure.cflags-append -std=c11
+configure.cflags-append -std=gnu2x
 configure.cmd   ./autogen.sh
 configure.args  --with-ncurses=${prefix}/include

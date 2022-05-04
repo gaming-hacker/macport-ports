@@ -31,7 +31,7 @@ depends_lib-append path:lib/libzmq.dylib:zmq
 # since all this port installs is a header. But, this setting
 # allows the port to "build" and do testing on older OSs where the
 # default compiler isn't modern enough.
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # disable building tests by default
 configure.args-append \

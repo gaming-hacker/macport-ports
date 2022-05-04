@@ -91,7 +91,7 @@ configure.env-append    POD2MAN=${prefix}/bin/pod2man-${perl_version}
 configure.args-append       ac_cv_header_uuid_uuid_h=no
 
 # tempname.c:290: error: 'for' loop initial declaration used outside C99 mode
-configure.cflags-append -std=c11
+configure.cflags-append -std=gnu2x
 
 test.run                yes
 test.target             check

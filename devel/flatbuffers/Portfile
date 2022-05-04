@@ -31,7 +31,7 @@ size    1724250
 
 patchfiles              patch-disable-Werror-in-CMakeLists.diff
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 # Needed for - error: unknown attribute 'no_sanitize' ignored [-Werror,-Wattributes]
 compiler.blacklist-append {clang < 800}
 

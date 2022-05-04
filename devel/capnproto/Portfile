@@ -28,7 +28,7 @@ distname                ${name}-c++-${version}
 
 use_autoreconf          yes
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # clang 3.2 - clang-3.5 and all clangs from Xcode < 5 crash while compiling this.
 # see http://llvm.org/bugs/show_bug.cgi?id=18340

@@ -47,7 +47,7 @@ configure.args-append \
                     -Db_lto=true \
                     -Dprebuilt_server=${distpath}/${name}-server-v${version}
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 # Work around cfm: fatal error: 'stdatomic.h' file not found
 # https://trac.macports.org/ticket/60429
 compiler.blacklist-append {clang < 700}

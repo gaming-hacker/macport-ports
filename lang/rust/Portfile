@@ -195,7 +195,7 @@ if { ${subport} ne ${ccwrap} && ${subport} ne "rust-src" } {
 }
 
 # Rust claims to only need c++14 but uses some c++17 features relating to std::unique_ptr
-compiler.cxx_standard  2017
+compiler.cxx_standard 2020
 # Rust never claims to need it, but it uses `__thread`
 compiler.thread_local_storage yes
 # Use recent macports clang

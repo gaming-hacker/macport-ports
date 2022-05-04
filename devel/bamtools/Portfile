@@ -26,7 +26,7 @@ compiler.cxx_standard \
 
 # the C++11 requirement is being imposed by jsoncpp
 configure.cxxflags-append \
-                    -std=c++17
+                    -std=gnu++20
 configure.args-append \
                     -DBUILD_SHARED_LIBS=ON
 

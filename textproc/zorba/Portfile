@@ -71,9 +71,9 @@ configure.args-append \
     -DZORBA_XQUERYX=YES
 
 # required for ICU
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 configure.cppflags-append -DU_USING_ICU_NAMESPACE=1
-configure.cxxflags-append -std=c++17
+configure.cxxflags-append -std=gnu++20
 
 test.env DYLD_LIBRARY_PATH=${worksrcpath}/src
 test.run yes

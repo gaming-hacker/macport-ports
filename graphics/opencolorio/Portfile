@@ -40,9 +40,9 @@ patchfiles-append   patch-yaml-cpp-0.7.diff
 patchfiles-append   patch-CMakeLists.txt.diff
 
 # source assumes C++11 compiler
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 configure.cxxflags-append \
-    -std=c++17
+    -std=gnu++20
 
 # see https://github.com/imageworks/OpenColorIO/issues/563
 configure.cxxflags-append \

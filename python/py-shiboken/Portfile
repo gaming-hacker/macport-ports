@@ -38,8 +38,8 @@ if {${name} ne ${subport}} {
                         port:libxslt \
                         port:sparsehash
     use_configure   yes
-    compiler.cxx_standard 2017
-    configure.cxxflags-append -std=c++17
+    compiler.cxx_standard 2020
+    configure.cxxflags-append -std=gnu++20
     # build.cmd must be set before configure.args is changed
     #    (see https://github.com/macports/macports-ports/commit/63c9c8e6e312c8e36603cb118d94f995aa8a6e67)
     build.cmd       make

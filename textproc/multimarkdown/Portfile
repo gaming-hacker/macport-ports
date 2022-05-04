@@ -40,7 +40,7 @@ depends_lib-append  port:curl
 
 patchfiles-append   CMakeLists.txt.patch
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 # Blacklist compilers that do not support -fbracket-depth
 compiler.blacklist  {clang < 500}

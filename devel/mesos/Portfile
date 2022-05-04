@@ -25,7 +25,7 @@ checksums           rmd160  9b824a8e1a9cc616ea7e1b478fa0483e7ec5b9a8 \
 sha256  b63f201cf68f5f170e48d8a047c7cfdb23d54cd1c75e76f661cf63d2ce55b634 \
 size    72442467
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 compiler.thread_local_storage yes
 
 if {${os.platform} eq "darwin" && ${os.major} == 15 \

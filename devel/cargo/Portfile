@@ -64,7 +64,7 @@ size    1990410
     build.env-append OPENSSL_DIR=[openssl::install_area]
 
     # Match rust compiler settings
-    compiler.cxx_standard   2017
+    compiler.cxx_standard 2020
 
     # Use MacPorts curl
     # https://doc.rust-lang.org/cargo/commands/cargo-install.html

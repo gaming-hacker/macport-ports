@@ -93,7 +93,7 @@ configure.args      --disable-autoipd \
 configure.cppflags-append   -L${prefix}/lib -D__APPLE_USE_RFC_2292
 
 # libevent-watch.c:285: error: 'for' loop initial declaration used outside C99 mode
-configure.cflags-append     -std=c11
+configure.cflags-append     -std=gnu2x
 
 set daemon_uniquename   org.freedesktop.avahi-daemon
 set dnsconfd_uniquename org.freedesktop.avahi-dnsconfd
@@ -174,8 +174,8 @@ variant qt4 description {Build with Qt4} {
 variant qt5 description {Build with Qt5} {
     PortGroup   qt5 1.0
     # This configure script does not use CXXFLAGS variable for Qt5 compile test so I have to do this
-    configure.env-append    QT5_CFLAGS=-std=c++17\ -DQT_CORE_LIB\ -F${qt_dir}/lib\ -I${qt_dir}/lib/QtCore.framework/Headers\ -I${qt_dir}/include
-    compiler.cxx_standard 2017
+    configure.env-append    QT5_CFLAGS=-std=gnu++20\ -DQT_CORE_LIB\ -F${qt_dir}/lib\ -I${qt_dir}/lib/QtCore.framework/Headers\ -I${qt_dir}/include
+    compiler.cxx_standard 2020
     configure.args-delete   --disable-qt5
 }
 

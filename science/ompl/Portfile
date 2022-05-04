@@ -22,7 +22,7 @@ size    23082270
 depends_build-append port:pkgconfig
 depends_lib-append   port:ode port:flann port:triangle port:eigen3
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 configure.args-append   -DOMPL_BUILD_DEMOS=OFF \
                         -DOMPL_BUILD_TESTS=OFF \
                         -DCMAKE_DISABLE_FIND_PACKAGE_spot=ON
