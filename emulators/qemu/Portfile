@@ -35,7 +35,7 @@ depends_build           port:texinfo \
                         port:meson \
                         port:ninja \
                         port:pkgconfig \
-                        port:py39-sphinx
+                        port:py310-sphinx
 
 # perl5 is only used for build scripts, no linking
 depends_build-append    port:perl5
