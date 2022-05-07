@@ -70,11 +70,11 @@ extract.only        git-${version}${extract.suffix} \
 
 use_configure       no
 
-compiler.c_standard 1999
+compiler.c_standard 2017
 
 variant universal   {}
 
-set CFLAGS          "${configure.cflags} -std=gnu99 [get_canonical_archflags cc]"
+set CFLAGS          "${configure.cflags} -std=gnu2x [get_canonical_archflags cc]"
 set LDFLAGS         "${configure.ldflags} [get_canonical_archflags ld]"
 
 build.args          CFLAGS="${CFLAGS}" \
