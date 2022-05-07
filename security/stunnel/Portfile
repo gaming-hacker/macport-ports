@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           openssl 1.0
@@ -28,8 +28,8 @@ master_sites        https://www.stunnel.org/downloads/archive/${major}.x/ \
                     http://stunnel.cybermirror.org/archive/${major}.x/
 
 checksums           rmd160  3ab38aca0e21a233ea94f498947c98eefa876685 \
-                    sha256  eebe53ed116ba43b2e786762b0c2b91511e7b74857ad4765824e7199e6faf883 \
-                    size    869088
+sha256  eebe53ed116ba43b2e786762b0c2b91511e7b74857ad4765824e7199e6faf883 \
+size    869088
 
 openssl.branch      no_version
 

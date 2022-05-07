@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,8 +17,8 @@ homepage            https://sunpy.org
 python.versions 310
 
 checksums           rmd160  3ce8b7941a5bc5caf20e60830c896a1a86659d39 \
-                    sha256  d35786625b3c784d9edefcc3617cf90f5c50b3ba71a661edf3d681282bd574b8 \
-                    size    7437988
+sha256  d35786625b3c784d9edefcc3617cf90f5c50b3ba71a661edf3d681282bd574b8 \
+size    7437988
 
 if {${name} ne ${subport}} {
     depends_build-append \
