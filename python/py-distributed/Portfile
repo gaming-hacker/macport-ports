@@ -1,15 +1,15 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-distributed
-version             2022.4.2
+version             2022.5.0
 revision            0
 categories-append   devel
 license             BSD
 
-python.versions 310
+python.versions     37 38 39 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,9 +21,9 @@ long_description    Dask.distributed is a lightweight library for distributed \
 
 homepage            https://distributed.readthedocs.io/en/latest/
 
-checksums           rmd160  2f4b8d76a968dcf79648af67e4867c390b01c5e2 \
-sha256  135484f24876903fbbf1f1c6825b61a074e5791763964d80394be65899be0911 \
-size    933815
+checksums           rmd160  af32546d9f68da8acb52553b8aa1e0c2faeb8f1f \
+                    sha256  bc8df614fb51c046875478e647c01539f5f41a00abf3d87ef2c6af00932dc509 \
+                    size    934072
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -46,8 +46,8 @@ if {${name} ne ${subport}} {
         epoch               1
         distname            ${python.rootname}-${version}
         checksums           rmd160  c3994d51dd5b00039299a3ca1dbf33abcc092df0 \
-sha256  1a2f6eec9733a67004839dc4ecde6d5c17c079665a2c1573454dd2a5b5376d95 \
-size    911579
+                            sha256  1a2f6eec9733a67004839dc4ecde6d5c17c079665a2c1573454dd2a5b5376d95 \
+                            size    911579
         depends_lib-append  port:py${python.version}-cython
         build.args-append   --with-cython
         destroot.args-append \

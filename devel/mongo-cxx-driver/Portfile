@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -6,15 +6,14 @@ PortGroup           github 1.0
 PortGroup           compiler_blacklist_versions 1.0
 
 epoch               1
-github.setup        mongodb mongo-cxx-driver 3.6.6 r
+github.setup        mongodb mongo-cxx-driver 3.6.7 r
 revision            0
-checksums           rmd160  5092a9704db4edad12733b451c053d395d4572ef \
-sha256  d5906b9e308a8a353a2ef92b699c9b27ae28ec6b34fdda94e15d2981b27e64ca \
-size    1394871
+checksums           rmd160  fa0929a4be9c918ed6924fc108af3c9257b99814 \
+                    sha256  2c58005d4fe46f1973352fba821f7bb37e818cefc922377ce979a9fd1bff38ac \
+                    size    1396521
 
 license             Apache-2
 categories          devel databases
-platforms           darwin
 maintainers         {ryandesign @ryandesign} openmaintainer
 
 description         library for using mongodb from C++ code
@@ -30,7 +29,7 @@ distname            ${name}-${github.tag_prefix}${version}
 depends_lib-append  port:mnmlstc-core \
                     port:mongo-c-driver
 
-compiler.cxx_standard 2020
+compiler.cxx_standard 2011
 
 # Segmentation fault observed during build for Xcode 6.2
 compiler.blacklist-append {clang == 600.0.57}

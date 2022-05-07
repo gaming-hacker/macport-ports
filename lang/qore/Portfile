@@ -1,0 +1,41 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+PortGroup           github 1.0
+github.setup        qorelanguage qore 1.7.2 release-
+github.tarball_from releases
+
+PortGroup           cmake 1.1
+
+categories          lang
+license             {LGPL-2.1 MIT}
+maintainers         {davidnichols @davidnich} openmaintainer
+use_bzip2           yes
+description         multi-threaded embeddable scripting language
+long_description    Qore is a scripting language designed for multi-threading and SMP scalability
+homepage            http://qore.org
+
+checksums           rmd160 2751fa03175dcee4cd878a27227e29c743046f84 \
+                    sha256 3b8ba7680b089f9f0469f8dcb1482a8044d9eaffd7721018e671ee0a612fbf48 \
+                    size 45427295
+
+compiler.cxx_standard  2011
+
+depends_build-append \
+                    port:bison \
+                    port:flex \
+                    port:pkgconfig
+
+depends_lib-append  path:lib/libssl.dylib:openssl \
+                    port:pcre \
+                    port:zlib \
+                    port:bzip2 \
+                    port:gmp \
+                    port:mpfr \
+                    port:tbb
+
+compiler.thread_local_storage yes
+
+configure.args-append -DSINGLE_COMPILATION_UNIT=1
+
