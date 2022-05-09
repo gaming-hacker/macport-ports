@@ -29,7 +29,7 @@ patch {
 	reinplace "s| -Werror||" ${worksrcpath}/Makefile
 }
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 use_configure       no
 variant universal   {}

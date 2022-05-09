@@ -42,7 +42,7 @@ variant universal {}
 build.dir       ${worksrcpath}/src
 build.args      CC=${configure.cc}
 # First two flags come from the included Makefile
-build.args-append CFLAGS="-Wall -std=gnu2x ${configure.cflags} [get_canonical_archflags]"
+build.args-append CFLAGS="-Wall -std=gnu17 ${configure.cflags} [get_canonical_archflags]"
 
 destroot {
     # docs

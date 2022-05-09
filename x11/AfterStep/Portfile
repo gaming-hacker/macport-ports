@@ -64,7 +64,7 @@ configure.args  --mandir=${prefix}/share/man \
 # The code is written using gnu89 inline semantics that aren't
 # compatible with c99 and later.
 compiler.c_standard 2017
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 require_active_variants \
                 path:lib/pkgconfig/gtk+-2.0.pc:gtk2 x11

@@ -56,7 +56,7 @@ configure.args-append \
                     --with-readline-prefix=${prefix}
 
 compiler.c_standard 2017
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 build.cmd           gmake
 build.target        ""

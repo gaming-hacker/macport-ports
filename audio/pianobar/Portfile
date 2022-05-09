@@ -34,7 +34,7 @@ depends_lib                 port:curl \
                             port:json-c
 
 compiler.c_standard 2017
-configure.cflags-append     -std=gnu2x
+configure.cflags-append     -std=gnu17
 
 # Prevent upgrade failure.
 configure.cppflags-replace  -I${prefix}/include -isystem${prefix}/include

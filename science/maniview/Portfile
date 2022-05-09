@@ -25,7 +25,7 @@ size    256860
 depends_lib                 port:geomview \
                             port:xforms
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 post-destroot {
     delete ${destroot}${prefix}/share/geomview/groups

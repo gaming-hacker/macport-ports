@@ -35,7 +35,7 @@ depends_run         port:gstreamer1-gst-plugins-base \
 # breaks build on 10.6 and earlier
 # dmapd.c:435: error: ‘for’ loop initial declaration used outside C99 mode
 compiler.c_standard 2017
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 configure.args      --disable-check \
                     --disable-silent-rules

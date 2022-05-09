@@ -120,8 +120,8 @@ configure.ldflags-delete -L${prefix}/lib
 configure.cppflags-delete -I${prefix}/include
 
 # set c11
-configure.cflags-append -std=gnu11
-configure.ldflags-append -std=gnu11
+configure.cflags-append -std=gnu17
+configure.ldflags-append -std=gnu17
 
 configure.args-append \
                     --disable-pcsc \

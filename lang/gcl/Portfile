@@ -39,7 +39,7 @@ universal_variant   no
 # cp: .../destroot/opt/local/share/emacs/site-lisp/gcl/opt/local/etc/default.el: No such file or directory
 conflicts_build     ${name}
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 # Without -fno-pie, build fails if using deployment target 10.6 or later:
 # >unexec: cannot write section __data

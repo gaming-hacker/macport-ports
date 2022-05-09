@@ -105,7 +105,7 @@ post-patch {
 
 compiler.blacklist-append   {clang < 500}
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 pre-configure {
     file mkdir ${workpath}/gcc-${version_gcc}/${name}
     if {${build_arch} eq "i386"} {

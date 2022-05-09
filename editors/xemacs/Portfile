@@ -127,7 +127,7 @@ variant sumo \
 default_variants +sumo
 
 # https://trac.macports.org/ticket/31679
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 if {${os.major} >= 11 && ${os.platform} eq "darwin"} {
     configure.ldflags-append -Wl,-no_pie

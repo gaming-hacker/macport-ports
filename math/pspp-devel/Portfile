@@ -76,7 +76,7 @@ compiler.blacklist *gcc-3.* *gcc-4.*
 compiler.c_standard 2017
 
 # Code uses 'asm' instead of '__asm__', so we need a GNU standard
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 platform darwin 8 {
     # ./libc-config.h:87:21: error: operator '%' has no left operand

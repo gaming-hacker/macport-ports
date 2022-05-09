@@ -25,4 +25,4 @@ depends_lib      port:bzip2 \
                  port:zlib
 
 # not compatible with C99 inline semantics
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17

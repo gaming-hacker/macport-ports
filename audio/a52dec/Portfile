@@ -30,6 +30,6 @@ autoreconf.args -fvi
 
 compiler.c_standard 2017
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 configure.args    --enable-shared

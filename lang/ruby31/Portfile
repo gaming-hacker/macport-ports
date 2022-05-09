@@ -150,7 +150,7 @@ platform darwin {
         depends_build-append    port:gmake
         build.cmd               ${prefix}/bin/gmake
         configure.args-append   --disable-dtrace
-        configure.cflags-append -std=gnu2x
+        configure.cflags-append -std=gnu17
     }
 
     if {${os.major} == 8} {

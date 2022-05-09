@@ -43,7 +43,7 @@ patchfiles              no-windows-compilers.patch
 
 cmake.out_of_source     yes
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 configure.args-append   -DBISON_YACC:FILEPATH=${prefix}/bin/bison \
                         -DBUILD_TESTING:BOOL=OFF \
                         -DCMAKE_SKIP_RPATH:BOOL=OFF \

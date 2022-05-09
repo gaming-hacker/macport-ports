@@ -45,7 +45,7 @@ compiler.c_standard 2017
 
 pre-build {
     build.args      CC=${configure.cc} \
-                    CFLAGS="${configure.cflags} -std=gnu2x [get_canonical_archflags cc]" \
+                    CFLAGS="${configure.cflags} -std=gnu17 [get_canonical_archflags cc]" \
                     LD=${configure.cc} \
                     LOPT="${configure.ldflags} [get_canonical_archflags ld]" \
                     FC=${configure.fc} \

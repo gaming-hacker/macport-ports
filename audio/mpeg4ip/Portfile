@@ -70,7 +70,7 @@ configure.args  --disable-player \
 
 use_parallel_build      no
 
-configure.cflags-append -std=gnu2x -Wno-error=return-type
+configure.cflags-append -std=gnu17 -Wno-error=return-type
 
 variant universal {
     post-configure {

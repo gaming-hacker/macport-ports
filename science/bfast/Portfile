@@ -37,7 +37,7 @@ post-patch {
 # https://github.com/nh13/BFAST/issues/2
 compiler.c_standard 2017
 configure.cflags-append \
-                    -std=gnu2x
+                    -std=gnu17
 
 # This software is no longer maintained.
 # https://github.com/nh13/BFAST/issues/4

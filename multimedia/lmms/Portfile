@@ -54,7 +54,7 @@ post-patch {
 
 # Apple clang version 1.7 (tags/Apple/clang-77) (based on LLVM 2.9svn)
 # Undefined symbols: "_waveguide_nl_process", referenced from: _runGong in gong_1424.o, _runAddingGong in gong_1424.o
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 cmake.out_of_source yes
 

@@ -62,7 +62,7 @@ configure.args \
     --disable-llvm-shared-libs \
     --with-gallium-drivers=
 
-# mesa builds with -std=gnu2x but uses timespec_get() which was added in c11, so this works around that bug
+# mesa builds with -std=gnu17 but uses timespec_get() which was added in c11, so this works around that bug
 configure.env-append \
     export ac_cv_func_timespec_get=no
 

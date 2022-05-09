@@ -20,5 +20,5 @@ checksums       md5 713870965447b0b8b7341409968846fb
 depends_lib     lib:libpcap:libpcap
 
 configure.ldflags   "-Wl,-search_paths_first"
-configure.cflags-append -std=gnu2x "-L${prefix}/lib"
+configure.cflags-append -std=gnu17 "-L${prefix}/lib"
 configure.args	--mandir=${prefix}/share/man

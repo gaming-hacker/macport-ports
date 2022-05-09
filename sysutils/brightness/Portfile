@@ -20,7 +20,7 @@ installs_libs       no
 
 variant universal {}
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 build.env-append    CC=${configure.cc} \
                     "CFLAGS=${configure.cflags} [get_canonical_archflags cc]" \
                     "LDFLAGS=${configure.ldflags} [get_canonical_archflags ld]"

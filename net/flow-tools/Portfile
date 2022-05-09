@@ -32,7 +32,7 @@ use_autoreconf          yes
 autoreconf.args         -fvi
 
 # http://trac.macports.org/ticket/34358
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 configure.args          --with-openssl \
                         --without-postgresql \
                         --disable-silent-rules

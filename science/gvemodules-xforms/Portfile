@@ -29,7 +29,7 @@ size    360536
 depends_lib                 port:geomview \
                             port:xforms
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 platform darwin 9 { configure.ldflags-append \
     -Wl,-dylib_file,/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib:\

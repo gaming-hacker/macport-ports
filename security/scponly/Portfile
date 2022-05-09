@@ -25,7 +25,7 @@ sha1 d967ba69262c7675b9a0255884cf86c601d0d619
 depends_lib			bin:ssh:openssh
 
 configure.args		--mandir=${prefix}/share/man
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 variant noWildcards {
 	configure.args-append	--disable-wildcards

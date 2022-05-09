@@ -33,7 +33,7 @@ if {${name} ne ${subport}} {
                             --with-svn-apr=${prefix}/bin/apr-1-config
     
     # error: "for" loop initial declaration used outside C99 mode
-    configure.cflags-append -std=gnu2x
+    configure.cflags-append -std=gnu17
 
     post-destroot {
         xinstall -d ${destroot}${prefix}/share/examples

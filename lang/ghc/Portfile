@@ -140,7 +140,7 @@ if {${os.platform} eq "darwin" && ${os.major} <= [legacysupport::get_newest_darw
 # Build requires C11
 compiler.c_standard 2017
 # On OSX 10.{8,9} with clang 503, 600
-#   :info:build dtrace: failed to open td=gnu11/usr/bin/clang -std=gnu11 -E ...
+#   :info:build dtrace: failed to open td=gnu11/usr/bin/clang -std=gnu17 -E ...
 compiler.blacklist-append {clang < 700}
 
 # use these to specify python versions, python3 required

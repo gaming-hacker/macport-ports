@@ -25,7 +25,7 @@ size    323336
 depends_lib \
     port:e2fsprogs
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 configure.cflags-append -D__FreeBSD__=10
 configure.cflags-append -I${prefix}/include/osxfuse/fuse
 configure.cflags-append -DENABLE_SWAPFS

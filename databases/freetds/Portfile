@@ -47,7 +47,7 @@ compiler.blacklist  {clang < 500}
 # Fix conflicting intptr_t definitions
 # https://trac.macports.org/ticket/63394
 compiler.c_standard 2017
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 configure.args      --disable-odbc \
                     --disable-silent-rules \

@@ -24,7 +24,7 @@ use_configure       no
 
 build.target        nuweb
 build.env-append    CC=${configure.cc} \
-                    "CFLAGS=${configure.cflags} [get_canonical_archflags cc] -std=gnu2x -Wno-return-type"
+                    "CFLAGS=${configure.cflags} [get_canonical_archflags cc] -std=gnu17 -Wno-return-type"
 
 destroot {
     xinstall -m 0755 ${build.dir}/nuweb ${destroot}${prefix}/bin

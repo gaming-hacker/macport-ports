@@ -30,7 +30,7 @@ use_parallel_build	yes
 
 compiler.c_standard	1989
 configure.cflags-append \
-					-std=gnu2x
+					-std=gnu17
 
 variant universal {}
 

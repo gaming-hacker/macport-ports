@@ -42,7 +42,7 @@ use_autoreconf      yes
 configure.args      --with-curses=${prefix} \
                     --with-readline=${prefix}
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 livecheck.type      regex
 livecheck.url       https://alioth.debian.org/frs/?group_id=30592

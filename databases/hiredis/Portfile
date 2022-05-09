@@ -21,7 +21,7 @@ size    98179
 
 compiler.c_standard 2017
 
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 configure.args-append -DDISABLE_TESTS=ON
 

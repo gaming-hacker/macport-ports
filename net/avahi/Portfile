@@ -93,7 +93,7 @@ configure.args      --disable-autoipd \
 configure.cppflags-append   -L${prefix}/lib -D__APPLE_USE_RFC_2292
 
 # libevent-watch.c:285: error: 'for' loop initial declaration used outside C99 mode
-configure.cflags-append     -std=gnu2x
+configure.cflags-append     -std=gnu17
 
 set daemon_uniquename   org.freedesktop.avahi-daemon
 set dnsconfd_uniquename org.freedesktop.avahi-dnsconfd

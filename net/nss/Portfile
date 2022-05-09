@@ -107,7 +107,7 @@ use_parallel_build  no
 
 # tls13esni.c:72: error: 'for' loop initial declaration used outside C99 mode
 compiler.c_standard 2017
-configure.cflags-append -std=gnu2x
+configure.cflags-append -std=gnu17
 
 # mimic nss/coreconf/Darwin.mk
 

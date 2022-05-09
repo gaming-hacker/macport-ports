@@ -68,7 +68,7 @@ depends_lib-append  port:xorg-libXres \
 
 compiler.c_standard 2017
 configure.cflags-append \
-                    -std=gnu2x
+                    -std=gnu17
 configure.args      --disable-utmp \
                     --enable-auto-encoding \
                     --enable-escreen \

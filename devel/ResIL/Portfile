@@ -99,7 +99,7 @@ set merger_configure_args(ppc64) --enable-ppc
 
 # https://sourceforge.net/p/resil/tickets/6/
 if {[string match *clang* ${configure.compiler}]} {
-    configure.cflags-append -std=gnu2x
+    configure.cflags-append -std=gnu17
 }
 
 post-destroot {
