@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-jsonschema
-version             4.4.0
+version             4.5.1
 revision            0
 categories-append   devel
-platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions 310
+python.versions     27 35 36 37 38 39 310
+python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -20,9 +20,9 @@ long_description    {*}${description}
 
 homepage            https://github.com/Julian/jsonschema
 
-checksums           rmd160  6c51705ab04085f831679bb2b3bfe1bc83756a2b \
-sha256  636694eb41b3535ed608fe04129f26542b59ed99808b4f688aa32dcf55317a83 \
-size    313519
+checksums           rmd160  4b5da10a69bec2823428f215fa31cb3e14f322d8 \
+                    sha256  7c6d882619340c3347a1bf7315e147e6d3dae439033ae6383d6acb908c101dfc \
+                    size    282414
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -38,8 +38,9 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  fb79174fba8955cf5433fa0e79d3ad3a48c590fb \
-sha256  c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a \
-size    167226
+                            sha256  c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a \
+                            size    167226
+        python.pep517       no
         if {${python.version} eq 27} {
             depends_lib-append  port:py${python.version}-functools32
         }
