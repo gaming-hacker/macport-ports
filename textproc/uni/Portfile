@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/arp242/uni 2.5.0 v
+go.setup            github.com/arp242/uni 2.5.1 v
 go.package          zgo.at/uni/v2
 github.tarball_from archive
 revision            0
@@ -30,45 +30,45 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-rmd160  08a13efa146ee7923ca115c58eef34666ff8f4cd \
-sha256  27833125a4097e15ec6dbce33e2798a1689a4674c0d0509c0dc1039204aa1d80 \
-size    535364
+                        rmd160  3509b29e3702e495ccdc5fb06f352f047e760965 \
+                        sha256  806fbba66efaa45cd5691efcd8457ba8fe88d3b2f6fd0b027f1e6ef62253d6fb \
+                        size    535149
 
 go.vendors          zgo.at/zstd \
                         repo    github.com/arp242/zstd \
                         lock    6078fed48e39 \
-rmd160  76c95551c12eba257d49c1fdf4bfbe6cc7cd766e \
-sha256  04df8ce7bd109a300b3002efc7f6f269503a445f7568e5aaee33797e6c977186 \
-size    76597 \
+                        rmd160  76c95551c12eba257d49c1fdf4bfbe6cc7cd766e \
+                        sha256  04df8ce7bd109a300b3002efc7f6f269503a445f7568e5aaee33797e6c977186 \
+                        size    76597 \
                     zgo.at/zli \
                         repo    github.com/arp242/zli \
-                        lock    715dad1d8932 \
-rmd160  ba2cc87fdf56a963da7fd502e1d494b62b2a257c \
-sha256  22edf19a97a8bb91c91d213f96bd743239e8dfb4d731799710791a02cc37c0d7 \
-size    29300 \
+                        lock    3bb954a2e74c \
+                        rmd160  b33a211b0e51af253ba11a1b49941e771ecfd6b2 \
+                        sha256  c238d9a1ebd5fdd0d54b907c144916ed2305525e72bafad3dde4a8f548e899dc \
+                        size    29294 \
                     zgo.at/termtext \
                         repo    github.com/arp242/termtext \
                         lock    v1.0.0 \
-rmd160  a2cd0edcb2e6133fec12d9d36b0932f9766587a3 \
-sha256  a47490c28dee145e1cdcc0217afd95a595251c7bca56e9683e3b63f828e386cb \
-size    5085 \
+                        rmd160  a2cd0edcb2e6133fec12d9d36b0932f9766587a3 \
+                        sha256  a47490c28dee145e1cdcc0217afd95a595251c7bca56e9683e3b63f828e386cb \
+                        size    5085 \
                     golang.org/x/term \
                         lock    e5f449aeb171 \
-rmd160  815a83a4b9782102c3877cf61ee45ab5f8f89f4f \
-sha256  825a85ed3b123e641b82daecec59a33954393371b3f5e59dc90742a9ec46622f \
-size    14976 \
+                        rmd160  815a83a4b9782102c3877cf61ee45ab5f8f89f4f \
+                        sha256  825a85ed3b123e641b82daecec59a33954393371b3f5e59dc90742a9ec46622f \
+                        size    14976 \
                     golang.org/x/sys \
                         lock    665e8c7367d1 \
-rmd160  e589d28cc611e16701a8f1f789f067ff5a9cdf50 \
-sha256  9d525e47bd3f6990ab81dcba618521d2191a3dc12267457aa099c6cbb8de71a1 \
-size    1200464 \
+                        rmd160  e589d28cc611e16701a8f1f789f067ff5a9cdf50 \
+                        sha256  9d525e47bd3f6990ab81dcba618521d2191a3dc12267457aa099c6cbb8de71a1 \
+                        size    1200464 \
                     github.com/rivo/uniseg \
                         lock    v0.2.0 \
-rmd160  33577def583aa2db50b69ca601e5d29ab201ebc4 \
-sha256  2832965221246272462a03ffc8e159c94d8f534827f660f1ac4fc77e5ccd644c \
-size    44037 \
+                        rmd160  33577def583aa2db50b69ca601e5d29ab201ebc4 \
+                        sha256  2832965221246272462a03ffc8e159c94d8f534827f660f1ac4fc77e5ccd644c \
+                        size    44037 \
                     github.com/mattn/go-runewidth \
                         lock    v0.0.13 \
-rmd160  e177edb4dc4702ae2b23704934ff31cc6561bbd0 \
-sha256  dcd3ccbd956a6f53bc106b79489d0303a237c21d858d23250e3e1d7284b72b86 \
-size    17363
+                        rmd160  e177edb4dc4702ae2b23704934ff31cc6561bbd0 \
+                        sha256  dcd3ccbd956a6f53bc106b79489d0303a237c21d858d23250e3e1d7284b72b86 \
+                        size    17363
