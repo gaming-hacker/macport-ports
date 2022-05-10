@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,8 +21,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  96209c977791096388c3d59601c5a4681a9141ce \
-                    sha256  287cd989aba76691bf028b4eb3fccd012abc0cab7556a7d11aebac62c4d01342 \
-                    size    6577667
+sha256  287cd989aba76691bf028b4eb3fccd012abc0cab7556a7d11aebac62c4d01342 \
+size    6577667
 
 depends_build-append \
                     port:go-md2man

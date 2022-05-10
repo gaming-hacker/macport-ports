@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -30,9 +30,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  1d7ecbcb5019142f2655ae3c5f4e11ef5d7ee41e \
-                    sha256  4e0add4787750b907a28d61a4e573a1c871c256ab7df46d8fd8dc12c94d85894 \
-                    size    61542
+rmd160  1d7ecbcb5019142f2655ae3c5f4e11ef5d7ee41e \
+sha256  4e0add4787750b907a28d61a4e573a1c871c256ab7df46d8fd8dc12c94d85894 \
+size    61542
 
 depends_build-append \
                     path:bin/cmake:cmake

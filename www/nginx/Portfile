@@ -172,9 +172,9 @@ variant echo description {Brings echo, sleep, time, exec and more shell-style go
     set echo_distname       ${echo_filename}-${echo_version}
     distfiles-append        v${echo_version}.tar.gz:echo_module
     checksums-append        v${echo_version}.tar.gz \
-                            rmd160  2a2099e0436702d42ed3bd74231c099661c14260 \
-                            sha256  86f6866baf7297d85feb42ff6d9c212d1de696f3314a53d3a41a4b533a67ab01 \
-                            size    53329
+rmd160  2a2099e0436702d42ed3bd74231c099661c14260 \
+sha256  86f6866baf7297d85feb42ff6d9c212d1de696f3314a53d3a41a4b533a67ab01 \
+size    53329
 
     configure.args-append   --with-http_dav_module --add-module=${workpath}/${echo_distname}
 }

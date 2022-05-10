@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -42,8 +42,8 @@ conflicts_build     opencv
 distfiles           ${name}_${version}${extract.suffix}
 
 checksums           rmd160  ddc3d23b9ef1da6c3d54063be995ee0ad2fe8eab \
-                    sha256  1bc784dc97107edf397f0b1b93f756bfd99a349acc1885b507f24cfde0765402 \
-                    size    10693769
+sha256  1bc784dc97107edf397f0b1b93f756bfd99a349acc1885b507f24cfde0765402 \
+size    10693769
 
 depends_lib         port:curl \
                     path:lib/libavcodec.dylib:ffmpeg \
@@ -58,7 +58,7 @@ depends_lib         port:curl \
                     port:zlib
 
 compiler.blacklist              {clang < 902}
-compiler.cxx_standard           2011
+compiler.cxx_standard 2020
 
 # Uses more memory per compile process than we can accommodate on our
 # automated build system. See https://github.com/dtschump/gmic/issues/325
