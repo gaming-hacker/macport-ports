@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       clang_dependency 1.0
@@ -28,9 +28,9 @@ set curl_distfile               ${distfiles}
 distfiles                       ${curl_distfile}:curl
 
 checksums                       ${curl_distfile} \
-                                rmd160  ac59faa4f713bcf13004f7c6663e0ac31031c5d1 \
-                                sha256  2cb9c2356e7263a1272fd1435ef7cdebf2cd21400ec287b068396deb705c22c4 \
-                                size    2474940
+rmd160  ac59faa4f713bcf13004f7c6663e0ac31031c5d1 \
+sha256  2cb9c2356e7263a1272fd1435ef7cdebf2cd21400ec287b068396deb705c22c4 \
+size    2474940
 
 if {${name} eq ${subport}} {
     PortGroup                   muniversal 1.0
@@ -287,9 +287,9 @@ subport curl-ca-bundle {
     distfiles-append            ${certdata_distfile}:certdata
 
     checksums-append            ${certdata_distfile} \
-                                rmd160  e1119533ee468881d723ea48585aa2e4384c69fb \
-                                sha256  284d41c132a84c0c1a2f4d3de6a040c980c1ae6e230c45720268f8e8565f1636 \
-                                size    264178
+rmd160  e1119533ee468881d723ea48585aa2e4384c69fb \
+sha256  284d41c132a84c0c1a2f4d3de6a040c980c1ae6e230c45720268f8e8565f1636 \
+size    264178
 
     extract.only                ${curl_distfile}
     extract.post_args-append    ${worksrcdir}/Makefile \

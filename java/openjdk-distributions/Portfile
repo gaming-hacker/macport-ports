@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -103,8 +103,8 @@ subport openjdk7-zulu {
 
     distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
     checksums    rmd160  5b7a9a2a6c08501a6585df46389d8438b1df23d7 \
-                 sha256  dcc720d6fe21f4c73d41e3276c032396f4e0a91f51b0fcf2b6530a3daa93c61d \
-                 size    68525632
+sha256  dcc720d6fe21f4c73d41e3276c032396f4e0a91f51b0fcf2b6530a3daa93c61d \
+size    68525632
 
     worksrcdir   ${distname}/zulu-7.jdk
 
@@ -126,13 +126,13 @@ subport openjdk8-corretto {
     if {${configure.build_arch} eq "x86_64"} {
         distname     amazon-corretto-${version}-macosx-x64
         checksums    rmd160  4d61d171dccf47712455d3b4e3976a56de7ac665 \
-                     sha256  6a6e9a6d2592c3705ef736256486133e0c7f4adf8cbd90e8c95f2bda460c01ed \
-                     size    118754955
+sha256  6a6e9a6d2592c3705ef736256486133e0c7f4adf8cbd90e8c95f2bda460c01ed \
+size    118754955
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     amazon-corretto-${version}-macosx-aarch64
         checksums    rmd160  cb801bae9d5b436a6ffe014d4827e2a78aece294 \
-                     sha256  0801bcdf8bb85032a450ac78ffadcf9cfc0d1218c5cdf8a25e3ad1b31200a21e \
-                     size    102882291
+sha256  0801bcdf8bb85032a450ac78ffadcf9cfc0d1218c5cdf8a25e3ad1b31200a21e \
+size    102882291
     }
 
     worksrcdir   amazon-corretto-8.jdk
@@ -165,8 +165,8 @@ subport openjdk8-openj9 {
     worksrcdir   jdk${version}-b${build}
 
     checksums    rmd160  2311bc6a6bc259adee9c7bba01f0133ce2846f21 \
-                 sha256  f4b1ec4b1ba3eb318642ddcbb0c02d67e6edfc9e37a7c3bfb13630e4806942e2 \
-                 size    128972742
+sha256  f4b1ec4b1ba3eb318642ddcbb0c02d67e6edfc9e37a7c3bfb13630e4806942e2 \
+size    128972742
 }
 
 subport openjdk8-temurin {
@@ -186,8 +186,8 @@ subport openjdk8-temurin {
     worksrcdir   jdk${version}-b${build}
 
     checksums    rmd160  20fa5b11b34ee833b62cca7d9d7d6f76b9047759 \
-                 sha256  a75e8182bb8e77a02c7b4d9f93120c64c1988e2c415b3646d4f4496544e87291 \
-                 size    107924497
+sha256  a75e8182bb8e77a02c7b4d9f93120c64c1988e2c415b3646d4f4496544e87291 \
+size    107924497
 }
 
 subport openjdk11-corretto {
@@ -205,13 +205,13 @@ subport openjdk11-corretto {
     if {${configure.build_arch} eq "x86_64"} {
         distname     amazon-corretto-${version}-macosx-x64
         checksums    rmd160  752d92e2e87d3feda836e7c7afa39982ea6b24f3 \
-                     sha256  36afb7f091cd9b986a50c3f878f167c59eae615f004b2cb1c5c394f9f2fc215a \
-                     size    187526579
+sha256  36afb7f091cd9b986a50c3f878f167c59eae615f004b2cb1c5c394f9f2fc215a \
+size    187526579
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     amazon-corretto-${version}-macosx-aarch64
         checksums    rmd160  d1980a49d5539b892a6ed09f7d100501da1c7d80 \
-                     sha256  939f0cc40f4dd749647e352ea2759fbf73c8c59662476ca237113abf9eed0710 \
-                     size    185394420
+sha256  939f0cc40f4dd749647e352ea2759fbf73c8c59662476ca237113abf9eed0710 \
+size    185394420
     }
 
     worksrcdir   amazon-corretto-11.jdk
@@ -232,13 +232,13 @@ subport openjdk11-graalvm {
     if {${configure.build_arch} eq "x86_64"} {
         distname     graalvm-ce-java11-darwin-amd64-${version}
         checksums    rmd160  6c4afee0143d6cf4373fa8faf36a6e3eeb4bce22 \
-                     sha256  c4c9df94ca47b83b582758b87d39042732ba0193fc63f1ab93f6818005a1fe6b \
-                     size    435795441
+sha256  c4c9df94ca47b83b582758b87d39042732ba0193fc63f1ab93f6818005a1fe6b \
+size    435795441
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     graalvm-ce-java11-darwin-aarch64-${version}
         checksums    rmd160  5e834b8bc8ea1150e1f8f95bdc623a81d904fddc \
-                     sha256  06bc19a0b1e93aa3df5e15c08e97f8cef624cb6070eeae40a69a51ec7fd41152 \
-                     size    404445467
+sha256  06bc19a0b1e93aa3df5e15c08e97f8cef624cb6070eeae40a69a51ec7fd41152 \
+size    404445467
     }
 
     worksrcdir   graalvm-ce-java11-${version}
@@ -265,13 +265,13 @@ subport openjdk11-openj9 {
     if {${configure.build_arch} eq "x86_64"} {
         distname     ibm-semeru-open-jdk_x64_mac_${version}_${build}_openj9-${openj9_version}
         checksums    rmd160  2d8d7a2633be194c0975642e9b3ef070c9f55a97 \
-                     sha256  53d18ed227d02ebc73344255a07b6331aa7d990abfd12fce1396376afcfd17cc \
-                     size    203564021
+sha256  53d18ed227d02ebc73344255a07b6331aa7d990abfd12fce1396376afcfd17cc \
+size    203564021
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     ibm-semeru-open-jdk_aarch64_mac_${version}_${build}_openj9-${openj9_version}
         checksums    rmd160  5c09b0cd81b4466b320a7c997c9ba2eaf67933f6 \
-                     sha256  f71a81f3496ad5cda9bb1f2f23dbb47360202dedca126cf8e92437b3f017d11e \
-                     size    180597648
+sha256  f71a81f3496ad5cda9bb1f2f23dbb47360202dedca126cf8e92437b3f017d11e \
+size    180597648
     }
 
     worksrcdir   jdk-${version}+${build}
@@ -292,8 +292,8 @@ subport openjdk11-sap {
     worksrcdir   sapmachine-jdk-${version}.jdk
     
     checksums    rmd160  c5cb8d973381ee35aaab6f11367c1f41bfa7e5af \
-                 sha256  7744b3632fba1c6e8339b9fb74c46728f8109c07070df49d898799832a934abd \
-                 size    186905770
+sha256  7744b3632fba1c6e8339b9fb74c46728f8109c07070df49d898799832a934abd \
+size    186905770
 
 }
 

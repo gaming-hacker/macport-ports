@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        rabbitmq rabbitmq-server 3.10.0 v
 revision            0
 checksums           rmd160  42449bd517d5a254091138db8596ea406ed0b169 \
-                    sha256  5058fc0d33305a016b0c08c9a54e328f63f51267366f07c31ce8d0a9cef508ea \
-                    size    12746956
+sha256  5058fc0d33305a016b0c08c9a54e328f63f51267366f07c31ce8d0a9cef508ea \
+size    12746956
 
 categories          net
 platforms           darwin
@@ -31,11 +31,11 @@ depends_lib         port:erlang
 depends_build       port:libxslt
 
 if {${os.platform} eq "darwin" && ${os.major} <= 9} {
-    depends_build-append port:py27-simplejson
-    build.args      PYTHON=${prefix}/bin/python2.7
+    depends_build-append port:py310-simplejson
+    build.args      PYTHON=${prefix}/bin/python3.10
 } else {
     # python3.X doesn't work
-    build.args      PYTHON=python2.7
+    build.args      PYTHON=python3.10
 }
 
 set serveruser      rabbitmq

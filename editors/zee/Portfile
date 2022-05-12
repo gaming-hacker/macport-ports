@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -27,9 +27,9 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160 6c47fbd30c3d7652ebc96e664913ff0c9121133d \
-                    sha256 32873b5e22a2d8b39f1ab172890d954108e31da879960984982ea96940972ac4 \
-                    size 107893
+rmd160 6c47fbd30c3d7652ebc96e664913ff0c9121133d \
+sha256 32873b5e22a2d8b39f1ab172890d954108e31da879960984982ea96940972ac4 \
+size 107893
 
 cargo.crates \
     addr2line                       0.17.0  b9ecd88a8c8378ca913a680cd98f0f13ac67383d35993f86c90a70e3f137816b \
@@ -176,7 +176,7 @@ cargo.crates \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     siphasher                       0.3.10  7bd3e3206899af3f8b12af284fafc038cc1dc2b41d1b89dd17297221c5d225de \
-    size_format                      1.0.2  6ed5f6ab2122c6dec69dca18c72fa4590a27e581ad20d44960fe74c032a0b23b \
+size_format                      1.0.2  6ed5f6ab2122c6dec69dca18c72fa4590a27e581ad20d44960fe74c032a0b23b \
     slab                             0.4.6  eb703cfe953bccee95685111adeedb76fabe4e97549a58d16f03ea7b9367bb32 \
     smallstr                         0.3.0  63b1aefdf380735ff8ded0b15f31aab05daf1f70216c01c02a12926badd1df9d \
     smallvec                         1.8.0  f2dd574626839106c320a323308629dcb1acfc96e32a8cba364ddc61ac23ee83 \
