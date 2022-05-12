@@ -12,7 +12,6 @@ size    5728780
 
 license             GPL-2+
 categories          devel
-platforms           darwin
 maintainers         {ctreleaven @ctreleaven} openmaintainer
 
 description         plugins to extend the geany IDE
@@ -43,7 +42,7 @@ depends_build-append \
 
 depends_lib         port:geany \
                     port:gettext \
-                    port:glib2 \
+                    path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:gpgme \
                     port:gtkspell3 \
                     port:libgit2 \

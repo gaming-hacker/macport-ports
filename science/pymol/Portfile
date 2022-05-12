@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,18 +24,18 @@ long_description    PyMOL is a molecular graphics system with an embedded Python
 homepage            https://www.pymol.org/
 
 checksums           rmd160  6432d47616aee1e5d9d40cc2a74425b33159d7a0 \
-sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
-size    10471287
+                    sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
+                    size    10471287
 
 subport pymol-devel {
-    github.setup    schrodinger pymol-open-source b8a7bae98b94194d3e7801395aa6c90e9308b460
-    version         20220425-[string range ${github.version} 0 7]
+    github.setup    schrodinger pymol-open-source 8b553202bc89a03a7ddc1677ece94bfa11399c73
+    version         20220504-[string range ${github.version} 0 7]
     conflicts       pymol
     revision        0
     maintainers     {reneeotten @reneeotten} openmaintainer
-    checksums       rmd160  58e8d763933c6a4972b2bcb0f23b250a4425b7a1 \
-sha256  5550f21925b44435cb2caac95d0274bcbb6bbb4ee33d8f4fbaa0d0894bbeb40d \
-size    10491023
+    checksums       rmd160  1763e4deffde2d120f4892b28b197aabd6f4b6f4 \
+                    sha256  1b0b36d688f2d03e00d34277d80498b01be7cbb2386bb4e50357fec3fdcb72ab \
+                    size    10491252
 }
 
 variant python37 conflicts python38 python39 python310 description {Use Python 3.7} {}
@@ -58,7 +58,7 @@ python.link_binaries no
 
 boost.depends_type build
 
-compiler.cxx_standard 2020
+compiler.cxx_standard 2011
 
 variant vtkm description {Use VTK-m for isosurface generation} {
     depends_lib-append  port:vtk-m
