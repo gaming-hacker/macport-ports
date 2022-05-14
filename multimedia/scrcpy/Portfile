@@ -6,7 +6,7 @@ PortGroup           meson 1.0
 PortGroup           compiler_blacklist_versions 1.0
 
 github.setup        Genymobile scrcpy 1.24 v
-revision            0
+revision            1
 
 categories          multimedia
 platforms           darwin
@@ -33,11 +33,11 @@ sha256  ae74a81ea79c0dc7250e586627c278c0a9a8c5de46c9fb5c38c167fb1a36f056 \
 size    41159
 
 depends_build-append \
-                    port:libusb \
                     port:pkgconfig
 
 depends_lib-append  path:lib/libavcodec.dylib:ffmpeg \
-                    port:libsdl2
+                    port:libsdl2 \
+                    port:libusb
 
 depends_run-append  port:android-platform-tools
 
