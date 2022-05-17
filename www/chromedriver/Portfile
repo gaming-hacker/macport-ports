@@ -79,7 +79,7 @@ destroot {
 # use these to specify python versions, python3 required
 # use ${prefix}/var/macports/sources/rsync.macports.org/macports/release/tarballs/ports/_resources/port1.0/group/python-1.0.tcl
 set python.version 310
-set python_branch   [string index ${python_version} 0].[string range ${python_version} 1 end]
+set python_branch   [string index ${python.version} 0].[string range ${python.version} 1 end]
 set python_prefix   ${frameworks_dir}/Python.framework/Versions/${python_branch}
 set python_bin      ${python_prefix}/bin/python${python_branch}
 
@@ -88,11 +88,11 @@ variant undetected \
     PortGroup       active_variants 1.1
 
     depends_lib-append \
-                    port:python${python_version} \
-                    port:py${python_version}-undetected-chromedriver
+                    port:python${python.version} \
+                    port:py${python.version}-undetected-chromedriver
 
     require_active_variants \
-                    py${python_version}-undetected-chromedriver \
+                    py${python.version}-undetected-chromedriver \
                     port_chromedriver_binary
 
     post-patch {
@@ -140,7 +140,7 @@ PATCH_CHROMEDRIVER_PY
 The original ${name} binary has been moved to ${subport}-original.\
 Use ${subport} with the port
 
-    py${python_version}-undetected-chromedriver +port_chromedriver_binary
+    py${python.version}-undetected-chromedriver +port_chromedriver_binary
 
 (with your preferred Python version) and the Python code:
 

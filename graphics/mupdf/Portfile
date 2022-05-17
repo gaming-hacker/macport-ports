@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -32,8 +32,8 @@ master_sites        ${homepage}downloads/archive/
 distname            ${name}-${version}-source
 
 checksums           rmd160  a6e91c264749cbc1587d9d3356dc13f604d0b6c0 \
-                    sha256  9f56a3b04cf477c9d042d4cd3c8b28a5383e75a1dbf1828e16e606dc9586d0ce \
-                    size    91675366
+sha256  9f56a3b04cf477c9d042d4cd3c8b28a5383e75a1dbf1828e16e606dc9586d0ce \
+size    91675366
 
 depends_build       port:pkgconfig
 
@@ -60,14 +60,14 @@ build.args-append   CC=${configure.cc} \
                     USE_SYSTEM_LIBS=yes \
                     build=release \
                     verbose=yes \
-                    shared
+shared
 
 destroot.destdir    prefix=${destroot}${prefix}
 destroot.args-append \
                     HAVE_GLUT=yes \
                     HAVE_X11=no \
                     USE_SYSTEM_LIBS=yes \
-                    shared=yes
+shared=yes
 
 variant x11 {
     depends_lib-append \

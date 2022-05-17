@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         XML-XPath 1.47 ../../authors/id/M/MA/MANWAR
 revision            0
 maintainers         nomaintainer
@@ -18,8 +18,8 @@ long_description    This module aims to comply exactly to the XPath \
 platforms           darwin
 
 checksums           rmd160  924fc4206f386e5fa2daf02098e17a7abba60589 \
-                    sha256  c11e27f7c2b1bf9f966097faeb80cebda9d7f021f80afd479d46c10146912c50 \
-                    size    56509
+sha256  c11e27f7c2b1bf9f966097faeb80cebda9d7f021f80afd479d46c10146912c50 \
+size    56509
 
 if {${perl5.major} != ""} {
     depends_build-append \

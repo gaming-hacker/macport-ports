@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,8 +28,8 @@ use_dmg             yes
 master_sites        https://sdk.lunarg.com/sdk/download/${sdkversion}/mac/
 
 checksums           sha256  bfe654af00030b6e65521f834f0830f15e18c828594226865f15c92a9ea68363 \
-                    rmd160  3674f67b37f7bcc1746d55c3baa975d0cca9dbaa \
-                    size    275553243
+rmd160  3674f67b37f7bcc1746d55c3baa975d0cca9dbaa \
+size    275553243
 
 depends_build       port:p7zip
 depends_skip_archcheck p7zip
