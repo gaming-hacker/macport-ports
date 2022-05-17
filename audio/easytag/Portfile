@@ -82,7 +82,7 @@ sha256  874093ab15893d9ba531d545a86b86b96fc0c00908bd6c98a26690dcb58b580f \
 size    1483172
 
     depends_lib-append \
-                    port:libsoup
+                    path:lib/pkgconfig/libsoup-2.4.pc:libsoup
 }
 
 post-activate {
