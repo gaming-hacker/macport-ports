@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,9 +21,9 @@ long_description    CLI tool which enables you to login and retrieve AWS \
 homepage            https://github.com/Versent/saml2aws
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  f66a499e5da4b6f50f996c23d8b4b5827f0ba8a5 \
-                        sha256  a7f2c915912824c426e1c6bafa303ed7a1728181e7a9ce03b983f3af34dfe39c \
-                        size    231982
+rmd160  f66a499e5da4b6f50f996c23d8b4b5827f0ba8a5 \
+sha256  a7f2c915912824c426e1c6bafa303ed7a1728181e7a9ce03b983f3af34dfe39c \
+size    231982
 
 if {${os.platform} eq "darwin" && ${os.major} < 13} {
     # The github.com/keybase/go-keychain dependency requires >= 10.9

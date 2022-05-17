@@ -20,8 +20,8 @@ master_sites        https://git.openjdk.java.net/jdk17u/archive/refs/tags
 distname            jdk-${version}+${build}
 
 checksums           rmd160  a26c6f077066279df9a9b5cb3cd1d4658e0c9584 \
-                    sha256  22575340d080a396442658356583d9c7dc0c44cefa52842fbfcf23eef23c39a0 \
-                    size    104797560
+sha256  22575340d080a396442658356583d9c7dc0c44cefa52842fbfcf23eef23c39a0 \
+size    104797560
 
 depends_lib         port:freetype
 depends_build       port:autoconf \

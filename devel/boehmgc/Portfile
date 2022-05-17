@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           muniversal 1.0
 github.setup        ivmai bdwgc 8.2.0 v
 revision            0
 checksums           rmd160  abb222e8e928ea89484e61c529d9822c6234a6cc \
-                    sha256  0ee4150f4353e6e986af9c27a8b8c810edc86def53d931c80291de44eceff45f \
-                    size    806577
+sha256  0ee4150f4353e6e986af9c27a8b8c810edc86def53d931c80291de44eceff45f \
+size    806577
 
 name                boehmgc
 

@@ -20,8 +20,8 @@ master_sites        https://git.openjdk.java.net/jdk18u/archive/refs/tags
 distname            jdk-${version}+${build}
 
 checksums           rmd160  16ac99fc5cfa368ec27613dfd90d56650026921f \
-                    sha256  57ed6b990b24b1e8b50099a265841add596d2c82e73c7c82bb530a8f53a47732 \
-                    size    105413077
+sha256  57ed6b990b24b1e8b50099a265841add596d2c82e73c7c82bb530a8f53a47732 \
+size    105413077
 
 depends_lib         port:freetype
 depends_build       port:openjdk18-bootstrap \

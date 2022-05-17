@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -39,13 +39,13 @@ distfiles               ${distname}${extract.suffix}:src \
                         ${distname}-doc${extract.suffix}:doc
 
 checksums               ${distname}${extract.suffix} \
-                            rmd160  4f49ce980f92ec119978763f65c04d9670da7d51 \
-                            sha256  9b8d1ecedd5b5e81fbf1918e876752a7dd948e05c1a0dba10ab863842d45acd5 \
-                            size    3332400 \
+rmd160  4f49ce980f92ec119978763f65c04d9670da7d51 \
+sha256  9b8d1ecedd5b5e81fbf1918e876752a7dd948e05c1a0dba10ab863842d45acd5 \
+size    3332400 \
                         ${distname}-doc${extract.suffix} \
-                            rmd160  8f546b5cc34ac22bff72bbe914604746bb44a49e \
-                            sha256  6f7c091249575e68c177c5e8d5c3e9705660d0d3ca1647aea365fd00a0bd3e8a \
-                            size    3130444
+rmd160  8f546b5cc34ac22bff72bbe914604746bb44a49e \
+sha256  6f7c091249575e68c177c5e8d5c3e9705660d0d3ca1647aea365fd00a0bd3e8a \
+size    3130444
 
 patchfiles              prevent-info-regeneration.patch
 post-patch {

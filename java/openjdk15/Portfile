@@ -20,8 +20,8 @@ master_sites        https://git.openjdk.java.net/jdk15u/archive/refs/tags
 distname            jdk-${version}+${build}
 
 checksums           rmd160  7034ea730935595dbcedfa3f1204adfc04bdffae \
-                    sha256  0f19c68aa6cfbfc566a83ed3a8fdaecd8fdb2eda0501e6bd2c0a081232fb0504 \
-                    size    102124719
+sha256  0f19c68aa6cfbfc566a83ed3a8fdaecd8fdb2eda0501e6bd2c0a081232fb0504 \
+size    102124719
 
 patchfiles          patch-openjdk15-build1.diff
 depends_lib         port:freetype

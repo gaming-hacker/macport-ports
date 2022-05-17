@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       cmake 1.0
@@ -27,8 +27,8 @@ master_sites                    sourceforge:project/arma
 use_xz                          yes
 
 checksums                       rmd160  86c85acb0a28b26be4bb46ec8da1bca2bf75f17b \
-                                sha256  bfa6154a5fefd832d28d530a58221fe4a2cff2a3bbdbd82e109bde53fb29dcdb \
-                                size    6847020
+sha256  bfa6154a5fefd832d28d530a58221fe4a2cff2a3bbdbd82e109bde53fb29dcdb \
+size    6847020
 
 depends_build-append            port:pkgconfig
 
@@ -65,7 +65,7 @@ if {[variant_isset gcc44] || [variant_isset gcc45] || [variant_isset gcc46] || \
     configure.cxx_stdlib        libstdc++
 }
 
-compiler.cxx_standard           2011
+compiler.cxx_standard 2020
 compiler.thread_local_storage   yes
 
 livecheck.type                  regex

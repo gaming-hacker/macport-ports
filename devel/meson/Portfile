@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ long_description    Meson is a build system designed to optimize programmer prod
                     as user friendly as possible.
 
 checksums           rmd160  96db39f90328a64d508cc7c0075aa89fecde939b \
-                    sha256  a0f5caa1e70da12d5e63aa6a9504273759b891af36c8d87de381a4ed1380e845 \
-                    size    2034805
+sha256  a0f5caa1e70da12d5e63aa6a9504273759b891af36c8d87de381a4ed1380e845 \
+size    2034805
 
 # As of verison 0.62.0, requires python 3.7 or later
 
@@ -75,8 +75,8 @@ platform darwin 8 {
     github.tarball_from releases
     revision            0
     checksums           rmd160  252d6261d3b8ecad345b1f966f8cfc60b52da6e1 \
-                        sha256  7634ec32955d3f897d623b88e9d2988451035f43d73c17a29caf767387baedb7 \
-                        size    1899464
+sha256  7634ec32955d3f897d623b88e9d2988451035f43d73c17a29caf767387baedb7 \
+size    1899464
 
     patchfiles-delete   patch-meson-clang-unknown-optimization-error.diff \
                         patch-meson-32bit-apple.diff \

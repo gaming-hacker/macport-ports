@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -30,8 +30,8 @@ depends_lib         port:libiconv \
 master_sites        https://download.gnome.org/sources/libxml2/2.9/
 
 checksums           rmd160  1feadd3f7e3a801f1fc1b9f4e90054f2f2c8fc33 \
-                    sha256  60d74a257d1ccec0475e749cba2f21559e48139efba6ff28224357c7c798dfee \
-                    size    3129968
+sha256  60d74a257d1ccec0475e749cba2f21559e48139efba6ff28224357c7c798dfee \
+size    3129968
 
 use_xz yes
 
