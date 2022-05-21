@@ -21,7 +21,8 @@ sha256  946b3d54ee652b597bdf50781c94b41c476582a144bfd196bbf9979f94f1cc9d \
 size    25696
 
 depends_build       port:scdoc
-depends_run         port:bash port:neovim
+depends_run         port:bash \
+                    path:bin/nvim:neovim
 
 use_configure       no
 build.pre_args      DESTDIR=${destroot} PREFIX=${prefix} VERSION=${version}

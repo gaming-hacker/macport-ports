@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,6 @@ version             0.2.1
 revision            0
 
 categories-append   science
-platforms           darwin
 supported_archs     noarch
 license             BSD
 maintainers         {petr @petrrr} openmaintainer
@@ -21,14 +20,12 @@ long_description    \
     applications with traitlets in combination with the scipy stack.
 
 homepage            https://github.com/jupyter-widgets/traittypes
-master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
-distname            ${python.rootname}-${version}
 
 checksums           rmd160  3c67f0ef27918bcb8fc272299b64b3080edf33dd \
-sha256  be6fa26294733e7489822ded4ae25da5b4824a8a7a0e0c2dccfde596e3489bd6 \
-size    13544
+                    sha256  be6fa26294733e7489822ded4ae25da5b4824a8a7a0e0c2dccfde596e3489bd6 \
+                    size    13544
 
-python.versions 310
+python.versions     39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -43,6 +40,4 @@ if {${name} ne ${subport}} {
         xinstall -m 0644 -W ${worksrcpath} README.md \
             LICENSE ${destroot}${docdir}
     }
-
-    livecheck.type  none
 }
