@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,8 +26,8 @@ long_description    kustomize lets you customize raw, template-free YAML files f
 homepage            https://kustomize.io
 
 checksums           rmd160  50f28e82ff26d1bace8d8633344abb93202ffb2b \
-                    sha256  70fd536380b7925e345f2fee1681f0a4a19082e480c0e6668d9e724a161ecb2e \
-                    size    4049754
+sha256  70fd536380b7925e345f2fee1681f0a4a19082e480c0e6668d9e724a161ecb2e \
+size    4049754
 
 build.dir           ${worksrcpath}/${name}
 

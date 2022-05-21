@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    \
     ${description} Sometimes this is just a more practical and quick way than doing things properly.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  912e65c81c644dfbda2859b3b3dedd3203fdb30d \
-                    sha256  6c758467bd546327505717ecab1a0f78a07226509dd5de098112065221882474 \
-                    size    144551
+rmd160  912e65c81c644dfbda2859b3b3dedd3203fdb30d \
+sha256  6c758467bd546327505717ecab1a0f78a07226509dd5de098112065221882474 \
+size    144551
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} \
@@ -281,8 +281,8 @@ cargo.crates \
     serde_derive                   1.0.137  1f26faba0c3959972377d3b2d306ee9f71faee9714294e41bb777f83f88578be \
     serde_json                      1.0.81  9b7ce2b32a1aed03c558dc61a5cd328f15aff2dbc17daad8fb8af04d2100e15c \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
-    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
+sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     simplelog                       0.12.0  48dfff04aade74dd495b007c831cd6f4e0cee19c344dd9dc0884c0289b70a786 \
     siphasher                       0.3.10  7bd3e3206899af3f8b12af284fafc038cc1dc2b41d1b89dd17297221c5d225de \

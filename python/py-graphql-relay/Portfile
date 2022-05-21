@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    GraphQL-relay-py is the Relay library for \
                     Relay-compliant servers using GraphQL-core.
 
 checksums           rmd160  8aaf7b796bc0103b7cca0c9d08f54a75d4281bda \
-                    sha256  5fc4c87525941bd408a532ccbd0c2033694450ec1c65b55cc71eeb9866b2ae40 \
-                    size    44907
+sha256  5fc4c87525941bd408a532ccbd0c2033694450ec1c65b55cc71eeb9866b2ae40 \
+size    44907
 
 python.versions 310
 python.pep517       yes

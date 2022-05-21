@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -47,45 +47,45 @@ if {${name} != ${subport}} {
 
     if {${python.version} == 27} {
       checksums \
-        rmd160  10120f30975fc9a4ee4f998fcffe764b5090172f \
-        sha256  20445e9a571cacdd350f702f0980e4dc559b6ff81f1d69affe9b0a862fef2f0e \
-        size    4634932
+rmd160  10120f30975fc9a4ee4f998fcffe764b5090172f \
+sha256  20445e9a571cacdd350f702f0980e4dc559b6ff81f1d69affe9b0a862fef2f0e \
+size    4634932
     }
 
     if {${python.version} == 35} {
         checksums   rmd160  cacdeb230a4deebe1e711a5436bf7d01b17fb2f4 \
-                    sha256  44385d3fc3c35910f0c9ba77ecfc526335c149825848131ada3ad89383ef6bb0 \
-                    size    5787877
+sha256  44385d3fc3c35910f0c9ba77ecfc526335c149825848131ada3ad89383ef6bb0 \
+size    5787877
     }
 
     if {${python.version} == 36} {
         checksums   rmd160  9fb800da26ab9d875f33d60cc2ed172e55b38a17 \
-                    sha256  02a9bea40a9f17d0cea5041ad3465422e478246b90f4fb1b44b48e6f38e9697f \
-                    size    6028519
+sha256  02a9bea40a9f17d0cea5041ad3465422e478246b90f4fb1b44b48e6f38e9697f \
+size    6028519
     }
 
     if {${python.version} == 37} {
         checksums   rmd160  c0e08881e8da4272509d7e65b9ce558ed459163a \
-                    sha256  f25d8caf71920bd86f801e052237ad00d6504aca265fe8d9537a201f41e15dfe \
-                    size    6289395
+sha256  f25d8caf71920bd86f801e052237ad00d6504aca265fe8d9537a201f41e15dfe \
+size    6289395
     }
 
     if {${python.version} == 38} {
         checksums   rmd160  153d42628ff521ed520397e8b759f255203c6c2b \
-                    sha256  7fcfb199805d109f089f02e0818d76b47594accc1886188eeaf56ff2602c0f40 \
-                    size    6698035
+sha256  7fcfb199805d109f089f02e0818d76b47594accc1886188eeaf56ff2602c0f40 \
+size    6698035
     }
 
     if {${python.version} == 39} {
         checksums   rmd160  81264214eb0759ce71ce2531feef1ea8bd3ee8a2 \
-                    sha256  d6aaf70bdfe051bdfb876eaffe1272cc3139ab20913aa63b3ce6201d9069df20 \
-                    size    6979296
+sha256  d6aaf70bdfe051bdfb876eaffe1272cc3139ab20913aa63b3ce6201d9069df20 \
+size    6979296
     }
 
     if {${python.version} == 310} {
         checksums   rmd160  c36ca721d8f8d89477ca4882ea6c7f3f6c5bace7 \
-                    sha256  0051ebcf13324bd7b5f59ccfbc2d4fa7c1ce9bf97205071451a5e6912fc54e75 \
-                    size    7267784
+sha256  0051ebcf13324bd7b5f59ccfbc2d4fa7c1ce9bf97205071451a5e6912fc54e75 \
+size    7267784
     }
 
     dist_subdir         ${name}/${revision}
