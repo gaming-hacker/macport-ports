@@ -26,7 +26,7 @@ depends_lib-append  port:libiconv \
                     path:lib/libssl.dylib:openssl \
                     port:websocketpp
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2020
 
 configure.args-append -DBUILD_SAMPLES=OFF -DBUILD_TESTS=OFF \
     -DOPENSSL_ROOT_DIR=${prefix} -DWERROR=OFF

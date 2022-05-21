@@ -22,7 +22,7 @@ checksums           rmd160  ce18d84edc73699a93e65f1953ee428e1c94992c \
                     size    35447
 
 python.pep517       yes
-python.versions     38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

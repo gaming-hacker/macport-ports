@@ -57,7 +57,7 @@ post-patch {
     }
 }
 
-use_xcode           yes
+use_xcode  no
 
 configure.args-append \
                     -DWITH_ALSA=OFF \

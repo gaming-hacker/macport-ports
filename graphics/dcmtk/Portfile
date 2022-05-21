@@ -35,7 +35,7 @@ checksums \
     sha256  98c0c93473badbd79322202a6d36c915de88287e0ce16dd3b9f193376e848c83 \
     size    6640330
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 
 # avoid self-conflict
 configure.cppflags-replace -I${prefix}/include -isystem${prefix}/include

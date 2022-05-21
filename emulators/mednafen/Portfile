@@ -77,8 +77,8 @@ worksrcdir          ${name}
 
 patchfiles          clang-version.patch
 
-compiler.c_standard 1999
-compiler.cxx_standard   2011
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 
 # clang: error: unable to execute command: Segmentation fault: 11
 compiler.blacklist-append {clang < 700}

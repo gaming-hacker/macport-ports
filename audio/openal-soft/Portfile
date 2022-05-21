@@ -44,7 +44,7 @@ depends_lib-append      port:libmysofa \
 
 patchfiles              alc-device.h.patch
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2020
 compiler.thread_local_storage   yes
 
 configure.args-append   -DALSOFT_EXAMPLES=OFF \

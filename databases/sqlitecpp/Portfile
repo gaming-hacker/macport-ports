@@ -19,6 +19,6 @@ size    2414382
 
 depends_lib-append      port:sqlite3
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 
 configure.args-append   -DSQLITECPP_INTERNAL_SQLITE=OFF

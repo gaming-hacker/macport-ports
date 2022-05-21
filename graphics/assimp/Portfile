@@ -47,7 +47,7 @@ post-extract {
 patchfiles-append   patch-code-Common-ZipArchiveIOSystem.cpp.diff \
                     patch-code-CMakeLists.txt.diff
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 compiler.thread_local_storage yes
 configure.args-append -DASSIMP_BUILD_ASSIMP_TOOLS:BOOL=OFF -DASSIMP_BUILD_TESTS:BOOL=OFF
 
