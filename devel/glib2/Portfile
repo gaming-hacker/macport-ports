@@ -12,7 +12,7 @@ name                        glib2
 conflicts                   glib2-devel glib2-upstream
 set my_name                 glib
 version                     2.64.6
-revision                    2
+revision                    3
 checksums                   rmd160  27938fd75bdcd4ca0afc8ebce6b137ed3c1fe6a5 \
 sha256  c36ee07a70164c71f046016fe6aaacd6368333c42590bc0cba47c344ffb853f1 \
 size    4781576
@@ -58,7 +58,7 @@ depends_build-append        port:gettext \
                             bin:xmllint:libxml2 \
                             port:pkgconfig
 
-set py_ver                  3.10
+set py_ver                  3.9
 set py_ver_nodot            [string map {. {}} ${py_ver}]
 
 depends_lib                 port:gettext-runtime \

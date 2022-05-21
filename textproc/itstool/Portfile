@@ -5,7 +5,7 @@ PortSystem          1.0
 name                itstool
 epoch               1
 version             2.0.7
-revision            2
+revision            3
 license             GPL-3+
 set branch          [join [lrange [split ${version} .] 0 1] .]
 
@@ -46,7 +46,7 @@ variant python310 description {Use Python 3.10} {
 }
 
 
-default_variants +python310
+default_variants +python39
 
 
 livecheck.type      regex

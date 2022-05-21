@@ -2,11 +2,13 @@
 
 PortSystem 1.0
 PortGroup select 1.0
+PortGroup clang_dependency 1.0
 
-name                python39
+name                python310
 
-# Remember to keep py39-tkinter and py39-gdbm's versions sync'd with this
-version             3.9.13
+# Remember to keep py310-tkinter and py310-gdbm's versions sync'd with this
+version             3.10.4
+revision            1
 
 set branch          [join [lrange [split ${version} .] 0 1] .]
 categories          lang
@@ -23,17 +25,16 @@ master_sites        ${homepage}ftp/python/${version}/
 
 distname            Python-${version}
 use_xz              yes
-checksums           md5 5e2411217b0060828d5f923eb422a3b8 \
-rmd160 2dc56b2166e5ae1eb19506590fcd599285eb9065 \
-sha256 125b0c598f1e15d2aa65406e83f792df7d171cdf38c16803b149994316a3080f
+checksums           md5 21f2e113e087083a1e8cf10553d93599 \
+                    rmd160 91646052fa7d6a2ba447e1eb6b594f4e76e26f62 \
+                    sha256 80bf925f571da436b35210886cf79f6eb5fa5d6c571316b73568343451f77a19
 
 patchfiles          patch-setup.py.diff \
                     patch-Lib-cgi.py.diff \
                     patch-configure.diff \
                     patch-Lib-ctypes-macholib-dyld.py.diff \
-                    patch-libedit.diff \
                     patch-configure-xcode4bug.diff \
-                    sysconfig.py.diff
+                    sysconfig.py.patch
 
 if {${os.platform} eq "darwin" && ${os.major} < 10} {
     # work around no copyfile and/or pthread_threadid_np on older systems
@@ -56,7 +57,7 @@ depends_run         port:python_select \
                     port:python3_select
 
 # blacklist llvm-gcc-4.2 compiler known to produce bad code
-compiler.blacklist  *llvm-gcc-4.2
+compiler.blacklist-append *llvm-gcc-4.2
 
 # ensurepip arg may be removed later, now conflicts with pip and setuptools
 # packages
@@ -65,6 +66,7 @@ configure.args      --enable-framework=${frameworks_dir} \
                     --enable-loadable-sqlite-extensions \
                     --with-computed-gotos \
                     --with-ensurepip=no \
+                    --with-readline=editline \
                     --with-system-expat \
                     --with-system-ffi
 
@@ -139,7 +141,7 @@ platform darwin {
             ${libdir}/_sysconfigdata__darwin_darwin.py
 
         # also remove gettext overlinking
-        reinplace "s|-lintl||" \
+        reinplace "s|-lintl ||" \
             ${libdir}/_sysconfigdata__darwin_darwin.py
 
         # recompile the modified file
@@ -171,7 +173,6 @@ post-destroot {
 notes "
 To make this the default Python or Python 3 (i.e., the version run by\
 the 'python' or 'python3' commands), run one or both of:
-
     sudo port select --set python $pythonNoDot
     sudo port select --set python3 $pythonNoDot
 "
