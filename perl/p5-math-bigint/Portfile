@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.34
-perl5.setup         Math-BigInt 1.999831
+perl5.branches      5.28 5.30 5.32 5.34
+perl5.setup         Math-BigInt 1.999834
 revision            0
 maintainers         nomaintainer
 categories-append   math
@@ -14,9 +14,9 @@ platforms           darwin
 description         Arbitrary size integer math package
 long_description    ${description}
 
-checksums           rmd160  1328ee1e5f55a3107498f86939f1b0e92353d436 \
-sha256  66b7d1c3268491db079e3aa385038dd93556596c0af4199d30a9ede633f1ae72 \
-size    2863621
+checksums           rmd160  c13397e0d05e4bf5de57a04b6edf20292fb014a8 \
+                    sha256  e9a84377fef953832e32d361c7b50e73eb567734f201cdeaf3d41d50baf0893d \
+                    size    2867337
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/JanDeDobbeleer/oh-my-posh 7.85.3 v
+go.setup            github.com/JanDeDobbeleer/oh-my-posh 7.90.2 v
 go.package          oh-my-posh
 github.tarball_from archive
 revision            0
@@ -19,9 +19,9 @@ license             GPL-3
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  30546cf0520117471eaa2c994a684658fa5b766d \
-sha256  72d2b09d52ea101c7dbfb5a6b8208199f3747fc0ee57f849aab22448ffd1dd7c \
-size    3872084
+checksums           rmd160  37bc62d216393ca620d84e4d0d41cb66db408c3a \
+                    sha256  338375891e760105aaee9c14929d9a1a71a4fd694a43d5f063848d07e856486f \
+                    size    3873653
 
 build.dir           ${worksrcpath}/src
 

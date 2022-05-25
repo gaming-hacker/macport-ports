@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -22,11 +22,11 @@ long_description \
 homepage        https://www.qbittorrent.org
 
 if {${os.platform} ne "darwin" || ${os.major} >= 17} {
-    github.setup    qbittorrent qBittorrent 4.4.2 release-
+    github.setup    qbittorrent qBittorrent 4.4.3 release-
     revision        0
-    checksums       rmd160  e295477a5f2e95f12506209594ff3c86718a2d03 \
-sha256  20ce7d04837726e41441500167820df40c8161adf458a31570ae5f2f21e0e4ff \
-size    9197242
+    checksums       rmd160  77525f3cc0f098e833be63b0d1ffbe62e953a961 \
+                    sha256  352ab30e20569121417fd36159fca02ad8cc38f8abc4021e8a56496847fe8329 \
+                    size    7757290
 
     # Workaround xcrun: error: SDK "macosx12" cannot be located
     configure.sdk_version
@@ -34,7 +34,7 @@ size    9197242
     configure.args-append \
                     CONFIG+=c++17 \
                     DEFINES+=QBT_USES_LIBTORRENT2
-    compiler.cxx_standard 2020
+    compiler.cxx_standard 2017
     compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
     # Taken from MKVToolNix port
     if {${os.platform} eq "darwin" && ${os.major} == 17} {
@@ -51,13 +51,13 @@ size    9197242
     github.setup    qbittorrent qBittorrent 4.3.2 release-
     revision        3
     checksums       rmd160  543c1a5b59c15912cde31d98bed55810709aef75 \
-sha256  187b8625e8787384a68a30eff3702b0e5c246512cb20013a38a25553cb18c5e7 \
-size    7867939
+                    sha256  187b8625e8787384a68a30eff3702b0e5c246512cb20013a38a25553cb18c5e7 \
+                    size    7867939
 
     qt5.min_version 5.9
     configure.args-append \
                     CONFIG+=c++14
-    compiler.cxx_standard 2020
+    compiler.cxx_standard 2014
     compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
 }
 
