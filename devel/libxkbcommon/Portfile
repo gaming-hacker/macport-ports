@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,8 +12,8 @@ PortGroup           muniversal 1.0
 
 github.setup        xkbcommon libxkbcommon 1.4.1 xkbcommon-
 checksums           rmd160  be373d77c60aaf1532b81f5de1997f94bf983153 \
-                    sha256  943c07a1e2198026d8102b17270a1f406e4d3d6bbc4ae105b9e1b82d7d136b39 \
-                    size    471824
+sha256  943c07a1e2198026d8102b17270a1f406e4d3d6bbc4ae105b9e1b82d7d136b39 \
+size    471824
 
 categories          devel
 maintainers         {ryandesign @ryandesign} openmaintainer
@@ -36,7 +36,7 @@ depends_build-append \
                     port:pkgconfig \
                     port:xorg-util-macros
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 configure.args      -Ddefault_library=both \
                     -Denable-docs=false \

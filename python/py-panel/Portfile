@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,11 +16,11 @@ long_description    Panel is an open-source Python library that lets you create 
 supported_archs     noarch
 homepage            https://panel.holoviz.org
 
-python.versions     37 38 39 310
+python.versions 310
 
 checksums           rmd160  5f2545448126ca771e4addd595568733ef06f1d6 \
-                    sha256  0e9008f0a851cbcffbce0273d62b5bc62644d9030cc68535c824381df52113af \
-                    size    17959938
+sha256  0e9008f0a851cbcffbce0273d62b5bc62644d9030cc68535c824381df52113af \
+size    17959938
 
 if {${name} ne ${subport}} {
     python.pep517   yes

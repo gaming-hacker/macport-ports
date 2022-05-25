@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                1.0
 PortGroup                 fuse 1.0
@@ -25,8 +25,8 @@ long_description          CryFS encrypts your files, so you can safely store the
 homepage                  https://www.cryfs.org/
 
 checksums                 rmd160  798106ac28621532695bf29ec39c47e64f5bf674 \
-                          sha256  a89ab8fea2d494b496867107ec0a3772fe606ebd71ef12152fcd233f463a2c00 \
-                          size    10419264
+sha256  a89ab8fea2d494b496867107ec0a3772fe606ebd71ef12152fcd233f463a2c00 \
+size    10419264
 
 extract.mkdir             yes
 
@@ -46,7 +46,7 @@ depends_lib-append        port:curl \
 cmake.build_type          Release
 universal_variant         no
 
-compiler.cxx_standard     2014
+compiler.cxx_standard 2020
 
 configure.args-append    -DBoost_USE_MULTITHREADED=on \
                          -DBoost_USE_STATIC_LIBS=off \

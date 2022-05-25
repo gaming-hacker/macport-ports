@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -24,8 +24,8 @@ long_description \
                 as a PostgreSQL extension.
 
 checksums       rmd160  e51f1b93532fbbffb96ce6f5c274eec45ceded86 \
-                sha256  091f2cd2552d2315bdb9d225964c977aee7cb64e9553c7e22173c9c5f691ef17 \
-                size    2963596
+sha256  091f2cd2552d2315bdb9d225964c977aee7cb64e9553c7e22173c9c5f691ef17 \
+size    2963596
 
 depends_build   path:bin/cmake:cmake \
                 port:perl${perl5.major} \
@@ -59,7 +59,7 @@ if {![variant_isset postgresql11] && \
     default_variants +postgresql14
 }
 
-compiler.c_standard     2011
+compiler.c_standard 2017
 # Work around MacPorts base C11 compiler selection bug.
 # https://github.com/macports/macports-base/pull/196
 compiler.blacklist-append {clang < 500}

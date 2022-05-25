@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        ibara oksh 7.1 oksh-
 revision            0
 checksums           rmd160  222003aa9780cec456ef88fb97101b4125d8f3c8 \
-                    sha256  9dc0b0578d9d64d10c834f9757ca11f526b562bc5454da64b2cb270122f52064 \
-                    size    309406
+sha256  9dc0b0578d9d64d10c834f9757ca11f526b562bc5454da64b2cb270122f52064 \
+size    309406
 
 homepage            https://devio.us/~bcallah/oksh/
 github.tarball_from releases

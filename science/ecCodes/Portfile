@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup cmake     1.1
@@ -19,8 +19,8 @@ master_sites        https://confluence.ecmwf.int/download/attachments/45757960
 distname            eccodes-${version}-Source
 
 checksums           rmd160  47355fa7fab0978495db93c617d91a9f5dfccc89 \
-                    sha256  392f632612e16a8c0bb0b8f6d627cbc3f54e56f51ace05bceac368377ab52e49 \
-                    size    12308389
+sha256  392f632612e16a8c0bb0b8f6d627cbc3f54e56f51ace05bceac368377ab52e49 \
+size    12308389
 
 long_description \
     ecCodes is a package developed by ECMWF which provides an application programming interface and \

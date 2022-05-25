@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,8 +24,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 supported_archs     noarch
 
 checksums           rmd160  c991b979a257ff1c68cbea4b05646a201b3e9165 \
-                    sha256  ebf8b56cb541d017eb49b4abc41edbc38d3db8aa04b540b91e4e0422ce68a900 \
-                    size    4800
+sha256  ebf8b56cb541d017eb49b4abc41edbc38d3db8aa04b540b91e4e0422ce68a900 \
+size    4800
 
 depends_run-append  path:bin/git:git
 

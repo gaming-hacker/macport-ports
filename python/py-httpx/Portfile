@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ supported_archs     noarch
 homepage            https://github.com/encode/httpx
 
 checksums           rmd160  ffa062dc9ce8649c3e8180b28b178101a74fe3de \
-                    sha256  f28eac771ec9eb4866d3fb4ab65abd42d38c424739e80c08d8d20570de60b0ef \
-                    size    108102
+sha256  f28eac771ec9eb4866d3fb4ab65abd42d38c424739e80c08d8d20570de60b0ef \
+size    108102
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 homepage            https://github.com/pre-commit/identify
 
 checksums           rmd160  d2c125a4fc63b11bea3e76807236f53d4f359ed0 \
-                    sha256  3d11b16f3fe19f52039fb7e39c9c884b21cb1b586988114fbe42671f03de3e82 \
-                    size    98845
+sha256  3d11b16f3fe19f52039fb7e39c9c884b21cb1b586988114fbe42671f03de3e82 \
+size    98845
 
-python.versions     39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

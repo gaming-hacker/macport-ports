@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           php 1.1
@@ -9,7 +9,7 @@ maintainers         {ryandesign @ryandesign} openmaintainer
 license             PHP-3.01
 
 # php71-mcrypt and earlier subports are in the php Portfile.
-php.branches        7.2 7.3 7.4 8.0 8.1
+php.branches 8.1
 php.pecl            yes
 
 description         a PHP interface to the mcrypt library, which offers \
@@ -21,8 +21,8 @@ if {[vercmp ${php.branch} 7.2] >= 0} {
     version         1.0.5
     revision        0
     checksums       rmd160  1b4634e8ff1cddf157dd16226e4a8f77ae76c004 \
-                    sha256  c9f51e211640a15d2a983f5d80e26660656351651d6f682d657bdf1cfa07d8a3 \
-                    size    27056
+sha256  c9f51e211640a15d2a983f5d80e26660656351651d6f682d657bdf1cfa07d8a3 \
+size    27056
 
 }
 
