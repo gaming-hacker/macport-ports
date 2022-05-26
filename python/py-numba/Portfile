@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ long_description    Numba is an Open Source NumPy-aware optimizing compiler \
 homepage            https://numba.pydata.org/
 
 checksums           rmd160  a412eca7d36f1ac731b32fcd06cc130577005d8d \
-                    sha256  0f8e5d576d77ce0b156d3194d15c4e08dd7150988d37a9207dd45d1cff93dace \
-                    size    2343595
+sha256  0f8e5d576d77ce0b156d3194d15c4e08dd7150988d37a9207dd45d1cff93dace \
+size    2343595
 
 variant tbb description "Add support for TBB" {
     depends_lib-append  port:tbb
