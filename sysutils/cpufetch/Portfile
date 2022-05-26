@@ -5,7 +5,7 @@ PortGroup           github 1.0
 PortGroup           makefile 1.0
 
 github.setup        Dr-Noob cpufetch 1.02 v
-revision            0
+revision            1
 categories          sysutils
 license             GPL-2
 maintainers         {mps @Schamschula} openmaintainer
@@ -18,6 +18,8 @@ sha256  46bf822db9b4baabda0f88f6816c8239e9833199da0c1a8782e35741c30353c6 \
 size    2767526
 
 use_configure       no
+
+patchfiles          patch-M1Ultra.diff
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/cpufetch    ${destroot}${prefix}/bin
