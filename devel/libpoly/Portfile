@@ -25,6 +25,11 @@ size    614216
 
 depends_lib-append  port:gmp
 
+compiler.c_standard 2011
+
+# Fixes build for PPC
+patchfiles          patch-doctest.diff
+
 configure.args-append \
                     -DLIBPOLY_BUILD_STATIC_PIC=OFF \
                     -DLIBPOLY_BUILD_STATIC=OFF \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               perl5 1.0
@@ -7,8 +7,8 @@ name                    net-snmp
 version                 5.9.1
 revision                1
 checksums               rmd160  3e9cdfbb383abfb981854aede71476fe7df35ae6 \
-sha256  eb7fd4a44de6cddbffd9a92a85ad1309e5c1054fb9d5a7dd93079c8953f48c3f \
-size    6711774
+                        sha256  eb7fd4a44de6cddbffd9a92a85ad1309e5c1054fb9d5a7dd93079c8953f48c3f \
+                        size    6711774
 
 categories              net
 license                 BSD
@@ -27,7 +27,9 @@ long_description        This is net-snmp, a derivative of CMU's SNMP \
                         handle SNMP traps, a version of the unix 'netstat' \
                         command using SNMP, a Tk/perl MIB browser.
 
-perl5.branches 5.34
+perl5.branches          5.28 5.30 5.32 5.34
+perl5.default_branch    5.28
+perl5.create_variants   ${perl5.branches}
 
 depends_build           port:automake
 

@@ -25,7 +25,6 @@ size    133496
 python.versions 310
 
 if {${name} ne ${subport}} {
-
     depends_lib-append \
                     port:py${python.version}-binaryornot \
                     port:py${python.version}-click \
@@ -37,6 +36,4 @@ if {${name} ne ${subport}} {
                     port:py${python.version}-requests \
                     port:py${python.version}-setuptools \
                     port:py${python.version}-six
-
-    livecheck.type  none
 }

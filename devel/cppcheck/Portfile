@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                  1.0
 PortGroup                   github 1.0
 
-github.setup                danmar cppcheck 2.7.5
+github.setup                danmar cppcheck 2.8
 revision                    0
 
 categories                  devel
@@ -21,9 +21,9 @@ long_description            Cppcheck is an analysis tool for C and C++ code. Unl
 
 github.tarball_from         archive
 
-checksums                   rmd160  b1d1ee1b72e900d36aaf3917bec609f0051dfac4 \
-sha256  6c7ac29e57fa8b3ac7be224510200e579d5a90217e2152591ef46ffc947d8f78 \
-size    3940968
+checksums                   rmd160  857d2b5adb9773a571580f28b2e679e597cdf573 \
+                            sha256  57298f3b805f0eb816a04115fbc70e701f75083cfb0305a44246e365cf27606a \
+                            size    3919580
 
 set python_branch   3.10
 set python_version  [string map {"." ""} ${python_branch}]
@@ -43,7 +43,7 @@ post-patch {
 
 }
 
-compiler.cxx_standard 2020
+compiler.cxx_standard       2011
 
 use_configure               no
 
