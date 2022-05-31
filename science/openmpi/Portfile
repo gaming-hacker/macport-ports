@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -43,8 +43,8 @@ set subdir          ompi/v${branch}/downloads/
 master_sites        https://www.open-mpi.org/software/${subdir}
 
 checksums           rmd160  b156f9f4084bb29b5835384ed82cb7c45d8ce22c \
-                    sha256  92912e175fd1234368c8730c03f4996fe5942e7479bb1d10059405e7f2b3930d \
-                    size    10042839
+sha256  92912e175fd1234368c8730c03f4996fe5942e7479bb1d10059405e7f2b3930d \
+size    10042839
 
 use_bzip2           yes
 

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Conf-Libconfig 0.101 ../../authors/id/C/CN/CNANGEL/
 
 platforms           darwin
@@ -14,8 +14,8 @@ description         Perl extension for libconfig
 long_description    ${description}
 
 checksums           rmd160  89d63cfc61b3928130c951b51ea71f91fe1d2d17 \
-                    sha256  aa58e07503d9b34c8e7b7c4eff6461452cb24607e5736ba1c2af9009d61cad85 \
-                    size    47919
+sha256  aa58e07503d9b34c8e7b7c4eff6461452cb24607e5736ba1c2af9009d61cad85 \
+size    47919
 
 if {${perl5.major} != ""} {
     depends_build-append \

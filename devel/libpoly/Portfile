@@ -25,7 +25,7 @@ size    614216
 
 depends_lib-append  port:gmp
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 # Fixes build for PPC
 patchfiles          patch-doctest.diff

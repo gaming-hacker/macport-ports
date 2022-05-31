@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ homepage            https://source.android.com/source/developing.html
 github.tarball_from archive
 
 checksums           rmd160  ed446d5705ba9f321bb1c62ddf1917a70d5b0607 \
-                    sha256  ed601e3c7f74441f49af5e28a760198f7f5077dc8e7608901894a13966fdd6ce \
-                    size    243783
+sha256  ed601e3c7f74441f49af5e28a760198f7f5077dc8e7608901894a13966fdd6ce \
+size    243783
 
 depends_run         port:git
 

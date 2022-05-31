@@ -19,7 +19,7 @@ size    13137
 supported_archs     noarch
 
 # https://trac.macports.org/ticket/63991
-compiler.c_standard 1989
+compiler.c_standard 2017
 compiler.cxx_standard   1998
 post-patch {
     reinplace "s| quiet => 0 | quiet => 0, config => { cc => '${configure.cc}' } |" inc/Probe.pm

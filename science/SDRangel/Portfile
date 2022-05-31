@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             github 1.0
@@ -19,8 +19,8 @@ long_description    ${description}
 
 github.setup          f4exb sdrangel 7.2.1 v
 checksums             rmd160  4d2dcd02d681cef3ecb12bad7845a0bc81544d33 \
-                      sha256  bedddf3b128bb0e882e49fa80027e8c187be62b651692e6c6b34b05a21bc27a6 \
-                      size    69997752
+sha256  bedddf3b128bb0e882e49fa80027e8c187be62b651692e6c6b34b05a21bc27a6 \
+size    69997752
 revision              0
 
 # check just the version 7 branch for now
@@ -31,12 +31,12 @@ license_noconflict-append \
     openssl \
     openssl11
 
-compiler.c_standard   2011
+compiler.c_standard 2017
 # error: call to 'abs' is ambiguous
 #   float dec = std::abs(degrees) + minutes * 1.0f/60.0f + seconds * 1.0f/(60.0f*60.0f);
 # std::abs was only introduced in c++17 so whilst the port claims to only
 # require c++14 it actually needs c++17
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # use C++17 for the build itself
 patchfiles-append     use-cxx17.patch

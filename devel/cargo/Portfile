@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -45,9 +45,9 @@ depends_skip_archcheck-append \
                     libssh2
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  0268990af28d06a1bba6fd7a4505ffc062624b12 \
-                    sha256  afa5cd07b818fe781c639217e0694692439f3da25b363c332c460f0d438017ad \
-                    size    2041164
+rmd160  0268990af28d06a1bba6fd7a4505ffc062624b12 \
+sha256  afa5cd07b818fe781c639217e0694692439f3da25b363c332c460f0d438017ad \
+size    2041164
 
 set cargo_version   [rust.add_bootstrap_components ${configure.build_arch} cargo]
 cargo.bin           ${workpath}/cargo-${cargo_version}-[option triplet.${configure.build_arch}]/cargo/bin/cargo
@@ -191,7 +191,7 @@ cargo.crates \
     serde_ignored                    0.1.3  1940036ca2411651a40012009d062087dfe62817b2191a03750fb569e11fa633 \
     serde_json                      1.0.81  9b7ce2b32a1aed03c558dc61a5cd328f15aff2dbc17daad8fb8af04d2100e15c \
     shell-escape                     0.1.5  45bb67a18fa91266cc7807181f62f9178a6873bfad7dc788c42e6430db40184f \
-    sized-chunks                     0.6.5  16d69225bde7a69b235da73377861095455d298f2b970996eec25ddbb42b3d1e \
+sized-chunks                     0.6.5  16d69225bde7a69b235da73377861095455d298f2b970996eec25ddbb42b3d1e \
     socket2                          0.4.4  66d72b759436ae32898a2af0a14218dbf55efde3feeb170eb623637db85ee1e0 \
     strip-ansi-escapes               0.1.1  011cbb39cf7c1f62871aea3cc46e5817b0937b49e9447370c93cacbe93a766d8 \
     strsim                          0.10.0  73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623 \

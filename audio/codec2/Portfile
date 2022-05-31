@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ homepage            http://www.rowetel.com/codec2.html
 github.setup        drowe67 codec2 df0ac65154d048bc888b0e5bf921a4b2490b0811
 version             20220425-[string range ${github.version} 0 7]
 checksums           rmd160  11da5c8be4edc8725254179f5d482e9b65827e74 \
-                    sha256  5237ec5d65976cb554aeb8aadd8ae0e3cb155bb8728fb48fa6ae9d1368d9c6e3 \
-                    size    14788237
+sha256  5237ec5d65976cb554aeb8aadd8ae0e3cb155bb8728fb48fa6ae9d1368d9c6e3 \
+size    14788237
 revision            1
 epoch               1
 
@@ -39,7 +39,7 @@ depends_lib-append \
     port:libsamplerate \
     port:speex
 
-compiler.c_standard 1999
+compiler.c_standard 2017
 
 configure.args-append \
     -DCMAKE_BUILD_TYPE="Release"

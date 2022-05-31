@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -27,13 +27,13 @@ master_sites https://download.oracle.com/java/17/archive/
 if {${configure.build_arch} eq "x86_64"} {
     distname     jdk-${version}_macos-x64_bin
     checksums    rmd160  b89c9ee434dedde9a19e5a9b46dbdc899685212f \
-                 sha256  4e774c6ebf4c7f3a8511513fa341e5d73c1d27c6e8f1131d0916bf3f2bd3e773 \
-                 size    178220776
+sha256  4e774c6ebf4c7f3a8511513fa341e5d73c1d27c6e8f1131d0916bf3f2bd3e773 \
+size    178220776
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     jdk-${version}_macos-aarch64_bin
     checksums    rmd160  55e1e38de6e46734cea38aa116bca7e7781d3bad \
-                 sha256  241a6ad1ddea0480e7fc6cb2813011b796aa91033d5787857dd16177fa175ea9 \
-                 size    175556313
+sha256  241a6ad1ddea0480e7fc6cb2813011b796aa91033d5787857dd16177fa175ea9 \
+size    175556313
 }
 
 worksrcdir   jdk-${version}.jdk

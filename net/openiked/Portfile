@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description    A free implementation of the Internet Key Exchange (IKEv2) p
 homepage            https://www.openiked.org
 
 checksums           rmd160  6511ece88324acebdbc3e7f3153c70201040e37f \
-                    sha256  c56c7632e4d11104af965806b1c23d498fc289922274240665da29047bfa455d \
-                    size    307644
+sha256  c56c7632e4d11104af965806b1c23d498fc289922274240665da29047bfa455d \
+size    307644
 
 depends_lib         port:libevent
 

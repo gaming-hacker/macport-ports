@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ revision            0
 categories-append   textproc
 license             MIT
 
-python.versions     37 38 39 310
+python.versions 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    openpyxl is a pure python reader and writer of Excel \
 homepage            https://openpyxl.readthedocs.org
 
 checksums           rmd160  97ae36ed29467f4bdb70e3f6162d2c2294f05c2d \
-                    sha256  e47805627aebcf860edb4edf7987b1309c1b3632f3750538ed962bbcc3bd7449 \
-                    size    179688
+sha256  e47805627aebcf860edb4edf7987b1309c1b3632f3750538ed962bbcc3bd7449 \
+size    179688
 
 if {${name} ne ${subport}} {
     depends_build-append \

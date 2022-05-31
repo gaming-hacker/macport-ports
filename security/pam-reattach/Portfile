@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ long_description    \
     programs like screen and tmux.
 
 checksums           sha256  b1b735fa7832350a23457f7d36feb6ec939e5e1de987b456b6c28f5738216570 \
-                    rmd160  51deb14c35521d3da87b60d9b1b3860597dad3f2 \
-                    size    7556
+rmd160  51deb14c35521d3da87b60d9b1b3860597dad3f2 \
+size    7556
 
 variant withcli description { Install CLI application that reattaches } {
     configure.args-append   -DENABLE_CLI=ON

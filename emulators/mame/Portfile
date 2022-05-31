@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 #------------------------------------------------------------------------------
 # Portfile Style Notes
@@ -89,8 +89,8 @@ if {${g_mame_latest}} {
                     mame-patch-0240-dist.mak-disable-pdf.diff
 
     checksums       rmd160  efe4e7d9c9d269fd0d1a08e2c2d4b5f0c9b7ccb9 \
-                    sha256  843c917edc46008a27b439a1fc66fc12a27c84e55e08753b963789e5614cebf7 \
-                    size    185401807
+sha256  843c917edc46008a27b439a1fc66fc12a27c84e55e08753b963789e5614cebf7 \
+size    185401807
 
 } else {
     set g_mame_release \
@@ -111,9 +111,9 @@ if {${g_mame_latest}} {
                     mame-patch-0226-src-posixfile-build-error.diff
 
     checksums       \
-                    rmd160  b9e4ae321b7673790d374c63bbe966d1502d6738 \
-                    sha256  7c4c9ec232ba988e65fd29665c9b8e40b5ac3aa9f561eeb107cebbf08ba94baf \
-                    size    196379874
+rmd160  b9e4ae321b7673790d374c63bbe966d1502d6738 \
+sha256  7c4c9ec232ba988e65fd29665c9b8e40b5ac3aa9f561eeb107cebbf08ba94baf \
+size    196379874
 }
 
 # Note: For user-presentable version string, we add a period between the first

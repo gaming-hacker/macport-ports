@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description \
 homepage            https://jiffyclub.github.io/palettable/
 
 checksums           rmd160  3c5616dd0e5bc09cf975007065e628750dc2a83c \
-                    sha256  72feca71cf7d79830cd6d9181b02edf227b867d503bec953cf9fa91bf44896bd \
-                    size    105475
+sha256  72feca71cf7d79830cd6d9181b02edf227b867d503bec953cf9fa91bf44896bd \
+size    105475
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

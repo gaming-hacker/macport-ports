@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -12,9 +12,9 @@ description         Find and replace text in source files.
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  0e8bb6da265a835340be1a4e3dfd69f84b88e350 \
-                    sha256  7109bf19c0f62ec477c952c1c509353f7c6abd19deb9169384ebc9d21ad71dc7 \
-                    size    20427
+rmd160  0e8bb6da265a835340be1a4e3dfd69f84b88e350 \
+sha256  7109bf19c0f62ec477c952c1c509353f7c6abd19deb9169384ebc9d21ad71dc7 \
+size    20427
 
 categories          textproc
 installs_libs       no

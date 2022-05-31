@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    {*}${description} \
     precision, plotting, and a user-friendly interface.
 
 checksums           rmd160 1f0ed10797d89a080818d319fcc6227664ae9fee \
-                    sha256 fdb8f35492bc61a58233409f882f7af6ee690be2666f43fe893d5367ed4fb23e \
-                    size 1055323
+sha256 fdb8f35492bc61a58233409f882f7af6ee690be2666f43fe893d5367ed4fb23e \
+size 1055323
 
 patchfiles          patch-add-missed-header-include.diff
 

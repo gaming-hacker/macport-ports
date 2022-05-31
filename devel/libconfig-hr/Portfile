@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -15,8 +15,8 @@ master_sites    ${homepage}/dist
 distname        libconfig-${version}
 
 checksums       rmd160 01d5defed51040fccb94a134728fa0d783c25542 \
-                sha256 545166d6cac037744381d1e9cc5a5405094e7bfad16a411699bcff40bbb31ee7 \
-                size   730800
+sha256 545166d6cac037744381d1e9cc5a5405094e7bfad16a411699bcff40bbb31ee7 \
+size   730800
 
 description \
     A new libconfig implementation with both C and C++ bindings.
