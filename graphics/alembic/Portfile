@@ -38,7 +38,7 @@ depends_lib-append  port:openexr
 # This is the default C++ standard for MacPorts,
 # so we don't need to specify it ourselves.
 # (Reference: https://trac.macports.org/wiki/CompilerSelection)
-#compiler.cxx_standard 1998
+#compiler.cxx_standard 2020
 
 configure.args-append   -DUSE_EXAMPLES=ON
 
