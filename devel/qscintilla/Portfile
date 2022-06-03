@@ -71,7 +71,7 @@ foreach qt_major {4 5} {
 
         if {${qt_major} eq 4} {
             # enable C++11
-            configure.cxxflags-append -std=gnu++20
+            configure.cxxflags-append -std=gnu++2a
             # respect configure.cxx_stdlib when linking
             if {[string match *clang* ${configure.cxx}]} {
                 configure.ldflags-append -stdlib=${configure.cxx_stdlib}

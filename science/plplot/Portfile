@@ -188,7 +188,7 @@ variant octave description {Add support for Octave} {
     depends_lib-append       port:swig-octave
     configure.args-delete   -DENABLE_octave=OFF
     configure.args-append   -DENABLE_octave=ON
-    configure.cxxflags-append -std=gnu++20
+    configure.cxxflags-append -std=gnu++2a
     license-append  GPL-2+
 }
 

@@ -43,7 +43,7 @@ if {${os.platform} ne "darwin" || ${os.major} > 11} {
         # It seems that newer versions of Qt add this automatically but
         # for older versions we have to add it.
         qt5.cxxflags-append \
-                    -std=gnu++20
+                    -std=gnu++2a
     }
 }
 

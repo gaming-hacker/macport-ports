@@ -217,7 +217,7 @@ if {${configure.cxx_stdlib} eq "macports-libstdc++" ||
     # being c++11 capable, even though some are. set this and hope for
     # the best.
 
-    configure.cxxflags-append -std=gnu++20
+    configure.cxxflags-append -std=gnu++2a
 
     # when using GCC on older OSX, certain math functions will not be
     # part of std:: without this macro defined. This macro required

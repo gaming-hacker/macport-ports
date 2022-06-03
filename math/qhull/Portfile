@@ -49,7 +49,7 @@ configure.args-append   -DBIN_INSTALL_DIR=${prefix}/bin \
                         -DMAN_INSTALL_DIR=${prefix}/share/man/man1
 
 configure.cxxflags-append \
-                        -std=gnu++20
+                        -std=gnu++2a
 
 post-destroot {
     ln -s ${prefix}/include/libqhull ${destroot}${prefix}/include/qhull

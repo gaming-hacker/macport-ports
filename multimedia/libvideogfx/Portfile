@@ -31,7 +31,7 @@ depends_lib-append  path:lib/libavcodec.dylib:ffmpeg \
 
 # patch to upstream git master commit 0da468e49e1abdcb12e507a04e0900a59d377c78
 # patch for ffmpeg-4.0 compatibility
-# patch libvideogfx.pc.in to ask for -std=gnu++20
+# patch libvideogfx.pc.in to ask for -std=gnu++2a
 
 patchfiles          patch-0da468e49e1abdcb12e507a04e0900a59d377c78.diff \
                     patch-ffmpeg-4.0.diff \
@@ -45,7 +45,7 @@ use_autoreconf      yes
 autoreconf.args     -fvi
 
 # uses C++11 language features without specifying the standard
-configure.cxxflags-append -std=gnu++20
+configure.cxxflags-append -std=gnu++2a
 
 configure.args      --with-ffmpeg \
                     --without-x \

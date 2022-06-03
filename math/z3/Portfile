@@ -43,7 +43,7 @@ worksrcdir          ${name}-${github.tag_prefix}${version}
 cmake.build_type    Release
 cmake.generator     Ninja
 
-# Build requires -std=gnu++20
+# Build requires -std=gnu++2a
 compiler.cxx_standard 2020
 
 # Don't overide z3's default optimization flags 

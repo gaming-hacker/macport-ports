@@ -68,7 +68,7 @@ if {${subport} eq ${name}} {
                     ${worksrcpath}/build
 
     compiler.cxx_standard 2020
-    configure.cxxflags-append -std=gnu++20
+    configure.cxxflags-append -std=gnu++2a
 
     configure.args  -DGENERATE_H3DAPI_loader_PROJECTS:BOOL=OFF \
                     -DGENERATE_H3DLoad_PROJECTS:BOOL=OFF \

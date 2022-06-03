@@ -140,7 +140,7 @@ mpi.setup          -gcc
 # Further: Building Boost using C++11 compliance does not seem to then
 # require ports depending on Boost to also require C++11 compliance,
 # and requiring it does make such building easier for those ports.
-configure.cxxflags-append -std=gnu++20
+configure.cxxflags-append -std=gnu++2a
 compiler.cxx_standard 2020
 
 # This flag fixes the return type of unsetenv(3)

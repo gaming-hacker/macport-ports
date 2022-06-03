@@ -30,5 +30,5 @@ depends_build-append \
 
 depends_lib         port:nettle
 
-configure.args      CPPFLAGS='-I${prefix}/include/ -std=gnu++20'\
+configure.args      CPPFLAGS='-I${prefix}/include/ -std=gnu++2a'\
                     LDFLAGS=-L${prefix}/lib

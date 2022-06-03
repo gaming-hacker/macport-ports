@@ -56,7 +56,7 @@ configure.args-append \
 
 # as of 3.6.0, protobuf3-cpp requires c++11
 compiler.cxx_standard 2020
-configure.cxxflags-append -std=gnu++20
+configure.cxxflags-append -std=gnu++2a
 
 # force protobuf3-cpp into the no_threadlocal mode on older systems
 if { ${os.platform} eq "darwin" && ${os.major} < 11 } {

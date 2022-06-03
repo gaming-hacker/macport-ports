@@ -24,7 +24,7 @@ size    151570
 
 if {${name} ne ${subport}} {
     compiler.cxx_standard 2020
-    configure.cxxflags-append -std=gnu++20
+    configure.cxxflags-append -std=gnu++2a
     configure.cc        {*}${configure.cxx} {*}${configure.cxxflags}
     build.env           "CPPFLAGS=${configure.cppflags}"
 

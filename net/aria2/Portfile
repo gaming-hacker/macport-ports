@@ -52,7 +52,7 @@ post-destroot {
 
 if {![variant_isset gnutls]} {
     # C++14
-    configure.cxxflags-append -std=gnu++20
+    configure.cxxflags-append -std=gnu++2a
     compiler.blacklist-append {clang < 800.0.38}
     compiler.cxx_standard 2020
 } else {

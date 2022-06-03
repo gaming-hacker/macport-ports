@@ -52,7 +52,7 @@ configure.cppflags-append   -Wno-long-long
 # although clangs up to clang-9 let this through with a warning,
 # gcc generates an error and will not build unless proper std=c++14 is set
 compiler.cxx_standard 2020
-configure.cxxflags-append   -std=gnu++20
+configure.cxxflags-append   -std=gnu++2a
 
 use_parallel_build  no
 

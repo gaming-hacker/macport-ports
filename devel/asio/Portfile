@@ -23,7 +23,7 @@ master_sites                sourceforge:project/${name}/${name}/${version}%20%28
 use_bzip2                   yes
 
 compiler.cxx_standard 2020
-configure.cxxflags-append   -std=gnu++20
+configure.cxxflags-append   -std=gnu++2a
 configure.args              --with-boost=no \
                             --with-openssl=[openssl::install_area]
 configure.env-append        ASIO_HAS_STD_CHRONO=1 \

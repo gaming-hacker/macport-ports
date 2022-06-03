@@ -66,7 +66,7 @@ pre-configure {
 
     if {![gcc_variant_isset]} {
         # needed for clang; clang_variant_isset would miss case of default clang compiler.
-        configure.cxxflags-append "-std=gnu++20"
+        configure.cxxflags-append "-std=gnu++2a"
     }
 
     if {[gcc_variant_isset]} {

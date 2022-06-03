@@ -45,7 +45,7 @@ compiler.blacklist-append *gcc* {clang < 900} {macports-clang-3.[0-9]} {macports
 # error: template argument for template template parameter must be a class template or type alias template
 compiler.blacklist-append {clang < 1000}
 
-configure.cxxflags-append -std=gnu++20
+configure.cxxflags-append -std=gnu++2a
 compiler.cxx_standard 2020
 
 configure.args-append -DENABLE_CRYPTO=False \

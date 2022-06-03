@@ -28,7 +28,7 @@ patchfiles-append    patch-CtlSimdInst.cpp.diff
 
 # see https://trac.macports.org/ticket/57523
 compiler.cxx_standard 2020
-configure.cxxflags-append -std=gnu++20
+configure.cxxflags-append -std=gnu++2a
 
 depends_build-append     \
     port:pkgconfig

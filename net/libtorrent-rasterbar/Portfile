@@ -39,7 +39,7 @@ compiler.cxx_standard 2020
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
 
 # ensure that compiler is using C++14 mode
-configure.cxxflags-append -std=gnu++20
+configure.cxxflags-append -std=gnu++2a
 
 configure.args-append \
                     -DBoost_LIBRARY_DIR_RELEASE=[boost::lib_dir] \

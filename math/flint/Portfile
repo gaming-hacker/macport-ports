@@ -32,7 +32,7 @@ configure.args-append   --with-gmp=${prefix} \
 
 # NTL requires C++11
 configure.cxxflags-append \
-                        -std=gnu++20
+                        -std=gnu++2a
 
 test.run                yes
 test.target             DYLD_FALLBACK_LIBRARY_PATH=${worksrcpath} check

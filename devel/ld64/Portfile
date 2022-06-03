@@ -186,7 +186,7 @@ subport ld64-274 {
 
     depends_lib-append port:libcxx
     configure.cxx_stdlib libc++
-    configure.cxxflags-append -std=gnu++20
+    configure.cxxflags-append -std=gnu++2a
 
     # Avoid `error: unknown type name 'uuid_string_t'`
     legacysupport.newest_darwin_requires_legacy 9
@@ -228,7 +228,7 @@ subport ld64-latest {
 
     depends_lib-append port:libcxx port:libtapi
     configure.cxx_stdlib libc++
-    configure.cxxflags-append -std=gnu++20
+    configure.cxxflags-append -std=gnu++2a
 
     # silence some warnings
     configure.cxxflags-append -Wno-deprecated-declarations

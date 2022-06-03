@@ -39,7 +39,7 @@ installs_libs       no
 use_configure       no
 
 build.cmd           ${configure.cxx}
-build.args          -o jtc -Wall -std=gnu++20 -Ofast
+build.args          -o jtc -Wall -std=gnu++2a -Ofast
 build.target        jtc.cpp
 
 set jtc_doc_dir     ${prefix}/share/doc/${name}

@@ -55,7 +55,7 @@ configure.env-append    PYTHON=${prefix}/bin/python3.10
 
 # required by tesseract
 compiler.cxx_standard 2020
-configure.cxxflags-append -std=gnu++20
+configure.cxxflags-append -std=gnu++2a
 
 livecheck.url           https://www.lrde.epita.fr/dload/olena
 livecheck.regex         (\[0-9.\]+)/

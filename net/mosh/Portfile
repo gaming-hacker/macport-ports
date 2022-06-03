@@ -51,7 +51,7 @@ post-patch {
 }
 
 #protobuf3-cpp requires c++11 now
-configure.cxxflags-append -std=gnu++20
+configure.cxxflags-append -std=gnu++2a
 
 # force protobuf3-cpp into the no_threadlocal mode on older systems
 if { ${os.platform} eq "darwin" && ${os.major} < 11 } {

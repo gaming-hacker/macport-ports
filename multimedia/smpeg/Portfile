@@ -60,7 +60,7 @@ configure.ldflags-append \
 
 # huffmantable.cpp:553:8: error: constant expression evaluates to -1 which cannot be narrowed to type 'unsigned int' [-Wc++11-narrowing]
 configure.cxxflags-append \
-                    -std=gnu++20
+                    -std=gnu++2a
 
 use_parallel_build  no
 
