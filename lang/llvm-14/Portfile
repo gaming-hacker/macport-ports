@@ -45,11 +45,11 @@ set sub_prefix          ${prefix}/libexec/llvm-${llvm_version}
 worksrcdir              ${worksrcdir}/llvm
 
 # hand-tweaked, approximately c++ standard 2017
-compiler.blacklist      *gcc* {clang < 1001} macports-clang-3.*
+#compiler.blacklist      *gcc* {clang < 1001} macports-clang-3.*
 # clang-13/work/build/include/c++/v1/optional:224:5: error: destructor cannot be marked constexpr
 #     _LIBCPP_CONSTEXPR_AFTER_CXX17 ~__optional_destruct_base()
-compiler.blacklist-append {clang < 1204} {macports-clang-[5-9].0}
-compiler.fallback       clang macports-clang-11 macports-clang-10
+#compiler.blacklist-append {clang < 1204} {macports-clang-[5-9].0}
+#compiler.fallback       clang macports-clang-11 macports-clang-10
 
 # We can't use Ninja with our custom destrooting plan for llvm
 #cmake.generator         Ninja
@@ -81,16 +81,16 @@ configure.args-append \
     -DFFI_LIBRARY_DIR=${prefix}/lib
 
 # Disable iOS support on older systems
-if {${os.platform} eq "darwin" && ${os.major} <= 12} {
-    configure.args-append    -DCOMPILER_RT_ENABLE_IOS=OFF
-}
+# if {${os.platform} eq "darwin" && ${os.major} <= 12} {
+#     configure.args-append    -DCOMPILER_RT_ENABLE_IOS=OFF
+# }
 
 # cctools is needed to handle objects from newer clang toolchains
-if {[string match macports-clang-* ${configure.compiler}]} {
+#if {[string match macports-clang-* ${configure.compiler}]} {
     depends_build-append            port:cctools
     depends_skip_archcheck-append   cctools
     configure.args-append           -DCMAKE_LIBTOOL=${prefix}/bin/libtool
-}
+#}
 
 set py_ver              3.10
 set py_ver_nodot        [string map {. {}} ${py_ver}]
@@ -103,15 +103,15 @@ configure.args-append   -DPython3_EXECUTABLE=${pythonfullpath}
 platform darwin {
     configure.cxx_stdlib libc++
     depends_lib-append port:libcxx
-    pre-fetch {
-        if {${os.major} < 11} {
-           supported_archs i386 x86_64
-            if {![file exists /usr/lib/libc++.dylib]} {
-                ui_error "$name requires a C++11 runtime, which your configuration does not allow"
-                error "unsupported configuration"
-            }
-        }
-    }
+#     pre-fetch {
+#         if {${os.major} < 11} {
+#            supported_archs i386 x86_64
+#             if {![file exists /usr/lib/libc++.dylib]} {
+#                 ui_error "$name requires a C++11 runtime, which your configuration does not allow"
+#                 error "unsupported configuration"
+#             }
+#         }
+#     }
 }
 
 patch.dir ${workpath}/${distname}
@@ -135,24 +135,24 @@ patchfiles-append \
     0019-10.6-and-less-use-emulated-TLS-before-10.7.patch \
     0025-lldb-add-defines-needed-for-older-SDKs.patch
 
-if {${os.platform} eq "darwin" && ${os.major} < 14} {
-    patchfiles-append \
-        0016-10.10-and-less-compiler-rt-find-macosx-sdk.patch
-}
-
-if {${os.platform} eq "darwin" && ${os.major} < 11} {
-    patchfiles-append \
-        0017-10.6-and-less-libcxx-work-around-no-reexported_symbo.patch \
-        0020-10.6-and-less-work-around-no-directory-watcher-befor.patch \
-        0021-10.6-and-less-libcxx-disable-Availability-tests.patch
-}
-
-if {${os.platform} eq "darwin" && ${os.major} < 10} {
-    patchfiles-append \
-        0022-10.5-and-less-default-to-fno-blocks.patch \
-        0023-10.5-and-less-use-older-cfname-and-fix-uuid-on-leopa.patch \
-        0024-10.5-and-less-compiler-rt-work-around-no-libdispatch.patch
-}
+# if {${os.platform} eq "darwin" && ${os.major} < 14} {
+#     patchfiles-append \
+#         0016-10.10-and-less-compiler-rt-find-macosx-sdk.patch
+# }
+#
+# if {${os.platform} eq "darwin" && ${os.major} < 11} {
+#     patchfiles-append \
+#         0017-10.6-and-less-libcxx-work-around-no-reexported_symbo.patch \
+#         0020-10.6-and-less-work-around-no-directory-watcher-befor.patch \
+#         0021-10.6-and-less-libcxx-disable-Availability-tests.patch
+# }
+#
+# if {${os.platform} eq "darwin" && ${os.major} < 10} {
+#     patchfiles-append \
+#         0022-10.5-and-less-default-to-fno-blocks.patch \
+#         0023-10.5-and-less-use-older-cfname-and-fix-uuid-on-leopa.patch \
+#         0024-10.5-and-less-compiler-rt-work-around-no-libdispatch.patch
+# }
 
 if {${os.platform} eq "darwin" && ${os.major} < 16} {
     # error: 'TARGET_OS_OSX' is not defined, evaluates to 0 [-Werror,-Wundef-prefix=TARGET_OS_]
