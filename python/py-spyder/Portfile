@@ -34,7 +34,7 @@ checksums           rmd160  3d7eefb629974fdece76d0754b9de847b5ba6792 \
                     sha256  7b9aab857cd44640f12b184fcabf044aa83424a4cbd3ee487aab29f665ff568f \
                     size    24415110
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-spyder-devel
