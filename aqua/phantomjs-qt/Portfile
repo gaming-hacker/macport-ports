@@ -81,7 +81,7 @@ array set modules {
     qtwebkit {
         {
         }
-        "port:python27"
+        "port:python310"
         "port:fontconfig port:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3"
         "qtbase"
         {"Qt WebKit" "Qt WebKit Widgets"}
@@ -858,7 +858,7 @@ foreach deps ${depends_check} {
         #    (see tools/qmake/mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.10
     }
 }
 if { ${python_framework} ne "" } {

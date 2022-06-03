@@ -391,7 +391,7 @@ if {${subport} eq "lldb-${llvm_version}"} {
 }
 
 variant tests description {Enable building of test code} {
-    depends_test-append     port:py39-psutil
+    depends_test-append     port:py310-psutil
     test.run                yes
     configure.args-append   -DLLVM_INCLUDE_TESTS=ON
     test.target             check

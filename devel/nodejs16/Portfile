@@ -8,7 +8,7 @@ PortGroup               legacysupport 1.1
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard   2014
+compiler.cxx_standard 2020
 
 name                    nodejs16
 version                 16.15.1
@@ -50,7 +50,7 @@ depends_lib-append      port:python${py_ver_nodot} \
 # TODO: when icu is upgraded to v68.x, use MacPorts'.
 #depends_lib-append             port:icu
 
-use_xcode               yes
+use_xcode  no
 
 # error: 'atomic_load<v8::internal::OwnedVector<const unsigned char> >' is unavailable: introduced in macOS 10.9
 set min_darwin 13

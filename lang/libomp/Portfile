@@ -52,8 +52,8 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
     }
 
     # Build requires std::atomic
-    configure.cxxflags-append -std=c++11
-    compiler.cxx_standard   2011
+    configure.cxxflags-append -std=gnu++20
+    compiler.cxx_standard 2020
 
     master_sites        https://github.com/llvm/llvm-project/releases/download/llvmorg-${version} \
                         https://releases.llvm.org/${version}
