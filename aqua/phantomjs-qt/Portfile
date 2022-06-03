@@ -30,7 +30,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # Qt builds differently when it detects C++-11
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 # see https://bugreports.qt.io/browse/QTBUG-53656
 # see https://github.com/ariya/phantomjs/issues/13930
@@ -275,7 +275,7 @@ foreach {module module_info} [array get modules] {
             patchfiles-append patch-qtbase-icu_test.diff
 
             # see https://trac.macports.org/ticket/59312
-            use_xcode yes
+            use_xcode  no
 
             #-----------------------------------------------------------------------------
             # qtbase is used for:
@@ -659,7 +659,7 @@ foreach {module module_info} [array get modules] {
             # special case
             if { ${module} eq "qtwebkit" } {
 
-                use_xcode yes
+                use_xcode  no
 
                 # from phantomjs build.py
                 configure.args-append \
@@ -733,7 +733,7 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}
 
-        use_xcode yes
+        use_xcode  no
 
         # if there is more than one version of the database system, create variants for each version
         if { [llength ${sql_info}] > 1 } {

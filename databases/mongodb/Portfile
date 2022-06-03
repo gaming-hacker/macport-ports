@@ -159,8 +159,8 @@ configure.args      --find-links [shellescape ${distpath}] \
                     --verbose \
                     --verbose
 
-compiler.c_standard 2011
-compiler.cxx_standard 2017
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 
 # This matches a version check of __apple_build_version__ in SConstruct.
 compiler.blacklist-append {clang < 1001.0.46}

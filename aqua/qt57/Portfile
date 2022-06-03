@@ -24,7 +24,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://wiki.qt.io/New_Features_in_Qt_5.7
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 master_sites        \
     https://download.qt.io/official_releases/qt/${branch}/${version}/submodules \
@@ -885,7 +885,7 @@ foreach {module module_info} [array get modules] {
             patchfiles-append patch-qtbase-icu_test.diff
 
             # see https://trac.macports.org/ticket/59312
-            use_xcode yes
+            use_xcode  no
 
             #-----------------------------------------------------------------------------
             # qtbase is used for:
