@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ master_sites        https://www.kermitproject.org/ftp/kermit/test/tar/
 distname            cku${version}
 
 checksums           rmd160  da48c7f377d4e8517a4768e656a6ac41f2d1e84b \
-                    sha256  c06f64abe5b1d5049a22bcd23cfa51c8bae93cce4f7b4de2f663fcca74ec54e6 \
-                    size    3007829
+sha256  c06f64abe5b1d5049a22bcd23cfa51c8bae93cce4f7b4de2f663fcca74ec54e6 \
+size    3007829
 
 extract.mkdir       yes
 build.target

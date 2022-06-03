@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -32,14 +32,14 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
     if { ${subport} eq "libomp-devel" } {
         version         14.0.4
         checksums       rmd160  75ad369911d553c6770420b9e6910ca5aad26f72 \
-                        sha256  d4b627e2668c3c1001b6c772297273dc67b42f2deec934a59650a55731f8d411 \
-                        size    1205512
+sha256  d4b627e2668c3c1001b6c772297273dc67b42f2deec934a59650a55731f8d411 \
+size    1205512
         livecheck.regex {"llvmorg-([0-9.rc-]+)".*}
     } else {
         version         14.0.4
         checksums       rmd160  75ad369911d553c6770420b9e6910ca5aad26f72 \
-                        sha256  d4b627e2668c3c1001b6c772297273dc67b42f2deec934a59650a55731f8d411 \
-                        size    1205512
+sha256  d4b627e2668c3c1001b6c772297273dc67b42f2deec934a59650a55731f8d411 \
+size    1205512
         livecheck.regex {"llvmorg-([0-9.]+)".*}
     }
 
@@ -79,7 +79,7 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
         worksrcdir      openmp-${version}/final/runtime
         version         3.8.1
         checksums       rmd160  a41054068a127ef84610afef8090109078cb6c46 \
-                        sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
+sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
         set rtpath      "./"
     }
     livecheck.type      none

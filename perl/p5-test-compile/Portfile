@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Test-Compile v3.1.0
 revision            0
 maintainers         nomaintainer
@@ -13,8 +13,8 @@ description         Check whether Perl files compile correctly
 long_description    ${description}
 
 checksums           rmd160  7e1a67ac2a4a855296db94c7e488a990da015bda \
-                    sha256  f1a3f708ea4fe3fbb3d7ef5aa1439dede22a923bb863234ea65a19400f80fd81 \
-                    size    18826
+sha256  f1a3f708ea4fe3fbb3d7ef5aa1439dede22a923bb863234ea65a19400f80fd81 \
+size    18826
 
 platforms           darwin
 

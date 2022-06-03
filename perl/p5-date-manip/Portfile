@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 name                p5-date-manip
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Date-Manip 6.88 ../../authors/id/S/SB/SBECK
 revision            0
 
@@ -20,8 +20,8 @@ long_description    This is a set of routines designed to make any common\
                     times are all easily done.
 
 checksums           rmd160  1770b2c3f606002d63afea4b4a9ca2a9ed1cd5e0 \
-                    sha256  a1251c039883ad6016b663e4edc9b173f78a6b7dca061b4f391e9dd30389a8c6 \
-                    size    2014373
+sha256  a1251c039883ad6016b663e4edc9b173f78a6b7dca061b4f391e9dd30389a8c6 \
+size    2014373
 
 if {${perl5.major} != ""} {
     depends_build-append \

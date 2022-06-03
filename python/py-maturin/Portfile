@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo_fetch 1.0
@@ -22,9 +22,9 @@ long_description    {*}${description}
 homepage            https://github.com/pyo3/maturin
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  694d382c774a265beebdcc159dd2d72ccd27c4d1 \
-                    sha256  ea5e7ee199ad03a031a4b2f402a7dbaa46bf24cd2e41088420e86a9c864d7e07 \
-                    size    155782
+rmd160  694d382c774a265beebdcc159dd2d72ccd27c4d1 \
+sha256  ea5e7ee199ad03a031a4b2f402a7dbaa46bf24cd2e41088420e86a9c864d7e07 \
+size    155782
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -258,9 +258,9 @@ if {${name} ne ${subport}} {
                     serde_derive 1.0.137 1f26faba0c3959972377d3b2d306ee9f71faee9714294e41bb777f83f88578be \
                     serde_json 1.0.81 9b7ce2b32a1aed03c558dc61a5cd328f15aff2dbc17daad8fb8af04d2100e15c \
                     serde_repr 0.1.8 a2ad84e47328a31223de7fed7a4f5087f2d6ddfe586cf3ca25b7a165bc0a5aed \
-                    sha2 0.9.9 4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
-                    sha2 0.10.2 55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
-                    sharded-slab 0.1.4 900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha2 0.9.9 4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+sha2 0.10.2 55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sharded-slab 0.1.4 900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
                     shlex 1.1.0 43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3 \
                     slab 0.4.6 eb703cfe953bccee95685111adeedb76fabe4e97549a58d16f03ea7b9367bb32 \
                     smallvec 1.8.0 f2dd574626839106c320a323308629dcb1acfc96e32a8cba364ddc61ac23ee83 \

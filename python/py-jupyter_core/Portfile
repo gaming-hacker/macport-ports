@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    {*}${description}
 homepage            https://jupyter.org
 
 checksums           rmd160  e6e94bc3ee6d6c0983845ba94e103dda28e0b59c \
-                    sha256  a6de44b16b7b31d7271130c71a6792c4040f077011961138afed5e5e73181aec \
-                    size    76535
+sha256  a6de44b16b7b31d7271130c71a6792c4040f077011961138afed5e5e73181aec \
+size    76535
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

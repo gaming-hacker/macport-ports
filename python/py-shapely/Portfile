@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,9 +28,9 @@ long_description \
 #master_sites       pypi:S/Shapely
 
 checksums           md5     1c7c263b96ce082664155b5f3c6b2589 \
-                    rmd160  2b0fa2c2486d3c9c0e82727605a3a67603ab394d \
-                    sha256  da23c8b0b4d611d005d7074b1bcde0ac74366559096a23fcb9f53a98cbf4ffef \
-                    size    322094
+rmd160  2b0fa2c2486d3c9c0e82727605a3a67603ab394d \
+sha256  da23c8b0b4d611d005d7074b1bcde0ac74366559096a23fcb9f53a98cbf4ffef \
+size    322094
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:geos

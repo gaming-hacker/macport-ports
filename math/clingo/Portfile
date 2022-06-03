@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ homepage            https://potassco.org/clingo/
 github.tarball_from archive
 
 checksums           rmd160  9392ae24672a7d302a6e74c016a9f9f71a03e8db \
-                    sha256  a2a0a590485e26dce18860ac002576232d70accc5bfcb11c0c22e66beb23baa6 \
-                    size    3136393
+sha256  a2a0a590485e26dce18860ac002576232d70accc5bfcb11c0c22e66beb23baa6 \
+size    3136393
 
 # clingo installs its own version of clasp.
 # As of now, it's just the latest release version of clasp, but I guess in theory

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -33,8 +33,8 @@ distname            ${name}-src-${my_version}
 use_xz              yes
 
 checksums           rmd160  924d050e0c4f3e6a241d18f8c2f08b94a3c07a99 \
-                    sha256  46c53cbc604b6c22df43473684c2a96b79f4e5362e47c1ef1d3d066890668814 \
-                    size    44507324
+sha256  46c53cbc604b6c22df43473684c2a96b79f4e5362e47c1ef1d3d066890668814 \
+size    44507324
 
 patch.pre_args      -p1
 patchfiles          patch-admin-Makefile.def.diff \

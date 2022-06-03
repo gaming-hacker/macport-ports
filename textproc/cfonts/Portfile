@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ long_description    This is a silly little command line tool for sexy fonts in t
                     Give your cli some love.
 
 checksums           ${distfiles} \
-                    rmd160  dc5c554c769d27d47c551683cc837ead26d887c8 \
-                    sha256  d33873ff9c81089b7a3034f4d1244a81aba5a7a6253838c24f6de9103540209e \
-                    size    3311857
+rmd160  dc5c554c769d27d47c551683cc837ead26d887c8 \
+sha256  d33873ff9c81089b7a3034f4d1244a81aba5a7a6253838c24f6de9103540209e \
+size    3311857
 
 build.dir           ${worksrcpath}/rust
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -131,7 +131,7 @@ cargo.crates \
     log                                                 0.4.17  abb12e687cfb44aa40f41fc3978ef76448f9b6038cad6aef4259d3c095a2382e \
     lscolors                                            0.10.0  88e4434edeec6cd16a7e8e13569af4568a66fcd6d79abd8696db22dd95f920e6 \
     match_cfg                                            0.1.0  ffbee8634e0d45d258acb448e7eaab3fce7a0a467395d4d9f228e3c1f01fb2e4 \
-    md-5                                                0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd6271f060fd37defb241949d0582 \
+md-5                                                0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd6271f060fd37defb241949d0582 \
     memchr                                               1.0.2  148fab2e51b4f1cfc66da2a7c32981d1d3c083a803978268bb11fe4b86925e7a \
     memchr                                               2.5.0  2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d \
     memmap2                                              0.5.3  057a3db23999c867821a7a59feb06a578fcb03685e983dff90daf9e7d24ac08f \
@@ -198,9 +198,9 @@ cargo.crates \
     scopeguard                                           1.1.0  d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd \
     selinux                                              0.2.7  0c4534fb886814d0015bcc290979263692213627bdf8ed4091746bb1c77acb0d \
     selinux-sys                                          0.5.2  12d374f91738fab4e9e49c656eca7de906b8ec3740c0b792ff0f397b247cb1a5 \
-    sha1                                                0.10.1  c77f4e7f65455545c2153c1253d25056825e77ee2533f0e41deb65a93a34852f \
-    sha2                                                0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
-    sha3                                                0.10.1  881bf8156c87b6301fc5ca6b27f11eeb2761224c7081e69b409d5a1951a70c86 \
+sha1                                                0.10.1  c77f4e7f65455545c2153c1253d25056825e77ee2533f0e41deb65a93a34852f \
+sha2                                                0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sha3                                                0.10.1  881bf8156c87b6301fc5ca6b27f11eeb2761224c7081e69b409d5a1951a70c86 \
     shlex                                                1.1.0  43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3 \
     signal-hook                                         0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                                      0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
@@ -265,9 +265,9 @@ cargo.crates \
     zip                                                  0.6.2  bf225bcf73bb52cbb496e70475c7bd7a3f769df699c0020f6c7bd9a96dcf0b8d
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  b3ef1c93106ef549d142d8a67f9c00be0dddf01e \
-                    sha256  527563ff39aeea9e56f91996226a51034ed648732de71d075e3d12683b90b155 \
-                    size    2015517
+rmd160  b3ef1c93106ef549d142d8a67f9c00be0dddf01e \
+sha256  527563ff39aeea9e56f91996226a51034ed648732de71d075e3d12683b90b155 \
+size    2015517
 
 build.pre_args-append --features macos
 
@@ -280,7 +280,7 @@ set binaries {
     link ln logname ls md5sum mkdir mkfifo mknod mktemp more mv
     nice nl nohup nproc numfmt od paste pathchk pinky pr printenv
     printf ptx pwd readlink realpath relpath rm rmdir seq sha1sum
-    sha224sum sha256sum sha3-224sum sha3-256sum sha3-384sum sha3-
+sha224sum sha256sum sha3-224sum sha3-256sum sha3-384sum sha3-
     512sum sha384sum sha3sum sha512sum shake128sum shake256sum shred
     shuf sleep sort split stat stdbuf sum sync tac tail tee test
     timeout touch tr true truncate tsort tty uname unexpand uniq

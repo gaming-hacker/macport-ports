@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ homepage            https://github.com/LonamiWebs/Telethon
 python.versions 310
 
 checksums           rmd160  7ebef3569ba02fcdb5886efba4b5d8183ad6b4a7 \
-                    sha256  818cb61281ed3f75ba4da9b68cb69486bed9474d2db4e0aa16e482053117452c \
-                    size    464470
+sha256  818cb61281ed3f75ba4da9b68cb69486bed9474d2db4e0aa16e482053117452c \
+size    464470
 
 if {${name} ne ${subport}} {
     depends_build-append  \

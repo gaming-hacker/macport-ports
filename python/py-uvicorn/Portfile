@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,8 +15,8 @@ long_description    {*}${description}
 homepage            https://github.com/encode/uvicorn
 
 checksums           rmd160  6b000f0dde7770795cdd5722c941d4d73b48227f \
-                    sha256  5180f9d059611747d841a4a4c4ab675edf54c8489e97f96d0583ee90ac3bfc23 \
-                    size    39534
+sha256  5180f9d059611747d841a4a4c4ab675edf54c8489e97f96d0583ee90ac3bfc23 \
+size    39534
 
 python.versions 310
 

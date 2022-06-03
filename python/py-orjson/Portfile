@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo_fetch 1.0
@@ -26,9 +26,9 @@ long_description    {*}${description}. It benchmarks as the fastest \
 homepage            https://github.com/ijl/orjson
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  14f31bef202780b2a57e9d48752b4f59a3286adc \
-                    sha256  e19d23741c5de13689bb316abfccea15a19c264e3ec8eb332a5319a583595ace \
-                    size    549236
+rmd160  14f31bef202780b2a57e9d48752b4f59a3286adc \
+sha256  e19d23741c5de13689bb316abfccea15a19c264e3ec8eb332a5319a583595ace \
+size    549236
 
 if {${name} ne ${subport}} {
     python.pep517   yes
