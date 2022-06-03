@@ -39,9 +39,6 @@ size    2260756
 
 configure.args      -DWITH_JPEG8=ON
 
-if {![info exists universal_possible]} {
-    set universal_possible [expr {${os.universal_supported} && [llength ${configure.universal_archs}] >= 2}]
-}
 if {${universal_possible} && [variant_isset universal]} {
     if {"x86_64" in ${configure.universal_archs} || "i386" in ${configure.universal_archs}} {
         depends_build-append port:nasm

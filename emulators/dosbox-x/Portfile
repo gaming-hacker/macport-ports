@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,12 +7,12 @@ PortGroup           app 1.0
 PortGroup           compiler_blacklist_versions 1.0
 PortGroup           muniversal 1.0
 
-github.setup        joncampbell123 dosbox-x 0.83.25 dosbox-x-v
+github.setup        joncampbell123 dosbox-x 0.84.0 dosbox-x-v
 revision            0
 
-checksums           rmd160  e0be1bf05599ef8bd76ee7d19c3d942fa783983f \
-sha256  f9691acf81f953371a166b1ccc9c8b3e58b984216f0145edf2d6f5a05e794ede \
-size    64715876
+checksums           rmd160  29bea139d6a521bfeb1584a04a5483c14a1b015c \
+                    sha256  564fbf8f0ab090c8b32bc38637c8204358c386b9cbffcb4f99a81bc82fddbad7 \
+                    size    65495321
 
 categories          emulators
 platforms           darwin
@@ -79,7 +79,7 @@ if {[variant_isset sdl1]} {
 # needs "___cpu_model" in compiler.rt
 compiler.blacklist-append {clang < 900}
 
-compiler.cxx_standard 2020
+compiler.cxx_standard 2011
 configure.cxxflags-append -Wno-unknown-warning-option
 
 post-destroot {

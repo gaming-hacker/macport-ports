@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-spyder-kernels
-version             2.3.0
+version             2.3.1
 revision            0
 epoch               1
 
@@ -18,11 +18,11 @@ long_description    ${description}
 
 homepage            https://github.com/spyder-ide/spyder-kernels
 
-checksums           rmd160  ba0bec2c74eadb7f1b49c1b386f328d92e66e54e \
-sha256  a5d536d0e8a5e774d7d616c102a8fa2d6aa45fd330a0b799b98eef158356d36c \
-size    70807
+checksums           rmd160  3fee31e88d73a4db8f3f0c3702b999697ea86885 \
+                    sha256  98fb77717ee94b5a3c8069612fc438bb748597179a5b3ecba290faa922782e50 \
+                    size    71165
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-spyder-kernels-devel

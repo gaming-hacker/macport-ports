@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 name                npm8
-version             8.11.0
+version             8.12.1
 revision            0
 categories          devel
 platforms           darwin
@@ -27,10 +27,10 @@ extract.suffix      .tgz
 
 # Please keep the sha1 - users can use it to validate sha values
 # published on npmjs.org for the package
-checksums           rmd160  3d759382d692c7b5eeda49258c7c27d18ea522cc \
-sha1    224fbca389252e43dd2a277249df3320a7f91189 \
-sha256  f2495337c9483d435457249dfdb40e62c70e7e0fa3f6dfcf21b45f3235a2fcde \
-size    2456743
+checksums           rmd160  6e64c6fdbefa0f05f5958bd4a637ced407fd5bc5 \
+                    sha1    624064fa7a8e0730223f6b2effe087e7127d567b \
+                    sha256  0046af28aaad61275927c3a66bace3e06e32b3d1d8a4be4cc2187e93571f4a37 \
+                    size    2458406
 
 worksrcdir          "package"
 

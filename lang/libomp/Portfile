@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -30,16 +30,16 @@ subport                 libomp-devel {}
 
 if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
     if { ${subport} eq "libomp-devel" } {
-        version         14.0.3
-        checksums       rmd160  91f5b260baa5dc886f59f04e9fde27f11d680c67 \
-sha256  0534ab5ce578db604a46eca56e4f83b46f26fbe4dd837abb79ed04c5543be379 \
-size    1205324
+        version         14.0.4
+        checksums       rmd160  75ad369911d553c6770420b9e6910ca5aad26f72 \
+                        sha256  d4b627e2668c3c1001b6c772297273dc67b42f2deec934a59650a55731f8d411 \
+                        size    1205512
         livecheck.regex {"llvmorg-([0-9.rc-]+)".*}
     } else {
-        version         14.0.3
-        checksums       rmd160  91f5b260baa5dc886f59f04e9fde27f11d680c67 \
-sha256  0534ab5ce578db604a46eca56e4f83b46f26fbe4dd837abb79ed04c5543be379 \
-size    1205324
+        version         14.0.4
+        checksums       rmd160  75ad369911d553c6770420b9e6910ca5aad26f72 \
+                        sha256  d4b627e2668c3c1001b6c772297273dc67b42f2deec934a59650a55731f8d411 \
+                        size    1205512
         livecheck.regex {"llvmorg-([0-9.]+)".*}
     }
 
@@ -52,8 +52,8 @@ size    1205324
     }
 
     # Build requires std::atomic
-    configure.cxxflags-append -std=gnu++2a
-    compiler.cxx_standard 2020
+    configure.cxxflags-append -std=c++11
+    compiler.cxx_standard   2011
 
     master_sites        https://github.com/llvm/llvm-project/releases/download/llvmorg-${version} \
                         https://releases.llvm.org/${version}
@@ -79,7 +79,7 @@ size    1205324
         worksrcdir      openmp-${version}/final/runtime
         version         3.8.1
         checksums       rmd160  a41054068a127ef84610afef8090109078cb6c46 \
-sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
+                        sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
         set rtpath      "./"
     }
     livecheck.type      none
@@ -90,6 +90,10 @@ cmake.out_of_source     yes
 
 # According to documentation builds with clang >= 3.3
 compiler.blacklist-append {clang < 500} *gcc*
+
+if {${os.major} <= 17} {
+    default_variants    +universal
+}
 
 # Do actual install into ${prefix}/(install|lib)/libomp
 # A little unorthodox, but to have clang automatically find the includes and
