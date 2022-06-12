@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ long_description    PyMOL is a molecular graphics system with an embedded Python
 homepage            https://www.pymol.org/
 
 checksums           rmd160  6432d47616aee1e5d9d40cc2a74425b33159d7a0 \
-                    sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
-                    size    10471287
+sha256  67c5aa944ce9ac2e3babd42e7e2b78ed11719283a2c0a063e100cfe24665c0d3 \
+size    10471287
 
 subport pymol-devel {
     github.setup    schrodinger pymol-open-source c28e663085793ccb0450c2e2
@@ -34,8 +34,8 @@ subport pymol-devel {
     revision        0
     maintainers     {reneeotten @reneeotten} openmaintainer
     checksums       rmd160  a4afa4b325bfefc213d2347c38631458db0abfb8 \
-                    sha256  cab557c7ba1c937d24415014bcb602c0ecd423055f709499e0bab11575bd1abe \
-                    size    10491184
+sha256  cab557c7ba1c937d24415014bcb602c0ecd423055f709499e0bab11575bd1abe \
+size    10491184
 }
 
 variant python37 conflicts python38 python39 python310 description {Use Python 3.7} {}

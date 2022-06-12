@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -14,8 +14,8 @@ description         Type::Tiny is a tiny class for creating Moose-like type cons
 long_description    ${description}
 
 checksums           rmd160  20e28846fecac06fc5386b2d53bf1849c649f68c \
-                    sha256  87ed66e2dbfd3342847e5945692be77883e961c684df803b2ec98c64576c41e9 \
-                    size    465115
+sha256  87ed66e2dbfd3342847e5945692be77883e961c684df803b2ec98c64576c41e9 \
+size    465115
 
 if {${perl5.major} != ""} {
     depends_build-append \

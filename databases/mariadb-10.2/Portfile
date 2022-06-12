@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -64,13 +64,13 @@ if {$subport eq $name} {
                  https://github.com/${submodule_github_author}/${submodule_github_project}/archive/${submodule_github_branch}:tagtwo
 
     checksums       ${main_distfile} \
-                    rmd160  1427ffa0e9ee9fad8cab8146eaf5a8059957f3fc \
-                    sha256  b0ef15fdb31436c92b2a543a21ecdc92456e9a1f87bc3ce2118227bb83a111aa \
-                    size    65164233 \
+rmd160  1427ffa0e9ee9fad8cab8146eaf5a8059957f3fc \
+sha256  b0ef15fdb31436c92b2a543a21ecdc92456e9a1f87bc3ce2118227bb83a111aa \
+size    65164233 \
                     ${submodule_distfile} \
-                    rmd160  c78575cf544d96cfba6cc9dcd5c86a43f6c26e52 \
-                    sha256  98db207c6ae8b9553947d05891571b211ab7aab461cd8f071c4730a1302e9a48 \
-                    size    967973
+rmd160  c78575cf544d96cfba6cc9dcd5c86a43f6c26e52 \
+sha256  98db207c6ae8b9553947d05891571b211ab7aab461cd8f071c4730a1302e9a48 \
+size    967973
 
     worksrcdir   ${github.project}-${git.branch}
 

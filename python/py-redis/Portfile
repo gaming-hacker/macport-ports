@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/redis/redis-py
 
 checksums           rmd160  dbe7d6583c2ddee2886e5d4e120dd2765e99e430 \
-                    sha256  2f7a57cf4af15cd543c4394bcbe2b9148db2606a37edba755368836e3a1d053e \
-                    size    4564562
+sha256  2f7a57cf4af15cd543c4394bcbe2b9148db2606a37edba755368836e3a1d053e \
+size    4564562
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-deprecated \

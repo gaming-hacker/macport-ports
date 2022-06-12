@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -16,8 +16,8 @@ version             ${branch}.6
 distname            cmake-${version}
 
 checksums           rmd160  858257d95fde810195e4cf7254072dd8db608cc4 \
-                    sha256  7410851a783a41b521214ad987bb534a7e4a65e059651a2514e6ebfc8f46b218 \
-                    size    7705400
+sha256  7410851a783a41b521214ad987bb534a7e4a65e059651a2514e6ebfc8f46b218 \
+size    7705400
 
 homepage            https://cmake.org
 master_sites        ${homepage}/files/v${branch}/

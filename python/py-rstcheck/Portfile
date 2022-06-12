@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    ${description}
 homepage            https://github.com/myint/rstcheck
 
 checksums           rmd160  d1da23c8ffeb185cbfd11bb77ee6221edf7e5a5e \
-                    sha256  2f69b972c682fbb6618e969273962f77c4307d6900e013b4d74f674f13fc81cb \
-                    size    17665
+sha256  2f69b972c682fbb6618e969273962f77c4307d6900e013b4d74f674f13fc81cb \
+size    17665
 
 python.versions 310
 python.pep517       yes

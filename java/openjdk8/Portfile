@@ -26,8 +26,8 @@ master_sites        https://git.openjdk.java.net/jdk8u/archive/refs/tags/
 distname            jdk${major}u${update}-b${build}
 
 checksums           rmd160  b2cde9b65a250c998587851d074d4d82c867e6a2 \
-                    sha256  063022673fe08b700bc5290abab72911ee544d784b4a9d16739139693b8c45a2 \
-                    size    88134914
+sha256  063022673fe08b700bc5290abab72911ee544d784b4a9d16739139693b8c45a2 \
+size    88134914
 
 patchfiles          patch-openjdk8-xcode.diff
 

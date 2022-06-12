@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -30,8 +30,8 @@ distname            go-ipfs-source
 dist_subdir         ${name}/${version}
 
 checksums           rmd160  fc74fb0765e62627b1f50aa0be1f143dbbba986e \
-                    sha256  784207b26b43def178f115451c4cf6f20915bfbbb9d2930113c67ea1a33aa4b3 \
-                    size    13474994
+sha256  784207b26b43def178f115451c4cf6f20915bfbbb9d2930113c67ea1a33aa4b3 \
+size    13474994
 
 build.cmd           make
 build.target        build

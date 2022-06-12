@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -21,8 +21,8 @@ homepage            https://www.lesbonscomptes.com/recoll/
 master_sites        ${homepage}
 
 checksums           rmd160  ce938b4d9ac1ba706044f6dea10473ac2632f67c \
-                    sha256  163ac6ec5a38d410262b509766b6f0985b7f87f21572be8a1b0cb93c4f412594 \
-                    size    3697735
+sha256  163ac6ec5a38d410262b509766b6f0985b7f87f21572be8a1b0cb93c4f412594 \
+size    3697735
 
 depends_lib         port:xapian-core \
                     port:aspell \

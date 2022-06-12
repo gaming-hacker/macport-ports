@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -18,8 +18,8 @@ long_description    \
 homepage            https://arduino.github.io/arduino-cli
 
 checksums           rmd160  6d11953f12b80e52d53bcba5c1069ab9196c00b8 \
-                    sha256  3b24cfd3a8b90669870af6be902247e2e57f599d0dd07a53ec2a6889cea2f736 \
-                    size    8605501
+sha256  3b24cfd3a8b90669870af6be902247e2e57f599d0dd07a53ec2a6889cea2f736 \
+size    8605501
 
 # FIXME: This port currently can't be built without allowing go mod to fetch
 build.env-delete    GOPROXY=off GO111MODULE=off

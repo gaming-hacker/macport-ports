@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ homepage            https://moarvm.org/
 master_sites        https://moarvm.org/releases/
 
 checksums           rmd160  542658d58bcb490f20b0a15d68ce9c89d3fd2a53 \
-                    sha256  ae06f50ba5562721a4e5eb6457e2fea2d07eda63e2abaa8c939c9daf70774804 \
-                    size    14867431
+sha256  ae06f50ba5562721a4e5eb6457e2fea2d07eda63e2abaa8c939c9daf70774804 \
+size    14867431
 
 depends_build       port:perl5 \
                     port:pkgconfig

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell_stack 1.0
@@ -33,5 +33,5 @@ homepage            http://darcs.net/
 master_sites        https://hackage.haskell.org/package/${name}-${version}
 
 checksums           rmd160  439a21015fb74802f5c619c04f910a1e4a656dc2 \
-                    sha256  d63c6cd236e31e812e8ad84433d27059387606269fbd953f4c349c3cb3aa242b \
-                    size    1271154
+sha256  d63c6cd236e31e812e8ad84433d27059387606269fbd953f4c349c3cb3aa242b \
+size    1271154

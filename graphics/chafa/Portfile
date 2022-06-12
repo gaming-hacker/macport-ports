@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin linux
 
 checksums           rmd160  a59df3af975511e2eb5c6a6bf4ba3d2d29a2838a \
-                    sha256  ff2a3a85ed762013a00104212a1335a4d07bb4a549c1b7bd366d0def6acef597 \
-                    size    1492037
+sha256  ff2a3a85ed762013a00104212a1335a4d07bb4a549c1b7bd366d0def6acef597 \
+size    1492037
 
 depends_build-append \
                     port:autoconf   \

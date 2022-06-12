@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ long_description    ffmpy is a simplistic FFmpeg command line wrapper. It \
 homepage            https://github.com/Ch00k/ffmpy
 
 checksums           rmd160  cb2d5368f76d2832cc8cf87716569c10c0fbd972 \
-                    sha256  757591581eee25b4a50ac9ffb9b58035a2794533db47e0512f53fb2d7b6f9adc \
-                    size    4841
+sha256  757591581eee25b4a50ac9ffb9b58035a2794533db47e0512f53fb2d7b6f9adc \
+size    4841
 
 if {${name} ne ${subport}} {
     depends_build-append \

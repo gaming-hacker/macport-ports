@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -20,9 +20,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  aa55e143ee16c3942140b23879475ddd3f4b75b0 \
-                    sha256  113a26739dc70925e747704258cff91d5b74786bd460c7315b1e15a4b0402e8f \
-                    size    15890671 \
+rmd160  aa55e143ee16c3942140b23879475ddd3f4b75b0 \
+sha256  113a26739dc70925e747704258cff91d5b74786bd460c7315b1e15a4b0402e8f \
+size    15890671 \
 
 destroot {
     xinstall -m 0755 \

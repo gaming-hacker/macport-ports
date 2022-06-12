@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -18,8 +18,8 @@ long_description    EverParse provides LowParse, verified-secure F*/Low* parser 
                     message format specification.
 
 checksums           rmd160  914ba6a092a8507d8c8678a469c22a5e4963d0e2 \
-                    sha256  708a744e0740d594859e989522de14b71bec153f3d34612b55751cf33a5f10ab \
-                    size    903279
+sha256  708a744e0740d594859e989522de14b71bec153f3d34612b55751cf33a5f10ab \
+size    903279
 
 depends_lib         port:fstar \
                     port:kremlin \

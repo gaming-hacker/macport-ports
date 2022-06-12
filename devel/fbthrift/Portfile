@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -11,8 +11,8 @@ PortGroup           compiler_blacklist_versions 1.0
 github.setup        facebook fbthrift 2022.06.06.00 v
 revision            0
 checksums           rmd160  e6dffb2a31570580d68f8d20ea6bf66d7ef2c5a7 \
-                    sha256  add554f5f4139f5fe16502a279f3b1233e3f30e56efa387728d59a10dcf6a053 \
-                    size    8057825
+sha256  add554f5f4139f5fe16502a279f3b1233e3f30e56efa387728d59a10dcf6a053 \
+size    8057825
 
 categories          devel
 license             Apache-2
