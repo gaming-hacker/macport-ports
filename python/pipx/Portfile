@@ -21,29 +21,8 @@ long_description    ${description}
 github.tarball_from archive
 github.livecheck.regex  {([\d.]+)}
 
-if {
-    ![variant_isset python37] &&
-    ![variant_isset python38] &&
-    ![variant_isset python39] &&
-    ![variant_isset python310]
-} {
-    default_variants +python310
-}
+python.default_version 310
 
-variant python37 conflicts python38 python39 python310 description {Use Python 3.7} {}
-variant python38 conflicts python37 python39 python310 description {Use Python 3.8} {}
-variant python39 conflicts python37 python38 python310 description {Use Python 3.9} {}
-variant python310 conflicts python37 python38 python39 description {Use Python 3.10} {}
-
-if {[variant_isset python310]} {
-    python.default_version 310
-} elseif {[variant_isset python39]} {
-    python.default_version 39
-} elseif {[variant_isset python38]} {
-    python.default_version 38
-} elseif {[variant_isset python37]} {
-    python.default_version 37
-}
 
 python.pep517       yes
 python.pep517_backend hatch
@@ -54,8 +33,3 @@ depends_build-append \
 depends_lib-append  port:py${python.version}-argcomplete \
                     port:py${python.version}-packaging \
                     port:py${python.version}-userpath
-
-if {${python.version} < 38} {
-    depends_run-append \
-                    port:py${python.version}-importlib-metadata
-}

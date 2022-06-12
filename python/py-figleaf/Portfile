@@ -27,7 +27,7 @@ checksums           rmd160  b4f7c730bf9f45f11d4c90d099b1665c134830c9 \
 
 deprecated.upstream_support no
 # no support for Python 3.10+ ; "parser" was removed from standard library
-python.versions     39
+python.versions 310
 
 if {${name} ne ${subport}} {
     post-patch {

@@ -63,26 +63,26 @@ configure.args      -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
 
 variant python37 conflicts python38 python39 python310 description {Build using Python 3.7} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
-                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/config-3.7m-darwin/python-config.py
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 \
+                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/config-3.7m-darwin/python-config.py
     depends_lib-append  \
-                    port:python37
+                    port:python310
 }
 
 variant python38 conflicts python37 python39 python310 description {Build using Python 3.8} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.8 \
-                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.8/lib/python3.8/config-3.8-darwin/python-config.py
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 \
+                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/config-3.8-darwin/python-config.py
     depends_lib-append  \
-                    port:python38
+                    port:python310
 }
 
 variant python39 conflicts python37 python38 python310 description {Build using Python 3.9} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 \
-                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/config-3.9-darwin/python-config.py
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 \
+                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/config-3.9-darwin/python-config.py
     depends_lib-append  \
-                    port:python39
+                    port:python310
 }
 
 variant python310 conflicts python37 python38 python39 description {Build using Python 3.10} {

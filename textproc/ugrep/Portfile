@@ -21,7 +21,7 @@ checksums           rmd160  00f8908d5240a707c7927f1f9b0c9e0003265690 \
                     sha256  a5f9bf2ab204b05f34f752321ad96ab950a86a955737d313886614742e9c5fbe \
                     size    4442354
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 # fix build failure on OS X 10.9 and 10.8:
 # /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/list:227:9: error: field has incomplete type 'GrepWorker'

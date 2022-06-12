@@ -64,8 +64,8 @@ configure.args      --with-gtk2=no \
                     --disable-python
 
 variant python27 description {Enable zen-coding plugin using Python 2.7} {
-    depends_lib-append  port:python27
-    configure.python    ${prefix}/bin/python2.7
+    depends_lib-append  port:python310
+    configure.python    ${prefix}/bin/python3.10
     configure.args-delete --disable-python
 }
 

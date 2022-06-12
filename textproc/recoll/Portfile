@@ -30,13 +30,13 @@ depends_lib         port:xapian-core \
                     port:zlib
 
 depends_run         port:antiword \
-                    port:python37 \
-                    port:py37-lxml \
+                    port:python310 \
+                    port:py310-lxml \
                     path:lib/pkgconfig/poppler.pc:poppler \
                     port:unrtf \
                     port:unzip
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 # Note: this is probably not the right way to configure QMAKE
 configure.args      QMAKE=${prefix}/libexec/qt5/bin/qmake \

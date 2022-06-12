@@ -12,7 +12,7 @@ categories-append   math science
 platforms           darwin
 license             GPL-2+
 
-python.versions     37 38 39 310
+python.versions 310
 
 maintainers         {snc @nerdling} {gmail.com:szhorvat @szhorvat} openmaintainer
 
@@ -31,8 +31,8 @@ checksums           rmd160  db5c29e1d1aeb99a72ec63878bd0aa152919bfbd \
 variant external_igraph description {Use external igraph library} { }
 
 if {${name} ne ${subport}} {
-    compiler.c_standard     1999
-    compiler.cxx_standard   2011
+    compiler.c_standard 2017
+    compiler.cxx_standard 2020
 
     depends_lib-append      port:py${python.version}-texttable
 
