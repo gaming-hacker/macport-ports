@@ -39,7 +39,7 @@ depends_build       port:yarn
 build.env-append    CSC_IDENTITY_AUTO_DISCOVERY=false
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build {
     switch $build_arch {

@@ -24,7 +24,7 @@ if {$subport eq $name} {
     PortGroup           cmake 1.0
     PortGroup           select 1.0
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2020
 
     license             GPL-2
     description         Multithreaded SQL database server

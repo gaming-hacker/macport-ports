@@ -31,7 +31,7 @@ if { ${subport} eq "${name}-qtwebkit-examples" } {
 
 # https://trac.macports.org/ticket/63154
 if { ${xcodeversion} ne "none" } {
-    use_xcode       yes
+    use_xcode  no
 }
 
 set just_want_qt5_variables yes
@@ -44,7 +44,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://wiki.qt.io/New_Features_in_Qt_5.7
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 master_sites        \
     https://download.qt.io/official_releases/qt/${branch}/${version}/submodules \
@@ -1776,7 +1776,7 @@ foreach {module module_info} [array get modules] {
                 patchfiles-append patch-qtwebengine_harfbuzz_no_unused_variable.diff
 
                 # see https://trac.macports.org/ticket/59294
-                use_xcode yes
+                use_xcode  no
 
                 # see config_help.txt
                 configure.post_args-append         \
@@ -1950,7 +1950,7 @@ foreach {module module_info} [array get modules] {
                 # re-enable build on Apple Silicon
                 patchfiles-append patch-qtwebengine_reenable_arm64.diff
                 # see https://trac.macports.org/ticket/59294
-                use_xcode yes
+                use_xcode  no
                 # Use bundled GN from separately-built qt5-qtwebengine-gn port
                 # Duplicated from special case for qt5-qtwebengine
                 patchfiles-append patch-qtwebengine_gn_binary_path.diff
