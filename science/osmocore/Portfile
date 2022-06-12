@@ -71,7 +71,7 @@ size   1288521
 depends_build-append \
     port:automake \
     port:autoconf \
-    port:doxygen \
+    path:bin/doxygen:doxygen \
     port:libtool \
     port:pkgconfig
 

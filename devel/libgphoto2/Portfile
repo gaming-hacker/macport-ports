@@ -35,6 +35,8 @@ depends_lib         port:curl \
                     port:libtool \
                     port:gd2
 
+patchfiles          static_assert.patch
+
 configure.args      --with-drivers=all \
                     --with-libexif=${prefix} \
                     ac_cv_prog_AWK=/usr/bin/awk \
@@ -57,7 +59,7 @@ configure.args      --with-drivers=all \
 build.args-append   CFLAGS="${configure.cflags} [get_canonical_archflags cc]"
 
 variant doxygen description {Use doxygen to generate API docs} {
-    depends_build-append    port:doxygen \
+    depends_build-append    path:bin/doxygen:doxygen \
                             path:bin/dot:graphviz
 }
 if {![variant_isset doxygen]} {

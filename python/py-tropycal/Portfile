@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-tropycal
-version             0.4
+version             0.4.2
 revision            0
 categories-append   science
 license             MIT
@@ -16,11 +16,11 @@ description         Tropycal is a Python package intended to simplify the proces
 long_description    {*}${description}
 homepage            https://github.com/tropycal/tropycal
 
-checksums           rmd160  171eb554dd3a530ce4998a2cc58d6ca7a17892b9 \
-sha256  694c43e2628a493a24cb1f1a8fee6fe921000164896e7d908e0eef851b909e9e \
-size    9993895
+checksums           rmd160  452aea9ec78b069c71d92c317593042f6a3774ab \
+                    sha256  89f15a2a5a9cefec0dd07e6e30016f0733ec070468821730c4b03122c91addea \
+                    size    9994471
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -65,7 +65,7 @@ configure.args-append   -DCMAKE_CXX_STANDARD=14 \
 
 variant applications description {build Application} {
     PortGroup               qt5 1.0
-    depends_lib-append      port:poppler \
+    depends_lib-append      path:lib/pkgconfig/poppler.pc:poppler \
                             port:libxml2
     configure.args-append   -DGDCM_BUILD_APPLICATIONS=ON \
                             -DGDCM_USE_SYSTEM_POPPLER=ON \
@@ -74,7 +74,7 @@ variant applications description {build Application} {
 
 # installation seems to hang
 #variant docs description {Build source documentation} {
-#    depends_build-append    port:doxygen \
+#    depends_build-append    path:bin/doxygen:doxygen \
 #                            port:libxslt
 #    configure.args-append   -DGDCM_DOCUMENTATION=ON
 #}

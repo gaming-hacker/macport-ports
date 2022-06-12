@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-coverage
-version             6.4
+version             6.4.1
 revision            0
 
 categories-append   devel
@@ -20,11 +20,11 @@ long_description    Coverage measures code coverage, typically during test \
 
 homepage            https://github.com/nedbat/coveragepy
 
-checksums           rmd160  f3d96d66b24e3c86b3b8a44608a384bf481eb4a3 \
-sha256  727dafd7f67a6e1cad808dc884bd9c5a2f6ef1f8f6d2f22b37b96cb0080d4f49 \
-size    715897
+checksums           rmd160  ed29b7a2c508727002af52ceb8c4cc523b6e5508 \
+                    sha256  4321f075095a096e70aff1d002030ee612b65a205a0a0f5b815280d5dc58100c \
+                    size    719971
 
-python.versions 310
+python.versions     27 35 36 37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -40,8 +40,8 @@ if {${name} ne ${subport}} {
     if {${python.version} in "27 35"} {
         version     5.5
         checksums   rmd160  5652a14045197a2e4f051128f4826f9b0dd3c6fa \
-sha256  ebe78fe9a0e874362175b02371bdfbee64d8edc42a044253ddf4ee7d3c15212c \
-size    691258
+                    sha256  ebe78fe9a0e874362175b02371bdfbee64d8edc42a044253ddf4ee7d3c15212c \
+                    size    691258
         revision    0
 
         patchfiles  patch-v55_setup.py.diff
@@ -51,17 +51,12 @@ size    691258
     } elseif {${python.version} == 36} {
         version     6.2
         checksums   rmd160  35831a75c405cfb730ac92da3f6ef76869319420 \
-sha256  e2cad8093172b7d1595b4ad66f24270808658e11acf43a8f95b41276162eb5b8 \
-size    678664
+                    sha256  e2cad8093172b7d1595b4ad66f24270808658e11acf43a8f95b41276162eb5b8 \
+                    size    678664
         revision    0
     } elseif {${python.version} < 38} {
         depends_lib-append \
                     port:py${python.version}-importlib-metadata
-    }
-
-    pre-test {
-        test.env    PYTHONPATH=[glob -nocomplain ${worksrcpath}/build/lib*] \
-                    PATH=[glob -nocomplain ${worksrcpath}/build/bin*]
     }
 
     post-destroot {

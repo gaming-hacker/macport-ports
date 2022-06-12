@@ -31,7 +31,7 @@ compiler.cxx_standard 2020
 set python.branch 3.10
 set python_version  [join [split ${python.branch} "."] ""]
 
-depends_build-append    port:doxygen \
+depends_build-append    path:bin/doxygen:doxygen \
                         port:flex \
                         port:libtool
 

@@ -26,7 +26,7 @@ sha256  f15f443efcdf1a04668ddbc375f999623cb9766f394558e271a5341c55d2f4e5 \
 size    39233132
 
 depends_build-append \
-                    port:doxygen \
+                    path:bin/doxygen:doxygen \
                     port:py-docutils \
                     port:py-pygments \
                     path:bin/dot:graphviz

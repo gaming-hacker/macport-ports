@@ -2,8 +2,8 @@
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
-
-legacysupport.newest_darwin_requires_legacy 10
+# CLOCK_REALTIME
+legacysupport.newest_darwin_requires_legacy 15
 
 name                mariadb-10.6
 set name_mysql      ${name}
@@ -261,6 +261,8 @@ size    364270
                         -DCONNECT_WITH_REST=OFF \
                         -DWITH_PCRE=system \
                         -DBISON_EXECUTABLE=${prefix}/bin/bison
+
+    configure.checks.implicit_function_declaration.whitelist-append select getthrid
 
     post-destroot {
         # proc portdestroot::destroot_finish fails to find and compress our man pages

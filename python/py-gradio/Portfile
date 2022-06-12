@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 license             Apache-2
 supported_archs     noarch
 
-python.versions 310
+python.versions     38 39 310
 
 maintainers         nomaintainer
 
@@ -21,8 +21,8 @@ long_description    Gradio is the fastest way to demo your machine \
 homepage            https://gradio.app
 
 checksums           rmd160  110fd87222d811f083dd7f2a0b02ea80b3eed7ef \
-sha256  82e18d9411b2020aa205c6d05a1d3043d1e444e086a5efdcb80109bcc25243e6 \
-size    5039070
+                    sha256  82e18d9411b2020aa205c6d05a1d3043d1e444e086a5efdcb80109bcc25243e6 \
+                    size    5039070
 
 if {${name} ne ${subport}} {
     depends_lib-append \

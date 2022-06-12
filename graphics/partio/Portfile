@@ -29,7 +29,7 @@ sha256  1e3eac08c4b1d19e66263824446236214d6f1a91fed4f0bbe58706cff6574ba2 \
 size    333035
 
 depends_build-append \
-                    port:doxygen \
+                    path:bin/doxygen:doxygen \
                     port:swig-python
 depends_lib         port:zlib
 

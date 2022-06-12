@@ -44,7 +44,7 @@ size    533176
 patchfiles fix_include_dir.diff
 
 compiler.blacklist-append {clang < 900}
-depends_build-append port:doxygen
+depends_build-append path:bin/doxygen:doxygen
 
 # warnings have to be ignored until this issue is relolved :
 # https://github.com/ericniebler/range-v3/issues/1685
