@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                            1.0
 PortGroup select                      1.0
@@ -32,8 +32,8 @@ subport                 lldb-${llvm_version}  { revision 1 }
 subport                 flang-${llvm_version} { revision 0 }
 
 checksums               rmd160  b840f693d6d39bf194d462136f0979cebe31065f \
-                        sha256  c9d27903ba3883c476a83cd515e36e1e07b0585db55692835de11385d9e3c8fa \
-                        size    105617748
+sha256  c9d27903ba3883c476a83cd515e36e1e07b0585db55692835de11385d9e3c8fa \
+size    105617748
 
 master_sites            https://github.com/llvm/llvm-project/releases/download/llvmorg-${version}
 distname                llvm-project-${version}.src
@@ -392,7 +392,7 @@ if {${subport} eq "lldb-${llvm_version}"} {
 }
 
 variant tests description {Enable building of test code} {
-    depends_test-append     port:py39-psutil
+    depends_test-append     port:py310-psutil
     test.run                yes
     configure.args-append   -DLLVM_INCLUDE_TESTS=ON
     test.target             check

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,9 +15,9 @@ description         ping, but with a graph
 long_description    {*}${description}.
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  f7e8dd9bfe685c068a6952f3f56adc623b4cc4ab \
-                        sha256  1ab71ca45cb5da317d77774eff96d5868486d03ea1cedff008cbafcaf880332b \
-                        size    864936
+rmd160  f7e8dd9bfe685c068a6952f3f56adc623b4cc4ab \
+sha256  1ab71ca45cb5da317d77774eff96d5868486d03ea1cedff008cbafcaf880332b \
+size    864936
 
 # Build date set by shadow-rs cargo crate, which respects reproducible SOURCE_DATE_EPOCH
 # post-extract and pre-build from the wordgrinder port
@@ -104,7 +104,7 @@ cargo.crates \
     regex                            1.5.6  d83f127d94bdbcda4c8cc2e50f6f84f4b611f69c902699ca385a39c3a75f9ff1 \
     regex-syntax                    0.6.26  49b3de9ec5dc0a3417da371aab17d729997c15010e7fd24ff707773a33bddb64 \
     scopeguard                       1.1.0  d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd \
-    shadow-rs                       0.11.0  f47e98e36909e951f4da3908f4475f969bec92a41734dd92e883aaa11c10294b \
+shadow-rs                       0.11.0  f47e98e36909e951f4da3908f4475f969bec92a41734dd92e883aaa11c10294b \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

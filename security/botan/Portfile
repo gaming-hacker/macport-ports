@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -28,8 +28,8 @@ distname            Botan-${version}
 use_xz              yes
 
 checksums           rmd160  faaa51a8ede9d91dce548e671dfc4d1b2ab4ff97 \
-                    sha256  3af5f17615c6b5cd8b832d269fb6cb4d54ec64f9eb09ddbf1add5093941b4d75 \
-                    size    6063336
+sha256  3af5f17615c6b5cd8b832d269fb6cb4d54ec64f9eb09ddbf1add5093941b4d75 \
+size    6063336
 
 depends_build       port:python310
 depends_lib         port:bzip2 \
@@ -46,7 +46,7 @@ post-patch {
         clang.txt
 }
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 # botan uses thread_local, which is not supported in Xcode < 8
 compiler.thread_local_storage   yes
 
@@ -75,7 +75,7 @@ set intrinsics {
     rdrand
     rdseed
     aes-ni
-    sha-ni
+sha-ni
     altivec
     neon
     armv8crypto

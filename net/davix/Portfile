@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                      1.0
 PortGroup           cmake                       1.1
@@ -14,8 +14,8 @@ github.tarball_from releases
 distname            ${github.project}-${version}
 
 checksums           rmd160  a8a4bba241ee4fd6bbc07c222578306799a84343 \
-                    sha256  8817a24c23f1309b9de233b9a882455f457c42edc2a649dc70fe2524cf76d94c \
-                    size    7614586
+sha256  8817a24c23f1309b9de233b9a882455f457c42edc2a649dc70fe2524cf76d94c \
+size    7614586
 
 categories          net
 maintainers         {jonesc @cjones051073} openmaintainer
@@ -40,7 +40,7 @@ depends_build-append port:pkgconfig \
 depends_lib-append   port:curl \
                      port:libxml2
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2020
 # Non-standard support for variable length arrays is required, which seems to
 # break with Xcode clang on OSX 10.10 and 10.11
 compiler.blacklist-append  {clang < 900}
