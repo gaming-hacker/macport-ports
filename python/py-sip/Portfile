@@ -27,6 +27,23 @@ size    1134991
 
 python.versions 310
 
+foreach pver {"" 37 38 39 310} {
+    subport py${pver}-sip-devel {
+        version         6.6.2.dev2206062241
+        master_sites    https://www.riverbankcomputing.com/pypi/packages/sip/
+        epoch           0
+        revision        0
+        checksums       rmd160  016f927449e095264f3439914f0eeed3521a1c3b \
+                        sha256  80410470fe90f37a1769e62bf0ca8b734cc224cb33c778f1de3b2491d1f2a0b6 \
+                        size    1144044
+        conflicts       py${pver}-sip
+    }
+
+    subport py${pver}-sip {
+        conflicts       py${pver}-sip-devel
+    }
+}
+
 if {${name} ne ${subport}} {
     if {${python.version} == 35} {
         version     5.5.0
@@ -43,6 +60,7 @@ size    1197925
     } else {
         depends_lib-append \
                     port:py${python.version}-ply \
+
     }
 
     depends_lib-append \

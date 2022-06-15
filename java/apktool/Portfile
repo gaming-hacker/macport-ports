@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               java 1.0
 PortGroup               github 1.0
 
-github.setup            iBotPeaches Apktool 2.6.0 v
+github.setup            iBotPeaches Apktool 2.6.1 v
 name                    apktool
 
 categories              java devel
@@ -22,9 +22,9 @@ long_description        Apktool is a tool for reverse engineering 3rd party, clo
 
 homepage                https://ibotpeaches.github.io/Apktool/
 
-checksums               rmd160  3e134d223ce2e84846e707c8dfa70718b021defe \
-sha256  5ee9bc83561011ce6733ce94f57f2ee024d2a14cf0f81ec1728fac7e2be29bd3 \
-size    26624622
+checksums               rmd160  cf38cbd1fe27c830ecf6551a6863684a91921403 \
+                        sha256  3f0603618c3cc8a14fa69f15d0d2d419f2f41df91a6ed42069d4159d097e4511 \
+                        size    26760262
 
 java.version            1.8+
 java.fallback           openjdk11

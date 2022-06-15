@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -6,7 +6,7 @@ PortGroup           xcodeversion 1.0
 
 name                TeXShop4
 conflicts           TeXShop
-version             4.74
+version             4.75
 revision            0
 
 set major           [lindex [split ${version} .] 0]
@@ -32,9 +32,9 @@ worksrcdir          ${propername}-${version}
 # TeXShop4 has frequent stealth updates, keep in sync with revision number
 #dist_subdir         TeXShop/${version}_${revision}
 
-checksums           rmd160  b4b69da689b06ac7ff186cf1a30b2b1e9a646c4d \
-sha256  5d4da08315238bb9a7e921b5b6bc4939e9dc14f9263028c6170b94964b65f296 \
-size    155164963
+checksums           rmd160  e99fff755cf06cd51f3ce48d3c510ae851192435 \
+                    sha256  591f686978f8d49f1257c360f253063269d574d8b0b6be9b26beddb750b6ec23 \
+                    size    155177353
 
 minimum_xcodeversions   {20 12.2}
 
@@ -61,8 +61,8 @@ platform darwin {
         version     4.44
         revision    0
         checksums   rmd160  bcbccbd35ecbf9f09d38e43a7bc5392f1e0f419c \
-sha256  e73f79a87cb02faa37b080fbdddec5edc384b7e80ff5b1d3828f86a3160da032 \
-size    151971878
+                    sha256  e73f79a87cb02faa37b080fbdddec5edc384b7e80ff5b1d3828f86a3160da032 \
+                    size    151971878
 
         minimum_xcodeversions   {13 6.2}
 
