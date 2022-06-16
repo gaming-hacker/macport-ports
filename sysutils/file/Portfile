@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name                file
-version             5.42
+version             5.41
 checksums           rmd160  bbe2169215e4c0f12b86b5155eaedfdb083d6122 \
 sha256  c076fb4d029c74073f15c43361ef572cfb868407d347190ba834af3b1639b0e4 \
 size    1105846
@@ -32,13 +32,18 @@ patchfiles          patch-magic-Makefile.am.diff \
                     implicit.patch
 
 configure.args      --disable-silent-rules \
-                    --enable-fsect-man5
+                    --enable-fsect-man5 \
+                    --disable-dependency-tracking \
+                    --enable-zlib \
+                    --enable-bzlib
+
 
 depends_lib         port:zlib
-
+set perl_branch 5.34
+set perl5.default_branch 5.34
 # We patch Makefile.am files.
-use_autoreconf      yes
-autoreconf.args     -fvi
+# use_autoreconf      yes
+# autoreconf.args     -fvi
 configure.checks.implicit_function_declaration.whitelist-append strchr
 
 if {${name} eq ${subport}} {
