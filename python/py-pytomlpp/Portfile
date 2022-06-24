@@ -19,6 +19,8 @@ size    1033693
 
 python.versions 310
 
+compiler.cxx_standard   2017
+
 if {${name} ne ${subport}} {
     depends_lib-append  \
                    port:py${python.version}-pybind11

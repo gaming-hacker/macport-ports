@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -30,13 +30,13 @@ long_description    A network analyzer that lets you capture and \
 #   https://gitlab.com/wireshark/wireshark/-/merge_requests/1404
 
 if {${os.major} >= 16} {
-    version         3.6.5
+    version         3.6.6
     revision        0
 
-    checksums       sha256  a2d741d60ff3516137d4b9f38cdc07eee54a56ec36046f4c3afee6bfb4f6eaa1 \
-rmd160  ef68cb3f47f01c56854f7d82f1820c4a83b9a8ff \
-sha1    72499f56ed70434256054b8d81a1c71bee38c9c2 \
-size    39939340
+    checksums       sha256  beba27aeb4d3bb78df6202e88dda69e1dba9b0561044957bcac47e68b6ac28ba \
+                    rmd160  6d017615bb57c53b223947893a59584c8b317c87 \
+                    sha1    2c28cda3f70396e0524d604f329665475d5b44e9 \
+                    size    39950276
 
     livecheck.type  regex
     livecheck.url   ${homepage}download.html
@@ -46,9 +46,9 @@ size    39939340
     revision        5
 
     checksums       sha256  f8165211f5b4a4f6708df73ef9be51df917927f2da78348b32d3a6eb5fc458a3 \
-rmd160  1b5e1fee340c149b70dbe8e8cf935518b06656e8 \
-sha1    3c9a24b8954d712a189f997131e283fbd0b606bc \
-size    32470004
+                    rmd160  1b5e1fee340c149b70dbe8e8cf935518b06656e8 \
+                    sha1    3c9a24b8954d712a189f997131e283fbd0b606bc \
+                    size    32470004
 
     patchfiles-append \
                     patch-wireshark3-3.4.1-fix-clock_realtime.diff

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
-github.setup        pymc-devs pymc 4.0.0 v
+github.setup        pymc-devs pymc 4.0.1 v
 github.tarball_from archive
 revision            0
 name                py-pymc
@@ -21,11 +21,11 @@ long_description    PyMC (formerly PyMC3) is a Python package for Bayesian \
                     Its flexibility and extensibility make it applicable to a \
                     large suite of problems.
 
-checksums           rmd160  d6d6c9ab1268676fb48a0dc81d5bf7f509f63dbc \
-sha256  67778049c378f6f0c339892811b7a126acda467c1984f30c85891660f063514b \
-size    6312583
+checksums           rmd160  652ab4cc872df3bd53d4e0d316356811279ca8b7 \
+                    sha256  3c34b7064ea51c460e12c971a99c5655c73bb9ba59dba892904ff2cac21817fb \
+                    size    6695883
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     conflicts   py${python.version}-pymc3
