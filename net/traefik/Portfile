@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,17 +30,17 @@ distfiles           traefik_v${version}_darwin_${arch}${extract.suffix} \
                     traefik-v${version}.src${extract.suffix}
 
 checksums           traefik_v${version}_darwin_amd64${extract.suffix} \
-                        rmd160  b7a031eed94d77568c9be83546709ae344181eba \
-                        sha256  0a98ee7c2f73e8f3016d0be56e3c399e3bc6c62ffbb4b9c2a62ba02132ee5eda \
-                        size    28783737 \
+rmd160  b7a031eed94d77568c9be83546709ae344181eba \
+sha256  0a98ee7c2f73e8f3016d0be56e3c399e3bc6c62ffbb4b9c2a62ba02132ee5eda \
+size    28783737 \
                     traefik_v${version}_darwin_arm64${extract.suffix} \
-                        rmd160  6653306bab8df123d9bfdf7ffca2a3e64fc4209a \
-                        sha256  5c548fa2a2e170d29ac8339b24d9ee369019d467732762e4ac33cb9190f94ffa \
-                        size    28725713 \
+rmd160  6653306bab8df123d9bfdf7ffca2a3e64fc4209a \
+sha256  5c548fa2a2e170d29ac8339b24d9ee369019d467732762e4ac33cb9190f94ffa \
+size    28725713 \
                     traefik-v${version}.src${extract.suffix} \
-                        rmd160  46047549e032efb592bd972e542cbe9fb7883152 \
-                        sha256  23b6e4dc5c21c787ebefaae4a15046d19608fbb000a983ae0a1bfd2e1bbbcdf0 \
-                        size    10530009
+rmd160  46047549e032efb592bd972e542cbe9fb7883152 \
+sha256  23b6e4dc5c21c787ebefaae4a15046d19608fbb000a983ae0a1bfd2e1bbbcdf0 \
+size    10530009
 
 extract.mkdir       yes
 use_configure       no

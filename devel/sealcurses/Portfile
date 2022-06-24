@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -16,8 +16,8 @@ description         SDL Emulation and Adaptation Layer for Curses (ncursesw)
 long_description    {*}${description}
 
 checksums           rmd160  053a2bdbab956a04dcbd69f51efea99df5b45320 \
-                    sha256  2162170d907c454c2594f764a4109e5621760a107c5d75d3692a9bca59ffdc78 \
-                    size    22284
+sha256  2162170d907c454c2594f764a4109e5621760a107c5d75d3692a9bca59ffdc78 \
+size    22284
 
 depends_build-append \
                     port:pkgconfig

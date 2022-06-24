@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ homepage            https://www.sphinx-doc.org/
 python.rootname     Sphinx
 
 checksums           md5 4be7766737b1e052fb4be1513e34bdac \
-                    rmd160 2dde4b358254ac96ed8c0d475ebf0822d4f3c071 \
-                    sha256 b18e978ea7565720f26019c702cd85c84376e948370f1cd43d60265010e1c7b0
+rmd160 2dde4b358254ac96ed8c0d475ebf0822d4f3c071 \
+sha256 b18e978ea7565720f26019c702cd85c84376e948370f1cd43d60265010e1c7b0
 
 python.versions 310
 
@@ -52,9 +52,9 @@ if {$subport ne $name} {
         version     3.5.4
         revision    0
         checksums   md5 dd46088ebc01f6f721ee7618df680d68 \
-                    rmd160 70102258335337eff3cc16526e84e9a95c625018 \
-                    sha256 19010b7b9fa0dc7756a6e105b2aacd3a80f798af3c25c273be64d7beeb482cb1 \
-                    size 5911093
+rmd160 70102258335337eff3cc16526e84e9a95c625018 \
+sha256 19010b7b9fa0dc7756a6e105b2aacd3a80f798af3c25c273be64d7beeb482cb1 \
+size 5911093
 
         patch.pre_args      -p1
         # Source of patch: https://github.com/catap/sphinx/tree/docutils-1.8-v354
@@ -64,8 +64,8 @@ if {$subport ne $name} {
         version     1.8.5
         revision    0
         checksums   md5 554f7a4e752f48b2601e5ef5ab463346 \
-                    rmd160 a7a38523976288c13a8a7e5bf4a81367db9af462 \
-                    sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
+rmd160 a7a38523976288c13a8a7e5bf4a81367db9af462 \
+sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
 
         depends_run-append  port:py${python.version}-six \
                             port:py${python.version}-sphinxcontrib-websupport \

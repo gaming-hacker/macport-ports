@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,8 +21,8 @@ master_sites        ${homepage}download/
 use_xz              yes
 
 checksums           rmd160  9bc5f3dd673867fea93dcd0bfb7724e406ba7996 \
-                    sha256  a17240ee88f0705a9067bb0087fde1cee73948b3cf6c3978a21a58fdb73b76a2 \
-                    size    763704
+sha256  a17240ee88f0705a9067bb0087fde1cee73948b3cf6c3978a21a58fdb73b76a2 \
+size    763704
 
 depends_build-append \
                     path:libexec/coreutils/libstdbuf.so:coreutils

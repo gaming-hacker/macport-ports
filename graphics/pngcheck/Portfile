@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ homepage            http://www.libpng.org/pub/png/apps/pngcheck.html
 master_sites        http://www.libpng.org/pub/png/src/
 
 checksums           rmd160  c772a7e562c471c25a6150f857cddd89d8053f20 \
-                    sha256  c36a4491634af751f7798ea421321642f9590faa032eccb0dd5fb4533609dee6 \
-                    size    63766
+sha256  c36a4491634af751f7798ea421321642f9590faa032eccb0dd5fb4533609dee6 \
+size    63766
 
 depends_lib         port:zlib
 

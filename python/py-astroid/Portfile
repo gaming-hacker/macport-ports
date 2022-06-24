@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -27,8 +27,8 @@ long_description    The aim of this module is to provide a common \
 homepage            https://github.com/pycqa/astroid
 
 checksums           rmd160  1f069ba775933092426f637caded10303bf90e63 \
-                    sha256  4f933d0bf5e408b03a6feb5d23793740c27e07340605f236496cd6ce552043d6 \
-                    size    205923
+sha256  4f933d0bf5e408b03a6feb5d23793740c27e07340605f236496cd6ce552043d6 \
+size    205923
 
 if {${name} ne ${subport}} {
     depends_build-append \

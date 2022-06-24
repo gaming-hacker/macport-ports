@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ homepage            https://tls.mbed.org
 github.tarball_from archive
 
 checksums           rmd160  ce6c970a6b8d43751c686dee01b9549770a733e2 \
-                    sha256  64d01a3b22b91cf3a25630257f268f11bc7bfa37981ae6d397802dd4ccec4690 \
-                    size    3766628
+sha256  64d01a3b22b91cf3a25630257f268f11bc7bfa37981ae6d397802dd4ccec4690 \
+size    3766628
 
 variant python38 conflicts python39 python310 description {Use Python 3.8} {}
 variant python39 conflicts python38 python310 description {Use Python 3.9} {}

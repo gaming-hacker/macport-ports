@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        grobian html2text 2.1.1 v
 revision            0
 checksums           rmd160  4aea69985f4660d5b12cb41b1be3a5aa3e0d8e3f \
-                    sha256  be16ec8ceb25f8e7fe438bd6e525b717d5de51bd0797eeadda0617087f1563c9 \
-                    size    172655
+sha256  be16ec8ceb25f8e7fe438bd6e525b717d5de51bd0797eeadda0617087f1563c9 \
+size    172655
 
 categories          textproc
 maintainers         {ryandesign @ryandesign} opennomaintainer

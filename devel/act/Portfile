@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,8 +20,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 platforms           darwin linux
 
 checksums           rmd160  0dec51780a1fc19955e21ce6b856256a5df60caf \
-                    sha256  010b9f02d2c431d9e09f5be1cf3099bd3fbab49043c53e34aa92b99bba8da3d1 \
-                    size    356817
+sha256  010b9f02d2c431d9e09f5be1cf3099bd3fbab49043c53e34aa92b99bba8da3d1 \
+size    356817
 
 # Difficulty building with vendored libs.
 # Allow fetching libraries at build time:

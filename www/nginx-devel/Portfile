@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,9 +27,9 @@ master_sites        https://nginx.org/download:nginx \
 
 distfiles           ${propername}-${version}${extract.suffix}:nginx
 checksums           ${propername}-${version}${extract.suffix} \
-                    rmd160  513b746e97f714bbbef204efce2e450d9cccf4cd \
-                    sha256  820acaa35b9272be9e9e72f6defa4a5f2921824709f8aa4772c78ab31ed94cd1 \
-                    size    1102940
+rmd160  513b746e97f714bbbef204efce2e450d9cccf4cd \
+sha256  820acaa35b9272be9e9e72f6defa4a5f2921824709f8aa4772c78ab31ed94cd1 \
+size    1102940
 
 depends_lib         port:pcre \
                     port:zlib
@@ -139,9 +139,9 @@ subport ${name}-geoip2 {
     set geoipext_distname   ${geoipext_filename}-${geoipext_version}
     distfiles-append        ${geoipext_version}.tar.gz:geoip2_module
     checksums-append        ${geoipext_version}.tar.gz \
-                            rmd160  7b272aad1a402ae6ca8fac873d4555afbeab7b75 \
-                            sha256  41378438c833e313a18869d0c4a72704b4835c30acaf7fd68013ab6732ff78a7 \
-                            size    8509
+rmd160  7b272aad1a402ae6ca8fac873d4555afbeab7b75 \
+sha256  41378438c833e313a18869d0c4a72704b4835c30acaf7fd68013ab6732ff78a7 \
+size    8509
 
     configure.args-append   --add-dynamic-module=${workpath}/${geoipext_distname}
     depends_lib-append      port:libmaxminddb
@@ -158,9 +158,9 @@ subport ${name}-headers_more {
     set ngx_h_more_distname     ${ngx_h_more_filename}-${ngx_h_more_version}
     distfiles-append            v${ngx_h_more_version}.tar.gz:h_more_module
     checksums-append            v${ngx_h_more_version}.tar.gz \
-                                rmd160  fb27195a722e81f533016e693b5a6616fd6b4f72 \
-                                sha256  a3dcbab117a9c103bc1ea5200fc00a7b7d2af97ff7fd525f16f8ac2632e30fbf \
-                                size    28130
+rmd160  fb27195a722e81f533016e693b5a6616fd6b4f72 \
+sha256  a3dcbab117a9c103bc1ea5200fc00a7b7d2af97ff7fd525f16f8ac2632e30fbf \
+size    28130
 
     patchfiles-append           patch-headers_more_headers_in.c.diff
 
@@ -187,9 +187,9 @@ subport ${name}-lua {
     set ngx_lua_distname    ${ngx_lua_filename}-${ngx_lua_version}
     distfiles-append        v${ngx_lua_version}.tar.gz:lua_module
     checksums-append        v${ngx_lua_version}.tar.gz \
-                            rmd160  c570d5964d1a3687f4f8d9d7fad11d8d68007bdf \
-                            sha256  9db756000578efaecb43bea4fc6cf631aaa80988d86ffe5d3afeb9927895ffad \
-                            size    690938
+rmd160  c570d5964d1a3687f4f8d9d7fad11d8d68007bdf \
+sha256  9db756000578efaecb43bea4fc6cf631aaa80988d86ffe5d3afeb9927895ffad \
+size    690938
 
     configure.cflags        -I${prefix}/include/luajit-2.1/ ${configure.cflags}
     configure.env           LUAJIT_INC=${prefix}/include/luajit-2.1/
@@ -218,9 +218,9 @@ subport ${name}-rtmp {
     set rtmp_distname       ${rtmp_filename}-${rtmp_version}
     distfiles-append        v${rtmp_version}:rtmp_module
     checksums-append        v${rtmp_version} \
-                            rmd160  a19f42e4f15214fd11ac8f334468dc400b86b5bd \
-                            sha256  07f19b7bffec5e357bb8820c63e5281debd45f5a2e6d46b1636d9202c3e09d78 \
-                            size    519934
+rmd160  a19f42e4f15214fd11ac8f334468dc400b86b5bd \
+sha256  07f19b7bffec5e357bb8820c63e5281debd45f5a2e6d46b1636d9202c3e09d78 \
+size    519934
 
     configure.args-append   --add-dynamic-module=${workpath}/${rtmp_distname}
 
@@ -258,9 +258,9 @@ variant devel_kit description {Enable ngx_devel_kit module (https://github.com/s
     set devel_kit_distname  ${devel_kit_filename}-${devel_kit_version}
     distfiles-append        v${devel_kit_version}.tar.gz:devel_kit_module
     checksums-append        v${devel_kit_version}.tar.gz \
-                            rmd160  5c52a463544294096611aa9dec1c76e937a1aa23 \
-                            sha256  0e971105e210d272a497567fa2e2c256f4e39b845a5ba80d373e26ba1abfbd85 \
-                            size    66542
+rmd160  5c52a463544294096611aa9dec1c76e937a1aa23 \
+sha256  0e971105e210d272a497567fa2e2c256f4e39b845a5ba80d373e26ba1abfbd85 \
+size    66542
 
     configure.args-append     --add-module=${workpath}/${devel_kit_distname}
 }

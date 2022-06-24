@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    Pdsh is a high-performance, parallel remote shell utility. I
 github.tarball_from releases
 
 checksums           rmd160  7c95d30709e55da6e1edef0095f1696573920102 \
-                    sha256  b47b3e4662736ef44b6fe86e3d380f95e591863e69163aa0592e9f9f618521e9 \
-                    size    565741
+sha256  b47b3e4662736ef44b6fe86e3d380f95e591863e69163aa0592e9f9f618521e9 \
+size    565741
 
 depends_lib-append  port:ncurses \
                     port:readline

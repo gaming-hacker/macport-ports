@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -16,13 +16,13 @@ set main_distfile       ${distfiles}
 set quickjs_distname    quickjs-${quickjs_version}
 set quickjs_distfile    ${quickjs_distname}.tar.xz
 checksums               ${main_distfile} \
-                        rmd160  b9d224a50bf084b4ec5dd05ae7b3a822e0e6147e \
-                        sha256  a9c1d1fd0665796b81f18b0556f80237c13594033062f9312a49aa9159086e7a \
-                        size    909574 \
+rmd160  b9d224a50bf084b4ec5dd05ae7b3a822e0e6147e \
+sha256  a9c1d1fd0665796b81f18b0556f80237c13594033062f9312a49aa9159086e7a \
+size    909574 \
                         ${quickjs_distfile} \
-                        rmd160  0d59b21acc50db254d1087baed8c625e6390c113 \
-                        sha256  a45bface4c3379538dea8533878d694e289330488ea7028b105f72572fe7fe1a \
-                        size    753556
+rmd160  0d59b21acc50db254d1087baed8c625e6390c113 \
+sha256  a45bface4c3379538dea8533878d694e289330488ea7028b105f72572fe7fe1a \
+size    753556
 
 categories          www
 maintainers             {ryandesign @ryandesign} openmaintainer

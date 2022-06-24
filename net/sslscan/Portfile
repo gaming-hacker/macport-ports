@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup github 1.0
@@ -20,8 +20,8 @@ license         {GPL-3+ OpenSSLException}
 depends_lib     port:openssl
 
 checksums       rmd160  0d33ba516da409ec4b12227ff607f56d0d5fa236 \
-                sha256  f8ad76e53a745b1c7d76e79e7f5a8ca0a26831da2449c8edfa2d7d674587f4e5 \
-                size    111155
+sha256  f8ad76e53a745b1c7d76e79e7f5a8ca0a26831da2449c8edfa2d7d674587f4e5 \
+size    111155
 
 # implicit declaration of inet_ntop
 patchfiles      sslscan.c.patch

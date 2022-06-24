@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -154,7 +154,7 @@ cargo.crates \
     serde_json                      1.0.81  9b7ce2b32a1aed03c558dc61a5cd328f15aff2dbc17daad8fb8af04d2100e15c \
     serde_repr                       0.1.8  a2ad84e47328a31223de7fed7a4f5087f2d6ddfe586cf3ca25b7a165bc0a5aed \
     serde_yaml                      0.8.24  707d15895415db6628332b737c838b88c598522e4dc70647e59b72312924aebc \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
     similar                          2.1.0  2e24979f63a11545f5f2c60141afe249d4f19f84581ea2138065e400941d83d3 \
     siphasher                       0.3.10  7bd3e3206899af3f8b12af284fafc038cc1dc2b41d1b89dd17297221c5d225de \
     smallstr                         0.2.0  1e922794d168678729ffc7e07182721a14219c65814e66e91b839a272fe5ae4f \
@@ -208,9 +208,9 @@ cargo.crates \
     yaml-rust                        0.4.5  56c1936c4cc7a1c9ab21a1ebb602eb942ba868cbd44a99cb7cdc5892335e1c85
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  46069222389afbc19f221cca6cbe673f97130251 \
-                    sha256  f7b5300c6fc93d7c339c755c67ea84f9c5daced2fb2735545d01a67ccf2ff770 \
-                    size    7539983
+rmd160  46069222389afbc19f221cca6cbe673f97130251 \
+sha256  f7b5300c6fc93d7c339c755c67ea84f9c5daced2fb2735545d01a67ccf2ff770 \
+size    7539983
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/target/[cargo.rust_platform]/release/texlab ${destroot}${prefix}/bin/

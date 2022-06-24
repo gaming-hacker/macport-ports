@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
@@ -34,8 +34,8 @@ supported_archs x86_64 i386
 master_sites    gnu
 
 checksums       rmd160  d7ee5692019fde4163228538d1b2021ea7f22c29 \
-                sha256  87296a3a9727356b56712c793704082d5df0ff36a34ca9ec9734fc9a8bdfdaab \
-                size    38604458
+sha256  87296a3a9727356b56712c793704082d5df0ff36a34ca9ec9734fc9a8bdfdaab \
+size    38604458
 
 # these dependencies are listed under depends_lib rather than depends_build
 # because gdb will link with libraries they provide if installed.

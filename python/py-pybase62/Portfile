@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,8 +17,8 @@ long_description    {*}${description}, a URL-safe encoding \
 homepage            https://github.com/suminb/base62
 
 checksums           rmd160 27e9c1edf007bdbccb28ca3562600a4eab4520e2 \
-                    sha256 678dc33464e05012da28936914aa7925b61b940d5802dcb0d33d4038e0a37d10 \
-                    size   4525
+sha256 678dc33464e05012da28936914aa7925b61b940d5802dcb0d33d4038e0a37d10 \
+size   4525
 
 python.versions 310
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -10,16 +10,16 @@ if {${subport} eq ${name}} {
     github.setup    ytdl-org ${subport} 2021.12.17
     revision        1
     checksums       rmd160  beca02d231a287488cecffe4c98651b4d6537b9d \
-                    sha256  9f3b99c8b778455165b4525f21505e86c7ff565f3ac319e19733d810194135df \
-                    size    3332299
+sha256  9f3b99c8b778455165b4525f21505e86c7ff565f3ac319e19733d810194135df \
+size    3332299
 
     homepage        https://youtube-dl.org
 
     set symlinks [list \
         etc/bash_completion.d/${subport}.bash-completion \
         etc/fish/completions/${subport}.fish \
-        share/man/man1/${subport}.1 \
-        share/zsh/site-functions/_${subport} \
+share/man/man1/${subport}.1 \
+share/zsh/site-functions/_${subport} \
     ]
 
     post-destroot {
@@ -38,17 +38,17 @@ subport yt-dlp {
     github.setup    yt-dlp ${subport} 2022.06.22.1
     revision        0
     checksums       rmd160  e9568c5191e505c1cf9a7493d98ae366963ae955 \
-                    sha256  fac29d5a8d4c2f1317ba5c2fc4231cf169887bcef26d0fbf0481c90ddb7826db \
-                    size    4610621
+sha256  fac29d5a8d4c2f1317ba5c2fc4231cf169887bcef26d0fbf0481c90ddb7826db \
+size    4610621
 
     dist_subdir     ${subport}/${version}
     distname        ${subport}
 
     set symlinks [list \
-        share/bash-completion/completions/${subport} \
-        share/fish/vendor_completions.d/${subport}.fish \
-        share/man/man1/${subport}.1 \
-        share/zsh/site-functions/_${subport} \
+share/bash-completion/completions/${subport} \
+share/fish/vendor_completions.d/${subport}.fish \
+share/man/man1/${subport}.1 \
+share/zsh/site-functions/_${subport} \
     ]
 }
 
