@@ -57,7 +57,7 @@ compiler.thread_local_storage \
 
 # Needs C++11; halfway redundant due to the blacklist above, but make sure selected
 # compiler supports the standard - getting rid of old Apple GCC versions and the like?
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 
 configure.dir ${workpath}/build
 configure.cmd ${worksrcpath}/configure

@@ -87,7 +87,7 @@ post-patch {
 }
 
 # quickjs uses stdatomic
-compiler.c_standard     2011
+compiler.c_standard 2017
 compiler.blacklist-append \
                         {clang < 700}
 

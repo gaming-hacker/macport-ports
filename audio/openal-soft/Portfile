@@ -43,7 +43,7 @@ depends_build-append    port:pkgconfig
 depends_lib-append      port:libmysofa \
                         port:zlib
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2020
 compiler.thread_local_storage   yes
 
 # error: inline declaration of 'configValue<...>' follows non-inline definition

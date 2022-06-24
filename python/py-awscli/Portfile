@@ -22,7 +22,7 @@ checksums           rmd160  cde361e6ea1bb322544344d503c5d61e30c3c68b \
                     sha256  2f0bba32c502143edf23fe3541a483f76b2358676027fd9834b7eec7af064855 \
                     size    1581651
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     conflicts           py${python.version}-awscli2

@@ -311,9 +311,9 @@ variant mp4 description {Enables mp4 streaming with seeking ability} {
 }
 
 variant perl5 description {Add perl support to the server directly within nginx and call perl via SSI} {
-    depends_lib-append      port:perl5.30
+    depends_lib-append      port:perl5.34
     configure.args-append   --with-http_perl_module \
-                            --with-perl=${prefix}/bin/perl5.30
+                            --with-perl=${prefix}/bin/perl5.34
 }
 
 variant random_index description {Randomize directory indexes} {

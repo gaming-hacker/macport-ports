@@ -25,7 +25,7 @@ checksums           rmd160  652ab4cc872df3bd53d4e0d316356811279ca8b7 \
                     sha256  3c34b7064ea51c460e12c971a99c5655c73bb9ba59dba892904ff2cac21817fb \
                     size    6695883
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     conflicts   py${python.version}-pymc3

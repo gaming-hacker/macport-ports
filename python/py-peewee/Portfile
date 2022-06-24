@@ -20,7 +20,7 @@ checksums           rmd160  76b5bd009dbd4e93921fcf869bb8e02c8375a82c \
                     sha256  48eac70be812ac84daa5400fb8e7b545e0c83adcfa05c8e2a8612f9ced4da495 \
                     size    859070
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools \
