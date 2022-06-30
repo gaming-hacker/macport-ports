@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -25,7 +25,7 @@ use_parallel_build no
 
 # compiler with C11 support is required to build
 # libusb as of version 1.0.24
-compiler.c_standard 2017
+compiler.c_standard 2011
 # fatal error: 'stdatomic.h' file not found
 compiler.blacklist-append {clang < 700}
 
@@ -35,8 +35,8 @@ if {${subport} eq ${name}} {
 
     github.setup    libusb  libusb 1.0.26 v
     checksums       rmd160  daf04e6a17af01ae460c004c4ef1a272a49ea9e0 \
-sha256  6e5fd904275b12ba5e9fcd4ffb1366028f410e632401dfb11703123a5cc2a1f2 \
-size    383960
+                    sha256  6e5fd904275b12ba5e9fcd4ffb1366028f410e632401dfb11703123a5cc2a1f2 \
+                    size    383960
     revision        0
 
     conflicts       libusb-devel
@@ -57,11 +57,11 @@ size    383960
     long_description {*}${long_description} \
         This port provides devel version of ${name}, updated weekly to monthly.
 
-    github.setup    libusb  libusb 4239bc3a50014b8e6a5a2a59df1fff3b7469543b
-    version         20220410-[string range ${github.version} 0 7]
-    checksums       rmd160  daf04e6a17af01ae460c004c4ef1a272a49ea9e0 \
-sha256  6e5fd904275b12ba5e9fcd4ffb1366028f410e632401dfb11703123a5cc2a1f2 \
-size    383960
+    github.setup    libusb  libusb ff8fe9397d4c61f072d209703f854c9f62ed17e3
+    version         20220626-[string range ${github.version} 0 7]
+    checksums       rmd160  1e6615fb35d7e76a7bfd26657dd04a090bf62db6 \
+                    sha256  3d58ffcb21165150e0cc013dc83262a456ae74b5dafd3bbffe63cf1e09710dff \
+                    size    383272
     revision        0
 
     conflicts       libusb

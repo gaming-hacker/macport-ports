@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-hcloud
-version             1.16.0
+version             1.17.0
 revision            0
 
 supported_archs     noarch
@@ -15,11 +15,11 @@ description         ${name} is a library for the Hetzner Cloud API.
 long_description    {*}${description}
 homepage            https://github.com/hetznercloud/hcloud-python
 
-checksums           rmd160  0128a9763400240f311f167c0850caa88a6893f5 \
-sha256  c8b94557d93bcfe437f20a8176693ea4f54358b74986cc19d94ebc23f48e40cc \
-size    93682
+checksums           rmd160  cbe40ae0307eb21525bc66ff2d4ba3c3c1e5208c \
+                    sha256  f8142e0438be277c6fa1ddee13aecd5da152b48c6dec7fd4970def1b5dc219e2 \
+                    size    97841
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_run-append \

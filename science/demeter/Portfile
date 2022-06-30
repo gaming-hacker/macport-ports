@@ -79,11 +79,9 @@ depends_lib-append  port:ifeffit \
                     port:p${perl-version}-yaml-tiny \
                     port:perl${perl-version}
 
-configure.cmd       ${prefix}/bin/perl${perl-version} -I. Build.PL
-configure.args      --destdir ${destroot}
-
-build.cmd           ./Build
-build.target        install
+configure.cmd       ${perl5.bin}
+perl5.use_module_build
+configure.pre_args-prepend  -I.
 
 patchfiles          patch-build-darwin-fix.diff
 

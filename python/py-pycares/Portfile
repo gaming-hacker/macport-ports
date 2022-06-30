@@ -1,15 +1,15 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pycares
-version             4.1.2
+version             4.2.1
 categories-append   devel
 platforms           darwin
 license             MIT
 
-python.versions 310
+python.versions     36 37 38 39 310
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 
@@ -23,9 +23,9 @@ master_sites        pypi:p/pycares
 
 distname            pycares-${version}
 
-checksums           rmd160  dbba5d05f046fb0bfe7c0509a514748911ef3e11 \
-sha256  03490be0e7b51a0c8073f877bec347eff31003f64f57d9518d419d9369452837 \
-size    819726
+checksums           rmd160  46aba5e0670f60c965d6a34565de41ca1518be57 \
+                    sha256  735b4f75fd0f595c4e9184da18cd87737f46bc81a64ea41f4edce2b6b68d46d2 \
+                    size    824955
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
