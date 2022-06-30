@@ -43,8 +43,8 @@ worksrcdir          ${name}-${github.tag_prefix}${version}
 cmake.build_type    Release
 cmake.generator     Ninja
 
-# Build requires -std=gnu++17
-compiler.cxx_standard   2017
+# Build requires -std=gnu++2a
+compiler.cxx_standard 2020
 
 # Don't overide z3's default optimization flags 
 configure.optflags
@@ -325,7 +325,7 @@ subport ${name}-fstar {
     }
 }
 
-set pyversions {27 37 38 39 310}
+set pyversions {310}
 
 # Create a top-level Python binding metaport
 subport py-${name} {

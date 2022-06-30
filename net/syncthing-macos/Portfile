@@ -30,7 +30,7 @@ post-patch {
 }
 
 use_configure           no
-use_xcode               yes
+use_xcode  no
 
 build {
     system -W ${build.dir} "make release"

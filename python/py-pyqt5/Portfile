@@ -32,7 +32,7 @@ if {${name} ne ${subport}} {
         reinplace "s|@PYVER@|${python.version}|g" ${worksrcpath}/project.py
     }
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2020
 
     qt5.depends_component \
                     qtscript \

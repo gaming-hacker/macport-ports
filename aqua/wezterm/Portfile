@@ -30,7 +30,7 @@ fetch.type          git
 
 build.pre_args      --release -v -j${build.jobs}
 
-use_xcode           yes
+use_xcode  no
 
 # requires macOS10.13 (Darwin17) or newer
 if { ${os.major} < 17 } {

@@ -25,7 +25,7 @@ use_parallel_build no
 
 # compiler with C11 support is required to build
 # libusb as of version 1.0.24
-compiler.c_standard 2011
+compiler.c_standard 2017
 # fatal error: 'stdatomic.h' file not found
 compiler.blacklist-append {clang < 700}
 

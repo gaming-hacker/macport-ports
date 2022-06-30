@@ -65,7 +65,7 @@ if {[variant_isset gcc44] || [variant_isset gcc45] || [variant_isset gcc46] || \
     configure.cxx_stdlib        libstdc++
 }
 
-compiler.cxx_standard           2011
+compiler.cxx_standard 2020
 compiler.thread_local_storage   yes
 
 livecheck.type                  regex
