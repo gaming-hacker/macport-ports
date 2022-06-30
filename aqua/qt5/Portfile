@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -76,13 +76,13 @@ if { ${subport} in [list "${name}-qtwebengine" "${name}-qtwebengine-docs"] } {
        https://github.com/qt/qtwebengine-chromium/archive/${qtwebengine_chromium_ref}:tagtwo
 
     checksums       ${qtwebengine_distfile} \
-                    rmd160  6e7585f1fc06ce92d1a613a895af99d4ff8166b7 \
-                    sha256  69ac738ab48eea161ea9b66e3cbde9e74b631125074762adcae0909cdd4dc83d \
-                    size    3776553 \
+rmd160  6e7585f1fc06ce92d1a613a895af99d4ff8166b7 \
+sha256  69ac738ab48eea161ea9b66e3cbde9e74b631125074762adcae0909cdd4dc83d \
+size    3776553 \
                     ${qtwebengine_chromium_distfile} \
-                    rmd160  3086df102608f70ca446840f21861c5472106812 \
-                    sha256  be5f033fa0b3cbb8e39e036d5eed3daa20e426932fb5783dceb8beb375772e83 \
-                    size    462179531
+rmd160  3086df102608f70ca446840f21861c5472106812 \
+sha256  be5f033fa0b3cbb8e39e036d5eed3daa20e426932fb5783dceb8beb375772e83 \
+size    462179531
 
     # Using system ninja: no need to extract bundled ninja
     extract.post_args-append --exclude=${distname}/ninja/
@@ -981,9 +981,9 @@ foreach {module module_info} [array get modules] {
 
         if { ${module} ne "qtwebengine" } {
             checksums                                        \
-                rmd160  [lindex [lindex ${module_info} 0] 0] \
-                sha256  [lindex [lindex ${module_info} 0] 1] \
-                size    [lindex [lindex ${module_info} 0] 2]
+rmd160  [lindex [lindex ${module_info} 0] 0] \
+sha256  [lindex [lindex ${module_info} 0] 1] \
+size    [lindex [lindex ${module_info} 0] 2]
         }
 
         set license_string [lindex ${module_info} 8]
@@ -1900,9 +1900,9 @@ foreach {module module_info} [array get modules] {
 
             if { ${module} ne "qtwebengine" } {
                 checksums                                        \
-                    rmd160  [lindex [lindex ${module_info} 0] 0] \
-                    sha256  [lindex [lindex ${module_info} 0] 1] \
-                    size    [lindex [lindex ${module_info} 0] 2]
+rmd160  [lindex [lindex ${module_info} 0] 0] \
+sha256  [lindex [lindex ${module_info} 0] 1] \
+size    [lindex [lindex ${module_info} 0] 2]
             }
 
             depends_build-append            \
@@ -1979,9 +1979,9 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         revision ${revision_string}
 
         checksums                                          \
-            rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
-            sha256  [lindex [lindex $modules(qtbase) 0] 1] \
-            size    [lindex [lindex $modules(qtbase) 0] 2]
+rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
+sha256  [lindex [lindex $modules(qtbase) 0] 1] \
+size    [lindex [lindex $modules(qtbase) 0] 2]
 
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               app 1.0
@@ -24,8 +24,8 @@ platforms               darwin
 master_sites            gnu
 
 checksums           rmd160  aa21813493db3bcbfede24785db9e7722c620a85 \
-                    sha256  8a32723eba80b200be73552e7da5807d2bb8e655c1d03bd3903c5fea43100e62 \
-                    size    9249022
+sha256  8a32723eba80b200be73552e7da5807d2bb8e655c1d03bd3903c5fea43100e62 \
+size    9249022
 
 depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
                     port:appstream-glib \

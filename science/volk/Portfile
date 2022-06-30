@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -64,13 +64,13 @@ master_sites ${github.homepage}/archive/${git.branch}:tagone \
              https://github.com/${cpu_features_github_author}/${cpu_features_github_project}/archive/${cpu_features_github_branch}:tagtwo
 
 checksums    ${main_distfile} \
-             rmd160  e109ad2361dfa2ab8908aff644b067fcd832028d \
-             sha256  468bebdb8c2ae9b82837ad08abd146dd9a9a48d3de7bea2d0095e4b1557b5299 \
-             size    357828 \
+rmd160  e109ad2361dfa2ab8908aff644b067fcd832028d \
+sha256  468bebdb8c2ae9b82837ad08abd146dd9a9a48d3de7bea2d0095e4b1557b5299 \
+size    357828 \
              ${cpu_features_distfile} \
-             rmd160  7221e014514170ed24a1d0294b8195cecd9b7465 \
-             sha256  b47031a2a9ab04cb6514285103e51ba92c8f0bf28470cce911ac0c9af781c307 \
-             size    63263
+rmd160  7221e014514170ed24a1d0294b8195cecd9b7465 \
+sha256  b47031a2a9ab04cb6514285103e51ba92c8f0bf28470cce911ac0c9af781c307 \
+size    63263
 
 post-extract {
     # put the cpu_features_github_project directory into position

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -26,8 +26,8 @@ homepage            https://skarnet.org/software/skalibs/
 master_sites        ${homepage}
 
 checksums           rmd160  f73708cb807467c773b55b45e6e16bdf837d29ac \
-                    sha256  3e228f72f18d88c17f6c4e0a66881d6d3779427b7e7e889f3142b6f26da30285 \
-                    size    222717
+sha256  3e228f72f18d88c17f6c4e0a66881d6d3779427b7e7e889f3142b6f26da30285 \
+size    222717
 
 configure.args      --disable-shared
 

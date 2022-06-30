@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -19,8 +19,8 @@ homepage            https://tomcat.apache.org/
 master_sites        apache:tomcat/tomcat-connectors/native/${version}/source/
 
 checksums           rmd160  92af26ba1d24818b998eb6393886e7a72063fef4 \
-                    sha256  7540cff954774b3f8d8f7480f92f1c206a48f25440a62186b196c5930b45fea1 \
-                    size    430359
+sha256  7540cff954774b3f8d8f7480f92f1c206a48f25440a62186b196c5930b45fea1 \
+size    430359
 
 distname            ${name}-${version}-src
 worksrcdir          ${distname}/native

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -31,11 +31,11 @@ extract.only
 # run `port clean --all py*-tensorflow-macos` afterwards
 
 platform arm {
-    python.versions 38 39 310
+    python.versions 310
     set minimum_supported_major_version 21
 }
 platform i386 {
-    python.versions 38 39 310
+    python.versions 310
     set minimum_supported_major_version 20
 }
 
@@ -63,46 +63,46 @@ if {${name} ne ${subport}} {
             master_sites \
                     https://files.pythonhosted.org/packages/b9/ae/309d9f387a861c2c5dd0ef1c7806bb5ac68328b246e9adabcaf07b747cca/
             checksums \
-                    rmd160  a25ecb73a2fe55f416e0d6cf2d8b3500e792c983 \
-                    sha256  d6badc2586040fedc6ef03cffa5cdabb0e0733995742bc88bee5b25522dcf0ef \
-                    size    200558949
+rmd160  a25ecb73a2fe55f416e0d6cf2d8b3500e792c983 \
+sha256  d6badc2586040fedc6ef03cffa5cdabb0e0733995742bc88bee5b25522dcf0ef \
+size    200558949
         } elseif {${python.version} eq 39} {
             master_sites \
                     https://files.pythonhosted.org/packages/43/17/ff2fca52cb3111db2a28f31aad646b326b5c79c5ca7e1f8771e20ae4c69a/
             checksums \
-                    rmd160  eeadd9fc12db65fcf20707d8e2c896eaf90866f8 \
-                    sha256  d2450e441c27fe6f49411b1b33680814e220278d3c94a29b5ac8fd4fee0b3b88 \
-                    size    200427890
+rmd160  eeadd9fc12db65fcf20707d8e2c896eaf90866f8 \
+sha256  d2450e441c27fe6f49411b1b33680814e220278d3c94a29b5ac8fd4fee0b3b88 \
+size    200427890
         } elseif {${python.version} eq 38} {
             master_sites \
                     https://files.pythonhosted.org/packages/ac/5c/238ba5a24f8186ef1bccada9f5cd82eee39d901a2b0773cd6ddaf7ffb432/
             checksums \
-                    rmd160  2af5e5e443718f4299819a62ffd1252e98fb7a75 \
-                    sha256  abc1f9cd95eb1541c548faab1e2fc6b82d769294069f918eb01b721c9a15515a \
-                    size    200536634
+rmd160  2af5e5e443718f4299819a62ffd1252e98fb7a75 \
+sha256  abc1f9cd95eb1541c548faab1e2fc6b82d769294069f918eb01b721c9a15515a \
+size    200536634
         }
     } elseif {${build_arch} eq {x86_64}} {
         if {${python.version} eq 310} {
             master_sites \
                     https://files.pythonhosted.org/packages/da/61/e4d2c3426cfc5d2999ed0b16e2cae916936270f6cb35538200e36c6a8ec5/
             checksums \
-                    rmd160  653fefb311425e0329df5333da3a7a2e3015d63c \
-                    sha256  4dbd5ffd3eafa0ba007d16da94a52cb604327e7622e7d1a51a70519b6cad6254 \
-                    size    237540167
+rmd160  653fefb311425e0329df5333da3a7a2e3015d63c \
+sha256  4dbd5ffd3eafa0ba007d16da94a52cb604327e7622e7d1a51a70519b6cad6254 \
+size    237540167
         } elseif {${python.version} eq 39} {
             master_sites \
                     https://files.pythonhosted.org/packages/53/a9/52d868bac322a93396e4a1aff8e1a426dfb11c41cbfea3fe940c6f37deb2/
             checksums \
-                    rmd160  5ff13d99391d640840c0aced0decf00a0989f2ba \
-                    sha256  72a6ba8dbb8ed5d075755a512287978f79025a843af2866d88db7bfbbf6d1696 \
-                    size    237539073
+rmd160  5ff13d99391d640840c0aced0decf00a0989f2ba \
+sha256  72a6ba8dbb8ed5d075755a512287978f79025a843af2866d88db7bfbbf6d1696 \
+size    237539073
         } elseif {${python.version} eq 38} {
             master_sites \
                     https://files.pythonhosted.org/packages/14/01/2791a4731b6aa6cff3af85a52998e567d9f3da2e5c16d944464a36bf4369/
             checksums \
-                    rmd160  a62a13cc99230356dc4c0c7af1881d50a1f2199e \
-                    sha256  18e80fe9d0ae46e963d1f4dfd79c0eba9447d678ea3bb3d0a98e6ab135ef16e3 \
-                    size    237516312
+rmd160  a62a13cc99230356dc4c0c7af1881d50a1f2199e \
+sha256  18e80fe9d0ae46e963d1f4dfd79c0eba9447d678ea3bb3d0a98e6ab135ef16e3 \
+size    237516312
         }
     }
     distname tensorflow_macos-${version}-cp${python.version}-cp${python.version}-macosx_11_0_${build_arch}

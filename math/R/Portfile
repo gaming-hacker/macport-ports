@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup compilers 1.0
@@ -31,8 +31,8 @@ master_sites                https://cran.rstudio.com/src/base/R-4/ \
                             https://cran.r-project.org/src/base/R-4/
 
 checksums                   rmd160  e0402470745998c4a41bf9ec0a57634cb7522175 \
-                            sha256  4d52db486d27848e54613d4ee977ad952ec08ce17807e1b525b10cd4436c643f \
-                            size    37601544
+sha256  4d52db486d27848e54613d4ee977ad952ec08ce17807e1b525b10cd4436c643f \
+size    37601544
 
 # Fails to configure with Xcode clang 4.6.3
 compiler.blacklist-append   {clang < 500}

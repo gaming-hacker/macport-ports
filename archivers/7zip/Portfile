@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -34,8 +34,8 @@ use_xz              yes
 distname            7z[string map {. {}} ${version}]-src
 
 checksums           rmd160  baa217c6ef426c883c0c53ddac676b452ae1b65e \
-                    sha256  40969f601e86aff49aaa0ba0df5ce6fd397cf7e2683a84b591b0081e461ef675 \
-                    size    1285632
+sha256  40969f601e86aff49aaa0ba0df5ce6fd397cf7e2683a84b591b0081e461ef675 \
+size    1285632
 
 extract.mkdir       yes
 patchfiles          patch-7zip_gcc_mak.diff

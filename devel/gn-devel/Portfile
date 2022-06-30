@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -62,8 +62,8 @@ if {${subport} eq ${name}} {
     master_sites    https://github.com/qt/qtwebengine-chromium/archive/${qtwebengine_chromium_ref}
 
     checksums       rmd160  3086df102608f70ca446840f21861c5472106812 \
-                    sha256  be5f033fa0b3cbb8e39e036d5eed3daa20e426932fb5783dceb8beb375772e83 \
-                    size    462179531
+sha256  be5f033fa0b3cbb8e39e036d5eed3daa20e426932fb5783dceb8beb375772e83 \
+size    462179531
 
     # Just extract gn; do not extract all of chromium (~2GB) or ninja
     worksrcdir      ${distname}/gn

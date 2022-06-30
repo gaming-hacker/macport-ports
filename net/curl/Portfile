@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       clang_dependency 1.0
@@ -8,8 +8,8 @@ PortGroup                       clang_dependency 1.0
 name                            curl
 version                         7.84.0
 checksums                       rmd160  6a3c2c80393e01423de2db4b47c37f42c44306f9 \
-                                sha256  2d118b43f547bfe5bae806d8d47b4e596ea5b25a6c1f080aef49fbcd817c5db8 \
-                                size    2477944
+sha256  2d118b43f547bfe5bae806d8d47b4e596ea5b25a6c1f080aef49fbcd817c5db8 \
+size    2477944
 
 if {${subport} eq ${name} && ${os.platform} eq "darwin" && ${os.major} < 15} {
     # Temporarily use older version while some build failures are investigated.
@@ -17,8 +17,8 @@ if {${subport} eq ${name} && ${os.platform} eq "darwin" && ${os.major} < 15} {
     # https://github.com/curl/curl/issues/9059
     version                     7.83.1
     checksums                   rmd160  ac59faa4f713bcf13004f7c6663e0ac31031c5d1 \
-                                sha256  2cb9c2356e7263a1272fd1435ef7cdebf2cd21400ec287b068396deb705c22c4 \
-                                size    2474940
+sha256  2cb9c2356e7263a1272fd1435ef7cdebf2cd21400ec287b068396deb705c22c4 \
+size    2474940
 }
 
 categories                      net www
@@ -298,9 +298,9 @@ subport curl-ca-bundle {
     distfiles-append            ${certdata_distfile}:certdata
 
     checksums-append            ${certdata_distfile} \
-                                rmd160  abf6ebcd142af00430e5603742968da5183caccb \
-                                sha256  6321e67bee7568217fb2e44833558e5d020edde6d6dd9a8eac3b1a85e09ca003 \
-                                size    274838
+rmd160  abf6ebcd142af00430e5603742968da5183caccb \
+sha256  6321e67bee7568217fb2e44833558e5d020edde6d6dd9a8eac3b1a85e09ca003 \
+size    274838
 
     extract.only                ${curl_distfile}
     extract.post_args-append    ${worksrcdir}/Makefile \

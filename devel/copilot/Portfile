@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -42,8 +42,8 @@ build.args          release
 use_parallel_build  no
 
 checksums           rmd160  3d5b9a4ed9d1df5ec516987fd6c193998dae2e0e \
-                    sha256  fd1b30ab232e0a9ed9128c8686311ae65e936dc76e97485304874cd92bc3902e \
-                    size    8407169
+sha256  fd1b30ab232e0a9ed9128c8686311ae65e936dc76e97485304874cd92bc3902e \
+size    8407169
 
 patch {
     # Remove Windows and Linux builds for the release target

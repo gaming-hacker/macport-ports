@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,8 +17,8 @@ long_description        libmysofa is a simple set of C functions to read AES SOF
                         if they contain HRTFs stored according to the AES69-2015 standard.
 
 checksums               rmd160  7f31caef08b1981e8144f3c80da3e3e9b35b717e \
-                        sha256  48a60e0ad7310b5a0556cf2fbef9e5379da725203788f0838f467929608e2b04 \
-                        size    200012091
+sha256  48a60e0ad7310b5a0556cf2fbef9e5379da725203788f0838f467929608e2b04 \
+size    200012091
 
 depends_lib-append      port:zlib
 

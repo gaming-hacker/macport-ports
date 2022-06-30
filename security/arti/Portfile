@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -18,9 +18,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  d3872af0cf7091a8f89ebd913e5e5a52c69e9d2e \
-                    sha256  92a6a93d236004740cf75edd23c575289071f78c284517f90b1893fc78373294 \
-                    size    840525
+rmd160  d3872af0cf7091a8f89ebd913e5e5a52c69e9d2e \
+sha256  92a6a93d236004740cf75edd23c575289071f78c284517f90b1893fc78373294 \
+size    840525
 
 notes "
     ${name} is not yet ready for production or anti-censorship use cases
@@ -314,12 +314,12 @@ cargo.crates \
     serde_with_macros                1.5.2  e182d6ec6f05393cc0e5ed1bf81ad6db3a8feedf8ee515ecdd369809bcce8082 \
     serial_test                      0.7.0  d19dbfb999a147cedbfe82f042eb9555f5b0fa4ef95ee4570b74349103d9c9f4 \
     serial_test_derive               0.7.0  cb9e2050b2be1d681f8f1c1a528bcfe4e00afa2d8995f713974f5333288659f2 \
-    sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
-    sha1-asm                         0.5.1  563d4f7100bc3fce234e5f37bbf63dc2752558964505ba6ac3f7204bdc59eaac \
-    sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
-    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
-    sha3                            0.10.1  881bf8156c87b6301fc5ca6b27f11eeb2761224c7081e69b409d5a1951a70c86 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
+sha1-asm                         0.5.1  563d4f7100bc3fce234e5f37bbf63dc2752558964505ba6ac3f7204bdc59eaac \
+sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sha3                            0.10.1  881bf8156c87b6301fc5ca6b27f11eeb2761224c7081e69b409d5a1951a70c86 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     shellexpand-fork                 2.1.1  5b9b96d72c00ea377d8dfe6177badd0a6f42b4cb3122479ffe44fee2532d85ee \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

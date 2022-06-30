@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    Generate a native macOS folder icon from a mask file.
 homepage            https://github.com/lgarron/folderify
 
 checksums           rmd160  41d26f914203ad3fee89e0041c0c3872e54d6988 \
-                    sha256  0927c9453dc8efb6ea4addb0eee2711528152045f22d411c9de1e7f45621f06c \
-                    size    5643688
+sha256  0927c9453dc8efb6ea4addb0eee2711528152045f22d411c9de1e7f45621f06c \
+size    5643688
 
 depends_lib-append \
                     port:py${python.version}-setuptools

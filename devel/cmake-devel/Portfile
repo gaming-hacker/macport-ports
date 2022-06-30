@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -39,8 +39,8 @@ gitlab.instance     https://gitlab.kitware.com
 gitlab.setup        cmake   cmake 8c562ece28b7a13ddb734b8c51710ebafe9ac570
 version             20220623-3.24.0-rc2-[string range ${gitlab.version} 0 7]
 checksums           rmd160  476ae04bbdd7812d4e09282dbb6f035e4fed2be7 \
-                    sha256  73f839bb6d62b41b5fbe81de5f11540cf2fe60a6204a5be8e26d16afa7c4fba6 \
-                    size    7951195
+sha256  73f839bb6d62b41b5fbe81de5f11540cf2fe60a6204a5be8e26d16afa7c4fba6 \
+size    7951195
 revision            0
 
 # switched from "3.23.0" to "date-ver-hash"
