@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-virtualenv
-version             20.15.0
+version             20.15.1
 revision            0
 
 categories-append   devel
@@ -19,12 +19,12 @@ long_description    virtualenv is a tool to create isolated Python \
 
 homepage            https://virtualenv.pypa.io
 
-checksums           rmd160  9fc93ab53d921521fdd6997c35ffce26506b729c \
-sha256  4c44b1d77ca81f8368e2d7414f9b20c428ad16b343ac6d226206c5b84e2b4fcc \
-size    13523195
+checksums           rmd160  22ae6412f07079cc66ab083e63b234da203e99da \
+                    sha256  288171134a2ff3bfb1a2f54f119e77cd1b81c29fc1265a2356f3e8d14c7d58c4 \
+                    size    13523736
 
 # keep older Python versions here, do add the EOL version to the list below
-python.versions 310
+python.versions     27 34 35 36 37 38 39 310
 
 if {${name} ne ${subport}} {
     # add EOL warnings
@@ -60,8 +60,8 @@ if {${name} ne ${subport}} {
         version     20.6.0
         revision    0
         checksums   rmd160  e5a870dc14efbc5b5d9d021d55b6f123c978967c \
-sha256  51df5d8a2fad5d1b13e088ff38a433475768ff61f202356bb9812c454c20ae45 \
-size    8700762
+                    sha256  51df5d8a2fad5d1b13e088ff38a433475768ff61f202356bb9812c454c20ae45 \
+                    size    8700762
 
         depends_lib-replace \
                     port:py${python.version}-platformdirs \

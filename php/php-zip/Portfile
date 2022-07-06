@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           php 1.1
@@ -8,23 +8,23 @@ categories-append   archivers
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             PHP-3.01
 
-php.branches 8.1
+php.branches        5.2 5.3 5.4 5.5 5.6 7.0 7.1 7.2 7.3 7.4 8.0 8.1
 php.pecl            yes
 
 if {[vercmp ${php.branch} 5.4] >= 0} {
     epoch           3
-    version         1.20.1
+    version         1.21.0
     revision        0
-    checksums       rmd160  51b42f067fb92b87c79cfd5cc971d06a19ba090c \
-sha256  90ce147ba2ace0d711daa132861a0f9548a704a870cffedeca52fbf935749c1e \
-size    351117
+    checksums       rmd160  e104edac5d29f44a14fe59f92e8d090276b1d810 \
+                    sha256  5d427dad8f2db4dff5e09550ce331235940435d10b6f88db4aa6a0f305a5862c \
+                    size    353627
 } elseif {[vercmp ${php.branch} 4.3] >= 0} {
     epoch           3
     version         1.16.1
     revision        0
     checksums       rmd160  3ed87e3f8200452c0db76a6ae24de49c8dfe9176 \
-sha256  9802a2e3941e5cb3aed1bf60b434654af520dd0ad096934d81f2d3826ff86f7e \
-size    289776
+                    sha256  9802a2e3941e5cb3aed1bf60b434654af520dd0ad096934d81f2d3826ff86f7e \
+                    size    289776
 }
 
 description         PHP zip functions

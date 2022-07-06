@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -9,11 +9,11 @@ PortGroup               legacysupport 1.1
 legacysupport.newest_darwin_requires_legacy 14
 
 name                    openal-soft
-version                 1.22.1
+version                 1.22.2
 revision                0
-checksums               rmd160  38d4e041a3fdda2ce722b41d581ba8042f00a306 \
-sha256  f7f98538d882b513812ae315770a5c88f6ee593e1cccd08648dd1bebbc5c98af \
-size    606062
+checksums               rmd160  b30b877a4f93e5a6be989698f3812589896318f1 \
+                        sha256  ae94cc95cda76b7cc6e92e38c2531af82148e76d3d88ce996e2928a1ea7c3d20 \
+                        size    606151
 
 categories              audio devel
 maintainers             {ryandesign @ryandesign} openmaintainer
@@ -43,7 +43,7 @@ depends_build-append    port:pkgconfig
 depends_lib-append      port:libmysofa \
                         port:zlib
 
-compiler.cxx_standard 2020
+compiler.cxx_standard   2014
 compiler.thread_local_storage   yes
 
 # error: inline declaration of 'configValue<...>' follows non-inline definition

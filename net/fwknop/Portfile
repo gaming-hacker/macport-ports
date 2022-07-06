@@ -3,7 +3,7 @@ PortGroup       perl5 1.0
 
 name            fwknop
 version         1.9.12
-revision        7
+revision        8
 conflicts       fwknop-client
 categories      net security
 license         GPL-2
@@ -33,12 +33,12 @@ long_description \
 master_sites    ${homepage}download/
 
 checksums       md5    4e190dfd31921ddcc0aa6ded8cdae6ae \
-sha1   ece88ad7653bebee46ae348d9854f3e8751f392c \
-rmd160 6b52cce7efb57409d02e4b97b1724d9ebdbb61fd
+                sha1   ece88ad7653bebee46ae348d9854f3e8751f392c \
+                rmd160 6b52cce7efb57409d02e4b97b1724d9ebdbb61fd
 
 use_bzip2       yes
 
-perl5.branches 5.34
+perl5.branches  5.34
 
 depends_lib     port:p${perl5.major}-crypt-cbc \
                 port:p${perl5.major}-crypt-rijndael \

@@ -1,15 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 name                bugzilla
 version             4.4.5
-revision            4
+revision            5
 license             MPL-2
 categories          devel www databases
 maintainers         nomaintainer
-platforms           darwin
 description         popular and extensive bug-tracking system
 long_description    Bugzilla is a Defect Tracking System or \
                     Bug-Tracking System. Defect Tracking Systems allow \
@@ -26,9 +25,9 @@ homepage            https://www.bugzilla.org/
 master_sites        http://ftp.mozilla.org/pub/mozilla.org/webtools/
 
 checksums           rmd160  af53b39d035de36f636f615e3e3dabef6d051772 \
-sha256  70609fa5bbe55a3b802afcf749a098824d7a96dc87b91ce07b000cfdd7987da5
+                    sha256  70609fa5bbe55a3b802afcf749a098824d7a96dc87b91ce07b000cfdd7987da5
 
-perl5.branches 5.34
+perl5.branches      5.34
 
 depends_lib         port:apache2 \
                     port:perl${perl5.major} \
@@ -163,4 +162,3 @@ For the rest of the steps, the main ${name} directory can be found here\
 livecheck.type  regex
 livecheck.url   ${master_sites}
 livecheck.regex ${name}-(\[0-9\]+\\.\[0-9\]*\[02468\](\\.\[0-9\]+)*)${extract.suffix}
-
