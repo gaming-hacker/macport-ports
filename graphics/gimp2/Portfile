@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -31,10 +31,10 @@ distname            gimp-${version}
 use_bzip2           yes
 
 checksums           rmd160  6316d10dd9f02ab69e90d37eacdfb2d405d505fb \
-                    sha256  3f15c70554af5dcc1b46e6dc68f3d8f0a6cc9fe56b6d78ac08c0fd859ab89a25 \
-                    size    31397425
+sha256  3f15c70554af5dcc1b46e6dc68f3d8f0a6cc9fe56b6d78ac08c0fd859ab89a25 \
+size    31397425
 
-perl5.branches      5.34
+perl5.branches 5.34
 
 depends_build       port:pkgconfig \
                     port:appstream-glib \
@@ -87,7 +87,7 @@ depends_run         port:gimp-help-en
 # redefinition of typedef is invalid in C [-Wtypedef-redefinition] (#50329)
 # as of version 2.10.0 requires a C++14 compatible compiler to configure
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2020
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 700}
 
 patchfiles          patch-etc-gimprc.in.diff \
@@ -157,9 +157,9 @@ destroot.keepdirs   ${destroot}${prefix}/share/gimp/2.0/fonts
 
 variant python27 description {Build with python plugin support using python 2.7} {
     configure.args-delete     --disable-python
-    configure.python          ${prefix}/bin/python2.7
-    depends_lib-append        port:py27-pygtk
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/2.7
+    configure.python          ${prefix}/bin/python3.10
+    depends_lib-append        port:py310-pygtk
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.10
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
     configure.env-append      PATH=${python_framework}/bin:$env(PATH)
 }

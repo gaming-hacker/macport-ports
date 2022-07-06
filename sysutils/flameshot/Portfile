@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake   1.1
@@ -24,8 +24,8 @@ maintainers             {gmail.com:herby.gillot @herbygillot} \
                         openmaintainer
 
 checksums               rmd160  0504e76f4090c88101266fae8cb0c95d2835ac41 \
-                        sha256  c82c05d554e7a6d810aca8417ca12b21e4f74864455ab4ac94602668f85ac22a \
-                        size    15618560
+sha256  c82c05d554e7a6d810aca8417ca12b21e4f74864455ab4ac94602668f85ac22a \
+size    15618560
 
 qt5.depends_build_component \
                         qttools
@@ -36,7 +36,7 @@ cmake.build_dir         ${worksrcpath}/build
 
 configure.args-append   -DENABLE_CACHE=OFF
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 destroot {
     set build_src_dir   ${cmake.build_dir}/src

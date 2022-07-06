@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,8 +20,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  d0599bd27796963a35843af719bac498ea63ceb9 \
-                    sha256  c03dfbaa3be5d4c4f49d272a43cf9a43ed6ebc03a71055fbb182ab9e4904cf81 \
-                    size    1656045
+sha256  c03dfbaa3be5d4c4f49d272a43cf9a43ed6ebc03a71055fbb182ab9e4904cf81 \
+size    1656045
 
 # This project uses vendored sources, which cannot be used with Go modules
 # turned off.  So remove the environment setting GO111MODULE=off.

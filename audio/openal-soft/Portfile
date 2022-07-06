@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -12,8 +12,8 @@ name                    openal-soft
 version                 1.22.2
 revision                0
 checksums               rmd160  b30b877a4f93e5a6be989698f3812589896318f1 \
-                        sha256  ae94cc95cda76b7cc6e92e38c2531af82148e76d3d88ce996e2928a1ea7c3d20 \
-                        size    606151
+sha256  ae94cc95cda76b7cc6e92e38c2531af82148e76d3d88ce996e2928a1ea7c3d20 \
+size    606151
 
 categories              audio devel
 maintainers             {ryandesign @ryandesign} openmaintainer

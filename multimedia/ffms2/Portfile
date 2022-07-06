@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ long_description    FFmpegSource (usually known as FFMS or FFMS2) is a cross-pla
                     with the sometimes less than straightforward and less than perfectly documented FFmpeg API.
 
 checksums           rmd160  75ad17bd4caca1331cae8352edf6b50875a436a6 \
-                    sha256  4dbbe944156c5fe2380f31da236570a1c79cb6a1c835b9ed644b5057a9f285e7 \
-                    size    140392
+sha256  4dbbe944156c5fe2380f31da236570a1c79cb6a1c835b9ed644b5057a9f285e7 \
+size    140392
 
 depends_build-append \
                     port:pkgconfig \

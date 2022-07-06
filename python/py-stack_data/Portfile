@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel
 license             MIT
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -22,8 +22,8 @@ long_description    ${description}
 homepage            http://github.com/alexmojaki/stack_data
 
 checksums           rmd160  6b93e044059b021ccff4da628e598a8e233bbc0e \
-                    sha256  5612b512f33c6cce1f62802da81126532a8c0626e61b64b6d98fa4edfceab4a4 \
-                    size    33542
+sha256  5612b512f33c6cce1f62802da81126532a8c0626e61b64b6d98fa4edfceab4a4 \
+size    33542
 
 if {${name} ne ${subport}} {
     depends_build-append \

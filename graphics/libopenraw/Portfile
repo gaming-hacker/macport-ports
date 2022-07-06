@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           boost 1.0
@@ -24,8 +24,8 @@ homepage            https://libopenraw.freedesktop.org/${name}/
 master_sites        https://libopenraw.freedesktop.org/download/
 
 checksums           rmd160  3e9dc34cce9cdd93b1982e99097e13185c1e5388 \
-                    sha256  3cfa4310138411baf388e24fc80ca84ff3fafc21c0da69f603ae63821aff8e56 \
-                    size    563624
+sha256  3cfa4310138411baf388e24fc80ca84ff3fafc21c0da69f603ae63821aff8e56 \
+size    563624
 
 use_xz              yes
 
@@ -55,7 +55,7 @@ compiler.blacklist-append \
                     {macports-clang-14}
 
 # as of version 0.3.0 requires C++14 to build
-compiler.cxx_standard 2014
+compiler.cxx_standard 2020
 
 # Teach glibtool about -stdlib=libc++
 use_autoreconf      yes

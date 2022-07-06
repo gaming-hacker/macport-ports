@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Socket 2.035 ../../authors/id/P/PE/PEVANS
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ long_description    {*}${description}
 platforms           darwin
 
 checksums           rmd160  51d5c78bca93cc9d4813f347e707d91112d5d47f \
-                    sha256  55a498bf5e711de4580c97c3ab13e8490ad42a109294dc25a2770662eae21203 \
-                    size    45318
+sha256  55a498bf5e711de4580c97c3ab13e8490ad42a109294dc25a2770662eae21203 \
+size    45318
 
 livecheck.type      regex
 livecheck.url       https://cpan.metacpan.org/authors/id/P/PE/PEVANS

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -16,8 +16,8 @@ long_description        GitUp provides features such as a live and interactive r
 homepage                https://gitup.co
 
 checksums               rmd160  fd7fb6d650908bad247c8f6a1442cba3ff8f15ec \
-                        sha256  34856e9a3b2029e82e33318043a89439ea22c00181e26574448c0738b95001d8 \
-                        size    21312701
+sha256  34856e9a3b2029e82e33318043a89439ea22c00181e26574448c0738b95001d8 \
+size    21312701
 
 fetch.type              git
 
@@ -38,7 +38,7 @@ patchfiles              patch-disable-sparkle.diff \
                         patch-libgit2.diff
 
 use_configure           no
-use_xcode               yes
+use_xcode  no
 
 variant clt description {Installs GitUp command line tool} {
 }

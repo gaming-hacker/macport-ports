@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    cmus is a small and fast text mode music player for Linux \
 homepage            https://cmus.github.io/
 
 checksums           rmd160  a6cb051f8cba5832662fb018efa29f2f954347ba \
-                    sha256  d8758c50319605d58c10d10276199ce357d409d4f9d5c07963132b099af774a8 \
-                    size    324203
+sha256  d8758c50319605d58c10d10276199ce357d409d4f9d5c07963132b099af774a8 \
+size    324203
 
 depends_build       port:pkgconfig
 depends_lib         port:libao \

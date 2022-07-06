@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Sub-HandlesVia 0.028 ../../authors/id/T/TO/TOBYINK
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  422f4fe46f58cf3d7f7e5408e169bff9dfbf3b25 \
-                    sha256  8d3da181e1d67b109f1eaf101442eab3a2b65de6a13c79639dd033a72b7b5c01 \
-                    size    142580
+sha256  8d3da181e1d67b109f1eaf101442eab3a2b65de6a13c79639dd033a72b7b5c01 \
+size    142580
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -18,8 +18,8 @@ long_description    Syncthing replaces proprietary sync and cloud services \
                     and how it's transmitted over the Internet.
 
 checksums           rmd160  3f2f346489f4c9d5229d194e3787829ad2116edb \
-                    sha256  2a00c4a4ed64f10221c01809eddbe3bac45a1b0b735c02c6702876ef77b8a702 \
-                    size    6304903
+sha256  2a00c4a4ed64f10221c01809eddbe3bac45a1b0b735c02c6702876ef77b8a702 \
+size    6304903
 
 categories          net
 installs_libs       no

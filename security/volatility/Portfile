@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,12 +27,12 @@ long_description    The Volatility Framework is a completely open collection \
 homepage            http://www.volatilityfoundation.org/
 
 checksums           rmd160  c34a84610678174a18636dc2d2d170a8618f6688 \
-                    sha256  5f12ef2d73357ee90aecb013b23cecb0fe2d7e246b7f9d5161e6610e51f80051 \
-                    size    5247066
+sha256  5f12ef2d73357ee90aecb013b23cecb0fe2d7e246b7f9d5161e6610e51f80051 \
+size    5247066
 
 supported_archs     noarch
 
-python.default_version  27
+python.default_version 310
 
 depends_build-append    port:py${python.version}-setuptools
 depends_lib-append      port:py${python.version}-pycryptodome \

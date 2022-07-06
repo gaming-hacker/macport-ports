@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -16,8 +16,8 @@ description         A Beautiful Gemini Client
 long_description    {*}${description}
 
 checksums           rmd160  4c458e24c80b2b4ea00d85374efa4fdd689f1295 \
-                    sha256  238377c3675c052aacc1c5cdb2729e10ad2f3e38dc3f1820a113f4e28e59c312 \
-                    size    7425470
+sha256  238377c3675c052aacc1c5cdb2729e10ad2f3e38dc3f1820a113f4e28e59c312 \
+size    7425470
 
 depends_build-append \
                     port:pkgconfig \
@@ -54,5 +54,5 @@ variant tui conflicts gui description {Build the TUI interface} {
 
 default_variants    +gui
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 compiler.blacklist-append {clang < 800}

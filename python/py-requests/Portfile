@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 license             Apache-2
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -28,8 +28,8 @@ long_description    Most existing Python modules for dealing HTTP \
 homepage            https://requests.readthedocs.io/
 
 checksums           rmd160  ed0fccd3aa2f726c7f96137cef3c227e2789f8a4 \
-                    sha256  7c5599b102feddaa661c826c56ab4fee28bfd17f5abca1ebbe3e7f19d7c97983 \
-                    size    109805
+sha256  7c5599b102feddaa661c826c56ab4fee28bfd17f5abca1ebbe3e7f19d7c97983 \
+size    109805
 
 if {${name} ne ${subport}} {
 
@@ -43,8 +43,8 @@ if {${name} ne ${subport}} {
         epoch               1
         revision            0
         checksums           rmd160  4a8a60da9b3619a53bd5a74245e58123702ae7e6 \
-                            sha256  27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804 \
-                            size    102161
+sha256  27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804 \
+size    102161
         python.pep517       no
         depends_build-append \
                             port:py${python.version}-setuptools
@@ -52,8 +52,8 @@ if {${name} ne ${subport}} {
         version             2.27.1
         revision            0
         checksums           rmd160  4bcd04983842ddce16afbfa83bfd042ba7e7a468 \
-                            sha256  68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61 \
-                            size    106758
+sha256  68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61 \
+size    106758
         python.pep517       no
         depends_build-append \
                             port:py${python.version}-setuptools

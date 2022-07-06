@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -23,8 +23,8 @@ long_description    The MicroPython project aims to put an implementation of Pyt
                     Note that only a subset of Python 3 functionality is implemented for the data types and modules.
 
 checksums           rmd160  8216d05bc459aa20e329c29836da5f7d27fe2449 \
-                    sha256  940e3815e8c425c6eaed3a2aa30d320220cc012a2654b6e086e1b6f0567df350 \
-                    size    72269360
+sha256  940e3815e8c425c6eaed3a2aa30d320220cc012a2654b6e086e1b6f0567df350 \
+size    72269360
 
 homepage            https://micropython.org/
 master_sites        ${homepage}resources/source/

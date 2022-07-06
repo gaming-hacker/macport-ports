@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; c-basic-offset: 4; indent-tabs-mode: nil; tab-width: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -7,8 +7,8 @@ name                LaTeXML
 version             0.8.6
 revision            1
 checksums           rmd160  3f71105b7da576ab73e714430626888080716602 \
-                    sha256  9529c651b67f5e8ddef1fd1852f974e756a17b711c46d4118f0677ad0e6e9bb1 \
-                    size    13776498
+sha256  9529c651b67f5e8ddef1fd1852f974e756a17b711c46d4118f0677ad0e6e9bb1 \
+size    13776498
 license             public-domain
 maintainers         {nist.gov:bruce.miller @brucemiller}
 description         LaTeXML converts TeX to XML/HTML/MathML
@@ -17,7 +17,7 @@ long_description \
 
 # Written in Perl, but it is an application, not just modules
 PortGroup           perl5 1.0
-perl5.branches      5.34
+perl5.branches 5.34
 perl5.setup         ${name} ${version}
 perl5.link_binaries_suffix
 
