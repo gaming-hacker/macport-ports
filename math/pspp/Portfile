@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               app 1.0
 PortGroup               active_variants 1.1
 
 name                    pspp
-version                 1.6.1
+version                 1.6.2
 revision                0
 
 categories              math
@@ -23,9 +23,9 @@ homepage                https://www.gnu.org/software/pspp/
 platforms               darwin
 master_sites            gnu
 
-checksums           rmd160  aa21813493db3bcbfede24785db9e7722c620a85 \
-sha256  8a32723eba80b200be73552e7da5807d2bb8e655c1d03bd3903c5fea43100e62 \
-size    9249022
+checksums           rmd160  56bc0b078e2bae6283df80ad270bfdb195d245ff \
+                    sha256  73294ca2f5b2f7fc41bbf8b78c5888c8075f43c6097fd482abb04f85ab0847b6 \
+                    size    9249366
 
 depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
                     port:appstream-glib \

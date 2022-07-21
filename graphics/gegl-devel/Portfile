@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -9,8 +9,8 @@ PortGroup           legacysupport 1.0
 name                gegl-devel
 conflicts           gegl
 set my_name         gegl
-version             0.4.36
-revision            2
+version             0.4.38
+revision            0
 set branch          [join [lrange [split ${version} .] 0 1] .]
 license             {GPL-3+ LGPL-3+}
 categories          graphics
@@ -29,16 +29,16 @@ dist_subdir         ${my_name}
 distname            ${my_name}-${version}
 use_xz              yes
 
-checksums           rmd160  d4fcb061a356da5ee9231cfe106411052d8699a8 \
-sha256  6fd58a0cdcc7702258adaeffb573a389228ae8f0eff47578efda2309b61b2ca6 \
-size    5680876
+checksums           rmd160  d6e7de3f332594802226736d41228ffd13af251f \
+                    sha256  e4a33c8430a5042fba8439b595348e71870f0d95fbf885ff553f9020c1bed750 \
+                    size    5722188
 
 depends_build-append \
                     port:pkgconfig \
                     port:python310
 
 depends_lib-append \
-                    port:babl-devel \
+                    path:lib/pkgconfig/babl.pc:babl \
                     path:lib/pkgconfig/cairo.pc:cairo \
                     path:lib/pkgconfig/pango.pc:pango \
                     path:lib/pkgconfig/gdk-pixbuf-2.0.pc:gdk-pixbuf2 \
@@ -74,8 +74,8 @@ post-patch {
 }
 
 # needs C++14 C11
-compiler.cxx_standard 2020
-compiler.c_standard 2017
+compiler.cxx_standard 2014
+compiler.c_standard   2011
 
 # version 0.4.14+ requires apple clang 700.0.72 (Xcode 7.0.0) to build new parallelization code
 # ../gegl/gegl-parallel.h:134:29: error: expected expression '[] (gint     i,'

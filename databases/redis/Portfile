@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -10,7 +10,7 @@ PortGroup           makefile 1.0
 legacysupport.newest_darwin_requires_legacy 15
 
 name                redis
-version             7.0.2
+version             7.0.3
 revision            0
 categories          databases
 platforms           darwin
@@ -25,9 +25,9 @@ set redis_domain    redis.io
 homepage            https://${redis_domain}
 master_sites        https://download.${redis_domain}/releases/
 
-checksums           rmd160  3b3769889513170b1cde6fc57def56654847ccab \
-sha256  5e57eafe7d4ac5ecb6a7d64d6b61db775616dbf903293b3fcc660716dbda5eeb \
-size    2956784
+checksums           rmd160  9530e7aab082cac4fb54c2e0d5fecfacbe82b435 \
+                    sha256  2cde7d17214ffe305953da9fff12333e8a72caa57fd4923e4872f6362a208e73 \
+                    size    2962858
 
 patchfiles          patch-redis.conf.diff \
                     patch-hiredis.diff
@@ -39,8 +39,8 @@ post-patch {
 }
 
 # see ${worksrcpath}/deps/jemalloc/Makefile
-compiler.cxx_standard 2020
-configure.cxxflags-append   -std=gnu++2a
+compiler.cxx_standard   2014
+configure.cxxflags-append   -std=c++14
 
 # https://trac.macports.org/ticket/59245
 xcode_workaround.fixed_xcode_version 11.2

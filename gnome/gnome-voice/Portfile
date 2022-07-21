@@ -1,0 +1,47 @@
+
+PortSystem          1.0
+
+name                gnome-voice
+version             0.0.6
+revision            0
+set branch          [join [lrange [split $version .] 0 1] .]
+
+categories          gnome
+license             GPL-3+
+maintainers         {gnome.org:ole @oleaamot} \
+                    openmaintainer
+description         GNOME Voice is Free Public Voice Software for GTK+/GNOME.
+long_description    {*}${description} \
+                    Free Public Voice broadcasts via api.perceptron.stream:8000
+homepage            https://www.gnomevoice.org/
+master_sites        gnome:sources/${name}/${branch}/
+
+use_xz              yes
+
+checksums           rmd160  f15cae481f168b181858f9b86bb3fc2f2fb923ee \
+                    sha256  1a58d20efc03c0eb9a7b540de93846b87d14eeb56908f74f61a53f1bd65d5dd7 \
+                    size    105968
+
+depends_build       port:gettext \
+                    port:intltool \
+                    port:pkgconfig
+
+depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
+                    path:lib/pkgconfig/pango.pc:pango \
+                    port:desktop-file-utils \
+                    port:geocode-glib \
+                    port:geoclue2 \
+                    port:gettext-runtime \
+                    port:gnome-common \
+                    port:gstreamer1 \
+                    port:gstreamer1-gst-plugins-base \
+                    port:gstreamer1-gst-plugins-bad \
+                    port:gstreamer1-gst-plugins-good \
+                    port:gstreamer1-gst-plugins-ugly \
+                    path:lib/pkgconfig/gtk+-3.0.pc:gtk3 \
+                    port:libchamplain \
+                    port:libxml2
+
+depends_run         port:adwaita-icon-theme
+
+patchfiles          no-intltool-perl.patch

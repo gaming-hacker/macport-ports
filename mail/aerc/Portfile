@@ -1,0 +1,43 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           makefile 1.0
+
+name                aerc
+version             0.11.0
+revision            0
+categories          mail
+license             MIT
+maintainers         nomaintainer
+description         Terminal-based email client.
+long_description    aerc is an email client that runs in your terminal, \
+                    featuring editing emails in an embedded terminal tmux-style \
+                    and first-class support for working with Git & email.
+platforms           darwin
+homepage            https://aerc-mail.org
+master_sites        https://git.sr.ht/~rjarry/aerc/archive/
+distname            ${version}
+worksrcdir          ${name}-${distname}
+
+checksums           rmd160  59eb97688d7f533382abd184e4a31bd6c6f43fa2 \
+                    sha256  3d8f3a2800946fce070e3eb02122e77c427a61c670a06337539b3e7f09e57861 \
+                    size    230891
+
+depends_build       port:go \
+                    port:scdoc
+
+default_variants    +notmuch
+
+variant notmuch description {Enable support for notmuch integration} {
+    depends_lib         port:notmuch
+    build.args          GOFLAGS="-tags=notmuch"
+}
+
+build.target
+
+post-destroot {
+    delete ${destroot}${prefix}/share/applications/aerc.desktop
+}
+
+livecheck.url       https://git.sr.ht/~rjarry/aerc/refs
+livecheck.regex     {aerc (\d+(?:\.\d+)*)}

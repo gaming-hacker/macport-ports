@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.34
-perl5.setup         Sub-HandlesVia 0.028 ../../authors/id/T/TO/TOBYINK
+perl5.branches      5.28 5.30 5.32 5.34
+perl5.setup         Sub-HandlesVia 0.032 ../../authors/id/T/TO/TOBYINK
 revision            0
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -13,24 +13,23 @@ long_description    ${description}
 
 platforms           darwin
 
-checksums           rmd160  422f4fe46f58cf3d7f7e5408e169bff9dfbf3b25 \
-sha256  8d3da181e1d67b109f1eaf101442eab3a2b65de6a13c79639dd033a72b7b5c01 \
-size    142580
+checksums           rmd160  5195053a5186057b2f6062a22f143dc1cc2aea90 \
+                    sha256  41533ebce5eb8cd38fe5a8ab187d975fee77158df4f9ebab0aa6d2bcedb4d84a \
+                    size    155683
 
 if {${perl5.major} != ""} {
     depends_build-append \
+                    port:p${perl5.major}-class-tiny \
                     port:p${perl5.major}-test-fatal \
                     port:p${perl5.major}-test-requires \
                     port:p${perl5.major}-try-tiny
 
     depends_lib-append \
                     port:p${perl5.major}-class-method-modifiers \
-                    port:p${perl5.major}-class-tiny \
                     port:p${perl5.major}-exporter-tiny \
                     port:p${perl5.major}-role-hooks \
                     port:p${perl5.major}-role-tiny \
                     port:p${perl5.major}-scalar-list-utils \
-                    port:p${perl5.major}-scope-guard \
                     port:p${perl5.major}-type-tiny
 
     supported_archs noarch

@@ -1,18 +1,20 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-hypothesis
-version             6.47.4
+version             6.50.1
 revision            0
 categories-append   devel
 platforms           darwin
 license             MPL-2
 
-python.versions 310
+python.versions     27 35 36 37 38 39 310
 
-maintainers         {khindenburg @kurthindenburg} openmaintainer
+maintainers         {khindenburg @kurthindenburg} \
+                    {@catap korins.ky:kirill} \
+                    openmaintainer
 
 description         A library for property based testing
 
@@ -23,9 +25,9 @@ long_description \
 
 homepage            https://pypi.python.org/pypi/hypothesis
 
-checksums           rmd160  1630a0b23f812933f81487c2dbd8036e525a7e66 \
-sha256  0f98e20e8427d99af93a7d2d8184c07f6d5df2666d27626979c52b67b93090e0 \
-size    326509
+checksums           rmd160  ad472ed7c9a8eedb90e319a6c9a7d2c35210e78f \
+                    sha256  1a19ade3b27825cab622c95fcf25182a27a42f97589c163173fcbdafb8621d1e \
+                    size    327456
 
 if {${name} ne ${subport}} {
     depends_build-append  port:py${python.version}-setuptools
@@ -38,8 +40,8 @@ if {${name} ne ${subport}} {
         epoch               1
 
         checksums           rmd160  a7d04bf21c941fd427b0c1af5e9ab5bd87fc6610 \
-sha256  3c4369a4b0a1348561048bcda5f1db951a1b8e2a514ea8e8c70d36e656bf6fa0 \
-size    233528
+                            sha256  3c4369a4b0a1348561048bcda5f1db951a1b8e2a514ea8e8c70d36e656bf6fa0 \
+                            size    233528
 
         depends_lib-append  port:py${python.version}-enum34
     }
@@ -48,16 +50,20 @@ size    233528
         version             5.33.2
         revision            0
         checksums           rmd160  ba112a0d4a97ffaf0a0aa6e6ab2c135e0dd96d10 \
-sha256  5cc9073ee5a5c109c8d731a52c304729dbb6affed570eb7d35908bfdd937975e \
-size    267988
+                            sha256  5cc9073ee5a5c109c8d731a52c304729dbb6affed570eb7d35908bfdd937975e \
+                            size    267988
     }
 
     if {${python.version} == 36} {
         version             6.31.6
         revision            0
         checksums           rmd160  fa5b58a419eafda77d1b0fe21723034da51c76b3 \
-sha256  d54be6a80b160ad5ea4209b01a0d72e31d910510ed7142fa9907861911800771 \
-size    316859
+                            sha256  d54be6a80b160ad5ea4209b01a0d72e31d910510ed7142fa9907861911800771 \
+                            size    316859
+    }
+
+    if {${python.version} > 36 && ${python.version} < 311} {
+       depends_lib-append   port:py${python.version}-exceptiongroup
     }
 
     livecheck.type      none

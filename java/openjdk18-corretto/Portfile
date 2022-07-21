@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem       1.0
 
@@ -14,7 +14,7 @@ universal_variant no
 supported_archs  x86_64 arm64
 
 # https://github.com/corretto/corretto-18/releases
-version      18.0.1.10.1
+version      18.0.2.9.1
 revision     0
 
 description  Amazon Corretto OpenJDK 18 (Short Term Support)
@@ -24,24 +24,24 @@ master_sites https://corretto.aws/downloads/resources/${version}/
 
 if {${configure.build_arch} eq "x86_64"} {
     distname     amazon-corretto-${version}-macosx-x64
-    checksums    rmd160  83f208e0801e0c266dd6e2bb18caec8c5b709c94 \
-sha256  fcefcb33a9d5b5b1be666a6eb8316243c6d960bd2dc8eb3cc84f0fed6509c1d3 \
-size    188679093
+    checksums    rmd160  e44c83158182621bd5b795996f9cdf90d4b2a281 \
+                 sha256  243313e935abd7c76c2c1f4b541b6cd6e0b7ac8b97e222245bb50249fb18a9d3 \
+                 size    188835751
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     amazon-corretto-${version}-macosx-aarch64
-    checksums    rmd160  7fd5f55feccf55c40e9799f794dc67217547f03b \
-sha256  16efc9b728af72a3375e47dd73e4fb4ed0c0e6d8006e3aeaa98bdcd87dcac1d7 \
-size    186534095
+    checksums    rmd160  ed66d255f047d22eba63debc4b8a3551589bd9cd \
+                 sha256  f003000033a25d0ce8f00adfc1b88935da0d330b0ab5587c520f793869415462 \
+                 size    187052397
 }
 
 worksrcdir   amazon-corretto-18.jdk
 
 # https://trac.macports.org/wiki/PortfileRecipes#compare-osx-darwin-version
-if {${os.platform} eq "darwin" && ${os.major} < 17} {
-    # See https://github.com/corretto/corretto-18/blob/release-18.0.1.10.1/CHANGELOG.md
+if {${os.platform} eq "darwin" && ${os.major} < 19} {
+    # See https://github.com/corretto/corretto-18/blob/release-18.0.2.9.1/CHANGELOG.md
     known_fail yes
     pre-fetch {
-        ui_error "${name} ${version} is only supported on macOS 10.13 High Sierra or later."
+        ui_error "${name} ${version} is only supported on macOS 10.15 Catalina or later."
         return -code error
     }
 }

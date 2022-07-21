@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.34
-perl5.setup         WWW-Mechanize 2.09 ../../authors/id/O/OA/OALDERS
+perl5.branches      5.28 5.30 5.32 5.34
+perl5.setup         WWW-Mechanize 2.12
 revision            0
 platforms           darwin
 license             {Artistic-1 GPL}
@@ -20,9 +20,12 @@ long_description    WWW::Mechanize, or Mech for short, helps you automate \
                     can be fetched. Mech also stores a history of the URLs \
                     you have visited, which can be queried and revisited.
 
-checksums           rmd160  0374625f14ae717351886201f471296acd0a74ef \
-sha256  a671310766e11a963d0795915ec2335ab5b282d96db160e352bbd254720f3fa5 \
-size    185185
+checksums           rmd160  3b45331b2414e8c522b242a0311d75ec085833c2 \
+                    sha256  329c7dbfd601835cf8dc3afa8872a3a660aafcb4b710c1d00be4291f01be78d6 \
+                    size    191657
+
+# parallel build causes tests to hang
+use_parallel_build  no
 
 if {${perl5.major} != ""} {
     depends_build-append \

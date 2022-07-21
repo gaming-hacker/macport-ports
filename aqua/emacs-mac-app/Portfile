@@ -1,0 +1,162 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           bitbucket 1.0
+
+set emacs_version   28.1
+set emacs_mac_ver   9.0
+
+bitbucket.setup     mituharu emacs-mac emacs-${emacs_version}-mac-${emacs_mac_ver}
+name                emacs-mac-app
+version             ${emacs_mac_ver}
+revision            2
+categories          aqua editors
+maintainers         {amake @amake} openmaintainer
+
+description         Emacs Mac port
+
+long_description    ${name} is the \"Mac port\" of GNU Emacs ${emacs_version}. \
+                    This provides a native GUI with tight OS integration.
+
+platforms           darwin
+license             GPL-3+
+
+checksums           rmd160  5496d49592fd3c69f6f32f4ab23973a4c68db87b \
+                    sha256  967d5642ca47ae3de2626f0fc7163424e36925642827e151c3906179020dd90e \
+                    size    45985554
+
+depends_lib         port:ncurses \
+                    port:libxml2 \
+                    port:gnutls \
+                    port:lcms2 \
+                    port:gmp \
+                    port:jansson
+
+patchfiles          patch-src_emacs.c.diff
+
+if {${subport} eq ${name}} {
+    conflicts       emacs-mac-app-devel
+}
+
+post-patch {
+    reinplace "s|__PREFIX__|${prefix}|" ${worksrcpath}/src/emacs.c
+}
+
+universal_variant   no
+
+use_autoreconf      yes
+autoreconf.cmd      ./autogen.sh
+autoreconf.args     all
+
+depends_build       port:autoconf \
+                    port:automake \
+                    port:libtool \
+                    port:pkgconfig \
+                    port:texinfo
+
+# The Mac port uses CoreText instead of HarfBuzz
+configure.args      --disable-silent-rules \
+                    --with-mac \
+                    --enable-mac-app=${worksrcpath} \
+                    --enable-mac-self-contained \
+                    --without-dbus \
+                    --without-gconf \
+                    --without-libotf \
+                    --without-m17n-flt \
+                    --without-harfbuzz \
+                    --without-imagemagick \
+                    --without-rsvg \
+                    --without-xaw3d \
+                    --with-libgmp \
+                    --with-gnutls \
+                    --with-xml2 \
+                    --with-json \
+                    --with-lcms2 \
+                    --with-modules \
+
+platform darwin {
+    configure.cflags-append -fobjc-arc
+}
+
+if {${os.major} <= 13} {
+    known_fail  yes
+}
+
+subport ${name}-devel {
+    set emacs_version   28.1
+    set date            2022-04-05
+
+    version         [string map {- {}} ${date}]
+    revision        1
+
+    long_description \
+        ${name} is the \"Mac port\" of GNU Emacs ${emacs_version}. \
+        This provides a native GUI with tight OS integration.
+
+    fetch.type      git
+    git.url         --shallow-since=${date}T00:00:00 --branch work https://bitbucket.org/mituharu/emacs-mac.git
+    git.branch      1be8ebee4895b668a9a92d9ba34a1dd75a9c3ce1
+
+    # --shallow-since needs a newer version of git than on some older systems,
+    # so use MacPorts version
+    depends_fetch-append port:git
+    git.cmd         ${prefix}/bin/git
+
+    conflicts       emacs-mac-app
+
+    # Bitbucket doesn't seem to have a good way to get the latest commit on a
+    # branch
+    livecheck.type  none
+}
+
+destroot.destdir {}
+
+post-destroot {
+    # Rename the app bundle to avoid a conflict with emacs-app
+    move ${worksrcpath}/Emacs.app ${destroot}${applications_dir}/EmacsMac.app
+
+    # Install site-start.el
+    set site_lisp ${destroot}${applications_dir}/EmacsMac.app/Contents/Resources/site-lisp
+    xinstall -d ${site_lisp}
+    file copy ${filespath}/site-start.el ${site_lisp}
+    reinplace "s|__PREFIX__|${prefix}|g" ${site_lisp}/site-start.el
+
+    # Install emacs-module.h header file
+    xinstall -m 0755 -d ${destroot}${prefix}/include/emacs-mac
+    xinstall -m 0644 ${worksrcpath}/src/emacs-module.h \
+        ${destroot}${prefix}/include/emacs-mac
+}
+
+variant multitty description {Enable Multi-TTY support} {
+    patchfiles-append   patch-multi-tty
+}
+
+variant rsvg description {Enable librsvg bindings} {
+    depends_lib-append     path:lib/pkgconfig/librsvg-2.0.pc:librsvg
+    configure.args-delete  --without-rsvg
+    configure.args-append  --with-rsvg
+}
+
+variant imagemagick description {Enable ImageMagick bindings} {
+    depends_lib-append     port:ImageMagick
+    configure.args-delete  --without-imagemagick
+    configure.args-append  --with-imagemagick
+}
+
+variant nativecomp description {Builds emacs with native compilation support} {
+    set gcc_v                      12
+    depends_lib-append             port:gcc${gcc_v}
+    configure.args-append          --with-native-compilation
+    compiler.cpath-prepend         ${prefix}/include/gcc${gcc_v}
+    compiler.library_path-prepend  ${prefix}/lib/gcc${gcc_v}
+    configure.ldflags-append       "-Wl,-rpath ${prefix}/lib/gcc${gcc_v}"
+    build.args-append              NATIVE_FULL_AOT=1
+}
+
+variant metal description {Enable experimental Metal support} {
+    configure.args-append  --with-mac-metal
+}
+
+default_variants-append +nativecomp
+
+livecheck.version   ${version}

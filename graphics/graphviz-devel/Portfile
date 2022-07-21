@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                      1.0
 PortGroup                       xcodeversion 1.0
@@ -8,10 +8,10 @@ PortGroup                       compiler_blacklist_versions 1.0
 
 name                            graphviz-devel
 set my_name                     graphviz
-version                         4.0.0
-checksums                       rmd160  75ce8768143623ea61796f750d7bbcce3c522965 \
-sha256  0f03fe2492a7659f2918e51cbdcc2431f118f1bb90fe611985fd655c461ee775 \
-size    27591714
+version                         5.0.0
+checksums                       rmd160  c779e39f42584e9f946cbe1b9f675193a903b55c \
+                                sha256  500231f19651455623b9cee0bff93b3dd884df31ec85f7d1436726121f6b7bd1 \
+                                size    27590532
 
 set thisbranch                  [strsed ${name} "g/^${my_name}//"]
 set otherbranch                 [expr {${thisbranch} eq {} ? {-devel} : {}}]
@@ -51,7 +51,7 @@ minimum_xcodeversions           {9 3.1.2}
 compiler.blacklist-append       \
                                 {clang < 900}
 
-compiler.cxx_standard 2020
+compiler.cxx_standard           2011
 
 if {${name} eq ${subport}} {
 PortGroup                       legacysupport 1.1
@@ -64,6 +64,7 @@ revision                        0
 conflicts                       graphviz${otherbranch}
 
 depends_build                   port:pkgconfig \
+                                port:gettext \
                                 port:autoconf-archive
 
 depends_lib                     path:include/turbojpeg.h:libjpeg-turbo \
@@ -76,7 +77,7 @@ depends_lib                     path:include/turbojpeg.h:libjpeg-turbo \
                                 port:gts \
                                 port:libtool \
                                 port:zlib \
-                                port:gettext
+                                port:gettext-runtime
 
 depends_run                     port:urw-fonts
 
@@ -191,12 +192,12 @@ variant perl description {Include PERL 5 language bindings} {
 #}
 
 variant python27 description {Include Python 2.7 language bindings} {
-    depends_lib-append          port:python310
+    depends_lib-append          port:python27
     depends_build-append        port:swig-python
 
     configure.args-replace      --disable-swig --enable-swig
     configure.args-replace      --disable-python --enable-python
-    configure.python            ${prefix}/bin/python3.10
+    configure.python            ${prefix}/bin/python2.7
 }
 
 variant ruby description {Include Ruby language bindings} {
@@ -334,6 +335,17 @@ subport graphviz-gui${thisbranch} {
         # This port does not build with the new Xcode build system at present
         build.pre_args          -UseNewBuildSystem=NO
         destroot.pre_args       -UseNewBuildSystem=NO
+    }
+
+    # When building for 10.11, with the 10.12 SDK, builds fail due to:
+    # - Unknown type name 'NSToolbarItemIdentifier'
+    # That identifier must be replaced with 'NSString *' for this scenario.
+    # See: https://trac.macports.org/ticket/63597
+    if { (${os.major} == 15) && [vercmp ${xcodeversion} 8] >= 0} {
+        ui_debug "Building for 10.11 with 10.12 SDK; enabling patch for NSToolbarItemIdentifer"
+        pre-patch {
+            reinplace "s|NSToolbarItemIdentifier|NSString *|g" macosx/GVAttributeInspectorController.h
+        }
     }
 
     xcode.configuration         Release

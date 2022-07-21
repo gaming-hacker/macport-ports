@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -30,16 +30,16 @@ subport                 libomp-devel {}
 
 if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
     if { ${subport} eq "libomp-devel" } {
-        version         14.0.4
-        checksums       rmd160  75ad369911d553c6770420b9e6910ca5aad26f72 \
-sha256  d4b627e2668c3c1001b6c772297273dc67b42f2deec934a59650a55731f8d411 \
-size    1205512
+        version         14.0.6
+        checksums       rmd160  adfbff4d86630cd4713ff9ae1e115d9ecd4f51d2 \
+                        sha256  4f731ff202add030d9d68d4c6daabd91d3aeed9812e6a5b4968815cfdff0eb1f \
+                        size    1205476
         livecheck.regex {"llvmorg-([0-9.rc-]+)".*}
     } else {
-        version         14.0.4
-        checksums       rmd160  75ad369911d553c6770420b9e6910ca5aad26f72 \
-sha256  d4b627e2668c3c1001b6c772297273dc67b42f2deec934a59650a55731f8d411 \
-size    1205512
+        version         14.0.6
+        checksums       rmd160  adfbff4d86630cd4713ff9ae1e115d9ecd4f51d2 \
+                        sha256  4f731ff202add030d9d68d4c6daabd91d3aeed9812e6a5b4968815cfdff0eb1f \
+                        size    1205476
         livecheck.regex {"llvmorg-([0-9.]+)".*}
     }
 
@@ -52,8 +52,8 @@ size    1205512
     }
 
     # Build requires std::atomic
-    configure.cxxflags-append -std=gnu++2a
-    compiler.cxx_standard 2020
+    configure.cxxflags-append -std=c++11
+    compiler.cxx_standard   2011
 
     master_sites        https://github.com/llvm/llvm-project/releases/download/llvmorg-${version} \
                         https://releases.llvm.org/${version}
@@ -79,7 +79,7 @@ size    1205512
         worksrcdir      openmp-${version}/final/runtime
         version         3.8.1
         checksums       rmd160  a41054068a127ef84610afef8090109078cb6c46 \
-sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
+                        sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
         set rtpath      "./"
     }
     livecheck.type      none

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://www.qt.io/blog/qt-6.0-released
-compiler.c_standard 2017
-compiler.cxx_standard 2020
+compiler.c_standard 2011
+compiler.cxx_standard 2017
 
 # Save off the actual macports prefix for use late
 set mp_prefix       ${prefix}
@@ -48,7 +48,7 @@ foreach {qt_test_name qt_test_info} [array get available_qt_versions] {
 }
 
 # MacPorts LLVM/Clang version to use when required.
-set llvm_version 11
+set llvm_version 13
 
 ############################################################################### Modules Not Considered
 #
@@ -176,7 +176,7 @@ array set modules {
             5aeb841a5665f79672a302569754ea7d541c69102c551707e43489e797213c71
             29764804
         }
-        "port:python310"
+        "port:ninja port:python39"
         ""
         "qtbase qtsvg qtimageformats"
         {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
@@ -296,7 +296,7 @@ array set modules {
             86e27e005c2421052ca90e619c8d13f1bd19c6bf1a7b84dd4e0f7855fc884fd7
             1717684
         }
-        ""
+        "port:ninja"
         ""
         "qtbase"
         {"Qt SVG"}
@@ -311,7 +311,7 @@ array set modules {
             5a856d3d3d5fe6e15dc3f1af707a0ef1df2e687850403fc94af635edb9312bfb
             8668512
         }
-        ""
+        "port:ninja"
         "port:clang-${llvm_version}"
         "qtbase qtdeclarative"
         {"Qt Designer" "Qt Help" "Qt UI Tools"}
@@ -326,7 +326,7 @@ array set modules {
             3f680b520da585697fc725697a52c7d2074a6a728f6830366b491a6f8b9183c7
             1444712
         }
-        ""
+        "port:ninja"
         ""
         "qttools"
         {"translation files"}
@@ -509,9 +509,9 @@ foreach {module module_info} [array get modules] {
         build.target
 
         checksums                                        \
-rmd160  [lindex [lindex ${module_info} 0] 0] \
-sha256  [lindex [lindex ${module_info} 0] 1] \
-size    [lindex [lindex ${module_info} 0] 2]
+            rmd160  [lindex [lindex ${module_info} 0] 0] \
+            sha256  [lindex [lindex ${module_info} 0] 1] \
+            size    [lindex [lindex ${module_info} 0] 2]
 
         set license_string [lindex ${module_info} 8]
         set license_string [string range ${license_string} 1+[string first ":" ${license_string}] end]
@@ -885,7 +885,7 @@ size    [lindex [lindex ${module_info} 0] 2]
             configure.pre_args-append    ${worksrcpath}
             configure.dir                ${workpath}/build
 
-            # QT suggests using Nina to build
+            # Qt suggests using Ninja to build
             build.cmd                    ninja
             build.dir                    ${workpath}/build
 
@@ -989,6 +989,13 @@ size    [lindex [lindex ${module_info} 0] 2]
             ###############################################################################
             # Special Cases
             ###############################################################################
+            
+            # special case
+            if { ${module} eq "qtdeclarative" } {
+                PortGroup compiler_blacklist_versions 1.0
+                # Xcode 10.3 compiler segfaults
+                compiler.blacklist-append {clang < 1100}
+            }
         }
     }
 }
@@ -1008,9 +1015,9 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         revision ${revision_string}
 
         checksums                                          \
-rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
-sha256  [lindex [lindex $modules(qtbase) 0] 1] \
-size    [lindex [lindex $modules(qtbase) 0] 2]
+            rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
+            sha256  [lindex [lindex $modules(qtbase) 0] 1] \
+            size    [lindex [lindex $modules(qtbase) 0] 2]
 
         depends_build-append  port:${name}-qtbase
 
@@ -1149,7 +1156,7 @@ if { [info exists depends_lib] } {
 foreach deps ${depends_check} {
     if { [string first ":python39" ${deps}] >= 0 } {
         # If Qt components use Python, ensure that MacPorts python39 is used
-        set python_framework ${frameworks_dir}/Python.framework/Versions/3.10
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.9
     }
 }
 if { ${python_framework} ne "" } {

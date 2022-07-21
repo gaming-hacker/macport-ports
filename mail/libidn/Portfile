@@ -1,0 +1,35 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                libidn
+version             1.41
+revision            0
+categories          mail
+license             {LGPL-2.1+ GPL-3+}
+description         GNU International Domain Name Library (legacy version 1).
+long_description    {*}${description} \
+                    GNU Libidn is a fully documented implementation of the Stringprep, \
+                    Punycode and IDNA 2003 specifications. Libidn's purpose is to encode \
+                    and decode internationalized domain names.
+homepage            https://www.gnu.org/software/libidn/
+maintainers         nomaintainer
+master_sites        gnu
+
+checksums           rmd160  0517762c55b39b03a1c71eda30e3e15fb9c7ec2a \
+                    sha256  884d706364b81abdd17bee9686d8ff2ae7431c5a14651047c68adf8b31fd8945 \
+                    size    2664011
+
+depends_build       port:gettext
+depends_lib         port:libiconv port:gettext-runtime
+
+configure.args      --disable-csharp --disable-silent-rules
+
+notes "
+GNU libidn2 is the successor of GNU libidn. It comes with IDNA 2008 and\
+TR46 implementations and also provides a compatibility layer for GNU libidn.
+"
+
+livecheck.type      regex
+livecheck.url       https://ftp.gnu.org/gnu/$name/
+livecheck.regex     $name-(\\d+(?:\\.\\d+)*)

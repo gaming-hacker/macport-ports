@@ -81,12 +81,7 @@ if {${os.major} < 10} {
     # see https://trac.macports.org/ticket/57135
     set compilers.gcc_default gcc7
 } else {
-    if { ${os.arch} eq "arm" } {
-        # GCC 11 still problematic on arm
-        set compilers.gcc_default gccdevel
-    } else {
-        set compilers.gcc_default gcc11
-    }
+    set compilers.gcc_default gcc12
 }
 
 set compilers.list {cc cxx cpp objc fc f77 f90}
@@ -94,14 +89,14 @@ set compilers.list {cc cxx cpp objc fc f77 f90}
 # build database of gcc compiler attributes
 # Should match those in compilers/gcc_compilers.tcl
 if { ${os.arch} eq "arm" } {
-    set gcc_versions {10 11 devel}
+    set gcc_versions {10 11 12 devel}
 } else {
     set gcc_versions {}
-    if { ${os.major} < 20 } {
+    if { ${os.major} < 15 } {
         lappend gcc_versions 5 6 7 8 9
     }
     if { ${os.major} >= 10 } {
-        lappend gcc_versions 10 11
+        lappend gcc_versions 10 11 12 devel
     }
 }
 # GCC version providing the primary runtime
@@ -109,7 +104,7 @@ if { ${os.arch} eq "arm" } {
 if { ${os.major} < 10 } {
     set gcc_main_version 7
 } else {
-    set gcc_main_version 11
+    set gcc_main_version 12
 }
 ui_debug "GCC versions for Darwin ${os.major} ${os.arch} - ${gcc_versions}"
 foreach ver ${gcc_versions} {
@@ -149,9 +144,9 @@ foreach ver ${gcc_versions} {
     set cdb(gcc$ver_nodot,fc)       ${prefix}/bin/gfortran-mp-$ver
     set cdb(gcc$ver_nodot,f77)      ${prefix}/bin/gfortran-mp-$ver
     set cdb(gcc$ver_nodot,f90)      ${prefix}/bin/gfortran-mp-$ver
-    # The devel port, and starting with version 12, GCC will support using -stdlib=libc++,
+    # The devel port, and starting with version 10, GCC will support using -stdlib=libc++,
     # so use it for improved compatibility with clang builds
-    if { $ver eq "devel" || [vercmp ${ver} 12] >= 0 } {
+    if { $ver eq "devel" || [vercmp ${ver} 10] >= 0 } {
         set cdb(gcc$ver_nodot,cxx_stdlib) libc++
     } else {
         set cdb(gcc$ver_nodot,cxx_stdlib) libstdc++
@@ -790,7 +785,7 @@ proc compilers::add_fortran_legacy_support {} {
         } else {
             set fortran_compiler    [fortran_variant_name]
         }
-        if {${fortran_compiler} in "gcc11 gcc10 gccdevel"} {
+        if {${fortran_compiler} in "gcc12 gcc11 gcc10 gccdevel"} {
             configure.fflags-delete     -fallow-argument-mismatch
             configure.fcflags-delete    -fallow-argument-mismatch
             configure.f90flags-delete   -fallow-argument-mismatch
@@ -802,6 +797,21 @@ proc compilers::add_fortran_legacy_support {} {
 }
 
 port::register_callback compilers::add_fortran_legacy_support
+
+proc compilers::add_gcc_rpath_support {} {
+    global compilers.gcc_default prefix
+    if {[fortran_variant_name] eq "gfortran"} {
+        set fortran_compiler    ${compilers.gcc_default}
+    } else {
+        set fortran_compiler    [fortran_variant_name]
+    }
+    if {${fortran_compiler} in "gcc12 gcc11 gcc10 gccdevel"} {
+        configure.ldflags-delete  -Wl,-rpath ${prefix}/lib/libgcc
+        configure.ldflags-append  -Wl,-rpath ${prefix}/lib/libgcc
+    }
+}
+
+port::register_callback compilers::add_gcc_rpath_support
 
 proc compilers::fortran_legacy_support_proc {option action args} {
     if {$action ne  "set"} return
