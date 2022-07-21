@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup               java 1.0
@@ -26,8 +26,8 @@ master_sites            apache:ant/
 master_sites.mirror_subdir  binaries
 
 checksums               rmd160  3b8fb74f30e76c35c7320902e861146b5d141c53 \
-                        sha256  57ceb0b249708cb28d081a72045657ab067fc4bc4a0d1e4af252496be44c2e66 \
-                        size    4495811
+sha256  57ceb0b249708cb28d081a72045657ab067fc4bc4a0d1e4af252496be44c2e66 \
+size    4495811
 
 worksrcdir              apache-ant-${version}
 set workTarget          ""

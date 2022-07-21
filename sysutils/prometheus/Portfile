@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -63,8 +63,8 @@ set prom_log_dir    ${prefix}/var/log/${name}
 set prom_log_file   ${prom_log_dir}/${name}.log
 
 checksums           rmd160  751096ff96f0e587de72b174b5f000520adf8abf \
-                    sha256  22a7409cc5f5818bba3b8e858df42d551c7a9643dff79382f08784e170465727 \
-                    size    6048114
+sha256  22a7409cc5f5818bba3b8e858df42d551c7a9643dff79382f08784e170465727 \
+size    6048114
 
 add_users           ${prom_user} \
                     group=${prom_user} \

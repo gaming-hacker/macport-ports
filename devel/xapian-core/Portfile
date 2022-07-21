@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -32,8 +32,8 @@ if {${subport} eq ${name}} {
     PortGroup                   muniversal 1.0
 
     checksums                   rmd160  d27e5929ca8d847c634959ce4713b216d1b90834 \
-                                sha256  ce2be5eff72075c8106c0340e70b1093dbcebe2ab42dc1c1be08dd3ad419442d \
-                                size    3003788
+sha256  ce2be5eff72075c8106c0340e70b1093dbcebe2ab42dc1c1be08dd3ad419442d \
+size    3003788
 
     # TODO: Fix xapian-config to not require the .la file
     # /opt/local/bin/xapian-config --ltlibs --cxxflags
@@ -61,8 +61,8 @@ if {${subport} eq ${name}} {
 subport xapian-omega {
     revision                    1
     checksums                   rmd160  4e8e517915619b0052fcf4f96a045651ffcd4207 \
-                                sha256  09fd7d6c60b394fd00d84700649969a1fcc3aa2b88bb2c6ca220fdfa8d25881f \
-                                size    563324
+sha256  09fd7d6c60b394fd00d84700649969a1fcc3aa2b88bb2c6ca220fdfa8d25881f \
+size    563324
 
     description                 web application using the Xapian library
     long_description            Xapian Omega is an application built on the \
@@ -84,8 +84,8 @@ subport xapian-omega {
 
 if {[string match {xapian-bindings-*} ${subport}]} {
     checksums                   rmd160  a1e4832218b38aa517b6d193c1bfe35754fb4663 \
-                                sha256  786cc28d05660b227954413af0e2f66e4ead2a06d3df6dabaea484454b601ef5 \
-                                size    1143304
+sha256  786cc28d05660b227954413af0e2f66e4ead2a06d3df6dabaea484454b601ef5 \
+size    1143304
 
     homepage                    ${homepage}/docs/bindings/
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ distname            GHC-${version}-powerpc
 distfiles			${distname}.pkg
 
 checksums           rmd160  38cc042793d2b4f4a6b901c6bb7f6a1f6959cce8 \
-                    sha256  81cc84e18d30d35d4103b21d146b264abd7f00879ae64ef492bc83d67231fb7c \
-                    size    171783399
+sha256  81cc84e18d30d35d4103b21d146b264abd7f00879ae64ef492bc83d67231fb7c \
+size    171783399
 
 depends_extract     port:xar
 

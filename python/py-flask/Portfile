@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,8 +8,8 @@ version             2.1.3
 revision            0
 
 checksums           rmd160  acf1d3ef5ee7029b4bfd9a673431aaf8a4fac36d \
-                    sha256  15972e5017df0575c3d6c090ba168b6db90259e620ac8d7ea813a396bad5b6cb \
-                    size    630206
+sha256  15972e5017df0575c3d6c090ba168b6db90259e620ac8d7ea813a396bad5b6cb \
+size    630206
 
 python.versions 310
 platforms           darwin
@@ -31,8 +31,8 @@ if {${name} ne ${subport}} {
         version             1.1.4
         revision            0
         checksums           rmd160  03b23def022b1cf6afdcae01cb840f4623288c43 \
-                            sha256  0fbeb6180d383a9186d0d6ed954e0042ad9f18e0e8de088b2b419d526927d196 \
-                            size    635920
+sha256  0fbeb6180d383a9186d0d6ed954e0042ad9f18e0e8de088b2b419d526927d196 \
+size    635920
     }
 
     depends_build-append    port:py${python.version}-setuptools

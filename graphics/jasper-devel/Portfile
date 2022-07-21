@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       cmake 1.0
@@ -27,8 +27,8 @@ dist_subdir     ${my_name}
 
 github.tarball_from releases
 checksums       rmd160  c5c5f35c6c98787d6bc8983d574790e769c4f0ef \
-                sha256  169be004d91f6940c649a4f854ada2755d4f35f62b0555ce9e1219c778cffc09 \
-                size    2074203
+sha256  169be004d91f6940c649a4f854ada2755d4f35f62b0555ce9e1219c778cffc09 \
+size    2074203
 
 depends_lib     path:include/turbojpeg.h:libjpeg-turbo
 

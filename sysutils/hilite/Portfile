@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ master_sites        sourceforge:project/hilite/hilite/${version}
 
 distfiles           hilite.c
 checksums           rmd160  e969094546997199a98268af4333ec874c6dcf6e \
-                    sha256  e15bdff2605e8d23832d6828a62194ca26dedab691c9d75df2877468c2f6aaeb \
-                    size    2872
+sha256  e15bdff2605e8d23832d6828a62194ca26dedab691c9d75df2877468c2f6aaeb \
+size    2872
 
 use_configure       no
 

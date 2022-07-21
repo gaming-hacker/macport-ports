@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 PortGroup        github 1.0
@@ -9,8 +9,8 @@ PortGroup        muniversal 1.0
 github.setup     libuv libuv 1.44.2 v
 revision         0
 checksums        rmd160  3802316d7f5dcfe3906ba371d4a738ab60d77339 \
-                 sha256  8ff28f6ac0d6d2a31d2eeca36aff3d7806706c7d3f5971f5ee013ddb0bdd2e9e \
-                 size    3594484
+sha256  8ff28f6ac0d6d2a31d2eeca36aff3d7806706c7d3f5971f5ee013ddb0bdd2e9e \
+size    3594484
 
 master_sites     https://dist.libuv.org/dist/v${version}
 distfiles        ${name}-v${version}-dist${extract.suffix}

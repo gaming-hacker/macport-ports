@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,8 +26,8 @@ maintainers         {breun.nl:nils @breun} \
                     openmaintainer
 
 checksums           rmd160  8162481921069ed49a889ac95181cb8bdd3e6755 \
-                    sha256  11156e519a77af79671bb34d99d5bcd641ef6a5d1f2d8412d67d53ea0597818f \
-                    size    6400411
+sha256  11156e519a77af79671bb34d99d5bcd641ef6a5d1f2d8412d67d53ea0597818f \
+size    6400411
 
 # FIXME: This port currently can't be built without allowing go mod to fetch
 # dependencies during the build phase. See

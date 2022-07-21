@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -38,8 +38,8 @@ master_sites        gnu
 use_xz              yes
 
 checksums           rmd160  e11eaf873d43d984f27f154bdef33dee10b72bc8 \
-                    sha256  8eb753ed28bca21f8f56c1a180362aed789229bd62fff58bf8368e9beb59fec4 \
-                    size    4961528
+sha256  8eb753ed28bca21f8f56c1a180362aed789229bd62fff58bf8368e9beb59fec4 \
+size    4961528
 
 patchfiles-append   patch-clang-before-34.diff
 

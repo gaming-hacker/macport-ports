@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -6,8 +6,8 @@ PortGroup               github 1.0
 github.setup            tj git-extras 6.4.0
 
 checksums               rmd160  c9ddca421f9040bd911b149d04476d1fad0e893f \
-                        sha256  3d21a227195a5cf4111a3429e702eb25f48d4a3b02d279b5c8c07fa4863c9f23 \
-                        size    163556
+sha256  3d21a227195a5cf4111a3429e702eb25f48d4a3b02d279b5c8c07fa4863c9f23 \
+size    163556
 
 maintainers             {grimreaper @grimreaper} openmaintainer
 platforms               darwin

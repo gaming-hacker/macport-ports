@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,8 +16,8 @@ long_description    {*}${description}
 homepage            https://codeberg.org/miurahr/pybcj
 
 checksums           rmd160  9a230e7b9dc80b2d03381fd9dd1777aa078d73df \
-                    sha256  82c948fd899061af8b8763ad1c1b89aae681abd31bbf493b0d6e9ef50b9aaf00 \
-                    size    2112558
+sha256  82c948fd899061af8b8763ad1c1b89aae681abd31bbf493b0d6e9ef50b9aaf00 \
+size    2112558
 
 python.pep517       yes
 python.versions 310

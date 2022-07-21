@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ long_description    Unicorn is a lightweight multi-platform, \
     multi-architecture CPU emulator framework.
 homepage            https://www.unicorn-engine.org/
 checksums           rmd160  fbfb94e03c11ceb4d5826dd16f996ff73cfcf636 \
-                    sha256  67b445c760e2bbac663e8c8bc410e43311c7fc92df4dfa8d90e06a021d07f634 \
-                    size    4065595
+sha256  67b445c760e2bbac663e8c8bc410e43311c7fc92df4dfa8d90e06a021d07f634 \
+size    4065595
 
 depends_build-append       port:pkgconfig
 

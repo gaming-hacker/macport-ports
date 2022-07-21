@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -27,8 +27,8 @@ distname            scala3-${version}
 revision            0
 
 checksums           rmd160  40468943fa4d1fed3cf7279fbb79ac1cb07ba9e9 \
-                    sha256  9e1eefdcab77b2d2a9057b3d6f78301591e9c27513c92413f3c353a77093f2d7 \
-                    size    35463854
+sha256  9e1eefdcab77b2d2a9057b3d6f78301591e9c27513c92413f3c353a77093f2d7 \
+size    35463854
 
 use_configure       no
 build               {}

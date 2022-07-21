@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    ${name} is a small command-line program that moves \
                     files or folders to the trash, written in Swift
 
 checksums           rmd160  0fc3fbf74364226cf9e8b90bc8fbc1edb509260e \
-                    sha256  c4472b5c8024806720779bc867da1958fe871fbd93d200af8a2cc4ad1941be28 \
-                    size    2986
+sha256  c4472b5c8024806720779bc867da1958fe871fbd93d200af8a2cc4ad1941be28 \
+size    2986
 
 minimum_xcodeversions {20 13}
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -28,8 +28,8 @@ long_description    {*}${description} \
     resolve any potential issues and returns a non-zero exit code.
 
 checksums           rmd160  0f0373cd9d6bdd283b4354b3a9cff768fd5f2a58 \
-                    sha256  5397d913e757fdf80f2ebd99c1b7264a41d85d72d7d8d079a2a8dd6040c3d5c9 \
-                    size    233449
+sha256  5397d913e757fdf80f2ebd99c1b7264a41d85d72d7d8d079a2a8dd6040c3d5c9 \
+size    233449
 
 build.env-delete    GOPROXY=off GO111MODULE=off
 build.args          -o ${name} ./cmd/kube-linter

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -25,8 +25,8 @@ master_sites    sourceforge:${my_name}
 distname        ${my_name}-${version}
 
 checksums       rmd160  9eabed2b4b5585a55062b4a82c8c6aee1b01e3b7 \
-                sha256  30719c9a4ffbcf15676b8f528233ccc54ee6cba96cb4590975f5fd60c68a066f \
-                size    398872
+sha256  30719c9a4ffbcf15676b8f528233ccc54ee6cba96cb4590975f5fd60c68a066f \
+size    398872
 
 depends_lib \
     port:gettext \

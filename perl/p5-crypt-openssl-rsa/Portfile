@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -16,8 +16,8 @@ long_description    Crypt::OpenSSL::RSA provides for decryption, \
 platforms           darwin
 
 checksums           rmd160  114c3814f5892eed44ed7fd670251be6364a4ee3 \
-                    sha256  bdbe630f6d6f540325746ad99977272ac8664ff81bd19f0adaba6d6f45efd864 \
-                    size    29010
+sha256  bdbe630f6d6f540325746ad99977272ac8664ff81bd19f0adaba6d6f45efd864 \
+size    29010
 
 if {${perl5.major} != ""} {
     depends_build-append \

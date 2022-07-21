@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -18,8 +18,8 @@ long_description    \
     brings a configurable DNS server and dynamic port forwarding.
 
 checksums           rmd160  256495f253767de48e2f57b8cc2c47d014982482 \
-                    sha256  896cf02fbabce9583a1bba21e2b384015c0104d634a73a16d2f44552cf84d972 \
-                    size    4106414
+sha256  896cf02fbabce9583a1bba21e2b384015c0104d634a73a16d2f44552cf84d972 \
+size    4106414
 
 # FIXME: This port currently can't be built without allowing go mod to fetch
 build.env-delete    GOPROXY=off GO111MODULE=off

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -20,8 +20,8 @@ long_description    {*}${description}. The decompiler is not limited to any part
                     target architecture, operating system, or executable file format.
 
 checksums           rmd160  305e901b37441337d5c0dada1ccc5e737831ef1e \
-                    sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
-                    size    8732003
+sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
+size    8732003
 
 post-patch {
     reinplace "s|\${CMAKE_INSTALL_PREFIX}|${destroot}\${CMAKE_INSTALL_PREFIX}|" ${worksrcpath}/CMakeLists.txt
@@ -96,8 +96,8 @@ subport retdec-devel {
     epoch           1
 
     checksums       rmd160  099f455e36746bf0f130133ff026c92758a29e17 \
-                    sha256  788d67dade05456cd6ff6bf4f56c37e338349b5f505d16d81690048610486c96 \
-                    size    27120836
+sha256  788d67dade05456cd6ff6bf4f56c37e338349b5f505d16d81690048610486c96 \
+size    27120836
 
     patch.pre_args  -p1
     patchfiles      patch-hardcoded-make-devel.diff

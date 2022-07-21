@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -100,8 +100,8 @@ subport openjdk7-zulu {
 
     distname     zulu${version}-ca-jdk${openjdk_version}-macosx_x64
     checksums    rmd160  93c147af147dde9d6325338569a3ef2230faebc9 \
-                 sha256  31909aa6233289f8f1d015586825587e95658ef59b632665e1e49fc33a2cdf06 \
-                 size    68532201
+sha256  31909aa6233289f8f1d015586825587e95658ef59b632665e1e49fc33a2cdf06 \
+size    68532201
 
     worksrcdir   ${distname}/zulu-7.jdk
 
@@ -123,13 +123,13 @@ subport openjdk8-corretto {
     if {${configure.build_arch} eq "x86_64"} {
         distname     amazon-corretto-${version}-macosx-x64
         checksums    rmd160  9a761ae56d8ba432964e4e2600434c3d0d6ad8ad \
-                     sha256  88cfadc52d6ee487e8865bfcfb0ec658ae1aa4d6657ac5ac1aaad00a0ea7db84 \
-                     size    118783948
+sha256  88cfadc52d6ee487e8865bfcfb0ec658ae1aa4d6657ac5ac1aaad00a0ea7db84 \
+size    118783948
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     amazon-corretto-${version}-macosx-aarch64
         checksums    rmd160  5c401881ae8ce69a6c666ba399ff129be8a48293 \
-                     sha256  528500f87dd2cd524bdf3c0b63ec20307932347951442faabd4c7d3a9555061d \
-                     size    104195573
+sha256  528500f87dd2cd524bdf3c0b63ec20307932347951442faabd4c7d3a9555061d \
+size    104195573
     }
 
     worksrcdir   amazon-corretto-8.jdk
@@ -162,8 +162,8 @@ subport openjdk8-openj9 {
     worksrcdir   jdk${version}-b${build}
 
     checksums    rmd160  2311bc6a6bc259adee9c7bba01f0133ce2846f21 \
-                 sha256  f4b1ec4b1ba3eb318642ddcbb0c02d67e6edfc9e37a7c3bfb13630e4806942e2 \
-                 size    128972742
+sha256  f4b1ec4b1ba3eb318642ddcbb0c02d67e6edfc9e37a7c3bfb13630e4806942e2 \
+size    128972742
 }
 
 subport openjdk8-temurin {
@@ -183,8 +183,8 @@ subport openjdk8-temurin {
     worksrcdir   jdk${version}-b${build}
 
     checksums    rmd160  20fa5b11b34ee833b62cca7d9d7d6f76b9047759 \
-                 sha256  a75e8182bb8e77a02c7b4d9f93120c64c1988e2c415b3646d4f4496544e87291 \
-                 size    107924497
+sha256  a75e8182bb8e77a02c7b4d9f93120c64c1988e2c415b3646d4f4496544e87291 \
+size    107924497
 }
 
 # Remove after 2022-09-14

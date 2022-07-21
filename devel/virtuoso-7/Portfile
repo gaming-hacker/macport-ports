@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           conflicts_build 1.0
@@ -20,8 +20,8 @@ master_sites        sourceforge:project/${myname}/${myname}/${version}
 distname            ${myname}-opensource-${version}
 
 checksums           rmd160  1e4c0924caaf755a945eed9562630116e067e628 \
-                    sha256  02480b930d5fb414cb328f10cfd200faa658adc10f9c68ef7034c6aa81a5a3a0 \
-                    size    121027377
+sha256  02480b930d5fb414cb328f10cfd200faa658adc10f9c68ef7034c6aa81a5a3a0 \
+size    121027377
 
 # https://trac.macports.org/ticket/61216
 patchfiles-append   patch-libsrc-Wi-numeric.c.diff
