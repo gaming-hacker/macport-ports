@@ -7,7 +7,7 @@ PortGroup           muniversal 1.0
 PortGroup           compiler_blacklist_versions 1.0
 
 # Require C++11
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 # some older Clang say they support C++11 when they don't
 # this is the same blacklisting as for jsoncpp, on which vtk depends.
@@ -99,12 +99,12 @@ variant qt5 description {Add Qt5 support.} {
 }
 
 # Supported pythons
-set python_versions {27 36 37 38 39}
+set python.versions {310}
 
-foreach pyver ${python_versions} {
+foreach pyver ${python.versions} {
     # Conflicting python versions
     set other_python_versions {}
-    foreach other_pyver ${python_versions} {
+    foreach other_pyver ${python.versions} {
         if {${other_pyver} ne ${pyver}} {
             if {${other_pyver} ni ${other_python_versions}} {
                 lappend other_python_versions python${other_pyver}

@@ -29,7 +29,7 @@ subport pdfgrep-legacy {
     revision        2
 }
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 depends_build       port:pkgconfig
 depends_lib         path:lib/pkgconfig/poppler.pc:poppler \

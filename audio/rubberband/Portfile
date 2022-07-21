@@ -35,7 +35,7 @@ patchfiles          arch.patch
 
 # /usr/bin/../lib/c++/v1/atomic:535:2: error: <atomic> is not implemented
 # https://hg.sr.ht/~breakfastquay/rubberband/rev/812a666b042abf0e41465bee9924c7ffc8532bbf
-compiler.cxx_standard 2014
+compiler.cxx_standard 2020
 
 configure.args      -Dfft=vdsp \
                     -Dresampler=libsamplerate

@@ -40,7 +40,7 @@ post-patch {
     file rename "${worksrcpath}/tests/checks/sigint.fish" "${worksrcpath}/tests/checks/sigint.fish.skip"
 }
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 compiler.thread_local_storage yes
 
 # doxygen appears to only regenerate html files and is not needed to install man pages
@@ -56,7 +56,7 @@ platform darwin 8 {
     test.env-append     SHELL=${prefix}/bin/bash
 }
 
-depends_test-append     port:py39-pexpect
+depends_test-append     port:py310-pexpect
 # other possible options are ansi, dtterm, rxvt, vt52, vt100, vt102, xterm
 test.env-append         TERM=nsterm
 test.run                yes

@@ -32,14 +32,14 @@ long_description    PyTorch is a Python package that provides two \
 
 homepage            https://pytorch.org/
 
-python.versions     37 38 39 310
+python.versions 310
 
 patch.pre_args      -p1
 
 mpi.setup
 
 # Compiler selection
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 compiler.blacklist-append *gcc* {clang < 800} {macports-clang-3.[0-9]} macports-clang-4.0
 

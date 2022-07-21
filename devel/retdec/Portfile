@@ -64,7 +64,7 @@ depends_build-append \
                     port:gmake \
                     port:libtool
 
-depends_lib-append  port:python39 \
+depends_lib-append  port:python310 \
                     port:zlib
 
 depends_run-append  path:bin/dot:graphviz \

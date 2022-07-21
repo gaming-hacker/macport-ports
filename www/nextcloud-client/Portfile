@@ -24,8 +24,8 @@ long_description \
     server with your computer.
 homepage                https://nextcloud.com/
 
-use_xcode               yes
-compiler.cxx_standard   2014
+use_xcode  no
+compiler.cxx_standard 2020
 
 depends_lib-append      port:sqlite3 port:zlib port:qtkeychain-qt5
 

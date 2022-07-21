@@ -46,7 +46,7 @@ depends_run         port:texlive-tlpdb \
                     path:bin/dvisvgm:dvisvgm
 
 PortGroup           perl5 1.0
-perl5.branches      5.34
+perl5.branches 5.34
 
 # Fix perl paths for any perl scripts that have dependencies. Some of
 # the included packages install other perl scripts, but they don't

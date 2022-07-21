@@ -30,7 +30,7 @@ checksums           rmd160  efc80086332c6b35330671c2049cd51611091b58 \
                     sha256  6c6d39e28aed379aec40da1c65434c77d75e65bb59a1e1c283de545fb4e7c6c9 \
                     size    566106
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${subport} ne ${name}} {
     depends_build-append \

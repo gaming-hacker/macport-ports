@@ -56,12 +56,12 @@ boost.depends_type  \
                 build
 
 configure.cxxflags-append \
-                -std=c++17
+                -std=gnu++2a
 
 cmake.install_rpath-append \
                 ${qt_dir}/lib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
 
 post-patch {

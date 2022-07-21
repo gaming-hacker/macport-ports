@@ -34,7 +34,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 20} {
 }
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build.cmd           swift
 build.target        build

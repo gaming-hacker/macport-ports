@@ -45,8 +45,8 @@ depends_lib-append \
 # fix the install prefix for MP use only
 patchfiles-append patch-CMakeLists.txt.diff
 
-compiler.c_standard   2011
-compiler.cxx_standard 2017
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 
 # prevent opportunistic use of ccache
 if {![tbool configure.ccache]} {

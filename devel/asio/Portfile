@@ -31,8 +31,8 @@ depends_build-append        port:autoconf \
                             port:libtool \
                             port:pkgconfig
 
-compiler.cxx_standard       2014
-configure.cxxflags-append   -std=gnu++14
+compiler.cxx_standard 2020
+configure.cxxflags-append   -std=gnu++2a
 configure.args              --with-boost=no \
                             --with-openssl=[openssl::install_area]
 configure.env-append        ASIO_HAS_STD_CHRONO=1 \
