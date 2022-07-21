@@ -53,8 +53,8 @@ extract.suffix      .zip
 use_zip             yes
 checksum.skip  yes
 
-configure.cc gcc-mp-11
-configure.cpp g++-mp-11
+configure.cc gcc-mp-12
+configure.cpp g++-mp-12
 use_xcode  no
 # use_autoreconf              yes
 # autoreconf.args             -fvi
@@ -100,7 +100,7 @@ configure.args              --enable-shared \
                             --with-pango \
                             --with-x \
                             --with-zstd \
- --with-gs-font-dir=/opt/local/share/ghostscript/9.55.0/Resource/Font \
+ --with-gs-font-dir=/opt/local/share/ghostscript/9.56.1/Resource/Font \
  --with-apple-font-dir=/Library/Fonts \
  --with-urw-base35-font-dir=/opt/local/share/fonts/urw-core35-fonts \
  --with-dejavu-font-dir=/opt/local/share/fonts/dejavu-fonts \

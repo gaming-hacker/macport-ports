@@ -105,8 +105,8 @@ post-patch {
 configure.ldflags-prepend \
                     -Lsobin
 
-use_autoreconf      yes
-autoreconf.args     -fv
+# use_autoreconf      yes
+# autoreconf.args     -fv
 configure.checks.implicit_function_declaration.whitelist-append strchr
 
 # Make included OpenJPEG uses its own headers rather than the system ones
