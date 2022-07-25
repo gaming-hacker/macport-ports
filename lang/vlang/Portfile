@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -40,13 +40,13 @@ master_sites        ${github.master_sites}:main \
                     ${vc_mastersite}:vc
 
 checksums           ${main_distfile} \
-                    rmd160  7f605960700199da921295de57e80dfd31c0e229 \
-                    sha256  5a53c65c33ad3dc595e35417f35b836f2af5ce8d7b4079521c062ccb25496df3 \
-                    size    4445001 \
+rmd160  7f605960700199da921295de57e80dfd31c0e229 \
+sha256  5a53c65c33ad3dc595e35417f35b836f2af5ce8d7b4079521c062ccb25496df3 \
+size    4445001 \
                     ${vc_distfile} \
-                    rmd160  0eabd3fdea05e3b8271d5ccc5a81257783cabb59 \
-                    sha256  aa99280b907db251481beb46ac9d1757cc22eb9c9ddb92bfa694274fbbac3dc1 \
-                    size    1472926
+rmd160  0eabd3fdea05e3b8271d5ccc5a81257783cabb59 \
+sha256  aa99280b907db251481beb46ac9d1757cc22eb9c9ddb92bfa694274fbbac3dc1 \
+size    1472926
 
 # Optional runtime dependency to use the net.http and net.websocket modules
 depends_run         path:lib/libssl.dylib:openssl

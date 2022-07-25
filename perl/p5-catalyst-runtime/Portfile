@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -16,8 +16,8 @@ long_description    Catalyst is a modern framework for making web \
 platforms           darwin
 
 checksums           rmd160  ef12e717a79f2f04f8bc8118c5c4cb4f0211cc26 \
-                    sha256  b0ff3d237145c77dbe13d52049f848e30bc6c70605cba2034377a2a417541128 \
-                    size    384111
+sha256  b0ff3d237145c77dbe13d52049f848e30bc6c70605cba2034377a2a417541128 \
+size    384111
 
 if {${perl5.major} != ""} {
     depends_build-append \

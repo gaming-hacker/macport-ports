@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -12,8 +12,8 @@ name                harfbuzz-devel
 conflicts           harfbuzz
 set my_name         harfbuzz
 checksums           rmd160  4c6dc783ab1b8ab63f5b5517f022b62b258e3662 \
-                    sha256  d0094299a36346b9f5540aa159b358425c022b19fcdf72165eaf94046a179166 \
-                    size    15160504
+sha256  d0094299a36346b9f5540aa159b358425c022b19fcdf72165eaf94046a179166 \
+size    15160504
 
 categories          graphics
 maintainers         {ryandesign @ryandesign} {mascguy @mascguy} openmaintainer

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -17,70 +17,70 @@ maintainers         {isi.edu:calvin @cardi} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  7f5f48a42aa475d4217d3ed66386fc976dff8cbf \
-                        sha256  601a624adec0cea8142dbb44d74498f8db457fa5f6128aa9546c157d71088953 \
-                        size    210835
+rmd160  7f5f48a42aa475d4217d3ed66386fc976dff8cbf \
+sha256  601a624adec0cea8142dbb44d74498f8db457fa5f6128aa9546c157d71088953 \
+size    210835
 
 go.vendors          golang.org/x/text \
                         lock    v0.3.7 \
-                        rmd160  52777fe8a68660aab6e4588322a5949b0ba42e58 \
-                        sha256  48971ba6a3123c4fd81b2bdec9fda3cef5815fad76f2407c8a888032462c542d \
-                        size    8356115 \
+rmd160  52777fe8a68660aab6e4588322a5949b0ba42e58 \
+sha256  48971ba6a3123c4fd81b2bdec9fda3cef5815fad76f2407c8a888032462c542d \
+size    8356115 \
                     golang.org/x/term \
                         lock    03fcf44c2211 \
-                        rmd160  a1b9592e95373ba617ef579a2f7015cfdc871343 \
-                        sha256  3673415a6d3d106d49b487715e151fc64245502ef547c16e8e13edb6b8f2f492 \
-                        size    14975 \
+rmd160  a1b9592e95373ba617ef579a2f7015cfdc871343 \
+sha256  3673415a6d3d106d49b487715e151fc64245502ef547c16e8e13edb6b8f2f492 \
+size    14975 \
                     golang.org/x/sys \
                         lock    3f8b81556e12 \
-                        rmd160  ebbca7120750d67167bb15a2bd8c2104423b9db8 \
-                        sha256  a1413823ae2d2c7c9d7a03a205307983135f9e3327f5e7b9cf4da219abf24b56 \
-                        size    1292290 \
+rmd160  ebbca7120750d67167bb15a2bd8c2104423b9db8 \
+sha256  a1413823ae2d2c7c9d7a03a205307983135f9e3327f5e7b9cf4da219abf24b56 \
+size    1292290 \
                     golang.org/x/sync \
                         lock    036812b2e83c \
-                        rmd160  f42be6eb3565d2ed3d1066ea1a7f69437c8bb1e6 \
-                        sha256  6f1daceb16cd75bdbf35da6c50aa352d1995d68ccd0049851d27686f451fad92 \
-                        size    18756 \
+rmd160  f42be6eb3565d2ed3d1066ea1a7f69437c8bb1e6 \
+sha256  6f1daceb16cd75bdbf35da6c50aa352d1995d68ccd0049851d27686f451fad92 \
+size    18756 \
                     github.com/saracen/walker \
                         lock    v0.1.2 \
-                        rmd160  1b55e475639f6a540a5470caf2e0517e1394e2d8 \
-                        sha256  4d4c83c864f8300ff7576195ac7a1056b01005c2a6742414a6385d5c64d6b3c9 \
-                        size    11298 \
+rmd160  1b55e475639f6a540a5470caf2e0517e1394e2d8 \
+sha256  4d4c83c864f8300ff7576195ac7a1056b01005c2a6742414a6385d5c64d6b3c9 \
+size    11298 \
                     github.com/rivo/uniseg \
                         lock    v0.2.0 \
-                        rmd160  33577def583aa2db50b69ca601e5d29ab201ebc4 \
-                        sha256  2832965221246272462a03ffc8e159c94d8f534827f660f1ac4fc77e5ccd644c \
-                        size    44037 \
+rmd160  33577def583aa2db50b69ca601e5d29ab201ebc4 \
+sha256  2832965221246272462a03ffc8e159c94d8f534827f660f1ac4fc77e5ccd644c \
+size    44037 \
                     github.com/mattn/go-shellwords \
                         lock    v1.0.12 \
-                        rmd160  966c28bc678d710bb7f052842378462c800f24d7 \
-                        sha256  317db0f9d20370e4dc274495c7ecd409f8cefc84d4629df65f62ecd558c417ed \
-                        size    6326 \
+rmd160  966c28bc678d710bb7f052842378462c800f24d7 \
+sha256  317db0f9d20370e4dc274495c7ecd409f8cefc84d4629df65f62ecd558c417ed \
+size    6326 \
                     github.com/mattn/go-runewidth \
                         lock    v0.0.13 \
-                        rmd160  e177edb4dc4702ae2b23704934ff31cc6561bbd0 \
-                        sha256  dcd3ccbd956a6f53bc106b79489d0303a237c21d858d23250e3e1d7284b72b86 \
-                        size    17363 \
+rmd160  e177edb4dc4702ae2b23704934ff31cc6561bbd0 \
+sha256  dcd3ccbd956a6f53bc106b79489d0303a237c21d858d23250e3e1d7284b72b86 \
+size    17363 \
                     github.com/mattn/go-isatty \
                         lock    v0.0.14 \
-                        rmd160  8ebfd3a6f2898a729e41dff6b5359e88959c46e1 \
-                        sha256  dc141c207a7f4eb83992df90ca087841a0a3aab5a4f2b528bf81d42a186bcc1e \
-                        size    4705 \
+rmd160  8ebfd3a6f2898a729e41dff6b5359e88959c46e1 \
+sha256  dc141c207a7f4eb83992df90ca087841a0a3aab5a4f2b528bf81d42a186bcc1e \
+size    4705 \
                     github.com/lucasb-eyer/go-colorful \
                         lock    v1.2.0 \
-                        rmd160  a4183d0625e6c94474942cdc544c1061d35c4e34 \
-                        sha256  fbad1aade4444bf51409f5b6a008cc14c7a7cdd1af856841fc1170605fae3914 \
-                        size    970841 \
+rmd160  a4183d0625e6c94474942cdc544c1061d35c4e34 \
+sha256  fbad1aade4444bf51409f5b6a008cc14c7a7cdd1af856841fc1170605fae3914 \
+size    970841 \
                     github.com/gdamore/tcell \
                         lock    v1.4.0 \
-                        rmd160  479ce3d189ac02a4de5219054f537cc173c28b43 \
-                        sha256  ee8948a76a4cc5ba8285f03840473cf41e80e476a1317239414ee54396db82c9 \
-                        size    152003 \
+rmd160  479ce3d189ac02a4de5219054f537cc173c28b43 \
+sha256  ee8948a76a4cc5ba8285f03840473cf41e80e476a1317239414ee54396db82c9 \
+size    152003 \
                     github.com/gdamore/encoding \
                         lock    v1.0.0 \
-                        rmd160  3ed8916f763a5b51db1bcc8bd3ad06cf3d12ec07 \
-                        sha256  4f470c7308790bea8a526ea26cecbaa22345aad8dc566821cda6175b3d241ee1 \
-                        size    10900
+rmd160  3ed8916f763a5b51db1bcc8bd3ad06cf3d12ec07 \
+sha256  4f470c7308790bea8a526ea26cecbaa22345aad8dc566821cda6175b3d241ee1 \
+size    10900
 
 # adds specific major.minor.patch version information
 build.args-append   "-ldflags \"-X main.version=${version} -X main.revision=MacPorts\""

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ homepage            https://github.com/neogeny/tatsu
 use_zip             yes
 
 checksums           rmd160  7298ecf028706c6d1622a2111f9d4eb13ca44b48 \
-                    sha256  a638c8de4d569f974e81dd31d1ce2285329e07bc31356a6a4cf25defe4c42f46 \
-                    size    207593
+sha256  a638c8de4d569f974e81dd31d1ce2285329e07bc31356a6a4cf25defe4c42f46 \
+size    207593
 
 if {${name} ne ${subport}} {
     if {${python.version} < 310} {
@@ -32,8 +32,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  5529b54b5b4ce48032e43d8f02af300e975bdbbc \
-                            sha256  6a4f07aa7bfe9dfbee8015824feaf13f0b1a89577e2ee5a4a62c18630c309d4e \
-                            size    192828
+sha256  6a4f07aa7bfe9dfbee8015824feaf13f0b1a89577e2ee5a4a62c18630c309d4e \
+size    192828
 
         patchfiles-append   patch-MANIFEST.in.diff \
                             patch-setup.py.diff

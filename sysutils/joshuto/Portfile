@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,9 +16,9 @@ description         ranger-like terminal file manager written in Rust
 long_description    {*}${description}
 
 checksums           ${distfiles} \
-                    rmd160  182c3993a856d3e732a18eaf04f07886c3dc7d5e \
-                    sha256  5632b0430cee850678e0f004427a3eaf6718e4761f9dd337a920d57919ba50b1 \
-                    size    2163720
+rmd160  182c3993a856d3e732a18eaf04f07886c3dc7d5e \
+sha256  5632b0430cee850678e0f004427a3eaf6718e4761f9dd337a920d57919ba50b1 \
+size    2163720
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} \

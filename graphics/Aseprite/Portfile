@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   app 1.0
@@ -59,13 +59,13 @@ distname                    ${name}-v${version}-Source
 use_zip                     yes
 
 checksums                   ${distfiles} \
-                            rmd160  5a290163548d287602631743a47088de99bb06ea \
-                            sha256  74989ac5e57e4cba9cc16212d81f058c3aff70749d929e2e35eb38688c994c9e \
-                            size    61977600 \
+rmd160  5a290163548d287602631743a47088de99bb06ea \
+sha256  74989ac5e57e4cba9cc16212d81f058c3aff70749d929e2e35eb38688c994c9e \
+size    61977600 \
                             skia-${skia_commit}.tar.gz \
-                            rmd160  b7649f5478916cf79567f2bedd70cf1b361fd723 \
-                            sha256  6924ab75b5ea2b7390d22ad1710b8e6586d6068aec79457362350820bf10aaf3 \
-                            size    53948567
+rmd160  b7649f5478916cf79567f2bedd70cf1b361fd723 \
+sha256  6924ab75b5ea2b7390d22ad1710b8e6586d6068aec79457362350820bf10aaf3 \
+size    53948567
 
 set main_distfile           [lindex ${distfiles} 0]
 set skia_distfile           skia-${skia_commit}.tar.gz
@@ -303,9 +303,9 @@ destroot {
         lib/libjson11.a
         lib/pkgconfig/json11.pc
         lib/pkgconfig/libarchive.pc
-        share/man/man1/bsdcat.1
-        share/man/man1/bsdcpio.1
-        share/man/man1/bsdtar.1
+share/man/man1/bsdcat.1
+share/man/man1/bsdcpio.1
+share/man/man1/bsdtar.1
     } {
         delete ${destroot}${prefix}/${f}
     }

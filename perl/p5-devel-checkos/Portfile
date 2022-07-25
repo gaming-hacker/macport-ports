@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -14,8 +14,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  08d25263c4917071eae67e282ebf693bcfdcb378 \
-                    sha256  86d344c71315dcac1f50a0d0d6b60f663fb894eb7fdd5879f07e51b51c4897bb \
-                    size    36687
+sha256  86d344c71315dcac1f50a0d0d6b60f663fb894eb7fdd5879f07e51b51c4897bb \
+size    36687
 
 if {${perl5.major} != ""} {
     depends_build-append \

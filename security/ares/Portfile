@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,9 +15,9 @@ description         The next generation of decoding tools, built by the same peo
 long_description    {*}${description}. It is intended to replace Ciphey in the future.
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  11cc148ac03eb6206bcef1ac0329dc7b1e42a3bc \
-                        sha256  ff230267a756edb95668833296b80a2b33fe43290ff2f473ffa2bc158bbdbd4c \
-                        size    1484100
+rmd160  11cc148ac03eb6206bcef1ac0329dc7b1e42a3bc \
+sha256  ff230267a756edb95668833296b80a2b33fe43290ff2f473ffa2bc158bbdbd4c \
+size    1484100
 
 # cargo.lock will be added in later release.
 build.pre_args-replace   --frozen --offline

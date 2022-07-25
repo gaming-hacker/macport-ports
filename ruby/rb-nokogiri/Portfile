@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ruby 1.0
@@ -22,8 +22,8 @@ license             MIT
 homepage            https://nokogiri.org
 
 checksums           rmd160  d29d897b5f387539c1826b477f2b6f7b20ea85b7 \
-                    sha256  79c279298b2f22fd4e760f49990c7930436bac1b1cfeff7bacff192f30edea3c \
-                    size    5379584
+sha256  79c279298b2f22fd4e760f49990c7930436bac1b1cfeff7bacff192f30edea3c \
+size    5379584
 
 if {${name} ne ${subport}} {
     depends_extract     port:rb${ruby.suffix}-gem-patch

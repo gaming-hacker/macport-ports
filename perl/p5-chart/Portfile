@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -14,8 +14,8 @@ description         Chart - a series of charting modules
 long_description    ${description}
 
 checksums           rmd160  d27d69674b13cd8e2379cc8cbeb47781944f2fcf \
-                    sha256  beb753861503465acc58839c5b1574ac5d30a6b9a7b4183c6ea3cdcea84b2d17 \
-                    size    176204
+sha256  beb753861503465acc58839c5b1574ac5d30a6b9a7b4183c6ea3cdcea84b2d17 \
+size    176204
 
 if {${perl5.major} != ""} {
     depends_build-append \
