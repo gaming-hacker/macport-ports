@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -10,7 +10,7 @@ compilers.choose    fc f77 f90
 compilers.setup     require_fortran -g95
 compiler.blacklist-append {clang < 900}
 
-github.setup        JuliaLang julia 1.7.0 v
+github.setup        JuliaLang julia 1.7.3 v
 revision            0
 categories-append   lang math science
 maintainers         {ieee.org:s.t.smith @essandess} openmaintainer
@@ -28,9 +28,9 @@ github.tarball_from releases
 distfiles           ${name}-${version}-full${extract.suffix}
 
 checksums           ${name}-${version}-full${extract.suffix} \
-rmd160  efc0b88d1d91781774f8793b652ca47f83f4f0ca \
-sha256  01241120515cb9435b96179cf301fbd2c24d4405f252588108d13ceac0f41c0a \
-size    153647142
+                    rmd160  bd3b03392e31b5ebd7d5c79e57d9ebb854c9d5b6 \
+                    sha256  4be529b0716de1ec48ba52e83a0fafd4be2269be9cc43074ad15ce788aeca093 \
+                    size    256584516
 
 extract.only        ${distfiles}
 
@@ -42,7 +42,7 @@ if {[option gpg_verify.use_gpg_verification]} {
                     ${name}-${version}-full${extract.suffix}.asc
     checksums-append \
                     ${name}-${version}-full${extract.suffix}.asc \
-size    866
+                    size    866
 
     post-checksum {
         gpg_verify.verify_gpg_signature \

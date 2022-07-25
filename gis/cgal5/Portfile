@@ -1,0 +1,47 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem              1.0
+PortGroup               github  1.0
+PortGroup               cmake   1.0
+PortGroup               boost   1.0
+
+description             Computational Geometry Algorithm Library
+long_description        The goal of the ${description} is to provide easy access to\
+                        efficient and reliable geometric algorithms in the\
+                        form of a C++ library. CGAL is used in various areas\
+                        needing geometric computation, such as: computer\
+                        graphics, scientific visualization, computer aided\
+                        design and modeling, geographic information systems,\
+                        molecular biology, medical imaging, robotics and\
+                        motion planning, mesh generation, numerical methods...
+
+platforms               darwin
+
+github.setup            CGAL cgal 5.5 v
+revision                0
+conflicts               cgal4
+github.tarball_from     releases
+name                    cgal5
+license                 LGPL-3+ GPL-3+
+categories              gis science
+maintainers             {vince @Veence}
+use_xz                  yes
+distname                CGAL-${version}
+
+homepage                http://www.cgal.org/
+
+checksums           rmd160  6f628b35ac5a55b253f2acbc54aea1bac3e37adf \
+                    sha256  98ac395ca08aacf38b7a8170a822b650aedf10355df41dd0e4bfb238408e08a6 \
+                    size    24156768
+                                        
+
+depends_lib-append      port:mpfr \
+                        port:zlib \
+                        port:gmp \
+                        port:boost \
+                        path:include/eigen3/Eigen/Eigen:eigen3
+
+compiler.cxx_standard   2014
+compiler.thread_local_storage yes
+
+github.livecheck.regex  {([0-9.]+)}

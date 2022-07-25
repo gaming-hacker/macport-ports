@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -15,10 +15,10 @@ homepage            https://www.qt.io
 
 version             5.7.1
 
+# Requires xcodebuild
+# https://trac.macports.org/ticket/59312
 # https://trac.macports.org/ticket/63154
-if { ${xcodeversion} ne "none" } {
-    use_xcode  no
-}
+use_xcode           yes
 
 set just_want_qt5_variables yes
 PortGroup qt5 1.0
@@ -29,7 +29,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://wiki.qt.io/New_Features_in_Qt_5.7
-compiler.cxx_standard 2020
+compiler.cxx_standard 2011
 
 master_sites        \
     https://download.qt.io/official_releases/qt/${branch}/${version}/submodules \
@@ -234,7 +234,7 @@ array set modules {
             fd13dd3059d20694a857ed30ee56a2ade908c0cb93246f9804a65f7a2d775d56
             18976920
         }
-        "port:python310"
+        "port:python27"
         ""
         "qtbase qtsvg qtxmlpatterns"
         {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
@@ -564,7 +564,7 @@ array set modules {
             2101883e3d632b50133a14e3bbdc1d4d649e405c9618f2eef1b72a7b821ccc2b
             163782564
         }
-        "port:python310 port:py310-ply"
+        "port:python27 port:py27-ply"
         ""
         "qtquickcontrols qtwebchannel qtlocation"
         {"Qt WebEngine"}
@@ -579,7 +579,7 @@ array set modules {
             a46cf7c89339645f94a5777e8ae5baccf75c5fc87ab52c9dafc25da3327b5f03
             35298736
         }
-        "port:python310"
+        "port:python27"
         "port:fontconfig port:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3"
         "qtbase qtdeclarative qtlocation qtmultimedia qtsensors qtwebchannel qtxmlpatterns"
         {"Qt WebKit" "Qt WebKit Widgets"}
@@ -761,9 +761,9 @@ foreach {module module_info} [array get modules] {
         build.target
 
         checksums                                        \
-rmd160  [lindex [lindex ${module_info} 0] 0] \
-sha256  [lindex [lindex ${module_info} 0] 1] \
-size    [lindex [lindex ${module_info} 0] 2]
+            rmd160  [lindex [lindex ${module_info} 0] 0] \
+            sha256  [lindex [lindex ${module_info} 0] 1] \
+            size    [lindex [lindex ${module_info} 0] 2]
 
         set license_string [lindex ${module_info} 8]
         set license_string [string range ${license_string} 1+[string first ":" ${license_string}] end]
@@ -888,9 +888,6 @@ size    [lindex [lindex ${module_info} 0] 2]
             # ICU now requires C++11
             # see https://trac.macports.org/ticket/59434
             patchfiles-append patch-qtbase-icu_test.diff
-
-            # see https://trac.macports.org/ticket/59312
-            use_xcode  no
 
             #-----------------------------------------------------------------------------
             # qtbase is used for:
@@ -1552,19 +1549,6 @@ size    [lindex [lindex ${module_info} 0] 2]
                 # dependents of qtwebengine
                 supported_archs x86_64
             }
-
-            # special case
-            if {${module} eq "qtsvg" && ${os.platform} eq "darwin" && ${os.major} >= 19} {
-                # Project ERROR: Could not resolve SDK Path for 'macosx'
-                known_fail  yes
-                depends_lib
-                depends_build
-                depends_extract
-                pre-fetch {
-                    ui_error "${subport} does not build on macOS 10.15 or later"
-                    return -code error "incompatible OS version"
-                }
-            }
         }
     }
 
@@ -1587,9 +1571,9 @@ size    [lindex [lindex ${module_info} 0] 2]
             destroot.target install_docs
 
             checksums                                        \
-rmd160  [lindex [lindex ${module_info} 0] 0] \
-sha256  [lindex [lindex ${module_info} 0] 1] \
-size    [lindex [lindex ${module_info} 0] 2]
+                rmd160  [lindex [lindex ${module_info} 0] 0] \
+                sha256  [lindex [lindex ${module_info} 0] 1] \
+                size    [lindex [lindex ${module_info} 0] 2]
 
             depends_build-append            \
                 port:${name}-qttools        \
@@ -1647,9 +1631,9 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         revision ${revision_string}
 
         checksums                                          \
-rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
-sha256  [lindex [lindex $modules(qtbase) 0] 1] \
-size    [lindex [lindex $modules(qtbase) 0] 2]
+            rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
+            sha256  [lindex [lindex $modules(qtbase) 0] 1] \
+            size    [lindex [lindex $modules(qtbase) 0] 2]
 
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}
@@ -1808,7 +1792,7 @@ foreach deps ${depends_check} {
         #    (see tools/qmake/mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/3.10
+        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
     }
 }
 if { ${python_framework} ne "" } {

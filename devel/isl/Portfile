@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -10,11 +10,10 @@ name                isl
 # (e.g. port file all | sort -u | xargs grep -E ':isl( |$)' | cut -d / -f 13 | sort -u)
 # see https://lists.macports.org/pipermail/macports-dev/2019-May/040678.html
 epoch               3
-version             0.24
-revision            1
+version             0.25
+revision            0
 
 categories          devel math
-platforms           darwin
 license             MIT
 maintainers         {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
 
@@ -38,9 +37,9 @@ depends_lib         port:gmp
 master_sites        sourceforge:libisl
 use_bzip2           yes
 
-checksums           rmd160  b3bf8e1ad50207d4eebecc47cb4cffdac6581a57 \
-sha256  fcf78dd9656c10eb8cf9fbd5f59a0b6b01386205fe1934b3b287a0a1898145c0 \
-size    2261594
+checksums           rmd160  73b9005b8e7fe52eb9500b98ba65450bdfb9f7fb \
+                    sha256  4305c54d4eebc4bf3ce365af85f04984ef5aa97a52e01128445e26da5b1f467a \
+                    size    2304378
 
 configure.args      --disable-silent-rules
 
@@ -66,8 +65,8 @@ subport isl14 {
     revision        0
 
     checksums       rmd160  e4e45a8b777f89108303c165b149404ef84fd190 \
-sha256  1f20561843eb9f6ae2076800bc45f3680ff7696520257cd5734ccfb843464cae \
-size    1402630
+                    sha256  1f20561843eb9f6ae2076800bc45f3680ff7696520257cd5734ccfb843464cae \
+                    size    1402630
 
     distname       isl-${version}
 
@@ -85,8 +84,8 @@ subport isl18 {
     revision        0
 
     checksums           rmd160  e876f1049893de5be4a82a63f272f62547d455ca \
-sha256  6b8b0fd7f81d0a957beb3679c81bbb34ccc7568d5682844d8924424a0dadcb1b \
-size    1658291
+                        sha256  6b8b0fd7f81d0a957beb3679c81bbb34ccc7568d5682844d8924424a0dadcb1b \
+                        size    1658291
 
     distname            isl-${version}
 
