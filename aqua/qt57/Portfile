@@ -18,7 +18,7 @@ version             5.7.1
 # Requires xcodebuild
 # https://trac.macports.org/ticket/59312
 # https://trac.macports.org/ticket/63154
-use_xcode           yes
+use_xcode  no
 
 set just_want_qt5_variables yes
 PortGroup qt5 1.0
@@ -29,7 +29,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # see https://wiki.qt.io/New_Features_in_Qt_5.7
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 master_sites        \
     https://download.qt.io/official_releases/qt/${branch}/${version}/submodules \
