@@ -2,6 +2,7 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
+PortGroup           compiler_blacklist_versions 1.0
 
 name                py-matplotlib
 version             3.5.2
@@ -31,6 +32,12 @@ size    35210006
 use_parallel_build  no
 
 python.versions 310
+
+# Fix compilation issues for macOS 10.7 and earlier
+# See: https://trac.macports.org/ticket/62665
+# See: https://trac.macports.org/ticket/65555
+compiler.blacklist-append \
+                    {clang < 600}
 
 if {${name} ne ${subport}} {
     depends_build-append \

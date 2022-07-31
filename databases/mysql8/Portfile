@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 
 name                    mysql8
-version                 8.0.29
+version                 8.0.30
 
 set boost_version       1.77.0
 
@@ -15,8 +15,8 @@ maintainers             {gmail.com:herby.gillot @herbygillot} \
                         openmaintainer
 
 # Set revision_client and revision_server to 0 on version bump.
-set revision_client     5
-set revision_server     1
+set revision_client     0
+set revision_server     0
 
 set name_mysql          ${name}
 set version_branch      [join [lrange [split ${version} .] 0 1] .]
@@ -62,13 +62,13 @@ if {$subport eq $name} {
                         ${boost_distname}${extract.suffix}:boost
 
     checksums           ${distname}${extract.suffix} \
-rmd160  0021a77452399445aea27163545f8407e479a5e2 \
-sha256  512170fa6f78a694d6f18d197e999d2716ee68dc541d7644dd922a3663407266 \
-size    319976039 \
+                        rmd160  a9d3f1dfb64bee29d45c8d67b6d52dcb448be029 \
+                        sha256  c988d5c6ba9a56692a6cd6e9813465b5fc9368ed4b461df97059a2fc160c8b84 \
+                        size    325002740 \
                         ${boost_distname}${extract.suffix} \
-rmd160  850588f968a2086ff27ec7b8224ca8890a74601e \
-sha256  5347464af5b14ac54bb945dc68f1dd7c56f0dad7262816b956138fc53bcc0131 \
-size    130620992
+                        rmd160  850588f968a2086ff27ec7b8224ca8890a74601e \
+                        sha256  5347464af5b14ac54bb945dc68f1dd7c56f0dad7262816b956138fc53bcc0131 \
+                        size    130620992
 
     depends_lib-append  port:cyrus-sasl2 \
                         port:icu \
@@ -84,7 +84,7 @@ size    130620992
 
     use_parallel_build  yes
 
-    compiler.cxx_standard 2020
+    compiler.cxx_standard 2017
 
     # /usr/include/c++/v1/optional:960:34: note: candidate function not viable: no known conversion from 'optional<...>' to 'const optional<...>' for object argument
     compiler.blacklist-append {clang < 1100}
