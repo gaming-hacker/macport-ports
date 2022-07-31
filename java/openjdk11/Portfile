@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ master_sites        https://git.openjdk.java.net/jdk11u/archive/refs/tags
 distname            jdk-${version}+${build}
 
 checksums           rmd160  070b09234c15f5ed3da23d85152781ce87d06ce4 \
-                    sha256  58acafa79830b550eed738b9c9590d3a19c44d776f9be634e0f7e1c5a57cb1b9 \
-                    size    123145634
+sha256  58acafa79830b550eed738b9c9590d3a19c44d776f9be634e0f7e1c5a57cb1b9 \
+size    123145634
 
 depends_lib         port:freetype
 depends_build       port:autoconf \

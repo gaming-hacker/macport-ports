@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -6,8 +6,8 @@ PortGroup           golang 1.0
 go.setup            github.com/jesseduffield/lazydocker 0.18.1 v
 
 checksums           rmd160  517878832b17f1248331e3262c428bc5e8fb8c07 \
-                    sha256  a7a1e2c934457c90e39af956688e849cacdbab17df2eb537eb346a57fedc056d \
-                    size    12641076
+sha256  a7a1e2c934457c90e39af956688e849cacdbab17df2eb537eb346a57fedc056d \
+size    12641076
 
 categories          devel
 platforms           darwin

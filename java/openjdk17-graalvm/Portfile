@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -26,13 +26,13 @@ master_sites https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-$
 if {${configure.build_arch} eq "x86_64"} {
     distname     graalvm-ce-java17-darwin-amd64-${version}
     checksums    rmd160  447cfacab9fdc1357aad3d461658cf147172277c \
-                 sha256  b92b6f5f7f11282f20c8f8b94ea1c16d776cbadd7b254119836a7ace9f513b0d \
-                 size    259574942
+sha256  b92b6f5f7f11282f20c8f8b94ea1c16d776cbadd7b254119836a7ace9f513b0d \
+size    259574942
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     graalvm-ce-java17-darwin-aarch64-${version}
     checksums    rmd160  8fe8a28a14d8885df1a3493466f44f0a78c3e83d \
-                 sha256  cfbeb38cd707a330048ab2140cb185176201c5cb654df752fcb4bd95e899b4ec \
-                 size    256787870
+sha256  cfbeb38cd707a330048ab2140cb185176201c5cb654df752fcb4bd95e899b4ec \
+size    256787870
 }
 
 worksrcdir   graalvm-ce-java17-${version}

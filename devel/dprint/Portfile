@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ long_description    {*}${description}.
 homepage            https://dprint.dev/
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  4032add9075f70b3b971158fc92d1e1c6b68dc35 \
-                        sha256  f90e0f2d87f0d72d943653f02182c2bebcf29ce97d3ebb1755ae7188dec4da85 \
-                        size    2169943
+rmd160  4032add9075f70b3b971158fc92d1e1c6b68dc35 \
+sha256  f90e0f2d87f0d72d943653f02182c2bebcf29ce97d3ebb1755ae7188dec4da85 \
+size    2169943
 
 patchfiles          patch-upgrade.diff
 
@@ -191,8 +191,8 @@ cargo.crates \
     serde_bytes                     0.11.5  16ae07dd2f88a366f15bd0632ba725227018c69a1c8550a927324f8eb8368bb9 \
     serde_derive                   1.0.137  1f26faba0c3959972377d3b2d306ee9f71faee9714294e41bb777f83f88578be \
     serde_json                      1.0.79  8e8d9fa5c3b304765ce1fd9c4c8a3de2c8db365a5b91be52f186efc675681d95 \
-    sha1                            0.10.1  c77f4e7f65455545c2153c1253d25056825e77ee2533f0e41deb65a93a34852f \
-    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sha1                            0.10.1  c77f4e7f65455545c2153c1253d25056825e77ee2533f0e41deb65a93a34852f \
+sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
     signal-hook                     0.3.13  647c97df271007dcea485bb74ffdb57f2e683f1306c854f468a0c244badabf2d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

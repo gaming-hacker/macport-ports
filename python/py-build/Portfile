@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel
 license             MIT
 supported_archs     noarch
 
-python.versions     36 37 38 39 310
+python.versions 310
 
 maintainers         {danchr @danchr} openmaintainer
 
@@ -25,9 +25,9 @@ long_description    ${description} which will invoke the PEP 517 \
 homepage            https://pypa-build.readthedocs.io/
 
 checksums           md5 307632355e32c3769c99da66f92fe020 \
-                    rmd160 3086fae7785c632e7345494979051c68db61748d \
-                    sha256 887a6d471c901b1a6e6574ebaeeebb45e5269a79d095fe9a8f88d6614ed2e5f0 \
-                    size   17067
+rmd160 3086fae7785c632e7345494979051c68db61748d \
+sha256 887a6d471c901b1a6e6574ebaeeebb45e5269a79d095fe9a8f88d6614ed2e5f0 \
+size   17067
 
 python.pep517       yes
 

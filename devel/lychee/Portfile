@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo  1.0
@@ -18,9 +18,9 @@ long_description    {*}${description} \
     reStructuredText, or any other text file or website!
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  1a74f388a59191a1af7f3058ddeba33ebec2a49e \
-                    sha256  1ebc71f8741d644cdc1fd3f5c2f78f0991bc56e038c1132cbe8c9eee144c8f03 \
-                    size    741976
+rmd160  1a74f388a59191a1af7f3058ddeba33ebec2a49e \
+sha256  1ebc71f8741d644cdc1fd3f5c2f78f0991bc56e038c1132cbe8c9eee144c8f03 \
+size    741976
 
 depends_lib         path:lib/libssl.dylib:openssl
 
@@ -304,8 +304,8 @@ cargo.crates \
     serde_path_to_error              0.1.7  d7868ad3b8196a8a0aea99a8220b124278ee5320a55e4fde97794b6f85b1a377 \
     serde_qs                         0.8.5  c7715380eec75f029a4ef7de39a9200e0a63823176b759d055b613f5a87df6a6 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     shellexpand                      2.1.0  83bdb7831b2d85ddf4a7b148aa19d0587eddbe8671a436b7bd1182eaad0f2829 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

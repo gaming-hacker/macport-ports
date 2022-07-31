@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Memoize 1.08
 revision            0
 license             {Artistic-1 GPL}
@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  96f6e6655920d063b68b56e097f811c7ff68a4a1 \
-                    sha256  6c2decc8a8740481aaed1b03caa56ce56d18f8f787e795aa8df4f99b26c94516 \
-                    size    47429
+sha256  6c2decc8a8740481aaed1b03caa56ce56d18f8f787e795aa8df4f99b26c94516 \
+size    47429
 
 supported_archs     noarch

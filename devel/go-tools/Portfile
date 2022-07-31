@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -17,8 +17,8 @@ description         Various packages and tools that support the Go programming l
 long_description    $description
 
 checksums           rmd160  43f4815ceb1b563a72dc65c6b5c44f67fe2a319a \
-                    sha256  e15c17adbc82cb0660011ec841fe7d192074611761cd337961ffd9bb085ab20f \
-                    size    3139749
+sha256  e15c17adbc82cb0660011ec841fe7d192074611761cd337961ffd9bb085ab20f \
+size    3139749
 
 # FIXME: This port currently can't be built without allowing go mod to fetch
 # dependencies during the build phase. See

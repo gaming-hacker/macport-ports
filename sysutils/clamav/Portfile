@@ -16,8 +16,8 @@ long_description	Clam AntiVirus is a GPL anti-virus toolkit for UNIX. The \
 homepage		http://www.clamav.net
 master_sites		http://www.clamav.net/downloads/production
 checksums	rmd160	9158544048971e28c71ebf60ea39b42afcb8ce04 \
-		sha256	8ac32e910aa744cc7f921c5122ba523ef1ffbbbf94545f94fc4a976b502be74b \
-		size	12027448
+sha256	8ac32e910aa744cc7f921c5122ba523ef1ffbbbf94545f94fc4a976b502be74b \
+size	12027448
 
 platforms		darwin
 
@@ -81,7 +81,7 @@ variant tests description {Enable running 'port test'} {
 	ui_msg "Tests run using the installed version of this port."
 
 	depends_test	port:check \
-			port:py39-pytest
+			port:py310-pytest
 
 	configure.args-delete	-DENABLE_TESTS=OFF
 	configure.pre_args-replace	-DCMAKE_BUILD_WITH_INSTALL_RPATH:BOOL=ON \

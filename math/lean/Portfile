@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -22,8 +22,8 @@ long_description    A fork of Lean 3 maintained and updated by the Lean \
 depends_lib-append  port:gmp
 
 checksums           rmd160  991e563237eaff5e00f65d98e53271d070d9973e \
-                    sha256  e3659b4c03ba271c026f92f47e14e579173583910f46f0c59488def1f316b01c \
-                    size    1913685
+sha256  e3659b4c03ba271c026f92f47e14e579173583910f46f0c59488def1f316b01c \
+size    1913685
 
 # use older MACH defines on systems before 10.8
 patchfiles          patch-lean-util-memory-older-MACH-defines.diff
@@ -33,7 +33,7 @@ cmake.generator     Ninja
 
 set worksrcdir      ${worksrcdir}/src
 
-compiler.cxx_standard           2011
+compiler.cxx_standard 2020
 compiler.thread_local_storage   yes
 
 

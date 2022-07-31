@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -21,10 +21,10 @@ long_description \
 homepage        http://www.python-ldap.org/
 python.rootname python-ldap
 checksums       rmd160 846bf38cb166f478f2cf401f889ad7ecd39b05c5 \
-                sha256 7d1c4b15375a533564aad3d3deade789221e450052b21ebb9720fb822eccdb8e \
-                size   367645
+sha256 7d1c4b15375a533564aad3d3deade789221e450052b21ebb9720fb822eccdb8e \
+size   367645
 
-python.versions 27 36 37
+python.versions 310
 
 if {$subport ne $name} {
     depends_build-append \

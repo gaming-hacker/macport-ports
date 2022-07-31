@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ livecheck.type      none
 set version_major   [lindex [split ${version} .] 0]
 
 checksums           rmd160  4d28ced0f6faee87e5dd7130f96c15fd0237041b \
-                    sha256  da68645b5c31b6fe2c52cf73a6f7c848d3ccdd2ef68436b953c95c55cb030468 \
-                    size    75535862
+sha256  da68645b5c31b6fe2c52cf73a6f7c848d3ccdd2ef68436b953c95c55cb030468 \
+size    75535862
 
 name                root${version_major}
 categories          science
@@ -338,13 +338,13 @@ variant opengl description {Build with opengl support} {
 # ========================================================================================
 
 # List of possible python versions
-set python_versions { 2.7 3.5 3.6 3.7 }
+set python.versions {310}
 
 # Define the available variants
-foreach ver ${python_versions} {
+foreach ver ${python.versions} {
     set ver_no_dot [join [split ${ver} "."] ""]
     set variant_line {variant python${ver_no_dot} description "Build with python ${ver} support"}
-    foreach over ${python_versions} {
+    foreach over ${python.versions} {
         if { ${ver} == ${over} } { continue }
         set over_no_dot [join [split ${over} "."] ""]
         append variant_line " conflicts python${over_no_dot}"
@@ -355,7 +355,7 @@ foreach ver ${python_versions} {
 
 # Is a variant active ?
 set active_python_variant ""
-foreach ver ${python_versions} {
+foreach ver ${python.versions} {
     set ver_no_dot [join [split ${ver} "."] ""]
     if {[variant_isset python${ver_no_dot}]} {
         set active_python_variant ${ver}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ long_description    \
 homepage            https://crates.io/crates/cargo-generate
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  f29d89bcce533813fee3eeea113df65d2a932d89 \
-                    sha256  ae2fd8f03e70d2be82fc06a73b2ba4f70533cae54187a25e10142557ca0960a5 \
-                    size    252504
+rmd160  f29d89bcce533813fee3eeea113df65d2a932d89 \
+sha256  ae2fd8f03e70d2be82fc06a73b2ba4f70533cae54187a25e10142557ca0960a5 \
+size    252504
 
 depends_run-append  port:curl
 
@@ -179,8 +179,8 @@ cargo.crates \
     semver                          1.0.12  a2333e6df6d6598f2b1974829f853c2b4c5f4a6e503c10af918081aa6f8564e1 \
     serde                          1.0.140  fc855a42c7967b7c369eb5860f7164ef1f6f81c20c7cc1141f2a604e18723b03 \
     serde_derive                   1.0.140  6f2122636b9fe3b81f1cb25099fcf2d3f542cdb1d45940d56c713158884a05da \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     smallvec                         1.9.0  2fd0db749597d91ff862fd1d55ea87f7855a744a8425a64695b6fca237d1dad1 \
