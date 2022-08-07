@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -26,8 +26,8 @@ homepage            https://${redis_domain}
 master_sites        https://download.${redis_domain}/releases/
 
 checksums           rmd160  ef4ddeb531477026d46e48df7a661e704f3a5f55 \
-                    sha256  f0e65fda74c44a3dd4fa9d512d4d4d833dd0939c934e946a5c622a630d057f2f \
-                    size    2963216
+sha256  f0e65fda74c44a3dd4fa9d512d4d4d833dd0939c934e946a5c622a630d057f2f \
+size    2963216
 
 patchfiles          patch-redis.conf.diff \
                     patch-hiredis.diff

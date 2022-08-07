@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    Akumuli is a time-series database for modern hardware. It ca
                     The word akumuli can be translated from Esperanto as accumulate.
 
 checksums           sha256  26859ca401f577ba795ca7d1282824396395f6a7a33963b097e1f562ed0742e8 \
-                    rmd160  41196d7dd93a807b5e6b55cfdb576932b2ceb876 \
-                    size    551145
+rmd160  41196d7dd93a807b5e6b55cfdb576932b2ceb876 \
+size    551145
 
 depends_lib-append  port:jemalloc \
                     port:sqlite3 \

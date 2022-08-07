@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -26,13 +26,13 @@ master_sites https://github.com/adoptium/temurin11-binaries/releases/download/jd
 if {${configure.build_arch} eq "x86_64"} {
     distname     OpenJDK11U-jdk_x64_mac_hotspot_${version}_${build}
     checksums    rmd160  05d08b2b8756f032d44df0d8456301e94edf877d \
-                 sha256  8e9bd7669f5c59c60404cebf25c086e04623677e0f827ce85e3ecdbfb0581c3a \
-                 size    186325803
+sha256  8e9bd7669f5c59c60404cebf25c086e04623677e0f827ce85e3ecdbfb0581c3a \
+size    186325803
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     OpenJDK11U-jdk_aarch64_mac_hotspot_${version}_${build}
     checksums    rmd160  24a0a9df20c14e24edc8d661b5b21b21585cba37 \
-                 sha256  abf9365c07797133874e18bc5da86a42833ceee71986addb59877f5efd23739c \
-                 size    185078783
+sha256  abf9365c07797133874e18bc5da86a42833ceee71986addb59877f5efd23739c \
+size    185078783
 }
 
 worksrcdir   jdk-${version}+${build}

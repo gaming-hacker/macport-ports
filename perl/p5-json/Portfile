@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -18,8 +18,8 @@ long_description    This module converts between JSON \
                     http://www.crockford.com/JSON/.
 
 checksums           rmd160  6a4c054c5adc01e56158fc98a6072ef211dedd50 \
-                    sha256  6780a51f438c0932eec0534fc9cd2b1ad0d64817eda4add8ede5ec77d6d2c991 \
-                    size    94319
+sha256  6780a51f438c0932eec0534fc9cd2b1ad0d64817eda4add8ede5ec77d6d2c991 \
+size    94319
 
 if {${perl5.major} != ""} {
     depends_lib-append \

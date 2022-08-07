@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -27,8 +27,8 @@ master_sites        https://github.com/llvm/llvm-project/releases/download/llvmo
 distname            llvm-project-${version}.src
 
 checksums           rmd160  f566b4b75c8f30418f19069a9a84864ead766401 \
-                    sha256  74d2529159fd118c3eac6f90107b5611bccc6f647fdea104024183e8d5e25831 \
-                    size    84065492
+sha256  74d2529159fd118c3eac6f90107b5611bccc6f647fdea104024183e8d5e25831 \
+size    84065492
 
 # no Clang / LLVM for PowerPC yet
 supported_archs     arm64 i386 x86_64

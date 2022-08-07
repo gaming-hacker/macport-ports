@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,9 +24,9 @@ destroot {
 }
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  074dc05e17cbb3ac7de6e025c824ec061034c5c2 \
-                    sha256  5333487e31c6b21fc9a4b351de844fc11626452b98d6413d9f5bc620aa5a0966 \
-                    size    7461644 \
+rmd160  074dc05e17cbb3ac7de6e025c824ec061034c5c2 \
+sha256  5333487e31c6b21fc9a4b351de844fc11626452b98d6413d9f5bc620aa5a0966 \
+size    7461644 \
 
 cargo.crates \
     adler                            1.0.2  f26201604c87b1e01bd3d98f8d5d9a8fcbb815e8cedb41ffccbeb4bf593a35fe \
@@ -162,7 +162,7 @@ cargo.crates \
     serde_regex                      1.1.0  a8136f1a4ea815d7eac4101cfd0b16dc0cb5e1fe1b8609dfd728058656b7badf \
     serde_repr                       0.1.9  1fe39d9fbb0ebf5eb2c7cb7e2a47e4f462fad1379f1166b8ae49ad9eae89a7ca \
     serde_yaml                      0.8.26  578a7433b776b56a35785ed5ce9a7e777ac0598aac5a6dd1b4b18a307c7fc71b \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
     similar                          2.1.0  2e24979f63a11545f5f2c60141afe249d4f19f84581ea2138065e400941d83d3 \
     smallstr                         0.3.0  63b1aefdf380735ff8ded0b15f31aab05daf1f70216c01c02a12926badd1df9d \
     smallvec                         1.9.0  2fd0db749597d91ff862fd1d55ea87f7855a744a8425a64695b6fca237d1dad1 \

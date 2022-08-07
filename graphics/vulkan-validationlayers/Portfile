@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,8 +30,8 @@ depends_lib-append  \
                     port:vulkan-loader
 
 checksums           sha256  593d9b818d536490b70322a01b306ec165df5e7a70d770d05014fbd0b325fa15 \
-                    rmd160  056d7dd11cc0fbae48c194fbb3847df292f5f33a \
-                    size    4036109
+rmd160  056d7dd11cc0fbae48c194fbb3847df292f5f33a \
+size    4036109
 
 set py_ver          3.10
 set py_ver_nodot    [string map {. {}} ${py_ver}]

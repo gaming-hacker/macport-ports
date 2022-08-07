@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,9 +15,9 @@ description         The next generation of decoding tools, built by the same peo
 long_description    {*}${description}. It is intended to replace Ciphey in the future.
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  6c6c6e384ec006e975e2e9eb7158f1311dd201d9 \
-                        sha256  71c45e49ad1e4901507d8f6af3681964de38711d8961637eb2ff6a8bace44f81 \
-                        size    1507826
+rmd160  6c6c6e384ec006e975e2e9eb7158f1311dd201d9 \
+sha256  71c45e49ad1e4901507d8f6af3681964de38711d8961637eb2ff6a8bace44f81 \
+size    1507826
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} ${destroot}${prefix}/bin/${name}
@@ -209,7 +209,7 @@ cargo.crates \
     serde_json                      1.0.82  82c2c1fdcd807d1098552c5b9a36e425e42e9fbd7c6a37a8425f390f781f7fa7 \
     serde_path_to_error              0.1.7  d7868ad3b8196a8a0aea99a8220b124278ee5320a55e4fde97794b6f85b1a377 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    shared_child                     0.3.5  6be9f7d5565b1483af3e72975e2dee33879b3b86bd48c0929fccf6585d79e65a \
+shared_child                     0.3.5  6be9f7d5565b1483af3e72975e2dee33879b3b86bd48c0929fccf6585d79e65a \
     shell-words                      1.1.0  24188a676b6ae68c3b2cb3a01be17fbf7240ce009799bb56d5b1409051e78fde \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \

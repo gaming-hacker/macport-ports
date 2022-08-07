@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ github.setup        pciutils pciids 84f931c6a8d4807d7ebfb2aa777ef7507ffe2fee
 version             2022.07.17
 revision            0
 checksums           rmd160  456f548d345654cd644cfc240ff78940601aa68b \
-                    sha256  96ecad8c97b3e9722d11a9e8fca685f0a1d0a627bd696f26afbd2a7561bfbeb2 \
-                    size    309777
+sha256  96ecad8c97b3e9722d11a9e8fca685f0a1d0a627bd696f26afbd2a7561bfbeb2 \
+size    309777
 
 categories          sysutils
 license             {GPL-2+ BSD}

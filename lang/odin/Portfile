@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ set llvm_version    14
 depends_build       port:llvm-${llvm_version}
 
 checksums           rmd160  9ffd879387f2f98e74c3346b823558c4cbba2c54 \
-                    sha256  6e76c8dce8d569b75a6acbb472afbf90973085fbf0f534ce1fb31399e1351da1 \
-                    size    44286311
+sha256  6e76c8dce8d569b75a6acbb472afbf90973085fbf0f534ce1fb31399e1351da1 \
+size    44286311
 
 patchfiles          patch-build.diff
 

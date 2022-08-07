@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -37,8 +37,8 @@ long_description    Unbound is a validating, recursive, and caching DNS \
 master_sites        http://unbound.net/downloads/
 
 checksums           rmd160  e53b367d502f18566481816323181ae9388b17e8 \
-                    sha256  2e32f283820c24c51ca1dd8afecfdb747c7385a137abe865c99db4b257403581 \
-                    size    6204297
+sha256  2e32f283820c24c51ca1dd8afecfdb747c7385a137abe865c99db4b257403581 \
+size    6204297
 
 # add missing definition for older systems
 patchfiles-append   patch-dnsport-ipv6tclass.diff

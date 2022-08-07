@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 
 github.setup        mongodb mongo-c-driver 1.22.1
 checksums           rmd160  3c5e370806fab534e285063b2f744d40d49e6f9b \
-                    sha256  762735344e848bb2f100154ed2f7b0f8c9b25e37eafb2b79b54bf99c15a7c318 \
-                    size    7452368
+sha256  762735344e848bb2f100154ed2f7b0f8c9b25e37eafb2b79b54bf99c15a7c318 \
+size    7452368
 
 categories          devel
 maintainers         {ryandesign @ryandesign} openmaintainer

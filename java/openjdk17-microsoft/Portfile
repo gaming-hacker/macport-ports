@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -28,13 +28,13 @@ master_sites https://aka.ms/download-jdk/
 if {${configure.build_arch} eq "x86_64"} {
     distname     microsoft-jdk-${version}-macOS-x64
     checksums    rmd160  41f63463aa387f265bcd2390f57ba81f3e913bce \
-                 sha256  7ecf431271eebeb76d64855ccced20645c86a5e4ec6c0642d895f22f6f11a0ea \
-                 size    187265182
+sha256  7ecf431271eebeb76d64855ccced20645c86a5e4ec6c0642d895f22f6f11a0ea \
+size    187265182
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     microsoft-jdk-${version}-macOS-aarch64
     checksums    rmd160  64a07133909e7a7edb691918974cb95f0cecfa7f \
-                 sha256  fc74037baacb3e628a090cb2ec45c756f461e6cf6f716c78f7104644f0e75436 \
-                 size    177478330
+sha256  fc74037baacb3e628a090cb2ec45c756f461e6cf6f716c78f7104644f0e75436 \
+size    177478330
 }
 
 worksrcdir   jdk-${version}+${build}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -25,8 +25,8 @@ master_sites        https://services.gradle.org/distributions
 
 # Update checksums for variant when updating these!
 checksums           rmd160  5824b8c0ec452bc3e3f247229dea24c3e0fdef26 \
-                    sha256  f6b8596b10cce501591e92f229816aa4046424f3b24d771751b06779d58c8ec4 \
-                    size    120635534
+sha256  f6b8596b10cce501591e92f229816aa4046424f3b24d771751b06779d58c8ec4 \
+size    120635534
 
 worksrcdir          ${name}-${version}
 
@@ -63,8 +63,8 @@ variant all description {Install supplemental documentation and source code} {
     distname        ${name}-${version}-all
 
     checksums       rmd160  2dac74498a5af0387cc8b11f6279c8d1836286e4 \
-                    sha256  db9c8211ed63f61f60292c69e80d89196f9eb36665e369e7f00ac4cc841c2219 \
-                    size    166101707
+sha256  db9c8211ed63f61f60292c69e80d89196f9eb36665e369e7f00ac4cc841c2219 \
+size    166101707
 
     post-destroot {
         xinstall -m 0755 -d ${destroot}${prefix}/share/doc/${name}
