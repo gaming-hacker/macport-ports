@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/xo/usql 0.11.0 v
+go.setup            github.com/xo/usql 0.12.0 v
 github.tarball_from archive
 revision            0
 
@@ -25,13 +25,15 @@ license             MIT
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  0d6bbbcc17dc4823652642ccf37bddc59ec22077 \
-sha256  aabf703abe3a9e8d0823bbf74838ce6e3ffce862af2dfce4a2d571f2c73a4263 \
-size    265494
+checksums           rmd160  d6671d28c4aaa6b1feb21b18c7f473c80a6a05ea \
+                    sha256  e81bb826f02fc52f3620f38f9d11fb2871ccbc5ac77e87fca075f7136fe9d12a \
+                    size    272774
 
 depends_build-append \
                     port:realpath
 depends_lib-append  port:icu
+
+patchfiles          patch-build-no-compress.diff
 
 # Allow Go to download dependencies during build time
 build.env-delete    GO111MODULE=off GOPROXY=off
@@ -39,10 +41,8 @@ build.env-delete    GO111MODULE=off GOPROXY=off
 build.cmd           ./build-release.sh
 build.args          -v ${github.tag_prefix}${version}
 
-patchfiles          patch-no-upx.diff
-
 destroot {
     xinstall -m 0755 \
-        ${worksrcpath}/build/${goos}/${version}/${name} \
+        [glob ${worksrcpath}/build/${goos}/*/*/${name}] \
         ${destroot}${prefix}/bin/
 }

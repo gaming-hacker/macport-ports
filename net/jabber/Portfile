@@ -26,7 +26,7 @@ rmd160 0d3df653b6362f8e580c59ae1b4c9c6467b0bee5
 depends_build       port:pkgconfig
 
 depends_lib         port:expat \
-                    port:gnutls \
+                    path:lib/pkgconfig/gnutls.pc:gnutls \
                     port:libgcrypt \
                     port:libidn \
                     port:popt \

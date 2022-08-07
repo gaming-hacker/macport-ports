@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-libtmux
-version             0.11.0
+version             0.14.0
 revision            0
 
 categories-append   devel
@@ -20,11 +20,11 @@ homepage            https://github.com/tmux-python/libtmux
 master_sites        pypi:l/${python.rootname}/
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  b954aebf7e0280feaa83687c53239e78b1b97c87 \
-sha256  d82cf391097eb69d784d889d482bb99284b984aa6225276a3dc1af8c1460dd3c \
-size    196796
+checksums           rmd160  5071cb2ddd9f706cf5709879240795889704282b \
+                    sha256  4def28144c9b4317560f771b8daca866542c0a4c147db8f33541546b14950a6c \
+                    size    209615
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

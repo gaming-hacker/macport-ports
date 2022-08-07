@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cargo   1.0
 PortGroup           github  1.0
 
-github.setup        zellij-org zellij 0.31.0 v
+github.setup        zellij-org zellij 0.31.1 v
 github.tarball_from archive
 revision            0
 
@@ -27,9 +27,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-rmd160  31cbf7ff6223afa76365e0ca9e90bf051ce54183 \
-sha256  9d17153511887606f3733df151f5ed461f380e9538336f79f8785bc5b76a68ab \
-size    9316715
+                    rmd160  2c8796c8ae580cc75d43d05cf6f475aac9c6c706 \
+                    sha256  8fbe83ec4f4dcb5c157c5755978d00de6dfa2c9790c3788262f23c8d1b75350b \
+                    size    9317921
 
 depends_build-append \
                     port:go-md2man
@@ -287,8 +287,8 @@ cargo.crates \
     serde_derive                   1.0.137  1f26faba0c3959972377d3b2d306ee9f71faee9714294e41bb777f83f88578be \
     serde_json                      1.0.81  9b7ce2b32a1aed03c558dc61a5cd328f15aff2dbc17daad8fb8af04d2100e15c \
     serde_yaml                      0.8.24  707d15895415db6628332b737c838b88c598522e4dc70647e59b72312924aebc \
-sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+    sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
     signal-hook                     0.1.17  7e31d442c16f047a671b5a71e2161d6e68814012b7f5379d269ebd915fac2729 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

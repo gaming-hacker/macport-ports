@@ -96,7 +96,7 @@ sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
                         port:gettext \
                         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                         port:gmp \
-                        port:gnutls \
+                        path:lib/pkgconfig/gnutls.pc:gnutls \
                         path:include/turbojpeg.h:libjpeg-turbo \
                         port:lame \
                         port:libass \

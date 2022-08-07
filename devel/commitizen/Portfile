@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                commitizen
-version             2.29.2
+version             2.29.3
 revision            0
 categories-prepend  devel
 license             MIT
@@ -24,9 +24,9 @@ long_description    Commitizen is a tool designed for teams. Its main purpose is
 
 homepage            https://${name}-tools.github.io/${name}/
 
-checksums           rmd160  6c0c75dea415c45d1289da6bfba27a5a94cae79e \
-sha256  676094c2aa485630ca8bff16be356a43043fa5dc3310f85a4f2764cf14c40f3d \
-size    34207
+checksums           rmd160  d7228fac9a828b3e1cef8142d51f1b64c3cb1d5a \
+                    sha256  fc9e960a082319731b38790a7100571db1c0bcea97ac3d1b5dad007215639815 \
+                    size    34183
 
 depends_build-append \
     port:py${python.version}-setuptools

@@ -23,7 +23,7 @@ sha256  f0497fd8420574efab4e5738ea3b70787a6e8042f585156baa30bdc1911ba552 \
 size    2615643
 
 depends_build       port:pkgconfig
-depends_lib         port:gnutls \
+depends_lib         path:lib/pkgconfig/gnutls.pc:gnutls \
                     port:hiredis \
                     port:icu \
                     port:libiconv \
