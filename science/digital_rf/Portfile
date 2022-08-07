@@ -25,35 +25,35 @@ checksums           rmd160  a8885c5e2976a6f904c59fa4debf4062ae8760c3 \
                     sha256  c6e62d959b6716c953196dc33f47dc0dd81945379683b206762ca74e0888151e \
                     size    4537334
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 boost.version       1.71
 
 configure.ldflags-delete    -L${prefix}/lib
 
 depends_build-append \
-                    port:py27-pkgconfig
+                    port:py310-pkgconfig
 
 depends_lib-append  port:hdf5 \
-                    port:py27-mako \
-                    port:py27-numpy
+                    port:py310-mako \
+                    port:py310-numpy
 
 depends_run-append  path:lib/pkgconfig/gnutls.pc:gnutls \
-                    port:py27-dateutil \
-                    port:py27-matplotlib \
-                    port:py27-packaging \
-                    port:py27-pandas \
-                    port:py27-scipy \
-                    port:py27-six \
-                    port:py27-tz \
-                    port:py27-watchdog
+                    port:py310-dateutil \
+                    port:py310-matplotlib \
+                    port:py310-packaging \
+                    port:py310-pandas \
+                    port:py310-scipy \
+                    port:py310-six \
+                    port:py310-tz \
+                    port:py310-watchdog
 
 depends_run-append  path:lib/libgnuradio-runtime.dylib:gnuradio \
                     path:lib/libuhd.dylib:uhd
 
 # CMAKE configuration
 configure.args-append \
-    -DDRF_INSTALL_PREFIX_PYTHON=${frameworks_dir}/Python.framework/Versions/2.7\
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7\
+    -DDRF_INSTALL_PREFIX_PYTHON=${frameworks_dir}/Python.framework/Versions/3.10\
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.10/bin/python3.10\
     -DDRF_DATA_PREFIX_PYTHON=${prefix} \
     -DDRF_SCRIPT_PREFIX_PYTHON=${prefix}/bin

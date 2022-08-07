@@ -35,8 +35,8 @@ patchfiles          patch-cmakelists.diff \
 
 # 'std::shared_mutex' is only available from C++17 onwards
 # https://github.com/akumuli/Akumuli/issues/383
-compiler.cxx_standard 2017
-configure.cxxflags-append -std=c++17
+compiler.cxx_standard 2020
+configure.cxxflags-append -std=gnu++2a
 configure.args-append \
                     -DAPR_INCLUDE_DIR=${prefix}/include/apr-1 \
                     -DAPRUTIL_INCLUDE_DIR=${prefix}/include/apr-1

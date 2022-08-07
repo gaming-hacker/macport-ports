@@ -133,16 +133,8 @@ variant chmodbpf description {Enable Wireshark to acces macOS capture devices} {
     depends_run             port:wireshark-chmodbpf
 }
 
-variant python35 description {Use python35 during build} {
-    depends_build-append    port:python35
-}
-
-variant python36 description {Use python36 during build} {
-    depends_build-append    port:python36
-}
-
-variant python37 description {Use python37 during build} {
-    depends_build-append    port:python37
+variant python310 description {Use python310 during build} {
+    depends_build-append    port:python310
 }
 
 default_variants +zlib +libsmi +gnutls +geoip +kerberos5 +chmodbpf
@@ -155,12 +147,7 @@ if {![variant_isset adns] && ![variant_isset cares]} {
     default_variants-append +cares
 }
 
-## if no python3* variant is specified, add +python37
-## XYZZY: it would be better to detect which python3* is already installed and use that...
-if {![variant_isset python35] && ![variant_isset python36] && \
-    ![variant_isset python37]} {
-    default_variants-append +python37
-}
+ default_variants-append +python310
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/include/wireshark/epan/crypt/

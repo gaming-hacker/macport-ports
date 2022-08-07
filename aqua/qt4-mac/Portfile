@@ -34,7 +34,7 @@ checksums           rmd160 afb5e5a99388e6429faca59cb5000054feffd166 \
                     size   241075567
 
 if {[info exists use_xcode]} {
-    use_xcode           yes
+    use_xcode  no
 }
 minimum_xcodeversions   {8 2.5}
 
@@ -1227,7 +1227,7 @@ variant openvg description {Build with support for OpenVG} {
 
 variant cxx11 description {Add library support for C++11 (EXPERIMENTAL; does not work with libc++)} {
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2020
 
     pre-fetch {
 

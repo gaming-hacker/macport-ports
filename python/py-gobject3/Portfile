@@ -25,7 +25,7 @@ checksums           rmd160  de8be2dcf22d69fb4abd66210ea535de60cd33f8 \
                     sha256  ade8695e2a7073849dd0316d31d8728e15e1e0bc71d9ff6d1c09e86be52bc957 \
                     size    558724
 
-python.versions     36 37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     set branch              [join [lrange [split ${version} .] 0 1] .]
@@ -39,7 +39,7 @@ if {${name} ne ${subport}} {
                             port:py${python.version}-cairo \
                             path:lib/pkgconfig/gobject-introspection-1.0.pc:gobject-introspection
 
-    compiler.c_standard     2011
+    compiler.c_standard 2017
 
     # https://github.com/Damenly/pygobject/commit/01013b1003bac67061e595cd857be9cf7b69d7fd
     # this patch is designed to work around PyGObject's use of GOI's use of LIBFFI

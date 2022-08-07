@@ -20,7 +20,7 @@ checksums           sha256  8ffc19c435232d09299dd2c91e247292b3508c1b826a3497c606
                     rmd160  776975e494ee4de8cf0e28acb3e19b7e771dba69 \
                     size    3536727
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 depends_build-append port:python310
 configure.python ${prefix}/bin/python3.10

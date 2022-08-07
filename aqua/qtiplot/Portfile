@@ -45,8 +45,8 @@ patchfiles          patch-ApplicationWindow.diff \
                     patch-unsetflags.diff
 
 # error: unknown type name 'constexpr'
-compiler.cxx_standard   2014
-configure.cxxflags-append -std=c++14
+compiler.cxx_standard 2020
+configure.cxxflags-append -std=gnu++2a
 
 if {[string match *clang* ${configure.compiler}]} {
     # qwt3d_lighting.cpp: error: non-constant-expression cannot be narrowed
@@ -80,7 +80,7 @@ pre-configure {
     }
 
    if {[variant_isset python27]} {
-       puts $confFD "PYTHON = ${prefix}/bin/python2.7"
+       puts $confFD "PYTHON = ${prefix}/bin/python3.10"
    }
 
     # target specific configuration
@@ -159,12 +159,12 @@ variant qtexengine description "add support for tex exportation" {
 variant python27 description "add support for python27 scripting" {
 
     post-destroot {
-        system "${prefix}/bin/python2.7 -m compileall ${destroot}${applications_dir}/QtiPlot.app/Contents/MacOS"
+        system "${prefix}/bin/python3.10 -m compileall ${destroot}${applications_dir}/QtiPlot.app/Contents/MacOS"
     }
 
-    depends_lib-append port:python27 \
-                       port:py27-sip4 \
-                       port:py27-pyqt4
+    depends_lib-append port:python310 \
+                       port:py310-sip4 \
+                       port:py310-pyqt4
 }
 
 livecheck.type  none

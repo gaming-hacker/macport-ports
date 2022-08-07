@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Net-SSH2 0.73
 revision            0
 license             {Artistic-1 GPL}
@@ -26,5 +26,5 @@ if {${perl5.major} != ""} {
                     port:libssh2 \
                     port:zlib
 
-    compiler.c_standard 2011
+    compiler.c_standard 2017
 }

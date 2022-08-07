@@ -28,7 +28,7 @@ if {${name} ne ${subport}} {
 
     # https://trac.macports.org/ticket/65410
     if { ${os.platform} eq "darwin" && (( ${os.major} >= 15 && ${os.major} <= 16 ) || ${os.major} >= 20 ) } {
-        use_xcode   yes
+        use_xcode  no
     }
 
     patchfiles      patch-project.py.diff
