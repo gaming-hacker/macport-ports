@@ -43,7 +43,7 @@ depends_run-append  port:yubikey-manager
 
 # https://trac.macports.org/ticket/65107
 if { ${os.platform} eq "darwin" && (( ${os.major} >= 15 && ${os.major} <= 16 ) || ${os.major} >= 20 ) } {
-    use_xcode   yes
+    use_xcode  no
 }
 
 qt5.min_version     5.7

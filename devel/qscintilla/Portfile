@@ -71,7 +71,7 @@ foreach qt_major {4 5} {
 
         if {${qt_major} eq 4} {
             # enable C++11
-            configure.cxxflags-append -std=c++11
+            configure.cxxflags-append -std=gnu++2a
             # respect configure.cxx_stdlib when linking
             if {[string match *clang* ${configure.cxx}]} {
                 configure.ldflags-append -stdlib=${configure.cxx_stdlib}
@@ -127,7 +127,7 @@ foreach qt_major {4 5} {
         distfiles
         patchfiles
         supported_archs noarch
-        depends_lib port:py27-qscintilla-qt${qt_major}
+        depends_lib port:py310-qscintilla-qt${qt_major}
         build {}
         destroot {
             xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${subport}
@@ -135,14 +135,14 @@ foreach qt_major {4 5} {
         }
     }
 
-    set python_versions {27 35 36 37 38 39 310}
+    set python.versions {310}
 
     # Python bindings for the latest upstream Qt5 version are in py-pyqt5-scintilla
     if {${qt_major} eq 5} {
-        set python_versions {27 35}
+        set python.versions {310}
     }
 
-    foreach pver ${python_versions} {
+    foreach pver ${python.versions} {
         subport py${pver}-${name}-qt${qt_major} {
             if {${qt_major} eq 4} {
                 PortGroup qt4 1.0
@@ -212,9 +212,9 @@ foreach qt_major {4 5} {
 
 # set pyXY-qscintilla-qt5 (where XY is => 36) to be replaced_by pyXY-pyqt5-scintilla
 # this section can be removed after September 2022
-set python_versions {36 37 38 39}
+set python.versions {310}
 
-foreach pver ${python_versions} {
+foreach pver ${python.versions} {
     subport py${pver}-${name}-qt5 {
         PortGroup   obsolete 1.0
 

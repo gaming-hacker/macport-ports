@@ -38,7 +38,7 @@ build.target        build
 
 use_configure       no
 use_parallel_build  no
-use_xcode           yes
+use_xcode  no
 
 # Patch package.json to allow using Node versions higher than 14
 patchfiles          patch-package.json.diff

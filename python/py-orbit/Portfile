@@ -64,7 +64,7 @@ if {${subport} ne ${name}} {
 } else {
     PortGroup       stub 1.0
 
-    depends_lib     port:py27-orbit
+    depends_lib     port:py310-orbit
 
     livecheck.type  gnome
     livecheck.name  ${my_name}

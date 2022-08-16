@@ -51,13 +51,13 @@ if {${os.platform} eq "darwin" && ${os.major} == 10} {
     # requires c11 support as of 82ca58da (20190305) for
     # <stdatomic.h>; 3.3 was released shortly after this change, so
     # this requirement is now for all modern GLFW.
-    compiler.c_standard   2011
+    compiler.c_standard 2017
     # <stdatomic.h> support was introduced in Xcode 7.0
     PortGroup compiler_blacklist_versions 1.0
 
     compiler.blacklist-append {clang < 700}
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2020
 
     configure.args-append -DCMAKE_C_STANDARD=11 -DCMAKE_C_EXTENSIONS=OFF
 

@@ -20,7 +20,7 @@ checksums               rmd160  9f2d46f32efcd429efb5645717627d0ff95eeb25 \
                         sha256  2fc090d51033c93208e6c10d406397a53c983ae5343b958eb25f72a57a4ce76a \
                         size    5283624
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 
 depends_build-append    port:python310
 
@@ -30,7 +30,7 @@ depends_lib-append      port:gmp \
 
 # NTL requires C++11
 configure.cxxflags-append \
-                        -std=c++11
+                        -std=gnu++2a
 
 test.run                yes
 test.target             DYLD_FALLBACK_LIBRARY_PATH=${worksrcpath} check

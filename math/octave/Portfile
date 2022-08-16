@@ -283,8 +283,8 @@ configure.args-append       \
     --enable-link-all-dependencies
 
 # in configure.ac, listed as one of "[p]rograms used when running Octave"
-depends_lib-append port:python27
-configure.python ${prefix}/bin/python2.7
+depends_lib-append port:python310
+configure.python ${prefix}/bin/python3.10
 
 # in configure.ac, listed as one of "[p]rograms used when running Octave"
 depends_lib-append port:ghostscript

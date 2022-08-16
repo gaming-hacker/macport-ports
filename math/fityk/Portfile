@@ -48,7 +48,7 @@ depends_lib         port:readline \
                     port:xylib \
                     port:lua \
                     port:zlib \
-                    port:python27 \
+                    port:python310 \
                     port:${wxWidgets.port}
 
 depends_run         port:gnuplot
@@ -62,16 +62,16 @@ platform darwin 10 powerpc {
 }
 
 if {[string match *clang* ${configure.compiler}]} {
-    configure.cxxflags-append -std=c++11
+    configure.cxxflags-append -std=gnu++2a
     } else {
-    configure.cxxflags-append -std=gnu++11
+    configure.cxxflags-append -std=gnu++2a
 }
 
 variant docs description {Build and install documentation} {
-    depends_build-append port:py27-sphinx
+    depends_build-append port:py310-sphinx
     # TODO: use a python PortGroup and variable
     pre-build {
-        reinplace "s|sphinx-build|${frameworks_dir}/Python.framework/Versions/2.7/bin/sphinx-build|" ${worksrcpath}/doc/Makefile
+        reinplace "s|sphinx-build|${frameworks_dir}/Python.framework/Versions/3.10/bin/sphinx-build|" ${worksrcpath}/doc/Makefile
         system -W ${worksrcpath}/doc make
     }
 }

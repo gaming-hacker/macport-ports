@@ -50,7 +50,7 @@ if {${os.arch} in [list i386]} {
 }
 
 variant mps description {Enable Apple Metal Performance Shaders (MPS) support} {
-    use_xcode       yes
+    use_xcode  no
 
     build.env-append \
                     APPLE=ON \

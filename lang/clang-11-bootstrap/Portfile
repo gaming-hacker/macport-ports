@@ -41,7 +41,7 @@ extract.suffix      .tar.xz
 extract.cmd         ${prefix}/libexec/xz-bootstrap/bin/xz
 
 depends_build-append \
-                    port:python27-bootstrap
+                    port:python310-bootstrap
 depends_skip_archcheck-append \
                     python27-bootstrap
 
@@ -206,7 +206,7 @@ configure.args-append \
                     -DLLVM_INCLUDE_GO_TESTS=OFF \
                     -DLLVM_INCLUDE_TESTS=OFF \
                     -DLLVM_INCLUDE_UTILS=OFF \
-                    -DPYTHON_EXECUTABLE=${prefix}/libexec/python27-bootstrap/bin/python2.7
+                    -DPYTHON_EXECUTABLE=${prefix}/libexec/python27-bootstrap/bin/python3.10
 
 if {${build_arch} eq "arm64"} {
     configure.args-append \

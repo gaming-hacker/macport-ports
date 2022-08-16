@@ -31,7 +31,7 @@ checksums           rmd160  786b809ef049c25e08ce549d96f19efdfd7c2e1f \
 
 boost.version       1.71
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${os.major} <= 12 && ${os.platform} eq "darwin"} {
     version         2.2.26
@@ -42,7 +42,7 @@ if {${os.major} <= 12 && ${os.platform} eq "darwin"} {
                     rmd160  cd2e8506522821750d70a97b951254f0a133d218
 } else {
     if {${name} ne ${subport}} {
-        compiler.cxx_standard   2017
+        compiler.cxx_standard 2020
 
         variant openmp description "Enable OpenMP" {
             # TODO: verify OpenMP version required

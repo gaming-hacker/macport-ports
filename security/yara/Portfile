@@ -43,7 +43,7 @@ if {${subport} eq ${name}} {
     }
 
     # https://github.com/VirusTotal/yara/issues/1686
-    configure.cflags-append -std=gnu99
+    configure.cflags-append -std=gnu17
 
     configure.args-append   --with-crypto \
                             --disable-silent-rules \
