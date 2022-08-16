@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-flask
-version             2.2.1
+version             2.2.2
 revision            0
 
-checksums           rmd160  7d0c20c3e8b1d24b2f334aa87f2bed664f753912 \
-sha256  9c2b81b9b1edcc835af72d600f1955e713a065e7cb41d7e51ee762b449d9c65d \
-size    687433
+checksums           rmd160  6082c43b4b752bee1dc2b8b59ef6be5018fc5f73 \
+                    sha256  642c450d19c4ad482f96729bd2a8f6d32554aa1e231f4f6b4e7e5264b16cca2b \
+                    size    677389
 
-python.versions 310
+python.versions     27 37 38 39 310
 platforms           darwin
 maintainers         {@catap korins.ky:kirill} openmaintainer
 license             BSD
@@ -34,8 +34,8 @@ if {${name} ne ${subport}} {
         version             1.1.4
         revision            0
         checksums           rmd160  03b23def022b1cf6afdcae01cb840f4623288c43 \
-sha256  0fbeb6180d383a9186d0d6ed954e0042ad9f18e0e8de088b2b419d526927d196 \
-size    635920
+                            sha256  0fbeb6180d383a9186d0d6ed954e0042ad9f18e0e8de088b2b419d526927d196 \
+                            size    635920
     }
 
     depends_build-append    port:py${python.version}-setuptools

@@ -30,6 +30,7 @@ sha256  549c2d21c577a8a9c0450facb5cca809f26591f048e466552240947bdf7a87cc \
 size    145132
 
 patchfiles      patch-SConstruct.diff \
+                python3.patch \
                 patch-ssl_buckets.c.diff \
                 patch-SConstruct-respect-DEVELOPER_DIR.diff \
                 patch-SConstruct-openssl-library-ordering.diff

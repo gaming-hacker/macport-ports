@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-hatchling
-version             1.4.0
+version             1.8.0
 revision            0
 categories          python
 supported_archs     noarch
@@ -13,13 +13,13 @@ license             MIT
 maintainers         {mps @Schamschula} openmaintainer
 description         This is the extensible, standards compliant build backend used by Hatch.
 long_description    {*}${description}
-homepage            https://ofek.dev/hatch/latest/
+homepage            https://hatch.pypa.io/latest/
 
-checksums           rmd160  708891767a91dc18440a5a0f179ab44fb765d363 \
-sha256  89d6f8332877d506095bb6acf7609ceb3cf2555703305975789a257f2ad2308c \
-size    47301
+checksums           rmd160  002fb2380bb484a084198c6e21ebaaef0ef02439 \
+                    sha256  a4f982fdca0717d8c46bfe7b501302f90aaf2a5302845d550b49c8739681feb2 \
+                    size    54816
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     python.pep517   yes

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
-github.setup        mstamy2 PyPDF2 2.9.0
+github.setup        mstamy2 PyPDF2 2.10.2
 revision            0
 name                py-pypdf2
 
@@ -21,11 +21,11 @@ long_description    A Pure-Python PDF toolkit. It is capable of \
                     into a single page, and encrypting and \
                     decrypting PDF files.
 
-checksums           rmd160  c7adaf72469cd5ced7f20de84385cd9cb2b5b85d \
-sha256  45ec4fbb3d1396e132d718ff7c2859ac3fa80c9ed5586f82398e637b910155c7 \
-size    5878050
+checksums           rmd160  d6cab2d26dc3de63f4a0c86184d3242510728d3a \
+                    sha256  19e471be6a6cfd81b4de86b2aa61ed566c031f854808f627dc08f3f13f69ba40 \
+                    size    6434262
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

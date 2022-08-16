@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem       1.0
 
@@ -101,13 +101,13 @@ subport openjdk8-corretto {
     if {${configure.build_arch} eq "x86_64"} {
         distname     amazon-corretto-${version}-macosx-x64
         checksums    rmd160  966b129d1ae0255d7d9cbfd202c2f9511af048e1 \
-sha256  ab4db316b4c5bb886355bbe192a71a5328e43609631477857a1992ca80975fcf \
-size    118790575
+                     sha256  ab4db316b4c5bb886355bbe192a71a5328e43609631477857a1992ca80975fcf \
+                     size    118790575
     } elseif {${configure.build_arch} eq "arm64"} {
         distname     amazon-corretto-${version}-macosx-aarch64
         checksums    rmd160  192cf91d72d450cbaf229e5e0981365e40a4b5b8 \
-sha256  cb29f72976f9e9be525c8ec58edc8bfc20a24f3ec13c5c7259cf1ded3a921eeb \
-size    104196362
+                     sha256  cb29f72976f9e9be525c8ec58edc8bfc20a24f3ec13c5c7259cf1ded3a921eeb \
+                     size    104196362
     }
 
     worksrcdir   amazon-corretto-8.jdk
@@ -124,11 +124,11 @@ subport openjdk8-openj9 {
     # https://developer.ibm.com/languages/java/semeru-runtimes/downloads?os=macOS
     supported_archs  x86_64
 
-    version      8u332
+    version      8u345
     revision     0
 
-    set build    09
-    set openj9_version 0.32.0
+    set build    01
+    set openj9_version 0.33.0
 
     homepage     https://developer.ibm.com/languages/java/semeru-runtimes/
 
@@ -139,19 +139,19 @@ subport openjdk8-openj9 {
     distname     ibm-semeru-open-jdk_x64_mac_${version}b${build}_openj9-${openj9_version}
     worksrcdir   jdk${version}-b${build}
 
-    checksums    rmd160  2311bc6a6bc259adee9c7bba01f0133ce2846f21 \
-sha256  f4b1ec4b1ba3eb318642ddcbb0c02d67e6edfc9e37a7c3bfb13630e4806942e2 \
-size    128972742
+    checksums    rmd160  1a4b825178e0268db47bace8b690596ad5e80efa \
+                 sha256  c69086950c006b17484a70ef7bc85e92d121be15e69e282e1446fd238d42b6b4 \
+                 size    129519233
 }
 
 subport openjdk8-temurin {
     # https://adoptium.net/temurin/releases/
     supported_archs  x86_64
 
-    version      8u332
+    version      8u345
     revision     0
 
-    set build    09
+    set build    01
 
     description  Eclipse Temurin, based on OpenJDK 8
     long_description ${long_description_temurin}
@@ -160,9 +160,9 @@ subport openjdk8-temurin {
     distname     OpenJDK8U-jdk_x64_mac_hotspot_${version}b${build}
     worksrcdir   jdk${version}-b${build}
 
-    checksums    rmd160  20fa5b11b34ee833b62cca7d9d7d6f76b9047759 \
-sha256  a75e8182bb8e77a02c7b4d9f93120c64c1988e2c415b3646d4f4496544e87291 \
-size    107924497
+    checksums    rmd160  ecf6e0243ac503ebe5903f7e3b137c593077697c \
+                 sha256  3eeba0e76101b9f5e8eb9eb14ad991293cf0cc064df35f6a89882b603630f0c8 \
+                 size    107934646
 }
 
 # Remove after 2022-09-14
