@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             github 1.0
@@ -21,8 +21,8 @@ long_description      Varnish was written from the ground up to be a high \
 homepage              https://varnish-cache.org/
 
 checksums             rmd160  6d796494d02592b05de7e7b3536781c05285f9a1 \
-                      sha256  87f4eb220eefbc42bd850f04f5e6568c80010d93f15fb51195efc620fa1e05cc \
-                      size    1742215
+sha256  87f4eb220eefbc42bd850f04f5e6568c80010d93f15fb51195efc620fa1e05cc \
+size    1742215
 
 set python_branch     3.10
 set python_version    [string map {. {}} ${python_branch}]

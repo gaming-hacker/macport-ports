@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,9 +20,9 @@ set short           jcli
 homepage            https://${short}.jenkins-zh.cn
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  65bbaf236b3dd60f2174e7e8b8bd67933cafd70b \
-                        sha256  3420a80422c7e8b77b0d1e1232252a32dca2f2708e900bda85eeda9d37f90c20 \
-                        size    222831
+rmd160  65bbaf236b3dd60f2174e7e8b8bd67933cafd70b \
+sha256  3420a80422c7e8b77b0d1e1232252a32dca2f2708e900bda85eeda9d37f90c20 \
+size    222831
 
 
 # Allows for version number, last commit and build date in `jcli version`

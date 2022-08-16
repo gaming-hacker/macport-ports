@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -30,9 +30,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  4c41c2d5f1513f55d94d8725fcdf1d10cfe06acc \
-                    sha256  a9ed4ab1ef3dad8318fe3d3591b2e16310b90a541eb0f146fc94caefb4a3be37 \
-                    size    36216
+rmd160  4c41c2d5f1513f55d94d8725fcdf1d10cfe06acc \
+sha256  a9ed4ab1ef3dad8318fe3d3591b2e16310b90a541eb0f146fc94caefb4a3be37 \
+size    36216
 
 destroot {
     set bashcomp_dir ${prefix}/share/bash-completion/completions
@@ -163,8 +163,8 @@ cargo.crates \
     serde_derive                   1.0.143  d3d8e8de557aee63c26b85b947f5e59b690d0454c753f3adeb5cd7835ab88391 \
     serde_json                      1.0.83  38dd04e3c8279e75b31ef29dbdceebfe5ad89f4d0937213c53f7d49d01b3d5a7 \
     serde_yaml                      0.8.26  578a7433b776b56a35785ed5ce9a7e777ac0598aac5a6dd1b4b18a307c7fc71b \
-    sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
-    sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
+sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
+sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
     shlex                            0.1.1  7fdf1b9db47230893d76faad238fd6097fd6d6a9245cd7a4d90dbd639536bbd2 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

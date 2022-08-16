@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            http://nuitka.net/
 
 checksums           rmd160  70f37ca3550c696c56415aee4c1856e80227d146 \
-                    sha256  6f88b37112da41632a433d85ea6a78d16fd046af06fad0adf336075cdda24937 \
-                    size    3910389
+sha256  6f88b37112da41632a433d85ea6a78d16fd046af06fad0adf336075cdda24937 \
+size    3910389
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,13 +30,13 @@ master_sites-append https://static.rust-lang.org/dist/:rust
 distfiles-append    rustc-${rust_version}-src.tar.gz:rust
 
 checksums           mrustc-${github.version}.tar.gz \
-                    rmd160  0e49471627ce4b8dfc62d724c11fd40fc2919f70 \
-                    sha256  8aa3a8b0bd0fab02a7567a74c844c5b64687a858fd75356a75f0cdda386cb74e \
-                    size    1189563 \
+rmd160  0e49471627ce4b8dfc62d724c11fd40fc2919f70 \
+sha256  8aa3a8b0bd0fab02a7567a74c844c5b64687a858fd75356a75f0cdda386cb74e \
+size    1189563 \
                     rustc-${rust_version}-src.tar.gz \
-                    rmd160  be2de16e2deaf91aee723e631a36f6de52636ddd \
-                    sha256  ac8511633e9b5a65ad030a1a2e5bdaa841fdfe3132f2baaa52cc04e71c6c6976 \
-                    size    170480637
+rmd160  be2de16e2deaf91aee723e631a36f6de52636ddd \
+sha256  ac8511633e9b5a65ad030a1a2e5bdaa841fdfe3132f2baaa52cc04e71c6c6976 \
+size    170480637
 
 # arm64 and i386 requires future patches
 supported_archs     x86_64

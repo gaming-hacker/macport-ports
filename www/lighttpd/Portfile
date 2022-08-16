@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   legacysupport 1.0
@@ -7,8 +7,8 @@ name                        lighttpd
 version                     1.4.66
 revision                    0
 checksums                   rmd160  c17cd736be60da4ff377a212d4a8f39c68b650ce \
-                            sha256  47ac6e60271aa0196e65472d02d019556dc7c6d09df3b65df2c1ab6866348e3b \
-                            size    1039520
+sha256  47ac6e60271aa0196e65472d02d019556dc7c6d09df3b65df2c1ab6866348e3b \
+size    1039520
 
 set branch                  [join [lrange [split ${version} .] 0 1] .]
 categories                  www

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ homepage            https://github.com/Unidata/MetPy
 python.versions 310
 
 checksums           rmd160  02431cbdf0913fd7e074dec2019293adbc123671 \
-                    sha256  4d667be0c13fba967a1bc39511669b308f2632a0de6333e46eec0079acb5c682 \
-                    size    8619479
+sha256  4d667be0c13fba967a1bc39511669b308f2632a0de6333e46eec0079acb5c682 \
+size    8619479
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -48,8 +48,8 @@ if {${name} ne ${subport}} {
         revision    0
 
         checksums   rmd160  5ef1ec16f9bc224f89469aae01ab684513d15f8c \
-                    sha256  1f85f08642056bb6bdceec5febace10a6b7b2d71b77f3129505857c0eabdbce9 \
-                    size    9003171
+sha256  1f85f08642056bb6bdceec5febace10a6b7b2d71b77f3129505857c0eabdbce9 \
+size    9003171
 
          depends_lib-append  \
                     port:py${python.version}-importlib-metadata

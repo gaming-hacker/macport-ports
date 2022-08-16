@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,8 +17,8 @@ homepage            https://github.com/aio-libs/aioftp
 python.versions 310
 
 checksums           rmd160  0ecc165d69991d491aa3c6f8579123ee469396a9 \
-                    sha256  c6dae50b3aa07f095b2d93a837d636dd93f235aaafe54adef82be0f8e5567fd2 \
-                    size    51776
+sha256  c6dae50b3aa07f095b2d93a837d636dd93f235aaafe54adef82be0f8e5567fd2 \
+size    51776
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           cmake 1.1
 
 github.setup        rizsotto Bear 3.0.20
 checksums           rmd160  c9bf0be787686071310b766893d02e5708364053 \
-                    sha256  fd49d25a83fc8eba529132bb05da887b66c8831e38044262c60e14f49d72698c \
-                    size    125397
+sha256  fd49d25a83fc8eba529132bb05da887b66c8831e38044262c60e14f49d72698c \
+size    125397
 
 maintainers         {cal @neverpanic} openmaintainer
 license             GPL-3+

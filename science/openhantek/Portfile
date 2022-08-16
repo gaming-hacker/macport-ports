@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -8,8 +8,8 @@ PortGroup           app 1.0
 
 github.setup        OpenHantek OpenHantek6022 3.3.1
 checksums           rmd160  47417944b52664c18b8a4712b70380bd28ab09c6 \
-                    sha256  727419ec3925589dcc4d2fa0eab3ebd03db0149a38af99debdb6559a7336cd0f \
-                    size    22076827
+sha256  727419ec3925589dcc4d2fa0eab3ebd03db0149a38af99debdb6559a7336cd0f \
+size    22076827
 revision            0
 
 name                openhantek

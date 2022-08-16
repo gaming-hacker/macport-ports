@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -19,8 +19,8 @@ use_xcode  no
 github.tarball_from     archive
 
 checksums               rmd160  2f0e11cbe34da1f854fd7852d8bb066bb8073cd5 \
-                        sha256  a1f3aad9eb908fd3f2e82422e67fff3c64ad97d09c20b669d0f2e46632ca9438 \
-                        size    17932
+sha256  a1f3aad9eb908fd3f2e82422e67fff3c64ad97d09c20b669d0f2e46632ca9438 \
+size    17932
 
 post-destroot {
     xinstall -d -m 0755 ${destroot}${prefix}/Library/LaunchAgents

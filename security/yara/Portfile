@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -19,8 +19,8 @@ long_description        YARA is a tool aimed at helping malware researchers to i
                         and classify malware samples.
 
 checksums               rmd160  b534643c8b1bf2196eae21d6f2270881e5737b46 \
-                        sha256  0dffb35ffbdbce321dcf154dbe70c4d329824b619d40f7735a3efebd90a820aa \
-                        size    1288915
+sha256  0dffb35ffbdbce321dcf154dbe70c4d329824b619d40f7735a3efebd90a820aa \
+size    1288915
 
 if {${subport} eq ${name}} {
     depends_build-append \
@@ -74,8 +74,8 @@ foreach b ${python.branches} {
                                 This subport provides bindings for python ${python.branch}
 
         checksums               rmd160  2fb67ee0f1551dfcf2f60c1b5ae77d229a933dbe \
-                                sha256  51ef1c70fb17e922f5127241b0406abc8c3c2b853c2e198a447934fcfeb0efaa \
-                                size    34479
+sha256  51ef1c70fb17e922f5127241b0406abc8c3c2b853c2e198a447934fcfeb0efaa \
+size    34479
 
         depends_build-append    port:py${python.version}-setuptools
         depends_lib-append      port:${name} \

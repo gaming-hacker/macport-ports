@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    The Python keyring lib provides a easy way to access the sys
 homepage            https://github.com/jaraco/keyring
 
 checksums           rmd160  9f43c9040167c82790b123050fb4fb813ed9d178 \
-                    sha256  0d9973f8891850f1ade5f26aafd06bb16865fbbae3fc56b0defb6a14a2624003 \
-                    size    55607
+sha256  0d9973f8891850f1ade5f26aafd06bb16865fbbae3fc56b0defb6a14a2624003 \
+size    55607
 
 python.versions 310
 python.pep517       yes

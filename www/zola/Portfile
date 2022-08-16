@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github  1.0
@@ -33,9 +33,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  1b8c93a35be286f1d204899746ec89b8d406525f \
-                    sha256  c153fd0cc1435930a4871165e6ad4865e3528465f3f41d0671a9837121688ac7 \
-                    size    16621202
+rmd160  1b8c93a35be286f1d204899746ec89b8d406525f \
+sha256  c153fd0cc1435930a4871165e6ad4865e3528465f3f41d0671a9837121688ac7 \
+size    16621202
 
 destroot {
     xinstall -m 0755 \
@@ -350,9 +350,9 @@ cargo.crates \
     serde_json                      1.0.83  38dd04e3c8279e75b31ef29dbdceebfe5ad89f4d0937213c53f7d49d01b3d5a7 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
     serde_yaml                       0.9.9  f50845f68d5c693aac7d72a25415ddd21cb8182c04eafe447b73af55a05f9e1b \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
-    sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
-    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
+sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
     similar                          2.2.0  62ac7f900db32bf3fd12e0117dd3dc4da74bc52ebaac97f39668446d89694803 \
     siphasher                       0.3.10  7bd3e3206899af3f8b12af284fafc038cc1dc2b41d1b89dd17297221c5d225de \
     slab                             0.4.7  4614a76b2a8be0058caa9dbbaf66d988527d86d003c11a94fbd335d7661edcef \

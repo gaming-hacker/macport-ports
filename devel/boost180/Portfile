@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -16,8 +16,8 @@ name            boost${tag}
 # The boost-numpy subport has its own revision number
 
 checksums       rmd160  c0c77bad6aa089eeccb76ec800ca2fa1413dc6b2 \
-                sha256  1e19565d82e43bc59209a168f5ac899d3ba471d55c7610c677d4ccf2c9c500c0 \
-                size    115869904
+sha256  1e19565d82e43bc59209a168f5ac899d3ba471d55c7610c677d4ccf2c9c500c0 \
+size    115869904
 
 license         Boost-1
 categories      devel

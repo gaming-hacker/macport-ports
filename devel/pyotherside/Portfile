@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake5 1.0
@@ -19,8 +19,8 @@ long_description    A Qt 5 QML Plugin that provides access to a Python 3 interpr
 homepage            https://thp.io/2011/pyotherside/
 
 checksums           rmd160  a745de7fb86455046b991c2df17b9d60df97f3ed \
-                    sha256  ce608e2377d17212277725e34af93d65c689b41ce47661343258c209857b2ff0 \
-                    size    183670
+sha256  ce608e2377d17212277725e34af93d65c689b41ce47661343258c209857b2ff0 \
+size    183670
 
 # https://trac.macports.org/ticket/65293
 if { ${os.platform} eq "darwin" && (( ${os.major} >= 15 && ${os.major} <= 16 ) || ${os.major} >= 20 ) } {

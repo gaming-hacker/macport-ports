@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -15,9 +15,9 @@ description         ${name} is a command-line interface for Hetzner Cloud.
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  dd21a0dfaa3dd7d9522f5393f13be2cc008e89c0 \
-                        sha256  c5319e49e9a5f9dfaeb5ab05b297b5d476af1e100e42359508c2864e2890d841 \
-                        size    114558
+rmd160  dd21a0dfaa3dd7d9522f5393f13be2cc008e89c0 \
+sha256  c5319e49e9a5f9dfaeb5ab05b297b5d476af1e100e42359508c2864e2890d841 \
+size    114558
 
 build.pre_args-append   -ldflags \
     '-X ${go.package}/internal/version.Version=${version}'

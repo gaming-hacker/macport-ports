@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,25 +26,25 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 build.target        ./cmd/${name}
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  2b66f792fa48d6501deb42c5e37143fc53afd28e \
-                        sha256  79b87ac963e9307650e3ff3888c31c1ff8cbf95c4b673a9d690aa450d49c5841 \
-                        size    18501
+rmd160  2b66f792fa48d6501deb42c5e37143fc53afd28e \
+sha256  79b87ac963e9307650e3ff3888c31c1ff8cbf95c4b673a9d690aa450d49c5841 \
+size    18501
 
 go.vendors          golang.org/x/term \
                         lock    7de9c90e9dd1 \
-                        rmd160  bd573c74337fdd8e57417c03c825a315b2c208f9 \
-                        sha256  5b01bffc3bc94976e27cecbe6d9c403eefc597dc2b03ddd3ad083931c0981fa4 \
-                        size    15244 \
+rmd160  bd573c74337fdd8e57417c03c825a315b2c208f9 \
+sha256  5b01bffc3bc94976e27cecbe6d9c403eefc597dc2b03ddd3ad083931c0981fa4 \
+size    15244 \
                     golang.org/x/sys \
                         lock    665e8c7367d1 \
-                        rmd160  e589d28cc611e16701a8f1f789f067ff5a9cdf50 \
-                        sha256  9d525e47bd3f6990ab81dcba618521d2191a3dc12267457aa099c6cbb8de71a1 \
-                        size    1200464 \
+rmd160  e589d28cc611e16701a8f1f789f067ff5a9cdf50 \
+sha256  9d525e47bd3f6990ab81dcba618521d2191a3dc12267457aa099c6cbb8de71a1 \
+size    1200464 \
                     golang.org/x/crypto \
                         lock    05595931fe9d \
-                        rmd160  44b3bff302fe3a679525f5976c210588402572e1 \
-                        sha256  8d3cffb4319b5f3cf4c06199fd0340ee57a49012c2d523a876c8b88c208e4043 \
-                        size    1631395
+rmd160  44b3bff302fe3a679525f5976c210588402572e1 \
+sha256  8d3cffb4319b5f3cf4c06199fd0340ee57a49012c2d523a876c8b88c208e4043 \
+size    1631395
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/${name} ${destroot}${prefix}/bin/

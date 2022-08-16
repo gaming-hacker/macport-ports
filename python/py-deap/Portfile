@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ long_description    DEAP stands for Distributed Evolutionary Algorithm \
 homepage            https://github.com/deap
 
 checksums           rmd160  76e235922ccb523a762adfe2c874fb744196ee69 \
-                    sha256  8772f1b0fff042d5e516b0aebac2c706243045aa7d0de8e0b8658f380181cf31 \
-                    size    1063633
+sha256  8772f1b0fff042d5e516b0aebac2c706243045aa7d0de8e0b8658f380181cf31 \
+size    1063633
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-numpy

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,9 +20,9 @@ license             Apache-2
 installs_libs       no
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  c1239b3c9fff15a5f15e489b2adc4bc26c6ddbba \
-                    sha256  65414eeefc7bb7b7970799cdfd2156d8393deb0707674670c47c95e6d3364c96 \
-                    size    5908538
+rmd160  c1239b3c9fff15a5f15e489b2adc4bc26c6ddbba \
+sha256  65414eeefc7bb7b7970799cdfd2156d8393deb0707674670c47c95e6d3364c96 \
+size    5908538
 
 # Not yet ready for openssl 3
 # https://trac.macports.org/ticket/63959
@@ -98,7 +98,7 @@ cargo.crates \
     regex-syntax                    0.6.25  f497285884f3fcff424ffc933e56d7cbca511def0c9831a7f9b5f6153e3cc89b \
     rustc-demangle                  0.1.21  7ef03e0a2b150c7a90d01faf6254c9c48a41e95fb2a8c2ac1c6f0d2b9aefc342 \
     rustversion                      1.0.5  61b3909d758bb75c79f23d4736fac9433868679d3ad2ea7a61e3c25cfda9a088 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     strsim                           0.8.0  8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a \
     structopt                       0.3.26  0c6b5c64445ba8094a6ab0c3cd2ad323e07171012d9c98b0b15651daf1787a10 \
     structopt-derive                0.4.18  dcb5ae327f9cc13b68763b5749770cb9e048a99bd9dfdfa58d0cf05d5f64afe0 \
