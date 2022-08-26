@@ -5,7 +5,7 @@ PortGroup               github 1.0
 PortGroup               cmake 1.1
 
 github.setup            AOMediaCodec libavif 0.10.1 v
-revision                1
+revision                3
 
 categories              multimedia
 license                 BSD
@@ -23,7 +23,6 @@ size    2085698
 cmake.generator         Ninja
 
 depends_build-append \
-                        path:lib/pkgconfig/gdk-pixbuf-2.0.pc:gdk-pixbuf2 \
                         port:pkgconfig
 
 depends_lib-append \
@@ -31,6 +30,7 @@ depends_lib-append \
                         port:dav1d \
                         path:include/turbojpeg.h:libjpeg-turbo \
                         port:libpng \
+                        port:libyuv \
                         port:rav1e \
                         port:svt-av1 \
                         port:zlib
@@ -42,3 +42,20 @@ configure.args-append \
                         -DAVIF_CODEC_DAV1D:BOOL=ON \
                         -DAVIF_CODEC_RAV1E:BOOL=ON \
                         -DAVIF_CODEC_SVT:BOOL=ON
+
+platform darwin {
+    if { ${os.major} < 11 } {
+        # TODO: Disable rav1e on 10.6, due to issues with cargo-c; re-enable once fixed
+        # See: https://trac.macports.org/ticket/65434
+        depends_lib-delete \
+                        port:rav1e
+        configure.args-delete \
+                        -DAVIF_CODEC_RAV1E:BOOL=ON
+    }
+    if { ${os.major} < 10 || (${os.major} == 10 && ${build_arch} eq "ppc") } {
+        # https://trac.macports.org/ticket/62619
+        # aom does not build on 10.6 Rosetta too
+        depends_lib-delete      port:aom
+        configure.args-append   --disable-aom
+    }
+}

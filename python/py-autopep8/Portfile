@@ -6,7 +6,7 @@ PortGroup           select 1.0
 
 name                py-autopep8
 version             1.7.0
-revision            0
+revision            1
 
 categories-append   devel
 supported_archs     noarch
@@ -31,6 +31,8 @@ size    117055
 python.versions 310
 
 if {${name} ne ${subport}} {
+    patchfiles      patch-setup.py.diff
+
     depends_lib-append \
                     port:py${python.version}-setuptools \
                     port:py${python.version}-toml

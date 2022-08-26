@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-dask
-version             2022.8.0
+version             2022.8.1
 revision            0
 categories-append   devel
 license             BSD
 supported_archs     noarch
 
-python.versions 310
+python.versions     37 38 39 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -28,9 +28,9 @@ long_description    Dask provides multi-core execution on larger-than-memory \
 
 homepage            https://github.com/dask/dask/
 
-checksums           rmd160  a4a570a2a02fb7b7cb37f390971d136040efba28 \
-sha256  a14c1c5143081701d4fe62283e09cc5ad5336dff3a152de64eb77ee3180e9792 \
-size    8748537
+checksums           rmd160  c6e1296359ad27b3c9e2f63e2c65c0dc6fcb2f3b \
+                    sha256  84f9f229e4fc6c0df8a23620f2b03f277b1bfb15a497603c704743443e38d420 \
+                    size    8753091
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -49,8 +49,8 @@ if {${name} ne ${subport}} {
         epoch               1
         distname            ${python.rootname}-${version}
         checksums           rmd160  8be9e0d310c57204827b56da0986833ef2a26c22 \
-sha256  cefb5c63d1e26f6dfa650ddd1eb1a53e0cef623141b838820c6b34e6534ea409 \
-size    5015014
+                            sha256  cefb5c63d1e26f6dfa650ddd1eb1a53e0cef623141b838820c6b34e6534ea409 \
+                            size    5015014
     }
 
     livecheck.type      none

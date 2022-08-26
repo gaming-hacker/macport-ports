@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-tropycal
-version             0.5.1
+version             0.5.2
 revision            0
 categories-append   science
 license             MIT
@@ -17,11 +17,11 @@ long_description    {*}${description}
 supported_archs     noarch
 homepage            https://github.com/tropycal/tropycal
 
-checksums           rmd160  a11be5fdf952b5bd746cdcac38fb7803891ff6d4 \
-sha256  61fe096a4361c753cfe6f34f5558dc9fddf845b4abf00366aa07d9844dc9b070 \
-size    10025775
+checksums           rmd160  3f38cd504e2b822d51a2b20d55014df692d8dfa9 \
+                    sha256  5b815ca4faf003929ed05aa4ea34b8c18be90a993d93894e9912a7aa7b0156e1 \
+                    size    10031818
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -101,6 +101,11 @@ array set crossgcc.versions_info {
         sha256  62fd634889f31c02b64af2c468f064b47ad1ca78411c45abe6ac4b5f8dd19c7b \
         size    82701928
     }}
+    12.2.0 {xz {
+        rmd160  76d30c411227d6c3e87dd4f0a8ea1ae5d8ab9ffd \
+        sha256  e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff \
+        size    84645292
+    }}
 }
 
 array set newlib.versions_info {
@@ -123,6 +128,11 @@ array set newlib.versions_info {
         rmd160  9fa5c18bad59e99e6e98062e223c2dd9a065072a \
         sha256  f296e372f51324224d387cc116dc37a6bd397198756746f93a2b02e9a5d40154 \
         size    18648429
+    }}
+    4.2.0.20211231 {gz {
+        rmd160  c44e40af51b2d6a213ff1501b9a4f080ba911408 \
+        sha256  c3a0e8b63bc3bef1aeee4ca3906b53b3b86c8d139867607369cb2915ffc54435 \
+        size    18921589
     }}
 }
 

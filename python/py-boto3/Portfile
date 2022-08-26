@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-boto3
-version             1.24.52
+version             1.24.60
 revision            0
 
 supported_archs     noarch
@@ -20,11 +20,11 @@ long_description    Boto3 is the Amazon Web Services (AWS) Software \
 
 homepage            https://github.com/boto/boto3
 
-checksums           rmd160  78ac4086b4ac5ef4f70acf6a421296a48b2258d6 \
-sha256  95a1f54b5cf5e09b81f5ee79f3704977951605683fa1aafa86438bedd1f22507 \
-size    104011
+checksums           rmd160  457a72ba135f4dbef448032c8ca993da4f33db29 \
+                    sha256  9d2dab8abe90d4afaced79a10476642dc7b3755a2bdc1f871927f8d21af25777 \
+                    size    104014
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

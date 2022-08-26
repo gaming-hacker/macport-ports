@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-fonttools
-version             4.35.0
+version             4.37.1
 revision            0
 
 description         XML<->TrueType/OpenType Converter
@@ -20,11 +20,11 @@ categories-append   print
 license             MIT
 maintainers         {amake @amake} openmaintainer
 
-checksums           rmd160  e28edb89b54526dfd5e704484f6ea7f82aeeea3d \
-sha256  1cfb335c0abdeb6231191dc4f9d7ce1173e2ac94b335c617e045b96f9c974aea \
-size    5017814
+checksums           rmd160  de489ed2d187637d12a00e798140c4f4c4bc5159 \
+                    sha256  4606e1a88ee1f6699d182fea9511bd9a8a915d913eab4584e5226da1180fcce7 \
+                    size    5045910
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     use_zip         yes

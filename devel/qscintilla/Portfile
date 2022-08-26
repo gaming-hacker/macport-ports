@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -12,15 +12,15 @@ if {[string first "qt4" ${subport}] != -1 || [string first "py" ${subport}] != -
 
     version         2.11.6
     checksums       rmd160  bc00b95128956424a2f3466d25c4dd9f03169c0b \
-sha256  e7346057db47d2fb384467fafccfcb13aa0741373c5d593bc72b55b2f0dd20a7 \
-size    3027764
+                    sha256  e7346057db47d2fb384467fafccfcb13aa0741373c5d593bc72b55b2f0dd20a7 \
+                    size    3027764
     revision        1
     distname        QScintilla-${version}
 } else {
     version         2.13.3
     checksums       rmd160  93dfab93f42efc3434531e77669bd97b0f8f4cde \
-sha256  711d28e37c8fccaa8229e8e39a5b3b2d97f3fffc63da10b71c71b84fa3649398 \
-size    3060031
+                    sha256  711d28e37c8fccaa8229e8e39a5b3b2d97f3fffc63da10b71c71b84fa3649398 \
+                    size    3060031
     revision        0
     distname        QScintilla_src-${version}
 }
@@ -67,11 +67,18 @@ foreach qt_major {4 5} {
 
             # fixup @rpath in the library's install_name
             patchfiles-append patch-src-qscintilla.pro.diff
+
+            # https://trac.macports.org/ticket/65293
+            if { ${os.platform} eq "darwin" && (( ${os.major} >= 15 && ${os.major} <= 16 ) || ${os.major} >= 20 ) } {
+                use_xcode   yes
+            }
+
+            qt5.min_version 5.6
         }
 
         if {${qt_major} eq 4} {
             # enable C++11
-            configure.cxxflags-append -std=gnu++2a
+            configure.cxxflags-append -std=c++11
             # respect configure.cxx_stdlib when linking
             if {[string match *clang* ${configure.cxx}]} {
                 configure.ldflags-append -stdlib=${configure.cxx_stdlib}
@@ -97,6 +104,13 @@ foreach qt_major {4 5} {
             PortGroup qmake${qt_major} 1.0
 
             worksrcdir ${worksrcdir}/designer
+
+            # https://trac.macports.org/ticket/65293
+            if { ${os.platform} eq "darwin" && (( ${os.major} >= 15 && ${os.major} <= 16 ) || ${os.major} >= 20 ) } {
+                use_xcode   yes
+            }
+
+            qt5.min_version 5.6
         }
 
         description       Qt Designer plugin for Qt${qt_major} QScintilla
@@ -122,27 +136,21 @@ foreach qt_major {4 5} {
     }
 
     subport py-${name}-qt${qt_major} {
+        PortGroup stub 1.0
+
+        supported_archs   noarch
         categories-append python
-        use_configure no
-        distfiles
-        patchfiles
-        supported_archs noarch
-        depends_lib port:py310-qscintilla-qt${qt_major}
-        build {}
-        destroot {
-            xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${subport}
-            system "echo $name is a stub port > ${destroot}${prefix}/share/doc/${subport}/README"
-        }
+        depends_lib port:py27-qscintilla-qt${qt_major}
     }
 
-    set python.versions {310}
+    set python_versions {27 35 36 37 38 39 310}
 
     # Python bindings for the latest upstream Qt5 version are in py-pyqt5-scintilla
     if {${qt_major} eq 5} {
-        set python.versions {310}
+        set python_versions {27 35}
     }
 
-    foreach pver ${python.versions} {
+    foreach pver ${python_versions} {
         subport py${pver}-${name}-qt${qt_major} {
             if {${qt_major} eq 4} {
                 PortGroup qt4 1.0
@@ -152,6 +160,13 @@ foreach qt_major {4 5} {
 
                 # the Python bindings below require the latest qscintilla-qt5 version
                 conflicts py36-pyqt5-scintilla py37-pyqt5-scintilla py38-pyqt5-scintilla py39-pyqt5-scintilla
+
+                # https://trac.macports.org/ticket/65293
+                if { ${os.platform} eq "darwin" && (( ${os.major} >= 15 && ${os.major} <= 16 ) || ${os.major} >= 20 ) } {
+                    use_xcode   yes
+                }
+
+                qt5.min_version 5.6
             }
             categories-append   python
             description         Python bindings for Qt${qt_major} QScintilla
@@ -212,9 +227,9 @@ foreach qt_major {4 5} {
 
 # set pyXY-qscintilla-qt5 (where XY is => 36) to be replaced_by pyXY-pyqt5-scintilla
 # this section can be removed after September 2022
-set python.versions {310}
+set python_versions {36 37 38 39}
 
-foreach pver ${python.versions} {
+foreach pver ${python_versions} {
     subport py${pver}-${name}-qt5 {
         PortGroup   obsolete 1.0
 
@@ -224,17 +239,10 @@ foreach pver ${python.versions} {
 }
 
 if {${subport} eq ${name}} {
-    revision 2
+    PortGroup   stub 1.0
 
-    distfiles
-    patchfiles
-    use_configure no
+    revision    2
     supported_archs noarch
-    build {}
-    destroot {
-        xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${subport}
-        system "echo $name is a stub port > ${destroot}${prefix}/share/doc/${subport}/README"
-    }
 
     variant qt4 description "build Qt4 version of ${name}" {
         depends_lib-append \

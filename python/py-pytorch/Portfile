@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -32,14 +32,14 @@ long_description    PyTorch is a Python package that provides two \
 
 homepage            https://pytorch.org/
 
-python.versions 310
+python.versions     37 38 39 310
 
 patch.pre_args      -p1
 
 mpi.setup
 
 # Compiler selection
-compiler.cxx_standard 2020
+compiler.cxx_standard 2017
 
 compiler.blacklist-append *gcc* {clang < 800} {macports-clang-3.[0-9]} macports-clang-4.0
 
@@ -49,17 +49,28 @@ if {${os.arch} in [list i386]} {
     default_variants-append +mkl
 }
 
-variant mps description {Enable Apple Metal Performance Shaders (MPS) support} {
-    use_xcode  no
+platform darwin {
+    if {${os.major} <= 15} {
+        known_fail yes
+        pre-fetch {
+            ui_error "$subport is not supported on OS X 10.11 and older."
+            return -code error "unsupported platform"
+        }
+    }
 
-    build.env-append \
-                    APPLE=ON \
-                    USE_MPS=ON \
-                    USE_PYTORCH_METAL=ON \
-                    USE_PYTORCH_METAL_EXPORT=ON
+    # MPS support added in 10.13
+    if {${os.major} >= 17} {
+        variant mps description {Enable Apple Metal Performance Shaders (MPS) support} {
+            use_xcode       yes
 
-    notes-append \
-        "
+            build.env-append \
+                APPLE=ON \
+                USE_MPS=ON \
+                USE_PYTORCH_METAL=ON \
+                USE_PYTORCH_METAL_EXPORT=ON
+
+            notes-append \
+"
 The port ${subport} is built with Apple Metal Performance Shaders (MPS)\
 support for GPU hardware acceleration. To enable Apple GPU devices,\
 use device \"mps\". Matrix multiplication example:
@@ -71,14 +82,9 @@ use device \"mps\". Matrix multiplication example:
     x = torch.randn((10_000, 1_000), device=mpsDevice)
     cov = (x.T @ x)/x.shape\[0]
 "
-}
-default_variants-append +mps
+        }
 
-if {${os.platform} eq "darwin" && ${os.major} <= 15} {
-    known_fail yes
-    pre-fetch {
-        ui_error "$subport is not supported on OS X 10.11 and older."
-        return -code error "unsupported platform"
+        default_variants-append +mps
     }
 }
 
@@ -156,6 +162,7 @@ if {${name} ne ${subport}} {
     # ZSTD support broke with 1.2.0-1.12.0. Check with future releases.
     build.env-append \
                     CMAKE_LIBRARY_PATH=${prefix}/lib:${prefix}/lib/libomp \
+                    CMAKE_CXX_FLAGS=-Wno-error=bitwise-instead-of-logical \
                     LIBRARY_PATH=${prefix}/lib:${prefix}/lib/libomp \
                     OpenCV_DIR=${prefix}/libexec/opencv4/cmake \
                     USE_CCACHE=OFF \
