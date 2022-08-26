@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -26,8 +26,8 @@ long_description \
 homepage        https://www.qbittorrent.org
 
 checksums       rmd160  213c94a90223f26e59b910ce5d52a5a355da0847 \
-                sha256  c0cb66f87ae365906d960d828fb8592edbfaeb286dca0e01e02077aaed3e0b9c \
-                size    7738873
+sha256  c0cb66f87ae365906d960d828fb8592edbfaeb286dca0e01e02077aaed3e0b9c \
+size    7738873
 
 qt6.min_version 6.2
 
@@ -55,12 +55,12 @@ boost.depends_type  \
                 build
 
 configure.cxxflags-append \
-                -std=c++17
+                -std=gnu++2a
 
 cmake.install_rpath-append \
                 ${qt_dir}/lib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 compiler.blacklist-append *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
 
 post-patch {

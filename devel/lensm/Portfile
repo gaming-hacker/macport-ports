@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,10 +21,10 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 build.env-delete    GO111MODULE=off GOPROXY=off
 
 checksums           rmd160  f066595a1ed7a6898dab1ee23d72e324316a872a \
-                    sha256  862ae1b11ea71a1dc4900e6d0e5255d4d9b5393b0217aa87e55ace0f53e3785a \
-                    size    306114
+sha256  862ae1b11ea71a1dc4900e6d0e5255d4d9b5393b0217aa87e55ace0f53e3785a \
+size    306114
 
-use_xcode           yes
+use_xcode  no
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/${name} ${destroot}${prefix}/bin/

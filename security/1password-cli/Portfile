@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -36,8 +36,8 @@ distfiles           ${archive}_v${version}${extract.suffix}
 supported_archs     arm64 x86_64
 
 checksums           rmd160  998325c1d7a8c698570b109b28129c91efd2e17d \
-                    sha256  1cc191da8053cc1ed3c2b7ac08dd12607a8cedf70c4a2304bbc6b0ec137ac322 \
-                    size    10161722
+sha256  1cc191da8053cc1ed3c2b7ac08dd12607a8cedf70c4a2304bbc6b0ec137ac322 \
+size    10161722
 
 # Pre-built binary
 use_configure       no

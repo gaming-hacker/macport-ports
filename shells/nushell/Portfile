@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -28,9 +28,9 @@ maintainers         {@b4nst gmail.com:bastyen.a} \
 build.args          --features=extra
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  6ea10959c0b10e60747a95154c71fc8120f5a1c3 \
-                    sha256  a8c4c092087d035805781dff11000f2b7c4a44ae487b013f9d0a59c4dc610546 \
-                    size    2376309
+rmd160  6ea10959c0b10e60747a95154c71fc8120f5a1c3 \
+sha256  a8c4c092087d035805781dff11000f2b7c4a44ae487b013f9d0a59c4dc610546 \
+size    2376309
 
 depends_lib-append  port:zlib
 
@@ -295,7 +295,7 @@ cargo.crates \
     malloc_buf                       0.0.6  62bb907fe88d54d8d9ce32a3cceab4218ed2f6b7d35617cafe9adf84e43919cb \
     markup5ever                     0.11.0  7a2629bb1404f3d34c2e921f21fd34ba00b206124c81f65c50b43b6aaefeb016 \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
-    md-5                            0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd6271f060fd37defb241949d0582 \
+md-5                            0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd6271f060fd37defb241949d0582 \
     memchr                           2.5.0  2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d \
     memmap2                          0.5.5  3a79b39c93a7a5a27eeaf9a23b5ff43f1b9e0ad6b1cdd441140ae53c35613fc7 \
     memoffset                        0.6.5  5aa361d4faea93603064a027415f07bd8e1d5c88c9fbf68bf56a285428fd79ce \
@@ -471,9 +471,9 @@ cargo.crates \
     serial_test                      0.8.0  7eec42e7232e5ca56aa59d63af3c7f991fe71ee6a3ddd2d3480834cf3902b007 \
     serial_test_derive               0.8.0  f1b95bb2f4f624565e8fe8140c789af7e2082c0e0561b5a82a1b678baa9703dc \
     servo_arc                        0.1.1  d98238b800e0d1576d8b6e3de32827c2d74bee68bb97748dcf5071fb53965432 \
-    sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
-    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
-    shadow-rs                       0.16.1  b2d399ad15b5c90d8e6461da75c751c77501598dd915d81a108401b252aaa99f \
+sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+shadow-rs                       0.16.1  b2d399ad15b5c90d8e6461da75c751c77501598dd915d81a108401b252aaa99f \
     shlex                            1.1.0  43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \

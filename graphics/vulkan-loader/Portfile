@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ depends_build-append \
                     port:vulkan-headers
 
 checksums           sha256  9f102a89b7d350ce5a6c82887459821aa9725c521128495ed7cbda637ed52022 \
-                    rmd160  7533d638d538e61760e9097bd167d10310976b89 \
-                    size    1594973
+rmd160  7533d638d538e61760e9097bd167d10310976b89 \
+size    1594973
 
 configure.args-append \
                     -DPython_ADDITIONAL_VERSIONS=3.10 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -25,13 +25,13 @@ master_sites https://github.com/SAP/SapMachine/releases/download/sapmachine-${ve
 if {${configure.build_arch} eq "x86_64"} {
     distname     sapmachine-jdk-${version}_macos-x64_bin
     checksums    rmd160  02fd47852bf6185914d980bbc9c9d33ea2ea6cc1 \
-                 sha256  1d6d0b4f8f8fd32b559102ab4fe7e571ed3eee3848877d055ce4d475448ad9a3 \
-                 size    186897220
+sha256  1d6d0b4f8f8fd32b559102ab4fe7e571ed3eee3848877d055ce4d475448ad9a3 \
+size    186897220
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     sapmachine-jdk-${version}_macos-aarch64_bin
     checksums    rmd160  9ef2448cdbaa98c055783f0f2e41b300578af5c4 \
-                 sha256  e3d8d11afd3766c300b02f5c4b4158041807ef2b6dba63d3de7320f9ce5a4826 \
-                 size    185066000
+sha256  e3d8d11afd3766c300b02f5c4b4158041807ef2b6dba63d3de7320f9ce5a4826 \
+size    185066000
 }
 
 worksrcdir   sapmachine-jdk-${version}.jdk

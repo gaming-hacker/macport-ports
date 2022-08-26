@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ master_sites        https://git.openjdk.java.net/jdk17u/archive/refs/tags
 distname            jdk-${version}+${build}
 
 checksums           rmd160  c7de36c4dee6cd8006eb8d30539df0ae1028d319 \
-                    sha256  2164a1e2a426c0353b80817f83ee85f16f7fc9ce47bc0ff5024e491616a1cd24 \
-                    size    104892822
+sha256  2164a1e2a426c0353b80817f83ee85f16f7fc9ce47bc0ff5024e491616a1cd24 \
+size    104892822
 
 depends_lib         port:freetype
 depends_build       port:autoconf \
@@ -35,7 +35,7 @@ pre-patch {
 }
 
 set tpath /Library/Java
-use_xcode           yes
+use_xcode  no
 use_configure    yes
 configure.cmd       ${prefix}/bin/bash configure
 configure.pre_args  --prefix=${tpath}

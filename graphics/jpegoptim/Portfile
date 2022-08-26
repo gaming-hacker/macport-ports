@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,7 +19,7 @@ long_description    Provides lossless optimization (based on optimizing \
 homepage            https://www.kokkonen.net/tjko/projects.html
 
 checksums           rmd160  887d3f6fd8abc6f70c68c21452d0728a39c1ebef \
-                    sha256  c52616f2fb8d481315871680f9943b0f58c553d1e0c49a6bd4691a3e66d7e6de \
-                    size    109026
+sha256  c52616f2fb8d481315871680f9943b0f58c553d1e0c49a6bd4691a3e66d7e6de \
+size    109026
 
 depends_lib         path:include/turbojpeg.h:libjpeg-turbo

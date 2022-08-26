@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -16,8 +16,8 @@ description                 C/C++/ObjC language server supporting cross referenc
 long_description            {*}${description}
 
 checksums                   rmd160  6940c3c327249028f531407328211b7169417996 \
-                            sha256  51a96f8f82d0a370acb2c5e2d9fdd4ed7ba4d49fc9d3cf6ece9b169ad59d3ab6 \
-                            size    160860
+sha256  51a96f8f82d0a370acb2c5e2d9fdd4ed7ba4d49fc9d3cf6ece9b169ad59d3ab6 \
+size    160860
 
 set ccls_default            ccls-clang-10
 set select_path             ${filespath}/portselect
@@ -60,7 +60,7 @@ foreach clang_v {10 11 12 13 14} {
                               yes
 
         compiler.whitelist    macports-clang-${clang_v}
-        compiler.cxx_standard 2017
+        compiler.cxx_standard 2020
         cmake.set_cxx_standard yes
 
         # Reduce compilation warnings

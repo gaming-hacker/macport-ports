@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    ${name} is a CLI tool that can manage multiple language \
 homepage            https://asdf-vm.com/
 
 checksums           rmd160  e2914679c43265b47a08d214a3c2a93bdea16e86 \
-                    sha256  de6bce49804f991b3594b9614b4bd14291421dbdd6586c4239d5aa472887222e \
-                    size    192384
+sha256  de6bce49804f991b3594b9614b4bd14291421dbdd6586c4239d5aa472887222e \
+size    192384
 
 use_configure       no
 build               {}

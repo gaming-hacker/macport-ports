@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=Portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=Portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,7 +19,7 @@ maintainers         {@egorenar posteo.net:egorenar-dev} \
 description         tmux session manager.
 long_description    ${description}
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 
 if {${name} ne ${subport}} {
@@ -37,8 +37,8 @@ if {${name} ne ${subport}} {
                     port:tmuxp_select
 
     checksums       rmd160  5868a29306d3adc58245914d5755783622057569 \
-                    sha256  7da36eca708dd40ad062a7c1c95ee32ae20a331098c17757f1a725a78a9dd735 \
-                    size    841942
+sha256  7da36eca708dd40ad062a7c1c95ee32ae20a331098c17757f1a725a78a9dd735 \
+size    841942
 
     select.group    tmuxp
     select.file     ${worksrcpath}/py${python.version}-tmuxp

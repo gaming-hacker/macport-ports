@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -18,7 +18,7 @@ github.tarball_from releases
 distname        SDL2_image-${version}
 
 checksums       rmd160 bebe4691ae0edc2c7d1be4f3e58d8cc0b6f9b43b \
-                sha256 48355fb4d8d00bac639cd1c4f4a7661c4afef2c212af60b340e06b7059814777
+sha256 48355fb4d8d00bac639cd1c4f4a7661c4afef2c212af60b340e06b7059814777
 
 depends_build   port:pkgconfig
 depends_lib     port:libsdl2 \

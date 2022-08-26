@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       clang_dependency 1.0
@@ -6,8 +6,8 @@ PortGroup       clang_dependency 1.0
 name            xz
 version         5.2.6
 checksums       rmd160  b4d6db05185c7b190f570e4de85febdd23735b97 \
-                sha256  13e3402e301b6018f6a71ef0e497f714c6d11e214ae82dab156b81c2a64acb25 \
-                size    1658182
+sha256  13e3402e301b6018f6a71ef0e497f714c6d11e214ae82dab156b81c2a64acb25 \
+size    1658182
 
 categories      archivers
 # some executables are GPL, libs and everything else are public domain

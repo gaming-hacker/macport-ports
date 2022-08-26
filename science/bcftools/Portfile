@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -6,8 +6,8 @@ PortGroup               github 1.0
 github.setup            samtools bcftools 1.16
 revision                0
 checksums               rmd160  4868aff1b9c83a6d2479a9c106657b42df19dcb7 \
-                        sha256  90bf647c9ad79e10a243b8058c873de057fd7012e250d5ae6574839787a2ecd6 \
-                        size    7325862
+sha256  90bf647c9ad79e10a243b8058c873de057fd7012e250d5ae6574839787a2ecd6 \
+size    7325862
 
 categories              science
 maintainers             {ryandesign @ryandesign} openmaintainer

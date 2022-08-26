@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,14 +25,14 @@ master_sites-append https://github.com/lvandeve/lodepng/archive/${lodepng_commit
 distfiles-append    lodepng-${lodepng_commit}${extract.suffix}:lodepng \
                     skcms-${skcms_commit}${extract.suffix}:skcms
 checksums           ${name}-${version}${extract.suffix} \
-                        rmd160 a99a40350b85a29e4e9f5d16ec45da2913187fd3 \
-                        sha256 ccbd5a729d730152303be399f033b905e608309d5802d77a61a95faa092592c5 \
+rmd160 a99a40350b85a29e4e9f5d16ec45da2913187fd3 \
+sha256 ccbd5a729d730152303be399f033b905e608309d5802d77a61a95faa092592c5 \
                     lodepng-${lodepng_commit}${extract.suffix} \
-                        rmd160 a9fef0a45ec23285f2b5475ec3612376e47f2779 \
-                        sha256 c47c48c77a205f1af484b7b5a847290af65de3ea6f15817aa27c5ec7cc5208fd \
+rmd160 a9fef0a45ec23285f2b5475ec3612376e47f2779 \
+sha256 c47c48c77a205f1af484b7b5a847290af65de3ea6f15817aa27c5ec7cc5208fd \
                     skcms-${skcms_commit}${extract.suffix} \
-                        rmd160 c63bd713ad6f1b7d99b4044c4d3d71510c8318ae \
-                        sha256 aabd4bae8b741c9bdc8b31bec95df3a3344b77c7d17bf9d25befb401f4971d18
+rmd160 c63bd713ad6f1b7d99b4044c4d3d71510c8318ae \
+sha256 aabd4bae8b741c9bdc8b31bec95df3a3344b77c7d17bf9d25befb401f4971d18
 
 depends_build-append \
                     port:asciidoc \
@@ -79,7 +79,7 @@ configure.args-append \
 # -DGIF_INCLUDE_DIR:FILEPATH=${prefix}/include/giflib5
 # -DGIF_LIBRARY:FILEPATH=${prefix}/lib/giflib5/lib/libgif.dylib
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 # Compilation warning (from highway headers):
 # "x86 Clang <= 6: define HWY_COMPILE_ONLY_SCALAR or upgrade."
 # (Xcode Clang 10.0.1 ~= llvm.org Clang 7.0)

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -39,25 +39,25 @@ extract.only                ${prog}                                             
                             ${appbundles}
 
 checksums                   ${prog} \
-                            rmd160  abf550021a903fadeff9061cafe74d1793cd45b6 \
-                            sha256  eaa2df7b76646f1e49d5e564391707e5a4b56d961810cff6bc7c809bfa774605 \
-                            size    1847596 \
+rmd160  abf550021a903fadeff9061cafe74d1793cd45b6 \
+sha256  eaa2df7b76646f1e49d5e564391707e5a4b56d961810cff6bc7c809bfa774605 \
+size    1847596 \
                             ${rom1} \
-                            rmd160  e3960898223dd4d1b9a9cc5cfb1251bd726ea5a7 \
-                            sha256  98ae0ad10413dd6f35ed80f5662dba6d790def70c7829046e52012a03b574b8a \
-                            size    188942 \
+rmd160  e3960898223dd4d1b9a9cc5cfb1251bd726ea5a7 \
+sha256  98ae0ad10413dd6f35ed80f5662dba6d790def70c7829046e52012a03b574b8a \
+size    188942 \
                             ${rom2} \
-                            rmd160  e3061a54b6e9c88379f4366b2ccad3cf3b8e5270 \
-                            sha256  2c0cf7e30ae8a486fc03903de4ebb1d7a40f0d9db3bfcb5dd4861e0cf5da67a5 \
-                            size    590041 \
+rmd160  e3061a54b6e9c88379f4366b2ccad3cf3b8e5270 \
+sha256  2c0cf7e30ae8a486fc03903de4ebb1d7a40f0d9db3bfcb5dd4861e0cf5da67a5 \
+size    590041 \
                             ${share} \
-                            rmd160  bede7f4df7fb64549763ef6b1cb40555f2ea6e4e \
-                            sha256  4f2b20c42f1d199adbbb86eb102dc0959ce800a440351319ae9a3b1d526742ae \
-                            size    75646 \
+rmd160  bede7f4df7fb64549763ef6b1cb40555f2ea6e4e \
+sha256  4f2b20c42f1d199adbbb86eb102dc0959ce800a440351319ae9a3b1d526742ae \
+size    75646 \
                             ${appbundles} \
-                            rmd160  2a212c652624b13c14f780cb176cac5c0ce9a1dd \
-                            sha256  c341ff8d531138c29556ec7d531651011f291b7af34c027282af9d003d8ba07c \
-                            size    5041480
+rmd160  2a212c652624b13c14f780cb176cac5c0ce9a1dd \
+sha256  c341ff8d531138c29556ec7d531651011f291b7af34c027282af9d003d8ba07c \
+size    5041480
 
 depends_lib                 port:libsdl                                         \
                             port:libpng                                         \

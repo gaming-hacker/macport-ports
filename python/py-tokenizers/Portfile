@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           rust 1.0
@@ -19,11 +19,11 @@ long_description    🤗 Tokenizers provides an implementation of today's \
 homepage            https://github.com/huggingface/tokenizers
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  44a3bc814e146d584f713e766dfe8d3a7eaa2530 \
-                    sha256  070746f86efa6c873db341e55cf17bb5e7bdd5450330ca8eca542f5c3dab2c66 \
-                    size    220679 \
+rmd160  44a3bc814e146d584f713e766dfe8d3a7eaa2530 \
+sha256  070746f86efa6c873db341e55cf17bb5e7bdd5450330ca8eca542f5c3dab2c66 \
+size    220679 \
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -195,7 +195,7 @@ if {${name} ne ${subport}} {
                     serde_derive 1.0.140 6f2122636b9fe3b81f1cb25099fcf2d3f542cdb1d45940d56c713158884a05da \
                     serde_json 1.0.82 82c2c1fdcd807d1098552c5b9a36e425e42e9fbd7c6a37a8425f390f781f7fa7 \
                     serde_urlencoded 0.7.1 d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-                    sha2 0.10.2 55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sha2 0.10.2 55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
                     slab 0.4.7 4614a76b2a8be0058caa9dbbaf66d988527d86d003c11a94fbd335d7661edcef \
                     smallvec 1.9.0 2fd0db749597d91ff862fd1d55ea87f7855a744a8425a64695b6fca237d1dad1 \
                     socket2 0.4.4 66d72b759436ae32898a2af0a14218dbf55efde3feeb170eb623637db85ee1e0 \

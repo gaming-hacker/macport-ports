@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ description         AWS SAM Translator is a library that transform SAM templates
 long_description    ${description}
 
 checksums           sha256  ab9362f9a6de211f13fe72678154ecd8847d6d0cd9471b7b943a8af0c054c78f \
-                    rmd160  c96f150f2da8c96e7b435ff17270a93d872b4aef \
-                    size    1103467
+rmd160  c96f150f2da8c96e7b435ff17270a93d872b4aef \
+size    1103467
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

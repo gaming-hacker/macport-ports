@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,10 +17,10 @@ categories          devel net
 homepage            https://github.com/greatscottgadgets/libbtbb
 
 checksums           rmd160  eca69c16710e4bf793cccfc722101e015a95b0e9 \
-                    sha256  aa0588f21701156ccbd6b388fafe63225b41dd5b37b390f6c0ed3504d259847a \
-                    size    308473
+sha256  aa0588f21701156ccbd6b388fafe63225b41dd5b37b390f6c0ed3504d259847a \
+size    308473
 
-# cc1: error: unrecognized command line option "-std=gnu90"
+# cc1: error: unrecognized command line option "-std=gnu17"
 compiler.blacklist-append *gcc-4.*
 
 platform darwin powerpc {

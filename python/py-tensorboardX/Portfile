@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,13 +22,13 @@ long_description    {*}${description}. Write TensorBoard events with \
                     video summaries.
 
 checksums           rmd160  fb7b93315dd41f5f5ccde3b0c378c31900b5fa8b \
-                    sha256  90e87f1e6faa46b77acfd44bd1b57b100b546a9ab0fe689ee0076570998c60ef \
-                    size    4824273
+sha256  90e87f1e6faa46b77acfd44bd1b57b100b546a9ab0fe689ee0076570998c60ef \
+size    4824273
 
 # diff -NaurdwB ./py-tensorboardX-orig/ ./py-tensorboardX-new/ | sed -E -e 's/\.\/py-tensorboardX-(orig|new)\//\.\//' | sed -E -e 's|/opt/local|@@PREFIX@@|g' > ~/Downloads/patch-compile_sh.diff
 patchfiles-append   patch-compile_sh.diff
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

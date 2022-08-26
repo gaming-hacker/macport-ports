@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -11,8 +11,8 @@ PortGroup           compiler_blacklist_versions 1.0
 github.setup        facebook wangle 2022.08.08.00 v
 revision            0
 checksums           rmd160  60cfe88b01bb5c1ed4b49aa280b0d077c407b355 \
-                    sha256  b0e4f1beda451e3a35547d250531eb40950fe1d376dd6dc0282e21b1709eb4d8 \
-                    size    336226
+sha256  b0e4f1beda451e3a35547d250531eb40950fe1d376dd6dc0282e21b1709eb4d8 \
+size    336226
 
 categories          devel
 license             BSD
@@ -51,7 +51,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 15} {
 compiler.blacklist-append \
                     {clang < 1200}
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 cmake.generator     Ninja
 
 configure.args-append \

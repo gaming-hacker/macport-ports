@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -8,7 +8,7 @@ PortGroup               legacysupport 1.1
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard   2014
+compiler.cxx_standard 2020
 
 name                    nodejs16
 version                 16.17.0
@@ -33,8 +33,8 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  95560d304a7435be6d54101228f85d7acde324ce \
-                        sha256  1d28c285685e446985921bc963565ca9c0c5f4fda9755e489c06808ea9795645 \
-                        size    35664964
+sha256  1d28c285685e446985921bc963565ca9c0c5f4fda9755e489c06808ea9795645 \
+size    35664964
 
 distname                node-v${version}
 
@@ -50,7 +50,7 @@ depends_lib-append      port:python${py_ver_nodot} \
 # TODO: when icu is upgraded to v68.x, use MacPorts'.
 #depends_lib-append             port:icu
 
-use_xcode               yes
+use_xcode  no
 
 # error: 'atomic_load<v8::internal::OwnedVector<const unsigned char> >' is unavailable: introduced in macOS 10.9
 set min_darwin 13

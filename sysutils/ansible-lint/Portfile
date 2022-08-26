@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description \
     ansible-lint checks playbooks for practices and behaviour that could potentially be improved
 
 checksums           rmd160  c908e8e013671b99a2274bbc1382372622e6f7f2 \
-                    sha256  bc9b2e15fccfb34868c6147d9c3a16f2bf925158b25a6cf40dc9127e0a1fdfa4 \
-                    size    244325
+sha256  bc9b2e15fccfb34868c6147d9c3a16f2bf925158b25a6cf40dc9127e0a1fdfa4 \
+size    244325
 
 python.default_version      310
 python.link_binaries_suffix

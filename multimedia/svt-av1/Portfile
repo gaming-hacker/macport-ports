@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               gitlab 1.0
@@ -21,8 +21,8 @@ long_description        The Scalable Video Technology for AV1 (SVT-AV1 Encoder a
                         targets future codec research activities.
 
 checksums               rmd160  cab657bf6ac158ada9c5293f2e71cfbc4f9998b8 \
-                        sha256  37e89fccacdd848abdfce943d293bf64dde47b79abd8d104914c0e7b730115b8 \
-                        size    9554738
+sha256  37e89fccacdd848abdfce943d293bf64dde47b79abd8d104914c0e7b730115b8 \
+size    9554738
 
 # error: unknown type name '__m256i'
 compiler.blacklist-append \

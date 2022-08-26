@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -31,8 +31,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  03f8f9c28343cceec71f34631195d8ac61e715cc \
-                    sha256  9d7c870e3ca04547f01a21425d1a267c9d84bf4eecf9b70f56c1e6552df2049d \
-                    size    302720
+sha256  9d7c870e3ca04547f01a21425d1a267c9d84bf4eecf9b70f56c1e6552df2049d \
+size    302720
 
 set _ft_share_dir   ${prefix}/share/${name}
 

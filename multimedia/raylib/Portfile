@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github  1.0
@@ -24,8 +24,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  f71d114e1f7ac13aa67094903dd8f0a6a8b11b1c \
-                    sha256  676217604a5830cb4aa31e0ede0e4233c942e2fc5c206691bded58ebcd82a590 \
-                    size    31301099
+sha256  676217604a5830cb4aa31e0ede0e4233c942e2fc5c206691bded58ebcd82a590 \
+size    31301099
 
 patchfiles          patch-glfw-passthrough.diff
 

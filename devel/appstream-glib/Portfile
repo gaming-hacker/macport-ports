@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -21,8 +21,8 @@ description         This library provides objects and helper methods to help \
 long_description    {*}${description}
 
 checksums           rmd160  5e12013de27ca95b8816ba902245e0b599818508 \
-                    sha256  906e361a9303cb9a9268970bc94aa8b94deb80231731904ef1975e41d39d685a \
-                    size    2596723
+sha256  906e361a9303cb9a9268970bc94aa8b94deb80231731904ef1975e41d39d685a \
+size    2596723
 
 depends_build       port:pkgconfig \
                     port:gettext \
@@ -51,7 +51,7 @@ post-patch {
     reinplace "s|__SDK_PATH__|${configure.sdkroot}|g" ${worksrcpath}/meson.build
 }
 
-compiler.c_standard 1999
+compiler.c_standard 2017
 
 # gobject-introspection uses g-ir-scanner, which uses $CC from env
 if {${universal_possible} && [variant_isset universal]} {

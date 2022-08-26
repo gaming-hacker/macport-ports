@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ depends_lib-append  port:vulkan-loader
 
 
 checksums           sha256  939d623504cba0b8de2d117eef70dc45f3c21fa05103554d6565e0e23a7f5e04 \
-                    rmd160  439af15d7a69b8dd9199afef499323a58b14ad69 \
-                    size    868481
+rmd160  439af15d7a69b8dd9199afef499323a58b14ad69 \
+size    868481
 
 patchfiles          cmake.patch
 

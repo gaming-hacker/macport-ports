@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,13 +26,13 @@ worksrcdir          ${name}
 if {${configure.build_arch} eq "x86_64"} {
     distname     dartsdk-macos-x64-release
     checksums    rmd160  553741edc60dfa3bf3dff357c5f007c2c3815e26 \
-                 sha256  ba258fff40822cb410c4f1f7916b63f0837903a6bae8f4bd83341053b10ecbe3 \
-                 size    193464600
+sha256  ba258fff40822cb410c4f1f7916b63f0837903a6bae8f4bd83341053b10ecbe3 \
+size    193464600
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     dartsdk-macos-arm64-release
     checksums    rmd160  71ca5020b8dffeacb25dcb96e1c0b6200cbd9811 \
-                 sha256  a4be379202cf731c7e33de20b4abc4ca1e2e726bc5973222b3a7ae5a0cabfce1 \
-                 size    177903683
+sha256  a4be379202cf731c7e33de20b4abc4ca1e2e726bc5973222b3a7ae5a0cabfce1 \
+size    177903683
 }
 
 use_configure       no
