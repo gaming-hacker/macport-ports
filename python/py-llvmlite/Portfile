@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ long_description    ${description}
 homepage            https://llvmlite.pydata.org/
 
 checksums           rmd160  a78545c21e2c48c8dc0d41fd3b5a9dc3d562b664 \
-                    sha256  25da2ba239676009ab5f06a93822a1c78d5ae5ca90a0ecc4e067ffb8f137416f \
-                    size    237129
+sha256  25da2ba239676009ab5f06a93822a1c78d5ae5ca90a0ecc4e067ffb8f137416f \
+size    237129
 
 if {${name} ne ${subport}} {
     patchfiles-append   patch-ffi_Makefile.osx.diff

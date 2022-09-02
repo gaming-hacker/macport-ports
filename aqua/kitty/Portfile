@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,9 +30,9 @@ if {${os.major} <= 15} {
 use_xz              yes
 
 checksums           ${distfiles} \
-                    rmd160  85adc6219e692c719dd8e0b5cb03ae25da879ba0 \
-                    sha256  59020568e3f32e1aa429bf8a582e903319464d3b29be5b999af7f25210907ef5 \
-                    size    4716836
+rmd160  85adc6219e692c719dd8e0b5cb03ae25da879ba0 \
+sha256  59020568e3f32e1aa429bf8a582e903319464d3b29be5b999af7f25210907ef5 \
+size    4716836
 
 patchfiles-append   patch-kitty-no-deprecated-declarations.diff
 

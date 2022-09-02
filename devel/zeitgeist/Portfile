@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gitlab 1.0
@@ -23,8 +23,8 @@ homepage            https://zeitgeist.freedesktop.org
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  d58ccd9c8e78178d21ec07db41834dbfcbe6840e \
-                    sha256  9cd8cdd9e5a9cdd3a2b04706c8e21bb393db7dd8320abd757bf340096312cc2f \
-                    size    249249
+sha256  9cd8cdd9e5a9cdd3a2b04706c8e21bb393db7dd8320abd757bf340096312cc2f \
+size    249249
 
 depends_build-append \
                     port:pkgconfig \

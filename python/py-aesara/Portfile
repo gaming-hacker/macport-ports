@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    {*}${description}
 homepage            https://github.com/aesara-devs/aesara
 
 checksums           rmd160  9ddec1f184ab77dc86324cc1d80018af1342c57c \
-                    sha256  de493fef3536a0aebd5e41018049c003026f1b7862b3ba5b2d54dc7349bd7432 \
-                    size    7430307
+sha256  de493fef3536a0aebd5e41018049c003026f1b7862b3ba5b2d54dc7349bd7432 \
+size    7430307
 
 python.versions 310
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -50,8 +50,8 @@ if {[string first "-devel" $subport] > 0} {
     github.setup    xianyi  OpenBLAS 2847636ecdc177887e4e76fe94399c32efcd5d23
     version         20220828-[string range ${github.version} 0 7]
     checksums       rmd160  0ac39251c07fb3c8a15f1e273ea87baf4bebbaab \
-                    sha256  3e970cf76c1ad3d83133844eee0fcf3bec1dfb97ab96125e90a9ad2065c63545 \
-                    size    23740001
+sha256  3e970cf76c1ad3d83133844eee0fcf3bec1dfb97ab96125e90a9ad2065c63545 \
+size    23740001
 
     revision        0
 
@@ -70,8 +70,8 @@ if {[string first "-devel" $subport] > 0} {
 
     github.setup    xianyi  OpenBLAS 0.3.21 v
     checksums       rmd160  97287bb040acbf4b671559577cc8e94615b38ce2 \
-                    sha256  1357fbdbace8e7cba92f52c2af1d9c1a861c8ad5a03ac84e4e953d3db59f60c6 \
-                    size    23738989
+sha256  1357fbdbace8e7cba92f52c2af1d9c1a861c8ad5a03ac84e4e953d3db59f60c6 \
+size    23738989
     revision        0
 
     conflicts       OpenBLAS-devel

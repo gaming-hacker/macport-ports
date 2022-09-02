@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -32,8 +32,8 @@ if {${os.major} < 11} {
 }
 
 checksums           rmd160  23e5de419df48b87661f55e2c2867a1d508793fc \
-                    sha256  65d5a14a8e5745c15cdd4052b1d72f0d8e57d4b771441dead39479b1f786965c \
-                    size    1957478
+sha256  65d5a14a8e5745c15cdd4052b1d72f0d8e57d4b771441dead39479b1f786965c \
+size    1957478
 
 # ignore pre releases
 github.livecheck.regex  {([0-9.]+)}

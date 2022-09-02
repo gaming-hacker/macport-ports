@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -43,8 +43,8 @@ long_description    The \"greenlet\" package is a spin-off of \
 homepage            https://github.com/python-greenlet/greenlet
 
 checksums           rmd160  08a231d023a7b8565430f6044085baa165417f46 \
-                    sha256  bcb6c6dd1d6be6d38d6db283747d07fda089ff8c559a835236560a4410340455 \
-                    size    91624
+sha256  bcb6c6dd1d6be6d38d6db283747d07fda089ff8c559a835236560a4410340455 \
+size    91624
 
 if {${name} ne ${subport}} {
     depends_build-append \

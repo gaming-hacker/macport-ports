@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           openssl 1.0
@@ -16,8 +16,8 @@ homepage            https://github.com/cisco/libsrtp
 license             BSD
 
 checksums           rmd160  f02155cb6deb598abfd4a2d759e2ec9aac277f16 \
-                    sha256  1e217993dc12fe4b53768654755102adb172da2b96ba7df77bcd93f11722eb37 \
-                    size    631812
+sha256  1e217993dc12fe4b53768654755102adb172da2b96ba7df77bcd93f11722eb37 \
+size    631812
 
 depends_build-append    port:pkgconfig
 depends_lib-append      port:zlib \
@@ -34,8 +34,8 @@ subport libsrtp1 {
     openssl.branch      1.0
 
     checksums           rmd160  50230cfced7e8ec66b525881f167b81a66e59da3 \
-                        sha256  3132460eecb32c4fb87b8addba51eccda65acbb391229e4fff319725e562ae83 \
-                        size    1648893
+sha256  3132460eecb32c4fb87b8addba51eccda65acbb391229e4fff319725e562ae83 \
+size    1648893
 
     platform powerpc {
         configure.args-append   CPU_RISC=1

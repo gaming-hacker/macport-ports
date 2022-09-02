@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,8 +15,8 @@ supported_archs     noarch
 homepage            https://github.com/ofek/hatch
 
 checksums           rmd160  d3dd25fa0946748553cdda3d4366b241d3a0a5ae \
-                    sha256  cdd9bdcf6bd8fccbde26c4f84f8fc14859d912d078cd0348d350c973bed073f4 \
-                    size    185920
+sha256  cdd9bdcf6bd8fccbde26c4f84f8fc14859d912d078cd0348d350c973bed073f4 \
+size    185920
 
 variant python37 conflicts python38 python39 python310 description {Use Python 3.7} {}
 variant python38 conflicts python37 python39 python310 description {Use Python 3.8} {}

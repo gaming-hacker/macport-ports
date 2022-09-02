@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -19,9 +19,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  486e2c036c91562dd609bd0d8f08721a06c0b65a \
-                    sha256  1e07203546274276503a4510adcf5dc6eacd5d1e20604fcd55a353b3b63c1213 \
-                    size    95957
+rmd160  486e2c036c91562dd609bd0d8f08721a06c0b65a \
+sha256  1e07203546274276503a4510adcf5dc6eacd5d1e20604fcd55a353b3b63c1213 \
+size    95957
 
 github.livecheck.regex \
                     {([0-9.]+)}

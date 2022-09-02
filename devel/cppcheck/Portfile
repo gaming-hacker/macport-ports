@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -22,8 +22,8 @@ long_description            Cppcheck is an analysis tool for C and C++ code. Unl
 github.tarball_from         archive
 
 checksums                   rmd160  74e48c93f41328ad26f7eef294780741ff818820 \
-                            sha256  56aee8b5bdf936ab7adc9ab43903ba2052f088695c80f047682024a1ed0ef3f3 \
-                            size    3916529
+sha256  56aee8b5bdf936ab7adc9ab43903ba2052f088695c80f047682024a1ed0ef3f3 \
+size    3916529
 
 set python_branch   3.10
 set python_version  [string map {"." ""} ${python_branch}]

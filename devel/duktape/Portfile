@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ github.tarball_from releases
 revision            0
 
 checksums           rmd160  a3aaf08d15b30afbbd3ffe92992de4d35f0fd612 \
-                    sha256  90f8d2fa8b5567c6899830ddef2c03f3c27960b11aca222fa17aa7ac613c2890 \
-                    size    1026524
+sha256  90f8d2fa8b5567c6899830ddef2c03f3c27960b11aca222fa17aa7ac613c2890 \
+size    1026524
 
 description         Duktape is an embeddable Javascript engine, with a focus on portability and compact footprint.
 long_description    ${description}
