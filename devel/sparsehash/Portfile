@@ -45,7 +45,7 @@ supported_archs     noarch
 # sets configure.cxx_stdlib, which the port needs in order to build for the
 # right stdlib. I don't know what version of the C++ standard this port
 # requires, so I'll just guess.
-compiler.cxx_standard 1998
+compiler.cxx_standard 2020
 
 # https://github.com/macports/macports-ports/pull/15768
 configure.args-append \

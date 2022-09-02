@@ -55,7 +55,7 @@ if {${os.platform} eq "darwin"} {
     
     patchfiles-append       patch-add-xcodeflags.diff
 
-    use_xcode               yes
+    use_xcode  no
 
     # This should match LIB_INSTALL_DIR in CMakeLists.txt
     configure.args-append   -DCMAKE_INSTALL_NAME_DIR=${applications_dir}/owncloud.app/Contents/MacOS \

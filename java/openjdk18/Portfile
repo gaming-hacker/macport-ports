@@ -35,7 +35,7 @@ pre-patch {
 }
 
 set tpath /Library/Java
-use_xcode           yes
+use_xcode  no
 use_configure    yes
 configure.cmd       ${prefix}/bin/bash configure
 configure.pre_args  --prefix=${tpath}

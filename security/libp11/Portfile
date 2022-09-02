@@ -26,7 +26,7 @@ depends_build           port:docbook-xsl-nons \
 depends_lib             path:lib/libcrypto.dylib:openssl
 
 # p11_attr.c:167: error: 'for' loop initial declaration used outside C99 mode
-compiler.c_standard     2011
+compiler.c_standard 2017
 
 test.run                yes
 test.target             check

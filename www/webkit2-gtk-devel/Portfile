@@ -9,7 +9,7 @@ PortGroup           active_variants 1.1
 PortGroup           cmake 1.1
 PortGroup           legacysupport 1.1
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 cmake.generator     Ninja
 # Fix compilation for Angle subproject: platform.h: error: 'TARGET_OS_OSX' is not defined
 legacysupport.newest_darwin_requires_legacy 15
@@ -42,8 +42,8 @@ depends_build-append \
                     port:gtk-doc \
                     port:perl5.34 \
                     port:pkgconfig \
-                    port:python27 \
-                    port:py27-simplejson
+                    port:python310 \
+                    port:py310-simplejson
 
 depends_lib-append  port:atk \
                     port:at-spi2-atk \

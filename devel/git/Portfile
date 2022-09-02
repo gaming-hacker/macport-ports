@@ -38,7 +38,7 @@ checksums           git-${version}${extract.suffix} \
 
 perl5.require_variant   false
 perl5.conflict_variants yes
-perl5.branches          5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.default_branch    5.34
 perl5.create_variants   ${perl5.branches}
 
@@ -70,11 +70,11 @@ extract.only        git-${version}${extract.suffix} \
 
 use_configure       no
 
-compiler.c_standard 1999
+compiler.c_standard 2017
 
 variant universal   {}
 
-set CFLAGS          "${configure.cflags} -std=gnu99 [get_canonical_archflags cc]"
+set CFLAGS          "${configure.cflags} -std=gnu17 [get_canonical_archflags cc]"
 set LDFLAGS         "${configure.ldflags} [get_canonical_archflags ld]"
 
 build.args          CFLAGS="${CFLAGS}" \
@@ -309,8 +309,8 @@ variant diff_highlight description {Install git diff-highlight utility from cont
 # This variant enables git to use MacPorts' Python as it builds these
 # additional tools.
 variant python description {Build with Python support} {
-    depends_lib-append  port:python39
-    build.args-append   PYTHON_PATH="${prefix}/bin/python3.9"
+    depends_lib-append  port:python310
+    build.args-append   PYTHON_PATH="${prefix}/bin/python3.10"
 }
 
 platform darwin 8 {

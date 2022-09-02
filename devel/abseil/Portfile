@@ -38,7 +38,7 @@ checksums           rmd160  23e5de419df48b87661f55e2c2867a1d508793fc \
 # ignore pre releases
 github.livecheck.regex  {([0-9.]+)}
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2020
 
 configure.args-append \
                     -DBUILD_SHARED_LIBS=ON \
