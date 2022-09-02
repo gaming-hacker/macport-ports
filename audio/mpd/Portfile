@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -10,8 +10,8 @@ name                mpd
 version             0.23.8
 revision            1
 checksums           rmd160  45cc623a1029b010197a0233fe5ebb5f6e5fc5c4 \
-sha256  86bb569bf3b519821f36f6bb5564e484e85d2564411b34b200fe2cd3a04e78cf \
-size    773280
+                    sha256  86bb569bf3b519821f36f6bb5564e484e85d2564411b34b200fe2cd3a04e78cf \
+                    size    773280
 
 categories          audio
 license             GPL-2+ LGPL-2.1
@@ -25,17 +25,6 @@ long_description    Music Player Daemon (MPD) allows remote access for playing m
     It also makes a great desktop music player, especially if you are a \
     console junkie, like frontend options, or restart X often.
 homepage            https://www.musicpd.org/
-
-platform darwin {
-    if {${os.major} < 21} {
-        version     0.23.7
-        revision    2
-
-        checksums   rmd160  81749eef69fa544a88607f539519e3169dc152fe \
-sha256  960dcbac717c388f5dcc4fd945e3af19a476f2b15f367e9653d4c7a948768211 \
-size    771992
-    }
-}
 
 set branch          [join [lrange [split ${version} .] 0 1] .]
 master_sites        https://www.musicpd.org/download/${name}/${branch}/
@@ -147,6 +136,14 @@ configure.args \
 
 configure.cflags-append -I${prefix}/include
 
+# Wrap the macOS12 functions, may be added into legacy-support see PR49
+if {${os.major} < 21} {
+    configure.cflags-prepend        -isystem ${filespath}/wrappers
+    configure.cxxflags-prepend      -isystem ${filespath}/wrappers
+    configure.objcflags-prepend     -isystem ${filespath}/wrappers
+    configure.objcxxflags-prepend   -isystem ${filespath}/wrappers
+}
+
 variant ffmpeg description {Support for myriad formats (including ALAC) via FFmpeg} {
     depends_lib-append path:lib/libavcodec.dylib:ffmpeg
     configure.args-replace -Dffmpeg=disabled -Dffmpeg=enabled
@@ -250,7 +247,10 @@ build.env-append    {*}${configure.env}
 destroot.env-append {*}${configure.env}
 
 # requires support for C++17.
-compiler.cxx_standard 2020
+compiler.cxx_standard   2017
+
+# Won't compile with anything below Xcode12
+compiler.blacklist-append {clang < 1200}
 
 if {${os.platform} eq "darwin" && ${os.major} > 8} {
     set mpduser       _mpd

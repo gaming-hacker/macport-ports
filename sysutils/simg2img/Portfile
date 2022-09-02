@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ description         Tool to convert Android sparse images to raw images
 long_description    ${description}
 
 checksums           rmd160  54a3457aa795a3f73aa383a6c2f98fa6b056152d \
-sha256  df878f928fd6e6f8d7d990b56412adc8afbc08f7822f05a843d326461bee71e8 \
-size    23968
+                    sha256  df878f928fd6e6f8d7d990b56412adc8afbc08f7822f05a843d326461bee71e8 \
+                    size    23968
 
 # Avoid rebuilding during destroot
 patchfiles-append   Makefile.patch
@@ -32,20 +32,7 @@ variant universal {}
 
 destroot.args-append    PREFIX=${destroot}${prefix}
 
-# Remove after 2022-06-18
-subport ${name}-devel {
-    PortGroup       obsolete 1.0
-
-    version         20191105
-    revision        1
-    replaced_by     ${name}
-}
-
-if {${subport} eq ${name}} {
-    conflicts       simg2img-devel
-}
-
-compiler.cxx_standard 2020
+compiler.cxx_standard 2017
 
 build.args-append   CC="${configure.cc} [get_canonical_archflags cc]" \
                     CXX="${configure.cxx} [get_canonical_archflags cxx]"

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        jwilk pdf2djvu 0.9.18.2
-revision            6
+github.setup        jwilk pdf2djvu 0.9.19
+revision            0
 categories          graphics textproc
 platforms           darwin
 license             GPL-2
@@ -19,9 +19,10 @@ homepage            http://jwilk.net/software/pdf2djvu
 github.tarball_from releases
 use_xz              yes
 
-checksums           rmd160  5690847778dacd242d95fbf07fa772c94fa1b55c \
-sha256  9ea03f21d841a336808d89d65015713c0785e7295a6559d77771dc795333a9fa \
-size    305912
+checksums           rmd160  1fb0c2a54e9ce130a6287a695e9e8188476e374a \
+                    sha256  eb45a480131594079f7fe84df30e4a5d0686f7a8049dc7084eebe22acc37aa9a \
+                    size    309952
+
 
 depends_build       port:pkgconfig \
                     port:gsed
@@ -35,11 +36,8 @@ depends_lib         port:djvulibre \
 patchfiles          patch-i18n.hh.diff \
                     patch-sys-uuid.diff
 
-# https://trac.macports.org/ticket/64899
-patchfiles-append   patch-poppler-22.03.0.diff
-
-configure.cxxflags-append -std=gnu++2a
-compiler.cxx_standard 2020
+configure.cxxflags-append -std=c++17
+compiler.cxx_standard  2017
 
 # explicitly configure to build with system libuuid, overriding pkg-config
 # this prevents linking with ossp-uuid if it is installed
@@ -65,6 +63,6 @@ post-destroot {
 }
 
 test.run            yes
-depends_test-append port:python310 \
-                    port:py310-nose
-test.args           PYTHON=${prefix}/bin/python3.10
+depends_test-append port:python27 \
+                    port:py27-nose
+test.args           PYTHON=${prefix}/bin/python2.7
