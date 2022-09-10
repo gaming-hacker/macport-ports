@@ -31,7 +31,7 @@ size    279590
 
 depends_build-append \
                     port:realpath
-depends_lib-append  port:icu
+depends_lib-append  path:lib/pkgconfig/icu-uc.pc:icu
 
 patchfiles          patch-build-no-compress.diff
 

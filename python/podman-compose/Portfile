@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                podman-compose
 version             1.0.3
-revision            1
+revision            0
 
 categories-append   devel
 supported_archs     noarch
@@ -19,8 +19,8 @@ long_description    {*}${description}
 homepage            https://github.com/containers/podman-compose
 
 checksums           rmd160  dd21ace3714b9baa9113a9a48fded2ab65f1a2c8 \
-sha256  9c9fe8249136e45257662272ade33760613e2d9ca6153269e1e970400ea14675 \
-size    21424
+                    sha256  9c9fe8249136e45257662272ade33760613e2d9ca6153269e1e970400ea14675 \
+                    size    21424
 
 python.default_version 310
 
@@ -35,14 +35,14 @@ depends_run-append \
 subport podman-compose-devel {
     PortGroup           github 1.0
 
-    github.setup        containers podman-compose 9d5b2559274819e3b47230da85d4d306807bb4bf
+    github.setup        containers podman-compose db1861d33f8e24297c6c5520d53a51a6e8a30c89
     name                podman-compose-devel
-    version             2022-08-18
+    version             2022-09-05
     revision            0
 
     conflicts           podman-compose
 
-    checksums           rmd160  1bfdb3b4c924d500efe4d8e0202790112084b1da \
-sha256  db062fb48400722f4ae07be911bd6bde74be82255ac3a78bab91d36236e44737 \
-size    56287
+    checksums           rmd160  54663263b3f99146313a0509f5c2a49ec9b0f7e1 \
+                        sha256  71069ded49dae3f4dad34195b3df0c8970e6fb9a10d0d404020e8a1147db7143 \
+                        size    56307
 }

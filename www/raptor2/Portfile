@@ -23,7 +23,7 @@ sha256  ada7f0ba54787b33485d090d3d2680533520cd4426d2f7fb4782dd4a6a1480ed \
 size    1886657
 
 depends_lib         port:curl \
-                    port:icu \
+                    path:lib/pkgconfig/icu-uc.pc:icu \
                     port:libiconv \
                     port:libxml2 \
                     port:libxslt \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -30,13 +30,12 @@ long_description    A network analyzer that lets you capture and \
 #   https://gitlab.com/wireshark/wireshark/-/merge_requests/1404
 
 if {${os.major} >= 16} {
-    version         3.6.7
+    version         3.6.8
     revision        0
 
-    checksums       sha256  cce10a35caa2f79b73d3e6e4dc5388dd47d216114a550fdeb06ae78da0edb7c5 \
-rmd160  a69700ee4aaffdd986477fce320818473b1873a9 \
-sha1    b424c71388958a3ee668148e5855890a63426465 \
-size    39967312
+    checksums       sha256  67ab23ee09a646ab8cc0ddcc985209f24f253337461e3d9644c6cfe1c097260c \
+                    sha1    e4b2cb5703f9d6cf0934469a2e8a2426cb308dad \
+                    size    39942580
 
     livecheck.type  regex
     livecheck.url   ${homepage}download.html
@@ -46,9 +45,9 @@ size    39967312
     revision        5
 
     checksums       sha256  f8165211f5b4a4f6708df73ef9be51df917927f2da78348b32d3a6eb5fc458a3 \
-rmd160  1b5e1fee340c149b70dbe8e8cf935518b06656e8 \
-sha1    3c9a24b8954d712a189f997131e283fbd0b606bc \
-size    32470004
+                    rmd160  1b5e1fee340c149b70dbe8e8cf935518b06656e8 \
+                    sha1    3c9a24b8954d712a189f997131e283fbd0b606bc \
+                    size    32470004
 
     patchfiles-append \
                     patch-wireshark3-3.4.1-fix-clock_realtime.diff

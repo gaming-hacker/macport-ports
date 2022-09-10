@@ -27,7 +27,7 @@ size    377472
 depends_build       port:pkgconfig
 
 depends_lib         port:librevenge \
-                    port:icu \
+                    path:lib/pkgconfig/icu-uc.pc:icu \
                     port:zlib
 
 compiler.cxx_standard 2020

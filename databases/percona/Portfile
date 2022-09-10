@@ -61,7 +61,7 @@ sha256  9a2c2819310839ea373f42d69e733c339b4e9a19deab6bfec448281554aa4dbb \
 size    111710205
 
     depends_lib-append  port:cyrus-sasl2 \
-                        port:icu \
+                        path:lib/pkgconfig/icu-uc.pc:icu \
                         port:libevent \
                         port:lz4 \
                         port:protobuf3-cpp \

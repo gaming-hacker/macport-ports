@@ -32,7 +32,7 @@ sha256  91200aa6fbc6fa5e2f3d78ef40e39d8c1ec7c83ea1c2cd730d270658735b2cad
 depends_build           port:help2man \
                         port:pkgconfig
 
-depends_lib             port:icu \
+depends_lib             path:lib/pkgconfig/icu-uc.pc:icu \
                         port:spidermonkey185 \
                         port:erlang \
                         port:curl

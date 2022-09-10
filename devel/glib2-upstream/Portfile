@@ -23,7 +23,7 @@ size    4893484
 
 set branch                  [join [lrange [split ${version} .] 0 1] .]
 categories                  devel
-maintainers                 {mascguy @mascguy} {ryandesign @ryandesign} openmaintainer
+maintainers                 {mascguy @mascguy} openmaintainer
 license                     LGPL-2+
 homepage                    https://wiki.gnome.org/Projects/GLib
 platforms                   darwin

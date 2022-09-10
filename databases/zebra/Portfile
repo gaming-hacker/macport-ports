@@ -29,7 +29,7 @@ size    1959410
 
 depends_lib         port:bzip2 \
                     port:expat \
-                    port:icu \
+                    path:lib/pkgconfig/icu-uc.pc:icu \
                     port:libiconv \
                     port:libxml2 \
                     port:libxslt \
