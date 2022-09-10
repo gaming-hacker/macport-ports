@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -19,8 +19,8 @@ homepage        http://www.springframework.org/
 distname        spring-framework-${version}-with-dependencies
 master_sites    http://s3.amazonaws.com/dist.springframework.org/release/SPR
 checksums       rmd160  8200e5ccb17249201ebf60e01d18ae3fa7cba9b7 \
-                sha256  a6dd966c3fe57381cf3b9bb1e403939f2473860d15ad00f008b929a7c58aed8a \
-                size    83114292
+sha256  a6dd966c3fe57381cf3b9bb1e403939f2473860d15ad00f008b929a7c58aed8a \
+size    83114292
 
 use_zip         yes
 

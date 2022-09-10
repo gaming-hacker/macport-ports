@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    QR codes are a type of high-density matrix \
                     and decoding them from images.
 
 checksums           rmd160  45edf684de85d504631d3ea5b315b07ee8919895 \
-                    sha256  33cf10f6f567f07583014f2c8596915f890a78cd2d40f7d4ecaa380fa0d12f4a \
-                    size    38608
+sha256  33cf10f6f567f07583014f2c8596915f890a78cd2d40f7d4ecaa380fa0d12f4a \
+size    38608
 
 depends_build-append \
                     port:gmake

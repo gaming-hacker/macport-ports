@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 license             MIT
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 python.pep517_backend hatch
 
@@ -23,8 +23,8 @@ homepage            https://github.com/hynek/hatch-fancy-pypi-readme
 distname            hatch_fancy_pypi_readme-${version}
 
 checksums           rmd160  715d9e3a3300cb6c9f04d7c4b45479aa13410631 \
-                    sha256  7d4651f8f07825931c92873cb51137214a938badb7a759b85c1d95bf74f86efa \
-                    size    22301
+sha256  7d4651f8f07825931c92873cb51137214a938badb7a759b85c1d95bf74f86efa \
+size    22301
 
 if {${name} ne ${subport}} {
     depends_lib-append port:py${python.version}-tomli

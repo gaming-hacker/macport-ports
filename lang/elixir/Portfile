@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ homepage            http://elixir-lang.org/
 depends_lib         port:erlang
 
 checksums           rmd160 47d4d9d73640cc61c3280c15625e6bb2d47cd644 \
-                    sha256 ac129e266a1e04cdc389551843ec3dbdf36086bb2174d3d7e7936e820735003b \
-                    size   3067581
+sha256 ac129e266a1e04cdc389551843ec3dbdf36086bb2174d3d7e7936e820735003b \
+size   3067581
 
 # bin/mix
 conflicts           arb

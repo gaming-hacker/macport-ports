@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -23,9 +23,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  6437a91c5f97c701aa33e9203923d0e07bde7e72 \
-                    sha256  39c5f8f88a8aa6d32575ddb26017572f2683fae129b9be5442acbae74019ea5e \
-                    size    7120244
+rmd160  6437a91c5f97c701aa33e9203923d0e07bde7e72 \
+sha256  39c5f8f88a8aa6d32575ddb26017572f2683fae129b9be5442acbae74019ea5e \
+size    7120244
 
 # crate:openssl-sys requires pkgconfig & libssl.dylib
 depends_build-append \
@@ -297,14 +297,14 @@ cargo.crates \
     serde_derive_internals          0.26.0  85bf8229e7920a9f636479437026331ce11aa132b4dde37d121944a44d6e5f3c \
     serde_json                      1.0.85  e55a28e3aaef9d5ce0506d0a14dbba8054ddc7e499ef522dd8b26859ec9d4a44 \
     serde_repr                       0.1.9  1fe39d9fbb0ebf5eb2c7cb7e2a47e4f462fad1379f1166b8ae49ad9eae89a7ca \
-    sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
-    sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
-    sha1                            0.10.1  c77f4e7f65455545c2153c1253d25056825e77ee2533f0e41deb65a93a34852f \
-    sha1-asm                         0.5.1  563d4f7100bc3fce234e5f37bbf63dc2752558964505ba6ac3f7204bdc59eaac \
-    sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
-    sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
-    shadow-rs                       0.16.3  8c0ea0c68418544f725eba5401a5b965a2263254c92458d04aeae74e9d88ff4e \
-    shared_library                   0.1.9  5a9e7e0f2bfae24d8a5b5a66c5b257a83c7412304311512a0c054cd5e619da11 \
+sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
+sha1                             0.6.1  c1da05c97445caa12d05e848c4a4fcbbea29e748ac28f7e80e9b010392063770 \
+sha1                            0.10.1  c77f4e7f65455545c2153c1253d25056825e77ee2533f0e41deb65a93a34852f \
+sha1-asm                         0.5.1  563d4f7100bc3fce234e5f37bbf63dc2752558964505ba6ac3f7204bdc59eaac \
+sha1_smol                        1.0.0  ae1a47186c03a32177042e55dbc5fd5aee900b8e0069a8d70fba96a9375cd012 \
+sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+shadow-rs                       0.16.3  8c0ea0c68418544f725eba5401a5b965a2263254c92458d04aeae74e9d88ff4e \
+shared_library                   0.1.9  5a9e7e0f2bfae24d8a5b5a66c5b257a83c7412304311512a0c054cd5e619da11 \
     shell-words                      1.1.0  24188a676b6ae68c3b2cb3a01be17fbf7240ce009799bb56d5b1409051e78fde \
     signal-hook                     0.1.17  7e31d442c16f047a671b5a71e2161d6e68814012b7f5379d269ebd915fac2729 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Log-Log4perl 1.56
 maintainers         {di.uminho.pt:jpo @jpoliv} openmaintainer
 license             {Artistic-1 GPL}
@@ -19,8 +19,8 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  bba72e51b83f4247de49fdd5584ed2fea4155b30 \
-                    sha256  47e08d63c9a940743308c8ba39fa51e4c15459c7d70acfc3b131b981f843a941 \
-                    size    280010
+sha256  47e08d63c9a940743308c8ba39fa51e4c15459c7d70acfc3b131b981f843a941 \
+size    280010
 
 if {${perl5.major} != ""} {
     depends_lib-append \

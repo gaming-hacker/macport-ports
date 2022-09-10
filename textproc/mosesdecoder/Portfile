@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ license             LGPL
 # stealth update; remove for next version
 dist_subdir         ${name}/${version}_1
 checksums           rmd160  73cc892cb675c31abcc9693801c701345e010868 \
-                    sha256  68fa1878bfe79092cdf115cd1a0a8cdb8e135553211db29f1b7a843bfbe2ab6e \
-                    size    6324795
+sha256  68fa1878bfe79092cdf115cd1a0a8cdb8e135553211db29f1b7a843bfbe2ab6e \
+size    6324795
 
 depends_lib         port:zlib
 

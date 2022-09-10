@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ revision            0
 categories-append   graphics
 license             BSD
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -20,8 +20,8 @@ long_description    ${description}
 homepage            https://imageio.github.io/
 
 checksums           rmd160  7e3d7162439ad34dddd93aab24e7f5cea86af933 \
-                    sha256  5702e7b4874bdb2f428b08c7491699b44842129d412cdaa7177ba7ff059deb2c \
-                    size    3430235
+sha256  5702e7b4874bdb2f428b08c7491699b44842129d412cdaa7177ba7ff059deb2c \
+size    3430235
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

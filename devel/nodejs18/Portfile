@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -8,7 +8,7 @@ PortGroup               legacysupport 1.1
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard   2014
+compiler.cxx_standard 2020
 
 name                    nodejs18
 version                 18.9.0
@@ -33,8 +33,8 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  6157c2edc5943f7762a361f3d1e1b4255922cf79 \
-                        sha256  c75cc89afead976791900accde02a7b1e7e762702f0f6fa68eaacb01984d9654 \
-                        size    38309908
+sha256  c75cc89afead976791900accde02a7b1e7e762702f0f6fa68eaacb01984d9654 \
+size    38309908
 
 distname                node-v${version}
 

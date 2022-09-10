@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -8,8 +8,8 @@ PortGroup           openssl 1.0
 github.setup        ntop n2n 3.1.1
 revision            0
 checksums           rmd160  c39890517dcf02bf6e1eeacf78a68cfe39767e9b \
-                    sha256  311f89d147558ae4dfb0d8f8698f5429c05a3e19a9d25cb8c85bd73d02aff834 \
-                    size    498277
+sha256  311f89d147558ae4dfb0d8f8698f5429c05a3e19a9d25cb8c85bd73d02aff834 \
+size    498277
 
 categories          net
 maintainers         nomaintainer

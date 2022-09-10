@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               legacysupport 1.1
@@ -22,8 +22,8 @@ long_description \
     just a few lines of code. It is a free, extended version of awk.
 
 checksums               rmd160  3ce306fa834bf9e4a755bb09b819f8e31bb51ef0 \
-                        sha256  e4ddbad1c2ef10e8e815ca80208d0162d4c983e6cca16f925e8418632d639018 \
-                        size    3385496
+sha256  e4ddbad1c2ef10e8e815ca80208d0162d4c983e6cca16f925e8418632d639018 \
+size    3385496
 
 depends_build           port:gettext
 

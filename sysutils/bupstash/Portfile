@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -27,9 +27,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  ec90d280ba10fd9ddab14ad307c3b2ee1c8b6620 \
-                    sha256  6743ee90f2cc26ac95e2eccf102567f62f6830f85755c2159c679f08f5c95af1 \
-                    size    341942
+rmd160  ec90d280ba10fd9ddab14ad307c3b2ee1c8b6620 \
+sha256  6743ee90f2cc26ac95e2eccf102567f62f6830f85755c2159c679f08f5c95af1 \
+size    341942
 
 depends_build-append        port:go-md2man \
                             port:pkgconfig

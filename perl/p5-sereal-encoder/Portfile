@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Sereal-Encoder 5.001 ../../authors/id/Y/YV/YVES
 revision            0
 license             {Artistic-1 GPL}
@@ -14,8 +14,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  c0cbc0ca169cefad2994052ff1b3511c15d04d26 \
-                    sha256  2367f2f5f1486f32f65c3905048918de55639c79d1835ab56789f70cedfbbac3 \
-                    size    729267
+sha256  2367f2f5f1486f32f65c3905048918de55639c79d1835ab56789f70cedfbbac3 \
+size    729267
 
 use_parallel_build  no
 

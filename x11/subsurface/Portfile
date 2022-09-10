@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,8 +18,8 @@ homepage                http://subsurface.hohndel.org/
 # stealth update; remove for next version
 dist_subdir             ${name}/${version}_1
 checksums               rmd160  f91b6c4df9b27741f3d0d0d902e782ed036ef8a8 \
-                        sha256  d97c9ec88c2109b2157a5f65930f148a20855552e7379428df31de603388cef8 \
-                        size    1143744
+sha256  d97c9ec88c2109b2157a5f65930f148a20855552e7379428df31de603388cef8 \
+size    1143744
 
 patchfiles              Makefile.patch
 
@@ -33,7 +33,7 @@ depends_lib             path:lib/pkgconfig/glib-2.0.pc:glib2 \
                         port:gtk-osx-application \
                         port:osm-gps-map-gtk2 \
                         path:lib/pkgconfig/libsoup-2.4.pc:libsoup \
-                        port:py27-pygtk \
+                        port:py310-pygtk \
                         port:libzip \
                         port:libxslt
 

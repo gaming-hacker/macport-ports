@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,10 +24,10 @@ long_description    When you try to sort a list of strings that \
 homepage            https://github.com/SethMMorton/natsort
 
 checksums           rmd160  9d021131f311a1f5ea4f24c85cc2dbfe40ba1311 \
-                    sha256  57f85b72c688b09e053cdac302dd5b5b53df5f73ae20b4874fcbffd8bf783d11 \
-                    size    145643
+sha256  57f85b72c688b09e053cdac302dd5b5b53df5f73ae20b4874fcbffd8bf783d11 \
+size    145643
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${subport} ne ${name}} {
     depends_lib-append \

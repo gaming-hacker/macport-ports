@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    {*}${description}
 homepage            https://github.com/pythological/etuples
 
 checksums           rmd160  02e12559bf216ea0c077ffc72bd4c08e1e8d17ae \
-                    sha256  babb99e09428e7985d2baf5537f38ca1e47b596e1fadbef7db12388cab0a92de \
-                    size    30439
+sha256  babb99e09428e7985d2baf5537f38ca1e47b596e1fadbef7db12388cab0a92de \
+size    30439
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

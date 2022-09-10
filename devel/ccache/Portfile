@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -12,8 +12,8 @@ github.setup        ccache ccache 4.6.3 v
 revision            0
 
 checksums           rmd160  80cad9c9b8776df0ab830f17c0d3dbe07b3a9589 \
-                    sha256  1e3a251bb112632553b8255a78661fe526c3a16598496d51128c32b218fd8b22 \
-                    size    531184
+sha256  1e3a251bb112632553b8255a78661fe526c3a16598496d51128c32b218fd8b22 \
+size    531184
 
 categories          devel
 platforms           darwin freebsd
@@ -40,7 +40,7 @@ platform darwin 8 {
     patchfiles-append  patch-ccache-no-posix-tiger.diff
 }
 
-compiler.c_standard 1999
+compiler.c_standard 2017
 
 compiler.cxx_standard \
                     2014

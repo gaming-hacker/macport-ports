@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -11,7 +11,7 @@ categories-append   science
 license             BSD
 supported_archs     arm64 x86_64
 
-python.versions     37 38 39 310
+python.versions 310
 
 maintainers         nomaintainer
 
@@ -36,8 +36,8 @@ long_description    HDBSCAN - Hierarchical Density-Based Spatial \
 homepage            https://hdbscan.readthedocs.io/en/latest/
 
 checksums           rmd160  60f6e4824305a204e8ea38274acdd01bc309d716 \
-                    sha256  a1d44adedc1372220a2b21ded510af5b927ba1a1b31990cee0261b11878a892f \
-                    size    11666990
+sha256  a1d44adedc1372220a2b21ded510af5b927ba1a1b31990cee0261b11878a892f \
+size    11666990
 
 if {${name} ne ${subport}} {
     depends_build-append \

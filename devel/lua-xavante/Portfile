@@ -17,8 +17,8 @@ homepage            https://keplerproject.github.io/xavante/
 # stealth update; remove for next version
 dist_subdir         ${name}/${version}_1
 checksums           rmd160  abf150bf1410aa050d388b961d2c97b122829e48 \
-                    sha256  044f27e3f4311315f6c834a110b4d9cd7162d6a7ea0568192b9a08ccdb4d753f \
-                    size    41841
+sha256  044f27e3f4311315f6c834a110b4d9cd7162d6a7ea0568192b9a08ccdb4d753f \
+size    41841
 
 patchfiles          patch-Makefile.diff \
 					patch-config.diff

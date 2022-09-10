@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           makefile 1.0
@@ -37,8 +37,8 @@ master_sites        ${homepage}files
 depends_lib-append  port:libmpeg2
 
 checksums           rmd160 d662bfe195b59f5815bfdccaf3f81dae46d4e0d8 \
-                    sha256 316a931810116d70a07cb57a80ae8483fa949bd575beee222a9a8e375c4d8590 \
-                    size 371928
+sha256 316a931810116d70a07cb57a80ae8483fa949bd575beee222a9a8e375c4d8590 \
+size 371928
 
 distname            ${name}
 dist_subdir         ${name}/${version}

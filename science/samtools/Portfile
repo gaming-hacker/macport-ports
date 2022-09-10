@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -10,8 +10,8 @@ legacysupport.newest_darwin_requires_legacy 10
 github.setup            samtools samtools 1.16.1
 revision                0
 checksums               rmd160  31c9f8cead511e3c433860c5863a139a71cb13f0 \
-                        sha256  2fa0a25f78594cf23d07c9d32d5060a14f1c5ee14d7b0af7a8a71abc9fdf1d07 \
-                        size    8217689
+sha256  2fa0a25f78594cf23d07c9d32d5060a14f1c5ee14d7b0af7a8a71abc9fdf1d07 \
+size    8217689
 
 categories              science
 maintainers             {ryandesign @ryandesign} openmaintainer

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -27,8 +27,8 @@ homepage            https://lib.filezilla-project.org/
 master_sites        https://download.filezilla-project.org/libfilezilla/
 
 checksums           rmd160  8e9b05833261bb362c27ba45f2c1c6bf21aca368 \
-                    sha256  60c912bff2867a36d97ea2bca01a06e293d42445795cedd43f5164a92e585b0f \
-                    size    591199
+sha256  60c912bff2867a36d97ea2bca01a06e293d42445795cedd43f5164a92e585b0f \
+size    591199
 
 patchfiles-append   patch-util.diff
 
@@ -46,7 +46,7 @@ depends_test-append port:cppunit
 
 use_bzip2           yes
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 # libfilezilla uses thread_local, which is not supported in Xcode < 8
 compiler.thread_local_storage   yes
 

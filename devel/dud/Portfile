@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -25,8 +25,8 @@ long_description    {*}${description} \
 homepage            https://kevin-hanselman.github.io/dud
 
 checksums           rmd160  f9aefc2993ecf0b85a9d2209ad121a07d8bdf6bc \
-                    sha256  60f70e763d13a58d676112ece84b5e4f72df0b2155a7b7b5db830dd5a67d9408 \
-                    size    134896
+sha256  60f70e763d13a58d676112ece84b5e4f72df0b2155a7b7b5db830dd5a67d9408 \
+size    134896
 
 # FIXME: This port currently can't be built without allowing go mod to fetch
 build.env-delete    GOPROXY=off GO111MODULE=off
