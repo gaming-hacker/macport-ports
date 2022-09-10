@@ -29,7 +29,7 @@ categories      python
 use_configure   no
 
 # we want the default universal variant added despite not using configure
-universal_variant yes
+universal_variant no
 
 post-extract {
     # Prevent setuptools' easy_install from downloading dependencies
