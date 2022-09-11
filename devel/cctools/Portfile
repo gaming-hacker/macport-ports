@@ -76,7 +76,7 @@ set all_llvm_variants [list llvm14 ]
 #     lappend all_llvm_variants llvm50 llvm60 llvm70 llvm80 llvm90
 # }
 array set llvm_variant_version [list llvm14 14 ]
-set llvm_version {}
+set llvm_version {14}
 
 foreach variantname $all_llvm_variants {
     set this_llvm_version $llvm_variant_version($variantname)
@@ -104,19 +104,7 @@ if { ![some_llvm_variant_set] && ![variant_isset xcode] } {
     set clt_ok   [ expr { ${xcodeversion} eq "none" && ${cltversion} ne "none" && [ vercmp ${cltversion} "11.0" ] >= 0 } ]
     if { ${xcode_ok} || ${clt_ok} } {
         default_variants +xcode
-    } elseif {${os.major} >= 16} {
-        # llvm-11 changed the arguments accepted by llvm-objdump
-        # this causes a number of errors in scripts that still use the old arguments
-        # we will default to +llvm11 when xcode changes to require the new arguments
-        # see https://reviews.llvm.org/D92310 and https://trac.macports.org/ticket/61852
-        default_variants +llvm14
-    } elseif {${os.major} >= 14} {
-        # llvm-9.0 is the newest llvm the system toolchain can build on these systems
-        default_variants +llvm14
-    } elseif {${os.major} >= 12} {
-        # llvm-3.7 is the newest llvm the system toolchain can build on these systems
-        default_variants +llvm14
-    } elseif {${os.major} >= 10} {
+    } else {
         # llvm-3.4 is the newest llvm the system toolchain can build on these systems
         default_variants +llvm14
     }
@@ -128,15 +116,15 @@ if { ![some_llvm_variant_set] && ![variant_isset xcode] } {
 
     # If a default llvm is still not set, use +llvm10
     # this fail-safe ensures some cctools variant can build
-    if {![some_llvm_variant_set] && ![variant_isset xcode] && ${os.major} >= 10} {
-        default_variants +llvm14
-    }
+#     if {![some_llvm_variant_set] && ![variant_isset xcode] && ${os.major} >= 10} {
+#         default_variants +llvm14
+#     }
 }
 
-if {[variant_isset llvm34] && ${os.major} < 11} {
-    # This port is used by clang-3.4 to bootstrap libcxx
-    configure.cxx_stdlib    libstdc++
-}
+# if {[variant_isset llvm34] && ${os.major} < 11} {
+#     # This port is used by clang-3.4 to bootstrap libcxx
+#     configure.cxx_stdlib    libstdc++
+# }
 
 variant xcode description "Use Xcode supplied cctools" {
     supported_archs noarch
@@ -165,11 +153,11 @@ variant xcode description "Use Xcode supplied cctools" {
 destroot.args           RAW_DSTROOT=${destroot} DSTROOT=${destroot}${prefix} RC_ProjectSourceVersion=${version}
 
 # reconfirmed 20210818 - cctools +llvm10 will not build universal on BigSur
-if {${os.major} >= 20} {
+# if {${os.major} >= 20} {
     universal_variant no
-} else {
-    universal_variant yes
-}
+# } else {
+#     universal_variant yes
+# }
 
 if {![variant_isset xcode]} {
     depends_build       port:libunwind-headers
@@ -341,18 +329,18 @@ post-destroot {
 
         file delete -force ${destroot}${prefix}/bin/nm
         file delete -force ${destroot}${prefix}/bin/size
-        if {${llvm_version} eq "3.4" || ${llvm_version} eq "3.7" || ${llvm_version} eq ""} {
-            ln -s nm-classic ${destroot}${prefix}/bin/nm
-            ln -s size-classic ${destroot}${prefix}/bin/size
-
-            # https://trac.macports.org/ticket/53099
-            file delete -force ${destroot}${prefix}/bin/otool
-            file delete -force ${destroot}${prefix}/bin/llvm-otool
-            ln -s otool-classic ${destroot}${prefix}/bin/otool
-        } else {
+#         if {${llvm_version} eq "3.4" || ${llvm_version} eq "3.7" || ${llvm_version} eq ""} {
+#             ln -s nm-classic ${destroot}${prefix}/bin/nm
+#             ln -s size-classic ${destroot}${prefix}/bin/size
+#
+#             # https://trac.macports.org/ticket/53099
+#             file delete -force ${destroot}${prefix}/bin/otool
+#             file delete -force ${destroot}${prefix}/bin/llvm-otool
+#             ln -s otool-classic ${destroot}${prefix}/bin/otool
+#         } else {
             ln -s llvm-nm-mp-${llvm_version} ${destroot}${prefix}/bin/nm
             ln -s llvm-size-mp-${llvm_version} ${destroot}${prefix}/bin/size
-        }
+#         }
     }
 }
 

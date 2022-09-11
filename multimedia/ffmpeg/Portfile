@@ -6,11 +6,10 @@ PortGroup           active_variants 1.1
 
 name                ffmpeg
 set my_name         ffmpeg
-conflicts           ffmpeg-devel
 
 epoch               1
 version             20220910
-revision            0
+revision            1
 license             LGPL-2.1+
 categories          multimedia
 maintainers         {devans @dbevans} {jeremyhu @jeremyhu} {mascguy @mascguy} openmaintainer

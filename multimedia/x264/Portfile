@@ -2,8 +2,6 @@
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
-# PortGroup           xcodeversion 1.0
-# PortGroup           xcode_workaround 1.0
 
 name                x264
 version             20220222
@@ -24,9 +22,6 @@ homepage            https://www.videolan.org/x264.html
 master_sites        file:///Users/glen/local/repo/macports/
 distname            ${name}
 
-# checksums           rmd160  219e0704e94bd67a6d767a7b4dd0523d60f9a559 \
-#  sha256  4c083284310eb78f47f2478ed710a1bf6670bbeccb5d11a17797b3814a456031 \
-#  size    7920585
 extract.suffix      .zip
 use_zip             yes
 
@@ -34,8 +29,8 @@ checksum.skip  yes
 
 depends_build       port:nasm
 
-configure.cc gcc-mp-11
-configure.cpp g++-mp-11
+configure.cc gcc-mp-12
+configure.cpp g++-mp-12
 
 configure.args      --enable-pic \
                     --enable-shared \
