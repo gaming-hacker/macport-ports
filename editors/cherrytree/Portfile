@@ -39,7 +39,7 @@ cmake.module_path-append \
 configure.ldflags-append \
                         -L${prefix}/lib/${port_libfmt}
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 patchfiles-append       patch-cherrytree-all-apple-is-not-homebrew-for-goodness-sake.diff
 # Fix crash on launch; see: https://trac.macports.org/ticket/65743

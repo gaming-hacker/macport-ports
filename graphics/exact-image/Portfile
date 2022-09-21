@@ -70,7 +70,7 @@ configure.cppflags-replace -I${prefix}/include -isystem${prefix}/include
 configure.cppflags-prepend -isystem${prefix}/libexec/jasper2/include
 configure.ldflags-prepend   -L${prefix}/libexec/jasper2/lib
 
-compiler.cxx_standard 1998
+compiler.cxx_standard 2020
 configure.cxxflags-append -std=gnu++98
 
 # Disable silent rules.

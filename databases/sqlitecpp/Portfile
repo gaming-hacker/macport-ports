@@ -19,6 +19,6 @@ checksums               rmd160  7c5f713a2a682e2ab7682bad552831634519ee65 \
 
 depends_lib-append      port:sqlite3
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 
 configure.args-append   -DSQLITECPP_INTERNAL_SQLITE=OFF
