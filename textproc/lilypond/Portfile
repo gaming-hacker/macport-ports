@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -41,15 +41,15 @@ notes-append "\
     Note that TeX is not needed after installation."
 
 
-compiler.cxx_standard 2020
+compiler.cxx_standard 2014
 
 if {${subport} eq ${name}} {
     version         2.22.2
     revision        1
     conflicts       lilypond-devel
     checksums       rmd160  571de8313f90be3a41b0f7f0bd82a48f67e4f245 \
-sha256  dde90854fa7de1012f4e1304a68617aea9ab322932ec0ce76984f60d26aa23be \
-size    18034586
+                    sha256  dde90854fa7de1012f4e1304a68617aea9ab322932ec0ce76984f60d26aa23be \
+                    size    18034586
 
     set livecheck_url "source.html"
 
@@ -58,14 +58,16 @@ size    18034586
         configure.ldflags-append -stdlib=${configure.cxx_stdlib}
     }
 } else {
-    version         2.23.12
+    version         2.23.13
     revision        0
     conflicts       lilypond
-    checksums       rmd160  93c7095e3a38a3381dc8f87b680d9a25f2aa772c \
-sha256  48b67dfc9c9b96d77cfb51c0364f294c61d16fb32e6522490c363f4b82b0cff9 \
-size    19338200
+    checksums       rmd160  1d2463690a2b41ad054987a3759cdd288af06213 \
+                    sha256  17a9d1ad0ec7d1b7501b742d6b65ef371c88007537a7b8cbc9d54573270ddf0a \
+                    size    19352865
 
     set livecheck_url "development.html"
+    #test.run        yes
+    #depends_test-append port:ImageMagick port:tidy
 }
 
 set branch          [join [lrange [split ${version} .] 0 1] .]
@@ -244,7 +246,6 @@ post-patch {
         s|/usr/bin/(env\\\ )?python3?|${configure.python}|g \
         scripts/auxiliar/check_texi_refs.py \
         scripts/auxiliar/check_translation.py \
-        scripts/auxiliar/fixcc.py \
         scripts/auxiliar/tely-gettext.py \
         scripts/auxiliar/texi-langutils.py \
         scripts/auxiliar/translations-status.py \

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/lmorg/murex 2.10.2400 v
+go.setup            github.com/lmorg/murex 2.11.2030 v
 github.tarball_from archive
 revision            0
 
@@ -30,9 +30,9 @@ license             GPL-2
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  77848f57ab614f576e7aa93d2edfd6ccf309de71 \
-sha256  4503e20d144cdadf60e01b97d420bc3ab7d35b3c079712fd3e37477bdeac67b3 \
-size    808135
+checksums           rmd160  36d0188f7af611f06d8eb3c1864796a82101c5de \
+                    sha256  5d7dadc2d48bde20fe2239d8087612eccaa310b0f88863bdae2288b30388dff7 \
+                    size    816705
 
 depends_run-append  port:aspell \
                     port:aspell-dict-en

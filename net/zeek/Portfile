@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           openssl 1.0
 
 name                zeek
-version             5.0.1
+version             5.0.2
 revision            0
 categories          net security
 maintainers         {mps @Schamschula} openmaintainer
@@ -22,9 +22,9 @@ homepage            https://www.zeek.org/
 master_sites        https://download.zeek.org/
 
 
-checksums           rmd160  d0f8f295fcbd477ac774d93826e4c860ca2f8d1b \
-sha256  3cd43ae446200e7e59a89a9bf8190d964f3198e517f5d4be9cc1daba67ba0b81 \
-size    42671364
+checksums           rmd160  02baac533431c4f09b6868e5ea7edc8e14839beb \
+                    sha256  7089fcc06d13803fc7ce19fdc49f96183efd797be3a4fdca083240b9b46e1d2f \
+                    size    42671023
 
 openssl.branch      1.1
 
@@ -47,7 +47,7 @@ depends_lib-append  port:bison \
 
 variant universal   {}
 
-compiler.cxx_standard 2020
+compiler.cxx_standard   2017
 
 platform darwin {
     # see https://trac.macports.org/ticket/60252
@@ -64,26 +64,26 @@ configure.args      -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
 
 variant python37 conflicts python38 python39 python310 description {Build using Python 3.7} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 \
-                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/config-3.7m-darwin/python-config.py
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
+                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/config-3.7m-darwin/python-config.py
     depends_lib-append  \
-                    port:python310
+                    port:python37
 }
 
 variant python38 conflicts python37 python39 python310 description {Build using Python 3.8} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 \
-                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/config-3.8-darwin/python-config.py
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.8 \
+                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.8/lib/python3.8/config-3.8-darwin/python-config.py
     depends_lib-append  \
-                    port:python310
+                    port:python38
 }
 
 variant python39 conflicts python37 python38 python310 description {Build using Python 3.9} {
     configure.args-append \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.10 \
-                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.10/lib/python3.10/config-3.9-darwin/python-config.py
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.9 \
+                    -DPYTHON_CONFIG=${frameworks_dir}/Python.framework/Versions/3.9/lib/python3.9/config-3.9-darwin/python-config.py
     depends_lib-append  \
-                    port:python310
+                    port:python39
 }
 
 variant python310 conflicts python37 python38 python39 description {Build using Python 3.10} {

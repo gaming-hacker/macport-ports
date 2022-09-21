@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,7 +28,7 @@ set branch          [join [lrange [split ${version} .] 0 1] .]
 set qt_major        [lindex [split ${version} .] 0]
 
 # Qt builds differently when it detects C++-11
-compiler.cxx_standard 2020
+compiler.cxx_standard 2011
 
 # see https://bugreports.qt.io/browse/QTBUG-53656
 # see https://github.com/ariya/phantomjs/issues/13930
@@ -73,19 +73,19 @@ array set modules {
         {"Qt Core"}
         ""
         "variant overrides: ~docs ~examples"
-        "revision 2"
+        "revision 3"
         "License: "
     }
     qtwebkit {
         {
         }
-        "port:python310"
+        "port:python27 port:bison"
         "port:fontconfig path:lib/pkgconfig/icu-uc.pc:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3"
         "qtbase"
         {"Qt WebKit" "Qt WebKit Widgets"}
         ""
         "variant overrides: ~docs ~examples"
-        "revision 2"
+        "revision 3"
         "License: "
     }
 }
@@ -125,7 +125,7 @@ build.env-append \
 
 # Qt uses CFRunLoopTimerCreateWithHandler, which was not introduced until Mac OS X 10.7
 # see https://developer.apple.com/reference/corefoundation/1542555-cfrunlooptimercreatewithhandler?language=objc
-if { ${os.major} < 11 } {
+if { ${os.platform} eq "darwin" && ${os.major} < 11 } {
     known_fail  yes
     pre-fetch {
         ui_error "${subport} requires OS X 10.7 or later"
@@ -273,7 +273,7 @@ foreach {module module_info} [array get modules] {
             patchfiles-append patch-qtbase-icu_test.diff
 
             # see https://trac.macports.org/ticket/59312
-            use_xcode  no
+            use_xcode yes
 
             #-----------------------------------------------------------------------------
             # qtbase is used for:
@@ -340,7 +340,7 @@ foreach {module module_info} [array get modules] {
 
             post-patch {
 
-                if {${configure.cxx_stdlib} eq "macports-libstdc++" && ${os.major} < 13} {
+                if {${configure.cxx_stdlib} eq "macports-libstdc++" && ${os.platform} eq "darwin" && ${os.major} < 13} {
                     set cxx_abi " -D_GLIBCXX_USE_CXX11_ABI=0"
                 } else {
                     set cxx_abi ""
@@ -657,7 +657,7 @@ foreach {module module_info} [array get modules] {
             # special case
             if { ${module} eq "qtwebkit" } {
 
-                use_xcode  no
+                use_xcode yes
 
                 # from phantomjs build.py
                 configure.args-append \
@@ -708,6 +708,10 @@ foreach {module module_info} [array get modules] {
                 # error: "Unsupported PAGE_SHIFT amount"
                 # see https://trac.macports.org/ticket/62027#comment:49
                 patchfiles-append patch-qtwebkit_fix_page_shift.diff
+
+                # work around https://trac.macports.org/ticket/60975
+                patchfiles-append patch-webkit_XPathGrammar.y.diff
+                patchfiles-append patch-webkit_makegrammar.pl.diff
             }
         }
     }
@@ -731,7 +735,7 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}
 
-        use_xcode  no
+        use_xcode yes
 
         # if there is more than one version of the database system, create variants for each version
         if { [llength ${sql_info}] > 1 } {
@@ -856,7 +860,7 @@ foreach deps ${depends_check} {
         #    (see tools/qmake/mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/3.10
+        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
     }
 }
 if { ${python_framework} ne "" } {

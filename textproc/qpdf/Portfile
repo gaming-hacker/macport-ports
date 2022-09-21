@@ -1,13 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
+PortGroup           cmake 1.1
 PortGroup           github 1.0
 
-github.setup        qpdf qpdf 10.6.3 release-qpdf-
+github.setup        qpdf qpdf 11.1.0 v
 revision            0
-checksums           rmd160  b65a8f4870035f655864128e47a7c068f03c2a41 \
-sha256  e8fc23b2a584ea68c963a897515d3eb3129186741dd19d13c86d31fa33493811 \
-size    18573584
+checksums           rmd160  90340e094ddf2dc1094f5635e2802fd74bf88ca1 \
+                    sha256  34a7cf3ac6e239510e9a20d7cbe10a4aff0f572c20e0a9bed0badb820a69e22d \
+                    size    18452386
 
 categories          textproc pdf
 license             Apache-2
@@ -20,34 +21,34 @@ long_description    QPDF is a command-line program that does structural, \
 homepage            http://qpdf.sourceforge.net/
 github.tarball_from releases
 
-depends_lib         path:include/turbojpeg.h:libjpeg-turbo \
+depends_build-append \
+                    port:perl5
+
+depends_lib-append  path:include/turbojpeg.h:libjpeg-turbo \
                     port:libxml2 \
                     port:libxslt \
                     port:zlib
 
-compiler.cxx_standard 2020
+compiler.cxx_standard   2014
 
-platform darwin 8 {
-    depends_build-append \
-                        port:gmake
-    build.cmd           gmake
-}
+cmake.build_type    Release
+configure.args      -DUSE_IMPLICIT_CRYPTO=NO \
+                    -DREQUIRE_CRYPTO_NATIVE=YES \
+                    -DREQUIRE_CRYPTO_GNUTLS=NO \
+                    -DREQUIRE_CRYPTO_OPENSSL=NO
 
 variant gnutls conflicts openssl description {Build against gnutls} {
-    depends_lib-append  path:lib/pkgconfig/gnutls.pc:gnutls
-    configure.args      --disable-crypto-openssl \
-                        --enable-crypto-gnutls
+    depends_lib-append      path:lib/pkgconfig/gnutls.pc:gnutls
+    configure.args-delete   -DREQUIRE_CRYPTO_GNUTLS=NO
+    configure.args-append   -DREQUIRE_CRYPTO_GNUTLS=YES
 }
 
 variant openssl conflicts gnutls description {Build against openssl} {
-    depends_lib-append  port:openssl
-    configure.args      --disable-crypto-gnutls \
-                        --enable-crypto-openssl
+    depends_lib-append      port:openssl
+    configure.args-delete   -DREQUIRE_CRYPTO_OPENSSL=NO
+    configure.args-append   -DREQUIRE_CRYPTO_OPENSSL=YES
 }
 
 if {![variant_isset openssl]} {
-    default_variants    +gnutls
+    default_variants        +gnutls
 }
-
-livecheck.type      regex
-livecheck.regex     release-${name}-(\[0-9.\]+)${extract.suffix}
