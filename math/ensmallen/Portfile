@@ -28,7 +28,7 @@ checksums           rmd160  e469e8a4b8fc8038f30bbfa4e49351e6ee3a1269 \
 
 depends_lib         port:armadillo
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 configure.args-append \
                     -DARMADILLO_INCLUDE_DIR=${prefix}/include \

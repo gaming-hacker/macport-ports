@@ -33,7 +33,7 @@ depends_lib-append  path:bin/vala:vala \
                     path:lib/pkgconfig/glib-2.0.pc:glib2
 
 # https://trac.macports.org/ticket/63267
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 # webkit and mozjs pacrunners disabled by default
 # due to the following issues:
@@ -65,7 +65,7 @@ configure.args-append \
 configure.cppflags-append -D_DARWIN_C_SOURCE=1
 
 # Set standard via cxx flags, as cmake.set_cxx_standard is not working properly
-configure.cxxflags-append -std=c++11
+configure.cxxflags-append -std=gnu++2a
 
 variant python27 conflicts python38 python36 python37 python39 description {Build Bindings for Python 2.7} {
     set python_prefix ${frameworks_dir}/Python.framework/Versions/2.7
