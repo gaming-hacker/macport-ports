@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ homepage            https://mechanicalsoup.readthedocs.io/
 maintainers         {@catap korins.ky:kirill} openmaintainer
 
 checksums           rmd160  6d12446c4bfc3cbcb13c82f6d67ff601c26ee1a9 \
-                    sha256  f8593ab4474a82ceb6b7ddb3e35a8c69f8455a06adafd2b5258c1d852158d760 \
-                    size    49669
+sha256  f8593ab4474a82ceb6b7ddb3e35a8c69f8455a06adafd2b5258c1d852158d760 \
+size    49669
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

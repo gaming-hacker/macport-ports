@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       java 1.0
@@ -37,8 +37,8 @@ master_sites    https://downloads.apache.org/maven/mvnd/${version}/
 distname        maven-mvnd-${version}-darwin-amd64
 
 checksums       rmd160  fdc05e3fd4aebc2d994977d110b66529d4821652 \
-                sha256  84b63929e11382e389d90753873a81d5c8e8e852c74ea05d5cac20801b3af07a \
-                size    21036504
+sha256  84b63929e11382e389d90753873a81d5c8e8e852c74ea05d5cac20801b3af07a \
+size    21036504
 
 use_zip         yes
 use_configure   no

@@ -96,14 +96,14 @@ subport ${name}-native-image {
         set jar_file native-image-installable-svm-java11-darwin-amd64-${version}.jar
         distfiles    ${jar_file}
         checksums    rmd160  b484f8c9b78afe5230a1c712a2c2e83728994906 \
-                     sha256  de9bf830d000a54934a01149691a9a8d4ef6e33414776abd14f95c65b149c908 \
-                     size    110346461
+sha256  de9bf830d000a54934a01149691a9a8d4ef6e33414776abd14f95c65b149c908 \
+size    110346461
     } elseif {${configure.build_arch} eq "arm64"} {
         set jar_file native-image-installable-svm-java11-darwin-aarch64-${version}.jar
         distfiles    ${jar_file}
         checksums    rmd160  30811497def96c32a75940616a98efd4f14870ca \
-                     sha256  aba76d671017f93cdaae5102607d0bc7a1398adc5de8a4b1e308fa366d5983f9 \
-                     size    27717768
+sha256  aba76d671017f93cdaae5102607d0bc7a1398adc5de8a4b1e308fa366d5983f9 \
+size    27717768
     }
 
     set java_home ${target}/Contents/Home

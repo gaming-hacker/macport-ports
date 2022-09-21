@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ revision            0
 platforms           darwin
 license             Apache-2
 
-python.versions     37 38 310
+python.versions 310
 
 maintainers         {@gstaniak gmail.com:gstaniak} openmaintainer
 
@@ -24,8 +24,8 @@ long_description    This is a Python module for reading MaxMind DB files. The mo
 homepage            https://www.maxmind.com/en/home
 
 checksums           rmd160  0aeb4674939cda91af15a685a093170ad518f913 \
-                    sha256  e37707ec4fab115804670e0fb7aedb4b57075a8b6f80052bdc648d3c005184e5 \
-                    size    330865
+sha256  e37707ec4fab115804670e0fb7aedb4b57075a8b6f80052bdc648d3c005184e5 \
+size    330865
 
 if {${name} ne ${subport}} {
     depends_build-append \

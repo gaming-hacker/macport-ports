@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    Libproxy exists to answer the question: Given \
                     the details, enabling you to get back to programming.
 
 checksums           rmd160  18680c62196d6b1765864ac8d8cfb0da19e96fb3 \
-                    sha256  712f5965b57dc329fd5700f906d9943dbdc379e547e31dc8b11c77332a652d52 \
-                    size    98063
+sha256  712f5965b57dc329fd5700f906d9943dbdc379e547e31dc8b11c77332a652d52 \
+size    98063
 
 patchfiles-append   patch-bindings-perl-src-CMakeLists.txt.diff \
                     patch-libproxy-cmake.diff \
@@ -68,58 +68,58 @@ configure.cppflags-append -D_DARWIN_C_SOURCE=1
 configure.cxxflags-append -std=gnu++2a
 
 variant python27 conflicts python38 python36 python37 python39 description {Build Bindings for Python 2.7} {
-    set python_prefix ${frameworks_dir}/Python.framework/Versions/2.7
-    depends_lib-append port:python27
+    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.10
+    depends_lib-append port:python310
     configure.args-delete \
                     -DWITH_PYTHON2=NO
     configure.args-append \
                     -DWITH_PYTHON2=YES \
-                    -DPYTHON2_EXECUTABLE=${prefix}/bin/python2.7 \
-                    -DPYTHON2_SITEPKG_DIR=${python_prefix}/lib/python2.7/site-packages
+                    -DPYTHON2_EXECUTABLE=${prefix}/bin/python3.10 \
+                    -DPYTHON2_SITEPKG_DIR=${python_prefix}/lib/python3.10/site-packages
 }
 
 variant python36 conflicts python27 python38 python37 python39 description {Build Bindings for Python 3.6} {
-    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.6
-    depends_lib-append port:python36
+    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.10
+    depends_lib-append port:python310
     configure.args-delete \
                     -DWITH_PYTHON3=NO
     configure.args-append \
                     -DWITH_PYTHON3=YES \
-                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.6 \
-                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.6/site-packages
+                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.10 \
+                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.10/site-packages
 }
 
 variant python37 conflicts python27 python38 python36 python39 description {Build Bindings for Python 3.7} {
-    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.7
-    depends_lib-append port:python37
+    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.10
+    depends_lib-append port:python310
     configure.args-delete \
                     -DWITH_PYTHON3=NO
     configure.args-append \
                     -DWITH_PYTHON3=YES \
-                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.7 \
-                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.7/site-packages
+                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.10 \
+                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.10/site-packages
 }
 
 variant python38 conflicts python27 python36 python37 python39 description {Build Bindings for Python 3.8} {
-    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.8
-    depends_lib-append port:python38
+    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.10
+    depends_lib-append port:python310
     configure.args-delete \
                     -DWITH_PYTHON3=NO
     configure.args-append \
                     -DWITH_PYTHON3=YES \
-                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.8 \
-                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.8/site-packages
+                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.10 \
+                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.10/site-packages
 }
 
 variant python39 conflicts python27 python36 python37 python38 description {Build Bindings for Python 3.9} {
-    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.9
-    depends_lib-append port:python39
+    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.10
+    depends_lib-append port:python310
     configure.args-delete \
                     -DWITH_PYTHON3=NO
     configure.args-append \
                     -DWITH_PYTHON3=YES \
-                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.9 \
-                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.9/site-packages
+                    -DPYTHON3_EXECUTABLE=${prefix}/bin/python3.10 \
+                    -DPYTHON3_SITEPKG_DIR=${python_prefix}/lib/python3.10/site-packages
 }
 
 # build Python 2.7 bindings by default for compatibility

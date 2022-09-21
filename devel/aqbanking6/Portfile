@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ github.setup        aqbanking aqbanking 6.5.3
 name                aqbanking6
 
 checksums           rmd160  3fcd1b5f522da4ed060c9d3234ff93f694f9667c \
-                    sha256  ab2b4faa989e938d761c86618bd3731a846b3e1063bb8febf22c07f4bf47470e \
-                    size    3286910
+sha256  ab2b4faa989e938d761c86618bd3731a846b3e1063bb8febf22c07f4bf47470e \
+size    3286910
 
 categories          devel net finance
 maintainers         {dports @drkp} openmaintainer

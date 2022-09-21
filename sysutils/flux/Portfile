@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               golang 1.0
@@ -7,8 +7,8 @@ go.setup                github.com/fluxcd/flux2 0.34.0 v
 name                    flux
 
 checksums               rmd160  e615b8b7f2aa67c0b717bd4c79f1166553e832cd \
-                        sha256  001e665dd2fe284f2550c86a9d6507b04565070454cb33e516bcb1507ffedc64 \
-                        size    402371
+sha256  001e665dd2fe284f2550c86a9d6507b04565070454cb33e516bcb1507ffedc64 \
+size    402371
 
 homepage                https://fluxcd.io/
 description             Flux CLI

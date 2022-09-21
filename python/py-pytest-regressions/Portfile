@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 homepage            https://github.com/ESSS/pytest-regressions
 
 checksums           rmd160  2dd341766026c22ece64512742fcfec09fab1504 \
-                    sha256  2407ead5c85f90c8e92944be8b3bf74898925ce586ad76ca30fff62262018e97 \
-                    size    110894
+sha256  2407ead5c85f90c8e92944be8b3bf74898925ce586ad76ca30fff62262018e97 \
+size    110894
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

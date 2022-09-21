@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ long_description    FSP stands for File Service Protocol. It is a very \
 homepage            http://fsp.sourceforge.net/
 master_sites        sourceforge
 checksums           rmd160  d4210f7f2965485ab5a5ed5dd751ac08ff42025e \
-                    sha256  42bda9b90b207a41826887eed09fe2e17aa7bdfa9e31075167149a83393f95f2 \
-                    size    155403
+sha256  42bda9b90b207a41826887eed09fe2e17aa7bdfa9e31075167149a83393f95f2 \
+size    155403
 use_bzip2           yes
 
 depends_build-append \

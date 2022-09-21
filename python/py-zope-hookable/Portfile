@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,11 +18,11 @@ long_description    This package supports the efficient creation of \
 
 homepage            https://github.com/zopefoundation/zope.hookable
 
-python.versions     37 38 39 310
+python.versions 310
 
 checksums           rmd160  65fa1f02adfb4cf9ec5a652f611f1583d8607fda \
-                    sha256  4c3018bcf2b39cf5cccf40826f799b4b8c140056db780f96cb0ca332a243bd29 \
-                    size    24004
+sha256  4c3018bcf2b39cf5cccf40826f799b4b8c140056db780f96cb0ca332a243bd29 \
+size    24004
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

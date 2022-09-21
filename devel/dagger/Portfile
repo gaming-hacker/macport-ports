@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,13 +29,13 @@ if {${build_arch} eq "x86_64"} {
 distfiles           dagger_v${version}_darwin_${arch}${extract.suffix}
 
 checksums           dagger_v${version}_darwin_amd64${extract.suffix} \
-                        rmd160  7d8a0ca9b58d74c5177347c533e1646206e7dc50 \
-                        sha256  6b099e38b7e551fa0db2d9b0fe7827bd2bdb609d479efe4dfb13ccf35b27da0f \
-                        size    12896713 \
+rmd160  7d8a0ca9b58d74c5177347c533e1646206e7dc50 \
+sha256  6b099e38b7e551fa0db2d9b0fe7827bd2bdb609d479efe4dfb13ccf35b27da0f \
+size    12896713 \
                     dagger_v${version}_darwin_arm64${extract.suffix} \
-                        rmd160  4ff6ebeb82ed3c19068b1450f0a89776e5278b40 \
-                        sha256  38996dd2aa3612f022afa5d6fc44c27b1195283ff095f7e8f30225c1db81d9ee \
-                        size    12462562
+rmd160  4ff6ebeb82ed3c19068b1450f0a89776e5278b40 \
+sha256  38996dd2aa3612f022afa5d6fc44c27b1195283ff095f7e8f30225c1db81d9ee \
+size    12462562
 
 extract.mkdir       yes
 use_configure       no

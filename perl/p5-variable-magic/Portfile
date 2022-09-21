@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Variable-Magic 0.63 ../../authors/id/V/VP/VPIT
 revision            0
 license             {Artistic-1 GPL}
@@ -14,5 +14,5 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  498fc29fbf76b5ef017b10470cd590d52b4000b8 \
-                    sha256  ba4083b2c31ff2694f2371333d554c826aaf24b4d98d03e48b5b4a43a2a0e679 \
-                    size    78851
+sha256  ba4083b2c31ff2694f2371333d554c826aaf24b4d98d03e48b5b4a43a2a0e679 \
+size    78851

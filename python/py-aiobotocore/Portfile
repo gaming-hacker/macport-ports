@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             Apache-2
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -22,8 +22,8 @@ long_description    ${description}
 homepage            https://github.com/aio-libs/aiobotocore
 
 checksums           rmd160  f57947f7d74d18184a505e07caa9c377bfcbbbb2 \
-                    sha256  f9fe0698cc497861bdb54cd16161c804031f758ada9480c35540f20c0c078385 \
-                    size    66212
+sha256  f9fe0698cc497861bdb54cd16161c804031f758ada9480c35540f20c0c078385 \
+size    66212
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-botocore \

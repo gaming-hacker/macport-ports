@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -24,8 +24,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
 supported_archs     arm64 x86_64
 
 checksums           rmd160  fbae560cc829109b6a009f9fbfbb384552513c77 \
-                    sha256  8978a27cff9bf1450c0cd56e28306e8272150f599a017ba31c2bad57fd9248d2 \
-                    size    87122141
+sha256  8978a27cff9bf1450c0cd56e28306e8272150f599a017ba31c2bad57fd9248d2 \
+size    87122141
 
 depends_build-append \
                     port:go-bindata

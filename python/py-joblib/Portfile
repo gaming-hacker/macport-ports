@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 license             BSD
 supported_archs     noarch
 
-python.versions     27 35 36 37 38 39 310
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -26,8 +26,8 @@ long_description    Joblib is a set of tools to provide lightweight \
 homepage            https://joblib.readthedocs.io/
 
 checksums           rmd160  32c1b68399a6477b1792f2475b5448b06eb44315 \
-                    sha256  e1cee4a79e4af22881164f218d4311f60074197fb707e082e803b61f6d137018 \
-                    size    313200
+sha256  e1cee4a79e4af22881164f218d4311f60074197fb707e082e803b61f6d137018 \
+size    313200
 
 if {${name} ne ${subport}} {
 
@@ -42,8 +42,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  2229a675e794985fb2396ca5a4c50497da71f605 \
-                            sha256  0630eea4f5664c463f23fbf5dcfc54a2bc6168902719fa8e19daf033022786c8 \
-                            size    299621
+sha256  0630eea4f5664c463f23fbf5dcfc54a2bc6168902719fa8e19daf033022786c8 \
+size    299621
     }
 
     livecheck.type      none

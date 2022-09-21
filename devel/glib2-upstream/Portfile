@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
@@ -18,8 +18,8 @@ version                     2.74.0
 revision                    0
 epoch                       1
 checksums                   rmd160  7f3943b84afb3e0ac56142246cb7d05ff626d3ab \
-                            sha256  3652c7f072d7b031a6b5edd623f77ebc5dcd2ae698598abcc89ff39ca75add30 \
-                            size    5183072
+sha256  3652c7f072d7b031a6b5edd623f77ebc5dcd2ae698598abcc89ff39ca75add30 \
+size    5183072
 
 set branch                  [join [lrange [split ${version} .] 0 1] .]
 categories                  devel

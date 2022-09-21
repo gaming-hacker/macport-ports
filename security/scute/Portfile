@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem           1.0
 
@@ -20,8 +20,8 @@ license              LGPL-2.1+
 master_sites         https://gnupg.org/ftp/gcrypt/scute
 
 checksums            rmd160  e14690f5ab4eaee4b934c7b5af6fc47c39c4146b \
-                     sha256  437fe758b27c243a5ee2535c6b065ea1d09f2c9a02d83567d2f934bb6395c249 \
-                     size    851177
+sha256  437fe758b27c243a5ee2535c6b065ea1d09f2c9a02d83567d2f934bb6395c249 \
+size    851177
 use_bzip2            yes
 post-extract {
   # We hardcode the path to gpgconf, so that if Scute is called from an

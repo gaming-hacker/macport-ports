@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -28,8 +28,8 @@ mpi.setup           require require_fortran \
 universal_variant   no
 
 checksums           rmd160  3e94a9fe478d60e027730e596ffe1c384de5da77 \
-                    sha256  c08717aea6ed5c68057f80957188a621b9862ad0e1460470e7ec82cdd84ae798 \
-                    size    329486
+sha256  c08717aea6ed5c68057f80957188a621b9862ad0e1460470e7ec82cdd84ae798 \
+size    329486
 
 pre-patch   {
     move ${worksrcpath}/src/tests/integration/pde_solvers/coarrayHeatSimplified/main.f90 \

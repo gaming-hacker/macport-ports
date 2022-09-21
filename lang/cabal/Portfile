@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -61,14 +61,14 @@ distfiles           ${distfile_haskell}:haskell
 # run `port clean --all cabal` afterwards
 if {${build_arch} eq {arm64}} {
     checksums       ${distfile_haskell} \
-                    rmd160  1be8b14e19a93fd904d563133122ed8eee872ccc \
-                    sha256  f75b129c19cf3aa88cf9885cbf5da6d16f9972c7f770c528ca765b9f0563ada3 \
-                    size    11519120
+rmd160  1be8b14e19a93fd904d563133122ed8eee872ccc \
+sha256  f75b129c19cf3aa88cf9885cbf5da6d16f9972c7f770c528ca765b9f0563ada3 \
+size    11519120
 } elseif {${build_arch} eq {x86_64}} {
     checksums       ${distfile_haskell} \
-                    rmd160  1f752977ba663e78d9a8398c9df02fa31002b025 \
-                    sha256  f5ff69127b0e596b0d7895a2b0b383543aa92ae46d9b1b28f2868d2a97ed0de9 \
-                    size    5494908
+rmd160  1f752977ba663e78d9a8398c9df02fa31002b025 \
+sha256  f5ff69127b0e596b0d7895a2b0b383543aa92ae46d9b1b28f2868d2a97ed0de9 \
+size    5494908
 }
 
 # cabal may use these MacPorts build tools:
@@ -92,9 +92,9 @@ if {${name} eq ${subport}} {
     master_sites    https://github.com/haskell/${name}/archive/refs/tags:github
     distfiles       ${distfile_github}:github
     checksums       ${distfile_github} \
-                    rmd160  dbd7aa2683cb7a9bd4e393c784aac8e1d1051aa4 \
-                    sha256  d4eff9c1fcc5212360afac8d97da83b3aff79365490a449e9c47d3988c14b6bc \
-                    size    2181318
+rmd160  dbd7aa2683cb7a9bd4e393c784aac8e1d1051aa4 \
+sha256  d4eff9c1fcc5212360afac8d97da83b3aff79365490a449e9c47d3988c14b6bc \
+size    2181318
 
     worksrcdir      ${name}-install-${version}
 

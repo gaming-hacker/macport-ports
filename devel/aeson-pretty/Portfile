@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,8 +27,8 @@ long_description    A JSON pretty-printing library compatible with \
 master_sites        https://hackage.haskell.org/package/${name}-${version}
 
 checksums           rmd160  462bfbd33096a5910a92d136be6ca249059628be \
-                    sha256  5dbc4f451dfa1e667b2c6ec5170714fed1905dc9cae6a1134b3376f355fa2a08 \
-                    size    5802
+sha256  5dbc4f451dfa1e667b2c6ec5170714fed1905dc9cae6a1134b3376f355fa2a08 \
+size    5802
 
 variant stack \
     description {Use stack to build.} {}

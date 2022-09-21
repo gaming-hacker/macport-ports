@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -16,8 +16,8 @@ long_description    {*}${description} Thanks to the Magick++ image libraries it 
                     more than 100 image formats.
 
 checksums           rmd160  744ad3564ca73668e7616a1fde657a58ea683d57 \
-                    sha256  15abd17f52e6a021e4302a90d40d1ce69370600023cf008fbe2d0e9ec7633703 \
-                    size    769355
+sha256  15abd17f52e6a021e4302a90d40d1ce69370600023cf008fbe2d0e9ec7633703 \
+size    769355
 
 depends_lib-append  port:ImageMagick
 

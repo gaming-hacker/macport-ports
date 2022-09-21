@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,13 +26,13 @@ use_configure       no
 set distbase        ${name}_${version}_darwin_
 
 checksums           ${distbase}arm64${extract.suffix} \
-                    rmd160  61900ef88430114d2beaa007c6a84703d34b1609 \
-                    sha256  5b42e7b039b7e98d4edc7ec7ec4146f9f790a965892e19b77b5bd2a17adc7932 \
-                    size    3523897 \
+rmd160  61900ef88430114d2beaa007c6a84703d34b1609 \
+sha256  5b42e7b039b7e98d4edc7ec7ec4146f9f790a965892e19b77b5bd2a17adc7932 \
+size    3523897 \
                     ${distbase}amd64${extract.suffix} \
-                    rmd160  50f5dee5aca11f1d4d1d5df6f25e555b0f3fe8e4 \
-                    sha256  3d1ec4480610c931f4bf64b461ba0c71e21cdae192a86e46b8b763f8442fa63c \
-                    size    3630903
+rmd160  50f5dee5aca11f1d4d1d5df6f25e555b0f3fe8e4 \
+sha256  3d1ec4480610c931f4bf64b461ba0c71e21cdae192a86e46b8b763f8442fa63c \
+size    3630903
 
 if {${configure.build_arch} eq "arm64"} {
     set distarch "arm64"

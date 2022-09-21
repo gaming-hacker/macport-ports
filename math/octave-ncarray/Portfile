@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -13,8 +13,8 @@ description         Access a single or a collection of NetCDF files as a \
 long_description    ${description}
 
 checksums           rmd160  091b2ce2250fd060877484b91bd591fcf9d5121e \
-                    sha256  1e14162d403feb0a988ba4cfdcf0be376ce08b85288c3c5b1bda6043315a43c7 \
-                    size    33877
+sha256  1e14162d403feb0a988ba4cfdcf0be376ce08b85288c3c5b1bda6043315a43c7 \
+size    33877
 
 depends_lib-append  port:octave-netcdf \
                     port:octave-statistics

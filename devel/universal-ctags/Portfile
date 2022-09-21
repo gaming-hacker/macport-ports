@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ long_description \
 homepage            https://ctags.io
 
 checksums           rmd160  322388c3fe4379bb65c25c4f3978f8363f425455 \
-                    sha256  fde860e93b01ea89e6da20bc1c52c23dffb4916578c0063405fba155d228c141 \
-                    size    2953936
+sha256  fde860e93b01ea89e6da20bc1c52c23dffb4916578c0063405fba155d228c141 \
+size    2953936
 
 pre-patch {
     if {![file exists ${prefix}/bin/rst2man.py]} {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    {*}${description}
 homepage            https://github.com/stefankoegl/python-json-pointer
 
 checksums           sha256  97cba51526c829282218feb99dab1b1e6bdf8efd1c43dc9d57be093c0d69c99a \
-                    rmd160  76a846b62bab4adf17d1c1a845bc0baa9989fe3f \
-                    size    9295
+rmd160  76a846b62bab4adf17d1c1a845bc0baa9989fe3f \
+size    9295
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

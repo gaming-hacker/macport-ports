@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    This is a tool to help you demangle C++ symbols. \
                     at the symbol table from nm, objdump, etc.
 
 checksums           rmd160  447c8800fe32be15bdf96cb1f1f9469f5cce459a \
-                    sha256  97910ba2796d0fbbfae94fa2526c497e27e986474ad40b4f3e1d87642258d864 \
-                    size    14843
+sha256  97910ba2796d0fbbfae94fa2526c497e27e986474ad40b4f3e1d87642258d864 \
+size    14843
 
 use_autoreconf      yes
 

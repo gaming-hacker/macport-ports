@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,13 +16,13 @@ description         Psycopg 3 is a modern implementation of a PostgreSQL adapter
 
 long_description    ${description}
 
-python.versions     37 38 39 310
+python.versions 310
 
 homepage            https://www.psycopg.org
 
 checksums           rmd160  16dfcd001cdf0f3f7f79ef1a7b8c5eaa9bc2a1e2 \
-                    sha256  57b356b1dc86a45f0a6388ca6fde77360639eb24c9aae033ee8fbbed713dce79 \
-                    size    135885
+sha256  57b356b1dc86a45f0a6388ca6fde77360639eb24c9aae033ee8fbbed713dce79 \
+size    135885
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-colorama port:py${python.version}-importlib-metadata

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -16,8 +16,8 @@ long_description    \
     aims to make signatures invisible infrastructure.
 
 checksums           rmd160  f4d9828220b414f5d897a4f1d87070553342390a \
-                    sha256  73983adc567c41240db639dcc94a31ba35efc4fe6d5ec9878e7404cb0fa418fd \
-                    size    6634910
+sha256  73983adc567c41240db639dcc94a31ba35efc4fe6d5ec9878e7404cb0fa418fd \
+size    6634910
 
 # FIXME: This port currently can't be built without allowing go mod to fetch
 build.env-delete    GOPROXY=off GO111MODULE=off

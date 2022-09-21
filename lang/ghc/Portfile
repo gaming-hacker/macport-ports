@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gpg_verify 1.0
@@ -63,26 +63,26 @@ set ghc_distname    ${distname}-${ghc_build_arch}-apple-darwin
 # run `port clean --all ghc` afterwards
 if {${build_arch} eq {arm64}} {
     checksums       ${ghc_distname}${extract.suffix} \
-                    rmd160  d83d46d313b812618fc48c61b70cec856d262deb \
-                    sha256  3f38808ac6b47631487b37535b6792d6594f5e2fbb5204bb9573ed528748e736 \
-                    size    198194876
+rmd160  d83d46d313b812618fc48c61b70cec856d262deb \
+sha256  3f38808ac6b47631487b37535b6792d6594f5e2fbb5204bb9573ed528748e736 \
+size    198194876
 } elseif {${build_arch} eq {x86_64}} {
     checksums       ${ghc_distname}${extract.suffix} \
-                    rmd160  d43b11202e5088c5383bcc5bbb4cfe6639292c90 \
-                    sha256  42bfb0412c19e3ae1727fea53208a3d15720f19c11526bb499bbd95af17e4eae \
-                    size    188413412
+rmd160  d43b11202e5088c5383bcc5bbb4cfe6639292c90 \
+sha256  42bfb0412c19e3ae1727fea53208a3d15720f19c11526bb499bbd95af17e4eae \
+size    188413412
 }
 set ghc_source_checksums [list \
                     ${distname}-src${extract.suffix} \
-                    rmd160  2479a11a4723faa1cdfb5082c12cb86437153ce8 \
-                    sha256  7227ef3b5e15a0d70b8f1a43aec32867e2a9b2d857cc0ed556aeed172d4db3a5 \
-                    size    28545388 \
+rmd160  2479a11a4723faa1cdfb5082c12cb86437153ce8 \
+sha256  7227ef3b5e15a0d70b8f1a43aec32867e2a9b2d857cc0ed556aeed172d4db3a5 \
+size    28545388 \
                     ]
 set ghc_testsuite_checksums [list \
                     ${distname}-testsuite${extract.suffix} \
-                    rmd160  fac63ddd5534ef7db6dd899e0c1673799763cf7b \
-                    sha256  e3e9dedd647cc6936acb507730c1e148e13300ed347ea9752c3bbc7e919b671e \
-                    size    3380276 \
+rmd160  fac63ddd5534ef7db6dd899e0c1673799763cf7b \
+sha256  e3e9dedd647cc6936acb507730c1e148e13300ed347ea9752c3bbc7e919b671e \
+size    3380276 \
                     ]
 
 # https://bgamari.github.io/media/ben@well-typed.com.asc
@@ -135,7 +135,7 @@ if {${name} eq ${subport}} {
                     ${distname}-testsuite${extract.suffix}.sig
         checksums-append \
                     ${distname}-testsuite${extract.suffix}.sig \
-                    size    586
+size    586
 
         post-checksum {
             gpg_verify.verify_gpg_signature \
@@ -315,7 +315,7 @@ subport ghc-prebuilt {
                     ${ghc_distname}${extract.suffix}.sig
         checksums-append \
                     ${ghc_distname}${extract.suffix}.sig \
-                    size    586
+size    586
 
         post-checksum {
             gpg_verify.verify_gpg_signature \

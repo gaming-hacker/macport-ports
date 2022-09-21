@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -14,8 +14,8 @@ description             SQLiteC++ (SQLiteCpp) is a smart and easy to use C++ SQL
 long_description        {*}${description}
 
 checksums               rmd160  7c5f713a2a682e2ab7682bad552831634519ee65 \
-                        sha256  b57d84cd26d8ecb92366cc92ac30f4caddbb02e624fb7f96919cd6d9148ff2ea \
-                        size    2535835
+sha256  b57d84cd26d8ecb92366cc92ac30f4caddbb02e624fb7f96919cd6d9148ff2ea \
+size    2535835
 
 depends_lib-append      port:sqlite3
 

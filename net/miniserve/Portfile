@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    \
     ${description} Sometimes this is just a more practical and quick way than doing things properly.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  0e2432bca1317998fa8a119eedad353500c03b35 \
-                    sha256  8816d8379321fd3160f57d771b4b743f04bab57dd1ec8d04def0b15a96bde87c \
-                    size    148824
+rmd160  0e2432bca1317998fa8a119eedad353500c03b35 \
+sha256  8816d8379321fd3160f57d771b4b743f04bab57dd1ec8d04def0b15a96bde87c \
+size    148824
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} \
@@ -284,9 +284,9 @@ cargo.crates \
     serde_derive                   1.0.144  94ed3a816fb1d101812f83e789f888322c34e291f894f19590dc310963e87a00 \
     serde_json                      1.0.83  38dd04e3c8279e75b31ef29dbdceebfe5ad89f4d0937213c53f7d49d01b3d5a7 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
-    sha1                            0.10.1  c77f4e7f65455545c2153c1253d25056825e77ee2533f0e41deb65a93a34852f \
-    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
+sha1                            0.10.1  c77f4e7f65455545c2153c1253d25056825e77ee2533f0e41deb65a93a34852f \
+sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
     shell-words                      1.1.0  24188a676b6ae68c3b2cb3a01be17fbf7240ce009799bb56d5b1409051e78fde \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     simplelog                       0.12.0  48dfff04aade74dd495b007c831cd6f4e0cee19c344dd9dc0884c0289b70a786 \

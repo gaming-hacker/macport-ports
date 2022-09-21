@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    OPT++ is a C++ library for non-linear optimization.
 
 homepage            https://github.com/openturns/optpp
 checksums           rmd160  78e8e3367519c4b7a77e8cf2bac27590203f8518 \
-                    sha256  e8644bd93a4de9183d9d68e0cec00f8ced10a9b273d8927e19f49b04b12992d2 \
-                    size    1248217
+sha256  e8644bd93a4de9183d9d68e0cec00f8ced10a9b273d8927e19f49b04b12992d2 \
+size    1248217
 
 compilers.choose    cc cxx
 mpi.setup

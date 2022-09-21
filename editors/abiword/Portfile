@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ master_sites        http://www.abisource.org/downloads/abiword/${version}/source
 use_bzip2           yes
 
 checksums           rmd160  f0de27f97135f8fff9b4400b05d74a27eee348cd \
-                    sha256  b8e5f61697c6d796e8f9f0812886666487fd0125bc777ca093c096b4b3e31264 \
-                    size    24930028
+sha256  b8e5f61697c6d796e8f9f0812886666487fd0125bc777ca093c096b4b3e31264 \
+size    24930028
 
 if {![variant_isset use_source]} {
     default_variants +use_binary
@@ -39,8 +39,8 @@ variant use_binary conflicts use_source description {Use binary distribution} {
                     http://os.cqu.edu.au/macosx/office/abiword
 
     checksums       rmd160  d39ea145eea4e08a908013d3d00da9c224e018d3 \
-                    sha256  4d12c7b4b18008e8c6d913ae915a8b042dcd24aee13fdec6b55bf20c03a6f9ed \
-                    size    9405828
+sha256  4d12c7b4b18008e8c6d913ae915a8b042dcd24aee13fdec6b55bf20c03a6f9ed \
+size    9405828
 
     extract.post_args > ${workpath}/${distname}.dmg
     post-extract {
