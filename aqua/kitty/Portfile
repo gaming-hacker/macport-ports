@@ -57,7 +57,7 @@ build.target        kitty.app
 build.args-append   --ignore-compiler-warnings \
                     --update-check-interval=0 --verbose
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 pre-build {
     system -W ${worksrcpath} "${python.bin} logo/make.py"
