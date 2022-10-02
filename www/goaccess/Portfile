@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -17,8 +17,8 @@ homepage            https://goaccess.io/
 master_sites        https://tar.goaccess.io/
 
 checksums           rmd160  3d62fda706186727ee4b546a5bb245f5871ec708 \
-                    sha256  01bcd0bb17332132d0c1c2b452c935a789729bd2518c5a476b79c10293ee2341 \
-                    size    673877
+sha256  01bcd0bb17332132d0c1c2b452c935a789729bd2518c5a476b79c10293ee2341 \
+size    673877
 
 # strndup
 legacysupport.newest_darwin_requires_legacy 10

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -21,9 +21,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  e38e279afc3456d00767f547bf36b9992f958425 \
-                    sha256  943d6f66045658cca7341dd89fe1c2f5bdac62f4a3c7be40251b810bc811794f \
-                    size    143546
+rmd160  e38e279afc3456d00767f547bf36b9992f958425 \
+sha256  943d6f66045658cca7341dd89fe1c2f5bdac62f4a3c7be40251b810bc811794f \
+size    143546
 
 build.env-append    OPENSSL_DIR=[openssl::install_area]
 build.args          --features=ssl
@@ -179,7 +179,7 @@ cargo.crates \
     security-framework-sys           2.6.1  0160a13a177a45bfb43ce71c01580998474f556ad854dcbca936dd2841a5c556 \
     semver                           0.9.0  1d7eb9ef2c18661902cc47e535f9bc51b78acd254da71d375c2f6720d9a40403 \
     semver-parser                    0.7.0  388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3 \
-    sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
+sha-1                            0.8.2  f7d94d0bede923b3cea61f3f1ff57ff8cdfd77b400fb8f9998949e0cf04163df \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     slab                             0.4.7  4614a76b2a8be0058caa9dbbaf66d988527d86d003c11a94fbd335d7661edcef \
     slab_typesafe                    0.1.3  56e1a2062526abda41283046a3149dc589cb760c8c6672dd88e209f7fba0c0c1 \

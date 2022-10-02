@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description    osc is a subversion-like client written in Python. \
 homepage            https://en.opensuse.org/openSUSE:OSC
 
 checksums           rmd160  0074bef7fe51e5b2cfded22f6fb2c566dcf72816 \
-                    sha256  b7f6e1742da4ac4b663579a0f0b1a488ed23cf9f2384e7ed8bfb77eb796472f5 \
-                    size    371822
+sha256  b7f6e1742da4ac4b663579a0f0b1a488ed23cf9f2384e7ed8bfb77eb796472f5 \
+size    371822
 
 patchfiles          patch-config.diff \
                     patch-build-disable.diff

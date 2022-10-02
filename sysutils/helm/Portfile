@@ -40,13 +40,13 @@ subport helm-3.10 {
     set armAvailable    yes
 
     checksums           [helmDistName arm64] \
-                        rmd160  1238e75584dbeab9289ca9d9d1ec0c7683ea2ca0 \
-                        sha256  f7f6558ebc8211824032a7fdcf0d55ad064cb33ec1eeec3d18057b9fe2e04dbe \
-                        size    14446277 \
+rmd160  1238e75584dbeab9289ca9d9d1ec0c7683ea2ca0 \
+sha256  f7f6558ebc8211824032a7fdcf0d55ad064cb33ec1eeec3d18057b9fe2e04dbe \
+size    14446277 \
                         [helmDistName amd64] \
-                        rmd160  975defd4d33d7f5d5090a13e3f6822e8f1b51b96 \
-                        sha256  1e7fd528482ac2ef2d79fe300724b3e07ff6f846a2a9b0b0fe6f5fa05691786b \
-                        size    15237557
+rmd160  975defd4d33d7f5d5090a13e3f6822e8f1b51b96 \
+sha256  1e7fd528482ac2ef2d79fe300724b3e07ff6f846a2a9b0b0fe6f5fa05691786b \
+size    15237557
 }
 
 subport helm-3.9 {

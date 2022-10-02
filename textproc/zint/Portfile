@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ long_description    ${name} is a barcode encoding library supporting over \
 
 github.setup        woo-j zint 2.11.1
 checksums           rmd160  cec4393c2c6c4f5c6c4e8a1e0ba7732935a968c4 \
-                    sha256  42cdca488773a9e260ecfcfc7fc5b806053edf3407f4d6855604cf2a4a1382a7 \
-                    size    5754960
+sha256  42cdca488773a9e260ecfcfc7fc5b806053edf3407f4d6855604cf2a4a1382a7 \
+size    5754960
 revision            1
 
 patchfiles-append   disable_bundle.patch

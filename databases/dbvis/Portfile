@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   java 1.0
@@ -23,8 +23,8 @@ distname                    dbvis_macos_[strsed $version g/\\./_/]
 extract.suffix              .tgz
 
 checksums                   rmd160  4fd93ab028434963890f0c1df6ac087e50075894 \
-                            sha256  42a5f83894c83d4a60cb7d1a2b66378422eae1411936ae6bfcc7e11b01dd7191 \
-                            size    145410643
+sha256  42a5f83894c83d4a60cb7d1a2b66378422eae1411936ae6bfcc7e11b01dd7191 \
+size    145410643
 
 java.version                1.8+
 java.fallback               openjdk11

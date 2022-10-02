@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  8039b9d14b4fda67b5deb635c4e57a123eeb6100 \
-                    sha256  96f749928e3d6c952221aaca852d4c38545eaae03adc6bb925745bc3f2f827ca \
-                    size    325743
+sha256  96f749928e3d6c952221aaca852d4c38545eaae03adc6bb925745bc3f2f827ca \
+size    325743
 
 set svc_name        prometheus-node-exporter
 set prom_user       prometheus

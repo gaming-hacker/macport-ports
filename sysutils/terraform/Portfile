@@ -40,13 +40,13 @@ subport terraform-1.3 {
     set armAvailable    yes
 
     checksums           [terraformDistBase]_amd64.zip \
-                        rmd160  b51e76852f229626e6fb5b15c020ad934ea343ce \
-                        sha256  5f5967e12e75a3ca1720be3eeba8232b4ba8b42d2d9e9f9664eff7a68267e873 \
-                        size    20842029 \
+rmd160  b51e76852f229626e6fb5b15c020ad934ea343ce \
+sha256  5f5967e12e75a3ca1720be3eeba8232b4ba8b42d2d9e9f9664eff7a68267e873 \
+size    20842029 \
                         [terraformDistBase]_arm64.zip \
-                        rmd160  a71910520380a590645c6d6ceb8c19b7e24cb74c \
-                        sha256  a525488cc3a26d25c5769fb7ffcabbfcd64f79cec5ebbfc94c18b5ec74a03b35 \
-                        size    19269260
+rmd160  a71910520380a590645c6d6ceb8c19b7e24cb74c \
+sha256  a525488cc3a26d25c5769fb7ffcabbfcd64f79cec5ebbfc94c18b5ec74a03b35 \
+size    19269260
 }
 
 subport terraform-1.2 {

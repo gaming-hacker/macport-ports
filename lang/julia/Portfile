@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,9 +28,9 @@ github.tarball_from releases
 distfiles           ${name}-${version}-full${extract.suffix}
 
 checksums           ${name}-${version}-full${extract.suffix} \
-                    rmd160  957b3eabf4e9a5e0fabc86c928feb9ff15741d17 \
-                    sha256  e57cfc2e6d891750a47f7cf03559a4e8f7212bf54900f26a9f12fd6d009d4ca9 \
-                    size    275255487
+rmd160  957b3eabf4e9a5e0fabc86c928feb9ff15741d17 \
+sha256  e57cfc2e6d891750a47f7cf03559a4e8f7212bf54900f26a9f12fd6d009d4ca9 \
+size    275255487
 
 extract.only        ${distfiles}
 
@@ -42,7 +42,7 @@ if {[option gpg_verify.use_gpg_verification]} {
                     ${name}-${version}-full${extract.suffix}.asc
     checksums-append \
                     ${name}-${version}-full${extract.suffix}.asc \
-                    size    866
+size    866
 
     post-checksum {
         gpg_verify.verify_gpg_signature \

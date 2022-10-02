@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -24,8 +24,8 @@ if {${os.major} < 9} {
     revision        0
 
     checksums       rmd160  9fc0c4ac4c7b05158b38d98a09b5e3bf91bd2d42 \
-                    sha256  858efda8eeaeafe8c83278bef1c0187aa09bea9f5e6a7787491b62796a2a879f \
-                    size    765560
+sha256  858efda8eeaeafe8c83278bef1c0187aa09bea9f5e6a7787491b62796a2a879f \
+size    765560
 
     # this version needs an alternate destroot plan
     destroot    {
@@ -44,8 +44,8 @@ if {${os.major} < 9} {
     revision        1
 
     checksums       rmd160  102e177caefd15ee00941c2ed88bc752ba40668c \
-                    sha256  e56b1f1dac6acdea8746f73c015fae89af1ca32e9aa90bf75629218f49afbd46 \
-                    size    781678
+sha256  e56b1f1dac6acdea8746f73c015fae89af1ca32e9aa90bf75629218f49afbd46 \
+size    781678
 
     post-patch {
         reinplace "s|http://tuppis.com/lingon|${homepage}|g" ${worksrcpath}/Classes/LINMainController.m

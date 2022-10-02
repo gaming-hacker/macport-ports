@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    {*}${description}.
 homepage            https://${name}.rtfd.io
 
 checksums           rmd160  f587becc91a9831ecd5f5acc8b5a9a54aed53f68 \
-                    sha256  143a647548069a0dc1e54e3a2d12646b623c29390825338a293d3666021d75b0 \
-                    size    22061
+sha256  143a647548069a0dc1e54e3a2d12646b623c29390825338a293d3666021d75b0 \
+size    22061
 
 depends_build-append \
                     port:py${python.version}-setuptools

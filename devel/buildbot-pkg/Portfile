@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,8 +7,8 @@ name                buildbot-pkg
 version             3.6.1
 revision            0
 checksums           rmd160  6b08e75db94ab67c545f81dd64688acf5f97e69b \
-                    sha256  62600ef28db9b959352a5cb3160efdd36e4aca2a295f15995697ebbc8d07f1ce \
-                    size    4807
+sha256  62600ef28db9b959352a5cb3160efdd36e4aca2a295f15995697ebbc8d07f1ce \
+size    4807
 
 categories          devel
 maintainers         {ryandesign @ryandesign} {rajdeep @rajdeepbh} {mojca @mojca} openmaintainer

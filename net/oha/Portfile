@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,9 +16,9 @@ long_description    oha is a tiny program that sends some load to a web \
                     application and show realtime tui inspired by rakyll/hey.
 
 checksums           ${name}-${version}${extract.suffix} \
-                    rmd160  c0d3e1229f17df23e8dc1419ef64eaa3d3cb9237 \
-                    sha256  f5680a3cbbbbda8239f2f3c7399b482ee2cb27d3bfcc15db40e758b4ba40262c \
-                    size    553896
+rmd160  c0d3e1229f17df23e8dc1419ef64eaa3d3cb9237 \
+sha256  f5680a3cbbbbda8239f2f3c7399b482ee2cb27d3bfcc15db40e758b4ba40262c \
+size    553896
 
 depends_lib-append  path:lib/libssl.dylib:openssl
 
@@ -177,8 +177,8 @@ cargo.crates \
     serde_derive                   1.0.144  94ed3a816fb1d101812f83e789f888322c34e291f894f19590dc310963e87a00 \
     serde_json                      1.0.85  e55a28e3aaef9d5ce0506d0a14dbba8054ddc7e499ef522dd8b26859ec9d4a44 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
-    sha1                            0.10.5  f04293dc80c3993519f2d7f6f511707ee7094fe0c6d3406feb330cdb3540eba3 \
+sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
+sha1                            0.10.5  f04293dc80c3993519f2d7f6f511707ee7094fe0c6d3406feb330cdb3540eba3 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

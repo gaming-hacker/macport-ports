@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -67,8 +67,8 @@ if {${subport} eq ${name} || ${subport} eq "${name}-lx"} {
 
     # please also update the icu-docs checksums at the bottom of the Portfile
     checksums           rmd160  74227ab11588ea9f4fedb7c86087aaab6c3e5de5 \
-                        sha256  e94cfb91fc0d1934449eadb28c68967b5b29d0c0916490ccd50098972a420a2d \
-                        size    26299864
+sha256  e94cfb91fc0d1934449eadb28c68967b5b29d0c0916490ccd50098972a420a2d \
+size    26299864
 
     # use full pathnames to libraries in tools
     patchfiles-append   patch-config-mh-darwin.diff
@@ -170,8 +170,8 @@ if {${subport} eq "${name}-docs"} {
     use_zip                 yes
     distname                icu4c-[string map {. _} [string map {.rc rc} ${version}]]-docs
     checksums               rmd160  c847139ddff4684bcecce1193b5f688d53a3ea56 \
-                            sha256  8162e377764ca5a9e0fc536eecfd910541c990d685eeb1f59446ea093e9bdb99 \
-                            size    8395712
+sha256  8162e377764ca5a9e0fc536eecfd910541c990d685eeb1f59446ea093e9bdb99 \
+size    8395712
 
     extract.dir             ${worksrcpath}/doc/html
     use_configure           no

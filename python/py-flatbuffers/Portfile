@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ extract.suffix      .whl
 extract.only
 
 checksums           rmd160  55c41e853478dce856fa0fee6d07b6fe0af60436 \
-                    sha256  fc30f024e2eee55922d610f4d68626002fcd3c8f87d8058ec5ae9edd86993bcb \
-                    size    26639
+sha256  fc30f024e2eee55922d610f4d68626002fcd3c8f87d8058ec5ae9edd86993bcb \
+size    26639
 
 if {${name} ne ${subport}} {
     # WARN: 22.9.24 version don't have source distribution

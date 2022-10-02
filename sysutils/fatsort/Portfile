@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ depends_lib         port:libiconv
 master_sites        sourceforge:${name}
 use_xz              yes
 checksums           rmd160  e229cfdc4079fdcc007980c2edad7699f7ca569f \
-                    sha256  9a6f89a0640bb782d82ff23a780c9f0aec3dfbe4682c0a8eda157e0810642ead \
-                    size    123964
+sha256  9a6f89a0640bb782d82ff23a780c9f0aec3dfbe4682c0a8eda157e0810642ead \
+size    123964
 
 use_configure       no
 variant universal   {}

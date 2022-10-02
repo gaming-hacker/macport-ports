@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ description         library to communicate with a FIDO device over USB
 long_description    provides library functionality and command-line tools to communicate with a FIDO device over USB, and to verify attestation and assertion signatures.
 
 checksums           rmd160  bc429cafebbe4bd9b6a66a60f892ffec2f14cb0d \
-                    sha256  9ccbdb245d92830d0024d58e2f3dc50599e57a90e860fbff5a90f023896271c2 \
-                    size    624195
+sha256  9ccbdb245d92830d0024d58e2f3dc50599e57a90e860fbff5a90f023896271c2 \
+size    624195
 
 depends_build-append \
                     port:mandoc \

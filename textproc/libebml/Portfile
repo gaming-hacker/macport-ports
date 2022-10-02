@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ name                libebml
 version             1.4.3
 revision            0
 checksums           rmd160  ce5bc3d34fbd304fc242683bb899b01f0273b1ff \
-                    sha256  746abbc216b634ec17e70213b9a2ae2aeef0ac1ffc393f2f96f7e4cd5435a921 \
-                    size    63988
+sha256  746abbc216b634ec17e70213b9a2ae2aeef0ac1ffc393f2f96f7e4cd5435a921 \
+size    63988
 
 categories          textproc
 maintainers         {ryandesign @ryandesign} openmaintainer

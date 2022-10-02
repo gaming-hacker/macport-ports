@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -16,8 +16,8 @@ homepage        https://liblo.sourceforge.net/
 master_sites    sourceforge:project/liblo/liblo/${version}
 
 checksums       rmd160  44efae4da54fdb833c53bda5b07d10ef4a4be0dd \
-                sha256  2b4f446e1220dcd624ecd8405248b08b7601e9a0d87a0b94730c2907dbccc750 \
-                size    643928
+sha256  2b4f446e1220dcd624ecd8405248b08b7601e9a0d87a0b94730c2907dbccc750 \
+size    643928
 
 patchfiles      dynamic_lookup-11.patch
 

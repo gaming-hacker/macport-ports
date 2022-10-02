@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -25,13 +25,13 @@ master_sites https://corretto.aws/downloads/resources/${version}/
 if {${configure.build_arch} eq "x86_64"} {
     distname     amazon-corretto-${version}-macosx-x64
     checksums    rmd160  0b2ae6a8685d1149d165085f85ee8f08d2bd51d8 \
-                 sha256  68e685a135f05a09c60b4801e0132545fb2201c62df56df918eb0c1af33a031b \
-                 size    195918127
+sha256  68e685a135f05a09c60b4801e0132545fb2201c62df56df918eb0c1af33a031b \
+size    195918127
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     amazon-corretto-${version}-macosx-aarch64
     checksums    rmd160  6863b5fa0e340799e9ae6b2c2c929d81ffa379d5 \
-                 sha256  52b0bd18253d107199658cdc4cf506d0695d34adc4638213b22bb52e960e6ef8 \
-                 size    193992552
+sha256  52b0bd18253d107199658cdc4cf506d0695d34adc4638213b22bb52e960e6ef8 \
+size    193992552
 }
 
 worksrcdir   amazon-corretto-19.jdk

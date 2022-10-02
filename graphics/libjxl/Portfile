@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,11 +22,11 @@ master_sites-append sourceforge:project/macports/distfiles/${name}:skcms
 # https://skia.googlesource.com/skcms/+archive/${skcms_commit}.tar.gz?dummy=
 distfiles-append    skcms-${skcms_commit}${extract.suffix}:skcms
 checksums           ${name}-${version}${extract.suffix} \
-                        rmd160 3de480cc57aa953e3ec2576a6eadbc9df4eafca1 \
-                        sha256 3114bba1fabb36f6f4adc2632717209aa6f84077bc4e93b420e0d63fa0455c5e \
+rmd160 3de480cc57aa953e3ec2576a6eadbc9df4eafca1 \
+sha256 3114bba1fabb36f6f4adc2632717209aa6f84077bc4e93b420e0d63fa0455c5e \
                     skcms-${skcms_commit}${extract.suffix} \
-                        rmd160 c63bd713ad6f1b7d99b4044c4d3d71510c8318ae \
-                        sha256 aabd4bae8b741c9bdc8b31bec95df3a3344b77c7d17bf9d25befb401f4971d18
+rmd160 c63bd713ad6f1b7d99b4044c4d3d71510c8318ae \
+sha256 aabd4bae8b741c9bdc8b31bec95df3a3344b77c7d17bf9d25befb401f4971d18
 
 depends_build-append \
                     port:asciidoc \
