@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cargo   1.0
 PortGroup           github  1.0
 
-github.setup        nushell nushell 0.68.1
+github.setup        nushell nushell 0.69.1
 github.tarball_from archive
 revision            0
 
@@ -25,14 +25,15 @@ maintainers         {@b4nst gmail.com:bastyen.a} \
                     {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-build.args          --features=extra
 
 checksums           ${distname}${extract.suffix} \
-rmd160  531c356c135a5d4ab8b7285d10b9854051ed0b2c \
-sha256  d3719f5b3eca5dee6215e39fe1da1b559d49837f0baf18c7edc14f1719c986bb \
-size    2379809
+                    rmd160  29c60b932d79babd1add8f9cace6181129c42108 \
+                    sha256  963d8e26fd919a2246f9ef01f9e8d5110f0f947525c39842c440edcb17938631 \
+                    size    2386247
 
 depends_lib-append  port:zlib
+
+build.args          --features=extra
 
 destroot {
     xinstall -m 0755 \
@@ -44,7 +45,12 @@ destroot {
 }
 
 test.run            yes
+
 test.cmd            ${cargo.bin} test
+
+test.pre_args-delete \
+                    --locked --frozen
+
 test.args           --all --features=stable
 
 notes "
@@ -137,7 +143,7 @@ cargo.crates \
     core-foundation                  0.9.3  194a7a9e6de53fa55116934067c844d9d749312f75c6f6d0980e8c252f8c2146 \
     core-foundation-sys              0.8.3  5827cebf4670468b8772dd191856768aedcb1b0278a04f989f7766351917b9dc \
     cortex-m                         0.7.5  cd20d4ac4aa86f4f75f239d59e542ef67de87cce2c282818dc6e84155d3ea126 \
-    cpufeatures                      0.2.2  59a6001667ab124aebae2a495118e11d30984c3a653e99d86d58971708cf5e4b \
+    cpufeatures                      0.2.5  28d997bd5e24a5928dd43e46dc529867e207907fe0b239c3477d924f7f2ca320 \
     crc32fast                        1.3.2  b540bd8bc810d3885c6ea91e2018302f68baba2129ab3e88f32389ee9370880d \
     criterion                        0.3.6  b01d6de93b2b6c65e17c634a26653a29d107b3c98c607c765bf38d041531cd8f \
     criterion-plot                   0.4.5  2673cc8207403546f45f5fd319a974b1e6983ad1a3ee7e6041650013be041876 \
@@ -301,7 +307,7 @@ cargo.crates \
     malloc_buf                       0.0.6  62bb907fe88d54d8d9ce32a3cceab4218ed2f6b7d35617cafe9adf84e43919cb \
     markup5ever                     0.11.0  7a2629bb1404f3d34c2e921f21fd34ba00b206124c81f65c50b43b6aaefeb016 \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
-md-5                            0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd6271f060fd37defb241949d0582 \
+    md-5                            0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd6271f060fd37defb241949d0582 \
     memchr                           2.5.0  2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d \
     memmap2                          0.5.5  3a79b39c93a7a5a27eeaf9a23b5ff43f1b9e0ad6b1cdd441140ae53c35613fc7 \
     memoffset                        0.6.5  5aa361d4faea93603064a027415f07bd8e1d5c88c9fbf68bf56a285428fd79ce \
@@ -440,7 +446,7 @@ md-5                            0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd627
     rdrand                           0.4.0  678054eb77286b51581ba43620cc911abf02758c91f93f479767aed0f90458b2 \
     redox_syscall                   0.2.15  534cfe58d6a18cc17120fbf4635d53d14691c1fe4d951064df9bd326178d7d5a \
     redox_users                      0.4.3  b033d837a7cf162d7993aded9304e30a83213c648b6e389db233191f891e5c2b \
-    reedline                        0.11.0  5559b5ab4817b0da0c6fc6814edfae537209e01d955a2f3e7595606e3d039691 \
+    reedline                        0.12.0  311b256d0a325a92d685f1401fccf83341afba1a62d56bbfa3c98b87073db195 \
     regex                            1.6.0  4c4eb3267174b8c6c2f654116623910a0fef09c4753f8dd83db29c48a0df988b \
     regex-automata                  0.1.10  6c230d73fb8d8c1b9c0b3135c5142a8acee3a0558fb8db5cf1cb65f8d7862132 \
     regex-syntax                    0.6.27  a3f87b73ce11b1619a3c6332f45341e0047173771e8b8b73f87bfeefb7b56244 \
@@ -490,9 +496,9 @@ md-5                            0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd627
     serial_test                      0.8.0  7eec42e7232e5ca56aa59d63af3c7f991fe71ee6a3ddd2d3480834cf3902b007 \
     serial_test_derive               0.8.0  f1b95bb2f4f624565e8fe8140c789af7e2082c0e0561b5a82a1b678baa9703dc \
     servo_arc                        0.1.1  d98238b800e0d1576d8b6e3de32827c2d74bee68bb97748dcf5071fb53965432 \
-sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
-sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
-shadow-rs                       0.16.1  b2d399ad15b5c90d8e6461da75c751c77501598dd915d81a108401b252aaa99f \
+    sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+    shadow-rs                       0.16.1  b2d399ad15b5c90d8e6461da75c751c77501598dd915d81a108401b252aaa99f \
     shlex                            1.1.0  43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
@@ -507,7 +513,7 @@ shadow-rs                       0.16.1  b2d399ad15b5c90d8e6461da75c751c77501598d
     snap                             1.0.5  45456094d1983e2ee2a18fdfebce3189fa451699d0502cb8e3b49dba5ba41451 \
     socket2                          0.4.4  66d72b759436ae32898a2af0a14218dbf55efde3feeb170eb623637db85ee1e0 \
     spin                             0.9.4  7f6002a767bff9e83f8eeecf883ecb8011875a21ae8da43bffb817a57e78cc09 \
-    sqlparser                       0.16.0  7e9a527b68048eb95495a1508f6c8395c8defcff5ecdbe8ad4106d08a2ef2a3c \
+    sqlparser                       0.23.0  0beb13adabbdda01b63d595f38c8bfd19a361e697fd94ce0098a634077bc5b25 \
     stable_deref_trait               1.2.0  a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3 \
     static_assertions                1.1.0  a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f \
     streaming-decompression          0.1.0  9bc687acd5dc742c4a7094f2927a8614a68e4743ef682e7a2f9f0f711656cc92 \
@@ -527,7 +533,7 @@ shadow-rs                       0.16.1  b2d399ad15b5c90d8e6461da75c751c77501598d
     sxd-xpath                        0.4.2  36e39da5d30887b5690e29de4c5ebb8ddff64ebd9933f98a01daaa4fd11b36ea \
     syn                             1.0.98  c50aef8a904de4c23c788f104b7dddc7d6f79c647c7c8ce4cc8f73eb0ca773dd \
     sys-locale                       0.2.1  658ee915b6c7b73ec4c1ffcd838506b5c5a4087eadc1ec8f862f1066cf2c8132 \
-    sysinfo                         0.25.2  1594a36887d0f70096702bffadfb67dfbfe76ad4bf84605e86157dc9fce9961a \
+    sysinfo                         0.26.2  4ae2421f3e16b3afd4aa692d23b83d0ba42ee9b0081d5deeb7d21428d7195fb1 \
     tabled                           0.8.0  e5b2f8c37d26d87d2252187b0a45ea3cbf42baca10377c7e7eaaa2800fa9bf97 \
     tabled_derive                    0.4.0  f9ee618502f497abf593e1c5c9577f34775b111480009ffccd7ad70d23fcaba8 \
     tempdir                          0.3.7  15f2b5fb00ccdf689e0149d1b1b3c03fead81c2b37735d812fa8bddbbf41b6d8 \

@@ -1,5 +1,6 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
+<<<<<<< .merge_file_xpteao
 PortSystem       1.0
 
 name             openjdk18-zulu
@@ -102,3 +103,14 @@ by adding the following line to your shell profile:
 
     export JAVA_HOME=${target}/Contents/Home
 "
+=======
+# Remove after 2023-03-21
+PortSystem  1.0
+PortGroup   obsolete 1.0
+
+name        openjdk18-zulu
+categories  java devel
+version     18.32.13
+revision    1
+replaced_by openjdk19-zulu
+>>>>>>> .merge_file_BpksI9

@@ -7,7 +7,7 @@ PortGroup           legacysupport 1.1
 
 name                ghc
 version             9.4.2
-revision            1
+revision            3
 categories          lang haskell
 maintainers         {ieee.org:s.t.smith @essandess} openmaintainer
 license             BSD
@@ -93,6 +93,24 @@ if {${name} eq ${subport}} {
 
     haskell_cabal.use_prebuilt  yes
 
+    haskell_cabal.env \
+                    "CABAL_CONFIG=${haskell_cabal.cabal_root}/config" \
+                    "GHC=${haskell_cabal.cabal_root}/bin/ghc" \
+                    "PATH=${workpath}/bin:${haskell_cabal.cabal_root}/bin:$env(PATH)"
+
+    # https://trac.macports.org/ticket/65899
+    # https://trac.macports.org/wiki/UsingTheRightCompiler#testing
+    foreach phase {build destroot test} {
+        ${phase}.env-append \
+                    CC=${configure.cc} \
+                    "CFLAGS=${configure.cflags}" \
+                    CPP=${configure.cpp} \
+                    "CPPFLAGS=${configure.cppflags}" \
+                    CXX=${configure.cxx} \
+                    "CXXFLAGS=${configure.cxxflags}" \
+                    "LDFLAGS=${configure.ldflags}"
+    }
+
     configure.cmd   ./configure
     configure.pre_args \
                     --prefix=${prefix}
@@ -167,7 +185,6 @@ size    586
                     port:bash \
                     port:bzip2 \
                     port:cctools \
-                    port:gsed \
                     port:gzip \
                     port:hadrian \
                     port:happy \
@@ -224,11 +241,6 @@ size    586
                     ${f}
         }
     }
-
-    haskell_cabal.env \
-                    "CABAL_CONFIG=${haskell_cabal.cabal_root}/config" \
-                    "GHC=${haskell_cabal.cabal_root}/bin/ghc" \
-                    "PATH=${workpath}/bin:${haskell_cabal.cabal_root}/bin:$env(PATH)"
 
     pre-configure {
         system -W ${worksrcpath} \
@@ -302,6 +314,7 @@ for a user-specific startup configuration."
 }
 
 subport ghc-prebuilt {
+    revision        1
     supported_archs arm64 x86_64
 
     worksrcdir      ${ghc_distname}
@@ -370,7 +383,7 @@ size    586
 subport hadrian {
     # find ${worksrcpath} -type f -exec egrep -E -o '"pkg-name":"shake","pkg-version":"[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+"' {} ';'
     version         0.19.6
-    revision        1
+    revision        2
 
     distname        ${name}-${ghc_version}
     distfiles       [lindex ${ghc_source_checksums} 0]

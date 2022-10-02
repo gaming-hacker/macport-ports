@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           legacysupport 1.0
 
-github.setup        nghttp2 nghttp2 1.49.0 v
+github.setup        nghttp2 nghttp2 1.50.0 v
 revision            0
 categories          www
 maintainers         {mps @Schamschula} openmaintainer
@@ -18,9 +18,9 @@ homepage            https://${name}.org
 github.tarball_from releases
 use_xz              yes
 
-checksums           rmd160  ed4cd77182198496dd64075d618492aff5dbb979 \
-sha256  b0cfd492bbf0b131c472e8f6501c9f4ee82b51b68130f47b278c0b7c9848a66e \
-size    4112260
+checksums           rmd160  9c9845dfbb88617ad578d4ad8115d3732119716e \
+                    sha256  af24007e34c18c782393a1dc3685f8fd5b50283e90a9191d25488eb50aa2c825 \
+                    size    4110336
 
 depends_build       port:pkgconfig
 
@@ -32,7 +32,7 @@ patchfiles-append   patch-src-shrpx_client_handler.cc.diff \
 use_autoreconf      yes
 configure.checks.implicit_function_declaration.whitelist-append strchr
 
-compiler.cxx_standard 2020
+compiler.cxx_standard   2014
 
 configure.args      --disable-silent-rules \
                     --disable-threads \
@@ -83,7 +83,7 @@ subport nghttp2-tools {
     }
 }
 
-set pyversions {310}
+set pyversions {38 39 310}
 
 foreach pyversion ${pyversions} {
     subport py${pyversion}-${name} {

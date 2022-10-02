@@ -1,7 +1,10 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem       1.0
+# Remove after 2023-03-21
+PortSystem  1.0
+PortGroup   obsolete 1.0
 
+<<<<<<< HEAD
 name             openjdk18-corretto
 categories       java devel
 maintainers      {breun.nl:nils @breun} openmaintainer
@@ -97,3 +100,10 @@ by adding the following line to your shell profile:
 
     export JAVA_HOME=${target}/Contents/Home
 "
+=======
+name        openjdk18-corretto
+categories  java devel
+version     18.0.2.9.1
+revision    1
+replaced_by openjdk19-corretto
+>>>>>>> a859c5929c929548f5156f5cab13a2f341982e72
