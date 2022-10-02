@@ -117,9 +117,9 @@ if {${subport} eq ${name} || ${subport} eq "${name}-lx"} {
     test.args       VERBOSE=1
 
     if {${os.platform} eq "darwin" && ${os.major} < 11} {
-        depends_build-append    port:python27
+        depends_build-append    port:python310
         license_noconflict      python27
-        configure.python        ${prefix}/bin/python2.7
+        configure.python        ${prefix}/bin/python3.10
     }
 
     if {${build_arch} eq "ppc" || ${build_arch} eq "ppc64"} {

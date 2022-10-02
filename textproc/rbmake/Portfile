@@ -49,4 +49,4 @@ configure.ldflags-delete -L${prefix}/lib
 
 # For stdbool.h
 configure.cflags-append \
-                -std=c99
+                -std=gnu17
