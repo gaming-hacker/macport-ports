@@ -25,7 +25,7 @@ checksums           rmd160  8c5f86e6ace8d9f28fd829faebc67ba2886c19e2 \
                     size    687582
 
 python.pep517       yes
-python.versions     38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools \
