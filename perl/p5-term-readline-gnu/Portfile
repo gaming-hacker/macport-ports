@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -14,8 +14,8 @@ long_description    This is an implementation of Term::ReadLine using the \
                     GNU Readline/History Library.
 
 checksums           rmd160  968f8031252732fdd8c51072d79851dadcd7501f \
-                    sha256  78ecc522451097a62f92d391aabce47fb012ebc86889e7c1aca6ca6c80340b72 \
-                    size    198953
+sha256  78ecc522451097a62f92d391aabce47fb012ebc86889e7c1aca6ca6c80340b72 \
+size    198953
 
 if {${perl5.major} != ""} {
     depends_lib-append \

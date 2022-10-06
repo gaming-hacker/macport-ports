@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -18,9 +18,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  22c98f40284bc6d364b32a5ebfa29760f5015596 \
-                    sha256  5038c38c0a417b9460edd4640fd9f029c24f36a3ce3df843b3aabff4f43f7dd1 \
-                    size    911771
+rmd160  22c98f40284bc6d364b32a5ebfa29760f5015596 \
+sha256  5038c38c0a417b9460edd4640fd9f029c24f36a3ce3df843b3aabff4f43f7dd1 \
+size    911771
 
 notes "
     ${name} is ready for production use but there are features missing such as onion service support.
@@ -304,12 +304,12 @@ cargo.crates \
     serde_with_macros                1.5.2  e182d6ec6f05393cc0e5ed1bf81ad6db3a8feedf8ee515ecdd369809bcce8082 \
     serial_test                      0.9.0  92761393ee4dc3ff8f4af487bd58f4307c9329bbedea02cac0089ad9c411e153 \
     serial_test_derive               0.9.0  4b6f5d1c3087fb119617cff2966fe3808a80e5eb59a8c1601d5994d66f4346a5 \
-    sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
-    sha1-asm                         0.5.1  563d4f7100bc3fce234e5f37bbf63dc2752558964505ba6ac3f7204bdc59eaac \
-    sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
-    sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
-    sha3                            0.10.5  e2904bea16a1ae962b483322a1c7b81d976029203aea1f461e51cd7705db7ba9 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha-1                           0.10.0  028f48d513f9678cda28f6e4064755b3fbb2af6acd672f2c209b62323f7aea0f \
+sha1-asm                         0.5.1  563d4f7100bc3fce234e5f37bbf63dc2752558964505ba6ac3f7204bdc59eaac \
+sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
+sha3                            0.10.5  e2904bea16a1ae962b483322a1c7b81d976029203aea1f461e51cd7705db7ba9 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     shellexpand                      2.1.2  7ccc8076840c4da029af4f87e4e8daeb0fca6b87bbb02e10cb60b791450e11e4 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-async-std            0.2.2  0c4aa94397e2023af5b7cff5b8d4785e935cfb77f0e4aab0cae3b26258ace556 \

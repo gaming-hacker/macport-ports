@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    PyQtGraph is a pure-python graphics and GUI library \
 
 version             0.13.1
 checksums           rmd160  684e82952133c5ed6d4b0b1a08658135eab55253 \
-                    sha256  698f87f59db965727b33602a0b29058de21291d8b143dea878b50578aec0dc08 \
-                    size    1364064
+sha256  698f87f59db965727b33602a0b29058de21291d8b143dea878b50578aec0dc08 \
+size    1364064
 revision            0
 
 homepage            https://pyqtgraph.org/
@@ -33,14 +33,14 @@ if {${subport} ne ${name}} {
     if {${python.version} eq 37} {
         version     0.12.4
         checksums   rmd160  75777dbc3a3abaab2b886a8b71fe5b4d09d93959 \
-                    sha256  c2c8f2b7e1d7f97a710f370acff6368d686c9d6cdc560f2d83dcf59185dfa19d \
-                    size    1333972
+sha256  c2c8f2b7e1d7f97a710f370acff6368d686c9d6cdc560f2d83dcf59185dfa19d \
+size    1333972
     }
     if {[variant_isset pyqt4] || [variant_isset pyside]} {
         version     0.11.1
         checksums   rmd160  dd120edb7b6199222713dd67d01387edc52277b0 \
-                    sha256  7d1417f36b5b92d1365671633a91711513e5afbcc82f32475d0690317607714e \
-                    size    789229
+sha256  7d1417f36b5b92d1365671633a91711513e5afbcc82f32475d0690317607714e \
+size    789229
     }
 
     depends_lib-append      port:py${python.version}-scipy
