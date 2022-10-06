@@ -1,13 +1,13 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches 5.34
+perl5.branches      5.28 5.30 5.32 5.34
 perl5.link_binaries no
 # when updating this port, don't forget to keep port exiftool at same version
-perl5.setup         Image-ExifTool 12.45
-
+perl5.setup         Image-ExifTool 12.47
+revision            0
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
 platforms           darwin
@@ -19,9 +19,9 @@ long_description    ${description}
 homepage            https://exiftool.org
 master_sites        ${homepage}
 
-checksums           rmd160  22e1a8d8f5171e9dfe25828314d43b324868dee1 \
-sha256  c2c0ad1c881593e56f7a0ce508b240529d7da52583af1d553e107704e28cbe42 \
-size    5054482
+checksums           rmd160  7262837cd0a8a47b8cb8c3c3c25d41917bfcc099 \
+                    sha256  2ddc50fb6a4ab0a14829f79195dbc8a48576281a3b887d7b799a09b51ec21232 \
+                    size    5063033
 
 livecheck.type      regex
 livecheck.url       ${homepage}/rss.xml
