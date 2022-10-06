@@ -29,7 +29,7 @@ checksums           rmd160  5d99c82254c7e98a14c9ef1762c9c6d6d723d42b \
                     sha256  72bfd68f76640a1b25c920b3f6dcbf3454202e1ab8dae90111d7a795d402e3b5 \
                     size    24688232
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 set python.version  310
 set python.branch   [string index ${python.version} 0].[string range ${python.version} 1 end]

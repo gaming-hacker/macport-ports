@@ -27,7 +27,7 @@ revision            0
 
 homepage            https://pyqtgraph.org/
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${subport} ne ${name}} {
     if {${python.version} eq 37} {

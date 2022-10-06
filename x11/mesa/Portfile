@@ -55,8 +55,8 @@ post-patch {
     reinplace "s|@@python3@@|${prefix}/bin/python${py_ver}|g" meson.build
 }
 
-compiler.c_standard     2011
-compiler.cxx_standard   2014
+compiler.c_standard 2017
+compiler.cxx_standard 2020
 # Build issues on mac OS 10.10
 # ../mesa-22.1.7/src/util/compiler.h:90:7: error: builtin feature check macro requires a parenthesized identifier
 # #elif HAS_CLANG_FALLTHROUGH
