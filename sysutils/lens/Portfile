@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  b236c39b05c53062c57f4880bc6b920aa807ca55 \
-                    sha256  70b7c5bd1ab32fc1ddf4b62c7e081c8b6160eeaf5fd597e60f91ce8a92ad515b \
-                    size    8540162
+sha256  70b7c5bd1ab32fc1ddf4b62c7e081c8b6160eeaf5fd597e60f91ce8a92ad515b \
+size    8540162
 
 depends_build       path:bin/npm:npm8 \
                     path:/bin/node:nodejs16 \
@@ -39,7 +39,7 @@ build.target        build
 
 use_configure       no
 use_parallel_build  no
-use_xcode           yes
+use_xcode  no
 
 # Patch package.json to allow using Node versions higher than 14
 patchfiles          patch-package.json.diff

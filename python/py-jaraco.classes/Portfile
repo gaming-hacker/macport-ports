@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    ${description}
 homepage            https://pypi.python.org/pypi/${python.rootname}/
 
 checksums           rmd160  0aa0081ccc97cbaa0d15c9ba93701aa85ee568be \
-                    sha256  89559fa5c1d3c34eff6f631ad80bb21f378dbcbb35dd161fd2c6b93f5be2f98a \
-                    size    9416
+sha256  89559fa5c1d3c34eff6f631ad80bb21f378dbcbb35dd161fd2c6b93f5be2f98a \
+size    9416
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 
 if {${name} ne ${subport}} {
