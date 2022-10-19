@@ -41,7 +41,7 @@ depends_build-append    port:pkgconfig
 
 # Require OpenSSL 1.1 and not generic OpenSSL
 # https://trac.macports.org/ticket/64095
-depends_lib-append      port:python27 \
+depends_lib-append      port:python310 \
                         port:openssl11
 
 proc rec_glob {basedir pattern} {
@@ -52,7 +52,7 @@ proc rec_glob {basedir pattern} {
     return $files
 }
 
-configure.python        ${prefix}/bin/python2.7
+configure.python        ${prefix}/bin/python3.10
 
 patchfiles              patch-common.gypi.diff \
                         patch-tools-gyp-pylib-gyp-generator-make.py.diff
@@ -112,7 +112,7 @@ switch $build_arch {
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 # error: call to implicitly-deleted copy constructor of 'std::__1::unique_ptr
 compiler.blacklist-append *gcc* {clang < 600}
 

@@ -25,7 +25,7 @@ checksums           rmd160  3b75898d7e1fa31305c34baa02484c58f90eb096 \
                     sha256  28170fdf880f937026fc87faa9c177b062c353c5d169ea3242b07802614ddd0c \
                     size    1153181
 
-python.versions     35 36 37 38 39 310
+python.versions 310
 
 foreach pver {37 38 39 310} {
     subport py${pver}-sip-devel {

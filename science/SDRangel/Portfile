@@ -31,12 +31,12 @@ license_noconflict-append \
     openssl \
     openssl11
 
-compiler.c_standard   2011
+compiler.c_standard 2017
 # error: call to 'abs' is ambiguous
 #   float dec = std::abs(degrees) + minutes * 1.0f/60.0f + seconds * 1.0f/(60.0f*60.0f);
 # std::abs was only introduced in c++17 so whilst the port claims to only
 # require c++14 it actually needs c++17
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # use C++17 for the build itself
 patchfiles-append     use-cxx17.patch

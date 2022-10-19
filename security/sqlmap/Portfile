@@ -43,21 +43,21 @@ post-patch {
 
 variant python27 conflicts python37 python38 python310 \
     description {Build for Python 2.7} {
-    python.default_version 27
+    python.default_version 310
     depends_build-append \
                     port:py${python.version}-setuptools
 }
 
 variant python37 conflicts python27 python38 python310 \
     description {Build for Python 3.7} {
-    python.default_version 37
+    python.default_version 310
     depends_build-append \
                     port:py${python.version}-setuptools
 }
 
 variant python38 conflicts python27 python37 python310 \
     description {Build for Python 3.8} {
-    python.default_version 38
+    python.default_version 310
     depends_build-append \
                     port:py${python.version}-setuptools
 }

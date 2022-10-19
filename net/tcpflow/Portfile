@@ -50,7 +50,7 @@ post-fetch {
 
 patchfiles          patch-configure.ac.diff
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 pre-configure {
     system -W ${worksrcpath} "sh ./bootstrap.sh"

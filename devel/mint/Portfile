@@ -37,7 +37,7 @@ set can_build_universal [expr [vercmp ${xcodeversion} 12.0] >= 0]
 universal_variant       ${can_build_universal}
 
 use_configure           no
-use_xcode               yes
+use_xcode  no
 
 build.cmd               swift
 build.target            build
