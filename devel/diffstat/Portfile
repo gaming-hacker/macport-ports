@@ -15,8 +15,8 @@ master_sites            https://invisible-island.net/archives/${name}/ \
                         https://invisible-mirror.net/archives/${name}/
 extract.suffix          .tgz
 checksums               rmd160 8a0ff6ff8004177c8014e3a3d14574d63b9042d7 \
-                        sha256 8cf27424926debcd85921755c3915559288244bd103f62d740dc6b83b557a28a \
-                        size 295596
+sha256 8cf27424926debcd85921755c3915559288244bd103f62d740dc6b83b557a28a \
+size 295596
 
 configure.args          --mandir=${prefix}/share/man
 

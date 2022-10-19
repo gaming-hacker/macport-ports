@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,7 +16,7 @@ platforms           darwin
 use_autoreconf      yes
 
 checksums           rmd160  0555583556401335948661d760539b297a5d7695 \
-                    sha256  6bc84518c3712a4ddeb4ad59854094c7a4f6470f3841cf00a02614d8bb44a374 \
-                    size    507649
+sha256  6bc84518c3712a4ddeb4ad59854094c7a4f6470f3841cf00a02614d8bb44a374 \
+size    507649
 
 depends_lib         port:libpcap

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -33,8 +33,8 @@ distname            swipl-${version}
 dist_subdir         swi-prolog
 
 checksums           rmd160  cb0146a3c7c9404e2db49e8e28ef93374c2d5869 \
-                    sha256  56ca58b5e4defce25d176cf43a8af2905ba5c2e2d96b228a1dde54e272a3b333 \
-                    size    11713725
+sha256  56ca58b5e4defce25d176cf43a8af2905ba5c2e2d96b228a1dde54e272a3b333 \
+size    11713725
 
 # to avoid the following problem: fatal error: 'threads.h' file not found
 compiler.blacklist-append {clang < 900}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,8 +14,8 @@ maintainers         {amake @amake} openmaintainer
 
 license             {MIT GPL-2}
 checksums           rmd160  45e13dc143682e54af0080e10114f9434f257d1e \
-                    sha256  db954f4cae9e47c6be3bd3161bc80540d44f5379cb9cf9df498f4e019f0a41a9 \
-                    size    153772
+sha256  db954f4cae9e47c6be3bd3161bc80540d44f5379cb9cf9df498f4e019f0a41a9 \
+size    153772
 
 description         Quickly rewrite git repository history (filter-branch replacement)
 long_description \

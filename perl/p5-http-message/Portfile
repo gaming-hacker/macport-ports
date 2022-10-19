@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -18,8 +18,8 @@ long_description    The HTTP-Message distribution contains classes useful for re
                     representing requests, responses and the headers contained within them.
 
 checksums           rmd160  f483422254f18076f364dcaa8707b2af04da2697 \
-                    sha256  2183e1a8dfaef79309eae1d3902c5d9d42b516eb0a297be039862fb2aa3afa07 \
-                    size    94586
+sha256  2183e1a8dfaef79309eae1d3902c5d9d42b516eb0a297be039862fb2aa3afa07 \
+size    94586
 
 if {${perl5.major} != ""} {
     depends_build-append \

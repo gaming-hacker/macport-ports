@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ long_description    ${description}
 homepage            https://github.com/jaraco/configparser
 
 checksums           rmd160  09e9ed9c3176ac65fc5174c2502690c15221cbbc \
-                    sha256  8be267824b541c09b08db124917f48ab525a6c3e837011f3130781a224c57090 \
-                    size    67737
+sha256  8be267824b541c09b08db124917f48ab525a6c3e837011f3130781a224c57090 \
+size    67737
 
 if {${name} ne ${subport}} {
 
@@ -41,8 +41,8 @@ if {${name} ne ${subport}} {
         distname            ${python.rootname}-${version}
 
         checksums           rmd160  9b6a5b12490e72c47ce2b1d190a35687c2d2c7eb \
-                            sha256  c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df \
-                            size    72498
+sha256  c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df \
+size    72498
     } else {
         depends_build-append \
                             port:py${python.version}-toml

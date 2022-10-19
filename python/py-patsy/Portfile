@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ long_description    A Python package for describing statistical models \
 homepage            https://github.com/pydata/patsy
 
 checksums           rmd160  a9d8d677ed7b4d9c981b40962e7c6bfd87025861 \
-                    sha256  bdc18001875e319bc91c812c1eb6a10be4bb13cb81eb763f466179dca3b67277 \
-                    size    397680
+sha256  bdc18001875e319bc91c812c1eb6a10be4bb13cb81eb763f466179dca3b67277 \
+size    397680
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-numpy \

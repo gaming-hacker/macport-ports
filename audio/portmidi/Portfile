@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ description         Free, cross platform, open-source, real-time MIDI I/O librar
 long_description    ${description}
 
 checksums           rmd160  381735e44525259ccb485431468357e92abfd4ac \
-                    sha256  64893e823ae146cabd3ad7f9a9a9c5332746abe7847c557b99b2577afa8a607c \
-                    size    263225
+sha256  64893e823ae146cabd3ad7f9a9a9c5332746abe7847c557b99b2577afa8a607c \
+size    263225
 
 # Building the Java interface and pmdefaults is disabled. They could be
 # added as separate ports, with a dependency on an appropriate openjdk

@@ -17,8 +17,8 @@ homepage         https://www.gnu.org/software/osip/
 platforms        darwin
 master_sites     gnu:osip
 checksums        rmd160 d9437b9356a9696a8b25cbdf117121892e0f8c7f \
-                 sha256 fe82fe841608266ac15a5c1118216da00c554d5006e2875a8ac3752b1e6adc79 \
-                 size   725024
+sha256 fe82fe841608266ac15a5c1118216da00c554d5006e2875a8ac3752b1e6adc79 \
+size   725024
 configure.args	 --enable-mt --mandir=${prefix}/share/man
 
 livecheck.name   libosip2

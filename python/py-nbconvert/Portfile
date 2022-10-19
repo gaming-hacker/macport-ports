@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,9 +23,9 @@ homepage            https://jupyter.org/
 
 checksums-append \
                     ${python.rootname}-${version}${extract.suffix} \
-                    rmd160  1cd7669e2dc8a483e429794df4c19e39fac9f9d8 \
-                    sha256  1e180801205ad831b6e2480c5a03307dfb6327fa5b2f9b156d6fed45f9700686 \
-                    size    731368
+rmd160  1cd7669e2dc8a483e429794df4c19e39fac9f9d8 \
+sha256  1e180801205ad831b6e2480c5a03307dfb6327fa5b2f9b156d6fed45f9700686 \
+size    731368
 
 set css_fetch_dir \
     ${distpath}/css
@@ -92,21 +92,21 @@ if {${name} ne ${subport}} {
 
     checksums-append \
                     css/classic/style.css \
-                    rmd160  05b48b82351654a627bb3a7815bd3808cacdc431 \
-                    sha256  5865a609f4437b0464bc121cd567b619074e540a0515a3b82f222f764eb51e01 \
-                    size    265101 \
+rmd160  05b48b82351654a627bb3a7815bd3808cacdc431 \
+sha256  5865a609f4437b0464bc121cd567b619074e540a0515a3b82f222f764eb51e01 \
+size    265101 \
                     css/lab/index.css \
-                    rmd160  198fa6687d1d33e3a3236cb48c9c6d22ea4f48a1 \
-                    sha256  0a3fc632f155c2c3f3c4a40b5adc19b94369b4ba8a780df50c33d61449d12717 \
-                    size    552369 \
+rmd160  198fa6687d1d33e3a3236cb48c9c6d22ea4f48a1 \
+sha256  0a3fc632f155c2c3f3c4a40b5adc19b94369b4ba8a780df50c33d61449d12717 \
+size    552369 \
                     css/lab/theme-light.css \
-                    rmd160  e13be340c00a4f72eb2f378581621102d7bccd42 \
-                    sha256  f1f9c2f5232945d501c16737edece840b125eb9c256cf5a45892e4c051be06d7 \
-                    size    14606 \
+rmd160  e13be340c00a4f72eb2f378581621102d7bccd42 \
+sha256  f1f9c2f5232945d501c16737edece840b125eb9c256cf5a45892e4c051be06d7 \
+size    14606 \
                     css/lab/theme-dark.css \
-                    rmd160  5fc75bcb18325bff34e1b8ffd9585ac6a544d618 \
-                    sha256  2b194f360a7851ff4da5a6d3af8afa20c683c0e41e02a27b56ea00a912801051 \
-                    size    15702
+rmd160  5fc75bcb18325bff34e1b8ffd9585ac6a544d618 \
+sha256  2b194f360a7851ff4da5a6d3af8afa20c683c0e41e02a27b56ea00a912801051 \
+size    15702
 
     patchfiles-append \
                     patch-hatch_build-disable-download.diff

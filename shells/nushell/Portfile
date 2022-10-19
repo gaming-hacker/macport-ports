@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -27,9 +27,9 @@ maintainers         {@b4nst gmail.com:bastyen.a} \
 
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  b6fb2e00e717fb7d9d8f6d397ddde6ad77b40d66 \
-                    sha256  315d6f9723c9b036bb0ba268c236f84ba7fc3e3fc36be8e1c45f02dea1b077c4 \
-                    size    2401760
+rmd160  b6fb2e00e717fb7d9d8f6d397ddde6ad77b40d66 \
+sha256  315d6f9723c9b036bb0ba268c236f84ba7fc3e3fc36be8e1c45f02dea1b077c4 \
+size    2401760
 
 depends_lib-append  port:zlib
 
@@ -303,7 +303,7 @@ cargo.crates \
     malloc_buf                       0.0.6  62bb907fe88d54d8d9ce32a3cceab4218ed2f6b7d35617cafe9adf84e43919cb \
     markup5ever                     0.11.0  7a2629bb1404f3d34c2e921f21fd34ba00b206124c81f65c50b43b6aaefeb016 \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
-    md-5                            0.10.5  6365506850d44bff6e2fbcb5176cf63650e48bd45ef2fe2665ae1570e0f4b9ca \
+md-5                            0.10.5  6365506850d44bff6e2fbcb5176cf63650e48bd45ef2fe2665ae1570e0f4b9ca \
     memchr                           2.5.0  2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d \
     memmap2                          0.5.7  95af15f345b17af2efc8ead6080fb8bc376f8cec1b35277b935637595fe77498 \
     memoffset                        0.6.5  5aa361d4faea93603064a027415f07bd8e1d5c88c9fbf68bf56a285428fd79ce \
@@ -493,8 +493,8 @@ cargo.crates \
     serial_test                      0.8.0  7eec42e7232e5ca56aa59d63af3c7f991fe71ee6a3ddd2d3480834cf3902b007 \
     serial_test_derive               0.8.0  f1b95bb2f4f624565e8fe8140c789af7e2082c0e0561b5a82a1b678baa9703dc \
     servo_arc                        0.1.1  d98238b800e0d1576d8b6e3de32827c2d74bee68bb97748dcf5071fb53965432 \
-    sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
-    shadow-rs                       0.16.3  8c0ea0c68418544f725eba5401a5b965a2263254c92458d04aeae74e9d88ff4e \
+sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
+shadow-rs                       0.16.3  8c0ea0c68418544f725eba5401a5b965a2263254c92458d04aeae74e9d88ff4e \
     shlex                            1.1.0  43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \

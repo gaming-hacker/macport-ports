@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  d346a4d4badb0283fe022259db74579b0e76ebde \
-                    sha256  346511cd7db1984e1932f2ed29b9e45cab7a47550dc3e08851ea5d642977eaf4 \
-                    size    32330445
+sha256  346511cd7db1984e1932f2ed29b9e45cab7a47550dc3e08851ea5d642977eaf4 \
+size    32330445
 
 depends_run         port:kubectl-1.25
 

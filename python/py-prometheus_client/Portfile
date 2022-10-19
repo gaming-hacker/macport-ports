@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    {*}${description}
 homepage            https://github.com/prometheus/client_python
 
 checksums           rmd160  cf26ea22652936acfc1b6793397a5b62862cacd8 \
-                    sha256  be26aa452490cfcf6da953f9436e95a9f2b4d578ca80094b4458930e5f584ab1 \
-                    size    100719
+sha256  be26aa452490cfcf6da953f9436e95a9f2b4d578ca80094b4458930e5f584ab1 \
+size    100719
 
 if {${name} ne ${subport}} {
     if {${python.version} < 37} {
@@ -30,8 +30,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  433abad4b6afb4c0e5c5727d2cc8d592049b171e \
-                            sha256  3a8baade6cb80bcfe43297e33e7623f3118d660d41387593758e2fb1ea173a86 \
-                            size    91886
+sha256  3a8baade6cb80bcfe43297e33e7623f3118d660d41387593758e2fb1ea173a86 \
+size    91886
         python.pep517       no
         depends_build-append \
                             port:py${python.version}-setuptools

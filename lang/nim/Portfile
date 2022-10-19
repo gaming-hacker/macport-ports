@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ homepage            https://nim-lang.org
 
 master_sites        ${homepage}/download/
 checksums           rmd160  6f7ea248938d78851a935d717a94d47c0d0d25ea \
-                    sha256  0f5b65cdb60f78af41cb075c238983689a1e1f7e25c819f179862c18a484cf57 \
-                    size    5219880
+sha256  0f5b65cdb60f78af41cb075c238983689a1e1f7e25c819f179862c18a484cf57 \
+size    5219880
 
 use_configure       no
 use_xz              yes

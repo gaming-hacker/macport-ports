@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ if {${subport} eq ${name}} {
 
     revision            0
     checksums           rmd160  8546809df1799939c367be2d86831ef60a4d553f \
-                        sha256  25749bf14dac26af7c44cf2a6ace136252e8d781d54aef5b4722fefc16c24826 \
-                        size    5871586
+sha256  25749bf14dac26af7c44cf2a6ace136252e8d781d54aef5b4722fefc16c24826 \
+size    5871586
 
     use_bzip2           yes
 
@@ -94,8 +94,8 @@ if {${subport} eq ${name}} {
 subport ${name}-docs {
     revision            0
     checksums           rmd160  9a0bfacac7214a46da601f0423f0759ccc9eb67e \
-                        sha256  df79a5d6eedcf73674a76d686397ce4ffb0bf83ab01118d0e9bfd6b6be12e1e2 \
-                        size    1369435
+sha256  df79a5d6eedcf73674a76d686397ce4ffb0bf83ab01118d0e9bfd6b6be12e1e2 \
+size    1369435
 
     license             unknown
     supported_archs     noarch

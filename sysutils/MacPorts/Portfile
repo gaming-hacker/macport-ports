@@ -25,7 +25,7 @@ dist_subdir         ${name}/testing
 use_bzip2           yes
 
 checksums           rmd160 bc4e5d0ec509aafe7eefbcba26cffb695a2f9f1a \
-                    sha256 ed85c7edfad9433ea96e01f8c7205e8bed200de4da93fe307ed36ba1b47521cf
+sha256 ed85c7edfad9433ea96e01f8c7205e8bed200de4da93fe307ed36ba1b47521cf
 
 variant keep_prefix description "Use configured prefix instead of enforcing /opt/local" {}
 if {![variant_isset keep_prefix]} {

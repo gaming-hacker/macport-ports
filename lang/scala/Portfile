@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -39,8 +39,8 @@ subport ${name}3.2 {
     distname            scala3-${version}
 
     checksums           rmd160  b0a5f143743c29107fb373f0765fbf5f6853dd43 \
-                        sha256  194bd030808f6fc7de083bfd7c75230d719aedc20f3cb7562dc65d18b4a17278 \
-                        size    35879950
+sha256  194bd030808f6fc7de083bfd7c75230d719aedc20f3cb7562dc65d18b4a17278 \
+size    35879950
 }
 
 subport ${name}3.1 {
@@ -50,8 +50,8 @@ subport ${name}3.1 {
     distname            scala3-${version}
 
     checksums           rmd160  40468943fa4d1fed3cf7279fbb79ac1cb07ba9e9 \
-                        sha256  9e1eefdcab77b2d2a9057b3d6f78301591e9c27513c92413f3c353a77093f2d7 \
-                        size    35463854
+sha256  9e1eefdcab77b2d2a9057b3d6f78301591e9c27513c92413f3c353a77093f2d7 \
+size    35463854
 }
 
 subport ${name}3.0 {
@@ -61,8 +61,8 @@ subport ${name}3.0 {
     distname            scala3-${version}
 
     checksums           rmd160  97aaaf7d417491ae52ba4a27244104305c85b251 \
-                        sha256  136453bde7932c76a3c3530e0063329a4ce7c08fe5099554faa2aef17174cc60 \
-                        size    32671071
+sha256  136453bde7932c76a3c3530e0063329a4ce7c08fe5099554faa2aef17174cc60 \
+size    32671071
 }
 
 subport ${name}2.13 {
@@ -74,8 +74,8 @@ subport ${name}2.13 {
     extract.suffix      .tgz
 
     checksums           sha256  b01461599cd0786042c64b533790f45e51babb91c52dc465d846838e97019cc4 \
-                        rmd160  5478a21a797428e25da291c83e73969e9a52b2cf \
-                        size    23669298
+rmd160  5478a21a797428e25da291c83e73969e9a52b2cf \
+size    23669298
 }
 
 subport ${name}2.12 {
@@ -87,8 +87,8 @@ subport ${name}2.12 {
     extract.suffix      .tgz
 
     checksums           rmd160  b1061996698b23081013c05b015a3ef3c8f52949 \
-                        sha256  ff11ef37e42a24d6fb1377978e3454ab3961921e75fdc080ffaa09e794438956 \
-                        size    20960669
+sha256  ff11ef37e42a24d6fb1377978e3454ab3961921e75fdc080ffaa09e794438956 \
+size    20960669
 }
 
 subport ${name}2.11 {
@@ -102,8 +102,8 @@ subport ${name}2.11 {
     extract.suffix      .tgz
 
     checksums           sha256  b11d7d33699ca4f60bc3b2b6858fd953e3de2b8522c943f4cda4b674316196a8 \
-                        rmd160  a8deefee97e7bb4c95efe5321ecae33de08fbb48 \
-                        size    29114457
+rmd160  a8deefee97e7bb4c95efe5321ecae33de08fbb48 \
+size    29114457
 }
 
 subport ${name}2.10 {
@@ -117,8 +117,8 @@ subport ${name}2.10 {
     extract.suffix      .tgz
 
     checksums           sha256  9283119916f6bb7714e076a2840ccf22d58819b355228ed1591ae6f76929f111 \
-                        rmd160  47969fa601f1b89f6601c65b6bfba9dd6cc29c2a \
-                        size    29993772
+rmd160  47969fa601f1b89f6601c65b6bfba9dd6cc29c2a \
+size    29993772
 }
 
 subport ${name}2.9 {
@@ -132,8 +132,8 @@ subport ${name}2.9 {
     extract.suffix      .tgz
 
     checksums           sha256  faaab229f78c945063e8fd31c045bc797c731194296d7a4f49863fd87fc4e7b9 \
-                        rmd160  eee777413e2c8037b25711950072f13142af9c21 \
-                        size    24699008
+rmd160  eee777413e2c8037b25711950072f13142af9c21 \
+size    24699008
 
     deprecated.eol_version  yes
 }
@@ -149,8 +149,8 @@ subport ${name}2.8 {
     extract.suffix      .tgz
 
     checksums           sha256  45a7f29f423d1bfc505f5c1b150aa76dc76d30635f10ac72c1bce862aec1f394 \
-                        rmd160  48e04679e627b72aef371dd62e966fc76a2598d8 \
-                        size    20430705
+rmd160  48e04679e627b72aef371dd62e966fc76a2598d8 \
+size    20430705
 
     deprecated.eol_version  yes
 }
@@ -166,8 +166,8 @@ subport ${name}2.7 {
     extract.suffix      .tgz
 
     checksums           sha256  eecf77e120be09af9f7da7ea53f42199402bee16c92793439c93f021f5e4cda8 \
-                        rmd160  ea590b9e25fd0ede59cc6ccd5e9d3bba99885b0f \
-                        size    15619192
+rmd160  ea590b9e25fd0ede59cc6ccd5e9d3bba99885b0f \
+size    15619192
 
     deprecated.eol_version  yes
 }

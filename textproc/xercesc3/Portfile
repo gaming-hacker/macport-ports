@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ configure.args      --disable-silent-rules \
                     --enable-msgloader-icu \
                     --with-icu=${prefix}
 checksums           rmd160  1dfc77a0b44e1b2319eaef99d298d4d60419d1fa \
-                    sha256  74aa626fc71e729ee227602870dd29a5a01cd8c9c1c7330837a51da2eb5722cc \
-                    size    5659678
+sha256  74aa626fc71e729ee227602870dd29a5a01cd8c9c1c7330837a51da2eb5722cc \
+size    5659678
 
 platforms           darwin
 

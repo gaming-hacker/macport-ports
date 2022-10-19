@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ long_description    path (aka path pie, formerly path.py) implements\
 homepage            https://github.com/jaraco/path
 
 checksums           rmd160  9ca99b78264b9b5c88359474d990ed2bda068b74 \
-                    sha256  2722e500b370bc00d5934d2207e26b17a09ee73eb0150f651d5a255d8be935a2 \
-                    size    48662
+sha256  2722e500b370bc00d5934d2207e26b17a09ee73eb0150f651d5a255d8be935a2 \
+size    48662
 
 if {${name} ne ${subport}} {
     depends_build-append \

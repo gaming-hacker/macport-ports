@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -34,14 +34,14 @@ distname                Mac-GUI-${version}
 
 if {${os.platform} eq "darwin" && ${os.major} > 12} {
     checksums           ${distname}.tar.gz \
-                        rmd160  01fda817e1d16609908c2db8235a6a7cc1bc4746 \
-                        sha256  158bfa738dce96cbdc4cbc0f5b9e888ed0827a858f7576e30716ded2a209898d \
-                        size    1298306
+rmd160  01fda817e1d16609908c2db8235a6a7cc1bc4746 \
+sha256  158bfa738dce96cbdc4cbc0f5b9e888ed0827a858f7576e30716ded2a209898d \
+size    1298306
 } else {
     checksums           ${distname}.tar.gz \
-                        rmd160  022ddae8a3988c5a33928d520742ddfca73ac21d \
-                        sha256  a30c97b37645b55aff62bc88cccaf92c307f1e84d84d3ecd5c1333afa2b78e76 \
-                        size    1311627
+rmd160  022ddae8a3988c5a33928d520742ddfca73ac21d \
+sha256  a30c97b37645b55aff62bc88cccaf92c307f1e84d84d3ecd5c1333afa2b78e76 \
+size    1311627
 }
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
@@ -51,9 +51,9 @@ if {${os.platform} eq "darwin" && ${os.major} < 11} {
     set main_dist       ${distname}.tar.gz
     distfiles-append    ${legacy_dist}
     checksums-append    ${legacy_dist} \
-                        rmd160  1d351ae2b736bb9f6bd26ce164c37c6926d0e171 \
-                        sha256  8be56f2705c5d20ebecb36948e70fe0a89ba01a9fee214e5fe58f24c3f2eee48 \
-                        size    1795622
+rmd160  1d351ae2b736bb9f6bd26ce164c37c6926d0e171 \
+sha256  8be56f2705c5d20ebecb36948e70fe0a89ba01a9fee214e5fe58f24c3f2eee48 \
+size    1795622
 
     pre-patch {
         delete ${worksrcpath}/de.lproj

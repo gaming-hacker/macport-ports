@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ description         Python interface to map GRIB files to the NetCDF Common Data
 long_description    {*}${description}
 
 checksums           rmd160  976aa36b3c3a8512564929fd0fe3bb7df6a24218 \
-                    sha256  d3f01ec30d2cfaf0a955d54a5ad5ce1eee3c6846b7272ed5efcfa0eca98fe2cf \
-                    size    6378445
+sha256  d3f01ec30d2cfaf0a955d54a5ad5ce1eee3c6846b7272ed5efcfa0eca98fe2cf \
+size    6378445
 
 python.versions     310
 
