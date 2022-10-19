@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -9,11 +9,11 @@ PortGroup               openssl 1.0
 # this force is OK as node does not link against any other c++ libs
 depends_lib-append      port:libcxx
 configure.cxx_stdlib    libc++
-compiler.cxx_standard 2020
+compiler.cxx_standard   2014
 
 name                    nodejs16
-version                 16.17.1
-revision                1
+version                 16.18.0
+revision                0
 
 categories              devel net
 platforms               darwin
@@ -27,15 +27,15 @@ long_description        Node's goal is to provide an easy way to build scalable 
                         Machine or Python's Twisted. Node takes the event model a bit further-it \
                         presents the event loop as a language construct instead of as a library.
 
-conflicts               nodejs8 nodejs10 nodejs12 nodejs13 nodejs14 nodejs15 nodejs17 nodejs18
+conflicts               nodejs8 nodejs10 nodejs12 nodejs13 nodejs14 nodejs15 nodejs17 nodejs18 nodejs19
 
 homepage                https://nodejs.org/
 master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
-checksums               rmd160  8af4e123ecb73316a7f4ee7fd793e143827bed4a \
-sha256  6721feb4152d56d2c6b358ce397abd5a7f1daf09ee2e25c5021b9b4d3f86a330 \
-size    35661452
+checksums               rmd160  df351365a0ef17ea0fcae8902b198c39d9754d51 \
+                        sha256  fcfe6ad2340f229061d3e81a94df167fe3f77e01712dedc0144a0e7d58e2c69b \
+                        size    35849580
 
 distname                node-v${version}
 

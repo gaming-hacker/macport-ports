@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,13 +6,13 @@ PortGroup           python 1.0
 name                py-igraph
 python.rootname     igraph
 python.pep517       yes
-version             0.10.1
+version             0.10.2
 revision            0
 categories-append   math science
 platforms           darwin
 license             GPL-2+
 
-python.versions 310
+python.versions     37 38 39 310
 
 maintainers         {snc @nerdling} {gmail.com:szhorvat @szhorvat} openmaintainer
 
@@ -24,15 +24,15 @@ long_description    Python interface to the igraph library for network analysis 
 
 homepage            https://igraph.org/python/
 
-checksums           rmd160  4c09a79094d0c4ff7d9139751b9e5e733f43ff81 \
-sha256  65165883cc506ec7c6d8b68e620954810935ef033138aa3a92cba6089339cae6 \
-size    3961027
+checksums           rmd160  171970445129a35321d6d9d4b71a7242ea20f46c \
+                    sha256  215c53591b0bccd2082ef0e007e1919f25c040abb03014bdb4f20712173e33c2 \
+                    size    4096476
 
 variant external_igraph description {Use external igraph library} { }
 
 if {${name} ne ${subport}} {
-    compiler.c_standard 2017
-    compiler.cxx_standard 2020
+    compiler.c_standard     1999
+    compiler.cxx_standard   2011
 
     depends_lib-append      port:py${python.version}-texttable
 

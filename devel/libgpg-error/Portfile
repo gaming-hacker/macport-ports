@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       conflicts_build 1.0
@@ -14,8 +14,8 @@ if {${os.platform} eq "darwin" && ${os.major} < 18} {
 }
 
 name            libgpg-error
-version         1.45
-revision        0
+version         1.46
+revision        1
 categories      devel
 license         LGPL-2.1+
 maintainers     {mps @Schamschula} openmaintainer
@@ -31,9 +31,9 @@ master_sites    gnupg
 
 use_bzip2       yes
 
-checksums       rmd160  074680bf2152e5778d0c8231c9bf9e26e3f7c309 \
-sha256  570f8ee4fb4bff7b7495cff920c275002aea2147e9a1d220c068213267f80a26 \
-size    1015954
+checksums       rmd160  7e80cbe7c44a9bbedbe5875408546ba1a5bb099f \
+                sha256  b7e11a64246bbe5ef37748de43b245abd72cfcd53c9ae5e7fc5ca59f1c81268d \
+                size    1014291
 
 depends_build   port:gettext
 
@@ -42,6 +42,12 @@ depends_lib     port:gettext-runtime \
 
 # build with gawk 5.0.0 is broken see https://trac.macports.org/ticket/58356
 configure.awk   /usr/bin/awk
+
+# enable install of deprecated gpg-error-config
+# currently required to configure libgcrypt
+# can be removed when this is no longer necessary
+# see libgpg-error NOTES for more details
+configure.args  --enable-install-gpg-error-config
 
 # fix build on Tiger see https://trac.macports.org/ticket/55145
 platform darwin 8 {

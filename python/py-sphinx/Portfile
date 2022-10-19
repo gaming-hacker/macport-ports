@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-sphinx
-version             5.2.3
+version             5.3.0
 categories-append   textproc devel
 license             BSD
 maintainers         {jmr @jmroot} openmaintainer
@@ -22,11 +22,11 @@ supported_archs     noarch
 homepage            https://www.sphinx-doc.org/
 python.rootname     Sphinx
 
-checksums           md5 327ae7af29b3f08f059b52a4b9ed98cb \
-rmd160 ff4beb3241943a2bf06d1b00d65f24b962b770d0 \
-sha256 5b10cb1022dac8c035f75767799c39217a05fc0fe2d6fe5597560d38e44f0363
+checksums           md5 b752f7b0177865a36cbcdcef4ac80cd4 \
+                    rmd160 b9d212a39f7dc632b595d92f5cd0e8c48213b571 \
+                    sha256 51026de0a9ff9fc13c05d74913ad66047e104f56a129ff73e174eb5c3ee794b5
 
-python.versions 310
+python.versions     27 35 36 37 38 39 310
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-docutils
@@ -53,9 +53,9 @@ if {$subport ne $name} {
         version     3.5.4
         revision    0
         checksums   md5 dd46088ebc01f6f721ee7618df680d68 \
-rmd160 70102258335337eff3cc16526e84e9a95c625018 \
-sha256 19010b7b9fa0dc7756a6e105b2aacd3a80f798af3c25c273be64d7beeb482cb1 \
-size 5911093
+                    rmd160 70102258335337eff3cc16526e84e9a95c625018 \
+                    sha256 19010b7b9fa0dc7756a6e105b2aacd3a80f798af3c25c273be64d7beeb482cb1 \
+                    size 5911093
 
         patch.pre_args      -p1
         # Source of patch: https://github.com/catap/sphinx/tree/docutils-1.8-v354
@@ -65,8 +65,8 @@ size 5911093
         version     1.8.5
         revision    0
         checksums   md5 554f7a4e752f48b2601e5ef5ab463346 \
-rmd160 a7a38523976288c13a8a7e5bf4a81367db9af462 \
-sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
+                    rmd160 a7a38523976288c13a8a7e5bf4a81367db9af462 \
+                    sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
 
         depends_run-append  port:py${python.version}-six \
                             port:py${python.version}-sphinxcontrib-websupport \

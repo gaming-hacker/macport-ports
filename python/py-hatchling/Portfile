@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-hatchling
-version             1.10.0
+version             1.11.1
 revision            0
 categories          python
 supported_archs     noarch
@@ -15,11 +15,11 @@ description         This is the extensible, standards compliant build backend us
 long_description    {*}${description}
 homepage            https://hatch.pypa.io/latest/
 
-checksums           rmd160  58cadd74f70e94d430bb0a02ba60be699737b61e \
-sha256  5d31f43dffaf6265c808e1b5353662ffa5146d844278b55caa6c7f74f427ec50 \
-size    56289
+checksums           rmd160  c8684d4363f2921750af64e92f680fe17dd64cf3 \
+                    sha256  9f84361f70cf3a7ab9543b0c3ecc64211ed2ba8a606a71eb6a473c1c9b08e1d0 \
+                    size    57223
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     python.pep517   yes

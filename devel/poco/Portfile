@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        pocoproject poco 1.11.1 poco- -release
+github.setup        pocoproject poco 1.12.2 poco- -release
 categories          devel
 maintainers         {gmail.com:vandervelde.ag @arjanvandervelde} openmaintainer
 
@@ -26,10 +26,11 @@ set docdir          ${prefix}/share/doc/${name}
 if {${subport} eq ${name}} {
     PortGroup           cmake 1.1
     PortGroup           openssl 1.0
+
     revision            0
-    checksums           rmd160  10ad3dca43fef5522b20fdeae6cf13eec441ef7c \
-sha256  85efbc085f64f8a3facb4961cdde80f85af507601a47a8204d086ff172e31ec6 \
-size    5397863
+    checksums           rmd160  8546809df1799939c367be2d86831ef60a4d553f \
+                        sha256  25749bf14dac26af7c44cf2a6ace136252e8d781d54aef5b4722fefc16c24826 \
+                        size    5871586
 
     use_bzip2           yes
 
@@ -41,9 +42,7 @@ size    5397863
 
     patchfiles          DYLD_LIBRARY_PATH.patch
 
-    #openssl.branch      1.1
-
-    compiler.c_standard 2017
+    compiler.c_standard 1999
     compiler.cxx_standard \
                         2014
 
@@ -56,9 +55,9 @@ size    5397863
                         -DENABLE_DATA_SQLITE=OFF \
                         -DENABLE_TESTS=ON \
                         -DPOCO_UNBUNDLED=ON
-
+    
     test.run            yes
-
+    
     post-destroot {
         xinstall -d ${destroot}${docdir}/html
         xinstall -m 0644 -W ${worksrcpath} CHANGELOG CONTRIBUTORS LICENSE NEWS README VERSION \
@@ -66,7 +65,7 @@ size    5397863
         xinstall -m 0644 -W ${worksrcpath}/doc Acknowledgements.html ${destroot}${docdir}/html
         copy ${worksrcpath}/CppUnit/doc ${destroot}${docdir}/html/CppUnit
     }
-
+    
     variant odbc description {Build ODBC backend for Data library} {
         depends_lib-append      port:libiodbc
         configure.args-replace  -DENABLE_DATA_ODBC=OFF \
@@ -74,7 +73,7 @@ size    5397863
         configure.args-append   -DODBC_INCLUDE_DIR=${prefix}/include/libiodbc \
                                 -DODBC_LIBRARY=${prefix}/lib/libiodbc.dylib
     }
-
+    
     variant mysql description {Build MySQL backend for Data library} {
         depends_lib-append      path:bin/mysql_config5:mysql5
         configure.args-replace  -DENABLE_DATA_MYSQL=OFF \
@@ -82,7 +81,7 @@ size    5397863
         configure.args-append   -DMYSQL_INCLUDE_DIR=${prefix}/include/mysql5/mysql \
                                 -DMYSQL_LIBRARY=${prefix}/lib/mysql5/mysql/libmysqlclient.dylib
     }
-
+    
     variant sqlite description {Build SQLite backend for Data library} {
         depends_lib-append      port:sqlite3
         configure.args-replace  -DENABLE_DATA_SQLITE=OFF \
@@ -95,8 +94,8 @@ size    5397863
 subport ${name}-docs {
     revision            0
     checksums           rmd160  9a0bfacac7214a46da601f0423f0759ccc9eb67e \
-sha256  df79a5d6eedcf73674a76d686397ce4ffb0bf83ab01118d0e9bfd6b6be12e1e2 \
-size    1369435
+                        sha256  df79a5d6eedcf73674a76d686397ce4ffb0bf83ab01118d0e9bfd6b6be12e1e2 \
+                        size    1369435
 
     license             unknown
     supported_archs     noarch

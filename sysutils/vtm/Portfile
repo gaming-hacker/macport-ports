@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -6,7 +6,7 @@ PortGroup               cmake 1.1
 PortGroup               legacysupport 1.1
 PortGroup               compiler_blacklist_versions 1.0
 
-github.setup            netxs-group vtm 0.9.0 v
+github.setup            netxs-group vtm 0.9.6 v
 github.tarball_from     archive
 revision                0
 
@@ -19,9 +19,9 @@ description             Monotty Desktopio - text-based desktop environment \
 long_description        ${name} is a terminal multiplexer with window manager \
                         and session sharing.
 
-checksums               rmd160  d023dfc3e7f7f8955bb09932af4fb0fdeadcdfc6 \
-sha256  ebaaf2542e26d4b7ef5aad91ece9739b92ede2f8238ea37233e485ceb8e4afcd \
-size    1338596
+checksums               rmd160  6984e841db8f1b96f8fe3b9a3e0231d2918e6c4d \
+                        sha256  ccca0198946d4611ebdb8cda94803cd6ca9c29285ccae05872faefb82db0b6ca \
+                        size    1343491
 
 # Requires a compiler with full C++20 support
 compiler.cxx_standard   2020
