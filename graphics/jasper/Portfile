@@ -49,8 +49,6 @@ variant docs description {build documentation} {
     configure.args-append   -DJAS_ENABLE_DOC=ON
 }
 
-variant heif description {Enable the use of the HEIF Library} {
-    depends_lib-append  port:libheif
-    configure.args-replace  -DJAS_ENABLE_LIBHEIF=OFF \
+depends_lib-append  port:libheif
+configure.args-replace  -DJAS_ENABLE_LIBHEIF=OFF \
                             -DJAS_ENABLE_LIBHEIF=ON
-}
