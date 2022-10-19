@@ -8,7 +8,7 @@ name                ffmpeg
 set my_name         ffmpeg
 
 epoch               1
-version             20221019
+version             20221020
 revision            0
 license             LGPL-2.1+
 categories          multimedia
@@ -30,15 +30,15 @@ extract.suffix      .zip
 use_zip             yes
 checksum.skip  yes
 
-configure.cc clang-mp-14
+configure.cc clang-mp-15
 
-configure.cpp clang++-mp-14
+configure.cpp clang++-mp-15
 
 depends_build       port:pkgconfig \
                     port:gmake \
                     port:cctools \
                     port:texinfo \
-                    port:clang-14
+                    port:clang-15
 
 depends_lib         port:lame \
                     port:libiconv \
