@@ -54,7 +54,7 @@ depends_lib         port:bzip2 \
 depends_run         port:python_select \
                     port:python3_select
 
-compiler.c_standard 2011
+compiler.c_standard 2017
 
 # ensurepip arg may be removed later, now conflicts with pip and setuptools
 # packages

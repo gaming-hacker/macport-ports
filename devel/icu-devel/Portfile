@@ -76,7 +76,7 @@ if {${subport} eq ${name} || ${subport} eq "${name}-lx"} {
                         patch-i18n-formatted_string_builder.h.diff \
                         patch-cinttypes-header.diff
 
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2020
 
     # prevent ICU from finding installed icu when upgrading (#11981).
     compiler.cpath
@@ -117,16 +117,16 @@ if {${subport} eq ${name} || ${subport} eq "${name}-lx"} {
     test.target     check
     test.args       VERBOSE=1
 
-    # icu4c requires python2.7+ regardless of configure:
+    # icu4c requires python3.10+ regardless of configure:
     #   checking for python3...
     # libxml2 which is used to compile llvm/clang depends on icu,
     # and adding MacPorts' python may introduce a dependency loop.
     # See: https://unicode-org.atlassian.net/browse/ICU-20301
     # See: https://trac.macports.org/ticket/65870
     if {${os.platform} eq "darwin" && ${os.major} < 11} {
-        depends_build-append    port:python27
+        depends_build-append    port:python310
         license_noconflict      python27
-        configure.python        ${prefix}/bin/python2.7
+        configure.python        ${prefix}/bin/python3.10
     } elseif {${os.platform} eq "darwin" && ${os.major} >= 19} {
         configure.python        /usr/bin/python3
     } else {

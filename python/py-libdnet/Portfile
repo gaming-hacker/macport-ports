@@ -24,7 +24,7 @@ checksums           rmd160 862555ad0610ae1e03f5aa28649571235fede8ee \
                     sha256 b151c4913758ef80daf4558361b4f2680a37b01d59272625bb78c77183062c63 \
                     size   666619
 
-python.versions     27 310
+python.versions 310
 
 if {$subport ne $name} {
     depends_build-append    port:py${python.version}-cython

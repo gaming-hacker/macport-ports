@@ -20,7 +20,7 @@ checksums           rmd160  e865eb2a8a0602c3e952c5cebe367853c95b8953 \
                     sha256  70538c8126b13173a5d05ac0c7e0023fc7eb7756afce002a1efa1b3867bd6784 \
                     size    2659847
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     post-patch {
