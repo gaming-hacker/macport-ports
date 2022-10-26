@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/goreleaser/goreleaser 1.12.1 v
+go.setup            github.com/goreleaser/goreleaser 1.12.3 v
 github.tarball_from archive
 revision            0
 
@@ -20,9 +20,9 @@ license             MIT
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  9e4326be9340509120fd94b5fc40d8ac932961dc \
-sha256  70c55d56a95cacc214d8ad7db964e5f759c4666e0ee49da7e886b3bd5117ce66 \
-size    756058
+checksums           rmd160  d7704a552fdc0b59eca7696060c611ba37c71efc \
+                    sha256  efb91c4cc25720cd0132f18ef41a86c6af789a1bf9669f87393ffc28a407f0b9 \
+                    size    756025
 
 set build_script    ${worksrcpath}/_build.sh
 

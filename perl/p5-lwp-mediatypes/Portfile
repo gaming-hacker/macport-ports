@@ -5,7 +5,8 @@ PortGroup           perl5 1.0
 
 perl5.branches 5.34
 perl5.setup         LWP-MediaTypes 6.04 ../../authors/id/O/OA/OALDERS
-platforms           darwin
+platforms           {darwin any}
+supported_archs     noarch
 maintainers         nomaintainer
 license             {Artistic-1 GPL}
 
@@ -19,6 +20,4 @@ size    40000
 if {${perl5.major} != ""} {
     depends_build-append \
                     port:p${perl5.major}-test-fatal
-
-    supported_archs noarch
 }

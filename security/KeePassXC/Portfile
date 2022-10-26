@@ -78,7 +78,8 @@ size    11236977
     gpg_verify.use_gpg_verification \
                         no
 
-    patchfiles-append    devel/patch-no-findpackage-path.diff
+    patchfiles-append    devel/patch-no-findpackage-path.diff \
+                         devel/patch-touch-id.diff
 }
 
 if {[option gpg_verify.use_gpg_verification]} {

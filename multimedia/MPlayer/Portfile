@@ -3,8 +3,10 @@
 PortSystem          1.0
 
 name                MPlayer
+conflicts           mplayer-devel
 version             1.5.0
 distname            ${name}-1.5
+livecheck.version   1.5
 revision            0
 categories          multimedia
 license             GPL-2+
@@ -20,6 +22,9 @@ use_xz              yes
 checksums           rmd160  9de00488978d8774310d2884a4784674e64f4abc \
 sha256  650cd55bb3cb44c9b39ce36dac488428559799c5f18d16d98edb2b7256cbbf85 \
 size    15379972
+
+# fix i386 builds
+patchfiles          patch-mplayer-i386.diff
 
 depends_build-append \
                     port:pkgconfig \

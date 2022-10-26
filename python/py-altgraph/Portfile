@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,15 +16,16 @@ long_description \
     altgraph includes some additional usage of Python 2.6+ features and \
     enhancements related to modulegraph and macholib.
 
+platforms           {darwin any}
 supported_archs     noarch
 
 homepage            http://undefined.org/python/#altgraph
 
 checksums           md5 735a8816a1d36f24b0a5c27e424e8412 \
-rmd160 a9bbf80bf20640e3b0252daf7859c151d3ec1d1b \
-sha256 ad33358114df7c9416cdb8fa1eaa5852166c505118717021c6a8c7c7abbd03dd
+                    rmd160 a9bbf80bf20640e3b0252daf7859c151d3ec1d1b \
+                    sha256 ad33358114df7c9416cdb8fa1eaa5852166c505118717021c6a8c7c7abbd03dd
 
-python.versions 310
+python.versions     27 35 36 37 38 39 310
 
 if {$subport ne $name} {
     if {${python.version} >= 36} {
