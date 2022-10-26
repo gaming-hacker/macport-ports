@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    {*}${description}
 homepage            https://github.com/SathyaBhat/spotify-dl
 
 checksums           rmd160  ea6585eb7fc8d1873d81809670d6f2f0137a2bdc \
-                    sha256  11a2983055c91f91e9e8649457971231b6ad5c57e2111ba83918b86affb91f00 \
-                    size    13142
+sha256  11a2983055c91f91e9e8649457971231b6ad5c57e2111ba83918b86affb91f00 \
+size    13142
 
 python.default_version 310
 depends_build       port:py${python.version}-setuptools

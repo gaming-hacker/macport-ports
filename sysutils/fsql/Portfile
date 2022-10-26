@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -26,27 +26,27 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  58b03ccb4957d797caec6317356f752dd90de50b \
-                        sha256  4bca1835fd9174d8eb7307f92927968d22c51c6554ac3d3a2ffa4bf8b1f5f5c1 \
-                        size    1944799
+rmd160  58b03ccb4957d797caec6317356f752dd90de50b \
+sha256  4bca1835fd9174d8eb7307f92927968d22c51c6554ac3d3a2ffa4bf8b1f5f5c1 \
+size    1944799
 
 go.vendors          golang.org/x/term \
                         lock    7de9c90e9dd1 \
-                        rmd160  bd573c74337fdd8e57417c03c825a315b2c208f9 \
-                        sha256  5b01bffc3bc94976e27cecbe6d9c403eefc597dc2b03ddd3ad083931c0981fa4 \
-                        size    15244 \
+rmd160  bd573c74337fdd8e57417c03c825a315b2c208f9 \
+sha256  5b01bffc3bc94976e27cecbe6d9c403eefc597dc2b03ddd3ad083931c0981fa4 \
+size    15244 \
                     golang.org/x/sys \
                         lock    665e8c7367d1 \
-                        rmd160  e589d28cc611e16701a8f1f789f067ff5a9cdf50 \
-                        sha256  9d525e47bd3f6990ab81dcba618521d2191a3dc12267457aa099c6cbb8de71a1 \
-                        size    1200464 \
+rmd160  e589d28cc611e16701a8f1f789f067ff5a9cdf50 \
+sha256  9d525e47bd3f6990ab81dcba618521d2191a3dc12267457aa099c6cbb8de71a1 \
+size    1200464 \
                     golang.org/x/crypto \
                         lock    56aed061732a \
-                        rmd160  bc24a671816c7839d9115d98fad7c1beb917ce2d \
-                        sha256  7efc63941baeaf8c5ccec13f41a6a5056d95e76a5893263a825e1633059ab14c \
-                        size    1631972 \
+rmd160  bc24a671816c7839d9115d98fad7c1beb917ce2d \
+sha256  7efc63941baeaf8c5ccec13f41a6a5056d95e76a5893263a825e1633059ab14c \
+size    1631972 \
                     github.com/oleiade/lane \
                         lock    v1.0.1 \
-                        rmd160  08d837ba46b818e4798fb53b0bf4120a48ffa2b5 \
-                        sha256  299ad721b3d5dc9c604edddda01166a536d0bc1db12dceffa26c3b3baaad3579 \
-                        size    8434
+rmd160  08d837ba46b818e4798fb53b0bf4120a48ffa2b5 \
+sha256  299ad721b3d5dc9c604edddda01166a536d0bc1db12dceffa26c3b3baaad3579 \
+size    8434

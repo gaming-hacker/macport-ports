@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -15,8 +15,8 @@ long_description \
 homepage        https://github.com/libhangul/libhangul
 
 checksums       rmd160  a7fd55d67ae3cc3313ad32af1ac92da7fa2f10bc \
-                sha256  38073799a560929cae53e1328d6aecccfab519087add23863c883a4975ce662e \
-                size    4015179
+sha256  38073799a560929cae53e1328d6aecccfab519087add23863c883a4975ce662e \
+size    4015179
 
 use_autoreconf  yes
 autoreconf.cmd  ./autogen.sh

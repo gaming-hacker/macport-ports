@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ homepage            http://www.leonerd.org.uk/code/libvterm/
 master_sites        ${homepage}
 
 checksums           rmd160  af29912c984b56a593cb6c003d7aefac5c2abc1c \
-                    sha256  61eb0d6628c52bdf02900dfd4468aa86a1a7125228bab8a67328981887483358 \
-                    size    83861
+sha256  61eb0d6628c52bdf02900dfd4468aa86a1a7125228bab8a67328981887483358 \
+size    83861
 
 compiler.c_standard 2017
 

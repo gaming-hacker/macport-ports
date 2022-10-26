@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ long_description    Libdnet provides a simplified, portable interface to several
 dist_subdir         libdnet
 github.tarball_from archive
 checksums           rmd160 862555ad0610ae1e03f5aa28649571235fede8ee \
-                    sha256 b151c4913758ef80daf4558361b4f2680a37b01d59272625bb78c77183062c63 \
-                    size   666619
+sha256 b151c4913758ef80daf4558361b4f2680a37b01d59272625bb78c77183062c63 \
+size   666619
 
 python.versions 310
 

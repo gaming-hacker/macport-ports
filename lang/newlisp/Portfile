@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 
 name                newlisp
@@ -19,8 +19,8 @@ homepage            http://www.newlisp.org
 master_sites        sourceforge
 extract.suffix      .tgz
 checksums           rmd160  62acd6c9fc31438689cc221cf3541de23ef0b4d3 \
-                    sha256  dc2d0ff651c2b275bc4af3af8ba59851a6fb6e1eaddc20ae75fb60b1e90126ec \
-                    size    1168896
+sha256  dc2d0ff651c2b275bc4af3af8ba59851a6fb6e1eaddc20ae75fb60b1e90126ec \
+size    1168896
                     
 depends_lib         port:readline \
                     port:libffi

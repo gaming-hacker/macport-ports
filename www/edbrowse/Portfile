@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -16,13 +16,13 @@ set main_distfile       ${distfiles}
 set quickjs_distname    quickjs-${quickjs_version}
 set quickjs_distfile    ${quickjs_distname}.tar.xz
 checksums               ${main_distfile} \
-                        rmd160  8cd19f16680af22bdbab71a85346d87623650c1e \
-                        sha256  4fb6ce7962560552b370c55467dc65f6d751de06ba373ac7c4678625daed37b4 \
-                        size    928505 \
+rmd160  8cd19f16680af22bdbab71a85346d87623650c1e \
+sha256  4fb6ce7962560552b370c55467dc65f6d751de06ba373ac7c4678625daed37b4 \
+size    928505 \
                         ${quickjs_distfile} \
-                        rmd160  0d59b21acc50db254d1087baed8c625e6390c113 \
-                        sha256  a45bface4c3379538dea8533878d694e289330488ea7028b105f72572fe7fe1a \
-                        size    753556
+rmd160  0d59b21acc50db254d1087baed8c625e6390c113 \
+sha256  a45bface4c3379538dea8533878d694e289330488ea7028b105f72572fe7fe1a \
+size    753556
 
 # As of 3.8.4 edbrowse no longer patches the quickjs source so it could now
 # use a standard quickjs library from MacPorts, if we had a quickjs port.

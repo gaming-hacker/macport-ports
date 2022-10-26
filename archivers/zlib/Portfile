@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcodeversion 1.0
@@ -34,8 +34,8 @@ if {${os.platform} eq "darwin" && ${os.major} < 11 && ${configure.cxx_stdlib} eq
 }
 
 checksums               rmd160  4805f7f51e5ff84ce3cb9699fedcc840893b5da1 \
-                        sha256  d14c38e313afc35a9a8760dadf26042f51ea0f5d154b0630a31da0540107fb98 \
-                        size    1296496
+sha256  d14c38e313afc35a9a8760dadf26042f51ea0f5d154b0630a31da0540107fb98 \
+size    1296496
 
 minimum_xcodeversions   {8 2.4.1 9 3.1}
 

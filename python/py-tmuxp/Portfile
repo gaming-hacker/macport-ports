@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=Portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=Portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -37,8 +37,8 @@ if {${name} ne ${subport}} {
                     port:tmuxp_select
 
     checksums       rmd160  22508123e6b8fae81918307e329acde85934b9f2 \
-                    sha256  fd8f1366fbbf24ad6d1705956add3b2fcdafbec523a32262ac6f3b6893b3622e \
-                    size    849808
+sha256  fd8f1366fbbf24ad6d1705956add3b2fcdafbec523a32262ac6f3b6893b3622e \
+size    849808
 
     select.group    tmuxp
     select.file     ${worksrcpath}/py${python.version}-tmuxp

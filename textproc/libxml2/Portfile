@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -9,8 +9,8 @@ name                libxml2
 version             2.10.3
 revision            0
 checksums           rmd160  baac5a5b160dba19ba48c23922b32c31ae336453 \
-                    sha256  5d2cc3d78bec3dbe212a9d7fa629ada25a7da928af432c93060ff5c17ee28a9c \
-                    size    2639908
+sha256  5d2cc3d78bec3dbe212a9d7fa629ada25a7da928af432c93060ff5c17ee28a9c \
+size    2639908
 
 set branch          [join [lrange [split ${version} .] 0 1] .]
 categories          textproc

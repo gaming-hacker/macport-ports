@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,9 +19,9 @@ long_description    {*}$description
 homepage            https://github.com/pypa/packaging
 
 checksums           md5 e713c1939f294fd729af4a7be40dd141 \
-                    rmd160 45ed4b85bf4ef2069e07dd2922849f7edf98363a \
-                    sha256 dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb \
-                    size   84848
+rmd160 45ed4b85bf4ef2069e07dd2922849f7edf98363a \
+sha256 dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb \
+size   84848
 
 python.versions 310
 
@@ -45,8 +45,8 @@ if {$subport ne $name} {
         version     20.9
         revision    0
         checksums   md5 5377308b3ba89f2d78c05e7f485be65d \
-                    rmd160 13af4881f42cfaa3b857096a93001501a5884371 \
-                    sha256 5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5
+rmd160 13af4881f42cfaa3b857096a93001501a5884371 \
+sha256 5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5
 
         set docfiles {CHANGELOG.rst LICENSE LICENSE.APACHE LICENSE.BSD README.rst}
     }

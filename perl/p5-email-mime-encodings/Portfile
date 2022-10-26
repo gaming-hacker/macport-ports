@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -15,8 +15,8 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  639781fe5c66155e8373f072f1c929a61a86d873 \
-                    sha256  061856a023af0290bec8ebecfdc8e58bea6aafb0220a9e75748d4ad607ba9c66 \
-                    size    16848
+sha256  061856a023af0290bec8ebecfdc8e58bea6aafb0220a9e75748d4ad607ba9c66 \
+size    16848
 
 if {${perl5.major} != ""} {
     depends_build-append \

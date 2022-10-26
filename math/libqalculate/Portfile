@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ long_description \
                     GUI interface qalculate-gtk or qalculate-kde.
 
 checksums           rmd160  a9b86616d593264473f77715fb2c183d1eaf9f1c \
-                    sha256  7d38e271eb299fedaf2dd11f90d231419b307bbaeea21ee17405a9e9572bea8e \
-                    size    2093478
+sha256  7d38e271eb299fedaf2dd11f90d231419b307bbaeea21ee17405a9e9572bea8e \
+size    2093478
 
 # autoreconf to reconfigure for intltool; use package's autogen script to avoid
 # conflict with gettext

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -25,10 +25,10 @@ distname            platypus${version}.src
 use_zip             yes
 
 checksums           md5     225a4064ba07f0e8e0943d9d18cf5fe7 \
-                    sha1    2afec63a051ee2b1f4412a5ce699d2636178e2be \
-                    rmd160  a2125465330db99c6fca7e1c616bff8f9eb33222 \
-                    sha256  b2dc96707c4d34588b5d743d2a1a998f8935e3f7daf19b28ab804abb786fbcc4 \
-                    size    26159125
+sha1    2afec63a051ee2b1f4412a5ce699d2636178e2be \
+rmd160  a2125465330db99c6fca7e1c616bff8f9eb33222 \
+sha256  b2dc96707c4d34588b5d743d2a1a998f8935e3f7daf19b28ab804abb786fbcc4 \
+size    26159125
 
 if {${os.major} < 15} {
     known_fail      yes

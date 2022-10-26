@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -21,9 +21,9 @@ maintainers         {@casey rodarmor.com:casey} \
                     openmaintainer
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160 f7e41c869ca7be7233e97463c516c2fda75fd287 \
-                    sha256 d33e656843bc280795373249f5f23f2d6c87aee9dd970058a1c6257b2843bd9d \
-                    size   630424
+rmd160 f7e41c869ca7be7233e97463c516c2fda75fd287 \
+sha256 d33e656843bc280795373249f5f23f2d6c87aee9dd970058a1c6257b2843bd9d \
+size   630424
 
 destroot {
     xinstall -m 0755 \
@@ -117,7 +117,7 @@ cargo.crates \
     serde                          1.0.145  728eb6351430bccb993660dfffc5a72f91ccc1295abaa8ce19b27ebe4f75568b \
     serde_derive                   1.0.145  81fa1584d3d1bcacd84c277a0dfe21f5b0f6accf4a23d04d4c6d61f1af522b4c \
     serde_json                      1.0.87  6ce777b7b150d76b9cf60d28b55f5847135a003f7d7350c6be7a773508ce7d45 \
-    sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
+sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
     similar                          2.2.0  62ac7f900db32bf3fd12e0117dd3dc4da74bc52ebaac97f39668446d89694803 \
     snafu                            0.7.2  dd726aec4ebad65756394ff89a9b9598793d4e30121cd71690244c1e497b3aee \
     snafu-derive                     0.7.2  712529e9b0b014eabaa345b38e06032767e3dc393e8b017e853b1d7247094e74 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -26,8 +26,8 @@ long_description    A C++ bittorrent library designed to run on anything from em
                     seed servers. It comes with python bindings and detailed documentation.
 
 checksums           rmd160  57d36701205462872510bfb75ea36139f64b5360 \
-                    sha256  09dd399b4477638cf140183f5f85d376abffb9c192bc2910002988e27d69e13e \
-                    size    4562750
+sha256  09dd399b4477638cf140183f5f85d376abffb9c192bc2910002988e27d69e13e \
+size    4562750
 
 depends_lib-append  path:lib/libssl.dylib:openssl
 
