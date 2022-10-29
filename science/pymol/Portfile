@@ -58,7 +58,7 @@ python.link_binaries no
 
 boost.depends_type build
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 variant vtkm description {Use VTK-m for isosurface generation} {
     depends_lib-append  port:vtk-m
