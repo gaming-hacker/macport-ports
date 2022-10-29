@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -25,8 +25,8 @@ long_description \
 homepage                https://neovim.io
 
 checksums               rmd160  0a279bde5594abaafc6ada583135771ea21302e7 \
-                        sha256  b4a15357b786648d7c90772b54c144db84e574ea1790fe2b97b43a9d8b20bc25 \
-                        size    11356105
+sha256  b4a15357b786648d7c90772b54c144db84e574ea1790fe2b97b43a9d8b20bc25 \
+size    11356105
 
 depends_build-append    port:pkgconfig
 

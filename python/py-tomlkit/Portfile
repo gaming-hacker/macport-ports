@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    {*}${description}
 homepage            https://github.com/sdispater/tomlkit
 
 checksums           rmd160  ce3da338b62735196a65ff254dbf0d6396a870d7 \
-                    sha256  71b952e5721688937fb02cf9d354dbcf0785066149d2855e44531ebdd2b65d73 \
-                    size    188290
+sha256  71b952e5721688937fb02cf9d354dbcf0785066149d2855e44531ebdd2b65d73 \
+size    188290
 
 if {${name} ne ${subport}} {
     depends_build-append \

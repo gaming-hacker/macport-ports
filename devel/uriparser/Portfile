@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        uriparser uriparser 0.9.7 uriparser-
 revision            0
 checksums           rmd160  6db3c401d29d37633e49b0f1dd8997f23a62ed83 \
-                    sha256  d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7 \
-                    size    179989
+sha256  d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7 \
+size    179989
 
 categories          devel www
 maintainers         {ryandesign @ryandesign} openmaintainer

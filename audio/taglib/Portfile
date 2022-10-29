@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        taglib taglib 1.13 v
 revision            0
 checksums           rmd160  60e230260fd569b1f314a19dbb2a74a6c952350f \
-                    sha256  58f08b4db3dc31ed152c04896ee9172d22052bc7ef12888028c01d8b1d60ade0 \
-                    size    1371504
+sha256  58f08b4db3dc31ed152c04896ee9172d22052bc7ef12888028c01d8b1d60ade0 \
+size    1371504
 
 categories          audio
 license             {LGPL-2 MPL-1.1}

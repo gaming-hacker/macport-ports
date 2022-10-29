@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -44,13 +44,13 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
 
     checksums \
         openmp-${version}.src.tar.xz \
-        rmd160  b680eace750b2e8f99950b3c69c7d6c882d08b9d \
-        sha256  ec7bd70a341bd8d33f2b4be7d9961d609cf2596d7042ae7d288975462b694b5e \
-        size    1184424 \
+rmd160  b680eace750b2e8f99950b3c69c7d6c882d08b9d \
+sha256  ec7bd70a341bd8d33f2b4be7d9961d609cf2596d7042ae7d288975462b694b5e \
+size    1184424 \
         cmake-${version}.src.tar.xz \
-        rmd160  4499e760a7ac0069f4fc6055659539c3853402d4 \
-        sha256  21cf3f52c53dc8b8972122ae35a5c18de09c7df693b48b5cd8553c3e3fed090d \
-        size    6980
+rmd160  4499e760a7ac0069f4fc6055659539c3853402d4 \
+sha256  21cf3f52c53dc8b8972122ae35a5c18de09c7df693b48b5cd8553c3e3fed090d \
+size    6980
 
     revision            0
 
@@ -86,7 +86,7 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libstdc++"} {
         worksrcdir      openmp-${version}/final/runtime
         version         3.8.1
         checksums       rmd160  a41054068a127ef84610afef8090109078cb6c46 \
-                        sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
+sha256  4c46b5946fe9b2a701661746d11c7c85c51a7f18673194a7ebd2a43470948a34
         set rtpath      "./"
     }
     livecheck.type      none
