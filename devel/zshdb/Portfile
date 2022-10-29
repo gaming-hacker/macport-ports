@@ -17,7 +17,7 @@ long_description    {*}${description} Zshdb can run your script, stop it on \
                     script so that you can experiment with your code and fix \
                     problems once they are identified.
 
-platforms           darwin
+platforms           any
 supported_archs     noarch
 
 depends_lib         port:zsh
@@ -27,4 +27,3 @@ sha256  e774af35fdad380c4d5f6d1868ea30cd5e9b78a6e5c8eb82d9cb689a7b50edd9 \
 size    212511
 
 use_autoreconf      yes
-

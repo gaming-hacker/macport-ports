@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake                       1.1
@@ -11,7 +11,7 @@ PortGroup           legacysupport               1.1
 
 legacysupport.newest_darwin_requires_legacy 15
 
-github.setup        fluent fluent-bit 2.0.0 v
+github.setup        fluent fluent-bit 2.0.3 v
 revision            0
 categories          sysutils
 license             Apache-2
@@ -31,9 +31,9 @@ maintainers         {l2dy @l2dy} \
                     {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  ee9a6ef1b04436337463d7de8c0e8d3e05d862c2 \
-sha256  0e2239524c957cd8ca730585c670d0735a0beb9a3e097e624e4b070755e0e988 \
-size    21879476
+checksums           rmd160  3645bd4cfcd072146bdccc84cb68914ae0cc5e00 \
+                    sha256  b21df171ae049e88180f5f66a0f9fee195ed859031c652ebf9d3829addbcc156 \
+                    size    21878566
 
 # /usr/bin/ranlib: unknown option character `n' in: -no_warning_for_no_symbols
 compiler.blacklist-append   {clang < 700}

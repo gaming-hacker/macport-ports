@@ -31,6 +31,7 @@ size    65099
 
 use_configure       no
 supported_archs     noarch
+platforms           any
 
 post-patch {
     reinplace       "s&#!/usr/bin/env perl&#!${perl5.bin}&" ${worksrcpath}/trt
