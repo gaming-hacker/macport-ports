@@ -53,9 +53,9 @@ variant tests description "Enable running tests" {
     depends_build-append    port:cppunit
 
     # cppunit requires C++11
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2020
     configure.cxxflags-append \
-                            -std=c++11
+                            -std=gnu++2a
 
     configure.args-append   -DBUILD_TESTING=ON
 
