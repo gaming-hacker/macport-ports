@@ -27,7 +27,7 @@ checksums           rmd160  e85c802f97f97b09b7ed74685b5df7817732864e \
 python.pep517       yes
 python.pep517_backend   hatch
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

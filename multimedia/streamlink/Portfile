@@ -24,7 +24,7 @@ long_description    ${name} is a CLI utility which pipes video streams from vari
 
 homepage            https://github.com/streamlink/streamlink/
 
-python.default_version  38
+python.default_version 310
 
 depends_build-append \
                     port:py${python.version}-setuptools
