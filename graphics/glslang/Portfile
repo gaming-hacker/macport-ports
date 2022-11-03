@@ -20,7 +20,7 @@ checksums           sha256  7795a97450fecd9779f3d821858fbc2d1a3bf1dd602617d95b68
                     rmd160  69cd381189af3c6a44c7f389a31c524bc6359273 \
                     size    3655891
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 configure.args      -DENABLE_GLSLANG_INSTALL=ON
 
 depends_build-append port:python310

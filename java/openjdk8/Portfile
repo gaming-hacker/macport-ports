@@ -51,7 +51,7 @@ depends_build       port:autoconf \
                     port:bash
 
 set tpath /Library/Java
-use_xcode           yes
+use_xcode  no
 use_configure    yes
 if {${configure.build_arch} eq "ppc"} {
     set datamodel 32

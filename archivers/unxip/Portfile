@@ -31,7 +31,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 21} {
 }
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 universal_variant   yes
 
 build.cmd           swiftc
