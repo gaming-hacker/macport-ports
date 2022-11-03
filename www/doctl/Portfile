@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -16,8 +16,8 @@ description         A command line interface for the DigitalOcean API
 long_description    ${description}
 
 checksums           rmd160  2dca6b4cf2a24ddc6ab3652cf1873a9b7eac3d68 \
-                    sha256  c71bbf142f4d11039da8f9098f9b5c9bf70502ecf79b3582128f404e521d447f \
-                    size    7482467
+sha256  c71bbf142f4d11039da8f9098f9b5c9bf70502ecf79b3582128f404e521d447f \
+size    7482467
 
 set doctl_ver [split ${version} "."]
 set doctl_major [lindex ${doctl_ver} 0]

@@ -1,5 +1,5 @@
 
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ long_description    Simple Pure-Python implementation of the Git file \
 homepage            https://www.dulwich.io
 
 checksums           rmd160  75b0e9721c937b038855b504007e29515c07c714 \
-                    sha256  50a941796b2c675be39be728d540c16b5b7ce77eb9e1b3f855650ece6832d2be \
-                    size    430389
+sha256  50a941796b2c675be39be728d540c16b5b7ce77eb9e1b3f855650ece6832d2be \
+size    430389
 
 python.versions 310
 
@@ -30,8 +30,8 @@ if {${name} ne ${subport}} {
         revision                1
 
         checksums               rmd160  1029473c8fd18718ef7f4a3dea082a053ee92ca4 \
-                                sha256  6d225b7d5f5a293beb1d0855f41feef74230605ffde7929a5719eed4019cb6d1 \
-                                size    369717
+sha256  6d225b7d5f5a293beb1d0855f41feef74230605ffde7929a5719eed4019cb6d1 \
+size    369717
 
         build.target-append build_ext
         build.args-append   --inplace

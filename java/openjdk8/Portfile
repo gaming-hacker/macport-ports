@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ master_sites        https://git.openjdk.java.net/jdk8u/archive/refs/tags/
 distname            jdk${major}u${update}-b${build}
 
 checksums           rmd160  27a2974269ef605d45f0332098c6012c0809b703 \
-                    sha256  eee2286a432c1c612aae9b4d97c5c10f4dd6d58f29b84d67c2cd982a192202c8 \
-                    size    87952054
+sha256  eee2286a432c1c612aae9b4d97c5c10f4dd6d58f29b84d67c2cd982a192202c8 \
+size    87952054
 
 patchfiles          0001-8181503-Can-t-compile-hotspot-with-c-11.patch \
                     0002-Support-XCode-3-14.patch \

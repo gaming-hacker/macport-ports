@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ homepage            https://skaffold.dev
 github.tarball_from archive
 
 checksums           rmd160  6c660777aeda829e273a3698df6f9d7e57f60c86 \
-                    sha256  58ca783891cb1dfe4a1c06027d637a3e699d1fd675b2235cdc8904400cc7744d \
-                    size    39794719
+sha256  58ca783891cb1dfe4a1c06027d637a3e699d1fd675b2235cdc8904400cc7744d \
+size    39794719
 
 depends_build       port:go
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -26,13 +26,13 @@ master_sites https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-$
 if {${configure.build_arch} eq "x86_64"} {
     distname     graalvm-ce-java17-darwin-amd64-${version}
     checksums    rmd160  cc867360f8a4ee78f53befd071b1d0127ef56128 \
-                 sha256  422cd6abecfb8b40238460c09c42c5a018cb92fab4165de9691be2e3c3d0e8d1 \
-                 size    260752076
+sha256  422cd6abecfb8b40238460c09c42c5a018cb92fab4165de9691be2e3c3d0e8d1 \
+size    260752076
 } elseif {${configure.build_arch} eq "arm64"} {
     distname     graalvm-ce-java17-darwin-aarch64-${version}
     checksums    rmd160  fa4e6707920d95ae417effff07a846cee96d18a6 \
-                 sha256  dfc0c8998b8d00fcca87ef1c866c6e4985fd20b0beba3021f9677f9b166dfaf8 \
-                 size    258085301
+sha256  dfc0c8998b8d00fcca87ef1c866c6e4985fd20b0beba3021f9677f9b166dfaf8 \
+size    258085301
 }
 
 worksrcdir   graalvm-ce-java17-${version}
@@ -96,14 +96,14 @@ subport ${name}-native-image {
         set jar_file native-image-installable-svm-java17-darwin-amd64-${version}.jar
         distfiles    ${jar_file}
         checksums    rmd160  8b1647a4e8df1a1c7dcefb8f7b3ed0f0a15d4532 \
-                     sha256  9ce13874e62877d3bbe3faa4a57fbbffc766fdc8191971e7b25de0226fe86598 \
-                     size    30512379
+sha256  9ce13874e62877d3bbe3faa4a57fbbffc766fdc8191971e7b25de0226fe86598 \
+size    30512379
     } elseif {${configure.build_arch} eq "arm64"} {
         set jar_file native-image-installable-svm-java17-darwin-aarch64-${version}.jar
         distfiles    ${jar_file}
         checksums    rmd160  046566633e75733ebaba341b8ccc4f4bb249cc03 \
-                     sha256  b6e44cb03f560bb43db1fd0aa862af36ba1df6717765920d91c18519712adfe9 \
-                     size    30420657
+sha256  b6e44cb03f560bb43db1fd0aa862af36ba1df6717765920d91c18519712adfe9 \
+size    30420657
     }
 
     set java_home ${target}/Contents/Home

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ name                libmatroska
 version             1.7.1
 revision            0
 checksums           rmd160  7fe239dd4f7902bd706218b695f33d8e1bb69ec6 \
-                    sha256  572a3033b8d93d48a6a858e514abce4b2f7a946fe1f02cbfeca39bfd703018b3 \
-                    size    61416
+sha256  572a3033b8d93d48a6a858e514abce4b2f7a946fe1f02cbfeca39bfd703018b3 \
+size    61416
 
 categories          multimedia
 maintainers         {ryandesign @ryandesign} openmaintainer

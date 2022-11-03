@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ master_sites        https://git.openjdk.java.net/jdk15u/archive/refs/tags
 distname            jdk-${version}+${build}
 
 checksums           rmd160  93b7381bb897932208d1832618ef78219559f38b \
-                    sha256  e6b8a4a9e654b1db940890adbdb5fa85063f5c4e427fbef0e4621ce000f58cd9 \
-                    size    102311583
+sha256  e6b8a4a9e654b1db940890adbdb5fa85063f5c4e427fbef0e4621ce000f58cd9 \
+size    102311583
 
 patchfiles          patch-openjdk15-build1.diff
 depends_lib         port:freetype

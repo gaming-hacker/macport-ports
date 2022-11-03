@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               gitlab 1.0
@@ -20,8 +20,8 @@ long_description        {*}${description}
 homepage                https://www.sheepit-renderfarm.com
 
 checksums               rmd160  4ab44971ac209b700a0ca026a9752057e4bac6ec \
-                        sha256  154b23662212c17321e2fe7cb1c8644a9c7eddbb5c826ba60a001a4e78fe2ba5 \
-                        size    123774913
+sha256  154b23662212c17321e2fe7cb1c8644a9c7eddbb5c826ba60a001a4e78fe2ba5 \
+size    123774913
 
 java.version            11+
 java.fallback           openjdk17

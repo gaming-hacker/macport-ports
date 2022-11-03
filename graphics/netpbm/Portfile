@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -20,13 +20,13 @@ set userguide_distname  ${userguide_branch}-r${userguide_revision}
 set userguide_distfile  ${userguide_distname}${extract.suffix}
 
 checksums               ${source_distfile} \
-                        rmd160  3db55665765c0c9580728cc11ea5bfa80076e87f \
-                        sha256  d97888e44cde93e3bdd0360dbf31454ffe948c3a72f62fd41c489524bfcfc0b1 \
-                        size    2958644 \
+rmd160  3db55665765c0c9580728cc11ea5bfa80076e87f \
+sha256  d97888e44cde93e3bdd0360dbf31454ffe948c3a72f62fd41c489524bfcfc0b1 \
+size    2958644 \
                         ${userguide_distfile} \
-                        rmd160  1e56820bc05cb5dc2b82839bf20b7341b1e0a173 \
-                        sha256  cfe66c6f29c42ab006f640bae59cdea8e903aec80aca7a144504c74707572ddf \
-                        size    1814130
+rmd160  1e56820bc05cb5dc2b82839bf20b7341b1e0a173 \
+sha256  cfe66c6f29c42ab006f640bae59cdea8e903aec80aca7a144504c74707572ddf \
+size    1814130
 
 categories              graphics
 platforms               darwin freebsd linux

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,8 +18,8 @@ homepage            https://docs.python-zeep.org/en/master/
 python.versions 310
 
 checksums           rmd160  2853ceae9c6c691efc9241e3717136c61dc60e1e \
-                    sha256  c6f3540a872239954de31e692e8343be767fb3842222f98cf31f79946b6680cf \
-                    size    161102
+sha256  c6f3540a872239954de31e692e8343be767fb3842222f98cf31f79946b6680cf \
+size    161102
 
 if {${name} ne ${subport}} {
     depends_build-append \

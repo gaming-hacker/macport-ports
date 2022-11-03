@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ homepage            https://mediafile.readthedocs.io/
 maintainers         {@catap korins.ky:kirill} openmaintainer
 
 checksums           rmd160  e1796e3c1bf38739afc6d5321262d4c6b08138fe \
-                    sha256  929642a17ee5023b9086221ce80cdc2c51d06021a890d4433b0bd5bd32f2b29f \
-                    size    563478
+sha256  929642a17ee5023b9086221ce80cdc2c51d06021a890d4433b0bd5bd32f2b29f \
+size    563478
 
 python.pep517       yes
 python.versions 310

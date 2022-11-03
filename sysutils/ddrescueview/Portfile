@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -23,8 +23,8 @@ distname        ${name}-source-${version}
 use_xz          yes
 
 checksums       rmd160  aca84a816122891b4c824f02a27b2cf2da64908b \
-                sha256  57383c394e62612ce2a799438b00c6e3c465c31f9ba940e077f624e2e7028465 \
-                size    211184
+sha256  57383c394e62612ce2a799438b00c6e3c465c31f9ba940e077f624e2e7028465 \
+size    211184
 
 depends_build   port:lazarus port:makeicns
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -13,8 +13,8 @@ description         Signal processing tools, including filtering, \
 long_description    {*}${description}
 
 checksums           rmd160  4be898d117940c328b8917108caa60dcecb5597b \
-                    sha256  545b97540ebeba3b420f08906fdd3977fc293b3bc8fc36f6ba8b094cea88f339 \
-                    size    204292
+sha256  545b97540ebeba3b420f08906fdd3977fc293b3bc8fc36f6ba8b094cea88f339 \
+size    204292
 
 depends_lib-append  port:octave-control \
                     port:octave-specfun
