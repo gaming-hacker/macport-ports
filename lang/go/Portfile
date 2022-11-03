@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 17} {
     version         1.17.13
     set unsupported_macos true
 } else {
-    version         1.19.2
+    version         1.19.3
     set unsupported_macos false
 }
 
@@ -28,7 +28,7 @@ revision            0
 
 # Subport for Go Unstable Version
 subport ${name}-devel {
-    version         1.19.2
+    version         1.19.3
     revision        0
     epoch           1
 }
@@ -62,17 +62,17 @@ livecheck.url       ${homepage}/dl/
 if {$subport eq "${name}-devel"} {
     # Go (DEVEL / UNSTABLE)
     checksums       ${go_src_dist} \
-rmd160  658ab47b1e79c0b209f2265daff3c6b13c54a371 \
-sha256  2ce930d70a931de660fdaf271d70192793b1b240272645bf0275779f6704df6b \
-size    26534465 \
+                    rmd160  d127cd1f1388fcc183e14e56f2353667da7c9f0d \
+                    sha256  18ac263e39210bcf68d85f4370e97fb1734166995a1f63fb38b4f6e07d90d212 \
+                    size    26535494 \
                     ${go_armbin_dist} \
-rmd160  cd28a8cf39b9fdfca80acb37809000ba6de9a4ce \
-sha256  35d819df25197c0be45f36ce849b994bba3b0559b76d4538b910d28f6395c00d \
-size    145072202 \
+                    rmd160  a35cdec0d69f7eaa7d9c099167ae5581de25fd92 \
+                    sha256  49e394ab92bc6fa3df3d27298ddf3e4491f99477bee9dd4934525a526f3a391c \
+                    size    145083309 \
                     ${go_amdbin_dist} \
-rmd160  0f12a58b19f986802bd039d42020ebc26d9266cc \
-sha256  16f8047d7b627699b3773680098fbaf7cc962b7db02b3e02726f78c4db26dfde \
-size    151249883
+                    rmd160  5cc789e6909ff73dd39f50b10e2282328e407d26 \
+                    sha256  7fa09a9a34cb6f794e61e9ada1d6d18796f936a2b35f22724906cad71396e590 \
+                    size    151287793
 
     livecheck.regex {go([0-9.A-z]+)\.src\.tar\.gz}
 } else {
@@ -81,17 +81,17 @@ size    151249883
     if {${unsupported_macos}} {
         # 1.17
         checksums   ${go_src_dist} \
-rmd160  6d8a13da5112ee67bb886eca0fec77ffaab27a5f \
-sha256  a1a48b23afb206f95e7bbaa9b898d965f90826f6f1d1fc0c1d784ada0cd300fd \
-size    22206518 \
+                    rmd160  6d8a13da5112ee67bb886eca0fec77ffaab27a5f \
+                    sha256  a1a48b23afb206f95e7bbaa9b898d965f90826f6f1d1fc0c1d784ada0cd300fd \
+                    size    22206518 \
                     ${go_armbin_dist} \
-rmd160  1e2b1b394f912d92c3afde177f657733692ff593 \
-sha256  e4ccc9c082d91eaa0b866078b591fc97d24b91495f12deb3dd2d8eda4e55a6ea \
-size    130528194 \
+                    rmd160  1e2b1b394f912d92c3afde177f657733692ff593 \
+                    sha256  e4ccc9c082d91eaa0b866078b591fc97d24b91495f12deb3dd2d8eda4e55a6ea \
+                    size    130528194 \
                     ${go_amdbin_dist} \
-rmd160  5ff00c1089ca3143c2f8e489f82c659f1066a17a \
-sha256  c101beaa232e0f448fab692dc036cd6b4677091ff89c4889cc8754b1b29c6608 \
-size    137060546
+                    rmd160  5ff00c1089ca3143c2f8e489f82c659f1066a17a \
+                    sha256  c101beaa232e0f448fab692dc036cd6b4677091ff89c4889cc8754b1b29c6608 \
+                    size    137060546
 
         notes-append "
             Please note: Go 1.18 does not build on macOS 10.12 and older, so Go ${version} has been installed.
@@ -99,17 +99,17 @@ size    137060546
     } else {
         # 1.19
         checksums   ${go_src_dist} \
-rmd160  658ab47b1e79c0b209f2265daff3c6b13c54a371 \
-sha256  2ce930d70a931de660fdaf271d70192793b1b240272645bf0275779f6704df6b \
-size    26534465 \
+                    rmd160  d127cd1f1388fcc183e14e56f2353667da7c9f0d \
+                    sha256  18ac263e39210bcf68d85f4370e97fb1734166995a1f63fb38b4f6e07d90d212 \
+                    size    26535494 \
                     ${go_armbin_dist} \
-rmd160  cd28a8cf39b9fdfca80acb37809000ba6de9a4ce \
-sha256  35d819df25197c0be45f36ce849b994bba3b0559b76d4538b910d28f6395c00d \
-size    145072202 \
+                    rmd160  a35cdec0d69f7eaa7d9c099167ae5581de25fd92 \
+                    sha256  49e394ab92bc6fa3df3d27298ddf3e4491f99477bee9dd4934525a526f3a391c \
+                    size    145083309 \
                     ${go_amdbin_dist} \
-rmd160  0f12a58b19f986802bd039d42020ebc26d9266cc \
-sha256  16f8047d7b627699b3773680098fbaf7cc962b7db02b3e02726f78c4db26dfde \
-size    151249883
+                    rmd160  5cc789e6909ff73dd39f50b10e2282328e407d26 \
+                    sha256  7fa09a9a34cb6f794e61e9ada1d6d18796f936a2b35f22724906cad71396e590 \
+                    size    151287793
     }
 
     livecheck.regex {go([0-9.]+)\.src\.tar\.gz}

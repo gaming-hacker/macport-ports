@@ -1,19 +1,21 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
-PortGroup           compiler_blacklist_versions 1.0
 PortGroup           github 1.0
+PortGroup           legacysupport 1.1
+legacysupport.newest_darwin_requires_legacy 18
+legacysupport.use_mp_libcxx yes
 
 # src/third_party/blake3/CMakeLists.txt checks CMAKE_SIZEOF_VOID_P
 PortGroup           muniversal 1.0
 
-github.setup        ccache ccache 4.6.3 v
+github.setup        ccache ccache 4.7.2 v
 revision            0
 
-checksums           rmd160  80cad9c9b8776df0ab830f17c0d3dbe07b3a9589 \
-sha256  1e3a251bb112632553b8255a78661fe526c3a16598496d51128c32b218fd8b22 \
-size    531184
+checksums           rmd160  8a63e6f9f7fec25344dbefb1f0e34cf6efc8b9d6 \
+                    sha256  17ca75a577d49c1e4f2ac86d53126859de52b789cfe85dd532758518db114eaf \
+                    size    546016
 
 categories          devel
 platforms           darwin freebsd
@@ -33,22 +35,18 @@ homepage            https://ccache.dev
 github.tarball_from releases
 use_xz              yes
 
-platform darwin powerpc {
-    patchfiles-append  patch-ccache-powerpc-darwin.diff
-}
 platform darwin 8 {
     patchfiles-append  patch-ccache-no-posix-tiger.diff
 }
 
-compiler.c_standard 2017
+compiler.c_standard 1999
 
 compiler.cxx_standard \
-                    2014
+                    2017
 
-# CMake Error at CMakeLists.txt:31: The compiler you are using is too old, sorry.
-compiler.blacklist-append  {clang < 700}
-# error: static_assert failed "unique_ptr constructed with null function pointer deleter"
-compiler.blacklist-append  {clang < 900}
+depends_build-append \
+                    bin:perl:perl5 \
+                    port:pkgconfig
 
 depends_lib-append  port:hiredis \
                     port:zstd
