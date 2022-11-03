@@ -41,43 +41,14 @@ post-patch {
     }
 }
 
-variant python27 conflicts python37 python38 python310 \
-    description {Build for Python 2.7} {
-    python.default_version 27
-    depends_build-append \
-                    port:py${python.version}-setuptools
-}
 
-variant python37 conflicts python27 python38 python310 \
-    description {Build for Python 3.7} {
-    python.default_version 37
-    depends_build-append \
-                    port:py${python.version}-setuptools
-}
-
-variant python38 conflicts python27 python37 python310 \
-    description {Build for Python 3.8} {
-    python.default_version 38
-    depends_build-append \
-                    port:py${python.version}-setuptools
-}
-
-variant python39 conflicts python27 python37 python38 python310 \
-    description {Build for Python 3.9} {
-    python.default_version 39
-    depends_build-append \
-                    port:py${python.version}-setuptools
-}
-
-variant python310 conflicts python27 python37 python38 python39 \
+variant python310  \
     description {Build for Python 3.10} {
     python.default_version 310
     depends_build-append \
                     port:py${python.version}-setuptools
 }
 
-if {![variant_isset python27] && ![variant_isset python37] && \
-    ![variant_isset python38] && ![variant_isset python39] && \
-    ![variant_isset python310]} {
-    default_variants +python310
-}
+
+default_variants +python310
+
