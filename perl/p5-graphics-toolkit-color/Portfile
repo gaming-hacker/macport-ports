@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         Graphics-Toolkit-Color 1.04
 revision            0
 license             {Artistic-1 GPL}
@@ -15,8 +15,8 @@ platforms           {darwin any}
 supported_archs     noarch
 
 checksums           rmd160  d2641a1a8cdf3409d8c051a7f3a6446e8d5679db \
-                    sha256  94ba9be882aeff5895c54dbbb6a94e80da572999f7b27cbb56347b3aad24b596 \
-                    size    48001
+sha256  94ba9be882aeff5895c54dbbb6a94e80da572999f7b27cbb56347b3aad24b596 \
+size    48001
 
 if {${perl5.major} != ""} {
     depends_build-append \

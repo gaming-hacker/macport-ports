@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -21,8 +21,8 @@ long_description    Bazelisk is a wrapper for Bazel written in Go. \
                     can call it just like you would call Bazel.
 
 checksums           rmd160  6af49e97b09bf304475ede392ec78c40388492b6 \
-                    sha256  0105d0e77ffda5a54d908e8781c5ed5551cd2810291c7b7071308bf0b387e4c1 \
-                    size    157359
+sha256  0105d0e77ffda5a54d908e8781c5ed5551cd2810291c7b7071308bf0b387e4c1 \
+size    157359
 
 conflicts           bazel
 

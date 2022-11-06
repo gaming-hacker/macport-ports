@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -27,8 +27,8 @@ distname     OpenJDK8U-jdk_x64_mac_hotspot_${version}b${build}
 worksrcdir   jdk${version}-b${build}
 
 checksums    rmd160  c264fb961bb8eb2ede0a52fa66632f9c4e4b9741 \
-             sha256  f74d949aaaabd6116eaeccc34cc5ff707d3317b2cdbd3a8147920e1851d20cf2 \
-             size    107947323
+sha256  f74d949aaaabd6116eaeccc34cc5ff707d3317b2cdbd3a8147920e1851d20cf2 \
+size    107947323
 
 homepage     https://adoptium.net
 
