@@ -18,7 +18,7 @@ description         The best command-line tool to install and switch between mul
 long_description    {*}${description}
 
 use_configure       no
-use_xcode           yes
+use_xcode  no
 
 build.type          xcode
 build.cmd           swift

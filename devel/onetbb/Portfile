@@ -27,6 +27,6 @@ checksums           rmd160  0648cff27e3683eb6583c0e4db56f259e2aae113 \
 
 depends_lib-append  port:hwloc
 
-compiler.cxx_standard  2011
+compiler.cxx_standard 2020
 
 configure.args-append  -DTBB_TEST=OFF

@@ -27,7 +27,7 @@ checksums           rmd160  878d64c1e5a7c0842d51d3f37d2644a00d32fdb5 \
 
 worksrcdir          lazarus/lcl/interfaces/qt5/cbindings
 
-use_xcode           yes
+use_xcode  no
 
 post-destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/doc/qt5pas
