@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ supported_archs     noarch
 homepage            https://macholib.readthedocs.io/
 
 checksums           md5 f9e57e0481ee34ef11180b38e7778693 \
-rmd160 06f323d06f3f110eac41121d37c248f52b573906 \
-sha256 557bbfa1bb255c20e9abafe7ed6cd8046b48d9525db2f9b77d3122a63a2a8bf8
+                    rmd160 06f323d06f3f110eac41121d37c248f52b573906 \
+                    sha256 557bbfa1bb255c20e9abafe7ed6cd8046b48d9525db2f9b77d3122a63a2a8bf8
 
-python.versions 310
+python.versions     27 37 38 39 310 311
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-modulegraph
