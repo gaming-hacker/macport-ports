@@ -76,7 +76,7 @@ if {${subport} eq ${name} || ${subport} eq "${name}-lx"} {
                         patch-i18n-formatted_string_builder.h.diff \
                         patch-cinttypes-header.diff
 
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2020
 
     # prevent ICU from finding installed icu when upgrading (#11981).
     compiler.cpath
