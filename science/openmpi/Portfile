@@ -67,31 +67,32 @@ set clist_unsupported [list]
 set clist_obsolete [list]
 
 # Compilers supported across-the-board
-dict set clist default {}
-dict set clist gcc7    {macports-gcc-7}
-dict set clist gcc10   {macports-gcc-10}
-dict set clist gcc11   {macports-gcc-11}
+# dict set clist default {}
+# dict set clist gcc7    {macports-gcc-7}
+# dict set clist gcc10   {macports-gcc-10}
+# dict set clist gcc11   {macports-gcc-11}
 dict set clist gcc12   {macports-gcc-12}
-dict set clist clang11 {macports-clang-11}
-dict set clist clang12 {macports-clang-12}
-dict set clist clang13 {macports-clang-13}
-dict set clist clang14 {macports-clang-14}
+# dict set clist clang11 {macports-clang-11}
+# dict set clist clang12 {macports-clang-12}
+# dict set clist clang13 {macports-clang-13}
+# dict set clist clang14 {macports-clang-14}
+dict set clist clang14 {macports-clang-15}
 
 # Only enable Xcode clang builds for MacOS 10.7 and later
-if { ${os.major} >= 11 } {
-    dict set clist clang {clang}
-} else {
-    lappend clist_unsupported \
-        clang
-}
+# if { ${os.major} >= 11 } {
+#     dict set clist clang {clang}
+# } else {
+#     lappend clist_unsupported \
+#         clang
+# }
 
 # Clang 9 and 10 not supported on ARM
 if { ${os.arch} eq "arm" } {
     lappend clist_unsupported \
         clang90 clang10
 } else {
-    dict set clist clang90 {macports-clang-9.0}
-    dict set clist clang10 {macports-clang-10}
+#     dict set clist clang90 {macports-clang-9.0}
+#     dict set clist clang10 {macports-clang-10}
 }
 
 # GCC 9 only supported for macOS 10.6 through 10.10

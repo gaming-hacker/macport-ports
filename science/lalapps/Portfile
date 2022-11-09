@@ -33,7 +33,7 @@ checksums     rmd160  0f6f40d072e54a06c68658e0bc241d83a0a047cd \
 sha256  656e9f6386ecfa639fcba81f937c756838a95f3a33439445a61262084a7ab27b \
 size    11077712
 
-set v                 38
+set v                 310
 set pythonversion     [string index ${v} 0].[string range ${v} 1 end]
 set pythonhome \
   "${frameworks_dir}/Python.framework/Versions/${pythonversion}"
@@ -50,12 +50,12 @@ depends_build port:pkgconfig
 #             port:help2man
 
 # Choose a compiler that supports OpenMP.
-compiler.whitelist macports-clang-6.0 macports-clang-5.0 macports-clang-7.0
-compiler.fallback  macports-clang-6.0
+compiler.whitelist macports-clang-15
+
 
 regsub {.*-(\d)\.(\d)} ${configure.cc} {clang\1\2} clangver
 
-depends_lib   port:openmpi-${clangver} \
+depends_lib   port:openmpi-15 \
               port:gsl \
               port:libomp \
               port:fftw-3 \
