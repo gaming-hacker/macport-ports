@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cargo 1.0
 
-github.setup        railwayapp nixpacks 0.11.5 v
+github.setup        railwayapp nixpacks 0.12.2 v
 github.tarball_from archive
 
 categories          devel
@@ -15,9 +15,9 @@ long_description    Nixpacks takes a source directory and produces an OCI compli
 homepage            https://nixpacks.com/
 
 checksums           ${distname}${extract.suffix} \
-rmd160  b297584b775afb47157cddecedcdb111153cfc56 \
-sha256  bfc6460d68b88f0edf6c11efc37045eb4534ba25fb91a7b391cc9ba6b903131b \
-size    30646093
+                    rmd160  d8ec4af6612ccff8b6092bee44dae53c731be32b \
+                    sha256  ca8c043c410ffaad606218e8ac36099d8812f5a8b9c5a285d7086fcb1ac66614 \
+                    size    30647056
 
 destroot {
   xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/nixpacks ${destroot}${prefix}/bin/
@@ -157,7 +157,7 @@ cargo.crates \
     serde_with                      1.14.0  678b5a069e50bf00ecd22d0cd8ddf7c236f68581b03db652061ed5eb13a312ff \
     serde_with_macros                1.5.2  e182d6ec6f05393cc0e5ed1bf81ad6db3a8feedf8ee515ecdd369809bcce8082 \
     serde_yaml                      0.8.26  578a7433b776b56a35785ed5ce9a7e777ac0598aac5a6dd1b4b18a307c7fc71b \
-sha1                            0.10.5  f04293dc80c3993519f2d7f6f511707ee7094fe0c6d3406feb330cdb3540eba3 \
+    sha1                            0.10.5  f04293dc80c3993519f2d7f6f511707ee7094fe0c6d3406feb330cdb3540eba3 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     similar                          2.2.0  62ac7f900db32bf3fd12e0117dd3dc4da74bc52ebaac97f39668446d89694803 \
     slab                             0.4.7  4614a76b2a8be0058caa9dbbaf66d988527d86d003c11a94fbd335d7661edcef \
@@ -168,6 +168,7 @@ sha1                            0.10.5  f04293dc80c3993519f2d7f6f511707ee7094fe0
     tempdir                          0.3.7  15f2b5fb00ccdf689e0149d1b1b3c03fead81c2b37735d812fa8bddbbf41b6d8 \
     terminal_size                   0.1.17  633c1a546cee861a1a6d0dc69ebeca693bf4296661ba7852b9d21d159e0506df \
     textwrap                        0.15.1  949517c0cf1bf4ee812e2e07e08ab448e3ae0d23472aee8a06c985f0c8815b16 \
+    textwrap                        0.16.0  222a222a5bfe1bba4a77b45ec488a741b3cb8872e5e499451fd7d0129c9c7c3d \
     thiserror                       1.0.36  0a99cb8c4b9a8ef0e7907cd3b617cc8dc04d571c4e73c8ae403d80ac160bb122 \
     thiserror-impl                  1.0.36  3a891860d3c8d66fec8e73ddb3765f90082374dbaaa833407b904a94f1a7eb43 \
     thread_local                     1.1.4  5516c27b78311c50bf42c071425c560ac799b11c30b31f87e3081965fe5e0180 \
