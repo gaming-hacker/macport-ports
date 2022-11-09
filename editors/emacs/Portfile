@@ -110,8 +110,8 @@ if {$subport eq "emacs-devel" || $subport eq "emacs-app-devel"} {
     master_sites    ${github.master_sites}
 
     checksums       rmd160  cea40725dd2593dcb375210c95f1c0aca4961df7 \
-                    sha256  a318cc46ea0b143136693e539d3f031039e03a3361ced1877963eab8ae5aa59f \
-                    size    46262466
+sha256  a318cc46ea0b143136693e539d3f031039e03a3361ced1877963eab8ae5aa59f \
+size    46262466
 
     configure.args-append \
         --with-sqlite3 \

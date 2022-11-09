@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -23,9 +23,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  4966ff6cb2805da051d4c4db0be978aa3092ab9f \
-                    sha256  bfeeb14c3fd94862e2cb7c57ac2b77db78686b0afe49b5597ead9cca02dcc403 \
-                    size    471310
+rmd160  4966ff6cb2805da051d4c4db0be978aa3092ab9f \
+sha256  bfeeb14c3fd94862e2cb7c57ac2b77db78686b0afe49b5597ead9cca02dcc403 \
+size    471310
 
 destroot {
     xinstall -m 0755 \
@@ -151,7 +151,7 @@ cargo.crates \
     logos-derive                    0.12.1  a1d849148dbaf9661a6151d1ca82b13bb4c4c128146a88d05253b38d4e2f496c \
     matchers                         0.1.0  8263075bb86c5a1b1427b5ae862e8889656f126e9f77c484496e8b47cf5c5558 \
     matchit                          0.5.0  73cbba799671b762df5a175adf59ce145165747bb891505c43d09aefbbf38beb \
-    md-5                            0.10.4  66b48670c893079d3c2ed79114e3644b7004df1c361a4e0ad52e2e6940d07c3d \
+md-5                            0.10.4  66b48670c893079d3c2ed79114e3644b7004df1c361a4e0ad52e2e6940d07c3d \
     memchr                           2.5.0  2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d \
     mime                            0.3.16  2a60c7ce501c71e03a9c9c0d35b861413ae925bd979cc7a4e30d060069aaac8d \
     minimal-lexical                  0.2.1  68354c5c6bd36d73ff3feceb05efa59b6acb7626617f4962be322a825e61f79a \
@@ -220,9 +220,9 @@ cargo.crates \
     serde_derive                   1.0.145  81fa1584d3d1bcacd84c277a0dfe21f5b0f6accf4a23d04d4c6d61f1af522b4c \
     serde_json                      1.0.86  41feea4228a6f1cd09ec7a3593a682276702cd67b5273544757dae23c096f074 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha1                            0.10.4  006769ba83e921b3085caa8334186b00cf92b4cb1a6cf4632fbccc8eff5c7549 \
-    sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha1                            0.10.4  006769ba83e921b3085caa8334186b00cf92b4cb1a6cf4632fbccc8eff5c7549 \
+sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     shellexpand                      2.1.2  7ccc8076840c4da029af4f87e4e8daeb0fca6b87bbb02e10cb60b791450e11e4 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     signature                        1.6.1  e90531723b08e4d6d71b791108faf51f03e1b4a7784f96b2b87f852ebc247228 \

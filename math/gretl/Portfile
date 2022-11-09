@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -22,8 +22,8 @@ master_sites        sourceforge
 use_xz              yes
 
 checksums           rmd160  27690e668f0bf2eb7432d7d7d7805535426674ba \
-                    sha256  e100104cda9b7c85fa2b709db4a71538db425ab91346f1a5d995c64757b241d0 \
-                    size    13592856
+sha256  e100104cda9b7c85fa2b709db4a71538db425ab91346f1a5d995c64757b241d0 \
+size    13592856
 
 depends_build       port:pkgconfig \
                     port:gmake

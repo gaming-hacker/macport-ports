@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ master_sites        https://www.wolfssl.com/
 use_zip             yes
 
 checksums           rmd160  f770795ccd13074558264e59a04d7108409a1fa5 \
-                    sha256  bc441ae086ddb9d42e2ad391920b400b8cabb19d2aea5efb1cb90b527e0990ee \
-                    size    20551889
+sha256  bc441ae086ddb9d42e2ad391920b400b8cabb19d2aea5efb1cb90b527e0990ee \
+size    20551889
 
 configure.args      --enable-all \
                     --disable-jobserver \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -30,9 +30,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  4570e4d6f456a9901b924619b68cfebee9b63ec7 \
-                    sha256  b52f0410ba123939c3b3a3b93b24ab42c1dd9308214725650d2f85cfd2f7f088 \
-                    size    36081
+rmd160  4570e4d6f456a9901b924619b68cfebee9b63ec7 \
+sha256  b52f0410ba123939c3b3a3b93b24ab42c1dd9308214725650d2f85cfd2f7f088 \
+size    36081
 
 destroot {
     set bashcomp_dir ${prefix}/share/bash-completion/completions

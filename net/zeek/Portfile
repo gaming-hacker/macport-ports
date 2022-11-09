@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ master_sites        https://download.zeek.org/
 
 
 checksums           rmd160  567bdcd1cc217f655d872778d98c38601431a2df \
-                    sha256  8f16ed6b51f63f7efaca506c4ee0396b0fd03e83cb6358dbd9ea6ffe5fd0b657 \
-                    size    42670900
+sha256  8f16ed6b51f63f7efaca506c4ee0396b0fd03e83cb6358dbd9ea6ffe5fd0b657 \
+size    42670900
 
 openssl.branch      3
 
@@ -39,8 +39,8 @@ subport ${name}-devel {
     revision        0
 
     checksums       rmd160  bbda28a0e8c2654a12e347286c9b71bd68871d50 \
-                    sha256  1ce25c56eb059dc517d37e66215f8a26f674bdd84cdcca8511aa82ff61abf158 \
-                    size    43450365
+sha256  1ce25c56eb059dc517d37e66215f8a26f674bdd84cdcca8511aa82ff61abf158 \
+size    43450365
 }
 
 depends_build-append \

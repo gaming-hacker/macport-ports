@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       cmake 1.0
@@ -19,7 +19,7 @@ homepage        http://www.ece.uvic.ca/~mdadams/jasper/
 
 github.tarball_from releases
 checksums       rmd160 c7088e1a5eb23419b509d87a3886ac2c4d02fe05 \
-                sha256 39514e1b53a5333fcff817e19565371f016ea536c36fd2d13a9c4d8da8f0be0c
+sha256 39514e1b53a5333fcff817e19565371f016ea536c36fd2d13a9c4d8da8f0be0c
 
 depends_lib     path:include/turbojpeg.h:libjpeg-turbo
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,8 +14,8 @@ long_description    {*}${description}
 homepage            https://github.com/cloudflare/python-cloudflare
 
 checksums           rmd160  5c402c254dacf54001547665531a46ed38db6171 \
-                    sha256  7faa6651e5931f786b2adebe98f1df72e9da897040d3ce7cc063dcdc38aaf29c \
-                    size    77474
+sha256  7faa6651e5931f786b2adebe98f1df72e9da897040d3ce7cc063dcdc38aaf29c \
+size    77474
 
 python.versions 310
 

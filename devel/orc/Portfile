@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -6,8 +6,8 @@ PortGroup           meson 1.0
 name                orc
 version             0.4.33
 checksums           rmd160  6610a701f07109d71e78a51d27d63d56c8014792 \
-                    sha256  844e6d7db8086f793f57618d3d4b68d29d99b16034e71430df3c21cfd3c3542a \
-                    size    199024
+sha256  844e6d7db8086f793f57618d3d4b68d29d99b16034e71430df3c21cfd3c3542a \
+size    199024
 revision            0
 
 description         Orc - The Oil Runtime Compiler
