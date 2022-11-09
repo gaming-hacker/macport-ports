@@ -276,7 +276,7 @@ array set modules {
             6800b2b79535cffeac4cfa4545d68f4e2ca6b606db8b10219350e9a0c7c6b61d
             21587108
         }
-        "port:python27"
+        "port:python310"
         ""
         "qtbase qtsvg"
         {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
@@ -677,7 +677,7 @@ array set modules {
     }
     qtwebengine {
         {}
-        "port:python27 port:py27-ply path:bin/ninja:ninja port:gperf port:bison port:flex port:qt5-qtwebengine-gn"
+        "port:python310 port:py310-ply path:bin/ninja:ninja port:gperf port:bison port:flex port:qt5-qtwebengine-gn"
         "port:fontconfig port:dbus path:lib/pkgconfig/harfbuzz.pc:harfbuzz path:lib/pkgconfig/glib-2.0.pc:glib2 port:zlib port:minizip port:libevent port:libxml2 port:jsoncpp port:protobuf3-cpp path:lib/pkgconfig/poppler.pc:poppler port:pulseaudio path:lib/pkgconfig/icu-uc.pc:icu path:lib/libavcodec.dylib:ffmpeg port:libopus port:webp port:libpng port:lcms2 port:freetype port:re2 port:snappy"
         "qtdeclarative qtquickcontrols qtquickcontrols2 qtlocation qtwebchannel qttools"
         {"Qt WebEngine"}
@@ -707,7 +707,7 @@ array set modules {
             c7ce0bbaea5ed89bba04fdf893e3030c8887f15f45dee5958d645a9f577952e1
             35301876
         }
-        "port:python27 port:bison port:flex"
+        "port:python310 port:bison port:flex"
         "port:fontconfig path:lib/pkgconfig/icu-uc.pc:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3 path:include/turbojpeg.h:libjpeg-turbo"
         "qtbase qtdeclarative qtlocation qtmultimedia qtsensors qtwebchannel qtxmlpatterns"
         {"Qt WebKit" "Qt WebKit Widgets"}
@@ -2152,7 +2152,7 @@ foreach deps ${depends_check} {
         #    (see mkspecs/features/functions.prf)
         # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
         #
-        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
+        set python_framework ${frameworks_dir}/Python.framework/Versions/3.10
     }
 }
 if { ${python_framework} ne "" } {
