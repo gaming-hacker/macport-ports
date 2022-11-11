@@ -44,8 +44,8 @@ depends_build-append \
                     port:swig-python
 
 # configure fails to detect python in usr/bin correctly on newer MacOS
-depends_lib-append  port:python27
-configure.python    ${prefix}/bin/python2.7
+depends_lib-append  port:python310
+configure.python    ${prefix}/bin/python3.10
 
 # See: https://github.com/vslavik/bakefile/issues/120
 configure.args-append \
