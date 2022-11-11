@@ -1,15 +1,15 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pandas
-version             1.4.4
+version             1.5.1
 revision            0
 categories-append   science
 license             BSD
 
-python.versions 310
+python.versions     27 37 38 39 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -20,9 +20,9 @@ long_description    ${description}
 
 homepage            https://pandas.pydata.org
 
-checksums           rmd160  d09e216a87d0690fc4bbd60f65350a8615f53ac3 \
-sha256  ab6c0d738617b675183e5f28db32b5148b694ad9bba0a40c3ea26d96b431db67 \
-size    4949620
+checksums           rmd160  01f0ad04308f9b4e40b23b238c3eda544d17ee10 \
+                    sha256  249cec5f2a5b22096440bd85c33106b6102e0672204abd2d5c014106459804ee \
+                    size    5199286
 
 if {${name} ne ${subport}} {
     if {${python.version} eq 27} {
@@ -30,8 +30,8 @@ if {${name} ne ${subport}} {
         revision            1
         distname            ${python.rootname}-${version}
         checksums           rmd160  a4b18e58b6be7bf13893dbccaf73542918dda1c8 \
-sha256  4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2 \
-size    11837693
+                            sha256  4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2 \
+                            size    11837693
         python.pep517       no
 
         # fix implicit declaration of tolower_ascii()
@@ -50,8 +50,8 @@ size    11837693
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  b8bba96dcc34dcea8a7b5a27a1a00fdd5ce925c5 \
-sha256  1e4285f5de1012de20ca46b188ccf33521bff61ba5c5ebd78b4fb28e5416a9f1 \
-size    4736591
+                            sha256  1e4285f5de1012de20ca46b188ccf33521bff61ba5c5ebd78b4fb28e5416a9f1 \
+                            size    4736591
         python.pep517       no
 
         depends_build-append \

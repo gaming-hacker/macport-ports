@@ -19,3 +19,7 @@ size    2104726
 
 # do not override MacPorts flags
 patchfiles-append   patch-src-Makefile.diff
+
+livecheck.type      regex
+livecheck.url       ${master_sites}
+livecheck.regex     octclip-(\[0-9a-z.\]+)${extract.suffix}

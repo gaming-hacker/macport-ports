@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                                       1.0
 PortGroup           select                       1.0
@@ -21,12 +21,12 @@ long_description    {*}${description}, including front ends for \
                     C, C++, Objective-C, Objective-C++ and Fortran.
 
 version             12.2.0
-revision            0
+revision            1
 subport             libgcc12 { revision [ expr ${revision} + 0 ] }
 
 checksums           rmd160  76d30c411227d6c3e87dd4f0a8ea1ae5d8ab9ffd \
-sha256  e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff \
-size    84645292
+                    sha256  e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff \
+                    size    84645292
 
 # Primary releases
 master_sites        https://ftpmirror.gnu.org/gcc/gcc-${version}/ \
@@ -187,7 +187,11 @@ variant stdlib_flag description {Enable stdlib command line flag to select c++ r
     # which is then used as the default search location when `-stdlib=libc++`
     # is given. Therefore to have consistency across various OS versions, and to enable
     # modern c++ standards, use a recent macports clang port to provide this.
-    set mp_clang_ver 15
+    if { ${os.platform} eq "darwin" && ${os.major} < 11 } {
+        set mp_clang_ver 11
+    } else {
+        set mp_clang_ver 15
+    }
     if {${subport} eq ${name}} {
         depends_run-append port:clang-${mp_clang_ver}
     }

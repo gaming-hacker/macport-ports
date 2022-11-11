@@ -1,15 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-Pillow
-version             9.2.0
+version             9.3.0
 revision            0
 categories-append   devel
 license             BSD
 
-python.versions 310
+python.versions     27 35 36 37 38 39 310 311
+python.pep517       no
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -18,9 +19,9 @@ long_description    ${description}
 
 homepage            https://github.com/python-imaging/Pillow
 
-checksums           rmd160  0ab9cb5af8e7f54b2f42d273be8d66f0fa833c45 \
-sha256  75e636fd3e0fb872693f23ccb8a5ff2cd578801251f3a4f6854c6a5d437d3c04 \
-size    50017840
+checksums           rmd160  43a60bc266f28d757750379f6393eacf6515c7df \
+                    sha256  c935a22a557a560108d780f9a0fc426dd7459940dc54faa49d83249c8d3e760f \
+                    size    50376883
 
 if {${name} ne ${subport}} {
     if {${python.version} == 27} {
@@ -32,20 +33,41 @@ if {${name} ne ${subport}} {
         revision            1
         distname            ${python.rootname}-${version}
         checksums           rmd160  b6a0743f45072e5000f4d985dc1274d32bb7a40b \
-sha256  bf4e972a88f8841d8fdc6db1a75e0f8d763e66e3754b03006cbc3854d89f1cb1 \
-size    37673162
+                            sha256  bf4e972a88f8841d8fdc6db1a75e0f8d763e66e3754b03006cbc3854d89f1cb1 \
+                            size    37673162
 
         patchfiles-append   patch-setup.py_v6.2.1.diff
     } elseif {${python.version} == 36} {
         version             8.4.0
         distname            ${python.rootname}-${version}
         checksums           rmd160  c20a0bab9a469c3557044793174dd38905ce4be9 \
-sha256  b8e2f83c56e141920c39464b852de3719dfbfb6e3c99a2d8da0edf4fb33176ed \
-size    49368411
+                            sha256  b8e2f83c56e141920c39464b852de3719dfbfb6e3c99a2d8da0edf4fb33176ed \
+                            size    49368411
 
         patchfiles-append   patch-setup.py_v8.4.0.diff
+
+        build.args-append   --disable-xcb
+
+        variant x11 {
+            build.args-delete      --disable-xcb
+            depends_lib-append     port:xorg-libxcb
+        }
     } else {
         patchfiles-append   patch-setup.py.diff
+
+        build.args-append   --disable-raqm \
+                            --disable-imagequant \
+                            --disable-xcb
+
+        variant raqm description {build with raqm feature} {
+            build.args-delete      --disable-raqm
+            depends_lib-append     port:libraqm
+        }
+
+        variant x11 {
+            build.args-delete      --disable-xcb
+            depends_lib-append     port:xorg-libxcb
+        }
     }
 
     build.target        build_ext
@@ -64,15 +86,6 @@ size    49368411
 
     post-patch {
         reinplace "s|@prefix@|${prefix}|g" ${worksrcpath}/setup.py
-    }
-
-    if {${python.version} >= 36} {
-        build.args-append   --disable-xcb
-
-        variant x11 {
-            build.args-delete      --disable-xcb
-            depends_lib-append     port:xorg-libxcb
-        }
     }
 
     livecheck.type      none
