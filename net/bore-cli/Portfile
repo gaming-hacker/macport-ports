@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  f0bdc9ffd837abfe1106104bb31e3c865b3f930e \
-                    sha256  707459f6fde45139741d039910a1ec5095739ac31ed9b447c46624d71b1274b3 \
-                    size    20217
+rmd160  f0bdc9ffd837abfe1106104bb31e3c865b3f930e \
+sha256  707459f6fde45139741d039910a1ec5095739ac31ed9b447c46624d71b1274b3 \
+size    20217
 
 destroot {
     xinstall -m 0755 \
@@ -95,8 +95,8 @@ cargo.crates \
     serde                          1.0.147  d193d69bae983fc11a79df82342761dfbf28a99fc8d203dca4c3c1b590948965 \
     serde_derive                   1.0.147  4f1d362ca8fc9c3e3a7484440752472d68a6caa98f1ab81d99b5dfe517cec852 \
     serde_json                      1.0.87  6ce777b7b150d76b9cf60d28b55f5847135a003f7d7350c6be7a773508ce7d45 \
-    sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     slab                             0.4.7  4614a76b2a8be0058caa9dbbaf66d988527d86d003c11a94fbd335d7661edcef \
     smallvec                        1.10.0  a507befe795404456341dfab10cef66ead4c041f62b8b11bbb92bffe5d0953e0 \
     socket2                          0.4.7  02e2d2db9033d13a1567121ddd7a095ee144db4e1ca1b1bda3419bc0da294ebd \

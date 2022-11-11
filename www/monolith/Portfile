@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -18,7 +18,7 @@ long_description    \
     little drive.  Unlike the conventional “Save page as”, monolith not only \
     saves the target document, it embeds CSS, image, and JavaScript assets \
     all at once, producing a single HTML5 document that is a joy to store and \
-    share.  If compared to saving websites with `wget -mpk`, this tool embeds \
+share.  If compared to saving websites with `wget -mpk`, this tool embeds \
     all assets as data URLs and therefore lets browsers render the saved page \
     exactly the way it was on the Internet, even when no network connection \
     is available.
@@ -31,9 +31,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  cd4f9198ccec1626b4e7513e0681d379173f4104 \
-                    sha256  2076b479638d4ae5c1d1009c915527213175e6ae1b18f95d296092cbda0e7cc2 \
-                    size    3327290
+rmd160  cd4f9198ccec1626b4e7513e0681d379173f4104 \
+sha256  2076b479638d4ae5c1d1009c915527213175e6ae1b18f95d296092cbda0e7cc2 \
+size    3327290
 
 destroot {
     xinstall -m 0755 \
@@ -191,7 +191,7 @@ cargo.crates \
     serde_derive                   1.0.147  4f1d362ca8fc9c3e3a7484440752472d68a6caa98f1ab81d99b5dfe517cec852 \
     serde_json                      1.0.87  6ce777b7b150d76b9cf60d28b55f5847135a003f7d7350c6be7a773508ce7d45 \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
+sha2                            0.10.6  82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
     siphasher                        0.2.3  0b8de496cf83d4ed58b6be86c3a275b8602f6ffe98d3024a869e124147a9a3ac \
     siphasher                       0.3.10  7bd3e3206899af3f8b12af284fafc038cc1dc2b41d1b89dd17297221c5d225de \
     slab                             0.4.7  4614a76b2a8be0058caa9dbbaf66d988527d86d003c11a94fbd335d7661edcef \

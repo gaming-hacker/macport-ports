@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,9 +21,9 @@ long_description    {*}${description}
 homepage            https://github.com/pyca/bcrypt/
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  c69c2dc496f060a60854b133d8b748f46adbf224 \
-                    sha256  27d375903ac8261cfe4047f6709d16f7d18d39b1ec92aaf72af989552a650ebd \
-                    size    25498
+rmd160  c69c2dc496f060a60854b133d8b748f46adbf224 \
+sha256  27d375903ac8261cfe4047f6709d16f7d18d39b1ec92aaf72af989552a650ebd \
+size    25498
 
 if {${name} ne ${subport}} {
 
@@ -32,8 +32,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  af0842db4fab9714b313a29310be5a56e6e1356d \
-                            sha256  0b0069c752ec14172c5f78208f1863d7ad6755a6fae6fe76ec2c80d13be41e42 \
-                            size    42512
+sha256  0b0069c752ec14172c5f78208f1863d7ad6755a6fae6fe76ec2c80d13be41e42 \
+size    42512
         python.pep517       no
         depends_build-append \
                             port:py${python.version}-setuptools
@@ -84,7 +84,7 @@ if {${name} ne ${subport}} {
                             quote 1.0.21 bbe448f377a7d6961e30f5955f9b8d106c3f5e449d493ee1b125c1d43c2b5179 \
                             redox_syscall 0.2.16 fb5a58c1855b4b6819d59012155603f0b22ad30cad752600aadfcb695265519a \
                             scopeguard 1.1.0 d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd \
-                            sha2 0.10.6 82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
+sha2 0.10.6 82e6b795fe2e3b1e845bafcb27aa35405c4d47cdfc92af5fc8d3002f76cebdc0 \
                             smallvec 1.10.0 a507befe795404456341dfab10cef66ead4c041f62b8b11bbb92bffe5d0953e0 \
                             subtle 2.4.1 6bdef32e8150c2a081110b42772ffe7d7c9032b606bc226c8260fd97e0976601 \
                             syn 1.0.102 3fcd952facd492f9be3ef0d0b7032a6e442ee9b361d4acc2b1d0c4aaa5f613a1 \

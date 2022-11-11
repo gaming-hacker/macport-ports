@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -9,8 +9,8 @@ PortGroup           github 1.0
 github.setup        vslavik bakefile 0.2.13 v
 revision            0
 checksums           rmd160  faf3c93f9e0fd461b57b288aaa4dc8271ae2b485 \
-                    sha256  985f55c7b3fd43a94dabef07c54e645e1b028b627ad78fb6e1f95848ac985e67 \
-                    size    340370
+sha256  985f55c7b3fd43a94dabef07c54e645e1b028b627ad78fb6e1f95848ac985e67 \
+size    340370
 
 categories          devel
 maintainers         nomaintainer

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -6,8 +6,8 @@ PortGroup           golang 1.0
 go.setup            github.com/StackExchange/dnscontrol 3.22.1 v
 
 checksums           rmd160  98f93ed23489c76dae597711d00c328e61eb4a7d \
-                    sha256  95e3060065205cfb03d850448fefd2c51a612ecabc0a95d59cfe2cc4e19b78e9 \
-                    size    4961948
+sha256  95e3060065205cfb03d850448fefd2c51a612ecabc0a95d59cfe2cc4e19b78e9 \
+size    4961948
 
 homepage            https://stackexchange.github.io/dnscontrol/
 description         Synchronize your DNS to multiple providers from a simple DSL

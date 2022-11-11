@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ homepage            https://security.appspot.com/vsftpd.html
 master_sites        https://security.appspot.com/downloads/
 
 checksums           rmd160  f308bbd0b214a1af7438b1f84e9b12cacf06858d \
-                    sha256  26b602ae454b0ba6d99ef44a09b6b9e0dfa7f67228106736df1f278c70bc91d3 \
-                    size    197778
+sha256  26b602ae454b0ba6d99ef44a09b6b9e0dfa7f67228106736df1f278c70bc91d3 \
+size    197778
 
 patchfiles          patch-sysdeputil.c.diff \
                     patch-vsf_findlibs.sh.diff \
