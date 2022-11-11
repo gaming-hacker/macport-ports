@@ -37,9 +37,9 @@ platform darwin {
 
 # Note that LLVM 11 and later, each require different upstream patches
 if {[variant_isset llvm90]} {
-    set llvm_version    9.0
+    set llvm_version 15
 } elseif {[variant_isset llvm11]} {
-    set llvm_version    11
+    set llvm_version 15
     patchfiles-append   patch-llvm-11.diff
 } else {
     error "One variant must be selected"

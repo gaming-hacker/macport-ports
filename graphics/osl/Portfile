@@ -35,7 +35,7 @@ compiler.cxx_standard 2020
 
 # Keep this value synchronized with the
 # newest LLVM that is compatible with OSL
-set llvm_version        11
+set llvm_version 15
 
 # MacPorts Clang is used "to generate bitcode"
 # See variable LLVM_BC_GENERATOR

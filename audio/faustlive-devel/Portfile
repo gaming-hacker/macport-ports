@@ -34,10 +34,10 @@ post-fetch {
     system -W ${worksrcpath} "git submodule update --init"
 }
 
-set llvm_version        3.4
+set llvm_version 15
 if {${os.platform} eq "darwin" && ${os.major} > 14} {
     # clang 3.4 isn't supported in the latest macOS versions any more, go with LLVM 7.0 instead.
-    set llvm_version    7.0
+    set llvm_version 15
 }
 
 set llvm_prefix         ${prefix}/libexec/llvm-${llvm_version}

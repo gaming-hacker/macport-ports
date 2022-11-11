@@ -75,12 +75,12 @@ set all_llvm_variants [list llvm14 ]
 #     lappend all_llvm_variants llvm50 llvm60 llvm70 llvm80 llvm90
 # }
 array set llvm_variant_version [list llvm14 14 ]
-set llvm_version {14}
+set llvm_version 15
 
 foreach variantname $all_llvm_variants {
     set this_llvm_version $llvm_variant_version($variantname)
     variant $variantname conflicts xcode {*}[ldelete $all_llvm_variants $variantname] description "Use llvm-${this_llvm_version} for libLTO, llvm-mc, llvm-size, and llvm-nm" "
-        set llvm_version        $this_llvm_version
+        set llvm_version 15
         depends_lib-append      port:llvm-${this_llvm_version}
     "
 }

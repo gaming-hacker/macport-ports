@@ -34,7 +34,7 @@ checksums               rmd160  80d85df0d3823edbfd2b8671f8f6597751025c6d \
 sha256  cbc793490cc90e43218e177109e96ccaebf0380b39d8f2afb86b35b663e9a65f \
 size    1517896
 
-set llvm_version        3.4
+set llvm_version 15
 set llvm_prefix         ${prefix}/libexec/llvm-${llvm_version}
 configure.env           PATH=${llvm_prefix}/bin:$env(PATH)
 
