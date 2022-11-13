@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ long_description    PyMC (formerly PyMC3) is a Python package for Bayesian \
                     large suite of problems.
 
 checksums           rmd160  9a253c6a33c6e6b1aae8be41444852a8407cbd1e \
-                    sha256  384aacc04aeef6f49f2356b61cfcdac22de0000b77b825ba3af73f3f0ba2cb9a \
-                    size    6737845
+sha256  384aacc04aeef6f49f2356b61cfcdac22de0000b77b825ba3af73f3f0ba2cb9a \
+size    6737845
 
-python.versions     38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     conflicts   py${python.version}-pymc3

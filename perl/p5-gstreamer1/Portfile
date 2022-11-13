@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         GStreamer1 0.003 ../by-authors/id/T/TM/TMURRAY
 revision            0
 license             {Artistic-1 GPL}
@@ -15,8 +15,8 @@ platforms           {darwin any}
 supported_archs     noarch
 
 checksums           rmd160  bc6dbf327fc4ecf5df742e9057d0471d51a09215 \
-                    sha256  4cf0ecfaefd425ac6f171fff5430e770efc3ea161475ee8856ccd23a974502dc \
-                    size    5614
+sha256  4cf0ecfaefd425ac6f171fff5430e770efc3ea161475ee8856ccd23a974502dc \
+size    5614
 
 if {${perl5.major} != ""} {
     depends_build-append \
@@ -29,6 +29,6 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-glib-object-introspection
     
     # Still needs a compiler at build time
-    compiler.c_standard     1989
-    compiler.cxx_standard   1998
+    compiler.c_standard 2017
+    compiler.cxx_standard 2020
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       makefile 1.0
@@ -22,8 +22,8 @@ homepage        https://fnc.bsdbox.org
 master_sites    ${homepage}/tarball/${version}/
 
 checksums       rmd160  ed2b8589e6864abb071d9b2b3b392c929072cd7d \
-                sha256  adafb961a4904e35a493c1cddb9cb039d0754c18a20f0f8c472a86465a448f15 \
-                size    3077617
+sha256  adafb961a4904e35a493c1cddb9cb039d0754c18a20f0f8c472a86465a448f15 \
+size    3077617
 
 depends_lib-append      port:zlib
 
