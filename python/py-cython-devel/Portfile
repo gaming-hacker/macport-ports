@@ -36,6 +36,8 @@ sha256  acb194368234396e6ff334c6222128e5bcdd392b4d545f544ac7489de8328f06 \
 size    2527661
 
 if {${name} ne ${subport}} {
+    conflicts       py${python.version}-cython
+
     depends_lib-append \
                         port:py${python.version}-setuptools
 
