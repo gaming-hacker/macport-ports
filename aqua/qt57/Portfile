@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -14,11 +14,6 @@ license             {LGPL-3 GPL-3 OpenSSLException}
 homepage            https://www.qt.io
 
 version             5.7.1
-
-# Requires xcodebuild
-# https://trac.macports.org/ticket/59312
-# https://trac.macports.org/ticket/63154
-use_xcode  no
 
 PortGroup qt5_variables 1.0
 
@@ -759,9 +754,9 @@ foreach {module module_info} [array get modules] {
         build.target
 
         checksums                                        \
-rmd160  [lindex [lindex ${module_info} 0] 0] \
-sha256  [lindex [lindex ${module_info} 0] 1] \
-size    [lindex [lindex ${module_info} 0] 2]
+            rmd160  [lindex [lindex ${module_info} 0] 0] \
+            sha256  [lindex [lindex ${module_info} 0] 1] \
+            size    [lindex [lindex ${module_info} 0] 2]
 
         set license_string [lindex ${module_info} 8]
         set license_string [string range ${license_string} 1+[string first ":" ${license_string}] end]
@@ -978,16 +973,21 @@ size    [lindex [lindex ${module_info} 0] 2]
 
             platform darwin {
                 # qt calls xcrun to find the SDK to use, so make sure this call will succeed
-                # TODO: should we just always use the generic SDK on new systems?
 
-                ui_debug "qt5 Portfile: the initial SDK value is: macosx${configure.sdk_version}"
-                ui_debug "qt5 Portfile: testing for system-specific SDK:"
+                ui_debug "qt57 Portfile: the initial SDK value is: macosx${configure.sdk_version}"
                 # first try for a system-specific SDK
-                if {[catch {exec -ignorestderr /usr/bin/xcrun --sdk macosx${configure.sdk_version} --find ld  > /dev/null 2>@1}]} {
+                if {[string first . ${configure.sdk_version}] == -1 && ${configure.sdkroot} ne ""} {
+                    # xcrun doesn't like major version only (e.g. macosx11), try to find a full version
+                    set sdks [lsort -command vercmp -decreasing [glob -nocomplain [file rootname ${configure.sdkroot}]*.sdk]]
+                    configure.sdk_version [string map {MacOSX ""} [file rootname [file tail [lindex $sdks 0]]]]
+                    ui_debug "using possibly more specific SDK version: ${configure.sdk_version}"
+                }
+                ui_debug "qt57 Portfile: testing for system-specific SDK:"
+                if {[catch {exec -ignorestderr env DEVELOPER_DIR=${configure.developer_dir} /usr/bin/xcrun --sdk macosx${configure.sdk_version} --find ld  > /dev/null 2>@1}]} {
 
-                    ui_debug "qt5 Portfile: system-specific SDK was not found, looking for generic SDK."
+                    ui_debug "qt57 Portfile: system-specific SDK was not found, looking for generic SDK."
                     # if no specific sdk found, check for a generic macosx sdk
-                    if {[catch {exec -ignorestderr /usr/bin/xcrun --sdk macosx --find ld > /dev/null 2>@1}]} {
+                    if {[catch {exec -ignorestderr env DEVELOPER_DIR=${configure.developer_dir} /usr/bin/xcrun --sdk macosx --find ld > /dev/null 2>@1}]} {
                         ui_error "${subport}: no usable SDK can be found"
                         return -code error "no usable SDK can be found"
                     } else {
@@ -995,9 +995,9 @@ size    [lindex [lindex ${module_info} 0] 2]
                         configure.sdk_version
                     }
                 } else {
-                    ui_debug "qt5 Portfile: system-specific SDK was found."
+                    ui_debug "qt57 Portfile: system-specific SDK was found."
                 }
-                ui_debug "qt5 Portfile: the final SDK value is: macosx${configure.sdk_version}"
+                ui_debug "qt57 Portfile: the final SDK value is: macosx${configure.sdk_version}"
             }
 
             # respect configure.sdk_version
@@ -1614,9 +1614,9 @@ size    [lindex [lindex ${module_info} 0] 2]
             destroot.target install_docs
 
             checksums                                        \
-rmd160  [lindex [lindex ${module_info} 0] 0] \
-sha256  [lindex [lindex ${module_info} 0] 1] \
-size    [lindex [lindex ${module_info} 0] 2]
+                rmd160  [lindex [lindex ${module_info} 0] 0] \
+                sha256  [lindex [lindex ${module_info} 0] 1] \
+                size    [lindex [lindex ${module_info} 0] 2]
 
             depends_build-append            \
                 port:${name}-qttools        \
@@ -1674,9 +1674,9 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         revision ${revision_string}
 
         checksums                                          \
-rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
-sha256  [lindex [lindex $modules(qtbase) 0] 1] \
-size    [lindex [lindex $modules(qtbase) 0] 2]
+            rmd160  [lindex [lindex $modules(qtbase) 0] 0] \
+            sha256  [lindex [lindex $modules(qtbase) 0] 1] \
+            size    [lindex [lindex $modules(qtbase) 0] 2]
 
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}

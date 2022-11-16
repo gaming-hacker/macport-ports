@@ -1,15 +1,15 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-imageio
-version             2.22.3
+version             2.22.4
 revision            0
 categories-append   graphics
 license             BSD
 
-python.versions 310
+python.versions     37 38 39 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -19,9 +19,9 @@ long_description    ${description}
 
 homepage            https://imageio.github.io/
 
-checksums           rmd160  884c314369069c60985bd1b71c8dcb775fbea9e9 \
-sha256  63f007b7f2a082306e36922b3fd529a7aa305d2b78f46195bab8e22bbfe866e9 \
-size    3432247
+checksums           rmd160  b8f298dd3fc854e76198d1dad39d43695ec7a39e \
+                    sha256  0fae027addf02bc89c73a56cc157ad84557f8b8b84aa19b4cb706fefca2d88ff \
+                    size    3432201
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

@@ -13,9 +13,10 @@ size    91692
 maintainers         nomaintainer
 license             MIT
 supported_archs     noarch
+platforms           {darwin any}
 
 description         A flexible framework of neural networks
-long_description    ${description}
+long_description    {*}${description}
 
 homepage            https://chainer.org
 

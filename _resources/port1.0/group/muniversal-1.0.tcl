@@ -33,13 +33,13 @@ default merger_no_3_archs no
 default merger_arch_flag yes
 default merger_arch_compiler no
 
-if {${os.platform} eq "darwin" && ${os.version} >= 22} {
+if {${os.platform} eq "darwin" && ${os.major} >= 22} {
     depends_build-append port:diffutils-for-muniversal
 }
 
 proc muniversal_get_diff_to_use {} {
-    global prefix os.version os.platform
-    if {${os.platform} eq "darwin" && ${os.version} >= 22} {
+    global prefix os.platform os.major
+    if {${os.platform} eq "darwin" && ${os.major} >= 22} {
       return "${prefix}/libexec/diffutils/bin/diff"
     } else {
       return "/usr/bin/diff"
@@ -299,7 +299,7 @@ variant universal {
                 if {$merger_host($arch) ne ""} {
                     set host  --host=$merger_host($arch)
                 }
-            } elseif {[file tail ${configure.cmd}] ne "cmake"} {
+            } elseif {([file tail ${configure.cmd}] ne "cmake") && ([file tail ${configure.cmd}] ne "meson")} {
                 # check if building for a word length we can't run
                 set bits_differ 0
                 if {${arch} in [list ppc64 x86_64] &&
