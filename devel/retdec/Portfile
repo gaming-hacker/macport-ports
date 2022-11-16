@@ -82,12 +82,12 @@ subport retdec-devel {
 
     # retdec depends on yaramod which had hardcoded `python`
     # unfortently patching yaramod isn't easy because it's downloaded and upacked by cmake.
-    # The only way is provides python2.7 with correct ENV variables, until the fix is merged.
+    # The only way is provides python3.10 with correct ENV variables, until the fix is merged.
     # See: https://github.com/avast/yaramod/pull/225
     depends_build-append \
-                    port:python27
+                    port:python310
     build.env-append \
-                    PATH=${prefix}/Library/Frameworks/Python.framework/Versions/2.7/bin:$env(PATH)
+                    PATH=${prefix}/Library/Frameworks/Python.framework/Versions/3.10/bin:$env(PATH)
 }
 
 
