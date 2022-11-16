@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -22,9 +22,9 @@ long_description    \
     install the remote client and then setup ssh connection information.
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  9af9788b65b6fb746af87a2984f89b61a89e311b \
-                        sha256  455c29c4ee78cd6365e5d46e20dd31a5ce4e6e1752db6774253d76bd3ca78813 \
-                        size    12674902
+rmd160  9af9788b65b6fb746af87a2984f89b61a89e311b \
+sha256  455c29c4ee78cd6365e5d46e20dd31a5ce4e6e1752db6774253d76bd3ca78813 \
+size    12674902
 
 depends_build-append    port:go-md2man
 depends_run             port:gvisor-tap-vsock port:qemu

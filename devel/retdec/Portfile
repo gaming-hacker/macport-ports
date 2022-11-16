@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -20,8 +20,8 @@ long_description    {*}${description}. The decompiler is not limited to any part
                     target architecture, operating system, or executable file format.
 
 checksums           rmd160  305e901b37441337d5c0dada1ccc5e737831ef1e \
-                    sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
-                    size    8732003
+sha256  b0e3172d9d232899b71dac41446592c03abe089b8e9c7c1a9c8e8bfe92cf8b49 \
+size    8732003
 
 post-patch {
     reinplace "s|\${CMAKE_INSTALL_PREFIX}|${destroot}\${CMAKE_INSTALL_PREFIX}|" ${worksrcpath}/CMakeLists.txt
@@ -65,8 +65,8 @@ subport retdec-devel {
     epoch           1
 
     checksums       rmd160  4bd42fd53b80c71e2607fd3888bf180329b5abff \
-                    sha256  ab2f35f31e795e04f573fe4e2d8bb7f5865564d57106a2db93dca6f02ef07029 \
-                    size    27192555
+sha256  ab2f35f31e795e04f573fe4e2d8bb7f5865564d57106a2db93dca6f02ef07029 \
+size    27192555
 
     # NOTE: patch-hardcoded-make-devel.diff was merged and reverted
     # See: https://github.com/avast/retdec/commit/a1d7a5793d590bec9fce3ee33cd4f0eacb47eda6

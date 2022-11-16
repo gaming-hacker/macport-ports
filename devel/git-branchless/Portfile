@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -25,9 +25,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  59a3a6d2dac635fce212f4a76a3b0010d84c4e30 \
-                    sha256  362ac1ff6da00b1e5c1ab68614753fb5ffff3f1860a9a8272bf067cd8a9edccc \
-                    size    373914
+rmd160  59a3a6d2dac635fce212f4a76a3b0010d84c4e30 \
+sha256  362ac1ff6da00b1e5c1ab68614753fb5ffff3f1860a9a8272bf067cd8a9edccc \
+size    373914
 
 depends_lib-append  port:libgit2 \
                     port:zlib
@@ -284,8 +284,8 @@ cargo.crates \
     serial-core                      0.4.0  3f46209b345401737ae2125fe5b19a77acce90cd53e1658cda928e4fe9a64581 \
     serial-unix                      0.4.0  f03fbca4c9d866e24a459cbca71283f545a37f8e3e002ad8c70593871453cab7 \
     serial-windows                   0.4.0  15c6d3b776267a75d31bbdfd5d36c0ca051251caafc285827052bc53bcdc8162 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
-    shared_library                   0.1.9  5a9e7e0f2bfae24d8a5b5a66c5b257a83c7412304311512a0c054cd5e619da11 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+shared_library                   0.1.9  5a9e7e0f2bfae24d8a5b5a66c5b257a83c7412304311512a0c054cd5e619da11 \
     shell-escape                     0.1.5  45bb67a18fa91266cc7807181f62f9178a6873bfad7dc788c42e6430db40184f \
     shell-words                      1.1.0  24188a676b6ae68c3b2cb3a01be17fbf7240ce009799bb56d5b1409051e78fde \
     shlex                            1.1.0  43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3 \
