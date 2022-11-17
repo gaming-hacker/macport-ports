@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
@@ -7,8 +7,8 @@ name                        kerberos5
 version                     1.20.1
 revision                    0
 checksums                   rmd160  fc9dcb34199c566bc650876266cb06cbef5315cc \
-                            sha256  704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851 \
-                            size    8661660
+sha256  704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851 \
+size    8661660
 
 set branch                  [join [lrange [split ${version} .] 0 1] .]
 conflicts                   fbopenssl
