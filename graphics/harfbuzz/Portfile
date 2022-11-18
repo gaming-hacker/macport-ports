@@ -7,7 +7,7 @@ PortGroup           gobject_introspection 1.0
 
 # Please keep the harfbuzz and harfbuzz-devel ports as similar as possible.
 
-github.setup        harfbuzz harfbuzz 5.3.1
+github.setup        harfbuzz harfbuzz 5.2.0
 name                harfbuzz
 conflicts           harfbuzz-devel
 set my_name         harfbuzz
@@ -31,8 +31,7 @@ use_xz              yes
 depends_build       port:pkgconfig
 
 # https://github.com/harfbuzz/harfbuzz/issues/1642
-compiler.cxx_standard \
-                    2011
+compiler.cxx_standard 2017
 
 # https://github.com/harfbuzz/harfbuzz/issues/1651#issuecomment-484051395
 compiler.blacklist-append {clang < 700}

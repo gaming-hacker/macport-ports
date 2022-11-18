@@ -21,7 +21,7 @@ long_description    {*}${description}, including front ends for \
                     C, C++, Objective-C, Objective-C++ and Fortran.
 
 version             12.2.0
-revision            2
+revision            1
 
 set libgccname      lib${name}
 subport             ${libgccname} { revision [ expr ${revision} + 0 ] }
@@ -189,14 +189,10 @@ subport ${libcxxname} {
     PortGroup compilers     1.0
     compilers.choose        cxx
     compilers.setup         -gcc -fortran -clangdevel -clang34 -clang35 -clang36 \
-                            -clang37 -clang50 -clang60 -clang70 -clang80 -clang90
-    if { ![clang_variant_isset] } {
-        if { ${os.platform} eq "darwin" && ${os.major} < 11 } {
-            default_variants-append +clang11
-        } else {
-            default_variants-append +clang14
-        }
-    }
+                            -clang37 -clang50 -clang60 -clang70 -clang80 -clang90 \
+                            -clang11 -clang12 -clang13 -clang14
+   default_variants-append +clang15
+
     revision                [ expr ${revision} + 1 ]
     description             libc++ header implementation to be used by ${name}
     long_description        {*}${description}
