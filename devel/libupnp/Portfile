@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -10,9 +10,9 @@ github.tarball_from releases
 name                libupnp
 distname            ${name}-${version}
 checksums           sha1    6deedeb028948e53bba3e49cde65d912a63753b7 \
-                    rmd160  670e8c73c6c4c5d3a0d6a74f30569541f72b4176 \
-                    sha256  794e92c6ea83456f25a929e2e1faa005f7178db8bc4b0b4b19eaca2cc7e66384 \
-                    size    690035
+rmd160  670e8c73c6c4c5d3a0d6a74f30569541f72b4176 \
+sha256  794e92c6ea83456f25a929e2e1faa005f7178db8bc4b0b4b19eaca2cc7e66384 \
+size    690035
 
 categories          devel
 platforms           darwin
