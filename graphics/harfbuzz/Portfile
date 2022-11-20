@@ -31,7 +31,7 @@ use_xz              yes
 depends_build       port:pkgconfig
 
 # https://github.com/harfbuzz/harfbuzz/issues/1642
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 # https://github.com/harfbuzz/harfbuzz/issues/1651#issuecomment-484051395
 compiler.blacklist-append {clang < 700}

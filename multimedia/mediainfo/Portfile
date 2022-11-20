@@ -37,7 +37,7 @@ autoreconf.args-append  --force --install
 # make pkg-config act like on Linux, no '-I/opt/local/include' in cflags
 configure.env-append    PKG_CONFIG_SYSTEM_INCLUDE_PATH=${prefix}/include
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 subport MediaInfo-gui {
     PortGroup           app 1.0
@@ -55,7 +55,7 @@ subport MediaInfo-gui {
     configure.args      --with-wx-config=${wxWidgets.wxconfig} \
                         --with-wx-prefix=${wxWidgets.prefix}
 
-    compiler.cxx_standard 2011
+    compiler.cxx_standard 2020
 
     app.executable      mediainfo-gui
     app.name            MediaInfo
