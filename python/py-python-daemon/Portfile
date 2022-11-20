@@ -9,6 +9,7 @@ revision            0
 
 categories-append   devel
 supported_archs     noarch
+platforms           {darwin any}
 license             GPL-3+ Apache-2
 maintainers         nomaintainer
 
@@ -29,8 +30,6 @@ size    80775
 
 python.versions 310
 
-patchfiles          patch-setup.py.diff
-
 if {${name} ne ${subport}} {
     depends_build-append \
                     port:py${python.version}-setuptools \
@@ -38,4 +37,6 @@ if {${name} ne ${subport}} {
 
     depends_lib-append \
                     port:py${python.version}-lockfile
+
+    patchfiles      patch-setup.py.diff
 }

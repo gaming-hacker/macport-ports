@@ -6,6 +6,7 @@ PortGroup           python 1.0
 name                py-praw
 version             7.5.0
 supported_archs     noarch
+platforms           {darwin any}
 license             BSD
 
 python.versions 310
@@ -25,11 +26,8 @@ sha256  f91bfc827ddd0718a6ec24f16f5cad0ea9279de82144e1afcbe47694d1e70cdb \
 size    22787277
 
 if {${name} ne ${subport}} {
-
     depends_lib-append \
                         port:py${python.version}-update_checker \
                         port:py${python.version}-prawcore \
                         port:py${python.version}-websocket-client
-
 }
-
