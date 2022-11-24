@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compilers 1.0
 
 name                cfitsio
 epoch               1
-version             4.1.0
+version             4.2.0
 revision            0
 categories          science
 license             zlib MIT {LGPL Noncommercial}
@@ -28,9 +28,9 @@ long_description    CFITSIO is a library of C and Fortran subroutines for \
 homepage            https://heasarc.gsfc.nasa.gov/fitsio/
 master_sites        https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/
 
-checksums           rmd160  a7dd21fa12c2aa118ee350322e44dbb540359289 \
-sha256  b367c695d2831958e7166921c3b356d5dfa51b1ecee505b97416ba39d1b6c17a \
-size    4305184
+checksums           rmd160  c116e2bb48a2561f9f236a4897c12263845bead0 \
+                    sha256  eba53d1b3f6e345632bb09a7b752ec7ced3d63ec5153a848380f3880c5d61889 \
+                    size    4356372
 
 patchfiles          patch-configure.diff \
                     patch-Makefile.in.diff

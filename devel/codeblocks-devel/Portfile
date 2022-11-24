@@ -1,9 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               wxWidgets 1.0
 PortGroup               boost 1.0
 PortGroup               app 1.0
+PortGroup               compiler_blacklist_versions 1.0
 
 name                    codeblocks-devel
 conflicts               codeblocks
@@ -20,9 +21,9 @@ long_description        {*}${description}. This port tracks the upstream develop
 
 fetch.type              svn
 svn.url                 svn://svn.code.sf.net/p/codeblocks/code/trunk
-svn.revision            13000
+svn.revision            13056
 svn.method              checkout
-version                 20221102-r${svn.revision}
+version                 20221120-r${svn.revision}
 revision                0
 
 # fix boost detection with i386 systems
@@ -41,7 +42,9 @@ boost.depends_type      build
 depends_lib-append      port:hunspell \
                         port:bzip2
 
-compiler.cxx_standard 2020
+compiler.cxx_standard   2011
+# https://build.macports.org/builders/ports-10.11_x86_64-builder/builds/200332/steps/install-port/logs/stdio
+compiler.blacklist-append {clang < 801}
 
 # FileManager does not build with Carbon/Cocoa
 # and reportedly requires "gamin" to be installed when using wxGTK
