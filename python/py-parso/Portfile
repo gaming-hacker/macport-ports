@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    {*}${description}
 homepage            https://github.com/davidhalter/parso
 
 checksums           rmd160  951ee97bd1a071dde3bd9e19e895e6f8c5fa6eb1 \
-                    sha256  8c07be290bb59f03588915921e29e8a50002acaf2cdc5fa0e0114f91709fafa0 \
-                    size    400064
+sha256  8c07be290bb59f03588915921e29e8a50002acaf2cdc5fa0e0114f91709fafa0 \
+size    400064
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -36,8 +36,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  acc080335b1228df041a54e944f3f63bec3c3d38 \
-                            sha256  caba44724b994a8a5e086460bb212abc5a8bc46951bf4a9a1210745953622eb9 \
-                            size    400854
+sha256  caba44724b994a8a5e086460bb212abc5a8bc46951bf4a9a1210745953622eb9 \
+size    400854
     }
 
     test.run            yes

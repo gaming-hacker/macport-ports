@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   cmake 1.1
@@ -30,13 +30,13 @@ set libyaml_distfile        ${libyaml_version}.tar.gz
 distfiles-append            ${libyaml_distfile}:libyaml
 
 checksums                   ${name}-${xtools_version}.tar.gz \
-                            rmd160  18d99473a012f4fa48464aadd078921a25bdc322 \
-                            sha256  9167b67e128f616cef079bbeda4b116fe0d41fe54784fff85826420daae23f5f \
-                            size    2958759 \
+rmd160  18d99473a012f4fa48464aadd078921a25bdc322 \
+sha256  9167b67e128f616cef079bbeda4b116fe0d41fe54784fff85826420daae23f5f \
+size    2958759 \
                             ${libyaml_distfile} \
-                            rmd160  7fe42b7d7bb0dd07aedee6c775c43fd35bb5cf3e \
-                            sha256  fa240dbf262be053f3898006d502d514936c818e422afdcf33921c63bed9bf2e \
-                            size    85055
+rmd160  7fe42b7d7bb0dd07aedee6c775c43fd35bb5cf3e \
+sha256  fa240dbf262be053f3898006d502d514936c818e422afdcf33921c63bed9bf2e \
+size    85055
 
 patchfiles-append           0001-ld64-unwinddump-include-stdlib-for-exit-3.patch \
                             0002-ld64-archive_file-fix-compilation-without-LTO_SUPPOR.patch \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,8 +25,8 @@ master_sites        ${homepage}
 extract.suffix      .tgz
 
 checksums           rmd160  542ed6e3cd838151dff09b2016eca8185a68782d \
-                    sha256  40b9406c20735a9a3009d863318cb8d3e496fb073d201c5463df810e01ab2a57 \
-                    size    4769286
+sha256  40b9406c20735a9a3009d863318cb8d3e496fb073d201c5463df810e01ab2a57 \
+size    4769286
 
 mpi.setup           require require_fortran
 

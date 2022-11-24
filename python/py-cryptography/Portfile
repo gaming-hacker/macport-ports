@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,9 +22,9 @@ description         cryptography is a package designed to expose \
 long_description    {*}${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  54a360f30102c0eeff95592a754f020aae9da2a4 \
-                    sha256  d07247b0f24f6a70002d7ea0268cd5a72910ffc8c7e60ad6712b3c861a06961f \
-                    size    35900586
+rmd160  54a360f30102c0eeff95592a754f020aae9da2a4 \
+sha256  d07247b0f24f6a70002d7ea0268cd5a72910ffc8c7e60ad6712b3c861a06961f \
+size    35900586
 
 # See:
 # * https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst
@@ -56,8 +56,8 @@ if {${name} ne ${subport}
         long_description    {*}${description}
 
         checksums       rmd160  13380349b4a5559153c1e8a328fd4629b81e134d \
-                        sha256  2c8af64316fa1c09162c6e99dba9c23c76a07c3466dbbf62db8df970b45f935f \
-                        size    35729139
+sha256  2c8af64316fa1c09162c6e99dba9c23c76a07c3466dbbf62db8df970b45f935f \
+size    35729139
 
         if {${os.platform} eq "darwin" && ${os.major} < 11} {
             # https://trac.macports.org/ticket/54519
@@ -86,9 +86,9 @@ if {${name} ne ${subport}
         openssl.branch  1.1
 
         checksums   ${distname}${extract.suffix} \
-                    rmd160  6513816850a696909886ebab1e562b1150d7ef5f \
-                    sha256  db5b8ad6b9d3cd099e543dc70826946e61282d920126c43bc4534dea174df537 \
-                    size    35821161
+rmd160  6513816850a696909886ebab1e562b1150d7ef5f \
+sha256  db5b8ad6b9d3cd099e543dc70826946e61282d920126c43bc4534dea174df537 \
+size    35821161
 
         depends_build-append \
                     port:py${python.version}-setuptools-rust

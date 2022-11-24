@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,8 +18,8 @@ description             A package manager that installs and runs executable Swif
 long_description        {*}${description}
 
 checksums               rmd160  81bd29c2cb44fb70519aa8664ee0af90bfd07339 \
-                        sha256  31ad7cc72fa0427ef95363efaabebe3c90c7e5af14537bf67f046c738460b51e \
-                        size    23754
+sha256  31ad7cc72fa0427ef95363efaabebe3c90c7e5af14537bf67f046c738460b51e \
+size    23754
 
 minimum_xcodeversions-append {18 11}
 

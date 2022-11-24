@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem             1.0
 PortGroup              github 1.0
@@ -21,8 +21,8 @@ post-fetch {
 }
 
 checksums              rmd160  a97e5762faa053041a2de3e68c59b92ebee6b6e5 \
-                       sha256  55ce01b39f2ee2e0b1e990ff27801ab808f79df620758569bfd4a282cbee0435 \
-                       size    7630839
+sha256  55ce01b39f2ee2e0b1e990ff27801ab808f79df620758569bfd4a282cbee0435 \
+size    7630839
 
 depends_lib-append     port:mbedtls \
                        port:sqlite3

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -21,8 +21,8 @@ homepage            https://exiftool.org
 master_sites        ${homepage}
 
 checksums           rmd160  5a9ca8fef1cfa7550630294adb315df6e30fb076 \
-                    sha256  efa99e350a7d73467ef3580d48c9c34ed26677fa8e1aee2ea9e1ec1a14e70e44 \
-                    size    5094151
+sha256  efa99e350a7d73467ef3580d48c9c34ed26677fa8e1aee2ea9e1ec1a14e70e44 \
+size    5094151
 
 livecheck.type      regex
 livecheck.url       ${homepage}/rss.xml

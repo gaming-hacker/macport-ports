@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           boost 1.0
@@ -20,8 +20,8 @@ master_sites        https://scipopt.org/download/release/
 extract.suffix      .tgz
 
 checksums           rmd160  935f74d7cc6d421de4245ace9a0934949acab243 \
-                    sha256  ad118ec82be510ab0689a275d7b3892698c77e16142edf3c489d5dfe929be771 \
-                    size    11155725
+sha256  ad118ec82be510ab0689a275d7b3892698c77e16142edf3c489d5dfe929be771 \
+size    11155725
 
 # NOTE: that TBB implementation should be the same that is used at PAPILO
 depends_lib-append  port:gmp \

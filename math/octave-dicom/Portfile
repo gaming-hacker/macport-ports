@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -11,8 +11,8 @@ description         Digital communications in medicine (DICOM) file io.
 long_description    {*}${description}
 
 checksums           rmd160  a7b7b52ae4071f1b31dc6f74478fc4c6e86b5252 \
-                    sha256  d2a36a8e92565810343792208d5d1ed123d0942bdbcc8c27220696a3edb02b0d \
-                    size    883216
+sha256  d2a36a8e92565810343792208d5d1ed123d0942bdbcc8c27220696a3edb02b0d \
+size    883216
 
 depends_build       port:cmake
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ master_sites        https://xorg.freedesktop.org/archive/individual/lib/
 distname            libXpm-${version}
 
 checksums           rmd160  1cdd80aa37ae7115249dec3f5e8a403afca938a0 \
-                    sha256  f7eb8f69c039281def8258ae6859adb5f050fbe161ab3d6a2d6ef109a603eac2 \
-                    size    392624
+sha256  f7eb8f69c039281def8258ae6859adb5f050fbe161ab3d6a2d6ef109a603eac2 \
+size    392624
 
 use_xz              yes
 use_parallel_build  yes

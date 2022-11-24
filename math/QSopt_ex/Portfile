@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,8 +17,8 @@ description             an exact linear programming solver
 long_description        {*}${description}
 
 checksums               rmd160  4bbeeb0fb629fa629731b9870ac07b796fd54d0c \
-                        sha256  5f148537f0e815709fc274d6906946ced6117db3599a97b5acc347c6066909a1 \
-                        size    323613
+sha256  5f148537f0e815709fc274d6906946ced6117db3599a97b5acc347c6066909a1 \
+size    323613
 
 use_autoreconf          yes
 autoreconf.args         -fvi

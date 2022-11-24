@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -25,8 +25,8 @@ python.rootname         Scrapy
 set rootname_lower      [string tolower ${python.rootname}]
 
 checksums               rmd160  daca2101ecc3762a875361d9d2e2aec96e0b9ed4 \
-                        sha256  30fa408353d24b1df979df2ea4afbd19b4ae02fb2207f218d246332f1e1cf14e \
-                        size    1131084
+sha256  30fa408353d24b1df979df2ea4afbd19b4ae02fb2207f218d246332f1e1cf14e \
+size    1131084
 
 python.versions 310
 

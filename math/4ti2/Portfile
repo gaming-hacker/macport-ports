@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -16,8 +16,8 @@ description             A software package for algebraic, geometric and combinat
 long_description        {*}${description}
 
 checksums               rmd160  ea1e2a1619bd4c49b94b78ac14dd91cbc83e8789 \
-                        sha256  3b6a17ce097bd489c70d3344e7020213b11064c51b4ef455e2f22a6ab807e886 \
-                        size    4999644
+sha256  3b6a17ce097bd489c70d3344e7020213b11064c51b4ef455e2f22a6ab807e886 \
+size    4999644
 
 use_autoreconf          yes
 autoreconf.args         -fvi

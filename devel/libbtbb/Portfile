@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ if {${subport} eq "${name}"} {
 
     github.setup    greatscottgadgets libbtbb 2020-12-R1
     checksums       rmd160  eca69c16710e4bf793cccfc722101e015a95b0e9 \
-                    sha256  aa0588f21701156ccbd6b388fafe63225b41dd5b37b390f6c0ed3504d259847a \
-                    size    308473
+sha256  aa0588f21701156ccbd6b388fafe63225b41dd5b37b390f6c0ed3504d259847a \
+size    308473
 
 } elseif {${subport} eq "${name}-devel"} {
     conflicts       ${name}
@@ -29,8 +29,8 @@ if {${subport} eq "${name}"} {
     github.setup    greatscottgadgets libbtbb f0fe1768b080b1333a5357e8308d900e1273ec7f
     version         2022-08-26
     checksums       rmd160  82d6f97e4070ec7f14b64d3d21063c3b4d82fd9f \
-                    sha256  daa64b8a746f87fb6a6f6e6c589ee251f98454d9b0093b665f883446b49d047f \
-                    size    310865
+sha256  daa64b8a746f87fb6a6f6e6c589ee251f98454d9b0093b665f883446b49d047f \
+size    310865
 }
 
 set python_ver      310

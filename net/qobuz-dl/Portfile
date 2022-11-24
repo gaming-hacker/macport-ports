@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    ${description}
 homepage            https://github.com/vitiko98/Qobuz-DL
 
 checksums           rmd160  7c59d4d95fb5c2be0d9c36e6bca89d2de3793651 \
-                    sha256  682da53e27d607308ec8dda26bc69dc320de2f6db422e7b1eeba58904582a628 \
-                    size    35837
+sha256  682da53e27d607308ec8dda26bc69dc320de2f6db422e7b1eeba58904582a628 \
+size    35837
 
 patchfiles          pick-2.0.diff
 
