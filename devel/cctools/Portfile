@@ -77,12 +77,12 @@ if {${os.major} < 19} {
 array set llvm_variant_version [list llvm34 3.4 llvm37 3.7 llvm50 5.0 \
     llvm60 6.0 llvm70 7.0 llvm80 8.0 llvm90 9.0 llvm10 10 llvm11 11 \
     llvm12 12 llvm13 13 llvm14 14 llvmdev devel]
-set llvm_version {}
+set llvm_version 15
 
 foreach variantname $all_llvm_variants {
     set this_llvm_version $llvm_variant_version($variantname)
     variant $variantname conflicts xcode xtools {*}[ldelete $all_llvm_variants $variantname] description "Use llvm-${this_llvm_version} for libLTO, llvm-mc, llvm-size, and llvm-nm" "
-        set llvm_version        $this_llvm_version
+        set llvm_version 15
         depends_lib-append      port:llvm-${this_llvm_version}
     "
 }
@@ -267,7 +267,7 @@ post-patch {
 use_configure           no
 
 # https://trac.macports.org/ticket/43745
-configure.cflags-append -std=gnu99
+configure.cflags-append -std=gnu17
 
 build.target            all
 

@@ -22,7 +22,7 @@ checksums               rmd160  ea1e2a1619bd4c49b94b78ac14dd91cbc83e8789 \
 use_autoreconf          yes
 autoreconf.args         -fvi
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 
 depends_lib-append      port:glpk \
                         port:gmp

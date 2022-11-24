@@ -27,7 +27,7 @@ checksums           rmd160  30745ef666d7493864fb8e54815c829b9e8bcb4d \
 
 compiler.thread_local_storage yes
 
-compiler.cxx_standard 2014
+compiler.cxx_standard 2020
 
 # error: "This library now requires a C++11 or later compiler - this message was generated as a result of BOOST_NO_CXX11_HDR_TYPE_TRAITS being set"
 compiler.blacklist-append {clang < 800}

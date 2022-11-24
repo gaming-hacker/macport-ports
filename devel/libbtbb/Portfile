@@ -37,7 +37,7 @@ set python_ver      310
 depends_build-append \
                     port:python${python_ver}
 
-# cc1: error: unrecognized command line option "-std=gnu90"
+# cc1: error: unrecognized command line option "-std=gnu17"
 compiler.blacklist-append *gcc-4.*
 
 platform darwin powerpc {

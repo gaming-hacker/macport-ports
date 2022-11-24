@@ -51,7 +51,7 @@ post-patch {
     reinplace "s|__SDK_PATH__|${configure.sdkroot}|g" ${worksrcpath}/meson.build
 }
 
-compiler.c_standard 1999
+compiler.c_standard 2017
 
 # gobject-introspection uses g-ir-scanner, which uses $CC from env
 if {${universal_possible} && [variant_isset universal]} {
