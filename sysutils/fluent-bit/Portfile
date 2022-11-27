@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake                       1.1
@@ -32,8 +32,8 @@ maintainers         {l2dy @l2dy} \
                     openmaintainer
 
 checksums           rmd160  0c1c72a1739a2b9d424c8cd0a91b5ac031db8309 \
-                    sha256  13f828041f49d297b8f4d5c24982b124dbc0b7fc01c4cb5edad5a51e23f013cd \
-                    size    22120802
+sha256  13f828041f49d297b8f4d5c24982b124dbc0b7fc01c4cb5edad5a51e23f013cd \
+size    22120802
 
 # /usr/bin/ranlib: unknown option character `n' in: -no_warning_for_no_symbols
 compiler.blacklist-append   {clang < 700}

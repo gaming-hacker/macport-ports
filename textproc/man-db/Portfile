@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ long_description    man-db is an implementation of the standard Unix documentati
     and Ubuntu.
 
 checksums           rmd160   6aada489203d21155e8254c0298f2db6ee497271 \
-                    sha256   2eabaa5251349847de9c9e43c634d986cbcc6f87642d1d9cb8608ec18487b6cc \
-                    size     1948788
+sha256   2eabaa5251349847de9c9e43c634d986cbcc6f87642d1d9cb8608ec18487b6cc \
+size     1948788
 
 depends_lib         port:libpipeline
 depends_build       port:pkgconfig \

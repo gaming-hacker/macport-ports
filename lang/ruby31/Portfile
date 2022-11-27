@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -35,8 +35,8 @@ distname            ruby-${version}
 dist_subdir         ruby${ruby_ver_nodot}
 
 checksums           rmd160 39d618260e4d6dcbdb02efa4d6ac20980ff0a090 \
-                    sha256 5ea498a35f4cd15875200a52dde42b6eb179e1264e17d78732c3a57cd1c6ab9e \
-                    size 20906051
+sha256 5ea498a35f4cd15875200a52dde42b6eb179e1264e17d78732c3a57cd1c6ab9e \
+size 20906051
 
 universal_variant   no
 

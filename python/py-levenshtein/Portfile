@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,8 +28,8 @@ long_description    The Levenshtein Python C extension module contains \
 homepage            https://github.com/maxbachmann/Levenshtein
 
 checksums           rmd160  bde895fee3e0696882bc7bec42cbbc374c87a671 \
-                    sha256  a8cc52849264d3aa6e16c9daca95a02d59e9496c86f18def7131413cfba617cc \
-                    size    122884
+sha256  a8cc52849264d3aa6e16c9daca95a02d59e9496c86f18def7131413cfba617cc \
+size    122884
 
 if {${name} ne ${subport}} {
     depends_build-append \

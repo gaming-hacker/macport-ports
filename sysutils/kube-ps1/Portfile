@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ long_description    A script that lets you add the current Kubernetes context an
                     configured on kubectl to your Bash/Zsh prompt strings (i.e. the \$PS1).
 
 checksums           rmd160  749bab8ee2c1bd9972e028a3f97e46a57d8c45ba \
-                    sha256  05ad37ad615c76d4c74b8933c71c97a0b1569a6c739d3362b4f31862ad5a859a \
-                    size    512934
+sha256  05ad37ad615c76d4c74b8933c71c97a0b1569a6c739d3362b4f31862ad5a859a \
+size    512934
 
 depends_run         path:${prefix}/bin/kubectl:kubectl-1.25
 
