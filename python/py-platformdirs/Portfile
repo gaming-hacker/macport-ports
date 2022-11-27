@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-platformdirs
-version             2.5.3
+version             2.5.4
 revision            0
 
 categories-append   devel
@@ -18,12 +18,12 @@ long_description    ${description}, e.g. a \"user data dir\".
 
 homepage            https://github.com/platformdirs/platformdirs
 
-checksums           rmd160  ee40e7d38f60dcbce4abb530c1732c9f382b2433 \
-sha256  6e52c21afff35cb659c6e52d8b4d61b9bd544557180440538f255d9382c8cbe0 \
-size    21011
+checksums           rmd160  5cf4b040d82fb034c0eb693418d7ccec83db2778 \
+                    sha256  1006647646d80f16130f052404c6b901e80ee4ed6bef6792e1f238a8969106f7 \
+                    size    20843
 
 # keep all these Python versions, port is a dependency of py-virtualenv
-python.versions 310
+python.versions     27 35 36 37 38 39 310 311
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -34,15 +34,15 @@ if {${name} ne ${subport}} {
         version     2.4.0
         revision    0
         checksums   rmd160  4dbcd578204ea2114f6ff5eb72fb5a4a860fd5ec \
-sha256  367a5e80b3d04d2428ffa76d33f124cf11e8fff2acdaa9b43d545f5c7d661ef2 \
-size    24051
+                    sha256  367a5e80b3d04d2428ffa76d33f124cf11e8fff2acdaa9b43d545f5c7d661ef2 \
+                    size    24051
     } elseif {${python.version} <= 35} {
         version     2.0.2
         epoch       1
         revision    0
         checksums   rmd160  b03f9dd52b9b7232f6e154ae51eaf662b645c05e \
-sha256  3b00d081227d9037bbbca521a5787796b5ef5000faea1e43fd76f1d44b06fcfa \
-size    11445
+                    sha256  3b00d081227d9037bbbca521a5787796b5ef5000faea1e43fd76f1d44b06fcfa \
+                    size    11445
 
         depends_build-append \
                     port:py${python.version}-toml

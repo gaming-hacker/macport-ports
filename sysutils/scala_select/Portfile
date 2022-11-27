@@ -1,6 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-
 PortSystem          1.0
 PortGroup           stub 1.0
 PortGroup           select 1.0
@@ -10,6 +9,7 @@ version             0.1
 revision            4
 categories          sysutils
 supported_archs     noarch
+platforms           any
 description         common files for selecting default scala compiler
 long_description    scala_select installs files that allow 'port select' to switch the \
                     default scala compiler. It creates unsuffixed symlinks in the \

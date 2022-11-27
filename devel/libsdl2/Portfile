@@ -27,7 +27,9 @@ sha256 8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295
 patchfiles      10.7-sdk-compat.patch \
                 SDL_mfijoystick.m.patch \
                 CVDisplayLinkRef.patch \
-                vulkan_metal.h.patch
+                vulkan_metal.h.patch \
+                openglPixelFormat.diff \
+                _Nullable.patch
 
 configure.args  --without-x \
                 --disable-jack \

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 name                libpipeline
-version             1.5.6
+version             1.5.7
 categories          devel
 platforms           darwin linux
 license             GPL-3+
@@ -17,8 +17,8 @@ long_description    libpipeline is a C library for manipulating pipelines of \
     the following Linux distributions: Arch, Debian, Dragora, Fedora, Gentoo,  \
     and Ubuntu.
 
-checksums           rmd160   73ee3e0bb86f7c37c74e858eafaff01275e0a628 \
-sha256   60fbb9e7dc398528e5f3a776af57bb28ca3fe5d9f0cd8a961ac6cebfe6e9b797 \
-size     976516
+checksums           rmd160   c76aae38fa5f26fbd66541be05226398f9a41bf7 \
+                    sha256   b8b45194989022a79ec1317f64a2a75b1551b2a55bea06f67704cb2a2e4690b0 \
+                    size     977735
 
 livecheck.url       https://download-mirror.savannah.gnu.org/releases/libpipeline/
