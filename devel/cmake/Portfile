@@ -41,7 +41,7 @@ checksums           rmd160  09373f97fee569133852498f0de6e9f6db10084b \
 revision            0
 
 gitlab.livecheck.regex {([0-9.]+)}
-compiler.cxx_standard 2014
+compiler.cxx_standard 2020
 
 platform darwin {
     if {!((${os.major} < 9) || ${build_arch} eq "ppc" ||
@@ -227,13 +227,13 @@ if {![variant_isset qt5]} {
 }
 
 # Supported pythons
-set python_versions {35 36 37 38 39 310 311}
+set python.versions {310}
 
 # declare all +python* variants, with conflicts
-foreach pyver ${python_versions} {
+foreach pyver ${python.versions} {
     # Conflicting python versions
     set other_python_versions {}
-    foreach other_pyver ${python_versions} {
+    foreach other_pyver ${python.versions} {
         if {${other_pyver} ne ${pyver}} {
             if {${other_pyver} ni ${other_python_versions}} {
                 lappend other_python_versions python${other_pyver}
@@ -251,7 +251,7 @@ if {[variant_isset docs]} {
 
     # see if one or more +python* variants is set
     set python_isset false
-    foreach pyver ${python_versions} {
+    foreach pyver ${python.versions} {
         if {!${python_isset}} {
             set python_isset [variant_isset python${pyver}]
             set python_isset_ver_no_dot ${pyver}
@@ -269,7 +269,7 @@ if {[variant_isset docs]} {
     # make sure one of the +python* variants is set
     # this loop checks for "+docs" and - default Python variant
     set python_isset false
-    foreach pyver ${python_versions} {
+    foreach pyver ${python.versions} {
         if {!${python_isset}} {
             set python_isset  [variant_isset python${pyver}]
             set PYTHON_VERSION_WITH_DOT "[string index ${pyver} 0].[string range ${pyver} 1 end]"

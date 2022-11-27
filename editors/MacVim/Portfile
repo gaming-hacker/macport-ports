@@ -55,7 +55,7 @@ post-extract {
     file mkdir ${workpath}/caches
 }
 
-use_xcode yes
+use_xcode no
 
 autoconf.cmd make autoconf
 autoconf.pre_args
