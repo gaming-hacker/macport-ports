@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ master_sites        pypi:${_n}/${_name}
 distname            ${_name}-${version}
 
 checksums           rmd160  b52f203e8bbb4ac38f14c00104a942f631da00fc \
-                    sha256  943562058190bd95b6cc675cc69a5f89311c799bbbe3581832b247ce62d5494e \
-                    size    59025
+sha256  943562058190bd95b6cc675cc69a5f89311c799bbbe3581832b247ce62d5494e \
+size    59025
 
-python.versions     27 37 38 39 310
+python.versions 310
 # Note: Python 3.11 does not work correctly.
 
 if {${name} ne ${subport}} {

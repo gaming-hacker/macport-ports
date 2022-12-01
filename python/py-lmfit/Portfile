@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ long_description    Built on top of scipy.optimize, lmfit provides a\
 homepage            https://lmfit.github.io/lmfit-py/
 
 checksums           rmd160  223609d57e296c547d36578d3be726edf4eed925 \
-                    sha256  a2755b708ad7bad010178da28f082f55cbee7a084a625b452632e2d77b5391fb \
-                    size    308634
+sha256  a2755b708ad7bad010178da28f082f55cbee7a084a625b452632e2d77b5391fb \
+size    308634
 
-python.versions     37 38 39 310
+python.versions 310
 python.pep517       yes
 
 if {${subport} ne ${name}} {

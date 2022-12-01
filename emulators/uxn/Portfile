@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               sourcehut 1.0
@@ -24,8 +24,8 @@ long_description        Uxn is a virtual machine with 32 instructions. \
 homepage                https://100r.co/site/uxn.html
 
 checksums               rmd160  1a36768c0d82d5820c8e20f29a182f79bbbef2b3 \
-                        sha256  658dc9f02ca8231da89b4d79ab5462711baaf8a59c78fb40891e9ff11e5f8d3e \
-                        size    284824
+sha256  658dc9f02ca8231da89b4d79ab5462711baaf8a59c78fb40891e9ff11e5f8d3e \
+size    284824
 
 depends_lib             port:libsdl2
 

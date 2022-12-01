@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           {darwin any}
 license             MIT
 supported_archs     noarch
 
-python.versions     27 37 38 39 310
+python.versions 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    {*}${description}
 homepage            https://github.com/davidhalter/jedi
 
 checksums           rmd160  740b67d3c68041a2a47aa1285f766cb7f69760c8 \
-                    sha256  74137626a64a99c8eb6ae5832d99b3bdd7d29a3850fe2aa80a4126b2a7d949ab \
-                    size    1222511
+sha256  74137626a64a99c8eb6ae5832d99b3bdd7d29a3850fe2aa80a4126b2a7d949ab \
+size    1222511
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -35,8 +35,8 @@ if {${name} ne ${subport}} {
         revision            1
         distname            ${python.rootname}-${version}
         checksums           rmd160  3ef7a2b0f643edccf2d533aabcd8e6f096952a63 \
-                            sha256  86ed7d9b750603e4ba582ea8edc678657fb4007894a12bcf6f4bb97892f31d20 \
-                            size    1139617
+sha256  86ed7d9b750603e4ba582ea8edc678657fb4007894a12bcf6f4bb97892f31d20 \
+size    1139617
 
         patchfiles-append   patch-jedi_parser_utils.py.diff \
                             patch-jedi_inference_value_module.py.diff

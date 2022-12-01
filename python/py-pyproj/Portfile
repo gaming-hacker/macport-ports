@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 platforms           darwin
 license             MIT
 
-python.versions     37 38 39 310 311
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -23,8 +23,8 @@ long_description    Pyrex wrapper to provide python interfaces to PROJ.4 \
 homepage            https://pyproj4.github.io/pyproj
 
 checksums           rmd160  2fdef9c6cac05230d4f6c509e6217e4bf8c6da74 \
-                    sha256  a708445927ace9857f52c3ba67d2915da7b41a8fdcd9b8f99a4c9ed60a75eb33 \
-                    size    217338
+sha256  a708445927ace9857f52c3ba67d2915da7b41a8fdcd9b8f99a4c9ed60a75eb33 \
+size    217338
 
 if {${name} ne ${subport}} {
 
@@ -32,8 +32,8 @@ if {${name} ne ${subport}} {
         version             3.2.1
         revision            0
         checksums           rmd160  42ab02d994e1ee4b83b5692ee8a5c2d94ea4c54d \
-                            sha256  4a936093825ff55b24c1fc6cc093541fcf6d0f6d406589ed699e62048ebf3877 \
-                            size    213342
+sha256  4a936093825ff55b24c1fc6cc093541fcf6d0f6d406589ed699e62048ebf3877 \
+size    213342
 
         python.pep517       no
         depends_build-append \

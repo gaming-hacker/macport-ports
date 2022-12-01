@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    {*}${description}
 homepage            https://rocksdb.org
 
 checksums           rmd160  7408bd1c3e1dc5c5bd8b48a3ec43e545db88ad33 \
-                    sha256  65fd2631a4a363833cc5e23bbc3d9fe61e61e950db1155b9ed8a1a0077f2aa8d \
-                    size    9508767
+sha256  65fd2631a4a363833cc5e23bbc3d9fe61e61e950db1155b9ed8a1a0077f2aa8d \
+size    9508767
 
 depends_lib-append  port:gflags \
                     port:snappy \

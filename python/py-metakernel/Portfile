@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ platforms           {darwin any}
 homepage            https://github.com/Calysto/metakernel
 
 checksums           rmd160  5d21ea6d90a5b8ea01bfd05c31cf6d12ae979414 \
-                    sha256  26f93a7d07c2c2e00b1a33539f8582bd4649856c3eac28fedec105d24482f6c5 \
-                    size    189920
+sha256  26f93a7d07c2c2e00b1a33539f8582bd4649856c3eac28fedec105d24482f6c5 \
+size    189920
 
-python.versions     37 38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     python.pep517   yes

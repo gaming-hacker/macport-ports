@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,8 +17,8 @@ long_description        This bar project aims to create a highly flexible, \
                         for people that like playing with shell scripts.
 
 checksums               rmd160  5a56e186bf8343f3ece20b10ba06f296531134ba \
-                        sha256  66f3c02ca82cdc1659188cbe72695a8a9c2ea94fb22dcbc77c55f02bea2ae59c \
-                        size    2907648
+sha256  66f3c02ca82cdc1659188cbe72695a8a9c2ea94fb22dcbc77c55f02bea2ae59c \
+size    2907648
 
 set sketchybar.plist    ${workpath}/org.macports.sketchybar.plist
 

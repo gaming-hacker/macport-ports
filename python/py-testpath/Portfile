@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           {darwin any}
 license             MIT
 supported_archs     noarch
 
-python.versions     37 38 39 310
+python.versions 310
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -21,8 +21,8 @@ long_description    {*}${description}
 homepage            https://github.com/jupyter/testpath
 
 checksums           rmd160  c11c8230e8f94e2c09c65d0761a8ec2e98cd07c5 \
-                    sha256  2f1b97e6442c02681ebe01bd84f531028a7caea1af3825000f52345c30285e0f \
-                    size    93348
+sha256  2f1b97e6442c02681ebe01bd84f531028a7caea1af3825000f52345c30285e0f \
+size    93348
 
 if {${name} ne ${subport}} {
     python.pep517       yes

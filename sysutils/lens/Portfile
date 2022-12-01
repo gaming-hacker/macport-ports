@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  2933b0690e56c2dd8e842ffe162b80c523467dd2 \
-                    sha256  5a57ded0e8194e2ca173ac11b6d3646b38b57e425ea417389949cfa600b5a4d6 \
-                    size    8610124
+sha256  5a57ded0e8194e2ca173ac11b6d3646b38b57e425ea417389949cfa600b5a4d6 \
+size    8610124
 
 depends_build       path:bin/npm:npm8 \
                     path:/bin/node:nodejs16 \

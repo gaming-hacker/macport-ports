@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             github 1.0
@@ -19,8 +19,8 @@ long_description      DOSBox Staging is a fork of the DOSBox project that \
     support today's systems.
 
 checksums             rmd160  063a2425407574609358f760ac622b462f8e71ee \
-                      sha256  43f23fd0a5cff55e06a3ba2be8403f872ae47423f3bb4f823301eaae8a39ac2f \
-                      size    3280884
+sha256  43f23fd0a5cff55e06a3ba2be8403f872ae47423f3bb4f823301eaae8a39ac2f \
+size    3280884
 
 depends_build-append  port:ccache \
                       port:cmake \
