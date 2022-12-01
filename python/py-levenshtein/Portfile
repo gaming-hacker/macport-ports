@@ -33,7 +33,7 @@ sha256  a8cc52849264d3aa6e16c9daca95a02d59e9496c86f18def7131413cfba617cc \
 size    122884
 
 if {${name} ne ${subport}} {
-    compiler.cxx_standard 2017
+    compiler.cxx_standard 2020
     depends_build-append \
                         port:py${python.version}-scikit-build
     depends_run-append  port:py${python.version}-rapidfuzz

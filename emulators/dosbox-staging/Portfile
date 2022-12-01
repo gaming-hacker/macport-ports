@@ -37,7 +37,7 @@ depends_lib-append    port:fluidsynth \
                       port:speexdsp \
                       port:zlib
 
-compiler.cxx_standard 2017
+compiler.cxx_standard 2020
 
 variant debug description {Provides a debug build of the software} {
     configure.args-append -Dbuildtype=debug
