@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,11 +7,11 @@ name                py-tomlkit
 version             0.11.6
 revision            0
 categories-append   devel
-platforms           darwin
+platforms           {darwin any}
 license             MIT
 supported_archs     noarch
 
-python.versions 310
+python.versions     37 38 39 310
 
 maintainers         {gmail.com:davidgilman1 @dgilman} {judaew @judaew} \
                     openmaintainer
@@ -21,18 +21,14 @@ long_description    {*}${description}
 homepage            https://github.com/sdispater/tomlkit
 
 checksums           rmd160  ce3da338b62735196a65ff254dbf0d6396a870d7 \
-sha256  71b952e5721688937fb02cf9d354dbcf0785066149d2855e44531ebdd2b65d73 \
-size    188290
+                    sha256  71b952e5721688937fb02cf9d354dbcf0785066149d2855e44531ebdd2b65d73 \
+                    size    188290
 
 if {${name} ne ${subport}} {
     depends_build-append \
                     port:py${python.version}-setuptools
     depends_test-append \
-                    port:py${python.version}-pytest \
                     port:py${python.version}-yaml
 
     test.run        yes
-    test.env        PYTHONPATH=${worksrcpath}/build/lib
-
-    livecheck.type  none
 }

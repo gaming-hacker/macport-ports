@@ -4,7 +4,7 @@ PortSystem          1.0
 
 name                cowsay
 version             3.03
-revision            2
+revision            3
 categories          textproc amusements games
 license             {Artistic-1 GPL}
 platforms           darwin freebsd
@@ -19,6 +19,7 @@ sha256  0b8672a7ac2b51183780db72618b42af8ec1ce02f6c05fe612510b650540b2af \
 size    15189
 
 patchfiles          patch-cowsay.diff \
+                    patch-unicode-length.patch \
                     patch-install.sh.diff
 
 use_configure       no

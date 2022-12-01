@@ -11,7 +11,6 @@ size    837905
 
 categories          devel
 license             LGPL-3+ {GPL-2+ Permissive}
-platforms           darwin
 maintainers         nomaintainer
 
 description         GNU uCommon C++ Framework
@@ -25,8 +24,9 @@ master_sites        gnu:commoncpp
 
 depends_lib         port:gettext path:lib/pkgconfig/gnutls.pc:gnutls
 
-patchfiles          thread.cpp.patch
-patchfiles-append   platform.h.patch
+patchfiles-append   thread.cpp.patch \
+                    platform.h.patch \
+                    patch-socket.diff
 
 test.run            yes
 test.target         check
