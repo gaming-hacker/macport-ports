@@ -12,7 +12,7 @@ sha256  0b6cc26bb6cad849068300828860eb6bd94be6d63f356bc5b299035ef94a43b2 \
 size    698817
 
 categories              devel
-platforms               darwin
+platforms               any
 maintainers             {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
 license                 BSD
 
@@ -22,7 +22,6 @@ long_description        Extension modules for pybind11, which is a lightweight h
                         exposes  C++ types in Python and vice versa, mainly \
                         to create Python bindings of existing C++ code.
 
-installs_libs           no
 supported_archs         noarch
 
 compiler.cxx_standard 2020

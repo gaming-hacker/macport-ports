@@ -1,0 +1,28 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+PortGroup           github 1.0
+github.setup        qorelanguage module-yaml 0.7.2 v
+github.tarball_from releases
+
+name                qore-yaml-module
+categories          lang
+license             LGPL-2.1
+maintainers         {davidnichols @davidnich} openmaintainer
+description         YAML module for Qore
+long_description    Module allowing for de/serialization to/from YAML strings and Qore data structures
+homepage            http://qore.org
+platforms           darwin
+use_bzip2           yes
+distname            qore-yaml-module-${github.version}
+
+checksums           rmd160 d32a0098e527d5d196ede528594112f90466c129 \
+                    sha256 5c5cf82be8d0177125947638e9c8624af47a7c49c76fe4903a014c4fc6752661 \
+                    size 637762
+
+depends_lib         port:qore \
+                    port:libyaml
+
+configure.args      --disable-debug
+configure.ldflags-append -Wl,-undefined -Wl,dynamic_lookup

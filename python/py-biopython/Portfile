@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}: parsers for various file formats, interfaces
 homepage            https://biopython.org/
 
 checksums           rmd160  5cfc5d25710d2c2b80492442042c5b498bca7399 \
-sha256  52805e9af88767e450e2df8113b5bc59e964e2e8a7bb803a83570bdbb51c0e43 \
-size    17924553
+                    sha256  52805e9af88767e450e2df8113b5bc59e964e2e8a7bb803a83570bdbb51c0e43 \
+                    size    17924553
 
-python.versions 310
+python.versions     37 38 39 310 311
 
 if {${name} ne ${subport}} {
     depends_build-append \

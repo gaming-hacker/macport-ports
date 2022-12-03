@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -37,11 +37,11 @@ homepage            https://cmake.org
 platforms           darwin freebsd
 gitlab.instance     https://gitlab.kitware.com
 
-gitlab.setup        cmake   cmake 13e46189c7f3b39a26e9ca689bc029b7061d26a7
-version             20221116-3.25.0-[string range ${gitlab.version} 0 7]
-checksums           rmd160  e7f79bac906f5b30996825523ef8fa1233e3bd88 \
-sha256  defb3cd1acac16d4c70c8efe37cd21f44d6617244e5bc1abb73740b9226cb2a2 \
-size    8071332
+gitlab.setup        cmake   cmake 5676593be9bd3a26995f35b9db8fe5b9af8ea32e
+version             20221130-3.25.1-[string range ${gitlab.version} 0 7]
+checksums           rmd160  08cd7b52e62d70df840ad779e8931d7ca0598e56 \
+                    sha256  1912aebdba3572aeece2927a97f3f9e2d9f7716f34db79013e2f02d1683aaa19 \
+                    size    8068822
 revision            0
 
 # switched from "3.23.0" to "date-ver-hash"
@@ -263,13 +263,13 @@ subport ${subport_docs} {
     }
 
     # Supported pythons
-    set python.versions {310}
+    set python_versions {35 36 37 38 39}
 
     # declare all +python* variants, with conflicts
-    foreach pyver ${python.versions} {
+    foreach pyver ${python_versions} {
         # Conflicting python versions
         set other_python_versions {}
-        foreach other_pyver ${python.versions} {
+        foreach other_pyver ${python_versions} {
             if {${other_pyver} ne ${pyver}} {
                 if {${other_pyver} ni ${other_python_versions}} {
                     lappend other_python_versions python${other_pyver}
@@ -284,7 +284,7 @@ subport ${subport_docs} {
 
     # Docs requires one +python* variant
     set python_isset false
-    foreach pyver ${python.versions} {
+    foreach pyver ${python_versions} {
         if {!${python_isset}} {
             set python_isset [variant_isset python${pyver}]
             set python_isset_ver_no_dot ${pyver}
@@ -302,7 +302,7 @@ subport ${subport_docs} {
 
     # make sure one of the +python* variants is set
     set python_isset false
-    foreach pyver ${python.versions} {
+    foreach pyver ${python_versions} {
         if {!${python_isset}} {
             set python_isset  [variant_isset python${pyver}]
             set python_branch "[string index ${pyver} 0].[string range ${pyver} 1 end]"

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,6 +8,7 @@ version             1.0.3
 revision            0
 
 categories-append   devel
+platforms           {darwin any}
 supported_archs     noarch
 license             Apache-2
 maintainers         {reneeotten @reneeotten} openmaintainer
@@ -18,10 +19,10 @@ long_description    ${description}
 homepage            https://github.com/fastai/fastprogress
 
 checksums           rmd160  cde4e0339be7b087393ad9e7430c6d1fc88c66b6 \
-sha256  7a17d2b438890f838c048eefce32c4ded47197ecc8ea042cecc33d3deb8022f5 \
-size    14920
+                    sha256  7a17d2b438890f838c048eefce32c4ded47197ecc8ea042cecc33d3deb8022f5 \
+                    size    14920
 
-python.versions 310
+python.versions     37 38 39 310 311
 
 if {${name} ne ${subport}} {
     depends_build-append \
