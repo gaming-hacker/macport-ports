@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ homepage            https://fossil-scm.org/home/
 master_sites        ${homepage}tarball/version-${version}/
 
 checksums           rmd160  e6743c518417b50e1e4f46f5fcbe864b9ce2a53b \
-                    sha256  03ca134f1e839aa2bcfbff7c5ea96607299f56be0e14d97d4dc3a19c4171cece \
-                    size    6721683
+sha256  03ca134f1e839aa2bcfbff7c5ea96607299f56be0e14d97d4dc3a19c4171cece \
+size    6721683
 
 test.run            yes
 

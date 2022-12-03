@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,8 +19,8 @@ long_description    \
     platforms including both ARM processor and x86.
 
 checksums           rmd160 19ac3d87a55c160a3d2630192ba3d0dbf7225da2 \
-                    sha256 b6ab2a05f19a37be2fc0d4816579913e69aefc776731ff877708c786d825c2ed \
-                    size 180113
+sha256 b6ab2a05f19a37be2fc0d4816579913e69aefc776731ff877708c786d825c2ed \
+size 180113
 
 depends_build-append \
                     port:bcunit

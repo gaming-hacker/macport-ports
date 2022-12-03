@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       xcodeversion 1.0
@@ -10,8 +10,8 @@ name                            graphviz-devel
 set my_name                     graphviz
 version                         7.0.3
 checksums                       rmd160  1a12d05a0f3264806d7f9f21d21237cf0f18128c \
-                                sha256  c6cad4fea532052f379f6ae4e67758f8a3b4572c127e4c393e2358f36d033e1a \
-                                size    27573551
+sha256  c6cad4fea532052f379f6ae4e67758f8a3b4572c127e4c393e2358f36d033e1a \
+size    27573551
 
 set thisbranch                  [strsed ${name} "g/^${my_name}//"]
 set otherbranch                 [expr {${thisbranch} eq {} ? {-devel} : {}}]

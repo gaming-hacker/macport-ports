@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -13,8 +13,8 @@ name                libvirt
 version             8.10.0
 revision            0
 checksums           rmd160  78f45aae0ae2f1fc1abee64cbfa918072a02afe5 \
-                    sha256  bb07b7b00f08f826dd4f623f8b233e4e8b221b8859bb5937ff45355f0ae29952 \
-                    size    8984348
+sha256  bb07b7b00f08f826dd4f623f8b233e4e8b221b8859bb5937ff45355f0ae29952 \
+size    8984348
 
 categories          sysutils
 license             LGPL-2.1+

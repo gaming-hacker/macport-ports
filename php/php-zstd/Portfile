@@ -19,8 +19,8 @@ if {[vercmp ${php.branch} 7.0] >= 0} {
     github.setup    kjdev php-ext-zstd 0.12.0
     revision        0
     checksums       rmd160  2b8a829af903daf54512aea3b1245a92ed20eb2b \
-                    sha256  11619e80c7c6ef1673d3de91c246524a778a356f72bb55aeb7e5cf85d52833a6 \
-                    size    19937
+sha256  11619e80c7c6ef1673d3de91c246524a778a356f72bb55aeb7e5cf85d52833a6 \
+size    19937
 } elseif {[vercmp ${php.branch} 5.2] >= 0} {
     github.setup    kjdev php-ext-zstd 0.11.0
     revision        0
