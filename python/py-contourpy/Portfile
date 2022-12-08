@@ -24,7 +24,7 @@ python.versions     37 38 39 310 311
 python.pep517       yes
 
 if {${name} ne ${subport}} {
-    compiler.cxx_standard   2011
+    compiler.cxx_standard 2020
 
     depends_build-append \
                     port:py${python.version}-pybind11

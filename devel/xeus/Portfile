@@ -21,7 +21,7 @@ checksums               rmd160  a84c327d46eec43ea963777e6080c1a6991276ac \
                         sha256  9ebd8c2b047bd419c9b0acce39b7d69b4262cd7c88066009afbef43310ea199f \
                         size    9025061
 
-compiler.cxx_standard   2014
+compiler.cxx_standard 2020
 compiler.blacklist-append {clang < 900}
 
 depends_build-append    port:pkgconfig \

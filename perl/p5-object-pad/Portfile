@@ -29,7 +29,7 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-xs-parse-sublike
 
 # uses C99-style struct assignments
-    compiler.c_standard 1999
+    compiler.c_standard 2017
 
     perl5.use_module_build
 }
