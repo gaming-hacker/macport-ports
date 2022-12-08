@@ -25,7 +25,7 @@ depends_build       port:qt4-mac
 
 # error: ISO C++ forbids initialization of member ‘encryption’
 # https://github.com/tjohnman/Obsession/issues/41
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 destroot {
     move ${worksrcpath}/Obsession.app ${destroot}${applications_dir}
