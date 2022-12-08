@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -17,8 +17,8 @@ long_description    Curses is the interface between Perl and your system's curse
 platforms           darwin
 
 checksums           rmd160  6e9ac50c7aa1d4f4fc57c5afac074193654c6ca6 \
-                    sha256  0ebe5443bcebad5f2bfc4d7d590391b564453a18c708e8310631a61c80765098 \
-                    size    138539
+sha256  0ebe5443bcebad5f2bfc4d7d590391b564453a18c708e8310631a61c80765098 \
+size    138539
 
 if {${perl5.major} != ""} {
     depends_lib-append \

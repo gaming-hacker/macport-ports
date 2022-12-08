@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -33,8 +33,8 @@ master_sites        http://www.thekelleys.org.uk/dnsmasq/
 use_xz              yes
 
 checksums           rmd160  cc42bb3d38f94470b8181c9d3a23b2efcb0cc0b8 \
-                    sha256  23544deda10340c053bea6f15a93fed6ea7f5aaa85316bfc671ffa6d22fbc1b3 \
-                    size    560640
+sha256  23544deda10340c053bea6f15a93fed6ea7f5aaa85316bfc671ffa6d22fbc1b3 \
+size    560640
 
 patchfiles          patch-src-config.h.diff \
                     patch-src-network.c.diff

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -18,8 +18,8 @@ long_description        {*}${description} It takes the burden of implementing th
                         the interpreter part of the kernel.
 
 checksums               rmd160  a84c327d46eec43ea963777e6080c1a6991276ac \
-                        sha256  9ebd8c2b047bd419c9b0acce39b7d69b4262cd7c88066009afbef43310ea199f \
-                        size    9025061
+sha256  9ebd8c2b047bd419c9b0acce39b7d69b4262cd7c88066009afbef43310ea199f \
+size    9025061
 
 compiler.cxx_standard 2020
 compiler.blacklist-append {clang < 900}

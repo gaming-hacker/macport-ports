@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ master_sites        ${homepage}/meme/meme-software/${version}
 distname            meme-${version}
 
 checksums           rmd160  a068ad5b3cc70149477d3b0d7f00e231a628f865 \
-                    sha256  bc6f693bf5d81778b4e2901c2164c35c68f42ed080e2401b6e22960bf039a272 \
-                    size    52764373
+sha256  bc6f693bf5d81778b4e2901c2164c35c68f42ed080e2401b6e22960bf039a272 \
+size    52764373
 
 set perl_vers       5.34
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -31,9 +31,9 @@ destroot {
 }
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  fdddbc0f5776c54d0cc271a68a396bd1926eb86a \
-                    sha256  264da6d272bae1fdd291f604f3c7f1ac0848aaf85b3b4a413118f97d11fd2a60 \
-                    size    6504217
+rmd160  fdddbc0f5776c54d0cc271a68a396bd1926eb86a \
+sha256  264da6d272bae1fdd291f604f3c7f1ac0848aaf85b3b4a413118f97d11fd2a60 \
+size    6504217
 
 cargo.crates \
     addr2line                       0.17.0  b9ecd88a8c8378ca913a680cd98f0f13ac67383d35993f86c90a70e3f137816b \
@@ -200,8 +200,8 @@ cargo.crates \
     log                             0.4.16  6389c490849ff5bc16be905ae24bc913a9c8892e19b2341dbc175e14c341c2b8 \
     matchers                         0.1.0  8263075bb86c5a1b1427b5ae862e8889656f126e9f77c484496e8b47cf5c5558 \
     matches                          0.1.9  a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f \
-    md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
-    md-5                            0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd6271f060fd37defb241949d0582 \
+md-5                             0.9.1  7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15 \
+md-5                            0.10.1  658646b21e0b72f7866c7038ab086d3d5e1cd6271f060fd37defb241949d0582 \
     memchr                           2.4.1  308cc39be01b73d0d18f82a0e7b2a3df85245f84af96fdddc5d202d27e47b86a \
     memoffset                        0.6.5  5aa361d4faea93603064a027415f07bd8e1d5c88c9fbf68bf56a285428fd79ce \
     mime                            0.3.16  2a60c7ce501c71e03a9c9c0d35b861413ae925bd979cc7a4e30d060069aaac8d \
@@ -327,10 +327,10 @@ cargo.crates \
     serde_json                      1.0.81  9b7ce2b32a1aed03c558dc61a5cd328f15aff2dbc17daad8fb8af04d2100e15c \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
     serde_yaml                      0.8.23  a4a521f2940385c165a24ee286aa8599633d162077a54bdcae2a6fd5a7bfa7a0 \
-    sha1                            0.10.4  006769ba83e921b3085caa8334186b00cf92b4cb1a6cf4632fbccc8eff5c7549 \
-    sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
-    sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
-    sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
+sha1                            0.10.4  006769ba83e921b3085caa8334186b00cf92b4cb1a6cf4632fbccc8eff5c7549 \
+sha2                             0.9.9  4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800 \
+sha2                            0.10.2  55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676 \
+sharded-slab                     0.1.4  900fba806f70c630b0a382d0d825e17a0f19fcd059a2ade1ff237bcddf446b31 \
     shlex                            1.1.0  43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3 \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
     siphasher                        0.2.3  0b8de496cf83d4ed58b6be86c3a275b8602f6ffe98d3024a869e124147a9a3ac \

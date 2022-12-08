@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -19,9 +19,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  e0085009b84fc9f8983ed89fcd3aec83f6676be7 \
-                    sha256  2a669c9b966cb54f8247c0accc9d90502944359abdd4143d9162d64e0acbaf76 \
-                    size    51842472
+rmd160  e0085009b84fc9f8983ed89fcd3aec83f6676be7 \
+sha256  2a669c9b966cb54f8247c0accc9d90502944359abdd4143d9162d64e0acbaf76 \
+size    51842472
 
 patch {
     reinplace "s|^version = \"6\\.0\\.0\"|version = \"${version}\"|" \
