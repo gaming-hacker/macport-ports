@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        GoogleContainerTools skaffold 2.0.2 v
+github.setup        GoogleContainerTools skaffold 2.0.3 v
 revision            0
 
 categories          devel
@@ -22,9 +22,9 @@ homepage            https://skaffold.dev
 
 github.tarball_from archive
 
-checksums           rmd160  efabd8885134f4ef0e948dda04b3114c28405701 \
-sha256  fa5de4e9d83b2d2e5e08a10389ea93d768d18986353011069a642b9f32e85b54 \
-size    71689566
+checksums           rmd160  e30c178b755695146903a024568de052732be651 \
+                    sha256  8153ae02bf89f3fc90976d844762193aee27b81e823eb1616f35937130002a1b \
+                    size    71690278
 
 depends_build       port:go
 

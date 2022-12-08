@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/danielgtaylor/restish 0.14.0 v
+go.setup            github.com/danielgtaylor/restish 0.15.1 v
 github.tarball_from archive
-revision            1
+revision            0
 
 homepage            https://rest.sh
 
@@ -24,9 +24,9 @@ license             MIT
 maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
-checksums           rmd160  1ddd8b1ddbde07208bc1eccf513e770daa64859a \
-sha256  2688340ff307aa522325afab40b9eaf6847d0b4b6a7a9c05f041056408b3fc50 \
-size    271408
+checksums           rmd160  b620f6565c965b4a2976f7910f7cbfbf66a2a01c \
+                    sha256  17b09bceafd82ccecde05c6f41c8ad7432ca6fbd8c8b271847330014cecc64e2 \
+                    size    282200
 
 # Allow Go to fetch dependencies at build time.
 build.env-delete    GO111MODULE=off GOPROXY=off

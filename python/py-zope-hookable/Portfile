@@ -26,7 +26,7 @@ size    25390
 
 if {${name} ne ${subport}} {
     depends_lib-append  \
-                    path:bin/cython:py${python.version}-cython \
+                    path:bin/cython-${python.branch}:py${python.version}-cython \
                     port:py${python.version}-setuptools \
                     port:py${python.version}-pyobjc
 }

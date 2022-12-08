@@ -78,7 +78,7 @@ size    213342
     }
 
     depends_build-append \
-                        path:bin/cython:py${python.version}-cython 
+                        path:bin/cython-${python.branch}:py${python.version}-cython
 
     depends_lib-append  port:py${python.version}-certifi
 

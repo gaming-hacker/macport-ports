@@ -7,7 +7,7 @@ PortGroup           octave 1.0
 version             1.5.1
 github.setup        gnu-octave statistics ${version} release-
 octave.setup        statistics ${version}
-revision            0
+revision            1
 platforms           darwin
 license             GPL-3+ public-domain
 maintainers         {mps @Schamschula} openmaintainer
@@ -19,6 +19,3 @@ sha256  44906b09f296a4d2de4b61b93a63273db692e6b40d371c6154f22258958398ab \
 size    645382
 
 depends_lib-append  port:octave-io
-
-supported_archs     noarch
-platforms           {darwin any}
