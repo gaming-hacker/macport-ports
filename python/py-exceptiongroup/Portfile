@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,6 +10,7 @@ revision            0
 
 categories-append   devel
 supported_archs     noarch
+platforms           {darwin any}
 license             MIT
 maintainers         {@catap korins.ky:kirill} openmaintainer
 
@@ -19,11 +20,11 @@ long_description    {*}${description}
 homepage            https://pypi.org/project/exceptiongroup
 
 checksums           rmd160  65e97c7a5344f226f94b1221c540a61dce3bfdb7 \
-sha256  bd14967b79cd9bdb54d97323216f8fdf533e278df937aa2a90089e7d6e06e5ec \
-size    14701
+                    sha256  bd14967b79cd9bdb54d97323216f8fdf533e278df937aa2a90089e7d6e06e5ec \
+                    size    14701
 
 python.pep517       yes
-python.versions 310
+python.versions     37 38 39 310 311
 
 if {${name} ne ${subport}} {
     depends_build-append \
