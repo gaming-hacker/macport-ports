@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ PortGroup           boost 1.0
 github.setup        thliebig openEMS d260025a6d9d301abfc4c73f259eb4f298c50689
 version             20220331-[string range ${github.version} 0 7]
 checksums           rmd160  f6036e9e769798b7d84385907b1ad083d09aec13 \
-                    sha256  fc67fe5943ef303c49ef985d56f42bf80e78d7ed31c3b6ea86858b78448292d9 \
-                    size    1727892
+sha256  fc67fe5943ef303c49ef985d56f42bf80e78d7ed31c3b6ea86858b78448292d9 \
+size    1727892
 revision            0
 
 platforms           darwin macosx
@@ -22,7 +22,7 @@ long_description    {*}${description}
 
 boost.version       1.71
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 depends_build-append \
     port:pkgconfig \

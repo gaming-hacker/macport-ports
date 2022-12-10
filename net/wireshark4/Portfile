@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -34,8 +34,8 @@ version         4.0.2
 revision        0
 
 checksums       sha256  f35915699f2f9b28ddb211202d40ec8984e5834d3c911483144a4984ba44411d \
-                sha1    0127180ff18515b086fe5603f767f53ddaa64c1a \
-                size    41296132
+sha1    0127180ff18515b086fe5603f767f53ddaa64c1a \
+size    41296132
 
 livecheck.type  regex
 livecheck.url   ${homepage}download.html

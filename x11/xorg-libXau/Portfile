@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -17,9 +17,9 @@ master_sites    xorg:individual/lib/
 distname        libXau-${version}
 
 checksums       sha1    0cf6d853fce4dc72d61c253d096408a313f1163b \
-                rmd160  2ae135f67284e4f2c2f10e2c5e6c23537b094e80 \
-                sha256  f3fa3282f5570c3f6bd620244438dbfbdd580fc80f02f549587a0f8ab329bbeb \
-                size    274108
+rmd160  2ae135f67284e4f2c2f10e2c5e6c23537b094e80 \
+sha256  f3fa3282f5570c3f6bd620244438dbfbdd580fc80f02f549587a0f8ab329bbeb \
+size    274108
 
 use_xz          yes
 use_parallel_build   yes

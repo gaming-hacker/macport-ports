@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    Experimental version of LPCNet being developed \
 github.setup        drowe67 LPCNet 59f75b6fc88640502a3aef5a3b2cea6206bf87d9
 version             20221125-[string range ${github.version} 0 7]
 checksums           rmd160  01e112d0c32d13bd71ccb860b09830e2f8686f68 \
-                    sha256  48072e51d31ee24e85e4f390d947f026aecd5b37c25908881c695963928b168a \
-                    size    5227716
+sha256  48072e51d31ee24e85e4f390d947f026aecd5b37c25908881c695963928b168a \
+size    5227716
 revision            0
 epoch               1
 

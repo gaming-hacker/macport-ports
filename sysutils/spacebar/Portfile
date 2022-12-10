@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,8 +18,8 @@ long_description        spacebar is a minimal status bar for macOS. \
                         Ideal for use with tiling window managers like yabai.
 
 checksums               rmd160  0ecfd10f589154dfaa99a3b05154cc7a926fae55 \
-                        sha256  80165fb20e2b6436cabb972f3bac1ccf25cc174edff78e47be5aaac9c9733f05 \
-                        size    44938
+sha256  80165fb20e2b6436cabb972f3bac1ccf25cc174edff78e47be5aaac9c9733f05 \
+size    44938
 
 patchfiles              patch-makefile.diff patch-src__event_loop.c.diff
 
