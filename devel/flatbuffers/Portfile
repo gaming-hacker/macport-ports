@@ -29,7 +29,7 @@ checksums               rmd160  f379f1c42e9b34dcc993cd82b0a4f0c5aae727ca \
                         sha256  209823306f2cbedab6ff70997e0d236fcfd1864ca9ad082cbfdb196e7386daed \
                         size    2172096
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 # Needed for - error: unknown attribute 'no_sanitize' ignored [-Werror,-Wattributes]
 compiler.blacklist-append {clang < 800}
 

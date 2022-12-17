@@ -18,14 +18,14 @@ checksums           rmd160  d7aa4a2b9d94e17f320a5c01b4c9906d1e2973b3 \
                     sha256  3cce74bafc743297db5ed5a00a3bb620a9213770fed889efcf2d0a3cf2acd366 \
                     size    122038
 
-compiler.c_standard 1999
+compiler.c_standard 2017
 
 # support file for NuGet .NET package manager
 # installs outside the MacPorts file hierarchy
 # suppress installation of unnecessary file
 patchfiles          patch-fix-file-hierarchy-violation.diff
 
-configure.cflags-append -std=c99
+configure.cflags-append -std=gnu17
 configure.args-append -DDISABLE_TESTS=ON
 
 variant universal {}

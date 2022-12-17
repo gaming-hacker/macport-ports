@@ -24,7 +24,7 @@ long_description        Extension modules for pybind11, which is a lightweight h
 
 supported_archs         noarch
 
-compiler.cxx_standard   2017
+compiler.cxx_standard 2020
 
 set python_branch       3.11
 set python_version      [string map {. ""} ${python_branch}]

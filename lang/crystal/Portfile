@@ -18,7 +18,7 @@ long_description    Crystal is a fast, compiled programming language with a \
 
 homepage            https://crystal-lang.org
 
-set llvm_version    14
+set llvm_version 15
 
 depends_lib         port:boehmgc \
                     port:gmp \
@@ -62,7 +62,7 @@ configure.pre_args  > Makefile.local
 
 set llvm_config     LLVM_CONFIG=llvm-config-mp-${llvm_version}
 
-compiler.cxx_standard  2014
+compiler.cxx_standard 2020
 
 build.args          release=1 interpreter=1 FLAGS=--no-debug \
                     CRYSTAL_CONFIG_LIBRARY_PATH=${prefix}/lib
