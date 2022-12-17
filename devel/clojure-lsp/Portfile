@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    The goal of this project is to bring great editing tools \
     help you navigate, identify and fix errors, perform refactors and much more!
 
 checksums           rmd160  8ed3b85438f26fe141f6703fc375c2d8462ca3aa \
-                    sha256  6aaeb896d49d793f4c6a386518df44cda5d3d57f7255b1292f54f065d4cccbcd \
-                    size    4331307
+sha256  6aaeb896d49d793f4c6a386518df44cda5d3d57f7255b1292f54f065d4cccbcd \
+size    4331307
 
 depends_lib         port:clojure
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ master_sites        https://swupdate.openvpn.net/community/releases/
 use_xz              yes
 
 checksums           rmd160  5804129c142bea550816ec64aed8e11d0ad1d9f2 \
-                    sha256  2bbd0026469902037ee6499b68283d5ab36c74e36cae3112082cfdf6c77a0c57 \
-                    size    1161288
+sha256  2bbd0026469902037ee6499b68283d5ab36c74e36cae3112082cfdf6c77a0c57 \
+size    1161288
 
 depends_build       port:pkgconfig
 depends_lib         port:lzo2 \

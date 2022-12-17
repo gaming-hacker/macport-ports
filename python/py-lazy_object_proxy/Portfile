@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ revision            0
 license             BSD
 platforms           darwin
 
-python.versions     37 38 39 310 311
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -21,8 +21,8 @@ long_description    ${description}
 homepage            https://github.com/ionelmc/python-lazy-object-proxy
 
 checksums           rmd160  dde34e33075573723a499abd93269d7376728318 \
-                    sha256  c219a00245af0f6fa4e95901ed28044544f50152840c5b6a3e7b2568db34d156 \
-                    size    41884
+sha256  c219a00245af0f6fa4e95901ed28044544f50152840c5b6a3e7b2568db34d156 \
+size    41884
 
 if {${name} ne ${subport}} {
     depends_build-append \

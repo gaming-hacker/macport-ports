@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,11 +19,11 @@ long_description \
 
 homepage            https://www.dnspython.org/
 
-python.versions     27 37 38 39 310 311
+python.versions 310
 
 checksums           rmd160  666b591e3b2d1a1201ffe44deb101966b63c4cf0 \
-                    sha256  0f7569a4a6ff151958b64304071d370daa3243d15941a7beedf0c9fe5105603e \
-                    size    281325
+sha256  0f7569a4a6ff151958b64304071d370daa3243d15941a7beedf0c9fe5105603e \
+size    281325
 
 if {${name} ne ${subport}} {
   depends_build-append port:py${python.version}-setuptools
@@ -42,8 +42,8 @@ if {${name} ne ${subport}} {
         master_sites    ${homepage}kits/${version}
 
         checksums       rmd160  c3662f85998d51b437a3eaa0f5a04c3b0d61fd69 \
-                        sha256  4bf5c5c12a4478ee7860ab176659cf64c4899ee76752d826b082f8af723c5cf9 \
-                        size    150524
+sha256  4bf5c5c12a4478ee7860ab176659cf64c4899ee76752d826b082f8af723c5cf9 \
+size    150524
 
         depends_lib-delete \
                         port:py${python.version}-sniffio \

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28 5.30 5.32 5.34
+perl5.branches 5.34
 perl5.setup         PPIx-Regexp 0.086 ../../authors/id/W/WY/WYANT
 revision            0
 
@@ -21,8 +21,8 @@ long_description \
     parses a Perl script, and navigable in much the same way.
 
 checksums           rmd160  9b72cd219ee2168a78adc7ebf25446a3ccf0418a \
-                    sha256  36bd2dfdf321394d11433fa3eec76c70b7fc4625bd1209316395a2c895dc3933 \
-                    size    255106
+sha256  36bd2dfdf321394d11433fa3eec76c70b7fc4625bd1209316395a2c895dc3933 \
+size    255106
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-ppi \

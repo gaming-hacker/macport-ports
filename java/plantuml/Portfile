@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -20,9 +20,9 @@ homepage                https://plantuml.com/
 distfiles               ${name}-${version}.jar
 
 checksums               ${name}-${version}.jar \
-                        rmd160  3bc48022a7a9b0d4454a743e2aea003a3be1ab3c \
-                        sha256  159ca2021f2efa5481b56417e2abd0a301348b018fe3c34b106f41023596dd43 \
-                        size    11349479
+rmd160  3bc48022a7a9b0d4454a743e2aea003a3be1ab3c \
+sha256  159ca2021f2efa5481b56417e2abd0a301348b018fe3c34b106f41023596dd43 \
+size    11349479
 
 extract.only
 
@@ -45,9 +45,9 @@ destroot {
 variant pdf description {Include PDF Support} {
     distfiles-append        ${name}-pdf-${version}.jar
     checksums-append        ${name}-pdf-${version}.jar \
-                            rmd160  bd6093b2a49dc72b83b2451e87f2ad8c39e56bcb \
-                            sha256  8b44b035079fa10a9f2099b172f74aeced6f9c2b7bf9be5216279c7fe8c6aba6 \
-                            size    26368233
+rmd160  bd6093b2a49dc72b83b2451e87f2ad8c39e56bcb \
+sha256  8b44b035079fa10a9f2099b172f74aeced6f9c2b7bf9be5216279c7fe8c6aba6 \
+size    26368233
 
     post-destroot {
         xinstall -m 0644 ${distpath}/${name}-pdf-${version}.jar \
@@ -60,9 +60,9 @@ variant jlatexmath description {Plantuml language extension to allow use AsciiMa
     distfiles-append    ${name}-jlatexmath.zip
 
     checksums-append    ${name}-jlatexmath.zip \
-                        rmd160  bf99090e005f0d5e027427b41b40b69d7d2fc872 \
-                        sha256  e041164c6dce5dec3377242a0664c1855d863094dd51c28880888f59820fc7e2 \
-                        size    3837373
+rmd160  bf99090e005f0d5e027427b41b40b69d7d2fc872 \
+sha256  e041164c6dce5dec3377242a0664c1855d863094dd51c28880888f59820fc7e2 \
+size    3837373
 
     depends_extract     port:unzip
 

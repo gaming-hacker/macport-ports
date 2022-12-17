@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -23,8 +23,8 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           rmd160  862c184b4d50d4d5f5d7b0c4af8e2a2022691de8 \
-                    sha256  42f192606b01d39cf1dcca34ea464e12ade770649b36e31d49c233a8caa9df10 \
-                    size    1564977
+sha256  42f192606b01d39cf1dcca34ea464e12ade770649b36e31d49c233a8caa9df10 \
+size    1564977
 
 build.args          ./cmd/golangci-lint
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; c-basic-offset: 4; indent-tabs-mode: nil; tab-width: 4; truncate-lines: t -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo 1.0
@@ -17,9 +17,9 @@ long_description    Phetch is a Gopher terminal client written entirely in Rust.
     history tracking, TLS support, and Tor support.
 
 checksums           ${name}-${version}.tar.gz \
-    rmd160  a5e032ea0a26ec1f9ff9eaec44db054ab20e6b81 \
-    sha256  c99de1e49f0b030f571a76fa2ce050c5b4347a46c1cd63fb6c32bc546d74db4c \
-    size    7581994
+rmd160  a5e032ea0a26ec1f9ff9eaec44db054ab20e6b81 \
+sha256  c99de1e49f0b030f571a76fa2ce050c5b4347a46c1cd63fb6c32bc546d74db4c \
+size    7581994
 
 if {${os.platform} eq "darwin" && ${os.major} < 13} {
     known_fail      yes

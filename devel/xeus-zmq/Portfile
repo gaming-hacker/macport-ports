@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,8 +17,8 @@ long_description    {*}${description} These implementations all conform to the J
 homepage            https://github.com/jupyter-xeus/xeus-zmq
 
 checksums           rmd160  51b284210296ed3a4ee4b577d48a859a09873acd \
-                    sha256  31758f4c06ac691fdd67be89468390f265c09ba455c29f47e021fabfc8f64bd8 \
-                    size    32139
+sha256  31758f4c06ac691fdd67be89468390f265c09ba455c29f47e021fabfc8f64bd8 \
+size    32139
 
 openssl.branch      3
 

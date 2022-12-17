@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    Nheko is a native desktop matrix \
                     IRC client
 
 checksums           rmd160  896cce120a50b5643271107cc1c2dcbbb30e9f48 \
-                    sha256  943a271ad99c946e90949305f1a9bb7e545619f00117fa61a0a4f86636d31f29 \
-                    size    1609928
+sha256  943a271ad99c946e90949305f1a9bb7e545619f00117fa61a0a4f86636d31f29 \
+size    1609928
 
 compiler.cxx_standard  2020
 compiler.thread_local_storage yes

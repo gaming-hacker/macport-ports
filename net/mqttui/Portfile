@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,9 +15,9 @@ description         Simple lightweight terminal based MQTT monitor and publisher
 long_description    {*}${description}
 
 checksums           ${distfiles} \
-                    rmd160  fb369c3e4259daa134b8398f05c9cc6aec4e0989 \
-                    sha256  8be89a815886135f25bf3770175febe811d2a90d829d18e2c87bbda38d5cfd15 \
-                    size    189654
+rmd160  fb369c3e4259daa134b8398f05c9cc6aec4e0989 \
+sha256  8be89a815886135f25bf3770175febe811d2a90d829d18e2c87bbda38d5cfd15 \
+size    189654
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/target/[option triplet.${muniversal.build_arch}]/release/${name} ${destroot}${prefix}/bin/
@@ -134,7 +134,7 @@ cargo.crates \
     security-framework               2.7.0  2bc1bb97804af6631813c55739f771071e0f2ed33ee20b68c86ec505d906356c \
     security-framework-sys           2.6.1  0160a13a177a45bfb43ce71c01580998474f556ad854dcbca936dd2841a5c556 \
     semver                          1.0.14  e25dfac463d778e353db5be2449d1cce89bd6fd23c9f1ea21310ce6e5a1b29c4 \
-    sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
+sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \
@@ -298,7 +298,7 @@ cargo.crates \
     security-framework               2.7.0  2bc1bb97804af6631813c55739f771071e0f2ed33ee20b68c86ec505d906356c \
     security-framework-sys           2.6.1  0160a13a177a45bfb43ce71c01580998474f556ad854dcbca936dd2841a5c556 \
     semver                          1.0.14  e25dfac463d778e353db5be2449d1cce89bd6fd23c9f1ea21310ce6e5a1b29c4 \
-    sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
+sha-1                            0.9.8  99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6 \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

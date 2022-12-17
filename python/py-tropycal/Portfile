@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ platforms           {darwin any}
 homepage            https://github.com/tropycal/tropycal
 
 checksums           rmd160  6ed6750f6d27a87a1ed72e60a1affbb467c5a34e \
-                    sha256  1018a7cc7d5156738f67e39d3facab640a079320a5601e48e93d36e9054e0d5a \
-                    size    10032201
+sha256  1018a7cc7d5156738f67e39d3facab640a079320a5601e48e93d36e9054e0d5a \
+size    10032201
 
-python.versions     38 39 310
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \

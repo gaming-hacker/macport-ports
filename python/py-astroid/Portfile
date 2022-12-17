@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ license             LGPL-2.1+
 supported_archs     noarch
 platforms           {darwin any}
 
-python.versions     37 38 39 310 311
+python.versions 310
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -28,8 +28,8 @@ long_description    The aim of this module is to provide a common \
 homepage            https://github.com/pycqa/astroid
 
 checksums           rmd160  cc8d85d5e4d585f4518cdd0f2d945107c30cca16 \
-                    sha256  1493fe8bd3dfd73dc35bd53c9d5b6e49ead98497c47b2307662556a5692d29d7 \
-                    size    217439
+sha256  1493fe8bd3dfd73dc35bd53c9d5b6e49ead98497c47b2307662556a5692d29d7 \
+size    217439
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-lazy_object_proxy \

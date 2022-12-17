@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -20,8 +20,8 @@ distname            ${name}-${apple_version}
 worksrcdir          ${distname}/xar
 
 checksums           rmd160  360699d6bd11399b1d84b4e23be89c382d3bb026 \
-                    sha256  c2cff99f1de2f209f07c369cdeda5451988336b75d00718aa1f169373dddff62 \
-                    size    224409
+sha256  c2cff99f1de2f209f07c369cdeda5451988336b75d00718aa1f169373dddff62 \
+size    224409
 
 depends_build       port:pkgconfig \
                     port:automake

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.1
@@ -25,8 +25,8 @@ long_description    snac2 Social Networks Are Crap \
 homepage            https://codeberg.org/grunfink/snac2/
 master_sites        ${homepage}archive/
 checksums           rmd160 0abcb7de32f519490790298e1078be298b7a0515 \
-                    sha256 70b60db23ccaab722e29b2a3a83ac409d2b5b9ce3e266bee5070e30677f110ab \
-                    size 75885
+sha256 70b60db23ccaab722e29b2a3a83ac409d2b5b9ce3e266bee5070e30677f110ab \
+size 75885
 depends_lib         path:lib/libssl.dylib:openssl \
                     port:curl
 use_configure       no

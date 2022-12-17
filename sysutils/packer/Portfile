@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -28,8 +28,8 @@ maintainers         {gmail.com:newtonne.github @newtonne} \
                     openmaintainer
 
 checksums           rmd160  8c8bb5f682b81882d15fcf1e7d474a8e26d27b34 \
-                    sha256  4919cd8cf3b27e919c89dde6e24ef4d32b879212d26f367082fb12485a620585 \
-                    size    2278013
+sha256  4919cd8cf3b27e919c89dde6e24ef4d32b879212d26f367082fb12485a620585 \
+size    2278013
 
 depends_build-append port:realpath
 
