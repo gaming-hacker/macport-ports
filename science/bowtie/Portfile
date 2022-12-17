@@ -46,7 +46,7 @@ post-extract {
     file delete ${worksrcpath}/VERSION
 }
 
-compiler.cxx_standard   2011
+compiler.cxx_standard 2020
 
 supported_archs         x86_64 ppc64
 installs_libs 	        no

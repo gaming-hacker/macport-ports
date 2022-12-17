@@ -50,7 +50,7 @@ if {![fortran_variant_isset]} {
 }
 
 # error: redefinition of typedef ‘ParseData’
-compiler.c_standard  2011
+compiler.c_standard 2017
 
 configure.cflags    -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
 configure.universal_args-delete --disable-dependency-tracking

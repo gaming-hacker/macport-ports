@@ -23,7 +23,7 @@ long_description    {*}${description}
 python.versions     37 38 39 310 311
 
 if {${name} ne ${subport}} {
-    compiler.cxx_standard     2014
+    compiler.cxx_standard 2020
     compiler.blacklist-append {clang < 800}
 
     post-fetch {
