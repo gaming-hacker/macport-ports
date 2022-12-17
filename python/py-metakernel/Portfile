@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-metakernel
-version             0.29.3
+version             0.29.4
 revision            0
 categories-append   devel science
 license             BSD
@@ -17,11 +17,11 @@ supported_archs     noarch
 platforms           {darwin any}
 homepage            https://github.com/Calysto/metakernel
 
-checksums           rmd160  5d21ea6d90a5b8ea01bfd05c31cf6d12ae979414 \
-sha256  26f93a7d07c2c2e00b1a33539f8582bd4649856c3eac28fedec105d24482f6c5 \
-size    189920
+checksums           rmd160  ad8f37b5e7e6d1feb901690e4f1d4778879359b0 \
+                    sha256  931ac5fccb318e1b7bcc6b3468470bfd27f4ab070b892a033c352513b2eb7268 \
+                    size    189933
 
-python.versions 310
+python.versions     37 38 39 310
 
 if {${name} ne ${subport}} {
     python.pep517   yes

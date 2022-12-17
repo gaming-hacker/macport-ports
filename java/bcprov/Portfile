@@ -9,11 +9,11 @@ version             1.72
 categories          java devel security
 license             MIT
 maintainers         nomaintainer
-platforms           darwin
+platforms           any
 supported_archs     noarch
 
 description         A Java implementation of cryptographic algorithms
-long_description    ${description}
+long_description    {*}${description}
 homepage            https://www.bouncycastle.org/java.html
 
 master_sites        https://search.maven.org/remotecontent?filepath=org/bouncycastle/${name}-jdk18on/${version}/
@@ -27,6 +27,7 @@ sha256  39287f2208a753db419f5ca529d6c80f094614aa74d790331126b3c9c6b85fda \
 size    11274121
 
 java.version        1.8+
+java.fallback       openjdk11
 
 extract {
     file copy ${distpath}/${distname}.jar ${workpath}

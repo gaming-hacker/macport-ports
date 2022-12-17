@@ -40,6 +40,15 @@ sha256  0c6930c922f423c3a55dd336b18d90062fa7d46919567116af41d894dd8d5e99 \
 size    7977326
 revision            0
 
+# have to do the rename for this port to work
+# this won't do anything in 3.8.0 or prior
+# it will be part of 3.8.1 and/or 3.9.0
+# https://trac.macports.org/ticket/66415
+# remove the 'if' clause with the next 'port' release
+if {[exists extract.rename]} {
+    extract.rename  yes
+}
+
 # limit livecheck to the current major.minor version
 gitlab.livecheck.regex {(3\.24\.[0-9.]+)}
 

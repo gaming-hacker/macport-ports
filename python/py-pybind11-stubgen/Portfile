@@ -10,9 +10,9 @@ revision                    0
 categories-append           devel
 license                     BSD
 maintainers                 {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
-platforms                   darwin
+platforms                   {darwin any}
 description                 generates stubs for python modules
-long_description            pybind11-stubgen ${description}.
+long_description            pybind11-stubgen {*}${description}.
 
 homepage                    https://github.com/sizmailov/pybind11-stubgen
 
@@ -22,7 +22,6 @@ size    9334
 
 python.versions 310
 
-installs_libs               no
 supported_archs             noarch
 
 if {${name} ne ${subport}} {

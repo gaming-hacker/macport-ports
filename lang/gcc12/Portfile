@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                                       1.0
 PortGroup           select                       1.0
@@ -20,8 +20,9 @@ description         The GNU compiler collection
 long_description    {*}${description}, including front ends for \
                     C, C++, Objective-C, Objective-C++ and Fortran.
 
+# Remember to reset all revision increments below to 0 on new versions
 version             12.2.0
-revision            1
+revision            2
 
 set libgccname      lib${name}
 subport             ${libgccname} { revision [ expr ${revision} + 0 ] }
@@ -29,8 +30,8 @@ subport             ${libgccname} { revision [ expr ${revision} + 0 ] }
 set libcxxname      ${name}-libcxx
 
 checksums           rmd160  76d30c411227d6c3e87dd4f0a8ea1ae5d8ab9ffd \
-sha256  e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff \
-size    84645292
+                    sha256  e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff \
+                    size    84645292
 
 # Primary releases
 master_sites        https://ftpmirror.gnu.org/gcc/gcc-${version}/ \
@@ -189,11 +190,15 @@ subport ${libcxxname} {
     PortGroup compilers     1.0
     compilers.choose        cxx
     compilers.setup         -gcc -fortran -clangdevel -clang34 -clang35 -clang36 \
-                            -clang37 -clang50 -clang60 -clang70 -clang80 -clang90 \
-                            -clang11 -clang12 -clang13 -clang14
-   default_variants-append +clang15
-
-    revision                [ expr ${revision} + 1 ]
+                            -clang37 -clang50 -clang60 -clang70 -clang80 -clang90
+    if { ![clang_variant_isset] } {
+        if { ${os.platform} eq "darwin" && ${os.major} < 11 } {
+            default_variants-append +clang11
+        } else {
+            default_variants-append +clang14
+        }
+    }
+    revision                [ expr ${revision} + 2 ]
     description             libc++ header implementation to be used by ${name}
     long_description        {*}${description}
     homepage                https://llvm.org/

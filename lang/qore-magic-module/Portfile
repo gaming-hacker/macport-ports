@@ -1,0 +1,28 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+PortGroup           github 1.0
+github.setup        qorelanguage module-magic 1.0.0 v
+github.tarball_from releases
+
+PortGroup           cmake 1.1
+
+name                qore-magic-module
+revision            2
+categories          lang
+license             LGPL-2.1
+maintainers         {davidnichols @davidnich} openmaintainer
+description         magic module for Qore
+long_description    Module providing magic functionality to Qore
+homepage            http://qore.org
+platforms           darwin
+use_bzip2           yes
+distname            qore-magic-module-${version}
+
+checksums           rmd160 948e21ad04ffe4908245f7953d2f0325b68e7ca0 \
+                    sha256 58400c672bec593508ce5b0a1303dc1e3c284c5a10fcd35bd1f679dbcd1d0c44 \
+                    size 43540
+
+depends_lib         port:qore \
+                    port:libmagic
