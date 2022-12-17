@@ -27,7 +27,8 @@ use_zip             yes
 
 checksum.skip  yes
 
-depends_build       port:nasm
+depends_build       port:nasm \
+                    port:gcc12
 
 configure.cc gcc-mp-12
 configure.cpp g++-mp-12

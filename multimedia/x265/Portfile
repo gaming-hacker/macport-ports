@@ -20,12 +20,13 @@ long_description    x265 is a free software library and application
 
 homepage            https://www.videolan.org/developers/x265.html
 
-worksrcdir          ${name}-${version}/source
+worksrcdir          ${name}/source
 
 depends_build-append port:gmake
 depends_build-append port:nasm
 configure.env       NASM_EXECUTABLE=${prefix}/bin/nasm
 
+distname            ${name}
 extract.suffix      .zip
 use_zip             yes
 
