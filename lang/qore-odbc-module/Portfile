@@ -1,0 +1,27 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+PortGroup           github 1.0
+github.setup        qorelanguage module-odbc 1.1.2 v
+github.tarball_from releases
+
+PortGroup           cmake 1.1
+
+name                qore-odbc-module
+categories          lang
+license             LGPL-2.1
+maintainers         {davidnichols @davidnich} openmaintainer
+description         odbc module for Qore
+long_description    Module providing support for ODBC datasources to Qore
+homepage            http://qore.org
+platforms           darwin
+use_bzip2           yes
+distname            qore-odbc-module-${version}
+
+checksums           rmd160 485e3df74e8688ca36ccf4a7fc259696547a93dd \
+                    sha256 b0622d516e3be2288d35d32b9bf81b619a9d230c253e3bc8b7f8ecce00ae0842 \
+                    size 45012
+
+depends_lib         port:qore \
+                    port:unixODBC

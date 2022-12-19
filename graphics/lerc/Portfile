@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github  1.0
 PortGroup           cmake   1.1
 
-github.setup        Esri lerc 3.0 v
+github.setup        Esri lerc 4.0.0 v
 github.tarball_from archive
-revision            0
+revision            1
 
 checksums           rmd160  4db543ea71fe126c94bce3ae8559107b483a4668 \
-sha256  91431c2b16d0e3de6cbaea188603359f87caed08259a645fd5a3805784ee30a0 \
-size    4710408
+                    sha256  91431c2b16d0e3de6cbaea188603359f87caed08259a645fd5a3805784ee30a0 \
+                    size    4710408
 
 categories          gis
 platforms           darwin
@@ -22,4 +22,7 @@ description         Limited Error Raster Compression: a library to compress rast
 long_description    Lerc is an open source library that allows fine-tuned compression of every \
                     type of raster images (mainly used in GIS)
 
-compiler.cxx_standard 2020
+patchfiles          patch-include.diff
+
+
+compiler.cxx_standard 2011
