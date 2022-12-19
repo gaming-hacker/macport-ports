@@ -20,7 +20,7 @@ checksums           sha256  cafd623d409948a39b44cb623313a4c48ed4fd7dcac0444b97d3
                     rmd160  c81354b23b02b17a2debad438d22f9e6c9220c67 \
                     size    3220993
 
-python.versions     39 310 311
+python.versions 310
 
 if {${name} ne ${subport}} {
     post-patch {
