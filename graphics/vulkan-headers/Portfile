@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    Development header files for the Vulkan graphics API. See Mo
 homepage            https://vulkan.lunarg.com
 
 checksums           sha256  2df85b3daa78ced7f910db870ea2aed10f718c703e18076b4549ca4005c9c451 \
-                    rmd160  b6abe71e2c2b800c47a80c58e751bdb88a6daeb7 \
-                    size    1764629
+rmd160  b6abe71e2c2b800c47a80c58e751bdb88a6daeb7 \
+size    1764629
 
 set py_ver          3.11
 set py_ver_nodot    [string map {. {}} ${py_ver}]

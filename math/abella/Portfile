@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ocaml 1.1
@@ -17,8 +17,8 @@ homepage            https://abella-prover.org
 master_sites        https://abella-prover.org/distributions
 
 checksums           rmd160  f6ea41a4def908c9ec9c44d8ad207d756fc5f8f2 \
-                    sha256  fde3a279b3051e0aeeaedad21cf96064edf19a6c413949b2033b305d92dddd87 \
-                    size    215056
+sha256  fde3a279b3051e0aeeaedad21cf96064edf19a6c413949b2033b305d92dddd87 \
+size    215056
 
 depends_build-append \
                     port:gmake \

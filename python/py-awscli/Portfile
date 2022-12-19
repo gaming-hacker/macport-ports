@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,8 +20,8 @@ long_description    {*}${description}
 homepage            https://aws.amazon.com/cli/
 
 checksums           rmd160  c76edbf7f16d89ce715689841cb4f3a5b9e8e4bb \
-                    sha256  7684ef4a46fce7183b528271198d10e7ad374c5d42210368e753cf4bc8e6209f \
-                    size    1613379
+sha256  7684ef4a46fce7183b528271198d10e7ad374c5d42210368e753cf4bc8e6209f \
+size    1613379
 
 python.versions 310
 

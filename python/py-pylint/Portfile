@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,8 +30,8 @@ long_description    Pylint is a tool that checks for errors in python code, \
 homepage            https://pylint.org
 
 checksums           rmd160  ec43e650c88fe51304fbb5dd7cfe6b51f2193893 \
-                    sha256  18783cca3cfee5b83c6c5d10b3cdb66c6594520ffae61890858fe8d932e1c6b4 \
-                    size    411126
+sha256  18783cca3cfee5b83c6c5d10b3cdb66c6594520ffae61890858fe8d932e1c6b4 \
+size    411126
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-dill \

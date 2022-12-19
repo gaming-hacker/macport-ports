@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,8 +24,8 @@ long_description    ps2eps is a tool (written in Perl) to produce Encapsulated \
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  e002a3a9241bde69acbbcace958d0f4095823f3f \
-                    sha256  c5560dee6c2f5aafeb963f96bf6bee68c69e24783cb4044b0e7a9e0d48bddc11 \
-                    size    100828
+sha256  c5560dee6c2f5aafeb963f96bf6bee68c69e24783cb4044b0e7a9e0d48bddc11 \
+size    100828
 
 depends_run         port:ghostscript \
                     bin:perl:perl5

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    This package provides a drop-in alternative to \
 homepage            https://github.com/pycontribs/subprocess-tee
 
 checksums           rmd160  93ffbfd77c3a069a16e8816e3eaf441dca34b243 \
-                    sha256  b3c124993f8b88d1eb1c2fde0bc2069787eac720ba88771cba17e8c93324825d \
-                    size    13599
+sha256  b3c124993f8b88d1eb1c2fde0bc2069787eac720ba88771cba17e8c93324825d \
+size    13599
 
 python.versions 310
 python.pep517       yes
