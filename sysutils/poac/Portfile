@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,8 +25,8 @@ long_description    Poac is a package manager for C++, inspired by Cargo \
                     and compile a project.
 
 checksums           rmd160  e848e76d4b88c6931239aaf66cdcb40138d2cd7f \
-                    sha256  c50ce19d890720d543148b78eddf8ec4913d4600f36ccd98b5bcca40e1f9dcb1 \
-                    size    149547
+sha256  c50ce19d890720d543148b78eddf8ec4913d4600f36ccd98b5bcca40e1f9dcb1 \
+size    149547
 
 # Do not allow CMake to use system Git on older systems
 depends_fetch-append \

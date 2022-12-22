@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,9 +15,9 @@ description         ping, but with a graph
 long_description    {*}${description}.
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  d981cc398ec40563f69c4e004ffc1a17ac2326b6 \
-                        sha256  e1f4106ede6a18a57ce35c095e17d0a9071e22ca9e6ca34075c006b7f61d943f \
-                        size    869089
+rmd160  d981cc398ec40563f69c4e004ffc1a17ac2326b6 \
+sha256  e1f4106ede6a18a57ce35c095e17d0a9071e22ca9e6ca34075c006b7f61d943f \
+size    869089
 
 # Build date set by shadow-rs cargo crate, which respects reproducible SOURCE_DATE_EPOCH
 # post-extract and pre-build from the wordgrinder port
@@ -129,7 +129,7 @@ cargo.crates \
     scratch                          1.0.3  ddccb15bcce173023b3fedd9436f882a0739b8dfb45e4f6b6002bee5929f61b2 \
     serde                          1.0.151  97fed41fc1a24994d044e6db6935e69511a1153b52c15eb42493b26fa87feba0 \
     serde_derive                   1.0.151  255abe9a125a985c05190d687b320c12f9b1f0b99445e608c21ba0782c719ad8 \
-    shadow-rs                       0.19.0  6c401e795850edb4e9fdde5940f856364f0fbab573e8dea58f6ee5f85fcf471d \
+shadow-rs                       0.19.0  6c401e795850edb4e9fdde5940f856364f0fbab573e8dea58f6ee5f85fcf471d \
     signal-hook                     0.3.14  a253b5e89e2698464fc26b545c9edceb338e18a89effeeecfea192c3025be29d \
     signal-hook-mio                  0.2.3  29ad2e15f37ec9a6cc544097b78a1ec90001e9f71b81338ca39f430adaca99af \
     signal-hook-registry             1.4.0  e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 \

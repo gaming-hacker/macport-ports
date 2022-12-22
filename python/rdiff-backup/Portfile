@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           python 1.0
 github.setup        rdiff-backup rdiff-backup 2.2.0 v
 revision            0
 checksums           rmd160  22552cd92247b4f7c327c9fc75423b8f96251579 \
-                    sha256  951779e051f5f0a1da8c6608e4aa87e60649751c8f291e388f6292577eb1f494 \
-                    size    903121
+sha256  951779e051f5f0a1da8c6608e4aa87e60649751c8f291e388f6292577eb1f494 \
+size    903121
 
 categories-append   net sysutils
 maintainers         nomaintainer

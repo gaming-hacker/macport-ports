@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  5f55f252a55965c17d66f053975aaccbc0f448d3 \
-                    sha256  c0faf07ff45d4d1bd45c35f2211dec9fd29edb7782e13dc2572e072f08919773 \
-                    size    1515078
+rmd160  5f55f252a55965c17d66f053975aaccbc0f448d3 \
+sha256  c0faf07ff45d4d1bd45c35f2211dec9fd29edb7782e13dc2572e072f08919773 \
+size    1515078
 
 set mdb_doc_dir     ${prefix}/share/doc/${name}
 
@@ -201,8 +201,8 @@ cargo.crates \
     serde_derive                   1.0.150  42a3df25b0713732468deadad63ab9da1f1fd75a48a15024b50363f128db627e \
     serde_json                      1.0.89  020ff22c755c2ed3f8cf162dbb41a7268d934702f3ed3631656ea597e08fc3db \
     serde_urlencoded                 0.7.1  d3491c14715ca2294c4d6a88f15e84739788c1d030eed8c110436aafdaa2f3fd \
-    sha-1                           0.10.1  f5058ada175748e33390e40e872bd0fe59a19f265d0158daa551c5a88a76009c \
-    sha1                            0.10.5  f04293dc80c3993519f2d7f6f511707ee7094fe0c6d3406feb330cdb3540eba3 \
+sha-1                           0.10.1  f5058ada175748e33390e40e872bd0fe59a19f265d0158daa551c5a88a76009c \
+sha1                            0.10.5  f04293dc80c3993519f2d7f6f511707ee7094fe0c6d3406feb330cdb3540eba3 \
     shlex                            1.1.0  43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3 \
     siphasher                       0.3.10  7bd3e3206899af3f8b12af284fafc038cc1dc2b41d1b89dd17297221c5d225de \
     slab                             0.4.7  4614a76b2a8be0058caa9dbbaf66d988527d86d003c11a94fbd335d7661edcef \

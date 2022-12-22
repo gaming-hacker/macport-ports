@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,9 +30,9 @@ long_description    StGIT is a Python application providing similar \
 homepage            https://stacked-git.github.io
 
 checksums           ${distfiles} \
-                    rmd160  8e595a426e1be98916abed0d73b710b39ac9aa2f \
-                    sha256  0d2c3718c1ff663ccd488682d23c4c7d655942dfec02d9002b065bb4ef4dbf3c \
-                    size    477106
+rmd160  8e595a426e1be98916abed0d73b710b39ac9aa2f \
+sha256  0d2c3718c1ff663ccd488682d23c4c7d655942dfec02d9002b065bb4ef4dbf3c \
+size    477106
 
 depends_build-append port:asciidoc port:xmlto
 depends_lib-append  port:libgit2

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ python.versions 310
 homepage            https://www.psycopg.org
 
 checksums           rmd160  244e3a55778f20aea87cb6af4a8103f562975b64 \
-                    sha256  812100b4215747f18d0c0f14cb568c3f39d9676053fd3e326bd0c718cfc37f33 \
-                    size    138061
+sha256  812100b4215747f18d0c0f14cb568c3f39d9676053fd3e326bd0c718cfc37f33 \
+size    138061
 
 if {${name} ne ${subport}} {
     python.pep517 yes

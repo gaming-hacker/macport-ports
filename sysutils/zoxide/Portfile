@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo   1.0
@@ -22,9 +22,9 @@ maintainers         {gmail.com:herby.gillot @herbygillot} \
                     openmaintainer
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  510c23614c95e6e8a2e7a83aecb31067f1f6290f \
-                    sha256  eb1839a4ab0ce7680c5a97dc753d006d5604b71c41a77047e981a439ac3b9de6 \
-                    size    136145
+rmd160  510c23614c95e6e8a2e7a83aecb31067f1f6290f \
+sha256  eb1839a4ab0ce7680c5a97dc753d006d5604b71c41a77047e981a439ac3b9de6 \
+size    136145
 
 notes "
     If you're using bash, add the following to your ~/.bashrc:

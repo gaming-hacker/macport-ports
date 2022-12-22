@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,9 +26,9 @@ long_description    ${description} which will invoke the PEP 517 \
 homepage            https://pypa-build.readthedocs.io/
 
 checksums           md5 f2dc1823b0eff7037e19be18e354b2f1 \
-                    rmd160 d431de8027e33f1c21dd35b8852defd590ac5198 \
-                    sha256 1a07724e891cbd898923145eb7752ee7653674c511378eb9c7691aab1612bc3c \
-                    size   17450
+rmd160 d431de8027e33f1c21dd35b8852defd590ac5198 \
+sha256 1a07724e891cbd898923145eb7752ee7653674c511378eb9c7691aab1612bc3c \
+size   17450
 
 python.pep517       yes
 

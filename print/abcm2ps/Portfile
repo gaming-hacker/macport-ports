@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    abcm2ps is a package that converts music tunes from \
 homepage            http://moinejf.free.fr/
 
 checksums           rmd160  08d089afade7602389b3b21310e026c24c25c1b7 \
-                    sha256  5b39ca08cd5e0d1992071b0be9eb77304489823824570236c4df4dc0f8b33aab \
-                    size    260030
+sha256  5b39ca08cd5e0d1992071b0be9eb77304489823824570236c4df4dc0f8b33aab \
+size    260030
 
 depends_build       port:pkgconfig
 depends_lib         port:freetype \

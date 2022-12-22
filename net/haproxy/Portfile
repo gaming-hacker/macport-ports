@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           openssl 1.0
@@ -31,8 +31,8 @@ master_sites        ${homepage}download/${branch}/src/ \
                     https://sources.openwrt.org/
 
 checksums           rmd160  316e32da1bd8540b93136587cbd0fe822d272293 \
-                    sha256  155f3a2fb6dfc1fdfd13d946a260ab8dd2a137714acb818510749e3ffb6b351d \
-                    size    4120306
+sha256  155f3a2fb6dfc1fdfd13d946a260ab8dd2a137714acb818510749e3ffb6b351d \
+size    4120306
 
 openssl.branch      3
 depends_lib         port:pcre port:zlib
