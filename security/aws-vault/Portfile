@@ -30,7 +30,7 @@ build.cmd           make
 build.pre_args      VERSION=${version}
 build.args          aws-vault-darwin-${goarch}
 
-use_xcode           yes
+use_xcode no
 
 post-extract {
     file mkdir ${gopath}/src/github.com/keybase

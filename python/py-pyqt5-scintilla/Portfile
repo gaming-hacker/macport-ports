@@ -28,11 +28,11 @@ python.versions     37 38 39 310 311
 # these Python versions require an older qscintilla-qt5 version
 conflicts           py27-qscintilla-qt5 py35-qscintilla-qt5
 
-compiler.cxx_standard 2011
+compiler.cxx_standard 2020
 
 if {${name} ne ${subport}} {
     PortGroup       qmake5 1.0
-    use_xcode       yes
+    use_xcode no
 
     depends_build-append \
                     port:py${python.version}-pyqt-builder \
