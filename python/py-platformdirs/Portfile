@@ -23,7 +23,7 @@ checksums           rmd160  4a997403a158132088536203d7054cd4fb5f5972 \
                     size    20971
 
 # keep all these Python versions, port is a dependency of py-virtualenv
-python.versions     27 35 36 37 38 39 310 311
+python.versions 310
 
 if {${name} ne ${subport}} {
     depends_build-append \
