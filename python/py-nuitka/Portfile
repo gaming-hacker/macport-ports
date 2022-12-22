@@ -1,18 +1,18 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-nuitka
 python.rootname     Nuitka
-version             1.2.4
+version             1.2.7
 revision            0
 categories-append   devel
 platforms           {darwin any}
 license             Apache-2
 supported_archs     noarch
 
-python.versions 310
+python.versions     37 38 39 310 311
 python.pep517       yes
 
 maintainers         {stromnov @stromnov} openmaintainer
@@ -22,9 +22,9 @@ long_description    ${description}
 
 homepage            http://nuitka.net/
 
-checksums           rmd160  db3422939a52a3a08c69dba8c20581db1efacbd0 \
-sha256  3b750e2a2a46e959c890582ccbc5df760b8800007ff603e12fd9292da31f3740 \
-size    3967759
+checksums           rmd160  9c40fb6bd0d51981e68583436d111fd632f71f24 \
+                    sha256  c6632bf383f0ad878263762cf20fde6f30687962802aac8f8b7410fccc91e0cc \
+                    size    3968758
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ homepage            https://github.com/rstcheck/rstcheck-core
 
 distname            rstcheck_core-${version}
 checksums           rmd160  62a7f9897f67832cc5d87a3f0014907d71cc2503 \
-sha256  add19c9a1b97d9087f4b463b49c12cd8a9c03689a255e99089c70a2692f16369 \
-size    48447
+                    sha256  add19c9a1b97d9087f4b463b49c12cd8a9c03689a255e99089c70a2692f16369 \
+                    size    48447
 
-python.versions 310
+python.versions     37 38 39 310 311
 python.pep517       yes
 python.pep517_backend   poetry
 

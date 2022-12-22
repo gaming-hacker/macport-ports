@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ long_description    Provides an uniform layer to support PyQt5, PyQt6, \
                     PySide2, and PySide6 with a single codebase.
 
 checksums           rmd160  9f23549ba7c7ec76b052adf61bd4a129e75b6d18 \
-sha256  30d051b9b47201960342f2c4dde7f12bd99581a05047bc8f5f45d5fe64f1e620 \
-size    57631
+                    sha256  30d051b9b47201960342f2c4dde7f12bd99581a05047bc8f5f45d5fe64f1e620 \
+                    size    57631
 
-python.versions 310
+python.versions     37 38 39 310 311
 python.pep517       yes
 
 if {${name} ne ${subport}} {
